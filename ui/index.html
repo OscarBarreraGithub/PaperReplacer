@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Knowledge Graph Explorer</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="panel">
+          <h1>Graph Explorer</h1>
+          <p class="subtle">
+            Explore the compiled prerequisite graph in 3D. Drag to rotate, scroll
+            to zoom, and click a node for details.
+          </p>
+        </div>
+
+        <div class="panel controls">
+          <label>
+            Batch
+            <select id="batch-select"></select>
+          </label>
+
+          <label>
+            Relation
+            <select id="relation-select">
+              <option value="requires_for_use">requires_for_use</option>
+              <option value="requires_for_recognize">requires_for_recognize</option>
+              <option value="requires_for_derive">requires_for_derive</option>
+              <option value="all">all dependencies</option>
+            </select>
+          </label>
+
+          <label>
+            View
+            <select id="view-select">
+              <option value="full">Full batch</option>
+              <option value="focus">Focused neighborhood</option>
+            </select>
+          </label>
+
+          <label>
+            Target node
+            <select id="target-select"></select>
+          </label>
+
+          <label class="checkbox-row">
+            <input id="partonomy-toggle" type="checkbox" checked />
+            Include partonomy
+          </label>
+
+          <div class="button-row">
+            <button id="refresh-button">Refresh</button>
+            <button id="fit-button">Fit graph</button>
+          </div>
+
+          <label>
+            Search / focus
+            <input
+              id="search-input"
+              type="search"
+              placeholder="Search by id or label"
+            />
+          </label>
+        </div>
+
+        <div class="panel legend">
+          <h2>Legend</h2>
+          <div class="legend-item"><span class="swatch complex"></span>Complex analysis</div>
+          <div class="legend-item"><span class="swatch qft"></span>QFT</div>
+          <div class="legend-item"><span class="swatch other"></span>Other</div>
+          <div class="legend-item"><span class="line dependency"></span>Dependency edge</div>
+          <div class="legend-item"><span class="line partonomy"></span>Partonomy edge</div>
+        </div>
+
+        <div class="panel" id="batch-summary">
+          <h2>Batch</h2>
+          <div class="subtle">Loading…</div>
+        </div>
+
+        <div class="panel" id="node-details">
+          <h2>Node Details</h2>
+          <div class="subtle">Click a node to inspect it.</div>
+        </div>
+      </aside>
+
+      <main class="graph-stage">
+        <div id="graph"></div>
+        <div class="status-bar" id="status-bar">Loading graph…</div>
+      </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/3d-force-graph"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>

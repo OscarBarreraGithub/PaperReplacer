@@ -1,0 +1,91 @@
+# Hand-authored dependency edges for the first seed batch.
+- from: complex_analysis.contour_deformation
+  to: qft.pinch_singularities
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: literature_reading
+  rationale: Standard pinch arguments are phrased in terms of failed contour deformations.
+  failure_mode_if_absent: Cannot follow why the contour cannot be moved away from the singular region.
+  evidence:
+    - type: expert_claim
+      source_ref: seed_batch_initial
+      note: Initial hand-authored slice for the pinch-singularities batch.
+  status: asserted
+  confidence: 0.93
+- from: complex_analysis.poles_vs_branch_points
+  to: qft.propagator_singularities
+  relation_type: requires_for_recognize
+  necessity: typical
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: literature_reading
+  rationale: Recognizing propagator singularities in papers requires distinguishing isolated pole structure from branch structure.
+  failure_mode_if_absent: Cannot parse which kind of singularity a paper is referring to when it contrasts poles with cut structure.
+  evidence:
+    - type: expert_claim
+      source_ref: seed_batch_initial
+      note: Initial hand-authored slice for the pinch-singularities batch.
+  status: asserted
+  confidence: 0.82
+- from: complex_analysis.poles_vs_branch_points
+  to: qft.pinch_singularities
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: literature_reading
+  rationale: Pinch discussions rely on identifying which singular structures can trap a contour and how isolated poles differ from branch behavior.
+  failure_mode_if_absent: Cannot distinguish which singular structures can actually pinch the contour in a standard analytic argument.
+  evidence:
+    - type: expert_claim
+      source_ref: seed_batch_initial
+      note: Initial hand-authored slice for the pinch-singularities batch.
+  status: asserted
+  confidence: 0.88
+- from: qft.feynman_i_epsilon_prescription
+  to: qft.propagator_singularities
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: literature_reading
+  rationale: The Feynman prescription determines how propagator poles are displaced and therefore how contour arguments are read.
+  failure_mode_if_absent: Cannot follow why propagator poles sit on opposite sides of the integration contour in the standard argument.
+  evidence:
+    - type: expert_claim
+      source_ref: seed_batch_initial
+      note: Initial hand-authored slice for the pinch-singularities batch.
+  status: asserted
+  confidence: 0.94
+- from: qft.propagator_singularities
+  to: qft.pinch_singularities
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: literature_reading
+  rationale: A pinch singularity is recognized as a situation in which propagator singularities constrain contour motion.
+  failure_mode_if_absent: Cannot identify what the pinch is a singularity of or why propagators are central to the discussion.
+  evidence:
+    - type: expert_claim
+      source_ref: seed_batch_initial
+      note: Initial hand-authored slice for the pinch-singularities batch.
+  status: asserted
+  confidence: 0.95
+- from: qft.propagator_singularities
+  to: qft.pinch_singularities
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: literature_reading
+  rationale: Standard pinch-singularity reasoning proceeds by tracking how propagator singularities approach and trap the contour.
+  failure_mode_if_absent: Cannot follow the standard pinch argument based on the relative position of propagator singularities.
+  evidence:
+    - type: expert_claim
+      source_ref: seed_batch_initial
+      note: Initial hand-authored slice for the pinch-singularities batch.
+  status: asserted
+  confidence: 0.96

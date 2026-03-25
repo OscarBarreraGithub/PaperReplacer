@@ -1,0 +1,13 @@
+{
+  "batch_id": "seed_pinch_singularities",
+  "checked_at": "2026-03-25T21:08:53.503508+00:00",
+  "errors": [],
+  "stats": {
+    "dependencies": 6,
+    "nodes": 5,
+    "overlays": 0,
+    "partonomy": 0
+  },
+  "valid": true,
+  "warnings": []
+}

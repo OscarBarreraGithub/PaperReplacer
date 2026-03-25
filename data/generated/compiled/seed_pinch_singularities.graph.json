@@ -1,0 +1,282 @@
+{
+  "batch_id": "seed_pinch_singularities",
+  "compiled_at": "2026-03-25T21:08:53.503866+00:00",
+  "contract": {
+    "allowed_overlay_types": [
+      "assumed_background"
+    ],
+    "allowed_relations": [
+      "requires_for_recognize",
+      "requires_for_use",
+      "part_of"
+    ],
+    "autonomy": {
+      "auto_merge_enabled": true,
+      "block_on_duplicate_risk": true,
+      "block_on_ontology_drift": true,
+      "block_on_query_warning": true,
+      "minimum_confidence_for_auto_merge": 0.8,
+      "require_human_review_for": [
+        "contract_changes",
+        "ontology_changes",
+        "decomposition_changes",
+        "disputed_items",
+        "forbidden_heuristics"
+      ]
+    },
+    "batch_id": "seed_pinch_singularities",
+    "closure": {
+      "allow_heterogeneous_composition": false,
+      "allow_transitive_dependency": true,
+      "cross_context": false,
+      "cross_partonomy": false,
+      "exclude_statuses": [
+        "disputed"
+      ]
+    },
+    "composition": {
+      "allowed_relation_chains": [
+        [
+          "requires_for_recognize",
+          "requires_for_recognize"
+        ],
+        [
+          "requires_for_use",
+          "requires_for_use"
+        ]
+      ],
+      "confidence_propagation": "min",
+      "necessity_propagation": "min"
+    },
+    "context": {
+      "audience_profile": "hep_th_grad",
+      "subfield": "amplitudes",
+      "task_type": "literature_reading"
+    },
+    "contract_version": "0.1",
+    "description": "First narrow seed slice around pinch singularities for literature-facing prerequisite queries.",
+    "forbidden_heuristics": [
+      "pedagogical_edges_in_prerequisite_queries",
+      "global_assumed_background",
+      "broad_qft_umbrella_nodes_without_need",
+      "shortest_path_presented_as_pedagogy"
+    ],
+    "mastery_modes": [
+      "recognize",
+      "use"
+    ],
+    "query_defaults": {
+      "disclose_non_uniqueness": true,
+      "expand_composites_default": false,
+      "prerequisite_set_semantics": "ancestral_frontier"
+    },
+    "query_suite": [
+      "prereqs_recognize",
+      "prereqs_use",
+      "intrinsic_vs_profile_adjusted",
+      "expanded_slice"
+    ]
+  },
+  "dependencies": [
+    {
+      "audience_profile": "hep_th_grad",
+      "confidence": 0.82,
+      "evidence": [
+        {
+          "note": "Initial hand-authored slice for the pinch-singularities batch.",
+          "source_ref": "seed_batch_initial",
+          "type": "expert_claim"
+        }
+      ],
+      "failure_mode_if_absent": "Cannot parse which kind of singularity a paper is referring to when it contrasts poles with cut structure.",
+      "from": "complex_analysis.poles_vs_branch_points",
+      "necessity": "typical",
+      "rationale": "Recognizing propagator singularities in papers requires distinguishing isolated pole structure from branch structure.",
+      "relation_type": "requires_for_recognize",
+      "status": "asserted",
+      "subfield": "amplitudes",
+      "task_type": "literature_reading",
+      "to": "qft.propagator_singularities"
+    },
+    {
+      "audience_profile": "hep_th_grad",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "note": "Initial hand-authored slice for the pinch-singularities batch.",
+          "source_ref": "seed_batch_initial",
+          "type": "expert_claim"
+        }
+      ],
+      "failure_mode_if_absent": "Cannot identify what the pinch is a singularity of or why propagators are central to the discussion.",
+      "from": "qft.propagator_singularities",
+      "necessity": "necessary",
+      "rationale": "A pinch singularity is recognized as a situation in which propagator singularities constrain contour motion.",
+      "relation_type": "requires_for_recognize",
+      "status": "asserted",
+      "subfield": "amplitudes",
+      "task_type": "literature_reading",
+      "to": "qft.pinch_singularities"
+    },
+    {
+      "audience_profile": "hep_th_grad",
+      "confidence": 0.93,
+      "evidence": [
+        {
+          "note": "Initial hand-authored slice for the pinch-singularities batch.",
+          "source_ref": "seed_batch_initial",
+          "type": "expert_claim"
+        }
+      ],
+      "failure_mode_if_absent": "Cannot follow why the contour cannot be moved away from the singular region.",
+      "from": "complex_analysis.contour_deformation",
+      "necessity": "necessary",
+      "rationale": "Standard pinch arguments are phrased in terms of failed contour deformations.",
+      "relation_type": "requires_for_use",
+      "status": "asserted",
+      "subfield": "amplitudes",
+      "task_type": "literature_reading",
+      "to": "qft.pinch_singularities"
+    },
+    {
+      "audience_profile": "hep_th_grad",
+      "confidence": 0.88,
+      "evidence": [
+        {
+          "note": "Initial hand-authored slice for the pinch-singularities batch.",
+          "source_ref": "seed_batch_initial",
+          "type": "expert_claim"
+        }
+      ],
+      "failure_mode_if_absent": "Cannot distinguish which singular structures can actually pinch the contour in a standard analytic argument.",
+      "from": "complex_analysis.poles_vs_branch_points",
+      "necessity": "necessary",
+      "rationale": "Pinch discussions rely on identifying which singular structures can trap a contour and how isolated poles differ from branch behavior.",
+      "relation_type": "requires_for_use",
+      "status": "asserted",
+      "subfield": "amplitudes",
+      "task_type": "literature_reading",
+      "to": "qft.pinch_singularities"
+    },
+    {
+      "audience_profile": "hep_th_grad",
+      "confidence": 0.94,
+      "evidence": [
+        {
+          "note": "Initial hand-authored slice for the pinch-singularities batch.",
+          "source_ref": "seed_batch_initial",
+          "type": "expert_claim"
+        }
+      ],
+      "failure_mode_if_absent": "Cannot follow why propagator poles sit on opposite sides of the integration contour in the standard argument.",
+      "from": "qft.feynman_i_epsilon_prescription",
+      "necessity": "necessary",
+      "rationale": "The Feynman prescription determines how propagator poles are displaced and therefore how contour arguments are read.",
+      "relation_type": "requires_for_use",
+      "status": "asserted",
+      "subfield": "amplitudes",
+      "task_type": "literature_reading",
+      "to": "qft.propagator_singularities"
+    },
+    {
+      "audience_profile": "hep_th_grad",
+      "confidence": 0.96,
+      "evidence": [
+        {
+          "note": "Initial hand-authored slice for the pinch-singularities batch.",
+          "source_ref": "seed_batch_initial",
+          "type": "expert_claim"
+        }
+      ],
+      "failure_mode_if_absent": "Cannot follow the standard pinch argument based on the relative position of propagator singularities.",
+      "from": "qft.propagator_singularities",
+      "necessity": "necessary",
+      "rationale": "Standard pinch-singularity reasoning proceeds by tracking how propagator singularities approach and trap the contour.",
+      "relation_type": "requires_for_use",
+      "status": "asserted",
+      "subfield": "amplitudes",
+      "task_type": "literature_reading",
+      "to": "qft.pinch_singularities"
+    }
+  ],
+  "indexes": {
+    "children_by_parent": {},
+    "node_ids": [
+      "complex_analysis.contour_deformation",
+      "complex_analysis.poles_vs_branch_points",
+      "qft.feynman_i_epsilon_prescription",
+      "qft.pinch_singularities",
+      "qft.propagator_singularities"
+    ],
+    "parents_by_child": {}
+  },
+  "nodes": [
+    {
+      "composite": false,
+      "granularity_level": "atomic",
+      "id": "complex_analysis.contour_deformation",
+      "knowledge_kind": "method",
+      "label": "Contour deformation",
+      "mastery_modes_supported": [
+        "recognize",
+        "use"
+      ],
+      "status": "asserted",
+      "summary": "Standard complex-analysis procedure of continuously moving an integration contour while tracking which singularities obstruct the motion."
+    },
+    {
+      "composite": false,
+      "granularity_level": "atomic",
+      "id": "complex_analysis.poles_vs_branch_points",
+      "knowledge_kind": "concept",
+      "label": "Poles vs branch points",
+      "mastery_modes_supported": [
+        "recognize",
+        "use"
+      ],
+      "status": "asserted",
+      "summary": "Distinction between isolated pole singularities and branch-point or cut singularities in complex analysis."
+    },
+    {
+      "composite": false,
+      "granularity_level": "atomic",
+      "id": "qft.feynman_i_epsilon_prescription",
+      "knowledge_kind": "formal_statement",
+      "label": "Feynman i epsilon prescription",
+      "mastery_modes_supported": [
+        "recognize",
+        "use"
+      ],
+      "status": "asserted",
+      "summary": "Prescription that displaces propagator poles off the real axis to define causal contour choices in relativistic QFT."
+    },
+    {
+      "composite": false,
+      "granularity_level": "atomic",
+      "id": "qft.pinch_singularities",
+      "knowledge_kind": "concept",
+      "label": "Pinch singularities",
+      "mastery_modes_supported": [
+        "recognize",
+        "use"
+      ],
+      "status": "asserted",
+      "summary": "Singular configurations in which contour deformations are obstructed by competing singularities that trap the contour."
+    },
+    {
+      "composite": false,
+      "granularity_level": "atomic",
+      "id": "qft.propagator_singularities",
+      "knowledge_kind": "concept",
+      "label": "Propagator singularities",
+      "mastery_modes_supported": [
+        "recognize",
+        "use"
+      ],
+      "status": "asserted",
+      "summary": "Singular structure contributed by propagator denominators, especially the location and interpretation of their poles."
+    }
+  ],
+  "overlays": [],
+  "partonomy": []
+}

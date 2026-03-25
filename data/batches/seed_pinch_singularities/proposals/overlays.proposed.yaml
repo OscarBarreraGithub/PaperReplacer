@@ -1,0 +1,13 @@
+- overlay_type: assumed_background
+  target_topic: qft.pinch_singularities
+  presumed_node: complex_analysis.contour_deformation
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  artifact_type: paper
+  rationale: Amplitudes readers are typically assumed to be able to follow basic contour deformation before pinch arguments are introduced.
+  evidence:
+    - type: textual_evidence
+      source_ref: /Users/emmy/Documents/KnowledgeGraph/data/batches/seed_pinch_singularities/extraction/source_notes.md
+      note: Seed notes identify contour deformation as a likely background assumption for the batch.
+  status: draft
+  confidence: 0.84

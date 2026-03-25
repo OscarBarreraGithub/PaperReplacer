@@ -1,0 +1,279 @@
+{
+  "batch_id": "synthetic_query_fixture",
+  "compiled_at": "2026-03-25T00:00:00+00:00",
+  "contract": {
+    "context": {
+      "audience_profile": "hep_th_grad",
+      "subfield": "amplitudes",
+      "task_type": "literature_reading"
+    },
+    "allowed_relations": [
+      "requires_for_recognize",
+      "requires_for_use",
+      "part_of"
+    ],
+    "closure": {
+      "allow_transitive_dependency": true,
+      "allow_heterogeneous_composition": false,
+      "cross_partonomy": false,
+      "cross_context": false,
+      "exclude_statuses": [
+        "disputed"
+      ]
+    },
+    "composition": {
+      "allowed_relation_chains": [
+        [
+          "requires_for_recognize",
+          "requires_for_recognize"
+        ],
+        [
+          "requires_for_use",
+          "requires_for_use"
+        ]
+      ],
+      "necessity_propagation": "min",
+      "confidence_propagation": "min"
+    }
+  },
+  "nodes": [
+    {
+      "id": "math.complex_variables",
+      "label": "Complex variables"
+    },
+    {
+      "id": "complex_analysis.residue_theorem",
+      "label": "Residue theorem"
+    },
+    {
+      "id": "complex_analysis.contour_deformation",
+      "label": "Contour deformation"
+    },
+    {
+      "id": "complex_analysis.branch_points",
+      "label": "Branch points"
+    },
+    {
+      "id": "complex_analysis.boundary_values",
+      "label": "Boundary values"
+    },
+    {
+      "id": "qft.feynman_i_epsilon",
+      "label": "Feynman i epsilon"
+    },
+    {
+      "id": "qft.propagator_singularities",
+      "label": "Propagator singularities"
+    },
+    {
+      "id": "qft.loop_energy_integration",
+      "label": "Loop energy integration"
+    },
+    {
+      "id": "qft.pinch_singularities",
+      "label": "Pinch singularities"
+    },
+    {
+      "id": "qft.landau_conditions",
+      "label": "Landau conditions"
+    },
+    {
+      "id": "qft.analytic_structure",
+      "label": "Analytic structure"
+    },
+    {
+      "id": "qft.singularity_theory",
+      "label": "Singularity theory"
+    },
+    {
+      "id": "qft.discontinuities",
+      "label": "Discontinuities"
+    },
+    {
+      "id": "qft.cut_structure",
+      "label": "Cut structure"
+    },
+    {
+      "id": "qft.threshold_singularities",
+      "label": "Threshold singularities"
+    },
+    {
+      "id": "qft.amplitude_analysis",
+      "label": "Amplitude analysis"
+    }
+  ],
+  "dependencies": [
+    {
+      "from": "math.complex_variables",
+      "to": "complex_analysis.residue_theorem",
+      "relation_type": "requires_for_use",
+      "necessity": "necessary",
+      "confidence": 0.95,
+      "status": "asserted"
+    },
+    {
+      "from": "complex_analysis.residue_theorem",
+      "to": "complex_analysis.contour_deformation",
+      "relation_type": "requires_for_use",
+      "necessity": "necessary",
+      "confidence": 0.92,
+      "status": "asserted"
+    },
+    {
+      "from": "complex_analysis.branch_points",
+      "to": "qft.propagator_singularities",
+      "relation_type": "requires_for_recognize",
+      "necessity": "typical",
+      "confidence": 0.8,
+      "status": "asserted"
+    },
+    {
+      "from": "qft.feynman_i_epsilon",
+      "to": "qft.propagator_singularities",
+      "relation_type": "requires_for_use",
+      "necessity": "necessary",
+      "confidence": 0.93,
+      "status": "asserted"
+    },
+    {
+      "from": "complex_analysis.contour_deformation",
+      "to": "qft.pinch_singularities",
+      "relation_type": "requires_for_use",
+      "necessity": "necessary",
+      "confidence": 0.94,
+      "status": "asserted"
+    },
+    {
+      "from": "qft.propagator_singularities",
+      "to": "qft.pinch_singularities",
+      "relation_type": "requires_for_use",
+      "necessity": "necessary",
+      "confidence": 0.96,
+      "status": "asserted"
+    },
+    {
+      "from": "qft.loop_energy_integration",
+      "to": "qft.landau_conditions",
+      "relation_type": "requires_for_use",
+      "necessity": "typical",
+      "confidence": 0.87,
+      "status": "asserted"
+    },
+    {
+      "from": "qft.pinch_singularities",
+      "to": "qft.landau_conditions",
+      "relation_type": "requires_for_use",
+      "necessity": "typical",
+      "confidence": 0.89,
+      "status": "asserted"
+    },
+    {
+      "from": "complex_analysis.boundary_values",
+      "to": "qft.discontinuities",
+      "relation_type": "requires_for_use",
+      "necessity": "helpful",
+      "confidence": 0.77,
+      "status": "asserted"
+    },
+    {
+      "from": "qft.cut_structure",
+      "to": "qft.threshold_singularities",
+      "relation_type": "requires_for_recognize",
+      "necessity": "typical",
+      "confidence": 0.82,
+      "status": "asserted"
+    },
+    {
+      "from": "qft.analytic_structure",
+      "to": "qft.amplitude_analysis",
+      "relation_type": "requires_for_use",
+      "necessity": "helpful",
+      "confidence": 0.7,
+      "status": "asserted"
+    }
+  ],
+  "partonomy": [
+    {
+      "parent": "qft.analytic_structure",
+      "child": "qft.pinch_singularities",
+      "rationale": "Pinch singularities are one component of analytic structure.",
+      "status": "asserted",
+      "confidence": 0.9
+    },
+    {
+      "parent": "qft.analytic_structure",
+      "child": "qft.landau_conditions",
+      "rationale": "Landau conditions are part of analytic structure.",
+      "status": "asserted",
+      "confidence": 0.9
+    },
+    {
+      "parent": "qft.analytic_structure",
+      "child": "qft.discontinuities",
+      "rationale": "Discontinuities are part of analytic structure.",
+      "status": "asserted",
+      "confidence": 0.9
+    },
+    {
+      "parent": "qft.analytic_structure",
+      "child": "qft.threshold_singularities",
+      "rationale": "Threshold singularities are part of analytic structure.",
+      "status": "asserted",
+      "confidence": 0.9
+    }
+  ],
+  "overlays": [
+    {
+      "overlay_type": "assumed_background",
+      "target_topic": "qft.pinch_singularities",
+      "presumed_node": "complex_analysis.contour_deformation",
+      "audience_profile": "hep_th_grad",
+      "subfield": "amplitudes",
+      "rationale": "Typical amplitudes discussions assume basic contour manipulation fluency.",
+      "status": "asserted",
+      "confidence": 0.84
+    }
+  ],
+  "indexes": {
+    "node_ids": [
+      "complex_analysis.boundary_values",
+      "complex_analysis.branch_points",
+      "complex_analysis.contour_deformation",
+      "complex_analysis.residue_theorem",
+      "math.complex_variables",
+      "qft.amplitude_analysis",
+      "qft.analytic_structure",
+      "qft.cut_structure",
+      "qft.discontinuities",
+      "qft.feynman_i_epsilon",
+      "qft.landau_conditions",
+      "qft.loop_energy_integration",
+      "qft.pinch_singularities",
+      "qft.propagator_singularities",
+      "qft.singularity_theory",
+      "qft.threshold_singularities"
+    ],
+    "children_by_parent": {
+      "qft.analytic_structure": [
+        "qft.discontinuities",
+        "qft.landau_conditions",
+        "qft.pinch_singularities",
+        "qft.threshold_singularities"
+      ]
+    },
+    "parents_by_child": {
+      "qft.discontinuities": [
+        "qft.analytic_structure"
+      ],
+      "qft.landau_conditions": [
+        "qft.analytic_structure"
+      ],
+      "qft.pinch_singularities": [
+        "qft.analytic_structure"
+      ],
+      "qft.threshold_singularities": [
+        "qft.analytic_structure"
+      ]
+    }
+  }
+}

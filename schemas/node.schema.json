@@ -1,0 +1,79 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Node",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "label",
+    "knowledge_kind",
+    "granularity_level",
+    "composite",
+    "mastery_modes_supported",
+    "summary",
+    "status"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "label": {
+      "type": "string",
+      "minLength": 1
+    },
+    "knowledge_kind": {
+      "type": "string",
+      "enum": [
+        "concept",
+        "method",
+        "representation",
+        "formal_statement"
+      ]
+    },
+    "granularity_level": {
+      "type": "string",
+      "enum": [
+        "survey",
+        "intermediate",
+        "atomic"
+      ]
+    },
+    "composite": {
+      "type": "boolean"
+    },
+    "mastery_modes_supported": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "enum": [
+          "recognize",
+          "use",
+          "derive"
+        ]
+      },
+      "uniqueItems": true
+    },
+    "summary": {
+      "type": "string",
+      "minLength": 1
+    },
+    "aliases": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "asserted",
+        "reviewed",
+        "disputed"
+      ]
+    }
+  }
+}
