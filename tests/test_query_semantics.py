@@ -9,8 +9,10 @@ if str(SCRIPTS) not in sys.path:
     sys.path.insert(0, str(SCRIPTS))
 
 from kg_core import (  # noqa: E402
+    compile_batch,
     expanded_slice,
     intrinsic_vs_profile_adjusted,
+    load_batch_records,
     prerequisite_set,
     prerequisites,
 )
@@ -86,6 +88,64 @@ class QuerySemanticsTests(unittest.TestCase):
             any(
                 edge["to"] == "qft.pinch_singularities"
                 for edge in result["dependencies"]
+            )
+        )
+
+
+class DeepBatchQueryTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls) -> None:
+        cls.bundle = compile_batch(load_batch_records("pinch_singularities_deep"))
+
+    def test_real_overlay_adjustment_preserves_intrinsic_structure(self) -> None:
+        result = intrinsic_vs_profile_adjusted(
+            self.bundle,
+            "qft.pinch_singularities",
+            "requires_for_use",
+            {
+                "audience_profile": "hep_th_grad",
+                "subfield": "amplitudes",
+            },
+        )
+        self.assertIn(
+            "complex_analysis.contour_deformation",
+            result["intrinsic_prerequisites"],
+        )
+        self.assertIn(
+            "qft.feynman_i_epsilon_prescription",
+            result["intrinsic_prerequisites"],
+        )
+        self.assertEqual(
+            result["presumed_by_profile"],
+            [
+                "complex_analysis.contour_deformation",
+                "qft.feynman_i_epsilon_prescription",
+            ],
+        )
+        self.assertNotIn(
+            "complex_analysis.contour_deformation",
+            result["remaining_unmet_prerequisites"],
+        )
+
+    def test_expanded_slice_surfaces_landau_partonomy(self) -> None:
+        result = expanded_slice(
+            self.bundle,
+            "qft.pinch_singularities",
+            "requires_for_derive",
+        )
+        self.assertIn("qft.landau_singularity_conditions", result["nodes"])
+        self.assertIn("qft.on_shell_propagator_conditions", result["nodes"])
+        self.assertIn("qft.loop_momentum_stationarity_conditions", result["nodes"])
+        self.assertTrue(
+            any(
+                edge["child"] == "qft.on_shell_propagator_conditions"
+                for edge in result["partonomy"]
+            )
+        )
+        self.assertTrue(
+            any(
+                edge["child"] == "qft.loop_momentum_stationarity_conditions"
+                for edge in result["partonomy"]
             )
         )
 
