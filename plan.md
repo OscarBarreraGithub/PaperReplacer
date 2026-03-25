@@ -367,6 +367,8 @@ This split should be explicit.
 - review decisions
 - topic selection decisions
 
+These are the kinds of artifacts that may live on `main`.
+
 ### Machine-generated
 
 - extraction notes
@@ -378,6 +380,8 @@ This split should be explicit.
 - rendered views or diagrams
 
 The graph should remain auditable by keeping generated artifacts separate from accepted source data.
+
+These artifacts should normally stay off `main` and be regenerated locally or on topic branches as needed.
 
 ## 8. Data Flow
 

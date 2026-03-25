@@ -1,2 +1,144 @@
 # Canonical node records for the deeper pinch-singularities batch.
-[]
+- id: complex_analysis.contour_deformation
+  label: Contour deformation
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Standard complex-analysis procedure of continuously moving an integration contour while tracking which singularities obstruct the motion.
+  status: asserted
+- id: complex_analysis.poles_vs_branch_points
+  label: Poles vs branch points
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Distinction between isolated pole singularities and branch-point or cut singularities, including the different ways they obstruct contour motion.
+  status: asserted
+- id: qft.analytic_continuation_in_kinematic_invariants
+  label: Analytic continuation in kinematic invariants
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Analytic continuation of amplitudes as functions of external invariant variables, used to track how singular loci move between physical regions.
+  status: asserted
+- id: qft.distributional_boundary_values
+  label: Distributional boundary values
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Interpretation of singular expressions as boundary values of analytic functions, including the distributional meaning of plus or minus i0 prescriptions.
+  status: asserted
+- id: qft.feynman_i_epsilon_prescription
+  label: Feynman i epsilon prescription
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Prescription that displaces propagator poles off the real axis to define causal contour choices in relativistic QFT.
+  status: asserted
+- id: qft.landau_singularity_conditions
+  label: Landau singularity conditions
+  knowledge_kind: formal_statement
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Conditions characterizing candidate singular loci of Feynman integrals through simultaneous on-shell constraints and stationary conditions in loop-momentum space.
+  status: asserted
+- id: qft.loop_energy_contour_analysis
+  label: Loop-energy contour analysis
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Method of isolating loop-energy integrations and tracking how propagator poles approach or trap the contour.
+  status: asserted
+- id: qft.loop_momentum_integration_structure
+  label: Loop-momentum integration structure
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Organization of a Feynman integral as a coupled loop-momentum integration problem whose singular behavior depends on the geometry of denominators and stationary directions.
+  status: asserted
+- id: qft.loop_momentum_stationarity_conditions
+  label: Loop-momentum stationarity conditions
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Stationary conditions on loop momenta that accompany on-shell denominators in the Landau analysis of singular loci.
+  status: asserted
+- id: qft.on_shell_propagator_conditions
+  label: On-shell propagator conditions
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Requirement that selected propagator denominators vanish on a candidate singular locus.
+  status: asserted
+- id: qft.opposite_side_pole_placement
+  label: Opposite-side pole placement
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Configuration in which relevant poles sit on opposite sides of the contour so that no single deformation avoids them once they coalesce.
+  status: asserted
+- id: qft.pinch_singularities
+  label: Pinch singularities
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Singular configurations in which contour deformations are obstructed by competing singularities that trap the contour.
+  status: asserted
+- id: qft.propagator_singularities
+  label: Propagator singularities
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Singular structure contributed by propagator denominators, especially the location and interpretation of their poles and threshold behavior.
+  status: asserted

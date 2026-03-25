@@ -1,2 +1,436 @@
 # Canonical dependency edges for the deeper pinch-singularities batch.
-[]
+- from: complex_analysis.poles_vs_branch_points
+  to: qft.propagator_singularities
+  relation_type: requires_for_recognize
+  necessity: typical
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: literature_reading
+  rationale: Recognizing propagator singularities in the literature usually requires distinguishing isolated poles from branch-point or cut behavior.
+  failure_mode_if_absent: Cannot parse whether a discussion is about propagator poles, threshold branch points, or a mixture of both.
+  evidence:
+    - type: expert_claim
+      source_ref: pinch_singularities_deep_batch_initial
+      note: Codex-authored deep batch grounded in the batch brief and source notes.
+  status: asserted
+  confidence: 0.87
+- from: qft.propagator_singularities
+  to: qft.opposite_side_pole_placement
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: literature_reading
+  rationale: A reader cannot recognize opposite-side pole placement without first identifying the singularities whose relative positions are being compared.
+  failure_mode_if_absent: Cannot tell what it means for poles to approach the contour from different sides.
+  evidence:
+    - type: expert_claim
+      source_ref: pinch_singularities_deep_batch_initial
+      note: Recognition-level bridge between propagator poles and contour pinches.
+  status: asserted
+  confidence: 0.89
+- from: qft.opposite_side_pole_placement
+  to: qft.pinch_singularities
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: literature_reading
+  rationale: Research papers often characterize a pinch by saying that poles approach the contour from opposite sides and trap it.
+  failure_mode_if_absent: Cannot recognize why the described singular configuration counts as a pinch rather than a generic singularity.
+  evidence:
+    - type: expert_claim
+      source_ref: pinch_singularities_deep_batch_initial
+      note: Encodes the literature-facing contour-trapping characterization.
+  status: asserted
+  confidence: 0.9
+- from: qft.propagator_singularities
+  to: qft.pinch_singularities
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: literature_reading
+  rationale: A pinch singularity is recognized as a singular configuration built from propagator singularities that obstruct contour motion.
+  failure_mode_if_absent: Cannot identify what object is actually becoming singular in the standard paper-level discussion.
+  evidence:
+    - type: expert_claim
+      source_ref: pinch_singularities_deep_batch_initial
+      note: Preserves the direct recognition path from the seed slice.
+  status: asserted
+  confidence: 0.95
+- from: complex_analysis.contour_deformation
+  to: qft.loop_energy_contour_analysis
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: standard_computation
+  rationale: Loop-energy contour analysis is a specialized contour-deformation argument and inherits the underlying method directly.
+  failure_mode_if_absent: Cannot execute the contour step that tests whether the loop-energy integration can be deformed away from singularities.
+  evidence:
+    - type: expert_claim
+      source_ref: pinch_singularities_deep_batch_initial
+      note: Specializes the general contour method to the loop-energy setting.
+  status: asserted
+  confidence: 0.95
+- from: complex_analysis.poles_vs_branch_points
+  to: qft.loop_energy_contour_analysis
+  relation_type: requires_for_use
+  necessity: typical
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: standard_computation
+  rationale: Standard loop-energy arguments compare pole obstructions with branch-point or cut obstructions when deciding whether a contour can be moved.
+  failure_mode_if_absent: Misidentifies which singular features obstruct the contour and which reflect branch structure in the invariant variables.
+  evidence:
+    - type: expert_claim
+      source_ref: pinch_singularities_deep_batch_initial
+      note: Keeps the complex-analysis distinction visible at use level.
+  status: asserted
+  confidence: 0.86
+- from: qft.feynman_i_epsilon_prescription
+  to: qft.propagator_singularities
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: standard_computation
+  rationale: The Feynman prescription determines how propagator poles are displaced and therefore how the contour argument is read.
+  failure_mode_if_absent: Cannot track why poles sit above or below the integration contour in the standard argument.
+  evidence:
+    - type: expert_claim
+      source_ref: pinch_singularities_deep_batch_initial
+      note: Retains the core seed dependency in the deeper batch.
+  status: asserted
+  confidence: 0.95
+- from: qft.feynman_i_epsilon_prescription
+  to: qft.opposite_side_pole_placement
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: standard_computation
+  rationale: Opposite-side pole placement is determined operationally by the plus or minus i epsilon displacement of the poles.
+  failure_mode_if_absent: Cannot determine why two poles lie on opposite sides of the contour rather than the same side.
+  evidence:
+    - type: expert_claim
+      source_ref: pinch_singularities_deep_batch_initial
+      note: Makes the pole-placement mechanism explicit instead of folding it into a single jump.
+  status: asserted
+  confidence: 0.94
+- from: qft.propagator_singularities
+  to: qft.opposite_side_pole_placement
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: standard_computation
+  rationale: One can only use opposite-side placement arguments after identifying the relevant propagator singularities whose positions are being compared.
+  failure_mode_if_absent: Cannot tell which poles are candidates to pinch the contour.
+  evidence:
+    - type: expert_claim
+      source_ref: pinch_singularities_deep_batch_initial
+      note: Keeps the contour-trapping mechanism tied to propagator geometry.
+  status: asserted
+  confidence: 0.93
+- from: qft.opposite_side_pole_placement
+  to: qft.loop_energy_contour_analysis
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: standard_computation
+  rationale: Loop-energy contour analysis becomes nontrivial precisely when opposite-side poles threaten to block a common deformation.
+  failure_mode_if_absent: Cannot decide when the contour argument actually fails rather than merely encountering isolated poles.
+  evidence:
+    - type: expert_claim
+      source_ref: pinch_singularities_deep_batch_initial
+      note: Encodes the local mechanism that produces the pinch.
+  status: asserted
+  confidence: 0.92
+- from: qft.loop_energy_contour_analysis
+  to: qft.pinch_singularities
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: standard_computation
+  rationale: Standard operational use of pinch singularities proceeds through a loop-energy contour argument that diagnoses when deformation fails.
+  failure_mode_if_absent: Cannot carry out the standard computation that exhibits the pinch by trapping the contour.
+  evidence:
+    - type: expert_claim
+      source_ref: pinch_singularities_deep_batch_initial
+      note: Main new use-level method node in the deep batch.
+  status: asserted
+  confidence: 0.94
+- from: complex_analysis.contour_deformation
+  to: qft.pinch_singularities
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: standard_computation
+  rationale: Even when specialized loop-energy machinery is used, the operational meaning of a pinch is still the failure of an attempted contour deformation.
+  failure_mode_if_absent: Cannot follow why the singular region cannot be avoided by moving the contour.
+  evidence:
+    - type: expert_claim
+      source_ref: pinch_singularities_deep_batch_initial
+      note: Keeps the direct contour-based use path visible.
+  status: asserted
+  confidence: 0.94
+- from: complex_analysis.poles_vs_branch_points
+  to: qft.pinch_singularities
+  relation_type: requires_for_use
+  necessity: typical
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: standard_computation
+  rationale: Practical pinch arguments often require separating pole pinches from branch-point obstructions in nearby analytic structure.
+  failure_mode_if_absent: Overstates or misclassifies which singular structures actually trap the contour.
+  evidence:
+    - type: expert_claim
+      source_ref: pinch_singularities_deep_batch_initial
+      note: Slightly weakened from the seed slice because the deep batch adds a more explicit mechanism layer.
+  status: asserted
+  confidence: 0.86
+- from: qft.propagator_singularities
+  to: qft.pinch_singularities
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: standard_computation
+  rationale: Standard pinch reasoning tracks how propagator singularities approach and trap the contour.
+  failure_mode_if_absent: Cannot follow the singularity-level part of the pinch analysis.
+  evidence:
+    - type: expert_claim
+      source_ref: pinch_singularities_deep_batch_initial
+      note: Preserves the direct propagator route from the seed slice.
+  status: asserted
+  confidence: 0.95
+- from: qft.analytic_continuation_in_kinematic_invariants
+  to: qft.pinch_singularities
+  relation_type: requires_for_use
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: standard_computation
+  rationale: Many practical discussions of pinch singularities are framed as statements about where singular loci appear after continuing the external invariants.
+  failure_mode_if_absent: Can follow a local contour argument but not its interpretation as a singularity in the invariant variables of the amplitude.
+  evidence:
+    - type: expert_claim
+      source_ref: pinch_singularities_deep_batch_initial
+      note: Adds the external-variable viewpoint without making it mandatory for all uses.
+  status: asserted
+  confidence: 0.85
+- from: qft.loop_momentum_integration_structure
+  to: qft.landau_singularity_conditions
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: standard_computation
+  rationale: Using the Landau conditions requires understanding the integral as a coupled loop-momentum problem rather than a single contour variable.
+  failure_mode_if_absent: Cannot interpret the stationary conditions or the geometry of the singular locus in loop-momentum space.
+  evidence:
+    - type: expert_claim
+      source_ref: pinch_singularities_deep_batch_initial
+      note: Distinguishes the multi-variable Landau viewpoint from the one-variable contour picture.
+  status: asserted
+  confidence: 0.91
+- from: qft.propagator_singularities
+  to: qft.landau_singularity_conditions
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: standard_computation
+  rationale: The Landau conditions are statements about when propagator denominators simultaneously become singular.
+  failure_mode_if_absent: Cannot identify the denominators whose vanishing defines the candidate singular locus.
+  evidence:
+    - type: expert_claim
+      source_ref: pinch_singularities_deep_batch_initial
+      note: Local bridge from propagator geometry to Landau analysis.
+  status: asserted
+  confidence: 0.92
+- from: qft.analytic_continuation_in_kinematic_invariants
+  to: qft.landau_singularity_conditions
+  relation_type: requires_for_use
+  necessity: typical
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: standard_computation
+  rationale: Landau singular loci are typically used as statements about where a Feynman integral becomes singular as a function of the external invariants.
+  failure_mode_if_absent: Can manipulate the equations formally but cannot connect them to singular surfaces in the variables of interest.
+  evidence:
+    - type: expert_claim
+      source_ref: pinch_singularities_deep_batch_initial
+      note: Keeps the kinematic-variable interpretation attached to Landau use.
+  status: asserted
+  confidence: 0.88
+- from: qft.landau_singularity_conditions
+  to: qft.pinch_singularities
+  relation_type: requires_for_use
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: standard_computation
+  rationale: For many loop-integral analyses, the Landau conditions provide a practical way to locate the same singular regions that later appear as contour pinches.
+  failure_mode_if_absent: Can perform local contour reasoning but lacks a standard global criterion for where pinch singularities can occur.
+  evidence:
+    - type: expert_claim
+      source_ref: pinch_singularities_deep_batch_initial
+      note: Marks Landau analysis as overlapping but not mandatory for all use-level tasks.
+  status: asserted
+  confidence: 0.86
+- from: qft.distributional_boundary_values
+  to: qft.feynman_i_epsilon_prescription
+  relation_type: requires_for_derive
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: derivation_reproduction
+  rationale: Deriving the meaning of the Feynman prescription requires interpreting plus or minus i0 limits as boundary values of distributions.
+  failure_mode_if_absent: Cannot justify the formal limit that turns a propagator denominator into a contour prescription with distributional meaning.
+  evidence:
+    - type: expert_claim
+      source_ref: pinch_singularities_deep_batch_initial
+      note: Adds the analytic underpinning for the derive-level graph.
+  status: asserted
+  confidence: 0.9
+- from: qft.propagator_singularities
+  to: qft.on_shell_propagator_conditions
+  relation_type: requires_for_derive
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: derivation_reproduction
+  rationale: The on-shell part of the Landau analysis is a sharpened statement about propagator denominators vanishing.
+  failure_mode_if_absent: Cannot justify why the candidate singular locus is defined by vanishing propagator denominators.
+  evidence:
+    - type: expert_claim
+      source_ref: pinch_singularities_deep_batch_initial
+      note: Splits out the first formal component of the Landau conditions.
+  status: asserted
+  confidence: 0.92
+- from: qft.loop_momentum_integration_structure
+  to: qft.loop_momentum_stationarity_conditions
+  relation_type: requires_for_derive
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: derivation_reproduction
+  rationale: The stationarity equations arise by analyzing how the full loop-momentum integral responds to deformations in coupled momentum directions.
+  failure_mode_if_absent: Cannot justify where the stationary conditions come from or what they constrain.
+  evidence:
+    - type: expert_claim
+      source_ref: pinch_singularities_deep_batch_initial
+      note: Separates the multi-variable stationary piece from the contour argument.
+  status: asserted
+  confidence: 0.9
+- from: qft.on_shell_propagator_conditions
+  to: qft.landau_singularity_conditions
+  relation_type: requires_for_derive
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: derivation_reproduction
+  rationale: The Landau conditions include the requirement that relevant propagators go on shell, so deriving them uses this component explicitly.
+  failure_mode_if_absent: Cannot reproduce the part of the derivation that identifies the singular locus by vanishing denominators.
+  evidence:
+    - type: expert_claim
+      source_ref: pinch_singularities_deep_batch_initial
+      note: Makes the Landau derivation traceable rather than monolithic.
+  status: asserted
+  confidence: 0.93
+- from: qft.loop_momentum_stationarity_conditions
+  to: qft.landau_singularity_conditions
+  relation_type: requires_for_derive
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: derivation_reproduction
+  rationale: The Landau conditions also require stationarity with respect to loop-momentum deformations, not just on-shell denominators.
+  failure_mode_if_absent: Cannot reproduce the part of the derivation that turns vanishing denominators into a trapped multi-variable integration geometry.
+  evidence:
+    - type: expert_claim
+      source_ref: pinch_singularities_deep_batch_initial
+      note: Provides the second formal component of the Landau derivation.
+  status: asserted
+  confidence: 0.93
+- from: qft.analytic_continuation_in_kinematic_invariants
+  to: qft.landau_singularity_conditions
+  relation_type: requires_for_derive
+  necessity: typical
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: derivation_reproduction
+  rationale: Deriving the interpretive content of the Landau conditions usually includes showing how they determine singular surfaces in the external invariants.
+  failure_mode_if_absent: Can derive equations formally but cannot connect them to singular loci of the analytically continued amplitude.
+  evidence:
+    - type: expert_claim
+      source_ref: pinch_singularities_deep_batch_initial
+      note: Keeps the derive-level story tied to the amplitude as a function.
+  status: asserted
+  confidence: 0.87
+- from: qft.distributional_boundary_values
+  to: qft.pinch_singularities
+  relation_type: requires_for_derive
+  necessity: typical
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: derivation_reproduction
+  rationale: A careful derive-level treatment of pinch singularities often relies on boundary-value language to justify how the contour prescription behaves at the singular limit.
+  failure_mode_if_absent: Can repeat a heuristic contour story but cannot justify the singular limit with distributional precision.
+  evidence:
+    - type: expert_claim
+      source_ref: pinch_singularities_deep_batch_initial
+      note: Included only at derive level to avoid overburdening the use graph.
+  status: asserted
+  confidence: 0.85
+- from: qft.loop_energy_contour_analysis
+  to: qft.pinch_singularities
+  relation_type: requires_for_derive
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: derivation_reproduction
+  rationale: Deriving pinch singularities still requires the explicit contour argument that exhibits the obstruction locally.
+  failure_mode_if_absent: Cannot reproduce the concrete contour derivation that shows how the singularity traps the integration path.
+  evidence:
+    - type: expert_claim
+      source_ref: pinch_singularities_deep_batch_initial
+      note: Carries the operational contour method into the derive-level graph.
+  status: asserted
+  confidence: 0.92
+- from: qft.landau_singularity_conditions
+  to: qft.pinch_singularities
+  relation_type: requires_for_derive
+  necessity: typical
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: derivation_reproduction
+  rationale: A derive-level account of pinch singularities in loop integrals typically uses the Landau conditions to characterize where the trapped contour configurations can occur.
+  failure_mode_if_absent: Can produce a local contour obstruction but not the standard criterion relating it to singular loci of the full integral.
+  evidence:
+    - type: expert_claim
+      source_ref: pinch_singularities_deep_batch_initial
+      note: Encodes overlap with the standard Landau analysis without making it the only route.
+  status: asserted
+  confidence: 0.89
+- from: qft.loop_momentum_integration_structure
+  to: qft.pinch_singularities
+  relation_type: requires_for_derive
+  necessity: typical
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: derivation_reproduction
+  rationale: Derive-level pinch arguments for loop integrals require understanding how contour trapping sits inside the full coupled loop-momentum integration problem.
+  failure_mode_if_absent: Treats the pinch as a one-variable accident and misses the multi-variable structure that supports the full derivation.
+  evidence:
+    - type: expert_claim
+      source_ref: pinch_singularities_deep_batch_initial
+      note: Makes the jump from local contour mechanics to full loop-integral structure explicit.
+  status: asserted
+  confidence: 0.88

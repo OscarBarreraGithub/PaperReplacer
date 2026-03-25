@@ -6,6 +6,7 @@ Key docs:
 
 - [idea.md](/Users/emmy/Documents/KnowledgeGraph/idea.md): ontology and semantic design
 - [plan.md](/Users/emmy/Documents/KnowledgeGraph/plan.md): implementation workflow
+- [CONTRIBUTING.md](/Users/emmy/Documents/KnowledgeGraph/CONTRIBUTING.md): branch and merge discipline
 
 ## Local UI
 
@@ -28,11 +29,14 @@ The UI reads compiled batch data and lets you:
 
 ## Current State
 
-The current canonical authored slice is the `seed_pinch_singularities` batch in [data/authored/](/Users/emmy/Documents/KnowledgeGraph/data/authored).
+The authored graph currently contains two pinch-singularities-oriented batches in [data/authored/](/Users/emmy/Documents/KnowledgeGraph/data/authored):
+
+- `seed_pinch_singularities`: calibration fixture and regression slice
+- `pinch_singularities_deep`: the richer production-oriented batch around the same canonical `qft.pinch_singularities` node
 
 Important note:
 
-- `seed_pinch_singularities` should now be treated as a calibration fixture and regression slice, not as the final deep graph for the topic.
-- the deeper production-oriented follow-up batch is [pinch_singularities_deep](/Users/emmy/Documents/KnowledgeGraph/data/batches/pinch_singularities_deep).
+- `seed_pinch_singularities` should be kept for calibration and tests, not treated as the main topic-facing graph.
+- `pinch_singularities_deep` is the branch-ready local graph expansion that adds the deeper analytic neighborhood for the topic.
 
-Agent-generated proposal packs live under [data/batches/](/Users/emmy/Documents/KnowledgeGraph/data/batches).
+Agent-generated proposal packs live under [data/batches/](/Users/emmy/Documents/KnowledgeGraph/data/batches) locally, but should normally stay off `main`.

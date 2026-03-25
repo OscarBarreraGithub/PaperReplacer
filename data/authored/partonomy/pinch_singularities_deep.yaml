@@ -1,2 +1,11 @@
 # Canonical partonomy edges for the deeper pinch-singularities batch.
-[]
+- parent: qft.landau_singularity_conditions
+  child: qft.on_shell_propagator_conditions
+  rationale: The Landau conditions decompose into an on-shell denominator component together with stationary conditions on loop-momentum variations.
+  status: asserted
+  confidence: 0.91
+- parent: qft.landau_singularity_conditions
+  child: qft.loop_momentum_stationarity_conditions
+  rationale: The stationary loop-momentum constraints are a structural component of the Landau conditions rather than a separate downstream topic.
+  status: asserted
+  confidence: 0.91

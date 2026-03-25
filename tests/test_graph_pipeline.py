@@ -23,6 +23,11 @@ class GraphPipelineTests(unittest.TestCase):
         report = validate_batch_records(records)
         self.assertTrue(report["valid"], report)
 
+    def test_deep_batch_validates(self) -> None:
+        records = load_batch_records("pinch_singularities_deep")
+        report = validate_batch_records(records)
+        self.assertTrue(report["valid"], report)
+
     def test_use_prerequisites_close_over_chain(self) -> None:
         records = load_batch_records("seed_pinch_singularities")
         bundle = compile_batch(records)
@@ -43,6 +48,31 @@ class GraphPipelineTests(unittest.TestCase):
         }
         self.assertTrue(derived["qft.feynman_i_epsilon_prescription"])
         self.assertFalse(derived["qft.propagator_singularities"])
+
+    def test_deep_batch_use_prerequisites_capture_richer_local_structure(self) -> None:
+        records = load_batch_records("pinch_singularities_deep")
+        bundle = compile_batch(records)
+        result = prerequisites(bundle, "qft.pinch_singularities", "requires_for_use")
+        node_ids = {item["node_id"] for item in result["results"]}
+        self.assertEqual(
+            node_ids,
+            {
+                "complex_analysis.contour_deformation",
+                "complex_analysis.poles_vs_branch_points",
+                "qft.analytic_continuation_in_kinematic_invariants",
+                "qft.feynman_i_epsilon_prescription",
+                "qft.landau_singularity_conditions",
+                "qft.loop_energy_contour_analysis",
+                "qft.loop_momentum_integration_structure",
+                "qft.opposite_side_pole_placement",
+                "qft.propagator_singularities",
+            },
+        )
+        derived = {item["node_id"]: item["derived"] for item in result["results"]}
+        self.assertTrue(derived["qft.feynman_i_epsilon_prescription"])
+        self.assertTrue(derived["qft.loop_momentum_integration_structure"])
+        self.assertTrue(derived["qft.opposite_side_pole_placement"])
+        self.assertFalse(derived["qft.loop_energy_contour_analysis"])
 
     def test_frontier_semantics_returns_leaves(self) -> None:
         records = load_batch_records("seed_pinch_singularities")
