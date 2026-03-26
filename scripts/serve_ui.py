@@ -13,6 +13,7 @@ from urllib.parse import parse_qs, urlparse
 import webbrowser
 
 from kg_core import (
+    ALL_AUTHORED_BATCH_ID,
     BATCHES_DIR,
     expanded_slice,
     intrinsic_vs_profile_adjusted,
@@ -118,7 +119,12 @@ def _required(query: dict[str, list[str]], key: str) -> str:
 
 
 def list_batches() -> list[dict[str, str]]:
-    batches = []
+    batches = [
+        {
+            "batch_id": ALL_AUTHORED_BATCH_ID,
+            "description": "Synthetic connected view combining all authored batches.",
+        }
+    ]
     for batch_dir in sorted(path for path in BATCHES_DIR.iterdir() if path.is_dir()):
         contract_path = batch_dir / "batch_contract.yaml"
         description = ""

@@ -10,6 +10,7 @@ if str(SCRIPTS) not in sys.path:
 from kg_core import (  # noqa: E402
     BatchRecords,
     compile_batch,
+    load_all_authored_records,
     load_batch_records,
     prerequisite_set,
     prerequisites,
@@ -152,6 +153,17 @@ class GraphPipelineTests(unittest.TestCase):
             )
         finally:
             temp_path.unlink(missing_ok=True)
+
+    def test_all_authored_bundle_compiles_as_connected_view(self) -> None:
+        records = load_all_authored_records()
+        report = validate_batch_records(records)
+        self.assertTrue(report["valid"], report)
+        bundle = compile_batch(records)
+        node_ids = {node["id"] for node in bundle["nodes"]}
+        self.assertIn("qft.pinch_singularities", node_ids)
+        self.assertIn("qft.free_scalar_field", node_ids)
+        self.assertIn("qft.feynman_rules", node_ids)
+        self.assertIn("qft.dirac_spinor", node_ids)
 
 
 if __name__ == "__main__":

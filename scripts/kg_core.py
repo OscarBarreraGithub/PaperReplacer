@@ -17,6 +17,7 @@ SCHEMAS_DIR = ROOT / "schemas"
 AUTHORED_DIR = ROOT / "data" / "authored"
 BATCHES_DIR = ROOT / "data" / "batches"
 GENERATED_DIR = ROOT / "data" / "generated"
+ALL_AUTHORED_BATCH_ID = "all_authored"
 
 NECESSITY_ORDER = {"helpful": 0, "typical": 1, "necessary": 2}
 
@@ -309,6 +310,92 @@ def load_batch_records(batch_id: str) -> BatchRecords:
     )
 
 
+def _load_authored_payload(kind: str) -> list[tuple[str, list[dict[str, Any]]]]:
+    records: list[tuple[str, list[dict[str, Any]]]] = []
+    directory = AUTHORED_DIR / kind
+    for path in sorted(directory.glob("*.yaml")):
+        payload = load_yaml_subset(path) or []
+        if not isinstance(payload, list):
+            raise ValueError(f"{kind} file for {path.stem} must contain a list.")
+        records.append((path.stem, payload))
+    return records
+
+
+def _merge_nodes_for_global_bundle(
+    node_batches: list[tuple[str, list[dict[str, Any]]]]
+) -> tuple[list[dict[str, Any]], list[str]]:
+    merged: dict[str, dict[str, Any]] = {}
+    origin_by_id: dict[str, str] = {}
+    warnings: list[str] = []
+    for batch_id, payload in node_batches:
+        for node in payload:
+            if not isinstance(node, dict) or "id" not in node:
+                continue
+            node_id = node["id"]
+            existing = merged.get(node_id)
+            if existing is None:
+                merged[node_id] = dict(node)
+                origin_by_id[node_id] = batch_id
+                continue
+            if existing != node:
+                warnings.append(
+                    "global merge warning: conflicting duplicate node definition for "
+                    f"{node_id} between batches {origin_by_id[node_id]} and {batch_id}; "
+                    "kept first definition"
+                )
+    return _sorted_records(list(merged.values()), ["id"]), warnings
+
+
+def _dedupe_records(
+    record_batches: list[tuple[str, list[dict[str, Any]]]],
+    sort_keys: list[str],
+) -> list[dict[str, Any]]:
+    deduped: dict[str, dict[str, Any]] = {}
+    for _, payload in record_batches:
+        for record in payload:
+            if not isinstance(record, dict):
+                continue
+            fingerprint = json.dumps(record, sort_keys=True)
+            deduped.setdefault(fingerprint, dict(record))
+    return _sorted_records(list(deduped.values()), sort_keys)
+
+
+def load_all_authored_records() -> BatchRecords:
+    node_batches = _load_authored_payload("nodes")
+    dependency_batches = _load_authored_payload("dependencies")
+    partonomy_batches = _load_authored_payload("partonomy")
+    overlay_batches = _load_authored_payload("overlays")
+
+    nodes, merge_warnings = _merge_nodes_for_global_bundle(node_batches)
+    dependencies = _dedupe_records(dependency_batches, ["relation_type", "from", "to"])
+    partonomy = _dedupe_records(partonomy_batches, ["parent", "child"])
+    overlays = _dedupe_records(overlay_batches, ["target_topic", "presumed_node"])
+
+    allowed_relations = sorted(
+        {
+            edge.get("relation_type")
+            for edge in dependencies
+            if isinstance(edge, dict) and edge.get("relation_type")
+        }
+    )
+    contract = {
+        "description": "Synthetic global bundle combining all authored batches.",
+        "allowed_relations": allowed_relations,
+        "closure": {
+            "exclude_statuses": ["disputed"],
+        },
+        "_merge_warnings": merge_warnings,
+    }
+    return BatchRecords(
+        batch_id=ALL_AUTHORED_BATCH_ID,
+        contract=contract,
+        nodes=nodes,
+        dependencies=dependencies,
+        partonomy=partonomy,
+        overlays=overlays,
+    )
+
+
 def load_authored_nodes_by_batch(exclude_batch_id: str | None = None) -> list[dict[str, Any]]:
     collected: list[dict[str, Any]] = []
     nodes_dir = AUTHORED_DIR / "nodes"
@@ -362,7 +449,7 @@ def _cycle_path(graph: dict[str, list[str]]) -> list[str] | None:
 
 def validate_batch_records(records: BatchRecords) -> dict[str, Any]:
     errors: list[str] = []
-    warnings: list[str] = []
+    warnings: list[str] = list(records.contract.get("_merge_warnings", []))
 
     node_schema = load_schema("node.schema.json")
     dependency_schema = load_schema("dependency.schema.json")
@@ -550,7 +637,10 @@ def load_or_compile_bundle(batch_id: str) -> dict[str, Any]:
     path = compiled_bundle_path(batch_id)
     if path.exists():
         return load_json(path)
-    records = load_batch_records(batch_id)
+    if batch_id == ALL_AUTHORED_BATCH_ID:
+        records = load_all_authored_records()
+    else:
+        records = load_batch_records(batch_id)
     report = validate_batch_records(records)
     if not report["valid"]:
         raise ValueError(json.dumps(report, indent=2))
