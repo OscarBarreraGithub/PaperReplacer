@@ -1,0 +1,27 @@
+# Canonical overlay annotations for the QED loop-precision refinement batch.
+- overlay_type: assumed_background
+  target_topic: qed.qed_loop_precision_refinement
+  presumed_node: qft.renormalized_perturbation_theory
+  audience_profile: hep_th_grad
+  subfield: qed
+  artifact_type: paper
+  rationale: Sources discussing the electron self-energy, g-2, or Uehling potential usually presume the generic renormalized perturbation-theory workflow is already familiar.
+  evidence:
+    - type: expert_claim
+      source_ref: qed_loop_precision_refinement_batch_initial
+      note: Source notes keep the renormalized perturbation-theory branch as assumed background for the entire QED loop slice.
+  status: asserted
+  confidence: 0.88
+- overlay_type: assumed_background
+  target_topic: qed.qed_loop_precision_refinement
+  presumed_node: qft.free_dirac_field
+  audience_profile: hep_th_grad
+  subfield: qed
+  artifact_type: paper
+  rationale: The electron-sector precision corrections are usually introduced after the basic electron field vocabulary is already in place.
+  evidence:
+    - type: expert_claim
+      source_ref: qed_loop_precision_refinement_batch_initial
+      note: Source notes treat the free Dirac field as assumed fermionic background for the QED loop payoff nodes.
+  status: asserted
+  confidence: 0.86

@@ -1,0 +1,61 @@
+# Canonical dependency edges for the Schwinger-pair-production refinement batch.
+- from: qft.background_field
+  to: qft.schwinger_pair_production
+  relation_type: requires_for_recognize
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: Schwinger pair production is discussed as a vacuum instability in a prescribed background field, so the background-field concept helps orient the physical setup.
+  failure_mode_if_absent: The phenomenon appears as spontaneous particle creation with no clear external-field context.
+  evidence:
+    - type: expert_claim
+      source_ref: schwinger_pair_production_refinement_batch_initial
+      note: Source notes keep the new node tied directly to the existing background-field vocabulary.
+  status: asserted
+  confidence: 0.86
+- from: qft.background_field_method
+  to: qft.schwinger_pair_production
+  relation_type: requires_for_recognize
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: The standard derivation is framed in the background-field method, so that methodology helps place the payoff node.
+  failure_mode_if_absent: The result looks detached from the technique that produces it in the effective-action chapter.
+  evidence:
+    - type: expert_claim
+      source_ref: schwinger_pair_production_refinement_batch_initial
+      note: Source notes keep pair production attached to the existing background-field-method branch rather than to a standalone Schwinger subgraph.
+  status: asserted
+  confidence: 0.84
+- from: qft.one_loop_effective_action
+  to: qft.schwinger_pair_production
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: The production rate is read from the one-loop effective action in the external-field background.
+  failure_mode_if_absent: Cannot tell what quantum object is acquiring the imaginary part that signals vacuum instability.
+  evidence:
+    - type: expert_claim
+      source_ref: schwinger_pair_production_refinement_batch_initial
+      note: Source notes use the one-loop effective action as the main existing computation-side parent of the new payoff node.
+  status: asserted
+  confidence: 0.95
+- from: qft.schwinger_proper_time
+  to: qft.schwinger_pair_production
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: The standard presentation of Schwinger pair production evaluates the background-field effective action with the proper-time method.
+  failure_mode_if_absent: Cannot follow how the pair-production formula is actually obtained from the existing background-field toolkit.
+  evidence:
+    - type: expert_claim
+      source_ref: schwinger_pair_production_refinement_batch_initial
+      note: Source notes keep the previously landed proper-time method as the central formal prerequisite for the new payoff node.
+  status: asserted
+  confidence: 0.97

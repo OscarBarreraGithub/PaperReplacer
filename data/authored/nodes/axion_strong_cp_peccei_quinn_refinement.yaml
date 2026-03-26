@@ -1,0 +1,111 @@
+# Canonical node records for the axion / strong-CP / Peccei-Quinn refinement batch.
+- id: qcd.nonperturbative_qcd_and_topology
+  label: Nonperturbative QCD and topology
+  knowledge_kind: concept
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Topic anchor for the Wilson-loop, confinement, instanton, and theta-vacuum branches of nonperturbative QCD.
+  status: asserted
+- id: sm.symmetry_breaking_and_standard_model
+  label: Symmetry breaking and the Standard Model
+  knowledge_kind: concept
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Topic anchor for the first-pass Standard Model neighborhood around spontaneous symmetry breaking, the Higgs sector, and electroweak mass generation.
+  status: asserted
+- id: qcd.theta_vacuum
+  label: Theta-vacuum
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Superselection structure of QCD vacua weighted by a theta angle that couples to topological charge.
+  status: asserted
+- id: qft.instanton
+  label: Instanton
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Finite-action Euclidean Yang-Mills field configuration in a nontrivial topological sector, contributing nonperturbatively to amplitudes or vacuum structure.
+  status: asserted
+- id: sm.ssb.spontaneous_symmetry_breaking
+  label: Spontaneous symmetry breaking
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Situation in which the equations respect a symmetry but the chosen vacuum state does not.
+  status: asserted
+- id: sm.ssb.goldstone_boson
+  label: Goldstone boson
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Massless mode associated with a spontaneously broken continuous global symmetry.
+  status: asserted
+- id: sm.chiral_anomaly
+  label: Chiral anomaly
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Anomaly in the chiral current or chiral symmetry reading that appears in Standard Model discussions.
+  status: asserted
+- id: qcd.strong_cp_problem
+  label: Strong CP problem
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Puzzle that QCD allows a CP-violating theta term, yet the observed strong interactions appear extraordinarily close to CP conserving.
+  status: asserted
+- id: sm.peccei_quinn_symmetry
+  label: Peccei-Quinn symmetry
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Global chiral symmetry introduced so that its breaking can dynamically relax the effective QCD theta angle.
+  status: asserted
+- id: sm.pseudo_goldstone_boson
+  label: Pseudo-Goldstone boson
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Light scalar mode associated with an approximate spontaneously broken global symmetry, with a small mass from explicit symmetry breaking.
+  status: asserted
+- id: sm.axion
+  label: Axion
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Pseudo-Goldstone boson of broken Peccei-Quinn symmetry whose dynamics address the strong CP problem.
+  status: asserted

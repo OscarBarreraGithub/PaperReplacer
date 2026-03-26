@@ -1,0 +1,121 @@
+# Canonical dependency edges for the axion / strong-CP / Peccei-Quinn refinement batch.
+- from: qcd.theta_vacuum
+  to: qcd.strong_cp_problem
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: standard_model
+  task_type: literature_reading
+  rationale: The strong-CP problem is the puzzle of why the theta-vacuum branch does not lead to appreciable strong CP violation.
+  failure_mode_if_absent: Cannot tell what physical parameter or vacuum-angle structure is supposed to be unnaturally small.
+  evidence:
+    - type: expert_claim
+      source_ref: axion_strong_cp_peccei_quinn_refinement_batch_initial
+      note: Source notes keep strong CP attached directly to the existing theta-vacuum branch.
+  status: asserted
+  confidence: 0.96
+- from: qcd.strong_cp_problem
+  to: sm.peccei_quinn_symmetry
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: standard_model
+  task_type: literature_reading
+  rationale: In this Schwartz-facing branch, Peccei-Quinn symmetry is introduced as the mechanism-side response to the strong-CP problem.
+  failure_mode_if_absent: The PQ-symmetry node looks like an arbitrary extra symmetry rather than the standard proposed resolution of a specific QCD puzzle.
+  evidence:
+    - type: expert_claim
+      source_ref: axion_strong_cp_peccei_quinn_refinement_batch_initial
+      note: Source notes keep the strong-CP problem as the immediate motivation for the PQ branch.
+  status: asserted
+  confidence: 0.95
+- from: sm.ssb.spontaneous_symmetry_breaking
+  to: sm.peccei_quinn_symmetry
+  relation_type: requires_for_use
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: standard_model
+  task_type: literature_reading
+  rationale: The axion story uses the spontaneously broken realization of Peccei-Quinn symmetry, not merely the bare name of the symmetry.
+  failure_mode_if_absent: Cannot see why PQ symmetry produces a new light mode instead of remaining a static label on the Lagrangian.
+  evidence:
+    - type: expert_claim
+      source_ref: axion_strong_cp_peccei_quinn_refinement_batch_initial
+      note: Source notes keep spontaneous-symmetry-breaking vocabulary as the symmetry-side bridge of the batch.
+  status: asserted
+  confidence: 0.88
+- from: sm.ssb.goldstone_boson
+  to: sm.pseudo_goldstone_boson
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: standard_model
+  task_type: literature_reading
+  rationale: A pseudo-Goldstone boson is read as the approximate or softly lifted version of the Goldstone concept.
+  failure_mode_if_absent: The pseudo-Goldstone node appears as a bare modifier with no visible parent concept.
+  evidence:
+    - type: expert_claim
+      source_ref: axion_strong_cp_peccei_quinn_refinement_batch_initial
+      note: Source notes keep the pseudo-Goldstone bridge attached to the existing Goldstone vocabulary.
+  status: asserted
+  confidence: 0.95
+- from: sm.ssb.spontaneous_symmetry_breaking
+  to: sm.pseudo_goldstone_boson
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: standard_model
+  task_type: literature_reading
+  rationale: Pseudo-Goldstone language still relies on the symmetry having been spontaneously broken before explicit effects give the mode a small mass.
+  failure_mode_if_absent: Cannot tell why the pseudo-Goldstone concept belongs to the symmetry-breaking branch at all.
+  evidence:
+    - type: expert_claim
+      source_ref: axion_strong_cp_peccei_quinn_refinement_batch_initial
+      note: Source notes keep pseudo-Goldstone language tied to the same symmetry-breaking branch as Goldstone bosons.
+  status: asserted
+  confidence: 0.93
+- from: sm.peccei_quinn_symmetry
+  to: sm.axion
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: standard_model
+  task_type: literature_reading
+  rationale: The axion is the characteristic low-energy payoff of broken Peccei-Quinn symmetry in the strong-CP story.
+  failure_mode_if_absent: The axion node appears as an isolated particle name with no mechanism-side origin.
+  evidence:
+    - type: expert_claim
+      source_ref: axion_strong_cp_peccei_quinn_refinement_batch_initial
+      note: Source notes keep the axion downstream of the Peccei-Quinn branch rather than as a detached BSM leaf.
+  status: asserted
+  confidence: 0.97
+- from: sm.pseudo_goldstone_boson
+  to: sm.axion
+  relation_type: requires_for_recognize
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: standard_model
+  task_type: literature_reading
+  rationale: The pseudo-Goldstone description is the compact conceptual bridge that places the axion inside existing symmetry-breaking language.
+  failure_mode_if_absent: The axion payoff is less connected to the already-authored Goldstone and symmetry-breaking neighborhood.
+  evidence:
+    - type: expert_claim
+      source_ref: axion_strong_cp_peccei_quinn_refinement_batch_initial
+      note: Source notes treat pseudo-Goldstone language as the smallest reusable bridge from the symmetry-breaking branch to the axion node.
+  status: asserted
+  confidence: 0.89
+- from: qcd.strong_cp_problem
+  to: sm.axion
+  relation_type: requires_for_use
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: standard_model
+  task_type: literature_reading
+  rationale: The axion is introduced here as the dynamical payoff of the standard proposed solution to the strong-CP problem.
+  failure_mode_if_absent: Cannot see what problem the axion branch is meant to solve inside the QCD-facing part of the graph.
+  evidence:
+    - type: expert_claim
+      source_ref: axion_strong_cp_peccei_quinn_refinement_batch_initial
+      note: Source notes keep the strong-CP motivation visible at the axion node instead of hiding it entirely behind the PQ-symmetry node.
+  status: asserted
+  confidence: 0.9

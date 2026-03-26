@@ -1,0 +1,121 @@
+# Canonical dependency edges for the QED loop-precision refinement batch.
+- from: qft.renormalized_perturbation_theory
+  to: qed.electron_self_energy
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qed
+  task_type: literature_reading
+  rationale: Electron self-energy is a standard renormalized loop correction computed inside perturbative QED.
+  failure_mode_if_absent: Cannot tell how the loop correction is defined as a finite physical object rather than as a bare divergent diagram.
+  evidence:
+    - type: expert_claim
+      source_ref: qed_loop_precision_refinement_batch_initial
+      note: Source notes keep electron self-energy explicitly tied to the renormalized perturbation-theory trunk.
+  status: asserted
+  confidence: 0.96
+- from: qft.free_dirac_field
+  to: qed.electron_self_energy
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qed
+  task_type: literature_reading
+  rationale: The self-energy correction is a modification of the electron two-point function, so the free electron field has to be identifiable first.
+  failure_mode_if_absent: Cannot tell what propagating degree of freedom the self-energy is correcting.
+  evidence:
+    - type: expert_claim
+      source_ref: qed_loop_precision_refinement_batch_initial
+      note: Source notes keep the electron field as the local object whose two-point structure is being refined.
+  status: asserted
+  confidence: 0.95
+- from: qft.renormalized_perturbation_theory
+  to: qed.anomalous_magnetic_moment
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qed
+  task_type: literature_reading
+  rationale: The anomalous magnetic moment is a textbook precision payoff of renormalized loop calculations in QED.
+  failure_mode_if_absent: Cannot place the quantity inside the perturbative loop framework that produces it.
+  evidence:
+    - type: expert_claim
+      source_ref: qed_loop_precision_refinement_batch_initial
+      note: Source notes keep g-2 inside the renormalized perturbation-theory branch rather than as standalone phenomenology.
+  status: asserted
+  confidence: 0.97
+- from: qft.spinor_lorentz_dirac_foundations
+  to: qed.anomalous_magnetic_moment
+  relation_type: requires_for_recognize
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: qed
+  task_type: literature_reading
+  rationale: Magnetic-moment language is read through spinor and Dirac bilinear structure, so the spinor foundations help orient the observable.
+  failure_mode_if_absent: The quantity looks like a detached precision number rather than a correction to a fermion electromagnetic coupling.
+  evidence:
+    - type: expert_claim
+      source_ref: qed_loop_precision_refinement_batch_initial
+      note: Source notes keep the anomalous magnetic moment attached to the already-authored spinor / Dirac vocabulary.
+  status: asserted
+  confidence: 0.86
+- from: qft.free_dirac_field
+  to: qed.anomalous_magnetic_moment
+  relation_type: requires_for_recognize
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: qed
+  task_type: literature_reading
+  rationale: The anomalous magnetic moment is a property of the charged lepton field, so the electron field vocabulary materially helps orient the node.
+  failure_mode_if_absent: The quantity appears disconnected from the electron whose magnetic coupling is being corrected.
+  evidence:
+    - type: expert_claim
+      source_ref: qed_loop_precision_refinement_batch_initial
+      note: Source notes keep the free Dirac field visible beneath both electron self-energy and g-2.
+  status: asserted
+  confidence: 0.84
+- from: qft.renormalized_perturbation_theory
+  to: qed.uehling_potential
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qed
+  task_type: literature_reading
+  rationale: The Uehling potential is a loop-corrected QED potential and is read inside the same renormalized perturbative framework as the other precision corrections.
+  failure_mode_if_absent: Cannot see the potential as a controlled radiative correction rather than as an ad hoc replacement of Coulomb's law.
+  evidence:
+    - type: expert_claim
+      source_ref: qed_loop_precision_refinement_batch_initial
+      note: Source notes treat the Uehling potential as the vacuum-polarization payoff of the same loop framework.
+  status: asserted
+  confidence: 0.95
+- from: sm.precision.gauge_boson_self_energy
+  to: qed.uehling_potential
+  relation_type: requires_for_recognize
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: qed
+  task_type: literature_reading
+  rationale: The Uehling potential is the QED potential-level manifestation of vacuum-polarization self-energy corrections in the photon sector.
+  failure_mode_if_absent: The potential looks like an isolated named correction rather than as the potential-space expression of a self-energy effect.
+  evidence:
+    - type: expert_claim
+      source_ref: qed_loop_precision_refinement_batch_initial
+      note: Source notes intentionally reuse the existing gauge-boson self-energy node to avoid duplicating a QED-only vacuum-polarization concept.
+  status: asserted
+  confidence: 0.84
+- from: qed.electron_self_energy
+  to: qed.anomalous_magnetic_moment
+  relation_type: requires_for_recognize
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: qed
+  task_type: literature_reading
+  rationale: Both quantities live in the same loop-corrected electron sector, so the self-energy node helps place the anomalous magnetic moment inside the local QED correction neighborhood.
+  failure_mode_if_absent: The anomalous magnetic moment appears as a disconnected precision fact rather than as part of the electron-sector loop structure.
+  evidence:
+    - type: expert_claim
+      source_ref: qed_loop_precision_refinement_batch_initial
+      note: Source notes keep the three payoff nodes as a coherent electron/vacuum-polarization cluster instead of three isolated names.
+  status: asserted
+  confidence: 0.8

@@ -1,0 +1,6 @@
+# Canonical partonomy edges for the Schwinger-pair-production refinement batch.
+- parent: qft.effective_actions_and_background_fields
+  child: qft.schwinger_pair_production
+  rationale: Schwinger pair production is kept as a payoff leaf of the existing effective-action and background-field branch.
+  status: asserted
+  confidence: 0.93

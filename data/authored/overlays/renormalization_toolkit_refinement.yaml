@@ -1,0 +1,27 @@
+# Canonical overlay annotations for the renormalization-toolkit refinement batch.
+- overlay_type: assumed_background
+  target_topic: qft.renormalization_toolkit_refinement
+  presumed_node: qft.regularization_renormalization_rg
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  artifact_type: paper
+  rationale: Sources that invoke BPHZ, Pauli-Villars, or dimensional transmutation usually presume the basic renormalization and RG trunk is already in place.
+  evidence:
+    - type: expert_claim
+      source_ref: renormalization_toolkit_refinement_batch_initial
+      note: Source notes keep the first-pass RG batch as assumed background for the whole refinement.
+  status: asserted
+  confidence: 0.93
+- overlay_type: assumed_background
+  target_topic: qft.renormalization_toolkit_refinement
+  presumed_node: qft.beta_function
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  artifact_type: paper
+  rationale: The RG-payoff side of the batch is usually read against a background understanding of beta-function running.
+  evidence:
+    - type: expert_claim
+      source_ref: renormalization_toolkit_refinement_batch_initial
+      note: Source notes keep the beta-function node as assumed background rather than rebuilding the central RG flow branch.
+  status: asserted
+  confidence: 0.87

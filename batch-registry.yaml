@@ -744,15 +744,274 @@ waves:
           - optical_theorem_and_unitarity_cutting_basics
           - cross_sections_decay_rates_and_phase_space
     queued_next:
+      []
+  - wave_id: stage12_schwartz_refinement_f
+    status: active
+    note: "Focused Schwartz refinement wave for DIS, Bjorken variables and scaling, Drell-Yan, Mellin moments, and twist."
+    active_batches:
       - batch_id: dis_and_hadronic_factorization_refinement
-        stage: 11
-        status: queued
-      - batch_id: scet_mode_and_resummation_refinement
-        stage: 11
-        status: queued
+        stage: 12
+        status: populated_first_pass
+        priority: high
+        current_stats:
+          nodes: 13
+          dependencies: 14
+          partonomy: 6
+          overlays: 2
+        reserved_namespaces:
+          - qcd.dis_and_hadronic_factorization_refinement
+          - qcd.deep_inelastic_scattering
+          - qcd.bjorken_x
+          - qcd.bjorken_scaling
+          - qcd.drell_yan_process
+          - qcd.mellin_moment
+          - qcd.twist
+        overlap_watch:
+          - qcd_parton_model_and_factorization
+          - cross_sections_decay_rates_and_phase_space
+          - effective_field_theory_and_scet
+    queued_next:
+      []
+  - wave_id: stage13_schwartz_refinement_g
+    status: active
+    note: "Focused Schwartz refinement wave for renormalization-toolkit methods, divergence classification, and compact RG payoffs."
+    active_batches:
       - batch_id: renormalization_toolkit_refinement
-        stage: 11
-        status: queued
+        stage: 13
+        status: populated_first_pass
+        priority: high
+        current_stats:
+          nodes: 14
+          dependencies: 12
+          partonomy: 7
+          overlays: 2
+        reserved_namespaces:
+          - qft.renormalization_toolkit_refinement
+          - qft.pauli_villars_regularization
+          - qft.bphz_renormalization
+          - qft.superficial_degree_of_divergence
+          - qft.super_renormalizable_theory
+          - qft.nonrenormalizable_theory
+          - qft.effective_charge
+          - qft.dimensional_transmutation
+        overlap_watch:
+          - regularization_renormalization_rg
+          - subtraction_scheme_and_landau_pole_refinement
+          - effective_field_theory_and_scet
+    queued_next:
+      []
+  - wave_id: stage14_schwartz_refinement_h
+    status: active
+    note: "Focused Schwartz refinement wave for SCET coefficient language, additional mode structure, and one event-shape payoff leaf."
+    active_batches:
+      - batch_id: scet_mode_and_resummation_refinement
+        stage: 14
+        status: populated_first_pass
+        priority: high
+        current_stats:
+          nodes: 17
+          dependencies: 14
+          partonomy: 5
+          overlays: 2
+        reserved_namespaces:
+          - eft.wilson_coefficient
+          - eft.ultraviolet_sensitivity
+          - eft.glauber_mode
+          - eft.collinear_interaction
+          - qft.heavy_jet_mass
+        overlap_watch:
+          - effective_field_theory_and_scet
+          - infrared_divergences_and_jets
+          - dis_and_hadronic_factorization_refinement
+    queued_next:
+      []
+  - wave_id: stage15_schwartz_refinement_i
+    status: active
+    note: "Focused Schwartz refinement wave for residual scattering-operator notation, unstable-particle language, and theorem-level unitarity cleanup."
+    active_batches:
+      - batch_id: scattering_spectral_residual_refinement
+        stage: 15
+        status: populated_first_pass
+        priority: high
+        current_stats:
+          nodes: 18
+          dependencies: 12
+          partonomy: 4
+          overlays: 2
+        reserved_namespaces:
+          - qft.t_matrix
+          - qft.unstable_particles
+          - qft.partial_wave_unitarity_bound
+          - qft.feynman_tree_theorem
+        overlap_watch:
+          - optical_theorem_and_unitarity_cutting_basics
+          - spectral_and_mass_shell_refinement
+          - cross_sections_decay_rates_and_phase_space
+    queued_next:
+      []
+  - wave_id: stage16_schwartz_refinement_j
+    status: active
+    note: "Focused Schwartz refinement wave for generic EFT tail cleanup around integrating out, UV completion, and the canonical 4-Fermi example."
+    active_batches:
+      - batch_id: eft_matching_and_uv_completion_refinement
+        stage: 16
+        status: populated_first_pass
+        priority: high
+        current_stats:
+          nodes: 9
+          dependencies: 9
+          partonomy: 3
+          overlays: 2
+        reserved_namespaces:
+          - eft.integrating_out
+          - eft.ultraviolet_completion
+          - eft.four_fermi_theory
+        overlap_watch:
+          - effective_field_theory_and_scet
+          - scet_mode_and_resummation_refinement
+          - subtraction_scheme_and_landau_pole_refinement
+    queued_next:
+      []
+  - wave_id: stage17_schwartz_refinement_k
+    status: active
+    note: "Focused Schwartz refinement wave for Higgs-sector naturalness, hierarchy language, and the Lee-Quigg-Thacker bound."
+    active_batches:
+      - batch_id: naturalness_and_hierarchy_refinement
+        stage: 17
+        status: populated_first_pass
+        priority: high
+        current_stats:
+          nodes: 10
+          dependencies: 9
+          partonomy: 4
+          overlays: 2
+        reserved_namespaces:
+          - sm.mass_naturalness
+          - qft.fine_tuning
+          - qft.planck_scale
+          - sm.lee_quigg_thacker_bound
+        overlap_watch:
+          - symmetry_breaking_and_standard_model
+          - eft_matching_and_uv_completion_refinement
+          - scattering_spectral_residual_refinement
+    queued_next:
+      []
+  - wave_id: stage18_schwartz_refinement_l
+    status: active
+    note: "Focused Schwartz refinement wave for the remaining background-field payoff leaf: Schwinger pair production."
+    active_batches:
+      - batch_id: schwinger_pair_production_refinement
+        stage: 18
+        status: populated_first_pass
+        priority: high
+        current_stats:
+          nodes: 6
+          dependencies: 4
+          partonomy: 1
+          overlays: 2
+        reserved_namespaces:
+          - qft.schwinger_pair_production
+        overlap_watch:
+          - effective_actions_and_background_fields
+    queued_next:
+      []
+  - wave_id: stage19_schwartz_refinement_m
+    status: active
+    note: "Focused Schwartz refinement wave for the remaining compact QED loop-precision tail."
+    active_batches:
+      - batch_id: qed_loop_precision_refinement
+        stage: 19
+        status: populated_first_pass
+        priority: high
+        current_stats:
+          nodes: 8
+          dependencies: 8
+          partonomy: 3
+          overlays: 2
+        reserved_namespaces:
+          - qed.qed_loop_precision_refinement
+          - qed.electron_self_energy
+          - qed.anomalous_magnetic_moment
+          - qed.uehling_potential
+        overlap_watch:
+          - regularization_renormalization_rg
+          - qed_tree_level_processes
+          - anomalies_and_precision_sm
+    queued_next:
+      []
+  - wave_id: stage20_schwartz_refinement_n
+    status: active
+    note: "Focused Schwartz refinement wave for the late-SM baryogenesis, sphaleron, and conserved-charge tail."
+    active_batches:
+      - batch_id: baryogenesis_and_sphaleron_refinement
+        stage: 20
+        status: populated_first_pass
+        priority: high
+        current_stats:
+          nodes: 9
+          dependencies: 8
+          partonomy: 6
+          overlays: 2
+        reserved_namespaces:
+          - sm.baryon_number_conservation
+          - sm.lepton_number
+          - sm.b_minus_l_symmetry
+          - sm.baryogenesis
+          - sm.baryogenesis_sakharov_conditions
+          - sm.sphaleron
+        overlap_watch:
+          - symmetry_breaking_and_standard_model
+          - anomalies_and_precision_sm
+          - flavor_ckm_pmns_and_precision_observables
+    queued_next:
+      []
+  - wave_id: stage21_schwartz_refinement_o
+    status: active
+    note: "Focused Schwartz refinement wave for the strong-CP, Peccei-Quinn, pseudo-Goldstone, and axion tail."
+    active_batches:
+      - batch_id: axion_strong_cp_peccei_quinn_refinement
+        stage: 21
+        status: populated_first_pass
+        priority: high
+        current_stats:
+          nodes: 11
+          dependencies: 8
+          partonomy: 4
+          overlays: 2
+        reserved_namespaces:
+          - qcd.strong_cp_problem
+          - sm.peccei_quinn_symmetry
+          - sm.pseudo_goldstone_boson
+          - sm.axion
+        overlap_watch:
+          - nonperturbative_qcd_and_topology
+          - symmetry_breaking_and_standard_model
+          - anomalies_and_precision_sm
+    queued_next:
+      []
+  - wave_id: stage22_schwartz_refinement_p
+    status: active
+    note: "Focused Schwartz refinement wave for the remaining neutrino-mass explanation tail around seesaw language."
+    active_batches:
+      - batch_id: seesaw_mechanism_refinement
+        stage: 22
+        status: populated_first_pass
+        priority: high
+        current_stats:
+          nodes: 8
+          dependencies: 6
+          partonomy: 3
+          overlays: 2
+        reserved_namespaces:
+          - sm.right_handed_neutrino
+          - sm.majorana_mass
+          - sm.seesaw_mechanism
+        overlap_watch:
+          - flavor_ckm_pmns_and_precision_observables
+          - baryogenesis_and_sphaleron_refinement
+          - symmetry_breaking_and_standard_model
+    queued_next:
+      []
 
 integration_notes:
   - "Cross-batch connectivity is currently built by reusing shared canonical node ids across batches."

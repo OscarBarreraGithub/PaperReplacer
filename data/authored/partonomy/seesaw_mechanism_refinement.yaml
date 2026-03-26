@@ -1,0 +1,16 @@
+# Canonical partonomy edges for the seesaw-mechanism refinement batch.
+- parent: sm.neutrino_mass
+  child: sm.seesaw_mechanism
+  rationale: The seesaw mechanism is a refinement of the existing neutrino-mass branch rather than a separate top-level BSM island.
+  status: asserted
+  confidence: 0.94
+- parent: sm.seesaw_mechanism
+  child: sm.right_handed_neutrino
+  rationale: The right-handed neutrino is one of the minimal explicit ingredients needed to keep the seesaw mechanism structurally legible.
+  status: asserted
+  confidence: 0.92
+- parent: sm.seesaw_mechanism
+  child: sm.majorana_mass
+  rationale: Majorana mass is the second minimal structural ingredient that makes the seesaw suppression branch intelligible.
+  status: asserted
+  confidence: 0.93

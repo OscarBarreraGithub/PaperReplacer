@@ -1,0 +1,21 @@
+# Canonical partonomy edges for the naturalness-and-hierarchy refinement batch.
+- parent: sm.symmetry_breaking_and_standard_model
+  child: sm.mass_naturalness
+  rationale: Mass naturalness is a Standard-Model-facing refinement of the Higgs and electroweak symmetry-breaking branch.
+  status: asserted
+  confidence: 0.94
+- parent: sm.mass_naturalness
+  child: qft.fine_tuning
+  rationale: Fine-tuning is kept as the operational diagnosis branch beneath the mass-naturalness node.
+  status: asserted
+  confidence: 0.93
+- parent: sm.mass_naturalness
+  child: qft.planck_scale
+  rationale: Planck scale is the canonical high reference scale that sharpens the hierarchy side of the naturalness discussion.
+  status: asserted
+  confidence: 0.9
+- parent: sm.symmetry_breaking_and_standard_model
+  child: sm.lee_quigg_thacker_bound
+  rationale: The Lee-Quigg-Thacker bound is kept as a Higgs-sector unitarity leaf under the same Standard-Model root.
+  status: asserted
+  confidence: 0.91

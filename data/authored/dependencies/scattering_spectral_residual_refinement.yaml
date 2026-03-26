@@ -1,0 +1,181 @@
+# Canonical dependency edges for the scattering-spectral residual refinement batch.
+- from: qft.scattering_amplitude
+  to: qft.t_matrix
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: literature_reading
+  rationale: The T-matrix is used through its matrix elements, which are read as scattering amplitudes between asymptotic states.
+  failure_mode_if_absent: Cannot tell what concrete observable object the T-matrix is encoding.
+  evidence:
+    - type: expert_claim
+      source_ref: scattering_spectral_residual_refinement_batch_initial
+      note: Source notes keep the T-matrix as operator notation for the existing amplitude branch rather than as a separate formalism.
+  status: asserted
+  confidence: 0.96
+- from: qft.s_matrix_unitarity
+  to: qft.t_matrix
+  relation_type: requires_for_recognize
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: literature_reading
+  rationale: The T-matrix is often introduced precisely so the unitarity condition can be rewritten in a nontrivial operator form.
+  failure_mode_if_absent: T-matrix notation appears as an arbitrary symbol change rather than as part of the unitarity story.
+  evidence:
+    - type: expert_claim
+      source_ref: scattering_spectral_residual_refinement_batch_initial
+      note: Source notes keep T-matrix language adjacent to the existing S-matrix unitarity node.
+  status: asserted
+  confidence: 0.87
+- from: qft.lippmann_schwinger_equation
+  to: qft.t_matrix
+  relation_type: requires_for_recognize
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: literature_reading
+  rationale: The T-matrix is commonly encountered in the same scattering-operator neighborhood as the Lippmann-Schwinger equation.
+  failure_mode_if_absent: The T-matrix appears disconnected from the graph's existing scattering-state bridge.
+  evidence:
+    - type: expert_claim
+      source_ref: scattering_spectral_residual_refinement_batch_initial
+      note: Source notes keep the operator notation tied to the already-landed Lippmann-Schwinger node rather than introducing a separate S-matrix batch.
+  status: asserted
+  confidence: 0.83
+- from: qft.t_matrix
+  to: qft.optical_theorem
+  relation_type: requires_for_recognize
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: literature_reading
+  rationale: The optical theorem is often written in T-matrix notation, so that operator language helps orient the theorem's standard algebraic form.
+  failure_mode_if_absent: The theorem remains readable only in its forward-amplitude form and not in the common operator notation used later in the literature.
+  evidence:
+    - type: expert_claim
+      source_ref: scattering_spectral_residual_refinement_batch_initial
+      note: Source notes use T-matrix language as a notation bridge into the existing theorem node.
+  status: asserted
+  confidence: 0.84
+- from: qft.decay_rate
+  to: qft.unstable_particles
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: literature_reading
+  rationale: Unstable particles are identified operationally by finite decay rates into available channels.
+  failure_mode_if_absent: Cannot tell what physical property distinguishes an unstable state from an exactly stable asymptotic particle.
+  evidence:
+    - type: expert_claim
+      source_ref: scattering_spectral_residual_refinement_batch_initial
+      note: Source notes keep decay rate as the most reusable upstream observable for the unstable-particle node.
+  status: asserted
+  confidence: 0.95
+- from: qft.unstable_particles
+  to: qft.breit_wigner_distribution
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: literature_reading
+  rationale: The Breit-Wigner distribution is the standard line shape for an unstable intermediate state with finite width.
+  failure_mode_if_absent: Cannot tell what physical object is supposed to have the finite-width line shape.
+  evidence:
+    - type: expert_claim
+      source_ref: scattering_spectral_residual_refinement_batch_initial
+      note: Source notes use the new unstable-particles node as the conceptual home for the already-authored line-shape branch.
+  status: asserted
+  confidence: 0.96
+- from: qft.unstable_particles
+  to: qft.narrow_width_approximation
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: literature_reading
+  rationale: The narrow-width approximation is a controlled simplification that only makes sense once the unstable-particle width is being treated as small but nonzero.
+  failure_mode_if_absent: Cannot tell what kind of resonance the approximation is being applied to or why the approximation is meaningful.
+  evidence:
+    - type: expert_claim
+      source_ref: scattering_spectral_residual_refinement_batch_initial
+      note: Source notes keep unstable-particle language upstream of the existing narrow-width node.
+  status: asserted
+  confidence: 0.96
+- from: qft.partial_wave_expansion
+  to: qft.partial_wave_unitarity_bound
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: literature_reading
+  rationale: The bound is stated channel by channel in the partial-wave decomposition, so the expansion has to be available before the bound can be used.
+  failure_mode_if_absent: Cannot tell what quantity the unitarity bound is constraining.
+  evidence:
+    - type: expert_claim
+      source_ref: scattering_spectral_residual_refinement_batch_initial
+      note: Source notes keep the new bound node as the theorem-level refinement of the existing partial-wave branch.
+  status: asserted
+  confidence: 0.97
+- from: qft.s_matrix_unitarity
+  to: qft.partial_wave_unitarity_bound
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: literature_reading
+  rationale: The partial-wave bound is a channel-wise consequence of S-matrix unitarity.
+  failure_mode_if_absent: Cannot see why the inequality holds or what structural principle enforces it.
+  evidence:
+    - type: expert_claim
+      source_ref: scattering_spectral_residual_refinement_batch_initial
+      note: Source notes keep the bound directly downstream of the unitarity node rather than as an isolated named inequality.
+  status: asserted
+  confidence: 0.97
+- from: qft.unitarity_cutting_rules
+  to: qft.feynman_tree_theorem
+  relation_type: requires_for_use
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: literature_reading
+  rationale: The Feynman tree theorem lives in the same on-shell replacement neighborhood as cutting rules, so the earlier cutting vocabulary helps orient the theorem.
+  failure_mode_if_absent: The theorem appears as a detached loop-manipulation trick instead of part of the existing unitarity/cutting branch.
+  evidence:
+    - type: expert_claim
+      source_ref: scattering_spectral_residual_refinement_batch_initial
+      note: Source notes place the theorem next to, but not as a duplicate of, the current cutting-rule node.
+  status: asserted
+  confidence: 0.88
+- from: qft.on_shell_intermediate_state
+  to: qft.feynman_tree_theorem
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: literature_reading
+  rationale: The theorem rewrites loop contributions through on-shell replacements, so the on-shell-intermediate-state vocabulary is intrinsic to its meaning.
+  failure_mode_if_absent: Cannot interpret what structural change is being made when propagators are replaced by on-shell contributions.
+  evidence:
+    - type: expert_claim
+      source_ref: scattering_spectral_residual_refinement_batch_initial
+      note: Source notes keep the theorem grounded in the already-authored on-shell state-sum language.
+  status: asserted
+  confidence: 0.95
+- from: qft.feynman_propagator
+  to: qft.feynman_tree_theorem
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: literature_reading
+  rationale: The theorem is a statement about decomposing loop integrals by rewriting Feynman propagators into on-shell contributions.
+  failure_mode_if_absent: Cannot tell what mathematical object the theorem is manipulating.
+  evidence:
+    - type: expert_claim
+      source_ref: scattering_spectral_residual_refinement_batch_initial
+      note: Source notes use the standard propagator node as the local object that the theorem acts on.
+  status: asserted
+  confidence: 0.96

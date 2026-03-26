@@ -1,0 +1,27 @@
+# Canonical overlay annotations for the axion / strong-CP / Peccei-Quinn refinement batch.
+- overlay_type: assumed_background
+  target_topic: qcd.nonperturbative_qcd_and_topology
+  presumed_node: qft.instanton
+  audience_profile: hep_th_grad
+  subfield: standard_model
+  artifact_type: paper
+  rationale: Strong-CP and theta-angle discussions are usually introduced against background familiarity with instanton and topological-sector language.
+  evidence:
+    - type: expert_claim
+      source_ref: axion_strong_cp_peccei_quinn_refinement_batch_initial
+      note: Source notes treat instanton language as assumed support for the theta-vacuum motivation side of the batch.
+  status: asserted
+  confidence: 0.82
+- overlay_type: assumed_background
+  target_topic: sm.symmetry_breaking_and_standard_model
+  presumed_node: sm.chiral_anomaly
+  audience_profile: hep_th_grad
+  subfield: standard_model
+  artifact_type: paper
+  rationale: Peccei-Quinn and axion passages often assume anomaly vocabulary in the background even when they do not reopen the full anomaly branch explicitly.
+  evidence:
+    - type: expert_claim
+      source_ref: axion_strong_cp_peccei_quinn_refinement_batch_initial
+      note: Source notes keep anomaly language as contextual background rather than as another explicit local node.
+  status: asserted
+  confidence: 0.81

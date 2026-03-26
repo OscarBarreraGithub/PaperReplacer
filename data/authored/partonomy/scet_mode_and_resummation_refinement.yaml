@@ -1,0 +1,26 @@
+# Canonical partonomy edges for the SCET mode-and-resummation refinement batch.
+- parent: eft.soft_collinear_effective_theory
+  child: eft.wilson_coefficient
+  rationale: Wilson coefficients are one of the main short-distance branches that sharpen the existing SCET root.
+  status: asserted
+  confidence: 0.95
+- parent: eft.soft_collinear_effective_theory
+  child: eft.ultraviolet_sensitivity
+  rationale: Ultraviolet sensitivity is kept as the EFT-side motivation branch explaining why short-distance coefficients matter.
+  status: asserted
+  confidence: 0.9
+- parent: eft.soft_collinear_effective_theory
+  child: eft.glauber_mode
+  rationale: Glauber mode is the main missing mode-structure refinement under the SCET root.
+  status: asserted
+  confidence: 0.95
+- parent: eft.soft_collinear_effective_theory
+  child: eft.collinear_interaction
+  rationale: Collinear interaction is a direct local refinement of the existing SCET sector language.
+  status: asserted
+  confidence: 0.93
+- parent: eft.soft_collinear_effective_theory
+  child: qft.heavy_jet_mass
+  rationale: Heavy jet mass is kept as a narrow event-shape payoff leaf that sits cleanly under the existing SCET topic.
+  status: asserted
+  confidence: 0.88

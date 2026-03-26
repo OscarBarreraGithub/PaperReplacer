@@ -1,0 +1,27 @@
+# Canonical overlay annotations for the scattering-spectral residual refinement batch.
+- overlay_type: assumed_background
+  target_topic: qft.optical_theorem_and_unitarity_cutting_basics
+  presumed_node: qft.cross_sections_decay_rates_and_phase_space
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  artifact_type: paper
+  rationale: Partial-wave and unstable-particle discussions usually presume the basic cross-section, decay-rate, and narrow-width observable branch is already familiar.
+  evidence:
+    - type: expert_claim
+      source_ref: scattering_spectral_residual_refinement_batch_initial
+      note: Source notes treat the observable formulas batch as assumed background for the resonance-facing refinements.
+  status: asserted
+  confidence: 0.86
+- overlay_type: assumed_background
+  target_topic: qft.optical_theorem_and_unitarity_cutting_basics
+  presumed_node: qft.spectral_and_mass_shell_refinement
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  artifact_type: paper
+  rationale: T-matrix and tree-theorem passages usually assume the existing shell-state and scattering-bridge language rather than rebuilding it from scratch.
+  evidence:
+    - type: expert_claim
+      source_ref: scattering_spectral_residual_refinement_batch_initial
+      note: Source notes keep the spectral and mass-shell refinement as assumed background for the operator-notation side of the batch.
+  status: asserted
+  confidence: 0.84

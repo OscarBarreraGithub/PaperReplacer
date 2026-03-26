@@ -1,0 +1,136 @@
+# Canonical dependency edges for the EFT matching-and-UV-completion refinement batch.
+- from: eft.scale_separation
+  to: eft.integrating_out
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: effective_field_theory
+  task_type: literature_reading
+  rationale: Integrating out only makes sense once heavy and light scales have been separated conceptually.
+  failure_mode_if_absent: Cannot tell why certain degrees of freedom are removed from the low-energy theory while others remain explicit.
+  evidence:
+    - type: expert_claim
+      source_ref: eft_matching_and_uv_completion_refinement_batch_initial
+      note: Source notes keep integrating out downstream of the generic EFT scale-separation idea.
+  status: asserted
+  confidence: 0.97
+- from: eft.integrating_out
+  to: eft.wilson_coefficient
+  relation_type: requires_for_recognize
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: effective_field_theory
+  task_type: literature_reading
+  rationale: Wilson coefficients are the standard EFT record of the heavy physics that was integrated out.
+  failure_mode_if_absent: The coefficient language appears as a detached notation choice rather than the output of the low-energy construction step.
+  evidence:
+    - type: expert_claim
+      source_ref: eft_matching_and_uv_completion_refinement_batch_initial
+      note: Source notes use integrating-out language to interpret the already-landed Wilson-coefficient node.
+  status: asserted
+  confidence: 0.88
+- from: eft.effective_field_theory
+  to: eft.ultraviolet_completion
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: effective_field_theory
+  task_type: literature_reading
+  rationale: Ultraviolet completion is defined relative to an EFT as the more microscopic theory whose low-energy limit the EFT reproduces.
+  failure_mode_if_absent: Cannot tell what kind of object is supposed to complete the EFT at high energies.
+  evidence:
+    - type: expert_claim
+      source_ref: eft_matching_and_uv_completion_refinement_batch_initial
+      note: Source notes keep UV completion explicitly downstream of the generic EFT root.
+  status: asserted
+  confidence: 0.97
+- from: eft.ultraviolet_sensitivity
+  to: eft.ultraviolet_completion
+  relation_type: requires_for_recognize
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: effective_field_theory
+  task_type: literature_reading
+  rationale: The motivation for asking about a UV completion is often that the EFT visibly retains sensitivity to short-distance physics.
+  failure_mode_if_absent: UV completion looks like a disconnected buzzword rather than a response to the EFT's short-distance limitations.
+  evidence:
+    - type: expert_claim
+      source_ref: eft_matching_and_uv_completion_refinement_batch_initial
+      note: Source notes keep ultraviolet sensitivity adjacent to UV-completion language without collapsing the two nodes.
+  status: asserted
+  confidence: 0.86
+- from: eft.integrating_out
+  to: eft.ultraviolet_completion
+  relation_type: requires_for_recognize
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: effective_field_theory
+  task_type: literature_reading
+  rationale: Integrating out provides the operational bridge from the UV completion to the low-energy EFT description.
+  failure_mode_if_absent: The completion concept stays disconnected from the actual EFT construction workflow.
+  evidence:
+    - type: expert_claim
+      source_ref: eft_matching_and_uv_completion_refinement_batch_initial
+      note: Source notes keep integrating-out language as the bridge between full theory and EFT.
+  status: asserted
+  confidence: 0.87
+- from: eft.higher_dimensional_operator
+  to: eft.four_fermi_theory
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: effective_field_theory
+  task_type: literature_reading
+  rationale: 4-Fermi theory is the canonical local EFT built from higher-dimensional four-fermion operators.
+  failure_mode_if_absent: Cannot tell why the interaction is understood as an EFT operator expansion rather than as a renormalizable fundamental interaction.
+  evidence:
+    - type: expert_claim
+      source_ref: eft_matching_and_uv_completion_refinement_batch_initial
+      note: Source notes use the existing higher-dimensional-operator node as the clearest structural prerequisite for 4-Fermi theory.
+  status: asserted
+  confidence: 0.97
+- from: eft.integrating_out
+  to: eft.four_fermi_theory
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: effective_field_theory
+  task_type: literature_reading
+  rationale: The standard EFT reading of 4-Fermi theory is that it arises from integrating out a heavy mediator at low energies.
+  failure_mode_if_absent: 4-Fermi theory looks like an isolated contact interaction rather than the canonical example of low-energy EFT construction.
+  evidence:
+    - type: expert_claim
+      source_ref: eft_matching_and_uv_completion_refinement_batch_initial
+      note: Source notes keep 4-Fermi theory tied to integrating-out language rather than to a weak-process catalog.
+  status: asserted
+  confidence: 0.96
+- from: eft.wilson_coefficient
+  to: eft.four_fermi_theory
+  relation_type: requires_for_recognize
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: effective_field_theory
+  task_type: literature_reading
+  rationale: The effective coupling in 4-Fermi theory is read as a short-distance coefficient multiplying the local operator.
+  failure_mode_if_absent: The theory appears as a bare contact term rather than as an EFT with matched coefficients.
+  evidence:
+    - type: expert_claim
+      source_ref: eft_matching_and_uv_completion_refinement_batch_initial
+      note: Source notes use the already-authored Wilson-coefficient node to keep the four-Fermi example inside the generic EFT workflow.
+  status: asserted
+  confidence: 0.89
+- from: eft.ultraviolet_completion
+  to: eft.four_fermi_theory
+  relation_type: requires_for_recognize
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: effective_field_theory
+  task_type: literature_reading
+  rationale: 4-Fermi theory is most naturally read as a low-energy approximation to some more microscopic UV completion.
+  failure_mode_if_absent: The example loses the core EFT lesson that it should eventually be replaced by a more complete high-energy description.
+  evidence:
+    - type: expert_claim
+      source_ref: eft_matching_and_uv_completion_refinement_batch_initial
+      note: Source notes keep the theory attached to the UV-completion concept without needing to name a specific completion model.
+  status: asserted
+  confidence: 0.85

@@ -163,21 +163,56 @@ Checkpoint note:
   - `chiral_symmetry_and_sigma_models`
 - the Stage 11 refinement wave now exists at first pass through:
   - `spectral_and_mass_shell_refinement`
+- the Stage 12 refinement wave now exists at first pass through:
+  - `dis_and_hadronic_factorization_refinement`
+- the Stage 13 refinement wave now exists at first pass through:
+  - `renormalization_toolkit_refinement`
+- the Stage 14 refinement wave now exists at first pass through:
+  - `scet_mode_and_resummation_refinement`
+- the Stage 15 refinement wave now exists at first pass through:
+  - `scattering_spectral_residual_refinement`
+- the Stage 16 refinement wave now exists at first pass through:
+  - `eft_matching_and_uv_completion_refinement`
+- the Stage 17 refinement wave now exists at first pass through:
+  - `naturalness_and_hierarchy_refinement`
+- the Stage 18 refinement wave now exists at first pass through:
+  - `schwinger_pair_production_refinement`
+- the Stage 19 refinement wave now exists at first pass through:
+  - `qed_loop_precision_refinement`
+- the Stage 20 refinement wave now exists at first pass through:
+  - `baryogenesis_and_sphaleron_refinement`
+- the Stage 21 refinement wave now exists at first pass through:
+  - `axion_strong_cp_peccei_quinn_refinement`
+- the Stage 22 refinement wave now exists at first pass through:
+  - `seesaw_mechanism_refinement`
 - the analytic duplicate-definition cleanup pass is now complete and the current authored
   union validates without warnings
 
 ## 4. Next Followups
 
-After the landed Stage 11 refinement wave, the next good queue shifts to the remaining
-coverage decisions and smaller promotion passes such as:
+After the landed Stage 22 refinement wave, the substantive residue is now small enough that
+the remaining work is best handled as explicit deferral rather than further automatic
+canonical promotion.
 
-- `dis_and_hadronic_factorization_refinement`
-- `scet_mode_and_resummation_refinement`
-- `renormalization_toolkit_refinement`
+The remaining residue is:
+
+- `qft.resonance_pole` should stay explicitly deferred for now: a focused query check on
+  the landed unstable-particle branch shows `qft.breit_wigner_distribution` and
+  `qft.narrow_width_approximation` already sit on a coherent `qft.unstable_particles`
+  frontier, so a standalone resonance-pole node is not yet changing prerequisite answers
+- `sm.technicolor` and `sm.grand_unification` should stay explicitly deferred unless a
+  later overlap-aware batch gives them a cleaner home than the current symmetry-breaking,
+  chiral, naturalness, and flavor neighborhoods
+- generic `form factor` and `threshold region` should stay deferred until overlap with the
+  HQET, hadronic-factorization, and scattering neighborhoods is resolved more explicitly
+- isolated formal-QFT tail items such as `qft.stability`, `qft.tachyon`, and
+  `qft.seiberg_duality` should stay explicitly deferred unless the advanced-topic residue
+  later demands a narrower ontology treatment
 - `Schwinger proper-time` / `Schwinger parameter` should now be treated as already covered
   by `effective_actions_and_background_fields`, not as a separate batch target
-- `Schwinger pair production` remains a possible later background-field refinement if the
-  remaining Schwartz tail still justifies it after the theorem-level cleanup pass
+
+In other words, after Stage 22 there is no further clearly justified canonical batch
+remaining from the substantive Schwartz residue; the rest is now an explicit deferral list.
 
 ## 5. Node-Creation Discipline
 
@@ -189,20 +224,20 @@ Promote a candidate into a canonical node only if:
 - it is clearly central to a high-yield batch, or
 - it changes actual prerequisite answers
 
-Good examples likely to promote soon:
-
-- `qft.t_matrix`
-- `qft.unstable_particles`
-- `qft.partial_wave_unitarity_bound`
-- `qft.feynman_tree_theorem`
-- `qcd.twist`
-- `qft.bphz_renormalization`
-- `qft.schwinger_pair_production`
-- `qed.uehling_potential`
-- `sm.pmns_matrix`
+There are currently no remaining residual items that clearly clear the promotion bar
+without reopening broad overlap-sensitive branches.
 
 Examples to delay unless needed:
 
+- `sm.technicolor`
+- `sm.grand_unification`
+- generic `form factor`
+- `threshold region` until its overlap home is clearer
+- `qft.resonance_pole` unless later query behavior proves the current unstable-particle
+  branch insufficient
+- `qft.stability`
+- `qft.tachyon`
+- `qft.seiberg_duality`
 - highly specialized named bounds
 - historical labels
 - narrowly contextual process names that can live inside example batches
@@ -211,16 +246,13 @@ Examples to delay unless needed:
 
 The best next implementation step is now:
 
-1. launch one or two tightly scoped theorem-level refinements around:
-   - DIS / hadronic-factorization residuals such as `Bjorken x`, `Drell-Yan`, `Mellin
-     moment`, and `twist`
-   - SCET / large-log / mode-structure residuals such as Glauber or eikonal language where
-     the current EFT/IR trunk is still too coarse
-2. keep `Schwinger proper-time` / `Schwinger parameter` marked as covered by the existing
-   effective-actions branch unless query behavior shows a real missing cross-link
-3. continue SCET-mode / resummation and renormalization-toolkit expansions, promoting only
-   the most repeated residual `candidate_new_node` items into
-   similarly small batches
+1. treat the canonical-batch side of the substantive Schwartz backlog as exhausted and
+   carry the remaining residue only as explicit deferrals
+2. keep `sm.technicolor`, `sm.grand_unification`, generic `form factor`,
+   `threshold region`, and the isolated formal-QFT tail explicitly deferred unless a later
+   overlap-aware query pass shows a real missing branch
+3. reopen `qft.resonance_pole` only if future query behavior shows the current
+   unstable-particle / Breit-Wigner / narrow-width branch is no longer sufficient
 
-This ordering keeps Schwartz reduction moving while the remaining backlog shifts from broad
-topic gaps to a mix of cleanup and narrow theorem-level promotions.
+This ordering keeps Schwartz reduction honest: stop canonical promotion once the remaining
+tail no longer clears the bar, and preserve the residue as explicit, reviewable deferrals.

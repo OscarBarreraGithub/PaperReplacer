@@ -1,0 +1,67 @@
+contract_version: "0.1"
+batch_id: "dis_and_hadronic_factorization_refinement"
+description: "Stage 12 refinement batch for DIS, Bjorken variables and scaling, Drell-Yan, Mellin moments, and twist."
+
+context:
+  audience_profile: "hep_th_grad"
+  subfield: "qcd_factorization"
+  task_type: "literature_reading"
+
+allowed_relations:
+  - "requires_for_recognize"
+  - "requires_for_use"
+  - "part_of"
+
+allowed_overlay_types:
+  - "assumed_background"
+
+mastery_modes:
+  - "recognize"
+  - "use"
+
+closure:
+  allow_transitive_dependency: true
+  allow_heterogeneous_composition: false
+  cross_partonomy: false
+  cross_context: false
+  exclude_statuses:
+    - "disputed"
+
+composition:
+  allowed_relation_chains:
+    - ["requires_for_recognize", "requires_for_recognize"]
+    - ["requires_for_use", "requires_for_use"]
+  necessity_propagation: "min"
+  confidence_propagation: "min"
+
+query_defaults:
+  expand_composites_default: false
+  prerequisite_set_semantics: "ancestral_frontier"
+  disclose_non_uniqueness: true
+
+autonomy:
+  auto_merge_enabled: true
+  minimum_confidence_for_auto_merge: 0.82
+  block_on_duplicate_risk: true
+  block_on_ontology_drift: true
+  block_on_query_warning: true
+  require_human_review_for:
+    - "contract_changes"
+    - "ontology_changes"
+    - "decomposition_changes"
+    - "disputed_items"
+    - "forbidden_heuristics"
+    - "ambiguous_overlap"
+
+query_suite:
+  - "prereqs_recognize"
+  - "prereqs_use"
+  - "intrinsic_vs_profile_adjusted"
+  - "expanded_slice"
+
+forbidden_heuristics:
+  - "collider_process_catalog_drift"
+  - "scet_threshold_overlap"
+  - "jet_event_shape_expansion"
+  - "generic_hadron_structure_umbrella"
+  - "shortest_path_presented_as_pedagogy"

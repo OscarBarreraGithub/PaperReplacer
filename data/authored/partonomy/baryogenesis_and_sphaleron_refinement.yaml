@@ -1,0 +1,31 @@
+# Canonical partonomy edges for the baryogenesis-and-sphaleron refinement batch.
+- parent: sm.symmetry_breaking_and_standard_model
+  child: sm.baryon_number_conservation
+  rationale: Baryon-number conservation is one of the charge-symmetry leaves needed for the late-SM baryogenesis tail.
+  status: asserted
+  confidence: 0.88
+- parent: sm.symmetry_breaking_and_standard_model
+  child: sm.lepton_number
+  rationale: Lepton number is the companion charge branch needed for B - L and baryogenesis language.
+  status: asserted
+  confidence: 0.88
+- parent: sm.symmetry_breaking_and_standard_model
+  child: sm.b_minus_l_symmetry
+  rationale: B - L symmetry is kept as the charge-combination branch that ties the late-SM tail together.
+  status: asserted
+  confidence: 0.9
+- parent: sm.symmetry_breaking_and_standard_model
+  child: sm.baryogenesis
+  rationale: Baryogenesis is the central late-SM payoff node of the batch.
+  status: asserted
+  confidence: 0.91
+- parent: sm.baryogenesis
+  child: sm.baryogenesis_sakharov_conditions
+  rationale: The Sakharov conditions are the standard criteria branch beneath baryogenesis.
+  status: asserted
+  confidence: 0.94
+- parent: sm.symmetry_breaking_and_standard_model
+  child: sm.sphaleron
+  rationale: Sphaleron is the electroweak nonperturbative leaf that connects the symmetry-breaking branch to baryogenesis discussions.
+  status: asserted
+  confidence: 0.89

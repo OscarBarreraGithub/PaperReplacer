@@ -22,21 +22,21 @@ and batching guide, not as ontology nodes.
   - `relativistic_kinematics`
   - `variational_principles_and_classical_fields`
 - Chapters 4-7
-  - `old_fashioned_perturbation_and_scattering`
   - `cross_sections_decay_rates_and_phase_space`
   - `correlators_propagators_lsz`
   - `spectral_and_mass_shell_refinement`
+  - `optical_theorem_and_unitarity_cutting_basics`
+  - `scattering_spectral_residual_refinement`
   - `perturbation_wick_feynman_rules`
 
 ### Part II: Quantum electrodynamics
 
 - Chapters 8-13
   - `free_fields_and_quantization`
-  - `gauge_invariance_and_ward_identities`
+  - `gauge_invariance_and_ward_brst`
   - `scalar_qed`
   - `spinor_lorentz_dirac_foundations`
   - `discrete_symmetries_and_cpt`
-  - `spin_statistics_microcausality`
   - `qed_tree_level_processes`
 - Chapter 14
   - `path_integral_and_generating_functionals`
@@ -44,31 +44,29 @@ and batching guide, not as ontology nodes.
 ### Part III: Renormalization
 
 - Chapters 15-19
-  - `regularization_and_one_loop_renormalization`
-  - `renormalized_perturbation_theory`
+  - `regularization_renormalization_rg`
   - `subtraction_scheme_and_landau_pole_refinement`
+  - `renormalization_toolkit_refinement`
 - Chapters 20-24
   - `infrared_divergences_and_jets`
-  - `renormalizability_and_effective_operators`
-  - `renormalization_group`
-  - `unitarity_optical_theorem_spectral_polology`
+  - `effective_field_theory_and_scet`
+  - `scet_mode_and_resummation_refinement`
+  - `optical_theorem_and_unitarity_cutting_basics`
+  - `scattering_spectral_residual_refinement`
   - `soft_photon_theorem_and_low_energy_limits`
 
 ### Part IV: The Standard Model
 
 - Chapters 25-27
-  - `yang_mills_and_nonabelian_gauge_theory`
-  - `quantum_yang_mills_and_running_coupling`
+  - `yang_mills_and_qcd_basics`
+  - `qcd_parton_model_and_factorization`
   - `spinor_helicity_and_gluon_scattering`
 - Chapters 28-31
-  - `spontaneous_symmetry_breaking_and_higgs`
+  - `symmetry_breaking_and_standard_model`
   - `goldstone_theorem_and_equivalence_refinement`
   - `chiral_symmetry_and_sigma_models`
-  - `electroweak_interactions`
-  - `anomalies`
   - `flavor_ckm_pmns_and_precision_observables`
-  - `precision_standard_model_constraints`
-  - `qcd_parton_model_and_factorization`
+  - `anomalies_and_precision_sm`
 
 ### Part V: Advanced topics
 
@@ -77,7 +75,9 @@ and batching guide, not as ontology nodes.
 - Chapter 35
   - `heavy_quark_effective_theory_refinement`
 - Chapter 36
-  - `jets_and_scet`
+  - `effective_field_theory_and_scet`
+  - `infrared_divergences_and_jets`
+  - `scet_mode_and_resummation_refinement`
 
 ### Cross-Cutting Schwartz Follow-On Branches
 
@@ -92,13 +92,24 @@ and batching guide, not as ontology nodes.
 - `goldstone_theorem_and_equivalence_refinement`
 - `chiral_symmetry_and_sigma_models`
 - `spectral_and_mass_shell_refinement`
+- `dis_and_hadronic_factorization_refinement`
+- `renormalization_toolkit_refinement`
+- `scet_mode_and_resummation_refinement`
+- `scattering_spectral_residual_refinement`
+- `eft_matching_and_uv_completion_refinement`
+- `naturalness_and_hierarchy_refinement`
+- `schwinger_pair_production_refinement`
+- `qed_loop_precision_refinement`
+- `baryogenesis_and_sphaleron_refinement`
+- `axion_strong_cp_peccei_quinn_refinement`
+- `seesaw_mechanism_refinement`
 
 ### Appendices
 
 - Appendix A
-  - `conventions_and_dirac_algebra`
+  - `spinor_lorentz_dirac_foundations`
 - Appendix B
-  - `regularization_toolkit`
+  - `renormalization_toolkit_refinement`
 
 ## Population Order
 

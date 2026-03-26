@@ -1,0 +1,27 @@
+# Canonical overlay annotations for the DIS and hadronic-factorization refinement batch.
+- overlay_type: assumed_background
+  target_topic: qcd.dis_and_hadronic_factorization_refinement
+  presumed_node: qcd.parton_model_and_factorization
+  audience_profile: hep_th_grad
+  subfield: qcd_factorization
+  artifact_type: paper
+  rationale: Sources that discuss DIS or Drell-Yan factorization refinements usually presume the existing parton-model and factorization trunk.
+  evidence:
+    - type: expert_claim
+      source_ref: dis_and_hadronic_factorization_refinement_batch_initial
+      note: Source notes keep the earlier parton/factorization batch as assumed background for the whole refinement.
+  status: asserted
+  confidence: 0.93
+- overlay_type: assumed_background
+  target_topic: qcd.dis_and_hadronic_factorization_refinement
+  presumed_node: qft.cross_section
+  audience_profile: hep_th_grad
+  subfield: qcd_factorization
+  artifact_type: paper
+  rationale: DIS and Drell-Yan discussions are usually written as measured cross-section problems, so the basic observable vocabulary is normally assumed.
+  evidence:
+    - type: expert_claim
+      source_ref: dis_and_hadronic_factorization_refinement_batch_initial
+      note: Source notes reuse the existing cross-section node as background rather than building another observable trunk.
+  status: asserted
+  confidence: 0.88

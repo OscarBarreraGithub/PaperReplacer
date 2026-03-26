@@ -1,0 +1,121 @@
+# Canonical dependency edges for the baryogenesis-and-sphaleron refinement batch.
+- from: classical_fields.noether_theorem
+  to: sm.baryon_number_conservation
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: standard_model
+  task_type: literature_reading
+  rationale: Baryon-number conservation is read as a conserved-charge statement descending from symmetry language.
+  failure_mode_if_absent: Cannot tell what kind of conservation claim is being made when baryon number is introduced.
+  evidence:
+    - type: expert_claim
+      source_ref: baryogenesis_and_sphaleron_refinement_batch_initial
+      note: Source notes keep baryon-number language attached to the existing Noether-theorem branch.
+  status: asserted
+  confidence: 0.94
+- from: classical_fields.noether_theorem
+  to: sm.lepton_number
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: standard_model
+  task_type: literature_reading
+  rationale: Lepton number is likewise introduced as a conserved global charge in the Standard-Model discussion.
+  failure_mode_if_absent: Cannot tell what type of quantity lepton number is or why it is treated as a charge-like conservation statement.
+  evidence:
+    - type: expert_claim
+      source_ref: baryogenesis_and_sphaleron_refinement_batch_initial
+      note: Source notes keep lepton-number language attached to the same conserved-charge background.
+  status: asserted
+  confidence: 0.94
+- from: sm.baryon_number_conservation
+  to: sm.b_minus_l_symmetry
+  relation_type: requires_for_recognize
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: standard_model
+  task_type: literature_reading
+  rationale: The B - L combination is read partly by contrasting it with ordinary baryon-number conservation statements.
+  failure_mode_if_absent: The B - L node looks like an unexplained symbol combination rather than a symmetry built from familiar charges.
+  evidence:
+    - type: expert_claim
+      source_ref: baryogenesis_and_sphaleron_refinement_batch_initial
+      note: Source notes keep B - L adjacent to the conserved-charge vocabulary rather than to a separate group-theory branch.
+  status: asserted
+  confidence: 0.85
+- from: sm.lepton_number
+  to: sm.b_minus_l_symmetry
+  relation_type: requires_for_recognize
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: standard_model
+  task_type: literature_reading
+  rationale: The same B - L combination also depends on the standard lepton-number charge language.
+  failure_mode_if_absent: The symmetry combination is only half-readable and its meaning remains opaque.
+  evidence:
+    - type: expert_claim
+      source_ref: baryogenesis_and_sphaleron_refinement_batch_initial
+      note: Source notes keep the B - L symbol grounded in both charge branches.
+  status: asserted
+  confidence: 0.85
+- from: sm.baryogenesis_sakharov_conditions
+  to: sm.baryogenesis
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: standard_model
+  task_type: literature_reading
+  rationale: The Sakharov conditions are the standard criteria used to organize what is required for baryogenesis to work.
+  failure_mode_if_absent: Cannot tell what structural requirements the baryogenesis discussion is appealing to.
+  evidence:
+    - type: expert_claim
+      source_ref: baryogenesis_and_sphaleron_refinement_batch_initial
+      note: Source notes keep the conditions as the first local refinement of the baryogenesis node.
+  status: asserted
+  confidence: 0.96
+- from: sm.b_minus_l_symmetry
+  to: sm.baryogenesis
+  relation_type: requires_for_recognize
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: standard_model
+  task_type: literature_reading
+  rationale: B - L language is one of the standard charge-symmetry anchors used to discuss which asymmetries survive or are washed out.
+  failure_mode_if_absent: The baryogenesis node appears disconnected from the conserved-charge combinations that organize late-time survival of asymmetries.
+  evidence:
+    - type: expert_claim
+      source_ref: baryogenesis_and_sphaleron_refinement_batch_initial
+      note: Source notes keep B - L visible beneath the baryogenesis branch without opening a full cosmology ontology.
+  status: asserted
+  confidence: 0.84
+- from: sm.ewbreak.electroweak_symmetry_breaking
+  to: sm.sphaleron
+  relation_type: requires_for_recognize
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: standard_model
+  task_type: literature_reading
+  rationale: Sphalerons are introduced as electroweak nonperturbative configurations, so the electroweak-breaking branch helps orient where they live.
+  failure_mode_if_absent: The sphaleron node appears as an isolated high-energy word with no visible electroweak home.
+  evidence:
+    - type: expert_claim
+      source_ref: baryogenesis_and_sphaleron_refinement_batch_initial
+      note: Source notes keep sphalerons attached to the existing electroweak-symmetry-breaking neighborhood.
+  status: asserted
+  confidence: 0.82
+- from: sm.sphaleron
+  to: sm.baryogenesis
+  relation_type: requires_for_use
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: standard_model
+  task_type: literature_reading
+  rationale: Electroweak baryogenesis and washout discussions often hinge on sphaleron processes that violate baryon-plus-lepton number.
+  failure_mode_if_absent: Cannot connect the baryogenesis node to the concrete electroweak process that makes baryon-number violation operational in the Standard Model.
+  evidence:
+    - type: expert_claim
+      source_ref: baryogenesis_and_sphaleron_refinement_batch_initial
+      note: Source notes keep sphaleron language as the electroweak process-side payoff under baryogenesis.
+  status: asserted
+  confidence: 0.87

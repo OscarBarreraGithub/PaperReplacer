@@ -118,12 +118,57 @@ The Stage 11 refinement wave is now also populated at first pass through:
 
 - `spectral_and_mass_shell_refinement`
 
+The Stage 12 refinement wave is now also populated at first pass through:
+
+- `dis_and_hadronic_factorization_refinement`
+
+The Stage 13 refinement wave is now also populated at first pass through:
+
+- `renormalization_toolkit_refinement`
+
+The Stage 14 refinement wave is now also populated at first pass through:
+
+- `scet_mode_and_resummation_refinement`
+
+The Stage 15 refinement wave is now also populated at first pass through:
+
+- `scattering_spectral_residual_refinement`
+
+The Stage 16 refinement wave is now also populated at first pass through:
+
+- `eft_matching_and_uv_completion_refinement`
+
+The Stage 17 refinement wave is now also populated at first pass through:
+
+- `naturalness_and_hierarchy_refinement`
+
+The Stage 18 refinement wave is now also populated at first pass through:
+
+- `schwinger_pair_production_refinement`
+
+The Stage 19 refinement wave is now also populated at first pass through:
+
+- `qed_loop_precision_refinement`
+
+The Stage 20 refinement wave is now also populated at first pass through:
+
+- `baryogenesis_and_sphaleron_refinement`
+
+The Stage 21 refinement wave is now also populated at first pass through:
+
+- `axion_strong_cp_peccei_quinn_refinement`
+
+The Stage 22 refinement wave is now also populated at first pass through:
+
+- `seesaw_mechanism_refinement`
+
 Current integration model:
 
 - batches connect by reusing shared canonical node ids across neighborhoods
 - the repo now has a synthetic global compiled view at `all_authored`
 - the current UI and query tools are still batch-oriented
-- the current validated authored union stands at `341` nodes, `500` dependencies, `319` partonomy edges, and `78` overlays
+- the current validated authored union stands at `390` nodes, `604` dependencies, `365` partonomy edges, and `100` overlays
 - the authored union currently validates cleanly with no warnings
+- the remaining substantive Schwartz residue is now tracked as explicit deferrals in [schwartz-gap-queue.md](/Users/emmy/Documents/KnowledgeGraph/schwartz-gap-queue.md) unless later query behavior reveals a real missing branch
 
 Agent-generated proposal packs live under [data/batches/](/Users/emmy/Documents/KnowledgeGraph/data/batches) locally, but should normally stay off `main`.

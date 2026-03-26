@@ -1,0 +1,36 @@
+# Canonical partonomy edges for the renormalization-toolkit refinement batch.
+- parent: qft.renormalization_toolkit_refinement
+  child: qft.pauli_villars_regularization
+  rationale: Pauli-Villars is the alternative regulator branch retained in this pass.
+  status: asserted
+  confidence: 0.93
+- parent: qft.renormalization_toolkit_refinement
+  child: qft.bphz_renormalization
+  rationale: BPHZ is the subtraction-method branch retained in this pass.
+  status: asserted
+  confidence: 0.94
+- parent: qft.renormalization_toolkit_refinement
+  child: qft.superficial_degree_of_divergence
+  rationale: Divergence counting is the classification branch that organizes the renormalizability nodes.
+  status: asserted
+  confidence: 0.95
+- parent: qft.superficial_degree_of_divergence
+  child: qft.super_renormalizable_theory
+  rationale: Super-renormalizable theory is one outcome of the divergence-classification branch.
+  status: asserted
+  confidence: 0.94
+- parent: qft.superficial_degree_of_divergence
+  child: qft.nonrenormalizable_theory
+  rationale: Nonrenormalizable theory is the complementary classification leaf retained here.
+  status: asserted
+  confidence: 0.95
+- parent: qft.renormalization_toolkit_refinement
+  child: qft.effective_charge
+  rationale: Effective charge is one of the compact RG payoffs retained in the toolkit refinement.
+  status: asserted
+  confidence: 0.9
+- parent: qft.renormalization_toolkit_refinement
+  child: qft.dimensional_transmutation
+  rationale: Dimensional transmutation is the main scale-generation payoff retained in the toolkit refinement.
+  status: asserted
+  confidence: 0.94

@@ -1,0 +1,16 @@
+# Canonical partonomy edges for the QED loop-precision refinement batch.
+- parent: qed.qed_loop_precision_refinement
+  child: qed.electron_self_energy
+  rationale: Electron self-energy is one of the central loop-correction branches in the QED precision slice.
+  status: asserted
+  confidence: 0.94
+- parent: qed.qed_loop_precision_refinement
+  child: qed.anomalous_magnetic_moment
+  rationale: The anomalous magnetic moment is the main precision payoff branch of the QED loop slice.
+  status: asserted
+  confidence: 0.95
+- parent: qed.qed_loop_precision_refinement
+  child: qed.uehling_potential
+  rationale: The Uehling potential is the potential-level vacuum-polarization payoff leaf in the same QED loop neighborhood.
+  status: asserted
+  confidence: 0.91

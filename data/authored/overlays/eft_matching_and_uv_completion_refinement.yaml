@@ -1,0 +1,27 @@
+# Canonical overlay annotations for the EFT matching-and-UV-completion refinement batch.
+- overlay_type: assumed_background
+  target_topic: eft.effective_field_theory
+  presumed_node: eft.matching
+  audience_profile: hep_th_grad
+  subfield: effective_field_theory
+  artifact_type: paper
+  rationale: EFT discussions of integrating out or UV completion usually assume the generic matching workflow is already familiar.
+  evidence:
+    - type: expert_claim
+      source_ref: eft_matching_and_uv_completion_refinement_batch_initial
+      note: Source notes treat matching as assumed background for the new EFT-tail vocabulary.
+  status: asserted
+  confidence: 0.88
+- overlay_type: assumed_background
+  target_topic: eft.effective_field_theory
+  presumed_node: eft.wilson_coefficient
+  audience_profile: hep_th_grad
+  subfield: effective_field_theory
+  artifact_type: paper
+  rationale: Once the coefficient language is introduced, later generic EFT examples usually presume it rather than restating it in every low-energy example.
+  evidence:
+    - type: expert_claim
+      source_ref: eft_matching_and_uv_completion_refinement_batch_initial
+      note: Source notes keep Wilson-coefficient language as assumed background for the four-Fermi example.
+  status: asserted
+  confidence: 0.86

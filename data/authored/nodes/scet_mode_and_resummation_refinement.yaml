@@ -1,0 +1,172 @@
+# Canonical node records for the SCET mode-and-resummation refinement batch.
+- id: eft.soft_collinear_effective_theory
+  label: Soft-collinear effective theory
+  knowledge_kind: concept
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: EFT specialization that separates soft and collinear modes for energetic processes with large hierarchies of scales.
+  status: asserted
+- id: eft.matching
+  label: Matching
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Procedure for fixing EFT coefficients so the low-energy theory reproduces the UV theory at the matching scale.
+  status: asserted
+- id: eft.large_logarithm_resummation
+  label: Large-logarithm resummation
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Reorganization of perturbation theory to control logarithms that grow large when widely separated scales are present.
+  status: asserted
+- id: eft.mode_scaling
+  label: Mode scaling
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Scaling assignment that distinguishes the soft, collinear, and hard modes used in SCET reasoning.
+  status: asserted
+- id: eft.collinear_mode
+  label: Collinear mode
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Degree of freedom moving nearly along a lightlike direction with characteristic small transverse momentum.
+  status: asserted
+- id: eft.soft_mode
+  label: Soft mode
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Low-momentum degree of freedom in SCET that interacts with collinear sectors.
+  status: asserted
+- id: eft.hard_function
+  label: Hard function
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Short-distance coefficient or function that encodes the hard interaction after matching.
+  status: asserted
+- id: eft.jet_function
+  label: Jet function
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Collinear-sector object that captures the evolution or structure of a narrow energetic jet.
+  status: asserted
+- id: eft.soft_function
+  label: Soft function
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Soft-sector object that captures low-momentum radiation and its correlations in SCET factorization.
+  status: asserted
+- id: qft.eikonal_soft_factor
+  label: Eikonal soft factor
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Universal leading soft-emission factor built from external charged legs in the low-energy limit.
+  status: asserted
+- id: qft.jet
+  label: Jet
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Narrow, energetic spray of hadronic radiation treated as a coherent collinear object in collider observables and factorized descriptions.
+  status: asserted
+- id: qft.thrust
+  label: Thrust
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Event-shape observable that measures how pencil-like the final state is and serves as a canonical jet-sensitive quantity in factorization and SCET discussions.
+  status: asserted
+- id: eft.wilson_coefficient
+  label: Wilson coefficient
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Short-distance coefficient multiplying an EFT operator after matching, encoding the UV physics that has been integrated out.
+  status: asserted
+- id: eft.ultraviolet_sensitivity
+  label: Ultraviolet sensitivity
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Dependence of a low-energy EFT description on short-distance physics above the effective-theory scale.
+  status: asserted
+- id: eft.glauber_mode
+  label: Glauber mode
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: SCET momentum mode associated with near-forward momentum exchange, featuring small longitudinal components but parametrically important transverse momentum transfer between energetic sectors.
+  status: asserted
+- id: eft.collinear_interaction
+  label: Collinear interaction
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Interaction structure involving a collinear sector that is organized by SCET power counting and separated from the hard matching scale.
+  status: asserted
+- id: qft.heavy_jet_mass
+  label: Heavy jet mass
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Event-shape observable built from the larger hemisphere mass in a nearly two-jet final state, commonly used as a benchmark for SCET factorization and resummation.
+  status: asserted

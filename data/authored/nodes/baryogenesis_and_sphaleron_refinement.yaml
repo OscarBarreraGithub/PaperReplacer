@@ -1,0 +1,91 @@
+# Canonical node records for the baryogenesis-and-sphaleron refinement batch.
+- id: sm.symmetry_breaking_and_standard_model
+  label: Symmetry breaking and the Standard Model
+  knowledge_kind: concept
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Topic anchor for the first-pass Standard Model neighborhood around spontaneous symmetry breaking, the Higgs sector, and electroweak mass generation.
+  status: asserted
+- id: classical_fields.noether_theorem
+  label: Noether theorem
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Result linking continuous symmetries of the action to conserved currents or charges.
+  status: asserted
+- id: sm.ewbreak.electroweak_symmetry_breaking
+  label: Electroweak symmetry breaking
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Breaking of the electroweak symmetry down to the electromagnetic subgroup by the Higgs vacuum.
+  status: asserted
+- id: sm.baryon_number_conservation
+  label: Baryon number conservation
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Approximate conservation statement for baryon number in ordinary Standard-Model processes before anomalous or nonperturbative effects are taken into account.
+  status: asserted
+- id: sm.lepton_number
+  label: Lepton number
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Global charge counting leptons against antileptons in Standard-Model processes and symmetry discussions.
+  status: asserted
+- id: sm.b_minus_l_symmetry
+  label: B - L symmetry
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Difference between baryon and lepton number that remains especially important in anomaly and baryogenesis discussions.
+  status: asserted
+- id: sm.baryogenesis
+  label: Baryogenesis
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Generation of the observed cosmic matter-antimatter asymmetry through physics that departs from exact equilibrium and naive baryon-number conservation.
+  status: asserted
+- id: sm.baryogenesis_sakharov_conditions
+  label: Sakharov conditions
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Standard criteria for baryogenesis requiring baryon-number violation, C/CP violation, and departure from thermal equilibrium.
+  status: asserted
+- id: sm.sphaleron
+  label: Sphaleron
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Electroweak nonperturbative field configuration associated with baryon-plus-lepton number violation in the hot Standard-Model plasma.
+  status: asserted

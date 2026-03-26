@@ -1,0 +1,131 @@
+# Canonical node records for the DIS and hadronic-factorization refinement batch.
+- id: qcd.dis_and_hadronic_factorization_refinement
+  label: DIS and hadronic factorization refinement
+  knowledge_kind: concept
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Topic anchor for deep-inelastic scattering, Bjorken variables and scaling, Drell-Yan, Mellin moments, and twist as refinements of the hadronic factorization branch.
+  status: asserted
+- id: qcd.parton_model_and_factorization
+  label: QCD parton model and factorization
+  knowledge_kind: concept
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Topic anchor for the QCD neighborhood that turns color structure into parton language, PDFs, and factorized short-distance scattering formulas.
+  status: asserted
+- id: qcd.parton_distribution_function
+  label: Parton distribution function
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Distribution that encodes the longitudinal momentum fraction carried by a parton inside a hadron.
+  status: asserted
+- id: qcd.factorization_theorem
+  label: Factorization theorem
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Statement that separates a hard short-distance coefficient from universal long-distance hadronic structure.
+  status: asserted
+- id: qcd.collinear_factorization
+  label: Collinear factorization
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Leading-power factorization framework in which hadronic dynamics are organized around collinear partons.
+  status: asserted
+- id: qcd.hard_scattering_coefficient
+  label: Hard scattering coefficient
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Short-distance part of a factorized cross section that is computed perturbatively.
+  status: asserted
+- id: qft.cross_section
+  label: Cross section
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Observable that measures scattering probability per unit flux, usually in differential or total form.
+  status: asserted
+- id: qcd.deep_inelastic_scattering
+  label: Deep-inelastic scattering
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: High-energy lepton-hadron scattering process used to probe partonic structure inside hadrons.
+  status: asserted
+- id: qcd.bjorken_x
+  label: Bjorken x
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Dimensionless scaling variable in deep-inelastic scattering that tracks the longitudinal momentum fraction attributed to the struck parton.
+  status: asserted
+- id: qcd.bjorken_scaling
+  label: Bjorken scaling
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Approximate scaling behavior of deep-inelastic observables in which structure information is organized primarily by Bjorken x at high momentum transfer.
+  status: asserted
+- id: qcd.drell_yan_process
+  label: Drell-Yan process
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Hadronic production process in which a quark-antiquark annihilation channel is factorized into parton distributions and a short-distance hard process.
+  status: asserted
+- id: qcd.mellin_moment
+  label: Mellin moment
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Integral moment of a distribution or structure function used to reorganize scaling and operator-based analyses of hadronic observables.
+  status: asserted
+- id: qcd.twist
+  label: Twist
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Operator-classification quantity that organizes leading and subleading contributions in high-energy factorization or moment expansions.
+  status: asserted

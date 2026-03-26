@@ -1,0 +1,16 @@
+# Canonical partonomy edges for the EFT matching-and-UV-completion refinement batch.
+- parent: eft.effective_field_theory
+  child: eft.integrating_out
+  rationale: Integrating out is a core construction-side branch of the generic EFT root.
+  status: asserted
+  confidence: 0.95
+- parent: eft.effective_field_theory
+  child: eft.ultraviolet_completion
+  rationale: Ultraviolet completion is the full-theory-side counterpart that explains what the EFT is approximating.
+  status: asserted
+  confidence: 0.93
+- parent: eft.effective_field_theory
+  child: eft.four_fermi_theory
+  rationale: 4-Fermi theory is kept as the canonical low-energy EFT example under the generic EFT branch.
+  status: asserted
+  confidence: 0.94

@@ -1,0 +1,83 @@
+# Canonical node records for the seesaw-mechanism refinement batch.
+- id: sm.flavor_ckm_pmns_and_precision_observables
+  label: Flavor, CKM/PMNS, and precision observables
+  knowledge_kind: concept
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Topic anchor for flavor mixing, CKM and PMNS language, the first CP-violation invariant branch, and the shared electroweak precision-observable bridge.
+  status: asserted
+- id: sm.ewbreak.fermion_mass_generation
+  label: Fermion mass generation
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Standard Model mass generation for quarks and leptons through Yukawa couplings to the Higgs sector.
+  status: asserted
+- id: sm.pmns_matrix
+  label: PMNS matrix
+  knowledge_kind: representation
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Unitary lepton-flavor mixing matrix that relates weak-interaction eigenstates to mass eigenstates in the neutrino sector.
+  status: asserted
+- id: sm.neutrino_mass
+  label: Neutrino mass
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Nonzero neutrino mass structure required for the neutrino flavor and oscillation branch of the Standard Model discussion.
+  status: asserted
+- id: sm.lepton_number
+  label: Lepton number
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Global charge counting leptons against antileptons in Standard-Model processes and symmetry discussions.
+  status: asserted
+- id: sm.right_handed_neutrino
+  label: Right-handed neutrino
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Gauge-singlet neutrino degree of freedom introduced in seesaw discussions to extend the neutrino mass sector beyond the minimal Standard Model.
+  status: asserted
+- id: sm.majorana_mass
+  label: Majorana mass
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Mass term coupling a neutral fermion to its own charge conjugate, naturally linked to lepton-number violation in neutrino-mass discussions.
+  status: asserted
+- id: sm.seesaw_mechanism
+  label: Seesaw mechanism
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Neutrino-mass mechanism in which a large Majorana scale for singlet neutrinos suppresses the light observed neutrino masses.
+  status: asserted

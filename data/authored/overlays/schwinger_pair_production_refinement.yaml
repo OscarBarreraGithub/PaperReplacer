@@ -1,0 +1,27 @@
+# Canonical overlay annotations for the Schwinger-pair-production refinement batch.
+- overlay_type: assumed_background
+  target_topic: qft.schwinger_pair_production
+  presumed_node: qft.background_field_method
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  artifact_type: paper
+  rationale: Sources discussing Schwinger pair production usually presume the reader already recognizes the background-field method setup.
+  evidence:
+    - type: expert_claim
+      source_ref: schwinger_pair_production_refinement_batch_initial
+      note: Source notes treat the background-field method as assumed setup for the payoff node.
+  status: asserted
+  confidence: 0.86
+- overlay_type: assumed_background
+  target_topic: qft.schwinger_pair_production
+  presumed_node: qft.schwinger_proper_time
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  artifact_type: paper
+  rationale: The standard textbook derivation usually presumes the proper-time tool itself rather than rederiving it at the point where the physical payoff is introduced.
+  evidence:
+    - type: expert_claim
+      source_ref: schwinger_pair_production_refinement_batch_initial
+      note: Source notes keep proper-time machinery as assumed background for the new pair-production node.
+  status: asserted
+  confidence: 0.89

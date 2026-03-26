@@ -1,0 +1,91 @@
+# Canonical dependency edges for the seesaw-mechanism refinement batch.
+- from: sm.neutrino_mass
+  to: sm.seesaw_mechanism
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: standard_model_flavor
+  task_type: literature_reading
+  rationale: The seesaw mechanism is introduced as an explanation for why neutrino masses are so small rather than as a free-floating model-building slogan.
+  failure_mode_if_absent: Cannot tell what physical feature of the neutrino branch the mechanism is supposed to explain.
+  evidence:
+    - type: expert_claim
+      source_ref: seesaw_mechanism_refinement_batch_initial
+      note: Source notes keep neutrino mass as the immediate motivation for the seesaw node.
+  status: asserted
+  confidence: 0.96
+- from: sm.ewbreak.fermion_mass_generation
+  to: sm.seesaw_mechanism
+  relation_type: requires_for_recognize
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: standard_model_flavor
+  task_type: literature_reading
+  rationale: Seesaw language is easier to place when the generic fermion-mass-generation branch is already visible and neutrinos are being read as a specialized extension of it.
+  failure_mode_if_absent: The mechanism looks detached from the broader mass-generation language already present in the Standard Model graph.
+  evidence:
+    - type: expert_claim
+      source_ref: seesaw_mechanism_refinement_batch_initial
+      note: Source notes keep the seesaw branch tied to the existing fermion-mass-generation anchor without rebuilding the whole Higgs/Yukawa trunk.
+  status: asserted
+  confidence: 0.87
+- from: sm.lepton_number
+  to: sm.majorana_mass
+  relation_type: requires_for_use
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: standard_model_flavor
+  task_type: literature_reading
+  rationale: Majorana-mass language is typically read against the background that it violates or relaxes ordinary lepton-number conservation.
+  failure_mode_if_absent: Cannot see why the Majorana node matters conceptually beyond being just another mass label.
+  evidence:
+    - type: expert_claim
+      source_ref: seesaw_mechanism_refinement_batch_initial
+      note: Source notes use the existing lepton-number node as the lightest reusable bridge into Majorana-mass language.
+  status: asserted
+  confidence: 0.9
+- from: sm.neutrino_mass
+  to: sm.majorana_mass
+  relation_type: requires_for_recognize
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: standard_model_flavor
+  task_type: literature_reading
+  rationale: The Majorana-mass concept is introduced here as one structurally important way of organizing the neutrino-mass sector.
+  failure_mode_if_absent: The Majorana node appears as a detached formal term rather than as part of the neutrino-mass story.
+  evidence:
+    - type: expert_claim
+      source_ref: seesaw_mechanism_refinement_batch_initial
+      note: Source notes keep Majorana-mass language directly downstream of the existing neutrino-mass branch.
+  status: asserted
+  confidence: 0.86
+- from: sm.right_handed_neutrino
+  to: sm.seesaw_mechanism
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: standard_model_flavor
+  task_type: literature_reading
+  rationale: The standard seesaw mechanism uses a singlet right-handed-neutrino ingredient to extend the neutrino mass matrix.
+  failure_mode_if_absent: Cannot tell what additional field content is responsible for the new heavy scale in the mechanism.
+  evidence:
+    - type: expert_claim
+      source_ref: seesaw_mechanism_refinement_batch_initial
+      note: Source notes keep the right-handed-neutrino ingredient explicit instead of collapsing it into the seesaw label.
+  status: asserted
+  confidence: 0.95
+- from: sm.majorana_mass
+  to: sm.seesaw_mechanism
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: standard_model_flavor
+  task_type: literature_reading
+  rationale: The seesaw suppression depends on the presence of a large Majorana mass scale in the singlet neutrino sector.
+  failure_mode_if_absent: The mechanism loses the structural ingredient that makes the light neutrino mass small.
+  evidence:
+    - type: expert_claim
+      source_ref: seesaw_mechanism_refinement_batch_initial
+      note: Source notes keep Majorana mass as the second indispensable ingredient under the seesaw node.
+  status: asserted
+  confidence: 0.96

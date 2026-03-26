@@ -1,0 +1,27 @@
+# Canonical overlay annotations for the naturalness-and-hierarchy refinement batch.
+- overlay_type: assumed_background
+  target_topic: sm.mass_naturalness
+  presumed_node: eft.ultraviolet_sensitivity
+  audience_profile: hep_th_grad
+  subfield: standard_model
+  artifact_type: paper
+  rationale: Naturalness discussions usually assume some general familiarity with the idea that low-energy quantities can retain sensitivity to short-distance physics.
+  evidence:
+    - type: expert_claim
+      source_ref: naturalness_and_hierarchy_refinement_batch_initial
+      note: Source notes treat the generic EFT sensitivity idea as assumed background for the SM-facing naturalness node.
+  status: asserted
+  confidence: 0.87
+- overlay_type: assumed_background
+  target_topic: sm.lee_quigg_thacker_bound
+  presumed_node: qft.partial_wave_unitarity_bound
+  audience_profile: hep_th_grad
+  subfield: standard_model
+  artifact_type: paper
+  rationale: Sources quoting the Lee-Quigg-Thacker bound usually presume the broader partial-wave unitarity argument rather than rebuilding it from scratch.
+  evidence:
+    - type: expert_claim
+      source_ref: naturalness_and_hierarchy_refinement_batch_initial
+      note: Source notes keep the general partial-wave bound as assumed background for the electroweak specialization.
+  status: asserted
+  confidence: 0.88

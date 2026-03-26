@@ -1,0 +1,101 @@
+# Canonical node records for the naturalness-and-hierarchy refinement batch.
+- id: sm.symmetry_breaking_and_standard_model
+  label: Symmetry breaking and the Standard Model
+  knowledge_kind: concept
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Topic anchor for the first-pass Standard Model neighborhood around spontaneous symmetry breaking, the Higgs sector, and electroweak mass generation.
+  status: asserted
+- id: sm.higgs.higgs_mechanism
+  label: Higgs mechanism
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Mechanism by which electroweak gauge fields and fermions acquire mass after symmetry breaking.
+  status: asserted
+- id: sm.ewbreak.goldstone_boson_equivalence_theorem
+  label: Goldstone-boson equivalence theorem
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: High-energy theorem stating that amplitudes with external longitudinal weak bosons are equivalent, up to controlled corrections, to amplitudes with the corresponding would-be Goldstone bosons.
+  status: asserted
+- id: eft.ultraviolet_sensitivity
+  label: Ultraviolet sensitivity
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Dependence of a low-energy EFT description on short-distance physics above the effective-theory scale.
+  status: asserted
+- id: eft.ultraviolet_completion
+  label: Ultraviolet completion
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: More microscopic theory or degrees of freedom that reproduce the EFT at low energies and resolve its short-distance limitations.
+  status: asserted
+- id: qft.partial_wave_unitarity_bound
+  label: Partial-wave unitarity bound
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Unitarity constraint on partial-wave amplitudes that bounds their allowed magnitude in each angular-momentum channel.
+  status: asserted
+- id: sm.mass_naturalness
+  label: Mass naturalness
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Expectation that a particle mass, especially in the Higgs sector, should not require delicate cancellations against much larger short-distance contributions.
+  status: asserted
+- id: qft.fine_tuning
+  label: Fine-tuning
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Delicate adjustment of parameters or counterbalancing contributions required to keep an observable much smaller than the scales that feed into it.
+  status: asserted
+- id: qft.planck_scale
+  label: Planck scale
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Extremely high energy scale associated with quantum-gravity effects and commonly used as the reference ultraviolet scale in hierarchy arguments.
+  status: asserted
+- id: sm.lee_quigg_thacker_bound
+  label: Lee-Quigg-Thacker bound
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Partial-wave unitarity bound in longitudinal electroweak boson scattering that constrains the Higgs-sector mass scale in perturbative Standard-Model reasoning.
+  status: asserted

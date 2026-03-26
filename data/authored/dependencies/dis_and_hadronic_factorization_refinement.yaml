@@ -1,0 +1,211 @@
+# Canonical dependency edges for the DIS and hadronic-factorization refinement batch.
+- from: qcd.parton_model_and_factorization
+  to: qcd.dis_and_hadronic_factorization_refinement
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qcd_factorization
+  task_type: literature_reading
+  rationale: The batch is a refinement of the existing parton/factorization trunk rather than a separate QCD umbrella.
+  failure_mode_if_absent: Cannot tell what larger hadronic-factorization branch the new refinement is sharpening.
+  evidence:
+    - type: expert_claim
+      source_ref: dis_and_hadronic_factorization_refinement_batch_initial
+      note: Source notes keep the earlier QCD factorization batch as the immediate background anchor.
+  status: asserted
+  confidence: 0.97
+- from: qcd.factorization_theorem
+  to: qcd.deep_inelastic_scattering
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qcd_factorization
+  task_type: literature_reading
+  rationale: The reusable DIS reading here is the factorized high-energy one, so the factorization theorem has to be available to use the process branch.
+  failure_mode_if_absent: Cannot tell why DIS is being discussed as a controlled hadronic factorization context rather than as a generic scattering example.
+  evidence:
+    - type: expert_claim
+      source_ref: dis_and_hadronic_factorization_refinement_batch_initial
+      note: Source notes use DIS as a process-facing payoff of the existing factorization branch.
+  status: asserted
+  confidence: 0.95
+- from: qcd.parton_distribution_function
+  to: qcd.deep_inelastic_scattering
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qcd_factorization
+  task_type: literature_reading
+  rationale: DIS is one of the main places where parton distributions are interpreted and extracted.
+  failure_mode_if_absent: Cannot connect the hadronic structure being probed in DIS to the PDF vocabulary already present in the graph.
+  evidence:
+    - type: expert_claim
+      source_ref: dis_and_hadronic_factorization_refinement_batch_initial
+      note: Source notes keep PDFs as the hadronic ingredient of the DIS branch.
+  status: asserted
+  confidence: 0.96
+- from: qft.cross_section
+  to: qcd.deep_inelastic_scattering
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qcd_factorization
+  task_type: literature_reading
+  rationale: DIS is read as a measured scattering observable, so the cross-section vocabulary has to be available.
+  failure_mode_if_absent: Cannot tell what sort of observable quantity the DIS process branch is organizing.
+  evidence:
+    - type: expert_claim
+      source_ref: dis_and_hadronic_factorization_refinement_batch_initial
+      note: Source notes reuse the cross-section node instead of reopening a separate observable branch.
+  status: asserted
+  confidence: 0.92
+- from: qcd.deep_inelastic_scattering
+  to: qcd.bjorken_x
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qcd_factorization
+  task_type: literature_reading
+  rationale: Bjorken x is introduced as the central kinematic scaling variable in the DIS branch.
+  failure_mode_if_absent: Cannot read the standard DIS kinematics in the variable that organizes partonic momentum fractions.
+  evidence:
+    - type: expert_claim
+      source_ref: dis_and_hadronic_factorization_refinement_batch_initial
+      note: Source notes keep Bjorken x as the first local refinement under DIS.
+  status: asserted
+  confidence: 0.97
+- from: qcd.bjorken_x
+  to: qcd.bjorken_scaling
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qcd_factorization
+  task_type: literature_reading
+  rationale: Bjorken scaling is expressed in terms of the x-variable dependence of high-energy DIS observables.
+  failure_mode_if_absent: Cannot tell what variable is being held fixed in the scaling statement.
+  evidence:
+    - type: expert_claim
+      source_ref: dis_and_hadronic_factorization_refinement_batch_initial
+      note: Source notes use Bjorken x as the local kinematic coordinate for the scaling statement.
+  status: asserted
+  confidence: 0.96
+- from: qcd.deep_inelastic_scattering
+  to: qcd.bjorken_scaling
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qcd_factorization
+  task_type: literature_reading
+  rationale: Bjorken scaling is the classic high-energy behavior statement attached to DIS rather than to an arbitrary hadronic process.
+  failure_mode_if_absent: Cannot place the scaling statement inside the process context that motivates it.
+  evidence:
+    - type: expert_claim
+      source_ref: dis_and_hadronic_factorization_refinement_batch_initial
+      note: Source notes keep the scaling statement directly attached to the DIS branch.
+  status: asserted
+  confidence: 0.95
+- from: qcd.factorization_theorem
+  to: qcd.drell_yan_process
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qcd_factorization
+  task_type: literature_reading
+  rationale: Drell-Yan is another central hadronic process where the factorization theorem is used directly.
+  failure_mode_if_absent: Cannot tell why the Drell-Yan branch belongs in the same hadronic-factorization neighborhood as DIS.
+  evidence:
+    - type: expert_claim
+      source_ref: dis_and_hadronic_factorization_refinement_batch_initial
+      note: Source notes use Drell-Yan as the second process-facing payoff of the factorization trunk.
+  status: asserted
+  confidence: 0.96
+- from: qcd.parton_distribution_function
+  to: qcd.drell_yan_process
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qcd_factorization
+  task_type: literature_reading
+  rationale: Drell-Yan observables are read through the same hadron-side PDF ingredients that appear in factorized hadronic scattering.
+  failure_mode_if_absent: Cannot identify the long-distance hadronic input in the Drell-Yan branch.
+  evidence:
+    - type: expert_claim
+      source_ref: dis_and_hadronic_factorization_refinement_batch_initial
+      note: Source notes keep the PDF node visible at both central process branches.
+  status: asserted
+  confidence: 0.96
+- from: qcd.hard_scattering_coefficient
+  to: qcd.drell_yan_process
+  relation_type: requires_for_use
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: qcd_factorization
+  task_type: literature_reading
+  rationale: The short-distance annihilation kernel is one of the cleanest places to see the factorized hard coefficient at work in a hadronic process.
+  failure_mode_if_absent: The Drell-Yan branch looks like a pure process label rather than a factorized hard-scattering example.
+  evidence:
+    - type: expert_claim
+      source_ref: dis_and_hadronic_factorization_refinement_batch_initial
+      note: Source notes keep the hard coefficient visible at the Drell-Yan node without reopening the full perturbative process tree.
+  status: asserted
+  confidence: 0.88
+- from: qft.cross_section
+  to: qcd.drell_yan_process
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qcd_factorization
+  task_type: literature_reading
+  rationale: Drell-Yan is read through a hadronic cross section, so the observable vocabulary has to be present.
+  failure_mode_if_absent: Cannot tell what measured quantity the Drell-Yan branch is organizing.
+  evidence:
+    - type: expert_claim
+      source_ref: dis_and_hadronic_factorization_refinement_batch_initial
+      note: Source notes reuse the existing observable node rather than building a process-specific formula subtree.
+  status: asserted
+  confidence: 0.9
+- from: qcd.parton_distribution_function
+  to: qcd.mellin_moment
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qcd_factorization
+  task_type: literature_reading
+  rationale: Mellin moments are one standard way of repackaging parton distributions or related hadronic structure information.
+  failure_mode_if_absent: Cannot tell what quantity is being integrated into moments.
+  evidence:
+    - type: expert_claim
+      source_ref: dis_and_hadronic_factorization_refinement_batch_initial
+      note: Source notes keep moments attached to the existing PDF branch rather than introducing a separate structure-function subtree.
+  status: asserted
+  confidence: 0.95
+- from: qcd.bjorken_scaling
+  to: qcd.mellin_moment
+  relation_type: requires_for_recognize
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: qcd_factorization
+  task_type: literature_reading
+  rationale: Mellin moments are often introduced in the same scaling-analysis discussions that organize DIS structure by Bjorken scaling behavior.
+  failure_mode_if_absent: The moment construction appears detached from the scaling discussion that motivates it.
+  evidence:
+    - type: expert_claim
+      source_ref: dis_and_hadronic_factorization_refinement_batch_initial
+      note: Source notes keep moment language adjacent to the DIS scaling branch.
+  status: asserted
+  confidence: 0.84
+- from: qcd.mellin_moment
+  to: qcd.twist
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qcd_factorization
+  task_type: literature_reading
+  rationale: Twist is commonly read through the moment or operator expansion that organizes leading and subleading high-energy contributions.
+  failure_mode_if_absent: Cannot place twist language inside the structure-analysis branch where it is usually introduced.
+  evidence:
+    - type: expert_claim
+      source_ref: dis_and_hadronic_factorization_refinement_batch_initial
+      note: Source notes keep twist as the structural refinement downstream of the moment branch.
+  status: asserted
+  confidence: 0.93

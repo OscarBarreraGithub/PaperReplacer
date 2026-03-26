@@ -1,0 +1,181 @@
+# Canonical dependency edges for the renormalization-toolkit refinement batch.
+- from: qft.regularization_renormalization_rg
+  to: qft.renormalization_toolkit_refinement
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: The batch is a refinement of the existing regularization and RG trunk rather than a separate standalone topic family.
+  failure_mode_if_absent: Cannot tell what larger renormalization branch the toolkit slice is sharpening.
+  evidence:
+    - type: expert_claim
+      source_ref: renormalization_toolkit_refinement_batch_initial
+      note: Source notes keep the existing RG batch as the immediate background anchor.
+  status: asserted
+  confidence: 0.97
+- from: qft.ultraviolet_divergence
+  to: qft.pauli_villars_regularization
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: standard_computation
+  rationale: Pauli-Villars is introduced as an alternative response to the ultraviolet-divergence problem.
+  failure_mode_if_absent: Cannot tell what problem the regulator is supposed to control.
+  evidence:
+    - type: expert_claim
+      source_ref: renormalization_toolkit_refinement_batch_initial
+      note: Source notes keep UV divergence as the common front-end for the regulator branch.
+  status: asserted
+  confidence: 0.95
+- from: qft.renormalized_perturbation_theory
+  to: qft.pauli_villars_regularization
+  relation_type: requires_for_use
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: standard_computation
+  rationale: The regulator is used inside the same perturbative renormalization workflow as the existing dim-reg branch.
+  failure_mode_if_absent: The method appears detached from the perturbative renormalization setting where it is normally deployed.
+  evidence:
+    - type: expert_claim
+      source_ref: renormalization_toolkit_refinement_batch_initial
+      note: Source notes keep Pauli-Villars adjacent to the renormalized perturbative setup without collapsing the two regulator methods.
+  status: asserted
+  confidence: 0.86
+- from: qft.ultraviolet_divergence
+  to: qft.superficial_degree_of_divergence
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: standard_computation
+  rationale: The superficial degree of divergence is a power-counting estimate of ultraviolet behavior.
+  failure_mode_if_absent: Cannot tell what kind of divergence the power-counting quantity is estimating.
+  evidence:
+    - type: expert_claim
+      source_ref: renormalization_toolkit_refinement_batch_initial
+      note: Source notes use UV divergence as the motivating background for the classification branch.
+  status: asserted
+  confidence: 0.96
+- from: qft.superficial_degree_of_divergence
+  to: qft.super_renormalizable_theory
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: standard_computation
+  rationale: Super-renormalizable-theory language is read through the divergence-counting classification of interactions.
+  failure_mode_if_absent: Cannot tell what structural criterion makes the theory super-renormalizable.
+  evidence:
+    - type: expert_claim
+      source_ref: renormalization_toolkit_refinement_batch_initial
+      note: Source notes keep the theory-classification nodes downstream of the divergence-counting node.
+  status: asserted
+  confidence: 0.95
+- from: qft.superficial_degree_of_divergence
+  to: qft.nonrenormalizable_theory
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: standard_computation
+  rationale: Nonrenormalizable-theory language is likewise introduced through divergence-counting and counterterm-growth arguments.
+  failure_mode_if_absent: Cannot tell what structural criterion makes the theory nonrenormalizable.
+  evidence:
+    - type: expert_claim
+      source_ref: renormalization_toolkit_refinement_batch_initial
+      note: Source notes keep the nonrenormalizable-theory node in the same power-counting branch.
+  status: asserted
+  confidence: 0.96
+- from: qft.renormalized_perturbation_theory
+  to: qft.bphz_renormalization
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: standard_computation
+  rationale: BPHZ is a renormalization prescription used within perturbative subtraction theory.
+  failure_mode_if_absent: Cannot place the method inside the renormalization workflow it is intended to refine.
+  evidence:
+    - type: expert_claim
+      source_ref: renormalization_toolkit_refinement_batch_initial
+      note: Source notes keep BPHZ as a subtraction-method refinement of the renormalized perturbative branch.
+  status: asserted
+  confidence: 0.96
+- from: qft.superficial_degree_of_divergence
+  to: qft.bphz_renormalization
+  relation_type: requires_for_recognize
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: standard_computation
+  rationale: Divergence counting helps explain which Taylor subtractions BPHZ is meant to remove.
+  failure_mode_if_absent: The subtraction method appears detached from the divergence structure it targets.
+  evidence:
+    - type: expert_claim
+      source_ref: renormalization_toolkit_refinement_batch_initial
+      note: Source notes keep power-counting language visible but secondary at the BPHZ node.
+  status: asserted
+  confidence: 0.86
+- from: qft.renormalization_scale
+  to: qft.effective_charge
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: Effective charge is a scale-dependent running quantity, so the renormalization-scale variable must already be available.
+  failure_mode_if_absent: Cannot tell with respect to what variable the effective charge is defined or extracted.
+  evidence:
+    - type: expert_claim
+      source_ref: renormalization_toolkit_refinement_batch_initial
+      note: Source notes keep effective charge in the RG-payoff branch downstream of scale dependence.
+  status: asserted
+  confidence: 0.95
+- from: qft.beta_function
+  to: qft.effective_charge
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: Effective charge is interpreted through the same running-coupling data encoded by the beta function.
+  failure_mode_if_absent: Cannot place the effective charge inside the graph's existing RG-flow vocabulary.
+  evidence:
+    - type: expert_claim
+      source_ref: renormalization_toolkit_refinement_batch_initial
+      note: Source notes keep the effective-charge node adjacent to the beta-function branch.
+  status: asserted
+  confidence: 0.94
+- from: qft.renormalization_scale
+  to: qft.dimensional_transmutation
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: Dimensional transmutation is the replacement of a dimensionless parameter by a dynamically generated scale.
+  failure_mode_if_absent: Cannot tell what scale is being dynamically generated or why it enters the quantum theory.
+  evidence:
+    - type: expert_claim
+      source_ref: renormalization_toolkit_refinement_batch_initial
+      note: Source notes keep dimensional transmutation in the scale-setting branch of the RG story.
+  status: asserted
+  confidence: 0.96
+- from: qft.beta_function
+  to: qft.dimensional_transmutation
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: Dimensional transmutation is read through RG running that converts a classical parameter choice into a quantum scale.
+  failure_mode_if_absent: Cannot explain the mechanism that generates the new scale dynamically.
+  evidence:
+    - type: expert_claim
+      source_ref: renormalization_toolkit_refinement_batch_initial
+      note: Source notes keep the beta-function branch as the direct structural input to dimensional transmutation.
+  status: asserted
+  confidence: 0.96

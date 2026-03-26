@@ -1,0 +1,67 @@
+# Canonical node records for the Schwinger-pair-production refinement batch.
+- id: qft.effective_actions_and_background_fields
+  label: Effective actions and background fields
+  knowledge_kind: concept
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Topic anchor for the 1PI effective action, background-field methods, effective potentials, and the one-loop functional tools that support them.
+  status: asserted
+- id: qft.background_field
+  label: Background field
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Classical field configuration used as the expansion point for quantum fluctuations.
+  status: asserted
+- id: qft.background_field_method
+  label: Background-field method
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Technique that splits a field into background and fluctuation pieces so effective actions can be computed with preserved background covariance.
+  status: asserted
+- id: qft.one_loop_effective_action
+  label: One-loop effective action
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Leading quantum correction to the effective action, usually expressed through a functional determinant of the quadratic fluctuation operator.
+  status: asserted
+- id: qft.schwinger_proper_time
+  label: Schwinger proper-time method
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Integral representation that rewrites functional determinants and loop expressions in proper-time form.
+  aliases:
+    - Schwinger proper time
+  status: asserted
+- id: qft.schwinger_pair_production
+  label: Schwinger pair production
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Nonperturbative production of charged particle-antiparticle pairs from the vacuum in a strong background electric field, read from the imaginary part of the effective action.
+  status: asserted

@@ -1,0 +1,181 @@
+# Canonical node records for the scattering-spectral residual refinement batch.
+- id: qft.optical_theorem_and_unitarity_cutting_basics
+  label: Optical theorem and unitarity cutting basics
+  knowledge_kind: concept
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Topic anchor for S-matrix unitarity, forward scattering, the optical theorem, and the first cutting-rule language.
+  status: asserted
+- id: qft.cross_sections_decay_rates_and_phase_space
+  label: Cross sections, decay rates, and phase space
+  knowledge_kind: concept
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Topic anchor for the observable formulas that convert scattering amplitudes into cross sections, decay rates, and phase-space expressions.
+  status: asserted
+- id: qft.spectral_and_mass_shell_refinement
+  label: Spectral and mass-shell refinement
+  knowledge_kind: concept
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Topic anchor for spectral representation, on-shell/off-shell language, advanced propagators, and the first Lippmann-Schwinger bridge.
+  status: asserted
+- id: qft.scattering_amplitude
+  label: Scattering amplitude
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Complex transition amplitude or matrix element whose magnitude enters observable scattering and decay formulas.
+  status: asserted
+- id: qft.s_matrix_unitarity
+  label: S-matrix unitarity
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Statement that the S matrix is unitary, enforcing probability conservation in scattering processes.
+  status: asserted
+- id: qft.optical_theorem
+  label: Optical theorem
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Unitarity relation equating the imaginary part of the forward scattering amplitude to a sum over on-shell intermediate states.
+  status: asserted
+- id: qft.unitarity_cutting_rules
+  label: Unitarity cutting rules
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Rules that relate cuts of diagrams or amplitudes to sums over on-shell intermediate states as a practical implementation of unitarity.
+  status: asserted
+- id: qft.on_shell_intermediate_state
+  label: On-shell intermediate state
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Intermediate physical state satisfying on-shell conditions in a unitarity relation or cutting argument.
+  status: asserted
+- id: qft.lippmann_schwinger_equation
+  label: Lippmann-Schwinger equation
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Integral equation relating interacting scattering states to free asymptotic states through the interaction operator or resolvent.
+  status: asserted
+- id: qft.feynman_propagator
+  label: Feynman propagator
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Causal two-point Green function with the standard i epsilon prescription, usually written as a time-ordered vacuum correlator.
+  status: asserted
+- id: qft.partial_wave_expansion
+  label: Partial-wave expansion
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Angular-momentum decomposition of a scattering amplitude into partial waves.
+  status: asserted
+- id: qft.decay_rate
+  label: Decay rate
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Observable that measures the probability per unit time for an unstable state to decay into specified channels.
+  status: asserted
+- id: qft.breit_wigner_distribution
+  label: Breit-Wigner distribution
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Finite-width distribution or line shape for an unstable intermediate state.
+  status: asserted
+- id: qft.narrow_width_approximation
+  label: Narrow-width approximation
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Approximation that replaces a narrow resonance by an on-shell factorized form.
+  status: asserted
+- id: qft.t_matrix
+  label: T-matrix
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Scattering operator defined by separating the identity piece from the S matrix, whose matrix elements encode transition amplitudes.
+  status: asserted
+- id: qft.unstable_particles
+  label: Unstable particles
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: States or resonances with finite lifetimes that appear through decay widths rather than exact asymptotic one-particle poles.
+  status: asserted
+- id: qft.partial_wave_unitarity_bound
+  label: Partial-wave unitarity bound
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Unitarity constraint on partial-wave amplitudes that bounds their allowed magnitude in each angular-momentum channel.
+  status: asserted
+- id: qft.feynman_tree_theorem
+  label: Feynman tree theorem
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Theorem that rewrites loop integrals in terms of sums over tree-level objects with on-shell cuts of Feynman propagators.
+  status: asserted

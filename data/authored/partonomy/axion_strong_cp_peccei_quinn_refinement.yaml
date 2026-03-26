@@ -1,0 +1,21 @@
+# Canonical partonomy edges for the axion / strong-CP / Peccei-Quinn refinement batch.
+- parent: qcd.nonperturbative_qcd_and_topology
+  child: qcd.strong_cp_problem
+  rationale: The strong-CP problem is the late QCD-topology payoff leaf that extends the existing theta-vacuum branch.
+  status: asserted
+  confidence: 0.92
+- parent: sm.symmetry_breaking_and_standard_model
+  child: sm.peccei_quinn_symmetry
+  rationale: Peccei-Quinn symmetry is the symmetry-side branch that links the Standard-Model neighborhood to the axion payoff.
+  status: asserted
+  confidence: 0.88
+- parent: sm.symmetry_breaking_and_standard_model
+  child: sm.pseudo_goldstone_boson
+  rationale: The pseudo-Goldstone node is kept under the symmetry-breaking branch because it is the reusable bridge from Goldstone language to the axion leaf.
+  status: asserted
+  confidence: 0.9
+- parent: sm.peccei_quinn_symmetry
+  child: sm.axion
+  rationale: The axion is the direct payoff leaf beneath the Peccei-Quinn symmetry branch in this batch.
+  status: asserted
+  confidence: 0.94

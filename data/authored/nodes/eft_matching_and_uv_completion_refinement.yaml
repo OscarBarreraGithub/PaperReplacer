@@ -1,0 +1,91 @@
+# Canonical node records for the EFT matching-and-UV-completion refinement batch.
+- id: eft.effective_field_theory
+  label: Effective field theory
+  knowledge_kind: concept
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Scale-separated low-energy description organized by operators, matching, and power counting.
+  status: asserted
+- id: eft.scale_separation
+  label: Scale separation
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Separation of a problem into distinct physical scales so that only the relevant low-energy degrees of freedom remain explicit.
+  status: asserted
+- id: eft.higher_dimensional_operator
+  label: Higher-dimensional operator
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Operator beyond the lowest-dimension terms, typically suppressed by powers of the heavy scale.
+  status: asserted
+- id: eft.matching
+  label: Matching
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Procedure for fixing EFT coefficients so the low-energy theory reproduces the UV theory at the matching scale.
+  status: asserted
+- id: eft.wilson_coefficient
+  label: Wilson coefficient
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Short-distance coefficient multiplying an EFT operator after matching, encoding the UV physics that has been integrated out.
+  status: asserted
+- id: eft.ultraviolet_sensitivity
+  label: Ultraviolet sensitivity
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Dependence of a low-energy EFT description on short-distance physics above the effective-theory scale.
+  status: asserted
+- id: eft.integrating_out
+  label: Integrating out
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Procedure of removing heavy degrees of freedom from the explicit low-energy description while retaining their effects in EFT operators and coefficients.
+  status: asserted
+- id: eft.ultraviolet_completion
+  label: Ultraviolet completion
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: More microscopic theory or degrees of freedom that reproduce the EFT at low energies and resolve its short-distance limitations.
+  status: asserted
+- id: eft.four_fermi_theory
+  label: 4-Fermi theory
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Low-energy effective interaction theory built from local four-fermion operators, serving as a canonical example of integrating out heavy mediators.
+  status: asserted

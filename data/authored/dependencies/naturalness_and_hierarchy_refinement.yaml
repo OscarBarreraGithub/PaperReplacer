@@ -1,0 +1,136 @@
+# Canonical dependency edges for the naturalness-and-hierarchy refinement batch.
+- from: sm.higgs.higgs_mechanism
+  to: sm.mass_naturalness
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: standard_model
+  task_type: literature_reading
+  rationale: Schwartz's naturalness discussion is centered on the Higgs sector, so the Higgs-mechanism branch has to be visible before the mass-naturalness issue makes sense.
+  failure_mode_if_absent: Cannot tell why the naturalness problem is being posed in the electroweak / Higgs context rather than for an arbitrary parameter.
+  evidence:
+    - type: expert_claim
+      source_ref: naturalness_and_hierarchy_refinement_batch_initial
+      note: Source notes keep the new naturalness node explicitly attached to the existing Higgs-mechanism branch.
+  status: asserted
+  confidence: 0.96
+- from: eft.ultraviolet_sensitivity
+  to: sm.mass_naturalness
+  relation_type: requires_for_recognize
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: standard_model
+  task_type: literature_reading
+  rationale: Mass naturalness is the Standard-Model-facing form of the more generic issue that low-energy parameters can be sensitive to short-distance physics.
+  failure_mode_if_absent: The naturalness node looks detached from the generic EFT intuition that already exists elsewhere in the graph.
+  evidence:
+    - type: expert_claim
+      source_ref: naturalness_and_hierarchy_refinement_batch_initial
+      note: Source notes use ultraviolet sensitivity as the cross-batch bridge into the Higgs-sector naturalness discussion.
+  status: asserted
+  confidence: 0.88
+- from: eft.ultraviolet_completion
+  to: sm.mass_naturalness
+  relation_type: requires_for_recognize
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: standard_model
+  task_type: literature_reading
+  rationale: Naturalness questions are often framed by comparing the Higgs-scale parameter to possible ultraviolet completions or much higher cutoff scales.
+  failure_mode_if_absent: The node lacks its high-scale comparison side and reads like a purely low-energy bookkeeping issue.
+  evidence:
+    - type: expert_claim
+      source_ref: naturalness_and_hierarchy_refinement_batch_initial
+      note: Source notes keep UV-completion language adjacent to, but not merged with, the naturalness branch.
+  status: asserted
+  confidence: 0.84
+- from: qft.planck_scale
+  to: sm.mass_naturalness
+  relation_type: requires_for_recognize
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: standard_model
+  task_type: literature_reading
+  rationale: The hierarchy discussion is sharpened by comparing electroweak scales to the much larger Planck scale.
+  failure_mode_if_absent: The severity of the naturalness problem remains ungrounded in the standard large reference scale used in the literature.
+  evidence:
+    - type: expert_claim
+      source_ref: naturalness_and_hierarchy_refinement_batch_initial
+      note: Source notes keep Planck scale as the canonical high reference scale rather than expanding into a gravity program.
+  status: asserted
+  confidence: 0.89
+- from: sm.mass_naturalness
+  to: qft.fine_tuning
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: standard_model
+  task_type: literature_reading
+  rationale: Fine-tuning is the standard diagnosis of how mass naturalness is violated or threatened in the Higgs-sector discussion.
+  failure_mode_if_absent: Cannot tell what operational criterion or symptom is being used when the source says the parameter is unnatural.
+  evidence:
+    - type: expert_claim
+      source_ref: naturalness_and_hierarchy_refinement_batch_initial
+      note: Source notes keep fine-tuning as a downstream support node beneath mass naturalness.
+  status: asserted
+  confidence: 0.95
+- from: qft.planck_scale
+  to: qft.fine_tuning
+  relation_type: requires_for_recognize
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: standard_model
+  task_type: literature_reading
+  rationale: The Planck-scale comparison is one of the standard reasons the required cancellations are described as severe fine-tuning.
+  failure_mode_if_absent: The fine-tuning node loses the canonical large hierarchy that motivates it in textbook discussions.
+  evidence:
+    - type: expert_claim
+      source_ref: naturalness_and_hierarchy_refinement_batch_initial
+      note: Source notes keep Planck scale visible under the same naturalness branch.
+  status: asserted
+  confidence: 0.84
+- from: qft.partial_wave_unitarity_bound
+  to: sm.lee_quigg_thacker_bound
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: standard_model
+  task_type: literature_reading
+  rationale: The Lee-Quigg-Thacker result is a Standard-Model specialization of the already-landed partial-wave unitarity bound.
+  failure_mode_if_absent: Cannot tell what abstract theorem is being specialized or why the bound has the form it does.
+  evidence:
+    - type: expert_claim
+      source_ref: naturalness_and_hierarchy_refinement_batch_initial
+      note: Source notes explicitly reuse the new partial-wave unitarity node as the theorem-side parent of the LQT bound.
+  status: asserted
+  confidence: 0.97
+- from: sm.ewbreak.goldstone_boson_equivalence_theorem
+  to: sm.lee_quigg_thacker_bound
+  relation_type: requires_for_use
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: standard_model
+  task_type: literature_reading
+  rationale: The high-energy longitudinal weak-boson scattering argument behind the bound is commonly organized using the Goldstone-boson equivalence theorem.
+  failure_mode_if_absent: The bound looks like a disconnected electroweak fact instead of a consequence of the already-authored high-energy scattering bridge.
+  evidence:
+    - type: expert_claim
+      source_ref: naturalness_and_hierarchy_refinement_batch_initial
+      note: Source notes keep the LQT node attached to the existing equivalence-theorem branch.
+  status: asserted
+  confidence: 0.91
+- from: sm.higgs.higgs_mechanism
+  to: sm.lee_quigg_thacker_bound
+  relation_type: requires_for_recognize
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: standard_model
+  task_type: literature_reading
+  rationale: The LQT bound is interpreted as a Higgs-sector perturbative-consistency constraint, so the Higgs-mechanism branch helps orient it.
+  failure_mode_if_absent: The bound appears as a detached unitarity number rather than as a statement about the electroweak symmetry-breaking sector.
+  evidence:
+    - type: expert_claim
+      source_ref: naturalness_and_hierarchy_refinement_batch_initial
+      note: Source notes keep the bound as a Higgs-sector leaf rather than as a free-floating scattering theorem.
+  status: asserted
+  confidence: 0.86

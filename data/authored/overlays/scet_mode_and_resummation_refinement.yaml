@@ -1,0 +1,27 @@
+# Canonical overlay annotations for the SCET mode-and-resummation refinement batch.
+- overlay_type: assumed_background
+  target_topic: eft.soft_collinear_effective_theory
+  presumed_node: eft.matching
+  audience_profile: hep_th_grad
+  subfield: effective_field_theory
+  artifact_type: paper
+  rationale: SCET discussions usually assume the EFT matching workflow is already in place before introducing Wilson coefficients or mode refinements.
+  evidence:
+    - type: expert_claim
+      source_ref: scet_mode_and_resummation_refinement_batch_initial
+      note: Source notes treat matching as assumed background for the new coefficient-side refinements.
+  status: asserted
+  confidence: 0.9
+- overlay_type: assumed_background
+  target_topic: eft.soft_collinear_effective_theory
+  presumed_node: eft.large_logarithm_resummation
+  audience_profile: hep_th_grad
+  subfield: effective_field_theory
+  artifact_type: paper
+  rationale: Schwartz's SCET chapter typically introduces the additional mode and event-shape language against the already-motivated need to resum large logarithms.
+  evidence:
+    - type: expert_claim
+      source_ref: scet_mode_and_resummation_refinement_batch_initial
+      note: Source notes keep the general resummation trunk as assumed background rather than rebuilding Sudakov language from scratch.
+  status: asserted
+  confidence: 0.89

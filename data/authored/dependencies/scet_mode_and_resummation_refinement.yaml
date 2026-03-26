@@ -1,0 +1,211 @@
+# Canonical dependency edges for the SCET mode-and-resummation refinement batch.
+- from: eft.matching
+  to: eft.wilson_coefficient
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: effective_field_theory
+  task_type: literature_reading
+  rationale: Wilson coefficients are fixed by matching the EFT to the full theory at the hard scale.
+  failure_mode_if_absent: Cannot tell where the short-distance coefficient multiplying an EFT operator comes from.
+  evidence:
+    - type: expert_claim
+      source_ref: scet_mode_and_resummation_refinement_batch_initial
+      note: Source notes keep Wilson coefficients as the matching-side payload of the refinement.
+  status: asserted
+  confidence: 0.97
+- from: eft.wilson_coefficient
+  to: eft.hard_function
+  relation_type: requires_for_recognize
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: effective_field_theory
+  task_type: literature_reading
+  rationale: In SCET factorization formulas, the hard function is commonly read as the process-level short-distance object descended from matching coefficients.
+  failure_mode_if_absent: The hard function appears as a disconnected name rather than as the short-distance EFT side of the factorization formula.
+  evidence:
+    - type: expert_claim
+      source_ref: scet_mode_and_resummation_refinement_batch_initial
+      note: Source notes use Wilson-coefficient language to sharpen the existing hard-function node rather than duplicating it.
+  status: asserted
+  confidence: 0.88
+- from: eft.wilson_coefficient
+  to: eft.ultraviolet_sensitivity
+  relation_type: requires_for_recognize
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: effective_field_theory
+  task_type: literature_reading
+  rationale: Ultraviolet sensitivity is often exposed operationally through the dependence of EFT coefficients on short-distance physics.
+  failure_mode_if_absent: UV sensitivity remains a vague slogan instead of a statement about where short-distance dependence lives in the EFT.
+  evidence:
+    - type: expert_claim
+      source_ref: scet_mode_and_resummation_refinement_batch_initial
+      note: Source notes keep ultraviolet sensitivity tied to coefficient language rather than building a separate UV-completion branch.
+  status: asserted
+  confidence: 0.86
+- from: eft.mode_scaling
+  to: eft.glauber_mode
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: effective_field_theory
+  task_type: literature_reading
+  rationale: Glauber exchange is identified by a distinct SCET momentum scaling, so the mode-scaling language has to be available first.
+  failure_mode_if_absent: Cannot tell what makes Glauber exchange a separate mode rather than just another soft or collinear fluctuation.
+  evidence:
+    - type: expert_claim
+      source_ref: scet_mode_and_resummation_refinement_batch_initial
+      note: Source notes treat Glauber mode as the main missing SCET scaling refinement.
+  status: asserted
+  confidence: 0.96
+- from: eft.collinear_mode
+  to: eft.glauber_mode
+  relation_type: requires_for_recognize
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: effective_field_theory
+  task_type: literature_reading
+  rationale: Glauber exchange is introduced as a correction to the usual soft/collinear mode picture relating energetic sectors.
+  failure_mode_if_absent: The Glauber node appears detached from the energetic sectors between which the exchange occurs.
+  evidence:
+    - type: expert_claim
+      source_ref: scet_mode_and_resummation_refinement_batch_initial
+      note: Source notes keep the new mode adjacent to the existing collinear branch without reopening all SCET kinematics.
+  status: asserted
+  confidence: 0.84
+- from: eft.mode_scaling
+  to: eft.collinear_interaction
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: effective_field_theory
+  task_type: literature_reading
+  rationale: Collinear interactions are organized by the same power-counting and momentum-scaling logic that defines the SCET sectors.
+  failure_mode_if_absent: Cannot tell what approximation orders or kinematic regime the interaction language is supposed to respect.
+  evidence:
+    - type: expert_claim
+      source_ref: scet_mode_and_resummation_refinement_batch_initial
+      note: Source notes keep collinear-interaction language as a direct local refinement of mode scaling.
+  status: asserted
+  confidence: 0.95
+- from: eft.collinear_mode
+  to: eft.collinear_interaction
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: effective_field_theory
+  task_type: literature_reading
+  rationale: The interaction branch is about how the collinear sector is coupled and organized, so the collinear mode must already be in view.
+  failure_mode_if_absent: Cannot tell what degrees of freedom the interaction is describing.
+  evidence:
+    - type: expert_claim
+      source_ref: scet_mode_and_resummation_refinement_batch_initial
+      note: Source notes keep the new interaction node tied to the already-authored collinear sector.
+  status: asserted
+  confidence: 0.96
+- from: eft.soft_mode
+  to: eft.collinear_interaction
+  relation_type: requires_for_recognize
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: effective_field_theory
+  task_type: literature_reading
+  rationale: SCET interaction language often distinguishes the collinear branch from the long-wavelength soft sector that couples to it.
+  failure_mode_if_absent: The interaction node reads as purely internal collinear bookkeeping rather than as part of the sector-separation story.
+  evidence:
+    - type: expert_claim
+      source_ref: scet_mode_and_resummation_refinement_batch_initial
+      note: Source notes keep the soft-sector context visible without creating a separate decoupling theorem subtree.
+  status: asserted
+  confidence: 0.83
+- from: qft.eikonal_soft_factor
+  to: eft.soft_function
+  relation_type: requires_for_recognize
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: effective_field_theory
+  task_type: literature_reading
+  rationale: The soft function is commonly read through the same Wilson-line and eikonal-emission logic that appears in the universal soft-factor language.
+  failure_mode_if_absent: The existing soft-function node stays disconnected from the earlier soft-factor theorem branch.
+  evidence:
+    - type: expert_claim
+      source_ref: scet_mode_and_resummation_refinement_batch_initial
+      note: Source notes use the existing eikonal factor as the cleanest bridge from soft-emission theorems into SCET soft-sector language.
+  status: asserted
+  confidence: 0.84
+- from: qft.jet
+  to: qft.heavy_jet_mass
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qcd_ir
+  task_type: literature_reading
+  rationale: Heavy jet mass is an event-shape observable for approximately two-jet final states, so the jet concept has to be available first.
+  failure_mode_if_absent: Cannot tell what physical structure the observable is measuring.
+  evidence:
+    - type: expert_claim
+      source_ref: scet_mode_and_resummation_refinement_batch_initial
+      note: Source notes keep heavy jet mass as a narrow event-shape payoff leaf under the existing jet branch.
+  status: asserted
+  confidence: 0.97
+- from: eft.jet_function
+  to: qft.heavy_jet_mass
+  relation_type: requires_for_use
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: qcd_ir
+  task_type: literature_reading
+  rationale: The heavy-jet-mass distribution is a standard place where the collinear jet function becomes visible in SCET factorization formulas.
+  failure_mode_if_absent: Cannot place the observable inside the existing collinear-factor language of the graph.
+  evidence:
+    - type: expert_claim
+      source_ref: scet_mode_and_resummation_refinement_batch_initial
+      note: Source notes use heavy jet mass as a concrete payoff leaf for the existing jet-function node.
+  status: asserted
+  confidence: 0.9
+- from: eft.soft_function
+  to: qft.heavy_jet_mass
+  relation_type: requires_for_use
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: qcd_ir
+  task_type: literature_reading
+  rationale: The observable is likewise sensitive to soft radiation, so the soft-function branch helps interpret the factorized form of its distribution.
+  failure_mode_if_absent: The observable appears connected only to jets and not to the low-energy radiation that shapes the event.
+  evidence:
+    - type: expert_claim
+      source_ref: scet_mode_and_resummation_refinement_batch_initial
+      note: Source notes keep heavy jet mass anchored to both jet and soft functions to avoid a one-sided event-shape reading.
+  status: asserted
+  confidence: 0.9
+- from: eft.large_logarithm_resummation
+  to: qft.heavy_jet_mass
+  relation_type: requires_for_use
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: qcd_ir
+  task_type: literature_reading
+  rationale: Heavy-jet-mass spectra are a standard place where large logarithms must be resummed near the two-jet limit.
+  failure_mode_if_absent: Cannot see why the observable belongs in the same SCET chapter as the resummation trunk.
+  evidence:
+    - type: expert_claim
+      source_ref: scet_mode_and_resummation_refinement_batch_initial
+      note: Source notes use heavy jet mass as the second event-shape benchmark beside thrust for the existing resummation node.
+  status: asserted
+  confidence: 0.92
+- from: qft.thrust
+  to: qft.heavy_jet_mass
+  relation_type: requires_for_recognize
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: qcd_ir
+  task_type: literature_reading
+  rationale: Heavy jet mass is usually introduced alongside thrust as a parallel two-jet event-shape benchmark.
+  failure_mode_if_absent: The observable looks like an isolated named quantity rather than part of the existing event-shape neighborhood.
+  evidence:
+    - type: expert_claim
+      source_ref: scet_mode_and_resummation_refinement_batch_initial
+      note: Source notes keep thrust as the closest existing event-shape anchor for the new leaf node.
+  status: asserted
+  confidence: 0.88

@@ -1,0 +1,31 @@
+# Canonical partonomy edges for the DIS and hadronic-factorization refinement batch.
+- parent: qcd.dis_and_hadronic_factorization_refinement
+  child: qcd.deep_inelastic_scattering
+  rationale: DIS is one of the two central hadronic process branches in the refinement.
+  status: asserted
+  confidence: 0.96
+- parent: qcd.deep_inelastic_scattering
+  child: qcd.bjorken_x
+  rationale: Bjorken x is the primary kinematic variable branch retained under DIS.
+  status: asserted
+  confidence: 0.97
+- parent: qcd.deep_inelastic_scattering
+  child: qcd.bjorken_scaling
+  rationale: Bjorken scaling is the classic DIS behavior statement retained in the batch.
+  status: asserted
+  confidence: 0.96
+- parent: qcd.dis_and_hadronic_factorization_refinement
+  child: qcd.drell_yan_process
+  rationale: Drell-Yan is the second central hadronic process branch for factorization language.
+  status: asserted
+  confidence: 0.95
+- parent: qcd.dis_and_hadronic_factorization_refinement
+  child: qcd.mellin_moment
+  rationale: Mellin moments are the main structure-analysis refinement retained in this pass.
+  status: asserted
+  confidence: 0.92
+- parent: qcd.dis_and_hadronic_factorization_refinement
+  child: qcd.twist
+  rationale: Twist is the operator-structure refinement retained at the edge of the factorization branch.
+  status: asserted
+  confidence: 0.9

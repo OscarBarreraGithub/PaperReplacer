@@ -1,0 +1,27 @@
+# Canonical overlay annotations for the baryogenesis-and-sphaleron refinement batch.
+- overlay_type: assumed_background
+  target_topic: sm.symmetry_breaking_and_standard_model
+  presumed_node: classical_fields.noether_theorem
+  audience_profile: hep_th_grad
+  subfield: standard_model
+  artifact_type: paper
+  rationale: Late-SM baryogenesis passages usually assume the generic conserved-charge language from Noether theory is already familiar.
+  evidence:
+    - type: expert_claim
+      source_ref: baryogenesis_and_sphaleron_refinement_batch_initial
+      note: Source notes treat Noether-theorem charge language as assumed background for the whole batch.
+  status: asserted
+  confidence: 0.85
+- overlay_type: assumed_background
+  target_topic: sm.symmetry_breaking_and_standard_model
+  presumed_node: sm.ewbreak.electroweak_symmetry_breaking
+  audience_profile: hep_th_grad
+  subfield: standard_model
+  artifact_type: paper
+  rationale: The sphaleron side of the batch is usually introduced against background familiarity with the electroweak symmetry-breaking sector.
+  evidence:
+    - type: expert_claim
+      source_ref: baryogenesis_and_sphaleron_refinement_batch_initial
+      note: Source notes keep electroweak symmetry breaking as assumed context for the nonperturbative electroweak branch.
+  status: asserted
+  confidence: 0.84

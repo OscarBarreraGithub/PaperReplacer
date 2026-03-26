@@ -1,0 +1,27 @@
+# Canonical overlay annotations for the seesaw-mechanism refinement batch.
+- overlay_type: assumed_background
+  target_topic: sm.flavor_ckm_pmns_and_precision_observables
+  presumed_node: sm.pmns_matrix
+  audience_profile: hep_th_grad
+  subfield: standard_model_flavor
+  artifact_type: paper
+  rationale: Seesaw passages are usually introduced against background familiarity with the PMNS branch rather than by rebuilding mixing-matrix basics from scratch.
+  evidence:
+    - type: expert_claim
+      source_ref: seesaw_mechanism_refinement_batch_initial
+      note: Source notes keep PMNS language as assumed background for the local neutrino-mass refinement.
+  status: asserted
+  confidence: 0.84
+- overlay_type: assumed_background
+  target_topic: sm.flavor_ckm_pmns_and_precision_observables
+  presumed_node: sm.ewbreak.fermion_mass_generation
+  audience_profile: hep_th_grad
+  subfield: standard_model_flavor
+  artifact_type: paper
+  rationale: The seesaw branch is usually read as a specialized refinement of general fermion-mass-generation language rather than as a standalone field-theory detour.
+  evidence:
+    - type: expert_claim
+      source_ref: seesaw_mechanism_refinement_batch_initial
+      note: Source notes keep the generic fermion-mass-generation branch as assumed context for the seesaw discussion.
+  status: asserted
+  confidence: 0.83

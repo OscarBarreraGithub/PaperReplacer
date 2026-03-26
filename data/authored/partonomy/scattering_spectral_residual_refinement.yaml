@@ -1,0 +1,21 @@
+# Canonical partonomy edges for the scattering-spectral residual refinement batch.
+- parent: qft.optical_theorem_and_unitarity_cutting_basics
+  child: qft.t_matrix
+  rationale: T-matrix notation is a direct refinement of the existing scattering-unitarity root.
+  status: asserted
+  confidence: 0.94
+- parent: qft.optical_theorem_and_unitarity_cutting_basics
+  child: qft.unstable_particles
+  rationale: Unstable-particle language is kept as a nearby resonance-facing refinement of the same scattering neighborhood.
+  status: asserted
+  confidence: 0.88
+- parent: qft.optical_theorem_and_unitarity_cutting_basics
+  child: qft.partial_wave_unitarity_bound
+  rationale: The partial-wave unitarity bound is the theorem-level refinement of the existing unitarity and partial-wave branches.
+  status: asserted
+  confidence: 0.94
+- parent: qft.optical_theorem_and_unitarity_cutting_basics
+  child: qft.feynman_tree_theorem
+  rationale: The Feynman tree theorem is kept as a downstream theorem-level refinement of the current cutting-rule neighborhood.
+  status: asserted
+  confidence: 0.93
