@@ -1,0 +1,36 @@
+# Canonical partonomy edges for the Landau-analytic-structure batch.
+- parent: qft.landau_analytic_structure
+  child: qft.landau_singularity_conditions
+  rationale: The existing Landau conditions are the singular-locus branch reused by the new analytic-structure batch.
+  status: asserted
+  confidence: 0.96
+- parent: qft.landau_analytic_structure
+  child: qft.pinch_singularities
+  rationale: Pinch singularities are the contour-level manifestation of the Landau loci analyzed in this batch.
+  status: asserted
+  confidence: 0.91
+- parent: qft.landau_analytic_structure
+  child: qft.iterated_integral
+  rationale: Iterated integrals supply the polylogarithmic function-space side of the Landau-bootstrap story.
+  status: asserted
+  confidence: 0.94
+- parent: qft.landau_analytic_structure
+  child: qft.symbol_calculus
+  rationale: Symbol calculus is the compressed function-space representation used to encode iterated discontinuity data.
+  status: asserted
+  confidence: 0.95
+- parent: qft.landau_analytic_structure
+  child: qft.sequential_discontinuity
+  rationale: Sequential discontinuities provide the multi-channel discontinuity branch constrained by Landau compatibility.
+  status: asserted
+  confidence: 0.95
+- parent: qft.landau_analytic_structure
+  child: qft.steinmann_relations
+  rationale: Steinmann relations are the first major vanishing constraint on overlapping sequential discontinuities in this domain.
+  status: asserted
+  confidence: 0.94
+- parent: qft.landau_analytic_structure
+  child: qft.monodromy_group
+  rationale: Monodromy organizes analytic continuation around singular loci and links continuation geometry to discontinuity data.
+  status: asserted
+  confidence: 0.93

@@ -1,10 +1,10 @@
 # Document Coverage Dashboard
 
-- logical documents tracked: 13
+- logical documents tracked: 14
 - exhausted: 1
 - deferred: 0
 - blocked: 0
-- active: 12
+- active: 13
 - max active agents: 8
 
 ## Documents
@@ -24,6 +24,7 @@
 | 11 | `axion_lecture_notes` | `toc_fallback` | `cross_document_reduced` | `axion_bsm` | `batch_promoted` | Monitor: qft_topology_and_solitons batch now in authored graph (cross-doc pressure with weinberg_vol2). |
 | 12 | `dodelson_modern_cosmology` | `hybrid` | `cross_document_reduced` | `cosmology` | `triage_complete` | Promote cosmology_foundations batch with all cosmology domain nodes. |
 | 13 | `weinberg_qft_vol3` | `hybrid` | `cross_document_reduced` | `supersymmetry` | `batch_promoted` | Deferred: SUSY/SUGRA content explicitly out of scope. coleman_mandula_theorem added to qft_axiomatic_foundations batch. |
+| 14 | `schwartz_papers` | `hybrid` | `cross_document_reduced` | `qft` | `batch_promoted` | Monitor: 4 frontier batches (landau_analytic_structure, renormalons_and_trans_series, finite_s_matrix, vacuum_decay_and_tunneling) now in authored graph. |
 
 ## Notes
 

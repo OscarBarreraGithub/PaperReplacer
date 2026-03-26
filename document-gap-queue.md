@@ -69,6 +69,11 @@ This file is the cross-document source of truth for what the overnight orchestra
 - `weinberg_qft_vol3`: `cross_document_reduced` / `hybrid` / `supersymmetry`
   next: Deferred: SUSY/SUGRA content explicitly out of scope. coleman_mandula_theorem added to qft_axiomatic_foundations batch.
 
+### Suggested Wave 5
+
+- `schwartz_papers`: `cross_document_reduced` / `hybrid` / `qft`
+  next: Monitor: 4 frontier batches (landau_analytic_structure, renormalons_and_trans_series, finite_s_matrix, vacuum_decay_and_tunneling) now in authored graph.
+
 ## Reusable Backlog Clusters
 
 - `complex_analysis_extended`: `promoted`
@@ -86,6 +91,14 @@ This file is the cross-document source of truth for what the overnight orchestra
 - `cosmology_foundations`: `promoted`
   summary: 
 - `classical_em_foundations`: `promoted`
+  summary: 
+- `landau_analytic_structure`: `promoted`
+  summary: 
+- `renormalons_and_trans_series`: `promoted`
+  summary: 
+- `finite_s_matrix`: `promoted`
+  summary: 
+- `vacuum_decay_and_tunneling`: `promoted`
   summary: 
 
 ## Cross-Document Cautions

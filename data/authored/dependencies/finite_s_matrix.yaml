@@ -1,0 +1,165 @@
+# Canonical dependency edges for the finite-S-matrix batch.
+- from: qft.asymptotic_one_particle_state
+  to: qft.dressed_asymptotic_state
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: literature_reading
+  rationale: A dressed asymptotic state is defined by modifying the standard asymptotic scattering state with its universal soft cloud.
+  failure_mode_if_absent: Cannot tell what ordinary external state is being dressed or replaced.
+  evidence:
+    - type: textual_evidence
+      source_ref: arxiv:1906.03271_summary
+    - type: textual_evidence
+      source_ref: arxiv:1911.06821_summary
+  status: asserted
+  confidence: 0.96
+- from: qft.infrared_divergence
+  to: qft.finite_s_matrix
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: literature_reading
+  rationale: The finite S-matrix is introduced as the response to the infrared divergence problem of massless-particle scattering.
+  failure_mode_if_absent: Cannot see what pathology the new S-matrix construction is fixing.
+  evidence:
+    - type: textual_evidence
+      source_ref: arxiv:1906.03271_summary
+    - type: textual_evidence
+      source_ref: arxiv:1911.06821_summary
+  status: asserted
+  confidence: 0.97
+- from: qcd.factorization_theorem
+  to: qft.finite_s_matrix
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: literature_reading
+  rationale: The construction depends on factorizing universal soft-collinear asymptotic evolution away from the hard scattering process.
+  failure_mode_if_absent: Cannot justify why the asymptotic Hamiltonian can be separated from the hard interaction.
+  evidence:
+    - type: textual_evidence
+      source_ref: arxiv:1906.03271_summary
+    - type: textual_evidence
+      source_ref: arxiv:1911.06821_summary
+  status: asserted
+  confidence: 0.96
+- from: qft.dressed_asymptotic_state
+  to: qft.finite_s_matrix
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: literature_reading
+  rationale: One main interpretation of the finite hard S-matrix is as the ordinary S-matrix evaluated between dressed asymptotic states.
+  failure_mode_if_absent: Cannot connect the finite S-matrix to a concrete physical external-state description.
+  evidence:
+    - type: textual_evidence
+      source_ref: arxiv:1906.03271_summary
+    - type: textual_evidence
+      source_ref: arxiv:1911.06821_summary
+  status: asserted
+  confidence: 0.96
+- from: qft.cross_section
+  to: qft.ir_finite_cross_section
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: literature_reading
+  rationale: The IR-finite cross section is a refinement of the ordinary cross-section notion rather than a separate observable family.
+  failure_mode_if_absent: Cannot tell what standard measurable quantity is being improved to remove infrared singularities.
+  evidence:
+    - type: inferred
+      source_ref: schwartz_papers_finite_s_matrix_triage
+  status: asserted
+  confidence: 0.92
+- from: qft.inclusive_observable
+  to: qft.ir_finite_cross_section
+  relation_type: requires_for_use
+  necessity: typical
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: literature_reading
+  rationale: One standard route to an IR-finite cross section is to sum inclusively over unresolved degenerate radiation.
+  failure_mode_if_absent: Cannot read the degenerate-state construction that makes the observable finite in the inclusive formulation.
+  evidence:
+    - type: inferred
+      source_ref: schwartz_papers_finite_s_matrix_triage
+  status: asserted
+  confidence: 0.91
+- from: qft.dressed_asymptotic_state
+  to: qft.ir_finite_cross_section
+  relation_type: requires_for_use
+  necessity: typical
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: literature_reading
+  rationale: The dressed-state route makes the infrared-safe observable readable as scattering between external states that already include the soft cloud.
+  failure_mode_if_absent: Cannot interpret the dressed-state version of the finite observable as anything more than a formal cancellation.
+  evidence:
+    - type: textual_evidence
+      source_ref: arxiv:1906.03271_summary
+    - type: textual_evidence
+      source_ref: arxiv:1911.06821_summary
+  status: asserted
+  confidence: 0.93
+- from: qft.kln_theorem
+  to: qft.ir_finite_cross_section
+  relation_type: requires_for_recognize
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: literature_reading
+  rationale: The degenerate-state version of the IR-finite cross section is most naturally read as a refinement of KLN-style cancellation logic.
+  failure_mode_if_absent: Cannot place the new observable relative to the existing inclusive cancellation theorem.
+  evidence:
+    - type: inferred
+      source_ref: schwartz_papers_finite_s_matrix_triage
+  status: asserted
+  confidence: 0.88
+- from: qft.collinear_divergence
+  to: qft.collinear_safe_observable
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qcd_ir
+  task_type: literature_reading
+  rationale: Collinear safety is the measurement-side response to the singular behavior created by unresolved collinear splittings.
+  failure_mode_if_absent: Cannot tell what instability the observable is required to eliminate.
+  evidence:
+    - type: inferred
+      source_ref: schwartz_papers_finite_s_matrix_triage
+  status: asserted
+  confidence: 0.94
+- from: qft.collinear_safe_observable
+  to: qft.ir_finite_cross_section
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qcd_ir
+  task_type: literature_reading
+  rationale: An infrared-finite observable in a massless gauge theory must be insensitive to unresolved collinear splittings as well as soft radiation.
+  failure_mode_if_absent: Cannot see why the observable remains divergent even after the soft sector is handled.
+  evidence:
+    - type: inferred
+      source_ref: schwartz_papers_finite_s_matrix_triage
+  status: asserted
+  confidence: 0.95
+- from: qft.collinear_safe_observable
+  to: qft.thrust
+  relation_type: requires_for_use
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: qcd_ir
+  task_type: literature_reading
+  rationale: Event-shape observables like thrust are used perturbatively because the measurement is stable under collinear splittings.
+  failure_mode_if_absent: Cannot place thrust inside the standard class of finite event shapes.
+  evidence:
+    - type: inferred
+      source_ref: schwartz_papers_finite_s_matrix_triage
+  status: asserted
+  confidence: 0.9

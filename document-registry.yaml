@@ -603,6 +603,52 @@
       ],
       "status": "promoted",
       "notes": "Small classical EM batch. Will be promoted after first wave batch agents complete."
+    },
+    {
+      "cluster_id": "landau_analytic_structure",
+      "label": "Landau singularities and analytic structure (Schwartz research)",
+      "candidate_nodes": [
+        {"proposed_id": "qft.symbol_calculus", "label": "Symbol calculus", "source_docs": ["schwartz_papers"], "disposition": "candidate_new_node"},
+        {"proposed_id": "qft.iterated_integral", "label": "Iterated integral", "source_docs": ["schwartz_papers"], "disposition": "candidate_new_node"},
+        {"proposed_id": "qft.sequential_discontinuity", "label": "Sequential discontinuity", "source_docs": ["schwartz_papers"], "disposition": "candidate_new_node"},
+        {"proposed_id": "qft.steinmann_relations", "label": "Steinmann relations", "source_docs": ["schwartz_papers"], "disposition": "candidate_new_node"},
+        {"proposed_id": "qft.monodromy_group", "label": "Monodromy group of Feynman integrals", "source_docs": ["schwartz_papers"], "disposition": "candidate_new_node"}
+      ],
+      "status": "promoted",
+      "notes": "Schwartz arxiv cluster on Landau singularities, symbol calculus, sequential discontinuities. Batch promoted 2026-03-26."
+    },
+    {
+      "cluster_id": "renormalons_and_trans_series",
+      "label": "Renormalons and trans-series (Schwartz research)",
+      "candidate_nodes": [
+        {"proposed_id": "qft.borel_transform", "label": "Borel transform", "source_docs": ["schwartz_papers"], "disposition": "candidate_new_node"},
+        {"proposed_id": "qft.renormalon", "label": "Renormalon", "source_docs": ["schwartz_papers"], "disposition": "candidate_new_node"},
+        {"proposed_id": "qft.borel_summability", "label": "Borel summability", "source_docs": ["schwartz_papers"], "disposition": "candidate_new_node"},
+        {"proposed_id": "qft.trans_series", "label": "Trans-series", "source_docs": ["schwartz_papers"], "disposition": "candidate_new_node"}
+      ],
+      "status": "promoted",
+      "notes": "Schwartz arxiv cluster on renormalons, Borel summation, trans-series. Batch promoted 2026-03-26."
+    },
+    {
+      "cluster_id": "finite_s_matrix",
+      "label": "Finite S-matrix / dressed asymptotic states (Schwartz research)",
+      "candidate_nodes": [
+        {"proposed_id": "qft.dressed_asymptotic_state", "label": "Dressed asymptotic state", "source_docs": ["schwartz_papers"], "disposition": "candidate_new_node"},
+        {"proposed_id": "qft.ir_finite_s_matrix", "label": "IR-finite S-matrix", "source_docs": ["schwartz_papers"], "disposition": "candidate_new_node"}
+      ],
+      "status": "promoted",
+      "notes": "Schwartz arxiv cluster on dressed states and IR-finite S-matrix. Batch promoted 2026-03-26."
+    },
+    {
+      "cluster_id": "vacuum_decay_and_tunneling",
+      "label": "Vacuum decay and tunneling (Schwartz research)",
+      "candidate_nodes": [
+        {"proposed_id": "qft.bounce_solution", "label": "Bounce solution", "source_docs": ["schwartz_papers"], "disposition": "candidate_new_node"},
+        {"proposed_id": "qft.false_vacuum_decay", "label": "False vacuum decay", "source_docs": ["schwartz_papers"], "disposition": "candidate_new_node"},
+        {"proposed_id": "qft.electroweak_vacuum_stability", "label": "Electroweak vacuum stability", "source_docs": ["schwartz_papers"], "disposition": "candidate_new_node"}
+      ],
+      "status": "promoted",
+      "notes": "Schwartz arxiv cluster on vacuum tunneling, bounce solutions, EW vacuum stability. Batch promoted 2026-03-26."
     }
   ],
   "documents": [
@@ -895,6 +941,25 @@
         "Deferred: SUSY/SUGRA content explicitly out of scope. coleman_mandula_theorem added to qft_axiomatic_foundations batch."
       ],
       "next_action": "Monitor: SUSY/SUGRA content explicitly deferred. coleman_mandula_theorem added to qft_axiomatic_foundations batch."
+    },
+    {
+      "doc_id": "schwartz_papers",
+      "title": "Matt Schwartz arXiv Research Papers (99 papers, 2026-03-26 snapshot)",
+      "source_paths": [
+        "arxiv:au:Matthew+Schwartz"
+      ],
+      "domain_family": "qft",
+      "priority": 14,
+      "oracle_mode": "hybrid",
+      "status": "cross_document_reduced",
+      "assigned_wave": "wave2",
+      "last_checkpoint": "batch_promoted",
+      "coverage_state": "Triaged 99 arxiv papers by Schwartz. Identified 4 research-frontier topic clusters not covered by textbook Schwartz: landau_analytic_structure (5 nodes: symbol calculus, sequential discontinuities, Steinmann relations, iterated integrals, monodromy), renormalons_and_trans_series (4 nodes: Borel transform, renormalon, Borel summability, trans-series), finite_s_matrix (2 nodes: dressed asymptotic states, IR-finite S-matrix), vacuum_decay_and_tunneling (3 nodes: bounce solution, false vacuum decay, EW vacuum stability). All 4 batches promoted and validated.",
+      "blocking_issues": [],
+      "next_actions": [
+        "Monitor: 4 frontier batches (landau_analytic_structure, renormalons_and_trans_series, finite_s_matrix, vacuum_decay_and_tunneling) now in authored graph.",
+        "Potential wave 3: SCET frontier (N-jettiness, beam functions, collinear-soft modes) if additional source pressure identified."
+      ]
     }
   ]
 }

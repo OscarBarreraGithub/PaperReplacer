@@ -1,0 +1,66 @@
+# Canonical overlay annotations for the Landau-analytic-structure batch.
+- overlay_type: assumed_background
+  target_topic: qft.landau_analytic_structure
+  presumed_node: qft.landau_singularity_conditions
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  artifact_type: paper
+  rationale: The Schwartz Landau papers assume the reader already knows the standard Landau equations before introducing symbol and discontinuity refinements.
+  evidence:
+    - type: expert_claim
+      source_ref: landau_analytic_structure_batch_initial
+      note: Existing Landau-condition coverage is treated as inherited background for the new batch.
+  status: asserted
+  confidence: 0.94
+- overlay_type: assumed_background
+  target_topic: qft.landau_analytic_structure
+  presumed_node: qft.pinch_singularities
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  artifact_type: paper
+  rationale: The papers discuss singular loci and contour obstructions as if pinch singularities are already part of the reader's toolkit.
+  evidence:
+    - type: expert_claim
+      source_ref: landau_analytic_structure_batch_initial
+      note: Reuses the existing pinch-singularity batch as presumed background.
+  status: asserted
+  confidence: 0.88
+- overlay_type: assumed_background
+  target_topic: qft.landau_analytic_structure
+  presumed_node: qft.analytic_continuation_in_kinematic_invariants
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  artifact_type: paper
+  rationale: Analytic continuation in external invariants is assumed when the papers move through complexified kinematic space, channels, and continuation paths.
+  evidence:
+    - type: textual_evidence
+      source_ref: arxiv:2211.07633_abstract
+      note: The abstract explicitly invokes the space of complexified external momenta.
+  status: asserted
+  confidence: 0.92
+- overlay_type: assumed_background
+  target_topic: qft.landau_analytic_structure
+  presumed_node: complex_analysis.branch_cut_and_riemann_sheet
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  artifact_type: paper
+  rationale: Advanced discussions of discontinuities and monodromy normally presume branch-cut and Riemann-sheet language without reintroducing it.
+  evidence:
+    - type: expert_claim
+      source_ref: landau_analytic_structure_batch_initial
+      note: Reuses the existing complex-analysis node as paper-level assumed background.
+  status: asserted
+  confidence: 0.9
+- overlay_type: assumed_background
+  target_topic: qft.landau_analytic_structure
+  presumed_node: qft.distributional_boundary_values
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  artifact_type: paper
+  rationale: Disc operators are used as if the reader already understands discontinuities as differences of boundary values across cuts.
+  evidence:
+    - type: expert_claim
+      source_ref: landau_analytic_structure_batch_initial
+      note: Reuses the existing boundary-value node as the local analytic prerequisite for discontinuity notation.
+  status: asserted
+  confidence: 0.89

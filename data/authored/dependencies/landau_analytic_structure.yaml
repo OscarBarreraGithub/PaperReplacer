@@ -1,0 +1,211 @@
+# Canonical dependency edges for the Landau-analytic-structure batch.
+- from: qft.landau_singularity_conditions
+  to: qft.landau_analytic_structure
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: literature_reading
+  rationale: The batch is organized around how Landau singular loci control the analytic structure of Feynman integrals.
+  failure_mode_if_absent: Cannot tell why the topic is framed around Landau analytic structure rather than generic transcendental function theory.
+  evidence:
+    - type: textual_evidence
+      source_ref: arxiv:2410.02424_abstract
+      note: The abstract says the approach begins by studying where a Feynman integral can become singular and how it behaves near those singularities.
+  status: asserted
+  confidence: 0.96
+- from: qft.analytic_continuation_in_kinematic_invariants
+  to: qft.landau_analytic_structure
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: literature_reading
+  rationale: The papers analyze singular loci and discontinuities in complexified kinematic space, so continuation in external invariants is part of the working language of the batch.
+  failure_mode_if_absent: Cannot follow how singular behavior is compared across regions or why analytic continuation paths matter.
+  evidence:
+    - type: textual_evidence
+      source_ref: arxiv:2211.07633_abstract
+      note: The abstract discusses homotopy properties of the space of complexified external momenta.
+  status: asserted
+  confidence: 0.92
+- from: qft.iterated_integral
+  to: qft.symbol_calculus
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: literature_reading
+  rationale: The symbol is defined as a compressed encoding of the iterated-integral or multiple-polylogarithm structure of a Feynman integral.
+  failure_mode_if_absent: Cannot tell what class of functions the symbol is representing or why its tensor entries are logarithmic kernels.
+  evidence:
+    - type: textual_evidence
+      source_ref: arxiv:2109.09744_abstract
+      note: The abstract connects Landau equations to the symbol of polylogarithmic Feynman integrals and their transcendental weight.
+  status: asserted
+  confidence: 0.95
+- from: qft.sequential_discontinuity
+  to: qft.symbol_calculus
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: literature_reading
+  rationale: In this literature the symbol is valued because its entries encode the order and channel structure of iterated discontinuities.
+  failure_mode_if_absent: The symbol looks like a formal tensor gadget rather than a representation of repeated discontinuity data.
+  evidence:
+    - type: textual_evidence
+      source_ref: arxiv:2109.09744_abstract
+      note: The abstract ties vanishing or divergent symbol letters to local behavior near Landau singular points.
+  status: asserted
+  confidence: 0.92
+- from: qft.distributional_boundary_values
+  to: qft.sequential_discontinuity
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: literature_reading
+  rationale: A discontinuity operator is used concretely as a difference of boundary values across a branch cut, and sequential discontinuities simply iterate that operation in different channels.
+  failure_mode_if_absent: Cannot interpret what a Disc operation is doing at the formula level or why repeating it corresponds to taking a second discontinuity.
+  evidence:
+    - type: expert_claim
+      source_ref: landau_analytic_structure_batch_initial
+      note: Reuses the existing boundary-value node as the smallest local prerequisite for Disc notation.
+  status: asserted
+  confidence: 0.93
+- from: qft.mandelstam_variables
+  to: qft.sequential_discontinuity
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: literature_reading
+  rationale: Sequential discontinuities are taken in named kinematic channels, so Mandelstam-variable language is needed to say which channel is being cut first and second.
+  failure_mode_if_absent: Cannot decode what it means to take discontinuities in different channels or decide when two channels overlap.
+  evidence:
+    - type: expert_claim
+      source_ref: landau_analytic_structure_batch_initial
+      note: The node is downstream of the existing Mandelstam-variable channel vocabulary.
+  status: asserted
+  confidence: 0.91
+- from: qft.landau_singularity_conditions
+  to: qft.sequential_discontinuity
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: literature_reading
+  rationale: The 2022 paper formulates sequential-discontinuity constraints in terms of compatibility or incompatibility of Landau singularities.
+  failure_mode_if_absent: Cannot tell what geometric singular data the discontinuities are probing or why certain double discontinuities must vanish.
+  evidence:
+    - type: textual_evidence
+      source_ref: arxiv:2211.07633_abstract
+      note: The abstract states that sequential discontinuities vanish when the corresponding Landau singularities are not compatible.
+  status: asserted
+  confidence: 0.95
+- from: qft.sequential_discontinuity
+  to: qft.steinmann_relations
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: literature_reading
+  rationale: Steinmann relations are stated as vanishing conditions on double or sequential discontinuities in overlapping channels.
+  failure_mode_if_absent: Cannot formulate what the Steinmann relations are constraining or what object is supposed to vanish.
+  evidence:
+    - type: textual_evidence
+      source_ref: arxiv:2211.07633_abstract
+      note: The abstract presents new discontinuity constraints as going beyond the Steinmann relations.
+  status: asserted
+  confidence: 0.96
+- from: qft.mandelstam_variables
+  to: qft.steinmann_relations
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: literature_reading
+  rationale: Steinmann relations distinguish overlapping momentum channels, so the relevant invariant-channel language must already be in place.
+  failure_mode_if_absent: Cannot tell which pairs of channels are being called overlapping or why a given double discontinuity is forbidden.
+  evidence:
+    - type: expert_claim
+      source_ref: landau_analytic_structure_batch_initial
+      note: Reuses the existing Mandelstam-variable branch rather than introducing new channel nodes in this batch.
+  status: asserted
+  confidence: 0.93
+- from: complex_analysis.branch_cut_and_riemann_sheet
+  to: qft.monodromy_group
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: literature_reading
+  rationale: Monodromy is the organized effect of moving around branch loci and returning on possibly different sheets, so branch-sheet language is intrinsic to the node.
+  failure_mode_if_absent: Cannot explain what is changing under monodromy or why circling a singular locus can transform the analytic branch.
+  evidence:
+    - type: expert_claim
+      source_ref: landau_analytic_structure_batch_initial
+      note: Reuses the existing complex-analysis node as the direct upstream primitive for monodromy.
+  status: asserted
+  confidence: 0.95
+- from: qft.analytic_continuation_in_kinematic_invariants
+  to: qft.monodromy_group
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: literature_reading
+  rationale: The monodromy group is generated by analytic continuation paths in kinematic space, so continuation in the invariants is its operational definition in the Feynman-integral setting.
+  failure_mode_if_absent: Cannot interpret what the group elements are or why they correspond to loops around singular loci in external-momentum space.
+  evidence:
+    - type: textual_evidence
+      source_ref: arxiv:2211.07633_abstract
+      note: The abstract connects homotopy in complexified external momenta to discontinuity information.
+  status: asserted
+  confidence: 0.96
+- from: qft.landau_singularity_conditions
+  to: qft.monodromy_group
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: literature_reading
+  rationale: In this batch the relevant monodromies are taken around Landau singularities, so the singular loci themselves must already be identified.
+  failure_mode_if_absent: Cannot say which singularities the analytic continuation paths encircle or why those paths matter for Feynman-integral discontinuities.
+  evidence:
+    - type: textual_evidence
+      source_ref: arxiv:2211.07633_abstract
+      note: The abstract states that singularities of Feynman integrals correspond to critical points in the geometric Landau-equation formulation.
+  status: asserted
+  confidence: 0.95
+- from: qft.monodromy_group
+  to: qft.symbol_calculus
+  relation_type: requires_for_recognize
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: literature_reading
+  rationale: Monodromy gives the analytic-continuation meaning of the discontinuity data that symbol entries compress, so it helps situate symbol calculus in a broader singularity framework.
+  failure_mode_if_absent: The symbol can still be manipulated formally, but its relation to continuation around singular loci remains opaque.
+  evidence:
+    - type: inferred
+      source_ref: landau_analytic_structure_triage_2026-03-26
+      note: Inferred from combining the discontinuity geometry of the 2022 paper with the symbol constraints of the 2021 paper.
+  status: asserted
+  confidence: 0.81
+- from: qft.symbol_calculus
+  to: qft.landau_analytic_structure
+  relation_type: requires_for_use
+  necessity: typical
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: literature_reading
+  rationale: The 2021 and 2024 papers use symbol-level reasoning to constrain the function space and singularity placement in Landau-bootstrap ansatze.
+  failure_mode_if_absent: Can follow singular-locus statements but not the main polylogarithmic ansatz technology used to reconstruct the integral.
+  evidence:
+    - type: textual_evidence
+      source_ref: arxiv:2410.02424_abstract
+      note: The abstract says the strategy characterizes the expected function space and constrains where singularities may appear in the ansatz.
+  status: asserted
+  confidence: 0.9

@@ -170,12 +170,22 @@ Current integration model:
 - batches connect by reusing shared canonical node ids across neighborhoods
 - the repo now has a synthetic global compiled view at `all_authored`
 - the current UI and query tools are still batch-oriented
-- the current validated authored union stands at `454` nodes, `730` dependencies, `415` partonomy edges, and `158` overlays
+- the current validated authored union stands at `470` nodes, `781` dependencies, `432` partonomy edges, and `180` overlays
 - the authored union currently validates cleanly with no warnings
 - the remaining substantive Schwartz residue is now tracked as explicit deferrals in [schwartz-gap-queue.md](/Users/emmy/Documents/KnowledgeGraph/schwartz-gap-queue.md) unless later query behavior reveals a real missing branch
 - multi-document cross-doc reduction has promoted 7 new batches (see below)
+- Matt Schwartz arXiv research papers (99 papers) have been mapped and promoted 4 frontier batches (see Schwartz Research Papers section)
 
 Agent-generated proposal packs live under [data/batches/](/Users/emmy/Documents/KnowledgeGraph/data/batches) locally, but should normally stay off `main`.
+
+## Schwartz Research Papers
+
+Matt Schwartz's arXiv research output (99 papers, snapshot 2026-03-26) was mapped for topics not already covered by *Schwartz QFT*. Four frontier batches were promoted:
+
+- `landau_analytic_structure` — 5 nodes (symbol calculus, iterated integrals, sequential discontinuities, Steinmann relations, monodromy group) from his analytic structure / amplitudes papers
+- `renormalons_and_trans_series` — 4 nodes (Borel transform, renormalon, Borel summability, trans-series) from his renormalon / resurgence papers
+- `finite_s_matrix` — 2 nodes (dressed asymptotic state, IR-finite S-matrix) from his IR-finite S-matrix papers
+- `vacuum_decay_and_tunneling` — 3 nodes (bounce solution, false vacuum decay, electroweak vacuum stability) from his vacuum stability papers
 
 ## Multi-Document Cross-Document Reduction
 

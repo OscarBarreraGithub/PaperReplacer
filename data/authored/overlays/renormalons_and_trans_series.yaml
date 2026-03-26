@@ -1,0 +1,17 @@
+# Canonical overlay annotations for the renormalons-and-trans-series batch.
+- overlay_type: assumed_background
+  target_topic: qft.renormalons_and_trans_series
+  presumed_node: qft.renormalization_toolkit_refinement
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  rationale: Sources that discuss renormalons usually presume the existing renormalization and RG toolkit is already in place before they move into Borel-plane singularity language.
+  status: asserted
+  confidence: 0.9
+- overlay_type: assumed_background
+  target_topic: qft.renormalons_and_trans_series
+  presumed_node: qft.path_integral_and_generating_functionals
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  rationale: Papers that connect renormalons to saddles or trans-series usually presume the reader already has the path-integral and saddle-point vocabulary in hand.
+  status: asserted
+  confidence: 0.88

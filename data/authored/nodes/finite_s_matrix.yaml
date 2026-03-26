@@ -1,0 +1,47 @@
+# Canonical node records for the finite-S-matrix batch.
+- id: qft.finite_s_matrix
+  label: Finite S-matrix
+  knowledge_kind: concept
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+  aliases:
+    - Hard S-matrix
+    - IR-safe S-matrix
+  summary: Topic anchor for dressed asymptotic states, universal soft-collinear asymptotic evolution, and infrared-finite hard scattering elements in theories with massless gauge bosons.
+  status: asserted
+- id: qft.dressed_asymptotic_state
+  label: Dressed asymptotic state
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  aliases:
+    - Faddeev-Kulish state
+    - dressed state
+  summary: Coherent asymptotic scattering state in which a charged particle is accompanied by its universal soft photon or gluon cloud so the infrared-safe scattering problem is defined beyond bare Fock states.
+  status: asserted
+- id: qft.ir_finite_cross_section
+  label: IR-finite cross section
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Scattering observable defined so unresolved soft or collinear structure is handled by degenerate-state sums or dressed states, yielding a finite infrared-safe quantity rather than a bare divergent rate.
+  status: asserted
+- id: qft.collinear_safe_observable
+  label: Collinear-safe observable
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Observable invariant under collinear splittings so perturbative predictions remain finite and can support jet and event-shape analyses.
+  status: asserted

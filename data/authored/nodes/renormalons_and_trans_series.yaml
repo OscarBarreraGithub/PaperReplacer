@@ -1,0 +1,119 @@
+# Canonical node records for the renormalons-and-trans-series batch.
+- id: qft.renormalons_and_trans_series
+  label: Renormalons and trans-series
+  knowledge_kind: concept
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Topic anchor for Borel transforms, Borel summability failure, renormalon singularities, and trans-series links between perturbative asymptotics and nonperturbative saddle sectors.
+  status: asserted
+- id: qft.renormalization_toolkit_refinement
+  label: Renormalization toolkit refinement
+  knowledge_kind: concept
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Topic anchor for regulator alternatives, divergence-classification language, and a few high-yield renormalization-group payoffs beyond the first-pass RG trunk.
+  status: asserted
+- id: qft.renormalized_perturbation_theory
+  label: Renormalized perturbation theory
+  knowledge_kind: concept
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Perturbative expansion organized after regularization and counterterm subtraction so that physical quantities are finite.
+  status: asserted
+- id: qft.beta_function
+  label: Beta function
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Differential function governing how a coupling changes with renormalization scale.
+  status: asserted
+- id: qft.path_integral_and_generating_functionals
+  label: Path integral and generating functionals
+  knowledge_kind: concept
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Topic anchor for source-coupled path integrals, generating functionals, and the functional identities that connect them to correlators and symmetry statements.
+  status: asserted
+- id: qft.one_loop_effective_action
+  label: One-loop effective action
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Leading quantum correction to the effective action, usually expressed through a functional determinant of the quadratic fluctuation operator.
+  status: asserted
+- id: qft.instanton
+  label: Instanton
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Finite-action Euclidean Yang-Mills field configuration in a nontrivial topological sector, contributing nonperturbatively to amplitudes or vacuum structure.
+  status: asserted
+- id: qft.borel_transform
+  label: Borel transform
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Integral transform B[f](t) = sum_n a_n t^n / n! that reorganizes a factorially divergent perturbative series into a Borel-plane function whose Laplace integral may define a summed answer.
+  status: asserted
+- id: qft.borel_summability
+  label: Borel summability
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Criterion that a divergent series can be assigned a value by integrating its Borel transform, provided the Borel-plane singularity structure does not obstruct an unambiguous Laplace integral.
+  status: asserted
+- id: qft.renormalon
+  label: Renormalon
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Singularity of the Borel transform, typically at locations set by RG data such as integer multiples of 2pi / beta_0, arising from IR or UV diagram chains and encoding ambiguous perturbative sums together with corresponding nonperturbative power corrections.
+  status: asserted
+- id: qft.trans_series
+  label: Trans-series
+  knowledge_kind: representation
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Formal expansion that extends ordinary perturbation theory by adding exponentially small sectors such as exp(-S / g^2) and their fluctuations, thereby connecting perturbative asymptotics to nonperturbative saddle contributions.
+  aliases:
+    - transseries
+  status: asserted

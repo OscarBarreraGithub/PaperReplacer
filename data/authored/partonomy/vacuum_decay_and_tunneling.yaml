@@ -1,0 +1,35 @@
+# Canonical partonomy edges for the vacuum_decay_and_tunneling batch.
+# Source papers: arXiv:1604.06090, 1602.01102, 1707.08124 (Schwartz et al.)
+
+# The topic anchor sits under the nonperturbative-QFT branch.
+- parent: qft.topology_and_solitons
+  child: qft.vacuum_decay_and_tunneling
+  rationale: Vacuum decay and false-vacuum tunneling is a payoff branch of topological/nonperturbative QFT, sharing the Euclidean saddle-point methodology with instantons and solitons.
+  status: asserted
+  confidence: 0.92
+
+# The three atomic nodes hang off the topic anchor.
+- parent: qft.vacuum_decay_and_tunneling
+  child: qft.bounce_solution
+  rationale: The bounce is the central calculational object of the vacuum-decay branch; it is the Euclidean configuration whose action determines the leading tunneling exponent.
+  status: asserted
+  confidence: 0.97
+
+- parent: qft.vacuum_decay_and_tunneling
+  child: qft.false_vacuum_decay
+  rationale: False vacuum decay is the physical phenomenon that the bounce solution computes; it is the principal payoff concept of the branch.
+  status: asserted
+  confidence: 0.97
+
+- parent: qft.vacuum_decay_and_tunneling
+  child: qft.electroweak_vacuum_stability
+  rationale: Electroweak vacuum stability is the SM-facing phenomenological payoff of the vacuum-decay branch, connecting the abstract tunneling calculation to a concrete physical prediction about the universe.
+  status: asserted
+  confidence: 0.95
+
+# Cross-branch partonomy: the bounce is also a subspecies of instanton-like Euclidean saddles.
+- parent: qft.instanton
+  child: qft.bounce_solution
+  rationale: The bounce is a closely related Euclidean saddle to the instanton, distinguished by interpolating between non-degenerate (false and true) vacua rather than topologically distinct degenerate ones; placing it as a child of qft.instanton records this kinship.
+  status: asserted
+  confidence: 0.88

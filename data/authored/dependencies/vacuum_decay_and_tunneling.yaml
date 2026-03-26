@@ -1,0 +1,241 @@
+# Canonical dependency edges for the vacuum_decay_and_tunneling batch.
+# Source papers: arXiv:1604.06090, 1602.01102, 1707.08124 (Schwartz et al.)
+
+# ── Prerequisites for qft.bounce_solution ────────────────────────────────────
+
+- from: qft.instanton
+  to: qft.bounce_solution
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: nonperturbative_qft
+  task_type: conceptual_orientation
+  rationale: The bounce is a species of Euclidean saddle-point; recognizing it requires knowing what instantons are and how finite-action Euclidean solutions dominate the path integral.
+  failure_mode_if_absent: The bounce appears as an unmotivated mathematical object with no connection to the path-integral tunneling logic.
+  evidence:
+    - type: textual_evidence
+      source_ref: arXiv:1604.06090
+      note: Schwartz introduces the bounce by analogy with the instanton as the dominant Euclidean saddle.
+    - type: textual_evidence
+      source_ref: arXiv:1602.01102
+      note: Direct-approach paper derives the bounce from path-integral tunneling using the same saddle-point logic as instantons.
+  status: asserted
+  confidence: 0.97
+
+- from: qft.effective_potential
+  to: qft.bounce_solution
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: nonperturbative_qft
+  task_type: computation
+  rationale: The bounce interpolates between minima of the potential; using it to compute tunneling rates requires specifying the effective potential landscape including quantum corrections.
+  failure_mode_if_absent: Cannot specify the boundary conditions on the bounce or identify which field values define the false and true vacua.
+  evidence:
+    - type: textual_evidence
+      source_ref: arXiv:1604.06090
+      note: A central topic of the paper is whether to use the classical or the effective potential in bounce calculations.
+  status: asserted
+  confidence: 0.95
+
+- from: qft.one_loop_effective_action
+  to: qft.bounce_solution
+  relation_type: requires_for_derive
+  necessity: typical
+  audience_profile: hep_th_grad
+  subfield: nonperturbative_qft
+  task_type: precision_calculation
+  rationale: Precision tunneling rate calculations evaluate the one-loop fluctuation determinant around the bounce background, which is the core of the one-loop effective action formalism.
+  failure_mode_if_absent: The tunneling rate is only known at leading exponential order; the pre-exponential factor from functional determinants cannot be computed.
+  evidence:
+    - type: textual_evidence
+      source_ref: arXiv:1604.06090
+      note: Paper is explicitly about precision decay rate calculations including one-loop functional determinants around the bounce.
+    - type: textual_evidence
+      source_ref: arXiv:1707.08124
+      note: Provides exact closed-form functional determinants for scalars, fermions, and vectors around the scale-invariant bounce.
+  status: asserted
+  confidence: 0.96
+
+# ── Prerequisites for qft.false_vacuum_decay ────────────────────────────────
+
+- from: qft.bounce_solution
+  to: qft.false_vacuum_decay
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: nonperturbative_qft
+  task_type: computation
+  rationale: The false vacuum decay rate is computed via the bounce; the exponential suppression factor B is the Euclidean action of the bounce solution.
+  failure_mode_if_absent: There is no way to compute or estimate the tunneling rate without identifying the dominant saddle-point configuration.
+  evidence:
+    - type: textual_evidence
+      source_ref: arXiv:1604.06090
+      note: The entire computational framework is organized around the bounce as the object that determines the decay rate.
+    - type: textual_evidence
+      source_ref: arXiv:1602.01102
+      note: Direct Minkowski path integral approach isolates a bounce-equivalent saddle as the dominant contribution.
+  status: asserted
+  confidence: 0.99
+
+- from: qft.instanton
+  to: qft.false_vacuum_decay
+  relation_type: requires_for_recognize
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: nonperturbative_qft
+  task_type: conceptual_orientation
+  rationale: False vacuum decay shares the semiclassical path-integral logic with instantons; prior exposure provides the conceptual scaffolding for understanding tunneling in QFT.
+  failure_mode_if_absent: The relationship between Euclidean saddle points, tunneling amplitudes, and vacuum structure is opaque without the instanton template.
+  evidence:
+    - type: inferred
+      source_ref: arXiv:1604.06090
+      note: Pedagogical sections explicitly connect the bounce to the broader instanton literature.
+  status: asserted
+  confidence: 0.88
+
+- from: qft.effective_potential
+  to: qft.false_vacuum_decay
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: nonperturbative_qft
+  task_type: conceptual_orientation
+  rationale: Understanding false vacuum decay requires knowing what a potential landscape with a local (false) and global (true) minimum is, which is the content of the effective potential concept.
+  failure_mode_if_absent: The notions of metastability and the physical setup of the tunneling problem are undefined.
+  evidence:
+    - type: textual_evidence
+      source_ref: arXiv:1604.06090
+      note: The paper frames false vacuum decay in terms of the structure of the scalar effective potential.
+  status: asserted
+  confidence: 0.95
+
+- from: qft.one_loop_effective_action
+  to: qft.false_vacuum_decay
+  relation_type: requires_for_use
+  necessity: typical
+  audience_profile: hep_th_grad
+  subfield: nonperturbative_qft
+  task_type: precision_calculation
+  rationale: Precision calculations of the false vacuum decay rate include the one-loop prefactor from the functional determinant of fluctuations around the bounce.
+  failure_mode_if_absent: The decay rate is only known at leading semiclassical order; the one-loop correction providing the physically important prefactor is inaccessible.
+  evidence:
+    - type: textual_evidence
+      source_ref: arXiv:1604.06090
+      note: Full precision calculation requires evaluating functional determinants as part of the one-loop effective action around the bounce.
+  status: asserted
+  confidence: 0.92
+
+# ── Prerequisites for qft.electroweak_vacuum_stability ──────────────────────
+
+- from: qft.false_vacuum_decay
+  to: qft.electroweak_vacuum_stability
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: beyond_standard_model_phenomenology
+  task_type: conceptual_orientation
+  rationale: Electroweak vacuum stability is precisely the question of whether the electroweak vacuum is metastable and subject to false vacuum decay; the two concepts are definitionally linked.
+  failure_mode_if_absent: The stability concept appears disconnected from any calculable physical quantity.
+  evidence:
+    - type: textual_evidence
+      source_ref: arXiv:1707.08124
+      note: The paper's main result is the universe lifetime, which is precisely the false vacuum decay rate applied to the SM electroweak vacuum.
+  status: asserted
+  confidence: 0.99
+
+- from: qft.bounce_solution
+  to: qft.electroweak_vacuum_stability
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: beyond_standard_model_phenomenology
+  task_type: computation
+  rationale: The SM vacuum lifetime is computed using the scale-invariant bounce in the SM effective potential; the bounce action determines the exponential suppression of the nucleation rate.
+  failure_mode_if_absent: The stability computation cannot be set up without identifying the relevant saddle-point configuration in field space.
+  evidence:
+    - type: textual_evidence
+      source_ref: arXiv:1707.08124
+      note: Introduces the scale-invariant bounce and derives its action for the SM vacuum decay computation.
+  status: asserted
+  confidence: 0.98
+
+- from: qft.effective_potential
+  to: qft.electroweak_vacuum_stability
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: beyond_standard_model_phenomenology
+  task_type: computation
+  rationale: Determining whether the electroweak vacuum is stable requires analyzing the SM Higgs effective potential with quantum corrections; the potential must develop a second deeper minimum at high field values for the vacuum to be metastable.
+  failure_mode_if_absent: There is no potential to analyze for stability; the question is ill-defined.
+  evidence:
+    - type: textual_evidence
+      source_ref: arXiv:1707.08124
+      note: The SM Higgs effective potential with RG-improved quartic coupling is the central object of the stability analysis.
+  status: asserted
+  confidence: 0.98
+
+- from: qft.running_coupling
+  to: qft.electroweak_vacuum_stability
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: beyond_standard_model_phenomenology
+  task_type: computation
+  rationale: Whether the Higgs quartic coupling lambda runs negative at high scales is the quantitative criterion for metastability; RG running connects the measured low-energy SM parameters to the high-scale stability question.
+  failure_mode_if_absent: Cannot connect the measured low-energy parameters (top mass, Higgs mass, alpha_s) to the shape of the potential at Planck-scale field values.
+  evidence:
+    - type: textual_evidence
+      source_ref: arXiv:1707.08124
+      note: Phase diagrams in the mt/mh and mt/alpha_s planes are constructed directly from RG running of the couplings.
+  status: asserted
+  confidence: 0.97
+
+- from: qft.beta_function
+  to: qft.electroweak_vacuum_stability
+  relation_type: requires_for_derive
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: beyond_standard_model_phenomenology
+  task_type: computation
+  rationale: The SM beta functions for the Higgs quartic and top Yukawa must be solved to determine whether lambda turns negative; deriving the stability curve requires the explicit beta functions.
+  failure_mode_if_absent: The running of couplings cannot be computed and the RG-improved potential cannot be constructed.
+  evidence:
+    - type: textual_evidence
+      source_ref: arXiv:1707.08124
+      note: Multi-loop SM beta functions are used to RG-improve the effective potential in the decay rate calculation.
+  status: asserted
+  confidence: 0.95
+
+- from: sm.higgs.higgs_mechanism
+  to: qft.electroweak_vacuum_stability
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: beyond_standard_model_phenomenology
+  task_type: conceptual_orientation
+  rationale: The question concerns the Higgs potential; one must know how the Higgs mechanism generates the electroweak vacuum via spontaneous symmetry breaking before asking whether that vacuum is stable.
+  failure_mode_if_absent: The notion of the electroweak vacuum is undefined; there is no grounding for what the metastable state is.
+  evidence:
+    - type: inferred
+      source_ref: arXiv:1707.08124
+      note: The SM vacuum is definitionally the Higgs potential minimum, making the Higgs mechanism the essential conceptual frame.
+  status: asserted
+  confidence: 0.95
+
+- from: sm.ewbreak.yukawa_coupling
+  to: qft.electroweak_vacuum_stability
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: beyond_standard_model_phenomenology
+  task_type: computation
+  rationale: The top quark Yukawa coupling is the dominant destabilizing contribution driving the Higgs quartic coupling negative at high scales; the stability criterion is strongly sensitive to the top mass and hence to the top Yukawa.
+  failure_mode_if_absent: The leading radiative destabilization of the Higgs potential has no identified physical origin and the mt-dependence of the stability phase diagram cannot be understood.
+  evidence:
+    - type: textual_evidence
+      source_ref: arXiv:1707.08124
+      note: The uncertainty analysis is dominated by the top quark pole mass uncertainty, reflecting the central role of the top Yukawa.
+  status: asserted
+  confidence: 0.97

@@ -1,0 +1,48 @@
+# Canonical node records for the vacuum-decay-and-tunneling batch.
+- id: qft.vacuum_decay_and_tunneling
+  label: Vacuum decay and tunneling
+  knowledge_kind: concept
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Topic anchor for false-vacuum decay, bounce solutions, and electroweak vacuum stability as the Standard-Model-facing application of nonperturbative tunneling in QFT.
+  status: asserted
+
+- id: qft.bounce_solution
+  label: Bounce solution
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: O(4)-symmetric Euclidean saddle-point configuration that starts and ends in the false vacuum while reaching the turning point toward the true vacuum; the QFT analog of the WKB tunneling path and the source of the leading suppression exp(-B).
+  aliases:
+    - bounce
+  status: asserted
+
+- id: qft.false_vacuum_decay
+  label: False vacuum decay
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Quantum-tunneling decay of a metastable vacuum into a lower-energy phase, with leading rate set by the bounce action and applications ranging from cosmological phase transitions to Standard-Model metastability.
+  status: asserted
+
+- id: qft.electroweak_vacuum_stability
+  label: Electroweak vacuum stability
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Standard-Model question of whether the electroweak vacuum is stable, metastable, or unstable under RG running of the Higgs quartic coupling; its quantitative assessment depends sensitively on the top mass, alpha_s, and the bounce-based decay rate.
+  aliases:
+    - electroweak vacuum metastability
+  status: asserted

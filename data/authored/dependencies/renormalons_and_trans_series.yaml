@@ -1,0 +1,181 @@
+# Canonical dependency edges for the renormalons-and-trans-series batch.
+- from: qft.renormalization_toolkit_refinement
+  to: qft.renormalons_and_trans_series
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: The batch extends the existing renormalization-toolkit branch from regulator and RG payoffs into asymptotic perturbation theory and its nonperturbative interface.
+  failure_mode_if_absent: Cannot tell what larger renormalization neighborhood this batch is refining.
+  evidence:
+    - type: expert_claim
+      source_ref: renormalons_and_trans_series_batch_initial
+      note: Batch synthesis keeps the existing renormalization-toolkit refinement as the immediate upstream anchor.
+  status: asserted
+  confidence: 0.96
+- from: qft.renormalized_perturbation_theory
+  to: qft.borel_transform
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: In this batch the Borel transform is applied to the coefficients of a perturbative expansion, so the renormalized perturbative series must already be available.
+  failure_mode_if_absent: Cannot tell what series is being transformed or why factorial growth in perturbation theory is the local problem.
+  evidence:
+    - type: expert_claim
+      source_ref: renormalons_and_trans_series_batch_initial
+      note: Batch notes treat the Borel transform as a refinement of asymptotic perturbative analysis rather than as a free-standing mathematical transform.
+  status: asserted
+  confidence: 0.95
+- from: qft.borel_transform
+  to: qft.borel_summability
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: Borel summability is defined by the Laplace integral of the Borel transform, so the transform has to be in hand before the criterion can be used.
+  failure_mode_if_absent: Cannot interpret the summability criterion or the integral whose convergence is being tested.
+  evidence:
+    - type: expert_claim
+      source_ref: renormalons_and_trans_series_batch_initial
+      note: Batch notes keep Borel summability as the first direct downstream payoff of the transform branch.
+  status: asserted
+  confidence: 0.97
+- from: qft.borel_transform
+  to: qft.renormalon
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: A renormalon is identified as a singularity of the Borel transform in the Borel plane.
+  failure_mode_if_absent: Cannot tell what object becomes singular or what plane the renormalon inhabits.
+  evidence:
+    - type: expert_claim
+      source_ref: renormalons_and_trans_series_batch_initial
+      note: Batch notes keep renormalon language downstream of the Borel-plane transform rather than of a separate diagram-class node.
+    - type: textual_evidence
+      source_ref: arxiv_2410_07351_abstract
+      note: The abstract places instantons and renormalons at branch points in the Borel transform of asymptotic series.
+  status: asserted
+  confidence: 0.98
+- from: qft.beta_function
+  to: qft.renormalon
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: Standard renormalon location language uses RG data such as beta_0 to place the Borel-plane singularities and distinguish IR from UV branches.
+  failure_mode_if_absent: Cannot place the singularity locations at the standard multiples set by running-coupling data.
+  evidence:
+    - type: expert_claim
+      source_ref: renormalons_and_trans_series_batch_initial
+      note: Batch notes keep the renormalon node attached to the existing beta-function vocabulary rather than rebuilding RG data locally.
+  status: asserted
+  confidence: 0.94
+- from: qft.borel_summability
+  to: qft.renormalon
+  relation_type: requires_for_recognize
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: Renormalons matter because they obstruct naive Borel summability and make the would-be Borel sum ambiguous.
+  failure_mode_if_absent: The renormalon appears as an isolated pole rather than as the reason the Borel prescription fails.
+  evidence:
+    - type: expert_claim
+      source_ref: renormalons_and_trans_series_batch_initial
+      note: Batch notes keep the failure of Borel summability visible at the renormalon node without making it the sole defining feature.
+  status: asserted
+  confidence: 0.88
+- from: qft.one_loop_effective_action
+  to: qft.renormalon
+  relation_type: requires_for_recognize
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: The 2024 Schwartz paper reinterprets renormalons as saddle points of the 1-loop effective action rather than only as diagrammatic chains.
+  failure_mode_if_absent: Misses the path-integral saddle interpretation that connects the singularity to nonperturbative physics.
+  evidence:
+    - type: expert_claim
+      source_ref: renormalons_and_trans_series_batch_initial
+      note: Batch notes retain the one-loop effective action as the smallest existing node that captures the new saddle-point explanation.
+    - type: textual_evidence
+      source_ref: arxiv_2410_07351_abstract
+      note: The abstract says renormalons can be understood as saddle points of the 1-loop effective action.
+  status: asserted
+  confidence: 0.91
+- from: qft.path_integral_and_generating_functionals
+  to: qft.trans_series
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: In this batch trans-series are introduced as path-integral expansions over perturbative and nonperturbative saddle sectors.
+  failure_mode_if_absent: Cannot tell what larger functional framework the exponential sectors belong to.
+  evidence:
+    - type: expert_claim
+      source_ref: renormalons_and_trans_series_batch_initial
+      note: Batch notes keep the trans-series node in the same path-integral neighborhood as instantons and effective-action saddles.
+    - type: textual_evidence
+      source_ref: arxiv_2410_07351_abstract
+      note: The abstract frames the problem as the interface between perturbative and non-perturbative quantum field theory through the path integral.
+  status: asserted
+  confidence: 0.93
+- from: qft.instanton
+  to: qft.trans_series
+  relation_type: requires_for_recognize
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: Instantons provide the standard named example of exponentially small saddle sectors that trans-series append to perturbative expansions.
+  failure_mode_if_absent: The nonperturbative sectors look purely formal rather than tied to a known saddle contribution.
+  evidence:
+    - type: expert_claim
+      source_ref: renormalons_and_trans_series_batch_initial
+      note: Batch notes use the already-authored instanton node as the most economical point of contact with the nonperturbative sector.
+    - type: textual_evidence
+      source_ref: arxiv_2410_07351_abstract
+      note: The abstract explicitly pairs instantons and renormalons at the perturbative/nonperturbative interface.
+  status: asserted
+  confidence: 0.87
+- from: qft.renormalon
+  to: qft.trans_series
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: Trans-series language is used here to encode the nonperturbative sectors that cancel or interpret renormalon-induced ambiguities and associated power corrections.
+  failure_mode_if_absent: Cannot explain why the trans-series branch is being introduced at the perturbative/nonperturbative interface at all.
+  evidence:
+    - type: expert_claim
+      source_ref: renormalons_and_trans_series_batch_initial
+      note: Batch notes treat trans-series as the completion branch motivated locally by renormalon ambiguity.
+    - type: textual_evidence
+      source_ref: arxiv_2410_07351_abstract
+      note: The abstract emphasizes probing connections between perturbative and non-perturbative physics in QCD and related theories.
+  status: asserted
+  confidence: 0.93
+- from: qft.borel_summability
+  to: qft.trans_series
+  relation_type: requires_for_recognize
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: Trans-series are motivated when the naive Borel sum is ambiguous or incomplete, so obstructed Borel summability is part of the setup.
+  failure_mode_if_absent: The trans-series branch looks like an abstract formal enlargement with no visible summation problem to solve.
+  evidence:
+    - type: expert_claim
+      source_ref: renormalons_and_trans_series_batch_initial
+      note: Batch notes keep failed or obstructed Borel summability visible as the local reason to enlarge perturbation theory.
+  status: asserted
+  confidence: 0.86

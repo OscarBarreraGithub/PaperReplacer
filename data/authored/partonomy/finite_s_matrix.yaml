@@ -1,0 +1,21 @@
+# Canonical partonomy edges for the finite-S-matrix batch.
+- parent: qft.finite_s_matrix
+  child: qft.dressed_asymptotic_state
+  rationale: Dressed asymptotic states are the external-state branch that replaces the bare Fock-state picture in this formulation.
+  status: asserted
+  confidence: 0.96
+- parent: qft.finite_s_matrix
+  child: qft.ir_finite_cross_section
+  rationale: The observable branch of the batch is the infrared-finite quantity extracted once unresolved radiation is handled correctly.
+  status: asserted
+  confidence: 0.95
+- parent: qft.finite_s_matrix
+  child: qcd.factorization_theorem
+  rationale: Factorization is the structural principle that makes the universal asymptotic evolution separable from the hard process.
+  status: asserted
+  confidence: 0.92
+- parent: qft.ir_finite_cross_section
+  child: qft.collinear_safe_observable
+  rationale: Collinear safety is the measurement-side condition that sits inside the finite-observable branch.
+  status: asserted
+  confidence: 0.9

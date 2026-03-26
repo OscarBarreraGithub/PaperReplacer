@@ -1,0 +1,21 @@
+# Canonical partonomy edges for the renormalons-and-trans-series batch.
+- parent: qft.renormalons_and_trans_series
+  child: qft.borel_transform
+  rationale: Borel analysis is the perturbative asymptotics branch of the batch.
+  status: asserted
+  confidence: 0.95
+- parent: qft.borel_transform
+  child: qft.borel_summability
+  rationale: Borel summability is the convergence-and-prescription criterion attached to the transform branch.
+  status: asserted
+  confidence: 0.96
+- parent: qft.borel_transform
+  child: qft.renormalon
+  rationale: Renormalons are the singularity structure on the Borel-plane side of the transform branch.
+  status: asserted
+  confidence: 0.97
+- parent: qft.renormalons_and_trans_series
+  child: qft.trans_series
+  rationale: Trans-series is the nonperturbative completion branch that reconnects asymptotic perturbation theory to saddle contributions.
+  status: asserted
+  confidence: 0.95
