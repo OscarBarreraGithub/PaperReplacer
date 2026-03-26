@@ -170,7 +170,7 @@ Current integration model:
 - batches connect by reusing shared canonical node ids across neighborhoods
 - the repo now has a synthetic global compiled view at `all_authored`
 - the current UI and query tools are still batch-oriented
-- the current validated authored union stands at `470` nodes, `781` dependencies, `432` partonomy edges, and `180` overlays
+- the current validated authored union stands at `473` nodes, `780` dependencies, `435` partonomy edges, and `175` overlays
 - the authored union currently validates cleanly with no warnings
 - the remaining substantive Schwartz residue is now tracked as explicit deferrals in [schwartz-gap-queue.md](/Users/emmy/Documents/KnowledgeGraph/schwartz-gap-queue.md) unless later query behavior reveals a real missing branch
 - multi-document cross-doc reduction has promoted 7 new batches (see below)
