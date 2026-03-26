@@ -1,0 +1,56 @@
+# Partonomy edges for the qft_topology_and_solitons batch.
+- parent: qft.topology_and_solitons
+  child: qft.homotopy_group
+  rationale: Homotopy-group classification is the shared mathematical foundation for all soliton-type nodes in this batch.
+  status: asserted
+  confidence: 0.95
+- parent: qft.topology_and_solitons
+  child: qft.chern_simons_term
+  rationale: The Chern-Simons term is the principal topological gauge-theory ingredient of the batch, connecting instanton number, anomaly inflow, and axion coupling.
+  status: asserted
+  confidence: 0.94
+- parent: qft.topology_and_solitons
+  child: qft.derrick_theorem
+  rationale: Derrick's theorem is the no-go prerequisite that sets the context for all extended-soliton constructions in spatial dimension > 2.
+  status: asserted
+  confidence: 0.9
+- parent: qft.topology_and_solitons
+  child: qft.bogomolny_bps_bound
+  rationale: The BPS bound is the shared energy-lower-bound result that organizes the monopole and vortex branches of the batch.
+  status: asserted
+  confidence: 0.92
+- parent: qft.topology_and_solitons
+  child: qft.magnetic_flux_quantization
+  rationale: Flux quantization is the topological quantization condition underlying both vortex and monopole charge arguments.
+  status: asserted
+  confidence: 0.92
+- parent: qft.topology_and_solitons
+  child: qft.magnetic_monopole
+  rationale: The t'Hooft-Polyakov monopole is a central soliton application and payoff node of the batch.
+  status: asserted
+  confidence: 0.94
+- parent: qft.topology_and_solitons
+  child: qft.vortex_soliton
+  rationale: The vortex soliton is the π_1 branch application node in the batch.
+  status: asserted
+  confidence: 0.93
+- parent: qft.topology_and_solitons
+  child: qft.skyrmion
+  rationale: The skyrmion is the π_3 sigma-model soliton branch of the batch and provides the baryon-number interpretation payoff.
+  status: asserted
+  confidence: 0.93
+- parent: qft.topology_and_solitons
+  child: qft.anomaly_inflow
+  rationale: Anomaly inflow is the Chern-Simons–driven mechanism that is introduced as a downstream application within the batch.
+  status: asserted
+  confidence: 0.91
+- parent: qft.magnetic_monopole
+  child: qft.bogomolny_bps_bound
+  rationale: The BPS bound is most naturally introduced as a refinement sub-topic of the monopole analysis, even though it also applies to vortices.
+  status: asserted
+  confidence: 0.88
+- parent: qft.chern_simons_term
+  child: qft.anomaly_inflow
+  rationale: Anomaly inflow is a direct mechanistic consequence of the Chern-Simons term's variation; it is presented as a sub-application of the Chern-Simons branch.
+  status: asserted
+  confidence: 0.9

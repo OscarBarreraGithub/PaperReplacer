@@ -1,0 +1,223 @@
+# Canonical dependency edges for the qft-topology-and-solitons batch.
+
+# ── homotopy_group as upstream classifier ──────────────────────────────────
+
+- from: qft.homotopy_group
+  to: qft.instanton
+  relation_type: requires_for_recognize
+  necessity: necessary
+  rationale: Instantons are π_3(SU(2))-classified field configurations; without homotopy-group language the reader cannot identify what makes the configuration topologically nontrivial.
+  failure_mode_if_absent: Cannot explain why finite-action Euclidean configurations fall into discrete integer-labelled sectors.
+  evidence:
+    - type: expert_claim
+      source_ref: weinberg_qft_vol2_triage
+      note: Weinberg Vol II triage lists homotopy groups as the shared upstream classifier for instantons, monopoles, vortices, and skyrmions.
+  status: asserted
+  confidence: 0.95
+
+- from: qft.homotopy_group
+  to: qft.magnetic_monopole
+  relation_type: requires_for_recognize
+  necessity: necessary
+  rationale: t'Hooft-Polyakov monopoles are classified by π_2 of the vacuum manifold; without this the monopole-charge interpretation and quantization argument are inaccessible.
+  failure_mode_if_absent: Cannot state why the monopole carries a discrete topological quantum number or how the charge is quantized.
+  evidence:
+    - type: expert_claim
+      source_ref: weinberg_qft_vol2_triage
+      note: Triage identifies homotopy groups as the mathematical prerequisite shared by all soliton classification arguments.
+  status: asserted
+  confidence: 0.95
+
+- from: qft.homotopy_group
+  to: qft.vortex_soliton
+  relation_type: requires_for_recognize
+  necessity: necessary
+  rationale: Vortex solutions are classified by π_1 of the vacuum manifold; homotopy language is needed to explain vortex stability and quantized winding.
+  failure_mode_if_absent: Cannot explain why a vortex is stable or how vortex number is topologically protected.
+  evidence:
+    - type: expert_claim
+      source_ref: weinberg_qft_vol2_triage
+      note: Weinberg Vol II triage identifies vortex classification as a π_1 application.
+  status: asserted
+  confidence: 0.95
+
+- from: qft.homotopy_group
+  to: qft.skyrmion
+  relation_type: requires_for_recognize
+  necessity: necessary
+  rationale: Skyrmions are π_3(SU(2))-classified solitons; the homotopy-group framework is needed to identify the topological charge and its identification with baryon number.
+  failure_mode_if_absent: Cannot connect the winding-number integral to a discrete conserved charge.
+  evidence:
+    - type: expert_claim
+      source_ref: weinberg_qft_vol2_triage
+      note: Weinberg Vol II triage lists skyrmion as a π_3 application alongside instantons.
+  status: asserted
+  confidence: 0.94
+
+# ── non-Abelian gauge symmetry and Yang-Mills action as upstream ────────────
+
+- from: qft.non_abelian_gauge_symmetry
+  to: qft.magnetic_monopole
+  relation_type: requires_for_use
+  necessity: necessary
+  rationale: The t'Hooft-Polyakov monopole arises specifically in non-Abelian gauge theories with an adjoint scalar; Abelian gauge theory has only the Dirac monopole, which requires different analysis.
+  failure_mode_if_absent: Cannot follow the construction of the hedgehog ansatz or the gauge-group embedding of the monopole solution.
+  evidence:
+    - type: expert_claim
+      source_ref: weinberg_qft_vol2_triage
+      note: Triage notes that monopole analysis requires non-Abelian gauge-symmetry context.
+  status: asserted
+  confidence: 0.93
+
+- from: qft.yang_mills_action
+  to: qft.magnetic_monopole
+  relation_type: requires_for_use
+  necessity: necessary
+  rationale: The monopole energy and BPS equations are derived by completing the square in the Yang-Mills + scalar field Hamiltonian; the action structure has to be in place to carry out this argument.
+  failure_mode_if_absent: Cannot execute the energy-completion argument that yields the BPS bound and the monopole equations of motion.
+  evidence:
+    - type: expert_claim
+      source_ref: weinberg_qft_vol2_triage
+      note: Triage keeps the monopole branch attached to the Yang-Mills action as shared upstream support.
+  status: asserted
+  confidence: 0.93
+
+# ── Bogomol'ny BPS bound ───────────────────────────────────────────────────
+
+- from: qft.bogomolny_bps_bound
+  to: qft.magnetic_monopole
+  relation_type: requires_for_use
+  necessity: necessary
+  rationale: The BPS bound identifies the minimum energy configuration for a given monopole charge and yields the first-order equations that define the BPS monopole; without the bound, the construction of the BPS monopole solution is unmotivated.
+  failure_mode_if_absent: Cannot derive or interpret the BPS monopole as a minimum-energy solution of fixed topological charge.
+  evidence:
+    - type: expert_claim
+      source_ref: weinberg_qft_vol2_triage
+      note: Triage identifies the BPS bound as shared upstream for both monopole and vortex analysis.
+  status: asserted
+  confidence: 0.92
+
+- from: qft.bogomolny_bps_bound
+  to: qft.vortex_soliton
+  relation_type: requires_for_use
+  necessity: necessary
+  rationale: The Abrikosov-Nielsen-Olesen vortex saturates a BPS-type bound; the argument constructing the vortex as a minimum-energy solution relies on the same energy-completion technique.
+  failure_mode_if_absent: Cannot explain why the vortex solution has minimal energy for its topological class or recognize the BPS equations governing it.
+  evidence:
+    - type: expert_claim
+      source_ref: weinberg_qft_vol2_triage
+      note: Triage lists the BPS bound as a shared prerequisite for monopole and vortex analysis.
+  status: asserted
+  confidence: 0.90
+
+# ── Derrick's theorem ──────────────────────────────────────────────────────
+
+- from: qft.derrick_theorem
+  to: qft.magnetic_monopole
+  relation_type: requires_for_recognize
+  necessity: helpful
+  rationale: Derrick's theorem establishes why gauge fields must be present to stabilize three-dimensional solitons; understanding the no-go result contextualizes why the monopole ansatz includes a gauge field.
+  failure_mode_if_absent: Does not prevent use, but the reader misses why scalar-only solitons are forbidden and gauge coupling is essential.
+  evidence:
+    - type: expert_claim
+      source_ref: weinberg_qft_vol2_triage
+      note: Triage categorizes Derrick's theorem as a formal no-go prerequisite for soliton construction above d=2.
+  status: asserted
+  confidence: 0.85
+
+- from: qft.derrick_theorem
+  to: qft.skyrmion
+  relation_type: requires_for_recognize
+  necessity: helpful
+  rationale: Skyrmions evade Derrick's theorem through the higher-derivative Skyrme term; the theorem sets the context for understanding why the standard sigma-model kinetic term alone does not support stable solitons.
+  failure_mode_if_absent: Cannot follow the argument for why the Skyrme stabilizing term is added to the nonlinear sigma-model Lagrangian.
+  evidence:
+    - type: expert_claim
+      source_ref: weinberg_qft_vol2_triage
+      note: Triage lists Derrick's theorem as the no-go prerequisite before constructing explicit higher-d soliton solutions.
+  status: asserted
+  confidence: 0.85
+
+# ── Chern-Simons term connections ─────────────────────────────────────────
+
+- from: qft.chern_simons_term
+  to: qcd.topological_charge
+  relation_type: requires_for_derive
+  necessity: necessary
+  rationale: The instanton density (topological charge integrand) equals the exterior derivative of the Chern-Simons form; without the Chern-Simons term the derivation of topological charge as a total derivative is unavailable.
+  failure_mode_if_absent: Cannot justify why the topological charge integrand is a total derivative or execute the boundary term argument.
+  evidence:
+    - type: textual_evidence
+      source_ref: axion_lecture_notes_triage
+      note: Axion lecture notes list Chern-Simons term as a named prerequisite for the QCD potential and topological charge discussion.
+  status: asserted
+  confidence: 0.93
+
+- from: qft.chern_simons_term
+  to: qft.anomaly_inflow
+  relation_type: requires_for_use
+  necessity: necessary
+  rationale: Anomaly inflow is the mechanism by which a bulk Chern-Simons action varies to cancel boundary anomalies; the Chern-Simons term is the essential bulk actor in this mechanism.
+  failure_mode_if_absent: Cannot identify what bulk term varies to produce the inflow that cancels the boundary anomaly.
+  evidence:
+    - type: textual_evidence
+      source_ref: axion_lecture_notes_triage
+      note: Axion lecture notes identify Chern-Simons term as the direct prerequisite for anomaly inflow.
+  status: asserted
+  confidence: 0.95
+
+- from: qft.chern_simons_term
+  to: qft.instanton
+  relation_type: requires_for_derive
+  necessity: helpful
+  rationale: The instanton number can be expressed as an integral of the exterior derivative of the Chern-Simons form; this representation is used to establish the boundary conditions and topological classification of instanton sectors.
+  failure_mode_if_absent: Cannot follow the argument relating instanton winding to boundary data of the Chern-Simons form.
+  evidence:
+    - type: textual_evidence
+      source_ref: axion_lecture_notes_triage
+      note: Axion lecture notes document the Chern-Simons–instanton connection in the strong-CP context.
+  status: asserted
+  confidence: 0.88
+
+# ── magnetic flux quantization ─────────────────────────────────────────────
+
+- from: qft.magnetic_flux_quantization
+  to: qft.magnetic_monopole
+  relation_type: requires_for_recognize
+  necessity: necessary
+  rationale: Dirac charge quantization is derived from the requirement that flux be quantized; the monopole charge quantization condition is the direct consequence of magnetic flux quantization in compact U(1) theory.
+  failure_mode_if_absent: Cannot state the quantization condition on monopole charge or connect it to consistency of the gauge theory.
+  evidence:
+    - type: textual_evidence
+      source_ref: axion_lecture_notes_triage
+      note: Axion lecture notes identify magnetic flux quantization as a named prerequisite node for monopole charge analysis.
+  status: asserted
+  confidence: 0.92
+
+- from: qft.magnetic_flux_quantization
+  to: qft.vortex_soliton
+  relation_type: requires_for_recognize
+  necessity: necessary
+  rationale: Abrikosov vortices carry quantized flux; understanding that flux quantization follows from the π_1 structure of the vacuum manifold is needed to interpret the vortex as a topological object.
+  failure_mode_if_absent: Cannot explain why vortex flux is quantized rather than a continuous parameter.
+  evidence:
+    - type: textual_evidence
+      source_ref: axion_lecture_notes_triage
+      note: Axion lecture notes treat flux quantization as a reusable prerequisite for both vortex and monopole topology.
+  status: asserted
+  confidence: 0.91
+
+# ── anomaly inflow downstream ──────────────────────────────────────────────
+
+- from: qft.anomaly_inflow
+  to: sm.chiral_anomaly
+  relation_type: requires_for_recognize
+  necessity: helpful
+  rationale: Modern treatments of the chiral anomaly in the presence of topological defects or boundaries invoke anomaly inflow as the organizing framework; familiarity with the inflow mechanism helps orient the bulk versus boundary anomaly accounting.
+  failure_mode_if_absent: Cannot follow modern presentations that frame chiral anomaly cancellation as an inflow effect.
+  evidence:
+    - type: expert_claim
+      source_ref: axion_lecture_notes_triage
+      note: Axion lecture notes introduce anomaly inflow as a reusable formal concept connecting Chern-Simons terms to anomaly cancellation.
+  status: asserted
+  confidence: 0.82

@@ -1,0 +1,75 @@
+# Canonical overlay annotations for the cosmology_foundations batch.
+# All entries are assumed_background overlays: they record concepts a typical reader
+# is presumed to already know when encountering the target topic node.
+
+- overlay_type: assumed_background
+  target_topic: cosmology.friedmann_equation
+  presumed_node: cosmology.frw_metric
+  audience_profile: cosmology_grad
+  subfield: cosmological_perturbation_theory
+  rationale: Any reader working with the Friedmann equations in a GR-cosmology context is assumed to already have the FRW metric as background; the derivation step is typically not repeated.
+  status: asserted
+  confidence: 0.95
+
+- overlay_type: assumed_background
+  target_topic: cosmology.friedmann_equation
+  presumed_node: cosmology.scale_factor
+  audience_profile: cosmology_grad
+  subfield: background_cosmology
+  rationale: The scale factor a(t) is universally treated as a known quantity when the Friedmann equations are introduced at graduate level; readers are expected to bring this definition.
+  status: asserted
+  confidence: 0.95
+
+- overlay_type: assumed_background
+  target_topic: cosmology.inflaton_field
+  presumed_node: cosmology.inflation
+  audience_profile: cosmology_grad
+  subfield: inflationary_cosmology
+  rationale: Discussions of the inflaton field, slow-roll parameters, and reheating universally assume that the reader already understands the inflationary epoch and its motivation; the field is introduced as the mechanism implementing a known paradigm.
+  status: asserted
+  confidence: 0.95
+
+- overlay_type: assumed_background
+  target_topic: cosmology.cmb_power_spectrum
+  presumed_node: cosmology.cosmic_microwave_background
+  audience_profile: cosmology_grad
+  subfield: cmb_physics
+  rationale: The Cℓ power spectrum is a derived statistical characterisation of CMB anisotropies; readers are assumed to know what the CMB is before the power spectrum formalism is developed.
+  status: asserted
+  confidence: 0.97
+
+- overlay_type: assumed_background
+  target_topic: cosmology.baryon_acoustic_oscillations
+  presumed_node: cosmology.hubble_parameter
+  audience_profile: cosmology_grad
+  subfield: large_scale_structure
+  rationale: The BAO scale is quoted as a comoving distance calibrated using H₀; readers using BAO as a standard ruler are assumed to understand H and its role in relating physical to comoving scales.
+  status: asserted
+  confidence: 0.90
+
+- overlay_type: assumed_background
+  target_topic: cosmology.matter_power_spectrum
+  presumed_node: cosmology.scale_factor
+  audience_profile: cosmology_grad
+  subfield: large_scale_structure
+  rationale: The matter power spectrum is evaluated at a given epoch and redshift; converting between redshift and scale factor is assumed background for any reader working with P(k,z).
+  status: asserted
+  confidence: 0.92
+
+- overlay_type: assumed_background
+  target_topic: cosmology.lambda_cdm_model
+  presumed_node: cosmology.friedmann_equation
+  audience_profile: cosmology_grad
+  subfield: background_cosmology
+  rationale: The ΛCDM model is defined by its Friedmann-equation solution; readers citing or using the concordance model are assumed to understand that its dynamics are governed by the Friedmann equations.
+  status: asserted
+  confidence: 0.97
+
+- overlay_type: assumed_background
+  target_topic: cosmology.dark_energy
+  presumed_node: cosmology.friedmann_equation
+  audience_profile: cosmology_grad
+  subfield: background_cosmology
+  rationale: Dark energy's observational signature (ä > 0, w = -1) is read directly from the Friedmann equations; readers of dark energy literature are assumed to bring that equation as background.
+  status: asserted
+  confidence: 0.95

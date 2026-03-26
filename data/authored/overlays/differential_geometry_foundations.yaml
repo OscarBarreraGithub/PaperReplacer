@@ -1,0 +1,77 @@
+# Contextual overlay records for the differential_geometry_foundations batch.
+#
+# These overlays mark which nodes are assumed background for which audiences,
+# following the ontology rule that assumed background is contextual overlay data,
+# not intrinsic ontology.
+
+- overlay_type: assumed_background
+  target_topic: qft.gauge_invariance
+  presumed_node: math.smooth_manifold
+  audience_profile: graduate_physics_standard
+  subfield: differential_geometry
+  rationale: Graduate HEP-TH students typically encounter smooth manifolds in the context of gauge theory or GR; it is often treated as assumed background in QFT courses that proceed directly to gauge fields without a geometry prerequisite.
+  status: asserted
+  confidence: 0.85
+
+- overlay_type: assumed_background
+  target_topic: qft.gauge_invariance
+  presumed_node: math.lie_group
+  audience_profile: graduate_physics_standard
+  subfield: differential_geometry
+  rationale: Lie groups (SU(N), U(1)) are routinely assumed without proof in QFT courses; the math-level definition is assumed background for students who have seen them in a group theory or particle physics course.
+  status: asserted
+  confidence: 0.90
+
+- overlay_type: assumed_background
+  target_topic: qft.gauge_invariance
+  presumed_node: math.lie_algebra
+  audience_profile: graduate_physics_standard
+  subfield: differential_geometry
+  rationale: The Lie algebra and its generators are introduced informally in most QFT courses; the rigorous math-level definition (tangent space at identity, bracket) is assumed background for standard graduate HEP-TH.
+  status: asserted
+  confidence: 0.88
+
+- overlay_type: assumed_background
+  target_topic: qft.gauge_invariance
+  presumed_node: math.differential_form
+  audience_profile: graduate_physics_standard
+  subfield: differential_geometry
+  rationale: Differential forms are not uniformly assumed in graduate physics; many QFT courses use index notation for gauge fields without the form language, so this is only partial background.
+  status: asserted
+  confidence: 0.55
+
+- overlay_type: assumed_background
+  target_topic: qft.gauge_invariance
+  presumed_node: math.exterior_derivative
+  audience_profile: graduate_physics_standard
+  subfield: differential_geometry
+  rationale: The coordinate-free exterior derivative is less often assumed than the Lie algebra; students who have studied differential geometry will have this, but it is only partial background for the average graduate physicist.
+  status: asserted
+  confidence: 0.50
+
+- overlay_type: assumed_background
+  target_topic: qft.gauge_invariance
+  presumed_node: math.stokes_theorem
+  audience_profile: graduate_physics_standard
+  subfield: differential_geometry
+  rationale: The classical Stokes theorem (from undergraduate vector calculus) is assumed; the coordinate-free generalization to manifolds is less uniformly assumed but is typically not a blocker in practice.
+  status: asserted
+  confidence: 0.85
+
+- overlay_type: assumed_background
+  target_topic: qft.gauge_invariance
+  presumed_node: math.tangent_space
+  audience_profile: graduate_physics_standard
+  subfield: differential_geometry
+  rationale: Tangent spaces and tangent vectors are often introduced heuristically in GR or gauge theory; the rigorous derivation definition is less uniformly assumed, making this partial background.
+  status: asserted
+  confidence: 0.60
+
+- overlay_type: assumed_background
+  target_topic: qft.gauge_invariance
+  presumed_node: math.diffeomorphism
+  audience_profile: graduate_physics_standard
+  subfield: differential_geometry
+  rationale: Diffeomorphism as coordinate transformation is effectively assumed in any course covering general covariance or field redefinition freedom; the manifold-theoretic definition is assumed background.
+  status: asserted
+  confidence: 0.88

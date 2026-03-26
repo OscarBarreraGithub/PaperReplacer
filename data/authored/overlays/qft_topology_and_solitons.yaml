@@ -1,0 +1,103 @@
+# Canonical overlay annotations for the qft-topology-and-solitons batch.
+
+# ── assumed background for the batch anchor ───────────────────────────────
+
+- overlay_type: assumed_background
+  target_topic: qft.topology_and_solitons
+  presumed_node: qft.non_abelian_gauge_symmetry
+  audience_profile: hep_th_grad
+  subfield: qft_topology
+  artifact_type: paper
+  rationale: Papers on topology and solitons in QFT universally presume familiarity with non-Abelian gauge symmetry; the gauge structure is not re-derived when soliton classification is introduced.
+  evidence:
+    - type: expert_claim
+      source_ref: weinberg_qft_vol2_triage
+      note: Weinberg Vol II triage keeps non-Abelian gauge symmetry as assumed background for the soliton and topology branch.
+  status: asserted
+  confidence: 0.95
+
+- overlay_type: assumed_background
+  target_topic: qft.topology_and_solitons
+  presumed_node: qft.yang_mills_action
+  audience_profile: hep_th_grad
+  subfield: qft_topology
+  artifact_type: paper
+  rationale: The Yang-Mills action and its finite-action boundary conditions are treated as prior knowledge in soliton papers; the energy functional and its classical equations of motion are invoked without re-derivation.
+  evidence:
+    - type: expert_claim
+      source_ref: weinberg_qft_vol2_triage
+      note: Triage keeps the Yang-Mills action as assumed upstream background for all extended-configuration analysis.
+  status: asserted
+  confidence: 0.92
+
+- overlay_type: assumed_background
+  target_topic: qft.topology_and_solitons
+  presumed_node: qft.instanton
+  audience_profile: hep_th_grad
+  subfield: qft_topology
+  artifact_type: paper
+  rationale: The instanton is established in the nonperturbative_qcd_and_topology batch; papers on monopoles, skyrmions, and Chern-Simons terms frequently use instanton language and topological-sector vocabulary as assumed context.
+  evidence:
+    - type: expert_claim
+      source_ref: weinberg_qft_vol2_triage
+      note: Weinberg Vol II triage notes that instanton classification (π_3) is the canonical example motivating all other homotopy classification.
+  status: asserted
+  confidence: 0.90
+
+# ── node-level assumed background ─────────────────────────────────────────
+
+- overlay_type: assumed_background
+  target_topic: qft.magnetic_monopole
+  presumed_node: sm.higgs.higgs_mechanism
+  audience_profile: hep_th_grad
+  subfield: qft_topology
+  artifact_type: paper
+  rationale: The t'Hooft-Polyakov monopole arises in theories with spontaneous breaking of a non-Abelian gauge group; the Higgs mechanism (or its non-Abelian generalization) is presumed background when reading monopole papers.
+  evidence:
+    - type: expert_claim
+      source_ref: weinberg_qft_vol2_triage
+      note: Triage notes that the monopole requires a non-Abelian gauge-theory SSB context.
+  status: asserted
+  confidence: 0.88
+
+- overlay_type: assumed_background
+  target_topic: qft.chern_simons_term
+  presumed_node: qcd.topological_charge
+  audience_profile: hep_th_grad
+  subfield: qft_topology
+  artifact_type: paper
+  rationale: Papers introducing the Chern-Simons term in the QCD context presume familiarity with topological charge and the instanton-number language already developed in the nonperturbative-QCD branch.
+  evidence:
+    - type: textual_evidence
+      source_ref: axion_lecture_notes_triage
+      note: Axion lecture notes introduce the Chern-Simons form in the context of the QCD potential and theta-vacuum, presupposing topological charge.
+  status: asserted
+  confidence: 0.90
+
+- overlay_type: assumed_background
+  target_topic: qft.anomaly_inflow
+  presumed_node: sm.chiral_anomaly
+  audience_profile: hep_th_grad
+  subfield: qft_topology
+  artifact_type: paper
+  rationale: The anomaly inflow mechanism is introduced to explain the consistency of anomalous boundary theories; papers using this mechanism presume familiarity with the chiral anomaly structure being cancelled.
+  evidence:
+    - type: expert_claim
+      source_ref: axion_lecture_notes_triage
+      note: Axion lecture notes frame anomaly inflow as the resolution of a boundary anomaly, assuming knowledge of anomaly structure.
+  status: asserted
+  confidence: 0.87
+
+- overlay_type: assumed_background
+  target_topic: qft.skyrmion
+  presumed_node: sm.chiral_lagrangian
+  audience_profile: hep_th_grad
+  subfield: qft_topology
+  artifact_type: paper
+  rationale: Skyrmions are solutions of the nonlinear sigma model for pions; papers on skyrmions presume the chiral Lagrangian and its symmetry-breaking vacuum structure as given.
+  evidence:
+    - type: expert_claim
+      source_ref: weinberg_qft_vol2_triage
+      note: Weinberg Vol II triage categorizes skyrmions as sigma-model applications with chiral Lagrangian as the required upstream context.
+  status: asserted
+  confidence: 0.90

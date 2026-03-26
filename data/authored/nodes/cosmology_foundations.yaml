@@ -1,0 +1,145 @@
+# Canonical node records for the cosmology_foundations batch.
+# Source: Scott Dodelson & Fabian Schmidt, Modern Cosmology (Academic Press, 2020)
+- id: cosmology.frw_metric
+  label: FRW/FLRW metric
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: The Friedmann-Robertson-Walker metric ds² = -dt² + a²(t)γ_{ij}dx^i dx^j describing a spatially homogeneous and isotropic expanding universe, where γ_{ij} encodes the spatial curvature (k = -1, 0, +1).
+  status: asserted
+
+- id: cosmology.scale_factor
+  label: Scale factor
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: The dimensionless function a(t) appearing in the FRW metric that encodes the overall size of the universe as a function of cosmic time; the cosmological redshift is z = a₀/a - 1 and the Hubble parameter is H = ȧ/a.
+  status: asserted
+
+- id: cosmology.friedmann_equation
+  label: Friedmann equations
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: The pair of ODEs H² = (8πG/3)ρ - k/a² + Λ/3 and ä/a = -(4πG/3)(ρ + 3p) + Λ/3 derived from the Einstein equations applied to the FRW metric; they govern the cosmic expansion history given the equation of state of each energy component.
+  status: asserted
+
+- id: cosmology.hubble_parameter
+  label: Hubble parameter
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: The instantaneous expansion rate H(t) = ȧ/a; its present value H₀ ≈ 67–73 km/s/Mpc sets the characteristic cosmic time and length scales and appears throughout observational cosmology as the normalisation of distances and densities.
+  status: asserted
+
+- id: cosmology.inflation
+  label: Inflation
+  knowledge_kind: concept
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: An epoch of quasi-de Sitter accelerated expansion (ä > 0) in the very early universe driven by a scalar inflaton field, explaining the flatness and horizon problems and generating a nearly scale-invariant spectrum of primordial curvature perturbations.
+  status: asserted
+
+- id: cosmology.inflaton_field
+  label: Inflaton field
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: The scalar field φ whose potential energy V(φ) dominates the energy budget during inflation; the slow-roll approximation (ε, η ≪ 1) ensures sustained accelerated expansion, and reheating at the end of inflation converts the inflaton energy into Standard Model radiation.
+  status: asserted
+
+- id: cosmology.cosmic_microwave_background
+  label: Cosmic microwave background
+  knowledge_kind: concept
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: The thermal relic photon bath released at recombination (z ≈ 1100) when hydrogen formed and the universe became transparent; it is observed today as an isotropic blackbody at T₀ ≈ 2.725 K with small angular anisotropies encoding the primordial perturbation spectrum.
+  status: asserted
+
+- id: cosmology.cmb_power_spectrum
+  label: CMB angular power spectrum
+  knowledge_kind: representation
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: The set of multipole coefficients Cℓ obtained by expanding CMB temperature or polarization anisotropies in spherical harmonics; the TT, EE, TE, and BB spectra encode acoustic oscillation peaks, diffusion damping, and inflationary gravitational-wave contributions respectively.
+  status: asserted
+
+- id: cosmology.baryon_acoustic_oscillations
+  label: Baryon acoustic oscillations
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Oscillations in the baryon-photon fluid before recombination that imprint a characteristic sound-horizon scale (~150 Mpc comoving) as a peak in the matter power spectrum and as the standard ruler used to measure the expansion history via galaxy surveys.
+  status: asserted
+
+- id: cosmology.matter_power_spectrum
+  label: Matter power spectrum
+  knowledge_kind: representation
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: The variance P(k) = ⟨|δk|²⟩ of Fourier modes of the matter density contrast δ = δρ/ρ; its shape is set by the primordial spectrum modulated by the transfer function T(k) encoding the radiation-to-matter transition and baryon acoustic oscillations.
+  status: asserted
+
+- id: cosmology.dark_matter
+  label: Dark matter
+  knowledge_kind: concept
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: A non-baryonic, pressureless matter component contributing Ω_DM ≈ 0.26 to the cosmic energy budget; cold dark matter (CDM) is collisionless and clusters gravitationally to seed large-scale structure, with WIMP and axion candidates being well-studied possibilities.
+  status: asserted
+
+- id: cosmology.dark_energy
+  label: Dark energy
+  knowledge_kind: concept
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: The component driving accelerated expansion today, contributing Ω_Λ ≈ 0.69; in ΛCDM it is identified with the cosmological constant (equation of state w = p/ρ = -1), though dynamical dark energy models with w ≠ -1 remain observationally viable.
+  status: asserted
+
+- id: cosmology.lambda_cdm_model
+  label: ΛCDM model
+  knowledge_kind: concept
+  granularity_level: survey
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: The standard concordance cosmological model containing a cosmological constant Λ, cold dark matter, baryons, photons, and neutrinos in a spatially flat FRW universe; described by six parameters (H₀, Ω_b, Ω_DM, A_s, n_s, τ) and consistent with all major observational datasets.
+  status: asserted

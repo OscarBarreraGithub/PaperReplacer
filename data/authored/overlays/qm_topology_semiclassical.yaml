@@ -1,0 +1,163 @@
+# Overlay annotations for the qm_topology_semiclassical batch.
+# These record assumed-background claims as contextual overlays,
+# not as intrinsic ontology.
+
+# Berry phase assumed background
+- overlay_type: assumed_background
+  target_topic: qm.berry_phase
+  presumed_node: qm.unitary_evolution
+  audience_profile: hep_th_graduate
+  subfield: topological_qft
+  rationale: Students entering topological QFT (WZW terms, Chern-Simons, chiral anomaly) are expected to recognize the Berry phase; adiabatic theorem and unitary evolution are assumed without re-derivation.
+  status: asserted
+  confidence: 0.90
+
+- overlay_type: assumed_background
+  target_topic: qm.berry_phase
+  presumed_node: qm.hilbert_space
+  audience_profile: hep_th_graduate
+  subfield: topological_qft
+  rationale: The Berry phase is defined on parameter-space families of Hilbert-space states; Hilbert-space structure is assumed background for topological QFT students.
+  status: asserted
+  confidence: 0.92
+
+- overlay_type: assumed_background
+  target_topic: qm.berry_phase
+  presumed_node: qm.eigenstate_and_eigenvalue
+  audience_profile: hep_th_graduate
+  subfield: topological_qft
+  rationale: The adiabatic Berry phase is computed along a path of instantaneous eigenstates; the eigenstate/eigenvalue framework is assumed background.
+  status: asserted
+  confidence: 0.92
+
+# Aharonov-Bohm effect assumed background
+- overlay_type: assumed_background
+  target_topic: qm.aharonov_bohm_effect
+  presumed_node: qm.unitary_evolution
+  audience_profile: hep_th_graduate
+  subfield: gauge_theory
+  rationale: The Aharonov-Bohm effect is canonical assumed background for discussions of Wilson loops or gauge-field holonomy; unitary evolution underlies the interference phase formula.
+  status: asserted
+  confidence: 0.90
+
+- overlay_type: assumed_background
+  target_topic: qm.aharonov_bohm_effect
+  presumed_node: qft.gauge_invariance
+  audience_profile: hep_th_graduate
+  subfield: gauge_theory
+  rationale: The Aharonov-Bohm effect is canonical assumed background for discussions of Wilson loops or gauge-field holonomy in a QFT course; gauge invariance is presupposed.
+  status: asserted
+  confidence: 0.90
+
+- overlay_type: assumed_background
+  target_topic: qm.aharonov_bohm_effect
+  presumed_node: qft.minimal_coupling
+  audience_profile: hep_th_graduate
+  subfield: gauge_theory
+  rationale: The phase formula Δφ = e/ℏ ∮ A·dx is derived from minimal coupling; students are expected to know this without re-derivation.
+  status: asserted
+  confidence: 0.90
+
+# WKB approximation assumed background
+- overlay_type: assumed_background
+  target_topic: qm.wkb_approximation
+  presumed_node: qm.state_vector
+  audience_profile: hep_th_graduate
+  subfield: semiclassical_methods
+  rationale: WKB is typically covered in a first QM course and is assumed background for instanton calculations; the state-vector framework is presupposed throughout.
+  status: asserted
+  confidence: 0.88
+
+- overlay_type: assumed_background
+  target_topic: qm.wkb_approximation
+  presumed_node: classical_fields.action_functional
+  audience_profile: hep_th_graduate
+  subfield: semiclassical_methods
+  rationale: WKB tunneling amplitudes are expressed in terms of the classical action; students need the action-functional concept as assumed background.
+  status: asserted
+  confidence: 0.88
+
+# Angular momentum addition assumed background
+- overlay_type: assumed_background
+  target_topic: qm.angular_momentum_addition
+  presumed_node: qm.commutator
+  audience_profile: hep_th_graduate
+  subfield: representation_theory
+  rationale: Clebsch-Gordan decomposition is assumed background for spinor-product identities in QFT; the commutator algebra of angular momentum is the foundational assumed knowledge.
+  status: asserted
+  confidence: 0.88
+
+- overlay_type: assumed_background
+  target_topic: qm.angular_momentum_addition
+  presumed_node: qm.eigenstate_and_eigenvalue
+  audience_profile: hep_th_graduate
+  subfield: representation_theory
+  rationale: The CG decomposition j₁ ⊗ j₂ = |j₁−j₂| ⊕ … ⊕ (j₁+j₂) is stated in terms of simultaneous eigenstates; eigenstate/eigenvalue framework is assumed.
+  status: asserted
+  confidence: 0.88
+
+# Identical particles symmetrization assumed background
+- overlay_type: assumed_background
+  target_topic: qm.identical_particles_symmetrization
+  presumed_node: qm.hilbert_space
+  audience_profile: hep_th_graduate
+  subfield: quantum_statistics
+  rationale: The symmetrization postulate is assumed background before second quantization; the Hilbert-space tensor-product structure is presupposed.
+  status: asserted
+  confidence: 0.90
+
+- overlay_type: assumed_background
+  target_topic: qm.identical_particles_symmetrization
+  presumed_node: qm.state_vector
+  audience_profile: hep_th_graduate
+  subfield: quantum_statistics
+  rationale: The symmetrization postulate is stated in terms of state vectors; state-vector language is assumed background.
+  status: asserted
+  confidence: 0.90
+
+- overlay_type: assumed_background
+  target_topic: qm.identical_particles_symmetrization
+  presumed_node: qm.observable_operator
+  audience_profile: hep_th_graduate
+  subfield: quantum_statistics
+  rationale: The physical indistinguishability argument uses observable operators that cannot distinguish permuted states; operator framework is assumed background.
+  status: asserted
+  confidence: 0.87
+
+# Dirac monopole assumed background
+- overlay_type: assumed_background
+  target_topic: qm.dirac_monopole
+  presumed_node: qft.gauge_invariance
+  audience_profile: hep_th_graduate
+  subfield: gauge_theory
+  rationale: The Dirac quantization condition eg = 2πn is assumed known before discussing 't Hooft-Polyakov monopoles or Montonen-Olive duality; gauge invariance and the Dirac string construction are assumed background.
+  status: asserted
+  confidence: 0.88
+
+- overlay_type: assumed_background
+  target_topic: qm.dirac_monopole
+  presumed_node: qft.minimal_coupling
+  audience_profile: hep_th_graduate
+  subfield: gauge_theory
+  rationale: The Dirac monopole is defined via minimal coupling of a charged particle to the vector potential; minimal coupling is assumed background.
+  status: asserted
+  confidence: 0.88
+
+# Landau levels assumed background
+- overlay_type: assumed_background
+  target_topic: qm.landau_levels
+  presumed_node: qm.hilbert_space
+  audience_profile: hep_th_graduate
+  subfield: topological_condensed_matter_interface
+  rationale: Landau levels are background knowledge for topological-field-theory discussions of the quantum Hall effect; the Hilbert-space and energy-eigenstate framework is presupposed.
+  status: asserted
+  confidence: 0.87
+
+- overlay_type: assumed_background
+  target_topic: qm.landau_levels
+  presumed_node: qft.minimal_coupling
+  audience_profile: hep_th_graduate
+  subfield: topological_condensed_matter_interface
+  rationale: Landau levels arise from minimal coupling of a charged particle to a uniform magnetic field; minimal coupling is assumed background when invoking the spectrum E_n = ℏω_c(n+1/2).
+  status: asserted
+  confidence: 0.87

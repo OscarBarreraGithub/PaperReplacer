@@ -1,0 +1,74 @@
+# Canonical partonomy edges for the cosmology_foundations batch.
+# cosmology.lambda_cdm_model is the survey-level parent that subsumes the other 12 nodes.
+
+- parent: cosmology.lambda_cdm_model
+  child: cosmology.frw_metric
+  rationale: The FRW metric is the geometric substrate on which ΛCDM is defined; it is a constitutive part of the model's spatial structure.
+  status: asserted
+  confidence: 0.95
+
+- parent: cosmology.lambda_cdm_model
+  child: cosmology.scale_factor
+  rationale: The scale factor is the single dynamical degree of freedom of the FRW background that ΛCDM evolves.
+  status: asserted
+  confidence: 0.95
+
+- parent: cosmology.lambda_cdm_model
+  child: cosmology.friedmann_equation
+  rationale: The Friedmann equations are the governing equations of ΛCDM dynamics; they are an integral part of the model's mathematical content.
+  status: asserted
+  confidence: 0.95
+
+- parent: cosmology.lambda_cdm_model
+  child: cosmology.hubble_parameter
+  rationale: The Hubble parameter H₀ is one of the six canonical ΛCDM parameters and the primary observable characterising the model's expansion history.
+  status: asserted
+  confidence: 0.95
+
+- parent: cosmology.lambda_cdm_model
+  child: cosmology.inflation
+  rationale: Inflation provides the initial conditions (primordial power spectrum) for ΛCDM structure formation and is treated as a standard precursor epoch in the concordance model.
+  status: asserted
+  confidence: 0.88
+
+- parent: cosmology.lambda_cdm_model
+  child: cosmology.inflaton_field
+  rationale: The inflaton is the field-theoretic realisation of the inflationary component of the ΛCDM initial-condition framework.
+  status: asserted
+  confidence: 0.85
+
+- parent: cosmology.lambda_cdm_model
+  child: cosmology.cosmic_microwave_background
+  rationale: The CMB is the primary observational pillar of ΛCDM; its existence and properties are direct predictions of the model.
+  status: asserted
+  confidence: 0.96
+
+- parent: cosmology.lambda_cdm_model
+  child: cosmology.cmb_power_spectrum
+  rationale: The CMB Cℓ power spectrum is the principal observable used to constrain and validate ΛCDM parameters.
+  status: asserted
+  confidence: 0.95
+
+- parent: cosmology.lambda_cdm_model
+  child: cosmology.baryon_acoustic_oscillations
+  rationale: BAO are a predicted and observed feature of ΛCDM structure formation used as a standard ruler to test the model.
+  status: asserted
+  confidence: 0.95
+
+- parent: cosmology.lambda_cdm_model
+  child: cosmology.matter_power_spectrum
+  rationale: The matter power spectrum is a core prediction of ΛCDM structure formation theory.
+  status: asserted
+  confidence: 0.95
+
+- parent: cosmology.lambda_cdm_model
+  child: cosmology.dark_matter
+  rationale: Cold dark matter is one of the two named components in ΛCDM (the CDM part) and constitutes ~26% of the energy budget.
+  status: asserted
+  confidence: 0.98
+
+- parent: cosmology.lambda_cdm_model
+  child: cosmology.dark_energy
+  rationale: Dark energy / cosmological constant is one of the two named components in ΛCDM (the Λ part) and drives late-time accelerated expansion.
+  status: asserted
+  confidence: 0.98

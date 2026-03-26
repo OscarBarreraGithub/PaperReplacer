@@ -1,0 +1,235 @@
+# Canonical dependency edges for the qft_axiomatic_foundations batch.
+# Source: Weinberg Vol I and Vol III triage; connects to existing graph nodes.
+
+# ── Cluster decomposition principle ──────────────────────────────────────────
+
+- from: qft.lsz_reduction_formula
+  to: qft.cluster_decomposition_principle
+  relation_type: requires_for_recognize
+  necessity: necessary
+  rationale: Cluster decomposition is a statement about the factorization of the S-matrix for spatially separated processes, so the S-matrix concept must be recognizable first.
+  failure_mode_if_absent: Cannot identify which object is claimed to factorize or what physical requirement is being imposed.
+  evidence:
+    - type: expert_claim
+      source_ref: weinberg_qft_vol1_triage
+      note: Weinberg Vol I treats cluster decomposition as a fundamental axiom constraining the S-matrix structure.
+  status: asserted
+  confidence: 0.95
+
+- from: qft.creation_annihilation_operator
+  to: qft.cluster_decomposition_principle
+  relation_type: requires_for_use
+  necessity: necessary
+  rationale: The proof that cluster decomposition forces locality shows that the Hamiltonian must be built from products of creation and annihilation operators; using the principle requires familiarity with this operator language.
+  failure_mode_if_absent: Cannot follow the argument that cluster decomposition forces the Hamiltonian into the local operator form.
+  evidence:
+    - type: expert_claim
+      source_ref: weinberg_qft_vol1_triage
+      note: Weinberg's derivation explicitly constructs the creation/annihilation-operator form of the Hamiltonian as the output of imposing cluster decomposition.
+  status: asserted
+  confidence: 0.93
+
+- from: qft.cluster_decomposition_principle
+  to: qft.connected_amplitude_decomposition
+  relation_type: requires_for_recognize
+  necessity: necessary
+  rationale: Connected amplitude decomposition is the algebraic implementation of cluster decomposition; the physical principle must be understood before the combinatorial splitting of the S-matrix elements is meaningful.
+  failure_mode_if_absent: Cannot see why the connected/disconnected splitting of amplitudes is physically motivated rather than a purely formal device.
+  evidence:
+    - type: expert_claim
+      source_ref: weinberg_qft_vol1_triage
+      note: Weinberg introduces the connected amplitude splitting immediately as the operative form of cluster decomposition.
+  status: asserted
+  confidence: 0.92
+
+- from: qft.cluster_decomposition_principle
+  to: qft.free_scalar_field
+  relation_type: requires_for_derive
+  necessity: necessary
+  rationale: Cluster decomposition is one of the axioms that forces free fields to take the local mode-expansion form; the principle is therefore needed to derive why locality and the field structure arise.
+  failure_mode_if_absent: Cannot justify the derivation that locality and mode expansion are forced rather than assumed.
+  evidence:
+    - type: expert_claim
+      source_ref: weinberg_qft_vol1_triage
+      note: Weinberg uses cluster decomposition to motivate the construction of local quantum fields out of creation/annihilation operators.
+  status: asserted
+  confidence: 0.88
+
+# ── Wigner's symmetry representation theorem ─────────────────────────────────
+
+- from: qm.hilbert_space
+  to: qft.wigners_symmetry_representation_theorem
+  relation_type: requires_for_recognize
+  necessity: necessary
+  rationale: The theorem is a statement about operators on Hilbert space, so the Hilbert-space setting must be recognized before the claim about unitary/antiunitary operators is meaningful.
+  failure_mode_if_absent: Cannot tell what carrier space the symmetry operators are acting on.
+  evidence:
+    - type: expert_claim
+      source_ref: weinberg_qft_vol1_triage
+      note: Weinberg's Appendix A proves the theorem in the Hilbert-space framework; the proof is unintelligible without that setting.
+  status: asserted
+  confidence: 0.95
+
+- from: qft.wigners_symmetry_representation_theorem
+  to: qft.wigner_classification
+  relation_type: requires_for_derive
+  necessity: necessary
+  rationale: The Wigner classification of particles by Poincare irreps relies on the prior result that Poincare symmetry is represented by unitary operators; without Wigner's theorem the representation story lacks its operator-theoretic foundation.
+  failure_mode_if_absent: Cannot justify why Poincare symmetry acts unitarily on the one-particle Hilbert space.
+  evidence:
+    - type: expert_claim
+      source_ref: weinberg_qft_vol1_triage
+      note: Weinberg explicitly invokes the symmetry representation theorem before constructing unitary Poincare representations in Chapter 2.
+  status: asserted
+  confidence: 0.93
+
+- from: qft.wigners_symmetry_representation_theorem
+  to: qft.time_reversal
+  relation_type: requires_for_recognize
+  necessity: necessary
+  rationale: Time reversal is the canonical example of an antiunitary symmetry; Wigner's theorem is what establishes that time reversal must be antiunitary rather than unitary.
+  failure_mode_if_absent: Cannot understand why the time-reversal operator is antiunitary, which is essential to its physical interpretation.
+  evidence:
+    - type: expert_claim
+      source_ref: weinberg_qft_vol1_triage
+      note: Weinberg derives the antiunitary character of T as a direct application of the symmetry representation theorem.
+  status: asserted
+  confidence: 0.94
+
+# ── Superselection rule ───────────────────────────────────────────────────────
+
+- from: qft.wigners_symmetry_representation_theorem
+  to: qft.superselection_rule
+  relation_type: requires_for_derive
+  necessity: necessary
+  rationale: Superselection rules arise when the phase freedom in projective representations of a symmetry group cannot be absorbed; Wigner's theorem and the analysis of projective representations are the derivation route.
+  failure_mode_if_absent: Cannot follow the derivation that certain Hilbert-space superpositions are unobservable due to representation-theoretic constraints.
+  evidence:
+    - type: expert_claim
+      source_ref: weinberg_qft_vol1_triage
+      note: Weinberg discusses superselection rules in the context of projective representations immediately after the symmetry representation theorem.
+  status: asserted
+  confidence: 0.90
+
+- from: qft.superselection_rule
+  to: qft.charge_conjugation
+  relation_type: requires_for_recognize
+  necessity: helpful
+  rationale: Charge is the canonical superselected quantity; understanding superselection rules gives the foundational reason that charge eigensectors are preserved by observables, which is the physical content behind charge conservation as a superselection law.
+  failure_mode_if_absent: Cannot distinguish the superselection character of charge conservation from ordinary symmetry conservation.
+  evidence:
+    - type: expert_claim
+      source_ref: weinberg_qft_vol1_triage
+      note: Weinberg uses electric charge as the primary example of a superselected quantity.
+  status: asserted
+  confidence: 0.82
+
+# ── Haag's theorem ───────────────────────────────────────────────────────────
+
+- from: qft.free_scalar_field
+  to: qft.haags_theorem
+  relation_type: requires_for_recognize
+  necessity: necessary
+  rationale: Haag's theorem is a statement about the unitary inequivalence of free and interacting Fock spaces; one must know the free-field Fock space before the claimed inequivalence is meaningful.
+  failure_mode_if_absent: Cannot identify which Hilbert space is being shown to be inequivalent to which.
+  evidence:
+    - type: expert_claim
+      source_ref: weinberg_qft_vol1_triage
+      note: Haag's theorem is formulated as a statement about the free-field vacuum representation and its non-equivalence to the interacting one.
+  status: asserted
+  confidence: 0.93
+
+- from: qft.canonical_quantization
+  to: qft.haags_theorem
+  relation_type: requires_for_recognize
+  necessity: necessary
+  rationale: Haag's theorem is about the failure of the interaction-picture construction that canonical quantization normally presupposes; the theorem is only meaningful once the canonical quantization setup is in place.
+  failure_mode_if_absent: Cannot understand what the interaction-picture Hamiltonian split is, or why the theorem says it fails.
+  evidence:
+    - type: expert_claim
+      source_ref: weinberg_qft_vol1_triage
+      note: The interaction picture is a direct product of canonical quantization; Haag's theorem targets that specific construction.
+  status: asserted
+  confidence: 0.92
+
+- from: qft.haags_theorem
+  to: qft.path_integral_and_generating_functionals
+  relation_type: pedagogically_precedes
+  necessity: helpful
+  rationale: Haag's theorem is a strong motivation for using path-integral methods rather than the operator interaction picture; knowing the theorem contextualizes why the path integral is preferred in rigorous discussions.
+  failure_mode_if_absent: Cannot appreciate why path-integral methods are conceptually preferred over interaction-picture operator methods for interacting theories.
+  evidence:
+    - type: expert_claim
+      source_ref: weinberg_qft_vol1_triage
+      note: Weinberg uses Haag's theorem as part of the motivation for the functional-integral approach.
+  status: asserted
+  confidence: 0.80
+
+# ── Furry's theorem ──────────────────────────────────────────────────────────
+
+- from: qft.charge_conjugation
+  to: qft.furry_theorem
+  relation_type: requires_for_derive
+  necessity: necessary
+  rationale: Furry's theorem is a direct consequence of charge-conjugation symmetry of QED; the derivation shows that odd-photon-vertex fermion loops are mapped to their negatives under C, hence must vanish.
+  failure_mode_if_absent: Cannot execute or follow the C-symmetry argument that shows the loop integral equals its own negative.
+  evidence:
+    - type: expert_claim
+      source_ref: weinberg_qft_vol1_triage
+      note: Weinberg derives Furry's theorem as an application of charge conjugation invariance applied to closed fermion loop contributions.
+  status: asserted
+  confidence: 0.96
+
+- from: qft.fermionic_path_integral
+  to: qft.furry_theorem
+  relation_type: requires_for_use
+  necessity: necessary
+  rationale: Furry's theorem is often proved and applied in the path-integral language via the fermionic determinant; using the theorem in loop calculations requires comfort with the fermionic path integral.
+  failure_mode_if_absent: Cannot apply the theorem to evaluate or cancel odd-photon-vertex loop contributions in QED perturbation theory.
+  evidence:
+    - type: expert_claim
+      source_ref: weinberg_qft_vol1_triage
+      note: The functional form of Furry's theorem follows from charge-conjugation transformation of the fermionic path integral.
+  status: asserted
+  confidence: 0.88
+
+# ── Coleman-Mandula theorem ───────────────────────────────────────────────────
+
+- from: qft.poincare_group_representation
+  to: qft.coleman_mandula_theorem
+  relation_type: requires_for_recognize
+  necessity: necessary
+  rationale: The Coleman-Mandula theorem is a statement about the symmetry group of the S-matrix, and the Poincare algebra is the spacetime-symmetry part of that group; recognizing the theorem requires knowing what the Poincare algebra is.
+  failure_mode_if_absent: Cannot identify the Poincare part of the symmetry algebra that the theorem treats as one factor of the direct product.
+  evidence:
+    - type: expert_claim
+      source_ref: weinberg_qft_vol3_triage
+      note: The Vol III triage explicitly lists Poincare group representation as a direct dependency of the Coleman-Mandula result.
+  status: asserted
+  confidence: 0.96
+
+- from: qft.s_matrix_unitarity
+  to: qft.coleman_mandula_theorem
+  relation_type: requires_for_recognize
+  necessity: necessary
+  rationale: The theorem's hypotheses include analyticity and non-triviality of the S-matrix; the S-matrix unitarity framework is required to understand what constraints on the symmetry group are being derived.
+  failure_mode_if_absent: Cannot read the theorem's hypotheses or understand why the mass gap and non-trivial scattering conditions are needed.
+  evidence:
+    - type: expert_claim
+      source_ref: weinberg_qft_vol3_triage
+      note: The Vol III triage lists S-matrix unitarity as a dependency for Coleman-Mandula.
+  status: asserted
+  confidence: 0.93
+
+- from: qft.coleman_mandula_theorem
+  to: qft.lorentz_poincare_representations
+  relation_type: requires_for_derive
+  necessity: necessary
+  rationale: The theorem's conclusion — that only Poincare times internal symmetry is allowed — requires the full representation-theoretic vocabulary for the Poincare group.
+  failure_mode_if_absent: Cannot appreciate why the theorem rules out non-trivial mixing, since the Poincare representation structure is what makes the direct-product decomposition constraining.
+  evidence:
+    - type: expert_claim
+      source_ref: weinberg_qft_vol3_triage
+      note: Lorentz-Poincare representations form the technical content against which Coleman-Mandula's conclusion is stated.
+  status: asserted
+  confidence: 0.90

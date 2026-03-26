@@ -1,0 +1,133 @@
+# Canonical overlay annotations for the qft_axiomatic_foundations batch.
+
+# Cluster decomposition
+- overlay_type: assumed_background
+  target_topic: qft.cluster_decomposition_principle
+  presumed_node: qft.lsz_reduction_formula
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  artifact_type: paper
+  rationale: Papers that invoke cluster decomposition typically presume the reader already has S-matrix language; the principle is stated as a constraint on an object the reader is expected to know.
+  evidence:
+    - type: expert_claim
+      source_ref: weinberg_qft_vol1_triage
+      note: Weinberg treats S-matrix vocabulary as standard background before introducing cluster decomposition.
+  status: asserted
+  confidence: 0.90
+
+- overlay_type: assumed_background
+  target_topic: qft.connected_amplitude_decomposition
+  presumed_node: qft.cluster_decomposition_principle
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  artifact_type: paper
+  rationale: Papers using connected-amplitude language typically assume the reader already understands why connected parts are introduced, i.e., they presuppose the cluster decomposition motivation.
+  evidence:
+    - type: expert_claim
+      source_ref: weinberg_qft_vol1_triage
+      note: The connected splitting is routinely invoked without re-deriving its motivation from cluster decomposition.
+  status: asserted
+  confidence: 0.87
+
+# Wigner's symmetry representation theorem
+- overlay_type: assumed_background
+  target_topic: qft.wigner_classification
+  presumed_node: qft.wigners_symmetry_representation_theorem
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  artifact_type: paper
+  rationale: Research papers on particle classification typically assume the Hilbert-space representation structure established by Wigner's theorem without restating it.
+  evidence:
+    - type: expert_claim
+      source_ref: weinberg_qft_vol1_triage
+      note: Weinberg makes Wigner's theorem the foundational backdrop for the classification chapter, but papers downstream rarely re-prove it.
+  status: asserted
+  confidence: 0.88
+
+# Superselection
+- overlay_type: assumed_background
+  target_topic: qft.superselection_rule
+  presumed_node: qft.wigners_symmetry_representation_theorem
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  artifact_type: paper
+  rationale: Papers that invoke superselection rules assume the reader is familiar with the projective-representation argument that generates them; Wigner's theorem is the tacit background.
+  evidence:
+    - type: expert_claim
+      source_ref: weinberg_qft_vol1_triage
+      note: Weinberg's treatment of superselection is placed directly after the representation theorem and treated as an immediate consequence.
+  status: asserted
+  confidence: 0.85
+
+# Haag's theorem
+- overlay_type: assumed_background
+  target_topic: qft.haags_theorem
+  presumed_node: qft.canonical_quantization
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  artifact_type: paper
+  rationale: Discussions of Haag's theorem assume the reader knows canonical quantization and the interaction picture; the theorem is intelligible only against that background.
+  evidence:
+    - type: expert_claim
+      source_ref: weinberg_qft_vol1_triage
+      note: The interaction-picture Hamiltonian split is canonical-quantization vocabulary that Weinberg treats as known when stating Haag's result.
+  status: asserted
+  confidence: 0.90
+
+- overlay_type: assumed_background
+  target_topic: qft.haags_theorem
+  presumed_node: qft.free_scalar_field
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  artifact_type: paper
+  rationale: Haag's theorem is stated contrastively between the free and interacting theories; the free-scalar-field Fock space is the reference object and is assumed known.
+  evidence:
+    - type: expert_claim
+      source_ref: weinberg_qft_vol1_triage
+      note: The free-field Fock space is the starting point against which the interacting theory's inequivalent representation is contrasted.
+  status: asserted
+  confidence: 0.91
+
+# Furry's theorem
+- overlay_type: assumed_background
+  target_topic: qft.furry_theorem
+  presumed_node: qft.charge_conjugation
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  artifact_type: paper
+  rationale: Papers invoking Furry's theorem assume charge-conjugation symmetry of QED is known; the theorem is cited as an already-established consequence of C-invariance.
+  evidence:
+    - type: expert_claim
+      source_ref: weinberg_qft_vol1_triage
+      note: Furry's theorem appears in Weinberg's path-integral symmetry section as a direct consequence of the C-invariance already established in the discrete symmetries chapter.
+  status: asserted
+  confidence: 0.92
+
+# Coleman-Mandula theorem
+- overlay_type: assumed_background
+  target_topic: qft.coleman_mandula_theorem
+  presumed_node: qft.poincare_group_representation
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  artifact_type: paper
+  rationale: Papers citing Coleman-Mandula assume the Poincare algebra vocabulary is standard; the theorem is stated using that vocabulary without re-introduction.
+  evidence:
+    - type: expert_claim
+      source_ref: weinberg_qft_vol3_triage
+      note: Weinberg Vol III invokes Coleman-Mandula as a known result with Poincare algebra as assumed vocabulary.
+  status: asserted
+  confidence: 0.91
+
+- overlay_type: assumed_background
+  target_topic: qft.coleman_mandula_theorem
+  presumed_node: qft.s_matrix_unitarity
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  artifact_type: paper
+  rationale: Papers citing Coleman-Mandula assume a non-trivial unitary S-matrix with a mass gap; these conditions are usually stated in a parenthetical rather than derived afresh.
+  evidence:
+    - type: expert_claim
+      source_ref: weinberg_qft_vol3_triage
+      note: The theorem's hypotheses (mass gap, non-trivial scattering) are canonical background assumptions in the SUSY motivation literature.
+  status: asserted
+  confidence: 0.88

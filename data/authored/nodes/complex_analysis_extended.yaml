@@ -1,0 +1,127 @@
+# Hand-authored node records for the complex_analysis_extended batch.
+# Cross-confirmed by two triage sources: complex_analysis (Rodríguez-Kra-Gilman)
+# and complex_variables (Brown-Churchill).
+
+- id: complex_analysis.analytic_function
+  label: Analytic function
+  knowledge_kind: concept
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: A complex-valued function that is complex-differentiable (holomorphic) on an open domain; equivalently, one whose real and imaginary parts satisfy the Cauchy-Riemann equations. The foundational object of complex analysis on which all contour integral theorems depend.
+  status: asserted
+
+- id: complex_analysis.cauchy_riemann_equations
+  label: Cauchy-Riemann equations
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: The pair of first-order PDE conditions (du/dx = dv/dy, du/dy = -dv/dx) that a complex function f = u + iv must satisfy to be complex-differentiable at a point. The practical criterion for recognizing holomorphicity.
+  status: asserted
+
+- id: complex_analysis.cauchy_integral_theorem
+  label: Cauchy integral theorem
+  knowledge_kind: formal_statement
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: The theorem (Cauchy-Goursat form) that the contour integral of a holomorphic function over any closed curve in a simply-connected domain vanishes. The formal license for contour deformation and for closing integration contours in the complex plane.
+  status: asserted
+
+- id: complex_analysis.cauchy_integral_formula
+  label: Cauchy integral formula
+  knowledge_kind: formal_statement
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: The statement that for a holomorphic function f on a simply-connected domain and a point a interior to a closed contour C, f(a) = (1/2pi*i) times the contour integral of f(z)/(z-a) dz. Basis for propagator residue extraction, LSZ pole arguments, and dispersion relation proofs.
+  status: asserted
+
+- id: complex_analysis.laurent_series
+  label: Laurent series
+  knowledge_kind: representation
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: The generalized power series expansion of a complex function in an annular region, including terms with negative integer powers. The standard local representation near isolated singularities; the coefficient of the (z-a)^{-1} term is the residue. Prerequisite for classifying singularities and for the residue theorem.
+  status: asserted
+
+- id: complex_analysis.isolated_singular_point
+  label: Isolated singular point
+  knowledge_kind: concept
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: A point at which a function fails to be analytic but has a punctured neighbourhood in which it is holomorphic. Classified as removable, pole of order n, or essential singularity depending on the Laurent expansion. Required to apply the residue theorem correctly.
+  status: asserted
+
+- id: complex_analysis.residue_theorem
+  label: Residue theorem
+  knowledge_kind: formal_statement
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: The theorem that the contour integral of a meromorphic function over a closed curve equals 2*pi*i times the sum of residues at enclosed poles. Central computational tool for loop integrals, S-matrix cuts, and any QFT integral evaluated by closing a contour in the complex plane.
+  status: asserted
+
+- id: complex_analysis.analytic_continuation
+  label: Analytic continuation
+  knowledge_kind: concept
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: The process of extending an analytic function from its original domain to a larger connected domain while preserving holomorphicity, relying on the identity principle. The pure complex-analysis prerequisite for Wick rotation, dispersion relations, and QFT kinematic continuation.
+  status: asserted
+
+- id: complex_analysis.branch_cut_and_riemann_sheet
+  label: Branch cut and Riemann sheet
+  knowledge_kind: concept
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: The structure arising when a multi-valued function (e.g., log z) is made single-valued by placing a branch cut in the complex plane and restricting to one sheet of the covering Riemann surface. Required to understand threshold branch cuts in S-matrix elements and multi-sheet analytic structure of loop integrands.
+  status: asserted
+
+- id: complex_analysis.conformal_map
+  label: Conformal map
+  knowledge_kind: concept
+  granularity_level: survey
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: A holomorphic bijection that preserves angles between curves at each point. Conformal symmetry underlies 2D CFT, and Schwarz-Christoffel maps appear in string worldsheet calculations; Wick rotation can be viewed as a conformal rotation in the complex energy plane.
+  status: asserted
+
+- id: complex_analysis.harmonic_function
+  label: Harmonic function
+  knowledge_kind: concept
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: A twice continuously differentiable real-valued function satisfying Laplace's equation. Real and imaginary parts of any analytic function are harmonic. Appears in Euclidean field theory as the classical solution to the free scalar equation and underlies the Coulomb potential in d > 2.
+  status: asserted

@@ -1,0 +1,6 @@
+# Canonical partonomy edge list for the classical_em_foundations batch.
+- parent: classical_em.poynting_theorem
+  child: classical_em.maxwell_stress_tensor
+  rationale: The Maxwell stress tensor is the spatial momentum-flux component of the EM conservation analysis from which the Poynting theorem is the energy statement.
+  status: asserted
+  confidence: 0.87

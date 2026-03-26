@@ -1,0 +1,110 @@
+# Canonical node records for the qft-topology-and-solitons batch.
+- id: qft.topology_and_solitons
+  label: Topology and solitons in QFT
+  knowledge_kind: concept
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Topic anchor for homotopy classification, topological field-theory terms, and extended solitonic field configurations including monopoles, vortices, skyrmions, and instantons in gauge and sigma-model theories.
+  status: asserted
+
+- id: qft.homotopy_group
+  label: Homotopy groups (π_k classification)
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: The homotopy groups π_k(G) classify continuous maps from k-spheres into a target space, and thereby label topologically distinct field-configuration sectors; π_1 governs vortices, π_2 monopoles, and π_3 instantons and skyrmions.
+  status: asserted
+
+- id: qft.magnetic_monopole
+  label: Magnetic monopole (t'Hooft-Polyakov)
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Classical soliton solution in non-Abelian gauge theories with spontaneous symmetry breaking, classified by π_2 of the vacuum manifold; carries quantized magnetic charge and satisfies the Bogomol'ny bound in the BPS limit.
+  status: asserted
+
+- id: qft.vortex_soliton
+  label: Vortex soliton
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Topological soliton in two spatial dimensions classified by π_1 of the vacuum manifold; realized as Abrikosov vortex lines in Abelian Higgs theory and as cosmic string solutions in gauge-field theories.
+  status: asserted
+
+- id: qft.skyrmion
+  label: Skyrmion
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Topological soliton in the nonlinear sigma model classified by π_3(SU(2)) ≅ ℤ; the topological charge is identified with baryon number, making skyrmions a nonperturbative model for baryons in large-N QCD.
+  status: asserted
+
+- id: qft.bogomolny_bps_bound
+  label: Bogomol'ny–Prasad–Sommerfield (BPS) bound
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: An energy lower bound on soliton solutions derived by completing the square in the energy functional; solutions saturating the bound satisfy first-order BPS equations and are automatically stable minima of the action.
+  status: asserted
+
+- id: qft.derrick_theorem
+  label: Derrick's theorem
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: A virial-theorem no-go result showing that static, finite-energy scalar-field solitons cannot exist in spatial dimensions greater than two; constraints which fields must be included (e.g., gauge fields) to evade the theorem.
+  status: asserted
+
+- id: qft.chern_simons_term
+  label: Chern-Simons term
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Gauge-theory term built purely from the connection, of the form A∧dA + (2/3)A∧A∧A in three dimensions (or its higher-dimensional analogues), that is topological in character; appears as the integrand whose exterior derivative gives the instanton density, and couples to anomaly inflow and axion-gluon interactions.
+  status: asserted
+
+- id: qft.anomaly_inflow
+  label: Anomaly inflow
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Mechanism by which an apparent gauge anomaly localized on a boundary or defect is cancelled by an anomalous variation of the bulk Chern-Simons action, ensuring overall consistency of the theory.
+  status: asserted
+
+- id: qft.magnetic_flux_quantization
+  label: Magnetic flux quantization
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: The Dirac quantization condition requiring that magnetic flux through a closed surface be an integer multiple of a fundamental unit; in compact U(1) gauge theory this follows from single-valuedness of the wave function and governs monopole charges and vortex fluxes.
+  status: asserted

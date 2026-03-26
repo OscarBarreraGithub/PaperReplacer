@@ -1,0 +1,342 @@
+# Hand-authored dependency records for the differential_geometry_foundations batch.
+#
+# Intra-batch dependencies (DG foundations → DG foundations)
+- from: math.smooth_manifold
+  to: math.tangent_space
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.98
+  rationale: The tangent space is defined as derivations on smooth functions at a point of a manifold; without a smooth manifold there is no ambient space in which to take tangent vectors.
+  failure_mode_if_absent: Without a smooth manifold one cannot define the tangent space at a point or the tangent bundle; every step in the construction refers to smooth charts on M.
+  evidence:
+    - type: expert_claim
+      source_ref: differential_geometry_foundations_initial
+      note: Without a smooth manifold one cannot define the tangent space at a point or the tangent bundle; every step in the construction refers to smooth charts on M.
+  status: asserted
+
+- from: math.smooth_manifold
+  to: math.differential_form
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.97
+  rationale: Differential forms are smooth sections of exterior powers of the cotangent bundle, which is only defined on a smooth manifold.
+  failure_mode_if_absent: A k-form is a smooth assignment of alternating k-tensors to tangent spaces; this assignment only makes sense on a manifold with a smooth atlas.
+  evidence:
+    - type: expert_claim
+      source_ref: differential_geometry_foundations_initial
+      note: A k-form is a smooth assignment of alternating k-tensors to tangent spaces; this assignment only makes sense on a manifold with a smooth atlas.
+  status: asserted
+
+- from: math.smooth_manifold
+  to: math.lie_group
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.97
+  rationale: A Lie group is by definition a smooth manifold with a compatible group structure; knowing what a smooth manifold is is prerequisite to understanding what is added by the group structure.
+  failure_mode_if_absent: Without the smooth manifold concept one cannot distinguish a Lie group from an abstract group or a topological group.
+  evidence:
+    - type: expert_claim
+      source_ref: differential_geometry_foundations_initial
+      note: Without the smooth manifold concept one cannot distinguish a Lie group from an abstract group or a topological group.
+  status: asserted
+
+- from: math.smooth_manifold
+  to: math.fiber_bundle
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.96
+  rationale: A fiber bundle has a base manifold and a total space that are smooth manifolds; the local trivialization condition uses smooth atlases.
+  failure_mode_if_absent: The definition of a smooth fiber bundle explicitly requires the base and total space to be smooth manifolds and the projection to be a smooth submersion.
+  evidence:
+    - type: expert_claim
+      source_ref: differential_geometry_foundations_initial
+      note: The definition of a smooth fiber bundle explicitly requires the base and total space to be smooth manifolds and the projection to be a smooth submersion.
+  status: asserted
+
+- from: math.smooth_manifold
+  to: math.diffeomorphism
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.98
+  rationale: A diffeomorphism is a smooth bijection between smooth manifolds; the concept is vacuous without smooth manifolds as domain and codomain.
+  failure_mode_if_absent: Diffeomorphism is defined as a smooth map with smooth inverse between smooth manifolds; cannot be stated without the manifold concept.
+  evidence:
+    - type: expert_claim
+      source_ref: differential_geometry_foundations_initial
+      note: Diffeomorphism is defined as a smooth map with smooth inverse between smooth manifolds; cannot be stated without the manifold concept.
+  status: asserted
+
+- from: math.tangent_space
+  to: math.differential_form
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.97
+  rationale: Differential k-forms are alternating multilinear maps on the tangent space at each point; without the tangent space there is no domain for this multilinear structure.
+  failure_mode_if_absent: A 1-form is a smooth section of the cotangent bundle T*M, which is the dual of the tangent bundle TM; cannot be defined without TM.
+  evidence:
+    - type: expert_claim
+      source_ref: differential_geometry_foundations_initial
+      note: A 1-form is a smooth section of the cotangent bundle T*M, which is the dual of the tangent bundle TM; cannot be defined without TM.
+  status: asserted
+
+- from: math.tangent_space
+  to: math.lie_algebra
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.97
+  rationale: The Lie algebra of a Lie group is defined as the tangent space at the identity; without understanding tangent spaces the definition collapses to an unmotivated abstract bracket.
+  failure_mode_if_absent: Cannot interpret the definition g = T_e G (Lie algebra as tangent space at the identity) without knowing what a tangent space is.
+  evidence:
+    - type: expert_claim
+      source_ref: differential_geometry_foundations_initial
+      note: Cannot interpret the definition g = T_e G (Lie algebra as tangent space at the identity) without knowing what a tangent space is.
+  status: asserted
+
+- from: math.differential_form
+  to: math.exterior_derivative
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.99
+  rationale: The exterior derivative acts on differential forms; without knowing what a differential form is the operator d has no domain.
+  failure_mode_if_absent: d is defined as a map from k-forms to (k+1)-forms; cannot state or apply it without the differential form concept.
+  evidence:
+    - type: expert_claim
+      source_ref: differential_geometry_foundations_initial
+      note: d is defined as a map from k-forms to (k+1)-forms; cannot state or apply it without the differential form concept.
+  status: asserted
+
+- from: math.differential_form
+  to: math.stokes_theorem
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.99
+  rationale: Stokes' theorem is a statement about integration of a differential form over a manifold and its boundary; neither side of ∫_M dω = ∫_∂M ω can be parsed without the form concept.
+  failure_mode_if_absent: The integrand dω and ω in Stokes' theorem are differential forms; cannot interpret the theorem without this concept.
+  evidence:
+    - type: expert_claim
+      source_ref: differential_geometry_foundations_initial
+      note: The integrand dω and ω in Stokes' theorem are differential forms; cannot interpret the theorem without this concept.
+  status: asserted
+
+- from: math.exterior_derivative
+  to: math.stokes_theorem
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.99
+  rationale: The left-hand side of Stokes' theorem is the integral of dω; the d operator must be understood to read or apply the theorem.
+  failure_mode_if_absent: Without knowing what d does, the statement ∫_M dω = ∫_∂M ω is uninterpretable.
+  evidence:
+    - type: expert_claim
+      source_ref: differential_geometry_foundations_initial
+      note: Without knowing what d does, the statement ∫_M dω = ∫_∂M ω is uninterpretable.
+  status: asserted
+
+- from: math.exterior_derivative
+  to: math.de_rham_cohomology
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.99
+  rationale: de Rham cohomology is defined as ker(d)/im(d); the operator d is the entire structural input.
+  failure_mode_if_absent: Without d one cannot define closed or exact forms and therefore cannot define the cohomology groups H^k_dR(M).
+  evidence:
+    - type: expert_claim
+      source_ref: differential_geometry_foundations_initial
+      note: Without d one cannot define closed or exact forms and therefore cannot define the cohomology groups H^k_dR(M).
+  status: asserted
+
+- from: math.lie_group
+  to: math.lie_algebra
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.99
+  rationale: The Lie algebra is the tangent space at the identity of the Lie group; its Lie bracket is induced by the group multiplication. The concept cannot be stated without the parent Lie group.
+  failure_mode_if_absent: Without a Lie group there is no identity element to take the tangent space at, and no group multiplication to derive the bracket from.
+  evidence:
+    - type: expert_claim
+      source_ref: differential_geometry_foundations_initial
+      note: Without a Lie group there is no identity element to take the tangent space at, and no group multiplication to derive the bracket from.
+  status: asserted
+
+- from: math.lie_group
+  to: math.fiber_bundle
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.93
+  rationale: Principal G-bundles — the model for gauge fields — have the Lie group G as their structure group and fiber; understanding this requires knowing what a Lie group is.
+  failure_mode_if_absent: Cannot define a principal G-bundle without specifying G as a Lie group acting on the fiber by left/right multiplication.
+  evidence:
+    - type: expert_claim
+      source_ref: differential_geometry_foundations_initial
+      note: Cannot define a principal G-bundle without specifying G as a Lie group acting on the fiber by left/right multiplication.
+  status: asserted
+
+#
+# Cross-batch dependencies: DG foundations → existing QFT nodes
+- from: math.lie_group
+  to: qft.gauge_invariance
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.95
+  rationale: Gauge invariance in Yang-Mills theory is invariance under a local map into a Lie group; without the Lie group concept the meaning of the symmetry group and its local action cannot be stated.
+  failure_mode_if_absent: Cannot interpret U(x) ∈ G or the transformation law A_μ → g A_μ g⁻¹ + g ∂_μ g⁻¹ without knowing what a Lie group is.
+  evidence:
+    - type: expert_claim
+      source_ref: differential_geometry_foundations_initial
+      note: Cannot interpret U(x) ∈ G or the transformation law A_μ → g A_μ g⁻¹ + g ∂_μ g⁻¹ without knowing what a Lie group is.
+  status: asserted
+
+- from: math.lie_group
+  to: sm.ssb.spontaneous_symmetry_breaking
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.93
+  rationale: SSB is defined relative to the action of a Lie group on a field-space manifold; the vacuum alignment and coset structure require understanding the group as a Lie group.
+  failure_mode_if_absent: Without Lie group structure one cannot form the coset G/H of the broken symmetry or identify the Goldstone directions.
+  evidence:
+    - type: expert_claim
+      source_ref: differential_geometry_foundations_initial
+      note: Without Lie group structure one cannot form the coset G/H of the broken symmetry or identify the Goldstone directions.
+  status: asserted
+
+- from: math.lie_algebra
+  to: qft.non_abelian_gauge_symmetry
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.97
+  rationale: Non-abelian gauge symmetry is defined by a non-abelian Lie algebra of generators; structure constants f^{abc} are Lie algebra data; the commutator [T^a, T^b] = if^{abc}T^c is the bracket.
+  failure_mode_if_absent: Cannot write down or parse the algebra [T^a, T^b] = if^{abc}T^c or identify A_μ as taking values in the Lie algebra without the Lie algebra concept.
+  evidence:
+    - type: expert_claim
+      source_ref: differential_geometry_foundations_initial
+      note: Cannot write down or parse the algebra [T^a, T^b] = if^{abc}T^c or identify A_μ as taking values in the Lie algebra without the Lie algebra concept.
+  status: asserted
+
+- from: math.lie_algebra
+  to: qft.yang_mills_action
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.96
+  rationale: The Yang-Mills action involves the trace over the Lie algebra (Tr[F_{μν}F^{μν}]) and the gauge connection valued in the Lie algebra; both are Lie algebra constructions.
+  failure_mode_if_absent: Without Lie algebra structure one cannot interpret A_μ = A_μ^a T^a or the trace-based inner product on the algebra.
+  evidence:
+    - type: expert_claim
+      source_ref: differential_geometry_foundations_initial
+      note: Without Lie algebra structure one cannot interpret A_μ = A_μ^a T^a or the trace-based inner product on the algebra.
+  status: asserted
+
+- from: math.lie_algebra
+  to: sm.ssb.spontaneous_symmetry_breaking
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.93
+  rationale: The unbroken and broken generator decomposition in SSB is a statement about sub-algebras and coset decompositions of the Lie algebra.
+  failure_mode_if_absent: Cannot identify which generators are broken without knowing what the Lie algebra is and how it decomposes under the residual symmetry.
+  evidence:
+    - type: expert_claim
+      source_ref: differential_geometry_foundations_initial
+      note: Cannot identify which generators are broken without knowing what the Lie algebra is and how it decomposes under the residual symmetry.
+  status: asserted
+
+- from: math.differential_form
+  to: qft.yang_mills_action
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.95
+  rationale: The Yang-Mills action is most cleanly written as Tr(F∧*F) using differential forms; the field-strength F is a Lie-algebra-valued 2-form; the gauge field A is a 1-form.
+  failure_mode_if_absent: Cannot parse Tr(F∧*F) or understand why F=dA+A∧A is a 2-form without knowing differential forms.
+  evidence:
+    - type: expert_claim
+      source_ref: differential_geometry_foundations_initial
+      note: Cannot parse Tr(F∧*F) or understand why F=dA+A∧A is a 2-form without knowing differential forms.
+  status: asserted
+
+- from: math.exterior_derivative
+  to: qft.yang_mills_action
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.93
+  rationale: The abelian part of the field strength is F=dA; the Bianchi identity is dF=0 in the abelian case; both require the exterior derivative.
+  failure_mode_if_absent: Cannot derive or interpret F=dA+A∧A, Bianchi identity dF+[A,F]=0, or the form-language Yang-Mills equations without d.
+  evidence:
+    - type: expert_claim
+      source_ref: differential_geometry_foundations_initial
+      note: Cannot derive or interpret F=dA+A∧A, Bianchi identity dF+[A,F]=0, or the form-language Yang-Mills equations without d.
+  status: asserted
+
+- from: math.tangent_space
+  to: qft.covariant_derivative
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.92
+  rationale: The gauge covariant derivative D_μ acts on sections of a vector bundle associated to the principal bundle; understanding sections requires knowing about the tangent bundle and vector bundles.
+  failure_mode_if_absent: Without tangent space and vector bundle concepts one cannot distinguish a partial derivative from a covariant derivative or understand parallel transport.
+  evidence:
+    - type: expert_claim
+      source_ref: differential_geometry_foundations_initial
+      note: Without tangent space and vector bundle concepts one cannot distinguish a partial derivative from a covariant derivative or understand parallel transport.
+  status: asserted
+
+- from: math.fiber_bundle
+  to: qft.non_abelian_gauge_symmetry
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.94
+  rationale: Non-abelian gauge fields are precisely connections on principal G-bundles; gauge transformations are vertical automorphisms of the bundle; neither is fully interpretable without fiber bundle language.
+  failure_mode_if_absent: Cannot explain why gauge transformations are local and why the connection transforms inhomogeneously without fiber bundle geometry.
+  evidence:
+    - type: expert_claim
+      source_ref: differential_geometry_foundations_initial
+      note: Cannot explain why gauge transformations are local and why the connection transforms inhomogeneously without fiber bundle geometry.
+  status: asserted
+
+- from: math.fiber_bundle
+  to: qft.covariant_derivative
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.94
+  rationale: The covariant derivative is a connection on a vector bundle; the notion of a connection, horizontal lift, and parallel transport are fiber bundle concepts.
+  failure_mode_if_absent: Without fiber bundle structure one cannot define what a connection is or explain why D_μ = ∂_μ + A_μ is the correct covariant combination.
+  evidence:
+    - type: expert_claim
+      source_ref: differential_geometry_foundations_initial
+      note: Without fiber bundle structure one cannot define what a connection is or explain why D_μ = ∂_μ + A_μ is the correct covariant combination.
+  status: asserted
+
+- from: math.stokes_theorem
+  to: qft.yang_mills_action
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.88
+  rationale: Stokes' theorem is used in showing that the Yang-Mills equations of motion follow from the action via integration by parts on a manifold, and in proving that boundary terms vanish.
+  failure_mode_if_absent: Cannot justify the integration-by-parts step in the variation δS=0 for Yang-Mills theory on a manifold without Stokes' theorem.
+  evidence:
+    - type: expert_claim
+      source_ref: differential_geometry_foundations_initial
+      note: Cannot justify the integration-by-parts step in the variation δS=0 for Yang-Mills theory on a manifold without Stokes' theorem.
+  status: asserted
+
+- from: math.de_rham_cohomology
+  to: qft.instanton
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.90
+  rationale: Instantons are classified by the second Chern class, a de Rham cohomology invariant; the topological charge is the integral of a closed but not exact 4-form.
+  failure_mode_if_absent: Cannot explain why the instanton number ∫Tr(F∧F) is a topological invariant without de Rham cohomology and Chern-Weil theory.
+  evidence:
+    - type: expert_claim
+      source_ref: differential_geometry_foundations_initial
+      note: Cannot explain why the instanton number ∫Tr(F∧F) is a topological invariant without de Rham cohomology and Chern-Weil theory.
+  status: asserted
+
+- from: math.diffeomorphism
+  to: qft.covariant_derivative
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.88
+  rationale: The coordinate-independence of the covariant derivative relies on diffeomorphism invariance; the transformation law of connection coefficients under a change of coordinates uses the Jacobian of a diffeomorphism.
+  failure_mode_if_absent: Without diffeomorphism one cannot state that D_μ transforms as a covariant object under coordinate changes or field redefinitions.
+  evidence:
+    - type: expert_claim
+      source_ref: differential_geometry_foundations_initial
+      note: Without diffeomorphism one cannot state that D_μ transforms as a covariant object under coordinate changes or field redefinitions.
+  status: asserted

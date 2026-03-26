@@ -1,0 +1,41 @@
+# Partonomy edges for the differential_geometry_foundations batch.
+- parent: math.smooth_manifold
+  child: math.tangent_space
+  rationale: Structural part_of relationship.
+  status: asserted
+  confidence: 0.85
+- parent: math.smooth_manifold
+  child: math.differential_form
+  rationale: Structural part_of relationship.
+  status: asserted
+  confidence: 0.85
+- parent: math.differential_form
+  child: math.exterior_derivative
+  rationale: Structural part_of relationship.
+  status: asserted
+  confidence: 0.85
+- parent: math.smooth_manifold
+  child: math.diffeomorphism
+  rationale: Structural part_of relationship.
+  status: asserted
+  confidence: 0.85
+- parent: math.lie_group
+  child: math.lie_algebra
+  rationale: Structural part_of relationship.
+  status: asserted
+  confidence: 0.85
+- parent: math.differential_form
+  child: math.stokes_theorem
+  rationale: Structural part_of relationship.
+  status: asserted
+  confidence: 0.85
+- parent: math.differential_form
+  child: math.de_rham_cohomology
+  rationale: Structural part_of relationship.
+  status: asserted
+  confidence: 0.85
+- parent: math.smooth_manifold
+  child: math.fiber_bundle
+  rationale: Structural part_of relationship.
+  status: asserted
+  confidence: 0.85

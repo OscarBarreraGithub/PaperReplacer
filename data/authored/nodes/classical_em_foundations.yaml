@@ -1,0 +1,41 @@
+# Canonical node records for the classical_em_foundations batch.
+- id: classical_em.poynting_theorem
+  label: Poynting theorem
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Energy conservation law for EM fields expressing dU/dt + ∇·S = -J·E, where the Poynting vector S = E×B/μ₀ is the EM energy flux density.
+  status: asserted
+- id: classical_em.maxwell_stress_tensor
+  label: Maxwell stress tensor
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Spatial part of the EM energy-momentum tensor T_{ij} = ε₀(E_iE_j - δ_{ij}E²/2) + (1/μ₀)(B_iB_j - δ_{ij}B²/2), encoding EM momentum flux and radiation pressure.
+  status: asserted
+- id: classical_em.kramers_kronig_relations
+  label: Kramers-Kronig relations
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Dispersion relations expressing the real and imaginary parts of a causal linear response function (e.g., dielectric susceptibility) as Hilbert transforms of each other; an optical theorem precursor.
+  status: asserted
+- id: classical_em.thomas_precession
+  label: Thomas precession
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Relativistic kinematic correction to the precession rate of a spinning body, ω_T = -(γ²/(γ+1)) v×a/c²; prerequisite for spin-orbit coupling in the Dirac equation context.
+  status: asserted

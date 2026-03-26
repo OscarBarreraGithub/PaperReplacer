@@ -1,0 +1,110 @@
+# Hand-authored node records for the differential_geometry_foundations batch.
+- id: math.smooth_manifold
+  label: Smooth manifold
+  knowledge_kind: concept
+  granularity_level: survey
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: A topological manifold equipped with a maximal smooth atlas of compatible coordinate charts, making it possible to differentiate functions and maps in a coordinate-independent way. Spacetime, gauge field configuration space, and Lie groups are all smooth manifolds.
+  status: asserted
+
+- id: math.tangent_space
+  label: Tangent space and tangent bundle
+  knowledge_kind: concept
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: The tangent space at a point of a manifold is the vector space of derivations on smooth functions at that point, representing instantaneous velocities. The tangent bundle TM assembles all tangent spaces into a smooth vector bundle over the base manifold; it is the natural home for vector fields and connections.
+  status: asserted
+
+- id: math.differential_form
+  label: Differential form
+  knowledge_kind: concept
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: An antisymmetric covariant tensor field of degree k (a k-form), defined via the exterior algebra of the cotangent bundle. The wedge product combines forms; gauge fields are 1-forms and field strengths are 2-forms in this language.
+  status: asserted
+
+- id: math.exterior_derivative
+  label: Exterior derivative
+  knowledge_kind: concept
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: The coordinate-free linear map d taking k-forms to (k+1)-forms, satisfying d²=0 and the Leibniz rule. Defines closed (dω=0) and exact (ω=dα) forms; the field-strength 2-form F=dA and the Bianchi identity dF=0 are direct instances.
+  status: asserted
+
+- id: math.lie_group
+  label: Lie group
+  knowledge_kind: concept
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: A smooth manifold with a compatible group structure (multiplication and inversion are smooth maps). The gauge symmetry groups SU(N), U(1), and SO(N) are Lie groups; the Lorentz and Poincaré groups are also Lie groups.
+  status: asserted
+
+- id: math.lie_algebra
+  label: Lie algebra
+  knowledge_kind: concept
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: The tangent space at the identity of a Lie group, equipped with the Lie bracket (commutator) inherited from left-invariant vector fields. Structure constants encode the bracket; generators of gauge transformations are elements of the Lie algebra, and the adjoint representation acts on it.
+  status: asserted
+
+- id: math.fiber_bundle
+  label: Fiber bundle
+  knowledge_kind: concept
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: A total space E projecting onto a base manifold M with typical fiber F such that the projection is locally trivial. Principal G-bundles (fiber = Lie group G) are the mathematical substrate for gauge fields; spinor fields are sections of associated vector bundles.
+  status: asserted
+
+- id: math.stokes_theorem
+  label: Stokes theorem on manifolds
+  knowledge_kind: formal_statement
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: The identity ∫_M dω = ∫_∂M ω relating integration of an exact (n-1)-form over an oriented n-manifold to its integral over the boundary. Subsumes Green's theorem and the classical Stokes and divergence theorems; underpins derivations of Noether currents and Ward identities.
+  status: asserted
+
+- id: math.de_rham_cohomology
+  label: de Rham cohomology
+  knowledge_kind: concept
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: The cohomology groups H^k_dR(M) = ker(d)/im(d) measuring how many closed k-forms fail to be exact. Classifies topological sectors of gauge fields (instanton number), underlies Chern classes and anomaly cancellation conditions.
+  status: asserted
+
+- id: math.diffeomorphism
+  label: Diffeomorphism
+  knowledge_kind: concept
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: A smooth bijection between manifolds whose inverse is also smooth. Field redefinitions are diffeomorphisms of field space; general covariance and diffeomorphism invariance of gravity are expressed in this language; required to define smooth manifold structure rigorously.
+  status: asserted

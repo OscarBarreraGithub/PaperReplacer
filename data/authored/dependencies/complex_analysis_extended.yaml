@@ -1,0 +1,296 @@
+# Hand-authored dependency edges for the complex_analysis_extended batch.
+# Format: from = prerequisite, to = downstream topic.
+# Relation field uses ontology-rules.md vocabulary.
+
+# ── Tier 0: CR equations → analytic function ──────────────────────────────────
+
+- from: complex_analysis.cauchy_riemann_equations
+  to: complex_analysis.analytic_function
+  relation_type: requires_for_recognize
+  necessity: necessary
+  confidence: 0.95
+  rationale: The Cauchy-Riemann equations are the practical criterion used to determine whether a function is holomorphic at a point; without them the concept of analytic function lacks an operational test.
+  failure_mode_if_absent: Cannot verify whether a given function is holomorphic without checking the CR conditions; the concept remains non-operational.
+  evidence:
+    - type: expert_claim
+      source_ref: complex_analysis_extended_initial
+      note: Cannot verify whether a given function is holomorphic without checking the CR conditions; the concept remains non-operational.
+  status: asserted
+
+# ── Tier 1: analytic_function → Cauchy theorems ───────────────────────────────
+
+- from: complex_analysis.analytic_function
+  to: complex_analysis.cauchy_integral_theorem
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.97
+  rationale: The Cauchy integral theorem is a statement about analytic functions; applying it requires knowing what an analytic function is and where it fails.
+  failure_mode_if_absent: Cannot determine the domain of validity of the theorem or recognize when a given integrand qualifies without understanding holomorphicity.
+  evidence:
+    - type: expert_claim
+      source_ref: complex_analysis_extended_initial
+      note: Cannot determine the domain of validity of the theorem or recognize when a given integrand qualifies without understanding holomorphicity.
+  status: asserted
+
+- from: complex_analysis.analytic_function
+  to: complex_analysis.cauchy_integral_formula
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.96
+  rationale: The Cauchy integral formula is derived for and applies to analytic functions; recognizing when the formula is valid requires identifying which functions and domains are holomorphic.
+  failure_mode_if_absent: Cannot apply the formula without knowing that the integrand must be holomorphic in the region enclosed by the contour.
+  evidence:
+    - type: expert_claim
+      source_ref: complex_analysis_extended_initial
+      note: Cannot apply the formula without knowing that the integrand must be holomorphic in the region enclosed by the contour.
+  status: asserted
+
+# ── Tier 2: Cauchy theorem → Laurent series, residue theorem ──────────────────
+
+- from: complex_analysis.cauchy_integral_theorem
+  to: complex_analysis.cauchy_integral_formula
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.93
+  rationale: The standard proof of the Cauchy integral formula proceeds by deforming a contour onto a small circle around the point using the Cauchy theorem.
+  failure_mode_if_absent: Cannot follow or reconstruct the derivation of the integral formula without the theorem that allows the contour to be deformed.
+  evidence:
+    - type: expert_claim
+      source_ref: complex_analysis_extended_initial
+      note: Cannot follow or reconstruct the derivation of the integral formula without the theorem that allows the contour to be deformed.
+  status: asserted
+
+- from: complex_analysis.cauchy_integral_formula
+  to: complex_analysis.laurent_series
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.88
+  rationale: Laurent series coefficients are obtained via the Cauchy integral formula applied to an annular contour; the standard derivation is a direct application of the formula.
+  failure_mode_if_absent: Cannot derive the Laurent coefficient formula or justify why it is the unique such expansion without invoking the Cauchy integral formula.
+  evidence:
+    - type: expert_claim
+      source_ref: complex_analysis_extended_initial
+      note: Cannot derive the Laurent coefficient formula or justify why it is the unique such expansion without invoking the Cauchy integral formula.
+  status: asserted
+
+- from: complex_analysis.laurent_series
+  to: complex_analysis.isolated_singular_point
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.95
+  rationale: The three-way classification of isolated singularities (removable, pole, essential) is defined directly in terms of the principal part of the Laurent expansion around the singular point.
+  failure_mode_if_absent: Cannot classify a singularity or determine its order without examining the Laurent series; the classification has no independent operational definition at this level.
+  evidence:
+    - type: expert_claim
+      source_ref: complex_analysis_extended_initial
+      note: Cannot classify a singularity or determine its order without examining the Laurent series; the classification has no independent operational definition at this level.
+  status: asserted
+
+- from: complex_analysis.isolated_singular_point
+  to: complex_analysis.residue_theorem
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.96
+  rationale: The residue theorem sums residues at enclosed poles; applying it requires identifying which singularities are poles and computing their orders, which depends on isolated-singularity classification.
+  failure_mode_if_absent: Cannot determine which singularities contribute to the residue sum, or compute the residues, without the singularity classification framework.
+  evidence:
+    - type: expert_claim
+      source_ref: complex_analysis_extended_initial
+      note: Cannot determine which singularities contribute to the residue sum, or compute the residues, without the singularity classification framework.
+  status: asserted
+
+- from: complex_analysis.laurent_series
+  to: complex_analysis.residue_theorem
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.95
+  rationale: The residue at a pole is defined as the coefficient of (z−a)^{−1} in the Laurent expansion; this definition is the direct input to the residue theorem.
+  failure_mode_if_absent: Cannot compute residues — and therefore cannot apply the theorem — without the Laurent series representation that defines them.
+  evidence:
+    - type: expert_claim
+      source_ref: complex_analysis_extended_initial
+      note: Cannot compute residues — and therefore cannot apply the theorem — without the Laurent series representation that defines them.
+  status: asserted
+
+# ── Tier 2: Cauchy theorem → contour deformation (existing node) ──────────────
+
+- from: complex_analysis.cauchy_integral_theorem
+  to: complex_analysis.contour_deformation
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.95
+  rationale: Contour deformation is the practical application of the Cauchy integral theorem; the theorem is the formal justification for why a contour can be continuously moved without changing the integral.
+  failure_mode_if_absent: Cannot justify why a contour deformation leaves an integral unchanged without invoking the theorem that guarantees this for holomorphic integrands.
+  evidence:
+    - type: expert_claim
+      source_ref: complex_analysis_extended_initial
+      note: Cannot justify why a contour deformation leaves an integral unchanged without invoking the theorem that guarantees this for holomorphic integrands.
+  status: asserted
+
+# ── Tier 3: residue theorem → existing QFT nodes ──────────────────────────────
+
+- from: complex_analysis.residue_theorem
+  to: complex_analysis.contour_deformation
+  relation_type: requires_for_use
+  necessity: helpful
+  confidence: 0.85
+  rationale: Contour deformation arguments in QFT typically combine deformation with residue collection at enclosed poles; the residue theorem is invoked to evaluate the contributions from each pole encountered during deformation.
+  failure_mode_if_absent: Can execute a contour deformation without the residue theorem, but cannot evaluate the resulting contributions from encircled poles.
+  evidence:
+    - type: expert_claim
+      source_ref: complex_analysis_extended_initial
+      note: Can execute a contour deformation without the residue theorem, but cannot evaluate the resulting contributions from encircled poles.
+  status: asserted
+
+- from: complex_analysis.residue_theorem
+  to: qft.feynman_i_epsilon_prescription
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.91
+  rationale: Understanding why the iε displacement fixes a specific contour choice and yields a specific causal propagator requires knowing that closing the contour and collecting the residue at the displaced pole gives the Feynman propagator.
+  failure_mode_if_absent: Cannot follow the derivation of the Feynman propagator from the iε prescription without the residue theorem to evaluate the energy integral.
+  evidence:
+    - type: expert_claim
+      source_ref: complex_analysis_extended_initial
+      note: Cannot follow the derivation of the Feynman propagator from the iε prescription without the residue theorem to evaluate the energy integral.
+  status: asserted
+
+- from: complex_analysis.residue_theorem
+  to: qft.propagator_singularities
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.90
+  rationale: Extracting the pole structure of a propagator and interpreting it in terms of on-shell contributions is a direct application of the residue theorem to the momentum-space integrand.
+  failure_mode_if_absent: Cannot evaluate or interpret the singularities of a propagator as physical poles without understanding how residue extraction works.
+  evidence:
+    - type: expert_claim
+      source_ref: complex_analysis_extended_initial
+      note: Cannot evaluate or interpret the singularities of a propagator as physical poles without understanding how residue extraction works.
+  status: asserted
+
+# ── Analytic continuation chain ────────────────────────────────────────────────
+
+- from: complex_analysis.analytic_function
+  to: complex_analysis.analytic_continuation
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.94
+  rationale: Analytic continuation is defined for and only makes sense when applied to analytic (holomorphic) functions; the identity principle that underlies uniqueness of continuation is a theorem about analytic functions.
+  failure_mode_if_absent: Cannot state or apply the uniqueness of analytic continuation without understanding what holomorphicity means and the identity principle.
+  evidence:
+    - type: expert_claim
+      source_ref: complex_analysis_extended_initial
+      note: Cannot state or apply the uniqueness of analytic continuation without understanding what holomorphicity means and the identity principle.
+  status: asserted
+
+- from: complex_analysis.analytic_continuation
+  to: qft.analytic_continuation_in_kinematic_invariants
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.93
+  rationale: The QFT procedure of continuing amplitudes as functions of kinematic invariants is an application of analytic continuation from the complex-analysis sense; the pure-math concept is the direct upstream prerequisite.
+  failure_mode_if_absent: Cannot understand why amplitudes can be continued to unphysical regions or what uniqueness means there without the general theory of analytic continuation.
+  evidence:
+    - type: expert_claim
+      source_ref: complex_analysis_extended_initial
+      note: Cannot understand why amplitudes can be continued to unphysical regions or what uniqueness means there without the general theory of analytic continuation.
+  status: asserted
+
+# ── Branch cut / Riemann sheet chain ──────────────────────────────────────────
+
+- from: complex_analysis.isolated_singular_point
+  to: complex_analysis.branch_cut_and_riemann_sheet
+  relation_type: requires_for_recognize
+  necessity: necessary
+  confidence: 0.87
+  rationale: Branch points are a type of non-isolated singularity; understanding them requires first having classified the isolated singularity types to see what branch points are distinct from.
+  failure_mode_if_absent: Cannot distinguish a branch-point singularity from a pole or essential singularity in a QFT integrand without the singularity classification framework.
+  evidence:
+    - type: expert_claim
+      source_ref: complex_analysis_extended_initial
+      note: Cannot distinguish a branch-point singularity from a pole or essential singularity in a QFT integrand without the singularity classification framework.
+  status: asserted
+
+- from: complex_analysis.branch_cut_and_riemann_sheet
+  to: complex_analysis.poles_vs_branch_points
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.90
+  rationale: The existing node complex_analysis.poles_vs_branch_points requires the user to work with the branch-point / branch-cut distinction; understanding why branch cuts arise and what the associated Riemann sheets look like is necessary to use that node operationally.
+  failure_mode_if_absent: Cannot execute a branch-cut integral or track which sheet a function is on without the Riemann sheet concept, even if one can name the branch point.
+  evidence:
+    - type: expert_claim
+      source_ref: complex_analysis_extended_initial
+      note: Cannot execute a branch-cut integral or track which sheet a function is on without the Riemann sheet concept, even if one can name the branch point.
+  status: asserted
+
+- from: complex_analysis.analytic_continuation
+  to: complex_analysis.branch_cut_and_riemann_sheet
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.88
+  rationale: Riemann sheets are the domains on which different branches of a multi-valued function are the analytic continuations of one another; this relationship requires understanding analytic continuation to make precise.
+  failure_mode_if_absent: Cannot explain why two branches on different sheets are related or why crossing a branch cut takes one to a different sheet without analytic continuation.
+  evidence:
+    - type: expert_claim
+      source_ref: complex_analysis_extended_initial
+      note: Cannot explain why two branches on different sheets are related or why crossing a branch cut takes one to a different sheet without analytic continuation.
+  status: asserted
+
+# ── Harmonic functions chain ───────────────────────────────────────────────────
+
+- from: complex_analysis.analytic_function
+  to: complex_analysis.harmonic_function
+  relation_type: requires_for_recognize
+  necessity: necessary
+  confidence: 0.90
+  rationale: Harmonic functions arise as the real and imaginary parts of analytic functions; recognizing this connection — which is the primary QFT motivation for harmonic functions — requires understanding analytic functions.
+  failure_mode_if_absent: Cannot see why a Wick-rotated free scalar field satisfies Laplace's equation, or connect harmonic functions to complex analysis, without knowing that analytic function components are harmonic.
+  evidence:
+    - type: expert_claim
+      source_ref: complex_analysis_extended_initial
+      note: Cannot see why a Wick-rotated free scalar field satisfies Laplace's equation, or connect harmonic functions to complex analysis, without knowing that analytic function components are harmonic.
+  status: asserted
+
+# ── Conformal map chain ────────────────────────────────────────────────────────
+
+- from: complex_analysis.analytic_function
+  to: complex_analysis.conformal_map
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.92
+  rationale: A conformal map is a holomorphic bijection; recognizing and applying conformal maps in 2D CFT or string worldsheet contexts requires knowing what holomorphic functions are and why they preserve angles.
+  failure_mode_if_absent: Cannot verify that a given map is conformal, nor apply angle-preservation arguments in CFT, without the concept of holomorphic (analytic) functions.
+  evidence:
+    - type: expert_claim
+      source_ref: complex_analysis_extended_initial
+      note: Cannot verify that a given map is conformal, nor apply angle-preservation arguments in CFT, without the concept of holomorphic (analytic) functions.
+  status: asserted
+
+- from: complex_analysis.cauchy_riemann_equations
+  to: complex_analysis.conformal_map
+  relation_type: requires_for_use
+  necessity: helpful
+  confidence: 0.82
+  rationale: The local angle-preservation property of conformal maps is most directly demonstrated via the Cauchy-Riemann structure; the Jacobian of a holomorphic map is a rotation-scaling matrix precisely because of CR.
+  failure_mode_if_absent: Cannot derive or verify the angle-preservation property without the CR equations showing that the derivative acts as a rotation-dilation.
+  evidence:
+    - type: expert_claim
+      source_ref: complex_analysis_extended_initial
+      note: Cannot derive or verify the angle-preservation property without the CR equations showing that the derivative acts as a rotation-dilation.
+  status: asserted
+
+# ── Connecting analytic_function to existing contour_deformation ───────────────
+
+- from: complex_analysis.analytic_function
+  to: complex_analysis.contour_deformation
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.93
+  rationale: Contour deformation is valid only for holomorphic integrands; knowing which functions qualify requires the concept of analytic function.
+  failure_mode_if_absent: Cannot determine when a proposed contour deformation is valid without knowing whether the integrand is holomorphic throughout the swept region.
+  evidence:
+    - type: expert_claim
+      source_ref: complex_analysis_extended_initial
+      note: Cannot determine when a proposed contour deformation is valid without knowing whether the integrand is holomorphic throughout the swept region.
+  status: asserted

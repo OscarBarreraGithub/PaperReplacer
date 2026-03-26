@@ -1,0 +1,76 @@
+# Canonical dependency edges for the classical_em_foundations batch.
+- from: classical_em.poynting_theorem
+  to: classical_em.maxwell_stress_tensor
+  relation_type: requires_for_recognize
+  necessity: typical
+  audience_profile: hep_th_grad
+  subfield: classical_em
+  task_type: literature_reading
+  rationale: The Maxwell stress tensor is the spatial-momentum companion to the Poynting energy-flux statement; both arise from the same EM conservation analysis.
+  failure_mode_if_absent: Reader conflates energy-flux and momentum-flux aspects of the EM energy-momentum tensor.
+  evidence:
+    - type: expert_claim
+      source_ref: classical_em_foundations_initial
+      note: Jackson treats Poynting theorem and Maxwell stress tensor together as parts of the EM conservation law discussion.
+  status: asserted
+  confidence: 0.88
+- from: classical_em.poynting_theorem
+  to: classical_fields.canonical_energy_momentum_tensor
+  relation_type: requires_for_recognize
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: classical_fields
+  task_type: literature_reading
+  rationale: The Poynting theorem is the explicit component-level statement whose covariant generalization is the canonical energy-momentum tensor derived via Noether's theorem.
+  failure_mode_if_absent: Cannot see how the Noether energy-momentum tensor reduces to Poynting energy-flux in the non-covariant limit.
+  evidence:
+    - type: expert_claim
+      source_ref: classical_em_foundations_initial
+      note: Triage identifies Noether/canonical stress tensor as covered_existing; the Poynting theorem is the concrete EM realization.
+  status: asserted
+  confidence: 0.83
+- from: classical_em.kramers_kronig_relations
+  to: qft.optical_theorem
+  relation_type: requires_for_recognize
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: qft
+  task_type: literature_reading
+  rationale: Kramers-Kronig relations are the classical dispersion-relation precursor to the optical theorem; both express causality as a constraint linking real and imaginary parts of a forward amplitude or response function.
+  failure_mode_if_absent: Cannot appreciate the analytic-continuation and causality reasoning underlying the QFT optical theorem.
+  evidence:
+    - type: expert_claim
+      source_ref: classical_em_foundations_initial
+      note: Triage explicitly labels Kramers-Kronig as optical theorem precursor and lists it under candidate_new_node.
+  status: asserted
+  confidence: 0.86
+- from: classical_em.thomas_precession
+  to: qft.lorentz_group_representation
+  relation_type: requires_for_recognize
+  necessity: typical
+  audience_profile: hep_th_grad
+  subfield: qft
+  task_type: literature_reading
+  rationale: Thomas precession is a kinematic consequence of successive Lorentz boosts; understanding it requires knowing how the Lorentz group composes boosts into rotations (Wigner rotation).
+  failure_mode_if_absent: Cannot derive the precession rate from Lorentz composition or see why a pure boost sequence produces a rotation.
+  evidence:
+    - type: expert_claim
+      source_ref: classical_em_foundations_initial
+      note: Triage notes Thomas precession prerequisites as Lorentz transformation and 4-velocity.
+  status: asserted
+  confidence: 0.90
+- from: classical_em.thomas_precession
+  to: qft.dirac_equation
+  relation_type: pedagogically_precedes
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: qft
+  task_type: literature_reading
+  rationale: Thomas precession accounts for the kinematic half of the spin-orbit splitting; the Dirac equation derives the full relativistic spin-orbit coupling including both the Thomas term and the direct magnetic interaction.
+  failure_mode_if_absent: Cannot separate the kinematic Thomas contribution from the dynamical spin-orbit piece when the Dirac equation result is discussed.
+  evidence:
+    - type: expert_claim
+      source_ref: classical_em_foundations_initial
+      note: Triage lists Thomas precession as prerequisite for spin-orbit coupling in relativistic QM and BMT equation context.
+  status: asserted
+  confidence: 0.87

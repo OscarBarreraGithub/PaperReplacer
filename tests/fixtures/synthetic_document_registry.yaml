@@ -1,0 +1,81 @@
+{
+  "orchestrator": {
+    "max_active_agents": 8,
+    "canonical_merge_lane": 1,
+    "lane_budget": {
+      "ingestion": 3,
+      "content": 3,
+      "review": 2
+    }
+  },
+  "global_backlog": [
+    {
+      "cluster_id": "shared_cluster",
+      "summary": "Shared pressure cluster for a reusable refinement batch.",
+      "status": "queued",
+      "documents": [
+        "alpha_doc",
+        "gamma_doc"
+      ],
+      "next_action": "Promote a shared batch."
+    }
+  ],
+  "documents": [
+    {
+      "doc_id": "beta_doc",
+      "title": "Beta",
+      "source_paths": [
+        "Ref material/beta.pdf"
+      ],
+      "domain_family": "math",
+      "priority": 2,
+      "oracle_mode": "index",
+      "status": "unstarted",
+      "assigned_wave": null,
+      "last_checkpoint": null,
+      "coverage_state": "Awaiting structure scan and oracle extraction.",
+      "blocking_issues": [],
+      "next_actions": [
+        "Run structure scan and oracle extraction."
+      ]
+    },
+    {
+      "doc_id": "alpha_doc",
+      "title": "Alpha",
+      "source_paths": [
+        "Ref material/alpha.pdf"
+      ],
+      "domain_family": "qft",
+      "priority": 1,
+      "oracle_mode": "hybrid",
+      "status": "triaged",
+      "assigned_wave": "wave_alpha",
+      "last_checkpoint": "ckpt_alpha",
+      "coverage_state": "Ready for cross-document reduction.",
+      "blocking_issues": [],
+      "next_actions": [
+        "Reduce document-local pressure into a shared backlog cluster."
+      ]
+    },
+    {
+      "doc_id": "gamma_doc",
+      "title": "Gamma",
+      "source_paths": [
+        "Ref material/gamma.pdf"
+      ],
+      "domain_family": "supersymmetry",
+      "priority": 3,
+      "oracle_mode": "hybrid",
+      "status": "blocked",
+      "assigned_wave": null,
+      "last_checkpoint": null,
+      "coverage_state": "Overlap-sensitive and currently blocked on a SUSY perimeter review.",
+      "blocking_issues": [
+        "Namespace overlap with active reserved supersymmetry work."
+      ],
+      "next_actions": [
+        "Run overlap review and explicit deferral check."
+      ]
+    }
+  ]
+}

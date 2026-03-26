@@ -9,6 +9,9 @@ Key docs:
 - [population-plan.md](/Users/emmy/Documents/KnowledgeGraph/population-plan.md): broad QFT population roadmap
 - [schwartz-coverage.md](/Users/emmy/Documents/KnowledgeGraph/schwartz-coverage.md): chapter-family coverage map for Schwartz QFT
 - [batch-registry.yaml](/Users/emmy/Documents/KnowledgeGraph/batch-registry.yaml): active wave and namespace reservation tracker
+- [document-registry.yaml](/Users/emmy/Documents/KnowledgeGraph/document-registry.yaml): multi-document control plane for overnight orchestration
+- [document-coverage.md](/Users/emmy/Documents/KnowledgeGraph/document-coverage.md): registry-backed dashboard of logical document progress
+- [document-gap-queue.md](/Users/emmy/Documents/KnowledgeGraph/document-gap-queue.md): registry-backed overnight backlog and lane plan
 - [CONTRIBUTING.md](/Users/emmy/Documents/KnowledgeGraph/CONTRIBUTING.md): branch and merge discipline
 
 Reference PDFs and notes may live under [Ref material/](/Users/emmy/Documents/KnowledgeGraph/Ref%20material), but that folder is intentionally git-ignored and should be treated as local extraction support rather than canonical repository content.
@@ -167,8 +170,61 @@ Current integration model:
 - batches connect by reusing shared canonical node ids across neighborhoods
 - the repo now has a synthetic global compiled view at `all_authored`
 - the current UI and query tools are still batch-oriented
-- the current validated authored union stands at `390` nodes, `604` dependencies, `365` partonomy edges, and `100` overlays
+- the current validated authored union stands at `454` nodes, `730` dependencies, `415` partonomy edges, and `158` overlays
 - the authored union currently validates cleanly with no warnings
 - the remaining substantive Schwartz residue is now tracked as explicit deferrals in [schwartz-gap-queue.md](/Users/emmy/Documents/KnowledgeGraph/schwartz-gap-queue.md) unless later query behavior reveals a real missing branch
+- multi-document cross-doc reduction has promoted 7 new batches (see below)
 
 Agent-generated proposal packs live under [data/batches/](/Users/emmy/Documents/KnowledgeGraph/data/batches) locally, but should normally stay off `main`.
+
+## Multi-Document Cross-Document Reduction
+
+The following new ontology batches were promoted from multi-document cross-confirmation:
+
+- `complex_analysis_extended` — 11 nodes (analytic_function, Cauchy theorems, Laurent series, residue theorem, analytic continuation, branch cuts, etc.) confirmed across `complex_analysis` + `complex_variables`
+- `differential_geometry_foundations` — 10 nodes (smooth manifold, tangent space, differential forms, Lie groups, fiber bundle, de Rham cohomology, etc.) confirmed across `tu_manifolds` + `lee_smooth_manifolds`
+- `qft_topology_and_solitons` — 10 nodes (homotopy groups, magnetic monopoles, vortices, Skyrmions, Chern-Simons, anomaly inflow, etc.) confirmed across `weinberg_qft_vol2` + `axion_lecture_notes`
+- `qft_axiomatic_foundations` — 8 nodes (cluster decomposition, Wigner's theorem, Haag's theorem, Furry's theorem, Coleman-Mandula, superselection, connected amplitudes) confirmed across `weinberg_qft_vol1` + `weinberg_qft_vol3`
+- `qm_topology_semiclassical` — 8 nodes (Berry phase, Berry connection, Aharonov-Bohm, WKB, angular momentum addition, Landau levels, Dirac monopole) confirmed from `shankar_qm`
+- `classical_em_foundations` — 4 nodes (Poynting theorem, Maxwell stress tensor, Kramers-Kronig, Thomas precession) from `jackson_em`
+- `cosmology_foundations` — 13 nodes (FRW metric, scale factor, Friedmann equations, Hubble parameter, inflation, inflaton, CMB, CMB power spectrum, BAO, matter power spectrum, dark matter, dark energy, Lambda-CDM) from `dodelson_modern_cosmology`
+
+All 13 logical documents are now at `cross_document_reduced` or `substantively_exhausted` status. The `qft_radiative_corrections_extensions` backlog cluster (5 Peskin-unique nodes) awaits cross-doc pressure from additional QFT sources before promotion.
+
+## Multi-Document Orchestration
+
+The repo now includes a document-centric control plane for running the same population workflow across every logical source in [Ref material/](/Users/emmy/Documents/KnowledgeGraph/Ref%20material), not just Schwartz.
+
+Core files:
+
+- [document-registry.yaml](/Users/emmy/Documents/KnowledgeGraph/document-registry.yaml): source of truth for document state, blockers, next actions, and priority
+- [document-coverage.md](/Users/emmy/Documents/KnowledgeGraph/document-coverage.md): rendered dashboard from the registry
+- [document-gap-queue.md](/Users/emmy/Documents/KnowledgeGraph/document-gap-queue.md): rendered queue, lane allocation, and backlog cluster view
+- [prompts/handoff-multi-document-autonomous-orchestrator.md](/Users/emmy/Documents/KnowledgeGraph/prompts/handoff-multi-document-autonomous-orchestrator.md): orchestrator prompt
+- [prompts/handoff-document-worker.md](/Users/emmy/Documents/KnowledgeGraph/prompts/handoff-document-worker.md): worker prompt
+- [prompts/handoff-overlap-reviewer.md](/Users/emmy/Documents/KnowledgeGraph/prompts/handoff-overlap-reviewer.md): overlap-review prompt
+
+Core scripts:
+
+- [scripts/extract_document_oracle.py](/Users/emmy/Documents/KnowledgeGraph/scripts/extract_document_oracle.py): extract structure, contents/index payloads, and seed candidates for a logical document
+- [scripts/summarize_source_triage.py](/Users/emmy/Documents/KnowledgeGraph/scripts/summarize_source_triage.py): summarize per-document triage pages into stable JSON and Markdown
+- [scripts/document_orchestrator.py](/Users/emmy/Documents/KnowledgeGraph/scripts/document_orchestrator.py): registry-backed queue and completion helper for the overnight runner
+- [scripts/render_document_tracking.py](/Users/emmy/Documents/KnowledgeGraph/scripts/render_document_tracking.py): refresh the tracked coverage and queue docs from the registry
+- [scripts/run_multi_document_orchestrator.sh](/Users/emmy/Documents/KnowledgeGraph/scripts/run_multi_document_orchestrator.sh): restartable overnight loop for `codex exec`
+
+Typical local commands:
+
+```bash
+.venv/bin/python /Users/emmy/Documents/KnowledgeGraph/scripts/extract_document_oracle.py --doc-id peskin_qft
+python3 /Users/emmy/Documents/KnowledgeGraph/scripts/summarize_source_triage.py --doc-id peskin_qft
+python3 /Users/emmy/Documents/KnowledgeGraph/scripts/render_document_tracking.py
+python3 /Users/emmy/Documents/KnowledgeGraph/scripts/document_orchestrator.py --queue-json
+```
+
+Overnight loop:
+
+```bash
+bash /Users/emmy/Documents/KnowledgeGraph/scripts/run_multi_document_orchestrator.sh
+```
+
+The default lane budget is one canonical merge lane plus up to `8` active spawned agents, split as `3` ingestion, `3` content, and `2` overlap/review lanes. Generated extraction artifacts stay under `data/generated/**` and should not be committed.

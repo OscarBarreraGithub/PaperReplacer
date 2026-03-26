@@ -1,0 +1,90 @@
+# Hand-authored node records for the qm_topology_semiclassical batch.
+# Covers geometric phases, gauge topology in QM, semiclassical methods,
+# angular momentum composition, and identical-particle foundations.
+- id: qm.berry_phase
+  label: Berry phase
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Geometric phase acquired by a quantum state undergoing adiabatic cyclic evolution in parameter space; distinct from the dynamical phase and determined solely by the geometry of the path in the Hilbert-space bundle.
+  status: asserted
+
+- id: qm.berry_connection
+  label: Berry connection
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: U(1) gauge potential on the parameter-space bundle whose holonomy around a closed loop gives the Berry phase; the curvature of this connection is the Berry curvature (analogous to a magnetic field in parameter space).
+  status: asserted
+
+- id: qm.aharonov_bohm_effect
+  label: Aharonov-Bohm effect
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Observable interference phase acquired by a charged particle encircling a region of magnetic flux even where the local field B is zero; canonical demonstration that the gauge potential is physically meaningful and that topology matters independently of local field strength.
+  status: asserted
+
+- id: qm.wkb_approximation
+  label: WKB approximation
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Semiclassical approximation that expands the wave function in powers of ℏ about the classical action; yields leading-order tunneling amplitudes, quantization conditions, and the saddle-point structure underlying instanton methods in QFT.
+  status: asserted
+
+- id: qm.angular_momentum_addition
+  label: Angular momentum addition
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Systematic decomposition of a tensor-product representation of two angular momenta into irreducible SU(2) representations via Clebsch-Gordan coefficients; prerequisite for spinor product decomposition and representation theory in QFT.
+  status: asserted
+
+- id: qm.identical_particles_symmetrization
+  label: Identical particles and symmetrization postulate
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Postulate that the wave function of identical bosons must be fully symmetric under particle exchange while that of identical fermions must be fully antisymmetric; foundation for Fock-space construction, second quantization, and the spin-statistics theorem.
+  status: asserted
+
+- id: qm.landau_levels
+  label: Landau levels
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Quantized energy levels of a charged particle in a uniform magnetic field; the degeneracy structure underlies the integer and fractional quantum Hall effects and provides the condensed-matter bridge to topological field theories and Chern-Simons terms in QFT.
+  status: asserted
+
+- id: qm.dirac_monopole
+  label: Dirac magnetic monopole
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Magnetic monopole constructed via the Dirac string with the Dirac quantization condition eg = 2πn ensuring wave-function single-valuedness; the minimal QM argument that electric and magnetic charges must be quantized and the direct conceptual precursor to non-Abelian monopoles in gauge theory.
+  status: asserted

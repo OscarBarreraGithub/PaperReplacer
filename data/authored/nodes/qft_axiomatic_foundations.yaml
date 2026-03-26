@@ -1,0 +1,89 @@
+# Canonical node records for the qft_axiomatic_foundations batch.
+# Source: Weinberg "The Quantum Theory of Fields" Vol I and Vol III triage candidates.
+- id: qft.axiomatic_foundations
+  label: Axiomatic QFT foundations
+  knowledge_kind: concept
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Topic anchor for the Weinberg-style foundational layer of QFT — cluster decomposition, Wigner's symmetry theorem, Haag's theorem, superselection, and the Coleman-Mandula no-go result — that underlies but is largely absent from the Schwartz-style curriculum.
+  status: asserted
+
+- id: qft.cluster_decomposition_principle
+  label: Cluster decomposition principle
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Physical axiom that the S-matrix factorizes into a product of independent S-matrix elements when the participating particles are spatially separated into non-overlapping clusters; forces the Hamiltonian to be built from local creation and annihilation operators.
+  status: asserted
+
+- id: qft.connected_amplitude_decomposition
+  label: Connected amplitude decomposition
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Systematic decomposition of S-matrix elements into connected pieces using combinatorial counting of delta-function factors; the algebraic implementation of cluster decomposition used to organize perturbation theory.
+  status: asserted
+
+- id: qft.wigners_symmetry_representation_theorem
+  label: Wigner's symmetry representation theorem
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Theorem that any symmetry of the S-matrix (or of quantum-mechanical rays) is represented on Hilbert space by an operator that is either unitary and linear or antiunitary and antilinear; provides the operator-theoretic foundation for all symmetry discussions in QFT.
+  status: asserted
+
+- id: qft.superselection_rule
+  label: Superselection rule
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Restriction that observable operators cannot connect sectors of the Hilbert space that carry different values of a superselected quantity (such as electric charge or baryon number); arises when representations of a symmetry group can only be projective, forcing a sector decomposition.
+  status: asserted
+
+- id: qft.haags_theorem
+  label: Haag's theorem
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Theorem that the interaction picture of an interacting QFT does not exist rigorously because the Hilbert space of a free field and the Hilbert space of an interacting field with the same field equation are unitarily inequivalent in infinite volume; a foundational rigorous obstruction to naive perturbation theory.
+  status: asserted
+
+- id: qft.furry_theorem
+  label: Furry's theorem
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Result that any QED vacuum expectation value, or any S-matrix amplitude, involving a closed fermion loop with an odd number of external photon vertices vanishes exactly; a direct consequence of charge-conjugation invariance of QED.
+  status: asserted
+
+- id: qft.coleman_mandula_theorem
+  label: Coleman-Mandula theorem
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: No-go theorem proving that the only consistent Lie-algebra symmetry of the S-matrix of a relativistic QFT with a mass gap is the direct product of the Poincare algebra with an internal symmetry algebra; rules out non-trivial mixing of spacetime and internal symmetries and motivates supersymmetry as the unique loophole via graded Lie algebras.
+  status: asserted

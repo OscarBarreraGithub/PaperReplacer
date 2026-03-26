@@ -1,0 +1,36 @@
+# Partonomy edges for the complex_analysis_extended batch.
+- parent: complex_analysis.analytic_function
+  child: complex_analysis.cauchy_integral_theorem
+  rationale: Structural part_of relationship.
+  status: asserted
+  confidence: 0.85
+- parent: complex_analysis.analytic_function
+  child: complex_analysis.cauchy_integral_formula
+  rationale: Structural part_of relationship.
+  status: asserted
+  confidence: 0.85
+- parent: complex_analysis.analytic_function
+  child: complex_analysis.laurent_series
+  rationale: Structural part_of relationship.
+  status: asserted
+  confidence: 0.85
+- parent: complex_analysis.analytic_function
+  child: complex_analysis.isolated_singular_point
+  rationale: Structural part_of relationship.
+  status: asserted
+  confidence: 0.85
+- parent: complex_analysis.analytic_function
+  child: complex_analysis.residue_theorem
+  rationale: Structural part_of relationship.
+  status: asserted
+  confidence: 0.85
+- parent: complex_analysis.analytic_function
+  child: complex_analysis.cauchy_riemann_equations
+  rationale: Structural part_of relationship.
+  status: asserted
+  confidence: 0.85
+- parent: complex_analysis.analytic_continuation
+  child: complex_analysis.branch_cut_and_riemann_sheet
+  rationale: Structural part_of relationship.
+  status: asserted
+  confidence: 0.85

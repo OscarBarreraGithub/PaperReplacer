@@ -1,0 +1,259 @@
+# Canonical dependency edges for the cosmology_foundations batch.
+# Internal edges between the 13 new cosmology nodes, plus cross-edges to existing QFT graph nodes.
+
+# --- FRW metric and scale factor are the geometric foundation ---
+
+- from: cosmology.frw_metric
+  to: cosmology.scale_factor
+  relation_type: requires_for_recognize
+  necessity: necessary
+  rationale: The scale factor a(t) is defined as the coefficient in the FRW line element; one cannot identify or interpret a(t) without first encountering the metric it appears in.
+  failure_mode_if_absent: The scale factor appears as a free symbol with no geometric meaning, blocking interpretation of cosmic expansion.
+  evidence:
+    - type: textual_evidence
+      source_ref: cosmology_foundations_initial
+      note: Dodelson ch. 2 introduces the FRW metric before defining a(t).
+  status: asserted
+  confidence: 0.97
+
+- from: cosmology.frw_metric
+  to: cosmology.friedmann_equation
+  relation_type: requires_for_derive
+  necessity: necessary
+  rationale: The Friedmann equations are obtained by inserting the FRW metric ansatz into the Einstein field equations; the metric is the essential starting point for their derivation.
+  failure_mode_if_absent: Cannot see where H² = (8πG/3)ρ comes from or what geometric assumptions it encodes.
+  evidence:
+    - type: textual_evidence
+      source_ref: cosmology_foundations_initial
+      note: Dodelson ch. 3 derives Friedmann equations from the Einstein equations evaluated on the FRW background.
+  status: asserted
+  confidence: 0.97
+
+- from: cosmology.scale_factor
+  to: cosmology.hubble_parameter
+  relation_type: requires_for_recognize
+  necessity: necessary
+  rationale: The Hubble parameter is defined as H = ȧ/a, so recognising it requires knowing what a(t) is and how it varies with time.
+  failure_mode_if_absent: H appears as an unexplained symbol; its role in measuring expansion rate cannot be decoded.
+  evidence:
+    - type: textual_evidence
+      source_ref: cosmology_foundations_initial
+      note: Dodelson eq. 2.11 defines H in terms of a(t).
+  status: asserted
+  confidence: 0.98
+
+- from: cosmology.friedmann_equation
+  to: cosmology.hubble_parameter
+  relation_type: requires_for_use
+  necessity: necessary
+  rationale: The Friedmann equation expresses H² in terms of the energy content, making it the operative equation for computing H(t) in any cosmological model.
+  failure_mode_if_absent: Cannot compute or constrain H(t) from energy densities without the Friedmann equation.
+  evidence:
+    - type: textual_evidence
+      source_ref: cosmology_foundations_initial
+      note: Dodelson ch. 2–3 shows H computed from Friedmann equation for each energy component.
+  status: asserted
+  confidence: 0.97
+
+# --- Inflation and inflaton field ---
+
+- from: cosmology.friedmann_equation
+  to: cosmology.inflation
+  relation_type: requires_for_recognize
+  necessity: necessary
+  rationale: Inflation is defined as the epoch when ä > 0, a condition read directly from the second Friedmann equation; understanding inflation requires knowing what that equation says.
+  failure_mode_if_absent: Cannot state the condition for accelerated expansion or identify which energy component drives it.
+  evidence:
+    - type: textual_evidence
+      source_ref: cosmology_foundations_initial
+      note: Dodelson ch. 7 introduces inflation through the condition ä > 0 from the second Friedmann equation.
+  status: asserted
+  confidence: 0.95
+
+- from: cosmology.inflation
+  to: cosmology.inflaton_field
+  relation_type: requires_for_use
+  necessity: necessary
+  rationale: The inflaton is the specific scalar field mechanism implementing inflation; using slow-roll dynamics or reheating requires understanding the inflationary epoch they operate within.
+  failure_mode_if_absent: The slow-roll potential and reheating language floats without the inflationary context that defines their purpose.
+  evidence:
+    - type: expert_claim
+      source_ref: cosmology_foundations_initial
+      note: The inflaton is the microscopic realisation of the inflationary concept.
+  status: asserted
+  confidence: 0.95
+
+# --- CMB chain ---
+
+- from: cosmology.cosmic_microwave_background
+  to: cosmology.cmb_power_spectrum
+  relation_type: requires_for_use
+  necessity: necessary
+  rationale: The CMB power spectrum is a statistical characterisation of CMB anisotropies; using or interpreting Cℓ coefficients requires knowing what the CMB is and what its anisotropies represent.
+  failure_mode_if_absent: The Cℓ spectrum is a set of numbers without a physical origin story or observational interpretation.
+  evidence:
+    - type: textual_evidence
+      source_ref: cosmology_foundations_initial
+      note: Dodelson ch. 9 derives the Cℓ spectrum from the CMB temperature anisotropy field.
+  status: asserted
+  confidence: 0.96
+
+- from: cosmology.baryon_acoustic_oscillations
+  to: cosmology.cmb_power_spectrum
+  relation_type: requires_for_use
+  necessity: necessary
+  rationale: The acoustic peaks dominating the CMB Cℓ spectrum are the CMB imprint of baryon acoustic oscillations; interpreting the peak structure requires understanding BAO.
+  failure_mode_if_absent: The acoustic peak positions and heights in the Cℓ spectrum remain unexplained features rather than understood physical signals.
+  evidence:
+    - type: textual_evidence
+      source_ref: cosmology_foundations_initial
+      note: Dodelson ch. 9 section on acoustic peaks explicitly connects BAO to CMB peak structure.
+  status: asserted
+  confidence: 0.95
+
+- from: cosmology.baryon_acoustic_oscillations
+  to: cosmology.matter_power_spectrum
+  relation_type: requires_for_use
+  necessity: necessary
+  rationale: The BAO scale appears as a distinctive peak in the matter power spectrum P(k); reading the BAO feature from P(k) requires knowing what BAO are.
+  failure_mode_if_absent: The peak feature in P(k) at k ~ 0.05 h/Mpc appears as an unexplained bump rather than an identified physical scale.
+  evidence:
+    - type: textual_evidence
+      source_ref: cosmology_foundations_initial
+      note: Dodelson ch. 8–9 connects BAO to matter power spectrum features.
+  status: asserted
+  confidence: 0.95
+
+# --- Dark matter, dark energy, and ΛCDM assembly ---
+
+- from: cosmology.friedmann_equation
+  to: cosmology.dark_matter
+  relation_type: requires_for_recognize
+  necessity: necessary
+  rationale: Dark matter enters cosmology as a pressureless fluid component in the Friedmann equation; recognising its cosmological role requires knowing how energy components appear in the expansion equation.
+  failure_mode_if_absent: Dark matter appears only as a label; its dynamical role in driving structure formation and expansion cannot be quantified.
+  evidence:
+    - type: textual_evidence
+      source_ref: cosmology_foundations_initial
+      note: Dodelson ch. 2 introduces dark matter through its density contribution Ω_DM in the Friedmann framework.
+  status: asserted
+  confidence: 0.93
+
+- from: cosmology.friedmann_equation
+  to: cosmology.dark_energy
+  relation_type: requires_for_recognize
+  necessity: necessary
+  rationale: The cosmological constant Λ enters the Friedmann equation directly; understanding dark energy as an accelerating component requires reading it from that equation.
+  failure_mode_if_absent: The statement that dark energy causes ä > 0 cannot be verified without the Friedmann equation.
+  evidence:
+    - type: textual_evidence
+      source_ref: cosmology_foundations_initial
+      note: Dodelson ch. 2 derives the accelerating condition from the Friedmann equation with Λ.
+  status: asserted
+  confidence: 0.95
+
+- from: cosmology.hubble_parameter
+  to: cosmology.lambda_cdm_model
+  relation_type: requires_for_use
+  necessity: necessary
+  rationale: H₀ is one of the six canonical ΛCDM parameters; using the model requires understanding the Hubble parameter as the normalisation of the expansion rate.
+  failure_mode_if_absent: Cannot connect the expansion history to the ΛCDM parameter set or interpret H₀ constraints.
+  evidence:
+    - type: expert_claim
+      source_ref: cosmology_foundations_initial
+      note: H₀ is a primary ΛCDM parameter.
+  status: asserted
+  confidence: 0.97
+
+- from: cosmology.dark_matter
+  to: cosmology.lambda_cdm_model
+  relation_type: requires_for_use
+  necessity: necessary
+  rationale: Cold dark matter is a defining constituent of ΛCDM; using or citing the model requires understanding the dark matter component.
+  failure_mode_if_absent: The CDM part of ΛCDM is opaque; the model's structure formation predictions cannot be traced to its dark matter content.
+  evidence:
+    - type: expert_claim
+      source_ref: cosmology_foundations_initial
+      note: CDM is one of two defining components named in ΛCDM.
+  status: asserted
+  confidence: 0.98
+
+- from: cosmology.dark_energy
+  to: cosmology.lambda_cdm_model
+  relation_type: requires_for_use
+  necessity: necessary
+  rationale: The cosmological constant Λ is the other defining constituent of ΛCDM and the source of its accelerated expansion prediction.
+  failure_mode_if_absent: The Λ part of ΛCDM is a symbol without physical content; late-time acceleration cannot be attributed to a specific component.
+  evidence:
+    - type: expert_claim
+      source_ref: cosmology_foundations_initial
+      note: Λ is one of two defining components named in ΛCDM.
+  status: asserted
+  confidence: 0.98
+
+- from: cosmology.frw_metric
+  to: cosmology.lambda_cdm_model
+  relation_type: requires_for_recognize
+  necessity: necessary
+  rationale: The ΛCDM model is defined on a spatially flat FRW background; recognising the model requires understanding the geometric framework it inhabits.
+  failure_mode_if_absent: Cannot decode spatial flatness, comoving coordinates, or the role of k=0 in ΛCDM without the FRW metric concept.
+  evidence:
+    - type: expert_claim
+      source_ref: cosmology_foundations_initial
+      note: ΛCDM is explicitly formulated in a spatially flat FRW spacetime.
+  status: asserted
+  confidence: 0.97
+
+- from: cosmology.inflation
+  to: cosmology.lambda_cdm_model
+  relation_type: requires_for_recognize
+  necessity: typical
+  rationale: Inflation generates the primordial spectrum of perturbations that seeds structure in ΛCDM; recognising the full ΛCDM framework typically requires knowing the inflationary origin of initial conditions.
+  failure_mode_if_absent: The initial conditions (A_s, n_s parameters) of ΛCDM appear unmotivated without inflationary context.
+  evidence:
+    - type: expert_claim
+      source_ref: cosmology_foundations_initial
+      note: Inflation is the standard explanation for ΛCDM initial conditions.
+  status: asserted
+  confidence: 0.90
+
+- from: cosmology.cosmic_microwave_background
+  to: cosmology.lambda_cdm_model
+  relation_type: requires_for_use
+  necessity: typical
+  rationale: The CMB is the primary observational dataset constraining ΛCDM parameters; using the model in the context of data analysis requires understanding the CMB observables.
+  failure_mode_if_absent: Cannot interpret Planck or ACT constraints on ΛCDM parameters without understanding what the CMB is measuring.
+  evidence:
+    - type: expert_claim
+      source_ref: cosmology_foundations_initial
+      note: CMB data are the dominant constraint on ΛCDM parameters.
+  status: asserted
+  confidence: 0.93
+
+# --- Cross-edges to existing QFT graph nodes ---
+
+- from: math.smooth_manifold
+  to: cosmology.frw_metric
+  relation_type: requires_for_recognize
+  necessity: helpful
+  rationale: The FRW metric is a Lorentzian metric on a smooth 4-manifold; background in smooth manifolds and the metric tensor concept helps in recognising the geometric meaning of the line element.
+  failure_mode_if_absent: The FRW line element is treated as a formula to be memorised rather than a geometric object defined on a manifold.
+  evidence:
+    - type: inferred
+      source_ref: cosmology_foundations_initial
+      note: Differential geometry background aids interpretation of metric tensors in any context.
+  status: asserted
+  confidence: 0.82
+
+- from: classical_fields.noether_theorem
+  to: cosmology.inflaton_field
+  relation_type: requires_for_recognize
+  necessity: helpful
+  rationale: The inflaton is a classical scalar field with a Lagrangian; Noether-current language appears in discussions of the stress-energy tensor that feeds the Friedmann equation.
+  failure_mode_if_absent: The energy density and pressure derived from the inflaton Lagrangian are harder to trace to a systematic Noether/variational source.
+  evidence:
+    - type: inferred
+      source_ref: cosmology_foundations_initial
+      note: Inflaton dynamics are expressed using standard Lagrangian field theory tools.
+  status: asserted
+  confidence: 0.78

@@ -1,0 +1,900 @@
+{
+  "orchestrator": {
+    "max_active_agents": 8,
+    "canonical_merge_lane": 1,
+    "lane_budget": {
+      "ingestion": 3,
+      "content": 3,
+      "review": 2
+    },
+    "selection_priority": [
+      "unblock active population batch",
+      "merge a validated disjoint batch already prepared",
+      "ingest next unstarted logical document",
+      "promote a cross-document reusable backlog cluster",
+      "perform explicit deferral classification for residue"
+    ]
+  },
+  "global_backlog": [
+    {
+      "cluster_id": "complex_analysis_extended",
+      "label": "Complex analysis foundations extended batch",
+      "candidate_nodes": [
+        {
+          "proposed_id": "complex_analysis.analytic_function",
+          "label": "Analytic function",
+          "source_docs": [
+            "complex_variables",
+            "complex_analysis"
+          ],
+          "disposition": "candidate_new_node"
+        },
+        {
+          "proposed_id": "complex_analysis.cauchy_integral_theorem",
+          "label": "Cauchy integral theorem",
+          "source_docs": [
+            "complex_variables",
+            "complex_analysis"
+          ],
+          "disposition": "candidate_new_node"
+        },
+        {
+          "proposed_id": "complex_analysis.cauchy_integral_formula",
+          "label": "Cauchy integral formula",
+          "source_docs": [
+            "complex_variables",
+            "complex_analysis"
+          ],
+          "disposition": "candidate_new_node"
+        },
+        {
+          "proposed_id": "complex_analysis.residue_theorem",
+          "label": "Residue theorem",
+          "source_docs": [
+            "complex_variables",
+            "complex_analysis"
+          ],
+          "disposition": "candidate_new_node"
+        },
+        {
+          "proposed_id": "complex_analysis.laurent_series",
+          "label": "Laurent series",
+          "source_docs": [
+            "complex_variables",
+            "complex_analysis"
+          ],
+          "disposition": "candidate_new_node"
+        },
+        {
+          "proposed_id": "complex_analysis.analytic_continuation",
+          "label": "Analytic continuation",
+          "source_docs": [
+            "complex_variables",
+            "complex_analysis"
+          ],
+          "disposition": "candidate_new_node"
+        },
+        {
+          "proposed_id": "complex_analysis.riemann_sheet",
+          "label": "Riemann sheet",
+          "source_docs": [
+            "complex_variables",
+            "complex_analysis"
+          ],
+          "disposition": "candidate_new_node"
+        },
+        {
+          "proposed_id": "complex_analysis.conformal_map",
+          "label": "Conformal map",
+          "source_docs": [
+            "complex_variables"
+          ],
+          "disposition": "candidate_new_node"
+        },
+        {
+          "proposed_id": "complex_analysis.harmonic_function",
+          "label": "Harmonic function",
+          "source_docs": [
+            "complex_analysis"
+          ],
+          "disposition": "candidate_new_node"
+        },
+        {
+          "proposed_id": "complex_analysis.isolated_singular_point",
+          "label": "Isolated singular point",
+          "source_docs": [
+            "complex_variables",
+            "complex_analysis"
+          ],
+          "disposition": "candidate_new_node"
+        }
+      ],
+      "status": "promoted",
+      "notes": "Both complex analysis books confirmed. Batch agent spawned 2026-03-26."
+    },
+    {
+      "cluster_id": "differential_geometry_foundations",
+      "label": "Differential geometry foundations batch",
+      "candidate_nodes": [
+        {
+          "proposed_id": "math.smooth_manifold",
+          "label": "Smooth manifold",
+          "source_docs": [
+            "tu_manifolds",
+            "lee_smooth_manifolds"
+          ],
+          "disposition": "candidate_new_node"
+        },
+        {
+          "proposed_id": "math.tangent_space",
+          "label": "Tangent space",
+          "source_docs": [
+            "tu_manifolds",
+            "lee_smooth_manifolds"
+          ],
+          "disposition": "candidate_new_node"
+        },
+        {
+          "proposed_id": "math.differential_form",
+          "label": "Differential form",
+          "source_docs": [
+            "tu_manifolds",
+            "lee_smooth_manifolds"
+          ],
+          "disposition": "candidate_new_node"
+        },
+        {
+          "proposed_id": "math.exterior_derivative",
+          "label": "Exterior derivative",
+          "source_docs": [
+            "tu_manifolds",
+            "lee_smooth_manifolds"
+          ],
+          "disposition": "candidate_new_node"
+        },
+        {
+          "proposed_id": "math.lie_group",
+          "label": "Lie group",
+          "source_docs": [
+            "tu_manifolds",
+            "lee_smooth_manifolds"
+          ],
+          "disposition": "candidate_new_node"
+        },
+        {
+          "proposed_id": "math.lie_algebra",
+          "label": "Lie algebra",
+          "source_docs": [
+            "tu_manifolds",
+            "lee_smooth_manifolds"
+          ],
+          "disposition": "candidate_new_node"
+        },
+        {
+          "proposed_id": "math.fiber_bundle",
+          "label": "Fiber bundle",
+          "source_docs": [
+            "tu_manifolds",
+            "lee_smooth_manifolds"
+          ],
+          "disposition": "candidate_new_node"
+        },
+        {
+          "proposed_id": "math.stokes_theorem",
+          "label": "Stokes theorem (manifolds)",
+          "source_docs": [
+            "tu_manifolds",
+            "lee_smooth_manifolds"
+          ],
+          "disposition": "candidate_new_node"
+        },
+        {
+          "proposed_id": "math.de_rham_cohomology",
+          "label": "de Rham cohomology",
+          "source_docs": [
+            "tu_manifolds",
+            "lee_smooth_manifolds"
+          ],
+          "disposition": "candidate_new_node"
+        },
+        {
+          "proposed_id": "math.diffeomorphism",
+          "label": "Diffeomorphism",
+          "source_docs": [
+            "tu_manifolds",
+            "lee_smooth_manifolds"
+          ],
+          "disposition": "candidate_new_node"
+        }
+      ],
+      "status": "promoted",
+      "notes": "Tu + Lee double-doc pressure. Batch agent spawned 2026-03-26."
+    },
+    {
+      "cluster_id": "qft_topology_and_solitons",
+      "label": "QFT topology and solitons batch",
+      "candidate_nodes": [
+        {
+          "proposed_id": "qft.homotopy_group",
+          "label": "Homotopy group",
+          "source_docs": [
+            "weinberg_qft_vol2",
+            "axion_lecture_notes"
+          ],
+          "disposition": "candidate_new_node"
+        },
+        {
+          "proposed_id": "qft.magnetic_monopole",
+          "label": "Magnetic monopole (t'Hooft-Polyakov)",
+          "source_docs": [
+            "weinberg_qft_vol2"
+          ],
+          "disposition": "candidate_new_node"
+        },
+        {
+          "proposed_id": "qft.vortex_soliton",
+          "label": "Vortex soliton",
+          "source_docs": [
+            "weinberg_qft_vol2"
+          ],
+          "disposition": "candidate_new_node"
+        },
+        {
+          "proposed_id": "qft.skyrmion",
+          "label": "Skyrmion",
+          "source_docs": [
+            "weinberg_qft_vol2"
+          ],
+          "disposition": "candidate_new_node"
+        },
+        {
+          "proposed_id": "qft.bogomolny_bps_bound",
+          "label": "Bogomolny BPS bound",
+          "source_docs": [
+            "weinberg_qft_vol2"
+          ],
+          "disposition": "candidate_new_node"
+        },
+        {
+          "proposed_id": "qft.derrick_theorem",
+          "label": "Derrick's theorem",
+          "source_docs": [
+            "weinberg_qft_vol2"
+          ],
+          "disposition": "candidate_new_node"
+        },
+        {
+          "proposed_id": "qft.chern_simons_term",
+          "label": "Chern-Simons term",
+          "source_docs": [
+            "weinberg_qft_vol2",
+            "axion_lecture_notes"
+          ],
+          "disposition": "candidate_new_node"
+        },
+        {
+          "proposed_id": "qft.anomaly_inflow",
+          "label": "Anomaly inflow",
+          "source_docs": [
+            "axion_lecture_notes"
+          ],
+          "disposition": "candidate_new_node"
+        },
+        {
+          "proposed_id": "qft.magnetic_flux_quantization",
+          "label": "Magnetic flux quantization",
+          "source_docs": [
+            "axion_lecture_notes"
+          ],
+          "disposition": "candidate_new_node"
+        }
+      ],
+      "status": "promoted",
+      "notes": "Weinberg Vol II + axion notes cross-doc pressure. Batch agent spawned 2026-03-26."
+    },
+    {
+      "cluster_id": "qft_axiomatic_foundations",
+      "label": "QFT axiomatic foundations batch (Weinberg unique)",
+      "candidate_nodes": [
+        {
+          "proposed_id": "qft.cluster_decomposition_principle",
+          "label": "Cluster decomposition principle",
+          "source_docs": [
+            "weinberg_qft_vol1"
+          ],
+          "disposition": "candidate_new_node"
+        },
+        {
+          "proposed_id": "qft.wigners_symmetry_representation_theorem",
+          "label": "Wigner's symmetry representation theorem",
+          "source_docs": [
+            "weinberg_qft_vol1"
+          ],
+          "disposition": "candidate_new_node"
+        },
+        {
+          "proposed_id": "qft.haags_theorem",
+          "label": "Haag's theorem",
+          "source_docs": [
+            "weinberg_qft_vol1"
+          ],
+          "disposition": "candidate_new_node"
+        },
+        {
+          "proposed_id": "qft.furry_theorem",
+          "label": "Furry's theorem",
+          "source_docs": [
+            "weinberg_qft_vol1"
+          ],
+          "disposition": "candidate_new_node"
+        },
+        {
+          "proposed_id": "qft.coleman_mandula_theorem",
+          "label": "Coleman-Mandula theorem",
+          "source_docs": [
+            "weinberg_qft_vol3"
+          ],
+          "disposition": "candidate_new_node"
+        },
+        {
+          "proposed_id": "qft.superselection_rule",
+          "label": "Superselection rule",
+          "source_docs": [
+            "weinberg_qft_vol1"
+          ],
+          "disposition": "candidate_new_node"
+        },
+        {
+          "proposed_id": "qft.connected_amplitude_decomposition",
+          "label": "Connected amplitude decomposition",
+          "source_docs": [
+            "weinberg_qft_vol1"
+          ],
+          "disposition": "candidate_new_node"
+        }
+      ],
+      "status": "promoted",
+      "notes": "Weinberg Vol I unique foundational content + Coleman-Mandula from Vol III. Batch agent spawned 2026-03-26."
+    },
+    {
+      "cluster_id": "qm_topology_semiclassical",
+      "label": "QM topology and semiclassical batch (Shankar)",
+      "candidate_nodes": [
+        {
+          "proposed_id": "qm.berry_phase",
+          "label": "Berry phase",
+          "source_docs": [
+            "shankar_qm"
+          ],
+          "disposition": "candidate_new_node"
+        },
+        {
+          "proposed_id": "qm.berry_connection",
+          "label": "Berry connection",
+          "source_docs": [
+            "shankar_qm"
+          ],
+          "disposition": "candidate_new_node"
+        },
+        {
+          "proposed_id": "qm.aharonov_bohm_effect",
+          "label": "Aharonov-Bohm effect",
+          "source_docs": [
+            "shankar_qm"
+          ],
+          "disposition": "candidate_new_node"
+        },
+        {
+          "proposed_id": "qm.wkb_approximation",
+          "label": "WKB approximation",
+          "source_docs": [
+            "shankar_qm"
+          ],
+          "disposition": "candidate_new_node"
+        },
+        {
+          "proposed_id": "qm.angular_momentum_addition",
+          "label": "Angular momentum addition (Clebsch-Gordan)",
+          "source_docs": [
+            "shankar_qm"
+          ],
+          "disposition": "candidate_new_node"
+        },
+        {
+          "proposed_id": "qm.identical_particles_symmetrization",
+          "label": "Identical particles and symmetrization",
+          "source_docs": [
+            "shankar_qm"
+          ],
+          "disposition": "candidate_new_node"
+        },
+        {
+          "proposed_id": "qm.landau_levels",
+          "label": "Landau levels",
+          "source_docs": [
+            "shankar_qm"
+          ],
+          "disposition": "candidate_new_node"
+        },
+        {
+          "proposed_id": "qm.dirac_monopole",
+          "label": "Dirac monopole",
+          "source_docs": [
+            "shankar_qm"
+          ],
+          "disposition": "candidate_new_node"
+        }
+      ],
+      "status": "promoted",
+      "notes": "Shankar QM content with clear QFT prerequisites role. Batch agent spawned 2026-03-26."
+    },
+    {
+      "cluster_id": "qft_radiative_corrections_extensions",
+      "label": "QFT radiative corrections extensions (awaiting cross-doc pressure)",
+      "candidate_nodes": [
+        {
+          "proposed_id": "qft.coleman_weinberg_potential",
+          "label": "Coleman-Weinberg potential",
+          "source_docs": [
+            "peskin_qft"
+          ],
+          "disposition": "candidate_new_node"
+        },
+        {
+          "proposed_id": "qft.trace_anomaly",
+          "label": "Trace anomaly",
+          "source_docs": [
+            "peskin_qft"
+          ],
+          "disposition": "candidate_new_node"
+        },
+        {
+          "proposed_id": "qft.operator_mixing",
+          "label": "Operator mixing matrix",
+          "source_docs": [
+            "peskin_qft"
+          ],
+          "disposition": "candidate_new_node"
+        },
+        {
+          "proposed_id": "qft.epsilon_expansion",
+          "label": "Epsilon expansion",
+          "source_docs": [
+            "peskin_qft"
+          ],
+          "disposition": "candidate_new_node"
+        },
+        {
+          "proposed_id": "qft.klein_nishina_formula",
+          "label": "Klein-Nishina formula",
+          "source_docs": [
+            "peskin_qft"
+          ],
+          "disposition": "candidate_new_node"
+        }
+      ],
+      "status": "awaiting_cross_doc_pressure",
+      "notes": "Peskin unique. Await more doc pressure or promote standalone if no other doc adds pressure."
+    },
+    {
+      "cluster_id": "cosmology_foundations",
+      "label": "Cosmology foundations batch (Dodelson - new domain)",
+      "candidate_nodes": [
+        {
+          "proposed_id": "cosmo.frw_metric",
+          "label": "FRW metric",
+          "source_docs": [
+            "dodelson_modern_cosmology"
+          ],
+          "disposition": "candidate_new_node"
+        },
+        {
+          "proposed_id": "cosmo.friedmann_equation",
+          "label": "Friedmann equation",
+          "source_docs": [
+            "dodelson_modern_cosmology"
+          ],
+          "disposition": "candidate_new_node"
+        },
+        {
+          "proposed_id": "cosmo.scale_factor",
+          "label": "Scale factor",
+          "source_docs": [
+            "dodelson_modern_cosmology"
+          ],
+          "disposition": "candidate_new_node"
+        },
+        {
+          "proposed_id": "cosmo.hubble_parameter",
+          "label": "Hubble parameter",
+          "source_docs": [
+            "dodelson_modern_cosmology"
+          ],
+          "disposition": "candidate_new_node"
+        },
+        {
+          "proposed_id": "cosmo.inflation",
+          "label": "Inflation",
+          "source_docs": [
+            "dodelson_modern_cosmology"
+          ],
+          "disposition": "candidate_new_node"
+        },
+        {
+          "proposed_id": "cosmo.inflaton",
+          "label": "Inflaton field",
+          "source_docs": [
+            "dodelson_modern_cosmology"
+          ],
+          "disposition": "candidate_new_node"
+        },
+        {
+          "proposed_id": "cosmo.dark_matter",
+          "label": "Dark matter (cosmological)",
+          "source_docs": [
+            "dodelson_modern_cosmology"
+          ],
+          "disposition": "candidate_new_node"
+        },
+        {
+          "proposed_id": "cosmo.dark_energy",
+          "label": "Dark energy / cosmological constant",
+          "source_docs": [
+            "dodelson_modern_cosmology"
+          ],
+          "disposition": "candidate_new_node"
+        },
+        {
+          "proposed_id": "cosmo.cosmic_microwave_background",
+          "label": "Cosmic microwave background",
+          "source_docs": [
+            "dodelson_modern_cosmology"
+          ],
+          "disposition": "candidate_new_node"
+        },
+        {
+          "proposed_id": "cosmo.lambda_cdm",
+          "label": "Lambda-CDM model",
+          "source_docs": [
+            "dodelson_modern_cosmology"
+          ],
+          "disposition": "candidate_new_node"
+        }
+      ],
+      "status": "promoted",
+      "notes": "New cosmology domain from Dodelson. Batch agent to be spawned after first 5 batch agents complete."
+    },
+    {
+      "cluster_id": "classical_em_foundations",
+      "label": "Classical EM foundations (Jackson - QFT prerequisites)",
+      "candidate_nodes": [
+        {
+          "proposed_id": "classical_em.poynting_theorem",
+          "label": "Poynting theorem",
+          "source_docs": [
+            "jackson_em"
+          ],
+          "disposition": "candidate_new_node"
+        },
+        {
+          "proposed_id": "classical_em.maxwell_stress_tensor",
+          "label": "Maxwell stress tensor",
+          "source_docs": [
+            "jackson_em"
+          ],
+          "disposition": "candidate_new_node"
+        },
+        {
+          "proposed_id": "classical_em.dispersion_relations_causality",
+          "label": "Kramers-Kronig dispersion relations",
+          "source_docs": [
+            "jackson_em"
+          ],
+          "disposition": "candidate_new_node"
+        },
+        {
+          "proposed_id": "classical_em.thomas_precession",
+          "label": "Thomas precession",
+          "source_docs": [
+            "jackson_em"
+          ],
+          "disposition": "candidate_new_node"
+        }
+      ],
+      "status": "promoted",
+      "notes": "Small classical EM batch. Will be promoted after first wave batch agents complete."
+    }
+  ],
+  "documents": [
+    {
+      "doc_id": "schwartz_qft",
+      "title": "Quantum Field Theory and the Standard Model (Schwartz)",
+      "source_paths": [
+        "Ref material/Schwartz QFT.pdf"
+      ],
+      "domain_family": "qft",
+      "priority": 1,
+      "oracle_mode": "hybrid",
+      "status": "substantively_exhausted",
+      "assigned_wave": "completed_seed",
+      "last_checkpoint": "stage22_schwartz_refinement_p",
+      "coverage_state": "Substantive backlog exhausted; remaining residue is tracked as explicit deferrals in schwartz-gap-queue.md.",
+      "blocking_issues": [],
+      "next_actions": [
+        "Monitor for future cross-document alias reuse or overlap cleanup only."
+      ]
+    },
+    {
+      "doc_id": "peskin_qft",
+      "title": "An Introduction to Quantum Field Theory (Peskin and Schroeder)",
+      "source_paths": [
+        "Ref material/Peskin.pdf"
+      ],
+      "domain_family": "qft",
+      "priority": 2,
+      "oracle_mode": "hybrid",
+      "status": "cross_document_reduced",
+      "assigned_wave": "wave1",
+      "last_checkpoint": "batch_promoted",
+      "coverage_state": "Triage complete. 259 TOC candidates processed: vast majority covered_existing (Schwartz overlap), 5 candidate_new_nodes identified (coleman_weinberg_potential, klein_nishina_formula, trace_anomaly, operator_mixing, epsilon_expansion), several candidate_batch_expansion items. Candidates added to global_backlog.",
+      "blocking_issues": [],
+      "next_actions": [
+        "Cross-document reduce: the 5 candidate_new_nodes are added to global_backlog for multi-doc pressure confirmation before promotion.",
+        "Once other QFT documents (weinberg_vol1, vol2) triaged, determine which candidates get enough cross-doc pressure to promote."
+      ],
+      "checkpoint": "cross_doc_reduced",
+      "next_action": "5 candidate_new_nodes (coleman_weinberg_potential, klein_nishina_formula, trace_anomaly, operator_mixing, epsilon_expansion) remain in qft_radiative_corrections_extensions backlog awaiting cross-doc pressure."
+    },
+    {
+      "doc_id": "weinberg_qft_vol1",
+      "title": "The Quantum Theory of Fields, Volume I (Weinberg)",
+      "source_paths": [
+        "Ref material/Weinberg/QFT I/01.0_pp_i_viii_Frontmatter.pdf",
+        "Ref material/Weinberg/QFT I/02.0_pp_ix_xix_Contents.pdf",
+        "Ref material/Weinberg/QFT I/03.0_pp_xx_xxiv_PREFACE.pdf",
+        "Ref material/Weinberg/QFT I/04.0_pp_xxv_xxvi_NOTATION.pdf",
+        "Ref material/Weinberg/QFT I/05.0_pp_1_48_HISTORICAL_INTRODUCTION.pdf",
+        "Ref material/Weinberg/QFT I/06.0_pp_49_106_RELATIVISTIC_QUANTUM_MECHANICS.pdf",
+        "Ref material/Weinberg/QFT I/07.0_pp_107_168_SCATTERING_THEORY.pdf",
+        "Ref material/Weinberg/QFT I/08.0_pp_169_190_THE_CLUSTER_DECOMPOSITION_PRINCIPLE.pdf",
+        "Ref material/Weinberg/QFT I/09.0_pp_191_258_QUANTUM_FIELDS_AND_ANTIPARTICLES.pdf",
+        "Ref material/Weinberg/QFT I/10.0_pp_259_291_THE_FEYNMAN_RULES.pdf",
+        "Ref material/Weinberg/QFT I/11.0_pp_292_338_THE_CANONICAL_FORMALISM.pdf",
+        "Ref material/Weinberg/QFT I/12.0_pp_339_375_ELECTRODYNAMICS.pdf",
+        "Ref material/Weinberg/QFT I/13.0_pp_376_424_PATH-INTEGRAL_METHODS.pdf",
+        "Ref material/Weinberg/QFT I/14.0_pp_425_471_NON-PERTURBATIVE_METHODS.pdf",
+        "Ref material/Weinberg/QFT I/15.0_pp_472_498_ONE-LOOP_RADIATIVE_CORRECTIONS_IN_QUANTUM_ELECTRODYNAMICS.pdf",
+        "Ref material/Weinberg/QFT I/16.0_pp_499_533_GENERAL_RENORMALIZATION_THEORY.pdf",
+        "Ref material/Weinberg/QFT I/17.0_pp_534_563_INFRARED_EFFECTS.pdf",
+        "Ref material/Weinberg/QFT I/18.0_pp_564_596_BOUND_STATES_IN_EXTERNAL_FIELDS.pdf",
+        "Ref material/Weinberg/QFT I/19.0_pp_597_601_AUTHOR_INDEX.pdf",
+        "Ref material/Weinberg/QFT I/20.0_pp_602_609_SUBJECT_INDEX.pdf"
+      ],
+      "domain_family": "qft",
+      "priority": 3,
+      "oracle_mode": "hybrid",
+      "status": "cross_document_reduced",
+      "assigned_wave": "wave1",
+      "last_checkpoint": "batch_promoted",
+      "coverage_state": "Triaged. 330 TOC candidates: majority covered_existing. 10 candidate_new_node items (cluster_decomposition, wigners_symmetry_theorem, haags_theorem, furrys_theorem, superselection_rule, lamb_shift, dirac_coulomb_problem, connected_amplitude_decomp, scattering_length, furry_picture). Added to global_backlog.",
+      "blocking_issues": [],
+      "next_actions": [
+        "Monitor: qft_axiomatic_foundations batch now in authored graph. Promote complex_analysis_extended also confirmed."
+      ]
+    },
+    {
+      "doc_id": "weinberg_qft_vol2",
+      "title": "The Quantum Theory of Fields, Volume II (Weinberg)",
+      "source_paths": [
+        "Ref material/Weinberg/QFT II/01.0_pp_i_vi_Frontmatter.pdf",
+        "Ref material/Weinberg/QFT II/02.0_pp_vii_xvi_Contents.pdf",
+        "Ref material/Weinberg/QFT II/03.0_pp_xvii_xix_PREFACE_TO_VOLUME_II.pdf",
+        "Ref material/Weinberg/QFT II/04.0_pp_xx_xxii_NOTATION.pdf",
+        "Ref material/Weinberg/QFT II/05.0_pp_1_62_NON-ABELIAN_GAUGE_THEORIES.pdf",
+        "Ref material/Weinberg/QFT II/06.0_pp_63_79_EXTERNAL_FIELD_METHODS.pdf",
+        "Ref material/Weinberg/QFT II/07.0_pp_80_110_RENORMALIZATION_OF_GAUGE_THEORIES.pdf",
+        "Ref material/Weinberg/QFT II/08.0_pp_111_162_RENORMALIZATION_GROUP_METHODS.pdf",
+        "Ref material/Weinberg/QFT II/09.0_pp_163_251_SPONTANEOUSLY_BROKEN_GLOBAL_SYMMETRIES.pdf",
+        "Ref material/Weinberg/QFT II/10.0_pp_252_294_OPERATOR_PRODUCT_EXPANSIONS.pdf",
+        "Ref material/Weinberg/QFT II/11.0_pp_295_358_SPONTANEOUSLY_BROKEN_GAUGE_SYMMETRIES.pdf",
+        "Ref material/Weinberg/QFT II/12.0_pp_359_420_ANOMALIES.pdf",
+        "Ref material/Weinberg/QFT II/13.0_pp_421_477_EXTENDED_FIELD_CONFIGURATIONS.pdf",
+        "Ref material/Weinberg/QFT II/14.0_pp_478_483_AUTHOR_INDEX.pdf",
+        "Ref material/Weinberg/QFT II/15.0_pp_484_489_SUBJECT_INDEX.pdf"
+      ],
+      "domain_family": "qft",
+      "priority": 4,
+      "oracle_mode": "hybrid",
+      "status": "cross_document_reduced",
+      "assigned_wave": "wave1",
+      "last_checkpoint": "batch_promoted",
+      "coverage_state": "Triaged. 289 TOC candidates: majority covered_existing. 10 candidate_new_node items (dashen_theorem, homotopy_groups, thooft_polyakov_monopole, skyrmion, bogomolny_bps_bound, vortex, superconductor_gauge_ssb, derrick_theorem, cartan_maurer_invariant, gravitational_anomaly). Added to global_backlog.",
+      "blocking_issues": [],
+      "next_actions": [
+        "Monitor: qft_topology_and_solitons batch now in authored graph."
+      ]
+    },
+    {
+      "doc_id": "shankar_qm",
+      "title": "Principles of Quantum Mechanics (Shankar)",
+      "source_paths": [
+        "Ref material/Shankar.pdf"
+      ],
+      "domain_family": "qm",
+      "priority": 5,
+      "oracle_mode": "index",
+      "status": "cross_document_reduced",
+      "assigned_wave": "wave1",
+      "last_checkpoint": "batch_promoted",
+      "coverage_state": "Triaged. Index-mode. 15 candidate_new_node items (Berry phase, Berry connection, Aharonov-Bohm, geometric phase, QHE/Landau levels, anyons, Fermi/Bose statistics, Dirac monopole, second quantization (many-body), angular momentum addition, identical particles, Ehrenfest theorem, WKB, variational principle). Added to global_backlog.",
+      "blocking_issues": [],
+      "next_actions": [
+        "Monitor: qm_topology_semiclassical batch now in authored graph."
+      ]
+    },
+    {
+      "doc_id": "jackson_em",
+      "title": "Classical Electrodynamics (Jackson)",
+      "source_paths": [
+        "Ref material/Jackson.pdf"
+      ],
+      "domain_family": "classical_em",
+      "priority": 6,
+      "oracle_mode": "index",
+      "status": "cross_document_reduced",
+      "assigned_wave": "wave1",
+      "last_checkpoint": "triage_complete",
+      "coverage_state": "Triaged. Index-mode. 4 candidate_new_node items: dispersion_relations_kramers_kronig, poynting_theorem, maxwell_stress_tensor, thomas_precession. Most Jackson content is out_of_scope for HEP-TH graph. Cross-doc with weinberg_vol1 on relativistic EM.",
+      "blocking_issues": [],
+      "next_actions": [
+        "Promote classical_em_foundations batch with Kramers-Kronig and Poynting theorem; defer detailed EM content."
+      ],
+      "checkpoint": "batch_promoted",
+      "next_action": "Monitor: classical_em_foundations batch (Poynting, Maxwell stress tensor, Kramers-Kronig, Thomas precession) now in authored graph."
+    },
+    {
+      "doc_id": "complex_analysis",
+      "title": "Complex Analysis",
+      "source_paths": [
+        "Ref material/Complex Analysis.pdf"
+      ],
+      "domain_family": "complex_analysis",
+      "priority": 7,
+      "oracle_mode": "index",
+      "status": "cross_document_reduced",
+      "assigned_wave": "wave1",
+      "last_checkpoint": "batch_promoted",
+      "coverage_state": "Triaged. Index mode. 7 candidate_new_node items: cauchy_integral_theorem, cauchy_integral_formula, residue_theorem, analytic_continuation, branch_cut_and_riemann_sheet, laurent_series, harmonic_function. Cross-doc pressure with complex_variables; HIGH priority for complex_analysis_extended batch.",
+      "blocking_issues": [],
+      "next_actions": [
+        "Monitor: complex_analysis_extended batch now in authored graph."
+      ]
+    },
+    {
+      "doc_id": "complex_variables",
+      "title": "Complex Variables",
+      "source_paths": [
+        "Ref material/Complex Variables.pdf"
+      ],
+      "domain_family": "complex_analysis",
+      "priority": 8,
+      "oracle_mode": "hybrid",
+      "status": "cross_document_reduced",
+      "assigned_wave": "wave1",
+      "last_checkpoint": "batch_promoted",
+      "coverage_state": "Triaged. 164 TOC candidates: 15 candidate_new_node items for complex analysis foundations (analytic functions, Cauchy theorem/formula, Laurent series, analytic continuation, Riemann surfaces, conformal mapping, etc.). Cross-doc pressure with complex_analysis.",
+      "blocking_issues": [],
+      "next_actions": [
+        "Monitor: complex_analysis_extended batch now in authored graph."
+      ]
+    },
+    {
+      "doc_id": "tu_manifolds",
+      "title": "An Introduction to Manifolds (Tu)",
+      "source_paths": [
+        "Ref material/Manifolds/Tu_AnIntroductionToManifolds.pdf"
+      ],
+      "domain_family": "differential_geometry",
+      "priority": 9,
+      "oracle_mode": "hybrid",
+      "status": "cross_document_reduced",
+      "assigned_wave": "wave1",
+      "last_checkpoint": "batch_promoted",
+      "coverage_state": "Triaged. 173 TOC candidates: 16 candidate_new_node items for differential geometry foundations (smooth manifold, tangent space/bundle, differential forms, exterior derivative, Lie groups, Lie algebras, fiber bundles, de Rham cohomology, Stokes theorem, etc.). Cross-doc pressure with lee_smooth_manifolds.",
+      "blocking_issues": [],
+      "next_actions": [
+        "Monitor: differential_geometry_foundations batch now in authored graph."
+      ]
+    },
+    {
+      "doc_id": "lee_smooth_manifolds",
+      "title": "Introduction to Smooth Manifolds (Lee)",
+      "source_paths": [
+        "Ref material/Manifolds/lee_smooth_manifolds.pdf"
+      ],
+      "domain_family": "differential_geometry",
+      "priority": 10,
+      "oracle_mode": "index",
+      "status": "cross_document_reduced",
+      "assigned_wave": "wave1",
+      "last_checkpoint": "batch_promoted",
+      "coverage_state": "Triaged. Index-mode, garbled OCR. Knowledge-driven triage produced same differential geometry concepts as tu_manifolds. Cross-doc pressure confirmed; blocking_issue downgraded.",
+      "blocking_issues": [],
+      "next_actions": [
+        "Monitor: differential_geometry_foundations batch now in authored graph."
+      ]
+    },
+    {
+      "doc_id": "axion_lecture_notes",
+      "title": "Axion Lecture Notes",
+      "source_paths": [
+        "Ref material/Axion_Lecture_Notes_Physics253cr.pdf"
+      ],
+      "domain_family": "axion_bsm",
+      "priority": 11,
+      "oracle_mode": "toc_fallback",
+      "status": "cross_document_reduced",
+      "assigned_wave": "wave1",
+      "last_checkpoint": "batch_promoted",
+      "coverage_state": "Triaged. 128 TOC candidates: 13 candidate_new_node items (axion_like_particle, axion_misalignment_mechanism, chern_simons_term, magnetic_flux_quantization, anomaly_inflow, p_form_global_symmetry, non_invertible_symmetry, kaluza_klein_reduction, isocurvature_perturbation, axion_dark_matter, scalar_field_expanding_universe, descent_formalism, stuckelberg_mechanism). Added to global_backlog; cross-doc with weinberg_vol2 on Chern-Simons/topology.",
+      "blocking_issues": [],
+      "next_actions": [
+        "Monitor: qft_topology_and_solitons batch now in authored graph (cross-doc pressure with weinberg_vol2)."
+      ]
+    },
+    {
+      "doc_id": "dodelson_modern_cosmology",
+      "title": "Modern Cosmology (Dodelson and Schmidt)",
+      "source_paths": [
+        "Ref material/Scott Dodelson, Fabian Schmidt - Modern Cosmology-Academic Press (2020).pdf"
+      ],
+      "domain_family": "cosmology",
+      "priority": 12,
+      "oracle_mode": "hybrid",
+      "status": "cross_document_reduced",
+      "assigned_wave": "wave1",
+      "last_checkpoint": "triage_complete",
+      "coverage_state": "Triaged. 282-line triage. HIGH new-node rate (37+ candidates) for completely new cosmology domain: FRW metric, Friedmann equation, scale factor, Hubble parameter, inflation, inflaton, CMB, BAO, \u039bCDM, power spectrum, transfer function, growth factor, dark matter, dark energy, etc. This warrants a full cosmology_foundations batch.",
+      "blocking_issues": [],
+      "next_actions": [
+        "Promote cosmology_foundations batch with all cosmology domain nodes.",
+        "Second wave: cosmology_perturbations batch for CMB/structure formation nodes."
+      ],
+      "checkpoint": "batch_promoted",
+      "next_action": "Monitor: cosmology_foundations batch (13 nodes: FRW metric, Friedmann eq, inflation, CMB, BAO, Lambda-CDM, etc.) now in authored graph."
+    },
+    {
+      "doc_id": "weinberg_qft_vol3",
+      "title": "The Quantum Theory of Fields, Volume III (Weinberg)",
+      "source_paths": [
+        "Ref material/Weinberg/QFT III/01.0_pp_i_vi_Frontmatter.pdf",
+        "Ref material/Weinberg/QFT III/02.0_pp_vii_xv_Contents.pdf",
+        "Ref material/Weinberg/QFT III/03.0_pp_xvi_xix_PREFACE_TO_VOLUME_III.pdf",
+        "Ref material/Weinberg/QFT III/04.0_pp_xx_xxii_NOTATION.pdf",
+        "Ref material/Weinberg/QFT III/05.0_pp_1_24_HISTORICAL_INTRODUCTION.pdf",
+        "Ref material/Weinberg/QFT III/06.0_pp_25_54_SUPERSYMMETRY_ALGEBRAS.pdf",
+        "Ref material/Weinberg/QFT III/07.0_pp_55_112_SUPERSYMMETRIC_FIELD_THEORIES.pdf",
+        "Ref material/Weinberg/QFT III/08.0_pp_113_178_SUPERSYMMETRIC_GAUGE_THEORIES.pdf",
+        "Ref material/Weinberg/QFT III/09.0_pp_179_247_SUPERSYMMETRIC_VERSIONS_OF_THE_STANDARD_MODEL.pdf",
+        "Ref material/Weinberg/QFT III/10.0_pp_248_306_BEYOND_PERTURBATION_THEORY.pdf",
+        "Ref material/Weinberg/QFT III/11.0_pp_307_317_SUPERGRAPHS.pdf",
+        "Ref material/Weinberg/QFT III/12.0_pp_318_381_SUPERGRAVITY.pdf",
+        "Ref material/Weinberg/QFT III/13.0_pp_382_410_SUPERSYMMETRY_ALGEBRAS_IN_HIGHER_DIMENSIONS.pdf",
+        "Ref material/Weinberg/QFT III/14.0_pp_411_415_AUTHOR_INDEX.pdf",
+        "Ref material/Weinberg/QFT III/15.0_pp_416_419_SUBJECT_INDEX.pdf"
+      ],
+      "domain_family": "supersymmetry",
+      "priority": 13,
+      "oracle_mode": "hybrid",
+      "status": "cross_document_reduced",
+      "assigned_wave": "wave1",
+      "last_checkpoint": "batch_promoted",
+      "coverage_state": "Triaged. 269 TOC candidates: all SUSY/SUGRA content deferred explicitly. 1 actionable candidate: coleman_mandula_theorem (qft foundational, non-SUSY). 2 deferred: graded_lie_algebra (await SUSY batch), vierbein (await GR batch).",
+      "blocking_issues": [],
+      "next_actions": [
+        "Deferred: SUSY/SUGRA content explicitly out of scope. coleman_mandula_theorem added to qft_axiomatic_foundations batch."
+      ],
+      "next_action": "Monitor: SUSY/SUGRA content explicitly deferred. coleman_mandula_theorem added to qft_axiomatic_foundations batch."
+    }
+  ]
+}

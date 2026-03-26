@@ -1,0 +1,297 @@
+# Dependency edges for the qm_topology_semiclassical batch.
+# Convention: from = prerequisite, to = downstream node.
+# All edges use requires_for_use unless otherwise noted.
+
+# ── Internal edges: within-batch prerequisites ──────────────────────────────
+
+- from: qm.berry_phase
+  to: qm.berry_connection
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.92
+  rationale: The Berry connection is defined as the gauge potential whose holonomy produces the Berry phase; understanding the phase concept is required before the connection (curvature form) can be introduced with meaning.
+  failure_mode_if_absent: Without the Berry phase concept, a student cannot interpret the Berry connection as anything other than a formal symbol — they cannot say what its integral measures or why its curl (Berry curvature) is gauge-invariant.
+  evidence:
+    - type: expert_claim
+      source_ref: qm_topology_semiclassical_initial
+      note: Without the Berry phase concept, a student cannot interpret the Berry connection as anything other than a formal symbol — they cannot say what its integral measures or why its curl (Berry curvature) is gauge-invariant.
+  status: asserted
+
+- from: qm.berry_connection
+  to: qm.aharonov_bohm_effect
+  relation_type: requires_for_use
+  necessity: typical
+  confidence: 0.80
+  rationale: The Aharonov-Bohm effect is most cleanly understood as the holonomy of the electromagnetic U(1) connection around a flux tube; recognizing the Berry connection as a gauge potential makes the structural parallel precise.
+  failure_mode_if_absent: The Aharonov-Bohm phase is the holonomy of the same type of U(1) bundle that the Berry connection describes; conflating them or missing the connection leaves the topology argument incomplete.
+  evidence:
+    - type: expert_claim
+      source_ref: qm_topology_semiclassical_initial
+      note: The Aharonov-Bohm phase is the holonomy of the same type of U(1) bundle that the Berry connection describes; conflating them or missing the connection leaves the topology argument incomplete.
+  status: asserted
+
+# ── Upstream QM foundations → batch nodes ───────────────────────────────────
+
+- from: qm.unitary_evolution
+  to: qm.berry_phase
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.90
+  rationale: The Berry phase is defined for a state evolving under a Hamiltonian; recognizing that evolution is unitary and that the total phase decomposes into dynamical and geometric parts requires the unitary evolution concept.
+  failure_mode_if_absent: Without unitary evolution, the phase decomposition exp(iγ)exp(−iEt/ℏ) cannot be written down, and one cannot isolate the geometric factor.
+  evidence:
+    - type: expert_claim
+      source_ref: qm_topology_semiclassical_initial
+      note: Without unitary evolution, the phase decomposition exp(iγ)exp(−iEt/ℏ) cannot be written down, and one cannot isolate the geometric factor.
+  status: asserted
+
+- from: qm.hilbert_space
+  to: qm.berry_phase
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.88
+  rationale: Adiabatic cyclic evolution is defined as a curve in the projective Hilbert space; the geometric phase is a property of that curve in the Hilbert-space bundle over parameter space.
+  failure_mode_if_absent: Cannot define the parallel transport of a state vector, nor compute its inner product at nearby points, without Hilbert-space language.
+  evidence:
+    - type: expert_claim
+      source_ref: qm_topology_semiclassical_initial
+      note: Cannot define the parallel transport of a state vector, nor compute its inner product at nearby points, without Hilbert-space language.
+  status: asserted
+
+- from: qm.state_vector
+  to: qm.wkb_approximation
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.88
+  rationale: WKB writes the wave function as ψ = A exp(iS/ℏ) and tracks how the state evolves through a slowly varying potential; the state-vector concept is the starting point.
+  failure_mode_if_absent: Without knowing that the object being approximated is a state vector (wave function), one cannot set up the ℏ expansion or interpret the amplitude A and phase S/ℏ.
+  evidence:
+    - type: expert_claim
+      source_ref: qm_topology_semiclassical_initial
+      note: Without knowing that the object being approximated is a state vector (wave function), one cannot set up the ℏ expansion or interpret the amplitude A and phase S/ℏ.
+  status: asserted
+
+- from: qm.eigenstate_and_eigenvalue
+  to: qm.berry_phase
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The adiabatic theorem states that a system initially in an energy eigenstate remains in the instantaneous eigenstate; identifying that eigenstate and tracking its phase requires the eigenstate concept.
+  failure_mode_if_absent: The Berry phase formula γ = i∮〈n(R)|∇_R|n(R)〉·dR is only defined for the instantaneous eigenstate |n(R)〉; the concept is undefined without eigenstates.
+  evidence:
+    - type: expert_claim
+      source_ref: qm_topology_semiclassical_initial
+      note: The Berry phase formula γ = i∮〈n(R)|∇_R|n(R)〉·dR is only defined for the instantaneous eigenstate |n(R)〉; the concept is undefined without eigenstates.
+  status: asserted
+
+- from: qm.commutator
+  to: qm.angular_momentum_addition
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.90
+  rationale: Angular momentum algebra is defined by the commutation relations [Ji, Jj] = iεijk Jk; constructing irreducible representations via raising and lowering operators requires fluency with commutators.
+  failure_mode_if_absent: Cannot derive Clebsch-Gordan coefficients or tensor-product decomposition without manipulating the angular momentum commutation relations.
+  evidence:
+    - type: expert_claim
+      source_ref: qm_topology_semiclassical_initial
+      note: Cannot derive Clebsch-Gordan coefficients or tensor-product decomposition without manipulating the angular momentum commutation relations.
+  status: asserted
+
+- from: qm.observable_operator
+  to: qm.identical_particles_symmetrization
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The symmetrization postulate is stated in terms of observables being invariant under particle exchange; the exchange operator is defined as an operator acting on the Hilbert space of two particles.
+  failure_mode_if_absent: Without operator language, one cannot write the exchange operator P₁₂ or show that P₁₂² = 1, which is the basis for classifying states as symmetric or antisymmetric.
+  evidence:
+    - type: expert_claim
+      source_ref: qm_topology_semiclassical_initial
+      note: Without operator language, one cannot write the exchange operator P₁₂ or show that P₁₂² = 1, which is the basis for classifying states as symmetric or antisymmetric.
+  status: asserted
+
+- from: qm.hilbert_space
+  to: qm.landau_levels
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Landau-level quantization is carried out by mapping the 2D charged-particle Hamiltonian to a harmonic-oscillator algebra on a Hilbert space; the result is an infinite-dimensional Hilbert space of degenerate states.
+  failure_mode_if_absent: Cannot label the infinite-dimensional degeneracy or form coherent states for the lowest Landau level without Hilbert-space language.
+  evidence:
+    - type: expert_claim
+      source_ref: qm_topology_semiclassical_initial
+      note: Cannot label the infinite-dimensional degeneracy or form coherent states for the lowest Landau level without Hilbert-space language.
+  status: asserted
+
+# ── Batch nodes → existing QFT downstream nodes ──────────────────────────────
+
+- from: qm.berry_phase
+  to: qft.instanton
+  relation_type: requires_for_use
+  necessity: typical
+  confidence: 0.78
+  rationale: The instanton is a tunneling event whose semiclassical phase involves a topological contribution analogous to a Berry phase; recognizing the geometric (field-independent) nature of the topological phase requires the Berry-phase concept as a bridge.
+  failure_mode_if_absent: Students who lack the Berry phase concept treat the instanton topological phase as an unexplained minus sign; the geometric-phase framework explains why it is quantized and orientation-dependent.
+  evidence:
+    - type: expert_claim
+      source_ref: qm_topology_semiclassical_initial
+      note: Students who lack the Berry phase concept treat the instanton topological phase as an unexplained minus sign; the geometric-phase framework explains why it is quantized and orientation-dependent.
+  status: asserted
+
+- from: qm.berry_connection
+  to: qft.wilson_loop
+  relation_type: requires_for_use
+  necessity: typical
+  confidence: 0.82
+  rationale: The Wilson loop is the holonomy of a non-Abelian gauge connection around a closed path; the Berry connection is its U(1) prototype in QM. Fluency with Berry holonomy makes the gauge-invariant Wilson-loop construction transparent.
+  failure_mode_if_absent: Without the Berry-connection prototype, students conflate the Wilson loop with a path-dependent phase factor and cannot explain why only the holonomy (closed loop) is gauge-invariant.
+  evidence:
+    - type: expert_claim
+      source_ref: qm_topology_semiclassical_initial
+      note: Without the Berry-connection prototype, students conflate the Wilson loop with a path-dependent phase factor and cannot explain why only the holonomy (closed loop) is gauge-invariant.
+  status: asserted
+
+- from: qm.aharonov_bohm_effect
+  to: qft.wilson_loop
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.88
+  rationale: The Aharonov-Bohm phase is the U(1) Wilson loop in QM; understanding Wilson loops as the gauge-invariant observable that captures flux requires this QM prototype.
+  failure_mode_if_absent: The U(1) Wilson loop exp(ie∮A·dx) evaluated along the particle trajectory is exactly the Aharonov-Bohm phase; without this identification, the physical meaning of the Wilson loop in QFT is opaque.
+  evidence:
+    - type: expert_claim
+      source_ref: qm_topology_semiclassical_initial
+      note: The U(1) Wilson loop exp(ie∮A·dx) evaluated along the particle trajectory is exactly the Aharonov-Bohm phase; without this identification, the physical meaning of the Wilson loop in QFT is opaque.
+  status: asserted
+
+- from: qm.aharonov_bohm_effect
+  to: qft.magnetic_flux_quantization
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.88
+  rationale: Magnetic flux quantization in superconductors and in the QFT vortex context is the condition that the Aharonov-Bohm phase be a multiple of 2π; this condition is meaningless without the AB phase concept.
+  failure_mode_if_absent: Cannot derive the quantization condition Φ = nΦ₀ without recognizing that single-valuedness of the wave function around the vortex is equivalent to integer multiples of the AB phase.
+  evidence:
+    - type: expert_claim
+      source_ref: qm_topology_semiclassical_initial
+      note: Cannot derive the quantization condition Φ = nΦ₀ without recognizing that single-valuedness of the wave function around the vortex is equivalent to integer multiples of the AB phase.
+  status: asserted
+
+- from: qm.wkb_approximation
+  to: qft.instanton
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.92
+  rationale: The instanton tunneling amplitude is computed as the WKB saddle-point of the Euclidean path integral; without WKB one cannot derive the exponential suppression factor exp(−S_E/ℏ) or understand why the bounce action determines the rate.
+  failure_mode_if_absent: The instanton rate is e^{−S_cl/ℏ} × (fluctuation determinant); the e^{−S_cl/ℏ} factor is precisely the WKB tunneling amplitude. Without WKB, a student cannot connect the path-integral saddle-point to a tunneling process.
+  evidence:
+    - type: expert_claim
+      source_ref: qm_topology_semiclassical_initial
+      note: The instanton rate is e^{−S_cl/ℏ} × (fluctuation determinant); the e^{−S_cl/ℏ} factor is precisely the WKB tunneling amplitude. Without WKB, a student cannot connect the path-integral saddle-point to a tunneling process.
+  status: asserted
+
+- from: qm.angular_momentum_addition
+  to: qft.spinor_bilinear
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.87
+  rationale: Spinor bilinears are classified by decomposing the tensor product (1/2) ⊗ (1/2) = 0 ⊕ 1 of Lorentz spinor representations; this is directly the Clebsch-Gordan decomposition of angular momentum addition.
+  failure_mode_if_absent: Without angular-momentum-addition rules, one cannot determine which combinations of two spinor indices form a scalar, vector, or tensor under the Lorentz group, making the spinor-bilinear table impossible to derive.
+  evidence:
+    - type: expert_claim
+      source_ref: qm_topology_semiclassical_initial
+      note: Without angular-momentum-addition rules, one cannot determine which combinations of two spinor indices form a scalar, vector, or tensor under the Lorentz group, making the spinor-bilinear table impossible to derive.
+  status: asserted
+
+- from: qm.angular_momentum_addition
+  to: qft.lorentz_group_representation
+  relation_type: requires_for_use
+  necessity: typical
+  confidence: 0.83
+  rationale: The Lorentz algebra decomposes as su(2) ⊕ su(2); mastery of angular-momentum-addition within a single su(2) factor is prerequisite for understanding how representations of the two factors combine into Lorentz representations.
+  failure_mode_if_absent: Cannot classify (j₊, j₋) representations or tensor-product decompositions of Lorentz representations without the su(2) representation-theory toolbox from angular-momentum addition.
+  evidence:
+    - type: expert_claim
+      source_ref: qm_topology_semiclassical_initial
+      note: Cannot classify (j₊, j₋) representations or tensor-product decompositions of Lorentz representations without the su(2) representation-theory toolbox from angular-momentum addition.
+  status: asserted
+
+- from: qm.identical_particles_symmetrization
+  to: qft.spin_statistics
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.90
+  rationale: The spin-statistics theorem states that integer-spin fields must be quantized with commutation relations and half-integer-spin fields with anticommutation relations; this claim is the QFT explanation of the symmetrization postulate, which must be understood first.
+  failure_mode_if_absent: The spin-statistics theorem is logically vacuous to a student who has not seen that bosonic wave functions are symmetric and fermionic wave functions are antisymmetric; the theorem explains why that QM postulate is forced by Lorentz invariance.
+  evidence:
+    - type: expert_claim
+      source_ref: qm_topology_semiclassical_initial
+      note: The spin-statistics theorem is logically vacuous to a student who has not seen that bosonic wave functions are symmetric and fermionic wave functions are antisymmetric; the theorem explains why that QM postulate is forced by Lorentz invariance.
+  status: asserted
+
+- from: qm.identical_particles_symmetrization
+  to: qft.fermionic_path_integral
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The fermionic path integral introduces Grassmann (anticommuting) variables precisely to enforce antisymmetry of fermion states; this design choice is opaque without first knowing that fermion wave functions must be antisymmetric.
+  failure_mode_if_absent: Without the symmetrization postulate, a student cannot understand why the integration variables in the fermionic path integral must anticommute rather than commute.
+  evidence:
+    - type: expert_claim
+      source_ref: qm_topology_semiclassical_initial
+      note: Without the symmetrization postulate, a student cannot understand why the integration variables in the fermionic path integral must anticommute rather than commute.
+  status: asserted
+
+- from: qm.dirac_monopole
+  to: qft.magnetic_monopole
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.93
+  rationale: The 't Hooft-Polyakov monopole is the non-Abelian completion of Dirac's construction; understanding the Dirac quantization condition eg = 2πn and the role of the Dirac string is the essential prerequisite.
+  failure_mode_if_absent: Cannot understand why the 't Hooft-Polyakov monopole is topologically stable or how it avoids the Dirac string without first understanding the Dirac-string construction and its quantization condition.
+  evidence:
+    - type: expert_claim
+      source_ref: qm_topology_semiclassical_initial
+      note: Cannot understand why the 't Hooft-Polyakov monopole is topologically stable or how it avoids the Dirac string without first understanding the Dirac-string construction and its quantization condition.
+  status: asserted
+
+- from: qm.dirac_monopole
+  to: qft.homotopy_group
+  relation_type: requires_for_use
+  necessity: typical
+  confidence: 0.80
+  rationale: The Dirac monopole is the canonical example illustrating that the non-trivial topology of U(1) gauge bundles (π₁(U(1)) = ℤ) implies charge quantization; this example motivates the homotopy group language for topological solitons.
+  failure_mode_if_absent: The Dirac monopole argument is often the first place a physics student meets the idea that a topological charge (winding number) forces quantization; without it, the homotopy group classification of defects loses its motivating example.
+  evidence:
+    - type: expert_claim
+      source_ref: qm_topology_semiclassical_initial
+      note: The Dirac monopole argument is often the first place a physics student meets the idea that a topological charge (winding number) forces quantization; without it, the homotopy group classification of defects loses its motivating example.
+  status: asserted
+
+- from: qm.landau_levels
+  to: qft.chern_simons_term
+  relation_type: requires_for_use
+  necessity: typical
+  confidence: 0.75
+  rationale: The integer quantum Hall effect — whose effective field theory is the Chern-Simons theory — is built directly on Landau-level physics; the relation between filled Landau levels, topological response, and the Hall conductance requires the Landau-level concept as foundation.
+  failure_mode_if_absent: The Chern-Simons effective action for the QHE is derived by integrating out filled Landau levels; this derivation is meaningless without understanding the Landau-level spectrum and its degeneracy.
+  evidence:
+    - type: expert_claim
+      source_ref: qm_topology_semiclassical_initial
+      note: The Chern-Simons effective action for the QHE is derived by integrating out filled Landau levels; this derivation is meaningless without understanding the Landau-level spectrum and its degeneracy.
+  status: asserted
+
+# ── Berry phase → chiral anomaly (Berry phase perspective) ───────────────────
+
+- from: qm.berry_phase
+  to: sm.chiral_anomaly
+  relation_type: requires_for_use
+  necessity: typical
+  confidence: 0.72
+  rationale: The chiral anomaly can be understood as a Berry phase in momentum space (Brillouin zone winding), and the spectral flow argument for the anomaly is a direct analogue of adiabatic level crossing with Berry phase accumulation.
+  failure_mode_if_absent: The Atiyah-Singer index theorem approach to the anomaly, and the spectral-flow argument, both require recognizing a geometric phase contribution; without the Berry phase concept these arguments appear unmotivated.
+  evidence:
+    - type: expert_claim
+      source_ref: qm_topology_semiclassical_initial
+      note: The Atiyah-Singer index theorem approach to the anomaly, and the spectral-flow argument, both require recognizing a geometric phase contribution; without the Berry phase concept these arguments appear unmotivated.
+  status: asserted

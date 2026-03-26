@@ -1,0 +1,53 @@
+# Canonical overlay annotations for the classical_em_foundations batch.
+- overlay_type: assumed_background
+  target_topic: classical_em.poynting_theorem
+  presumed_node: classical_fields.lagrangian_density
+  audience_profile: hep_th_grad
+  subfield: classical_em
+  artifact_type: textbook
+  rationale: QFT-context passages discussing EM energy conservation assume fluency with the field Lagrangian and its stress-tensor outputs as background.
+  evidence:
+    - type: expert_claim
+      source_ref: classical_em_foundations_initial
+      note: Triage records Lagrangian density as covered_existing; EM energy-flux discussions in Jackson assume it as background.
+  status: asserted
+  confidence: 0.84
+- overlay_type: assumed_background
+  target_topic: classical_em.kramers_kronig_relations
+  presumed_node: qft.optical_theorem
+  audience_profile: hep_th_grad
+  subfield: qft
+  artifact_type: paper
+  rationale: HEP-TH papers invoking Kramers-Kronig dispersion in amplitude analysis presume the reader already knows the optical theorem as the quantum counterpart.
+  evidence:
+    - type: expert_claim
+      source_ref: classical_em_foundations_initial
+      note: Triage notes Kramers-Kronig is an optical theorem precursor; advanced usage assumes the QFT optical theorem as background.
+  status: asserted
+  confidence: 0.82
+- overlay_type: assumed_background
+  target_topic: classical_em.thomas_precession
+  presumed_node: relativity.lorentz_transformation
+  audience_profile: hep_th_grad
+  subfield: relativistic_kinematics
+  artifact_type: textbook
+  rationale: Thomas precession derivations assume the reader can compose Lorentz boosts and identify the resulting Wigner rotation without re-deriving Lorentz transformation basics.
+  evidence:
+    - type: expert_claim
+      source_ref: classical_em_foundations_initial
+      note: Triage lists Lorentz transformation as a direct prerequisite for Thomas precession and records it as covered_existing.
+  status: asserted
+  confidence: 0.91
+- overlay_type: assumed_background
+  target_topic: classical_em.maxwell_stress_tensor
+  presumed_node: classical_fields.energy_momentum_tensor
+  audience_profile: hep_th_grad
+  subfield: classical_fields
+  artifact_type: textbook
+  rationale: Discussions of the Maxwell stress tensor in QFT contexts assume awareness of the covariant energy-momentum tensor; the Maxwell tensor is introduced as the spatial block of that object.
+  evidence:
+    - type: expert_claim
+      source_ref: classical_em_foundations_initial
+      note: Triage records the covariant energy-momentum tensor as covered_existing under classical_fields.energy_momentum_tensor.
+  status: asserted
+  confidence: 0.85

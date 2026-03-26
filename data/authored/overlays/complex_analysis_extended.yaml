@@ -1,0 +1,51 @@
+# Overlay annotations for the complex_analysis_extended batch.
+# Overlays encode assumed-background status and audience-specific notes.
+# They are contextual data and must not be traversed as prerequisites.
+
+# For the math_undergrad_strong audience, these complex-analysis nodes are
+# assumed background when engaging with QFT complex-analysis tools.
+
+- overlay_type: assumed_background
+  target_topic: complex_analysis.contour_deformation
+  presumed_node: complex_analysis.cauchy_riemann_equations
+  audience_profile: math_undergrad_strong
+  subfield: complex_analysis
+  rationale: Typically covered in a standard undergraduate complex analysis course; graduate students from mathematics programs usually have this.
+  status: asserted
+  confidence: 0.90
+
+- overlay_type: assumed_background
+  target_topic: complex_analysis.contour_deformation
+  presumed_node: complex_analysis.analytic_function
+  audience_profile: math_undergrad_strong
+  subfield: complex_analysis
+  rationale: Core concept of any undergraduate complex analysis course; assumed for students with a mathematics or mathematical physics background.
+  status: asserted
+  confidence: 0.90
+
+- overlay_type: assumed_background
+  target_topic: complex_analysis.contour_deformation
+  presumed_node: complex_analysis.cauchy_integral_theorem
+  audience_profile: math_undergrad_strong
+  subfield: complex_analysis
+  rationale: Standard result covered in undergraduate complex analysis; assumed for mathematics-trained students.
+  status: asserted
+  confidence: 0.90
+
+- overlay_type: assumed_background
+  target_topic: complex_analysis.contour_deformation
+  presumed_node: complex_analysis.cauchy_integral_formula
+  audience_profile: math_undergrad_strong
+  subfield: complex_analysis
+  rationale: Standard result covered in undergraduate complex analysis; assumed for mathematics-trained students.
+  status: asserted
+  confidence: 0.90
+
+- overlay_type: assumed_background
+  target_topic: complex_analysis.contour_deformation
+  presumed_node: complex_analysis.residue_theorem
+  audience_profile: math_undergrad_strong
+  subfield: complex_analysis
+  rationale: Standard result covered in undergraduate complex analysis; assumed for mathematics-trained students.
+  status: asserted
+  confidence: 0.90

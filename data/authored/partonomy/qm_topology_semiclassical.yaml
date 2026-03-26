@@ -1,0 +1,11 @@
+# Partonomy edges for the qm_topology_semiclassical batch.
+- parent: qm.berry_phase
+  child: qm.berry_connection
+  rationale: Structural part_of relationship.
+  status: asserted
+  confidence: 0.85
+- parent: qm.aharonov_bohm_effect
+  child: qm.dirac_monopole
+  rationale: Structural part_of relationship.
+  status: asserted
+  confidence: 0.85

@@ -1,0 +1,46 @@
+# Partonomy edges for the qft_axiomatic_foundations batch.
+- parent: qft.axiomatic_foundations
+  child: qft.cluster_decomposition_principle
+  rationale: Cluster decomposition is one of the main physical axioms of the foundational layer; it constrains S-matrix factorization and forces locality.
+  status: asserted
+  confidence: 0.94
+- parent: qft.axiomatic_foundations
+  child: qft.connected_amplitude_decomposition
+  rationale: Connected amplitude decomposition is the algebraic implementation of cluster decomposition and belongs to the same foundational topic cluster.
+  status: asserted
+  confidence: 0.91
+- parent: qft.axiomatic_foundations
+  child: qft.wigners_symmetry_representation_theorem
+  rationale: Wigner's symmetry representation theorem is the operator-theoretic foundation for all symmetry discussions and a core part of the axiomatic layer.
+  status: asserted
+  confidence: 0.94
+- parent: qft.axiomatic_foundations
+  child: qft.superselection_rule
+  rationale: Superselection rules are a direct consequence of the projective-representation analysis that follows from Wigner's theorem in the axiomatic setting.
+  status: asserted
+  confidence: 0.9
+- parent: qft.axiomatic_foundations
+  child: qft.haags_theorem
+  rationale: Haag's theorem is a foundational rigorous result about the non-existence of the interaction picture and belongs to the axiomatic core.
+  status: asserted
+  confidence: 0.93
+- parent: qft.axiomatic_foundations
+  child: qft.furry_theorem
+  rationale: Furry's theorem is a foundational symmetry result of QED derived directly from C-invariance; it belongs to the axiomatic foundations layer.
+  status: asserted
+  confidence: 0.9
+- parent: qft.axiomatic_foundations
+  child: qft.coleman_mandula_theorem
+  rationale: Coleman-Mandula is the definitive no-go theorem about S-matrix symmetry groups and is a cornerstone of the axiomatic foundation layer.
+  status: asserted
+  confidence: 0.95
+- parent: qft.cluster_decomposition_principle
+  child: qft.connected_amplitude_decomposition
+  rationale: Connected amplitude decomposition is the sub-method that operationalizes cluster decomposition; it is a component of the principle's implementation.
+  status: asserted
+  confidence: 0.91
+- parent: qft.wigners_symmetry_representation_theorem
+  child: qft.superselection_rule
+  rationale: Superselection rules are a direct sub-consequence of the projective-representation analysis in Wigner's theorem.
+  status: asserted
+  confidence: 0.89
