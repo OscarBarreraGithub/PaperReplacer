@@ -1,0 +1,27 @@
+# Canonical overlay annotations for the spectral-and-mass-shell refinement batch.
+- overlay_type: assumed_background
+  target_topic: qft.spectral_and_mass_shell_refinement
+  presumed_node: qft.correlators_propagators_lsz
+  audience_profile: hep_th_grad
+  subfield: qft_backbone
+  artifact_type: paper
+  rationale: Sources that use spectral or shell-language refinements usually presume the reader already has the core correlator/propagator/LSZ trunk in hand.
+  evidence:
+    - type: expert_claim
+      source_ref: spectral_and_mass_shell_refinement_batch_initial
+      note: Source notes keep the earlier correlator batch as assumed background rather than rebuilding it here.
+  status: asserted
+  confidence: 0.92
+- overlay_type: assumed_background
+  target_topic: qft.spectral_and_mass_shell_refinement
+  presumed_node: qft.feynman_propagator
+  audience_profile: hep_th_grad
+  subfield: qft_backbone
+  artifact_type: paper
+  rationale: The spectral and advanced-propagator refinements are usually introduced against the background of the standard Feynman propagator.
+  evidence:
+    - type: expert_claim
+      source_ref: spectral_and_mass_shell_refinement_batch_initial
+      note: Source notes keep the Feynman propagator as assumed background for the whole refinement slice.
+  status: asserted
+  confidence: 0.9

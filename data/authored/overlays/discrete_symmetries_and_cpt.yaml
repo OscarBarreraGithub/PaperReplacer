@@ -1,0 +1,27 @@
+# Canonical overlay annotations for the discrete-symmetries and CPT batch.
+- overlay_type: assumed_background
+  target_topic: qft.discrete_symmetries_and_cpt
+  presumed_node: qft.spinor_lorentz_dirac_foundations
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  artifact_type: paper
+  rationale: Paper-facing discrete-symmetry passages usually assume the spinor/Dirac neighborhood before introducing P, C, T, or CPT.
+  evidence:
+    - type: expert_claim
+      source_ref: discrete_symmetries_and_cpt_batch_initial
+      note: Batch notes explicitly position this slice after the spinor/Dirac foundations batch.
+  status: asserted
+  confidence: 0.91
+- overlay_type: assumed_background
+  target_topic: qft.discrete_symmetries_and_cpt
+  presumed_node: qft.dirac_spinor
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  artifact_type: paper
+  rationale: The P/C/T and CPT formulas are usually written on Dirac spinors in this chapter family.
+  evidence:
+    - type: expert_claim
+      source_ref: discrete_symmetries_and_cpt_batch_initial
+      note: Batch notes keep Dirac spinors in the immediate reuse set.
+  status: asserted
+  confidence: 0.9

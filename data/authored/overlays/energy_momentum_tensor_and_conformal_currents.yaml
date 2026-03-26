@@ -1,0 +1,27 @@
+# Canonical overlay annotations for the energy-momentum-tensor and conformal-currents batch.
+- overlay_type: assumed_background
+  target_topic: qft.energy_momentum_tensor_and_conformal_currents
+  presumed_node: classical_fields.noether_theorem
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  artifact_type: paper
+  rationale: Readings that use stress-tensor or conformal-current formulas usually assume the Noether-theorem background rather than rederiving the symmetry-current connection.
+  evidence:
+    - type: expert_claim
+      source_ref: energy_momentum_tensor_and_conformal_currents_batch_initial
+      note: Source notes keep Noether theorem as assumed background for the batch anchor.
+  status: asserted
+  confidence: 0.9
+- overlay_type: assumed_background
+  target_topic: qft.energy_momentum_tensor_and_conformal_currents
+  presumed_node: qft.scale_invariance
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  artifact_type: paper
+  rationale: Papers that introduce dilatation or conformal currents usually presume the reader already knows the corresponding scale-symmetry vocabulary.
+  evidence:
+    - type: expert_claim
+      source_ref: energy_momentum_tensor_and_conformal_currents_batch_initial
+      note: Source notes keep scale invariance as the main presumed symmetry background for the current branch.
+  status: asserted
+  confidence: 0.85

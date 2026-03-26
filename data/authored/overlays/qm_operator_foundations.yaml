@@ -1,0 +1,40 @@
+# Canonical overlay annotations for the first-pass QM operator-foundations batch.
+- overlay_type: assumed_background
+  target_topic: qm.operator_foundations.qm_operator_foundations
+  presumed_node: math.linear_algebra.vector_space
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  artifact_type: paper
+  rationale: Paper-facing QM operator discussions usually presume vector-space language before introducing states and operators.
+  evidence:
+    - type: expert_claim
+      source_ref: qm_operator_foundations_source_notes
+      note: Source notes explicitly reuse the Stage 1 vector-space baseline.
+  status: asserted
+  confidence: 0.9
+- overlay_type: assumed_background
+  target_topic: qm.operator_foundations.qm_operator_foundations
+  presumed_node: math.operator_basics.linear_operator
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  artifact_type: paper
+  rationale: QM operator language usually assumes the linear-operator concept before specializing it to observables, projectors, and time evolution.
+  evidence:
+    - type: expert_claim
+      source_ref: qm_operator_foundations_source_notes
+      note: Source notes explicitly ask the batch to reuse the Stage 1 operator baseline.
+  status: asserted
+  confidence: 0.89
+- overlay_type: assumed_background
+  target_topic: qm.operator_foundations.qm_operator_foundations
+  presumed_node: math.linear_algebra.basis_and_coordinates
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  artifact_type: paper
+  rationale: Bra-ket notation and state expansions are usually read with basis-dependent coordinate awareness already in place.
+  evidence:
+    - type: expert_claim
+      source_ref: qm_operator_foundations_source_notes
+      note: Source notes keep basis-sensitive reading in the reuse path from the Stage 1 slice.
+  status: asserted
+  confidence: 0.86

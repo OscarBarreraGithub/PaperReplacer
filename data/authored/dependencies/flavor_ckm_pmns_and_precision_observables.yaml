@@ -1,0 +1,166 @@
+# Canonical dependency edges for the flavor-ckm-pmns-and-precision-observables batch.
+- from: sm.ewbreak.fermion_mass_generation
+  to: sm.flavor_mixing
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: standard_model_flavor
+  task_type: literature_reading
+  rationale: Flavor mixing is read as the mismatch that remains after fermion mass matrices are generated and diagonalized.
+  failure_mode_if_absent: Cannot tell why a mixing matrix appears at all in the Standard Model fermion sector.
+  evidence:
+    - type: expert_claim
+      source_ref: flavor_ckm_pmns_and_precision_observables_batch_initial
+      note: Batch notes place flavor mixing directly downstream of the existing mass-generation branch.
+  status: asserted
+  confidence: 0.95
+- from: sm.flavor_mixing
+  to: sm.ckm_matrix
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: standard_model_flavor
+  task_type: literature_reading
+  rationale: The CKM matrix is the quark-sector realization of the generic flavor-mixing structure.
+  failure_mode_if_absent: Cannot place the quark mixing matrix inside the broader flavor-mixing story.
+  evidence:
+    - type: expert_claim
+      source_ref: flavor_ckm_pmns_and_precision_observables_batch_initial
+      note: Batch notes make the CKM matrix one of the two direct children of flavor mixing.
+  status: asserted
+  confidence: 0.96
+- from: sm.flavor_mixing
+  to: sm.pmns_matrix
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: standard_model_flavor
+  task_type: literature_reading
+  rationale: The PMNS matrix is the lepton-sector realization of the generic flavor-mixing structure.
+  failure_mode_if_absent: Cannot place the neutrino-sector mixing matrix inside the broader flavor-mixing story.
+  evidence:
+    - type: expert_claim
+      source_ref: flavor_ckm_pmns_and_precision_observables_batch_initial
+      note: Batch notes mirror the CKM and PMNS branches under the same flavor-mixing node.
+  status: asserted
+  confidence: 0.96
+- from: sm.ckm_matrix
+  to: sm.wolfenstein_parametrization
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: standard_model_flavor
+  task_type: literature_reading
+  rationale: Wolfenstein language is a structured parametrization of the CKM matrix rather than a separate mixing object.
+  failure_mode_if_absent: Cannot interpret the hierarchical flavor parameters as a way of writing the CKM matrix.
+  evidence:
+    - type: expert_claim
+      source_ref: flavor_ckm_pmns_and_precision_observables_batch_initial
+      note: Batch notes keep Wolfenstein as the first representation-level child beneath CKM.
+  status: asserted
+  confidence: 0.95
+- from: sm.ckm_matrix
+  to: sm.ckm_unitarity_triangle
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: standard_model_flavor
+  task_type: literature_reading
+  rationale: The unitarity triangle is read directly from one of the CKM unitarity relations.
+  failure_mode_if_absent: Cannot tell what matrix relation is being turned into the geometric triangle language.
+  evidence:
+    - type: expert_claim
+      source_ref: flavor_ckm_pmns_and_precision_observables_batch_initial
+      note: Batch notes keep the triangle as the standard CKM-constraint branch.
+  status: asserted
+  confidence: 0.95
+- from: sm.flavor_mixing
+  to: sm.jarlskog_invariant
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: standard_model_flavor
+  task_type: literature_reading
+  rationale: The Jarlskog invariant is a basis-invariant way of reading CP violation from the flavor-mixing structure.
+  failure_mode_if_absent: Cannot tell what mixing data the invariant is measuring or why it belongs in the flavor branch.
+  evidence:
+    - type: expert_claim
+      source_ref: flavor_ckm_pmns_and_precision_observables_batch_initial
+      note: Batch notes treat the invariant as a flavor-level CP-violation node rather than as a detached historical formula.
+  status: asserted
+  confidence: 0.93
+- from: sm.neutrino_mass
+  to: sm.pmns_matrix
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: standard_model_flavor
+  task_type: literature_reading
+  rationale: The PMNS matrix matters because neutrino flavor states are not aligned with nondegenerate neutrino mass states.
+  failure_mode_if_absent: Cannot see why a nontrivial lepton mixing matrix is physically consequential.
+  evidence:
+    - type: expert_claim
+      source_ref: flavor_ckm_pmns_and_precision_observables_batch_initial
+      note: Batch notes keep neutrino mass as the minimum physical input to the PMNS branch.
+  status: asserted
+  confidence: 0.93
+- from: sm.pmns_matrix
+  to: sm.neutrino_oscillation
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: standard_model_flavor
+  task_type: literature_reading
+  rationale: Neutrino oscillation is the canonical flavor-changing phenomenon produced by PMNS mixing during propagation.
+  failure_mode_if_absent: Cannot tell what mixing matrix is governing the flavor-transition probabilities.
+  evidence:
+    - type: expert_claim
+      source_ref: flavor_ckm_pmns_and_precision_observables_batch_initial
+      note: Batch notes keep neutrino oscillation as the main downstream child of the PMNS branch.
+  status: asserted
+  confidence: 0.96
+- from: sm.neutrino_mass
+  to: sm.neutrino_oscillation
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: standard_model_flavor
+  task_type: literature_reading
+  rationale: Oscillation requires nondegenerate neutrino masses, so the mass branch has to be visible before the propagation effect is read correctly.
+  failure_mode_if_absent: Cannot tell why a pure flavor rotation would produce a measurable propagation effect.
+  evidence:
+    - type: expert_claim
+      source_ref: flavor_ckm_pmns_and_precision_observables_batch_initial
+      note: Batch notes keep neutrino mass and oscillation in the same minimal PMNS-facing neighborhood.
+  status: asserted
+  confidence: 0.95
+- from: sm.ewbreak.electroweak_mixing_angle
+  to: sm.precision.effective_weak_mixing_angle
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: standard_model_flavor
+  task_type: literature_reading
+  rationale: The effective weak mixing angle is the precision-extracted version of the underlying electroweak mixing parameter.
+  failure_mode_if_absent: Cannot interpret the precision quantity as a radiatively corrected or extracted weak-mixing-angle object.
+  evidence:
+    - type: expert_claim
+      source_ref: flavor_ckm_pmns_and_precision_observables_batch_initial
+      note: Batch notes reuse the existing weak-mixing-angle bridge into the precision branch.
+  status: asserted
+  confidence: 0.92
+- from: sm.precision.effective_weak_mixing_angle
+  to: sm.precision.electroweak_precision_observable
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: standard_model_flavor
+  task_type: literature_reading
+  rationale: The effective weak mixing angle is a canonical electroweak precision observable.
+  failure_mode_if_absent: Cannot interpret the weak-mixing-angle result as a precision observable instead of just a parameter name.
+  evidence:
+    - type: expert_claim
+      source_ref: anomalies_and_precision_sm_batch_initial
+      note: Batch notes call out the effective weak mixing angle as a key precision quantity.
+  status: asserted
+  confidence: 0.93

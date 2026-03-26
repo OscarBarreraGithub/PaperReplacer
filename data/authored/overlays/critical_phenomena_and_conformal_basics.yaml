@@ -1,0 +1,27 @@
+# Canonical overlay annotations for the critical-phenomena and conformal-basics batch.
+- overlay_type: assumed_background
+  target_topic: qft.critical_phenomena_and_conformal_basics
+  presumed_node: qft.wilsonian_renormalization_group
+  audience_profile: hep_th_grad
+  subfield: qft_rg
+  artifact_type: paper
+  rationale: Readings that mention universality classes, fixed points, or scale invariance usually presume the Wilsonian-RG flow picture rather than rederiving it.
+  evidence:
+    - type: expert_claim
+      source_ref: critical_phenomena_and_conformal_basics_batch_initial
+      note: Source notes keep Wilsonian RG as assumed background for the batch anchor.
+  status: asserted
+  confidence: 0.89
+- overlay_type: assumed_background
+  target_topic: qft.critical_phenomena_and_conformal_basics
+  presumed_node: qft.anomalous_dimension
+  audience_profile: hep_th_grad
+  subfield: qft_rg
+  artifact_type: paper
+  rationale: Critical-phenomena discussions that cite exponent relations or scaling dimensions often presume anomalous-dimension language is already familiar.
+  evidence:
+    - type: expert_claim
+      source_ref: critical_phenomena_and_conformal_basics_batch_initial
+      note: Source notes keep anomalous dimensions as assumed scaling-data background for the batch.
+  status: asserted
+  confidence: 0.86

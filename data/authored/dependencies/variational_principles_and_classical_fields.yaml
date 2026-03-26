@@ -1,0 +1,136 @@
+# Canonical dependency edges for the Stage 2 variational-principles/classical-fields batch.
+- from: relativity.spacetime_coordinates
+  to: classical_fields.field_configuration
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: Classical fields are read as spacetime-dependent objects, so the coordinate vocabulary has to be in place before field notation makes sense.
+  failure_mode_if_absent: Cannot tell what kind of points the field values are assigned to when a source discusses a field configuration.
+  evidence:
+    - type: expert_claim
+      source_ref: variational_principles_and_classical_fields_batch_initial
+      note: Stage 2 first-pass source notes identify spacetime coordinates and field configurations as core reading vocabulary.
+  status: asserted
+  confidence: 0.91
+- from: classical_fields.field_configuration
+  to: classical_fields.lagrangian_density
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: Lagrangian densities are usually written as local expressions in the fields and their derivatives, so the field configuration concept has to be recognized first.
+  failure_mode_if_absent: Cannot parse which symbols inside the density are fields and which are fixed background quantities.
+  evidence:
+    - type: expert_claim
+      source_ref: variational_principles_and_classical_fields_batch_initial
+      note: Batch notes list field configurations and Lagrangian density as the local action-building pair.
+  status: asserted
+  confidence: 0.9
+- from: classical_fields.lagrangian_density
+  to: classical_fields.action_functional
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: The action functional is the spacetime integral of the Lagrangian density, so the density has to be available before the action can be used.
+  failure_mode_if_absent: Cannot see how the local density becomes the global quantity that is varied.
+  evidence:
+    - type: expert_claim
+      source_ref: variational_principles_and_classical_fields_batch_initial
+      note: Batch notes emphasize the action-building pipeline as a core use-level relation.
+  status: asserted
+  confidence: 0.96
+- from: classical_fields.action_functional
+  to: classical_fields.stationary_action_principle
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: Stationary-action statements are always about a specific action functional, so the object being extremized has to be recognized first.
+  failure_mode_if_absent: Cannot tell what quantity the source says is stationary.
+  evidence:
+    - type: expert_claim
+      source_ref: variational_principles_and_classical_fields_batch_initial
+      note: Batch notes place the action functional immediately upstream of the variational principle.
+  status: asserted
+  confidence: 0.95
+- from: classical_fields.action_functional
+  to: classical_fields.boundary_terms_in_variation
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: When the action is varied, boundary terms appear after integration by parts and have to be controlled before the standard field equation is read off.
+  failure_mode_if_absent: Cannot follow why the derivation drops surface contributions or what assumptions make them vanish.
+  evidence:
+    - type: expert_claim
+      source_ref: variational_principles_and_classical_fields_batch_initial
+      note: The source notes flag boundary terms as a real technical feature of the variation step.
+  status: asserted
+  confidence: 0.93
+- from: classical_fields.boundary_terms_in_variation
+  to: classical_fields.euler_lagrange_field_equation
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: The Euler-Lagrange field equation is extracted only after the boundary terms are handled, so they sit on the direct use path.
+  failure_mode_if_absent: Cannot see how the bulk field equation is isolated from the variation.
+  evidence:
+    - type: expert_claim
+      source_ref: variational_principles_and_classical_fields_batch_initial
+      note: Batch notes describe the boundary-term logic as part of the standard action-to-equations pipeline.
+  status: asserted
+  confidence: 0.91
+- from: classical_fields.stationary_action_principle
+  to: classical_fields.euler_lagrange_field_equation
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: In standard field theory reading, the Euler-Lagrange equation is the use-level consequence of stationary variation.
+  failure_mode_if_absent: Cannot move from the variational principle to the differential equation that the source is stating.
+  evidence:
+    - type: expert_claim
+      source_ref: variational_principles_and_classical_fields_batch_initial
+      note: Batch notes treat the stationary-action principle and Euler-Lagrange equation as the central paired relation.
+  status: asserted
+  confidence: 0.96
+- from: classical_fields.action_functional
+  to: classical_fields.continuous_symmetry_of_action
+  relation_type: requires_for_recognize
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: Symmetry statements in this neighborhood are usually phrased as properties of the action, so the action functional provides the context needed to recognize them.
+  failure_mode_if_absent: Cannot tell what object is being transformed when the source says the action has a continuous symmetry.
+  evidence:
+    - type: expert_claim
+      source_ref: variational_principles_and_classical_fields_batch_initial
+      note: Batch notes mark continuous symmetry as an adjacent branch of the variational setup.
+  status: asserted
+  confidence: 0.84
+- from: classical_fields.continuous_symmetry_of_action
+  to: classical_fields.noether_theorem
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: Noether theorem uses the symmetry of the action to produce conserved currents or charges, so the symmetry concept must already be in play.
+  failure_mode_if_absent: Cannot follow what symmetry the theorem is turning into a conservation statement.
+  evidence:
+    - type: expert_claim
+      source_ref: variational_principles_and_classical_fields_batch_initial
+      note: Batch notes keep Noether theorem as a direct consequence of action symmetry.
+  status: asserted
+  confidence: 0.95

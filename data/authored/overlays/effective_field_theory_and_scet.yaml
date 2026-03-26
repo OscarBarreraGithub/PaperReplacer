@@ -1,0 +1,14 @@
+# Canonical overlay annotations for the EFT and SCET batch.
+- overlay_type: assumed_background
+  target_topic: eft.effective_field_theory_and_scet
+  presumed_node: classical_fields.action_functional
+  audience_profile: hep_th_grad
+  subfield: effective_field_theory
+  artifact_type: paper
+  rationale: EFT and SCET passages usually assume action-based field-theory language before introducing the operator expansion or matching steps.
+  evidence:
+    - type: expert_claim
+      source_ref: effective_field_theory_and_scet_batch_initial
+      note: Batch notes keep the action-functional background as the reusable field-theory anchor.
+  status: asserted
+  confidence: 0.86

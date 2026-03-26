@@ -1,0 +1,27 @@
+# Canonical overlay annotations for the Mandelstam/crossing refinement batch.
+- overlay_type: assumed_background
+  target_topic: qft.mandelstam_variables_and_crossing_refinement
+  presumed_node: qft.mandelstam_variables
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  artifact_type: paper
+  rationale: Crossing discussions normally presume the reader already knows the basic Mandelstam-variable vocabulary.
+  evidence:
+    - type: expert_claim
+      source_ref: mandelstam_variables_and_crossing_refinement_batch_initial
+      note: Source notes keep the existing Mandelstam node as assumed background for the refinement anchor.
+  status: asserted
+  confidence: 0.9
+- overlay_type: assumed_background
+  target_topic: qft.mandelstam_variables_and_crossing_refinement
+  presumed_node: qft.scattering_amplitude
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  artifact_type: paper
+  rationale: Sources that invoke crossing symmetry typically assume the amplitude language is already live.
+  evidence:
+    - type: expert_claim
+      source_ref: mandelstam_variables_and_crossing_refinement_batch_initial
+      note: Source notes keep the amplitude node as presumed background for the crossing branch.
+  status: asserted
+  confidence: 0.87

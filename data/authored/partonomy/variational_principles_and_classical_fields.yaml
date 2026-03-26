@@ -1,0 +1,36 @@
+# Canonical partonomy edges for the Stage 2 variational-principles/classical-fields batch.
+- parent: classical_fields.variational_principles_and_classical_fields
+  child: classical_fields.field_configuration
+  rationale: Field configurations are the basic objects varied in the classical-field setup.
+  status: asserted
+  confidence: 0.93
+- parent: classical_fields.variational_principles_and_classical_fields
+  child: classical_fields.lagrangian_density
+  rationale: The Lagrangian density is the local ingredient from which the action is built.
+  status: asserted
+  confidence: 0.93
+- parent: classical_fields.variational_principles_and_classical_fields
+  child: classical_fields.action_functional
+  rationale: The action functional is the central quantity organized by the variational principle.
+  status: asserted
+  confidence: 0.95
+- parent: classical_fields.variational_principles_and_classical_fields
+  child: classical_fields.stationary_action_principle
+  rationale: Stationary variation is the naming core of the topic and should sit directly under the root anchor.
+  status: asserted
+  confidence: 0.95
+- parent: classical_fields.variational_principles_and_classical_fields
+  child: classical_fields.euler_lagrange_field_equation
+  rationale: The Euler-Lagrange field equation is the standard result users look for in this topic neighborhood.
+  status: asserted
+  confidence: 0.94
+- parent: classical_fields.variational_principles_and_classical_fields
+  child: classical_fields.continuous_symmetry_of_action
+  rationale: Action symmetries are a direct companion branch to the variational setup in classical field theory.
+  status: asserted
+  confidence: 0.88
+- parent: classical_fields.variational_principles_and_classical_fields
+  child: classical_fields.noether_theorem
+  rationale: Noether theorem is the standard conservation-law consequence of the action-symmetry branch.
+  status: asserted
+  confidence: 0.9

@@ -1,0 +1,14 @@
+# Canonical overlay annotations for the Standard-Model symmetry-breaking batch.
+- overlay_type: assumed_background
+  target_topic: sm.symmetry_breaking_and_standard_model
+  presumed_node: classical_fields.lagrangian_density
+  audience_profile: hep_th_grad
+  subfield: standard_model
+  artifact_type: paper
+  rationale: Standard-Model symmetry-breaking passages usually assume the Lagrangian-density reading before introducing the Higgs sector.
+  evidence:
+    - type: expert_claim
+      source_ref: symmetry_breaking_and_standard_model_batch_initial
+      note: Batch notes keep the classical-field Lagrangian as the main reusable background node.
+  status: asserted
+  confidence: 0.88

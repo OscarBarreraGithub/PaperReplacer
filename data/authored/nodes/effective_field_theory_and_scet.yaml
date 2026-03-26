@@ -1,0 +1,191 @@
+# Canonical node records for the EFT and SCET batch.
+- id: eft.effective_field_theory_and_scet
+  label: Effective field theory and SCET
+  knowledge_kind: concept
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Topic anchor for scale-separated EFT reasoning, HQET, and SCET-style mode and factorization language.
+  status: asserted
+- id: classical_fields.action_functional
+  label: Action functional
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Functional of a field configuration obtained by integrating the Lagrangian density over spacetime.
+  status: asserted
+- id: eft.scale_separation
+  label: Scale separation
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Separation of a problem into distinct physical scales so that only the relevant low-energy degrees of freedom remain explicit.
+  status: asserted
+- id: eft.effective_field_theory
+  label: Effective field theory
+  knowledge_kind: concept
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Scale-separated low-energy description organized by operators, matching, and power counting.
+  status: asserted
+- id: eft.operator_expansion
+  label: Operator expansion
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Expansion of an effective theory in local operators ordered by relevance at the chosen scale.
+  status: asserted
+- id: eft.higher_dimensional_operator
+  label: Higher-dimensional operator
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Operator beyond the lowest-dimension terms, typically suppressed by powers of the heavy scale.
+  status: asserted
+- id: eft.power_counting
+  label: Power counting
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Rule for organizing EFT operators and contributions by their scaling with the small expansion parameter.
+  status: asserted
+- id: eft.matching
+  label: Matching
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Procedure for fixing EFT coefficients so the low-energy theory reproduces the UV theory at the matching scale.
+  status: asserted
+- id: eft.renormalization_group_running
+  label: Renormalization-group running
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Scale evolution of EFT parameters and operators between matching and measurement scales.
+  status: asserted
+- id: eft.large_logarithm_resummation
+  label: Large-logarithm resummation
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Reorganization of perturbation theory to control logarithms that grow large when widely separated scales are present.
+  status: asserted
+- id: eft.heavy_quark_effective_theory
+  label: Heavy-quark effective theory
+  knowledge_kind: concept
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: EFT specialization for hadrons or fields containing a heavy quark whose mass sets a large reference scale.
+  status: asserted
+- id: eft.heavy_quark_symmetry
+  label: Heavy-quark symmetry
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Approximate spin-flavor symmetry that emerges in the heavy-quark limit.
+  status: asserted
+- id: eft.soft_collinear_effective_theory
+  label: Soft-collinear effective theory
+  knowledge_kind: concept
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: EFT specialization that separates soft and collinear modes for energetic processes with large hierarchies of scales.
+  status: asserted
+- id: eft.mode_scaling
+  label: Mode scaling
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Scaling assignment that distinguishes the soft, collinear, and hard modes used in SCET reasoning.
+  status: asserted
+- id: eft.collinear_mode
+  label: Collinear mode
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Degree of freedom moving nearly along a lightlike direction with characteristic small transverse momentum.
+  status: asserted
+- id: eft.soft_mode
+  label: Soft mode
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Low-momentum degree of freedom in SCET that interacts with collinear sectors.
+  status: asserted
+- id: eft.hard_function
+  label: Hard function
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Short-distance coefficient or function that encodes the hard interaction after matching.
+  status: asserted
+- id: eft.jet_function
+  label: Jet function
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Collinear-sector object that captures the evolution or structure of a narrow energetic jet.
+  status: asserted
+- id: eft.soft_function
+  label: Soft function
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Soft-sector object that captures low-momentum radiation and its correlations in SCET factorization.
+  status: asserted

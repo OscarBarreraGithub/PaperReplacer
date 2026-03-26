@@ -1,0 +1,31 @@
+# Canonical partonomy edges for the chiral-symmetry and sigma-models batch.
+- parent: sm.chiral_symmetry_and_sigma_models
+  child: sm.ssb.chiral_symmetry_breaking
+  rationale: Chiral symmetry breaking is the main symmetry-breaking branch of the batch.
+  status: asserted
+  confidence: 0.96
+- parent: sm.chiral_symmetry_and_sigma_models
+  child: sm.linear_sigma_model
+  rationale: The linear sigma model is the first model realization branch retained in this pass.
+  status: asserted
+  confidence: 0.92
+- parent: sm.chiral_symmetry_and_sigma_models
+  child: sm.nonlinear_sigma_model
+  rationale: The nonlinear sigma model is the low-energy effective-model branch of the batch.
+  status: asserted
+  confidence: 0.95
+- parent: sm.chiral_symmetry_and_sigma_models
+  child: sm.chiral_lagrangian
+  rationale: The chiral Lagrangian is the effective-theory payoff of the chiral-breaking and sigma-model branch.
+  status: asserted
+  confidence: 0.96
+- parent: sm.nonlinear_sigma_model
+  child: sm.ccwz_method
+  rationale: CCWZ is the construction method attached to the nonlinear sigma-model branch.
+  status: asserted
+  confidence: 0.95
+- parent: sm.chiral_symmetry_and_sigma_models
+  child: sm.custodial_symmetry
+  rationale: Custodial symmetry is the electroweak-facing symmetry branch retained in this pass.
+  status: asserted
+  confidence: 0.9

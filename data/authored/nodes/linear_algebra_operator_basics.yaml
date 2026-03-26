@@ -1,0 +1,111 @@
+# Hand-authored node records for the first-wave linear-algebra/operator-basics batch.
+- id: math.operator_basics.linear_algebra_operator_basics
+  label: Linear algebra and operator basics
+  knowledge_kind: concept
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Small topic anchor for the shared vector-space and operator vocabulary reused in introductory QM and QFT reading.
+  status: asserted
+- id: math.linear_algebra.vector_space
+  label: Vector space
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Set with vector addition and scalar multiplication satisfying the standard vector-space axioms.
+  status: asserted
+- id: math.linear_algebra.subspace
+  label: Subspace
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Subset of a vector space that is itself a vector space under the inherited operations.
+  status: asserted
+- id: math.linear_algebra.span
+  label: Span
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Set of all linear combinations of a chosen collection of vectors, or equivalently the subspace they generate.
+  status: asserted
+- id: math.linear_algebra.basis_and_coordinates
+  label: Basis and coordinates
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Choice of spanning vectors that lets vectors be described by coordinate components relative to that basis.
+  status: asserted
+- id: math.linear_algebra.linear_map
+  label: Linear map
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Map between vector spaces that preserves addition and scalar multiplication.
+  status: asserted
+- id: math.operator_basics.linear_operator
+  label: Linear operator
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Linear map from a vector space to itself, using the standard operator vocabulary.
+  status: asserted
+- id: math.operator_basics.matrix_representation_of_linear_map
+  label: Matrix representation of a linear map
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Encoding of a linear map by a matrix once bases are chosen for the domain and codomain.
+  status: asserted
+- id: math.operator_basics.kernel_and_image
+  label: Kernel and image
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Null space and range vocabulary for a linear map, describing vectors sent to zero and vectors that are reached.
+  status: asserted
+- id: math.operator_basics.composition_identity_inverse
+  label: Composition, identity, and inverse maps
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Basic operator language for composing linear maps, using the identity map, and recognizing invertibility when a two-sided inverse exists.
+  status: asserted
+- id: math.operator_basics.eigenvalues_and_eigenvectors
+  label: Eigenvalues and eigenvectors
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Scalar-vector pair vocabulary for vectors that a linear operator sends to a scalar multiple of themselves.
+  status: asserted

@@ -1,0 +1,111 @@
+# Canonical node records for the Lorentz/Poincare representations batch.
+- id: qft.lorentz_poincare_representations
+  label: Lorentz and Poincare representations
+  knowledge_kind: concept
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Topic anchor for the representation-theoretic vocabulary that connects Lorentz symmetry, Poincare symmetry, and particle-state labels.
+  status: asserted
+- id: relativity.lorentz_transformation
+  label: Lorentz transformation
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: The frame-change relation that connects coordinate descriptions of the same events between inertial observers.
+  status: asserted
+- id: relativity.invariant_interval
+  label: Invariant interval
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: The Lorentz-invariant quadratic combination of coordinate differences between events.
+  status: asserted
+- id: relativity.rapidity
+  label: Rapidity
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: A boost parameter that linearizes the composition of collinear velocities.
+  status: asserted
+- id: qft.lorentz_group_representation
+  label: Lorentz group representation
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Representation of Lorentz transformations on states or fields, usually the linear part of the spacetime-symmetry action.
+  status: asserted
+- id: qft.poincare_group_representation
+  label: Poincare group representation
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Representation of spacetime translations together with Lorentz transformations on a state space, used to classify particles.
+  status: asserted
+- id: qft.one_particle_state
+  label: One-particle state
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Single-particle state space object that carries the unitary Poincare representation in the Wigner classification story.
+  status: asserted
+- id: qft.mass_shell
+  label: Mass shell
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Lorentz-invariant momentum-space locus used to organize one-particle states by mass.
+  status: asserted
+- id: qft.little_group
+  label: Little group
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Subgroup of the Lorentz group that leaves a chosen standard momentum fixed, and whose representations supply spin or helicity labels.
+  status: asserted
+- id: qft.spin_label
+  label: Spin label
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Internal particle label, including spin or helicity, that is read from the relevant little-group representation.
+  status: asserted
+- id: qft.wigner_classification
+  label: Wigner classification
+  knowledge_kind: formal_statement
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Classification of one-particle Poincare irreps by mass and little-group data, the standard particle-label reading used in QFT.
+  status: asserted

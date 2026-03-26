@@ -1,0 +1,211 @@
+# Canonical dependency edges for the gauge-invariance and Ward/BRST batch.
+- from: qft.yang_mills_action
+  to: qft.gauge_invariance
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: Gauge invariance is usually read as a property of the Yang-Mills action before gauge fixing is introduced.
+  failure_mode_if_absent: Cannot tell what object is being claimed invariant under the local gauge transformations.
+  evidence:
+    - type: expert_claim
+      source_ref: gauge_invariance_and_ward_brst_batch_initial
+      note: Batch notes position the gauge-invariance branch directly on the Yang-Mills action vocabulary.
+  status: asserted
+  confidence: 0.95
+- from: qft.non_abelian_gauge_symmetry
+  to: qft.gauge_invariance
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: The gauge-invariance notion in this batch is the local-symmetry property of the non-Abelian gauge theory, so the symmetry vocabulary has to be available for use.
+  failure_mode_if_absent: Cannot apply the invariance statement to the gauge-field transformation rules.
+  evidence:
+    - type: expert_claim
+      source_ref: gauge_invariance_and_ward_brst_batch_initial
+      note: Batch notes explicitly reuse the non-Abelian gauge-theory background.
+  status: asserted
+  confidence: 0.94
+- from: qft.gauge_invariance
+  to: qft.ward_takahashi_identity
+  relation_type: requires_for_derive
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: Ward-Takahashi identities are the functional constraints produced by gauge symmetry.
+  failure_mode_if_absent: Cannot see why correlators satisfy the standard symmetry relation.
+  evidence:
+    - type: expert_claim
+      source_ref: gauge_invariance_and_ward_brst_batch_initial
+      note: Batch notes keep Ward-Takahashi identities on the direct gauge-invariance branch.
+  status: asserted
+  confidence: 0.96
+- from: qft.path_integral_and_generating_functionals
+  to: qft.ward_takahashi_identity
+  relation_type: requires_for_derive
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: In the source-dependent functional formalism, Ward identities are derived by symmetry or shift arguments on the generating functional.
+  failure_mode_if_absent: Cannot track the functional step that produces the correlator identity.
+  evidence:
+    - type: expert_claim
+      source_ref: path_integral_and_generating_functionals_batch_initial
+      note: This is a reused canonical edge from the path-integral batch.
+  status: asserted
+  confidence: 0.94
+- from: qft.gauge_invariance
+  to: qft.gauge_fixing
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: Gauge fixing is only needed once the redundant gauge invariance has been recognized.
+  failure_mode_if_absent: Cannot tell why one is introducing a gauge condition rather than a new dynamical equation.
+  evidence:
+    - type: expert_claim
+      source_ref: gauge_invariance_and_ward_brst_batch_initial
+      note: Batch notes put gauge fixing immediately downstream of the gauge-invariance branch.
+  status: asserted
+  confidence: 0.95
+- from: qft.gauge_fixing
+  to: qft.faddeev_popov_determinant
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: Fixing the gauge orbit introduces the Faddeev-Popov Jacobian in the path-integral measure.
+  failure_mode_if_absent: Cannot see where the determinant comes from in the gauge-fixed functional integral.
+  evidence:
+    - type: expert_claim
+      source_ref: gauge_invariance_and_ward_brst_batch_initial
+      note: Batch notes treat the Faddeev-Popov factor as the measure-level output of gauge fixing.
+  status: asserted
+  confidence: 0.95
+- from: qft.faddeev_popov_determinant
+  to: qft.ghost_field
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: The determinant is represented by ghost fields in the local path-integral formulation.
+  failure_mode_if_absent: Cannot interpret the auxiliary ghost sector that exponentiates the Jacobian.
+  evidence:
+    - type: expert_claim
+      source_ref: gauge_invariance_and_ward_brst_batch_initial
+      note: Batch notes treat the existing ghost-field node as the canonical Faddeev-Popov ghost branch.
+  status: asserted
+  confidence: 0.96
+- from: qft.gauge_fixing
+  to: qft.lorenz_gauge
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: Lorenz gauge is one of the standard covariant gauge-fixing choices.
+  failure_mode_if_absent: Cannot place the gauge condition within the standard covariant family.
+  evidence:
+    - type: expert_claim
+      source_ref: gauge_invariance_and_ward_brst_batch_initial
+      note: Batch notes keep covariant gauge choices visible as a reusable family.
+  status: asserted
+  confidence: 0.9
+- from: qft.gauge_fixing
+  to: qft.coulomb_gauge
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: Coulomb gauge is one of the standard noncovariant gauge-fixing choices.
+  failure_mode_if_absent: Cannot place the gauge condition within the standard noncovariant family.
+  evidence:
+    - type: expert_claim
+      source_ref: gauge_invariance_and_ward_brst_batch_initial
+      note: Batch notes keep the spatial gauge family explicit because it is reused in papers.
+  status: asserted
+  confidence: 0.89
+- from: qft.gauge_fixing
+  to: qft.r_xi_gauge
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: The R_xi family is the standard one-parameter covariant gauge used in perturbative calculations.
+  failure_mode_if_absent: Cannot distinguish the parameterized covariant-gauge family from a single fixed gauge.
+  evidence:
+    - type: expert_claim
+      source_ref: gauge_invariance_and_ward_brst_batch_initial
+      note: Batch notes keep the one-parameter family as a reusable gauge-fixing branch.
+  status: asserted
+  confidence: 0.9
+- from: qft.gauge_fixing
+  to: qft.brst_symmetry
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: BRST symmetry is the nilpotent symmetry of the gauge-fixed action.
+  failure_mode_if_absent: Cannot see why a new symmetry appears only after gauge fixing has been imposed.
+  evidence:
+    - type: expert_claim
+      source_ref: gauge_invariance_and_ward_brst_batch_initial
+      note: Batch notes place BRST directly downstream of the gauge-fixed branch.
+  status: asserted
+  confidence: 0.96
+- from: qft.brst_symmetry
+  to: qft.brst_cohomology
+  relation_type: requires_for_derive
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: Physical states and operators are classified by BRST cohomology.
+  failure_mode_if_absent: Cannot isolate the physical quotient by the BRST operator.
+  evidence:
+    - type: expert_claim
+      source_ref: gauge_invariance_and_ward_brst_batch_initial
+      note: Batch notes keep BRST cohomology as the downstream physical-state branch.
+  status: asserted
+  confidence: 0.94
+- from: qft.brst_symmetry
+  to: qft.slavnov_taylor_identity
+  relation_type: requires_for_derive
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: Slavnov-Taylor identities are the BRST-derived gauge-theory functional constraints.
+  failure_mode_if_absent: Cannot connect BRST symmetry to the correlator identity family.
+  evidence:
+    - type: expert_claim
+      source_ref: gauge_invariance_and_ward_brst_batch_initial
+      note: Batch notes treat Slavnov-Taylor as the BRST-based identity branch.
+  status: asserted
+  confidence: 0.95
+- from: qft.ward_takahashi_identity
+  to: qft.slavnov_taylor_identity
+  relation_type: requires_for_recognize
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: Slavnov-Taylor identities are the gauge-fixed non-Abelian generalization of Ward identities.
+  failure_mode_if_absent: Cannot see how the identity family extends beyond the Abelian or ungauged reading.
+  evidence:
+    - type: expert_claim
+      source_ref: gauge_invariance_and_ward_brst_batch_initial
+      note: Batch notes explicitly keep the Ward and Slavnov-Taylor families adjacent.
+  status: asserted
+  confidence: 0.9

@@ -1,0 +1,111 @@
+# Canonical node records for the first-wave relativistic-kinematics batch.
+- id: relativity.event
+  label: Event
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: A single occurrence in spacetime that can be assigned coordinates in a chosen frame.
+  status: asserted
+- id: relativity.inertial_frame
+  label: Inertial frame
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: A reference frame in which free motion is uniform and kinematic relations are compared between observers.
+  status: asserted
+- id: relativity.spacetime_coordinates
+  label: Spacetime coordinates
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Time and space coordinates used to label an event in a chosen inertial frame.
+  status: asserted
+- id: relativity.lorentz_transformation
+  label: Lorentz transformation
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: The frame-change relation that connects coordinate descriptions of the same events between inertial observers.
+  status: asserted
+- id: relativity.invariant_interval
+  label: Invariant interval
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: The Lorentz-invariant quadratic combination of coordinate differences between events.
+  status: asserted
+- id: relativity.proper_time
+  label: Proper time
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Time elapsed along a timelike path, obtained from the invariant interval.
+  status: asserted
+- id: relativity.time_dilation
+  label: Time dilation
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: The frame-dependent relation between a moving clock's proper time and coordinate time.
+  status: asserted
+- id: relativity.length_contraction
+  label: Length contraction
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: The measured shortening of a moving object's length along the direction of motion.
+  status: asserted
+- id: relativity.relativity_of_simultaneity
+  label: Relativity of simultaneity
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: The frame dependence of whether spatially separated events are simultaneous.
+  status: asserted
+- id: relativity.velocity_addition
+  label: Velocity addition
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: The rule for composing velocities when changing between inertial frames.
+  status: asserted
+- id: relativity.rapidity
+  label: Rapidity
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: A boost parameter that linearizes the composition of collinear velocities.
+  status: asserted

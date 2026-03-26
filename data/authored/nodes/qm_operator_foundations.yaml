@@ -1,0 +1,161 @@
+# Hand-authored node records for the first-pass QM operator-foundations batch.
+- id: qm.operator_foundations.qm_operator_foundations
+  label: Quantum mechanics operator foundations
+  knowledge_kind: concept
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Small topic anchor for the operator-facing QM vocabulary reused in later QFT reading.
+  status: asserted
+- id: math.linear_algebra.vector_space
+  label: Vector space
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Set with vector addition and scalar multiplication satisfying the standard vector-space axioms.
+  status: asserted
+- id: math.linear_algebra.basis_and_coordinates
+  label: Basis and coordinates
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Choice of spanning vectors that lets vectors be described by coordinate components relative to that basis.
+  status: asserted
+- id: math.linear_algebra.linear_map
+  label: Linear map
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Map between vector spaces that preserves addition and scalar multiplication.
+  status: asserted
+- id: math.operator_basics.linear_operator
+  label: Linear operator
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Linear map from a vector space to itself, using the standard operator vocabulary.
+  status: asserted
+- id: math.operator_basics.composition_identity_inverse
+  label: Composition, identity, and inverse maps
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Basic operator language for composing linear maps, using the identity map, and recognizing invertibility when a two-sided inverse exists.
+  status: asserted
+- id: math.operator_basics.eigenvalues_and_eigenvectors
+  label: Eigenvalues and eigenvectors
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Scalar-vector pair vocabulary for vectors that a linear operator sends to a scalar multiple of themselves.
+  status: asserted
+- id: qm.inner_product
+  label: Inner product
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Scalar-valued pairing that gives QM state space its geometry and underlies bra-ket notation.
+  status: asserted
+- id: qm.hilbert_space
+  label: Hilbert space
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Complete inner-product vector space used as the ambient state space for standard QM.
+  status: asserted
+- id: qm.state_vector
+  label: State vector
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Vector representing the state of a quantum system in Hilbert-space language.
+  status: asserted
+- id: qm.bra_ket_notation
+  label: Bra-ket notation
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Dirac notation for states, dual vectors, inner products, and operator matrix elements.
+  status: asserted
+- id: qm.observable_operator
+  label: Observable operator
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Operator representing a measurable quantity, typically read as a Hermitian or self-adjoint operator in QM.
+  status: asserted
+- id: qm.unitary_evolution
+  label: Unitary evolution
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: State evolution implemented by a unitary map so that inner products and norms are preserved.
+  status: asserted
+- id: qm.commutator
+  label: Commutator
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Operator combination that measures noncommutativity and organizes many QM algebra statements.
+  status: asserted
+- id: qm.eigenstate_and_eigenvalue
+  label: Eigenstate and eigenvalue
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: State-and-number pair vocabulary for operators acting by scalar multiplication on special states.
+  status: asserted
+- id: qm.projection_operator
+  label: Projection operator
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Idempotent operator used to represent subspaces, measurements, and decompositions in QM language.
+  status: asserted

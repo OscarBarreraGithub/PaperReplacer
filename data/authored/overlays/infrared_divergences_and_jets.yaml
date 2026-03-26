@@ -1,0 +1,27 @@
+# Canonical overlay annotations for the infrared-divergences-and-jets batch.
+- overlay_type: assumed_background
+  target_topic: qft.infrared_divergences_and_jets
+  presumed_node: qft.cross_section
+  audience_profile: hep_th_grad
+  subfield: qcd_ir
+  artifact_type: paper
+  rationale: Infrared-cancellation and jet papers usually presume the reader already recognizes the observable cross-section setting in which the singularities appear.
+  evidence:
+    - type: expert_claim
+      source_ref: infrared_divergences_and_jets_batch_initial
+      note: Batch notes keep cross sections as presumed background for the infrared discussion.
+  status: asserted
+  confidence: 0.9
+- overlay_type: assumed_background
+  target_topic: qft.infrared_divergences_and_jets
+  presumed_node: qcd.factorization_theorem
+  audience_profile: hep_th_grad
+  subfield: qcd_ir
+  artifact_type: paper
+  rationale: Later infrared and jet literature often presumes the reader already has the core factorization statement in hand before the SCET or cancellation refinement is introduced.
+  evidence:
+    - type: expert_claim
+      source_ref: infrared_divergences_and_jets_batch_initial
+      note: Batch notes treat factorization as shared background for the batch rather than a brand-new frontier.
+  status: asserted
+  confidence: 0.88

@@ -1,0 +1,27 @@
+# Canonical overlay annotations for the scalar-QED batch.
+- overlay_type: assumed_background
+  target_topic: qft.scalar_qed
+  presumed_node: qft.free_scalar_field
+  audience_profile: hep_th_grad
+  subfield: qed_foundations
+  artifact_type: paper
+  rationale: Scalar-QED discussions usually presume the free scalar-field vocabulary is already in hand before the interaction structure is introduced.
+  evidence:
+    - type: expert_claim
+      source_ref: scalar_qed_batch_initial
+      note: Batch notes treat the free scalar-field branch as presumed background for the scalar-QED slice.
+  status: asserted
+  confidence: 0.9
+- overlay_type: assumed_background
+  target_topic: qft.scalar_qed
+  presumed_node: qft.feynman_rules
+  audience_profile: hep_th_grad
+  subfield: qed_foundations
+  artifact_type: paper
+  rationale: Papers that mention scalar-QED vertices or scalar Compton scattering usually presume the generic Feynman-rule layer rather than rederiving it.
+  evidence:
+    - type: expert_claim
+      source_ref: scalar_qed_batch_initial
+      note: Batch notes keep the existing Feynman-rules node as assumed computational background rather than reopening the perturbation trunk.
+  status: asserted
+  confidence: 0.87

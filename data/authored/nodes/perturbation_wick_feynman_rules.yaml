@@ -1,0 +1,136 @@
+# Canonical node records for the perturbation/Wick/Feynman-rules trunk batch.
+- id: qft.perturbation_wick_feynman_rules
+  label: Dyson, Wick, and Feynman-rule structure
+  knowledge_kind: concept
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Topic anchor for the operator-expansion machinery that turns interaction-picture evolution into diagrammatic perturbation rules.
+  status: asserted
+- id: qm.unitary_evolution
+  label: Unitary evolution
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: State evolution implemented by a unitary map so that inner products and norms are preserved.
+  status: asserted
+- id: qft.interaction_picture
+  label: Interaction picture
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Mixed picture in which free evolution is separated from interactions, providing the setting for the Dyson expansion.
+  status: asserted
+- id: qft.time_ordering
+  label: Time ordering
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Rule for arranging operator insertions by their time arguments before taking vacuum expectation values or perturbative expansions.
+  status: asserted
+- id: qft.time_ordered_exponential
+  label: Time-ordered exponential
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Compact notation for the interaction-picture evolution operator ordered by time.
+  status: asserted
+- id: qft.time_ordered_product
+  label: Time-ordered product
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Operator product rewritten with the factors ordered according to their time coordinates.
+  status: asserted
+- id: qft.normal_ordering
+  label: Normal ordering
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Rearrangement that places annihilation operators to the right of creation operators in the Wick expansion.
+  status: asserted
+- id: qft.contraction
+  label: Contraction
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Pairwise term in the Wick expansion, often represented diagrammatically by a propagator line.
+  status: asserted
+- id: qft.dyson_series
+  label: Dyson series
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Perturbative expansion of the time-evolution operator as an ordered series in the interaction.
+  status: asserted
+- id: qft.wick_theorem
+  label: Wick theorem
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Expansion of time-ordered operator products into normal-ordered products plus contractions.
+  status: asserted
+- id: qft.feynman_propagator
+  label: Feynman propagator
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Causal two-point Green function with the standard i epsilon prescription, usually written as a time-ordered vacuum correlator.
+  status: asserted
+- id: qft.symmetry_factors
+  label: Symmetry factors
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Combinatorial weights correcting for repeated diagram automorphisms in perturbative expansions.
+  status: asserted
+- id: qft.feynman_rules
+  label: Feynman rules
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Rule set translating the Dyson/Wick expansion into vertices, propagators, and diagram weights.
+  status: asserted

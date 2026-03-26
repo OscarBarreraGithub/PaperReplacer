@@ -1,0 +1,141 @@
+# Canonical node records for the anomaly and precision-tests batch.
+- id: sm.anomalies_and_precision_sm
+  label: Anomalies and precision tests in the Standard Model
+  knowledge_kind: concept
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Topic anchor for anomaly language, anomaly cancellation, and the electroweak precision-observable branch of the Standard Model.
+  status: asserted
+- id: classical_fields.noether_theorem
+  label: Noether theorem
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Result linking continuous symmetries of the action to conserved currents or charges.
+  status: asserted
+- id: sm.anomaly
+  label: Anomaly
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Breakdown of a naive classical symmetry or current statement after quantization.
+  status: asserted
+- id: sm.chiral_anomaly
+  label: Chiral anomaly
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Anomaly in the chiral current or chiral symmetry reading that appears in Standard Model discussions.
+  status: asserted
+- id: sm.gauge_anomaly
+  label: Gauge anomaly
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Anomaly that would spoil gauge consistency unless it cancels.
+  status: asserted
+- id: sm.global_symmetry_anomaly
+  label: Global symmetry anomaly
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Anomaly affecting a global symmetry or current rather than a gauge symmetry.
+  status: asserted
+- id: sm.anomaly_cancellation
+  label: Anomaly cancellation
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Consistency condition requiring gauge anomalies to cancel in the Standard Model.
+  status: asserted
+- id: sm.precision.electroweak_precision_observable
+  label: Electroweak precision observable
+  knowledge_kind: concept
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Measurable electroweak quantity used to test Standard Model predictions at high accuracy.
+  status: asserted
+- id: sm.precision.gauge_boson_self_energy
+  label: Gauge-boson self-energy
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Two-point radiative correction object that feeds into precision-observable calculations.
+  status: asserted
+- id: sm.precision.oblique_correction
+  label: Oblique correction
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Precision correction encoded through gauge-boson vacuum polarizations rather than vertex-specific effects.
+  status: asserted
+- id: sm.precision.effective_weak_mixing_angle
+  label: Effective weak mixing angle
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Precision-extracted version of the weak mixing angle used in electroweak tests.
+  status: asserted
+- id: sm.precision.z_pole_observable
+  label: Z-pole observable
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Measurable quantity defined by the behavior of the Z boson near its pole.
+  status: asserted
+- id: sm.precision.w_boson_mass
+  label: W boson mass
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Precision observable formed by the mass of the W boson.
+  status: asserted
+- id: sm.precision.rho_parameter
+  label: Rho parameter
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Ratio used to test electroweak symmetry-breaking and radiative-correction structure.
+  status: asserted

@@ -1,0 +1,211 @@
+# Hand-authored dependency edges for the first-pass QM operator-foundations batch.
+- from: math.linear_algebra.vector_space
+  to: qm.hilbert_space
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: A Hilbert space is read as a vector space with extra structure, so the ambient vector-space vocabulary has to come first.
+  failure_mode_if_absent: Cannot tell what kind of mathematical object the state space is supposed to be.
+  evidence:
+    - type: expert_claim
+      source_ref: qm_operator_foundations_source_notes
+      note: Source notes reuse the Stage 1 vector-space baseline as a prerequisite for the QM slice.
+  status: asserted
+  confidence: 0.97
+- from: qm.inner_product
+  to: qm.hilbert_space
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: Hilbert-space language is not complete without the inner-product structure that gives the state space its geometry.
+  failure_mode_if_absent: Cannot interpret norms, orthogonality, or bra-ket pairings as structure on the state space.
+  evidence:
+    - type: expert_claim
+      source_ref: qm_operator_foundations_source_notes
+      note: Source notes treat the inner product as part of the core QM state-space vocabulary.
+  status: asserted
+  confidence: 0.96
+- from: qm.hilbert_space
+  to: qm.state_vector
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: A state vector is recognized as an element of the Hilbert-space state space.
+  failure_mode_if_absent: Cannot tell that a quoted ket or vector is the system state rather than an arbitrary vector-like object.
+  evidence:
+    - type: expert_claim
+      source_ref: qm_operator_foundations_source_notes
+      note: Source notes list state vectors as a core candidate in the QM state/operator slice.
+  status: asserted
+  confidence: 0.97
+- from: qm.state_vector
+  to: qm.bra_ket_notation
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: Bra-ket notation is the standard way state vectors are written and manipulated in QM prose.
+  failure_mode_if_absent: Cannot read a ket as a state vector or follow notation involving bras and kets.
+  evidence:
+    - type: expert_claim
+      source_ref: qm_operator_foundations_source_notes
+      note: Source notes treat bra-ket notation as a core recognition/use layer for QM reading.
+  status: asserted
+  confidence: 0.97
+- from: qm.inner_product
+  to: qm.bra_ket_notation
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: Bras, overlaps, and matrix elements are read through the inner-product pairing in Dirac notation.
+  failure_mode_if_absent: Cannot interpret angled-bracket expressions as inner products or state overlaps.
+  evidence:
+    - type: expert_claim
+      source_ref: qm_operator_foundations_source_notes
+      note: Source notes explicitly flag inner products as part of the bra-ket reading layer.
+  status: asserted
+  confidence: 0.95
+- from: math.linear_algebra.basis_and_coordinates
+  to: qm.bra_ket_notation
+  relation_type: requires_for_use
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: Kets are often expanded or read relative to a chosen basis, so coordinate awareness helps decode the notation.
+  failure_mode_if_absent: Cannot tell when a ket is being used abstractly and when it is being read in a specific basis.
+  evidence:
+    - type: expert_claim
+      source_ref: qm_operator_foundations_source_notes
+      note: Source notes explicitly keep basis-sensitive reading in the reuse path from Stage 1.
+  status: asserted
+  confidence: 0.9
+- from: math.linear_algebra.linear_map
+  to: qm.observable_operator
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: An observable is recognized first as an operator acting on the QM state space.
+  failure_mode_if_absent: Cannot tell that the measurable quantity is being modeled by an operator rather than by a scalar label.
+  evidence:
+    - type: expert_claim
+      source_ref: qm_operator_foundations_source_notes
+      note: Source notes identify observables as operator-valued quantities in the QM slice.
+  status: asserted
+  confidence: 0.96
+- from: math.operator_basics.linear_operator
+  to: qm.observable_operator
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: Observable language is a specialized QM use of linear-operator vocabulary.
+  failure_mode_if_absent: Cannot follow how the observable acts on states or why it belongs to the operator family.
+  evidence:
+    - type: expert_claim
+      source_ref: qm_operator_foundations_source_notes
+      note: Source notes explicitly ask the batch to reuse the Stage 1 linear-operator baseline.
+  status: asserted
+  confidence: 0.97
+- from: math.operator_basics.linear_operator
+  to: qm.unitary_evolution
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: Unitary evolution is recognized as a special operator on the QM state space.
+  failure_mode_if_absent: Cannot tell that the evolution rule is being expressed as an operator statement.
+  evidence:
+    - type: expert_claim
+      source_ref: qm_operator_foundations_source_notes
+      note: Source notes list unitary evolution among the core operator-facing QM terms.
+  status: asserted
+  confidence: 0.96
+- from: math.operator_basics.composition_identity_inverse
+  to: qm.unitary_evolution
+  relation_type: requires_for_use
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: Unitary maps are most naturally read through their invertibility and composition behavior.
+  failure_mode_if_absent: Cannot see why the evolution operator preserves norms and admits the standard inverse relation.
+  evidence:
+    - type: expert_claim
+      source_ref: qm_operator_foundations_source_notes
+      note: Source notes keep operator composition and inverse language in the reuse path from Stage 1.
+  status: asserted
+  confidence: 0.9
+- from: math.operator_basics.linear_operator
+  to: qm.commutator
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: A commutator is defined from operator products, so the reader has to be able to parse operator composition first.
+  failure_mode_if_absent: Cannot tell what algebraic objects are being compared when a source writes [A,B].
+  evidence:
+    - type: expert_claim
+      source_ref: qm_operator_foundations_source_notes
+      note: Source notes call out commutators as a basic operator-algebra term in the QM slice.
+  status: asserted
+  confidence: 0.96
+- from: math.operator_basics.linear_operator
+  to: qm.projection_operator
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: Projection operators are a standard subclass of linear operators used in QM reading.
+  failure_mode_if_absent: Cannot tell that the source is talking about an idempotent operator or a subspace projector.
+  evidence:
+    - type: expert_claim
+      source_ref: qm_operator_foundations_source_notes
+      note: Source notes include projection operators as an optional but useful QM operator term.
+  status: asserted
+  confidence: 0.93
+- from: math.operator_basics.eigenvalues_and_eigenvectors
+  to: qm.eigenstate_and_eigenvalue
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: QM eigenstate language is the operator-eigenvector vocabulary specialized to states and observables.
+  failure_mode_if_absent: Cannot recognize that the source is using the shared eigenvalue/eigenvector pattern in QM terms.
+  evidence:
+    - type: expert_claim
+      source_ref: qm_operator_foundations_source_notes
+      note: Source notes explicitly keep eigenstate and eigenvalue language in scope.
+  status: asserted
+  confidence: 0.97
+- from: qm.observable_operator
+  to: qm.eigenstate_and_eigenvalue
+  relation_type: requires_for_use
+  necessity: typical
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: Observable language is commonly paired with eigenstates and eigenvalues when reading measurement or spectral statements.
+  failure_mode_if_absent: Cannot follow why a source connects a measurable quantity to special states and outcome values.
+  evidence:
+    - type: expert_claim
+      source_ref: qm_operator_foundations_source_notes
+      note: Source notes place observable and eigenstate vocabulary in the same operator-foundations cluster.
+  status: asserted
+  confidence: 0.92

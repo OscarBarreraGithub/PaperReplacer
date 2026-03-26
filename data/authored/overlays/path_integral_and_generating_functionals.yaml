@@ -1,0 +1,27 @@
+# Canonical overlay annotations for the Path Integral and Generating Functionals batch.
+- overlay_type: assumed_background
+  target_topic: qft.path_integral_and_generating_functionals
+  presumed_node: classical_fields.action_functional
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  artifact_type: paper
+  rationale: Source-coupled path-integral discussions usually assume the action functional already exists and can be inserted into the exponent.
+  evidence:
+    - type: expert_claim
+      source_ref: path_integral_and_generating_functionals_batch_initial
+      note: Contextual overlay for paper-facing assumed background.
+  status: asserted
+  confidence: 0.9
+- overlay_type: assumed_background
+  target_topic: qft.path_integral_and_generating_functionals
+  presumed_node: qft.feynman_i_epsilon_prescription
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  artifact_type: paper
+  rationale: Advanced Minkowski-signature path-integral discussions often assume the causal i epsilon prescription without rederiving it.
+  evidence:
+    - type: expert_claim
+      source_ref: path_integral_and_generating_functionals_batch_initial
+      note: Contextual overlay for paper-facing assumed background.
+  status: asserted
+  confidence: 0.87

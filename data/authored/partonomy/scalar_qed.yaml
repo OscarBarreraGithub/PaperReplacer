@@ -1,0 +1,46 @@
+# Canonical partonomy edges for the scalar-QED batch.
+- parent: qft.scalar_qed
+  child: qft.gauge_invariance
+  rationale: Gauge invariance is the symmetry-side branch that keeps scalar QED connected to the broader gauge-theory trunk.
+  status: asserted
+  confidence: 0.9
+- parent: qft.scalar_qed
+  child: qft.abelian_gauge_symmetry
+  rationale: Abelian gauge symmetry is the specific gauge-theory branch that distinguishes scalar QED from the non-Abelian trunk.
+  status: asserted
+  confidence: 0.96
+- parent: qft.scalar_qed
+  child: qft.charged_scalar_field
+  rationale: Charged scalar matter is the defining matter-side branch of scalar QED.
+  status: asserted
+  confidence: 0.97
+- parent: qft.scalar_qed
+  child: qft.minimal_coupling
+  rationale: Minimal coupling is the central construction rule of the batch.
+  status: asserted
+  confidence: 0.95
+- parent: qft.scalar_qed
+  child: qft.scalar_qed_lagrangian
+  rationale: The scalar-QED Lagrangian is the formal-statement core of the batch.
+  status: asserted
+  confidence: 0.97
+- parent: qft.scalar_qed
+  child: qft.ward_takahashi_identity
+  rationale: Ward-Takahashi identity is the reusable symmetry-check branch of scalar QED.
+  status: asserted
+  confidence: 0.88
+- parent: qft.scalar_qed
+  child: qft.scalar_compton_scattering
+  rationale: Scalar Compton scattering is the single process-facing payoff that makes the interaction branch query-relevant.
+  status: asserted
+  confidence: 0.92
+- parent: qft.scalar_qed_lagrangian
+  child: qft.one_photon_scalar_vertex
+  rationale: The one-photon scalar vertex is one of the two canonical interaction outputs of the scalar-QED Lagrangian.
+  status: asserted
+  confidence: 0.96
+- parent: qft.scalar_qed_lagrangian
+  child: qft.seagull_vertex
+  rationale: The seagull vertex is the distinctive contact-interaction branch of the scalar-QED Lagrangian.
+  status: asserted
+  confidence: 0.97

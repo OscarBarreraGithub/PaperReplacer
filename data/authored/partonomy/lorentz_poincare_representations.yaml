@@ -1,0 +1,31 @@
+# Canonical partonomy edges for the Lorentz/Poincare representations batch.
+- parent: qft.lorentz_poincare_representations
+  child: qft.lorentz_group_representation
+  rationale: Lorentz-group representations are one of the two main topical branches in the batch.
+  status: asserted
+  confidence: 0.94
+- parent: qft.lorentz_poincare_representations
+  child: qft.poincare_group_representation
+  rationale: Poincare-group representations are the other main topical branch and the bridge to particle classification.
+  status: asserted
+  confidence: 0.94
+- parent: qft.lorentz_poincare_representations
+  child: qft.wigner_classification
+  rationale: Wigner classification is the particle-label reading that ties the representation story together.
+  status: asserted
+  confidence: 0.93
+- parent: qft.wigner_classification
+  child: qft.mass_shell
+  rationale: Mass-shell language is a core component of the classification scheme.
+  status: asserted
+  confidence: 0.92
+- parent: qft.wigner_classification
+  child: qft.little_group
+  rationale: Little-group structure is the subgroup ingredient of the classification scheme.
+  status: asserted
+  confidence: 0.92
+- parent: qft.wigner_classification
+  child: qft.spin_label
+  rationale: Spin or helicity labels are the output of the little-group part of the classification.
+  status: asserted
+  confidence: 0.91

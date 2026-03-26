@@ -1,0 +1,14 @@
+# Canonical overlay annotations for the Stage 2 variational-principles/classical-fields batch.
+- overlay_type: assumed_background
+  target_topic: classical_fields.variational_principles_and_classical_fields
+  presumed_node: relativity.spacetime_coordinates
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  artifact_type: paper
+  rationale: Classical field theory is usually written directly on spacetime coordinates, which are often assumed before the action-based notation is introduced.
+  evidence:
+    - type: expert_claim
+      source_ref: variational_principles_and_classical_fields_batch_initial
+      note: Stage 2 source notes connect the field-theory slice back to spacetime-coordinate vocabulary.
+  status: asserted
+  confidence: 0.88

@@ -1,0 +1,151 @@
+# Canonical node records for the first-pass QED tree-level process batch.
+- id: qft.qed_tree_level_processes
+  label: QED tree-level processes
+  knowledge_kind: concept
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Topic anchor for the canonical QED exemplar neighborhood of named processes and process-sensitive results.
+  status: asserted
+- id: qft.free_fields_and_quantization
+  label: Free fields and quantization
+  knowledge_kind: concept
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Topic anchor for relativistic free fields, mode expansions, canonical quantization, and the locality/spin-statistics constraints reused throughout QFT.
+  status: asserted
+- id: qft.correlators_propagators_lsz
+  label: Correlators, propagators, and LSZ reduction
+  knowledge_kind: concept
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Topic anchor for time-ordered correlators, propagators, amputations, and the LSZ bridge from Green functions to scattering amplitudes.
+  status: asserted
+- id: qft.feynman_rules
+  label: Feynman rules
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Rule set translating the Dyson/Wick expansion into vertices, propagators, and diagram weights.
+  status: asserted
+- id: qft.spinor_lorentz_dirac_foundations
+  label: Spinor, Lorentz, and Dirac foundations
+  knowledge_kind: concept
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Topic anchor for the spinor, gamma-matrix, and Dirac vocabulary reused by later fermion and discrete-symmetry batches.
+  status: asserted
+- id: qft.free_dirac_field
+  label: Free Dirac field
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Free spin-1/2 field written in terms of Dirac spinor modes and particle/antiparticle operators.
+  status: asserted
+- id: qft.free_vector_field
+  label: Free vector field
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Free spin-1 field used for vector-boson kinematics at the field-theory level before interactions or gauge fixing.
+  status: asserted
+- id: qed.bhabha_scattering
+  label: Bhabha scattering
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Electron-positron scattering through tree-level QED exchange.
+  status: asserted
+- id: qed.moller_scattering
+  label: Moller scattering
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Electron-electron scattering through tree-level QED exchange.
+  status: asserted
+- id: qed.compton_scattering
+  label: Compton scattering
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Photon-electron scattering through tree-level QED exchange.
+  status: asserted
+- id: qed.electron_positron_to_muon_antimuon
+  label: Electron-positron to muon-antimuon scattering
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Electron-positron annihilation into a muon-antimuon pair through tree-level photon exchange.
+  status: asserted
+- id: qed.light_by_light_scattering
+  label: Light-by-light scattering
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Photon-photon scattering in QED, which first appears through charged-particle loops.
+  status: asserted
+- id: qed.equivalent_photon_approximation
+  label: Equivalent photon approximation
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Approximation that replaces the electromagnetic field of a fast charged particle by a flux of nearly real photons.
+  status: asserted
+- id: qed.mott_formula
+  label: Mott formula
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Scattering formula for relativistic electron scattering in a Coulomb field, with the external particle content built into the result.
+  status: asserted

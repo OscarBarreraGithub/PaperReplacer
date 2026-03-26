@@ -1,0 +1,61 @@
+# Canonical partonomy edges for the infrared-divergences-and-jets batch.
+- parent: qft.infrared_divergences_and_jets
+  child: qft.infrared_divergence
+  rationale: Infrared divergence is the central singular-structure branch of the batch.
+  status: asserted
+  confidence: 0.97
+- parent: qft.infrared_divergences_and_jets
+  child: qft.inclusive_observable
+  rationale: Inclusive observables are the measurement-side branch required for cancellation statements.
+  status: asserted
+  confidence: 0.95
+- parent: qft.infrared_divergences_and_jets
+  child: qft.bloch_nordsieck_theorem
+  rationale: Bloch-Nordsieck is the first cancellation-theorem branch of the batch.
+  status: asserted
+  confidence: 0.92
+- parent: qft.infrared_divergences_and_jets
+  child: qft.kln_theorem
+  rationale: KLN is the broader cancellation-theorem branch of the batch.
+  status: asserted
+  confidence: 0.94
+- parent: qft.infrared_divergences_and_jets
+  child: qcd.factorization_theorem
+  rationale: Factorization is the structural bridge from infrared singularities into the QCD and SCET trunk.
+  status: asserted
+  confidence: 0.9
+- parent: qft.infrared_divergences_and_jets
+  child: eft.soft_collinear_effective_theory
+  rationale: SCET is the formalism branch that sharpens the soft/collinear split in this neighborhood.
+  status: asserted
+  confidence: 0.9
+- parent: qft.infrared_divergence
+  child: qft.soft_divergence
+  rationale: Soft divergence is one of the two main specializations of the generic infrared branch.
+  status: asserted
+  confidence: 0.96
+- parent: qft.infrared_divergence
+  child: qft.collinear_divergence
+  rationale: Collinear divergence is the other main specialization of the generic infrared branch.
+  status: asserted
+  confidence: 0.96
+- parent: eft.soft_collinear_effective_theory
+  child: eft.jet_function
+  rationale: The jet function is the standard collinear-sector factor reused from the SCET trunk.
+  status: asserted
+  confidence: 0.9
+- parent: eft.soft_collinear_effective_theory
+  child: eft.soft_function
+  rationale: The soft function is the standard low-momentum factor reused from the SCET trunk.
+  status: asserted
+  confidence: 0.9
+- parent: qft.infrared_divergences_and_jets
+  child: qft.jet
+  rationale: Jet language is the first event-shape-facing branch of the batch.
+  status: asserted
+  confidence: 0.94
+- parent: qft.jet
+  child: qft.thrust
+  rationale: Thrust is the first reusable event-shape child used to make the jet branch concrete.
+  status: asserted
+  confidence: 0.95

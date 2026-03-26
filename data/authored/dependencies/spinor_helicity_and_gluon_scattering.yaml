@@ -1,0 +1,241 @@
+# Canonical dependency edges for the spinor-helicity-and-gluon-scattering batch.
+- from: qft.mass_shell
+  to: qft.spinor_helicity_notation
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_amplitudes
+  task_type: literature_reading
+  rationale: Spinor-helicity notation is built on on-shell momentum factorization, so the mass-shell language has to be available before the notation is used.
+  failure_mode_if_absent: Cannot tell why the momentum variables are being rewritten into spinor data rather than treated as generic off-shell vectors.
+  evidence:
+    - type: expert_claim
+      source_ref: spinor_helicity_and_gluon_scattering_batch_initial
+      note: Batch notes place the on-shell condition at the entry to the notation branch.
+  status: asserted
+  confidence: 0.95
+- from: qft.spin_label
+  to: qft.spinor_helicity_notation
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_amplitudes
+  task_type: literature_reading
+  rationale: The notation is used to encode helicity states, so the helicity side of the spin-label vocabulary has to be in place first.
+  failure_mode_if_absent: Cannot interpret the external-state labels carried by the spinor-helicity expression.
+  evidence:
+    - type: expert_claim
+      source_ref: spinor_helicity_and_gluon_scattering_batch_initial
+      note: Batch notes keep helicity labels as the other entry point to the notation branch.
+  status: asserted
+  confidence: 0.95
+- from: qft.spinor_helicity_notation
+  to: qft.angle_bracket_spinor_product
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_amplitudes
+  task_type: literature_reading
+  rationale: Angle brackets are one of the two primitive contractions that define the notation.
+  failure_mode_if_absent: Cannot parse the holomorphic spinor factors that appear in compact amplitude formulas.
+  evidence:
+    - type: expert_claim
+      source_ref: spinor_helicity_and_gluon_scattering_batch_initial
+      note: Batch notes treat angle brackets as a first primitive beneath the notation node.
+  status: asserted
+  confidence: 0.96
+- from: qft.spinor_helicity_notation
+  to: qft.square_bracket_spinor_product
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_amplitudes
+  task_type: literature_reading
+  rationale: Square brackets are the conjugate primitive contraction that completes the notation.
+  failure_mode_if_absent: Cannot parse the antiholomorphic spinor factors that appear in compact amplitude formulas.
+  evidence:
+    - type: expert_claim
+      source_ref: spinor_helicity_and_gluon_scattering_batch_initial
+      note: Batch notes keep square brackets adjacent to the angle-bracket branch.
+  status: asserted
+  confidence: 0.96
+- from: qft.angle_bracket_spinor_product
+  to: qft.schouten_identity
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_amplitudes
+  task_type: literature_reading
+  rationale: Schouten identity is one of the first algebraic simplification rules for angle-bracket contractions.
+  failure_mode_if_absent: Cannot simplify the antisymmetric spinor-product combinations that appear in the compact formulas.
+  evidence:
+    - type: expert_claim
+      source_ref: spinor_helicity_and_gluon_scattering_batch_initial
+      note: Batch notes use Schouten as the first simplification identity under the notation branch.
+  status: asserted
+  confidence: 0.94
+- from: qft.square_bracket_spinor_product
+  to: qft.schouten_identity
+  relation_type: requires_for_use
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: qft_amplitudes
+  task_type: literature_reading
+  rationale: The same antisymmetry pattern is reused on the square-bracket side of the notation.
+  failure_mode_if_absent: Cannot recognize that the same simplification rule applies to the conjugate spinor contractions.
+  evidence:
+    - type: expert_claim
+      source_ref: spinor_helicity_and_gluon_scattering_batch_initial
+      note: Batch notes keep both primitive contractions adjacent to Schouten rather than splitting separate identities.
+  status: asserted
+  confidence: 0.88
+- from: qft.scattering_amplitude
+  to: qft.color_ordered_amplitude
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_amplitudes
+  task_type: literature_reading
+  rationale: Color ordering is a decomposition of the full scattering amplitude into partial amplitudes.
+  failure_mode_if_absent: Cannot tell what object is being decomposed when a source writes a color-ordered formula.
+  evidence:
+    - type: expert_claim
+      source_ref: spinor_helicity_and_gluon_scattering_batch_initial
+      note: Batch notes treat the partial-amplitude object as a refinement of the generic scattering amplitude.
+  status: asserted
+  confidence: 0.95
+- from: qcd.color_su3
+  to: qft.color_ordered_amplitude
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_amplitudes
+  task_type: literature_reading
+  rationale: Color ordering only makes sense once the color-factor structure of the non-Abelian gauge theory is already visible.
+  failure_mode_if_absent: Cannot separate the kinematic piece from the color piece in the gluon amplitude.
+  evidence:
+    - type: expert_claim
+      source_ref: spinor_helicity_and_gluon_scattering_batch_initial
+      note: Batch notes keep color ordering tied directly to the QCD color branch.
+  status: asserted
+  confidence: 0.95
+- from: qcd.gluon
+  to: qft.gluon_tree_scattering
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_amplitudes
+  task_type: literature_reading
+  rationale: The scattering process is defined by external gluons, so the gluon object has to be recognized first.
+  failure_mode_if_absent: Cannot tell what external states are participating in the tree-level process.
+  evidence:
+    - type: expert_claim
+      source_ref: spinor_helicity_and_gluon_scattering_batch_initial
+      note: Batch notes keep the explicit gluon process anchor in the batch to avoid pure-notation drift.
+  status: asserted
+  confidence: 0.95
+- from: qft.non_abelian_gauge_symmetry
+  to: qft.gluon_tree_scattering
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_amplitudes
+  task_type: literature_reading
+  rationale: The process is a Yang-Mills tree amplitude, so the non-Abelian gauge-theory setting has to be recognized before the gluon amplitude is read correctly.
+  failure_mode_if_absent: Cannot tell why the scattering process carries color ordering and self-interaction structure absent in Abelian photon scattering.
+  evidence:
+    - type: expert_claim
+      source_ref: spinor_helicity_and_gluon_scattering_batch_initial
+      note: Batch notes keep the gluon-scattering branch attached to the existing non-Abelian trunk.
+  status: asserted
+  confidence: 0.94
+- from: qft.color_ordered_amplitude
+  to: qft.mhv_amplitude
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_amplitudes
+  task_type: literature_reading
+  rationale: The compact MHV formulas are stated for color-ordered partial amplitudes rather than the undecomposed full amplitude.
+  failure_mode_if_absent: Cannot tell what object the compact MHV expression is claiming to evaluate.
+  evidence:
+    - type: expert_claim
+      source_ref: spinor_helicity_and_gluon_scattering_batch_initial
+      note: Batch notes keep color ordering and MHV formulas in the same direct branch.
+  status: asserted
+  confidence: 0.95
+- from: qft.spinor_helicity_notation
+  to: qft.mhv_amplitude
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_amplitudes
+  task_type: literature_reading
+  rationale: The MHV amplitude is readable only once the spinor-helicity notation is available for the compact kinematic expression.
+  failure_mode_if_absent: Cannot parse the formula as a meaningful amplitude instead of a bare bracket expression.
+  evidence:
+    - type: expert_claim
+      source_ref: spinor_helicity_and_gluon_scattering_batch_initial
+      note: Batch notes treat MHV as the payoff of the notation branch.
+  status: asserted
+  confidence: 0.96
+- from: qft.gluon_tree_scattering
+  to: qft.mhv_amplitude
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_amplitudes
+  task_type: literature_reading
+  rationale: The MHV formula in this batch is the compact tree-level gluon-scattering branch, so the process anchor has to be visible first.
+  failure_mode_if_absent: Cannot place the helicity-specialized amplitude inside the actual scattering process being computed.
+  evidence:
+    - type: expert_claim
+      source_ref: spinor_helicity_and_gluon_scattering_batch_initial
+      note: Batch notes keep an explicit gluon-scattering node to stop the batch from drifting into notation-only ontology.
+  status: asserted
+  confidence: 0.93
+- from: qft.schouten_identity
+  to: qft.parke_taylor_formula
+  relation_type: requires_for_derive
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_amplitudes
+  task_type: literature_reading
+  rationale: Schouten identity is one of the standard algebraic simplification tools used in deriving or reshaping compact spinor-helicity formulas.
+  failure_mode_if_absent: Cannot follow the algebraic simplifications that collapse the tree amplitude into the compact Parke-Taylor form.
+  evidence:
+    - type: expert_claim
+      source_ref: spinor_helicity_and_gluon_scattering_batch_initial
+      note: Batch notes keep Schouten as the first derivational identity for the formula branch.
+  status: asserted
+  confidence: 0.9
+- from: qft.mhv_amplitude
+  to: qft.parke_taylor_formula
+  relation_type: requires_for_derive
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_amplitudes
+  task_type: literature_reading
+  rationale: Parke-Taylor is the closed-form expression for the tree-level MHV gluon amplitude.
+  failure_mode_if_absent: Cannot tell what class of compact amplitude the formula is supposed to evaluate.
+  evidence:
+    - type: expert_claim
+      source_ref: spinor_helicity_and_gluon_scattering_batch_initial
+      note: Batch notes treat Parke-Taylor as the formula-level child of the MHV branch.
+  status: asserted
+  confidence: 0.96
+- from: qft.color_ordered_amplitude
+  to: qft.parke_taylor_formula
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_amplitudes
+  task_type: literature_reading
+  rationale: The Parke-Taylor formula is written for the color-ordered partial amplitude rather than for the full color-dressed answer.
+  failure_mode_if_absent: Cannot read the normalization and ordering convention of the compact formula.
+  evidence:
+    - type: expert_claim
+      source_ref: spinor_helicity_and_gluon_scattering_batch_initial
+      note: Batch notes keep the formula node downstream of the color-ordering branch.
+  status: asserted
+  confidence: 0.95

@@ -1,0 +1,108 @@
+# Canonical node records for the subtraction-scheme and Landau-pole refinement batch.
+- id: qft.subtraction_scheme_and_landau_pole_refinement
+  label: Subtraction scheme and Landau-pole refinement
+  knowledge_kind: concept
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Topic anchor for subtraction-scheme language, running couplings, and the Landau-pole branch of perturbative renormalization.
+  status: asserted
+- id: qft.renormalized_perturbation_theory
+  label: Renormalized perturbation theory
+  knowledge_kind: concept
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Perturbative expansion organized after regularization and counterterm subtraction so that physical quantities are finite.
+  status: asserted
+- id: qft.renormalization_scale
+  label: Renormalization scale
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Reference scale that parameterizes how renormalized couplings and operators vary under scheme-dependent subtraction.
+  status: asserted
+- id: qft.beta_function
+  label: Beta function
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Differential function governing how a coupling changes with renormalization scale.
+  status: asserted
+- id: qft.renormalization_group_equation
+  label: Renormalization-group equation
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Equation describing how renormalized quantities evolve when the renormalization scale is changed.
+  status: asserted
+- id: qft.subtraction_point
+  label: Subtraction point
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Reference momentum or scale choice at which renormalized quantities are fixed in a subtraction prescription.
+  status: asserted
+- id: qft.subtraction_scheme
+  label: Subtraction scheme
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Prescription that fixes how divergent and finite parts are subtracted so renormalized parameters are defined.
+  status: asserted
+- id: qft.minimal_subtraction_scheme
+  label: Minimal subtraction scheme
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Subtraction scheme that removes only the minimal divergent terms required by the regulator, without fixing additional finite parts.
+  aliases:
+    - minimal subtraction
+    - MS
+  status: asserted
+- id: qft.running_coupling
+  label: Running coupling
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Renormalized coupling viewed as a scale-dependent quantity determined by RG evolution.
+  status: asserted
+- id: qft.landau_pole
+  label: Landau pole
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Scale at which perturbative running drives a coupling to diverge, signaling a breakdown of the naive perturbative description.
+  status: asserted

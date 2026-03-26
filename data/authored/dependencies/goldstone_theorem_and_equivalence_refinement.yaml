@@ -1,0 +1,136 @@
+# Canonical dependency edges for the Goldstone-theorem and equivalence refinement batch.
+- from: sm.ssb.spontaneous_symmetry_breaking
+  to: sm.ssb.goldstone_theorem
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: standard_model
+  task_type: literature_reading
+  rationale: Goldstone's theorem is the formal payoff of the spontaneous-symmetry-breaking branch.
+  failure_mode_if_absent: Cannot tell what broken-symmetry setup the theorem is supposed to apply to.
+  evidence:
+    - type: expert_claim
+      source_ref: goldstone_theorem_and_equivalence_refinement_batch_initial
+      note: Source notes keep the theorem directly downstream of the existing SSB node.
+  status: asserted
+  confidence: 0.97
+- from: sm.ssb.goldstone_boson
+  to: sm.ssb.goldstone_theorem
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: standard_model
+  task_type: literature_reading
+  rationale: The theorem is recognized through the massless Goldstone modes that it predicts.
+  failure_mode_if_absent: Cannot tell what physical or field-theoretic object the theorem is asserting must appear.
+  evidence:
+    - type: expert_claim
+      source_ref: goldstone_theorem_and_equivalence_refinement_batch_initial
+      note: Source notes keep the existing Goldstone-boson node as the theorem's direct output concept.
+  status: asserted
+  confidence: 0.95
+- from: sm.higgs.higgs_mechanism
+  to: sm.ewbreak.longitudinal_weak_boson_mode
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: standard_model
+  task_type: literature_reading
+  rationale: The longitudinal weak-boson mode is read in the broken electroweak theory produced by the Higgs mechanism.
+  failure_mode_if_absent: Cannot place the longitudinal mode inside the electroweak mass-generation story.
+  evidence:
+    - type: expert_claim
+      source_ref: goldstone_theorem_and_equivalence_refinement_batch_initial
+      note: Source notes use the Higgs mechanism as the electroweak-side anchor for the equivalence theorem.
+  status: asserted
+  confidence: 0.93
+- from: sm.ewbreak.electroweak_symmetry_breaking
+  to: sm.ewbreak.longitudinal_weak_boson_mode
+  relation_type: requires_for_recognize
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: standard_model
+  task_type: literature_reading
+  rationale: The longitudinal mode is a feature of the broken electroweak phase rather than of the unbroken gauge description.
+  failure_mode_if_absent: The mode looks disconnected from the electroweak symmetry-breaking branch that gives it physical meaning.
+  evidence:
+    - type: expert_claim
+      source_ref: goldstone_theorem_and_equivalence_refinement_batch_initial
+      note: Source notes keep the mode attached to the broken-phase electroweak reading.
+  status: asserted
+  confidence: 0.88
+- from: sm.ewbreak.w_and_z_bosons
+  to: sm.ewbreak.longitudinal_weak_boson_mode
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: standard_model
+  task_type: literature_reading
+  rationale: The longitudinal mode is the polarization branch of the already-established massive weak bosons.
+  failure_mode_if_absent: Cannot tell which electroweak particles the mode belongs to.
+  evidence:
+    - type: expert_claim
+      source_ref: goldstone_theorem_and_equivalence_refinement_batch_initial
+      note: Source notes keep the mode as a refinement of the existing W/Z node rather than a separate particle branch.
+  status: asserted
+  confidence: 0.95
+- from: sm.ssb.goldstone_boson
+  to: sm.ewbreak.goldstone_boson_equivalence_theorem
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: standard_model
+  task_type: literature_reading
+  rationale: The equivalence theorem compares amplitudes for longitudinal weak bosons to amplitudes involving the corresponding would-be Goldstone bosons.
+  failure_mode_if_absent: Cannot parse the theorem's comparison target on the scalar side.
+  evidence:
+    - type: expert_claim
+      source_ref: goldstone_theorem_and_equivalence_refinement_batch_initial
+      note: Source notes keep the theorem explicitly tied to the existing Goldstone-boson branch.
+  status: asserted
+  confidence: 0.95
+- from: sm.ewbreak.longitudinal_weak_boson_mode
+  to: sm.ewbreak.goldstone_boson_equivalence_theorem
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: standard_model
+  task_type: literature_reading
+  rationale: The theorem is a statement about amplitudes with external longitudinal weak bosons.
+  failure_mode_if_absent: Cannot tell which electroweak external states the theorem is actually controlling.
+  evidence:
+    - type: expert_claim
+      source_ref: goldstone_theorem_and_equivalence_refinement_batch_initial
+      note: Source notes use the longitudinal mode as the immediate bridge into the theorem statement.
+  status: asserted
+  confidence: 0.97
+- from: qft.scattering_amplitude
+  to: sm.ewbreak.goldstone_boson_equivalence_theorem
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: standard_model
+  task_type: literature_reading
+  rationale: The equivalence theorem is stated as a relation among scattering amplitudes rather than as a purely kinematic identity.
+  failure_mode_if_absent: Cannot tell what sort of quantity is being compared on the two sides of the theorem.
+  evidence:
+    - type: expert_claim
+      source_ref: goldstone_theorem_and_equivalence_refinement_batch_initial
+      note: Source notes reuse the existing amplitude node instead of reopening a separate scattering batch.
+  status: asserted
+  confidence: 0.96
+- from: sm.ssb.goldstone_theorem
+  to: sm.ewbreak.goldstone_boson_equivalence_theorem
+  relation_type: requires_for_recognize
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: standard_model
+  task_type: literature_reading
+  rationale: Goldstone's theorem supplies the broken-symmetry context that makes the equivalence-theorem scalar branch legible.
+  failure_mode_if_absent: The equivalence theorem appears detached from the broader theorem-level symmetry-breaking structure.
+  evidence:
+    - type: expert_claim
+      source_ref: goldstone_theorem_and_equivalence_refinement_batch_initial
+      note: Source notes keep the two theorem nodes adjacent without collapsing them into one claim.
+  status: asserted
+  confidence: 0.87

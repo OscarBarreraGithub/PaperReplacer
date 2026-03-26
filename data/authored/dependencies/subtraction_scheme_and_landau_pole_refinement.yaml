@@ -1,0 +1,136 @@
+# Canonical dependency edges for the subtraction-scheme and Landau-pole refinement batch.
+- from: qft.renormalized_perturbation_theory
+  to: qft.subtraction_scheme
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: Subtraction schemes are introduced inside the renormalized perturbative setup that defines finite parameters after counterterm subtraction.
+  failure_mode_if_absent: Cannot tell what broader framework the scheme is meant to organize.
+  evidence:
+    - type: expert_claim
+      source_ref: subtraction_scheme_and_landau_pole_refinement_batch_initial
+      note: Source notes keep scheme language explicitly downstream of renormalized perturbation theory rather than of the regulator itself.
+  status: asserted
+  confidence: 0.96
+- from: qft.renormalization_scale
+  to: qft.subtraction_point
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: A subtraction point is a concrete reference-scale choice used to define renormalized quantities.
+  failure_mode_if_absent: Cannot tell what scale or momentum value the subtraction condition is imposed at.
+  evidence:
+    - type: expert_claim
+      source_ref: subtraction_scheme_and_landau_pole_refinement_batch_initial
+      note: Source notes keep subtraction-point language as the concrete scale-fixing branch of the batch.
+  status: asserted
+  confidence: 0.95
+- from: qft.subtraction_point
+  to: qft.subtraction_scheme
+  relation_type: requires_for_use
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: Many practical subtraction schemes are specified by stating where renormalized quantities are fixed.
+  failure_mode_if_absent: The scheme language remains abstract and less visibly tied to an operational renormalization condition.
+  evidence:
+    - type: expert_claim
+      source_ref: subtraction_scheme_and_landau_pole_refinement_batch_initial
+      note: Source notes keep the subtraction-point node adjacent to the scheme node without making every scheme point-defined.
+  status: asserted
+  confidence: 0.87
+- from: qft.subtraction_scheme
+  to: qft.minimal_subtraction_scheme
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: Minimal subtraction is one concrete specialization of the broader subtraction-scheme vocabulary.
+  failure_mode_if_absent: Cannot tell what family of prescriptions the minimal-subtraction label belongs to.
+  evidence:
+    - type: expert_claim
+      source_ref: subtraction_scheme_and_landau_pole_refinement_batch_initial
+      note: Source notes keep minimal subtraction as the single concrete scheme leaf in this pass.
+  status: asserted
+  confidence: 0.96
+- from: qft.renormalization_scale
+  to: qft.running_coupling
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: A running coupling is defined precisely by its dependence on the renormalization scale.
+  failure_mode_if_absent: Cannot tell with respect to what variable the coupling is supposed to run.
+  evidence:
+    - type: expert_claim
+      source_ref: subtraction_scheme_and_landau_pole_refinement_batch_initial
+      note: Source notes keep the running-coupling node directly attached to the renormalization-scale branch.
+  status: asserted
+  confidence: 0.97
+- from: qft.beta_function
+  to: qft.running_coupling
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: The running coupling is determined by the beta function that governs its RG flow.
+  failure_mode_if_absent: Cannot connect the abstract beta function to the actual scale dependence of a coupling.
+  evidence:
+    - type: expert_claim
+      source_ref: subtraction_scheme_and_landau_pole_refinement_batch_initial
+      note: Source notes keep beta-function language as the direct structural input to running coupling.
+  status: asserted
+  confidence: 0.97
+- from: qft.renormalization_group_equation
+  to: qft.running_coupling
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: Running couplings are the standard solutions or outputs of the renormalization-group equation.
+  failure_mode_if_absent: Cannot place the coupling flow inside the broader RG-equation framework.
+  evidence:
+    - type: expert_claim
+      source_ref: subtraction_scheme_and_landau_pole_refinement_batch_initial
+      note: Source notes keep the RG equation and running-coupling nodes in the same direct branch.
+  status: asserted
+  confidence: 0.95
+- from: qft.running_coupling
+  to: qft.landau_pole
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: The Landau pole is defined as the scale where the running coupling diverges.
+  failure_mode_if_absent: Cannot tell what quantity is blowing up at the pathological scale.
+  evidence:
+    - type: expert_claim
+      source_ref: subtraction_scheme_and_landau_pole_refinement_batch_initial
+      note: Source notes introduce the Landau pole as the endpoint pathology of the running-coupling branch.
+  status: asserted
+  confidence: 0.97
+- from: qft.beta_function
+  to: qft.landau_pole
+  relation_type: requires_for_recognize
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: The sign and structure of the beta function explain why the coupling runs toward a Landau pole rather than away from it.
+  failure_mode_if_absent: The pole looks like an isolated pathology instead of a consequence of the RG flow.
+  evidence:
+    - type: expert_claim
+      source_ref: subtraction_scheme_and_landau_pole_refinement_batch_initial
+      note: Source notes keep beta-function language visible at the pole node without making the full flow derivation mandatory.
+  status: asserted
+  confidence: 0.89

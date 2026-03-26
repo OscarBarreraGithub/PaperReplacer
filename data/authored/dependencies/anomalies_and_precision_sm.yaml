@@ -1,0 +1,166 @@
+# Canonical dependency edges for the anomaly and precision-tests batch.
+- from: classical_fields.noether_theorem
+  to: sm.anomaly
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: standard_model
+  task_type: literature_reading
+  rationale: Standard anomaly discussions are usually framed against the Noether-current story, so that background has to be recognized first.
+  failure_mode_if_absent: Cannot tell what conserved quantity or symmetry the anomaly is obstructing.
+  evidence:
+    - type: expert_claim
+      source_ref: anomalies_and_precision_sm_batch_initial
+      note: Batch notes keep Noether-theorem language as the most direct reusable background node for anomaly reading.
+  status: asserted
+  confidence: 0.91
+- from: sm.anomaly
+  to: sm.chiral_anomaly
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: standard_model
+  task_type: literature_reading
+  rationale: The chiral anomaly is the standard use-level anomaly branch in Standard Model reading.
+  failure_mode_if_absent: Cannot follow the specific current-nonconservation statement in the chiral sector.
+  evidence:
+    - type: expert_claim
+      source_ref: anomalies_and_precision_sm_batch_initial
+      note: Batch notes identify the chiral branch as a core anomaly candidate.
+  status: asserted
+  confidence: 0.95
+- from: sm.anomaly
+  to: sm.gauge_anomaly
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: standard_model
+  task_type: literature_reading
+  rationale: Gauge anomalies are the consistency-threatening anomaly branch that must be tracked explicitly.
+  failure_mode_if_absent: Cannot see why anomaly cancellation is needed for gauge consistency.
+  evidence:
+    - type: expert_claim
+      source_ref: anomalies_and_precision_sm_batch_initial
+      note: Batch notes keep gauge anomalies distinct from the more general anomaly label.
+  status: asserted
+  confidence: 0.95
+- from: sm.anomaly
+  to: sm.global_symmetry_anomaly
+  relation_type: requires_for_recognize
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: standard_model
+  task_type: literature_reading
+  rationale: Global symmetry anomaly language is a useful companion branch when sources distinguish current obstructions by symmetry type.
+  failure_mode_if_absent: Cannot separate gauge- from global-symmetry anomaly readings in the source.
+  evidence:
+    - type: expert_claim
+      source_ref: anomalies_and_precision_sm_batch_initial
+      note: Batch notes include global anomaly language as a separate branch.
+  status: asserted
+  confidence: 0.84
+- from: sm.gauge_anomaly
+  to: sm.anomaly_cancellation
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: standard_model
+  task_type: literature_reading
+  rationale: Anomaly cancellation is the standard consistency condition that resolves the gauge-anomaly branch.
+  failure_mode_if_absent: Cannot justify why the Standard Model gauge structure remains consistent.
+  evidence:
+    - type: expert_claim
+      source_ref: anomalies_and_precision_sm_batch_initial
+      note: Batch notes treat cancellation as the key downstream condition.
+  status: asserted
+  confidence: 0.96
+- from: sm.precision.gauge_boson_self_energy
+  to: sm.precision.oblique_correction
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: standard_model
+  task_type: literature_reading
+  rationale: Oblique corrections are defined through gauge-boson self-energies and vacuum polarization.
+  failure_mode_if_absent: Cannot interpret the correction as a self-energy or vacuum-polarization effect.
+  evidence:
+    - type: expert_claim
+      source_ref: anomalies_and_precision_sm_batch_initial
+      note: Batch notes identify self-energy language as the technical input to the oblique branch.
+  status: asserted
+  confidence: 0.93
+- from: sm.precision.oblique_correction
+  to: sm.precision.electroweak_precision_observable
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: standard_model
+  task_type: literature_reading
+  rationale: Oblique corrections are one of the standard precision-test ways to organize deviations from tree-level electroweak predictions.
+  failure_mode_if_absent: Cannot place the correction inside the electroweak precision-observable workflow.
+  evidence:
+    - type: expert_claim
+      source_ref: anomalies_and_precision_sm_batch_initial
+      note: Batch notes frame oblique corrections as part of the precision-observable branch.
+  status: asserted
+  confidence: 0.95
+- from: sm.precision.effective_weak_mixing_angle
+  to: sm.precision.electroweak_precision_observable
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: standard_model
+  task_type: literature_reading
+  rationale: The effective weak mixing angle is a canonical electroweak precision observable.
+  failure_mode_if_absent: Cannot interpret the weak-mixing-angle result as a precision observable instead of just a parameter name.
+  evidence:
+    - type: expert_claim
+      source_ref: anomalies_and_precision_sm_batch_initial
+      note: Batch notes call out the effective weak mixing angle as a key precision quantity.
+  status: asserted
+  confidence: 0.95
+- from: sm.precision.z_pole_observable
+  to: sm.precision.electroweak_precision_observable
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: standard_model
+  task_type: literature_reading
+  rationale: Z-pole observables are the standard use-level measurements in the electroweak precision sector.
+  failure_mode_if_absent: Cannot tell how a Z-pole datum enters the precision-test branch.
+  evidence:
+    - type: expert_claim
+      source_ref: anomalies_and_precision_sm_batch_initial
+      note: Batch notes group Z-pole observables with the precision-tests branch.
+  status: asserted
+  confidence: 0.95
+- from: sm.precision.w_boson_mass
+  to: sm.precision.electroweak_precision_observable
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: standard_model
+  task_type: literature_reading
+  rationale: The W mass is one of the central electroweak precision observables.
+  failure_mode_if_absent: Cannot see why the W mass belongs in the precision-test comparison set.
+  evidence:
+    - type: expert_claim
+      source_ref: anomalies_and_precision_sm_batch_initial
+      note: Batch notes list the W mass as one of the core precision quantities.
+  status: asserted
+  confidence: 0.95
+- from: sm.precision.rho_parameter
+  to: sm.precision.electroweak_precision_observable
+  relation_type: requires_for_recognize
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: standard_model
+  task_type: literature_reading
+  rationale: The rho parameter is a standard electroweak-precision quantity used to test symmetry-breaking and radiative-correction structure.
+  failure_mode_if_absent: Cannot recognize the rho parameter as part of the precision-test vocabulary.
+  evidence:
+    - type: expert_claim
+      source_ref: anomalies_and_precision_sm_batch_initial
+      note: Batch notes mention the rho parameter as a recurring precision observable.
+  status: asserted
+  confidence: 0.85

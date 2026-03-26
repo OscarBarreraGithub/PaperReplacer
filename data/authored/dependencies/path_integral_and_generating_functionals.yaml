@@ -1,0 +1,196 @@
+# Canonical dependency edges for the Path Integral and Generating Functionals batch.
+- from: classical_fields.action_functional
+  to: qft.source_coupled_path_integral
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: The source-coupled path integral is written by exponentiating the action, so the action functional has to be recognized first.
+  failure_mode_if_absent: Cannot tell which functional is being exponentiated in the path-integral weight.
+  evidence:
+    - type: expert_claim
+      source_ref: path_integral_and_generating_functionals_batch_initial
+      note: First-pass source notes identify the action functional as the upstream object in the functional-integral setup.
+  status: asserted
+  confidence: 0.95
+- from: qft.functional_measure
+  to: qft.source_coupled_path_integral
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: A path integral cannot be used without the measure that defines what is being integrated over.
+  failure_mode_if_absent: Cannot interpret the integral as an integration over field configurations rather than a formal symbol.
+  evidence:
+    - type: expert_claim
+      source_ref: path_integral_and_generating_functionals_batch_initial
+      note: Source notes mark the functional measure as a core reading ingredient.
+  status: asserted
+  confidence: 0.94
+- from: qft.feynman_i_epsilon_prescription
+  to: qft.gaussian_functional_integral
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: In Minkowski-signature functional integrals, the causal i epsilon prescription is what makes the Gaussian model readable as a convergent contour choice.
+  failure_mode_if_absent: Cannot see how the free functional integral is defined when the quadratic form is oscillatory on the real contour.
+  evidence:
+    - type: expert_claim
+      source_ref: path_integral_and_generating_functionals_batch_initial
+      note: The batch explicitly reuses the existing i epsilon node when the source is reading Minkowski path integrals.
+  status: asserted
+  confidence: 0.9
+- from: classical_fields.action_functional
+  to: qft.gaussian_functional_integral
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: The Gaussian functional integral is the solvable free-field model built from the quadratic part of the action.
+  failure_mode_if_absent: Cannot tell what quadratic functional is being evaluated or why it is the free-theory benchmark.
+  evidence:
+    - type: expert_claim
+      source_ref: path_integral_and_generating_functionals_batch_initial
+      note: Source notes treat the Gaussian free-field case as the basic solvable model.
+  status: asserted
+  confidence: 0.91
+- from: qft.gaussian_functional_integral
+  to: qft.source_coupled_path_integral
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: The source-coupled path integral is used by evaluating or perturbing around the Gaussian baseline.
+  failure_mode_if_absent: Cannot see how the free functional integral anchors the source-dependent construction.
+  evidence:
+    - type: expert_claim
+      source_ref: path_integral_and_generating_functionals_batch_initial
+      note: Source notes describe the Gaussian integral as the main solvable anchor for the functional formalism.
+  status: asserted
+  confidence: 0.93
+- from: qft.source_coupled_path_integral
+  to: qft.generating_functional
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: The generating functional is the source-coupled path integral viewed as the object to differentiate with respect to external sources.
+  failure_mode_if_absent: Cannot read the source dependence as the device that generates correlation functions.
+  evidence:
+    - type: expert_claim
+      source_ref: path_integral_and_generating_functionals_batch_initial
+      note: Source notes put the source-coupled integral directly upstream of the generating functional.
+  status: asserted
+  confidence: 0.96
+- from: qft.generating_functional
+  to: qft.connected_generating_functional
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: The connected generating functional is recognized as the logarithmic companion of the full generating functional.
+  failure_mode_if_absent: Cannot tell why the source-dependent object is being logged or what structure the logged object isolates.
+  evidence:
+    - type: expert_claim
+      source_ref: path_integral_and_generating_functionals_batch_initial
+      note: Source notes keep connected correlators as a first-pass branch of the generating-functional story.
+  status: asserted
+  confidence: 0.94
+- from: qft.generating_functional
+  to: qft.source_derivative_rule
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: Correlators are obtained by differentiating the generating functional with respect to sources.
+  failure_mode_if_absent: Cannot perform the standard source-derivative extraction that turns the functional into Green functions.
+  evidence:
+    - type: expert_claim
+      source_ref: path_integral_and_generating_functionals_batch_initial
+      note: Source notes flag source differentiation as the central operational rule.
+  status: asserted
+  confidence: 0.97
+- from: qft.source_derivative_rule
+  to: qft.schwinger_dyson_equation
+  relation_type: requires_for_derive
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: Schwinger-Dyson equations are derived by functional differentiation and shift arguments applied to the generating functional.
+  failure_mode_if_absent: Cannot recover the standard functional equation that encodes the equations of motion at the correlator level.
+  evidence:
+    - type: expert_claim
+      source_ref: path_integral_and_generating_functionals_batch_initial
+      note: The batch explicitly wants a derivation-oriented path for the Schwinger-Dyson identities.
+  status: asserted
+  confidence: 0.95
+- from: classical_fields.continuous_symmetry_of_action
+  to: qft.ward_takahashi_identity
+  relation_type: requires_for_derive
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: Ward-Takahashi identities arise from continuous symmetry arguments applied to the action or source-coupled generating functional.
+  failure_mode_if_absent: Cannot tell which symmetry is producing the functional constraint on Green functions.
+  evidence:
+    - type: expert_claim
+      source_ref: path_integral_and_generating_functionals_batch_initial
+      note: Source notes mark symmetry-based functional identities as a key goal of the batch.
+  status: asserted
+  confidence: 0.94
+- from: qft.generating_functional
+  to: qft.ward_takahashi_identity
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: The Ward-Takahashi identity is normally read as a statement about the source-dependent generating functional, not just the bare action.
+  failure_mode_if_absent: Cannot follow how the symmetry statement acts on the correlator-generating object.
+  evidence:
+    - type: expert_claim
+      source_ref: path_integral_and_generating_functionals_batch_initial
+      note: Source notes keep the generating functional on the direct path to Ward-Takahashi statements.
+  status: asserted
+  confidence: 0.95
+- from: qft.fermionic_path_integral
+  to: qft.generating_functional
+  relation_type: requires_for_use
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: Fermionic path integrals feed the same generating-functional machinery, but with Grassmann variables and sign conventions.
+  failure_mode_if_absent: Cannot read the fermionic version of the source-dependent functional formalism.
+  evidence:
+    - type: expert_claim
+      source_ref: path_integral_and_generating_functionals_batch_initial
+      note: Source notes include fermionic path integrals as a reusable extension branch.
+  status: asserted
+  confidence: 0.89
+- from: qft.fermionic_path_integral
+  to: qft.schwinger_dyson_equation
+  relation_type: requires_for_use
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: The Schwinger-Dyson mechanism also appears in the fermionic case, but the Grassmann-specific setup is the reusable extra ingredient.
+  failure_mode_if_absent: Cannot follow the fermionic variant of the functional-equation derivation.
+  evidence:
+    - type: expert_claim
+      source_ref: path_integral_and_generating_functionals_batch_initial
+      note: Source notes keep the fermionic branch as a secondary but reusable extension.
+  status: asserted
+  confidence: 0.86

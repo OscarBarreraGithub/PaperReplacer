@@ -1,0 +1,27 @@
+# Canonical overlay annotations for the first-wave relativistic-kinematics batch.
+- overlay_type: assumed_background
+  target_topic: relativity.lorentz_transformation
+  presumed_node: relativity.inertial_frame
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  artifact_type: paper
+  rationale: Paper-facing relativistic-kinematics treatments usually assume the inertial-frame concept before writing Lorentz transformation formulas.
+  evidence:
+    - type: expert_claim
+      source_ref: relativistic_kinematics_batch_initial
+      note: Source notes emphasize inertial frames as part of the core reading vocabulary.
+  status: asserted
+  confidence: 0.88
+- overlay_type: assumed_background
+  target_topic: relativity.lorentz_transformation
+  presumed_node: relativity.spacetime_coordinates
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  artifact_type: paper
+  rationale: In paper and lecture-note usage, spacetime coordinates are typically presumed when Lorentz transformations are introduced.
+  evidence:
+    - type: expert_claim
+      source_ref: relativistic_kinematics_batch_initial
+      note: Source notes connect events and spacetime coordinates directly into the Lorentz-transformation layer.
+  status: asserted
+  confidence: 0.85

@@ -1,0 +1,51 @@
+# Canonical partonomy edges for the first-wave linear-algebra/operator-basics batch.
+- parent: math.operator_basics.linear_algebra_operator_basics
+  child: math.linear_algebra.vector_space
+  rationale: The batch starts from vector-space vocabulary because later operator language is read in that setting.
+  status: asserted
+  confidence: 0.95
+- parent: math.operator_basics.linear_algebra_operator_basics
+  child: math.linear_algebra.linear_map
+  rationale: Linear maps are the second major pillar of the slice and anchor the operator vocabulary.
+  status: asserted
+  confidence: 0.95
+- parent: math.operator_basics.linear_algebra_operator_basics
+  child: math.operator_basics.linear_operator
+  rationale: Linear operators are the self-map refinement of linear-map language and belong in the root slice.
+  status: asserted
+  confidence: 0.94
+- parent: math.operator_basics.linear_algebra_operator_basics
+  child: math.operator_basics.composition_identity_inverse
+  rationale: Composition, identity, and invertibility are core map-level operations in the intended foundation slice.
+  status: asserted
+  confidence: 0.9
+- parent: math.linear_algebra.vector_space
+  child: math.linear_algebra.subspace
+  rationale: Subspaces are direct structural refinements of vector-space vocabulary.
+  status: asserted
+  confidence: 0.93
+- parent: math.linear_algebra.vector_space
+  child: math.linear_algebra.span
+  rationale: Span is one of the standard generated-subspace subtopics under vector-space language.
+  status: asserted
+  confidence: 0.93
+- parent: math.linear_algebra.vector_space
+  child: math.linear_algebra.basis_and_coordinates
+  rationale: Bases and coordinates are the main vector-space reading tool for later operator representations.
+  status: asserted
+  confidence: 0.92
+- parent: math.linear_algebra.linear_map
+  child: math.operator_basics.matrix_representation_of_linear_map
+  rationale: Matrix representation is the finite-dimensional representation subtopic of linear maps.
+  status: asserted
+  confidence: 0.95
+- parent: math.linear_algebra.linear_map
+  child: math.operator_basics.kernel_and_image
+  rationale: Kernel and image are the standard structural subtopics attached to linear maps.
+  status: asserted
+  confidence: 0.95
+- parent: math.operator_basics.linear_operator
+  child: math.operator_basics.eigenvalues_and_eigenvectors
+  rationale: Eigenvalue and eigenvector language is the canonical operator subtopic for self-maps.
+  status: asserted
+  confidence: 0.95

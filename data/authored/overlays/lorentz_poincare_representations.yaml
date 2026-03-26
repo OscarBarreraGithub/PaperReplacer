@@ -1,0 +1,40 @@
+# Canonical overlay annotations for the Lorentz/Poincare representations batch.
+- overlay_type: assumed_background
+  target_topic: qft.lorentz_poincare_representations
+  presumed_node: relativity.lorentz_transformation
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  artifact_type: paper
+  rationale: Paper-facing representation discussions usually assume the Lorentz-transformation vocabulary before introducing Lorentz or Poincare representation language.
+  evidence:
+    - type: expert_claim
+      source_ref: lorentz_poincare_representations_batch_initial
+      note: Batch source notes treat Lorentz transformations as reused background for the representation story.
+  status: asserted
+  confidence: 0.89
+- overlay_type: assumed_background
+  target_topic: qft.lorentz_poincare_representations
+  presumed_node: relativity.invariant_interval
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  artifact_type: paper
+  rationale: The invariant-interval vocabulary is commonly presumed when authors move directly to spacetime symmetries and their representations.
+  evidence:
+    - type: expert_claim
+      source_ref: lorentz_poincare_representations_batch_initial
+      note: Batch source notes keep invariant-interval language in the immediate reuse set.
+  status: asserted
+  confidence: 0.87
+- overlay_type: assumed_background
+  target_topic: qft.wigner_classification
+  presumed_node: qft.mass_shell
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  artifact_type: paper
+  rationale: Particle-classification passages often assume mass-shell language when they jump straight to the Wigner labels.
+  evidence:
+    - type: expert_claim
+      source_ref: lorentz_poincare_representations_batch_initial
+      note: Batch source notes treat mass-shell vocabulary as a standard background term in the Wigner reading.
+  status: asserted
+  confidence: 0.88

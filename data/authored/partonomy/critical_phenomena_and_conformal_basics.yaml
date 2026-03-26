@@ -1,0 +1,61 @@
+# Canonical partonomy edges for the critical-phenomena and conformal-basics batch.
+- parent: qft.critical_phenomena_and_conformal_basics
+  child: qft.phase_transition
+  rationale: Phase-transition language is one of the two main entry branches of the batch.
+  status: asserted
+  confidence: 0.92
+- parent: qft.phase_transition
+  child: qft.continuous_phase_transition
+  rationale: Continuous transitions are the critical subset that matters for this batch.
+  status: asserted
+  confidence: 0.95
+- parent: qft.continuous_phase_transition
+  child: qft.order_parameter
+  rationale: Order parameters are part of the standard local description of continuous transitions.
+  status: asserted
+  confidence: 0.93
+- parent: qft.continuous_phase_transition
+  child: qft.correlation_length
+  rationale: Correlation length is a central physical quantity in the continuous-transition branch.
+  status: asserted
+  confidence: 0.94
+- parent: qft.continuous_phase_transition
+  child: qft.critical_exponent
+  rationale: Critical exponents are the main quantitative refinement of the continuous-transition branch.
+  status: asserted
+  confidence: 0.94
+- parent: qft.critical_phenomena_and_conformal_basics
+  child: qft.wilsonian_renormalization_group
+  rationale: Wilsonian RG is the main existing trunk node reused to organize the critical-point branch.
+  status: asserted
+  confidence: 0.9
+- parent: qft.critical_phenomena_and_conformal_basics
+  child: qft.renormalization_group_fixed_point
+  rationale: Fixed points are the main RG-facing branch of the batch.
+  status: asserted
+  confidence: 0.95
+- parent: qft.critical_phenomena_and_conformal_basics
+  child: qft.anomalous_dimension
+  rationale: Anomalous dimensions are the main reused scaling-data branch in the batch.
+  status: asserted
+  confidence: 0.88
+- parent: qft.renormalization_group_fixed_point
+  child: qft.universality_class
+  rationale: Universality classes sit under the fixed-point branch in the local critical-phenomena organization.
+  status: asserted
+  confidence: 0.94
+- parent: qft.renormalization_group_fixed_point
+  child: qft.scale_invariance
+  rationale: Scale invariance is the immediate symmetry-side payoff of the fixed-point branch.
+  status: asserted
+  confidence: 0.93
+- parent: qft.scale_invariance
+  child: qft.conformal_invariance
+  rationale: Conformal invariance is kept as a nearby symmetry refinement of the scale-invariant branch.
+  status: asserted
+  confidence: 0.87
+- parent: qft.scale_invariance
+  child: qft.weyl_invariance
+  rationale: Weyl invariance is a local-rescaling branch adjacent to the scale-invariance discussion.
+  status: asserted
+  confidence: 0.84

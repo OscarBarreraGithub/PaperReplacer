@@ -1,0 +1,133 @@
+# Canonical node records for the chiral-symmetry and sigma-models batch.
+- id: sm.chiral_symmetry_and_sigma_models
+  label: Chiral symmetry and sigma models
+  knowledge_kind: concept
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Topic anchor for chiral symmetry breaking, sigma-model methods, chiral-Lagrangian language, and the first custodial / CCWZ references.
+  status: asserted
+- id: sm.symmetry_breaking_and_standard_model
+  label: Symmetry breaking and the Standard Model
+  knowledge_kind: concept
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Topic anchor for the first-pass Standard Model neighborhood around spontaneous symmetry breaking, the Higgs sector, and electroweak mass generation.
+  status: asserted
+- id: classical_fields.lagrangian_density
+  label: Lagrangian density
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Local expression built from fields and their derivatives whose spacetime integral gives the action.
+  status: asserted
+- id: sm.ssb.spontaneous_symmetry_breaking
+  label: Spontaneous symmetry breaking
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Situation in which the equations respect a symmetry but the chosen vacuum state does not.
+  status: asserted
+- id: sm.ssb.goldstone_boson
+  label: Goldstone boson
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Massless mode associated with a spontaneously broken continuous global symmetry.
+  status: asserted
+- id: sm.ewbreak.electroweak_symmetry_breaking
+  label: Electroweak symmetry breaking
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Breaking of the electroweak symmetry down to the electromagnetic subgroup by the Higgs vacuum.
+  status: asserted
+- id: sm.ssb.chiral_symmetry
+  label: Chiral symmetry
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Global symmetry acting separately on left- and right-chiral fields in the limit where the symmetry-breaking mass terms are neglected.
+  status: asserted
+- id: sm.ssb.chiral_symmetry_breaking
+  label: Chiral symmetry breaking
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Spontaneous or effective breaking of chiral symmetry that produces Goldstone-style low-energy degrees of freedom.
+  status: asserted
+- id: sm.linear_sigma_model
+  label: Linear sigma model
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Field-theory model that realizes chiral symmetry with linearly transforming scalar fields and a symmetry-breaking potential.
+  status: asserted
+- id: sm.nonlinear_sigma_model
+  label: Nonlinear sigma model
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Low-energy effective model in which Goldstone fields live on a constrained target-space manifold and realize the broken symmetry nonlinearly.
+  status: asserted
+- id: sm.chiral_lagrangian
+  label: Chiral Lagrangian
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Effective low-energy Lagrangian organizing interactions of the Goldstone sector associated with chiral symmetry breaking.
+  status: asserted
+- id: sm.ccwz_method
+  label: CCWZ method
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Systematic construction of effective theories for nonlinearly realized symmetries using coset data and symmetry-covariant building blocks.
+  aliases:
+    - coset construction
+  status: asserted
+- id: sm.custodial_symmetry
+  label: Custodial symmetry
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Approximate global symmetry that protects electroweak mass relations in sigma-model or Higgs-sector descriptions.
+  status: asserted

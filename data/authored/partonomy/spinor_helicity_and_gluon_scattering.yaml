@@ -1,0 +1,56 @@
+# Canonical partonomy edges for the spinor-helicity-and-gluon-scattering batch.
+- parent: qft.spinor_helicity_and_gluon_scattering
+  child: qft.spinor_helicity_notation
+  rationale: Spinor-helicity notation is the main representation branch of the batch.
+  status: asserted
+  confidence: 0.97
+- parent: qft.spinor_helicity_and_gluon_scattering
+  child: qft.color_ordered_amplitude
+  rationale: Color ordering is the main decomposition branch that keeps the amplitudes readable.
+  status: asserted
+  confidence: 0.95
+- parent: qft.spinor_helicity_and_gluon_scattering
+  child: qft.gluon_tree_scattering
+  rationale: Gluon tree scattering is the process anchor that keeps the batch topic-centered.
+  status: asserted
+  confidence: 0.94
+- parent: qft.spinor_helicity_and_gluon_scattering
+  child: qft.mhv_amplitude
+  rationale: MHV amplitudes are the first compact formula class surfaced by the batch.
+  status: asserted
+  confidence: 0.95
+- parent: qft.spinor_helicity_and_gluon_scattering
+  child: qft.parke_taylor_formula
+  rationale: Parke-Taylor is the formula-level payoff of the MHV branch.
+  status: asserted
+  confidence: 0.94
+- parent: qft.spinor_helicity_notation
+  child: qft.angle_bracket_spinor_product
+  rationale: Angle brackets are one of the primitive contractions in the notation.
+  status: asserted
+  confidence: 0.96
+- parent: qft.spinor_helicity_notation
+  child: qft.square_bracket_spinor_product
+  rationale: Square brackets are the conjugate primitive contractions in the notation.
+  status: asserted
+  confidence: 0.96
+- parent: qft.spinor_helicity_notation
+  child: qft.schouten_identity
+  rationale: Schouten identity is the first reusable algebraic simplification branch beneath the notation.
+  status: asserted
+  confidence: 0.93
+- parent: qft.gluon_tree_scattering
+  child: qft.color_ordered_amplitude
+  rationale: Color-ordered partial amplitudes are one of the standard decompositions of the gluon tree amplitude.
+  status: asserted
+  confidence: 0.94
+- parent: qft.gluon_tree_scattering
+  child: qft.mhv_amplitude
+  rationale: MHV amplitudes are a helicity-specialized child of the gluon tree-scattering branch.
+  status: asserted
+  confidence: 0.94
+- parent: qft.mhv_amplitude
+  child: qft.parke_taylor_formula
+  rationale: Parke-Taylor is the canonical closed-form expression for the tree-level MHV branch.
+  status: asserted
+  confidence: 0.96

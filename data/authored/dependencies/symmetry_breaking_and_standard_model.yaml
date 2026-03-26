@@ -1,0 +1,181 @@
+# Canonical dependency edges for the Standard-Model symmetry-breaking batch.
+- from: classical_fields.lagrangian_density
+  to: sm.higgs.higgs_mechanism
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: standard_model
+  task_type: literature_reading
+  rationale: Higgs-sector discussions are usually written as specific terms in a Lagrangian density, so the Lagrangian background has to be recognized first.
+  failure_mode_if_absent: Cannot tell where the Higgs sector lives inside the Standard Model expression.
+  evidence:
+    - type: expert_claim
+      source_ref: symmetry_breaking_and_standard_model_batch_initial
+      note: Batch notes treat the Lagrangian-density reading as part of the standard Higgs-sector background.
+  status: asserted
+  confidence: 0.9
+- from: sm.ssb.vacuum_expectation_value
+  to: sm.ssb.spontaneous_symmetry_breaking
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: standard_model
+  task_type: literature_reading
+  rationale: The standard SSB reading hinges on a nonzero vacuum expectation value, so the VEV concept has to be recognized before the symmetry-breaking statement lands.
+  failure_mode_if_absent: Cannot see what field quantity is breaking the symmetry through the vacuum.
+  evidence:
+    - type: expert_claim
+      source_ref: symmetry_breaking_and_standard_model_batch_initial
+      note: Batch notes flag the VEV as the key quantity in the symmetry-breaking vocabulary.
+  status: asserted
+  confidence: 0.95
+- from: sm.ssb.spontaneous_symmetry_breaking
+  to: sm.ssb.goldstone_boson
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: standard_model
+  task_type: literature_reading
+  rationale: Goldstone-boson language is the standard consequence of spontaneous breaking when the continuous-symmetry reading is being used.
+  failure_mode_if_absent: Cannot follow why the broken-symmetry discussion produces massless modes in the first place.
+  evidence:
+    - type: expert_claim
+      source_ref: symmetry_breaking_and_standard_model_batch_initial
+      note: Batch notes keep Goldstone vocabulary adjacent to the SSB core.
+  status: asserted
+  confidence: 0.9
+- from: sm.higgs.higgs_doublet
+  to: sm.higgs.higgs_mechanism
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: standard_model
+  task_type: literature_reading
+  rationale: In the Standard Model, the Higgs mechanism is usually introduced through the Higgs doublet and its nonzero vacuum structure.
+  failure_mode_if_absent: Cannot identify which field representation is playing the Higgs role.
+  evidence:
+    - type: expert_claim
+      source_ref: symmetry_breaking_and_standard_model_batch_initial
+      note: Batch notes list the doublet as the main Higgs-sector node.
+  status: asserted
+  confidence: 0.92
+- from: sm.ssb.spontaneous_symmetry_breaking
+  to: sm.higgs.higgs_mechanism
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: standard_model
+  task_type: literature_reading
+  rationale: The Higgs mechanism is the use-level Standard Model realization of spontaneous symmetry breaking, so the symmetry-breaking concept has to be in hand first.
+  failure_mode_if_absent: Cannot move from generic SSB language to the Higgs-sector application.
+  evidence:
+    - type: expert_claim
+      source_ref: symmetry_breaking_and_standard_model_batch_initial
+      note: Batch notes tie the Higgs mechanism directly to the SSB branch.
+  status: asserted
+  confidence: 0.96
+- from: sm.higgs.higgs_mechanism
+  to: sm.ewbreak.electroweak_symmetry_breaking
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: standard_model
+  task_type: literature_reading
+  rationale: Electroweak symmetry breaking is the Standard Model name for the Higgs-mechanism application in this sector.
+  failure_mode_if_absent: Cannot interpret the electroweak-breaking passage as the Higgs mechanism rather than a separate phenomenon.
+  evidence:
+    - type: expert_claim
+      source_ref: symmetry_breaking_and_standard_model_batch_initial
+      note: Batch notes identify electroweak breaking as the sector-specific Higgs reading.
+  status: asserted
+  confidence: 0.96
+- from: sm.ewbreak.electroweak_symmetry
+  to: sm.ewbreak.electroweak_symmetry_breaking
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: standard_model
+  task_type: literature_reading
+  rationale: The broken phase only makes sense relative to the underlying electroweak gauge symmetry.
+  failure_mode_if_absent: Cannot tell what symmetry is being broken in the electroweak sector.
+  evidence:
+    - type: expert_claim
+      source_ref: symmetry_breaking_and_standard_model_batch_initial
+      note: Batch notes keep the unbroken electroweak symmetry explicit as the source vocabulary.
+  status: asserted
+  confidence: 0.94
+- from: sm.ewbreak.electroweak_symmetry_breaking
+  to: sm.ewbreak.w_and_z_bosons
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: standard_model
+  task_type: literature_reading
+  rationale: The W and Z bosons are the standard mass-eigenstate output of electroweak symmetry breaking.
+  failure_mode_if_absent: Cannot follow how the broken electroweak theory produces the massive weak bosons.
+  evidence:
+    - type: expert_claim
+      source_ref: symmetry_breaking_and_standard_model_batch_initial
+      note: Batch notes treat the W/Z mass pattern as a primary deliverable of the slice.
+  status: asserted
+  confidence: 0.96
+- from: sm.ewbreak.electroweak_symmetry_breaking
+  to: sm.ewbreak.photon
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: standard_model
+  task_type: literature_reading
+  rationale: The photon is the unbroken electromagnetic remnant of the electroweak breaking pattern.
+  failure_mode_if_absent: Cannot see why one gauge boson stays massless while the weak bosons do not.
+  evidence:
+    - type: expert_claim
+      source_ref: symmetry_breaking_and_standard_model_batch_initial
+      note: Batch notes emphasize the photon as part of the electroweak breaking output.
+  status: asserted
+  confidence: 0.94
+- from: sm.ewbreak.electroweak_symmetry_breaking
+  to: sm.ewbreak.electroweak_mixing_angle
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: standard_model
+  task_type: literature_reading
+  rationale: The electroweak mixing angle parameterizes the rotation between the weak-basis gauge fields and the mass eigenstates.
+  failure_mode_if_absent: Cannot interpret the basis rotation that produces the photon and Z-boson combinations.
+  evidence:
+    - type: expert_claim
+      source_ref: symmetry_breaking_and_standard_model_batch_initial
+      note: Batch notes list the mixing angle as a standard electroweak-basis parameter.
+  status: asserted
+  confidence: 0.9
+- from: sm.ewbreak.yukawa_coupling
+  to: sm.ewbreak.fermion_mass_generation
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: standard_model
+  task_type: literature_reading
+  rationale: Fermion masses in the Standard Model come from Yukawa couplings to the Higgs sector, so the Yukawa interaction has to be available first.
+  failure_mode_if_absent: Cannot see how the fermion mass terms are generated from the Higgs background.
+  evidence:
+    - type: expert_claim
+      source_ref: symmetry_breaking_and_standard_model_batch_initial
+      note: Batch notes keep Yukawa couplings and fermion mass generation paired.
+  status: asserted
+  confidence: 0.96
+- from: sm.higgs.higgs_mechanism
+  to: sm.ewbreak.fermion_mass_generation
+  relation_type: requires_for_recognize
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: standard_model
+  task_type: literature_reading
+  rationale: The fermion-mass reading is usually introduced as part of the Higgs-mechanism story even when the Yukawa term does the detailed work.
+  failure_mode_if_absent: Cannot place fermion masses inside the Higgs-sector narrative.
+  evidence:
+    - type: expert_claim
+      source_ref: symmetry_breaking_and_standard_model_batch_initial
+      note: Batch notes treat fermion mass generation as a companion branch to the Higgs mechanism.
+  status: asserted
+  confidence: 0.86

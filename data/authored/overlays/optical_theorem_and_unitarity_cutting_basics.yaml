@@ -1,0 +1,27 @@
+# Canonical overlay annotations for the optical-theorem and unitarity-cutting batch.
+- overlay_type: assumed_background
+  target_topic: qft.optical_theorem_and_unitarity_cutting_basics
+  presumed_node: qft.scattering_amplitude
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  artifact_type: paper
+  rationale: Optical-theorem discussions almost always assume the reader already has the basic scattering-amplitude vocabulary in hand.
+  evidence:
+    - type: expert_claim
+      source_ref: optical_theorem_and_unitarity_cutting_basics_batch_initial
+      note: Source notes keep the existing amplitude node as presumed background for the batch anchor.
+  status: asserted
+  confidence: 0.89
+- overlay_type: assumed_background
+  target_topic: qft.optical_theorem_and_unitarity_cutting_basics
+  presumed_node: qft.asymptotic_one_particle_state
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  artifact_type: paper
+  rationale: Sources that introduce unitarity or optical-theorem relations usually presume the LSZ asymptotic-state setup rather than reopening the full scattering-state story.
+  evidence:
+    - type: expert_claim
+      source_ref: optical_theorem_and_unitarity_cutting_basics_batch_initial
+      note: Source notes keep the asymptotic-state node as assumed background for the batch.
+  status: asserted
+  confidence: 0.84

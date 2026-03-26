@@ -1,0 +1,40 @@
+# Canonical overlay annotations for the Effective Actions and Background Fields batch.
+- overlay_type: assumed_background
+  target_topic: qft.effective_actions_and_background_fields
+  presumed_node: classical_fields.action_functional
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  artifact_type: paper
+  rationale: Effective-action discussions usually start from a known action functional that can be promoted into the source-dependent generating-functional language.
+  evidence:
+    - type: expert_claim
+      source_ref: effective_actions_and_background_fields_batch_initial
+      note: Contextual overlay for paper-facing assumed background.
+  status: asserted
+  confidence: 0.91
+- overlay_type: assumed_background
+  target_topic: qft.effective_actions_and_background_fields
+  presumed_node: qft.generating_functional
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  artifact_type: paper
+  rationale: Effective-action passages typically assume the source-dependent generating-functional formalism from the earlier path-integral batch.
+  evidence:
+    - type: expert_claim
+      source_ref: effective_actions_and_background_fields_batch_initial
+      note: Contextual overlay for paper-facing assumed background.
+  status: asserted
+  confidence: 0.9
+- overlay_type: assumed_background
+  target_topic: qft.effective_actions_and_background_fields
+  presumed_node: qft.renormalized_perturbation_theory
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  artifact_type: paper
+  rationale: One-loop effective-potential discussions often presume the renormalized perturbative setup before the subtraction details are revisited.
+  evidence:
+    - type: expert_claim
+      source_ref: effective_actions_and_background_fields_batch_initial
+      note: Contextual overlay for paper-facing assumed background.
+  status: asserted
+  confidence: 0.86

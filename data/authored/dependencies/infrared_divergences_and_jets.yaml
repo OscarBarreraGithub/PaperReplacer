@@ -1,0 +1,241 @@
+# Canonical dependency edges for the infrared-divergences-and-jets batch.
+- from: qft.cross_section
+  to: qft.infrared_divergence
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qcd_ir
+  task_type: literature_reading
+  rationale: Infrared divergences are read as singularities of scattering observables, so the cross-section object has to be recognized before the divergence language lands.
+  failure_mode_if_absent: Cannot tell what quantity is becoming singular when unresolved radiation is discussed.
+  evidence:
+    - type: expert_claim
+      source_ref: infrared_divergences_and_jets_batch_initial
+      note: Batch notes center the infrared discussion on observable-level cross sections and rates.
+  status: asserted
+  confidence: 0.95
+- from: qft.infrared_divergence
+  to: qft.soft_divergence
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qcd_ir
+  task_type: literature_reading
+  rationale: The soft divergence is one of the main ways the generic infrared singularity is specialized in practice.
+  failure_mode_if_absent: Cannot distinguish low-energy unresolved radiation from the broader infrared umbrella.
+  evidence:
+    - type: expert_claim
+      source_ref: infrared_divergences_and_jets_batch_initial
+      note: Batch notes split the generic infrared branch into soft and collinear singular limits.
+  status: asserted
+  confidence: 0.95
+- from: qft.infrared_divergence
+  to: qft.collinear_divergence
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qcd_ir
+  task_type: literature_reading
+  rationale: The collinear divergence is the other main specialization of the generic infrared singularity in perturbative gauge-theory observables.
+  failure_mode_if_absent: Cannot distinguish small-angle singular radiation from the broader infrared umbrella.
+  evidence:
+    - type: expert_claim
+      source_ref: infrared_divergences_and_jets_batch_initial
+      note: Batch notes keep the collinear branch separate because it drives factorization and jet structure.
+  status: asserted
+  confidence: 0.95
+- from: qft.soft_divergence
+  to: qft.bloch_nordsieck_theorem
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qcd_ir
+  task_type: literature_reading
+  rationale: Bloch-Nordsieck is the canonical cancellation statement for the soft branch of infrared singularities.
+  failure_mode_if_absent: Cannot see what singular behavior the theorem is canceling.
+  evidence:
+    - type: expert_claim
+      source_ref: infrared_divergences_and_jets_batch_initial
+      note: Batch notes keep Bloch-Nordsieck as the first theorem-level soft-cancellation node.
+  status: asserted
+  confidence: 0.93
+- from: qft.inclusive_observable
+  to: qft.bloch_nordsieck_theorem
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qcd_ir
+  task_type: literature_reading
+  rationale: The theorem is read as a statement about inclusive observables that sum over unresolved soft radiation.
+  failure_mode_if_absent: Cannot tell why the cancellation depends on what the measurement includes.
+  evidence:
+    - type: expert_claim
+      source_ref: infrared_divergences_and_jets_batch_initial
+      note: Batch notes explicitly tie soft cancellation to inclusivity of the observable.
+  status: asserted
+  confidence: 0.92
+- from: qft.infrared_divergence
+  to: qft.kln_theorem
+  relation_type: requires_for_derive
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qcd_ir
+  task_type: literature_reading
+  rationale: KLN is the broader cancellation statement for infrared singular behavior after summing over degenerate states.
+  failure_mode_if_absent: Cannot identify what singular terms are being organized or canceled in the theorem statement.
+  evidence:
+    - type: expert_claim
+      source_ref: infrared_divergences_and_jets_batch_initial
+      note: Batch notes treat KLN as the main theorem-level generalization of infrared cancellation.
+  status: asserted
+  confidence: 0.94
+- from: qft.inclusive_observable
+  to: qft.kln_theorem
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qcd_ir
+  task_type: literature_reading
+  rationale: KLN is applied by summing over degenerate unresolved states, so the inclusivity condition has to be present first.
+  failure_mode_if_absent: Cannot tell why the cancellation depends on summing over unresolved final-state structure.
+  evidence:
+    - type: expert_claim
+      source_ref: infrared_divergences_and_jets_batch_initial
+      note: Batch notes keep inclusivity as the measurement-side condition for KLN reasoning.
+  status: asserted
+  confidence: 0.94
+- from: qft.bloch_nordsieck_theorem
+  to: qft.kln_theorem
+  relation_type: requires_for_recognize
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: qcd_ir
+  task_type: literature_reading
+  rationale: KLN is usually introduced as the generalization of the earlier soft-cancellation story associated with Bloch-Nordsieck.
+  failure_mode_if_absent: Cannot place KLN relative to the earlier soft-only cancellation theorem.
+  evidence:
+    - type: expert_claim
+      source_ref: infrared_divergences_and_jets_batch_initial
+      note: Batch notes keep the two theorem nodes adjacent to preserve that reading.
+  status: asserted
+  confidence: 0.88
+- from: qcd.factorization_theorem
+  to: qcd.collinear_factorization
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qcd_ir
+  task_type: literature_reading
+  rationale: Collinear factorization is the leading-power implementation of the factorization theorem in the standard QCD slice.
+  failure_mode_if_absent: Cannot apply the theorem to the standard high-energy hadron-scattering setup.
+  evidence:
+    - type: expert_claim
+      source_ref: qcd_parton_model_and_factorization_batch_initial
+      note: Batch notes treat collinear factorization as the operational form of the factorization statement.
+  status: asserted
+  confidence: 0.94
+- from: qft.collinear_divergence
+  to: qcd.collinear_factorization
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qcd_ir
+  task_type: literature_reading
+  rationale: Collinear factorization is the standard framework that isolates and organizes the collinear singular branch.
+  failure_mode_if_absent: Cannot see what singular structure is being absorbed or organized by the factorized description.
+  evidence:
+    - type: expert_claim
+      source_ref: infrared_divergences_and_jets_batch_initial
+      note: Batch notes keep the factorization branch downstream of the collinear singular limit.
+  status: asserted
+  confidence: 0.94
+- from: qcd.collinear_factorization
+  to: eft.soft_collinear_effective_theory
+  relation_type: requires_for_recognize
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: qcd_ir
+  task_type: literature_reading
+  rationale: SCET is often introduced as the effective-language refinement of the same factorized soft/collinear separation.
+  failure_mode_if_absent: Cannot place SCET relative to the earlier factorization language.
+  evidence:
+    - type: expert_claim
+      source_ref: infrared_divergences_and_jets_batch_initial
+      note: Batch notes treat SCET as the downstream formalism that sharpens the factorized infrared split.
+  status: asserted
+  confidence: 0.87
+- from: eft.soft_collinear_effective_theory
+  to: eft.jet_function
+  relation_type: requires_for_recognize
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: qcd_ir
+  task_type: literature_reading
+  rationale: Jet functions are standard SCET objects that capture collinear structure in factorized observables.
+  failure_mode_if_absent: Cannot recognize the jet-function object when SCET factorization is written down.
+  evidence:
+    - type: expert_claim
+      source_ref: effective_field_theory_and_scet_batch_initial
+      note: Batch notes list jet function as a core SCET object.
+  status: asserted
+  confidence: 0.88
+- from: eft.soft_collinear_effective_theory
+  to: eft.soft_function
+  relation_type: requires_for_recognize
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: qcd_ir
+  task_type: literature_reading
+  rationale: Soft functions are standard SCET objects that capture low-momentum radiation in factorized observables.
+  failure_mode_if_absent: Cannot recognize the soft-sector factor in the SCET formula.
+  evidence:
+    - type: expert_claim
+      source_ref: effective_field_theory_and_scet_batch_initial
+      note: Batch notes list soft function as a core SCET object.
+  status: asserted
+  confidence: 0.88
+- from: qft.jet
+  to: eft.jet_function
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qcd_ir
+  task_type: literature_reading
+  rationale: A jet function is read as the factor associated with the energetic jet branch, so the jet concept has to be in place first.
+  failure_mode_if_absent: Cannot tell what physical object the jet function is encoding.
+  evidence:
+    - type: expert_claim
+      source_ref: infrared_divergences_and_jets_batch_initial
+      note: Batch notes treat the generic jet concept as the bridge from event-shape language to the existing SCET function node.
+  status: asserted
+  confidence: 0.92
+- from: qft.jet
+  to: qft.thrust
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qcd_ir
+  task_type: literature_reading
+  rationale: Thrust is the canonical event-shape observable for quantifying how jet-like the final state is.
+  failure_mode_if_absent: Cannot see why the observable is a measure of jet structure rather than a generic scalar statistic.
+  evidence:
+    - type: expert_claim
+      source_ref: infrared_divergences_and_jets_batch_initial
+      note: Batch notes use thrust as the first reusable event-shape node beneath the jet concept.
+  status: asserted
+  confidence: 0.95
+- from: eft.large_logarithm_resummation
+  to: qft.thrust
+  relation_type: requires_for_use
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: qcd_ir
+  task_type: literature_reading
+  rationale: Thrust distributions are one of the standard places where large-logarithm resummation becomes visible in practice.
+  failure_mode_if_absent: Cannot place the observable inside the familiar resummation use-case that motivates SCET language.
+  evidence:
+    - type: expert_claim
+      source_ref: infrared_divergences_and_jets_batch_initial
+      note: Batch notes keep thrust adjacent to the existing large-log resummation node rather than creating a separate resummation subtree.
+  status: asserted
+  confidence: 0.9

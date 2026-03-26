@@ -1,0 +1,151 @@
+# Canonical dependency edges for the correlators/propagators/LSZ trunk batch.
+- from: qft.time_ordering
+  to: qft.time_ordered_product
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_backbone
+  task_type: standard_computation
+  rationale: Time ordering is the rule that turns a bare operator product into the ordered product used in correlators.
+  failure_mode_if_absent: Cannot read which operator insertion is meant to come first when time arguments differ.
+  evidence:
+    - type: expert_claim
+      source_ref: correlators_propagators_lsz_batch_initial
+      note: Batch-specific source notes identify time ordering as the entry point to the correlator trunk.
+  status: asserted
+  confidence: 0.96
+- from: qft.time_ordered_product
+  to: qft.time_ordered_green_function
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_backbone
+  task_type: standard_computation
+  rationale: Time-ordered Green functions are built from vacuum expectation values of time-ordered operator products.
+  failure_mode_if_absent: Cannot see how a correlator is assembled from the ordered product.
+  evidence:
+    - type: expert_claim
+      source_ref: correlators_propagators_lsz_batch_initial
+      note: Batch notes treat the ordered product as the local definition layer for the Green function.
+  status: asserted
+  confidence: 0.95
+- from: qft.time_ordered_green_function
+  to: qft.feynman_propagator
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_backbone
+  task_type: standard_computation
+  rationale: The Feynman propagator is the standard two-point time-ordered Green function.
+  failure_mode_if_absent: Cannot identify the propagator as a special correlator rather than a separate object.
+  evidence:
+    - type: expert_claim
+      source_ref: correlators_propagators_lsz_batch_initial
+      note: Batch notes explicitly position the propagator as the two-point correlator node.
+  status: asserted
+  confidence: 0.97
+- from: qft.feynman_i_epsilon_prescription
+  to: qft.feynman_propagator
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_backbone
+  task_type: standard_computation
+  rationale: The i epsilon prescription fixes the causal pole placement in the propagator.
+  failure_mode_if_absent: Cannot track which side of the contour each propagator pole lies on.
+  evidence:
+    - type: expert_claim
+      source_ref: correlators_propagators_lsz_batch_initial
+      note: Reuses the existing analytic-structure node as a shared propagator front-end.
+  status: asserted
+  confidence: 0.96
+- from: qft.propagator_singularities
+  to: qft.feynman_propagator
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_backbone
+  task_type: standard_computation
+  rationale: Propagator formulas are read by understanding their singular structure.
+  failure_mode_if_absent: Cannot see where the propagator becomes singular or why pole placement matters.
+  evidence:
+    - type: expert_claim
+      source_ref: correlators_propagators_lsz_batch_initial
+      note: Keeps the propagator node visibly connected to the existing singularity frontier.
+  status: asserted
+  confidence: 0.95
+- from: qft.feynman_propagator
+  to: qft.amputation
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_backbone
+  task_type: standard_computation
+  rationale: Amputation removes the external propagator legs from a correlator.
+  failure_mode_if_absent: Cannot say what gets stripped away before LSZ reduction is applied.
+  evidence:
+    - type: expert_claim
+      source_ref: correlators_propagators_lsz_batch_initial
+      note: Source notes flag external-leg stripping as the key use-level operation.
+  status: asserted
+  confidence: 0.94
+- from: qft.time_ordered_green_function
+  to: qft.lsz_reduction_formula
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_backbone
+  task_type: standard_computation
+  rationale: LSZ is stated in terms of time-ordered Green functions, not raw S-matrix elements.
+  failure_mode_if_absent: Cannot identify the object the reduction formula acts on.
+  evidence:
+    - type: expert_claim
+      source_ref: correlators_propagators_lsz_batch_initial
+      note: The batch notes identify the Green-function side as the LSZ input object.
+  status: asserted
+  confidence: 0.96
+- from: qft.feynman_propagator
+  to: qft.lsz_reduction_formula
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_backbone
+  task_type: standard_computation
+  rationale: LSZ uses propagator poles and external-leg factors in the reduction step.
+  failure_mode_if_absent: Cannot follow why the external propagator pieces are isolated and removed.
+  evidence:
+    - type: expert_claim
+      source_ref: correlators_propagators_lsz_batch_initial
+      note: Retains the shared propagator frontier inside the reduction formula.
+  status: asserted
+  confidence: 0.94
+- from: qft.amputation
+  to: qft.lsz_reduction_formula
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_backbone
+  task_type: standard_computation
+  rationale: The reduction formula turns amputated correlators into scattering amplitudes.
+  failure_mode_if_absent: Cannot connect the correlator to the amputated scattering object.
+  evidence:
+    - type: expert_claim
+      source_ref: correlators_propagators_lsz_batch_initial
+      note: Batch notes treat amputation as the bridge between correlators and scattering data.
+  status: asserted
+  confidence: 0.95
+- from: qft.asymptotic_one_particle_state
+  to: qft.lsz_reduction_formula
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_backbone
+  task_type: standard_computation
+  rationale: LSZ is stated in terms of incoming and outgoing asymptotic states.
+  failure_mode_if_absent: Cannot tell what external states the formula is relating.
+  evidence:
+    - type: expert_claim
+      source_ref: correlators_propagators_lsz_batch_initial
+      note: Source notes keep asymptotic particle states in the LSZ slice.
+  status: asserted
+  confidence: 0.93

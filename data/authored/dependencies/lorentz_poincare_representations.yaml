@@ -1,0 +1,196 @@
+# Canonical dependency edges for the Lorentz/Poincare representations batch.
+- from: relativity.lorentz_transformation
+  to: qft.lorentz_poincare_representations
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: The batch topic extends the standard Lorentz-transformation vocabulary into representation language, so the reader has to recognize the underlying symmetry action first.
+  failure_mode_if_absent: Cannot tell what symmetry is being represented or why the representation discussion is still tied to relativistic kinematics.
+  evidence:
+    - type: expert_claim
+      source_ref: lorentz_poincare_representations_batch_initial
+      note: Batch source notes center Lorentz transformations as core background for the representation story.
+  status: asserted
+  confidence: 0.92
+- from: relativity.invariant_interval
+  to: qft.lorentz_poincare_representations
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: The representation story is still organized around Lorentz-invariant spacetime structure, so the invariant interval is part of the recognition background.
+  failure_mode_if_absent: Cannot see why the symmetry discussion is tied to invariant relativistic structure rather than to an arbitrary group action.
+  evidence:
+    - type: expert_claim
+      source_ref: lorentz_poincare_representations_batch_initial
+      note: Batch source notes treat invariant interval language as reusable kinematic background.
+  status: asserted
+  confidence: 0.88
+- from: relativity.rapidity
+  to: qft.lorentz_group_representation
+  relation_type: requires_for_use
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: Boost formulas in representation discussions are often parameterized by rapidity, so the boost parameter has to be available for use.
+  failure_mode_if_absent: Cannot read standard boost parametrizations or follow compact representation formulas that use rapidity instead of velocity.
+  evidence:
+    - type: expert_claim
+      source_ref: lorentz_poincare_representations_batch_initial
+      note: Batch source notes explicitly keep rapidity in the reuse set for boost language.
+  status: asserted
+  confidence: 0.86
+- from: relativity.lorentz_transformation
+  to: qft.lorentz_group_representation
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: Lorentz-group representation language is only readable once the underlying Lorentz transformation vocabulary is already in place.
+  failure_mode_if_absent: Cannot tell what object the representation is representing or how boosts and rotations enter the story.
+  evidence:
+    - type: expert_claim
+      source_ref: lorentz_poincare_representations_batch_initial
+      note: Batch source notes place Lorentz transformations directly in the representation neighborhood.
+  status: asserted
+  confidence: 0.95
+- from: qft.lorentz_group_representation
+  to: qft.poincare_group_representation
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: Poincare representations are read as the spacetime-symmetry extension of Lorentz representations, so the Lorentz piece has to be known first.
+  failure_mode_if_absent: Cannot distinguish the full spacetime symmetry action from the pure Lorentz part.
+  evidence:
+    - type: expert_claim
+      source_ref: lorentz_poincare_representations_batch_initial
+      note: Batch source notes frame the Poincare action as the extension of Lorentz symmetry on state space.
+  status: asserted
+  confidence: 0.93
+- from: qft.poincare_group_representation
+  to: qft.one_particle_state
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: One-particle states are the standard carrier spaces on which the Poincare representation is used.
+  failure_mode_if_absent: Cannot identify the state-space object that the symmetry action is supposed to act on.
+  evidence:
+    - type: expert_claim
+      source_ref: lorentz_poincare_representations_batch_initial
+      note: Batch source notes prioritize one-particle states as the carrier-space vocabulary.
+  status: asserted
+  confidence: 0.94
+- from: qft.poincare_group_representation
+  to: qft.wigner_classification
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: Wigner classification is the standard particle-classification story for Poincare representations, so the reader needs that symmetry vocabulary first.
+  failure_mode_if_absent: Cannot follow why the source is talking about particle labels as representation labels of the Poincare group.
+  evidence:
+    - type: expert_claim
+      source_ref: lorentz_poincare_representations_batch_initial
+      note: Batch source notes explicitly connect Poincare representations to Wigner-style classification.
+  status: asserted
+  confidence: 0.92
+- from: qft.one_particle_state
+  to: qft.wigner_classification
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: The classification is about one-particle states, so the carrier-space vocabulary has to be available before the classification statement is meaningful.
+  failure_mode_if_absent: Cannot tell that the classification is about particle states rather than fields or interactions.
+  evidence:
+    - type: expert_claim
+      source_ref: lorentz_poincare_representations_batch_initial
+      note: Batch source notes keep one-particle states central to the reading of the topic.
+  status: asserted
+  confidence: 0.91
+- from: relativity.invariant_interval
+  to: qft.mass_shell
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: The mass shell is the momentum-space analogue of the invariant quadratic relation, so the invariant interval vocabulary helps identify it correctly.
+  failure_mode_if_absent: Cannot recognize the mass shell as the invariant locus that classifies particle states by mass.
+  evidence:
+    - type: expert_claim
+      source_ref: lorentz_poincare_representations_batch_initial
+      note: Batch source notes reuse invariant-interval language when introducing mass-shell vocabulary.
+  status: asserted
+  confidence: 0.9
+- from: qft.mass_shell
+  to: qft.little_group
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: The little group is defined by fixing a standard momentum on the mass shell, so the mass-shell picture has to come first.
+  failure_mode_if_absent: Cannot tell which momentum is being held fixed or why the subgroup is relevant.
+  evidence:
+    - type: expert_claim
+      source_ref: lorentz_poincare_representations_batch_initial
+      note: Batch source notes treat mass-shell language as the entry point to the little-group vocabulary.
+  status: asserted
+  confidence: 0.93
+- from: qft.little_group
+  to: qft.spin_label
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: Spin or helicity labels are read from the relevant little-group representation, so the subgroup vocabulary has to be in place for use.
+  failure_mode_if_absent: Cannot interpret spin as a representation label rather than as an informal particle property.
+  evidence:
+    - type: expert_claim
+      source_ref: lorentz_poincare_representations_batch_initial
+      note: Batch source notes identify little-group labels as the source of spin or helicity data.
+  status: asserted
+  confidence: 0.94
+- from: qft.mass_shell
+  to: qft.wigner_classification
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: Wigner classification organizes the irreps by mass, so the mass-shell vocabulary is part of recognizing the classification scheme.
+  failure_mode_if_absent: Cannot see how mass enters the standard particle-label decomposition.
+  evidence:
+    - type: expert_claim
+      source_ref: lorentz_poincare_representations_batch_initial
+      note: Batch source notes explicitly mention mass-shell labels as part of the Wigner reading.
+  status: asserted
+  confidence: 0.92
+- from: qft.little_group
+  to: qft.wigner_classification
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: Wigner classification uses little-group representations to supply the internal spin or helicity labels of the particle.
+  failure_mode_if_absent: Cannot follow where the internal particle labels are coming from.
+  evidence:
+    - type: expert_claim
+      source_ref: lorentz_poincare_representations_batch_initial
+      note: Batch source notes frame little-group data as the use-level ingredient in classification.
+  status: asserted
+  confidence: 0.93

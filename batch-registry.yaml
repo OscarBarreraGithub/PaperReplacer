@@ -1,0 +1,767 @@
+version: "0.1"
+
+policy:
+  single_canonical_writer: true
+  recommended_max_active_batches: 3
+  hard_review_limit_before_throttle: "15_percent_escalation_rate"
+  note: "Parallelize staging aggressively, but serialize canonical merge decisions."
+
+anchors:
+  - batch_id: seed_pinch_singularities
+    status: calibration_fixture
+    reserved_namespaces:
+      - complex_analysis.contour_*
+      - qft.pinch_*
+  - batch_id: pinch_singularities_deep
+    status: canonical_anchor
+    reserved_namespaces:
+      - complex_analysis.contour_*
+      - complex_analysis.poles_*
+      - qft.analytic_continuation_*
+      - qft.landau_*
+      - qft.pinch_*
+
+waves:
+  - wave_id: stage1_foundations
+    status: active
+    note: "First broad population wave from the QFT roadmap."
+    active_batches:
+      - batch_id: complex_analysis_for_qft
+        stage: 1
+        status: populated_first_pass
+        priority: high
+        current_stats:
+          nodes: 6
+          dependencies: 7
+          partonomy: 0
+          overlays: 1
+        reserved_namespaces:
+          - complex_analysis.*
+        overlap_watch:
+          - pinch_singularities_deep
+      - batch_id: relativistic_kinematics
+        stage: 1
+        status: populated_first_pass
+        priority: high
+        current_stats:
+          nodes: 11
+          dependencies: 10
+          partonomy: 0
+          overlays: 2
+        reserved_namespaces:
+          - relativity.*
+        overlap_watch:
+          - future_lorentz_poincare_representations
+      - batch_id: linear_algebra_operator_basics
+        stage: 1
+        status: populated_first_pass
+        priority: high
+        current_stats:
+          nodes: 11
+          dependencies: 12
+          partonomy: 10
+          overlays: 2
+        reserved_namespaces:
+          - math.linear_algebra.*
+          - math.operator_basics.*
+        overlap_watch:
+          - future_qm_operator_foundations
+      - batch_id: distributions_boundary_values
+        stage: 1
+        status: populated_first_pass
+        priority: medium
+        current_stats:
+          nodes: 7
+          dependencies: 9
+          partonomy: 3
+          overlays: 2
+        reserved_namespaces:
+          - qft.distributional_boundary_values
+          - qft.boundary_values.plus_minus_i0_limits
+          - analysis.distributions.cauchy_principal_value
+          - analysis.distributions.dirac_delta_distribution
+        overlap_watch:
+          - complex_analysis_for_qft
+          - pinch_singularities_deep
+    pending_batches:
+      []
+    queued_next:
+      []
+  - wave_id: stage2_trunk_foundations
+    status: active
+    note: "Second-wave trunk batches that connect Stage 1 math/relativity foundations into QM, classical fields, and symmetry representation language."
+    active_batches:
+      - batch_id: qm_operator_foundations
+        stage: 2
+        status: populated_first_pass
+        priority: high
+        current_stats:
+          nodes: 16
+          dependencies: 14
+          partonomy: 9
+          overlays: 3
+        reserved_namespaces:
+          - qm.*
+        overlap_watch:
+          - linear_algebra_operator_basics
+      - batch_id: variational_principles_and_classical_fields
+        stage: 2
+        status: populated_first_pass
+        priority: high
+        current_stats:
+          nodes: 10
+          dependencies: 9
+          partonomy: 7
+          overlays: 1
+        reserved_namespaces:
+          - classical_fields.*
+        overlap_watch:
+          - relativistic_kinematics
+      - batch_id: lorentz_poincare_representations
+        stage: 2
+        status: populated_first_pass
+        priority: high
+        current_stats:
+          nodes: 11
+          dependencies: 13
+          partonomy: 6
+          overlays: 3
+        reserved_namespaces:
+          - qft.lorentz_*
+          - qft.poincare_*
+          - qft.wigner_*
+        overlap_watch:
+          - relativistic_kinematics
+          - future_free_fields_and_quantization
+    queued_next:
+      []
+  - wave_id: stage3_schwartz_trunk
+    status: active
+    note: "Parallelized broad-expansion wave aimed at the core reusable neighborhoods needed to map Schwartz QFT beyond the current trunk."
+    active_batches:
+      - batch_id: free_fields_and_quantization
+        stage: 3
+        status: populated_first_pass
+        priority: high
+        current_stats:
+          nodes: 17
+          dependencies: 18
+          partonomy: 9
+          overlays: 4
+        reserved_namespaces:
+          - qft.free_fields.*
+          - qft.quantization.*
+      - batch_id: correlators_propagators_lsz
+        stage: 3
+        status: populated_first_pass
+        priority: high
+        current_stats:
+          nodes: 10
+          dependencies: 10
+          partonomy: 7
+          overlays: 1
+        reserved_namespaces:
+          - qft.correlators.*
+          - qft.lsz.*
+      - batch_id: perturbation_wick_feynman_rules
+        stage: 3
+        status: populated_first_pass
+        priority: high
+        current_stats:
+          nodes: 13
+          dependencies: 12
+          partonomy: 11
+          overlays: 1
+        reserved_namespaces:
+          - qft.perturbation.*
+          - qft.wick.*
+          - qft.feynman_rules.*
+      - batch_id: spinor_lorentz_dirac_foundations
+        stage: 3
+        status: populated_first_pass
+        priority: high
+        current_stats:
+          nodes: 12
+          dependencies: 13
+          partonomy: 9
+          overlays: 2
+        reserved_namespaces:
+          - qft.spinor.*
+          - qft.dirac.*
+      - batch_id: discrete_symmetries_and_cpt
+        stage: 3
+        status: populated_first_pass
+        priority: medium
+        current_stats:
+          nodes: 12
+          dependencies: 16
+          partonomy: 6
+          overlays: 2
+        reserved_namespaces:
+          - qft.discrete_symmetries.*
+          - qft.cpt.*
+      - batch_id: path_integral_and_generating_functionals
+        stage: 3
+        status: populated_first_pass
+        priority: high
+        current_stats:
+          nodes: 13
+          dependencies: 13
+          partonomy: 8
+          overlays: 2
+        reserved_namespaces:
+          - qft.path_integral.*
+          - qft.generating_functional.*
+          - qft.schwinger_dyson.*
+          - qft.ward_takahashi.*
+        overlap_watch:
+          - future_correlators_propagators_lsz
+          - future_perturbation_wick_feynman_rules
+      - batch_id: regularization_renormalization_rg
+        stage: 3
+        status: populated_first_pass
+        priority: high
+        current_stats:
+          nodes: 13
+          dependencies: 12
+          partonomy: 10
+          overlays: 2
+        reserved_namespaces:
+          - qft.regularization.*
+          - qft.counterterm.*
+          - qft.renormalization.*
+          - qft.renormalization_group.*
+          - qft.rg.*
+        overlap_watch:
+          - future_perturbation_wick_feynman_rules
+          - future_yang_mills_and_qcd_basics
+          - future_symmetry_breaking_and_standard_model
+      - batch_id: yang_mills_and_qcd_basics
+        stage: 3
+        status: populated_first_pass
+        priority: high
+        current_stats:
+          nodes: 15
+          dependencies: 12
+          partonomy: 11
+          overlays: 2
+        reserved_namespaces:
+          - qft.yang_mills_and_qcd_basics
+          - qft.non_abelian_gauge_symmetry
+          - qft.gauge_field
+          - qft.covariant_derivative
+          - qft.field_strength_tensor
+          - qft.yang_mills_action
+          - qft.gauge_fixing
+          - qft.ghost_field
+          - qcd.color_su3
+          - qcd.quark
+          - qcd.gluon
+          - qcd.asymptotic_freedom
+      - batch_id: qcd_parton_model_and_factorization
+        stage: 3
+        status: populated_first_pass
+        priority: high
+        current_stats:
+          nodes: 12
+          dependencies: 13
+          partonomy: 9
+          overlays: 2
+        reserved_namespaces:
+          - qcd.parton_*
+          - qcd.factorization.*
+      - batch_id: symmetry_breaking_and_standard_model
+        stage: 3
+        status: populated_first_pass
+        priority: high
+        current_stats:
+          nodes: 14
+          dependencies: 12
+          partonomy: 13
+          overlays: 1
+        reserved_namespaces:
+          - sm.ssb.*
+          - sm.higgs.*
+          - sm.ewbreak.*
+        overlap_watch:
+          - anomalies_and_precision_sm
+      - batch_id: anomalies_and_precision_sm
+        stage: 3
+        status: populated_first_pass
+        priority: medium
+        current_stats:
+          nodes: 14
+          dependencies: 11
+          partonomy: 13
+          overlays: 1
+        reserved_namespaces:
+          - sm.anomaly.*
+          - sm.precision.*
+        overlap_watch:
+          - symmetry_breaking_and_standard_model
+          - effective_field_theory_and_scet
+      - batch_id: effective_field_theory_and_scet
+        stage: 3
+        status: populated_first_pass
+        priority: high
+        current_stats:
+          nodes: 19
+          dependencies: 17
+          partonomy: 18
+          overlays: 1
+        reserved_namespaces:
+          - eft.effective_field_theory_and_scet
+          - eft.scale_separation
+          - eft.effective_field_theory
+          - eft.operator_expansion
+          - eft.higher_dimensional_operator
+          - eft.power_counting
+          - eft.matching
+          - eft.renormalization_group_running
+          - eft.large_logarithm_resummation
+          - eft.heavy_quark_effective_theory
+          - eft.heavy_quark_symmetry
+          - eft.soft_collinear_effective_theory
+          - eft.mode_scaling
+          - eft.collinear_mode
+          - eft.soft_mode
+          - eft.hard_function
+          - eft.jet_function
+          - eft.soft_function
+        overlap_watch:
+          - symmetry_breaking_and_standard_model
+          - anomalies_and_precision_sm
+    queued_next:
+      []
+  - wave_id: stage4_schwartz_gap_closure_a
+    status: active
+    note: "First index-driven gap-closing wave after the Schwartz back-of-book sweep."
+    active_batches:
+      - batch_id: cross_sections_decay_rates_and_phase_space
+        stage: 4
+        status: populated_first_pass
+        priority: high
+        current_stats:
+          nodes: 13
+          dependencies: 14
+          partonomy: 10
+          overlays: 2
+        reserved_namespaces:
+          - qft.cross_sections.*
+          - qft.decay_rates.*
+          - qft.phase_space.*
+      - batch_id: qed_tree_level_processes
+        stage: 4
+        status: populated_first_pass
+        priority: high
+        current_stats:
+          nodes: 14
+          dependencies: 18
+          partonomy: 7
+          overlays: 4
+        reserved_namespaces:
+          - qed.*
+      - batch_id: gauge_invariance_and_ward_brst
+        stage: 4
+        status: populated_first_pass
+        priority: high
+        current_stats:
+          nodes: 15
+          dependencies: 14
+          partonomy: 14
+          overlays: 2
+        reserved_namespaces:
+          - qft.gauge_invariance.*
+          - qft.ward.*
+          - qft.brst.*
+      - batch_id: effective_actions_and_background_fields
+        stage: 4
+        status: populated_first_pass
+        priority: high
+        current_stats:
+          nodes: 13
+          dependencies: 13
+          partonomy: 11
+          overlays: 3
+        reserved_namespaces:
+          - qft.effective_action.*
+          - qft.background_field.*
+    queued_next:
+      []
+  - wave_id: stage5_schwartz_gap_closure_b
+    status: active
+    note: "Second index-driven gap-closing wave focused on infrared structure, modern amplitudes notation, and the first reusable flavor-mixing branch."
+    active_batches:
+      - batch_id: infrared_divergences_and_jets
+        stage: 5
+        status: populated_first_pass
+        priority: high
+        current_stats:
+          nodes: 16
+          dependencies: 16
+          partonomy: 12
+          overlays: 2
+        reserved_namespaces:
+          - qft.infrared_*
+          - qft.soft_divergence
+          - qft.collinear_divergence
+          - qft.bloch_nordsieck_*
+          - qft.kln_*
+          - qft.jet
+          - qft.thrust
+        overlap_watch:
+          - cross_sections_decay_rates_and_phase_space
+          - qcd_parton_model_and_factorization
+          - effective_field_theory_and_scet
+      - batch_id: spinor_helicity_and_gluon_scattering
+        stage: 5
+        status: populated_first_pass
+        priority: high
+        current_stats:
+          nodes: 15
+          dependencies: 16
+          partonomy: 11
+          overlays: 2
+        reserved_namespaces:
+          - qft.spinor_helicity_*
+          - qft.angle_bracket_*
+          - qft.square_bracket_*
+          - qft.schouten_*
+          - qft.color_ordered_*
+          - qft.mhv_*
+          - qft.parke_taylor_*
+          - qft.gluon_tree_*
+        overlap_watch:
+          - spinor_lorentz_dirac_foundations
+          - yang_mills_and_qcd_basics
+          - qed_tree_level_processes
+      - batch_id: flavor_ckm_pmns_and_precision_observables
+        stage: 5
+        status: populated_first_pass
+        priority: high
+        current_stats:
+          nodes: 13
+          dependencies: 11
+          partonomy: 13
+          overlays: 2
+        reserved_namespaces:
+          - sm.flavor_*
+          - sm.ckm_*
+          - sm.pmns_*
+          - sm.wolfenstein_*
+          - sm.jarlskog_*
+          - sm.neutrino_mass
+          - sm.neutrino_oscillation
+        overlap_watch:
+          - symmetry_breaking_and_standard_model
+          - anomalies_and_precision_sm
+          - discrete_symmetries_and_cpt
+    queued_next:
+      []
+  - wave_id: stage6_schwartz_followup_a
+    status: active
+    note: "Follow-on Schwartz wave for focused gauge-theory, critical-phenomena, and EFT refinements after the main Stage 5 gap closure."
+    active_batches:
+      - batch_id: scalar_qed
+        stage: 6
+        status: populated_first_pass
+        priority: high
+        current_stats:
+          nodes: 14
+          dependencies: 16
+          partonomy: 9
+          overlays: 2
+        reserved_namespaces:
+          - qft.scalar_qed
+          - qft.abelian_gauge_*
+          - qft.charged_scalar_field
+          - qft.minimal_coupling
+          - qft.scalar_qed_lagrangian
+          - qft.one_photon_scalar_vertex
+          - qft.seagull_vertex
+          - qft.scalar_compton_scattering
+        overlap_watch:
+          - gauge_invariance_and_ward_brst
+          - qed_tree_level_processes
+          - free_fields_and_quantization
+      - batch_id: nonperturbative_qcd_and_topology
+        stage: 6
+        status: populated_first_pass
+        priority: high
+        current_stats:
+          nodes: 13
+          dependencies: 13
+          partonomy: 10
+          overlays: 2
+        reserved_namespaces:
+          - qcd.nonperturbative_qcd_and_topology
+          - qcd.lattice_qcd
+          - qcd.link_field
+          - qft.wilson_line
+          - qft.wilson_loop
+          - qcd.area_law_for_wilson_loop
+          - qcd.confinement
+          - qft.instanton
+          - qcd.topological_charge
+          - qcd.theta_vacuum
+          - qcd.witten_veneziano_relation
+        overlap_watch:
+          - yang_mills_and_qcd_basics
+          - qcd_parton_model_and_factorization
+          - effective_actions_and_background_fields
+      - batch_id: critical_phenomena_and_conformal_basics
+        stage: 6
+        status: populated_first_pass
+        priority: high
+        current_stats:
+          nodes: 13
+          dependencies: 12
+          partonomy: 12
+          overlays: 2
+        reserved_namespaces:
+          - qft.critical_phenomena_and_conformal_basics
+          - qft.phase_transition
+          - qft.continuous_phase_transition
+          - qft.order_parameter
+          - qft.correlation_length
+          - qft.renormalization_group_fixed_point
+          - qft.universality_class
+          - qft.critical_exponent
+          - qft.scale_invariance
+          - qft.conformal_invariance
+          - qft.weyl_invariance
+        overlap_watch:
+          - regularization_renormalization_rg
+          - symmetry_breaking_and_standard_model
+          - effective_actions_and_background_fields
+      - batch_id: heavy_quark_effective_theory_refinement
+        stage: 6
+        status: populated_first_pass
+        priority: high
+        current_stats:
+          nodes: 13
+          dependencies: 14
+          partonomy: 7
+          overlays: 2
+        reserved_namespaces:
+          - eft.heavy_quark_limit
+          - eft.heavy_quark_velocity
+          - eft.residual_momentum
+          - eft.velocity_dependent_heavy_quark_field
+          - eft.one_over_heavy_quark_mass_expansion
+          - eft.isgur_wise_function
+        overlap_watch:
+          - effective_field_theory_and_scet
+          - flavor_ckm_pmns_and_precision_observables
+    queued_next:
+      []
+  - wave_id: stage7_schwartz_refinement_a
+    status: active
+    note: "Smaller Schwartz refinement wave for stress-tensor/current language, optical-theorem unitarity, and Mandelstam crossing structure."
+    active_batches:
+      - batch_id: energy_momentum_tensor_and_conformal_currents
+        stage: 7
+        status: populated_first_pass
+        priority: high
+        current_stats:
+          nodes: 11
+          dependencies: 11
+          partonomy: 9
+          overlays: 2
+        reserved_namespaces:
+          - qft.energy_momentum_tensor_and_conformal_currents
+          - classical_fields.noether_current
+          - classical_fields.energy_momentum_tensor
+          - classical_fields.canonical_energy_momentum_tensor
+          - qft.improved_energy_momentum_tensor
+          - qft.dilatation_current
+          - qft.conformal_current
+        overlap_watch:
+          - variational_principles_and_classical_fields
+          - critical_phenomena_and_conformal_basics
+          - effective_actions_and_background_fields
+      - batch_id: optical_theorem_and_unitarity_cutting_basics
+        stage: 7
+        status: populated_first_pass
+        priority: high
+        current_stats:
+          nodes: 8
+          dependencies: 8
+          partonomy: 5
+          overlays: 2
+        reserved_namespaces:
+          - qft.optical_theorem_and_unitarity_cutting_basics
+          - qft.s_matrix_unitarity
+          - qft.forward_scattering_amplitude
+          - qft.on_shell_intermediate_state
+          - qft.optical_theorem
+          - qft.unitarity_cutting_rules
+        overlap_watch:
+          - correlators_propagators_lsz
+          - cross_sections_decay_rates_and_phase_space
+          - pinch_singularities_deep
+      - batch_id: mandelstam_variables_and_crossing_refinement
+        stage: 7
+        status: populated_first_pass
+        priority: high
+        current_stats:
+          nodes: 7
+          dependencies: 8
+          partonomy: 5
+          overlays: 2
+        reserved_namespaces:
+          - qft.mandelstam_variables_and_crossing_refinement
+          - qft.crossing_symmetry
+          - qft.s_channel
+          - qft.t_channel
+          - qft.u_channel
+        overlap_watch:
+          - cross_sections_decay_rates_and_phase_space
+          - relativistic_kinematics
+          - qed_tree_level_processes
+    queued_next:
+      []
+  - wave_id: stage8_schwartz_refinement_b
+    status: active
+    note: "Narrow Schwartz refinement wave for soft-emission theorem language and subtraction-scheme / Landau-pole structure."
+    active_batches:
+      - batch_id: soft_photon_theorem_and_low_energy_limits
+        stage: 8
+        status: populated_first_pass
+        priority: high
+        current_stats:
+          nodes: 7
+          dependencies: 8
+          partonomy: 4
+          overlays: 2
+        reserved_namespaces:
+          - qft.soft_photon_theorem_and_low_energy_limits
+          - qft.soft_limit
+          - qft.soft_radiation_factorization
+          - qft.eikonal_soft_factor
+          - qft.soft_photon_theorem
+        overlap_watch:
+          - infrared_divergences_and_jets
+          - cross_sections_decay_rates_and_phase_space
+          - qed_tree_level_processes
+          - effective_field_theory_and_scet
+      - batch_id: subtraction_scheme_and_landau_pole_refinement
+        stage: 8
+        status: populated_first_pass
+        priority: high
+        current_stats:
+          nodes: 10
+          dependencies: 9
+          partonomy: 5
+          overlays: 2
+        reserved_namespaces:
+          - qft.subtraction_scheme_and_landau_pole_refinement
+          - qft.subtraction_point
+          - qft.subtraction_scheme
+          - qft.minimal_subtraction_scheme
+          - qft.running_coupling
+          - qft.landau_pole
+        overlap_watch:
+          - regularization_renormalization_rg
+          - effective_field_theory_and_scet
+          - scalar_qed
+    queued_next:
+      []
+  - wave_id: stage9_schwartz_refinement_c
+    status: active
+    note: "Focused Schwartz refinement wave for theorem-level electroweak symmetry-breaking language."
+    active_batches:
+      - batch_id: goldstone_theorem_and_equivalence_refinement
+        stage: 9
+        status: populated_first_pass
+        priority: high
+        current_stats:
+          nodes: 11
+          dependencies: 9
+          partonomy: 3
+          overlays: 2
+        reserved_namespaces:
+          - sm.goldstone_theorem_and_equivalence_refinement
+          - sm.ssb.goldstone_theorem
+          - sm.ewbreak.longitudinal_weak_boson_mode
+          - sm.ewbreak.goldstone_boson_equivalence_theorem
+        overlap_watch:
+          - symmetry_breaking_and_standard_model
+          - cross_sections_decay_rates_and_phase_space
+          - anomalies_and_precision_sm
+    queued_next:
+      []
+  - wave_id: stage10_schwartz_refinement_d
+    status: active
+    note: "Focused Schwartz refinement wave for chiral symmetry breaking, sigma-model methods, and low-energy symmetry language."
+    active_batches:
+      - batch_id: chiral_symmetry_and_sigma_models
+        stage: 10
+        status: populated_first_pass
+        priority: high
+        current_stats:
+          nodes: 13
+          dependencies: 12
+          partonomy: 6
+          overlays: 2
+        reserved_namespaces:
+          - sm.chiral_symmetry_and_sigma_models
+          - sm.ssb.chiral_symmetry
+          - sm.ssb.chiral_symmetry_breaking
+          - sm.linear_sigma_model
+          - sm.nonlinear_sigma_model
+          - sm.chiral_lagrangian
+          - sm.ccwz_method
+          - sm.custodial_symmetry
+        overlap_watch:
+          - symmetry_breaking_and_standard_model
+          - goldstone_theorem_and_equivalence_refinement
+          - anomalies_and_precision_sm
+    queued_next:
+      []
+  - wave_id: stage11_schwartz_refinement_e
+    status: active
+    note: "Focused Schwartz refinement wave for spectral representation, mass-shell language, and LSZ-adjacent scattering-state vocabulary."
+    active_batches:
+      - batch_id: spectral_and_mass_shell_refinement
+        stage: 11
+        status: populated_first_pass
+        priority: high
+        current_stats:
+          nodes: 12
+          dependencies: 10
+          partonomy: 5
+          overlays: 2
+        reserved_namespaces:
+          - qft.spectral_and_mass_shell_refinement
+          - qft.on_shell
+          - qft.off_shell
+          - qft.kallen_lehmann_representation
+          - qft.advanced_propagator
+          - qft.lippmann_schwinger_equation
+        overlap_watch:
+          - correlators_propagators_lsz
+          - optical_theorem_and_unitarity_cutting_basics
+          - cross_sections_decay_rates_and_phase_space
+    queued_next:
+      - batch_id: dis_and_hadronic_factorization_refinement
+        stage: 11
+        status: queued
+      - batch_id: scet_mode_and_resummation_refinement
+        stage: 11
+        status: queued
+      - batch_id: renormalization_toolkit_refinement
+        stage: 11
+        status: queued
+
+integration_notes:
+  - "Cross-batch connectivity is currently built by reusing shared canonical node ids across batches."
+  - "A synthetic all_authored bundle now compiles the union of authored batches into one connected view for queries and the localhost UI."
+  - "The Schwartz coverage plan is tracked separately in schwartz-coverage.md so chapter coverage can grow without turning chapters into ontology nodes."
+  - "The analytic / i-epsilon duplicate-definition cluster was normalized, so all_authored currently validates without warnings."
+
+rules:
+  - "No new broad umbrella batch should auto-merge without decomposition review."
+  - "No batch may create canonical nodes inside another active batch's reserved namespace."
+  - "Foundation batches should prioritize recognize/use before derive."
+  - "Textbooks and papers may guide extraction, but must not become ontology nodes."

@@ -1,0 +1,151 @@
+# Canonical dependency edges for the first-wave relativistic-kinematics batch.
+- from: relativity.event
+  to: relativity.spacetime_coordinates
+  relation_type: requires_for_recognize
+  necessity: typical
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: Paper-facing kinematics passages usually treat events as the things being labeled by spacetime coordinates.
+  failure_mode_if_absent: Cannot tell what the coordinate labels are indexing when a source talks about frame-dependent event descriptions.
+  evidence:
+    - type: expert_claim
+      source_ref: relativistic_kinematics_batch_initial
+      note: Source notes list events and spacetime coordinates as core high-value candidates.
+  status: asserted
+  confidence: 0.88
+- from: relativity.inertial_frame
+  to: relativity.lorentz_transformation
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: Lorentz transformations are the standard relations between inertial observers, so the frame concept has to be in place first.
+  failure_mode_if_absent: Cannot parse what kind of observer change the Lorentz transformation is relating.
+  evidence:
+    - type: expert_claim
+      source_ref: relativistic_kinematics_batch_initial
+      note: Source notes frame Lorentz transformations as a core kinematic tool.
+  status: asserted
+  confidence: 0.95
+- from: relativity.spacetime_coordinates
+  to: relativity.lorentz_transformation
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: Using a Lorentz transformation requires understanding that it acts on the time and space coordinates attached to the same event.
+  failure_mode_if_absent: Cannot carry out the coordinate change that the transformation is supposed to perform.
+  evidence:
+    - type: expert_claim
+      source_ref: relativistic_kinematics_batch_initial
+      note: Source notes connect event and coordinate concepts directly into Lorentz transformations.
+  status: asserted
+  confidence: 0.94
+- from: relativity.lorentz_transformation
+  to: relativity.invariant_interval
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: The invariant interval is recognized as the quantity preserved by Lorentz transformations.
+  failure_mode_if_absent: Cannot tell why the interval is called invariant or how it is tied to the frame change.
+  evidence:
+    - type: expert_claim
+      source_ref: relativistic_kinematics_batch_initial
+      note: Source notes place invariant interval in the immediate Lorentz-transformation neighborhood.
+  status: asserted
+  confidence: 0.96
+- from: relativity.invariant_interval
+  to: relativity.proper_time
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: Proper time is computed from the invariant interval along a timelike history, so the interval has to be available first.
+  failure_mode_if_absent: Cannot turn the interval relation into the elapsed time measured by the moving clock.
+  evidence:
+    - type: expert_claim
+      source_ref: relativistic_kinematics_batch_initial
+      note: Source notes pair invariant interval and proper time as a core standard relation family.
+  status: asserted
+  confidence: 0.95
+- from: relativity.lorentz_transformation
+  to: relativity.time_dilation
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: Time dilation is the standard reading-level consequence of changing frames for moving clocks.
+  failure_mode_if_absent: Cannot recognize why a source is comparing proper time with coordinate time across frames.
+  evidence:
+    - type: expert_claim
+      source_ref: relativistic_kinematics_batch_initial
+      note: Source notes list time dilation as a likely high-value kinematic topic.
+  status: asserted
+  confidence: 0.93
+- from: relativity.lorentz_transformation
+  to: relativity.length_contraction
+  relation_type: requires_for_recognize
+  necessity: typical
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: Length contraction is usually read as a standard consequence of comparing lengths in different inertial frames.
+  failure_mode_if_absent: Cannot recognize that a moving object's measured length is being shortened by the frame change.
+  evidence:
+    - type: expert_claim
+      source_ref: relativistic_kinematics_batch_initial
+      note: Source notes list length contraction among the core standard relations.
+  status: asserted
+  confidence: 0.92
+- from: relativity.lorentz_transformation
+  to: relativity.relativity_of_simultaneity
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: The frame dependence of simultaneity is one of the standard effects encoded by Lorentz transformations.
+  failure_mode_if_absent: Cannot follow why separated events stop being simultaneous after the frame change.
+  evidence:
+    - type: expert_claim
+      source_ref: relativistic_kinematics_batch_initial
+      note: Source notes explicitly name relativity of simultaneity as core vocabulary.
+  status: asserted
+  confidence: 0.94
+- from: relativity.lorentz_transformation
+  to: relativity.velocity_addition
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: Velocity addition is the standard tool for composing velocities under a Lorentz frame change.
+  failure_mode_if_absent: Cannot apply the frame-change rule to velocities in routine kinematic calculations.
+  evidence:
+    - type: expert_claim
+      source_ref: relativistic_kinematics_batch_initial
+      note: Source notes treat velocity addition as a use-level tool for frame changes.
+  status: asserted
+  confidence: 0.95
+- from: relativity.velocity_addition
+  to: relativity.rapidity
+  relation_type: requires_for_use
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: Rapidity is the alternative boost parameter that makes collinear velocity composition easier to read and use.
+  failure_mode_if_absent: Cannot interpret rapidity as the cleaner parametrization of boost composition used in the literature.
+  evidence:
+    - type: expert_claim
+      source_ref: relativistic_kinematics_batch_initial
+      note: Source notes group velocity addition and rapidity together as use-level tools.
+  status: asserted
+  confidence: 0.86

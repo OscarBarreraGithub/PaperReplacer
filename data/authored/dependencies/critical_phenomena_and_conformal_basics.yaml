@@ -1,0 +1,181 @@
+# Canonical dependency edges for the critical-phenomena and conformal-basics batch.
+- from: qft.order_parameter
+  to: qft.phase_transition
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_rg
+  task_type: literature_reading
+  rationale: Phase-transition language is usually oriented by an order parameter or equivalent phase-distinguishing quantity.
+  failure_mode_if_absent: Cannot tell what physical feature is changing across the transition.
+  evidence:
+    - type: expert_claim
+      source_ref: critical_phenomena_and_conformal_basics_batch_initial
+      note: Source notes keep the order-parameter node as the first recognizable hook into the phase-transition branch.
+  status: asserted
+  confidence: 0.94
+- from: qft.phase_transition
+  to: qft.continuous_phase_transition
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_rg
+  task_type: literature_reading
+  rationale: Continuous transitions are a specific critical subset of the broader phase-transition vocabulary.
+  failure_mode_if_absent: Cannot tell what kind of transition is being singled out in the critical-phenomena branch.
+  evidence:
+    - type: expert_claim
+      source_ref: critical_phenomena_and_conformal_basics_batch_initial
+      note: Source notes keep the continuous-transition node as a refinement of the generic phase-transition entry.
+  status: asserted
+  confidence: 0.96
+- from: qft.correlation_length
+  to: qft.continuous_phase_transition
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_rg
+  task_type: literature_reading
+  rationale: Continuous transitions are identified by the long-distance correlation-length story, especially the critical divergence.
+  failure_mode_if_absent: Cannot tell why the transition is being treated as critical and scale-free rather than merely qualitative.
+  evidence:
+    - type: expert_claim
+      source_ref: critical_phenomena_and_conformal_basics_batch_initial
+      note: Source notes keep correlation length as the main physical quantity that makes the continuous-transition branch operational.
+  status: asserted
+  confidence: 0.95
+- from: qft.wilsonian_renormalization_group
+  to: qft.renormalization_group_fixed_point
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_rg
+  task_type: literature_reading
+  rationale: RG fixed points are defined inside the Wilsonian flow picture where coarse-graining changes couplings.
+  failure_mode_if_absent: Cannot tell what flow is being frozen when a fixed point is introduced.
+  evidence:
+    - type: expert_claim
+      source_ref: critical_phenomena_and_conformal_basics_batch_initial
+      note: Source notes use the existing Wilsonian-RG node as the main upstream anchor for the critical-point branch.
+  status: asserted
+  confidence: 0.97
+- from: qft.renormalization_group_fixed_point
+  to: qft.universality_class
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_rg
+  task_type: literature_reading
+  rationale: Universality classes are organized by the fixed-point data controlling long-distance critical behavior.
+  failure_mode_if_absent: Cannot see why microscopically different systems are being grouped together in the same critical family.
+  evidence:
+    - type: expert_claim
+      source_ref: critical_phenomena_and_conformal_basics_batch_initial
+      note: Source notes make the fixed-point branch the main connector between RG flow and universality language.
+  status: asserted
+  confidence: 0.95
+- from: qft.continuous_phase_transition
+  to: qft.critical_exponent
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_rg
+  task_type: literature_reading
+  rationale: Critical exponents quantify the singular scaling behavior that appears near a continuous transition.
+  failure_mode_if_absent: Cannot place the exponent vocabulary in the local critical-phenomena branch.
+  evidence:
+    - type: expert_claim
+      source_ref: critical_phenomena_and_conformal_basics_batch_initial
+      note: Source notes keep critical exponents as the first quantitative payoff of the continuous-transition branch.
+  status: asserted
+  confidence: 0.96
+- from: qft.anomalous_dimension
+  to: qft.critical_exponent
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_rg
+  task_type: literature_reading
+  rationale: Anomalous dimensions are part of the scaling data that feed critical exponents at a fixed point.
+  failure_mode_if_absent: Cannot see how the field-theory RG vocabulary connects to the critical exponent labels.
+  evidence:
+    - type: expert_claim
+      source_ref: critical_phenomena_and_conformal_basics_batch_initial
+      note: Source notes reuse the existing anomalous-dimension node as the scale-data bridge into the critical-phenomena branch.
+  status: asserted
+  confidence: 0.94
+- from: qft.renormalization_group_fixed_point
+  to: qft.critical_exponent
+  relation_type: requires_for_use
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: qft_rg
+  task_type: literature_reading
+  rationale: Fixed-point linearization is the structural RG route by which critical exponents are usually organized.
+  failure_mode_if_absent: The exponents look like a disconnected list of numbers rather than a controlled output of the RG branch.
+  evidence:
+    - type: expert_claim
+      source_ref: critical_phenomena_and_conformal_basics_batch_initial
+      note: Source notes keep exponents tied to both anomalous dimensions and fixed-point language.
+  status: asserted
+  confidence: 0.88
+- from: qft.critical_exponent
+  to: qft.universality_class
+  relation_type: requires_for_recognize
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: qft_rg
+  task_type: literature_reading
+  rationale: Universality classes are often identified in practice by shared critical exponents and scaling laws.
+  failure_mode_if_absent: Universality remains a qualitative slogan instead of a classifiable critical-behavior pattern.
+  evidence:
+    - type: expert_claim
+      source_ref: critical_phenomena_and_conformal_basics_batch_initial
+      note: Source notes keep exponent data visible as one of the ways universality is recognized in reading.
+  status: asserted
+  confidence: 0.86
+- from: qft.renormalization_group_fixed_point
+  to: qft.scale_invariance
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_rg
+  task_type: literature_reading
+  rationale: Scale invariance is read as the symmetry language of a critical fixed point.
+  failure_mode_if_absent: Cannot see why the critical-point branch turns into a symmetry discussion.
+  evidence:
+    - type: expert_claim
+      source_ref: critical_phenomena_and_conformal_basics_batch_initial
+      note: Source notes make fixed-point language the bridge from RG flow to scale invariance.
+  status: asserted
+  confidence: 0.95
+- from: qft.scale_invariance
+  to: qft.conformal_invariance
+  relation_type: requires_for_recognize
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: qft_rg
+  task_type: literature_reading
+  rationale: Conformal invariance is introduced as a nearby strengthening of the scale-invariant symmetry story.
+  failure_mode_if_absent: Conformal invariance appears without any visible connection to the critical-point symmetry branch.
+  evidence:
+    - type: expert_claim
+      source_ref: critical_phenomena_and_conformal_basics_batch_initial
+      note: Source notes keep conformal invariance as a symmetry-side refinement of scale invariance rather than an isolated topic.
+  status: asserted
+  confidence: 0.87
+- from: qft.scale_invariance
+  to: qft.weyl_invariance
+  relation_type: requires_for_recognize
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: qft_rg
+  task_type: literature_reading
+  rationale: Weyl invariance is a nearby local-rescaling language that is easier to place once the global scale-invariance branch is already visible.
+  failure_mode_if_absent: Weyl invariance appears as disconnected notation instead of as a symmetry-side refinement adjacent to the critical-point branch.
+  evidence:
+    - type: expert_claim
+      source_ref: critical_phenomena_and_conformal_basics_batch_initial
+      note: Source notes keep Weyl invariance in the same local neighborhood as scale and conformal invariance without asserting they are identical.
+  status: asserted
+  confidence: 0.85

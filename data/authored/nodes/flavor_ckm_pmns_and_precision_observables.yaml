@@ -1,0 +1,139 @@
+# Canonical node records for the flavor-ckm-pmns-and-precision-observables batch.
+- id: sm.flavor_ckm_pmns_and_precision_observables
+  label: Flavor, CKM/PMNS, and precision observables
+  knowledge_kind: concept
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Topic anchor for flavor mixing, CKM and PMNS language, the first CP-violation invariant branch, and the shared electroweak precision-observable bridge.
+  status: asserted
+- id: sm.ewbreak.fermion_mass_generation
+  label: Fermion mass generation
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Standard Model mass generation for quarks and leptons through Yukawa couplings to the Higgs sector.
+  status: asserted
+- id: sm.ewbreak.electroweak_mixing_angle
+  label: Electroweak mixing angle
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Mixing parameter that rotates weak-basis gauge fields into photon and Z-boson combinations.
+  status: asserted
+- id: sm.precision.electroweak_precision_observable
+  label: Electroweak precision observable
+  knowledge_kind: concept
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Measurable electroweak quantity used to test Standard Model predictions at high accuracy.
+  status: asserted
+- id: sm.precision.effective_weak_mixing_angle
+  label: Effective weak mixing angle
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Precision-extracted version of the weak mixing angle used in electroweak tests.
+  status: asserted
+- id: sm.flavor_mixing
+  label: Flavor mixing
+  knowledge_kind: concept
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Mismatch between interaction and mass bases in the Standard Model fermion sector, encoded by unitary mixing matrices.
+  status: asserted
+- id: sm.ckm_matrix
+  label: CKM matrix
+  knowledge_kind: representation
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Unitary quark-flavor mixing matrix that relates weak-interaction eigenstates to mass eigenstates in the quark sector.
+  status: asserted
+- id: sm.pmns_matrix
+  label: PMNS matrix
+  knowledge_kind: representation
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Unitary lepton-flavor mixing matrix that relates weak-interaction eigenstates to mass eigenstates in the neutrino sector.
+  status: asserted
+- id: sm.wolfenstein_parametrization
+  label: Wolfenstein parametrization
+  knowledge_kind: representation
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Hierarchical expansion of the CKM matrix that makes the size of quark-flavor mixing entries easy to read.
+  status: asserted
+- id: sm.ckm_unitarity_triangle
+  label: CKM unitarity triangle
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Geometric representation of one CKM unitarity relation used to organize quark-sector flavor and CP-violation constraints.
+  status: asserted
+- id: sm.jarlskog_invariant
+  label: Jarlskog invariant
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Basis-invariant measure of CP violation built from the flavor-mixing structure.
+  status: asserted
+- id: sm.neutrino_mass
+  label: Neutrino mass
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Nonzero neutrino mass structure required for the neutrino flavor and oscillation branch of the Standard Model discussion.
+  status: asserted
+- id: sm.neutrino_oscillation
+  label: Neutrino oscillation
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Flavor-changing propagation phenomenon produced by neutrino mass splittings together with PMNS mixing.
+  status: asserted

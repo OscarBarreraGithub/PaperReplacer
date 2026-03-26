@@ -1,0 +1,196 @@
+# Canonical dependency edges for the first-pass QCD parton-model/factorization batch.
+- from: qcd.color_su3
+  to: qcd.parton_model_and_factorization
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qcd_factorization
+  task_type: literature_reading
+  rationale: The batch root is read through QCD color language, so the color-SU(3) vocabulary has to be in place when the neighborhood is introduced.
+  failure_mode_if_absent: Cannot tell that the parton/factorization branch is still a QCD-specific color story rather than a generic hadronic model.
+  evidence:
+    - type: expert_claim
+      source_ref: qcd_parton_model_and_factorization_batch_initial
+      note: Batch notes explicitly reuse the color-symmetry node as background for the root topic anchor.
+  status: asserted
+  confidence: 0.87
+- from: qcd.asymptotic_freedom
+  to: qcd.parton_model_and_factorization
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qcd_factorization
+  task_type: literature_reading
+  rationale: The root neighborhood is usually introduced with the short-distance QCD picture already in view, so asymptotic freedom is part of the recognition background.
+  failure_mode_if_absent: Cannot see why the parton-model/factorization story is being told in a weak-coupling short-distance regime.
+  evidence:
+    - type: expert_claim
+      source_ref: qcd_parton_model_and_factorization_batch_initial
+      note: Batch notes treat asymptotic freedom as shared background for the batch anchor.
+  status: asserted
+  confidence: 0.88
+- from: qcd.quark
+  to: qcd.parton_model
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qcd_factorization
+  task_type: literature_reading
+  rationale: Quarks are the canonical fermionic partons in the hadronic picture, so the reader needs that vocabulary to recognize the model.
+  failure_mode_if_absent: Cannot tell what the parton constituents are supposed to be in the quark sector.
+  evidence:
+    - type: expert_claim
+      source_ref: qcd_parton_model_and_factorization_batch_initial
+      note: Batch notes emphasize quark partons as central to the high-energy hadron picture.
+  status: asserted
+  confidence: 0.94
+- from: qcd.gluon
+  to: qcd.parton_model
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qcd_factorization
+  task_type: literature_reading
+  rationale: Gluons are the bosonic partons that have to be visible in the QCD version of the parton model.
+  failure_mode_if_absent: Cannot tell why the parton picture includes gauge bosons rather than only quark constituents.
+  evidence:
+    - type: expert_claim
+      source_ref: qcd_parton_model_and_factorization_batch_initial
+      note: Batch notes keep gluons alongside quarks in the parton-model branch.
+  status: asserted
+  confidence: 0.93
+- from: qcd.parton_model
+  to: qcd.parton_distribution_function
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qcd_factorization
+  task_type: literature_reading
+  rationale: Parton distribution functions are the quantitative object used to implement the parton-model picture in cross sections.
+  failure_mode_if_absent: Cannot translate the intuitive parton picture into a measurable momentum-fraction distribution.
+  evidence:
+    - type: expert_claim
+      source_ref: qcd_parton_model_and_factorization_batch_initial
+      note: Batch notes describe PDFs as the use-level representation of the parton model.
+  status: asserted
+  confidence: 0.96
+- from: qcd.parton_model
+  to: qcd.factorization_theorem
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qcd_factorization
+  task_type: literature_reading
+  rationale: The factorization theorem is the formal statement that elevates the parton-model separation into a controllable QCD result.
+  failure_mode_if_absent: Cannot tell what claim is being made when the source says the cross section factorizes.
+  evidence:
+    - type: expert_claim
+      source_ref: qcd_parton_model_and_factorization_batch_initial
+      note: Batch notes place factorization theorem immediately downstream of the parton-model vocabulary.
+  status: asserted
+  confidence: 0.95
+- from: qcd.factorization_theorem
+  to: qcd.collinear_factorization
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qcd_factorization
+  task_type: literature_reading
+  rationale: Collinear factorization is the leading-power implementation of the factorization theorem in the standard QCD slice.
+  failure_mode_if_absent: Cannot apply the theorem to the standard high-energy hadron-scattering setup.
+  evidence:
+    - type: expert_claim
+      source_ref: qcd_parton_model_and_factorization_batch_initial
+      note: Batch notes treat collinear factorization as the operational form of the factorization statement.
+  status: asserted
+  confidence: 0.94
+- from: qcd.collinear_factorization
+  to: qcd.hard_scattering_coefficient
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qcd_factorization
+  task_type: literature_reading
+  rationale: The hard coefficient is one of the pieces separated out by collinear factorization, so the factorized framework must be in place first.
+  failure_mode_if_absent: Cannot identify which part of the cross section is perturbatively calculable.
+  evidence:
+    - type: expert_claim
+      source_ref: qcd_parton_model_and_factorization_batch_initial
+      note: Batch notes frame the hard coefficient as the short-distance piece in the factorized product.
+  status: asserted
+  confidence: 0.93
+- from: qcd.collinear_factorization
+  to: qcd.parton_distribution_function
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qcd_factorization
+  task_type: literature_reading
+  rationale: PDFs are the hadron-side ingredient in collinear factorization and have to be available to use the theorem.
+  failure_mode_if_absent: Cannot write the hadronic side of the factorized scattering formula.
+  evidence:
+    - type: expert_claim
+      source_ref: qcd_parton_model_and_factorization_batch_initial
+      note: Batch notes keep PDFs as the universal long-distance factor in the factorized expression.
+  status: asserted
+  confidence: 0.96
+- from: qcd.parton_distribution_function
+  to: qcd.dglap_evolution
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qcd_factorization
+  task_type: literature_reading
+  rationale: DGLAP evolution is the standard scale-dependence statement about PDFs, so the PDF object must be recognized first.
+  failure_mode_if_absent: Cannot tell what distribution is being evolved with the factorization scale.
+  evidence:
+    - type: expert_claim
+      source_ref: qcd_parton_model_and_factorization_batch_initial
+      note: Batch notes place DGLAP evolution in the PDF subbranch.
+  status: asserted
+  confidence: 0.92
+- from: qcd.splitting_function
+  to: qcd.dglap_evolution
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qcd_factorization
+  task_type: literature_reading
+  rationale: DGLAP evolution uses splitting kernels, so the kernel vocabulary must be in place before the evolution equation is used.
+  failure_mode_if_absent: Cannot see where the scale-evolution kernel comes from in the parton picture.
+  evidence:
+    - type: expert_claim
+      source_ref: qcd_parton_model_and_factorization_batch_initial
+      note: Batch notes treat splitting functions as the use-level ingredient in DGLAP evolution.
+  status: asserted
+  confidence: 0.95
+- from: qcd.color_su3
+  to: qcd.quark
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qcd_factorization
+  task_type: literature_reading
+  rationale: Quarks are color-carrying objects, so the color-SU(3) background has to be recognized when they reappear in the parton model.
+  failure_mode_if_absent: Cannot tell why the quark partons are still described in color language inside the factorization setup.
+  evidence:
+    - type: expert_claim
+      source_ref: qcd_parton_model_and_factorization_batch_initial
+      note: Batch notes reuse the color-symmetry node from the Yang-Mills batch.
+  status: asserted
+  confidence: 0.92
+- from: qcd.color_su3
+  to: qcd.gluon
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qcd_factorization
+  task_type: literature_reading
+  rationale: Gluons remain the color-carrying gauge bosons in the parton-model neighborhood, so the color symmetry has to be in place first.
+  failure_mode_if_absent: Cannot tell why the gluon partons are part of the same color-structured hadronic picture.
+  evidence:
+    - type: expert_claim
+      source_ref: qcd_parton_model_and_factorization_batch_initial
+      note: Batch notes reuse the gluon node as a shared QCD parton.
+  status: asserted
+  confidence: 0.93

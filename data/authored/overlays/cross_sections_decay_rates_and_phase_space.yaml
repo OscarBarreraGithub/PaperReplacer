@@ -1,0 +1,27 @@
+# Canonical overlay annotations for the cross-sections/decay-rates/phase-space batch.
+- overlay_type: assumed_background
+  target_topic: qft.cross_sections_decay_rates_and_phase_space
+  presumed_node: qft.scattering_amplitude
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  artifact_type: paper
+  rationale: Paper-facing scattering formulas usually assume the amplitude object before converting it into cross sections or decay rates.
+  evidence:
+    - type: expert_claim
+      source_ref: cross_sections_decay_rates_and_phase_space_batch_initial
+      note: Batch notes treat the amplitude as the shared bridge background for the observable formulas.
+  status: asserted
+  confidence: 0.9
+- overlay_type: assumed_background
+  target_topic: qft.cross_sections_decay_rates_and_phase_space
+  presumed_node: relativity.lorentz_transformation
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  artifact_type: paper
+  rationale: Paper-facing kinematic discussions usually presume Lorentz transformations before introducing center-of-mass or invariant-variable formulas.
+  evidence:
+    - type: expert_claim
+      source_ref: cross_sections_decay_rates_and_phase_space_batch_initial
+      note: Batch notes keep the Lorentz-invariance background in the reuse set for the topic anchor.
+  status: asserted
+  confidence: 0.88

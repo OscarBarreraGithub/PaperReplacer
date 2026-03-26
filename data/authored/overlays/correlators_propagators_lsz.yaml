@@ -1,0 +1,14 @@
+# Canonical overlay annotations for the correlators/propagators/LSZ trunk batch.
+- overlay_type: assumed_background
+  target_topic: qft.correlators_propagators_lsz
+  presumed_node: qft.feynman_i_epsilon_prescription
+  audience_profile: hep_th_grad
+  subfield: qft_backbone
+  artifact_type: paper
+  rationale: Paper-facing propagator and LSZ discussions usually presume the causal i epsilon convention before the correlator side is unpacked.
+  evidence:
+    - type: expert_claim
+      source_ref: correlators_propagators_lsz_batch_initial
+      note: Contextual overlay for the shared propagator front-end.
+  status: asserted
+  confidence: 0.88

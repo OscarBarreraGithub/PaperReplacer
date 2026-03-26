@@ -1,0 +1,46 @@
+# Canonical partonomy edges for the energy-momentum-tensor and conformal-currents batch.
+- parent: qft.energy_momentum_tensor_and_conformal_currents
+  child: classical_fields.noether_current
+  rationale: The Noether-current branch is the symmetry-current entry point of the batch.
+  status: asserted
+  confidence: 0.92
+- parent: qft.energy_momentum_tensor_and_conformal_currents
+  child: classical_fields.energy_momentum_tensor
+  rationale: The energy-momentum tensor is the main structural branch of the batch.
+  status: asserted
+  confidence: 0.95
+- parent: classical_fields.energy_momentum_tensor
+  child: classical_fields.canonical_energy_momentum_tensor
+  rationale: The canonical tensor is a direct refinement of the general energy-momentum-tensor branch.
+  status: asserted
+  confidence: 0.94
+- parent: classical_fields.energy_momentum_tensor
+  child: qft.improved_energy_momentum_tensor
+  rationale: The improved tensor is the main stress-tensor refinement relevant to conformal and Weyl language.
+  status: asserted
+  confidence: 0.93
+- parent: qft.energy_momentum_tensor_and_conformal_currents
+  child: qft.scale_invariance
+  rationale: Scale invariance is one of the reused symmetry endpoints needed for the current branch.
+  status: asserted
+  confidence: 0.88
+- parent: qft.scale_invariance
+  child: qft.dilatation_current
+  rationale: The dilatation current is the current-side payoff of the scale-invariance branch.
+  status: asserted
+  confidence: 0.94
+- parent: qft.energy_momentum_tensor_and_conformal_currents
+  child: qft.conformal_invariance
+  rationale: Conformal invariance is the second reused symmetry endpoint of the batch.
+  status: asserted
+  confidence: 0.89
+- parent: qft.conformal_invariance
+  child: qft.conformal_current
+  rationale: The conformal current is the current-side payoff of the conformal-symmetry branch.
+  status: asserted
+  confidence: 0.94
+- parent: qft.energy_momentum_tensor_and_conformal_currents
+  child: qft.weyl_invariance
+  rationale: Weyl invariance is kept as a nearby symmetry-side branch connected to improved-tensor language.
+  status: asserted
+  confidence: 0.84

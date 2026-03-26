@@ -1,0 +1,46 @@
+# Canonical partonomy edges for the first-pass QCD parton-model/factorization batch.
+- parent: qcd.parton_model_and_factorization
+  child: qcd.parton_model
+  rationale: The parton model is the intuition-level branch that the batch is built around.
+  status: asserted
+  confidence: 0.95
+- parent: qcd.parton_model_and_factorization
+  child: qcd.factorization_theorem
+  rationale: The factorization theorem is the formal statement branch that upgrades the parton model into a usable QCD result.
+  status: asserted
+  confidence: 0.95
+- parent: qcd.parton_model_and_factorization
+  child: qcd.parton_distribution_function
+  rationale: PDFs are a central standalone branch in the hadronic parton picture.
+  status: asserted
+  confidence: 0.94
+- parent: qcd.parton_model
+  child: qcd.quark
+  rationale: Quarks are the fermionic partons highlighted by the parton model.
+  status: asserted
+  confidence: 0.94
+- parent: qcd.parton_model
+  child: qcd.gluon
+  rationale: Gluons are the bosonic partons that complete the QCD parton picture.
+  status: asserted
+  confidence: 0.94
+- parent: qcd.factorization_theorem
+  child: qcd.collinear_factorization
+  rationale: Collinear factorization is the standard operational branch of the theorem in this neighborhood.
+  status: asserted
+  confidence: 0.94
+- parent: qcd.factorization_theorem
+  child: qcd.hard_scattering_coefficient
+  rationale: The hard coefficient is one of the universal pieces separated by the factorization theorem.
+  status: asserted
+  confidence: 0.93
+- parent: qcd.parton_distribution_function
+  child: qcd.dglap_evolution
+  rationale: Scale evolution is the main structural branch beneath the PDF concept.
+  status: asserted
+  confidence: 0.93
+- parent: qcd.dglap_evolution
+  child: qcd.splitting_function
+  rationale: Splitting functions are the kernel-level ingredients of DGLAP evolution.
+  status: asserted
+  confidence: 0.94

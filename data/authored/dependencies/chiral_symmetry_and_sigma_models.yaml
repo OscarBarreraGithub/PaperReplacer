@@ -1,0 +1,181 @@
+# Canonical dependency edges for the chiral-symmetry and sigma-models batch.
+- from: sm.ssb.spontaneous_symmetry_breaking
+  to: sm.ssb.chiral_symmetry_breaking
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: standard_model
+  task_type: literature_reading
+  rationale: Chiral symmetry breaking is one concrete spontaneous-symmetry-breaking branch rather than a separate ontology island.
+  failure_mode_if_absent: Cannot place the chiral-breaking language inside the broader symmetry-breaking structure.
+  evidence:
+    - type: expert_claim
+      source_ref: chiral_symmetry_and_sigma_models_batch_initial
+      note: Source notes keep chiral symmetry breaking explicitly downstream of the existing SSB core.
+  status: asserted
+  confidence: 0.96
+- from: sm.ssb.chiral_symmetry
+  to: sm.ssb.chiral_symmetry_breaking
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: standard_model
+  task_type: literature_reading
+  rationale: The breaking statement is only meaningful once the underlying chiral symmetry is identified.
+  failure_mode_if_absent: Cannot tell what symmetry is being broken in the chiral branch.
+  evidence:
+    - type: expert_claim
+      source_ref: chiral_symmetry_and_sigma_models_batch_initial
+      note: Source notes keep the symmetry node explicit so the breaking node does not become generic.
+  status: asserted
+  confidence: 0.97
+- from: sm.ssb.goldstone_boson
+  to: sm.ssb.chiral_symmetry_breaking
+  relation_type: requires_for_recognize
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: standard_model
+  task_type: literature_reading
+  rationale: Chiral symmetry breaking is often read through the Goldstone sector it produces at low energy.
+  failure_mode_if_absent: The chiral branch appears detached from the existing Goldstone vocabulary.
+  evidence:
+    - type: expert_claim
+      source_ref: chiral_symmetry_and_sigma_models_batch_initial
+      note: Source notes keep the Goldstone node as a shared bridge rather than reauthoring it.
+  status: asserted
+  confidence: 0.89
+- from: classical_fields.lagrangian_density
+  to: sm.linear_sigma_model
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: standard_model
+  task_type: literature_reading
+  rationale: Sigma models are introduced as specific Lagrangian realizations, so the Lagrangian background must already be available.
+  failure_mode_if_absent: Cannot tell what sort of field-theory object the linear sigma model is.
+  evidence:
+    - type: expert_claim
+      source_ref: chiral_symmetry_and_sigma_models_batch_initial
+      note: Source notes keep sigma-model language tied to the existing Lagrangian background.
+  status: asserted
+  confidence: 0.95
+- from: sm.ssb.chiral_symmetry
+  to: sm.linear_sigma_model
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: standard_model
+  task_type: literature_reading
+  rationale: The linear sigma model is one standard model realization of the chiral symmetry branch.
+  failure_mode_if_absent: Cannot see what symmetry structure the model is intended to realize.
+  evidence:
+    - type: expert_claim
+      source_ref: chiral_symmetry_and_sigma_models_batch_initial
+      note: Source notes use the symmetry node as the direct bridge into the linear model.
+  status: asserted
+  confidence: 0.94
+- from: sm.ssb.chiral_symmetry_breaking
+  to: sm.nonlinear_sigma_model
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: standard_model
+  task_type: literature_reading
+  rationale: The nonlinear sigma model is the low-energy realization built after the symmetry-breaking branch has been identified.
+  failure_mode_if_absent: Cannot tell why only Goldstone-like coordinates remain as active variables in the effective description.
+  evidence:
+    - type: expert_claim
+      source_ref: chiral_symmetry_and_sigma_models_batch_initial
+      note: Source notes keep the nonlinear model downstream of the broken-symmetry picture.
+  status: asserted
+  confidence: 0.96
+- from: sm.linear_sigma_model
+  to: sm.nonlinear_sigma_model
+  relation_type: requires_for_recognize
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: standard_model
+  task_type: literature_reading
+  rationale: The nonlinear sigma model is often introduced as the constrained or low-energy refinement of the linear one.
+  failure_mode_if_absent: The relation between the two sigma-model descriptions stays opaque.
+  evidence:
+    - type: expert_claim
+      source_ref: chiral_symmetry_and_sigma_models_batch_initial
+      note: Source notes keep the linear model visible as the simpler sibling branch.
+  status: asserted
+  confidence: 0.88
+- from: sm.ssb.chiral_symmetry_breaking
+  to: sm.chiral_lagrangian
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: standard_model
+  task_type: literature_reading
+  rationale: The chiral Lagrangian organizes the low-energy consequences of the chiral-breaking branch.
+  failure_mode_if_absent: Cannot tell what low-energy symmetry-breaking data the effective Lagrangian is summarizing.
+  evidence:
+    - type: expert_claim
+      source_ref: chiral_symmetry_and_sigma_models_batch_initial
+      note: Source notes keep chiral-Lagrangian language attached to the broken-symmetry branch rather than to generic EFT vocabulary.
+  status: asserted
+  confidence: 0.96
+- from: sm.nonlinear_sigma_model
+  to: sm.chiral_lagrangian
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: standard_model
+  task_type: literature_reading
+  rationale: The chiral Lagrangian is commonly written in the nonlinear sigma-model description of the Goldstone sector.
+  failure_mode_if_absent: Cannot see what low-energy field representation the Lagrangian is built from.
+  evidence:
+    - type: expert_claim
+      source_ref: chiral_symmetry_and_sigma_models_batch_initial
+      note: Source notes use the nonlinear sigma model as the direct technical bridge into the chiral Lagrangian.
+  status: asserted
+  confidence: 0.97
+- from: sm.nonlinear_sigma_model
+  to: sm.ccwz_method
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: standard_model
+  task_type: literature_reading
+  rationale: CCWZ is the standard construction machinery for effective theories with nonlinear symmetry realization.
+  failure_mode_if_absent: Cannot place the method inside the sigma-model branch that motivates it.
+  evidence:
+    - type: expert_claim
+      source_ref: chiral_symmetry_and_sigma_models_batch_initial
+      note: Source notes keep CCWZ as a technical continuation of the nonlinear sigma-model branch.
+  status: asserted
+  confidence: 0.96
+- from: sm.ewbreak.electroweak_symmetry_breaking
+  to: sm.custodial_symmetry
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: standard_model
+  task_type: literature_reading
+  rationale: Custodial symmetry is read in the broken electroweak sector where mass relations are being discussed.
+  failure_mode_if_absent: Cannot tell what physical symmetry-breaking context the custodial statement is protecting.
+  evidence:
+    - type: expert_claim
+      source_ref: chiral_symmetry_and_sigma_models_batch_initial
+      note: Source notes keep custodial symmetry attached to the electroweak-breaking branch rather than as isolated group jargon.
+  status: asserted
+  confidence: 0.92
+- from: sm.nonlinear_sigma_model
+  to: sm.custodial_symmetry
+  relation_type: requires_for_recognize
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: standard_model
+  task_type: literature_reading
+  rationale: Custodial symmetry is often encountered through sigma-model descriptions of the electroweak Goldstone sector.
+  failure_mode_if_absent: The symmetry appears disconnected from the low-energy model language that usually motivates it.
+  evidence:
+    - type: expert_claim
+      source_ref: chiral_symmetry_and_sigma_models_batch_initial
+      note: Source notes keep custodial symmetry adjacent to the nonlinear sigma-model branch.
+  status: asserted
+  confidence: 0.87

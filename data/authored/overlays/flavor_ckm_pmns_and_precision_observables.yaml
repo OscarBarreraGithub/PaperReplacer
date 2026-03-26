@@ -1,0 +1,27 @@
+# Canonical overlay annotations for the flavor-ckm-pmns-and-precision-observables batch.
+- overlay_type: assumed_background
+  target_topic: sm.flavor_ckm_pmns_and_precision_observables
+  presumed_node: sm.ewbreak.fermion_mass_generation
+  audience_profile: hep_th_grad
+  subfield: standard_model_flavor
+  artifact_type: paper
+  rationale: Flavor papers usually presume the reader already knows how fermion masses arise before moving to basis mismatch and mixing matrices.
+  evidence:
+    - type: expert_claim
+      source_ref: flavor_ckm_pmns_and_precision_observables_batch_initial
+      note: Batch notes keep the existing fermion-mass-generation node as presumed background for the flavor branch.
+  status: asserted
+  confidence: 0.91
+- overlay_type: assumed_background
+  target_topic: sm.flavor_ckm_pmns_and_precision_observables
+  presumed_node: sm.precision.electroweak_precision_observable
+  audience_profile: hep_th_grad
+  subfield: standard_model_flavor
+  artifact_type: paper
+  rationale: The Schwartz flavor and CKM/PMNS discussions often assume the existing electroweak precision-observable branch is already familiar when constraints are mentioned.
+  evidence:
+    - type: expert_claim
+      source_ref: flavor_ckm_pmns_and_precision_observables_batch_initial
+      note: Batch notes explicitly reuse the precision branch instead of recreating it inside the flavor batch.
+  status: asserted
+  confidence: 0.86

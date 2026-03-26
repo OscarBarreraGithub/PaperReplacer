@@ -1,0 +1,14 @@
+# Canonical overlay annotations for the perturbation/Wick/Feynman-rules trunk batch.
+- overlay_type: assumed_background
+  target_topic: qft.perturbation_wick_feynman_rules
+  presumed_node: qm.unitary_evolution
+  audience_profile: hep_th_grad
+  subfield: qft_backbone
+  artifact_type: paper
+  rationale: Interaction-picture perturbation theory usually presumes unitary time evolution before the Dyson expansion is written down.
+  evidence:
+    - type: expert_claim
+      source_ref: perturbation_wick_feynman_rules_batch_initial
+      note: Contextual overlay for the operator-evolution background of the perturbation slice.
+  status: asserted
+  confidence: 0.87

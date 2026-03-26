@@ -1,0 +1,72 @@
+# Canonical node records for the soft-photon-theorem and low-energy-limits batch.
+- id: qft.soft_photon_theorem_and_low_energy_limits
+  label: Soft photon theorem and low-energy limits
+  knowledge_kind: concept
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Topic anchor for the soft limit of amplitudes, universal soft-emission factorization, and the soft-photon theorem.
+  status: asserted
+- id: qft.scattering_amplitude
+  label: Scattering amplitude
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Complex transition amplitude or matrix element whose magnitude enters observable scattering and decay formulas.
+  status: asserted
+- id: qft.soft_divergence
+  label: Soft divergence
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Infrared singularity produced when an emitted gauge boson becomes arbitrarily low in energy.
+  status: asserted
+- id: qft.soft_limit
+  label: Soft limit
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Limit in which an emitted gauge boson momentum is taken to zero so the amplitude simplifies to its universal low-energy form.
+  status: asserted
+- id: qft.soft_radiation_factorization
+  label: Soft-radiation factorization
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Statement that amplitudes with an additional soft photon factorize into a lower-point amplitude times a universal soft factor.
+  status: asserted
+- id: qft.eikonal_soft_factor
+  label: Eikonal soft factor
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Universal leading soft-emission factor built from external charged legs in the low-energy limit.
+  status: asserted
+- id: qft.soft_photon_theorem
+  label: Soft photon theorem
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Theorem stating that an amplitude with an additional soft photon is fixed at leading order by a universal factor times the corresponding lower-point amplitude.
+  status: asserted

@@ -1,0 +1,181 @@
+# Hand-authored dependency edges for the first-wave linear-algebra/operator-basics batch.
+- from: math.linear_algebra.vector_space
+  to: math.linear_algebra.subspace
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: A subspace is only meaningful once the reader can already parse the ambient vector-space vocabulary.
+  failure_mode_if_absent: Cannot tell whether a claimed subset is being treated as a vector-space object or just as an arbitrary collection of vectors.
+  evidence:
+    - type: expert_claim
+      source_ref: linear_algebra_operator_basics_source_notes
+      note: Batch source notes list subspaces as part of the intended stage-1 vector-space vocabulary.
+  status: asserted
+  confidence: 0.96
+- from: math.linear_algebra.vector_space
+  to: math.linear_algebra.span
+  relation_type: requires_for_recognize
+  necessity: typical
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: Span is the standard generated-subspace vocabulary and is read naturally inside the vector-space setting.
+  failure_mode_if_absent: Cannot tell that a set of vectors is being used to generate a subspace rather than merely being listed.
+  evidence:
+    - type: expert_claim
+      source_ref: linear_algebra_operator_basics_source_notes
+      note: Batch source notes identify spans as core recognized vocabulary for the foundation slice.
+  status: asserted
+  confidence: 0.94
+- from: math.linear_algebra.vector_space
+  to: math.linear_algebra.basis_and_coordinates
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: Coordinate descriptions only make sense once the underlying vector-space structure is already available.
+  failure_mode_if_absent: Cannot interpret coordinate vectors as basis-dependent representations of elements of a vector space.
+  evidence:
+    - type: expert_claim
+      source_ref: linear_algebra_operator_basics_source_notes
+      note: Batch source notes explicitly include bases and coordinates in the intended stage-1 vocabulary.
+  status: asserted
+  confidence: 0.95
+- from: math.linear_algebra.span
+  to: math.linear_algebra.basis_and_coordinates
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: Bases are the spanning sets that turn the span vocabulary into usable coordinate language.
+  failure_mode_if_absent: Cannot tell why a selected set of vectors gives a coordinate system rather than just another spanning collection.
+  evidence:
+    - type: expert_claim
+      source_ref: linear_algebra_operator_basics_source_notes
+      note: Batch source notes connect spans, bases, and coordinates as one of the intended core readings.
+  status: asserted
+  confidence: 0.91
+- from: math.linear_algebra.vector_space
+  to: math.linear_algebra.linear_map
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: A linear map is defined as a map between vector spaces, so the ambient vector-space setup comes first.
+  failure_mode_if_absent: Cannot tell what structure the map preserves or what kind of objects it acts on.
+  evidence:
+    - type: expert_claim
+      source_ref: linear_algebra_operator_basics_source_notes
+      note: Batch source notes list linear maps as core introductory vocabulary.
+  status: asserted
+  confidence: 0.97
+- from: math.linear_algebra.linear_map
+  to: math.operator_basics.linear_operator
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: Operator language is the self-map special case of linear-map language.
+  failure_mode_if_absent: Cannot tell when a source is talking about an operator rather than a general linear map.
+  evidence:
+    - type: expert_claim
+      source_ref: linear_algebra_operator_basics_source_notes
+      note: Batch source notes distinguish linear maps and linear operators as part of the intended vocabulary.
+  status: asserted
+  confidence: 0.98
+- from: math.linear_algebra.linear_map
+  to: math.operator_basics.matrix_representation_of_linear_map
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: A matrix representation is the finite-dimensional encoding of a linear map once bases have been chosen.
+  failure_mode_if_absent: Cannot read a displayed matrix as representing an operator instead of as an arbitrary array.
+  evidence:
+    - type: expert_claim
+      source_ref: linear_algebra_operator_basics_source_notes
+      note: Batch source notes explicitly include matrix representations of linear maps.
+  status: asserted
+  confidence: 0.97
+- from: math.linear_algebra.basis_and_coordinates
+  to: math.operator_basics.matrix_representation_of_linear_map
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: Matrix entries are interpreted relative to a chosen basis, so the basis/coordinate step has to be available.
+  failure_mode_if_absent: Cannot tell which basis a matrix is using or how its entries correspond to coordinates of outputs.
+  evidence:
+    - type: expert_claim
+      source_ref: linear_algebra_operator_basics_source_notes
+      note: Batch source notes tie bases, coordinates, and matrix representations together as a single recognition/use cluster.
+  status: asserted
+  confidence: 0.95
+- from: math.linear_algebra.linear_map
+  to: math.operator_basics.kernel_and_image
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: Kernel and image are the standard map-level vocabulary for what is sent to zero and what is reached.
+  failure_mode_if_absent: Cannot interpret null-space or range statements in ordinary linear-algebra prose.
+  evidence:
+    - type: expert_claim
+      source_ref: linear_algebra_operator_basics_source_notes
+      note: Batch source notes list kernel and image among the intended stage-1 operator terms.
+  status: asserted
+  confidence: 0.96
+- from: math.linear_algebra.subspace
+  to: math.operator_basics.kernel_and_image
+  relation_type: requires_for_recognize
+  necessity: typical
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: Kernel and image are read as subspace claims, so the subspace vocabulary helps classify them correctly.
+  failure_mode_if_absent: Cannot see that kernel and image statements are specifically subspace statements rather than just loose set-theoretic ones.
+  evidence:
+    - type: expert_claim
+      source_ref: linear_algebra_operator_basics_source_notes
+      note: Batch source notes treat subspaces and kernel/image language as part of the same foundation slice.
+  status: asserted
+  confidence: 0.9
+- from: math.linear_algebra.linear_map
+  to: math.operator_basics.composition_identity_inverse
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: Composition, identity, and invertibility are the standard operations and checks on linear maps.
+  failure_mode_if_absent: Cannot follow operator statements that compose maps, use the identity map, or ask whether a map has an inverse.
+  evidence:
+    - type: expert_claim
+      source_ref: linear_algebra_operator_basics_source_notes
+      note: Batch source notes explicitly list composition, identity, and inverse among the intended vocabulary.
+  status: asserted
+  confidence: 0.94
+- from: math.operator_basics.linear_operator
+  to: math.operator_basics.eigenvalues_and_eigenvectors
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: Eigenvalue and eigenvector language is standard operator vocabulary, especially for self-maps.
+  failure_mode_if_absent: Cannot interpret claims about rescaling directions or special operator modes.
+  evidence:
+    - type: expert_claim
+      source_ref: linear_algebra_operator_basics_source_notes
+      note: Batch source notes explicitly include eigenvalue and eigenvector language in scope.
+  status: asserted
+  confidence: 0.97

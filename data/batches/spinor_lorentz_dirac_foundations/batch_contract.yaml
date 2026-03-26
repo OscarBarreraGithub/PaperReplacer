@@ -1,0 +1,69 @@
+contract_version: "0.1"
+batch_id: "spinor_lorentz_dirac_foundations"
+description: "Stage 2 first-pass batch for the spinor/Lorentz/Dirac neighborhood, optimized for source-light recognize/use extraction."
+
+context:
+  audience_profile: "hep_th_grad"
+  subfield: "qft_foundations"
+  task_type: "literature_reading"
+
+allowed_relations:
+  - "requires_for_recognize"
+  - "requires_for_use"
+  - "part_of"
+
+allowed_overlay_types:
+  - "assumed_background"
+
+mastery_modes:
+  - "recognize"
+  - "use"
+
+closure:
+  allow_transitive_dependency: true
+  allow_heterogeneous_composition: false
+  cross_partonomy: false
+  cross_context: false
+  exclude_statuses:
+    - "disputed"
+
+composition:
+  allowed_relation_chains:
+    - ["requires_for_recognize", "requires_for_recognize"]
+    - ["requires_for_use", "requires_for_use"]
+  necessity_propagation: "min"
+  confidence_propagation: "min"
+
+query_defaults:
+  expand_composites_default: false
+  prerequisite_set_semantics: "ancestral_frontier"
+  disclose_non_uniqueness: true
+
+autonomy:
+  auto_merge_enabled: true
+  minimum_confidence_for_auto_merge: 0.84
+  block_on_duplicate_risk: true
+  block_on_ontology_drift: true
+  block_on_query_warning: true
+  require_human_review_for:
+    - "contract_changes"
+    - "ontology_changes"
+    - "decomposition_changes"
+    - "disputed_items"
+    - "forbidden_heuristics"
+    - "ambiguous_overlap"
+
+query_suite:
+  - "prereqs_recognize"
+  - "prereqs_use"
+  - "intrinsic_vs_profile_adjusted"
+  - "expanded_slice"
+
+forbidden_heuristics:
+  - "pedagogical_edges_in_prerequisite_queries"
+  - "global_assumed_background"
+  - "broad_spinor_umbrella_nodes_without_need"
+  - "broad_dirac_umbrella_nodes_without_need"
+  - "broad_qft_umbrella_nodes_without_need"
+  - "shortest_path_presented_as_pedagogy"
+  - "second_spinor_lorentz_dirac_foundations_node"

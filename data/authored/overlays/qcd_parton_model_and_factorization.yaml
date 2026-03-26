@@ -1,0 +1,27 @@
+# Canonical overlay annotations for the first-pass QCD parton-model/factorization batch.
+- overlay_type: assumed_background
+  target_topic: qcd.parton_model_and_factorization
+  presumed_node: qcd.color_su3
+  audience_profile: hep_th_grad
+  subfield: qcd_factorization
+  artifact_type: paper
+  rationale: Parton-model and factorization discussions usually presume the QCD color-symmetry vocabulary from the gauge-theory branch.
+  evidence:
+    - type: expert_claim
+      source_ref: qcd_parton_model_and_factorization_batch_initial
+      note: Batch notes explicitly reuse the color-SU(3) node from the Yang-Mills basics batch.
+  status: asserted
+  confidence: 0.9
+- overlay_type: assumed_background
+  target_topic: qcd.parton_model_and_factorization
+  presumed_node: qcd.asymptotic_freedom
+  audience_profile: hep_th_grad
+  subfield: qcd_factorization
+  artifact_type: paper
+  rationale: Readers are often expected to know the short-distance weakening of the QCD coupling before the parton picture is used.
+  evidence:
+    - type: expert_claim
+      source_ref: qcd_parton_model_and_factorization_batch_initial
+      note: Batch notes treat asymptotic freedom as shared background for the parton-model branch.
+  status: asserted
+  confidence: 0.88

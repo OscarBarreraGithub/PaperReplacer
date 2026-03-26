@@ -1,0 +1,181 @@
+# Canonical dependency edges for the Regularization, Renormalization, and RG batch.
+- from: classical_fields.action_functional
+  to: qft.counterterm_lagrangian
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: standard_computation
+  rationale: Counterterms are introduced by modifying the action or Lagrangian, so the action-level vocabulary has to be recognized first.
+  failure_mode_if_absent: Cannot tell where the compensating local terms are being inserted.
+  evidence:
+    - type: expert_claim
+      source_ref: regularization_renormalization_rg_batch_initial
+      note: First-pass source notes place counterterms directly in the action/Lagrangian neighborhood.
+  status: asserted
+  confidence: 0.94
+- from: classical_fields.lagrangian_density
+  to: qft.counterterm_lagrangian
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: standard_computation
+  rationale: The counterterm structure is a local correction to the Lagrangian density, so the density has to be available for use.
+  failure_mode_if_absent: Cannot read the counterterm as a local term in the perturbative Lagrangian.
+  evidence:
+    - type: expert_claim
+      source_ref: regularization_renormalization_rg_batch_initial
+      note: Source notes emphasize the Lagrangian-level structure of the subtraction terms.
+  status: asserted
+  confidence: 0.96
+- from: qft.ultraviolet_divergence
+  to: qft.dimensional_regularization
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: standard_computation
+  rationale: Dimensional regularization is read as a response to ultraviolet divergences, so the divergence problem must be recognized first.
+  failure_mode_if_absent: Cannot tell what problem the regularization method is meant to solve.
+  evidence:
+    - type: expert_claim
+      source_ref: regularization_renormalization_rg_batch_initial
+      note: Source notes put UV divergence recognition at the start of the regularization branch.
+  status: asserted
+  confidence: 0.95
+- from: qft.dimensional_regularization
+  to: qft.renormalized_perturbation_theory
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: standard_computation
+  rationale: Renormalized perturbation theory is organized after the regulator has made the loop integrals well-defined.
+  failure_mode_if_absent: Cannot follow how the perturbative expansion is made finite before subtraction.
+  evidence:
+    - type: expert_claim
+      source_ref: regularization_renormalization_rg_batch_initial
+      note: Source notes keep regularization immediately upstream of the renormalized expansion.
+  status: asserted
+  confidence: 0.94
+- from: qft.counterterm_lagrangian
+  to: qft.renormalized_perturbation_theory
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: standard_computation
+  rationale: The renormalized theory is obtained after the counterterms are added and fixed.
+  failure_mode_if_absent: Cannot see how the finite perturbative theory is obtained from the divergent one.
+  evidence:
+    - type: expert_claim
+      source_ref: regularization_renormalization_rg_batch_initial
+      note: Source notes treat counterterms as the subtraction mechanism for the renormalized expansion.
+  status: asserted
+  confidence: 0.97
+- from: qft.renormalized_perturbation_theory
+  to: qft.renormalization_scale
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: standard_computation
+  rationale: The notion of running parameters only makes sense once the renormalized perturbative setup introduces a reference scale.
+  failure_mode_if_absent: Cannot tell what scale the couplings and operators are running against.
+  evidence:
+    - type: expert_claim
+      source_ref: regularization_renormalization_rg_batch_initial
+      note: Source notes flag renormalization scale as the bridge from subtraction to flow.
+  status: asserted
+  confidence: 0.9
+- from: qft.renormalization_scale
+  to: qft.beta_function
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: standard_computation
+  rationale: The beta function is defined by how a coupling changes with the renormalization scale.
+  failure_mode_if_absent: Cannot interpret the beta function as the running of a coupling with scale.
+  evidence:
+    - type: expert_claim
+      source_ref: regularization_renormalization_rg_batch_initial
+      note: Source notes identify the scale dependence of couplings as a core RG quantity.
+  status: asserted
+  confidence: 0.98
+- from: qft.renormalization_scale
+  to: qft.anomalous_dimension
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: standard_computation
+  rationale: Anomalous dimensions are the scale-dependent deviations from naive scaling, so the scale variable has to be in place.
+  failure_mode_if_absent: Cannot see what quantity the anomalous scaling is being measured against.
+  evidence:
+    - type: expert_claim
+      source_ref: regularization_renormalization_rg_batch_initial
+      note: Source notes group anomalous dimensions with the running-scale vocabulary.
+  status: asserted
+  confidence: 0.96
+- from: qft.beta_function
+  to: qft.renormalization_group_equation
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: standard_computation
+  rationale: RG equations are built from the beta functions that encode the coupling flow.
+  failure_mode_if_absent: Cannot turn the running-coupling data into the standard flow equation.
+  evidence:
+    - type: expert_claim
+      source_ref: regularization_renormalization_rg_batch_initial
+      note: Source notes keep beta functions on the direct path to RG equations.
+  status: asserted
+  confidence: 0.97
+- from: qft.anomalous_dimension
+  to: qft.renormalization_group_equation
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: standard_computation
+  rationale: The standard RG equation for renormalized Green functions also depends on anomalous scaling data.
+  failure_mode_if_absent: Cannot follow the scale evolution of operators or correlators in the renormalized theory.
+  evidence:
+    - type: expert_claim
+      source_ref: regularization_renormalization_rg_batch_initial
+      note: Source notes tie anomalous dimensions to the same flow-equation branch as beta functions.
+  status: asserted
+  confidence: 0.95
+- from: qft.renormalization_group_equation
+  to: qft.callan_symanzik_equation
+  relation_type: requires_for_derive
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: standard_computation
+  rationale: The Callan-Symanzik equation is a canonical renormalized Green-function form of the RG flow.
+  failure_mode_if_absent: Cannot identify the flow equation that is specialized to renormalized correlators.
+  evidence:
+    - type: expert_claim
+      source_ref: regularization_renormalization_rg_batch_initial
+      note: Source notes explicitly include Callan-Symanzik language as a target of the batch.
+  status: asserted
+  confidence: 0.94
+- from: qft.renormalization_group_equation
+  to: qft.wilsonian_renormalization_group
+  relation_type: requires_for_use
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: standard_computation
+  rationale: Wilsonian RG is the coarse-graining interpretation of the same scale-evolution idea, so the equation helps anchor the flow picture.
+  failure_mode_if_absent: Cannot connect the differential RG equation to the scale-by-scale coarse-graining story.
+  evidence:
+    - type: expert_claim
+      source_ref: regularization_renormalization_rg_batch_initial
+      note: Source notes keep Wilsonian flow as the complementary interpretation branch.
+  status: asserted
+  confidence: 0.88

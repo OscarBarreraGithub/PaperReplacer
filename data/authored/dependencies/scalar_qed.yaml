@@ -1,0 +1,241 @@
+# Canonical dependency edges for the scalar-QED batch.
+- from: qft.free_scalar_field
+  to: qft.charged_scalar_field
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qed_foundations
+  task_type: literature_reading
+  rationale: The charged scalar field is first read as the charged matter specialization of the scalar-field vocabulary.
+  failure_mode_if_absent: Cannot tell what field species is being charged and coupled to the gauge field.
+  evidence:
+    - type: expert_claim
+      source_ref: scalar_qed_batch_initial
+      note: Batch notes ground scalar QED in the existing free-scalar-field branch.
+  status: asserted
+  confidence: 0.95
+- from: qft.abelian_gauge_symmetry
+  to: qft.scalar_qed
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qed_foundations
+  task_type: literature_reading
+  rationale: Scalar QED is the Abelian gauge-theory setting for charged scalar matter, so the symmetry type has to be visible at the topic anchor.
+  failure_mode_if_absent: Cannot tell what gauge structure distinguishes scalar QED from a generic interacting scalar theory.
+  evidence:
+    - type: expert_claim
+      source_ref: scalar_qed_batch_initial
+      note: Batch notes keep the Abelian symmetry node as the main gauge-side branch of the batch.
+  status: asserted
+  confidence: 0.95
+- from: qft.charged_scalar_field
+  to: qft.scalar_qed
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qed_foundations
+  task_type: literature_reading
+  rationale: Scalar QED is identified by the presence of charged scalar matter rather than charged fermion matter.
+  failure_mode_if_absent: Cannot tell what matter content makes the theory scalar QED instead of ordinary fermionic QED.
+  evidence:
+    - type: expert_claim
+      source_ref: scalar_qed_batch_initial
+      note: Batch notes keep the charged-scalar node adjacent to the batch anchor to prevent drift into generic QED.
+  status: asserted
+  confidence: 0.96
+- from: qft.gauge_invariance
+  to: qft.minimal_coupling
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qed_foundations
+  task_type: literature_reading
+  rationale: Minimal coupling is introduced as the interaction choice that preserves local gauge invariance.
+  failure_mode_if_absent: Cannot tell why the derivative replacement is being imposed rather than chosen ad hoc.
+  evidence:
+    - type: expert_claim
+      source_ref: scalar_qed_batch_initial
+      note: Batch notes put gauge invariance directly upstream of the minimal-coupling rule.
+  status: asserted
+  confidence: 0.95
+- from: qft.charged_scalar_field
+  to: qft.minimal_coupling
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qed_foundations
+  task_type: literature_reading
+  rationale: Minimal coupling acts on the charged matter field, so the charged-scalar vocabulary has to be present first.
+  failure_mode_if_absent: Cannot tell what matter derivative is being replaced by the covariant derivative.
+  evidence:
+    - type: expert_claim
+      source_ref: scalar_qed_batch_initial
+      note: Batch notes keep the charged-scalar branch as the matter-side input to minimal coupling.
+  status: asserted
+  confidence: 0.95
+- from: qft.abelian_gauge_symmetry
+  to: qft.minimal_coupling
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qed_foundations
+  task_type: literature_reading
+  rationale: The minimal-coupling rule is the Abelian gauge-theory way of coupling charged matter to the gauge field.
+  failure_mode_if_absent: Cannot tell which local symmetry the coupling rule is meant to preserve.
+  evidence:
+    - type: expert_claim
+      source_ref: scalar_qed_batch_initial
+      note: Batch notes keep the Abelian symmetry and minimal-coupling nodes in the same direct branch.
+  status: asserted
+  confidence: 0.94
+- from: qft.covariant_derivative
+  to: qft.scalar_qed_lagrangian
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qed_foundations
+  task_type: literature_reading
+  rationale: The scalar-QED Lagrangian is written by using the gauge-covariant derivative on the charged scalar field.
+  failure_mode_if_absent: Cannot parse the derivative term that defines the gauge-invariant matter interaction.
+  evidence:
+    - type: expert_claim
+      source_ref: scalar_qed_batch_initial
+      note: Batch notes explicitly reuse the generic covariant-derivative node instead of creating an Abelian duplicate.
+  status: asserted
+  confidence: 0.96
+- from: qft.minimal_coupling
+  to: qft.scalar_qed_lagrangian
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qed_foundations
+  task_type: literature_reading
+  rationale: The Lagrangian is the concrete output of applying the minimal-coupling prescription to charged scalar matter.
+  failure_mode_if_absent: Cannot see why the gauge interaction terms appear in the scalar action.
+  evidence:
+    - type: expert_claim
+      source_ref: scalar_qed_batch_initial
+      note: Batch notes keep the Lagrangian node directly downstream of the minimal-coupling rule.
+  status: asserted
+  confidence: 0.96
+- from: qft.charged_scalar_field
+  to: qft.scalar_qed_lagrangian
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qed_foundations
+  task_type: literature_reading
+  rationale: The Lagrangian is built for a charged scalar matter field, not just a generic scalar.
+  failure_mode_if_absent: Cannot tell which matter field the interaction terms belong to.
+  evidence:
+    - type: expert_claim
+      source_ref: scalar_qed_batch_initial
+      note: Batch notes keep the matter-field branch explicit to distinguish scalar QED from generic gauge theory.
+  status: asserted
+  confidence: 0.95
+- from: qft.scalar_qed_lagrangian
+  to: qft.one_photon_scalar_vertex
+  relation_type: requires_for_derive
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qed_foundations
+  task_type: literature_reading
+  rationale: The one-photon scalar vertex is read off from the interaction terms of the scalar-QED Lagrangian.
+  failure_mode_if_absent: Cannot derive the basic charged-scalar to photon interaction rule.
+  evidence:
+    - type: expert_claim
+      source_ref: scalar_qed_batch_initial
+      note: Batch notes treat the one-photon vertex as the first interaction payoff of the Lagrangian branch.
+  status: asserted
+  confidence: 0.97
+- from: qft.scalar_qed_lagrangian
+  to: qft.seagull_vertex
+  relation_type: requires_for_derive
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qed_foundations
+  task_type: literature_reading
+  rationale: The seagull vertex is the contact interaction term that appears when the scalar-QED Lagrangian is expanded in the gauge field.
+  failure_mode_if_absent: Cannot explain where the two-photon contact interaction comes from.
+  evidence:
+    - type: expert_claim
+      source_ref: scalar_qed_batch_initial
+      note: Batch notes keep the seagull branch as the distinctive structural output of scalar QED.
+  status: asserted
+  confidence: 0.97
+- from: qft.scalar_qed_lagrangian
+  to: qft.ward_takahashi_identity
+  relation_type: requires_for_use
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: qed_foundations
+  task_type: literature_reading
+  rationale: In scalar QED, Ward-Takahashi identities are read as symmetry constraints on the charged-scalar gauge interaction defined by the Lagrangian.
+  failure_mode_if_absent: Cannot place the identity as a statement about the actual scalar-gauge interaction branch under discussion.
+  evidence:
+    - type: expert_claim
+      source_ref: scalar_qed_batch_initial
+      note: Batch notes reuse the existing Ward-Takahashi node as the symmetry-check branch of scalar QED.
+  status: asserted
+  confidence: 0.88
+- from: qft.free_vector_field
+  to: qft.scalar_compton_scattering
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qed_foundations
+  task_type: literature_reading
+  rationale: Scalar Compton scattering uses a photon external leg, so the free vector-field vocabulary has to be available first.
+  failure_mode_if_absent: Cannot identify the gauge-boson external state in the process leaf.
+  evidence:
+    - type: expert_claim
+      source_ref: scalar_qed_batch_initial
+      note: Batch notes keep one process leaf so the scalar-QED interaction structure has a concrete use-level target.
+  status: asserted
+  confidence: 0.94
+- from: qft.feynman_rules
+  to: qft.scalar_compton_scattering
+  relation_type: requires_for_derive
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qed_foundations
+  task_type: literature_reading
+  rationale: The scattering amplitude is computed from the scalar-QED Feynman-rule layer.
+  failure_mode_if_absent: Cannot turn the interaction vertices into the actual scattering amplitude.
+  evidence:
+    - type: expert_claim
+      source_ref: scalar_qed_batch_initial
+      note: Batch notes keep the process leaf downstream of the existing Feynman-rules node rather than inventing a separate computational branch.
+  status: asserted
+  confidence: 0.96
+- from: qft.one_photon_scalar_vertex
+  to: qft.scalar_compton_scattering
+  relation_type: requires_for_derive
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qed_foundations
+  task_type: literature_reading
+  rationale: The standard exchange diagrams for scalar Compton scattering use the one-photon scalar interaction vertex.
+  failure_mode_if_absent: Cannot derive the ordinary exchange-diagram part of the amplitude.
+  evidence:
+    - type: expert_claim
+      source_ref: scalar_qed_batch_initial
+      note: Batch notes keep the one-photon vertex as one of the two indispensable ingredients of the process leaf.
+  status: asserted
+  confidence: 0.96
+- from: qft.seagull_vertex
+  to: qft.scalar_compton_scattering
+  relation_type: requires_for_derive
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qed_foundations
+  task_type: literature_reading
+  rationale: The contact diagram in scalar Compton scattering comes from the seagull vertex.
+  failure_mode_if_absent: Cannot explain why the process contains a contact interaction contribution absent in ordinary fermionic Compton scattering.
+  evidence:
+    - type: expert_claim
+      source_ref: scalar_qed_batch_initial
+      note: Batch notes use scalar Compton scattering specifically because it exposes the structural role of the seagull vertex.
+  status: asserted
+  confidence: 0.97

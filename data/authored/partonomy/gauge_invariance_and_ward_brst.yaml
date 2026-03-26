@@ -1,0 +1,71 @@
+# Canonical partonomy edges for the gauge-invariance and Ward/BRST batch.
+- parent: qft.gauge_invariance_and_ward_brst
+  child: qft.gauge_invariance
+  rationale: Gauge invariance is the top-level symmetry branch in the batch.
+  status: asserted
+  confidence: 0.96
+- parent: qft.gauge_invariance_and_ward_brst
+  child: qft.gauge_fixing
+  rationale: Gauge fixing is the central complementary branch of the batch.
+  status: asserted
+  confidence: 0.95
+- parent: qft.gauge_invariance_and_ward_brst
+  child: qft.ward_takahashi_identity
+  rationale: Ward-Takahashi identities are one of the main reusable outputs of the symmetry branch.
+  status: asserted
+  confidence: 0.94
+- parent: qft.gauge_invariance_and_ward_brst
+  child: qft.faddeev_popov_determinant
+  rationale: The Faddeev-Popov determinant is the measure-level branch that follows gauge fixing.
+  status: asserted
+  confidence: 0.93
+- parent: qft.gauge_invariance_and_ward_brst
+  child: qft.brst_symmetry
+  rationale: BRST symmetry is the main structural branch for the gauge-fixed theory.
+  status: asserted
+  confidence: 0.95
+- parent: qft.gauge_invariance
+  child: qft.ward_takahashi_identity
+  rationale: Ward-Takahashi identities are the direct symmetry consequence that the batch needs to surface.
+  status: asserted
+  confidence: 0.95
+- parent: qft.gauge_fixing
+  child: qft.faddeev_popov_determinant
+  rationale: The Faddeev-Popov determinant is the key factor introduced by gauge fixing.
+  status: asserted
+  confidence: 0.95
+- parent: qft.gauge_fixing
+  child: qft.lorenz_gauge
+  rationale: Lorenz gauge is a canonical covariant gauge-fixing family member.
+  status: asserted
+  confidence: 0.9
+- parent: qft.gauge_fixing
+  child: qft.coulomb_gauge
+  rationale: Coulomb gauge is a canonical noncovariant gauge-fixing family member.
+  status: asserted
+  confidence: 0.9
+- parent: qft.gauge_fixing
+  child: qft.r_xi_gauge
+  rationale: R_xi gauge is the standard one-parameter covariant gauge family member.
+  status: asserted
+  confidence: 0.9
+- parent: qft.faddeev_popov_determinant
+  child: qft.ghost_field
+  rationale: Ghost fields represent the Faddeev-Popov determinant in the gauge-fixed path integral.
+  status: asserted
+  confidence: 0.95
+- parent: qft.gauge_fixing
+  child: qft.brst_symmetry
+  rationale: BRST symmetry is the gauge-fixed symmetry branch that follows gauge fixing.
+  status: asserted
+  confidence: 0.95
+- parent: qft.brst_symmetry
+  child: qft.brst_cohomology
+  rationale: BRST cohomology is the physical-state and physical-operator branch of the symmetry.
+  status: asserted
+  confidence: 0.94
+- parent: qft.brst_symmetry
+  child: qft.slavnov_taylor_identity
+  rationale: Slavnov-Taylor identities are the BRST-derived functional identity branch.
+  status: asserted
+  confidence: 0.95

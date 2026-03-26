@@ -1,0 +1,51 @@
+# Canonical partonomy edges for the Regularization, Renormalization, and RG batch.
+- parent: qft.regularization_renormalization_rg
+  child: qft.ultraviolet_divergence
+  rationale: UV divergence is the basic problem that motivates the regularization branch.
+  status: asserted
+  confidence: 0.92
+- parent: qft.regularization_renormalization_rg
+  child: qft.dimensional_regularization
+  rationale: Dimensional regularization is the main reusable regulator branch in the first-pass slice.
+  status: asserted
+  confidence: 0.93
+- parent: qft.regularization_renormalization_rg
+  child: qft.renormalized_perturbation_theory
+  rationale: Renormalized perturbation theory is the central structural branch after subtraction.
+  status: asserted
+  confidence: 0.95
+- parent: qft.renormalized_perturbation_theory
+  child: qft.counterterm_lagrangian
+  rationale: Counterterms are the local terms that make the renormalized perturbative expansion finite.
+  status: asserted
+  confidence: 0.96
+- parent: qft.renormalized_perturbation_theory
+  child: qft.renormalization_scale
+  rationale: The renormalized perturbative setup is organized relative to a reference scale.
+  status: asserted
+  confidence: 0.9
+- parent: qft.regularization_renormalization_rg
+  child: qft.beta_function
+  rationale: Beta functions are one of the main reusable outputs of the renormalization analysis.
+  status: asserted
+  confidence: 0.95
+- parent: qft.regularization_renormalization_rg
+  child: qft.anomalous_dimension
+  rationale: Anomalous dimensions are a standard companion branch to the beta-function story.
+  status: asserted
+  confidence: 0.94
+- parent: qft.regularization_renormalization_rg
+  child: qft.renormalization_group_equation
+  rationale: The RG equation is the central flow statement that organizes the batch.
+  status: asserted
+  confidence: 0.96
+- parent: qft.regularization_renormalization_rg
+  child: qft.wilsonian_renormalization_group
+  rationale: Wilsonian RG is the coarse-graining interpretation branch of the same topic family.
+  status: asserted
+  confidence: 0.9
+- parent: qft.regularization_renormalization_rg
+  child: qft.callan_symanzik_equation
+  rationale: The Callan-Symanzik equation is the canonical flow equation for renormalized correlators in this neighborhood.
+  status: asserted
+  confidence: 0.94

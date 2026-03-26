@@ -1,0 +1,181 @@
+# Canonical dependency edges for the perturbation/Wick/Feynman-rules trunk batch.
+- from: qm.unitary_evolution
+  to: qft.interaction_picture
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_backbone
+  task_type: standard_computation
+  rationale: The interaction picture is a specialized way to split unitary time evolution into free and interacting pieces.
+  failure_mode_if_absent: Cannot tell that the picture is an evolution convention rather than a separate physical object.
+  evidence:
+    - type: expert_claim
+      source_ref: perturbation_wick_feynman_rules_batch_initial
+      note: Batch notes anchor the perturbation slice in the interaction-picture evolution operator.
+  status: asserted
+  confidence: 0.95
+- from: qft.time_ordering
+  to: qft.time_ordered_exponential
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_backbone
+  task_type: standard_computation
+  rationale: The ordered exponential only makes sense once the reader knows how time ordering works.
+  failure_mode_if_absent: Cannot parse the ordered exponential as an evolution operator built from time-ordered insertions.
+  evidence:
+    - type: expert_claim
+      source_ref: perturbation_wick_feynman_rules_batch_initial
+      note: The source notes treat time ordering as the entry point to the Dyson expansion.
+  status: asserted
+  confidence: 0.95
+- from: qft.interaction_picture
+  to: qft.time_ordered_exponential
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_backbone
+  task_type: standard_computation
+  rationale: Interaction-picture evolution is written as a time-ordered exponential.
+  failure_mode_if_absent: Cannot follow how the evolution operator is being represented in perturbation theory.
+  evidence:
+    - type: expert_claim
+      source_ref: perturbation_wick_feynman_rules_batch_initial
+      note: Batch notes identify the compact ordered-exponential form as the core operator statement.
+  status: asserted
+  confidence: 0.96
+- from: qft.time_ordered_exponential
+  to: qft.dyson_series
+  relation_type: requires_for_derive
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_backbone
+  task_type: standard_computation
+  rationale: The Dyson series is the perturbative expansion of the time-ordered exponential.
+  failure_mode_if_absent: Cannot derive the explicit series from the compact evolution-operator form.
+  evidence:
+    - type: expert_claim
+      source_ref: perturbation_wick_feynman_rules_batch_initial
+      note: The notes separate the compact operator form from its explicit perturbative expansion.
+  status: asserted
+  confidence: 0.97
+- from: qft.time_ordered_product
+  to: qft.wick_theorem
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_backbone
+  task_type: standard_computation
+  rationale: Wick theorem is applied to time-ordered operator products.
+  failure_mode_if_absent: Cannot tell what class of products the theorem is expanding.
+  evidence:
+    - type: expert_claim
+      source_ref: perturbation_wick_feynman_rules_batch_initial
+      note: Batch notes keep Wick theorem tied to time-ordered operator products.
+  status: asserted
+  confidence: 0.97
+- from: qft.normal_ordering
+  to: qft.wick_theorem
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_backbone
+  task_type: standard_computation
+  rationale: Wick theorem rewrites time-ordered products in terms of normal-ordered pieces plus contractions.
+  failure_mode_if_absent: Cannot recognize the normal-ordered side of the theorem statement.
+  evidence:
+    - type: expert_claim
+      source_ref: perturbation_wick_feynman_rules_batch_initial
+      note: The batch notes identify normal ordering as one of the main diagrammatic primitives.
+  status: asserted
+  confidence: 0.94
+- from: qft.contraction
+  to: qft.wick_theorem
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_backbone
+  task_type: standard_computation
+  rationale: Contractions are the combinatorial atoms that Wick theorem produces.
+  failure_mode_if_absent: Cannot follow how the theorem turns operator products into pairings.
+  evidence:
+    - type: expert_claim
+      source_ref: perturbation_wick_feynman_rules_batch_initial
+      note: Batch notes use contractions as the bridge from operator algebra to diagrammatics.
+  status: asserted
+  confidence: 0.96
+- from: qft.contraction
+  to: qft.feynman_propagator
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_backbone
+  task_type: standard_computation
+  rationale: In diagrammatic perturbation theory, a contraction is recognized as a propagator line.
+  failure_mode_if_absent: Cannot tell why the diagram uses a propagator line for a contracted pair.
+  evidence:
+    - type: expert_claim
+      source_ref: perturbation_wick_feynman_rules_batch_initial
+      note: Keeps the propagator bridge visible inside the Wick layer.
+  status: asserted
+  confidence: 0.95
+- from: qft.dyson_series
+  to: qft.feynman_rules
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_backbone
+  task_type: standard_computation
+  rationale: Feynman rules are read off from the perturbative Dyson expansion.
+  failure_mode_if_absent: Cannot connect the diagrammatic rules back to the perturbative series being expanded.
+  evidence:
+    - type: expert_claim
+      source_ref: perturbation_wick_feynman_rules_batch_initial
+      note: The batch notes keep the Dyson expansion as one input to the rules.
+  status: asserted
+  confidence: 0.96
+- from: qft.wick_theorem
+  to: qft.feynman_rules
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_backbone
+  task_type: standard_computation
+  rationale: Wick theorem is the operator identity that turns the Dyson expansion into pairings and diagrams.
+  failure_mode_if_absent: Cannot see how the diagrammatic rules arise from operator contractions.
+  evidence:
+    - type: expert_claim
+      source_ref: perturbation_wick_feynman_rules_batch_initial
+      note: The notes keep Wick theorem as the combinatorial engine for the rules.
+  status: asserted
+  confidence: 0.97
+- from: qft.feynman_propagator
+  to: qft.feynman_rules
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_backbone
+  task_type: standard_computation
+  rationale: Feynman rules need the propagator line as one of their basic diagram ingredients.
+  failure_mode_if_absent: Cannot assign the correct line factor in a perturbative diagram.
+  evidence:
+    - type: expert_claim
+      source_ref: perturbation_wick_feynman_rules_batch_initial
+      note: Reuses the shared propagator frontier from the correlator/LSZ batch.
+  status: asserted
+  confidence: 0.95
+- from: qft.symmetry_factors
+  to: qft.feynman_rules
+  relation_type: requires_for_use
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: qft_backbone
+  task_type: standard_computation
+  rationale: Diagrammatic rules include combinatorial weights that correct for repeated automorphisms.
+  failure_mode_if_absent: Cannot assign the correct multiplicity to equivalent diagrams.
+  evidence:
+    - type: expert_claim
+      source_ref: perturbation_wick_feynman_rules_batch_initial
+      note: The batch notes keep symmetry factors in the rule set because they affect diagram weights.
+  status: asserted
+  confidence: 0.9

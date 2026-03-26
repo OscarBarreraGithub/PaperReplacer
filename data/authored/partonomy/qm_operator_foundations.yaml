@@ -1,0 +1,46 @@
+# Canonical partonomy edges for the first-pass QM operator-foundations batch.
+- parent: qm.operator_foundations.qm_operator_foundations
+  child: qm.hilbert_space
+  rationale: Hilbert space is the ambient state-space concept around which the QM operator vocabulary is organized.
+  status: asserted
+  confidence: 0.95
+- parent: qm.operator_foundations.qm_operator_foundations
+  child: qm.state_vector
+  rationale: State vectors are the core objects that operators act on in the QM slice.
+  status: asserted
+  confidence: 0.95
+- parent: qm.operator_foundations.qm_operator_foundations
+  child: qm.bra_ket_notation
+  rationale: Bra-ket notation is the main reading layer for the state/operator language.
+  status: asserted
+  confidence: 0.94
+- parent: qm.operator_foundations.qm_operator_foundations
+  child: qm.observable_operator
+  rationale: Observable operators are a main QM use of linear-operator language.
+  status: asserted
+  confidence: 0.94
+- parent: qm.operator_foundations.qm_operator_foundations
+  child: qm.unitary_evolution
+  rationale: Unitary evolution is the standard operator language for time evolution in QM.
+  status: asserted
+  confidence: 0.94
+- parent: qm.operator_foundations.qm_operator_foundations
+  child: qm.commutator
+  rationale: Commutators are a basic operator-algebra subtopic in the QM foundation slice.
+  status: asserted
+  confidence: 0.93
+- parent: qm.operator_foundations.qm_operator_foundations
+  child: qm.eigenstate_and_eigenvalue
+  rationale: Eigenstate vocabulary is the standard spectral reading layer for QM operators.
+  status: asserted
+  confidence: 0.94
+- parent: qm.operator_foundations.qm_operator_foundations
+  child: qm.projection_operator
+  rationale: Projection operators are a useful supporting subtopic for measurement and decomposition language.
+  status: asserted
+  confidence: 0.9
+- parent: qm.hilbert_space
+  child: qm.inner_product
+  rationale: The inner product is a structural component of the Hilbert-space concept rather than a separate ambient topic.
+  status: asserted
+  confidence: 0.95

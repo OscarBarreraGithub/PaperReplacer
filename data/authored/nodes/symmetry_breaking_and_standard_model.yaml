@@ -1,0 +1,141 @@
+# Canonical node records for the Standard-Model symmetry-breaking batch.
+- id: sm.symmetry_breaking_and_standard_model
+  label: Symmetry breaking and the Standard Model
+  knowledge_kind: concept
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Topic anchor for the first-pass Standard Model neighborhood around spontaneous symmetry breaking, the Higgs sector, and electroweak mass generation.
+  status: asserted
+- id: classical_fields.lagrangian_density
+  label: Lagrangian density
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Local expression built from fields and their derivatives whose spacetime integral gives the action.
+  status: asserted
+- id: sm.ssb.spontaneous_symmetry_breaking
+  label: Spontaneous symmetry breaking
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Situation in which the equations respect a symmetry but the chosen vacuum state does not.
+  status: asserted
+- id: sm.ssb.vacuum_expectation_value
+  label: Vacuum expectation value
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Vacuum average of a field, often nonzero in the symmetry-breaking reading of the Higgs sector.
+  status: asserted
+- id: sm.ssb.goldstone_boson
+  label: Goldstone boson
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Massless mode associated with a spontaneously broken continuous global symmetry.
+  status: asserted
+- id: sm.higgs.higgs_doublet
+  label: Higgs doublet
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Scalar SU(2) doublet whose nonzero vacuum expectation value organizes the electroweak Higgs sector.
+  status: asserted
+- id: sm.higgs.higgs_mechanism
+  label: Higgs mechanism
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Mechanism by which electroweak gauge fields and fermions acquire mass after symmetry breaking.
+  status: asserted
+- id: sm.ewbreak.electroweak_symmetry
+  label: Electroweak symmetry
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Gauge symmetry of the electroweak sector before symmetry breaking.
+  status: asserted
+- id: sm.ewbreak.electroweak_symmetry_breaking
+  label: Electroweak symmetry breaking
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Breaking of the electroweak symmetry down to the electromagnetic subgroup by the Higgs vacuum.
+  status: asserted
+- id: sm.ewbreak.electroweak_mixing_angle
+  label: Electroweak mixing angle
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Mixing parameter that rotates weak-basis gauge fields into photon and Z-boson combinations.
+  status: asserted
+- id: sm.ewbreak.w_and_z_bosons
+  label: W and Z bosons
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Massive weak gauge bosons produced by electroweak symmetry breaking.
+  status: asserted
+- id: sm.ewbreak.photon
+  label: Photon
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Massless electromagnetic gauge boson that remains after electroweak symmetry breaking.
+  status: asserted
+- id: sm.ewbreak.yukawa_coupling
+  label: Yukawa coupling
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Fermion-Higgs interaction that sets fermion masses after symmetry breaking.
+  status: asserted
+- id: sm.ewbreak.fermion_mass_generation
+  label: Fermion mass generation
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Standard Model mass generation for quarks and leptons through Yukawa couplings to the Higgs sector.
+  status: asserted

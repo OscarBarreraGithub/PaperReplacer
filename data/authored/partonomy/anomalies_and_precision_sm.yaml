@@ -1,0 +1,66 @@
+# Canonical partonomy edge list for the anomaly and precision-tests batch.
+- parent: sm.anomalies_and_precision_sm
+  child: classical_fields.noether_theorem
+  rationale: Noether-theorem background is part of the anomaly-reading setup.
+  status: asserted
+  confidence: 0.82
+- parent: sm.anomalies_and_precision_sm
+  child: sm.anomaly
+  rationale: The anomaly branch is a central topic branch of the batch.
+  status: asserted
+  confidence: 0.97
+- parent: sm.anomalies_and_precision_sm
+  child: sm.precision.electroweak_precision_observable
+  rationale: Electroweak precision observables are the other main branch of the batch.
+  status: asserted
+  confidence: 0.97
+- parent: sm.anomaly
+  child: sm.chiral_anomaly
+  rationale: The chiral anomaly is a standard subtype of the anomaly branch.
+  status: asserted
+  confidence: 0.93
+- parent: sm.anomaly
+  child: sm.gauge_anomaly
+  rationale: The gauge anomaly is the consistency-critical subtype of anomaly language.
+  status: asserted
+  confidence: 0.95
+- parent: sm.anomaly
+  child: sm.global_symmetry_anomaly
+  rationale: Global symmetry anomaly is a companion subtype that often appears in anomaly discussions.
+  status: asserted
+  confidence: 0.84
+- parent: sm.gauge_anomaly
+  child: sm.anomaly_cancellation
+  rationale: Anomaly cancellation is the standard downstream consistency condition for gauge anomalies.
+  status: asserted
+  confidence: 0.96
+- parent: sm.precision.electroweak_precision_observable
+  child: sm.precision.gauge_boson_self_energy
+  rationale: Self-energy language is part of the technical setup for precision observables.
+  status: asserted
+  confidence: 0.9
+- parent: sm.precision.electroweak_precision_observable
+  child: sm.precision.oblique_correction
+  rationale: Oblique corrections are one of the canonical precision-observable branches.
+  status: asserted
+  confidence: 0.95
+- parent: sm.precision.electroweak_precision_observable
+  child: sm.precision.effective_weak_mixing_angle
+  rationale: The effective weak mixing angle is a standard precision observable.
+  status: asserted
+  confidence: 0.95
+- parent: sm.precision.electroweak_precision_observable
+  child: sm.precision.z_pole_observable
+  rationale: Z-pole observables are a core part of the precision-test branch.
+  status: asserted
+  confidence: 0.95
+- parent: sm.precision.electroweak_precision_observable
+  child: sm.precision.w_boson_mass
+  rationale: The W mass is a flagship electroweak precision observable.
+  status: asserted
+  confidence: 0.95
+- parent: sm.precision.electroweak_precision_observable
+  child: sm.precision.rho_parameter
+  rationale: The rho parameter is a standard precision-test quantity.
+  status: asserted
+  confidence: 0.88

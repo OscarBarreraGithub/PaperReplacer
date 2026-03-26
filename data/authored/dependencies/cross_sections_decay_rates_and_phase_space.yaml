@@ -1,0 +1,211 @@
+# Canonical dependency edges for the cross-sections/decay-rates/phase-space batch.
+- from: relativity.lorentz_transformation
+  to: qft.lorentz_invariant_phase_space
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: literature_reading
+  rationale: Lorentz-invariant phase space is defined by its invariance under frame changes, so the Lorentz vocabulary has to be available before the measure is read.
+  failure_mode_if_absent: Cannot see why the phase-space measure is the same in different inertial frames.
+  evidence:
+    - type: expert_claim
+      source_ref: cross_sections_decay_rates_and_phase_space_batch_initial
+      note: Batch notes identify Lorentz invariance as the defining feature of the phase-space node.
+  status: asserted
+  confidence: 0.96
+- from: relativity.lorentz_transformation
+  to: qft.mandelstam_variables
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: literature_reading
+  rationale: Mandelstam variables are Lorentz-invariant combinations of external momenta, so the invariance notion has to be recognized before their use in scattering kinematics.
+  failure_mode_if_absent: Cannot tell why s, t, and u are the right invariants to organize the kinematics.
+  evidence:
+    - type: expert_claim
+      source_ref: cross_sections_decay_rates_and_phase_space_batch_initial
+      note: Batch notes keep Mandelstam variables in the standard invariant-kinematics cluster.
+  status: asserted
+  confidence: 0.95
+- from: qft.lsz_reduction_formula
+  to: qft.scattering_amplitude
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: literature_reading
+  rationale: LSZ reduction turns Green functions into scattering amplitudes, so the amplitude object has to be recognized as the output of the bridge formula.
+  failure_mode_if_absent: Cannot identify the observable object that LSZ produces.
+  evidence:
+    - type: expert_claim
+      source_ref: cross_sections_decay_rates_and_phase_space_batch_initial
+      note: Batch notes keep the amplitude bridge distinct from the LSZ node itself.
+  status: asserted
+  confidence: 0.97
+- from: qft.scattering_amplitude
+  to: qft.cross_section
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: literature_reading
+  rationale: Cross sections are built from the scattering amplitude, typically through its squared magnitude and the appropriate normalization factors.
+  failure_mode_if_absent: Cannot write the observable scattering probability in terms of the matrix element.
+  evidence:
+    - type: expert_claim
+      source_ref: cross_sections_decay_rates_and_phase_space_batch_initial
+      note: Batch notes keep cross sections immediately downstream of the amplitude bridge.
+  status: asserted
+  confidence: 0.97
+- from: qft.scattering_amplitude
+  to: qft.partial_wave_expansion
+  relation_type: requires_for_use
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: literature_reading
+  rationale: Partial-wave language decomposes the scattering amplitude into angular-momentum channels.
+  failure_mode_if_absent: Cannot expand the amplitude into the standard partial-wave basis.
+  evidence:
+    - type: expert_claim
+      source_ref: cross_sections_decay_rates_and_phase_space_batch_initial
+      note: Batch notes treat partial-wave language as a reusable amplitude branch, not a process exemplar.
+  status: asserted
+  confidence: 0.9
+- from: qft.scattering_amplitude
+  to: qft.decay_rate
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: literature_reading
+  rationale: Decay rates are computed from the same matrix-element input that also feeds cross sections.
+  failure_mode_if_absent: Cannot write the decay probability in terms of the underlying transition amplitude.
+  evidence:
+    - type: expert_claim
+      source_ref: cross_sections_decay_rates_and_phase_space_batch_initial
+      note: Batch notes treat decay rates as the second observable branch from the amplitude node.
+  status: asserted
+  confidence: 0.96
+- from: qft.lorentz_invariant_phase_space
+  to: qft.cross_section
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: literature_reading
+  rationale: The cross-section formula integrates over final-state phase space, so the measure has to be available for use.
+  failure_mode_if_absent: Cannot convert the squared amplitude into a measurable cross section.
+  evidence:
+    - type: expert_claim
+      source_ref: cross_sections_decay_rates_and_phase_space_batch_initial
+      note: Batch notes keep phase space as one of the central observable ingredients.
+  status: asserted
+  confidence: 0.97
+- from: qft.lorentz_invariant_phase_space
+  to: qft.decay_rate
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: literature_reading
+  rationale: Decay rates are obtained by integrating over the allowed final-state phase space.
+  failure_mode_if_absent: Cannot convert the matrix element into a decay probability per unit time.
+  evidence:
+    - type: expert_claim
+      source_ref: cross_sections_decay_rates_and_phase_space_batch_initial
+      note: Batch notes pair the decay-rate branch with the same phase-space input.
+  status: asserted
+  confidence: 0.96
+- from: qft.lorentz_invariant_phase_space
+  to: qft.two_body_phase_space
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: literature_reading
+  rationale: The two-body formula is the closed-form special case of Lorentz-invariant phase space.
+  failure_mode_if_absent: Cannot use the standard simplified measure for two-particle final states.
+  evidence:
+    - type: expert_claim
+      source_ref: cross_sections_decay_rates_and_phase_space_batch_initial
+      note: Batch notes keep the two-body specialization as the main phase-space refinement.
+  status: asserted
+  confidence: 0.95
+- from: qft.flux_factor
+  to: qft.cross_section
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: literature_reading
+  rationale: The standard cross-section formula divides by the initial-state flux factor.
+  failure_mode_if_absent: Cannot normalize the observable scattering probability correctly.
+  evidence:
+    - type: expert_claim
+      source_ref: cross_sections_decay_rates_and_phase_space_batch_initial
+      note: Batch notes treat the flux factor as a core ingredient of the observable formula.
+  status: asserted
+  confidence: 0.96
+- from: qft.mandelstam_variables
+  to: qft.cross_section
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: literature_reading
+  rationale: Cross sections in Schwartz are commonly expressed as functions of s, t, and u, so the invariant-variable vocabulary must be available for use.
+  failure_mode_if_absent: Cannot read the standard kinematic dependence of the observable.
+  evidence:
+    - type: expert_claim
+      source_ref: cross_sections_decay_rates_and_phase_space_batch_initial
+      note: Batch notes treat Mandelstam variables as the invariant kinematic coordinate system.
+  status: asserted
+  confidence: 0.97
+- from: qft.breit_wigner_distribution
+  to: qft.narrow_width_approximation
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: literature_reading
+  rationale: The narrow-width approximation is the limiting simplification of a Breit-Wigner distribution shape.
+  failure_mode_if_absent: Cannot see what line shape is being approximated or why the on-shell factorization is valid.
+  evidence:
+    - type: expert_claim
+      source_ref: cross_sections_decay_rates_and_phase_space_batch_initial
+      note: Batch notes keep the resonance line shape distinct from the approximation statement.
+  status: asserted
+  confidence: 0.96
+- from: qft.partial_wave_expansion
+  to: qft.cross_section
+  relation_type: requires_for_recognize
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: literature_reading
+  rationale: Partial-wave language is a reusable way to read angular dependence in scattering cross sections.
+  failure_mode_if_absent: Cannot interpret the angular-momentum decomposition used in the scattering literature.
+  evidence:
+    - type: expert_claim
+      source_ref: cross_sections_decay_rates_and_phase_space_batch_initial
+      note: Batch notes keep partial-wave language as a reusable, process-agnostic branch.
+  status: asserted
+  confidence: 0.9
+- from: qft.narrow_width_approximation
+  to: qft.cross_section
+  relation_type: requires_for_use
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: literature_reading
+  rationale: Resonant cross sections often use the narrow-width approximation to separate production from decay.
+  failure_mode_if_absent: Cannot apply the standard resonant factorization shortcut when a narrow intermediate state is present.
+  evidence:
+    - type: expert_claim
+      source_ref: cross_sections_decay_rates_and_phase_space_batch_initial
+      note: Batch notes attach NWA to the cross-section branch as a reusable simplification, not a universal prerequisite.
+  status: asserted
+  confidence: 0.89

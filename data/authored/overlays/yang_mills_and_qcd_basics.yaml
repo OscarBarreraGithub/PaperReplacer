@@ -1,0 +1,27 @@
+# Canonical overlay annotations for the first-pass Yang-Mills/QCD basics batch.
+- overlay_type: assumed_background
+  target_topic: qft.yang_mills_and_qcd_basics
+  presumed_node: classical_fields.action_functional
+  audience_profile: hep_th_grad
+  subfield: qcd_theory
+  artifact_type: paper
+  rationale: Paper-facing Yang-Mills introductions usually assume the reader already recognizes the action-functional vocabulary.
+  evidence:
+    - type: expert_claim
+      source_ref: yang_mills_and_qcd_basics_batch_initial
+      note: Batch notes reuse the classical-field action language as background for the whole neighborhood.
+  status: asserted
+  confidence: 0.9
+- overlay_type: assumed_background
+  target_topic: qft.non_abelian_gauge_symmetry
+  presumed_node: classical_fields.continuous_symmetry_of_action
+  audience_profile: hep_th_grad
+  subfield: qcd_theory
+  artifact_type: paper
+  rationale: When authors jump directly to non-Abelian gauge symmetry, they often presume ordinary action-symmetry language is already available.
+  evidence:
+    - type: expert_claim
+      source_ref: yang_mills_and_qcd_basics_batch_initial
+      note: Batch notes place the non-Abelian branch immediately downstream of the action-symmetry vocabulary.
+  status: asserted
+  confidence: 0.87

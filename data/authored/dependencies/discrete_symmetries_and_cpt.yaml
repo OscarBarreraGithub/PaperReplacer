@@ -1,0 +1,241 @@
+# Canonical dependency edges for the discrete-symmetries and CPT batch.
+- from: qft.spinor_lorentz_dirac_foundations
+  to: qft.discrete_symmetries_and_cpt
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: The discrete-symmetry batch is the downstream reuse point for the spinor/Dirac neighborhood, so that background has to be recognizable first.
+  failure_mode_if_absent: Cannot tell why parity, charge conjugation, and time reversal are being discussed in the spinor chapter family.
+  evidence:
+    - type: expert_claim
+      source_ref: discrete_symmetries_and_cpt_batch_initial
+      note: Batch notes explicitly position this slice after the spinor/Dirac foundations batch.
+  status: asserted
+  confidence: 0.94
+- from: qft.dirac_spinor
+  to: qft.discrete_symmetries_and_cpt
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: The discrete-symmetry story is usually told on Dirac spinors, so the spinor object has to be usable in the batch.
+  failure_mode_if_absent: Cannot interpret the P/C/T operations as acting on the standard fermion carrier.
+  evidence:
+    - type: expert_claim
+      source_ref: discrete_symmetries_and_cpt_batch_initial
+      note: Batch notes keep Dirac spinors in the immediate reuse set.
+  status: asserted
+  confidence: 0.95
+- from: qft.gamma_matrices
+  to: qft.discrete_symmetries_and_cpt
+  relation_type: requires_for_recognize
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: Discrete-symmetry formulas in the fermion neighborhood are often written in gamma-matrix notation, so the notation has to be recognizable.
+  failure_mode_if_absent: Cannot parse the compact matrix form of the symmetry action.
+  evidence:
+    - type: expert_claim
+      source_ref: discrete_symmetries_and_cpt_batch_initial
+      note: Batch notes explicitly reuse gamma-matrix notation from the spinor batch.
+  status: asserted
+  confidence: 0.88
+- from: qft.dirac_spinor
+  to: qft.parity_transformation
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: Parity is read by its action on Dirac spinors in this chapter family, so the spinor object has to be usable first.
+  failure_mode_if_absent: Cannot tell how the spatial inversion is implemented on the fermion field.
+  evidence:
+    - type: expert_claim
+      source_ref: discrete_symmetries_and_cpt_batch_initial
+      note: Batch notes identify parity as one of the core high-value discrete-symmetry nodes.
+  status: asserted
+  confidence: 0.96
+- from: qft.gamma_matrices
+  to: qft.parity_transformation
+  relation_type: requires_for_use
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: Standard parity formulas on spinors use gamma-matrix notation, especially the gamma-zero insertion.
+  failure_mode_if_absent: Cannot follow the compact operator formula for parity on fermions.
+  evidence:
+    - type: expert_claim
+      source_ref: discrete_symmetries_and_cpt_batch_initial
+      note: Batch notes keep gamma matrices in the use path for the discrete-symmetry chapter.
+  status: asserted
+  confidence: 0.9
+- from: qft.dirac_spinor
+  to: qft.charge_conjugation
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: Charge conjugation is a fermion-field operation in this batch, so the Dirac-spinor vocabulary has to be available for use.
+  failure_mode_if_absent: Cannot interpret the particle-antiparticle exchange as an action on the fermion field.
+  evidence:
+    - type: expert_claim
+      source_ref: discrete_symmetries_and_cpt_batch_initial
+      note: Batch notes call out charge conjugation as a core target.
+  status: asserted
+  confidence: 0.95
+- from: qft.gamma_matrices
+  to: qft.charge_conjugation
+  relation_type: requires_for_use
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: Standard charge-conjugation formulas on spinors are expressed with gamma-matrix and C-matrix notation.
+  failure_mode_if_absent: Cannot read the matrix implementation of charge conjugation.
+  evidence:
+    - type: expert_claim
+      source_ref: discrete_symmetries_and_cpt_batch_initial
+      note: Batch notes reuse the gamma-matrix notation from the spinor batch.
+  status: asserted
+  confidence: 0.89
+- from: qft.dirac_spinor
+  to: qft.time_reversal
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: Time reversal is normally stated on the fermion carrier in this neighborhood, so the spinor object has to be usable first.
+  failure_mode_if_absent: Cannot tell how the antiunitary reversal acts on the spinor field.
+  evidence:
+    - type: expert_claim
+      source_ref: discrete_symmetries_and_cpt_batch_initial
+      note: Batch notes identify time reversal as a separate high-value discrete symmetry.
+  status: asserted
+  confidence: 0.95
+- from: qft.gamma_matrices
+  to: qft.time_reversal
+  relation_type: requires_for_use
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: Time-reversal formulas in the spinor neighborhood are usually written with gamma-matrix notation.
+  failure_mode_if_absent: Cannot follow the compact matrix implementation of the time-reversal action.
+  evidence:
+    - type: expert_claim
+      source_ref: discrete_symmetries_and_cpt_batch_initial
+      note: Batch notes reuse gamma-matrix notation as background for discrete-symmetry reading.
+  status: asserted
+  confidence: 0.87
+- from: qft.parity_transformation
+  to: qft.cpt_theorem
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: The CPT theorem combines the separate P, C, and T transformations, so parity must be distinguishable before the theorem is readable.
+  failure_mode_if_absent: Cannot tell that CPT is a combined statement rather than a new unrelated symmetry.
+  evidence:
+    - type: expert_claim
+      source_ref: discrete_symmetries_and_cpt_batch_initial
+      note: Batch notes keep P, C, and T distinct before the combined theorem.
+  status: asserted
+  confidence: 0.94
+- from: qft.charge_conjugation
+  to: qft.cpt_theorem
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: The combined CPT statement depends on charge conjugation being separate and identifiable first.
+  failure_mode_if_absent: Cannot see the C piece inside the CPT combination.
+  evidence:
+    - type: expert_claim
+      source_ref: discrete_symmetries_and_cpt_batch_initial
+      note: Batch notes treat charge conjugation as a standalone branch in the discrete-symmetry slice.
+  status: asserted
+  confidence: 0.94
+- from: qft.time_reversal
+  to: qft.cpt_theorem
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: The combined CPT statement depends on time reversal being separate and identifiable first.
+  failure_mode_if_absent: Cannot see the T piece inside the CPT combination.
+  evidence:
+    - type: expert_claim
+      source_ref: discrete_symmetries_and_cpt_batch_initial
+      note: Batch notes treat time reversal as a standalone branch in the discrete-symmetry slice.
+  status: asserted
+  confidence: 0.94
+- from: qft.cpt_theorem
+  to: qft.cpt_invariance
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: CPT invariance is the application-level reading of the theorem, so the theorem has to be available first.
+  failure_mode_if_absent: Cannot tell whether the source is making a theorem statement or a practical invariance claim.
+  evidence:
+    - type: expert_claim
+      source_ref: discrete_symmetries_and_cpt_batch_initial
+      note: Batch notes distinguish the theorem from its invariance reading.
+  status: asserted
+  confidence: 0.95
+- from: qft.dirac_adjoint
+  to: qft.spinor_bilinear
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: Spinor bilinears are built from a spinor and its adjoint, so the adjoint has to be available first.
+  failure_mode_if_absent: Cannot form the standard bilinears used in discrete-symmetry transformation statements.
+  evidence:
+    - type: expert_claim
+      source_ref: discrete_symmetries_and_cpt_batch_initial
+      note: Batch notes treat bilinears as a core supporting node for the CPT neighborhood.
+  status: asserted
+  confidence: 0.94
+- from: qft.gamma_matrices
+  to: qft.spinor_bilinear
+  relation_type: requires_for_use
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: Spinor bilinears in the discrete-symmetry literature are commonly written with gamma-matrix insertions.
+  failure_mode_if_absent: Cannot read the matrix labels that distinguish scalar, vector, axial, and tensor bilinears.
+  evidence:
+    - type: expert_claim
+      source_ref: discrete_symmetries_and_cpt_batch_initial
+      note: Batch notes reuse gamma-matrix notation when discussing bilinears.
+  status: asserted
+  confidence: 0.88
+- from: qft.chirality_projector
+  to: qft.spinor_bilinear
+  relation_type: requires_for_use
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: Chirality projectors are often used when the bilinear decomposition is read in the fermion neighborhood.
+  failure_mode_if_absent: Cannot follow the left- and right-chiral split that some discrete-symmetry passages assume.
+  evidence:
+    - type: expert_claim
+      source_ref: discrete_symmetries_and_cpt_batch_initial
+      note: Batch notes keep chirality language in the support set because it recurs in the chapter family.
+  status: asserted
+  confidence: 0.86

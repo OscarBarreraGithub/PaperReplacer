@@ -1,0 +1,41 @@
+# Canonical partonomy edges for the Path Integral and Generating Functionals batch.
+- parent: qft.path_integral_and_generating_functionals
+  child: qft.source_coupled_path_integral
+  rationale: The source-coupled path integral is the central operational branch of the topic.
+  status: asserted
+  confidence: 0.95
+- parent: qft.path_integral_and_generating_functionals
+  child: qft.generating_functional
+  rationale: The generating functional is the topic's main source-dependent organizing object.
+  status: asserted
+  confidence: 0.96
+- parent: qft.generating_functional
+  child: qft.connected_generating_functional
+  rationale: Connected correlators are the direct logarithmic refinement of the full generating functional.
+  status: asserted
+  confidence: 0.93
+- parent: qft.generating_functional
+  child: qft.source_derivative_rule
+  rationale: Source differentiation is the basic operational move attached to the generating-functional branch.
+  status: asserted
+  confidence: 0.92
+- parent: qft.path_integral_and_generating_functionals
+  child: qft.gaussian_functional_integral
+  rationale: The Gaussian integral is the solvable core model that anchors the functional-integral story.
+  status: asserted
+  confidence: 0.93
+- parent: qft.path_integral_and_generating_functionals
+  child: qft.fermionic_path_integral
+  rationale: The fermionic path-integral branch is a standard reusable extension of the same formalism.
+  status: asserted
+  confidence: 0.9
+- parent: qft.path_integral_and_generating_functionals
+  child: qft.schwinger_dyson_equation
+  rationale: Schwinger-Dyson identities are one of the main functional equations organized by this batch.
+  status: asserted
+  confidence: 0.9
+- parent: qft.path_integral_and_generating_functionals
+  child: qft.ward_takahashi_identity
+  rationale: Ward-Takahashi identities are the symmetry-driven companion branch to the source-functional setup.
+  status: asserted
+  confidence: 0.9

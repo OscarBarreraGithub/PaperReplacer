@@ -1,0 +1,166 @@
+# Canonical dependency edges for the energy-momentum-tensor and conformal-currents batch.
+- from: classical_fields.noether_theorem
+  to: classical_fields.noether_current
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: The Noether current is introduced as the conserved current produced by Noether's theorem from a continuous symmetry.
+  failure_mode_if_absent: Cannot tell why the current exists or what symmetry principle is producing it.
+  evidence:
+    - type: expert_claim
+      source_ref: energy_momentum_tensor_and_conformal_currents_batch_initial
+      note: Source notes keep Noether theorem as the direct upstream anchor of the current branch.
+  status: asserted
+  confidence: 0.96
+- from: classical_fields.noether_current
+  to: classical_fields.energy_momentum_tensor
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: The energy-momentum tensor is first recognized in this neighborhood as the translation-current branch of Noether reasoning.
+  failure_mode_if_absent: Cannot place the stress-tensor object inside the existing symmetry-current vocabulary.
+  evidence:
+    - type: expert_claim
+      source_ref: energy_momentum_tensor_and_conformal_currents_batch_initial
+      note: Source notes keep the tensor branch explicitly tied to the Noether-current trunk.
+  status: asserted
+  confidence: 0.95
+- from: classical_fields.energy_momentum_tensor
+  to: classical_fields.canonical_energy_momentum_tensor
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: The canonical tensor is one specific version of the more general energy-momentum-tensor vocabulary.
+  failure_mode_if_absent: Cannot tell what broader object the canonical tensor is a specialization of.
+  evidence:
+    - type: expert_claim
+      source_ref: energy_momentum_tensor_and_conformal_currents_batch_initial
+      note: Source notes separate the generic tensor node from the canonical construction.
+  status: asserted
+  confidence: 0.94
+- from: classical_fields.noether_current
+  to: classical_fields.canonical_energy_momentum_tensor
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: The canonical energy-momentum tensor is the direct Noether-current output associated with translation symmetry.
+  failure_mode_if_absent: Cannot see why the canonical tensor appears immediately in Noether-based derivations.
+  evidence:
+    - type: expert_claim
+      source_ref: energy_momentum_tensor_and_conformal_currents_batch_initial
+      note: Source notes keep the canonical tensor adjacent to the Noether-current construction.
+  status: asserted
+  confidence: 0.95
+- from: classical_fields.energy_momentum_tensor
+  to: qft.improved_energy_momentum_tensor
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: Improvement terms are introduced as a refinement of the energy-momentum tensor rather than as a separate current family.
+  failure_mode_if_absent: Cannot tell what object is being modified by the improvement procedure.
+  evidence:
+    - type: expert_claim
+      source_ref: energy_momentum_tensor_and_conformal_currents_batch_initial
+      note: Source notes keep the improved tensor as the main refinement of the tensor branch.
+  status: asserted
+  confidence: 0.94
+- from: classical_fields.canonical_energy_momentum_tensor
+  to: qft.improved_energy_momentum_tensor
+  relation_type: requires_for_use
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: Improvement is usually discussed as a modification of the canonical tensor to obtain cleaner symmetry properties.
+  failure_mode_if_absent: The improved tensor appears disconnected from the concrete canonical object it is meant to refine.
+  evidence:
+    - type: expert_claim
+      source_ref: energy_momentum_tensor_and_conformal_currents_batch_initial
+      note: Source notes keep the canonical-to-improved transition visible without making the canonical tensor the only possible starting point.
+  status: asserted
+  confidence: 0.87
+- from: qft.scale_invariance
+  to: qft.dilatation_current
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: The dilatation current is the Noether-current branch associated with scale symmetry.
+  failure_mode_if_absent: Cannot tell what symmetry transformation the current is supposed to generate or conserve.
+  evidence:
+    - type: expert_claim
+      source_ref: energy_momentum_tensor_and_conformal_currents_batch_initial
+      note: Source notes keep scale invariance as the symmetry-side input for the dilatation-current node.
+  status: asserted
+  confidence: 0.95
+- from: classical_fields.energy_momentum_tensor
+  to: qft.dilatation_current
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: The dilatation current is normally written using the energy-momentum tensor as its local current-density ingredient.
+  failure_mode_if_absent: Cannot read the formula that turns the stress tensor into the scale current.
+  evidence:
+    - type: expert_claim
+      source_ref: energy_momentum_tensor_and_conformal_currents_batch_initial
+      note: Source notes keep the current formulas attached directly to the tensor branch.
+  status: asserted
+  confidence: 0.94
+- from: qft.conformal_invariance
+  to: qft.conformal_current
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: The conformal current is the current associated with conformal symmetry, so the symmetry vocabulary has to be available first.
+  failure_mode_if_absent: Cannot tell what transformation the current is encoding.
+  evidence:
+    - type: expert_claim
+      source_ref: energy_momentum_tensor_and_conformal_currents_batch_initial
+      note: Source notes keep conformal invariance as the symmetry-side input to the conformal-current node.
+  status: asserted
+  confidence: 0.95
+- from: classical_fields.energy_momentum_tensor
+  to: qft.conformal_current
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: Conformal currents are commonly written in terms of the energy-momentum tensor and spacetime coordinates.
+  failure_mode_if_absent: Cannot parse the standard current formula that expresses conformal symmetry through the tensor branch.
+  evidence:
+    - type: expert_claim
+      source_ref: energy_momentum_tensor_and_conformal_currents_batch_initial
+      note: Source notes keep conformal currents directly downstream of the tensor node.
+  status: asserted
+  confidence: 0.93
+- from: qft.improved_energy_momentum_tensor
+  to: qft.weyl_invariance
+  relation_type: requires_for_recognize
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: Weyl-invariance discussions often use the improved tensor as the local object with the clean trace properties relevant to the symmetry.
+  failure_mode_if_absent: Weyl invariance remains a detached symmetry label with no visible relation to the stress-tensor branch used nearby.
+  evidence:
+    - type: expert_claim
+      source_ref: energy_momentum_tensor_and_conformal_currents_batch_initial
+      note: Source notes keep Weyl invariance connected to the improved-tensor branch without opening a full anomaly discussion.
+  status: asserted
+  confidence: 0.84

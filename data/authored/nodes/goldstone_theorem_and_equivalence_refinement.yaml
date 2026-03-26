@@ -1,0 +1,111 @@
+# Canonical node records for the Goldstone-theorem and equivalence refinement batch.
+- id: sm.goldstone_theorem_and_equivalence_refinement
+  label: Goldstone theorem and equivalence refinement
+  knowledge_kind: concept
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Topic anchor for Goldstone's theorem, the longitudinal weak-boson mode, and the Goldstone-boson equivalence theorem.
+  status: asserted
+- id: sm.symmetry_breaking_and_standard_model
+  label: Symmetry breaking and the Standard Model
+  knowledge_kind: concept
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Topic anchor for the first-pass Standard Model neighborhood around spontaneous symmetry breaking, the Higgs sector, and electroweak mass generation.
+  status: asserted
+- id: sm.ssb.spontaneous_symmetry_breaking
+  label: Spontaneous symmetry breaking
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Situation in which the equations respect a symmetry but the chosen vacuum state does not.
+  status: asserted
+- id: sm.ssb.goldstone_boson
+  label: Goldstone boson
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Massless mode associated with a spontaneously broken continuous global symmetry.
+  status: asserted
+- id: sm.higgs.higgs_mechanism
+  label: Higgs mechanism
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Mechanism by which electroweak gauge fields and fermions acquire mass after symmetry breaking.
+  status: asserted
+- id: sm.ewbreak.electroweak_symmetry_breaking
+  label: Electroweak symmetry breaking
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Breaking of the electroweak symmetry down to the electromagnetic subgroup by the Higgs vacuum.
+  status: asserted
+- id: sm.ewbreak.w_and_z_bosons
+  label: W and Z bosons
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Massive weak gauge bosons produced by electroweak symmetry breaking.
+  status: asserted
+- id: qft.scattering_amplitude
+  label: Scattering amplitude
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Complex transition amplitude or matrix element whose magnitude enters observable scattering and decay formulas.
+  status: asserted
+- id: sm.ssb.goldstone_theorem
+  label: Goldstone's theorem
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Theorem stating that spontaneous breaking of a continuous global symmetry produces massless Goldstone bosons.
+  status: asserted
+- id: sm.ewbreak.longitudinal_weak_boson_mode
+  label: Longitudinal weak-boson mode
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Longitudinal polarization mode of a massive W or Z boson, the electroweak degree of freedom related to would-be Goldstone bosons at high energy.
+  status: asserted
+- id: sm.ewbreak.goldstone_boson_equivalence_theorem
+  label: Goldstone-boson equivalence theorem
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: High-energy theorem stating that amplitudes with external longitudinal weak bosons are equivalent, up to controlled corrections, to amplitudes with the corresponding would-be Goldstone bosons.
+  status: asserted

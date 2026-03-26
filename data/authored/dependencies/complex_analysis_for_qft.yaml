@@ -1,0 +1,106 @@
+# Hand-authored dependency edges for the complex-analysis-for-QFT foundation batch.
+- from: complex_analysis.contour_deformation
+  to: qft.pinch_singularities
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: literature_reading
+  rationale: Standard pinch arguments are phrased in terms of failed contour deformations.
+  failure_mode_if_absent: Cannot follow why the contour cannot be moved away from the singular region.
+  evidence:
+    - type: expert_claim
+      source_ref: complex_analysis_for_qft_batch_initial
+      note: Stage 1 foundation slice grounded in the batch brief and source notes.
+  status: asserted
+  confidence: 0.93
+- from: complex_analysis.poles_vs_branch_points
+  to: qft.propagator_singularities
+  relation_type: requires_for_recognize
+  necessity: typical
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: literature_reading
+  rationale: Recognizing propagator singularities in the literature usually requires distinguishing isolated poles from branch-point or cut behavior.
+  failure_mode_if_absent: Cannot parse whether a discussion is about propagator poles, threshold branch points, or a mixture of both.
+  evidence:
+    - type: expert_claim
+      source_ref: complex_analysis_for_qft_batch_initial
+      note: Stage 1 foundation slice grounded in the batch brief and source notes.
+  status: asserted
+  confidence: 0.82
+- from: complex_analysis.poles_vs_branch_points
+  to: qft.pinch_singularities
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: literature_reading
+  rationale: Pinch discussions rely on identifying which singular structures can trap a contour and how isolated poles differ from branch behavior.
+  failure_mode_if_absent: Cannot distinguish which singular structures can actually pinch the contour in a standard analytic argument.
+  evidence:
+    - type: expert_claim
+      source_ref: complex_analysis_for_qft_batch_initial
+      note: Stage 1 foundation slice grounded in the batch brief and source notes.
+  status: asserted
+  confidence: 0.88
+- from: qft.analytic_continuation_in_kinematic_invariants
+  to: qft.pinch_singularities
+  relation_type: requires_for_use
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: literature_reading
+  rationale: Many practical discussions of pinch singularities are framed as statements about where singular loci appear after continuing the external invariants.
+  failure_mode_if_absent: Can follow a local contour argument but not its interpretation as a singularity in the invariant variables of the amplitude.
+  evidence:
+    - type: expert_claim
+      source_ref: complex_analysis_for_qft_batch_initial
+      note: Stage 1 foundation slice grounded in the batch brief and source notes.
+  status: asserted
+  confidence: 0.85
+- from: qft.feynman_i_epsilon_prescription
+  to: qft.propagator_singularities
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: literature_reading
+  rationale: The Feynman prescription determines how propagator poles are displaced and therefore how contour arguments are read.
+  failure_mode_if_absent: Cannot track why propagator poles sit above or below the integration contour in the standard argument.
+  evidence:
+    - type: expert_claim
+      source_ref: complex_analysis_for_qft_batch_initial
+      note: Stage 1 foundation slice grounded in the batch brief and source notes.
+  status: asserted
+  confidence: 0.94
+- from: qft.propagator_singularities
+  to: qft.pinch_singularities
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: literature_reading
+  rationale: A pinch singularity is recognized as a singular configuration in which propagator singularities constrain contour motion.
+  failure_mode_if_absent: Cannot identify what the pinch is a singularity of or why propagators are central to the discussion.
+  evidence:
+    - type: expert_claim
+      source_ref: complex_analysis_for_qft_batch_initial
+      note: Stage 1 foundation slice grounded in the batch brief and source notes.
+  status: asserted
+  confidence: 0.95
+- from: qft.propagator_singularities
+  to: qft.pinch_singularities
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: literature_reading
+  rationale: Standard pinch-singularity reasoning proceeds by tracking how propagator singularities approach and trap the contour.
+  failure_mode_if_absent: Cannot follow the standard pinch argument based on the relative position of propagator singularities.
+  evidence:
+    - type: expert_claim
+      source_ref: complex_analysis_for_qft_batch_initial
+      note: Stage 1 foundation slice grounded in the batch brief and source notes.
+  status: asserted
+  confidence: 0.96

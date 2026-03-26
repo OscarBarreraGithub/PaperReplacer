@@ -1,0 +1,36 @@
+# Canonical partonomy edges for the HQET refinement batch.
+- parent: eft.heavy_quark_effective_theory
+  child: eft.heavy_quark_limit
+  rationale: The heavy-quark limit is the first organizing branch of HQET in this refinement.
+  status: asserted
+  confidence: 0.95
+- parent: eft.heavy_quark_effective_theory
+  child: eft.heavy_quark_velocity
+  rationale: The velocity-label branch is the central structural refinement of the HQET root.
+  status: asserted
+  confidence: 0.95
+- parent: eft.heavy_quark_effective_theory
+  child: eft.residual_momentum
+  rationale: Residual momentum is part of the same velocity-decomposition branch used throughout HQET notation.
+  status: asserted
+  confidence: 0.93
+- parent: eft.heavy_quark_effective_theory
+  child: eft.velocity_dependent_heavy_quark_field
+  rationale: The velocity-dependent field is a core HQET object built from the heavy-quark decomposition.
+  status: asserted
+  confidence: 0.95
+- parent: eft.heavy_quark_effective_theory
+  child: eft.one_over_heavy_quark_mass_expansion
+  rationale: The inverse-mass expansion is the main controlled refinement of the static HQET limit.
+  status: asserted
+  confidence: 0.94
+- parent: eft.heavy_quark_effective_theory
+  child: eft.heavy_quark_symmetry
+  rationale: Heavy-quark symmetry is one of the signature branches of the HQET root.
+  status: asserted
+  confidence: 0.96
+- parent: eft.heavy_quark_symmetry
+  child: eft.isgur_wise_function
+  rationale: The Isgur-Wise function is kept as a narrow symmetry-facing payoff leaf under the heavy-quark-symmetry branch.
+  status: asserted
+  confidence: 0.9

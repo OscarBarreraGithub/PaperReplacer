@@ -1,0 +1,27 @@
+# Canonical overlay annotations for the distributions-and-boundary-values batch.
+- overlay_type: assumed_background
+  target_topic: qft.distributional_boundary_values
+  presumed_node: qft.feynman_i_epsilon_prescription
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  artifact_type: paper
+  rationale: Papers that use distributional boundary-value language usually presume the generic Feynman i-epsilon prescription is already familiar.
+  evidence:
+    - type: expert_claim
+      source_ref: distributions_boundary_values_batch_initial
+      note: Source notes keep i-epsilon language as assumed background for the boundary-values hub.
+  status: asserted
+  confidence: 0.88
+- overlay_type: assumed_background
+  target_topic: qft.distributional_boundary_values
+  presumed_node: complex_analysis.poles_vs_branch_points
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  artifact_type: paper
+  rationale: Boundary-value notation is often introduced against a background understanding of whether the singularity is a pole or part of a branch-cut structure.
+  evidence:
+    - type: expert_claim
+      source_ref: distributions_boundary_values_batch_initial
+      note: Source notes keep poles-versus-branch-points as assumed analytic background rather than a main branch of the batch.
+  status: asserted
+  confidence: 0.82

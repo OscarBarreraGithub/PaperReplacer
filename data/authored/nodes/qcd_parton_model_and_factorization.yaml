@@ -1,0 +1,121 @@
+# Canonical node records for the first-pass QCD parton-model/factorization batch.
+- id: qcd.parton_model_and_factorization
+  label: QCD parton model and factorization
+  knowledge_kind: concept
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Topic anchor for the QCD neighborhood that turns color structure into parton language, PDFs, and factorized short-distance scattering formulas.
+  status: asserted
+- id: qcd.asymptotic_freedom
+  label: Asymptotic freedom
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: The QCD property that the effective coupling decreases at short distances or high energies.
+  status: asserted
+- id: qcd.color_su3
+  label: Color SU(3)
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: The QCD color symmetry group governing quark and gluon color charge.
+  status: asserted
+- id: qcd.quark
+  label: Quark
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Fermionic QCD matter field carrying color charge and participating in the strong interaction.
+  status: asserted
+- id: qcd.gluon
+  label: Gluon
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Gauge boson of QCD color interactions, carrying adjoint color charge.
+  status: asserted
+- id: qcd.parton_model
+  label: Parton model
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: High-energy hadron picture in which quark and gluon partons carry the longitudinal momentum of the target.
+  status: asserted
+- id: qcd.parton_distribution_function
+  label: Parton distribution function
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Distribution that encodes the longitudinal momentum fraction carried by a parton inside a hadron.
+  status: asserted
+- id: qcd.factorization_theorem
+  label: Factorization theorem
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Statement that separates a hard short-distance coefficient from universal long-distance hadronic structure.
+  status: asserted
+- id: qcd.collinear_factorization
+  label: Collinear factorization
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Leading-power factorization framework in which hadronic dynamics are organized around collinear partons.
+  status: asserted
+- id: qcd.hard_scattering_coefficient
+  label: Hard scattering coefficient
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Short-distance part of a factorized cross section that is computed perturbatively.
+  status: asserted
+- id: qcd.splitting_function
+  label: Splitting function
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Kernel describing how quark or gluon momentum fractions reshuffle under scale evolution.
+  status: asserted
+- id: qcd.dglap_evolution
+  label: DGLAP evolution
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Scale-evolution equation for parton distribution functions in perturbative QCD.
+  status: asserted

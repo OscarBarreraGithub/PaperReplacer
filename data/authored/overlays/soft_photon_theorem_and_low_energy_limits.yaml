@@ -1,0 +1,27 @@
+# Canonical overlay annotations for the soft-photon-theorem and low-energy-limits batch.
+- overlay_type: assumed_background
+  target_topic: qft.soft_photon_theorem_and_low_energy_limits
+  presumed_node: qft.scattering_amplitude
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  artifact_type: paper
+  rationale: Sources that state the soft-photon theorem usually presume the reader already has the basic scattering-amplitude vocabulary.
+  evidence:
+    - type: expert_claim
+      source_ref: soft_photon_theorem_and_low_energy_limits_batch_initial
+      note: Source notes keep the amplitude node as assumed background for the batch anchor.
+  status: asserted
+  confidence: 0.9
+- overlay_type: assumed_background
+  target_topic: qft.soft_photon_theorem_and_low_energy_limits
+  presumed_node: qft.soft_divergence
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  artifact_type: paper
+  rationale: The theorem is often introduced against a background understanding of the infrared soft-emission regime.
+  evidence:
+    - type: expert_claim
+      source_ref: soft_photon_theorem_and_low_energy_limits_batch_initial
+      note: Source notes keep the existing soft-divergence node as assumed infrared background for the theorem branch.
+  status: asserted
+  confidence: 0.85

@@ -1,0 +1,27 @@
+# Canonical overlay annotations for the Regularization, Renormalization, and RG batch.
+- overlay_type: assumed_background
+  target_topic: qft.regularization_renormalization_rg
+  presumed_node: classical_fields.action_functional
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  artifact_type: paper
+  rationale: Perturbative renormalization is usually written as a modification of a known action or Lagrangian, so the action-level vocabulary is often presumed.
+  evidence:
+    - type: expert_claim
+      source_ref: regularization_renormalization_rg_batch_initial
+      note: Contextual overlay for paper-facing assumed background.
+  status: asserted
+  confidence: 0.89
+- overlay_type: assumed_background
+  target_topic: qft.regularization_renormalization_rg
+  presumed_node: classical_fields.lagrangian_density
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  artifact_type: paper
+  rationale: Counterterm and subtraction discussions generally assume the reader already reads local Lagrangian-density expressions fluently.
+  evidence:
+    - type: expert_claim
+      source_ref: regularization_renormalization_rg_batch_initial
+      note: Contextual overlay for paper-facing assumed background.
+  status: asserted
+  confidence: 0.87

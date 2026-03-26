@@ -1,0 +1,91 @@
+# Canonical partonomy edge list for the EFT and SCET batch.
+- parent: eft.effective_field_theory_and_scet
+  child: classical_fields.action_functional
+  rationale: The action-functional background is part of the EFT reading setup.
+  status: asserted
+  confidence: 0.82
+- parent: eft.effective_field_theory_and_scet
+  child: eft.effective_field_theory
+  rationale: The generic EFT branch is a central topic branch of the batch.
+  status: asserted
+  confidence: 0.97
+- parent: eft.effective_field_theory_and_scet
+  child: eft.heavy_quark_effective_theory
+  rationale: HQET is one of the main specialization branches of the batch.
+  status: asserted
+  confidence: 0.95
+- parent: eft.effective_field_theory_and_scet
+  child: eft.soft_collinear_effective_theory
+  rationale: SCET is the other main specialization branch of the batch.
+  status: asserted
+  confidence: 0.97
+- parent: eft.effective_field_theory
+  child: eft.scale_separation
+  rationale: Scale separation is the organizing idea of the generic EFT branch.
+  status: asserted
+  confidence: 0.95
+- parent: eft.effective_field_theory
+  child: eft.operator_expansion
+  rationale: Operator expansion is the main structural device of EFT.
+  status: asserted
+  confidence: 0.96
+- parent: eft.operator_expansion
+  child: eft.higher_dimensional_operator
+  rationale: Higher-dimensional operators are the concrete pieces of the expansion.
+  status: asserted
+  confidence: 0.93
+- parent: eft.effective_field_theory
+  child: eft.power_counting
+  rationale: Power counting is part of the generic EFT organization.
+  status: asserted
+  confidence: 0.95
+- parent: eft.effective_field_theory
+  child: eft.matching
+  rationale: Matching is one of the core operations in EFT construction.
+  status: asserted
+  confidence: 0.96
+- parent: eft.effective_field_theory
+  child: eft.renormalization_group_running
+  rationale: RG running is part of the standard EFT workflow between scales.
+  status: asserted
+  confidence: 0.95
+- parent: eft.effective_field_theory
+  child: eft.large_logarithm_resummation
+  rationale: Large-log resummation is the main use-level payoff of RG in EFT.
+  status: asserted
+  confidence: 0.92
+- parent: eft.heavy_quark_effective_theory
+  child: eft.heavy_quark_symmetry
+  rationale: Heavy-quark symmetry is the signature branch of HQET.
+  status: asserted
+  confidence: 0.95
+- parent: eft.soft_collinear_effective_theory
+  child: eft.mode_scaling
+  rationale: Mode scaling is the central SCET organizing principle.
+  status: asserted
+  confidence: 0.97
+- parent: eft.soft_collinear_effective_theory
+  child: eft.collinear_mode
+  rationale: Collinear modes are the energetic sector singled out by SCET.
+  status: asserted
+  confidence: 0.96
+- parent: eft.soft_collinear_effective_theory
+  child: eft.soft_mode
+  rationale: Soft modes are the low-momentum sector paired with collinear modes.
+  status: asserted
+  confidence: 0.96
+- parent: eft.soft_collinear_effective_theory
+  child: eft.hard_function
+  rationale: The hard function is the short-distance branch that remains after matching.
+  status: asserted
+  confidence: 0.88
+- parent: eft.soft_collinear_effective_theory
+  child: eft.jet_function
+  rationale: The jet function is the standard collinear-sector factor in SCET.
+  status: asserted
+  confidence: 0.9
+- parent: eft.soft_collinear_effective_theory
+  child: eft.soft_function
+  rationale: The soft function is the standard low-momentum factor in SCET.
+  status: asserted
+  confidence: 0.9

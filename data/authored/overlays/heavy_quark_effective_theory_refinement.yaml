@@ -1,0 +1,27 @@
+# Canonical overlay annotations for the HQET refinement batch.
+- overlay_type: assumed_background
+  target_topic: eft.heavy_quark_effective_theory
+  presumed_node: qcd.quark
+  audience_profile: hep_th_grad
+  subfield: effective_field_theory
+  artifact_type: paper
+  rationale: HQET passages usually presume the full-theory heavy-quark field picture rather than reintroducing the QCD quark degree of freedom from scratch.
+  evidence:
+    - type: expert_claim
+      source_ref: heavy_quark_effective_theory_refinement_batch_initial
+      note: Source notes treat the QCD quark node as assumed full-theory background for the HQET root.
+  status: asserted
+  confidence: 0.87
+- overlay_type: assumed_background
+  target_topic: eft.heavy_quark_effective_theory
+  presumed_node: eft.matching
+  audience_profile: hep_th_grad
+  subfield: effective_field_theory
+  artifact_type: paper
+  rationale: HQET papers often jump directly from full-QCD to velocity-decomposition formulas while presuming the generic EFT matching workflow is already familiar.
+  evidence:
+    - type: expert_claim
+      source_ref: heavy_quark_effective_theory_refinement_batch_initial
+      note: Source notes keep matching as assumed EFT background for the HQET refinement.
+  status: asserted
+  confidence: 0.86

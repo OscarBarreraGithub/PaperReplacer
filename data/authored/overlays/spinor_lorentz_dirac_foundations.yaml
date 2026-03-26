@@ -1,0 +1,27 @@
+# Canonical overlay annotations for the spinor/Lorentz/Dirac foundations batch.
+- overlay_type: assumed_background
+  target_topic: qft.spinor_lorentz_dirac_foundations
+  presumed_node: relativity.lorentz_transformation
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  artifact_type: paper
+  rationale: Paper-facing spinor and Dirac discussions usually assume Lorentz-transformation language before introducing spinor representations.
+  evidence:
+    - type: expert_claim
+      source_ref: spinor_lorentz_dirac_foundations_batch_initial
+      note: Batch notes reuse the Lorentz-transformation background as the entry point to the spinor slice.
+  status: asserted
+  confidence: 0.9
+- overlay_type: assumed_background
+  target_topic: qft.spinor_lorentz_dirac_foundations
+  presumed_node: qft.lorentz_group_representation
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  artifact_type: paper
+  rationale: The spinor/Dirac neighborhood usually presumes the Lorentz-representation story before it specializes to spinor objects.
+  evidence:
+    - type: expert_claim
+      source_ref: spinor_lorentz_dirac_foundations_batch_initial
+      note: Batch notes explicitly ask to reuse the Lorentz-representation neighborhood.
+  status: asserted
+  confidence: 0.89

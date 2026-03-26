@@ -1,0 +1,151 @@
+# Canonical node records for the first-pass Yang-Mills/QCD basics batch.
+- id: qft.yang_mills_and_qcd_basics
+  label: Yang-Mills and QCD basics
+  knowledge_kind: concept
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Topic anchor for the first-pass neighborhood around non-Abelian gauge theory, QCD color, and the asymptotic-freedom frontier.
+  status: asserted
+- id: classical_fields.action_functional
+  label: Action functional
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Functional of a field configuration obtained by integrating the Lagrangian density over spacetime.
+  status: asserted
+- id: classical_fields.field_configuration
+  label: Field configuration
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Assignment of field values to spacetime points, usually treated as the variable being varied in the action.
+  status: asserted
+- id: classical_fields.continuous_symmetry_of_action
+  label: Continuous symmetry of the action
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Transformation that leaves the action invariant or changes it only by a boundary term.
+  status: asserted
+- id: qft.non_abelian_gauge_symmetry
+  label: Non-Abelian gauge symmetry
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Local gauge symmetry with noncommuting generators, the structure that distinguishes Yang-Mills theory from Abelian gauge theory.
+  status: asserted
+- id: qft.gauge_field
+  label: Gauge field
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Gauge potential or connection whose local values encode the interaction field in Yang-Mills theory.
+  status: asserted
+- id: qft.covariant_derivative
+  label: Covariant derivative
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Derivative modified by the gauge field so that it transforms covariantly under local symmetry.
+  status: asserted
+- id: qft.field_strength_tensor
+  label: Field strength tensor
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Curvature built from the gauge field and covariant derivative, capturing the Yang-Mills interaction strength.
+  status: asserted
+- id: qft.yang_mills_action
+  label: Yang-Mills action
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Gauge-invariant action for a non-Abelian gauge field, typically built from the squared field strength.
+  status: asserted
+- id: qft.gauge_fixing
+  label: Gauge fixing
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Procedure for selecting a representative in each gauge orbit so the quantum theory can be written and computed with.
+  status: asserted
+- id: qft.ghost_field
+  label: Ghost field
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Auxiliary field introduced when gauge fixing is implemented in the quantum non-Abelian gauge theory.
+  status: asserted
+- id: qcd.color_su3
+  label: Color SU(3)
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: The QCD color symmetry group governing quark and gluon color charge.
+  status: asserted
+- id: qcd.quark
+  label: Quark
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Fermionic QCD matter field carrying color charge and participating in the strong interaction.
+  status: asserted
+- id: qcd.gluon
+  label: Gluon
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Gauge boson of QCD color interactions, carrying adjoint color charge.
+  status: asserted
+- id: qcd.asymptotic_freedom
+  label: Asymptotic freedom
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: The QCD property that the effective coupling decreases at short distances or high energies.
+  status: asserted

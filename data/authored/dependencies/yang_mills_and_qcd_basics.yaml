@@ -1,0 +1,181 @@
+# Canonical dependency edges for the first-pass Yang-Mills/QCD basics batch.
+- from: classical_fields.action_functional
+  to: qft.yang_mills_and_qcd_basics
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qcd_theory
+  task_type: literature_reading
+  rationale: The Yang-Mills/QCD basics neighborhood is introduced as an action-based field-theory slice, so the reader has to recognize the action-functional vocabulary first.
+  failure_mode_if_absent: Cannot tell what variational object the source is using as the starting point for the Yang-Mills theory.
+  evidence:
+    - type: expert_claim
+      source_ref: yang_mills_and_qcd_basics_batch_initial
+      note: Batch notes center the action-based Yang-Mills setup as the top-level reading front.
+  status: asserted
+  confidence: 0.9
+- from: classical_fields.field_configuration
+  to: qft.gauge_field
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qcd_theory
+  task_type: literature_reading
+  rationale: Gauge fields are read as spacetime-dependent field configurations before their gauge-theoretic role is used.
+  failure_mode_if_absent: Cannot tell what kind of object the gauge field is when the source writes it as a local field on spacetime.
+  evidence:
+    - type: expert_claim
+      source_ref: yang_mills_and_qcd_basics_batch_initial
+      note: Batch notes reuse the classical-field language to ground the gauge-field node.
+  status: asserted
+  confidence: 0.88
+- from: classical_fields.continuous_symmetry_of_action
+  to: qft.non_abelian_gauge_symmetry
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qcd_theory
+  task_type: literature_reading
+  rationale: Non-Abelian gauge symmetry is the local-symmetry specialization of action symmetry that the reader must already recognize.
+  failure_mode_if_absent: Cannot see why the source is talking about a local symmetry rather than an ordinary global symmetry.
+  evidence:
+    - type: expert_claim
+      source_ref: yang_mills_and_qcd_basics_batch_initial
+      note: Batch notes place non-Abelian gauge symmetry immediately downstream of the classical action symmetry vocabulary.
+  status: asserted
+  confidence: 0.93
+- from: qft.non_abelian_gauge_symmetry
+  to: qft.gauge_field
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qcd_theory
+  task_type: literature_reading
+  rationale: The gauge field is the concrete variable used to implement the local non-Abelian symmetry, so the symmetry has to be in hand before the field is used.
+  failure_mode_if_absent: Cannot construct the gauge potential that transforms under the local symmetry.
+  evidence:
+    - type: expert_claim
+      source_ref: yang_mills_and_qcd_basics_batch_initial
+      note: Batch notes keep the gauge field as the first structural object under the symmetry branch.
+  status: asserted
+  confidence: 0.92
+- from: qft.gauge_field
+  to: qft.covariant_derivative
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qcd_theory
+  task_type: literature_reading
+  rationale: The covariant derivative is defined with the gauge field, so the field has to be available before the derivative can be used.
+  failure_mode_if_absent: Cannot write the gauge-covariant derivative that appears throughout Yang-Mills and QCD expressions.
+  evidence:
+    - type: expert_claim
+      source_ref: yang_mills_and_qcd_basics_batch_initial
+      note: Batch notes treat the covariant derivative as the gauge-field tool in the non-Abelian branch.
+  status: asserted
+  confidence: 0.95
+- from: qft.covariant_derivative
+  to: qft.field_strength_tensor
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qcd_theory
+  task_type: literature_reading
+  rationale: The field-strength tensor is usually recognized through the gauge-covariant derivative or its commutator form.
+  failure_mode_if_absent: Cannot read the field-strength formula as the curvature of the gauge connection.
+  evidence:
+    - type: expert_claim
+      source_ref: yang_mills_and_qcd_basics_batch_initial
+      note: Batch notes place the field-strength tensor directly downstream of the covariant derivative.
+  status: asserted
+  confidence: 0.94
+- from: qft.field_strength_tensor
+  to: qft.yang_mills_action
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qcd_theory
+  task_type: literature_reading
+  rationale: The Yang-Mills action is built from the squared field strength, so the reader needs the tensor before the action is used.
+  failure_mode_if_absent: Cannot see how the gauge curvature becomes the action density in the non-Abelian theory.
+  evidence:
+    - type: expert_claim
+      source_ref: yang_mills_and_qcd_basics_batch_initial
+      note: Batch notes emphasize the F-squared action as the central use-level relation.
+  status: asserted
+  confidence: 0.96
+- from: qft.yang_mills_action
+  to: qft.gauge_fixing
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qcd_theory
+  task_type: literature_reading
+  rationale: Gauge fixing is read in the context of the Yang-Mills quantum theory, so the action-based setup has to be recognized first.
+  failure_mode_if_absent: Cannot tell why the source is introducing a gauge condition instead of another field equation.
+  evidence:
+    - type: expert_claim
+      source_ref: yang_mills_and_qcd_basics_batch_initial
+      note: Batch notes keep gauge fixing adjacent to the Yang-Mills action branch.
+  status: asserted
+  confidence: 0.87
+- from: qft.gauge_fixing
+  to: qft.ghost_field
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qcd_theory
+  task_type: literature_reading
+  rationale: Ghost fields are introduced as part of the gauge-fixed quantum theory, so gauge fixing must already be available.
+  failure_mode_if_absent: Cannot interpret the auxiliary ghost fields that appear after gauge fixing is imposed.
+  evidence:
+    - type: expert_claim
+      source_ref: yang_mills_and_qcd_basics_batch_initial
+      note: Batch notes treat ghosts as a direct use-level consequence of gauge fixing.
+  status: asserted
+  confidence: 0.95
+- from: qcd.color_su3
+  to: qcd.quark
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qcd_theory
+  task_type: literature_reading
+  rationale: Quarks are the color-carrying matter fields in QCD, so the color-SU(3) vocabulary has to be recognized first.
+  failure_mode_if_absent: Cannot tell why quarks are described as carrying a QCD color charge.
+  evidence:
+    - type: expert_claim
+      source_ref: yang_mills_and_qcd_basics_batch_initial
+      note: Batch notes explicitly pair color SU(3) with quark color charge.
+  status: asserted
+  confidence: 0.93
+- from: qcd.color_su3
+  to: qcd.gluon
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qcd_theory
+  task_type: literature_reading
+  rationale: Gluons are the gauge bosons that carry the adjoint color representation, so color-SU(3) must be in place first.
+  failure_mode_if_absent: Cannot tell why gluons are themselves color-charged objects rather than neutral mediators.
+  evidence:
+    - type: expert_claim
+      source_ref: yang_mills_and_qcd_basics_batch_initial
+      note: Batch notes keep the gluon as the QCD gauge-boson counterpart to the color symmetry.
+  status: asserted
+  confidence: 0.94
+- from: qft.non_abelian_gauge_symmetry
+  to: qcd.asymptotic_freedom
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qcd_theory
+  task_type: literature_reading
+  rationale: Asymptotic freedom is the hallmark quantum consequence of the non-Abelian gauge structure, so the symmetry has to be recognized first.
+  failure_mode_if_absent: Cannot tell why the strong coupling runs toward smaller values at short distance in QCD.
+  evidence:
+    - type: expert_claim
+      source_ref: yang_mills_and_qcd_basics_batch_initial
+      note: Batch notes treat asymptotic freedom as the first QCD-specific quantum consequence of the non-Abelian branch.
+  status: asserted
+  confidence: 0.91

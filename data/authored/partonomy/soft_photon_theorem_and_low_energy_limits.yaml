@@ -1,0 +1,21 @@
+# Canonical partonomy edges for the soft-photon-theorem and low-energy-limits batch.
+- parent: qft.soft_photon_theorem_and_low_energy_limits
+  child: qft.soft_limit
+  rationale: The soft limit is the kinematic entry branch of the batch.
+  status: asserted
+  confidence: 0.94
+- parent: qft.soft_photon_theorem_and_low_energy_limits
+  child: qft.soft_radiation_factorization
+  rationale: Universal soft factorization is the structural bridge between the limit and the theorem.
+  status: asserted
+  confidence: 0.95
+- parent: qft.soft_radiation_factorization
+  child: qft.eikonal_soft_factor
+  rationale: The eikonal soft factor is the minimal universal content of the factorization formula.
+  status: asserted
+  confidence: 0.95
+- parent: qft.soft_photon_theorem_and_low_energy_limits
+  child: qft.soft_photon_theorem
+  rationale: The soft-photon theorem is the theorem-level payoff of the batch.
+  status: asserted
+  confidence: 0.96

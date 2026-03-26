@@ -1,0 +1,101 @@
+# Canonical node records for the Stage 2 variational-principles/classical-fields batch.
+- id: classical_fields.variational_principles_and_classical_fields
+  label: Variational principles and classical fields
+  knowledge_kind: concept
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Topic anchor for action-based classical field theory and the variational machinery used to derive field equations and conservation laws.
+  status: asserted
+- id: relativity.spacetime_coordinates
+  label: Spacetime coordinates
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Time and space coordinates used to label an event in a chosen inertial frame.
+  status: asserted
+- id: classical_fields.field_configuration
+  label: Field configuration
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Assignment of field values to spacetime points, usually treated as the variable being varied in the action.
+  status: asserted
+- id: classical_fields.lagrangian_density
+  label: Lagrangian density
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Local expression built from fields and their derivatives whose spacetime integral gives the action.
+  status: asserted
+- id: classical_fields.action_functional
+  label: Action functional
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Functional of a field configuration obtained by integrating the Lagrangian density over spacetime.
+  status: asserted
+- id: classical_fields.stationary_action_principle
+  label: Stationary action principle
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Principle that the physically relevant field history makes the action stationary under allowed variations.
+  status: asserted
+- id: classical_fields.boundary_terms_in_variation
+  label: Boundary terms in variation
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Surface contributions that appear when the action is varied and integration by parts is used.
+  status: asserted
+- id: classical_fields.euler_lagrange_field_equation
+  label: Euler-Lagrange field equation
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Field equation obtained by applying stationary variation to the action functional.
+  status: asserted
+- id: classical_fields.continuous_symmetry_of_action
+  label: Continuous symmetry of the action
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Transformation that leaves the action invariant or changes it only by a boundary term.
+  status: asserted
+- id: classical_fields.noether_theorem
+  label: Noether theorem
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Result linking continuous symmetries of the action to conserved currents or charges.
+  status: asserted

@@ -1,0 +1,131 @@
+# Canonical node records for the nonperturbative-QCD and topology batch.
+- id: qcd.nonperturbative_qcd_and_topology
+  label: Nonperturbative QCD and topology
+  knowledge_kind: concept
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Topic anchor for the Wilson-loop, confinement, instanton, and theta-vacuum branches of nonperturbative QCD.
+  status: asserted
+- id: qft.non_abelian_gauge_symmetry
+  label: Non-Abelian gauge symmetry
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Local gauge symmetry with noncommuting generators, the structure that distinguishes Yang-Mills theory from Abelian gauge theory.
+  status: asserted
+- id: qft.yang_mills_action
+  label: Yang-Mills action
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Gauge-invariant action for a non-Abelian gauge field, typically built from the squared field strength.
+  status: asserted
+- id: qcd.lattice_qcd
+  label: Lattice QCD
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Nonperturbative spacetime-discretized formulation of QCD used to define gauge fields, Wilson observables, and confinement diagnostics beyond perturbation theory.
+  status: asserted
+- id: qcd.link_field
+  label: Link field
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Gauge variable associated with a lattice link, used to discretize parallel transport and build Wilson observables.
+  status: asserted
+- id: qft.wilson_line
+  label: Wilson line
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Path-ordered gauge parallel transporter along a contour, used to compare gauge phases between separated points.
+  status: asserted
+- id: qft.wilson_loop
+  label: Wilson loop
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Gauge-invariant trace of a Wilson line around a closed contour, used as a nonperturbative probe of confinement.
+  status: asserted
+- id: qcd.area_law_for_wilson_loop
+  label: Area law for the Wilson loop
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Large-loop scaling in which the logarithm of the Wilson-loop expectation value grows with enclosed area, signaling confining flux-tube behavior.
+  status: asserted
+- id: qcd.confinement
+  label: Confinement
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Strong-interaction regime in which color-charged states do not appear as isolated asymptotic particles.
+  status: asserted
+- id: qft.instanton
+  label: Instanton
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Finite-action Euclidean Yang-Mills field configuration in a nontrivial topological sector, contributing nonperturbatively to amplitudes or vacuum structure.
+  status: asserted
+- id: qcd.topological_charge
+  label: Topological charge
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Integer-valued topological invariant classifying gauge-field sectors and controlling instanton number in non-Abelian gauge theory.
+  status: asserted
+- id: qcd.theta_vacuum
+  label: Theta-vacuum
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Superselection structure of QCD vacua weighted by a theta angle that couples to topological charge.
+  status: asserted
+- id: qcd.witten_veneziano_relation
+  label: Witten-Veneziano relation
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Relation connecting eta-prime mass physics to topological properties of large-N QCD, used as a topology-facing payoff of the theta-vacuum branch.
+  status: asserted

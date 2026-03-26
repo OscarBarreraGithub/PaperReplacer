@@ -1,0 +1,56 @@
+# Canonical partonomy edges for the first-pass Yang-Mills/QCD basics batch.
+- parent: qft.yang_mills_and_qcd_basics
+  child: qft.non_abelian_gauge_symmetry
+  rationale: Non-Abelian gauge symmetry is the primary structural branch in the batch.
+  status: asserted
+  confidence: 0.95
+- parent: qft.yang_mills_and_qcd_basics
+  child: qft.yang_mills_action
+  rationale: The Yang-Mills action is the central action-level branch of the neighborhood.
+  status: asserted
+  confidence: 0.93
+- parent: qft.yang_mills_and_qcd_basics
+  child: qft.gauge_fixing
+  rationale: Gauge fixing is a core quantum-theory branch that recurs immediately after the action-level setup.
+  status: asserted
+  confidence: 0.9
+- parent: qft.yang_mills_and_qcd_basics
+  child: qcd.color_su3
+  rationale: Color SU(3) is the QCD-specific symmetry branch that the neighborhood needs to expose explicitly.
+  status: asserted
+  confidence: 0.94
+- parent: qft.yang_mills_and_qcd_basics
+  child: qcd.asymptotic_freedom
+  rationale: Asymptotic freedom is the first QCD-specific quantum consequence that this batch should surface.
+  status: asserted
+  confidence: 0.92
+- parent: qft.non_abelian_gauge_symmetry
+  child: qft.gauge_field
+  rationale: Gauge fields are the basic local variables under the non-Abelian symmetry branch.
+  status: asserted
+  confidence: 0.94
+- parent: qft.non_abelian_gauge_symmetry
+  child: qft.covariant_derivative
+  rationale: The covariant derivative is the standard non-Abelian gauge-theory tool that follows from the symmetry branch.
+  status: asserted
+  confidence: 0.95
+- parent: qft.non_abelian_gauge_symmetry
+  child: qft.field_strength_tensor
+  rationale: The field-strength tensor is the curvature object attached to the non-Abelian gauge branch.
+  status: asserted
+  confidence: 0.94
+- parent: qcd.color_su3
+  child: qcd.quark
+  rationale: Quarks are the fundamental matter carriers of QCD color in this neighborhood.
+  status: asserted
+  confidence: 0.94
+- parent: qcd.color_su3
+  child: qcd.gluon
+  rationale: Gluons are the adjoint color carriers associated with the QCD gauge symmetry.
+  status: asserted
+  confidence: 0.94
+- parent: qft.gauge_fixing
+  child: qft.ghost_field
+  rationale: Ghost fields belong to the gauge-fixed quantum branch and should sit beneath the gauge-fixing node.
+  status: asserted
+  confidence: 0.92

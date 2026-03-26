@@ -1,0 +1,121 @@
+# Canonical node records for the discrete-symmetries and CPT batch.
+- id: qft.discrete_symmetries_and_cpt
+  label: Discrete symmetries and CPT
+  knowledge_kind: concept
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Topic anchor for parity, charge conjugation, time reversal, and CPT vocabulary in the spinor/Dirac neighborhood.
+  status: asserted
+- id: qft.spinor_lorentz_dirac_foundations
+  label: Spinor, Lorentz, and Dirac foundations
+  knowledge_kind: concept
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Topic anchor for the spinor, gamma-matrix, and Dirac vocabulary reused by later fermion and discrete-symmetry batches.
+  status: asserted
+- id: qft.dirac_spinor
+  label: Dirac spinor
+  knowledge_kind: representation
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Four-component spinor representation used for relativistic fermions and later Dirac fields.
+  status: asserted
+- id: qft.gamma_matrices
+  label: Gamma matrices
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Matrix vocabulary used to realize the Clifford algebra on spinor space.
+  status: asserted
+- id: qft.dirac_adjoint
+  label: Dirac adjoint
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Adjoint spinor needed to form Lorentz-covariant bilinears.
+  status: asserted
+- id: qft.chirality_projector
+  label: Chirality projector
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Projector onto left- or right-chiral subspaces built from gamma five.
+  status: asserted
+- id: qft.spinor_bilinear
+  label: Spinor bilinear
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Lorentz-covariant bilinear built from a spinor and its adjoint, used to state discrete-symmetry transformation properties.
+  status: asserted
+- id: qft.parity_transformation
+  label: Parity transformation
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Spatial inversion acting on coordinates, fields, and spinors.
+  status: asserted
+- id: qft.charge_conjugation
+  label: Charge conjugation
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Transformation exchanging particles and antiparticles, especially on fermion fields.
+  status: asserted
+- id: qft.time_reversal
+  label: Time reversal
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Antiunitary reversal of time coordinate and momenta.
+  status: asserted
+- id: qft.cpt_theorem
+  label: CPT theorem
+  knowledge_kind: formal_statement
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Statement that local Lorentz-covariant QFT is invariant under the combined CPT transformation.
+  status: asserted
+- id: qft.cpt_invariance
+  label: CPT invariance
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Combined discrete-symmetry invariance statement used when the theorem is applied in practice.
+  status: asserted

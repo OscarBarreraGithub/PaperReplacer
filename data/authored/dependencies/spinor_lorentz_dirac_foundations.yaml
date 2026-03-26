@@ -1,0 +1,196 @@
+# Canonical dependency edges for the spinor/Lorentz/Dirac foundations batch.
+- from: relativity.lorentz_transformation
+  to: qft.spinor_lorentz_dirac_foundations
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: The batch is explicitly built on the Lorentz-representation story, so the reader has to recognize the spacetime-symmetry vocabulary first.
+  failure_mode_if_absent: Cannot tell why spinors and gamma matrices are still part of a Lorentz-symmetry neighborhood.
+  evidence:
+    - type: expert_claim
+      source_ref: spinor_lorentz_dirac_foundations_batch_initial
+      note: Batch notes reuse the Lorentz-transformation background as the starting point for the spinor slice.
+  status: asserted
+  confidence: 0.94
+- from: qft.lorentz_group_representation
+  to: qft.spinor_lorentz_dirac_foundations
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: The spinor/Dirac slice is the representation-theoretic continuation of the Lorentz-group story, so that representation language has to be in place first.
+  failure_mode_if_absent: Cannot see what kind of representation spinors are supposed to be.
+  evidence:
+    - type: expert_claim
+      source_ref: spinor_lorentz_dirac_foundations_batch_initial
+      note: Batch notes explicitly ask to reuse the Lorentz-representation neighborhood.
+  status: asserted
+  confidence: 0.95
+- from: qft.lorentz_group_representation
+  to: qft.spinor_representation
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: Spinor representation is the specialization of the Lorentz-representation story that this batch needs to surface first.
+  failure_mode_if_absent: Cannot distinguish spinor representation from a generic group-action node.
+  evidence:
+    - type: expert_claim
+      source_ref: spinor_lorentz_dirac_foundations_batch_initial
+      note: Batch notes center the spinor vocabulary as a Lorentz-representation specialization.
+  status: asserted
+  confidence: 0.95
+- from: qft.spinor_representation
+  to: qft.dirac_spinor
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: Dirac spinors are the main use-level spinor object in the relativistic-fermion reading of the topic.
+  failure_mode_if_absent: Cannot read a four-component fermion object as the standard Dirac-spinor carrier.
+  evidence:
+    - type: expert_claim
+      source_ref: spinor_lorentz_dirac_foundations_batch_initial
+      note: Batch notes identify Dirac spinors as a core candidate in the spinor slice.
+  status: asserted
+  confidence: 0.96
+- from: qft.spinor_representation
+  to: qft.weyl_spinor
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: Weyl spinors are the chiral specialization of the spinor-representation story and should be recognizable once the representation picture is fixed.
+  failure_mode_if_absent: Cannot tell that the source is switching from Dirac to chiral spinor language.
+  evidence:
+    - type: expert_claim
+      source_ref: spinor_lorentz_dirac_foundations_batch_initial
+      note: Batch notes list Weyl spinors among the highest-value candidates.
+  status: asserted
+  confidence: 0.94
+- from: qft.dirac_spinor
+  to: qft.gamma_matrices
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: Gamma matrices are the matrix vocabulary that acts on Dirac spinors, so the spinor object has to be recognizable before the matrix notation is meaningful.
+  failure_mode_if_absent: Cannot tell what space the gamma matrices are acting on or why they are introduced.
+  evidence:
+    - type: expert_claim
+      source_ref: spinor_lorentz_dirac_foundations_batch_initial
+      note: Batch notes keep gamma matrices in the core spinor/Dirac cluster.
+  status: asserted
+  confidence: 0.96
+- from: qft.gamma_matrices
+  to: qft.dirac_algebra
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: The Dirac-algebra relations are the standard use-level statements about the gamma matrices.
+  failure_mode_if_absent: Cannot read the anticommutation relations or their algebraic consequences.
+  evidence:
+    - type: expert_claim
+      source_ref: spinor_lorentz_dirac_foundations_batch_initial
+      note: Batch notes treat Dirac algebra as the structural relation set behind the gamma matrices.
+  status: asserted
+  confidence: 0.95
+- from: qft.gamma_matrices
+  to: qft.gamma_five
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: Gamma five is defined and used through the gamma-matrix algebra, so the matrix vocabulary has to be available first.
+  failure_mode_if_absent: Cannot interpret gamma five as the chirality matrix built from the Dirac algebra.
+  evidence:
+    - type: expert_claim
+      source_ref: spinor_lorentz_dirac_foundations_batch_initial
+      note: Batch notes explicitly keep gamma five in the spinor/Dirac neighborhood.
+  status: asserted
+  confidence: 0.94
+- from: qft.gamma_five
+  to: qft.chirality_projector
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: Chirality projectors are constructed from gamma five, so the gamma-five operator has to be available first.
+  failure_mode_if_absent: Cannot see where the left- and right-chiral projectors come from.
+  evidence:
+    - type: expert_claim
+      source_ref: spinor_lorentz_dirac_foundations_batch_initial
+      note: Batch notes connect gamma five directly to chirality language.
+  status: asserted
+  confidence: 0.96
+- from: qft.chirality_projector
+  to: qft.weyl_spinor
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: Weyl spinors are read through chirality projection, so the projector vocabulary has to be in place for use.
+  failure_mode_if_absent: Cannot follow how a Dirac spinor is split into chiral components.
+  evidence:
+    - type: expert_claim
+      source_ref: spinor_lorentz_dirac_foundations_batch_initial
+      note: Batch notes place chirality projection in the core reuse set.
+  status: asserted
+  confidence: 0.95
+- from: qft.gamma_matrices
+  to: qft.dirac_equation
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: The Dirac equation is written in gamma-matrix notation, so the matrices have to be usable before the equation is readable.
+  failure_mode_if_absent: Cannot parse the operator structure of the relativistic fermion equation.
+  evidence:
+    - type: expert_claim
+      source_ref: spinor_lorentz_dirac_foundations_batch_initial
+      note: Batch notes flag the Dirac equation as a central use-level target.
+  status: asserted
+  confidence: 0.97
+- from: qft.dirac_spinor
+  to: qft.dirac_equation
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: The Dirac equation is the standard relativistic wave equation for Dirac spinors, so the carrier object has to be recognizable first.
+  failure_mode_if_absent: Cannot tell what kind of field or state the equation is constraining.
+  evidence:
+    - type: expert_claim
+      source_ref: spinor_lorentz_dirac_foundations_batch_initial
+      note: Batch notes keep Dirac spinors and the Dirac equation in the same first-pass cluster.
+  status: asserted
+  confidence: 0.96
+- from: qft.dirac_spinor
+  to: qft.dirac_adjoint
+  relation_type: requires_for_use
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: The adjoint is the standard companion object for forming Lorentz-covariant bilinears out of Dirac spinors.
+  failure_mode_if_absent: Cannot write the common bilinear expressions that later discrete-symmetry and fermion-bilinear passages rely on.
+  evidence:
+    - type: expert_claim
+      source_ref: spinor_lorentz_dirac_foundations_batch_initial
+      note: Batch notes keep the Dirac adjoint in the reusable support set.
+  status: asserted
+  confidence: 0.9

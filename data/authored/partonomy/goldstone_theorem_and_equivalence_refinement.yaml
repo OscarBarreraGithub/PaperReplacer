@@ -1,0 +1,16 @@
+# Canonical partonomy edges for the Goldstone-theorem and equivalence refinement batch.
+- parent: sm.goldstone_theorem_and_equivalence_refinement
+  child: sm.ssb.goldstone_theorem
+  rationale: Goldstone's theorem is the spontaneous-symmetry-breaking theorem branch of the batch.
+  status: asserted
+  confidence: 0.96
+- parent: sm.goldstone_theorem_and_equivalence_refinement
+  child: sm.ewbreak.longitudinal_weak_boson_mode
+  rationale: The longitudinal weak-boson mode is the minimal electroweak bridge between symmetry breaking and the equivalence theorem.
+  status: asserted
+  confidence: 0.92
+- parent: sm.goldstone_theorem_and_equivalence_refinement
+  child: sm.ewbreak.goldstone_boson_equivalence_theorem
+  rationale: The equivalence theorem is the electroweak theorem-level payoff of the batch.
+  status: asserted
+  confidence: 0.96

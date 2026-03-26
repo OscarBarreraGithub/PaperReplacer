@@ -1,0 +1,36 @@
+# Canonical partonomy edges for the first-pass QED tree-level process batch.
+- parent: qft.qed_tree_level_processes
+  child: qed.bhabha_scattering
+  rationale: Bhabha scattering is one of the core tree-level QED process leaves.
+  status: asserted
+  confidence: 0.95
+- parent: qft.qed_tree_level_processes
+  child: qed.moller_scattering
+  rationale: Moller scattering is one of the core tree-level QED process leaves.
+  status: asserted
+  confidence: 0.95
+- parent: qft.qed_tree_level_processes
+  child: qed.compton_scattering
+  rationale: Compton scattering is one of the core tree-level QED process leaves.
+  status: asserted
+  confidence: 0.95
+- parent: qft.qed_tree_level_processes
+  child: qed.electron_positron_to_muon_antimuon
+  rationale: The electron-positron to muon-antimuon channel is a standard tree-level QED example.
+  status: asserted
+  confidence: 0.94
+- parent: qft.qed_tree_level_processes
+  child: qed.light_by_light_scattering
+  rationale: Light-by-light scattering is retained as a named QED exemplar process leaf.
+  status: asserted
+  confidence: 0.9
+- parent: qft.qed_tree_level_processes
+  child: qed.equivalent_photon_approximation
+  rationale: The equivalent photon approximation is retained as a process-sensitive QED result leaf.
+  status: asserted
+  confidence: 0.9
+- parent: qft.qed_tree_level_processes
+  child: qed.mott_formula
+  rationale: The Mott formula is retained as a process-sensitive electron-scattering result leaf.
+  status: asserted
+  confidence: 0.9

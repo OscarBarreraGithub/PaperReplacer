@@ -1,0 +1,61 @@
+# Hand-authored node records for the complex-analysis-for-QFT foundation batch.
+- id: complex_analysis.contour_deformation
+  label: Contour deformation
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Standard complex-analysis procedure of continuously moving an integration contour while tracking which singularities obstruct the motion.
+  status: asserted
+- id: complex_analysis.poles_vs_branch_points
+  label: Poles vs branch points
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Distinction between isolated pole singularities and branch-point or cut singularities in complex analysis.
+  status: asserted
+- id: qft.analytic_continuation_in_kinematic_invariants
+  label: Analytic continuation in kinematic invariants
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Analytic continuation of amplitudes as functions of external invariant variables, used to track how singular loci move between physical regions.
+  status: asserted
+- id: qft.feynman_i_epsilon_prescription
+  label: Feynman i epsilon prescription
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Prescription that displaces propagator poles off the real axis to define causal contour choices in relativistic QFT.
+  status: asserted
+- id: qft.propagator_singularities
+  label: Propagator singularities
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Singular structure contributed by propagator denominators, especially the location and interpretation of their poles.
+  status: asserted
+- id: qft.pinch_singularities
+  label: Pinch singularities
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Singular configurations in which contour deformations are obstructed by competing singularities that trap the contour.
+  status: asserted

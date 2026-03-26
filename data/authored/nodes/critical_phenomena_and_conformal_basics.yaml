@@ -1,0 +1,133 @@
+# Canonical node records for the critical-phenomena and conformal-basics batch.
+- id: qft.critical_phenomena_and_conformal_basics
+  label: Critical phenomena and conformal basics
+  knowledge_kind: concept
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Topic anchor for continuous phase transitions, RG fixed points, universality, and the first scale/conformal/Weyl symmetry vocabulary.
+  status: asserted
+- id: qft.wilsonian_renormalization_group
+  label: Wilsonian renormalization group
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Coarse-graining flow picture in which high-momentum modes are integrated out to produce scale-dependent effective theories.
+  status: asserted
+- id: qft.anomalous_dimension
+  label: Anomalous dimension
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Scale-dependent correction to the naive dimension or scaling behavior of a field or operator.
+  status: asserted
+- id: qft.phase_transition
+  label: Phase transition
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Qualitative change in phase structure as couplings, temperature, or other control parameters are varied.
+  status: asserted
+- id: qft.continuous_phase_transition
+  label: Continuous phase transition
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Phase transition with no latent heat and with scale-free critical behavior as the transition point is approached.
+  status: asserted
+- id: qft.order_parameter
+  label: Order parameter
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Quantity whose expectation value or pattern distinguishes phases across a transition.
+  status: asserted
+- id: qft.correlation_length
+  label: Correlation length
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Characteristic length scale governing the spatial decay of correlations and diverging at a critical point.
+  status: asserted
+- id: qft.renormalization_group_fixed_point
+  label: Renormalization-group fixed point
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Scale-invariant point of RG flow where the coarse-grained couplings stop running.
+  status: asserted
+- id: qft.universality_class
+  label: Universality class
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Collection of microscopically different systems that share the same critical exponents and long-distance behavior near a critical point.
+  status: asserted
+- id: qft.critical_exponent
+  label: Critical exponent
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Scaling exponent that characterizes singular behavior of observables near a continuous phase transition.
+  status: asserted
+- id: qft.scale_invariance
+  label: Scale invariance
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Invariance of a theory or fixed-point description under rescaling of lengths or energies.
+  status: asserted
+- id: qft.conformal_invariance
+  label: Conformal invariance
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Invariance under angle-preserving local spacetime transformations that extend the scale-invariant symmetry set.
+  status: asserted
+- id: qft.weyl_invariance
+  label: Weyl invariance
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Local invariance under point-dependent metric rescalings, used as a nearby symmetry language in conformal and critical-point discussions.
+  status: asserted

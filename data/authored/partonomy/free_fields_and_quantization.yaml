@@ -1,0 +1,46 @@
+# Canonical partonomy edges for the first-pass free-fields-and-quantization batch.
+- parent: qft.free_fields_and_quantization
+  child: qft.free_scalar_field
+  rationale: Free scalar fields are a main branch of the batch and a standard starting point for the free-field story.
+  status: asserted
+  confidence: 0.95
+- parent: qft.free_fields_and_quantization
+  child: qft.free_dirac_field
+  rationale: Free Dirac fields are a second core branch of the batch and carry the fermionic free-field vocabulary.
+  status: asserted
+  confidence: 0.95
+- parent: qft.free_fields_and_quantization
+  child: qft.free_vector_field
+  rationale: Free vector fields are the third core free-field species branch in the batch.
+  status: asserted
+  confidence: 0.92
+- parent: qft.free_fields_and_quantization
+  child: qft.canonical_quantization
+  rationale: Canonical quantization is the main operator-promoting branch of the topic.
+  status: asserted
+  confidence: 0.95
+- parent: qft.free_fields_and_quantization
+  child: qft.microcausality
+  rationale: Microcausality is one of the locality constraints that belongs directly under the free-field trunk.
+  status: asserted
+  confidence: 0.9
+- parent: qft.free_fields_and_quantization
+  child: qft.spin_statistics
+  rationale: Spin-statistics is the theorem-level constraint that closes the free-field and quantization story.
+  status: asserted
+  confidence: 0.9
+- parent: qft.canonical_quantization
+  child: qft.mode_expansion
+  rationale: Mode expansion is the standard representation of free fields inside canonical quantization.
+  status: asserted
+  confidence: 0.95
+- parent: qft.canonical_quantization
+  child: qft.creation_annihilation_operator
+  rationale: Creation and annihilation operators are the canonical operator basis used in the mode expansion.
+  status: asserted
+  confidence: 0.95
+- parent: qft.canonical_quantization
+  child: qft.equal_time_commutation_relations
+  rationale: Equal-time brackets are the central operator-algebra output of canonical quantization.
+  status: asserted
+  confidence: 0.96

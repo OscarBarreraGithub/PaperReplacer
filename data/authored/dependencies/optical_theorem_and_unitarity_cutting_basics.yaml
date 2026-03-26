@@ -1,0 +1,121 @@
+# Canonical dependency edges for the optical-theorem and unitarity-cutting batch.
+- from: qft.asymptotic_one_particle_state
+  to: qft.s_matrix_unitarity
+  relation_type: requires_for_recognize
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: literature_reading
+  rationale: S-matrix unitarity is most concretely read in the same asymptotic-state language already used by LSZ.
+  failure_mode_if_absent: The unitarity statement looks more abstract and less visibly tied to the scattering setup already present in the graph.
+  evidence:
+    - type: expert_claim
+      source_ref: optical_theorem_and_unitarity_cutting_basics_batch_initial
+      note: Source notes keep the LSZ asymptotic-state node as light upstream support for the unitarity branch.
+  status: asserted
+  confidence: 0.84
+- from: qft.scattering_amplitude
+  to: qft.forward_scattering_amplitude
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: literature_reading
+  rationale: Forward scattering is a special kinematic limit of the general scattering amplitude.
+  failure_mode_if_absent: Cannot tell what broader object is being specialized when the forward amplitude is introduced.
+  evidence:
+    - type: expert_claim
+      source_ref: optical_theorem_and_unitarity_cutting_basics_batch_initial
+      note: Source notes keep forward scattering as a kinematic refinement of the existing amplitude node.
+  status: asserted
+  confidence: 0.96
+- from: qft.s_matrix_unitarity
+  to: qft.optical_theorem
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: literature_reading
+  rationale: The optical theorem is the local forward-scattering consequence of S-matrix unitarity.
+  failure_mode_if_absent: Cannot see why the theorem is true or what structural principle it is encoding.
+  evidence:
+    - type: expert_claim
+      source_ref: optical_theorem_and_unitarity_cutting_basics_batch_initial
+      note: Source notes keep the theorem explicitly downstream of the unitarity statement.
+  status: asserted
+  confidence: 0.97
+- from: qft.forward_scattering_amplitude
+  to: qft.optical_theorem
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: literature_reading
+  rationale: The theorem is stated in terms of the imaginary part of the forward amplitude, so that local amplitude specialization must already be available.
+  failure_mode_if_absent: Cannot read the theorem's formula or tell why the forward limit matters.
+  evidence:
+    - type: expert_claim
+      source_ref: optical_theorem_and_unitarity_cutting_basics_batch_initial
+      note: Source notes keep forward scattering as the theorem's local kinematic input.
+  status: asserted
+  confidence: 0.96
+- from: qft.on_shell_intermediate_state
+  to: qft.optical_theorem
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: literature_reading
+  rationale: The right-hand side of the theorem is a sum over physical on-shell intermediate states.
+  failure_mode_if_absent: Cannot interpret what states are being summed over in the unitarity relation.
+  evidence:
+    - type: expert_claim
+      source_ref: optical_theorem_and_unitarity_cutting_basics_batch_initial
+      note: Source notes keep the on-shell intermediate-state node as the smallest reusable state-sum ingredient.
+  status: asserted
+  confidence: 0.95
+- from: qft.s_matrix_unitarity
+  to: qft.unitarity_cutting_rules
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: literature_reading
+  rationale: Cutting rules are a practical implementation of the same unitarity statement at the diagram or amplitude level.
+  failure_mode_if_absent: Cannot tell what principle justifies replacing a heuristic cut picture by an actual calculational rule.
+  evidence:
+    - type: expert_claim
+      source_ref: optical_theorem_and_unitarity_cutting_basics_batch_initial
+      note: Source notes keep the cutting-rule node attached directly to the unitarity branch rather than to broad analytic structure.
+  status: asserted
+  confidence: 0.95
+- from: qft.optical_theorem
+  to: qft.unitarity_cutting_rules
+  relation_type: requires_for_recognize
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: literature_reading
+  rationale: The optical theorem is the simplest theorem-level instance of the same cutting logic, so it helps orient the cutting-rule node.
+  failure_mode_if_absent: Cutting rules appear as a detached formalism rather than as an extension of a familiar unitarity relation.
+  evidence:
+    - type: expert_claim
+      source_ref: optical_theorem_and_unitarity_cutting_basics_batch_initial
+      note: Source notes keep cutting rules as a downstream refinement of the theorem branch.
+  status: asserted
+  confidence: 0.88
+- from: qft.on_shell_intermediate_state
+  to: qft.unitarity_cutting_rules
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: literature_reading
+  rationale: The meaning of a cut is that intermediate states are put on shell, so the on-shell-state vocabulary is intrinsic to the cutting rule.
+  failure_mode_if_absent: Cannot interpret what physical replacement or restriction the cut is enforcing.
+  evidence:
+    - type: expert_claim
+      source_ref: optical_theorem_and_unitarity_cutting_basics_batch_initial
+      note: Source notes keep on-shell intermediate states as the state-side input to the cutting-rule node.
+  status: asserted
+  confidence: 0.94

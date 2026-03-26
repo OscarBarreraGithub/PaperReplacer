@@ -1,0 +1,121 @@
+# Canonical dependency edges for the soft-photon-theorem and low-energy-limits batch.
+- from: qft.scattering_amplitude
+  to: qft.soft_limit
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: literature_reading
+  rationale: The soft limit is taken on a scattering amplitude, so the amplitude object has to be in place before the limit can be read.
+  failure_mode_if_absent: Cannot tell what quantity is being simplified when the emitted photon momentum is sent to zero.
+  evidence:
+    - type: expert_claim
+      source_ref: soft_photon_theorem_and_low_energy_limits_batch_initial
+      note: Source notes keep the soft limit directly attached to the existing amplitude node.
+  status: asserted
+  confidence: 0.97
+- from: qft.soft_divergence
+  to: qft.soft_limit
+  relation_type: requires_for_recognize
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: literature_reading
+  rationale: The soft limit is the kinematic regime where the soft-divergence branch becomes relevant, so the divergence language helps orient the limit.
+  failure_mode_if_absent: The limit can be read formally, but its infrared significance stays disconnected from the rest of the graph.
+  evidence:
+    - type: expert_claim
+      source_ref: soft_photon_theorem_and_low_energy_limits_batch_initial
+      note: Source notes keep the theorem close to the existing soft-divergence branch without duplicating the cancellation-theorem neighborhood.
+  status: asserted
+  confidence: 0.86
+- from: qft.soft_limit
+  to: qft.soft_radiation_factorization
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: literature_reading
+  rationale: Soft-radiation factorization is the structural statement that appears once the emitted photon is taken soft.
+  failure_mode_if_absent: Cannot tell why the amplitude is expected to simplify into a universal product form.
+  evidence:
+    - type: expert_claim
+      source_ref: soft_photon_theorem_and_low_energy_limits_batch_initial
+      note: Source notes use the soft limit as the direct entry point to the factorization statement.
+  status: asserted
+  confidence: 0.96
+- from: qft.scattering_amplitude
+  to: qft.soft_radiation_factorization
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: literature_reading
+  rationale: The factorization statement is about amplitudes with and without an extra soft photon.
+  failure_mode_if_absent: Cannot interpret what objects are being related by the universal soft factor.
+  evidence:
+    - type: expert_claim
+      source_ref: soft_photon_theorem_and_low_energy_limits_batch_initial
+      note: Source notes keep the factorization node explicitly amplitude-level rather than observable-level.
+  status: asserted
+  confidence: 0.95
+- from: qft.soft_radiation_factorization
+  to: qft.eikonal_soft_factor
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: literature_reading
+  rationale: The universal content of the factorization formula is the leading eikonal soft factor.
+  failure_mode_if_absent: Cannot tell what universal object multiplies the lower-point amplitude in the soft limit.
+  evidence:
+    - type: expert_claim
+      source_ref: soft_photon_theorem_and_low_energy_limits_batch_initial
+      note: Source notes keep the eikonal factor as the minimal theorem-side refinement of the factorization statement.
+  status: asserted
+  confidence: 0.95
+- from: qft.soft_limit
+  to: qft.soft_photon_theorem
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: literature_reading
+  rationale: The theorem is a statement about the amplitude in the soft-photon limit.
+  failure_mode_if_absent: Cannot tell what kinematic regime the theorem is describing.
+  evidence:
+    - type: expert_claim
+      source_ref: soft_photon_theorem_and_low_energy_limits_batch_initial
+      note: Source notes keep the theorem anchored directly to the low-energy limit that motivates it.
+  status: asserted
+  confidence: 0.96
+- from: qft.eikonal_soft_factor
+  to: qft.soft_photon_theorem
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: literature_reading
+  rationale: The theorem is used by reading off the universal leading soft factor multiplying the lower-point amplitude.
+  failure_mode_if_absent: Cannot parse the theorem's actual factorized formula.
+  evidence:
+    - type: expert_claim
+      source_ref: soft_photon_theorem_and_low_energy_limits_batch_initial
+      note: Source notes treat the eikonal factor as the local payload of the theorem.
+  status: asserted
+  confidence: 0.96
+- from: qft.soft_divergence
+  to: qft.soft_photon_theorem
+  relation_type: requires_for_recognize
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: literature_reading
+  rationale: The theorem lives in the same low-energy emission regime that underlies the soft-divergence branch.
+  failure_mode_if_absent: The theorem appears detached from the infrared neighborhood that makes it physically important.
+  evidence:
+    - type: expert_claim
+      source_ref: soft_photon_theorem_and_low_energy_limits_batch_initial
+      note: Source notes keep the theorem adjacent to the soft-divergence branch without collapsing them into one node.
+  status: asserted
+  confidence: 0.85

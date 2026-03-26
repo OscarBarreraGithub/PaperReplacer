@@ -1,0 +1,121 @@
+# Canonical dependency edges for the Mandelstam/crossing refinement batch.
+- from: qft.mandelstam_variables
+  to: qft.s_channel
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: literature_reading
+  rationale: The s channel is defined by which Mandelstam invariant is being used to organize the kinematics.
+  failure_mode_if_absent: Cannot tell why the letter s identifies a distinct scattering channel rather than just another symbol.
+  evidence:
+    - type: expert_claim
+      source_ref: mandelstam_variables_and_crossing_refinement_batch_initial
+      note: Source notes keep the channels explicitly downstream of the existing Mandelstam node.
+  status: asserted
+  confidence: 0.96
+- from: qft.mandelstam_variables
+  to: qft.t_channel
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: literature_reading
+  rationale: The t channel is identified by the t invariant in the standard channel decomposition.
+  failure_mode_if_absent: Cannot interpret which invariant or exchange pattern the t-channel label refers to.
+  evidence:
+    - type: expert_claim
+      source_ref: mandelstam_variables_and_crossing_refinement_batch_initial
+      note: Source notes keep the t-channel node as one of the three direct channel refinements of Mandelstam language.
+  status: asserted
+  confidence: 0.96
+- from: qft.mandelstam_variables
+  to: qft.u_channel
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: literature_reading
+  rationale: The u channel is identified by the u invariant in the standard channel decomposition.
+  failure_mode_if_absent: Cannot interpret the exchanged-assignment channel labeled by u.
+  evidence:
+    - type: expert_claim
+      source_ref: mandelstam_variables_and_crossing_refinement_batch_initial
+      note: Source notes keep the u-channel node as the third channel refinement of Mandelstam language.
+  status: asserted
+  confidence: 0.95
+- from: qft.scattering_amplitude
+  to: qft.crossing_symmetry
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: literature_reading
+  rationale: Crossing symmetry is a statement about how scattering amplitudes are related across different channel assignments.
+  failure_mode_if_absent: Cannot tell what object is being analytically related when crossing is invoked.
+  evidence:
+    - type: expert_claim
+      source_ref: mandelstam_variables_and_crossing_refinement_batch_initial
+      note: Source notes keep crossing symmetry explicitly attached to the amplitude node rather than to cross sections or process names.
+  status: asserted
+  confidence: 0.96
+- from: qft.mandelstam_variables
+  to: qft.crossing_symmetry
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: literature_reading
+  rationale: Crossing relations are typically expressed as reorganizations of the amplitude in terms of the same Mandelstam invariants.
+  failure_mode_if_absent: Cannot read how the same formula is being continued or reinterpreted between channels.
+  evidence:
+    - type: expert_claim
+      source_ref: mandelstam_variables_and_crossing_refinement_batch_initial
+      note: Source notes keep Mandelstam variables as the shared kinematic coordinate system for crossing.
+  status: asserted
+  confidence: 0.95
+- from: qft.s_channel
+  to: qft.crossing_symmetry
+  relation_type: requires_for_recognize
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: literature_reading
+  rationale: One side of crossing is usually introduced through the familiar direct s-channel assignment.
+  failure_mode_if_absent: Crossing remains abstract and less visibly tied to the standard baseline channel.
+  evidence:
+    - type: expert_claim
+      source_ref: mandelstam_variables_and_crossing_refinement_batch_initial
+      note: Source notes keep the s-channel visible as the usual reference point for crossing language.
+  status: asserted
+  confidence: 0.87
+- from: qft.t_channel
+  to: qft.crossing_symmetry
+  relation_type: requires_for_use
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: literature_reading
+  rationale: Crossing is concretely read by comparing the direct channel to crossed t-channel assignments.
+  failure_mode_if_absent: The first nontrivial crossed relation stays vague even if the abstract symmetry label is recognized.
+  evidence:
+    - type: expert_claim
+      source_ref: mandelstam_variables_and_crossing_refinement_batch_initial
+      note: Source notes treat t-channel language as one of the main concrete payoffs of crossing refinement.
+  status: asserted
+  confidence: 0.88
+- from: qft.u_channel
+  to: qft.crossing_symmetry
+  relation_type: requires_for_use
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: literature_reading
+  rationale: The u channel supplies the second crossed assignment used in standard crossing discussions.
+  failure_mode_if_absent: The full three-channel crossing picture remains incomplete.
+  evidence:
+    - type: expert_claim
+      source_ref: mandelstam_variables_and_crossing_refinement_batch_initial
+      note: Source notes keep the u-channel node as the remaining standard crossing branch after s and t.
+  status: asserted
+  confidence: 0.87

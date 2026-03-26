@@ -1,0 +1,271 @@
+# Canonical dependency edges for the first-pass QED tree-level process batch.
+- from: qft.free_fields_and_quantization
+  to: qft.qed_tree_level_processes
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_backbone
+  task_type: standard_computation
+  rationale: Tree-level QED process examples are read as scattering between asymptotic free quanta, so the free-field vocabulary has to be in place first.
+  failure_mode_if_absent: Cannot tell what incoming and outgoing objects the named processes are scattering.
+  evidence:
+    - type: expert_claim
+      source_ref: qed_tree_level_processes_batch_initial
+      note: Source notes keep the free-field layer in the reuse set for the batch anchor.
+  status: asserted
+  confidence: 0.94
+- from: qft.correlators_propagators_lsz
+  to: qft.qed_tree_level_processes
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_backbone
+  task_type: standard_computation
+  rationale: The process names are the scattering side of the correlator/LSZ bridge, so that bridge has to be recognizable before the examples make sense.
+  failure_mode_if_absent: Cannot interpret the examples as S-matrix processes rather than unrelated diagram labels.
+  evidence:
+    - type: expert_claim
+      source_ref: qed_tree_level_processes_batch_initial
+      note: Source notes explicitly keep LSZ as shared background for the process slice.
+  status: asserted
+  confidence: 0.93
+- from: qft.feynman_rules
+  to: qft.qed_tree_level_processes
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_backbone
+  task_type: standard_computation
+  rationale: Tree-level QED amplitudes are computed from the Feynman-rule layer.
+  failure_mode_if_absent: Cannot compute the named scattering processes from the diagrammatic rules.
+  evidence:
+    - type: expert_claim
+      source_ref: qed_tree_level_processes_batch_initial
+      note: Source notes treat the Feynman-rule layer as the main computational reuse point.
+  status: asserted
+  confidence: 0.96
+- from: qft.spinor_lorentz_dirac_foundations
+  to: qft.qed_tree_level_processes
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_backbone
+  task_type: standard_computation
+  rationale: The leptonic QED process neighborhood is read through the spinor and gamma-matrix vocabulary.
+  failure_mode_if_absent: Cannot parse the fermion-line notation that appears in the electron and muon channels.
+  evidence:
+    - type: expert_claim
+      source_ref: qed_tree_level_processes_batch_initial
+      note: Source notes reuse the spinor/Dirac neighborhood as background rather than minting new fermion notation.
+  status: asserted
+  confidence: 0.94
+- from: qft.free_dirac_field
+  to: qed.bhabha_scattering
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_backbone
+  task_type: standard_computation
+  rationale: Bhabha scattering uses electron and positron external states from the free Dirac field vocabulary.
+  failure_mode_if_absent: Cannot identify the fermionic external states in the electron-positron channel.
+  evidence:
+    - type: expert_claim
+      source_ref: qed_tree_level_processes_batch_initial
+      note: Source notes keep free Dirac-field language in the reuse set for the leptonic channels.
+  status: asserted
+  confidence: 0.95
+- from: qft.feynman_rules
+  to: qed.bhabha_scattering
+  relation_type: requires_for_derive
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_backbone
+  task_type: standard_computation
+  rationale: The Bhabha amplitude is derived from the tree-level QED Feynman rules.
+  failure_mode_if_absent: Cannot derive the one-photon-exchange tree amplitude.
+  evidence:
+    - type: expert_claim
+      source_ref: qed_tree_level_processes_batch_initial
+      note: The batch is intentionally structured around tree-level amplitude computation, not just naming.
+  status: asserted
+  confidence: 0.97
+- from: qft.free_dirac_field
+  to: qed.moller_scattering
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_backbone
+  task_type: standard_computation
+  rationale: Moller scattering uses electron external states from the free Dirac-field vocabulary.
+  failure_mode_if_absent: Cannot identify the fermionic external states in the electron-electron channel.
+  evidence:
+    - type: expert_claim
+      source_ref: qed_tree_level_processes_batch_initial
+      note: Source notes keep the free Dirac field as a shared prerequisite for the fermionic examples.
+  status: asserted
+  confidence: 0.95
+- from: qft.feynman_rules
+  to: qed.moller_scattering
+  relation_type: requires_for_derive
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_backbone
+  task_type: standard_computation
+  rationale: The Moller amplitude is derived from the tree-level QED Feynman rules.
+  failure_mode_if_absent: Cannot derive the one-photon-exchange tree amplitude.
+  evidence:
+    - type: expert_claim
+      source_ref: qed_tree_level_processes_batch_initial
+      note: The batch notes keep the perturbative rule layer in the direct reuse set.
+  status: asserted
+  confidence: 0.97
+- from: qft.free_vector_field
+  to: qed.compton_scattering
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_backbone
+  task_type: standard_computation
+  rationale: Compton scattering uses the photon field as one of the external legs in the tree-level process.
+  failure_mode_if_absent: Cannot identify the photon line in the photon-electron channel.
+  evidence:
+    - type: expert_claim
+      source_ref: qed_tree_level_processes_batch_initial
+      note: Source notes explicitly keep the free vector field in the reusable background set.
+  status: asserted
+  confidence: 0.95
+- from: qft.free_dirac_field
+  to: qed.compton_scattering
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_backbone
+  task_type: standard_computation
+  rationale: Compton scattering also uses the electron external state from the free Dirac field vocabulary.
+  failure_mode_if_absent: Cannot identify the charged fermion leg in the photon-electron channel.
+  evidence:
+    - type: expert_claim
+      source_ref: qed_tree_level_processes_batch_initial
+      note: Source notes treat the free Dirac field as part of the shared asymptotic-state vocabulary.
+  status: asserted
+  confidence: 0.95
+- from: qft.free_dirac_field
+  to: qed.electron_positron_to_muon_antimuon
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_backbone
+  task_type: standard_computation
+  rationale: The e+e- to mu+mu- channel is read with free Dirac-field language for the charged leptons.
+  failure_mode_if_absent: Cannot identify the fermionic external states in the pair-annihilation channel.
+  evidence:
+    - type: expert_claim
+      source_ref: qed_tree_level_processes_batch_initial
+      note: Source notes group the lepton channels together as a shared reusable neighborhood.
+  status: asserted
+  confidence: 0.95
+- from: qft.feynman_rules
+  to: qed.electron_positron_to_muon_antimuon
+  relation_type: requires_for_derive
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_backbone
+  task_type: standard_computation
+  rationale: The e+e- to mu+mu- amplitude is derived from the tree-level QED Feynman rules.
+  failure_mode_if_absent: Cannot derive the one-photon-exchange tree amplitude.
+  evidence:
+    - type: expert_claim
+      source_ref: qed_tree_level_processes_batch_initial
+      note: The batch is organized around tree-level amplitude derivations, not just process names.
+  status: asserted
+  confidence: 0.97
+- from: qft.free_vector_field
+  to: qed.light_by_light_scattering
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_backbone
+  task_type: standard_computation
+  rationale: Light-by-light scattering is a photon-external-state process, so the vector-field vocabulary has to be available.
+  failure_mode_if_absent: Cannot identify the external photon legs in the photon-photon channel.
+  evidence:
+    - type: expert_claim
+      source_ref: qed_tree_level_processes_batch_initial
+      note: Source notes deliberately include light-by-light as a named QED exemplar process.
+  status: asserted
+  confidence: 0.94
+- from: qft.feynman_rules
+  to: qed.light_by_light_scattering
+  relation_type: requires_for_derive
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_backbone
+  task_type: standard_computation
+  rationale: The light-by-light amplitude is derived from the QED rule layer, even though its first nonzero contribution is loop-level.
+  failure_mode_if_absent: Cannot derive the photon-photon amplitude or understand why the process is not tree-level.
+  evidence:
+    - type: expert_claim
+      source_ref: qed_tree_level_processes_batch_initial
+      note: The scope notes explicitly keep the process in this batch while excluding generic cross-section machinery.
+  status: asserted
+  confidence: 0.96
+- from: qft.free_vector_field
+  to: qed.equivalent_photon_approximation
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_backbone
+  task_type: standard_computation
+  rationale: The equivalent-photon approximation is framed in terms of nearly real photon fields emitted by charged particles.
+  failure_mode_if_absent: Cannot tell what the approximation is replacing or why the photon language is appropriate.
+  evidence:
+    - type: expert_claim
+      source_ref: qed_tree_level_processes_batch_initial
+      note: Source notes keep the approximation as a process-specific result rather than generic phase-space machinery.
+  status: asserted
+  confidence: 0.92
+- from: qft.feynman_rules
+  to: qed.equivalent_photon_approximation
+  relation_type: requires_for_use
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: qft_backbone
+  task_type: standard_computation
+  rationale: The approximation is used as a QED calculation shortcut built on the same interaction rules as the named examples.
+  failure_mode_if_absent: Cannot connect the approximation back to the underlying QED scattering rules.
+  evidence:
+    - type: expert_claim
+      source_ref: qed_tree_level_processes_batch_initial
+      note: The batch notes treat the approximation as a named reusable result in the QED process neighborhood.
+  status: asserted
+  confidence: 0.9
+- from: qft.free_dirac_field
+  to: qed.mott_formula
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_backbone
+  task_type: standard_computation
+  rationale: The Mott formula is the relativistic electron-scattering result, so the free Dirac-field vocabulary has to be available to read it.
+  failure_mode_if_absent: Cannot tell which external particle content the formula is describing.
+  evidence:
+    - type: expert_claim
+      source_ref: qed_tree_level_processes_batch_initial
+      note: Source notes explicitly call out Mott formula as a result whose meaning changes with the external particles.
+  status: asserted
+  confidence: 0.94
+- from: qft.feynman_rules
+  to: qed.mott_formula
+  relation_type: requires_for_derive
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_backbone
+  task_type: standard_computation
+  rationale: The Mott formula is derived from the QED interaction rules in the electron-scattering setup.
+  failure_mode_if_absent: Cannot derive the relativistic Coulomb-scattering result.
+  evidence:
+    - type: expert_claim
+      source_ref: qed_tree_level_processes_batch_initial
+      note: The batch notes keep the formula in the same reusable process-result neighborhood as the named channels.
+  status: asserted
+  confidence: 0.95

@@ -1,0 +1,56 @@
+# Canonical partonomy edges for the perturbation/Wick/Feynman-rules trunk batch.
+- parent: qft.perturbation_wick_feynman_rules
+  child: qft.interaction_picture
+  rationale: The interaction picture is the operator-setting that the perturbation trunk is built on.
+  status: asserted
+  confidence: 0.94
+- parent: qft.perturbation_wick_feynman_rules
+  child: qft.time_ordering
+  rationale: Time ordering is a core operation used throughout the perturbative expansion.
+  status: asserted
+  confidence: 0.93
+- parent: qft.perturbation_wick_feynman_rules
+  child: qft.time_ordered_exponential
+  rationale: The ordered exponential is the compact perturbative evolution operator.
+  status: asserted
+  confidence: 0.95
+- parent: qft.perturbation_wick_feynman_rules
+  child: qft.time_ordered_product
+  rationale: Time-ordered products are the operator objects Wick theorem acts on.
+  status: asserted
+  confidence: 0.93
+- parent: qft.perturbation_wick_feynman_rules
+  child: qft.normal_ordering
+  rationale: Normal ordering is one of the main operator forms produced by Wick expansion.
+  status: asserted
+  confidence: 0.92
+- parent: qft.perturbation_wick_feynman_rules
+  child: qft.contraction
+  rationale: Contractions are the diagrammatic atoms of the Wick expansion.
+  status: asserted
+  confidence: 0.95
+- parent: qft.perturbation_wick_feynman_rules
+  child: qft.dyson_series
+  rationale: The Dyson series is the perturbative expansion at the center of the batch.
+  status: asserted
+  confidence: 0.96
+- parent: qft.perturbation_wick_feynman_rules
+  child: qft.wick_theorem
+  rationale: Wick theorem is the combinatorial engine that turns the Dyson expansion into diagrams.
+  status: asserted
+  confidence: 0.97
+- parent: qft.perturbation_wick_feynman_rules
+  child: qft.feynman_propagator
+  rationale: Propagator lines are a standard diagrammatic ingredient in Feynman rules.
+  status: asserted
+  confidence: 0.9
+- parent: qft.perturbation_wick_feynman_rules
+  child: qft.symmetry_factors
+  rationale: Symmetry factors are the combinatorial correction layer for diagram counts.
+  status: asserted
+  confidence: 0.89
+- parent: qft.perturbation_wick_feynman_rules
+  child: qft.feynman_rules
+  rationale: Feynman rules are the terminal diagrammatic interface for the batch.
+  status: asserted
+  confidence: 0.96

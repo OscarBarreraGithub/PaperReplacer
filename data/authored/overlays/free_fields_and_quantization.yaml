@@ -1,0 +1,53 @@
+# Canonical overlay annotations for the first-pass free-fields-and-quantization batch.
+- overlay_type: assumed_background
+  target_topic: qft.free_fields_and_quantization
+  presumed_node: classical_fields.action_functional
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  artifact_type: paper
+  rationale: Paper-facing free-field treatments usually assume the classical action-based field setup before moving to operator quantization.
+  evidence:
+    - type: expert_claim
+      source_ref: free_fields_and_quantization_batch_initial
+      note: Batch notes keep the classical action as shared background rather than as a new topic node.
+  status: asserted
+  confidence: 0.9
+- overlay_type: assumed_background
+  target_topic: qft.free_fields_and_quantization
+  presumed_node: qft.poincare_group_representation
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  artifact_type: paper
+  rationale: Free relativistic fields are usually introduced as Poincare-covariant field species before the mode expansion is written.
+  evidence:
+    - type: expert_claim
+      source_ref: free_fields_and_quantization_batch_initial
+      note: Batch notes keep the Poincare-representation layer in the reuse set for the topic anchor.
+  status: asserted
+  confidence: 0.89
+- overlay_type: assumed_background
+  target_topic: qft.free_fields_and_quantization
+  presumed_node: qm.commutator
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  artifact_type: paper
+  rationale: Operator-algebra language is usually presumed before canonical commutation or anticommutation relations are introduced.
+  evidence:
+    - type: expert_claim
+      source_ref: free_fields_and_quantization_batch_initial
+      note: Batch notes reuse the QM commutator vocabulary as part of the quantization layer.
+  status: asserted
+  confidence: 0.88
+- overlay_type: assumed_background
+  target_topic: qft.free_fields_and_quantization
+  presumed_node: qft.one_particle_state
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  artifact_type: paper
+  rationale: Mode expansions and creation operators are commonly read relative to one-particle excitations that the free field creates.
+  evidence:
+    - type: expert_claim
+      source_ref: free_fields_and_quantization_batch_initial
+      note: Batch notes keep one-particle-state vocabulary in the reuse set for the operator branch.
+  status: asserted
+  confidence: 0.87

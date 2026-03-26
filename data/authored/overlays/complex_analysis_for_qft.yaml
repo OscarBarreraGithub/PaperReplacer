@@ -1,0 +1,14 @@
+# Hand-authored overlay annotations for the complex-analysis-for-QFT foundation batch.
+- overlay_type: assumed_background
+  target_topic: qft.pinch_singularities
+  presumed_node: complex_analysis.contour_deformation
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  artifact_type: paper
+  rationale: In amplitudes-facing hep-th papers, contour deformation is usually presumed when pinch singularities are invoked without pedagogical setup.
+  evidence:
+    - type: expert_claim
+      source_ref: complex_analysis_for_qft_batch_initial
+      note: Contextual overlay for paper-facing assumed background.
+  status: asserted
+  confidence: 0.89

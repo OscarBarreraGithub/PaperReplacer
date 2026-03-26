@@ -1,0 +1,26 @@
+# Canonical partonomy edges for the spectral-and-mass-shell refinement batch.
+- parent: qft.spectral_and_mass_shell_refinement
+  child: qft.on_shell
+  rationale: On-shell language is one core shell-condition branch of the batch.
+  status: asserted
+  confidence: 0.94
+- parent: qft.spectral_and_mass_shell_refinement
+  child: qft.off_shell
+  rationale: Off-shell language is the complementary shell-condition branch used throughout propagator discussions.
+  status: asserted
+  confidence: 0.93
+- parent: qft.spectral_and_mass_shell_refinement
+  child: qft.kallen_lehmann_representation
+  rationale: The Kallen-Lehmann representation is the spectral-decomposition payoff of the batch.
+  status: asserted
+  confidence: 0.96
+- parent: qft.spectral_and_mass_shell_refinement
+  child: qft.advanced_propagator
+  rationale: The advanced propagator is the propagator-variant refinement retained in this pass.
+  status: asserted
+  confidence: 0.9
+- parent: qft.spectral_and_mass_shell_refinement
+  child: qft.lippmann_schwinger_equation
+  rationale: The Lippmann-Schwinger equation is the scattering-state bridge retained at the edge of the correlator trunk.
+  status: asserted
+  confidence: 0.9

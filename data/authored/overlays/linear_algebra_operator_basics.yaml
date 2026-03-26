@@ -1,0 +1,27 @@
+# Canonical overlay annotations for the first-wave linear-algebra/operator-basics batch.
+- overlay_type: assumed_background
+  target_topic: math.operator_basics.linear_algebra_operator_basics
+  presumed_node: math.linear_algebra.vector_space
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  artifact_type: paper
+  rationale: Later QM and QFT operator discussions usually assume vector-space language without reintroducing it from scratch.
+  evidence:
+    - type: expert_claim
+      source_ref: linear_algebra_operator_basics_source_notes
+      note: Batch source notes place vector-space vocabulary at the base of the slice and treat it as shared background for later operator reading.
+  status: asserted
+  confidence: 0.9
+- overlay_type: assumed_background
+  target_topic: math.operator_basics.linear_algebra_operator_basics
+  presumed_node: math.linear_algebra.linear_map
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  artifact_type: paper
+  rationale: Operator-facing texts often treat the linear-map definition as background once the basic vector-space setting is established.
+  evidence:
+    - type: expert_claim
+      source_ref: linear_algebra_operator_basics_source_notes
+      note: Batch source notes explicitly include linear maps in the stage-1 vocabulary that later operator reading relies on.
+  status: asserted
+  confidence: 0.88

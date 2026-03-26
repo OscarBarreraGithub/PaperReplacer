@@ -1,0 +1,27 @@
+# Canonical overlay annotations for the chiral-symmetry and sigma-models batch.
+- overlay_type: assumed_background
+  target_topic: sm.chiral_symmetry_and_sigma_models
+  presumed_node: sm.symmetry_breaking_and_standard_model
+  audience_profile: hep_th_grad
+  subfield: standard_model
+  artifact_type: paper
+  rationale: Sources that invoke sigma-model or custodial-symmetry language usually presume the reader already has the first-pass Standard Model symmetry-breaking branch in hand.
+  evidence:
+    - type: expert_claim
+      source_ref: chiral_symmetry_and_sigma_models_batch_initial
+      note: Source notes keep the earlier SM symmetry-breaking batch as assumed background instead of rebuilding it here.
+  status: asserted
+  confidence: 0.92
+- overlay_type: assumed_background
+  target_topic: sm.chiral_symmetry_and_sigma_models
+  presumed_node: classical_fields.lagrangian_density
+  audience_profile: hep_th_grad
+  subfield: standard_model
+  artifact_type: paper
+  rationale: Sigma-model discussions are usually presented as Lagrangian constructions, so the basic Lagrangian-density vocabulary is often presumed.
+  evidence:
+    - type: expert_claim
+      source_ref: chiral_symmetry_and_sigma_models_batch_initial
+      note: Source notes keep the classical Lagrangian background implicit rather than rederiving it inside the batch.
+  status: asserted
+  confidence: 0.89

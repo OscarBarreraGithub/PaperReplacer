@@ -1,0 +1,256 @@
+# Canonical dependency edges for the EFT and SCET batch.
+- from: classical_fields.action_functional
+  to: eft.effective_field_theory
+  relation_type: requires_for_recognize
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: effective_field_theory
+  task_type: literature_reading
+  rationale: EFT discussions are often framed as action-based effective descriptions, so the action-functional background helps orient the reader.
+  failure_mode_if_absent: Cannot tell how the effective description is being organized at the level of a field-theory action.
+  evidence:
+    - type: expert_claim
+      source_ref: effective_field_theory_and_scet_batch_initial
+      note: Batch notes keep action language as a reusable background node.
+  status: asserted
+  confidence: 0.84
+- from: eft.scale_separation
+  to: eft.effective_field_theory
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: effective_field_theory
+  task_type: literature_reading
+  rationale: Effective field theory is built around scale separation, so that concept has to be present before the EFT is used.
+  failure_mode_if_absent: Cannot see why heavy degrees of freedom are removed or why the EFT is valid only in a low-energy regime.
+  evidence:
+    - type: expert_claim
+      source_ref: effective_field_theory_and_scet_batch_initial
+      note: Batch notes identify scale separation as the central EFT organizing idea.
+  status: asserted
+  confidence: 0.96
+- from: eft.effective_field_theory
+  to: eft.operator_expansion
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: effective_field_theory
+  task_type: literature_reading
+  rationale: The operator expansion is the standard way an EFT is written down and used.
+  failure_mode_if_absent: Cannot follow the low-energy theory as an ordered series of operators.
+  evidence:
+    - type: expert_claim
+      source_ref: effective_field_theory_and_scet_batch_initial
+      note: Batch notes list the operator expansion as one of the core EFT tools.
+  status: asserted
+  confidence: 0.96
+- from: eft.operator_expansion
+  to: eft.higher_dimensional_operator
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: effective_field_theory
+  task_type: literature_reading
+  rationale: Higher-dimensional operators are the concrete terms that appear once the EFT is expanded beyond the leading interactions.
+  failure_mode_if_absent: Cannot tell what the next operator in the EFT expansion is supposed to look like.
+  evidence:
+    - type: expert_claim
+      source_ref: effective_field_theory_and_scet_batch_initial
+      note: Batch notes make higher-dimensional operators the main concrete example of the expansion.
+  status: asserted
+  confidence: 0.92
+- from: eft.operator_expansion
+  to: eft.power_counting
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: effective_field_theory
+  task_type: literature_reading
+  rationale: Power counting is what tells the reader how the operator expansion is organized and truncated.
+  failure_mode_if_absent: Cannot see which operators are leading, suppressed, or negligible at the working scale.
+  evidence:
+    - type: expert_claim
+      source_ref: effective_field_theory_and_scet_batch_initial
+      note: Batch notes pair operator expansion and power counting as the core EFT use-level tools.
+  status: asserted
+  confidence: 0.96
+- from: eft.matching
+  to: eft.operator_expansion
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: effective_field_theory
+  task_type: literature_reading
+  rationale: Matching fixes the coefficients in the EFT operator expansion so that the low-energy theory reproduces the UV theory at the matching scale.
+  failure_mode_if_absent: Cannot interpret where the EFT coefficients come from.
+  evidence:
+    - type: expert_claim
+      source_ref: effective_field_theory_and_scet_batch_initial
+      note: Batch notes keep matching and the operator expansion tightly linked.
+  status: asserted
+  confidence: 0.96
+- from: eft.matching
+  to: eft.renormalization_group_running
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: effective_field_theory
+  task_type: literature_reading
+  rationale: RG running evolves matched EFT parameters across scales, so the matching step and running step sit next to each other in the standard EFT workflow.
+  failure_mode_if_absent: Cannot move from a matched EFT at one scale to predictions at another scale.
+  evidence:
+    - type: expert_claim
+      source_ref: effective_field_theory_and_scet_batch_initial
+      note: Batch notes identify matching and RG running as the standard pair.
+  status: asserted
+  confidence: 0.95
+- from: eft.renormalization_group_running
+  to: eft.large_logarithm_resummation
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: effective_field_theory
+  task_type: literature_reading
+  rationale: Large-log resummation is the standard use-level payoff of RG evolution in an EFT.
+  failure_mode_if_absent: Cannot see how scale-separated logarithms are controlled.
+  evidence:
+    - type: expert_claim
+      source_ref: effective_field_theory_and_scet_batch_initial
+      note: Batch notes tie RG evolution directly to logarithm resummation.
+  status: asserted
+  confidence: 0.95
+- from: eft.heavy_quark_effective_theory
+  to: eft.heavy_quark_symmetry
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: effective_field_theory
+  task_type: literature_reading
+  rationale: Heavy-quark symmetry is the standard recognition-level statement that emerges in the HQET limit.
+  failure_mode_if_absent: Cannot tell why HQET has extra approximate spin-flavor symmetry.
+  evidence:
+    - type: expert_claim
+      source_ref: effective_field_theory_and_scet_batch_initial
+      note: Batch notes identify heavy-quark symmetry as the main HQET companion branch.
+  status: asserted
+  confidence: 0.93
+- from: eft.heavy_quark_effective_theory
+  to: eft.matching
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: effective_field_theory
+  task_type: literature_reading
+  rationale: HQET is built by matching the heavy-quark theory onto a lower-energy description.
+  failure_mode_if_absent: Cannot see how the heavy-quark degrees of freedom are integrated into the EFT description.
+  evidence:
+    - type: expert_claim
+      source_ref: effective_field_theory_and_scet_batch_initial
+      note: Batch notes keep HQET inside the standard EFT matching workflow.
+  status: asserted
+  confidence: 0.92
+- from: eft.soft_collinear_effective_theory
+  to: eft.mode_scaling
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: effective_field_theory
+  task_type: literature_reading
+  rationale: SCET is organized by mode scaling, so the scaling assignment must be recognized before the SCET branch makes sense.
+  failure_mode_if_absent: Cannot tell why a soft mode is distinguished from a collinear one.
+  evidence:
+    - type: expert_claim
+      source_ref: effective_field_theory_and_scet_batch_initial
+      note: Batch notes treat mode scaling as the core SCET organizing principle.
+  status: asserted
+  confidence: 0.96
+- from: eft.mode_scaling
+  to: eft.collinear_mode
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: effective_field_theory
+  task_type: literature_reading
+  rationale: The collinear mode is the standard SCET degree of freedom picked out by the mode-scaling rules.
+  failure_mode_if_absent: Cannot identify the energetic narrow-direction sector in the SCET description.
+  evidence:
+    - type: expert_claim
+      source_ref: effective_field_theory_and_scet_batch_initial
+      note: Batch notes list collinear mode as one of the primary SCET node candidates.
+  status: asserted
+  confidence: 0.95
+- from: eft.mode_scaling
+  to: eft.soft_mode
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: effective_field_theory
+  task_type: literature_reading
+  rationale: The soft mode is the low-momentum sector paired with the collinear sector in SCET.
+  failure_mode_if_absent: Cannot interpret the low-energy radiation branch of the SCET description.
+  evidence:
+    - type: expert_claim
+      source_ref: effective_field_theory_and_scet_batch_initial
+      note: Batch notes pair soft and collinear modes as the main SCET split.
+  status: asserted
+  confidence: 0.95
+- from: eft.soft_collinear_effective_theory
+  to: eft.jet_function
+  relation_type: requires_for_recognize
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: effective_field_theory
+  task_type: literature_reading
+  rationale: Jet functions are standard SCET objects that capture collinear structure in factorized observables.
+  failure_mode_if_absent: Cannot recognize the jet-function object when SCET factorization is written down.
+  evidence:
+    - type: expert_claim
+      source_ref: effective_field_theory_and_scet_batch_initial
+      note: Batch notes list jet function as a core SCET object.
+  status: asserted
+  confidence: 0.88
+- from: eft.soft_collinear_effective_theory
+  to: eft.soft_function
+  relation_type: requires_for_recognize
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: effective_field_theory
+  task_type: literature_reading
+  rationale: Soft functions are standard SCET objects that capture low-momentum radiation in factorized observables.
+  failure_mode_if_absent: Cannot recognize the soft-sector factor in the SCET formula.
+  evidence:
+    - type: expert_claim
+      source_ref: effective_field_theory_and_scet_batch_initial
+      note: Batch notes list soft function as a core SCET object.
+  status: asserted
+  confidence: 0.88
+- from: eft.soft_collinear_effective_theory
+  to: eft.hard_function
+  relation_type: requires_for_recognize
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: effective_field_theory
+  task_type: literature_reading
+  rationale: The hard function is the short-distance piece that remains after SCET matching separates the hard scale.
+  failure_mode_if_absent: Cannot recognize the short-distance factor that survives the hard matching step.
+  evidence:
+    - type: expert_claim
+      source_ref: effective_field_theory_and_scet_batch_initial
+      note: Batch notes include hard function alongside jet and soft functions.
+  status: asserted
+  confidence: 0.86
+- from: eft.soft_collinear_effective_theory
+  to: eft.large_logarithm_resummation
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: effective_field_theory
+  task_type: literature_reading
+  rationale: SCET is one of the standard EFT frameworks used to resum large logarithms in scale-separated observables.
+  failure_mode_if_absent: Cannot see why SCET is being introduced in the first place.
+  evidence:
+    - type: expert_claim
+      source_ref: effective_field_theory_and_scet_batch_initial
+      note: Batch notes connect SCET directly to large-log resummation.
+  status: asserted
+  confidence: 0.95

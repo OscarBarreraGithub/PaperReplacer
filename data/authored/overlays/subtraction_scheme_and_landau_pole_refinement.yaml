@@ -1,0 +1,27 @@
+# Canonical overlay annotations for the subtraction-scheme and Landau-pole refinement batch.
+- overlay_type: assumed_background
+  target_topic: qft.subtraction_scheme_and_landau_pole_refinement
+  presumed_node: qft.renormalized_perturbation_theory
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  artifact_type: paper
+  rationale: Sources that discuss subtraction schemes usually presume the reader already has the renormalized-perturbation framework in hand.
+  evidence:
+    - type: expert_claim
+      source_ref: subtraction_scheme_and_landau_pole_refinement_batch_initial
+      note: Source notes keep renormalized perturbation theory as assumed background for the batch anchor.
+  status: asserted
+  confidence: 0.9
+- overlay_type: assumed_background
+  target_topic: qft.subtraction_scheme_and_landau_pole_refinement
+  presumed_node: qft.beta_function
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  artifact_type: paper
+  rationale: Landau-pole discussions usually presume the reader already understands beta-function language and RG running.
+  evidence:
+    - type: expert_claim
+      source_ref: subtraction_scheme_and_landau_pole_refinement_batch_initial
+      note: Source notes keep the beta-function node as assumed background for the pole branch.
+  status: asserted
+  confidence: 0.87

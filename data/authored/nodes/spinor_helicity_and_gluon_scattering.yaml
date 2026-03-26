@@ -1,0 +1,160 @@
+# Canonical node records for the spinor-helicity-and-gluon-scattering batch.
+- id: qft.spinor_helicity_and_gluon_scattering
+  label: Spinor-helicity and gluon scattering
+  knowledge_kind: concept
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Topic anchor for spinor-helicity notation, color-ordered tree amplitudes, and the compact MHV gluon-scattering formulas reused in modern amplitudes language.
+  status: asserted
+- id: qft.mass_shell
+  label: Mass shell
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Lorentz-invariant momentum-space locus used to organize one-particle states by mass.
+  status: asserted
+- id: qft.spin_label
+  label: Spin label
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Internal particle label, including spin or helicity, that is read from the relevant little-group representation.
+  status: asserted
+- id: qft.scattering_amplitude
+  label: Scattering amplitude
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Complex transition amplitude or matrix element whose magnitude enters observable scattering and decay formulas.
+  status: asserted
+- id: qft.non_abelian_gauge_symmetry
+  label: Non-Abelian gauge symmetry
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Local gauge symmetry with noncommuting generators, the structure that distinguishes Yang-Mills theory from Abelian gauge theory.
+  status: asserted
+- id: qcd.color_su3
+  label: Color SU(3)
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: The QCD color symmetry group governing quark and gluon color charge.
+  status: asserted
+- id: qcd.gluon
+  label: Gluon
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Gauge boson of QCD color interactions, carrying adjoint color charge.
+  status: asserted
+- id: qft.spinor_helicity_notation
+  label: Spinor-helicity notation
+  knowledge_kind: representation
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: On-shell representation of massless momenta and helicity states using two-component spinors and angle or square brackets.
+  status: asserted
+- id: qft.angle_bracket_spinor_product
+  label: Angle-bracket spinor product
+  knowledge_kind: representation
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Holomorphic spinor contraction written with angle brackets in spinor-helicity formulas.
+  status: asserted
+- id: qft.square_bracket_spinor_product
+  label: Square-bracket spinor product
+  knowledge_kind: representation
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Antiholomorphic spinor contraction written with square brackets in spinor-helicity formulas.
+  status: asserted
+- id: qft.schouten_identity
+  label: Schouten identity
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Antisymmetry identity among spinor contractions used to simplify spinor-helicity expressions.
+  status: asserted
+- id: qft.color_ordered_amplitude
+  label: Color-ordered amplitude
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Partial amplitude obtained after separating color factors from the kinematic piece, often also called a color-stripped amplitude.
+  status: asserted
+- id: qft.mhv_amplitude
+  label: MHV amplitude
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Maximally helicity-violating tree amplitude whose compact form is the canonical payoff of spinor-helicity notation in gauge theory.
+  status: asserted
+- id: qft.parke_taylor_formula
+  label: Parke-Taylor formula
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Closed-form expression for the tree-level color-ordered MHV gluon amplitude.
+  status: asserted
+- id: qft.gluon_tree_scattering
+  label: Gluon tree scattering
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Tree-level scattering of external gluons, used as the canonical playground for color ordering and MHV formulas.
+  status: asserted

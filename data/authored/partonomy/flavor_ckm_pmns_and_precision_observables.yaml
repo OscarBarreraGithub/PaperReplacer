@@ -1,0 +1,66 @@
+# Canonical partonomy edges for the flavor-ckm-pmns-and-precision-observables batch.
+- parent: sm.flavor_ckm_pmns_and_precision_observables
+  child: sm.flavor_mixing
+  rationale: Flavor mixing is the central organizing branch of the batch.
+  status: asserted
+  confidence: 0.97
+- parent: sm.flavor_ckm_pmns_and_precision_observables
+  child: sm.precision.electroweak_precision_observable
+  rationale: The precision-observable node is the shared bridge back to the existing Standard Model precision branch.
+  status: asserted
+  confidence: 0.88
+- parent: sm.flavor_ckm_pmns_and_precision_observables
+  child: sm.precision.effective_weak_mixing_angle
+  rationale: The effective weak mixing angle is the lightest reusable precision child needed to connect this batch to the precision branch.
+  status: asserted
+  confidence: 0.9
+- parent: sm.flavor_ckm_pmns_and_precision_observables
+  child: sm.jarlskog_invariant
+  rationale: The Jarlskog invariant is the first reusable CP-violation child of the flavor branch.
+  status: asserted
+  confidence: 0.92
+- parent: sm.flavor_ckm_pmns_and_precision_observables
+  child: sm.neutrino_oscillation
+  rationale: Neutrino oscillation is the main downstream physical branch of the PMNS side.
+  status: asserted
+  confidence: 0.93
+- parent: sm.flavor_mixing
+  child: sm.ckm_matrix
+  rationale: The CKM matrix is the quark-sector realization of flavor mixing.
+  status: asserted
+  confidence: 0.96
+- parent: sm.flavor_mixing
+  child: sm.pmns_matrix
+  rationale: The PMNS matrix is the lepton-sector realization of flavor mixing.
+  status: asserted
+  confidence: 0.96
+- parent: sm.flavor_mixing
+  child: sm.jarlskog_invariant
+  rationale: The Jarlskog invariant is a flavor-structure measure of CP violation rather than a detached formula.
+  status: asserted
+  confidence: 0.93
+- parent: sm.ckm_matrix
+  child: sm.wolfenstein_parametrization
+  rationale: Wolfenstein is the main hierarchical parametrization branch beneath CKM.
+  status: asserted
+  confidence: 0.95
+- parent: sm.ckm_matrix
+  child: sm.ckm_unitarity_triangle
+  rationale: The unitarity triangle is the main geometric constraint branch beneath CKM.
+  status: asserted
+  confidence: 0.95
+- parent: sm.pmns_matrix
+  child: sm.neutrino_oscillation
+  rationale: Neutrino oscillation is the canonical physical child of the PMNS branch.
+  status: asserted
+  confidence: 0.96
+- parent: sm.flavor_ckm_pmns_and_precision_observables
+  child: sm.neutrino_mass
+  rationale: Neutrino mass is the minimum physical input needed to keep the PMNS and oscillation branch honest.
+  status: asserted
+  confidence: 0.92
+- parent: sm.precision.electroweak_precision_observable
+  child: sm.precision.effective_weak_mixing_angle
+  rationale: The effective weak mixing angle is a standard child of the precision-observable branch.
+  status: asserted
+  confidence: 0.93

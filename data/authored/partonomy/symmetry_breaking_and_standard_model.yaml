@@ -1,0 +1,66 @@
+# Canonical partonomy edge list for the Standard-Model symmetry-breaking batch.
+- parent: sm.symmetry_breaking_and_standard_model
+  child: classical_fields.lagrangian_density
+  rationale: The Lagrangian-density background is part of the local reading setup for the Higgs sector.
+  status: asserted
+  confidence: 0.82
+- parent: sm.symmetry_breaking_and_standard_model
+  child: sm.ssb.spontaneous_symmetry_breaking
+  rationale: Spontaneous symmetry breaking is one of the central topic branches.
+  status: asserted
+  confidence: 0.96
+- parent: sm.symmetry_breaking_and_standard_model
+  child: sm.ssb.vacuum_expectation_value
+  rationale: Vacuum expectation values are a standard building block of the symmetry-breaking reading.
+  status: asserted
+  confidence: 0.92
+- parent: sm.symmetry_breaking_and_standard_model
+  child: sm.ssb.goldstone_boson
+  rationale: Goldstone-boson vocabulary is a core companion branch to spontaneous symmetry breaking.
+  status: asserted
+  confidence: 0.88
+- parent: sm.symmetry_breaking_and_standard_model
+  child: sm.higgs.higgs_doublet
+  rationale: The Higgs doublet is the main field representation used in the electroweak sector.
+  status: asserted
+  confidence: 0.94
+- parent: sm.symmetry_breaking_and_standard_model
+  child: sm.higgs.higgs_mechanism
+  rationale: The Higgs mechanism is the core mass-generation branch of the batch.
+  status: asserted
+  confidence: 0.97
+- parent: sm.symmetry_breaking_and_standard_model
+  child: sm.ewbreak.electroweak_symmetry
+  rationale: The unbroken electroweak symmetry is the gauge background for the Standard Model branch.
+  status: asserted
+  confidence: 0.93
+- parent: sm.symmetry_breaking_and_standard_model
+  child: sm.ewbreak.electroweak_symmetry_breaking
+  rationale: Electroweak symmetry breaking is the branch that turns the Higgs story into the physical spectrum.
+  status: asserted
+  confidence: 0.97
+- parent: sm.symmetry_breaking_and_standard_model
+  child: sm.ewbreak.electroweak_mixing_angle
+  rationale: The mixing angle is part of the standard electroweak basis change used in this neighborhood.
+  status: asserted
+  confidence: 0.88
+- parent: sm.symmetry_breaking_and_standard_model
+  child: sm.ewbreak.w_and_z_bosons
+  rationale: The massive weak bosons are part of the standard electroweak output of the batch.
+  status: asserted
+  confidence: 0.96
+- parent: sm.symmetry_breaking_and_standard_model
+  child: sm.ewbreak.photon
+  rationale: The photon is the electromagnetic remnant of the electroweak breaking branch.
+  status: asserted
+  confidence: 0.92
+- parent: sm.symmetry_breaking_and_standard_model
+  child: sm.ewbreak.yukawa_coupling
+  rationale: Yukawa couplings are part of the mass-generation branch that accompanies Higgs breaking.
+  status: asserted
+  confidence: 0.9
+- parent: sm.symmetry_breaking_and_standard_model
+  child: sm.ewbreak.fermion_mass_generation
+  rationale: Fermion mass generation is a standard downstream branch of the Higgs sector.
+  status: asserted
+  confidence: 0.93

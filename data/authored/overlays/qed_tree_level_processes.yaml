@@ -1,0 +1,53 @@
+# Canonical overlay annotations for the first-pass QED tree-level process batch.
+- overlay_type: assumed_background
+  target_topic: qft.qed_tree_level_processes
+  presumed_node: qft.free_fields_and_quantization
+  audience_profile: hep_th_grad
+  subfield: qft_backbone
+  artifact_type: paper
+  rationale: Tree-level QED process discussions usually assume the free asymptotic-field vocabulary before the channel examples are introduced.
+  evidence:
+    - type: expert_claim
+      source_ref: qed_tree_level_processes_batch_initial
+      note: Source notes reuse the free-field layer as part of the shared prerequisite set.
+  status: asserted
+  confidence: 0.9
+- overlay_type: assumed_background
+  target_topic: qft.qed_tree_level_processes
+  presumed_node: qft.correlators_propagators_lsz
+  audience_profile: hep_th_grad
+  subfield: qft_backbone
+  artifact_type: paper
+  rationale: Paper-facing scattering examples usually assume the correlator-to-S-matrix bridge before the process names are unpacked.
+  evidence:
+    - type: expert_claim
+      source_ref: qed_tree_level_processes_batch_initial
+      note: Source notes keep LSZ as a reusable anchor for the process neighborhood.
+  status: asserted
+  confidence: 0.89
+- overlay_type: assumed_background
+  target_topic: qft.qed_tree_level_processes
+  presumed_node: qft.feynman_rules
+  audience_profile: hep_th_grad
+  subfield: qft_backbone
+  artifact_type: paper
+  rationale: Tree-level QED examples are usually read against the background of the perturbative Feynman-rule layer.
+  evidence:
+    - type: expert_claim
+      source_ref: qed_tree_level_processes_batch_initial
+      note: Source notes treat the Feynman-rule layer as the main computational reuse point.
+  status: asserted
+  confidence: 0.9
+- overlay_type: assumed_background
+  target_topic: qft.qed_tree_level_processes
+  presumed_node: qft.spinor_lorentz_dirac_foundations
+  audience_profile: hep_th_grad
+  subfield: qft_backbone
+  artifact_type: paper
+  rationale: The charged-lepton channels are usually introduced with the spinor and gamma-matrix vocabulary already available.
+  evidence:
+    - type: expert_claim
+      source_ref: qed_tree_level_processes_batch_initial
+      note: Source notes keep the spinor/Dirac neighborhood in the reuse set for the leptonic processes.
+  status: asserted
+  confidence: 0.89

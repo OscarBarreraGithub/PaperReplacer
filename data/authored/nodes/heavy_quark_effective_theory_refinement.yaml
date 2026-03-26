@@ -1,0 +1,131 @@
+# Canonical node records for the HQET refinement batch.
+- id: eft.heavy_quark_effective_theory
+  label: Heavy-quark effective theory
+  knowledge_kind: concept
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: EFT specialization for hadrons or fields containing a heavy quark whose mass sets a large reference scale.
+  status: asserted
+- id: eft.heavy_quark_symmetry
+  label: Heavy-quark symmetry
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Approximate spin-flavor symmetry that emerges in the heavy-quark limit.
+  status: asserted
+- id: eft.scale_separation
+  label: Scale separation
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Separation of a problem into distinct physical scales so that only the relevant low-energy degrees of freedom remain explicit.
+  status: asserted
+- id: eft.matching
+  label: Matching
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Procedure for fixing EFT coefficients so the low-energy theory reproduces the UV theory at the matching scale.
+  status: asserted
+- id: eft.operator_expansion
+  label: Operator expansion
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Expansion of an effective theory in local operators ordered by relevance at the chosen scale.
+  status: asserted
+- id: eft.power_counting
+  label: Power counting
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Rule for organizing EFT operators and contributions by their scaling with the small expansion parameter.
+  status: asserted
+- id: qcd.quark
+  label: Quark
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Fermionic QCD matter field carrying color charge and participating in the strong interaction.
+  status: asserted
+- id: eft.heavy_quark_limit
+  label: Heavy-quark limit
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Asymptotic regime in which the heavy-quark mass is much larger than hadronic scales, exposing approximate spin-flavor symmetry.
+  status: asserted
+- id: eft.heavy_quark_velocity
+  label: Heavy-quark velocity
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Four-velocity label used to factor the large heavy-quark momentum from the residual low-energy dynamics in HQET.
+  status: asserted
+- id: eft.residual_momentum
+  label: Residual momentum
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Soft remainder in the decomposition p_Q = m_Q v + k that stays dynamical after the heavy rest-mass dependence is factored out.
+  status: asserted
+- id: eft.velocity_dependent_heavy_quark_field
+  label: Velocity-dependent heavy-quark field
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: HQET field with fixed velocity label after the heavy rest-mass phase has been removed from the full quark field.
+  status: asserted
+- id: eft.one_over_heavy_quark_mass_expansion
+  label: 1/m_Q expansion
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Systematic organization of HQET operators and corrections in powers of the inverse heavy-quark mass around the static limit.
+  status: asserted
+- id: eft.isgur_wise_function
+  label: Isgur-Wise function
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Universal leading heavy-to-heavy form-factor function controlled by heavy-quark symmetry in the infinite-mass limit.
+  status: asserted

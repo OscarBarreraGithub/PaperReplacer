@@ -1,0 +1,148 @@
+# Canonical node records for the Effective Actions and Background Fields batch.
+- id: qft.effective_actions_and_background_fields
+  label: Effective actions and background fields
+  knowledge_kind: concept
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Topic anchor for the 1PI effective action, background-field methods, effective potentials, and the one-loop functional tools that support them.
+  status: asserted
+- id: classical_fields.action_functional
+  label: Action functional
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Functional of a field configuration obtained by integrating the Lagrangian density over spacetime.
+  status: asserted
+- id: qft.generating_functional
+  label: Generating functional
+  knowledge_kind: concept
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Source-dependent functional whose derivatives organize time-ordered correlators and related expansion data.
+  status: asserted
+- id: qft.connected_generating_functional
+  label: Connected generating functional
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Logarithm of the generating functional that organizes connected correlators instead of all correlators.
+  status: asserted
+- id: qft.effective_action
+  label: Effective action
+  knowledge_kind: concept
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Source-dependent 1PI functional that organizes quantum corrections about a chosen background and reduces to the 1PI effective action language used in Schwartz-style discussions.
+  aliases:
+    - 1PI effective action
+    - one-particle-irreducible effective action
+  status: asserted
+- id: qft.background_field
+  label: Background field
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Classical field configuration used as the expansion point for quantum fluctuations.
+  status: asserted
+- id: qft.background_field_method
+  label: Background-field method
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Technique that splits a field into background and fluctuation pieces so effective actions can be computed with preserved background covariance.
+  status: asserted
+- id: qft.one_loop_effective_action
+  label: One-loop effective action
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Leading quantum correction to the effective action, usually expressed through a functional determinant of the quadratic fluctuation operator.
+  status: asserted
+- id: qft.functional_determinant
+  label: Functional determinant
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Determinant of the quadratic fluctuation operator that appears after Gaussian integration over quantum fields.
+  status: asserted
+- id: qft.effective_potential
+  label: Effective potential
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Effective action specialized to constant background fields, used to read vacuum structure, symmetry breaking, and radiative corrections to scalar potentials.
+  status: asserted
+- id: qft.schwinger_proper_time
+  label: Schwinger proper-time method
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Integral representation that rewrites functional determinants and loop expressions in proper-time form.
+  aliases:
+    - Schwinger proper time
+  status: asserted
+- id: qft.schwinger_parameter
+  label: Schwinger parameter
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Auxiliary integration parameter used to represent propagator or determinant factors in Schwinger-type formulas.
+  aliases:
+    - Schwinger parameterization
+  status: asserted
+- id: qft.renormalized_perturbation_theory
+  label: Renormalized perturbation theory
+  knowledge_kind: concept
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Perturbative expansion organized after regularization and counterterm subtraction so that physical quantities are finite.
+  status: asserted

@@ -1,0 +1,27 @@
+# Canonical overlay annotations for the spinor-helicity-and-gluon-scattering batch.
+- overlay_type: assumed_background
+  target_topic: qft.spinor_helicity_and_gluon_scattering
+  presumed_node: qft.scattering_amplitude
+  audience_profile: hep_th_grad
+  subfield: qft_amplitudes
+  artifact_type: paper
+  rationale: Amplitudes papers usually presume the reader already recognizes the generic scattering-amplitude object before the on-shell spinor-helicity refinement is introduced.
+  evidence:
+    - type: expert_claim
+      source_ref: spinor_helicity_and_gluon_scattering_batch_initial
+      note: Batch notes keep the general amplitude node as presumed background for the compact notation branch.
+  status: asserted
+  confidence: 0.9
+- overlay_type: assumed_background
+  target_topic: qft.spinor_helicity_and_gluon_scattering
+  presumed_node: qcd.color_su3
+  audience_profile: hep_th_grad
+  subfield: qft_amplitudes
+  artifact_type: paper
+  rationale: Gluon-amplitude discussions usually presume the reader already has the QCD color algebra context needed for color ordering.
+  evidence:
+    - type: expert_claim
+      source_ref: spinor_helicity_and_gluon_scattering_batch_initial
+      note: Batch notes treat color-SU(3) vocabulary as presumed background for the decomposition branch.
+  status: asserted
+  confidence: 0.89

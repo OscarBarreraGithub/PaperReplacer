@@ -1,0 +1,27 @@
+# Canonical overlay annotations for the gauge-invariance and Ward/BRST batch.
+- overlay_type: assumed_background
+  target_topic: qft.gauge_invariance_and_ward_brst
+  presumed_node: qft.path_integral_and_generating_functionals
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  artifact_type: paper
+  rationale: Ward-identity discussions in the Schwartz gauge chapters usually presume the source-coupled functional-integral machinery is already available.
+  evidence:
+    - type: expert_claim
+      source_ref: gauge_invariance_and_ward_brst_batch_initial
+      note: Batch notes treat the path-integral branch as the functional background for the Ward side of the batch.
+  status: asserted
+  confidence: 0.89
+- overlay_type: assumed_background
+  target_topic: qft.gauge_invariance_and_ward_brst
+  presumed_node: qft.yang_mills_action
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  artifact_type: paper
+  rationale: Gauge invariance, gauge fixing, and BRST are usually introduced on top of the Yang-Mills action before the general formalism is abstracted.
+  evidence:
+    - type: expert_claim
+      source_ref: gauge_invariance_and_ward_brst_batch_initial
+      note: Batch notes reuse the Yang-Mills action as the action-level background for the batch.
+  status: asserted
+  confidence: 0.92

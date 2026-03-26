@@ -1,0 +1,132 @@
+# Canonical node records for the cross-sections/decay-rates/phase-space batch.
+- id: qft.cross_sections_decay_rates_and_phase_space
+  label: Cross sections, decay rates, and phase space
+  knowledge_kind: concept
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Topic anchor for the observable formulas that convert scattering amplitudes into cross sections, decay rates, and phase-space expressions.
+  status: asserted
+- id: qft.scattering_amplitude
+  label: Scattering amplitude
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Complex transition amplitude or matrix element whose magnitude enters observable scattering and decay formulas.
+  status: asserted
+- id: qft.cross_section
+  label: Cross section
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Observable that measures scattering probability per unit flux, usually in differential or total form.
+  status: asserted
+- id: qft.decay_rate
+  label: Decay rate
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Observable that measures the probability per unit time for an unstable state to decay into specified channels.
+  status: asserted
+- id: qft.lorentz_invariant_phase_space
+  label: Lorentz-invariant phase space
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Lorentz-invariant measure over final-state momentum configurations used in cross-section and decay formulas.
+  status: asserted
+- id: qft.two_body_phase_space
+  label: Two-body phase space
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Closed-form specialization of Lorentz-invariant phase space for two-particle final states.
+  status: asserted
+- id: qft.mandelstam_variables
+  label: Mandelstam variables
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Lorentz-invariant combinations of external momenta, usually written as s, t, and u.
+  status: asserted
+- id: qft.flux_factor
+  label: Flux factor
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Initial-state normalization factor that appears in the standard cross-section formula.
+  status: asserted
+- id: qft.partial_wave_expansion
+  label: Partial-wave expansion
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Angular-momentum decomposition of a scattering amplitude into partial waves.
+  status: asserted
+- id: qft.breit_wigner_distribution
+  label: Breit-Wigner distribution
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Finite-width distribution or line shape for an unstable intermediate state.
+  status: asserted
+- id: qft.narrow_width_approximation
+  label: Narrow-width approximation
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Approximation that replaces a narrow resonance by an on-shell factorized form.
+  status: asserted
+- id: relativity.lorentz_transformation
+  label: Lorentz transformation
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: The frame-change relation that connects coordinate descriptions of the same events between inertial observers.
+  status: asserted
+- id: qft.lsz_reduction_formula
+  label: LSZ reduction formula
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Relation that turns time-ordered Green functions into scattering amplitudes by amputating external legs and taking the asymptotic limit.
+  status: asserted

@@ -1,0 +1,27 @@
+# Canonical overlay annotations for the nonperturbative-QCD and topology batch.
+- overlay_type: assumed_background
+  target_topic: qcd.nonperturbative_qcd_and_topology
+  presumed_node: qft.non_abelian_gauge_symmetry
+  audience_profile: hep_th_grad
+  subfield: qcd_nonperturbative
+  artifact_type: paper
+  rationale: Nonperturbative QCD discussions usually presume the Yang-Mills gauge-symmetry vocabulary rather than reintroducing local gauge symmetry from scratch.
+  evidence:
+    - type: expert_claim
+      source_ref: nonperturbative_qcd_and_topology_batch_initial
+      note: Source notes treat the existing non-Abelian gauge-symmetry node as assumed background for the batch anchor.
+  status: asserted
+  confidence: 0.9
+- overlay_type: assumed_background
+  target_topic: qcd.nonperturbative_qcd_and_topology
+  presumed_node: qft.yang_mills_action
+  audience_profile: hep_th_grad
+  subfield: qcd_nonperturbative
+  artifact_type: paper
+  rationale: Papers that move quickly into instantons or theta-vacuum structure usually presume the Yang-Mills action and finite-action language are already live.
+  evidence:
+    - type: expert_claim
+      source_ref: nonperturbative_qcd_and_topology_batch_initial
+      note: Source notes keep the Yang-Mills action as assumed upstream background for the local nonperturbative branch.
+  status: asserted
+  confidence: 0.88

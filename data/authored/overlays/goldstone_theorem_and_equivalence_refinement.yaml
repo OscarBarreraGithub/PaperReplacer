@@ -1,0 +1,27 @@
+# Canonical overlay annotations for the Goldstone-theorem and equivalence refinement batch.
+- overlay_type: assumed_background
+  target_topic: sm.goldstone_theorem_and_equivalence_refinement
+  presumed_node: sm.symmetry_breaking_and_standard_model
+  audience_profile: hep_th_grad
+  subfield: standard_model
+  artifact_type: paper
+  rationale: Sources that invoke Goldstone's theorem or the electroweak equivalence theorem usually presume the reader already has the basic symmetry-breaking branch in hand.
+  evidence:
+    - type: expert_claim
+      source_ref: goldstone_theorem_and_equivalence_refinement_batch_initial
+      note: Source notes keep the broader symmetry-breaking batch as assumed background rather than reauthoring it here.
+  status: asserted
+  confidence: 0.92
+- overlay_type: assumed_background
+  target_topic: sm.goldstone_theorem_and_equivalence_refinement
+  presumed_node: qft.scattering_amplitude
+  audience_profile: hep_th_grad
+  subfield: standard_model
+  artifact_type: paper
+  rationale: The equivalence theorem is typically stated at amplitude level, so basic scattering-amplitude vocabulary is usually presumed.
+  evidence:
+    - type: expert_claim
+      source_ref: goldstone_theorem_and_equivalence_refinement_batch_initial
+      note: Source notes keep the existing amplitude node as background rather than rebuilding an amplitudes slice here.
+  status: asserted
+  confidence: 0.88

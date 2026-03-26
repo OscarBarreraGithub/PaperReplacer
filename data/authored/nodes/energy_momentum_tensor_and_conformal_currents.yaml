@@ -1,0 +1,111 @@
+# Canonical node records for the energy-momentum-tensor and conformal-currents batch.
+- id: qft.energy_momentum_tensor_and_conformal_currents
+  label: Energy-momentum tensor and conformal currents
+  knowledge_kind: concept
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Topic anchor for Noether currents, energy-momentum tensors, and the current-side vocabulary of scale, conformal, and Weyl symmetry.
+  status: asserted
+- id: classical_fields.noether_theorem
+  label: Noether theorem
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Result linking continuous symmetries of the action to conserved currents or charges.
+  status: asserted
+- id: classical_fields.noether_current
+  label: Noether current
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Conserved current associated with a continuous symmetry of the action through Noether's theorem.
+  status: asserted
+- id: classical_fields.energy_momentum_tensor
+  label: Energy-momentum tensor
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Local current-density object encoding energy, momentum, and stress flow, often obtained as the Noether current for spacetime translations.
+  status: asserted
+- id: classical_fields.canonical_energy_momentum_tensor
+  label: Canonical energy-momentum tensor
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Translation-current form of the energy-momentum tensor that arises directly from the standard Noether construction before possible improvements.
+  status: asserted
+- id: qft.improved_energy_momentum_tensor
+  label: Improved energy-momentum tensor
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Modified energy-momentum tensor obtained by adding improvement terms so that symmetry or trace properties become more transparent.
+  status: asserted
+- id: qft.scale_invariance
+  label: Scale invariance
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Invariance of a theory or fixed-point description under rescaling of lengths or energies.
+  status: asserted
+- id: qft.dilatation_current
+  label: Dilatation current
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Conserved current associated with scale transformations when the theory has scale symmetry.
+  status: asserted
+- id: qft.conformal_invariance
+  label: Conformal invariance
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Invariance under angle-preserving local spacetime transformations that extend the scale-invariant symmetry set.
+  status: asserted
+- id: qft.conformal_current
+  label: Conformal current
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Conserved current associated with conformal transformations, commonly written using the energy-momentum tensor.
+  status: asserted
+- id: qft.weyl_invariance
+  label: Weyl invariance
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Local invariance under point-dependent metric rescalings, used as a nearby symmetry language in conformal and critical-point discussions.
+  status: asserted

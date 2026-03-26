@@ -1,0 +1,26 @@
+# Canonical partonomy edges for the optical-theorem and unitarity-cutting batch.
+- parent: qft.optical_theorem_and_unitarity_cutting_basics
+  child: qft.s_matrix_unitarity
+  rationale: S-matrix unitarity is the main structural principle behind the batch.
+  status: asserted
+  confidence: 0.95
+- parent: qft.optical_theorem_and_unitarity_cutting_basics
+  child: qft.optical_theorem
+  rationale: The optical theorem is the central theorem-level payoff of the batch.
+  status: asserted
+  confidence: 0.96
+- parent: qft.optical_theorem
+  child: qft.forward_scattering_amplitude
+  rationale: Forward scattering is the local amplitude specialization used in the theorem statement.
+  status: asserted
+  confidence: 0.94
+- parent: qft.optical_theorem
+  child: qft.on_shell_intermediate_state
+  rationale: On-shell intermediate states are the state-sum side of the theorem.
+  status: asserted
+  confidence: 0.94
+- parent: qft.optical_theorem_and_unitarity_cutting_basics
+  child: qft.unitarity_cutting_rules
+  rationale: Cutting rules are the method-side refinement of the same unitarity branch.
+  status: asserted
+  confidence: 0.93

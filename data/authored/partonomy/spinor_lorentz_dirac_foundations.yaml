@@ -1,0 +1,46 @@
+# Canonical partonomy edges for the spinor/Lorentz/Dirac foundations batch.
+- parent: qft.spinor_lorentz_dirac_foundations
+  child: qft.spinor_representation
+  rationale: Spinor representation is the main representation-theoretic branch of the batch.
+  status: asserted
+  confidence: 0.95
+- parent: qft.spinor_lorentz_dirac_foundations
+  child: qft.dirac_algebra
+  rationale: Dirac algebra is the gamma-matrix structure that underlies the Dirac spinor reading.
+  status: asserted
+  confidence: 0.94
+- parent: qft.spinor_lorentz_dirac_foundations
+  child: qft.dirac_equation
+  rationale: The Dirac equation is the central use-level fermion relation in this first-pass slice.
+  status: asserted
+  confidence: 0.94
+- parent: qft.spinor_lorentz_dirac_foundations
+  child: qft.dirac_adjoint
+  rationale: The Dirac adjoint is the compact support concept needed for later bilinear and symmetry work.
+  status: asserted
+  confidence: 0.9
+- parent: qft.spinor_representation
+  child: qft.dirac_spinor
+  rationale: Dirac spinor is the four-component specialization of the spinor-representation branch.
+  status: asserted
+  confidence: 0.95
+- parent: qft.spinor_representation
+  child: qft.weyl_spinor
+  rationale: Weyl spinor is the chiral specialization of the spinor-representation branch.
+  status: asserted
+  confidence: 0.94
+- parent: qft.dirac_algebra
+  child: qft.gamma_matrices
+  rationale: Gamma matrices are the concrete matrix realization of the Dirac algebra.
+  status: asserted
+  confidence: 0.95
+- parent: qft.dirac_algebra
+  child: qft.gamma_five
+  rationale: Gamma five is part of the Dirac-algebra/chirality sub-branch.
+  status: asserted
+  confidence: 0.92
+- parent: qft.gamma_five
+  child: qft.chirality_projector
+  rationale: Chirality projectors are built directly from gamma five.
+  status: asserted
+  confidence: 0.95

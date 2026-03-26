@@ -1,0 +1,157 @@
+# Canonical node records for the gauge-invariance and Ward/BRST batch.
+- id: qft.gauge_invariance_and_ward_brst
+  label: Gauge invariance, Ward identities, and BRST
+  knowledge_kind: concept
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Topic anchor for local gauge invariance, Ward/Ward-Takahashi identities, Faddeev-Popov gauge fixing, and BRST structure in the Schwartz QFT chapter family.
+  status: asserted
+- id: qft.yang_mills_action
+  label: Yang-Mills action
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Gauge-invariant action for a non-Abelian gauge field, typically built from the squared field strength.
+  status: asserted
+- id: qft.non_abelian_gauge_symmetry
+  label: Non-Abelian gauge symmetry
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Local gauge symmetry with noncommuting generators, the structure that distinguishes Yang-Mills theory from Abelian gauge theory.
+  status: asserted
+- id: qft.gauge_invariance
+  label: Gauge invariance
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Local redundancy under gauge transformations, the property that motivates gauge fixing and Ward identities.
+  status: asserted
+- id: qft.gauge_fixing
+  label: Gauge fixing
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Procedure for selecting a representative in each gauge orbit so the quantum theory can be written and computed with.
+  status: asserted
+- id: qft.faddeev_popov_determinant
+  label: Faddeev-Popov determinant
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Jacobian factor produced by dividing out the gauge orbit in the gauge-fixed path-integral measure.
+  status: asserted
+- id: qft.ghost_field
+  label: Ghost field
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Auxiliary field introduced when gauge fixing is implemented in the quantum non-Abelian gauge theory.
+  status: asserted
+- id: qft.path_integral_and_generating_functionals
+  label: Path integral and generating functionals
+  knowledge_kind: concept
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Topic anchor for source-coupled path integrals, generating functionals, and the functional identities that connect them to correlators and symmetry statements.
+  status: asserted
+- id: qft.ward_takahashi_identity
+  label: Ward-Takahashi identity
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Functional identity expressing a symmetry relation among Green functions or generating functionals in the presence of sources.
+  status: asserted
+- id: qft.brst_symmetry
+  label: BRST symmetry
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Nilpotent symmetry of the gauge-fixed action and ghost sector that packages gauge redundancy after gauge fixing.
+  status: asserted
+- id: qft.brst_cohomology
+  label: BRST cohomology
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Cohomological classification used to isolate physical equivalence classes in the BRST framework.
+  status: asserted
+- id: qft.slavnov_taylor_identity
+  label: Slavnov-Taylor identity
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Gauge-fixed non-Abelian functional identity that generalizes Ward identities in the BRST setting.
+  status: asserted
+- id: qft.lorenz_gauge
+  label: Lorenz gauge
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Covariant gauge choice defined by the Lorenz condition on the gauge field.
+  status: asserted
+- id: qft.coulomb_gauge
+  label: Coulomb gauge
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Noncovariant gauge choice that fixes the longitudinal spatial gauge freedom.
+  status: asserted
+- id: qft.r_xi_gauge
+  label: R_xi gauge
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: One-parameter covariant gauge family used in perturbative gauge-fixed calculations.
+  status: asserted

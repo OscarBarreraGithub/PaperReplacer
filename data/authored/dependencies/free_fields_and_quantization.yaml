@@ -1,0 +1,271 @@
+# Canonical dependency edges for the first-pass free-fields-and-quantization batch.
+- from: classical_fields.field_configuration
+  to: qft.free_scalar_field
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: Free scalar fields are first read as spacetime-dependent field configurations before quantization is imposed.
+  failure_mode_if_absent: Cannot tell what variable is being expanded and then quantized in the free-field setting.
+  evidence:
+    - type: expert_claim
+      source_ref: free_fields_and_quantization_batch_initial
+      note: Batch notes keep classical field configuration vocabulary in the reuse set.
+  status: asserted
+  confidence: 0.92
+- from: classical_fields.action_functional
+  to: qft.free_fields_and_quantization
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: The free-field quantization layer sits on top of the classical action-based field setup.
+  failure_mode_if_absent: Cannot see the classical starting point that the batch is quantizing.
+  evidence:
+    - type: expert_claim
+      source_ref: free_fields_and_quantization_batch_initial
+      note: Batch notes emphasize the classical-field action as part of the shared background.
+  status: asserted
+  confidence: 0.91
+- from: qft.poincare_group_representation
+  to: qft.free_fields_and_quantization
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: The free-field story is still organized around Poincare-covariant field species and particle labels.
+  failure_mode_if_absent: Cannot tell why the field species are being read as relativistic QFT objects rather than as arbitrary functions.
+  evidence:
+    - type: expert_claim
+      source_ref: free_fields_and_quantization_batch_initial
+      note: Batch notes keep Poincare representation language in the reuse set for the topic anchor.
+  status: asserted
+  confidence: 0.93
+- from: qft.lorentz_group_representation
+  to: qft.free_scalar_field
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: A free scalar field is recognized as the Lorentz-scalar species in the free-field family.
+  failure_mode_if_absent: Cannot tell why the field is called scalar or how it fits the relativistic field taxonomy.
+  evidence:
+    - type: expert_claim
+      source_ref: free_fields_and_quantization_batch_initial
+      note: Batch notes list Lorentz-covariant field species as a high-value candidate family.
+  status: asserted
+  confidence: 0.95
+- from: qft.lorentz_group_representation
+  to: qft.free_dirac_field
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: The free Dirac field is the spinor-field species, so the Lorentz representation vocabulary has to be in place.
+  failure_mode_if_absent: Cannot tell what relativistic transformation law the free fermion field is carrying.
+  evidence:
+    - type: expert_claim
+      source_ref: free_fields_and_quantization_batch_initial
+      note: Batch notes explicitly call out free Dirac fields as part of the core species set.
+  status: asserted
+  confidence: 0.95
+- from: qft.lorentz_group_representation
+  to: qft.free_vector_field
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: The free vector field is the spin-1 Lorentz-covariant species in the free-field family.
+  failure_mode_if_absent: Cannot tell what makes the field a vector field rather than a scalar or spinor field.
+  evidence:
+    - type: expert_claim
+      source_ref: free_fields_and_quantization_batch_initial
+      note: Batch notes keep the vector-field species in scope while excluding gauge-fixing details.
+  status: asserted
+  confidence: 0.94
+- from: classical_fields.action_functional
+  to: qft.canonical_quantization
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: Canonical quantization is the operator-level continuation of the classical action-based field setup.
+  failure_mode_if_absent: Cannot see what classical input is being promoted to operator language.
+  evidence:
+    - type: expert_claim
+      source_ref: free_fields_and_quantization_batch_initial
+      note: Batch notes separate the classical action-based setup from the quantization step.
+  status: asserted
+  confidence: 0.92
+- from: qft.free_scalar_field
+  to: qft.mode_expansion
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: The free scalar field is typically used through its mode expansion.
+  failure_mode_if_absent: Cannot write the field in the standard momentum-space form used in QFT calculations.
+  evidence:
+    - type: expert_claim
+      source_ref: free_fields_and_quantization_batch_initial
+      note: Batch notes identify mode expansion as a high-value use-level tool.
+  status: asserted
+  confidence: 0.96
+- from: qft.free_dirac_field
+  to: qft.mode_expansion
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: The free Dirac field is read through its particle and antiparticle mode expansion.
+  failure_mode_if_absent: Cannot follow the standard operator decomposition of the free fermion field.
+  evidence:
+    - type: expert_claim
+      source_ref: free_fields_and_quantization_batch_initial
+      note: Batch notes group mode expansions with the free Dirac field candidate.
+  status: asserted
+  confidence: 0.96
+- from: qft.free_vector_field
+  to: qft.mode_expansion
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: The free vector field is also used via a mode expansion before interactions are introduced.
+  failure_mode_if_absent: Cannot write the spin-1 field in the standard free-field basis.
+  evidence:
+    - type: expert_claim
+      source_ref: free_fields_and_quantization_batch_initial
+      note: Batch notes keep the vector-field branch in the same free-field reading path.
+  status: asserted
+  confidence: 0.94
+- from: qft.mode_expansion
+  to: qft.creation_annihilation_operator
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: Creation and annihilation operators are the operator language appearing in the free-field mode expansion.
+  failure_mode_if_absent: Cannot interpret the coefficients in the expansion as quantum operators rather than as ordinary amplitudes.
+  evidence:
+    - type: expert_claim
+      source_ref: free_fields_and_quantization_batch_initial
+      note: Batch notes pair mode expansion with creation/annihilation operators as the core use-level relation.
+  status: asserted
+  confidence: 0.97
+- from: qft.one_particle_state
+  to: qft.creation_annihilation_operator
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: Creation operators are read as operators that add one-particle excitations of the free field.
+  failure_mode_if_absent: Cannot tell what state-space object is being created by the operator.
+  evidence:
+    - type: expert_claim
+      source_ref: free_fields_and_quantization_batch_initial
+      note: Batch notes keep one-particle-state vocabulary in the reuse set.
+  status: asserted
+  confidence: 0.94
+- from: qft.canonical_quantization
+  to: qft.equal_time_commutation_relations
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: Equal-time commutation or anticommutation relations are the standard output of canonical quantization.
+  failure_mode_if_absent: Cannot see how the quantization step fixes the operator algebra.
+  evidence:
+    - type: expert_claim
+      source_ref: free_fields_and_quantization_batch_initial
+      note: Batch notes treat equal-time brackets as the defining quantization relation.
+  status: asserted
+  confidence: 0.97
+- from: qm.commutator
+  to: qft.equal_time_commutation_relations
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: Equal-time bracket statements are read in the operator-algebra language of commutators and anticommutators.
+  failure_mode_if_absent: Cannot parse the bracket notation as a quantum operator relation.
+  evidence:
+    - type: expert_claim
+      source_ref: free_fields_and_quantization_batch_initial
+      note: Batch notes reuse the QM commutator baseline as part of the quantization vocabulary.
+  status: asserted
+  confidence: 0.95
+- from: qft.creation_annihilation_operator
+  to: qft.equal_time_commutation_relations
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: The canonical algebra of creation and annihilation operators is fixed by the equal-time relations.
+  failure_mode_if_absent: Cannot tell what algebra the mode operators satisfy in the free theory.
+  evidence:
+    - type: expert_claim
+      source_ref: free_fields_and_quantization_batch_initial
+      note: Batch notes pair creation/annihilation operators with equal-time brackets in the same use path.
+  status: asserted
+  confidence: 0.97
+- from: qft.equal_time_commutation_relations
+  to: qft.microcausality
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: Microcausality is the locality statement that the free-field operator algebra must satisfy away from the same spacetime point.
+  failure_mode_if_absent: Cannot see how the equal-time bracket structure supports spacelike locality.
+  evidence:
+    - type: expert_claim
+      source_ref: free_fields_and_quantization_batch_initial
+      note: Batch notes keep microcausality in the same locality/quantization cluster.
+  status: asserted
+  confidence: 0.93
+- from: qft.spin_label
+  to: qft.spin_statistics
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: Spin-statistics is read by matching the particle spin label to bosonic or fermionic quantization.
+  failure_mode_if_absent: Cannot tell which spin values are supposed to pair with which operator algebra.
+  evidence:
+    - type: expert_claim
+      source_ref: free_fields_and_quantization_batch_initial
+      note: Batch notes treat spin labels as part of the free-field species background.
+  status: asserted
+  confidence: 0.94
+- from: qft.microcausality
+  to: qft.spin_statistics
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: The spin-statistics relation is the theorem-level link between locality and the allowed quantum statistics of fields.
+  failure_mode_if_absent: Cannot see why locality constrains bosonic versus fermionic quantization.
+  evidence:
+    - type: expert_claim
+      source_ref: free_fields_and_quantization_batch_initial
+      note: Batch notes keep spin-statistics as the locality/quantization constraint that ties the branch together.
+  status: asserted
+  confidence: 0.93

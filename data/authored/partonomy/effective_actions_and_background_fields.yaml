@@ -1,0 +1,56 @@
+# Canonical partonomy edge list for the Effective Actions and Background Fields batch.
+- parent: qft.effective_actions_and_background_fields
+  child: qft.generating_functional
+  rationale: The source-dependent generating-functional branch is the main reusable prerequisite spine for the effective-action slice.
+  status: asserted
+  confidence: 0.94
+- parent: qft.generating_functional
+  child: qft.connected_generating_functional
+  rationale: The connected functional is the logarithmic refinement of the full generating functional.
+  status: asserted
+  confidence: 0.93
+- parent: qft.effective_actions_and_background_fields
+  child: qft.effective_action
+  rationale: The effective action is the central topic branch of the batch.
+  status: asserted
+  confidence: 0.97
+- parent: qft.effective_action
+  child: qft.effective_potential
+  rationale: The effective potential is the constant-background specialization of the effective action.
+  status: asserted
+  confidence: 0.98
+- parent: qft.effective_actions_and_background_fields
+  child: qft.background_field_method
+  rationale: The background-field method is the main computational branch beside the effective-action definition.
+  status: asserted
+  confidence: 0.96
+- parent: qft.background_field_method
+  child: qft.background_field
+  rationale: The background field is the object that the method splits off from the quantum fluctuation.
+  status: asserted
+  confidence: 0.94
+- parent: qft.effective_actions_and_background_fields
+  child: qft.one_loop_effective_action
+  rationale: The one-loop effective action is the central approximation branch of the effective-action story.
+  status: asserted
+  confidence: 0.95
+- parent: qft.one_loop_effective_action
+  child: qft.functional_determinant
+  rationale: The determinant representation is the standard mathematical object that appears in the one-loop computation.
+  status: asserted
+  confidence: 0.96
+- parent: qft.one_loop_effective_action
+  child: qft.schwinger_proper_time
+  rationale: Schwinger proper-time is a standard one-loop representation branch for determinants and loop kernels.
+  status: asserted
+  confidence: 0.91
+- parent: qft.schwinger_proper_time
+  child: qft.schwinger_parameter
+  rationale: The Schwinger parameter is the auxiliary integration variable used in the proper-time representation.
+  status: asserted
+  confidence: 0.88
+- parent: qft.effective_actions_and_background_fields
+  child: qft.renormalized_perturbation_theory
+  rationale: Renormalized perturbation theory is supporting background for the scale-sensitive effective-potential branch.
+  status: asserted
+  confidence: 0.89

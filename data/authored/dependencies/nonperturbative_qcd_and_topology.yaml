@@ -1,0 +1,196 @@
+# Canonical dependency edges for the nonperturbative-QCD and topology batch.
+- from: qft.non_abelian_gauge_symmetry
+  to: qcd.nonperturbative_qcd_and_topology
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qcd_nonperturbative
+  task_type: literature_reading
+  rationale: The entire batch is a non-Abelian gauge-theory refinement, so the Yang-Mills symmetry setting has to be recognized before the local nonperturbative branch can be placed.
+  failure_mode_if_absent: Cannot tell what makes the batch a QCD or Yang-Mills topic rather than a generic topology digression.
+  evidence:
+    - type: expert_claim
+      source_ref: nonperturbative_qcd_and_topology_batch_initial
+      note: Batch notes keep the existing non-Abelian gauge-symmetry node as the main upstream anchor.
+  status: asserted
+  confidence: 0.95
+- from: qft.yang_mills_action
+  to: qft.instanton
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qcd_nonperturbative
+  task_type: literature_reading
+  rationale: Instantons are finite-action Yang-Mills configurations, so the action-level structure has to be available before the instanton branch makes sense.
+  failure_mode_if_absent: Cannot tell what equation or action principle the instanton configuration is solving.
+  evidence:
+    - type: expert_claim
+      source_ref: nonperturbative_qcd_and_topology_batch_initial
+      note: Source notes keep the instanton branch attached directly to the Yang-Mills action rather than to a separate Euclidean-QFT batch.
+  status: asserted
+  confidence: 0.95
+- from: qcd.lattice_qcd
+  to: qcd.link_field
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qcd_nonperturbative
+  task_type: literature_reading
+  rationale: Link fields are the local lattice gauge variables introduced inside the lattice-QCD formulation.
+  failure_mode_if_absent: Cannot tell what object on the lattice is being multiplied along a path to build Wilson observables.
+  evidence:
+    - type: expert_claim
+      source_ref: nonperturbative_qcd_and_topology_batch_initial
+      note: Source notes keep lattice QCD as thin structural support for the Wilson-observable branch.
+  status: asserted
+  confidence: 0.94
+- from: qcd.link_field
+  to: qft.wilson_line
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qcd_nonperturbative
+  task_type: literature_reading
+  rationale: In lattice language, Wilson lines are built from ordered products of link fields along a path.
+  failure_mode_if_absent: Cannot read the discrete gauge-transport object that underlies the Wilson-line notation.
+  evidence:
+    - type: expert_claim
+      source_ref: nonperturbative_qcd_and_topology_batch_initial
+      note: Source notes use the link-field node as the smallest lattice-side prerequisite for Wilson-line language.
+  status: asserted
+  confidence: 0.93
+- from: qft.non_abelian_gauge_symmetry
+  to: qft.wilson_line
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qcd_nonperturbative
+  task_type: literature_reading
+  rationale: Wilson lines are gauge parallel-transport operators, so the underlying gauge-symmetry setting has to be in hand before the object is used.
+  failure_mode_if_absent: Cannot tell why the path-ordered exponential is the natural gauge-covariant object to introduce.
+  evidence:
+    - type: expert_claim
+      source_ref: nonperturbative_qcd_and_topology_batch_initial
+      note: Source notes keep Wilson lines attached directly to the non-Abelian gauge-structure branch.
+  status: asserted
+  confidence: 0.95
+- from: qft.wilson_line
+  to: qft.wilson_loop
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qcd_nonperturbative
+  task_type: literature_reading
+  rationale: A Wilson loop is the closed-contour specialization of Wilson-line transport.
+  failure_mode_if_absent: Cannot see what object is being traced or closed when the loop observable is introduced.
+  evidence:
+    - type: expert_claim
+      source_ref: nonperturbative_qcd_and_topology_batch_initial
+      note: Source notes keep the loop observable downstream of the more general Wilson-line concept.
+  status: asserted
+  confidence: 0.96
+- from: qft.wilson_loop
+  to: qcd.area_law_for_wilson_loop
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qcd_nonperturbative
+  task_type: literature_reading
+  rationale: The area law is a scaling statement about Wilson-loop expectation values, so the loop observable has to be available before the criterion is read.
+  failure_mode_if_absent: Cannot tell what quantity is supposed to exhibit area scaling.
+  evidence:
+    - type: expert_claim
+      source_ref: nonperturbative_qcd_and_topology_batch_initial
+      note: Source notes treat the area law as the first confinement-facing payoff of the Wilson-loop branch.
+  status: asserted
+  confidence: 0.96
+- from: qcd.area_law_for_wilson_loop
+  to: qcd.confinement
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qcd_nonperturbative
+  task_type: literature_reading
+  rationale: In Schwartz's nonperturbative-QCD vocabulary, the area law is a standard diagnostic for confinement.
+  failure_mode_if_absent: Cannot see why the Wilson-loop branch is being introduced as evidence for confining dynamics.
+  evidence:
+    - type: expert_claim
+      source_ref: nonperturbative_qcd_and_topology_batch_initial
+      note: Source notes keep confinement downstream of the area-law criterion rather than as an isolated slogan node.
+  status: asserted
+  confidence: 0.95
+- from: qcd.topological_charge
+  to: qft.instanton
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qcd_nonperturbative
+  task_type: literature_reading
+  rationale: Instantons are distinguished by nontrivial topological charge sectors, so that invariant has to be recognized before the instanton branch is legible.
+  failure_mode_if_absent: Cannot tell what makes the configuration topologically nontrivial rather than just another classical field profile.
+  evidence:
+    - type: expert_claim
+      source_ref: nonperturbative_qcd_and_topology_batch_initial
+      note: Source notes keep topological charge as the smallest reusable identifier of the instanton branch.
+  status: asserted
+  confidence: 0.95
+- from: qft.instanton
+  to: qcd.theta_vacuum
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qcd_nonperturbative
+  task_type: literature_reading
+  rationale: Instanton sectors are the standard route by which the theta-vacuum branch becomes physically visible in Yang-Mills theory.
+  failure_mode_if_absent: Cannot connect the topological-sector language to the vacuum-angle discussion.
+  evidence:
+    - type: expert_claim
+      source_ref: nonperturbative_qcd_and_topology_batch_initial
+      note: Source notes keep theta-vacuum language adjacent to the instanton branch rather than detached as a bare parameter.
+  status: asserted
+  confidence: 0.94
+- from: qcd.topological_charge
+  to: qcd.theta_vacuum
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qcd_nonperturbative
+  task_type: literature_reading
+  rationale: The theta angle couples to topological charge, so the charge sector has to be in place before the theta-vacuum weighting is interpreted.
+  failure_mode_if_absent: Cannot tell what quantity the theta parameter is weighting across vacuum sectors.
+  evidence:
+    - type: expert_claim
+      source_ref: nonperturbative_qcd_and_topology_batch_initial
+      note: Source notes keep topological charge as the direct conceptual input to theta-vacuum language.
+  status: asserted
+  confidence: 0.96
+- from: qcd.theta_vacuum
+  to: qcd.witten_veneziano_relation
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qcd_nonperturbative
+  task_type: literature_reading
+  rationale: The Witten-Veneziano relation is introduced as a payoff of the QCD topology and theta-vacuum branch.
+  failure_mode_if_absent: Cannot place the relation inside the local topology-focused slice rather than as an isolated named formula.
+  evidence:
+    - type: expert_claim
+      source_ref: nonperturbative_qcd_and_topology_batch_initial
+      note: Source notes keep the relation as a narrow downstream leaf of the theta-vacuum branch.
+  status: asserted
+  confidence: 0.9
+- from: qcd.topological_charge
+  to: qcd.witten_veneziano_relation
+  relation_type: requires_for_recognize
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: qcd_nonperturbative
+  task_type: literature_reading
+  rationale: The relation is read through topology-sensitive quantities, so topological-charge vocabulary materially helps orient the statement.
+  failure_mode_if_absent: The relation appears as an isolated named result with no visible tie to the topology branch that motivates it.
+  evidence:
+    - type: expert_claim
+      source_ref: nonperturbative_qcd_and_topology_batch_initial
+      note: Source notes keep the relation tied to the same topology branch as instantons and theta-vacuum language.
+  status: asserted
+  confidence: 0.86

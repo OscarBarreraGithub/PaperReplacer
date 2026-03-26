@@ -1,0 +1,151 @@
+# Canonical dependency edges for the spectral-and-mass-shell refinement batch.
+- from: qft.propagator_singularities
+  to: qft.on_shell
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_backbone
+  task_type: literature_reading
+  rationale: On-shell language is read by reference to the propagator pole structure associated with physical particle states.
+  failure_mode_if_absent: Cannot tell why the mass-shell condition is tied to propagator poles or physical one-particle states.
+  evidence:
+    - type: expert_claim
+      source_ref: spectral_and_mass_shell_refinement_batch_initial
+      note: Source notes keep shell language attached to the existing singularity branch.
+  status: asserted
+  confidence: 0.94
+- from: qft.asymptotic_one_particle_state
+  to: qft.on_shell
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_backbone
+  task_type: literature_reading
+  rationale: Physical on-shell language is grounded in the asymptotic particle states that satisfy the mass-shell condition.
+  failure_mode_if_absent: Cannot tell what sort of states the shell condition is supposed to describe.
+  evidence:
+    - type: expert_claim
+      source_ref: spectral_and_mass_shell_refinement_batch_initial
+      note: Source notes keep the shell condition close to the LSZ asymptotic-state vocabulary.
+  status: asserted
+  confidence: 0.95
+- from: qft.on_shell
+  to: qft.off_shell
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_backbone
+  task_type: literature_reading
+  rationale: Off-shell language is understood as the complementary notion to satisfying the physical mass-shell condition.
+  failure_mode_if_absent: Cannot tell what it means for a virtual momentum or configuration to be off shell.
+  evidence:
+    - type: expert_claim
+      source_ref: spectral_and_mass_shell_refinement_batch_initial
+      note: Source notes introduce off-shell vocabulary by contrast with the on-shell condition.
+  status: asserted
+  confidence: 0.96
+- from: qft.feynman_i_epsilon_prescription
+  to: qft.advanced_propagator
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_backbone
+  task_type: literature_reading
+  rationale: The advanced propagator is defined through a specific causal pole prescription closely related to the existing i epsilon vocabulary.
+  failure_mode_if_absent: Cannot tell how the advanced propagator differs from the Feynman one at the contour or pole-placement level.
+  evidence:
+    - type: expert_claim
+      source_ref: spectral_and_mass_shell_refinement_batch_initial
+      note: Source notes keep the advanced propagator as a propagator-variant refinement of the existing analytic prescription node.
+  status: asserted
+  confidence: 0.94
+- from: qft.feynman_propagator
+  to: qft.advanced_propagator
+  relation_type: requires_for_recognize
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: qft_backbone
+  task_type: literature_reading
+  rationale: The advanced propagator is usually recognized by contrasting it with the already familiar Feynman propagator.
+  failure_mode_if_absent: The advanced propagator appears as an isolated new symbol rather than as a causal variant of the standard two-point function.
+  evidence:
+    - type: expert_claim
+      source_ref: spectral_and_mass_shell_refinement_batch_initial
+      note: Source notes keep the advanced propagator adjacent to the central propagator node.
+  status: asserted
+  confidence: 0.87
+- from: qft.feynman_propagator
+  to: qft.kallen_lehmann_representation
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_backbone
+  task_type: literature_reading
+  rationale: The Kallen-Lehmann representation is read as a spectral form of the two-point function or propagator.
+  failure_mode_if_absent: Cannot tell which correlator object is being decomposed into spectral data.
+  evidence:
+    - type: expert_claim
+      source_ref: spectral_and_mass_shell_refinement_batch_initial
+      note: Source notes keep the representation directly downstream of the existing propagator node.
+  status: asserted
+  confidence: 0.97
+- from: qft.off_shell
+  to: qft.kallen_lehmann_representation
+  relation_type: requires_for_recognize
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: qft_backbone
+  task_type: literature_reading
+  rationale: Spectral representations are commonly discussed as statements about correlator structure away from the strict one-particle shell.
+  failure_mode_if_absent: The representation looks detached from the virtual-momentum language used around propagators and correlators.
+  evidence:
+    - type: expert_claim
+      source_ref: spectral_and_mass_shell_refinement_batch_initial
+      note: Source notes keep off-shell vocabulary visible but secondary at the spectral node.
+  status: asserted
+  confidence: 0.85
+- from: qft.asymptotic_one_particle_state
+  to: qft.lippmann_schwinger_equation
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_backbone
+  task_type: literature_reading
+  rationale: The Lippmann-Schwinger equation relates interacting scattering states to free asymptotic states.
+  failure_mode_if_absent: Cannot tell what state-space objects the equation is connecting.
+  evidence:
+    - type: expert_claim
+      source_ref: spectral_and_mass_shell_refinement_batch_initial
+      note: Source notes treat asymptotic-state language as the entry point to the equation.
+  status: asserted
+  confidence: 0.95
+- from: qft.on_shell
+  to: qft.lippmann_schwinger_equation
+  relation_type: requires_for_recognize
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: qft_backbone
+  task_type: literature_reading
+  rationale: The equation is commonly encountered in the scattering-state language that sits near the on-shell sector.
+  failure_mode_if_absent: The equation appears detached from the shell-language that motivates asymptotic scattering states.
+  evidence:
+    - type: expert_claim
+      source_ref: spectral_and_mass_shell_refinement_batch_initial
+      note: Source notes keep on-shell vocabulary adjacent to the scattering-state bridge without making it the whole story.
+  status: asserted
+  confidence: 0.84
+- from: qft.lsz_reduction_formula
+  to: qft.lippmann_schwinger_equation
+  relation_type: requires_for_recognize
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: qft_backbone
+  task_type: literature_reading
+  rationale: Lippmann-Schwinger sits in the same scattering-state neighborhood that the LSZ bridge later connects to correlator language.
+  failure_mode_if_absent: The equation appears disconnected from the graph's existing route from propagators to scattering amplitudes.
+  evidence:
+    - type: expert_claim
+      source_ref: spectral_and_mass_shell_refinement_batch_initial
+      note: Source notes keep the equation near, but not inside, the LSZ bridge.
+  status: asserted
+  confidence: 0.82

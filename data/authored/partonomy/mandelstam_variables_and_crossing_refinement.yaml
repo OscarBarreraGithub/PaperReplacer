@@ -1,0 +1,26 @@
+# Canonical partonomy edges for the Mandelstam/crossing refinement batch.
+- parent: qft.mandelstam_variables_and_crossing_refinement
+  child: qft.mandelstam_variables
+  rationale: Mandelstam variables are the invariant-kinematics base of the batch.
+  status: asserted
+  confidence: 0.95
+- parent: qft.mandelstam_variables_and_crossing_refinement
+  child: qft.crossing_symmetry
+  rationale: Crossing symmetry is the central refinement branch added in this batch.
+  status: asserted
+  confidence: 0.95
+- parent: qft.crossing_symmetry
+  child: qft.s_channel
+  rationale: The s channel is one of the standard channel assignments related by crossing.
+  status: asserted
+  confidence: 0.93
+- parent: qft.crossing_symmetry
+  child: qft.t_channel
+  rationale: The t channel is the first crossed channel in the local refinement.
+  status: asserted
+  confidence: 0.93
+- parent: qft.crossing_symmetry
+  child: qft.u_channel
+  rationale: The u channel completes the standard channel triplet used in crossing discussion.
+  status: asserted
+  confidence: 0.92

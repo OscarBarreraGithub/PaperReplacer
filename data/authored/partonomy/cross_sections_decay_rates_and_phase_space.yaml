@@ -1,0 +1,51 @@
+# Canonical partonomy edges for the cross-sections/decay-rates/phase-space batch.
+- parent: qft.cross_sections_decay_rates_and_phase_space
+  child: qft.scattering_amplitude
+  rationale: The amplitude is the shared bridge node that feeds both the cross-section and decay-rate branches.
+  status: asserted
+  confidence: 0.95
+- parent: qft.cross_sections_decay_rates_and_phase_space
+  child: qft.cross_section
+  rationale: Cross section is one of the two main observable branches of the batch.
+  status: asserted
+  confidence: 0.96
+- parent: qft.cross_sections_decay_rates_and_phase_space
+  child: qft.decay_rate
+  rationale: Decay rate is the second main observable branch of the batch.
+  status: asserted
+  confidence: 0.96
+- parent: qft.cross_sections_decay_rates_and_phase_space
+  child: qft.lorentz_invariant_phase_space
+  rationale: Lorentz-invariant phase space is the common measure branch used in both scattering and decay formulas.
+  status: asserted
+  confidence: 0.95
+- parent: qft.cross_sections_decay_rates_and_phase_space
+  child: qft.mandelstam_variables
+  rationale: Mandelstam variables are the invariant-kinematics branch that organizes Schwartz-style scattering formulas.
+  status: asserted
+  confidence: 0.94
+- parent: qft.cross_sections_decay_rates_and_phase_space
+  child: qft.narrow_width_approximation
+  rationale: The narrow-width approximation is a reusable resonance branch in the same observable neighborhood.
+  status: asserted
+  confidence: 0.91
+- parent: qft.cross_sections_decay_rates_and_phase_space
+  child: qft.partial_wave_expansion
+  rationale: Partial-wave expansion is the reusable angular-momentum branch for scattering observables.
+  status: asserted
+  confidence: 0.91
+- parent: qft.cross_section
+  child: qft.flux_factor
+  rationale: The flux factor is a standard ingredient of the cross-section formula.
+  status: asserted
+  confidence: 0.95
+- parent: qft.lorentz_invariant_phase_space
+  child: qft.two_body_phase_space
+  rationale: Two-body phase space is the main closed-form specialization of the general phase-space branch.
+  status: asserted
+  confidence: 0.95
+- parent: qft.narrow_width_approximation
+  child: qft.breit_wigner_distribution
+  rationale: Breit-Wigner distribution is the line-shape branch that the narrow-width approximation simplifies.
+  status: asserted
+  confidence: 0.95

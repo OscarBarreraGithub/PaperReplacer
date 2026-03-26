@@ -1,0 +1,141 @@
+# Canonical node records for the Regularization, Renormalization, and RG batch.
+- id: qft.regularization_renormalization_rg
+  label: Regularization, renormalization, and RG
+  knowledge_kind: concept
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Topic anchor for regularization, counterterms, renormalized perturbation theory, and renormalization-group flow.
+  status: asserted
+- id: classical_fields.action_functional
+  label: Action functional
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Functional of a field configuration obtained by integrating the Lagrangian density over spacetime.
+  status: asserted
+- id: classical_fields.lagrangian_density
+  label: Lagrangian density
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Local expression built from fields and their derivatives whose spacetime integral gives the action.
+  status: asserted
+- id: qft.ultraviolet_divergence
+  label: Ultraviolet divergence
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Divergent high-momentum behavior that appears in perturbative loop integrals or short-distance Green functions.
+  status: asserted
+- id: qft.dimensional_regularization
+  label: Dimensional regularization
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Regularization method that analytically continues spacetime dimension to regulate divergent integrals.
+  status: asserted
+- id: qft.counterterm_lagrangian
+  label: Counterterm Lagrangian
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Additional local terms inserted to absorb regulator-dependent divergences and define finite renormalized parameters.
+  status: asserted
+- id: qft.renormalized_perturbation_theory
+  label: Renormalized perturbation theory
+  knowledge_kind: concept
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Perturbative expansion organized after regularization and counterterm subtraction so that physical quantities are finite.
+  status: asserted
+- id: qft.renormalization_scale
+  label: Renormalization scale
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Reference scale that parameterizes how renormalized couplings and operators vary under scheme-dependent subtraction.
+  status: asserted
+- id: qft.beta_function
+  label: Beta function
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Differential function governing how a coupling changes with renormalization scale.
+  status: asserted
+- id: qft.anomalous_dimension
+  label: Anomalous dimension
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Scale-dependent correction to the naive dimension or scaling behavior of a field or operator.
+  status: asserted
+- id: qft.renormalization_group_equation
+  label: Renormalization-group equation
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Equation describing how renormalized quantities evolve when the renormalization scale is changed.
+  status: asserted
+- id: qft.wilsonian_renormalization_group
+  label: Wilsonian renormalization group
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Coarse-graining flow picture in which high-momentum modes are integrated out to produce scale-dependent effective theories.
+  status: asserted
+- id: qft.callan_symanzik_equation
+  label: Callan-Symanzik equation
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Renormalization-group equation for renormalized Green functions with explicit scale dependence and anomalous scaling.
+  status: asserted

@@ -1,0 +1,149 @@
+# Canonical node records for the scalar-QED batch.
+- id: qft.scalar_qed
+  label: Scalar QED
+  knowledge_kind: concept
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Topic anchor for Abelian gauge theory with charged scalar matter, minimal coupling, and the characteristic interaction vertices of scalar QED.
+  status: asserted
+- id: qft.free_scalar_field
+  label: Free scalar field
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Free relativistic spin-0 field written as a scalar field with momentum-space mode expansion.
+  status: asserted
+- id: qft.free_vector_field
+  label: Free vector field
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Free spin-1 field used for vector-boson kinematics at the field-theory level before interactions or gauge fixing.
+  status: asserted
+- id: qft.gauge_invariance
+  label: Gauge invariance
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Local redundancy under gauge transformations, the property that motivates gauge fixing and Ward identities.
+  status: asserted
+- id: qft.covariant_derivative
+  label: Covariant derivative
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Derivative modified by the gauge field so that it transforms covariantly under local symmetry.
+  status: asserted
+- id: qft.ward_takahashi_identity
+  label: Ward-Takahashi identity
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Functional identity expressing a symmetry relation among Green functions or generating functionals in the presence of sources.
+  status: asserted
+- id: qft.feynman_rules
+  label: Feynman rules
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Rule set translating the Dyson/Wick expansion into vertices, propagators, and diagram weights.
+  status: asserted
+- id: qft.abelian_gauge_symmetry
+  label: Abelian gauge symmetry
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Local U(1)-type gauge symmetry whose commuting generators make it the simplest gauge-theory setting for charged matter.
+  status: asserted
+- id: qft.charged_scalar_field
+  label: Charged scalar field
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Complex scalar field carrying Abelian gauge charge and serving as the matter field in scalar QED.
+  status: asserted
+- id: qft.minimal_coupling
+  label: Minimal coupling
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Replacement of ordinary derivatives by gauge-covariant derivatives so the matter theory couples to the gauge field while preserving local symmetry.
+  status: asserted
+- id: qft.scalar_qed_lagrangian
+  label: Scalar-QED Lagrangian
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Gauge-invariant Lagrangian for a charged scalar minimally coupled to an Abelian gauge field.
+  status: asserted
+- id: qft.one_photon_scalar_vertex
+  label: One-photon scalar vertex
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Interaction vertex in scalar QED that couples one gauge field to two charged scalar legs.
+  status: asserted
+- id: qft.seagull_vertex
+  label: Seagull vertex
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Contact interaction in scalar QED that couples two gauge fields to charged scalar matter.
+  status: asserted
+- id: qft.scalar_compton_scattering
+  label: Scalar Compton scattering
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Scattering of a photon from charged scalar matter, used as the minimal process-level payoff of the scalar-QED interaction structure.
+  status: asserted

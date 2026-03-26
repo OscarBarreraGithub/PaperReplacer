@@ -1,0 +1,26 @@
+# Canonical partonomy edges for the subtraction-scheme and Landau-pole refinement batch.
+- parent: qft.subtraction_scheme_and_landau_pole_refinement
+  child: qft.subtraction_scheme
+  rationale: Subtraction-scheme language is the first main branch of the batch.
+  status: asserted
+  confidence: 0.95
+- parent: qft.subtraction_scheme
+  child: qft.subtraction_point
+  rationale: The subtraction point is the operational location where many schemes fix renormalized quantities.
+  status: asserted
+  confidence: 0.9
+- parent: qft.subtraction_scheme
+  child: qft.minimal_subtraction_scheme
+  rationale: Minimal subtraction is the concrete scheme leaf retained in this pass.
+  status: asserted
+  confidence: 0.96
+- parent: qft.subtraction_scheme_and_landau_pole_refinement
+  child: qft.running_coupling
+  rationale: Running-coupling language is the bridge from schemes and scales into the Landau-pole branch.
+  status: asserted
+  confidence: 0.94
+- parent: qft.running_coupling
+  child: qft.landau_pole
+  rationale: The Landau pole is the endpoint pathology of the running-coupling branch.
+  status: asserted
+  confidence: 0.96

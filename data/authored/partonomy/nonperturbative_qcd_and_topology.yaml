@@ -1,0 +1,51 @@
+# Canonical partonomy edges for the nonperturbative-QCD and topology batch.
+- parent: qcd.nonperturbative_qcd_and_topology
+  child: qcd.lattice_qcd
+  rationale: Lattice QCD is the main structural support branch for Wilson observables in this slice.
+  status: asserted
+  confidence: 0.9
+- parent: qcd.nonperturbative_qcd_and_topology
+  child: qft.wilson_line
+  rationale: Wilson-line language is a core reusable branch of the batch.
+  status: asserted
+  confidence: 0.92
+- parent: qcd.nonperturbative_qcd_and_topology
+  child: qft.wilson_loop
+  rationale: Wilson loops are the central confinement-facing observable in the batch.
+  status: asserted
+  confidence: 0.95
+- parent: qcd.nonperturbative_qcd_and_topology
+  child: qcd.confinement
+  rationale: Confinement is one of the two main payoff branches of the nonperturbative-QCD slice.
+  status: asserted
+  confidence: 0.94
+- parent: qcd.nonperturbative_qcd_and_topology
+  child: qft.instanton
+  rationale: Instantons are the main topology-facing configuration branch of the batch.
+  status: asserted
+  confidence: 0.95
+- parent: qcd.nonperturbative_qcd_and_topology
+  child: qcd.topological_charge
+  rationale: Topological charge is the invariant organizing the instanton and theta-vacuum branch.
+  status: asserted
+  confidence: 0.94
+- parent: qcd.nonperturbative_qcd_and_topology
+  child: qcd.theta_vacuum
+  rationale: Theta-vacuum language is the second main nonperturbative-QCD payoff branch in this slice.
+  status: asserted
+  confidence: 0.94
+- parent: qcd.lattice_qcd
+  child: qcd.link_field
+  rationale: Link fields are the local lattice variables that support Wilson-observable construction.
+  status: asserted
+  confidence: 0.93
+- parent: qft.wilson_loop
+  child: qcd.area_law_for_wilson_loop
+  rationale: The area law is the principal confinement-diagnostic refinement of the Wilson-loop branch.
+  status: asserted
+  confidence: 0.95
+- parent: qcd.theta_vacuum
+  child: qcd.witten_veneziano_relation
+  rationale: The Witten-Veneziano relation is kept as a narrow topology-facing payoff leaf under the theta-vacuum branch.
+  status: asserted
+  confidence: 0.87

@@ -1,0 +1,211 @@
+# Canonical dependency edges for the HQET refinement batch.
+- from: qcd.quark
+  to: eft.heavy_quark_effective_theory
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: effective_field_theory
+  task_type: literature_reading
+  rationale: HQET is still an effective description of a QCD quark degree of freedom, so the underlying quark-field vocabulary has to remain visible.
+  failure_mode_if_absent: Cannot tell what full-theory degree of freedom is being reorganized in the effective description.
+  evidence:
+    - type: expert_claim
+      source_ref: heavy_quark_effective_theory_refinement_batch_initial
+      note: Source notes keep the QCD quark node as the minimal full-theory anchor for the HQET branch.
+  status: asserted
+  confidence: 0.93
+- from: eft.scale_separation
+  to: eft.heavy_quark_effective_theory
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: effective_field_theory
+  task_type: literature_reading
+  rationale: HQET only makes sense after the heavy-quark mass has been separated from infrared hadronic scales.
+  failure_mode_if_absent: Cannot see why the heavy degree of freedom is being rewritten as an EFT rather than treated in the full theory.
+  evidence:
+    - type: expert_claim
+      source_ref: heavy_quark_effective_theory_refinement_batch_initial
+      note: Source notes keep scale separation as the EFT-side motivation for the HQET root.
+  status: asserted
+  confidence: 0.95
+- from: eft.matching
+  to: eft.heavy_quark_effective_theory
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: effective_field_theory
+  task_type: literature_reading
+  rationale: Matching explains how HQET inherits coefficients and normalization from the full theory.
+  failure_mode_if_absent: Cannot tell how the effective heavy-quark theory is connected back to the UV description.
+  evidence:
+    - type: expert_claim
+      source_ref: heavy_quark_effective_theory_refinement_batch_initial
+      note: Source notes keep matching as assumed EFT workflow directly upstream of the HQET branch.
+  status: asserted
+  confidence: 0.93
+- from: eft.heavy_quark_limit
+  to: eft.heavy_quark_effective_theory
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: effective_field_theory
+  task_type: literature_reading
+  rationale: The heavy-quark limit is the asymptotic statement that makes the HQET branch identifiable in the first place.
+  failure_mode_if_absent: Cannot tell what approximation regime defines HQET.
+  evidence:
+    - type: expert_claim
+      source_ref: heavy_quark_effective_theory_refinement_batch_initial
+      note: Source notes keep the heavy-quark limit as the first local refinement of the HQET root.
+  status: asserted
+  confidence: 0.96
+- from: eft.heavy_quark_limit
+  to: eft.heavy_quark_symmetry
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: effective_field_theory
+  task_type: literature_reading
+  rationale: Heavy-quark symmetry is the approximate spin-flavor symmetry that emerges precisely in the heavy-quark limit.
+  failure_mode_if_absent: Cannot see why the symmetry is expected rather than accidental.
+  evidence:
+    - type: expert_claim
+      source_ref: heavy_quark_effective_theory_refinement_batch_initial
+      note: Source notes make the heavy-quark limit the direct conceptual source of the symmetry node.
+  status: asserted
+  confidence: 0.97
+- from: eft.heavy_quark_limit
+  to: eft.heavy_quark_velocity
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: effective_field_theory
+  task_type: literature_reading
+  rationale: The fixed-velocity description is justified by factoring the dominant heavy-mass contribution from the momentum in the heavy-quark limit.
+  failure_mode_if_absent: Cannot tell why the velocity label is being treated as a stable kinematic organizer.
+  evidence:
+    - type: expert_claim
+      source_ref: heavy_quark_effective_theory_refinement_batch_initial
+      note: Source notes center the refinement around the velocity-decomposition picture.
+  status: asserted
+  confidence: 0.95
+- from: eft.heavy_quark_velocity
+  to: eft.residual_momentum
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: effective_field_theory
+  task_type: literature_reading
+  rationale: Residual momentum is defined as the remainder after the large heavy-quark momentum has been split into mass times velocity plus a soft correction.
+  failure_mode_if_absent: Cannot tell what the residual k variable means in HQET notation.
+  evidence:
+    - type: expert_claim
+      source_ref: heavy_quark_effective_theory_refinement_batch_initial
+      note: Source notes keep residual momentum immediately downstream of the velocity label.
+  status: asserted
+  confidence: 0.97
+- from: eft.heavy_quark_velocity
+  to: eft.velocity_dependent_heavy_quark_field
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: effective_field_theory
+  task_type: literature_reading
+  rationale: The HQET field is labeled by the fixed heavy-quark velocity once the large rest-mass phase has been factored out.
+  failure_mode_if_absent: Cannot read the meaning of the velocity-labeled heavy field appearing in the effective Lagrangian.
+  evidence:
+    - type: expert_claim
+      source_ref: heavy_quark_effective_theory_refinement_batch_initial
+      note: Source notes keep the field redefinition attached to the same velocity-decomposition branch.
+  status: asserted
+  confidence: 0.96
+- from: eft.residual_momentum
+  to: eft.velocity_dependent_heavy_quark_field
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: effective_field_theory
+  task_type: literature_reading
+  rationale: The velocity-dependent field is designed to keep only the residual low-energy dynamics explicit after the heavy mass is removed.
+  failure_mode_if_absent: Cannot tell what dynamical momentum the HQET field is still carrying.
+  evidence:
+    - type: expert_claim
+      source_ref: heavy_quark_effective_theory_refinement_batch_initial
+      note: Source notes use residual momentum as the physical interpretation of the velocity-labeled field.
+  status: asserted
+  confidence: 0.95
+- from: eft.operator_expansion
+  to: eft.one_over_heavy_quark_mass_expansion
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: effective_field_theory
+  task_type: literature_reading
+  rationale: The subleading HQET terms are organized as an operator expansion in inverse powers of the heavy-quark mass.
+  failure_mode_if_absent: Cannot see the correction terms as part of a controlled EFT expansion.
+  evidence:
+    - type: expert_claim
+      source_ref: heavy_quark_effective_theory_refinement_batch_initial
+      note: Source notes keep the 1/m_Q branch tied to the existing operator-expansion node.
+  status: asserted
+  confidence: 0.95
+- from: eft.power_counting
+  to: eft.one_over_heavy_quark_mass_expansion
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: effective_field_theory
+  task_type: literature_reading
+  rationale: Power counting determines how leading and subleading HQET operators are ordered in the inverse-mass expansion.
+  failure_mode_if_absent: Cannot tell which HQET corrections are dominant or suppressed.
+  evidence:
+    - type: expert_claim
+      source_ref: heavy_quark_effective_theory_refinement_batch_initial
+      note: Source notes keep the existing EFT power-counting node as the control language for the 1/m_Q branch.
+  status: asserted
+  confidence: 0.95
+- from: eft.matching
+  to: eft.one_over_heavy_quark_mass_expansion
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: effective_field_theory
+  task_type: literature_reading
+  rationale: The subleading HQET operators inherit coefficients from matching to the full theory.
+  failure_mode_if_absent: Cannot tell where the higher-order HQET operator coefficients come from.
+  evidence:
+    - type: expert_claim
+      source_ref: heavy_quark_effective_theory_refinement_batch_initial
+      note: Source notes keep the 1/m_Q branch inside the standard EFT matching workflow.
+  status: asserted
+  confidence: 0.93
+- from: eft.heavy_quark_symmetry
+  to: eft.isgur_wise_function
+  relation_type: requires_for_recognize
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: effective_field_theory
+  task_type: literature_reading
+  rationale: The Isgur-Wise function is the canonical leading symmetry-controlled payoff of heavy-quark symmetry.
+  failure_mode_if_absent: Cannot place the function as a structural consequence of the HQET symmetry branch.
+  evidence:
+    - type: expert_claim
+      source_ref: heavy_quark_effective_theory_refinement_batch_initial
+      note: Source notes keep Isgur-Wise as a narrow leaf under heavy-quark symmetry rather than as a process catalog entry.
+  status: asserted
+  confidence: 0.94
+- from: eft.heavy_quark_velocity
+  to: eft.isgur_wise_function
+  relation_type: requires_for_use
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: effective_field_theory
+  task_type: literature_reading
+  rationale: The standard Isgur-Wise discussion is parameterized by heavy-hadron velocities, so the velocity language materially helps orient the function.
+  failure_mode_if_absent: The function appears as a named object with no visible tie to the local HQET kinematic vocabulary.
+  evidence:
+    - type: expert_claim
+      source_ref: heavy_quark_effective_theory_refinement_batch_initial
+      note: Source notes keep velocity language visible up to the symmetry-facing payoff leaf.
+  status: asserted
+  confidence: 0.85

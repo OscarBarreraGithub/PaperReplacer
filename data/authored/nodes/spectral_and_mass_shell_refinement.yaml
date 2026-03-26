@@ -1,0 +1,123 @@
+# Canonical node records for the spectral-and-mass-shell refinement batch.
+- id: qft.spectral_and_mass_shell_refinement
+  label: Spectral and mass-shell refinement
+  knowledge_kind: concept
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Topic anchor for spectral representation, on-shell/off-shell language, advanced propagators, and the first Lippmann-Schwinger bridge.
+  status: asserted
+- id: qft.correlators_propagators_lsz
+  label: Correlators, propagators, and LSZ reduction
+  knowledge_kind: concept
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Topic anchor for time-ordered correlators, propagators, amputations, and the LSZ bridge from Green functions to scattering amplitudes.
+  status: asserted
+- id: qft.feynman_i_epsilon_prescription
+  label: Feynman i epsilon prescription
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Prescription that displaces propagator poles off the real axis to define causal contour choices in relativistic QFT.
+  status: asserted
+- id: qft.propagator_singularities
+  label: Propagator singularities
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Singular structure contributed by propagator denominators, especially the location and interpretation of their poles.
+  status: asserted
+- id: qft.feynman_propagator
+  label: Feynman propagator
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Causal two-point Green function with the standard i epsilon prescription, usually written as a time-ordered vacuum correlator.
+  status: asserted
+- id: qft.asymptotic_one_particle_state
+  label: Asymptotic one-particle state
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Incoming or outgoing single-particle state used as the external scattering state in LSZ.
+  status: asserted
+- id: qft.lsz_reduction_formula
+  label: LSZ reduction formula
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Relation that turns time-ordered Green functions into scattering amplitudes by amputating external legs and taking the asymptotic limit.
+  status: asserted
+- id: qft.on_shell
+  label: On shell
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Condition that a momentum or state satisfies the physical mass-shell relation appropriate to an asymptotic particle.
+  status: asserted
+- id: qft.off_shell
+  label: Off shell
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Condition that a momentum or intermediate configuration does not satisfy the physical mass-shell relation of an asymptotic particle.
+  status: asserted
+- id: qft.kallen_lehmann_representation
+  label: Kallen-Lehmann representation
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Spectral representation that writes a two-point function as an integral over positive spectral weight, separating pole and continuum structure.
+  status: asserted
+- id: qft.advanced_propagator
+  label: Advanced propagator
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Propagator whose causal support lies to the past of the source, defined by the corresponding advanced pole prescription.
+  status: asserted
+- id: qft.lippmann_schwinger_equation
+  label: Lippmann-Schwinger equation
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Integral equation relating interacting scattering states to free asymptotic states through the interaction operator or resolvent.
+  status: asserted

@@ -1,0 +1,14 @@
+# Canonical overlay annotations for the anomaly and precision-tests batch.
+- overlay_type: assumed_background
+  target_topic: sm.anomalies_and_precision_sm
+  presumed_node: classical_fields.noether_theorem
+  audience_profile: hep_th_grad
+  subfield: standard_model
+  artifact_type: paper
+  rationale: Standard anomaly and current-language passages usually assume the Noether-theorem vocabulary before discussing the anomaly.
+  evidence:
+    - type: expert_claim
+      source_ref: anomalies_and_precision_sm_batch_initial
+      note: Batch notes treat Noether theorem as the reusable background node for anomaly reading.
+  status: asserted
+  confidence: 0.88

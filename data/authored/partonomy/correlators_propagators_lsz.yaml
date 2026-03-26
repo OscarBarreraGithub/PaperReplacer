@@ -1,0 +1,36 @@
+# Canonical partonomy edges for the correlators/propagators/LSZ trunk batch.
+- parent: qft.correlators_propagators_lsz
+  child: qft.time_ordering
+  rationale: Time ordering is the entry-point operation for the correlator and propagator slice.
+  status: asserted
+  confidence: 0.93
+- parent: qft.correlators_propagators_lsz
+  child: qft.time_ordered_product
+  rationale: Time-ordered products are the local operator form that generates correlators in this batch.
+  status: asserted
+  confidence: 0.93
+- parent: qft.correlators_propagators_lsz
+  child: qft.time_ordered_green_function
+  rationale: Time-ordered Green functions are the correlator-facing core of the batch.
+  status: asserted
+  confidence: 0.95
+- parent: qft.correlators_propagators_lsz
+  child: qft.feynman_propagator
+  rationale: The Feynman propagator is the central two-point object in the correlator/propagator trunk.
+  status: asserted
+  confidence: 0.95
+- parent: qft.correlators_propagators_lsz
+  child: qft.amputation
+  rationale: Amputation is the key operation that converts correlators into LSZ-ready objects.
+  status: asserted
+  confidence: 0.92
+- parent: qft.correlators_propagators_lsz
+  child: qft.asymptotic_one_particle_state
+  rationale: Asymptotic one-particle states are the external-state vocabulary required for LSZ.
+  status: asserted
+  confidence: 0.9
+- parent: qft.correlators_propagators_lsz
+  child: qft.lsz_reduction_formula
+  rationale: LSZ reduction is the main terminal bridge from correlators to scattering amplitudes.
+  status: asserted
+  confidence: 0.96

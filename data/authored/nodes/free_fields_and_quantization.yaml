@@ -1,0 +1,171 @@
+# Canonical node records for the first-pass free-fields-and-quantization batch.
+- id: qft.free_fields_and_quantization
+  label: Free fields and quantization
+  knowledge_kind: concept
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Topic anchor for relativistic free fields, mode expansions, canonical quantization, and the locality/spin-statistics constraints reused throughout QFT.
+  status: asserted
+- id: classical_fields.field_configuration
+  label: Field configuration
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Assignment of field values to spacetime points, usually treated as the variable being varied in the action.
+  status: asserted
+- id: classical_fields.action_functional
+  label: Action functional
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Functional of a field configuration obtained by integrating the Lagrangian density over spacetime.
+  status: asserted
+- id: qft.lorentz_group_representation
+  label: Lorentz group representation
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Representation of Lorentz transformations on states or fields, usually the linear part of the spacetime-symmetry action.
+  status: asserted
+- id: qft.poincare_group_representation
+  label: Poincare group representation
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Representation of spacetime translations together with Lorentz transformations on a state space, used to classify particles.
+  status: asserted
+- id: qft.one_particle_state
+  label: One-particle state
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Single-particle state space object that carries the unitary Poincare representation in the Wigner classification story.
+  status: asserted
+- id: qft.spin_label
+  label: Spin label
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Internal particle label, including spin or helicity, that is read from the relevant little-group representation.
+  status: asserted
+- id: qm.commutator
+  label: Commutator
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Operator combination that measures noncommutativity and organizes many QM algebra statements.
+  status: asserted
+- id: qft.free_scalar_field
+  label: Free scalar field
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Free relativistic spin-0 field written as a scalar field with momentum-space mode expansion.
+  status: asserted
+- id: qft.free_dirac_field
+  label: Free Dirac field
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Free spin-1/2 field written in terms of Dirac spinor modes and particle/antiparticle operators.
+  status: asserted
+- id: qft.free_vector_field
+  label: Free vector field
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Free spin-1 field used for vector-boson kinematics at the field-theory level before interactions or gauge fixing.
+  status: asserted
+- id: qft.canonical_quantization
+  label: Canonical quantization
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Procedure that turns a classical field into an operator-valued theory by promoting canonical variables and their brackets.
+  status: asserted
+- id: qft.mode_expansion
+  label: Mode expansion
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Decomposition of a free field into positive- and negative-frequency momentum modes.
+  status: asserted
+- id: qft.creation_annihilation_operator
+  label: Creation and annihilation operator
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Operators that add or remove free-field quanta in the quantized mode expansion.
+  status: asserted
+- id: qft.equal_time_commutation_relations
+  label: Equal-time commutation relations
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Canonical commutator or anticommutator relations imposed at equal time for quantized fields.
+  status: asserted
+- id: qft.microcausality
+  label: Microcausality
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Locality condition that spacelike-separated field operators commute or anticommute.
+  status: asserted
+- id: qft.spin_statistics
+  label: Spin-statistics
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Relation linking integer or half-integer spin to bosonic or fermionic quantization.
+  status: asserted

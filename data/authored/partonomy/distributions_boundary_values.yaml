@@ -1,0 +1,16 @@
+# Canonical partonomy edges for the distributions-and-boundary-values batch.
+- parent: qft.distributional_boundary_values
+  child: qft.boundary_values.plus_minus_i0_limits
+  rationale: Plus-or-minus i0 limits are the notation-level branch of the distributional boundary-values hub.
+  status: asserted
+  confidence: 0.95
+- parent: qft.distributional_boundary_values
+  child: analysis.distributions.cauchy_principal_value
+  rationale: Principal value is one of the two indispensable local components of the boundary-value decomposition.
+  status: asserted
+  confidence: 0.94
+- parent: qft.distributional_boundary_values
+  child: analysis.distributions.dirac_delta_distribution
+  rationale: The Dirac delta distribution is the other indispensable local component of the boundary-value decomposition.
+  status: asserted
+  confidence: 0.94
