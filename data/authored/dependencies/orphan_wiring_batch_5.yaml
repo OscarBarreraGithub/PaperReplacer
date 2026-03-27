@@ -70,18 +70,6 @@
       source_ref: orphan_wiring_pass
       note: Relation chosen from the orphan technique summaries and nearby node summaries.
   status: asserted
-- from: technique.compactification_stability_test_for_wgc
-  to: technique.lattice_wgc_compactification_test
-  relation_type: requires_for_use
-  necessity: necessary
-  confidence: 0.80
-  rationale: The lattice-WGC test promotes the same compactification-consistency idea into a sharper criterion for acceptable WGC formulations.
-  failure_mode_if_absent: Without the compactification consistency test, the move to a lattice version of the WGC lacks its motivating stress test.
-  evidence:
-    - type: expert_claim
-      source_ref: orphan_wiring_pass
-      note: Relation chosen from the orphan technique summaries and nearby node summaries.
-  status: asserted
 - from: qft.weyl_spinor
   to: technique.left_handed_conjugate_representation_rewrite
   relation_type: requires_for_use
@@ -862,7 +850,7 @@
       source_ref: orphan_wiring_pass
       note: Relation chosen from the orphan technique summaries and nearby node summaries.
   status: asserted
-- from: technique.lattice_wgc_compactification_test
+- from: technique.compactification_stability_test_for_wgc
   to: technique.lattice_wgc_cutoff_argument
   relation_type: requires_for_use
   necessity: necessary

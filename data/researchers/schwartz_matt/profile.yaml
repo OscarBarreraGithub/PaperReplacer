@@ -1,0 +1,50 @@
+name: 'Matt D. Schwartz'
+inspire_id: 'M.D.Schwartz.1'
+total_papers: 101
+total_techniques: 275
+top_10_techniques:
+- node_id: technique.dynamical_threshold_enhancement
+  paper_count: 2
+  role: extended
+  sample_papers: ['1008.4355', '1206.6115']
+- node_id: technique.hard_s_matrix_construction
+  paper_count: 2
+  role: extended
+  sample_papers: ['1911.06821', '1906.03271']
+- node_id: technique.absorb_np_into_ckm_refit
+  paper_count: 1
+  role: introduced
+  sample_papers: ['0704.1482']
+- node_id: technique.adiabatic_approximation_extra_dim
+  paper_count: 1
+  role: introduced
+  sample_papers: ['hep-ph/0407260']
+- node_id: technique.ads5_logarithmic_running
+  paper_count: 1
+  role: introduced
+  sample_papers: ['hep-th/0108115']
+- node_id: technique.ads_qcd_pseudoscalar_sector
+  paper_count: 1
+  role: introduced
+  sample_papers: ['0705.0534']
+- node_id: technique.algebraic_letter_construction
+  paper_count: 1
+  role: introduced
+  sample_papers: ['2410.02424']
+- node_id: technique.alpha_positivity_constraints
+  paper_count: 1
+  role: introduced
+  sample_papers: ['2410.02424']
+- node_id: technique.amplitude_level_soft_subtraction
+  paper_count: 1
+  role: introduced
+  sample_papers: ['1502.05411']
+- node_id: technique.angular_dependent_hard_soft_interplay
+  paper_count: 1
+  role: introduced
+  sample_papers: ['0911.0681']
+primary_domains:
+- 'Phenomenology-HEP'
+- 'Theory-HEP'
+- 'Experiment-HEP'
+- 'Computing'

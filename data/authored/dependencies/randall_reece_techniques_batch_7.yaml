@@ -1162,18 +1162,6 @@
       source_ref: "randall_reece_techniques_batch_7"
       note: "Matched from prerequisite text 'Supersymmetric flavor physics' in the source batch."
   status: "asserted"
-- from: "sm.flavor_ckm_pmns_and_precision_observables"
-  to: "technique.spurion_flavor_breaking_in_etc"
-  relation_type: "requires_for_use"
-  necessity: "necessary"
-  confidence: 0.85
-  rationale: "The batch lists Flavor spurions as a prerequisite; the existing node Flavor, CKM/PMNS, and precision observables is the closest authored match for that ingredient and is needed to use this technique."
-  failure_mode_if_absent: "Cannot use this technique cleanly without the graph's Flavor, CKM/PMNS, and precision observables abstraction for Flavor spurions."
-  evidence:
-    - type: "expert_claim"
-      source_ref: "randall_reece_techniques_batch_7"
-      note: "Matched from prerequisite text 'Flavor spurions' in the source batch."
-  status: "asserted"
 - from: "sm.flavor_mixing"
   to: "technique.spurion_phase_counting"
   relation_type: "requires_for_derive"

@@ -142,12 +142,12 @@
   status: asserted
 
 - from: math.lie_algebra
-  to: technique.simple_root_commutator_algebra_construction
+  to: technique.algebra_construction_from_simple_root_commutators
   relation_type: requires_for_derive
   necessity: necessary
   confidence: 0.85
-  rationale: "The batch technique Build the algebra from simple-root commutators depends on jacobi_identity; the existing node Lie algebra is the authored-graph match that supplies that ingredient."
-  failure_mode_if_absent: "Cannot derive or justify Build the algebra from simple-root commutators cleanly because the prerequisite jacobi_identity is missing from the learner's background."
+  rationale: "The batch technique Algebra construction from simple-root commutators depends on jacobi_identity; the existing node Lie algebra is the authored-graph match that supplies that ingredient."
+  failure_mode_if_absent: "Cannot derive or justify Algebra construction from simple-root commutators cleanly because the prerequisite jacobi_identity is missing from the learner's background."
   evidence:
     - type: expert_claim
       source_ref: georgi_lie_techniques_batch_3_initial

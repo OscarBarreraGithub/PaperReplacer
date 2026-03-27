@@ -874,18 +874,6 @@
       source_ref: "orphan_wiring_pass"
       note: "Summary-to-summary orphan wiring match."
   status: "asserted"
-- from: "technique.black_hole_spectroscopy"
-  to: "technique.black_hole_spectroscopy_via_multimode_ringdown"
-  relation_type: "requires_for_use"
-  necessity: "necessary"
-  confidence: 0.80
-  rationale: "technique.black_hole_spectroscopy supplies the setup that technique.black_hole_spectroscopy_via_multimode_ringdown builds on."
-  failure_mode_if_absent: "Without technique.black_hole_spectroscopy, technique.black_hole_spectroscopy_via_multimode_ringdown lacks a required setup step and cannot be applied cleanly."
-  evidence:
-    - type: "expert_claim"
-      source_ref: "orphan_wiring_pass"
-      note: "Summary-to-summary orphan wiring match."
-  status: "asserted"
 - from: "technique.non_global_log_identification"
   to: "technique.bms_fixed_order_iteration"
   relation_type: "requires_for_use"

@@ -678,16 +678,6 @@
     - use
   summary: Fix the momentum routing or local counterterms so vector or unbroken gauge currents remain conserved and the anomaly sits in the axial or broken current.
   status: asserted
-- id: technique.vector_mass_matrix_from_vev
-  label: Derive the gauge-boson mass matrix from the scalar vev
-  knowledge_kind: method
-  granularity_level: intermediate
-  composite: false
-  mastery_modes_supported:
-    - recognize
-    - use
-  summary: Expand the covariant scalar kinetic term around the vacuum expectation value and read off the quadratic gauge-field mass matrix.
-  status: asserted
 - id: technique.vector_superfield_exponential_connection
   label: Vector-Superfield Exponential Connection
   knowledge_kind: method

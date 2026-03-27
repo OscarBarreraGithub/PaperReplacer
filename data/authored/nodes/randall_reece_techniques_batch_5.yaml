@@ -178,16 +178,6 @@
     - "use"
   summary: "Solve the coupled axion and massive dark-photon equations on a lattice with staggered leapfrog evolution while enforcing the Lorenz-gauge relation. Use when backreaction and rescattering invalidate linearized production estimates."
   status: "asserted"
-- id: "technique.lattice_wgc_compactification_test"
-  label: "Compactification as a consistency test for WGC variants"
-  knowledge_kind: "method"
-  granularity_level: "intermediate"
-  composite: false
-  mastery_modes_supported:
-    - "recognize"
-    - "use"
-  summary: "Promote toroidal compactification from a background operation to a stress test: a viable WGC formulation should remain true after reduction on a circle. This physical criterion motivates the lattice version of the conjecture."
-  status: "asserted"
 - id: "technique.lattice_wgc_cutoff_argument"
   label: "LWGC as a cutoff argument against global symmetry limits"
   knowledge_kind: "method"

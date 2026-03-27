@@ -329,16 +329,6 @@
   summary: Matching and profile-function procedure that combines Sudakov-shoulder, dijet, and fixed-order descriptions of heavy-jet-mass spectra.
   status: asserted
 
-- id: technique.shoulder_plus_dijet_matching
-  label: Dijet + Sudakov Shoulder Resummation Matching
-  knowledge_kind: method
-  granularity_level: intermediate
-  composite: false
-  mastery_modes_supported:
-    - recognize
-    - use
-  summary: Multi-region matching formula that combines fixed-order, dijet-resummed, and Sudakov-shoulder-resummed cross sections while subtracting overlaps.
-  status: asserted
 
 - id: technique.significance_improvement_characteristic
   label: Significance Improvement Characteristic (SIC) for discriminant evaluation

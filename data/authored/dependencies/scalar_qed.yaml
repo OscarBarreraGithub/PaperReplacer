@@ -164,21 +164,6 @@
       note: Batch notes keep the seagull branch as the distinctive structural output of scalar QED.
   status: asserted
   confidence: 0.97
-- from: qft.scalar_qed_lagrangian
-  to: qft.ward_takahashi_identity
-  relation_type: requires_for_use
-  necessity: helpful
-  audience_profile: hep_th_grad
-  subfield: qed_foundations
-  task_type: literature_reading
-  rationale: In scalar QED, Ward-Takahashi identities are read as symmetry constraints on the charged-scalar gauge interaction defined by the Lagrangian.
-  failure_mode_if_absent: Cannot place the identity as a statement about the actual scalar-gauge interaction branch under discussion.
-  evidence:
-    - type: expert_claim
-      source_ref: scalar_qed_batch_initial
-      note: Batch notes reuse the existing Ward-Takahashi node as the symmetry-check branch of scalar QED.
-  status: asserted
-  confidence: 0.88
 - from: qft.free_vector_field
   to: qft.scalar_compton_scattering
   relation_type: requires_for_use

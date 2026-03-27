@@ -293,16 +293,6 @@
   summary: Search procedure that learns the full simulated distribution and then optimizes over observable projections to maximize parameter sensitivity while outputting an ordinary analytic observable.
   status: asserted
 
-- id: technique.momentum_weighted_jet_charge
-  label: Momentum-weighted jet charge with tunable kappa
-  knowledge_kind: method
-  granularity_level: atomic
-  composite: false
-  mastery_modes_supported:
-    - recognize
-    - use
-  summary: Jet-charge observable that weights track charges by a tunable power of transverse momentum so the balance between soft sensitivity and robustness can be optimized.
-  status: asserted
 
 - id: technique.multi_event_shape_soft_function_probe
   label: Using multiple event shapes to probe the functional form of the soft function

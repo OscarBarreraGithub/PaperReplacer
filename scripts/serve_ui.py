@@ -16,6 +16,7 @@ from kg_core import (
     ALL_AUTHORED_BATCH_ID,
     BATCHES_DIR,
     expanded_slice,
+    extended_neighborhood_slice,
     intrinsic_vs_profile_adjusted,
     load_batch_contract,
     load_or_compile_bundle,
@@ -60,6 +61,15 @@ class GraphUIHandler(SimpleHTTPRequestHandler):
                 relation_type = _required(query, "relation_type")
                 bundle = load_or_compile_bundle(batch_id)
                 self.send_json(expanded_slice(bundle, target, relation_type))
+                return
+            if path == "/api/extended-neighborhood":
+                batch_id = _required(query, "batch")
+                target = _required(query, "target")
+                relation_type = _required(query, "relation_type")
+                bundle = load_or_compile_bundle(batch_id)
+                self.send_json(
+                    extended_neighborhood_slice(bundle, target, relation_type)
+                )
                 return
             if path == "/api/prereqs":
                 batch_id = _required(query, "batch")

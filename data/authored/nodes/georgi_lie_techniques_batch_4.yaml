@@ -248,16 +248,6 @@
     - use
   summary: Build composite state spaces |j,x> and define D1 tensor D2 so the product representation acts separately on each factor while its matrix elements factorize.
   status: asserted
-- id: technique.tensor_product_representation_rule
-  label: Tensor-product representation rule
-  knowledge_kind: method
-  granularity_level: intermediate
-  composite: false
-  mastery_modes_supported:
-    - recognize
-    - use
-  summary: Build composite representations on product spaces where each factor transforms independently, so the composite generators act as sums on the two factors.
-  status: asserted
 - id: technique.tensor_wavefunction_interpretation
   label: Treat tensors as SU(3) wave functions
   knowledge_kind: method

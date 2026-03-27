@@ -550,17 +550,17 @@
       source_ref: georgi_lie_techniques_batch_4_initial
       note: Batch prerequisite fragment dimension_formula_from_tensor_counting aligned with existing node technique.su_n_tensor_young_tableau_irreps.
   status: asserted
-- from: technique.tensor_product_representation_rule
+- from: technique.tensor_product_representation_construction
   to: technique.wigner_eckart_decomposition
   relation_type: requires_for_derive
   necessity: necessary
   confidence: 0.85
-  rationale: The batch lists tensor_product_representation_rule as an explicit prerequisite for Wigner-Eckart decomposition; the existing node Tensor-product representation rule is the authored-graph match that supplies that ingredient.
-  failure_mode_if_absent: Cannot derive or justify Wigner-Eckart decomposition cleanly because the prerequisite tensor_product_representation_rule is missing from the learner's background.
+  rationale: The batch lists the tensor-product representation rule as an explicit prerequisite for Wigner-Eckart decomposition; the canonical node Tensor-product representation construction is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot derive or justify Wigner-Eckart decomposition cleanly because the prerequisite tensor_product_representation_construction is missing from the learner's background.
   evidence:
     - type: expert_claim
       source_ref: georgi_lie_techniques_batch_4_initial
-      note: The batch prerequisite list explicitly names tensor_product_representation_rule.
+      note: The batch prerequisite list explicitly names the tensor-product representation rule, matched here to technique.tensor_product_representation_construction.
   status: asserted
 - from: technique.tensor_operator_basis_standardization
   to: technique.wigner_eckart_decomposition

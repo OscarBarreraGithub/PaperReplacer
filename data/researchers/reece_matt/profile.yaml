@@ -1,0 +1,50 @@
+name: 'Matt Reece'
+inspire_id: 'M.Reece.1'
+total_papers: 115
+total_techniques: 393
+top_10_techniques:
+- node_id: technique.partially_interacting_subcomponent_dm
+  paper_count: 2
+  role: extended
+  sample_papers: ['1303.1521', '1303.3271']
+- node_id: technique.activation_map_kinematic_interpretation
+  paper_count: 1
+  role: introduced
+  sample_papers: ['1804.09278']
+- node_id: technique.activation_maximization_gradient_ascent
+  paper_count: 1
+  role: introduced
+  sample_papers: ['1804.09278']
+- node_id: technique.adaptive_grid_reuse_for_decays
+  paper_count: 1
+  role: introduced
+  sample_papers: ['hep-ph/0703031']
+- node_id: technique.ads_cft_wgc_translation
+  paper_count: 1
+  role: introduced
+  sample_papers: ['1605.05311']
+- node_id: technique.all_mass_hierarchy_barr_zee_evaluation
+  paper_count: 1
+  role: introduced
+  sample_papers: ['2104.03267']
+- node_id: technique.all_order_initial_condition_expansion
+  paper_count: 1
+  role: introduced
+  sample_papers: ['2510.07371']
+- node_id: technique.analytic_stop_higgsino_branching_approximations
+  paper_count: 1
+  role: introduced
+  sample_papers: ['1512.05781']
+- node_id: technique.anomaly_computation_triad
+  paper_count: 1
+  role: introduced
+  sample_papers: ['2304.08512']
+- node_id: technique.anomaly_free_chiral_nb_extension
+  paper_count: 1
+  role: introduced
+  sample_papers: ['2212.03882']
+primary_domains:
+- 'Phenomenology-HEP'
+- 'Theory-HEP'
+- 'Experiment-HEP'
+- 'Astrophysics'

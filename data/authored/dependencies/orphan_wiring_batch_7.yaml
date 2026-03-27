@@ -1114,12 +1114,12 @@
       source_ref: orphan_wiring_pass
       note: "Both summaries organize jet information across changing radius scales."
   status: asserted
-- from: technique.momentum_weighted_jet_charge
+- from: technique.pt_weighted_jet_charge
   to: technique.radial_weighted_jet_charge
   relation_type: requires_for_use
   necessity: necessary
   confidence: 0.80
-  rationale: The radial-weighted observable is an extension of ordinary momentum-weighted jet charge with an additional radial factor.
+  rationale: The radial-weighted observable is an extension of ordinary pT-weighted jet charge with an additional radial factor.
   failure_mode_if_absent: The new observable cannot be recognized as a deformation of the standard jet-charge definition.
   evidence:
     - type: expert_claim
@@ -1523,7 +1523,7 @@
       note: "Summary explicitly starts from two simple roots joined by a single line."
   status: asserted
 - from: technique.simple_root_identification
-  to: technique.simple_root_commutator_algebra_construction
+  to: technique.algebra_construction_from_simple_root_commutators
   relation_type: requires_for_use
   necessity: necessary
   confidence: 0.80

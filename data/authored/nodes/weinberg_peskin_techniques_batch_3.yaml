@@ -848,16 +848,6 @@
     - use
   summary: Saturate axial-current matrix elements with Goldstone-boson poles to derive current-algebra relations such as the pion mass relation and the Goldberger-Treiman relation.
   status: asserted
-- id: technique.pion_pole_matching_goldberger_treiman
-  label: Pion-Pole Matching and Goldberger-Treiman
-  knowledge_kind: method
-  granularity_level: intermediate
-  composite: false
-  mastery_modes_supported:
-    - recognize
-    - use
-  summary: Matches the pion pole in the nucleon axial current to current conservation to derive the Goldberger-Treiman relation and soft-pion couplings.
-  status: asserted
 - id: technique.plus_prescription_distributions
   label: Plus-prescription distributions
   knowledge_kind: method

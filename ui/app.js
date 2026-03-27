@@ -249,10 +249,14 @@ function renderNodeDetails(node) {
 
 async function refreshGraph(zoomAfter = true) {
   if (!state.bundle) return;
-  const data =
-    state.viewMode === "focus" && state.targetNodeId
-      ? await buildFocusedGraph()
-      : buildFullGraph();
+  let data;
+  if (state.viewMode === "focus" && state.targetNodeId) {
+    data = await buildFocusedGraph();
+  } else if (state.viewMode === "extended" && state.targetNodeId) {
+    data = await buildExtendedGraph();
+  } else {
+    data = buildFullGraph();
+  }
 
   graph.graphData(data);
   setStatus(
@@ -264,8 +268,16 @@ async function refreshGraph(zoomAfter = true) {
 }
 
 async function buildFocusedGraph() {
+  return buildNeighborhoodGraph("/api/neighborhood");
+}
+
+async function buildExtendedGraph() {
+  return buildNeighborhoodGraph("/api/extended-neighborhood");
+}
+
+async function buildNeighborhoodGraph(endpoint) {
   const slice = await fetchJson(
-    `/api/neighborhood?batch=${encodeURIComponent(state.batchId)}&target=${encodeURIComponent(
+    `${endpoint}?batch=${encodeURIComponent(state.batchId)}&target=${encodeURIComponent(
       state.targetNodeId
     )}&relation_type=${encodeURIComponent(activeRelationType())}`
   );

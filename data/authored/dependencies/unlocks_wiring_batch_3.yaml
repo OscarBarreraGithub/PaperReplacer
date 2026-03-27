@@ -89,19 +89,6 @@
       note: "Matched a downstream technique whose summary depends on the source technique's capability."
   status: asserted
 
-- from: technique.momentum_weighted_jet_charge
-  to: technique.pt_weighted_jet_charge
-  relation_type: requires_for_use
-  necessity: typical
-  confidence: 0.75
-  rationale: "Momentum-weighted jet charge with tunable kappa is needed for pT-Weighted Jet Charge Observable because it provides the tunable momentum-weighted jet-charge construction specialized by the pT-weighted observable."
-  failure_mode_if_absent: "Without Momentum-weighted jet charge with tunable kappa, pT-Weighted Jet Charge Observable loses the tunable momentum-weighted jet-charge construction specialized by the pT-weighted observable and the downstream method has to assume that step instead of computing it cleanly."
-  evidence:
-    - type: expert_claim
-      source_ref: unlocks_wiring_pass
-      note: "Matched a downstream technique whose summary depends on the source technique's capability."
-  status: asserted
-
 - from: technique.ngl_elimination_via_grooming
   to: technique.soft_drop_ngl_free_factorization
   relation_type: requires_for_use
@@ -298,12 +285,12 @@
   status: asserted
 
 - from: technique.sequential_higgsing_running
-  to: technique.ads5_logarithmic_running
+  to: technique.holographic_regularization_running
   relation_type: requires_for_use
   necessity: typical
   confidence: 0.75
-  rationale: "Recover logarithmic running by sequential Higgsing is needed for Logarithmic gauge coupling running in AdS5 because it provides the staged integrating-out argument that produces logarithmic warped-space running."
-  failure_mode_if_absent: "Without Recover logarithmic running by sequential Higgsing, Logarithmic gauge coupling running in AdS5 loses the staged integrating-out argument that produces logarithmic warped-space running and the downstream method has to assume that step instead of computing it cleanly."
+  rationale: "Recover logarithmic running by sequential Higgsing is needed for Holographic Regularization for Bulk Gauge Coupling Running in Warped Space because it provides the staged integrating-out argument that produces logarithmic warped-space running."
+  failure_mode_if_absent: "Without Recover logarithmic running by sequential Higgsing, Holographic Regularization for Bulk Gauge Coupling Running in Warped Space loses the staged integrating-out argument that produces logarithmic warped-space running and the downstream method has to assume that step instead of computing it cleanly."
   evidence:
     - type: expert_claim
       source_ref: unlocks_wiring_pass

@@ -628,16 +628,6 @@
     - "use"
   summary: "Measure multiple quasi-normal modes in the ringdown and check whether the frequencies and damping times are consistent with one Kerr mass and spin. Use it when ringdown SNR is high enough to test the no-hair prediction."
   status: "asserted"
-- id: "technique.black_hole_spectroscopy_via_multimode_ringdown"
-  label: "Black hole spectroscopy from multiple ringdown modes"
-  knowledge_kind: "method"
-  granularity_level: "intermediate"
-  composite: false
-  mastery_modes_supported:
-    - "recognize"
-    - "use"
-  summary: "Measure several quasinormal-mode frequencies and damping times from a single high-SNR ringdown and compare them against the Kerr consistency relations. Use when testing no-hair and beyond-GR deviations in the merger remnant."
-  status: "asserted"
 - id: "technique.block_mass_matrix_theta_expansion"
   label: "Block-Mass-Matrix Expansion for Delta Theta"
   knowledge_kind: "method"

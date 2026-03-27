@@ -707,12 +707,12 @@
       note: Prerequisite identified during technique extraction.
   status: asserted
 - from: qft.covariant_derivative
-  to: technique.vector_mass_matrix_from_vev
+  to: technique.gauge_boson_mass_matrix_from_vev
   relation_type: requires_for_use
   necessity: necessary
   confidence: 0.85
-  rationale: The batch prerequisite covariant derivatives aligns with existing node qft.covariant_derivative, so it is a reasonable upstream prerequisite for Derive the gauge-boson mass matrix from the scalar vev.
-  failure_mode_if_absent: Cannot apply Derive the gauge-boson mass matrix from the scalar vev cleanly because the prerequisite covariant derivatives is missing from the learner's background.
+  rationale: The batch prerequisite covariant derivatives aligns with existing node qft.covariant_derivative, so it is a reasonable upstream prerequisite for Gauge-boson mass matrix from a vacuum expectation value.
+  failure_mode_if_absent: Cannot apply Gauge-boson mass matrix from a vacuum expectation value cleanly because the prerequisite covariant derivatives is missing from the learner's background.
   evidence:
     - type: expert_claim
       source_ref: technique_extraction_initial

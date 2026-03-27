@@ -1,0 +1,50 @@
+name: 'Lisa Randall'
+inspire_id: 'Lisa.Randall.1'
+total_papers: 204
+total_techniques: 510
+top_10_techniques:
+- node_id: technique.partially_interacting_subcomponent_dm
+  paper_count: 2
+  role: extended
+  sample_papers: ['1303.1521', '1303.3271']
+- node_id: technique.adiabatic_entropy_rotation
+  paper_count: 1
+  role: introduced
+  sample_papers: ['2512.04177']
+- node_id: technique.adjoint_higgsing_scale_matching_bootstrap
+  paper_count: 1
+  role: introduced
+  sample_papers: ['hep-th/9801108']
+- node_id: technique.adjoint_interpolation_between_models
+  paper_count: 1
+  role: introduced
+  sample_papers: ['hep-ph/9706474']
+- node_id: technique.ads5_logarithmic_running
+  paper_count: 1
+  role: introduced
+  sample_papers: ['hep-th/0108115']
+- node_id: technique.almost_zero_mode_localization
+  paper_count: 1
+  role: introduced
+  sample_papers: ['hep-th/0011156']
+- node_id: technique.alpha_beta_parameterization_of_gw_signal
+  paper_count: 1
+  role: introduced
+  sample_papers: ['hep-ph/0607158']
+- node_id: technique.alpha_delta_phi_cut_strategy
+  paper_count: 1
+  role: introduced
+  sample_papers: ['0806.1049']
+- node_id: technique.analytic_bcft_black_hole_dictionary
+  paper_count: 1
+  role: introduced
+  sample_papers: ['2209.02074']
+- node_id: technique.analytic_continuation_superspace_duality_map
+  paper_count: 1
+  role: introduced
+  sample_papers: ['1201.1293']
+primary_domains:
+- 'Phenomenology-HEP'
+- 'Theory-HEP'
+- 'Astrophysics'
+- 'Gravitation and Cosmology'

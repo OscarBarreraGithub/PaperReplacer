@@ -45,16 +45,6 @@
   summary: Method that applies the quantum-mechanical adiabatic approximation to position-dependent bulk-mass matrices so each fermion zero mode tracks a local eigenvector, yielding analytic localized profiles with controlled flavor-space rotation.
   status: asserted
 
-- id: technique.ads5_logarithmic_running
-  label: Logarithmic gauge coupling running in AdS5
-  knowledge_kind: method
-  granularity_level: intermediate
-  composite: false
-  mastery_modes_supported:
-    - recognize
-    - use
-  summary: Method that computes 5D gauge self-energies in warped AdS with position-space propagators and a position-dependent cutoff, showing that couplings run logarithmically rather than with naive power laws and preserving high-scale unification.
-  status: asserted
 
 - id: technique.ads_qcd_pseudoscalar_sector
   label: AdS/QCD modeling of the pseudoscalar meson sector

@@ -970,18 +970,6 @@
       source_ref: orphan_wiring_pass
       note: "Closest existing prerequisite match selected during orphan wiring."
   status: asserted
-- from: technique.pion_pole_dominance_matching
-  to: technique.pion_pole_matching_goldberger_treiman
-  relation_type: requires_for_use
-  necessity: necessary
-  confidence: 0.80
-  rationale: "Pion-pole dominance matching is a direct methodological prerequisite for Pion-Pole Matching and Goldberger-Treiman, so wiring it downstream preserves the intermediate construction that the later technique assumes."
-  failure_mode_if_absent: "Without Pion-pole dominance matching, Pion-Pole Matching and Goldberger-Treiman loses the intermediate step it is applying and reads as an unmotivated jump in the graph."
-  evidence:
-    - type: expert_claim
-      source_ref: orphan_wiring_pass
-      note: "Downstream technique appears to build directly on this newly wired method."
-  status: asserted
 - from: complex_analysis.conformal_map
   to: technique.poincare_disk_psl2r_symmetry
   relation_type: requires_for_use
@@ -1217,18 +1205,6 @@
   confidence: 0.80
   rationale: "Projection to observational surface probability density is the closest existing graph prerequisite for Morphology from projection-correlation proxies, because the downstream method is formulated in that conceptual or technical language."
   failure_mode_if_absent: "Without Projection to observational surface probability density, Morphology from projection-correlation proxies loses the background that makes its central step intelligible in the graph."
-  evidence:
-    - type: expert_claim
-      source_ref: orphan_wiring_pass
-      note: "Closest existing prerequisite match selected during orphan wiring."
-  status: asserted
-- from: technique.character_orthogonality_and_projection_operators
-  to: technique.projection_operators_from_characters
-  relation_type: requires_for_use
-  necessity: necessary
-  confidence: 0.80
-  rationale: "Character orthogonality and projection operators is the closest existing graph prerequisite for Projectors from characters, because the downstream method is formulated in that conceptual or technical language."
-  failure_mode_if_absent: "Without Character orthogonality and projection operators, Projectors from characters loses the background that makes its central step intelligible in the graph."
   evidence:
     - type: expert_claim
       source_ref: orphan_wiring_pass

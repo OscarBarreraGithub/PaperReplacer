@@ -353,7 +353,7 @@
   status: asserted
 
 - from: qcd.parton_distribution_function
-  to: technique.momentum_weighted_jet_charge
+  to: technique.pt_weighted_jet_charge
   relation_type: requires_for_use
   necessity: necessary
   confidence: 0.85
@@ -362,7 +362,7 @@
   evidence:
     - type: expert_claim
       source_ref: schwartz_techniques_batch_4
-      note: PDF flavor fractions are an explicit prerequisite for using momentum-weighted jet charge as a flavor-sensitive probe.
+      note: PDF flavor fractions are an explicit prerequisite for using pT-weighted jet charge as a flavor-sensitive probe.
   status: asserted
 
 - from: qft.thrust

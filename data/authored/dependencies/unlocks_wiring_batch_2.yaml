@@ -1822,18 +1822,6 @@
       source_ref: unlocks_wiring_pass
       note: Laser cooling and trapping for molecular CPV searches unlocks Coherence-amplification-count-rate figure of merit.
   status: asserted
-- from: technique.lattice_wgc_compactification_test
-  to: technique.lattice_wgc_cutoff_argument
-  relation_type: requires_for_use
-  necessity: typical
-  confidence: 0.75
-  rationale: The cutoff argument uses the lattice version of the WGC whose motivation in this part of the graph comes from compactification consistency.
-  failure_mode_if_absent: Without the compactification test, the jump from ordinary WGC reasoning to a full lattice statement is much less justified.
-  evidence:
-    - type: expert_claim
-      source_ref: unlocks_wiring_pass
-      note: Compactification as a consistency test for WGC variants unlocks LWGC as a cutoff argument against global symmetry limits.
-  status: asserted
 - from: technique.line_of_sight_projection_with_detection_function
   to: technique.disk_geometry_signal_morphology
   relation_type: requires_for_use

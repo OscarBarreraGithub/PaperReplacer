@@ -382,18 +382,6 @@
       source_ref: unlocks_wiring_pass
       note: "Casimir computation via k_D rules was matched to Gell-Mann-Okubo mass formula from the technique summary."
   status: asserted
-- from: technique.character_orthogonality_and_projection_operators
-  to: technique.projection_operators_from_characters
-  relation_type: requires_for_use
-  necessity: typical
-  confidence: 0.75
-  rationale: "Character orthogonality and projection operators unlocks Projectors from characters because it provides the needed machinery: Use orthogonality of characters to decompose reducible representations and build explicit projection operators onto irreducible subspaces; this is the core step the downstream node relies on in typical use."
-  failure_mode_if_absent: "Without Character orthogonality and projection operators, the specific reduction, construction, or diagnostic step behind Projectors from characters is missing, so the downstream calculation or interpretation remains uncontrolled."
-  evidence:
-    - type: expert_claim
-      source_ref: unlocks_wiring_pass
-      note: "Character orthogonality and projection operators was matched to Projectors from characters from the technique summary."
-  status: asserted
 - from: technique.character_table_construction
   to: technique.character_orthogonality_and_projection_operators
   relation_type: requires_for_use
@@ -1234,18 +1222,6 @@
       source_ref: unlocks_wiring_pass
       note: "Projection-operator decomposition of even-dimensional bilinears was matched to Rank-by-rank spinor tensor-product decomposition from the technique summary."
   status: asserted
-- from: technique.projection_operators_from_characters
-  to: technique.group_projection_operators
-  relation_type: requires_for_use
-  necessity: typical
-  confidence: 0.75
-  rationale: "Projectors from characters unlocks Finite-group projection operators because it provides the needed machinery: Build P_a=(n_a/|G|) sum_g chi_a(g)^* D(g) to project directly onto the subspace transforming as irrep a, even in the original basis; this is the core step the downstream node relies on in typical use."
-  failure_mode_if_absent: "Without Projectors from characters, the specific reduction, construction, or diagnostic step behind Finite-group projection operators is missing, so the downstream calculation or interpretation remains uncontrolled."
-  evidence:
-    - type: expert_claim
-      source_ref: unlocks_wiring_pass
-      note: "Projectors from characters was matched to Finite-group projection operators from the technique summary."
-  status: asserted
 - from: technique.proton_decay_from_quark_lepton_unification
   to: technique.grand_unification_search_criteria
   relation_type: requires_for_use
@@ -1437,18 +1413,6 @@
     - type: expert_claim
       source_ref: unlocks_wiring_pass
       note: "Schur-lemma intertwiner test was matched to Schur-lemma reality intertwiner test from the technique summary."
-  status: asserted
-- from: technique.simple_root_commutator_algebra_construction
-  to: technique.construct_lie_algebra_from_simple_roots
-  relation_type: requires_for_use
-  necessity: typical
-  confidence: 0.75
-  rationale: "Build the algebra from simple-root commutators unlocks Construct a Lie algebra from its simple roots because it provides the needed machinery: Construct non-simple root generators as normalized nested commutators of simple-root generators, fix normalizations from SU(2) raising-operator action, and derive the remaining commutators with repeated use of the Jacobi identity; this is the core step the downstream node relies on in typical use."
-  failure_mode_if_absent: "Without Build the algebra from simple-root commutators, the specific reduction, construction, or diagnostic step behind Construct a Lie algebra from its simple roots is missing, so the downstream calculation or interpretation remains uncontrolled."
-  evidence:
-    - type: expert_claim
-      source_ref: unlocks_wiring_pass
-      note: "Build the algebra from simple-root commutators was matched to Construct a Lie algebra from its simple roots from the technique summary."
   status: asserted
 - from: technique.simple_root_identification
   to: technique.regular_subalgebra_by_dynkin_node_deletion
@@ -2026,17 +1990,17 @@
       source_ref: unlocks_wiring_pass
       note: "Tensor-product representation construction was matched to Use tensor-product symmetry with Bose/Fermi statistics from the technique summary."
   status: asserted
-- from: technique.tensor_product_representation_rule
+- from: technique.tensor_product_representation_construction
   to: technique.wigner_eckart_decomposition
   relation_type: requires_for_use
   necessity: typical
   confidence: 0.75
-  rationale: "Tensor-product representation rule unlocks Wigner-Eckart decomposition because it provides the needed machinery: Build composite representations on product spaces where each factor transforms independently, so the composite generators act as sums on the two factors; this is the core step the downstream node relies on in typical use."
-  failure_mode_if_absent: "Without Tensor-product representation rule, the specific reduction, construction, or diagnostic step behind Wigner-Eckart decomposition is missing, so the downstream calculation or interpretation remains uncontrolled."
+  rationale: "Tensor-product representation construction unlocks Wigner-Eckart decomposition because it provides the needed machinery: Build composite representations on product spaces where each factor transforms independently, so the composite generators act as sums on the two factors; this is the core step the downstream node relies on in typical use."
+  failure_mode_if_absent: "Without Tensor-product representation construction, the specific reduction, construction, or diagnostic step behind Wigner-Eckart decomposition is missing, so the downstream calculation or interpretation remains uncontrolled."
   evidence:
     - type: expert_claim
       source_ref: unlocks_wiring_pass
-      note: "Tensor-product representation rule was matched to Wigner-Eckart decomposition from the technique summary."
+      note: "The tensor-product representation rule was matched to the canonical Tensor-product representation construction node for Wigner-Eckart decomposition."
   status: asserted
 - from: technique.tensor_wavefunction_interpretation
   to: technique.symmetric_traceless_tensor_realization
@@ -3346,30 +3310,6 @@
       source_ref: unlocks_wiring_pass
       note: "Black-Hole Extremality and Decay Test was matched to Sublattice Weak Gravity Conjecture from the technique summary."
   status: asserted
-- from: technique.black_hole_spectroscopy
-  to: technique.black_hole_spectroscopy_via_multimode_ringdown
-  relation_type: requires_for_use
-  necessity: typical
-  confidence: 0.75
-  rationale: "Black-hole spectroscopy unlocks Black hole spectroscopy from multiple ringdown modes because it provides the needed machinery: Measure multiple quasi-normal modes in the ringdown and check whether the frequencies and damping times are consistent with one Kerr mass and spin; this is the core step the downstream node relies on in typical use."
-  failure_mode_if_absent: "Without Black-hole spectroscopy, the specific reduction, construction, or diagnostic step behind Black hole spectroscopy from multiple ringdown modes is missing, so the downstream calculation or interpretation remains uncontrolled."
-  evidence:
-    - type: expert_claim
-      source_ref: unlocks_wiring_pass
-      note: "Black-hole spectroscopy was matched to Black hole spectroscopy from multiple ringdown modes from the technique summary."
-  status: asserted
-- from: technique.black_hole_spectroscopy_via_multimode_ringdown
-  to: technique.black_hole_spectroscopy
-  relation_type: requires_for_use
-  necessity: typical
-  confidence: 0.75
-  rationale: "Black hole spectroscopy from multiple ringdown modes unlocks Black-hole spectroscopy because it provides the needed machinery: Measure several quasinormal-mode frequencies and damping times from a single high-SNR ringdown and compare them against the Kerr consistency relations; this is the core step the downstream node relies on in typical use."
-  failure_mode_if_absent: "Without Black hole spectroscopy from multiple ringdown modes, the specific reduction, construction, or diagnostic step behind Black-hole spectroscopy is missing, so the downstream calculation or interpretation remains uncontrolled."
-  evidence:
-    - type: expert_claim
-      source_ref: unlocks_wiring_pass
-      note: "Black hole spectroscopy from multiple ringdown modes was matched to Black-hole spectroscopy from the technique summary."
-  status: asserted
 - from: technique.block_mass_matrix_theta_expansion
   to: technique.kk_tower_theta_bar_zero
   relation_type: requires_for_use
@@ -3789,18 +3729,6 @@
     - type: expert_claim
       source_ref: unlocks_wiring_pass
       note: "Canonical quantization with mixed KK bases was matched to Canonical quantization from the technique summary."
-  status: asserted
-- from: technique.causal_diamond_holographic_image_map
-  to: technique.boundary_partition_of_bulk_holography
-  relation_type: requires_for_use
-  necessity: typical
-  confidence: 0.75
-  rationale: "Track holographic images with causal diamonds unlocks Partition the bulk between multiple boundary components because it provides the needed machinery: Choose the smallest causal diamond on the brane that can probe a bulk event and identify the CFT excitation on the edge of that diamond; this is the core step the downstream node relies on in typical use."
-  failure_mode_if_absent: "Without Track holographic images with causal diamonds, the specific reduction, construction, or diagnostic step behind Partition the bulk between multiple boundary components is missing, so the downstream calculation or interpretation remains uncontrolled."
-  evidence:
-    - type: expert_claim
-      source_ref: unlocks_wiring_pass
-      note: "Track holographic images with causal diamonds was matched to Partition the bulk between multiple boundary components from the technique summary."
   status: asserted
 - from: technique.causal_scaling_for_self_intersecting_branes
   to: technique.intersection_counting_rule_for_brane_annihilation
@@ -4233,18 +4161,6 @@
     - type: expert_claim
       source_ref: unlocks_wiring_pass
       note: "Compactification by Nucleation of Brane-Like Geometries was matched to False vacuum decay from the technique summary."
-  status: asserted
-- from: technique.compactification_stability_test_for_wgc
-  to: technique.lattice_wgc_compactification_test
-  relation_type: requires_for_use
-  necessity: typical
-  confidence: 0.75
-  rationale: "Compactification stability as a test for WGC variants unlocks Compactification as a consistency test for WGC variants because it provides the needed machinery: Demand that the conjecture survive toroidal reduction, Wilson lines, and related operations that every consistent UV theory should admit; this is the core step the downstream node relies on in typical use."
-  failure_mode_if_absent: "Without Compactification stability as a test for WGC variants, the specific reduction, construction, or diagnostic step behind Compactification as a consistency test for WGC variants is missing, so the downstream calculation or interpretation remains uncontrolled."
-  evidence:
-    - type: expert_claim
-      source_ref: unlocks_wiring_pass
-      note: "Compactification stability as a test for WGC variants was matched to Compactification as a consistency test for WGC variants from the technique summary."
   status: asserted
 - from: technique.compactification_triggered_inflation
   to: cosmology.inflation

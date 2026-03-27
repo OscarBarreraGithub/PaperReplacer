@@ -1222,44 +1222,6 @@
       note: Batch 6 lists fixed-order matching at NLO among the prerequisites for Matching Sudakov Shoulder and Dijet Resummations.
   status: asserted
 
-- from: eft.soft_collinear_effective_theory
-  to: technique.shoulder_plus_dijet_matching
-  relation_type: requires_for_use
-  necessity: necessary
-  confidence: 0.85
-  rationale: Soft-collinear effective theory is a listed prerequisite for Dijet + Sudakov Shoulder Resummation Matching; it is needed to provide the factorized event-shape description in the dijet limit.
-  failure_mode_if_absent: Cannot provide the factorized event-shape description in the dijet limit without Soft-collinear effective theory.
-  evidence:
-    - type: expert_claim
-      source_ref: schwartz_techniques_batch_6
-      note: Batch 6 lists SCET factorization for event shapes among the prerequisites for Dijet + Sudakov Shoulder Resummation Matching.
-  status: asserted
-
-- from: eft.large_logarithm_resummation
-  to: technique.shoulder_plus_dijet_matching
-  relation_type: requires_for_use
-  necessity: necessary
-  confidence: 0.85
-  rationale: Large-logarithm resummation is a listed prerequisite for Dijet + Sudakov Shoulder Resummation Matching; it is needed to supply the logarithmic structure of the shoulder region and its subtraction terms.
-  failure_mode_if_absent: Cannot supply the logarithmic structure of the shoulder region and its subtraction terms without Large-logarithm resummation.
-  evidence:
-    - type: expert_claim
-      source_ref: schwartz_techniques_batch_6
-      note: Batch 6 lists Sudakov shoulder resummation among the prerequisites for Dijet + Sudakov Shoulder Resummation Matching.
-  status: asserted
-
-- from: qft.renormalized_perturbation_theory
-  to: technique.shoulder_plus_dijet_matching
-  relation_type: requires_for_use
-  necessity: necessary
-  confidence: 0.85
-  rationale: Renormalized perturbation theory is a listed prerequisite for Dijet + Sudakov Shoulder Resummation Matching; it is needed to provide the fixed-order baseline whose overlaps with the resummed pieces are subtracted.
-  failure_mode_if_absent: Cannot provide the fixed-order baseline whose overlaps with the resummed pieces are subtracted without Renormalized perturbation theory.
-  evidence:
-    - type: expert_claim
-      source_ref: schwartz_techniques_batch_6
-      note: Batch 6 lists fixed-order perturbative QCD at O(αs^3) among the prerequisites for Dijet + Sudakov Shoulder Resummation Matching.
-  status: asserted
 
 - from: eft.effective_field_theory
   to: technique.simplified_model_framework

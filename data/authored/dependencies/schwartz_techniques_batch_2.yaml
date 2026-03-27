@@ -806,19 +806,6 @@
       note: Batch 2 lists effective-field-theory construction as an explicit prerequisite.
   status: asserted
 
-- from: qft.anomalous_dimension
-  to: technique.factorization_to_scet_derivation
-  relation_type: requires_for_use
-  necessity: necessary
-  confidence: 0.85
-  rationale: The SCET side of the argument is completed by assigning anomalous dimensions that resum the large logarithms.
-  failure_mode_if_absent: Cannot explain how the derived EFT acquires its resummation capability.
-  evidence:
-    - type: expert_claim
-      source_ref: schwartz_techniques_batch_2_initial
-      note: Batch 2 lists anomalous dimensions for resummation as an explicit prerequisite.
-  status: asserted
-
 # ── Fierz-Pauli no-go theorem ────────────────────────────────────────────────
 
 - from: qft.partial_wave_unitarity_bound

@@ -82,18 +82,6 @@
       source_ref: orphan_wiring_pass
       note: 'Complete reducibility of finite-group representations provides the guarantee that the reducible representation can be split into irreducible pieces before projecting.'
   status: asserted
-- from: technique.character_orthogonality_and_projection_operators
-  to: technique.projection_operators_from_characters
-  relation_type: requires_for_use
-  necessity: necessary
-  confidence: 0.80
-  rationale: 'Character orthogonality and projection operators provides the orthogonality formula behind explicit character-based projectors, which Projectors from characters depends on.'
-  failure_mode_if_absent: 'Without Character orthogonality and projection operators, Projectors from characters lacks the orthogonality formula behind explicit character-based projectors and cannot be applied cleanly.'
-  evidence:
-    - type: expert_claim
-      source_ref: orphan_wiring_pass
-      note: 'Character orthogonality and projection operators provides the orthogonality formula behind explicit character-based projectors.'
-  status: asserted
 - from: technique.character_table_construction
   to: technique.character_theory_for_gukov_witten_defects
   relation_type: requires_for_use

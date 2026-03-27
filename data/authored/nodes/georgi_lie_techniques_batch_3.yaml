@@ -20,16 +20,6 @@
   summary: "Insert the chiral projectors P_plus and P_minus around arbitrary gamma products to separate same-chirality and opposite-chirality bilinears in SO(2n). This immediately tells you whether even or odd form ranks appear in each spinor product."
   status: asserted
 
-- id: technique.projection_operators_from_characters
-  label: "Projectors from characters"
-  knowledge_kind: method
-  granularity_level: atomic
-  composite: false
-  mastery_modes_supported:
-    - recognize
-    - use
-  summary: "Build P_a=(n_a/|G|) sum_g chi_a(g)^* D(g) to project directly onto the subspace transforming as irrep a, even in the original basis."
-  status: asserted
 
 - id: technique.proton_decay_from_quark_lepton_unification
   label: "Proton decay from quark-lepton unification"
@@ -207,16 +197,6 @@
   summary: "Use Schur's lemma to show that intertwiners between inequivalent irreducible representations vanish and that operators commuting with one irrep are proportional to the identity."
   status: asserted
 
-- id: technique.simple_root_commutator_algebra_construction
-  label: "Build the algebra from simple-root commutators"
-  knowledge_kind: method
-  granularity_level: intermediate
-  composite: false
-  mastery_modes_supported:
-    - recognize
-    - use
-  summary: "Construct non-simple root generators as normalized nested commutators of simple-root generators, fix normalizations from SU(2) raising-operator action, and derive the remaining commutators with repeated use of the Jacobi identity."
-  status: asserted
 
 - id: technique.simple_root_identification
   label: "Simple-root identification"

@@ -211,6 +211,8 @@ def _validate_type(value: Any, expected_type: str) -> bool:
         return isinstance(value, dict)
     if expected_type == "array":
         return isinstance(value, list)
+    if expected_type == "integer":
+        return isinstance(value, int) and not isinstance(value, bool)
     if expected_type == "string":
         return isinstance(value, str)
     if expected_type == "boolean":
@@ -223,6 +225,18 @@ def _validate_type(value: Any, expected_type: str) -> bool:
 def validate_value_against_schema(
     value: Any, schema: dict[str, Any], path: str
 ) -> list[str]:
+    if "oneOf" in schema:
+        branch_errors = [
+            validate_value_against_schema(value, option, path) for option in schema["oneOf"]
+        ]
+        matches = [errors for errors in branch_errors if not errors]
+        if len(matches) == 1:
+            return []
+        if len(matches) > 1:
+            return [f"{path}: matched multiple oneOf branches"]
+        best = min(branch_errors, key=len, default=[])
+        return best or [f"{path}: did not match any oneOf branch"]
+
     errors: list[str] = []
     expected_type = schema.get("type")
     if expected_type and not _validate_type(value, expected_type):
@@ -239,6 +253,8 @@ def validate_value_against_schema(
     if isinstance(value, list):
         if "minItems" in schema and len(value) < schema["minItems"]:
             errors.append(f"{path}: fewer than {schema['minItems']} items")
+        if "maxItems" in schema and len(value) > schema["maxItems"]:
+            errors.append(f"{path}: more than {schema['maxItems']} items")
         if schema.get("uniqueItems") and len(value) != len(
             {json.dumps(item, sort_keys=True) for item in value}
         ):
@@ -360,6 +376,25 @@ def _dedupe_records(
     return _sorted_records(list(deduped.values()), sort_keys)
 
 
+def _overlay_sort_tuple(overlay: dict[str, Any]) -> tuple[Any, ...]:
+    overlay_type = overlay.get("overlay_type", "")
+    if overlay_type == "researcher_footprint":
+        return (
+            overlay_type,
+            overlay.get("researcher", ""),
+            overlay.get("node_id", ""),
+        )
+    return (
+        overlay_type,
+        overlay.get("target_topic", ""),
+        overlay.get("presumed_node", ""),
+    )
+
+
+def _sorted_overlays(overlays: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    return sorted(overlays, key=_overlay_sort_tuple)
+
+
 def load_all_authored_records() -> BatchRecords:
     node_batches = _load_authored_payload("nodes")
     dependency_batches = _load_authored_payload("dependencies")
@@ -369,7 +404,7 @@ def load_all_authored_records() -> BatchRecords:
     nodes, merge_warnings = _merge_nodes_for_global_bundle(node_batches)
     dependencies = _dedupe_records(dependency_batches, ["relation_type", "from", "to"])
     partonomy = _dedupe_records(partonomy_batches, ["parent", "child"])
-    overlays = _dedupe_records(overlay_batches, ["target_topic", "presumed_node"])
+    overlays = _sorted_overlays(_dedupe_records(overlay_batches, []))
 
     allowed_relations = sorted(
         {
@@ -551,12 +586,28 @@ def validate_batch_records(records: BatchRecords) -> dict[str, Any]:
         errors.append(f"part_of cycle detected: {' -> '.join(cycle)}")
 
     for overlay in records.overlays:
-        target = overlay.get("target_topic")
-        presumed = overlay.get("presumed_node")
-        if target not in node_id_set:
-            errors.append(f"overlay references missing target topic: {target}")
-        if presumed not in node_id_set:
-            errors.append(f"overlay references missing presumed node: {presumed}")
+        overlay_type = overlay.get("overlay_type")
+        if overlay_type == "assumed_background":
+            target = overlay.get("target_topic")
+            presumed = overlay.get("presumed_node")
+            if target not in node_id_set:
+                errors.append(f"overlay references missing target topic: {target}")
+            if presumed not in node_id_set:
+                errors.append(f"overlay references missing presumed node: {presumed}")
+        elif overlay_type == "researcher_footprint":
+            node_id = overlay.get("node_id")
+            if node_id not in node_id_set:
+                errors.append(f"overlay references missing node: {node_id}")
+            elif not str(node_id).startswith("technique."):
+                errors.append(f"researcher_footprint overlay must target technique node: {node_id}")
+            paper_count = overlay.get("paper_count")
+            sample_papers = overlay.get("sample_papers", [])
+            if isinstance(paper_count, int) and isinstance(sample_papers, list):
+                if len(sample_papers) > paper_count:
+                    errors.append(
+                        "researcher_footprint overlay has more sample papers than paper_count: "
+                        f"{node_id}"
+                    )
 
     report = {
         "batch_id": records.batch_id,
@@ -588,7 +639,7 @@ def compile_batch(records: BatchRecords) -> dict[str, Any]:
         ["relation_type", "from", "to"],
     )
     partonomy = _sorted_records(records.partonomy, ["parent", "child"])
-    overlays = _sorted_records(records.overlays, ["target_topic", "presumed_node"])
+    overlays = _sorted_overlays(records.overlays)
 
     bundle = {
         "batch_id": records.batch_id,
@@ -830,6 +881,48 @@ def expanded_slice(
         "relation_type": relation_type,
         "nodes": sorted(included),
         "dependencies": dependency_edges,
+        "partonomy": partonomy_edges,
+    }
+
+
+def extended_neighborhood_slice(
+    bundle: dict[str, Any],
+    target: str,
+    relation_type: str,
+    profile: dict[str, Any] | None = None,
+) -> dict[str, Any]:
+    nodes = {node["id"]: node for node in bundle["nodes"]}
+    if target not in nodes:
+        raise KeyError(f"Unknown target node: {target}")
+
+    dependency_edges = _filtered_dependencies(bundle, relation_type, profile)
+    first_hop_edges = [edge for edge in dependency_edges if edge["to"] == target]
+    first_hop_ids = {edge["from"] for edge in first_hop_edges}
+
+    second_hop_edges = [edge for edge in dependency_edges if edge["to"] in first_hop_ids]
+    second_hop_ids = {edge["from"] for edge in second_hop_edges}
+
+    downstream_edges = [edge for edge in dependency_edges if edge["from"] == target]
+    downstream_ids = {edge["to"] for edge in downstream_edges}
+
+    included = {target} | first_hop_ids | second_hop_ids | downstream_ids
+    slice_dependencies = [
+        edge
+        for edge in dependency_edges
+        if edge["from"] in included and edge["to"] in included
+    ]
+    partonomy_edges = [
+        edge
+        for edge in bundle["partonomy"]
+        if edge["parent"] in included or edge["child"] in included
+    ]
+    included |= {edge["parent"] for edge in partonomy_edges}
+    included |= {edge["child"] for edge in partonomy_edges}
+    return {
+        "target": target,
+        "relation_type": relation_type,
+        "nodes": sorted(included),
+        "dependencies": slice_dependencies,
         "partonomy": partonomy_edges,
     }
 
