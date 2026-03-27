@@ -1,45 +1,71 @@
-# Canonical overlay annotations for the vacuum-decay-and-tunneling batch.
-- overlay_type: assumed_background
-  target_topic: qft.vacuum_decay_and_tunneling
-  presumed_node: qft.effective_potential
-  audience_profile: hep_th_grad
-  subfield: qft_foundations
-  rationale: Papers on vacuum decay usually presume the reader already recognizes effective-potential language for metastable and lower-lying vacua.
-  status: asserted
-  confidence: 0.92
+# Canonical overlay annotations for the vacuum_decay_and_tunneling batch.
+# Source papers: arXiv:1604.06090, 1602.01102, 1707.08124 (Schwartz et al.)
 
-- overlay_type: assumed_background
-  target_topic: qft.false_vacuum_decay
-  presumed_node: qm.wkb_approximation
-  audience_profile: hep_th_grad
-  subfield: semiclassical_methods
-  rationale: Schwartz-style tunneling papers move quickly to semiclassical exponents and assume the WKB tunneling analogy rather than rederiving it from first-course quantum mechanics.
-  status: asserted
-  confidence: 0.89
+# ── Overlays for qft.bounce_solution ─────────────────────────────────────────
 
 - overlay_type: assumed_background
   target_topic: qft.bounce_solution
   presumed_node: qft.instanton
   audience_profile: hep_th_grad
-  subfield: semiclassical_methods
-  rationale: The bounce is usually presented as a specialized Euclidean saddle in the same broad vocabulary as instantons, so instanton language is often assumed.
+  subfield: nonperturbative_qft
+  rationale: Papers on the bounce assume readers already know instantons and the Euclidean path-integral saddle-point logic; the bounce is introduced as a variant rather than as a new framework.
   status: asserted
-  confidence: 0.84
+  confidence: 0.95
+
+- overlay_type: assumed_background
+  target_topic: qft.bounce_solution
+  presumed_node: qft.effective_potential
+  audience_profile: hep_th_grad
+  subfield: nonperturbative_qft
+  rationale: The effective potential landscape is treated as given when setting up the bounce boundary-value problem; sources do not re-derive the effective potential before specifying the false/true vacuum positions.
+  status: asserted
+  confidence: 0.93
+
+# ── Overlays for qft.false_vacuum_decay ──────────────────────────────────────
+
+- overlay_type: assumed_background
+  target_topic: qft.false_vacuum_decay
+  presumed_node: qft.bounce_solution
+  audience_profile: hep_th_grad
+  subfield: nonperturbative_qft
+  rationale: The physics papers discussing false vacuum decay presume the reader can follow bounce-action calculations without re-deriving the bounce formalism from scratch.
+  status: asserted
+  confidence: 0.96
+
+- overlay_type: assumed_background
+  target_topic: qft.false_vacuum_decay
+  presumed_node: qft.one_loop_effective_action
+  audience_profile: hep_th_grad
+  subfield: nonperturbative_qft
+  rationale: The one-loop functional determinant machinery is invoked as a known tool when computing the decay-rate prefactor; sources do not rebuild one-loop effective-action formalism at the point where the physical result is stated.
+  status: asserted
+  confidence: 0.90
+
+# ── Overlays for qft.electroweak_vacuum_stability ────────────────────────────
 
 - overlay_type: assumed_background
   target_topic: qft.electroweak_vacuum_stability
   presumed_node: qft.running_coupling
   audience_profile: hep_th_grad
-  subfield: standard_model
-  rationale: Electroweak-vacuum-stability discussions typically assume the RG running of Standard-Model couplings before turning to the lifetime calculation.
+  subfield: beyond_standard_model_phenomenology
+  rationale: Papers on SM vacuum stability assume familiarity with running couplings and RG equations; the running of lambda is discussed as a tool, not re-derived.
   status: asserted
-  confidence: 0.92
+  confidence: 0.95
 
 - overlay_type: assumed_background
   target_topic: qft.electroweak_vacuum_stability
   presumed_node: sm.higgs.higgs_mechanism
   audience_profile: hep_th_grad
-  subfield: standard_model
-  rationale: The literature usually assumes the reader already recognizes the Higgs-sector vacuum whose metastability is under discussion.
+  subfield: beyond_standard_model_phenomenology
+  rationale: The Higgs mechanism and the structure of the SM Higgs potential are treated as prior knowledge; sources focus on whether the potential admits a second minimum rather than on what the Higgs mechanism is.
   status: asserted
-  confidence: 0.88
+  confidence: 0.93
+
+- overlay_type: assumed_background
+  target_topic: qft.electroweak_vacuum_stability
+  presumed_node: sm.ewbreak.yukawa_coupling
+  audience_profile: hep_th_grad
+  subfield: beyond_standard_model_phenomenology
+  rationale: Papers assume the reader understands why the top Yukawa appears in the Higgs potential RGE and already knows the measured top quark mass as an input parameter.
+  status: asserted
+  confidence: 0.91

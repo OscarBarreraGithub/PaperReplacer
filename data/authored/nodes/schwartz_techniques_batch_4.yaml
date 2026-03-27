@@ -1,0 +1,423 @@
+# Hand-authored node records for Schwartz techniques batch 4.
+
+- id: technique.junipr_probabilistic_jet_model
+  label: JUNIPR Probabilistic Jet Model via Clustering Trees
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Probabilistic jet-modeling workflow that factorizes a jet's full constituent distribution along a deterministic clustering tree, with an RNN state supplying branching probabilities for unsupervised likelihood evaluation, generation, and reweighting.
+  status: asserted
+
+- id: technique.kinematic_quark_gluon_purification
+  label: Kinematic purification of quark and gluon jet samples
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Selection strategy that uses process choice, jet ordering, and rapidity cuts to isolate quark-enriched or gluon-enriched jet samples directly from hadron-collider kinematics.
+  status: asserted
+
+- id: technique.kk_tower_theta_bar_zero
+  label: KK Tower Preservation of theta_bar = 0
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Determinant-based consistency check showing that zero-mode and KK-mode mass matrices preserve a real determinant, so theta_bar remains zero after the full KK tower is included.
+  status: asserted
+
+- id: technique.kk_truncation_amplitude_cancellation
+  label: KK tower truncation and amplitude cancellations for local continuum limit
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Deconstruction recipe that truncates a KK tower, transforms back to position space, and exploits graviton-radion-graviphoton amplitude cancellations to recover a local continuum limit.
+  status: asserted
+
+- id: technique.landau_bootstrap
+  label: Bootstrapping Feynman Integrals from Singularity Structure
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Seven-step integral-bootstrap strategy that fixes Feynman integrals from Landau singularities, leading singularities, symbol-space constraints, and asymptotic data without direct integration.
+  status: asserted
+
+- id: technique.landau_bootstrap_complement
+  label: Bottom-Up Complement to the Landau Bootstrap
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Hybrid reconstruction workflow that uses Landau-bootstrap singularity analysis to define the function space and analytic regression to determine the rational coefficients.
+  status: asserted
+
+- id: technique.landau_symbol_constraints
+  label: Landau-equation constraints on the symbol of Feynman integrals
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Constraint method relating Landau exponents to the entry position of vanishing symbol letters, thereby bounding symbol structure and transcendental weight.
+  status: asserted
+
+- id: technique.laplace_transform_rge_solution
+  label: Laplace transform technique for non-local RG equations
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Transform method that converts non-local jet and soft-function RG equations into local differential equations in Laplace space, then inverts the solution to obtain resummed kernels.
+  status: asserted
+
+- id: technique.lattice_reduction_analytic_regression
+  label: Lattice Reduction for Analytic Regression of Feynman Integrals
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Analytic-regression method that combines high-precision numerical integral evaluations with integer-lattice reduction to recover exact rational coefficients in a known function basis.
+  status: asserted
+
+- id: technique.lightcone_gauge_numerator_suppression
+  label: Lightcone-gauge numerator suppression (collinear Ward identity)
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Physical-gauge power-counting trick in which the lightcone-gauge propagator numerator supplies extra collinear suppression, pruning leading-power diagrams and simplifying factorization arguments.
+  status: asserted
+
+- id: technique.likelihood_ratio_from_unsupervised_models
+  label: Likelihood-Ratio Discrimination from Unsupervised Probabilistic Models
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Classifier-construction method that trains separate unsupervised probabilistic jet models and uses their likelihood ratio as the Neyman-Pearson-optimal discriminant.
+  status: asserted
+
+- id: technique.linear_cleansing_gamma0_fixed
+  label: Linear cleansing via fixed charged-to-neutral pileup ratio
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Pileup-mitigation prescription that fixes the pileup charged fraction to its mean value and solves linearly for the leading-vertex momentum share.
+  status: asserted
+
+- id: technique.lipatov_vertex_factorization_violation
+  label: Lipatov vertex as source of factorization violation
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Diagram-selection criterion that isolates factorization-violating contributions to graphs where soft gluons attach to Glauber exchange through the Lipatov vertex.
+  status: asserted
+
+- id: technique.llp_weak_supervision_batched
+  label: Batched Learning from Label Proportions (LLP) for high-dimensional inputs
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Weak-supervision training scheme that matches predicted and known class proportions batch by batch, making LLP practical for high-dimensional collider inputs.
+  status: asserted
+
+- id: technique.local_energy_cutoff_for_holography
+  label: Position-dependent UV cutoff for entropy-area scaling
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Curved-space cutoff prescription that enforces a local-energy bound, producing an energy-dependent spatial cutoff whose mode counting scales like area rather than volume.
+  status: asserted
+
+- id: technique.lorentz_violating_photon_mass
+  label: Lorentz-violating photon mass with preserved Coulomb force
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Electrodynamics modification that gives spatial photon components a mass while leaving A_0 massless, preserving Coulomb behavior even though propagating modes become massive.
+  status: asserted
+
+- id: technique.loss_landscape_existence_proxy
+  label: ML Loss as Proxy for Amplitude Existence
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Diagnostic that treats the best achievable neural-network training loss in phase reconstruction as a numerical witness for whether a differential cross section is compatible with unitarity.
+  status: asserted
+
+- id: technique.madgraph_color_decomposition_export
+  label: Exporting colour-decomposed hard functions from MadGraph
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: MadGraph-export workflow that outputs helicity-summed hard and color matrices in event files so SCET resummation can retain full color mixing information.
+  status: asserted
+
+- id: technique.massive_supergravity_lagrangian
+  label: Superfield Lagrangian for massive supergravity
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Model-building construction that adds tuned mass terms for the metric superfield and chiral compensator to obtain a ghost-free massive supergravity multiplet.
+  status: asserted
+
+- id: technique.mc_hard_function_scet_convolution
+  label: MadGraph hard function + analytic SCET resummation hybrid
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Hybrid prediction pipeline that samples phase space with a Monte Carlo hard function and evaluates the SCET resummed kernel analytically point by point before averaging.
+  status: asserted
+
+- id: technique.mc_reweighting_via_probability_ratio
+  label: Monte Carlo Reweighting via Learned Probability Ratios
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Simulation-correction method that reweights generated jets by the ratio of learned target and simulation probabilities instead of regenerating events.
+  status: asserted
+
+- id: technique.merge_layer_feature_probing
+  label: Merge-Layer Probing of Learned Features
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Interpretability test that injects a known physics observable through a merge layer and measures whether the network gains performance, revealing which information was missing from the learned representation.
+  status: asserted
+
+- id: technique.mixed_position_momentum_propagators
+  label: Mixed Position/Momentum Space Propagators in R_xi Gauge for AdS5
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Propagator-construction method that keeps the warped fifth coordinate in position space while Fourier transforming four-dimensional directions, enabling full 5D loop calculations without KK truncation.
+  status: asserted
+
+- id: technique.ml_contour_deformation_loop_integrals
+  label: ML-Optimized Contour Deformation for Loop Integrals
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Numerical-integration method that trains normalizing flows to choose contour deformations in Feynman-parameter space which avoid threshold singularities while respecting analytic constraints.
+  status: asserted
+
+- id: technique.ml_observable_optimization
+  label: Neural Simulation-Based Observable Optimization
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Search procedure that learns the full simulated distribution and then optimizes over observable projections to maximize parameter sensitivity while outputting an ordinary analytic observable.
+  status: asserted
+
+- id: technique.momentum_weighted_jet_charge
+  label: Momentum-weighted jet charge with tunable kappa
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Jet-charge observable that weights track charges by a tunable power of transverse momentum so the balance between soft sensitivity and robustness can be optimized.
+  status: asserted
+
+- id: technique.multi_event_shape_soft_function_probe
+  label: Using multiple event shapes to probe the functional form of the soft function
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Constraint strategy that fits thrust, heavy-jet-mass, and weighted-event-shape projections to reconstruct the underlying hemisphere soft function beyond a single moment.
+  status: asserted
+
+- id: technique.multi_scale_uncertainty_band
+  label: Correlated and anti-correlated scale variation for multi-scale EFT uncertainty
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Uncertainty-estimation prescription that varies hard, jet, and soft scales in coordinated correlated and anti-correlated patterns to respect EFT hierarchies while probing missing higher-order effects.
+  status: asserted
+
+- id: technique.multichannel_resolution_upsampling
+  label: Multi-resolution channel upsampling for mixed detector inputs
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Input-representation trick that upsamples coarse detector channels into fine subpixels with conserved total weight so heterogeneous detector resolutions can be processed together.
+  status: asserted
+
+- id: technique.multiplicative_vs_bphz_renormalization_subsets
+  label: Multiplicative vs BPHZ Renormalization for Diagram Subsets
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Comparative renormalization procedure that checks when multiplicative RG reasoning and BPHZ subtraction remain equivalent for restricted diagram classes instead of full perturbative sums.
+  status: asserted
+
+- id: technique.multivariate_boosted_w_tagging
+  label: Multivariate boosted W-tagging combining grooming with substructure
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Tagging workflow that combines grooming with a boosted-decision-tree over substructure observables to improve boosted hadronic W discrimination beyond grooming alone.
+  status: asserted
+
+- id: technique.n_subjettiness_for_qg
+  label: N-Subjettiness tau_N for Quark/Gluon Discrimination
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Jet-shape construction that measures how well radiation is aligned with N candidate axes, providing IRC-safe prongness variables useful for quark/gluon and boosted-object tagging.
+  status: asserted
+
+- id: technique.narrow_gluinonium_annihilation
+  label: Narrow-width bound state annihilation as a BSM discovery channel
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Resonance-search method that treats a sufficiently narrow colored bound state as a factorized production-and-annihilation resonance with channel-dependent color factors.
+  status: asserted
+
+- id: technique.natural_color_diagonal_basis
+  label: Natural color basis that diagonalizes RG evolution
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Basis-change method that diagonalizes the color-mixing evolution matrix so hard and soft color evolution reduce to independent eigenchannels.
+  status: asserted
+
+- id: technique.natural_scale_selection_via_extrema
+  label: Natural scale selection from extrema of individual SCET functions
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Scale-setting procedure that finds extrema of the hard, jet, and soft contributions separately and uses them as process-dependent natural renormalization scales.
+  status: asserted
+
+- id: technique.negative_power_correction_evidence
+  label: Trijet Power Correction with Shoulder Resummation
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Power-correction extraction method that introduces a dedicated trijet shift parameter and fits it only in conjunction with shoulder resummation, avoiding biased sign determinations.
+  status: asserted

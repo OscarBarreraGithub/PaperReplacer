@@ -1,0 +1,1236 @@
+- from: qft.jet
+  to: technique.n_subjettiness_for_qg
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Jet is the closest existing graph prerequisite for N-Subjettiness tau_N for Quark/Gluon Discrimination, because the downstream method is formulated in that conceptual or technical language."
+  failure_mode_if_absent: "Without Jet, N-Subjettiness tau_N for Quark/Gluon Discrimination loses the background that makes its central step intelligible in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Closest existing prerequisite match selected during orphan wiring."
+  status: asserted
+- from: technique.haag_lopuszanski_sohnius_analysis
+  to: technique.nahm_weight_argument_for_spinor_supercharges
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Haag-Lopuszanski-Sohnius Analysis is the closest existing graph prerequisite for Nahm weight argument for spinor supercharges, because the downstream method is formulated in that conceptual or technical language."
+  failure_mode_if_absent: "Without Haag-Lopuszanski-Sohnius Analysis, Nahm weight argument for spinor supercharges loses the background that makes its central step intelligible in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Closest existing prerequisite match selected during orphan wiring."
+  status: asserted
+- from: technique.nahm_weight_argument_for_spinor_supercharges
+  to: technique.massless_supermultiplet_construction
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Nahm weight argument for spinor supercharges is a direct methodological prerequisite for Massless Supermultiplet Construction, so wiring it downstream preserves the intermediate construction that the later technique assumes."
+  failure_mode_if_absent: "Without Nahm weight argument for spinor supercharges, Massless Supermultiplet Construction loses the intermediate step it is applying and reads as an unmotivated jump in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Downstream technique appears to build directly on this newly wired method."
+  status: asserted
+- from: sm.precision.electroweak_precision_observable
+  to: technique.natural_relations_method
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Electroweak precision observable is the closest existing graph prerequisite for Natural-relations method, because the downstream method is formulated in that conceptual or technical language."
+  failure_mode_if_absent: "Without Electroweak precision observable, Natural-relations method loses the background that makes its central step intelligible in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Closest existing prerequisite match selected during orphan wiring."
+  status: asserted
+- from: technique.hierarchy_problem_naturalness_analysis
+  to: technique.naturalness_estimate_from_supermultiplet_splittings
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Hierarchy-problem naturalness analysis is the closest existing graph prerequisite for Naturalness Estimate from Supermultiplet Splittings, because the downstream method is formulated in that conceptual or technical language."
+  failure_mode_if_absent: "Without Hierarchy-problem naturalness analysis, Naturalness Estimate from Supermultiplet Splittings loses the background that makes its central step intelligible in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Closest existing prerequisite match selected during orphan wiring."
+  status: asserted
+- from: technique.condensate_backreaction_as_ir_wall
+  to: technique.nec_holographic_c_function_constraint
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Use condensate backreaction as the IR wall is the closest existing graph prerequisite for Null-energy-condition control of admissible soft walls, because the downstream method is formulated in that conceptual or technical language."
+  failure_mode_if_absent: "Without Use condensate backreaction as the IR wall, Null-energy-condition control of admissible soft walls loses the background that makes its central step intelligible in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Closest existing prerequisite match selected during orphan wiring."
+  status: asserted
+- from: math.diffeomorphism
+  to: technique.neumann_boundary_condition_from_diffeomorphism
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Diffeomorphism is the closest existing graph prerequisite for Neumann boundary conditions from diffeomorphism invariance, because the downstream method is formulated in that conceptual or technical language."
+  failure_mode_if_absent: "Without Diffeomorphism, Neumann boundary conditions from diffeomorphism invariance loses the background that makes its central step intelligible in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Closest existing prerequisite match selected during orphan wiring."
+  status: asserted
+- from: technique.neumann_boundary_condition_from_diffeomorphism
+  to: technique.page_transition_from_hm_vs_brane_surface
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Neumann boundary conditions from diffeomorphism invariance is a direct methodological prerequisite for Page transition from Hartman-Maldacena versus brane-anchored surfaces, so wiring it downstream preserves the intermediate construction that the later technique assumes."
+  failure_mode_if_absent: "Without Neumann boundary conditions from diffeomorphism invariance, Page transition from Hartman-Maldacena versus brane-anchored surfaces loses the intermediate step it is applying and reads as an unmotivated jump in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Downstream technique appears to build directly on this newly wired method."
+  status: asserted
+- from: qft.lorentz_invariant_phase_space
+  to: technique.neural_importance_sampling
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Lorentz-invariant phase space is the closest existing graph prerequisite for Neural Importance Sampling for Phase Space Integration, because the downstream method is formulated in that conceptual or technical language."
+  failure_mode_if_absent: "Without Lorentz-invariant phase space, Neural Importance Sampling for Phase Space Integration loses the background that makes its central step intelligible in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Closest existing prerequisite match selected during orphan wiring."
+  status: asserted
+- from: technique.neural_importance_sampling
+  to: technique.precision_event_generator_stack
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Neural Importance Sampling for Phase Space Integration is a direct methodological prerequisite for Precision event-generator stack, so wiring it downstream preserves the intermediate construction that the later technique assumes."
+  failure_mode_if_absent: "Without Neural Importance Sampling for Phase Space Integration, Precision event-generator stack loses the intermediate step it is applying and reads as an unmotivated jump in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Downstream technique appears to build directly on this newly wired method."
+  status: asserted
+- from: technique.mc_reweighting_via_probability_ratio
+  to: technique.neural_ratio_estimation_shape_scan
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Monte Carlo Reweighting via Learned Probability Ratios is the closest existing graph prerequisite for Neural Ratio Estimation for Shape Comparison, because the downstream method is formulated in that conceptual or technical language."
+  failure_mode_if_absent: "Without Monte Carlo Reweighting via Learned Probability Ratios, Neural Ratio Estimation for Shape Comparison loses the background that makes its central step intelligible in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Closest existing prerequisite match selected during orphan wiring."
+  status: asserted
+- from: qft.two_body_phase_space
+  to: technique.neutralino_assisted_partial_reconstruction_cut
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Two-body phase space is the closest existing graph prerequisite for Neutralino-Assisted Partial Reconstruction Cut, because the downstream method is formulated in that conceptual or technical language."
+  failure_mode_if_absent: "Without Two-body phase space, Neutralino-Assisted Partial Reconstruction Cut loses the background that makes its central step intelligible in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Closest existing prerequisite match selected during orphan wiring."
+  status: asserted
+- from: technique.simplified_model_framework
+  to: technique.neutralino_mixing_branching_map
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Simplified model framework for LHC search characterization is the closest existing graph prerequisite for Neutralino composition and branching-fraction map, because the downstream method is formulated in that conceptual or technical language."
+  failure_mode_if_absent: "Without Simplified model framework for LHC search characterization, Neutralino composition and branching-fraction map loses the background that makes its central step intelligible in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Closest existing prerequisite match selected during orphan wiring."
+  status: asserted
+- from: technique.neutralino_mixing_branching_map
+  to: technique.electroweakino_cascade_ratio_tanbeta_probe
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Neutralino composition and branching-fraction map is a direct methodological prerequisite for Electroweakino cascade ratios as tan beta probes, so wiring it downstream preserves the intermediate construction that the later technique assumes."
+  failure_mode_if_absent: "Without Neutralino composition and branching-fraction map, Electroweakino cascade ratios as tan beta probes loses the intermediate step it is applying and reads as an unmotivated jump in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Downstream technique appears to build directly on this newly wired method."
+  status: asserted
+- from: technique.keinstein_frame_no_scale_identification
+  to: technique.no_scale_breaking_taxonomy
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Keinstein-frame identification of no-scale compactifications is the closest existing graph prerequisite for No-scale breaking taxonomy, because the downstream method is formulated in that conceptual or technical language."
+  failure_mode_if_absent: "Without Keinstein-frame identification of no-scale compactifications, No-scale breaking taxonomy loses the background that makes its central step intelligible in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Closest existing prerequisite match selected during orphan wiring."
+  status: asserted
+- from: technique.no_scale_breaking_taxonomy
+  to: technique.no_scale_fphi_suppression
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "No-scale breaking taxonomy is a direct methodological prerequisite for F_Phi suppression from single-field no-scale structure, so wiring it downstream preserves the intermediate construction that the later technique assumes."
+  failure_mode_if_absent: "Without No-scale breaking taxonomy, F_Phi suppression from single-field no-scale structure loses the intermediate step it is applying and reads as an unmotivated jump in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Downstream technique appears to build directly on this newly wired method."
+  status: asserted
+- from: technique.no_scale_fphi_suppression
+  to: technique.deconstruction_anomaly_mediation
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "F_Phi suppression from single-field no-scale structure is a direct methodological prerequisite for Deconstructed anomaly mediation with massive supergravity, so wiring it downstream preserves the intermediate construction that the later technique assumes."
+  failure_mode_if_absent: "Without F_Phi suppression from single-field no-scale structure, Deconstructed anomaly mediation with massive supergravity loses the intermediate step it is applying and reads as an unmotivated jump in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Downstream technique appears to build directly on this newly wired method."
+  status: asserted
+- from: technique.coupled_isothermal_poisson_jeans_solver
+  to: technique.non_equilibrium_holmberg_flynn_method
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Coupled isothermal Poisson-Jeans solver is the closest existing graph prerequisite for Non-equilibrium Holmberg-Flynn method for dark-disk bounds, because the downstream method is formulated in that conceptual or technical language."
+  failure_mode_if_absent: "Without Coupled isothermal Poisson-Jeans solver, Non-equilibrium Holmberg-Flynn method for dark-disk bounds loses the background that makes its central step intelligible in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Closest existing prerequisite match selected during orphan wiring."
+  status: asserted
+- from: technique.stealth_sector_small_splitting
+  to: technique.non_met_stealth_search_strategy
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Near-supersymmetric stealth sector is the closest existing graph prerequisite for Non-MET stealth search strategy, because the downstream method is formulated in that conceptual or technical language."
+  failure_mode_if_absent: "Without Near-supersymmetric stealth sector, Non-MET stealth search strategy loses the background that makes its central step intelligible in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Closest existing prerequisite match selected during orphan wiring."
+  status: asserted
+- from: technique.non_met_stealth_search_strategy
+  to: technique.stealth_susy_simplified_topologies
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Non-MET stealth search strategy is a direct methodological prerequisite for Natural-SUSY stealth simplified models, so wiring it downstream preserves the intermediate construction that the later technique assumes."
+  failure_mode_if_absent: "Without Non-MET stealth search strategy, Natural-SUSY stealth simplified models loses the intermediate step it is applying and reads as an unmotivated jump in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Downstream technique appears to build directly on this newly wired method."
+  status: asserted
+- from: sm.chiral_lagrangian
+  to: technique.nonanalytic_ms_three_halves_extraction
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Chiral Lagrangian is the closest existing graph prerequisite for Extraction of nonanalytic m_s^(3/2) terms, because the downstream method is formulated in that conceptual or technical language."
+  failure_mode_if_absent: "Without Chiral Lagrangian, Extraction of nonanalytic m_s^(3/2) terms loses the background that makes its central step intelligible in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Closest existing prerequisite match selected during orphan wiring."
+  status: asserted
+- from: cosmology.inflation
+  to: technique.nonlinear_curvature_transfer_formalism
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Inflation is the closest existing graph prerequisite for Nonlinear curvature-transfer formalism, because the downstream method is formulated in that conceptual or technical language."
+  failure_mode_if_absent: "Without Inflation, Nonlinear curvature-transfer formalism loses the background that makes its central step intelligible in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Closest existing prerequisite match selected during orphan wiring."
+  status: asserted
+- from: technique.nonlinear_curvature_transfer_formalism
+  to: technique.savior_vs_stealth_curvaton_classification
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Nonlinear curvature-transfer formalism is a direct methodological prerequisite for Savior versus stealth curvaton classification, so wiring it downstream preserves the intermediate construction that the later technique assumes."
+  failure_mode_if_absent: "Without Nonlinear curvature-transfer formalism, Savior versus stealth curvaton classification loses the intermediate step it is applying and reads as an unmotivated jump in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Downstream technique appears to build directly on this newly wired method."
+  status: asserted
+- from: technique.frw_lattice_fragmentation_simulation
+  to: technique.nonlinear_shutdown_and_relic_scaling
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "FRW lattice simulation of modulus-Higgs fragmentation is the closest existing graph prerequisite for Nonlinear shutdown and relic-density scaling, because the downstream method is formulated in that conceptual or technical language."
+  failure_mode_if_absent: "Without FRW lattice simulation of modulus-Higgs fragmentation, Nonlinear shutdown and relic-density scaling loses the background that makes its central step intelligible in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Closest existing prerequisite match selected during orphan wiring."
+  status: asserted
+- from: technique.factorize_perturbative_and_nonperturbative_fragmentation
+  to: technique.nonlocal_fragmentation_separation
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Factorize perturbative evolution from nonperturbative fragmentation is the closest existing graph prerequisite for Separation of local and nonlocal contributions, because the downstream method is formulated in that conceptual or technical language."
+  failure_mode_if_absent: "Without Factorize perturbative evolution from nonperturbative fragmentation, Separation of local and nonlocal contributions loses the background that makes its central step intelligible in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Closest existing prerequisite match selected during orphan wiring."
+  status: asserted
+- from: technique.nonlocal_4d_effective_action_diagnosis
+  to: technique.nonlocal_mass_fluctuation_signal_extraction
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Diagnose the need for a nonlocal 4D description is the closest existing graph prerequisite for Signal Extraction from Nonlocal Mass Fluctuations, because the downstream method is formulated in that conceptual or technical language."
+  failure_mode_if_absent: "Without Diagnose the need for a nonlocal 4D description, Signal Extraction from Nonlocal Mass Fluctuations loses the background that makes its central step intelligible in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Closest existing prerequisite match selected during orphan wiring."
+  status: asserted
+- from: qft.dirac_equation
+  to: technique.nonrelativistic_reduction_of_bound_dirac_theory
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Dirac equation is the closest existing graph prerequisite for Nonrelativistic reduction of bound Dirac theory, because the downstream method is formulated in that conceptual or technical language."
+  failure_mode_if_absent: "Without Dirac equation, Nonrelativistic reduction of bound Dirac theory loses the background that makes its central step intelligible in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Closest existing prerequisite match selected during orphan wiring."
+  status: asserted
+- from: technique.nonrelativistic_reduction_of_bound_dirac_theory
+  to: technique.one_loop_self_energy_in_external_field
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Nonrelativistic reduction of bound Dirac theory is a direct methodological prerequisite for One-loop self-energy in an external field, so wiring it downstream preserves the intermediate construction that the later technique assumes."
+  failure_mode_if_absent: "Without Nonrelativistic reduction of bound Dirac theory, One-loop self-energy in an external field loses the intermediate step it is applying and reads as an unmotivated jump in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Downstream technique appears to build directly on this newly wired method."
+  status: asserted
+- from: technique.modulus_decay_dilution_factor
+  to: technique.nonthermal_wino_from_moduli_decay
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Dilution-factor bookkeeping for modulus decay is the closest existing graph prerequisite for Non-thermal Wino production from modulus decay, because the downstream method is formulated in that conceptual or technical language."
+  failure_mode_if_absent: "Without Dilution-factor bookkeeping for modulus decay, Non-thermal Wino production from modulus decay loses the background that makes its central step intelligible in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Closest existing prerequisite match selected during orphan wiring."
+  status: asserted
+- from: technique.disco_decorrelation
+  to: technique.normalized_signal_contamination
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Distance Correlation (DisCo) decorrelation for ABCD is the closest existing graph prerequisite for Normalized signal contamination diagnostic for ABCD, because the downstream method is formulated in that conceptual or technical language."
+  failure_mode_if_absent: "Without Distance Correlation (DisCo) decorrelation for ABCD, Normalized signal contamination diagnostic for ABCD loses the background that makes its central step intelligible in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Closest existing prerequisite match selected during orphan wiring."
+  status: asserted
+- from: technique.cpv_eft_matching_pipeline_for_edms
+  to: technique.nuclear_many_body_schiff_moment_methods
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "CP-Violating EFT Matching Pipeline for EDMs is the closest existing graph prerequisite for Nuclear Many-Body Schiff-Moment Methods, because the downstream method is formulated in that conceptual or technical language."
+  failure_mode_if_absent: "Without CP-Violating EFT Matching Pipeline for EDMs, Nuclear Many-Body Schiff-Moment Methods loses the background that makes its central step intelligible in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Closest existing prerequisite match selected during orphan wiring."
+  status: asserted
+- from: technique.nuclear_many_body_schiff_moment_methods
+  to: technique.edm_observable_matching
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Nuclear Many-Body Schiff-Moment Methods is a direct methodological prerequisite for Matching microscopic EDM operators to experimental observables, so wiring it downstream preserves the intermediate construction that the later technique assumes."
+  failure_mode_if_absent: "Without Nuclear Many-Body Schiff-Moment Methods, Matching microscopic EDM operators to experimental observables loses the intermediate step it is applying and reads as an unmotivated jump in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Downstream technique appears to build directly on this newly wired method."
+  status: asserted
+- from: technique.cpv_eft_matching_pipeline_for_edms
+  to: technique.nucleon_nuclear_response_matching
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "CP-Violating EFT Matching Pipeline for EDMs is the closest existing graph prerequisite for Matching to nucleon matrix elements and nuclear response, because the downstream method is formulated in that conceptual or technical language."
+  failure_mode_if_absent: "Without CP-Violating EFT Matching Pipeline for EDMs, Matching to nucleon matrix elements and nuclear response loses the background that makes its central step intelligible in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Closest existing prerequisite match selected during orphan wiring."
+  status: asserted
+- from: technique.nucleon_nuclear_response_matching
+  to: technique.edm_observable_matching
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Matching to nucleon matrix elements and nuclear response is a direct methodological prerequisite for Matching microscopic EDM operators to experimental observables, so wiring it downstream preserves the intermediate construction that the later technique assumes."
+  failure_mode_if_absent: "Without Matching to nucleon matrix elements and nuclear response, Matching microscopic EDM operators to experimental observables loses the intermediate step it is applying and reads as an unmotivated jump in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Downstream technique appears to build directly on this newly wired method."
+  status: asserted
+- from: technique.brane_wavefunction_overlap_newton_estimate
+  to: technique.observer_brane_profile_method
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Wavefunction-overlap estimate of Newton corrections is the closest existing graph prerequisite for Observer-brane profile method, because the downstream method is formulated in that conceptual or technical language."
+  failure_mode_if_absent: "Without Wavefunction-overlap estimate of Newton corrections, Observer-brane profile method loses the background that makes its central step intelligible in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Closest existing prerequisite match selected during orphan wiring."
+  status: asserted
+- from: technique.observer_brane_profile_method
+  to: technique.kk_graviton_overlap_interpretation
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Observer-brane profile method is a direct methodological prerequisite for Wavefunction-overlap interpretation of TeV KK gravitons, so wiring it downstream preserves the intermediate construction that the later technique assumes."
+  failure_mode_if_absent: "Without Observer-brane profile method, Wavefunction-overlap interpretation of TeV KK gravitons loses the intermediate step it is applying and reads as an unmotivated jump in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Downstream technique appears to build directly on this newly wired method."
+  status: asserted
+- from: technique.division_algebra_filter_for_classical_groups
+  to: technique.octonion_fano_plane_multiplication
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Division-algebra filter for classical groups is the closest existing graph prerequisite for Encode octonion multiplication with the Fano-plane pattern, because the downstream method is formulated in that conceptual or technical language."
+  failure_mode_if_absent: "Without Division-algebra filter for classical groups, Encode octonion multiplication with the Fano-plane pattern loses the background that makes its central step intelligible in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Closest existing prerequisite match selected during orphan wiring."
+  status: asserted
+- from: technique.nuclear_many_body_schiff_moment_methods
+  to: technique.octupole_deformed_radioactive_molecules
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Nuclear Many-Body Schiff-Moment Methods is a direct methodological prerequisite for Octupole-deformed radioactive molecules for hadronic CPV, so wiring it downstream preserves the intermediate construction that the later technique assumes."
+  failure_mode_if_absent: "Without Nuclear Many-Body Schiff-Moment Methods, Octupole-deformed radioactive molecules for hadronic CPV loses the intermediate step it is applying and reads as an unmotivated jump in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Downstream technique appears to build directly on this newly wired method."
+  status: asserted
+- from: technique.octupole_deformed_radioactive_molecules
+  to: technique.edm_observable_matching
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Octupole-deformed radioactive molecules for hadronic CPV is a direct methodological prerequisite for Matching microscopic EDM operators to experimental observables, so wiring it downstream preserves the intermediate construction that the later technique assumes."
+  failure_mode_if_absent: "Without Octupole-deformed radioactive molecules for hadronic CPV, Matching microscopic EDM operators to experimental observables loses the intermediate step it is applying and reads as an unmotivated jump in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Downstream technique appears to build directly on this newly wired method."
+  status: asserted
+- from: technique.character_table_construction
+  to: technique.odd_polygon_character_construction
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Character-table construction is the closest existing graph prerequisite for Character construction for odd-gon symmetry groups, because the downstream method is formulated in that conceptual or technical language."
+  failure_mode_if_absent: "Without Character-table construction, Character construction for odd-gon symmetry groups loses the background that makes its central step intelligible in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Closest existing prerequisite match selected during orphan wiring."
+  status: asserted
+- from: technique.kinetic_mixing_dark_photon_portal
+  to: technique.off_shell_dark_portal_multileptons
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Kinetic-mixing dark photon portal is the closest existing graph prerequisite for Off-shell portal production of multilepton final states, because the downstream method is formulated in that conceptual or technical language."
+  failure_mode_if_absent: "Without Kinetic-mixing dark photon portal, Off-shell portal production of multilepton final states loses the background that makes its central step intelligible in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Closest existing prerequisite match selected during orphan wiring."
+  status: asserted
+- from: technique.mc_reweighting_via_probability_ratio
+  to: technique.omnifold_classifier_unfolding
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Monte Carlo Reweighting via Learned Probability Ratios is the closest existing graph prerequisite for OmniFold: Classifier-Based Unbinned Detector Unfolding, because the downstream method is formulated in that conceptual or technical language."
+  failure_mode_if_absent: "Without Monte Carlo Reweighting via Learned Probability Ratios, OmniFold: Classifier-Based Unbinned Detector Unfolding loses the background that makes its central step intelligible in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Closest existing prerequisite match selected during orphan wiring."
+  status: asserted
+- from: technique.extra_flavor_deformation_for_low_energy_superpotential
+  to: technique.one_flavor_reduction_after_dual_dynamics
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Extra-flavor deformation trick is the closest existing graph prerequisite for One-flavor reduction after dual dynamics, because the downstream method is formulated in that conceptual or technical language."
+  failure_mode_if_absent: "Without Extra-flavor deformation trick, One-flavor reduction after dual dynamics loses the background that makes its central step intelligible in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Closest existing prerequisite match selected during orphan wiring."
+  status: asserted
+- from: technique.one_flavor_reduction_after_dual_dynamics
+  to: technique.singular_superpotential_dsb_criterion
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "One-flavor reduction after dual dynamics is a direct methodological prerequisite for Singular superpotential criterion for dynamical breaking, so wiring it downstream preserves the intermediate construction that the later technique assumes."
+  failure_mode_if_absent: "Without One-flavor reduction after dual dynamics, Singular superpotential criterion for dynamical breaking loses the intermediate step it is applying and reads as an unmotivated jump in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Downstream technique appears to build directly on this newly wired method."
+  status: asserted
+- from: qed.electron_self_energy
+  to: technique.one_loop_self_energy_in_external_field
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Electron self-energy is the closest existing graph prerequisite for One-loop self-energy in an external field, because the downstream method is formulated in that conceptual or technical language."
+  failure_mode_if_absent: "Without Electron self-energy, One-loop self-energy in an external field loses the background that makes its central step intelligible in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Closest existing prerequisite match selected during orphan wiring."
+  status: asserted
+- from: technique.ads_qcd_pseudoscalar_sector
+  to: technique.ope_matching_ads_parameters
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "AdS/QCD modeling of the pseudoscalar meson sector is the closest existing graph prerequisite for OPE matching to fix AdS/QCD model parameters, because the downstream method is formulated in that conceptual or technical language."
+  failure_mode_if_absent: "Without AdS/QCD modeling of the pseudoscalar meson sector, OPE matching to fix AdS/QCD model parameters loses the background that makes its central step intelligible in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Closest existing prerequisite match selected during orphan wiring."
+  status: asserted
+- from: technique.ope_matching_ads_parameters
+  to: technique.higher_dim_operator_sensitivity
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "OPE matching to fix AdS/QCD model parameters is a direct methodological prerequisite for Higher-Dimension Operator Sensitivity Analysis in AdS/QCD, so wiring it downstream preserves the intermediate construction that the later technique assumes."
+  failure_mode_if_absent: "Without OPE matching to fix AdS/QCD model parameters, Higher-Dimension Operator Sensitivity Analysis in AdS/QCD loses the intermediate step it is applying and reads as an unmotivated jump in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Downstream technique appears to build directly on this newly wired method."
+  status: asserted
+- from: qft.renormalization_group_fixed_point
+  to: technique.operator_relevance_classification
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Renormalization-group fixed point is the closest existing graph prerequisite for Relevant/Irrelevant/Marginal Classification, because the downstream method is formulated in that conceptual or technical language."
+  failure_mode_if_absent: "Without Renormalization-group fixed point, Relevant/Irrelevant/Marginal Classification loses the background that makes its central step intelligible in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Closest existing prerequisite match selected during orphan wiring."
+  status: asserted
+- from: technique.operator_relevance_classification
+  to: technique.relevant_irrelevant_fixed_surface_analysis
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Relevant/Irrelevant/Marginal Classification is a direct methodological prerequisite for Relevant-irrelevant fixed-surface analysis, so wiring it downstream preserves the intermediate construction that the later technique assumes."
+  failure_mode_if_absent: "Without Relevant/Irrelevant/Marginal Classification, Relevant-irrelevant fixed-surface analysis loses the intermediate step it is applying and reads as an unmotivated jump in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Downstream technique appears to build directly on this newly wired method."
+  status: asserted
+- from: technique.event_isotropy_via_optimal_transport
+  to: technique.optimal_transport_anomaly_score
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Event isotropy from optimal transport to a reference sphere is the closest existing graph prerequisite for Optimal transport distance as anomaly score, because the downstream method is formulated in that conceptual or technical language."
+  failure_mode_if_absent: "Without Event isotropy from optimal transport to a reference sphere, Optimal transport distance as anomaly score loses the background that makes its central step intelligible in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Closest existing prerequisite match selected during orphan wiring."
+  status: asserted
+- from: technique.f_term_vev_scaling_solutions
+  to: technique.oraifeartaigh_supersymmetry_breaking
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "F-term and VEV scaling solutions is the closest existing graph prerequisite for O'Raifeartaigh Supersymmetry Breaking, because the downstream method is formulated in that conceptual or technical language."
+  failure_mode_if_absent: "Without F-term and VEV scaling solutions, O'Raifeartaigh Supersymmetry Breaking loses the background that makes its central step intelligible in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Closest existing prerequisite match selected during orphan wiring."
+  status: asserted
+- from: technique.line_of_sight_projection_with_detection_function
+  to: technique.orientation_marginalized_axis_ratio_inference
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Projection to observational surface probability density is the closest existing graph prerequisite for Orientation-marginalized inference of intrinsic axis ratios, because the downstream method is formulated in that conceptual or technical language."
+  failure_mode_if_absent: "Without Projection to observational surface probability density, Orientation-marginalized inference of intrinsic axis ratios loses the background that makes its central step intelligible in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Closest existing prerequisite match selected during orphan wiring."
+  status: asserted
+- from: technique.cartan_subalgebra_and_weights
+  to: technique.orthonormal_weight_embedding_for_su_n
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Cartan subalgebra and weights is the closest existing graph prerequisite for Embed SU(n) weights in an orthonormal n-space, because the downstream method is formulated in that conceptual or technical language."
+  failure_mode_if_absent: "Without Cartan subalgebra and weights, Embed SU(n) weights in an orthonormal n-space loses the background that makes its central step intelligible in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Closest existing prerequisite match selected during orphan wiring."
+  status: asserted
+- from: technique.orthonormal_weight_embedding_for_su_n
+  to: technique.sp2n_root_and_weight_construction
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Embed SU(n) weights in an orthonormal n-space is a direct methodological prerequisite for Construct Sp(2n) roots and fundamental weights, so wiring it downstream preserves the intermediate construction that the later technique assumes."
+  failure_mode_if_absent: "Without Embed SU(n) weights in an orthonormal n-space, Construct Sp(2n) roots and fundamental weights loses the intermediate step it is applying and reads as an unmotivated jump in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Downstream technique appears to build directly on this newly wired method."
+  status: asserted
+- from: technique.dynkin_diagram_encoding
+  to: technique.outer_automorphisms_from_dynkin_symmetry
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Dynkin-diagram encoding is the closest existing graph prerequisite for Read outer automorphisms from Dynkin-diagram symmetries, because the downstream method is formulated in that conceptual or technical language."
+  failure_mode_if_absent: "Without Dynkin-diagram encoding, Read outer automorphisms from Dynkin-diagram symmetries loses the background that makes its central step intelligible in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Closest existing prerequisite match selected during orphan wiring."
+  status: asserted
+- from: technique.outer_automorphisms_from_dynkin_symmetry
+  to: technique.so8_triality_automorphism
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Read outer automorphisms from Dynkin-diagram symmetries is a direct methodological prerequisite for Exploit SO(8) triality, so wiring it downstream preserves the intermediate construction that the later technique assumes."
+  failure_mode_if_absent: "Without Read outer automorphisms from Dynkin-diagram symmetries, Exploit SO(8) triality loses the intermediate step it is applying and reads as an unmotivated jump in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Downstream technique appears to build directly on this newly wired method."
+  status: asserted
+- from: qft.bphz_renormalization
+  to: technique.overlapping_divergence_analysis
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "BPHZ renormalization is the closest existing graph prerequisite for Overlapping-divergence analysis, because the downstream method is formulated in that conceptual or technical language."
+  failure_mode_if_absent: "Without BPHZ renormalization, Overlapping-divergence analysis loses the background that makes its central step intelligible in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Closest existing prerequisite match selected during orphan wiring."
+  status: asserted
+- from: technique.overlapping_divergence_analysis
+  to: technique.bphz_forest_subtraction
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Overlapping-divergence analysis is a direct methodological prerequisite for BPHZ forest subtraction, so wiring it downstream preserves the intermediate construction that the later technique assumes."
+  failure_mode_if_absent: "Without Overlapping-divergence analysis, BPHZ forest subtraction loses the intermediate step it is applying and reads as an unmotivated jump in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Downstream technique appears to build directly on this newly wired method."
+  status: asserted
+- from: technique.doubly_holographic_brane_construction
+  to: technique.page_curve_by_hamiltonian_truncation
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Doubly holographic brane construction is the closest existing graph prerequisite for Page curve by Hamiltonian truncation, because the downstream method is formulated in that conceptual or technical language."
+  failure_mode_if_absent: "Without Doubly holographic brane construction, Page curve by Hamiltonian truncation loses the background that makes its central step intelligible in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Closest existing prerequisite match selected during orphan wiring."
+  status: asserted
+- from: technique.pfa_oriented_detector_architecture
+  to: technique.parameterized_tpc_digitization
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Particle-flow-oriented detector architecture is a direct methodological prerequisite for Parameterized TPC digitization from Garfield/Heed truth, so wiring it downstream preserves the intermediate construction that the later technique assumes."
+  failure_mode_if_absent: "Without Particle-flow-oriented detector architecture, Parameterized TPC digitization from Garfield/Heed truth loses the intermediate step it is applying and reads as an unmotivated jump in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Downstream technique appears to build directly on this newly wired method."
+  status: asserted
+- from: technique.parameterized_tpc_digitization
+  to: technique.tpc_cluster_counting_plus_tof_pid
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Parameterized TPC digitization from Garfield/Heed truth is a direct methodological prerequisite for TPC cluster counting plus precision ToF PID, so wiring it downstream preserves the intermediate construction that the later technique assumes."
+  failure_mode_if_absent: "Without Parameterized TPC digitization from Garfield/Heed truth, TPC cluster counting plus precision ToF PID loses the intermediate step it is applying and reads as an unmotivated jump in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Downstream technique appears to build directly on this newly wired method."
+  status: asserted
+- from: qft.parity_transformation
+  to: technique.parity_gauging_via_nonorientable_backgrounds
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Parity transformation is the closest existing graph prerequisite for Parity Gauging via Non-Orientable Backgrounds, because the downstream method is formulated in that conceptual or technical language."
+  failure_mode_if_absent: "Without Parity transformation, Parity Gauging via Non-Orientable Backgrounds loses the background that makes its central step intelligible in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Closest existing prerequisite match selected during orphan wiring."
+  status: asserted
+- from: technique.parity_gauging_via_nonorientable_backgrounds
+  to: technique.end_of_world_brane_parity_vortices
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Parity Gauging via Non-Orientable Backgrounds is a direct methodological prerequisite for End-of-the-World Brane Resolution of Parity Charges, so wiring it downstream preserves the intermediate construction that the later technique assumes."
+  failure_mode_if_absent: "Without Parity Gauging via Non-Orientable Backgrounds, End-of-the-World Brane Resolution of Parity Charges loses the intermediate step it is applying and reads as an unmotivated jump in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Downstream technique appears to build directly on this newly wired method."
+  status: asserted
+- from: qft.gamma_matrices
+  to: technique.pauli_tensor_realization_of_so_odd_spinors
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Gamma matrices is the closest existing graph prerequisite for Pauli-tensor realization of odd-orthogonal spinors, because the downstream method is formulated in that conceptual or technical language."
+  failure_mode_if_absent: "Without Gamma matrices, Pauli-tensor realization of odd-orthogonal spinors loses the background that makes its central step intelligible in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Closest existing prerequisite match selected during orphan wiring."
+  status: asserted
+- from: technique.pauli_tensor_realization_of_so_odd_spinors
+  to: technique.so_even_spinor_construction_from_so_odd_embedding
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Pauli-tensor realization of odd-orthogonal spinors is a direct methodological prerequisite for Even-orthogonal spinors from odd-orthogonal embedding, so wiring it downstream preserves the intermediate construction that the later technique assumes."
+  failure_mode_if_absent: "Without Pauli-tensor realization of odd-orthogonal spinors, Even-orthogonal spinors from odd-orthogonal embedding loses the intermediate step it is applying and reads as an unmotivated jump in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Downstream technique appears to build directly on this newly wired method."
+  status: asserted
+- from: technique.peak_frequency_reparameterization_of_eccentric_inspiral
+  to: technique.peak_frequency_local_noise_approximation
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Peak-frequency reparameterization of eccentric inspirals is a direct methodological prerequisite for Peak-frequency local-noise approximation for eccentric SNR, so wiring it downstream preserves the intermediate construction that the later technique assumes."
+  failure_mode_if_absent: "Without Peak-frequency reparameterization of eccentric inspirals, Peak-frequency local-noise approximation for eccentric SNR loses the intermediate step it is applying and reads as an unmotivated jump in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Downstream technique appears to build directly on this newly wired method."
+  status: asserted
+- from: technique.peak_frequency_local_noise_approximation
+  to: technique.template_free_eccentric_snr_formula
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Peak-frequency local-noise approximation for eccentric SNR is a direct methodological prerequisite for Template-free SNR scaling for eccentric binaries, so wiring it downstream preserves the intermediate construction that the later technique assumes."
+  failure_mode_if_absent: "Without Peak-frequency local-noise approximation for eccentric SNR, Template-free SNR scaling for eccentric binaries loses the intermediate step it is applying and reads as an unmotivated jump in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Downstream technique appears to build directly on this newly wired method."
+  status: asserted
+- from: technique.circular_reference_binary_mapping
+  to: technique.peak_frequency_reparameterization_of_eccentric_inspiral
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Mapping to a circular binary at the same peak frequency is the closest existing graph prerequisite for Peak-frequency reparameterization of eccentric inspirals, because the downstream method is formulated in that conceptual or technical language."
+  failure_mode_if_absent: "Without Mapping to a circular binary at the same peak frequency, Peak-frequency reparameterization of eccentric inspirals loses the background that makes its central step intelligible in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Closest existing prerequisite match selected during orphan wiring."
+  status: asserted
+- from: technique.peak_frequency_reparameterization_of_eccentric_inspiral
+  to: technique.peak_frequency_tracking_for_kl_sources
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Peak-frequency reparameterization of eccentric inspirals is a direct methodological prerequisite for Peak-frequency tracking for highly eccentric KL sources, so wiring it downstream preserves the intermediate construction that the later technique assumes."
+  failure_mode_if_absent: "Without Peak-frequency reparameterization of eccentric inspirals, Peak-frequency tracking for highly eccentric KL sources loses the intermediate step it is applying and reads as an unmotivated jump in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Downstream technique appears to build directly on this newly wired method."
+  status: asserted
+- from: technique.peak_frequency_reparameterization_of_eccentric_inspiral
+  to: technique.power_law_noise_harmonic_resummation
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Peak-frequency reparameterization of eccentric inspirals is a direct methodological prerequisite for Exact harmonic resummation for power-law noise curves, so wiring it downstream preserves the intermediate construction that the later technique assumes."
+  failure_mode_if_absent: "Without Peak-frequency reparameterization of eccentric inspirals, Exact harmonic resummation for power-law noise curves loses the intermediate step it is applying and reads as an unmotivated jump in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Downstream technique appears to build directly on this newly wired method."
+  status: asserted
+- from: technique.doubly_averaged_kozai_hamiltonian
+  to: technique.peak_frequency_tracking_for_kl_sources
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Doubly averaged Kozai Hamiltonian in Delaunay variables is the closest existing graph prerequisite for Peak-frequency tracking for highly eccentric KL sources, because the downstream method is formulated in that conceptual or technical language."
+  failure_mode_if_absent: "Without Doubly averaged Kozai Hamiltonian in Delaunay variables, Peak-frequency tracking for highly eccentric KL sources loses the background that makes its central step intelligible in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Closest existing prerequisite match selected during orphan wiring."
+  status: asserted
+- from: technique.asymmetric_dark_recombination
+  to: technique.peebles_factor_dark_recombination_solver
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Asymmetric recombination of dark atoms is the closest existing graph prerequisite for Peebles-factor solver for dark recombination, because the downstream method is formulated in that conceptual or technical language."
+  failure_mode_if_absent: "Without Asymmetric recombination of dark atoms, Peebles-factor solver for dark recombination loses the background that makes its central step intelligible in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Closest existing prerequisite match selected during orphan wiring."
+  status: asserted
+- from: technique.peebles_factor_dark_recombination_solver
+  to: technique.dissipative_dark_disk_cooling
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Peebles-factor solver for dark recombination is a direct methodological prerequisite for Dissipative dark-disk cooling with heavy and light dark charges, so wiring it downstream preserves the intermediate construction that the later technique assumes."
+  failure_mode_if_absent: "Without Peebles-factor solver for dark recombination, Dissipative dark-disk cooling with heavy and light dark charges loses the intermediate step it is applying and reads as an unmotivated jump in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Downstream technique appears to build directly on this newly wired method."
+  status: asserted
+- from: technique.boundary_matching_for_uplift_consistency
+  to: technique.perturbative_backreaction_with_brane_perturbations
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Boundary matching with perturbed radion and stabilizer profile is the closest existing graph prerequisite for Perturbative backreaction with brane perturbations, because the downstream method is formulated in that conceptual or technical language."
+  failure_mode_if_absent: "Without Boundary matching with perturbed radion and stabilizer profile, Perturbative backreaction with brane perturbations loses the background that makes its central step intelligible in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Closest existing prerequisite match selected during orphan wiring."
+  status: asserted
+- from: technique.perturbative_backreaction_with_brane_perturbations
+  to: technique.perturbativity_backreaction_viability_map
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Perturbative backreaction with brane perturbations is a direct methodological prerequisite for Perturbativity/backreaction viability map, so wiring it downstream preserves the intermediate construction that the later technique assumes."
+  failure_mode_if_absent: "Without Perturbative backreaction with brane perturbations, Perturbativity/backreaction viability map loses the intermediate step it is applying and reads as an unmotivated jump in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Downstream technique appears to build directly on this newly wired method."
+  status: asserted
+- from: technique.background_driven_detector_optimization
+  to: technique.pfa_oriented_detector_architecture
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Beam-background-driven detector optimization is the closest existing graph prerequisite for Particle-flow-oriented detector architecture, because the downstream method is formulated in that conceptual or technical language."
+  failure_mode_if_absent: "Without Beam-background-driven detector optimization, Particle-flow-oriented detector architecture loses the background that makes its central step intelligible in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Closest existing prerequisite match selected during orphan wiring."
+  status: asserted
+- from: technique.pfa_oriented_detector_architecture
+  to: technique.cyberpfa_crystal_bar_reconstruction
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Particle-flow-oriented detector architecture is a direct methodological prerequisite for CyberPFA for orthogonal crystal-bar calorimetry, so wiring it downstream preserves the intermediate construction that the later technique assumes."
+  failure_mode_if_absent: "Without Particle-flow-oriented detector architecture, CyberPFA for orthogonal crystal-bar calorimetry loses the intermediate step it is applying and reads as an unmotivated jump in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Downstream technique appears to build directly on this newly wired method."
+  status: asserted
+- from: technique.kl_eccentricity_phase_drift_forecast
+  to: technique.phase_doppler_environment_tomography
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Phase-drift forecast for secular eccentricity oscillations is the closest existing graph prerequisite for Environmental tomography from Doppler phase drift, because the downstream method is formulated in that conceptual or technical language."
+  failure_mode_if_absent: "Without Phase-drift forecast for secular eccentricity oscillations, Environmental tomography from Doppler phase drift loses the background that makes its central step intelligible in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Closest existing prerequisite match selected during orphan wiring."
+  status: asserted
+- from: sm.precision.gauge_boson_self_energy
+  to: technique.photon_field_renormalization
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Gauge-boson self-energy is the closest existing graph prerequisite for Photon field renormalization, because the downstream method is formulated in that conceptual or technical language."
+  failure_mode_if_absent: "Without Gauge-boson self-energy, Photon field renormalization loses the background that makes its central step intelligible in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Closest existing prerequisite match selected during orphan wiring."
+  status: asserted
+- from: qft.ward_takahashi_identity
+  to: technique.photon_polarization_sum
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Ward-Takahashi identity is the closest existing graph prerequisite for External-photon polarization sum, because the downstream method is formulated in that conceptual or technical language."
+  failure_mode_if_absent: "Without Ward-Takahashi identity, External-photon polarization sum loses the background that makes its central step intelligible in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Closest existing prerequisite match selected during orphan wiring."
+  status: asserted
+- from: sm.chiral_lagrangian
+  to: technique.pion_pole_dominance_matching
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Chiral Lagrangian is the closest existing graph prerequisite for Pion-pole dominance matching, because the downstream method is formulated in that conceptual or technical language."
+  failure_mode_if_absent: "Without Chiral Lagrangian, Pion-pole dominance matching loses the background that makes its central step intelligible in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Closest existing prerequisite match selected during orphan wiring."
+  status: asserted
+- from: technique.pion_pole_dominance_matching
+  to: technique.pion_pole_matching_goldberger_treiman
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Pion-pole dominance matching is a direct methodological prerequisite for Pion-Pole Matching and Goldberger-Treiman, so wiring it downstream preserves the intermediate construction that the later technique assumes."
+  failure_mode_if_absent: "Without Pion-pole dominance matching, Pion-Pole Matching and Goldberger-Treiman loses the intermediate step it is applying and reads as an unmotivated jump in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Downstream technique appears to build directly on this newly wired method."
+  status: asserted
+- from: complex_analysis.conformal_map
+  to: technique.poincare_disk_psl2r_symmetry
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Conformal map is the closest existing graph prerequisite for PSL(2,R) symmetry of the BMS equation via stereographic projection, because the downstream method is formulated in that conceptual or technical language."
+  failure_mode_if_absent: "Without Conformal map, PSL(2,R) symmetry of the BMS equation via stereographic projection loses the background that makes its central step intelligible in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Closest existing prerequisite match selected during orphan wiring."
+  status: asserted
+- from: technique.poincare_disk_psl2r_symmetry
+  to: technique.bms_fixed_order_iteration
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "PSL(2,R) symmetry of the BMS equation via stereographic projection is a direct methodological prerequisite for Fixed-order iteration of the BMS equation as integrand generator, so wiring it downstream preserves the intermediate construction that the later technique assumes."
+  failure_mode_if_absent: "Without PSL(2,R) symmetry of the BMS equation via stereographic projection, Fixed-order iteration of the BMS equation as integrand generator loses the intermediate step it is applying and reads as an unmotivated jump in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Downstream technique appears to build directly on this newly wired method."
+  status: asserted
+- from: technique.mixed_position_momentum_propagators
+  to: technique.point_split_bulk_loop_soft_masses
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Mixed Position/Momentum Space Propagators in R_xi Gauge for AdS5 is the closest existing graph prerequisite for Point-split bulk-loop estimate for soft masses, because the downstream method is formulated in that conceptual or technical language."
+  failure_mode_if_absent: "Without Mixed Position/Momentum Space Propagators in R_xi Gauge for AdS5, Point-split bulk-loop estimate for soft masses loses the background that makes its central step intelligible in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Closest existing prerequisite match selected during orphan wiring."
+  status: asserted
+- from: qft.cross_section
+  to: technique.poisson_ncrit_discovery_metric
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Cross section is the closest existing graph prerequisite for Poisson Ncrit Discovery Metric, because the downstream method is formulated in that conceptual or technical language."
+  failure_mode_if_absent: "Without Cross section, Poisson Ncrit Discovery Metric loses the background that makes its central step intelligible in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Closest existing prerequisite match selected during orphan wiring."
+  status: asserted
+- from: technique.psun_witten_effect_with_dyon_modes
+  to: technique.poisson_resummation_of_dyon_spectrum
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "PSU(n) Witten Effect with Dyon Worldvolume Modes is the closest existing graph prerequisite for Poisson Resummation of the Dyon Tower, because the downstream method is formulated in that conceptual or technical language."
+  failure_mode_if_absent: "Without PSU(n) Witten Effect with Dyon Worldvolume Modes, Poisson Resummation of the Dyon Tower loses the background that makes its central step intelligible in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Closest existing prerequisite match selected during orphan wiring."
+  status: asserted
+- from: technique.poisson_resummation_of_dyon_spectrum
+  to: technique.winding_dyon_collective_coordinate_instanton
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Poisson Resummation of the Dyon Tower is a direct methodological prerequisite for Worldline Instanton from Dyon Collective-Coordinate Winding, so wiring it downstream preserves the intermediate construction that the later technique assumes."
+  failure_mode_if_absent: "Without Poisson Resummation of the Dyon Tower, Worldline Instanton from Dyon Collective-Coordinate Winding loses the intermediate step it is applying and reads as an unmotivated jump in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Downstream technique appears to build directly on this newly wired method."
+  status: asserted
+- from: technique.wrapped_ads_codimension_two_construction
+  to: technique.polar_core_curvature_singularity_formula
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Wrapped-AdS construction for codimension-two branes is the closest existing graph prerequisite for Curvature-singularity formula for polar-coordinate cores, because the downstream method is formulated in that conceptual or technical language."
+  failure_mode_if_absent: "Without Wrapped-AdS construction for codimension-two branes, Curvature-singularity formula for polar-coordinate cores loses the background that makes its central step intelligible in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Closest existing prerequisite match selected during orphan wiring."
+  status: asserted
+- from: technique.spin_and_polarization_density_matrix_methods
+  to: technique.polarized_decay_distribution_calibration
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Spin and polarization density matrix methods is the closest existing graph prerequisite for Calibration from polarized decay distributions, because the downstream method is formulated in that conceptual or technical language."
+  failure_mode_if_absent: "Without Spin and polarization density matrix methods, Calibration from polarized decay distributions loses the background that makes its central step intelligible in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Closest existing prerequisite match selected during orphan wiring."
+  status: asserted
+- from: technique.polarized_decay_distribution_calibration
+  to: technique.fragmentation_insensitive_polarization_ratio
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Calibration from polarized decay distributions is a direct methodological prerequisite for Fragmentation-insensitive polarization ratio, so wiring it downstream preserves the intermediate construction that the later technique assumes."
+  failure_mode_if_absent: "Without Calibration from polarized decay distributions, Fragmentation-insensitive polarization ratio loses the intermediate step it is applying and reads as an unmotivated jump in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Downstream technique appears to build directly on this newly wired method."
+  status: asserted
+- from: technique.frequency_space_population_from_fpdot
+  to: technique.population_inference_from_frequency_counts
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Population forecasting from dn/df_p = R/f_pdot is the closest existing graph prerequisite for Population inference from frequency-bin counts, because the downstream method is formulated in that conceptual or technical language."
+  failure_mode_if_absent: "Without Population forecasting from dn/df_p = R/f_pdot, Population inference from frequency-bin counts loses the background that makes its central step intelligible in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Closest existing prerequisite match selected during orphan wiring."
+  status: asserted
+- from: technique.cartan_subalgebra_and_weights
+  to: technique.positive_weight_ordering
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Cartan subalgebra and weights is the closest existing graph prerequisite for Positive-weight ordering, because the downstream method is formulated in that conceptual or technical language."
+  failure_mode_if_absent: "Without Cartan subalgebra and weights, Positive-weight ordering loses the background that makes its central step intelligible in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Closest existing prerequisite match selected during orphan wiring."
+  status: asserted
+- from: technique.positive_weight_ordering
+  to: technique.highest_weight_dynkin_classification
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Positive-weight ordering is a direct methodological prerequisite for Classify irreps by highest weights and Dynkin coefficients, so wiring it downstream preserves the intermediate construction that the later technique assumes."
+  failure_mode_if_absent: "Without Positive-weight ordering, Classify irreps by highest weights and Dynkin coefficients loses the intermediate step it is applying and reads as an unmotivated jump in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Downstream technique appears to build directly on this newly wired method."
+  status: asserted
+- from: technique.power_law_noise_harmonic_resummation
+  to: technique.peak_frequency_local_noise_approximation
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Exact harmonic resummation for power-law noise curves is a direct methodological prerequisite for Peak-frequency local-noise approximation for eccentric SNR, so wiring it downstream preserves the intermediate construction that the later technique assumes."
+  failure_mode_if_absent: "Without Exact harmonic resummation for power-law noise curves, Peak-frequency local-noise approximation for eccentric SNR loses the intermediate step it is applying and reads as an unmotivated jump in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Downstream technique appears to build directly on this newly wired method."
+  status: asserted
+- from: technique.ppe_waveform_deformation_framework
+  to: technique.ppe_waveform_consistency_tests
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Parameterized post-Einsteinian waveform deformations is a direct methodological prerequisite for Parameterized post-Einsteinian waveform tests, so wiring it downstream preserves the intermediate construction that the later technique assumes."
+  failure_mode_if_absent: "Without Parameterized post-Einsteinian waveform deformations, Parameterized post-Einsteinian waveform tests loses the intermediate step it is applying and reads as an unmotivated jump in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Downstream technique appears to build directly on this newly wired method."
+  status: asserted
+- from: technique.alpha_beta_parameterization_of_gw_signal
+  to: technique.ppe_waveform_deformation_framework
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Alpha-beta parameterization of the GW signal is the closest existing graph prerequisite for Parameterized post-Einsteinian waveform deformations, because the downstream method is formulated in that conceptual or technical language."
+  failure_mode_if_absent: "Without Alpha-beta parameterization of the GW signal, Parameterized post-Einsteinian waveform deformations loses the background that makes its central step intelligible in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Closest existing prerequisite match selected during orphan wiring."
+  status: asserted
+- from: technique.lattice_reduction_analytic_regression
+  to: technique.precision_point_tradeoff
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Lattice Reduction for Analytic Regression of Feynman Integrals is the closest existing graph prerequisite for Precision-Point Tradeoff in Analytic Fitting, because the downstream method is formulated in that conceptual or technical language."
+  failure_mode_if_absent: "Without Lattice Reduction for Analytic Regression of Feynman Integrals, Precision-Point Tradeoff in Analytic Fitting loses the background that makes its central step intelligible in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Closest existing prerequisite match selected during orphan wiring."
+  status: asserted
+- from: technique.earth_regeneration_at_maximal_mixing
+  to: technique.prem_runge_kutta_matter_evolution
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Earth regeneration even at maximal mixing is the closest existing graph prerequisite for PREM-based numerical matter evolution, because the downstream method is formulated in that conceptual or technical language."
+  failure_mode_if_absent: "Without Earth regeneration even at maximal mixing, PREM-based numerical matter evolution loses the background that makes its central step intelligible in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Closest existing prerequisite match selected during orphan wiring."
+  status: asserted
+- from: technique.dbi_wz_probe_embedding_with_flux
+  to: technique.probe_backreaction_localization_criterion
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Solve brane embeddings with DBI plus Wess-Zumino terms and flux is the closest existing graph prerequisite for Use probe geometry and backreaction scaling to locate the localization regime, because the downstream method is formulated in that conceptual or technical language."
+  failure_mode_if_absent: "Without Solve brane embeddings with DBI plus Wess-Zumino terms and flux, Use probe geometry and backreaction scaling to locate the localization regime loses the background that makes its central step intelligible in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Closest existing prerequisite match selected during orphan wiring."
+  status: asserted
+- from: technique.generalized_eml_correlated_interpretations
+  to: technique.profile_likelihood_limit_setting_subthreshold_signals
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Generalized extended maximum likelihood for correlated event interpretations is the closest existing graph prerequisite for Likelihood and gap methods for threshold-sensitive signals, because the downstream method is formulated in that conceptual or technical language."
+  failure_mode_if_absent: "Without Generalized extended maximum likelihood for correlated event interpretations, Likelihood and gap methods for threshold-sensitive signals loses the background that makes its central step intelligible in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Closest existing prerequisite match selected during orphan wiring."
+  status: asserted
+- from: technique.line_of_sight_projection_with_detection_function
+  to: technique.projection_correlation_morphology_proxy
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Projection to observational surface probability density is the closest existing graph prerequisite for Morphology from projection-correlation proxies, because the downstream method is formulated in that conceptual or technical language."
+  failure_mode_if_absent: "Without Projection to observational surface probability density, Morphology from projection-correlation proxies loses the background that makes its central step intelligible in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Closest existing prerequisite match selected during orphan wiring."
+  status: asserted
+- from: technique.character_orthogonality_and_projection_operators
+  to: technique.projection_operators_from_characters
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Character orthogonality and projection operators is the closest existing graph prerequisite for Projectors from characters, because the downstream method is formulated in that conceptual or technical language."
+  failure_mode_if_absent: "Without Character orthogonality and projection operators, Projectors from characters loses the background that makes its central step intelligible in the graph."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Closest existing prerequisite match selected during orphan wiring."
+  status: asserted

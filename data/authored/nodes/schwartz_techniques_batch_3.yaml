@@ -1,0 +1,397 @@
+# Hand-authored node records for the Schwartz techniques batch 3.
+
+- id: technique.finite_parts_from_matching
+  label: Automatic incorporation of finite loop corrections through EFT matching
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: SCET matching procedure that assigns finite one-loop constants to hard, jet, and soft functions at their natural scales so their sum reproduces the full NLO event-shape correction without extra infrared regulation.
+  status: asserted
+
+- id: technique.forward_central_flavour_extraction
+  label: Forward-central jet asymmetry for flavour-separated jet charge
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Flavor-tagging strategy that compares jet-charge distributions of the more-forward and more-central jets in dijet events to isolate parton-flavor dependence and its transverse-momentum evolution.
+  status: asserted
+
+- id: technique.forward_scattering_ir_necessity
+  label: Forward scattering as necessary ingredient for IR finiteness
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Infrared-finiteness diagnostic that includes forward-scattering contributions and disconnected interference terms in the degenerate process sum needed to cancel otherwise uncanceled massless-gauge-theory singularities.
+  status: asserted
+
+- id: technique.fragmenting_jet_function_formalism
+  label: Fragmenting Jet Functions for Jet Charge Calculation
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: SCET formalism that computes jet-charge moments from fragmenting jet functions convolved with fragmentation functions, separating perturbative jet evolution from nonperturbative hadronization input.
+  status: asserted
+
+- id: technique.gauge_invariant_new_physics_stability
+  label: Gauge-Invariant Sensitivity to New Physics via Operator Insertion
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Vacuum-stability procedure that inserts higher-dimension operators directly into the Lagrangian and recomputes the effective-potential minimum with consistent power counting, yielding a gauge-invariant new-physics sensitivity criterion.
+  status: asserted
+
+- id: technique.genealogical_constraints
+  label: Genealogical Constraints from Topology of Integration Space
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Constraint method for sequential discontinuities that uses the topology of Feynman-parameter integration space to determine which singularities can follow one another in a valid discontinuity chain.
+  status: asserted
+
+- id: technique.generalized_cross_section_n_to_m
+  label: Generalized n-to-m cross section for degenerate state sums
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Lorentz-invariant cross-section construction for degenerate-state sums that integrates over both incoming and outgoing phase space and uses the full S-tilde operator, including forward-scattering terms.
+  status: asserted
+
+- id: technique.generalized_eml_correlated_interpretations
+  label: Generalized extended maximum likelihood for correlated event interpretations
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Extended-maximum-likelihood prescription that corrects covariance and error formulas when multiple correlated interpretations of the same event are merged into one fit.
+  status: asserted
+
+- id: technique.generative_network_precision_control
+  label: Bayesian and Adversarial Precision Control for Generative Networks
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Uncertainty-aware event-generation workflow that combines normalizing flows, adversarial discrepancy checks, Bayesian weight uncertainty, and conditional nuisance-parameter training.
+  status: asserted
+
+- id: technique.girth_linear_radial_moment
+  label: Girth (Linear Radial Moment) for Quark/Gluon Discrimination
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Jet-shape observable equal to the pT-weighted linear radial moment of constituents, used as a single IRC-safe discriminator between quark and gluon jets.
+  status: asserted
+
+- id: technique.glauber_operator_factorization_violation
+  label: Glauber operator approach to collinear factorization violation
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: SCET computation strategy that inserts Glauber operators between pre-existing soft and collinear sectors to derive factorization-violating collinear splitting amplitudes directly within the EFT.
+  status: asserted
+
+- id: technique.glauber_quark_scet
+  label: Glauber quark operators in SCET for backward Regge scattering
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Extension of SCET with nonlocal Glauber-quark potential operators for backward Regge scattering, capturing t-channel fermion exchange in the |u| << s limit.
+  status: asserted
+
+- id: technique.gluon_jet_function_calculation
+  label: One-loop gluon jet function from collinear gluon propagator
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: One-loop derivation of the gluon jet function from the discontinuity of collinear gluon correlators, together with renormalization-group control over its anomalous-dimension structure.
+  status: asserted
+
+- id: technique.graviton_goldstone_decomposition
+  label: Goldstone boson decomposition for massive gravitons
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Massive-graviton bookkeeping method that restores broken coordinate invariances with link fields and decomposes the Goldstone mode into vector and scalar pieces to expose the longitudinal strong-coupling scale.
+  status: asserted
+
+- id: technique.groomed_hadronization_suppression
+  label: Reduced Hadronization Corrections for Groomed Observables
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Power-counting estimate of the nonperturbative onset for groomed observables obtained by evolving the collinear-soft scale down to Lambda_QCD, showing parametrically smaller hadronization corrections than in ungroomed observables.
+  status: asserted
+
+- id: technique.groomed_process_independence
+  label: Process Independence of Groomed Jet Shapes
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Argument that normalized soft-drop groomed jet-shape distributions depend only on the initiating parton species and not on the hard production process because grooming removes process-dependent soft radiation.
+  status: asserted
+
+- id: technique.grooming_sensitivity_variables
+  label: Grooming sensitivity as a discriminant
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Discriminant construction that uses changes in jet observables under grooming, or under grooming-parameter variation, as the signal-versus-background feature.
+  status: asserted
+
+- id: technique.hemisphere_soft_function_factorization
+  label: Factorization of the hemisphere soft function into mu-dependent and mu-independent parts
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Laplace-space factorization of the hemisphere soft function into universal mu-dependent factors and a single mu-independent correlation function that carries inter-hemisphere structure.
+  status: asserted
+
+- id: technique.higher_dim_operator_sensitivity
+  label: Higher-Dimension Operator Sensitivity Analysis in AdS/QCD
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Reliability test for AdS/QCD predictions that compares leading and higher-dimension bulk-operator overlap integrals to identify which observables are robust against UV-sensitive corrections.
+  status: asserted
+
+- id: technique.hjm_moment_extra_np_parameter
+  label: Additional Non-Perturbative Parameter in HJM Moments
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Heavy-jet-mass moment analysis showing that 1/Q power corrections to moments require an additional nonperturbative parameter beyond the shift parameter that controls the tail.
+  status: asserted
+
+- id: technique.holographic_regularization_running
+  label: Holographic Regularization for Bulk Gauge Coupling Running in Warped Space
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Warped-space regulator prescription, motivated by AdS/CFT, that implements a position-dependent cutoff and modified boundary conditions so zero-mode gauge couplings run logarithmically rather than with spurious power laws.
+  status: asserted
+
+- id: technique.inclusive_normalization_strategy
+  label: Inclusive Cross-Section Normalization for alpha_s Sensitivity
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Alpha_s extraction strategy that normalizes soft-drop jet-mass spectra to the inclusive cross section instead of a fixed mass window so the normalization retains genuine coupling sensitivity.
+  status: asserted
+
+- id: technique.infrared_safe_jet_flavour_with_soft_drop
+  label: Infrared-safe jet flavour classification via soft drop
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Soft-drop-based definition of jet flavour in which groomed quark number becomes infrared safe and quark and gluon jet fractions can be computed perturbatively.
+  status: asserted
+
+- id: technique.integrability_product_constraints
+  label: Integrability constraints on symbol-letter products near singular points
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Bootstrap constraint that combines symbol integrability with Landau-singularity behavior to restrict which symbol-letter products can appear adjacent to a vanishing letter.
+  status: asserted
+
+- id: technique.integrated_soft_function_expansion
+  label: Expansion of integrated hemisphere soft function in product-and-ratio variables
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Distributional expansion of the integrated hemisphere soft function in product-and-ratio variables rather than separate hemisphere energies, removing the ambiguity of simultaneous double-soft limits.
+  status: asserted
+
+- id: technique.intersection_number_fix
+  label: Intersection Number Correction for Collective Coordinates
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Collective-coordinate correction that divides by the intersection number of equivalent coordinate choices in field space, fixing the overcounting hidden in the standard textbook treatment.
+  status: asserted
+
+- id: technique.ir_sensitivity_vs_ir_divergence
+  label: IR sensitivity (regulator-independent IR characterization)
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Power-counting scheme that distinguishes regulator-independent infrared sensitivity from actual regulated divergence, allowing real and virtual contributions to be analyzed together without introducing an explicit IR regulator.
+  status: asserted
+
+- id: technique.iterative_amplitude_simplification
+  label: Iterative Transformer Pipeline for Amplitude Simplification
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Iterative transformer pipeline that alternates term grouping and expression rewriting to collapse large Feynman-diagram outputs into compact analytic amplitude formulas.
+  status: asserted
+
+- id: technique.jacobian_peak_mass_extraction
+  label: Jacobian peak technique for mass measurement
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Mass-measurement method that uses the Jacobian peak in a daughter particle's transverse-momentum distribution to read off the parent mass in partially invisible decays.
+  status: asserted
+
+- id: technique.jet_charge_resonance_discrimination
+  label: Jet Charge Log-Likelihood for Resonance Charge Determination
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Likelihood-based classifier that uses the two jet charges in a dijet resonance decay to distinguish charged from neutral parent resonances.
+  status: asserted
+
+- id: technique.jet_image_preprocessing_pipeline
+  label: Zero-Center and Standardize Jet Image Preprocessing
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Jet-image preprocessing recipe that zero-centers and standardizes each pixel after geometric normalization so downstream linear or neural classifiers train stably.
+  status: asserted
+
+- id: technique.jet_mass_threshold_factorization_hadron
+  label: Jet mass factorization via threshold expansion at hadron colliders
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Threshold-expansion factorization framework for hadron-collider jet-mass spectra that splits the soft function into in-jet and out-of-jet pieces with separate renormalization-group evolution.
+  status: asserted
+
+- id: technique.jet_pull_angle_colour_flow
+  label: Jet pull angle as a colour-connection discriminant
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Colour-flow discriminator built from the angle between a jet's pull vector and a reference jet, exploiting the preference of colour-connected radiation to fill the region between the jets.
+  status: asserted
+
+- id: technique.jet_pull_vector
+  label: Jet Pull Vector for Color Flow Determination
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Constituent-level jet dipole moment whose direction reveals the colour partner of a jet and thereby separates colour-singlet decays from generic QCD backgrounds.
+  status: asserted
+
+- id: technique.jet_thrust_observable
+  label: Jet thrust as a resummed finite-R event shape
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Finite-R event-shape definition for exclusive dijet production that retains SCET resummability while making jet-size dependence explicit.
+  status: asserted
+
+- id: technique.jet_volatility
+  label: Jet volatility as a substructure discriminant
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Q-jets-based substructure observable equal to the normalized spread of a jet's pruned-mass distribution, using instability under reclustering as a signal-versus-background discriminant.
+  status: asserted

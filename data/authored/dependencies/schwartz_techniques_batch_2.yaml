@@ -1,0 +1,902 @@
+# Hand-authored dependency edges for the Schwartz techniques batch 2.
+# Only prerequisites already present in the authored graph are linked here.
+
+# ── Modified effective-potential power counting ──────────────────────────────
+
+- from: qft.effective_potential
+  to: technique.consistent_veff_power_counting
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The method reorganizes perturbation theory specifically for extrema of the effective potential, so that object has to be in view before the lambda ~ hbar counting makes sense.
+  failure_mode_if_absent: Cannot tell which quantity is being reorganized or why tree, loop, and daisy terms must be compared at the same vacuum extremum.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_2_initial
+      note: Batch 2 lists Coleman-Weinberg effective-potential calculations as explicit prerequisites.
+  status: asserted
+
+- from: qft.anomalous_dimension
+  to: technique.consistent_veff_power_counting
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite explicitly invokes RG improvement and the anomalous dimension gamma, which enter the reorganization of the stability analysis.
+  failure_mode_if_absent: Cannot carry out the RG-improved version of the method or interpret how the high-field potential is rescaled across orders.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_2_initial
+      note: Batch 2 names the anomalous-dimension ingredient in the prerequisite list.
+  status: asserted
+
+# ── Glauber containment by contour deformation ───────────────────────────────
+
+- from: complex_analysis.contour_deformation
+  to: technique.contour_deformation_glauber_containment
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The technique is literally a contour-deformation argument in the complex k-minus plane, so the existing contour-deformation node is the direct mathematical prerequisite.
+  failure_mode_if_absent: Cannot justify the key step of moving the integration contour away from the Glauber region.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_2_initial
+      note: Batch 2 lists complex analysis via contour deformation as an explicit prerequisite.
+  status: asserted
+
+- from: qft.landau_singularity_conditions
+  to: technique.contour_deformation_glauber_containment
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Landau-style singularity analysis identifies when poles pinch the contour and when a deformation is allowed, which is the structural core of the argument.
+  failure_mode_if_absent: Cannot determine whether the Glauber region is actually pinched or whether the contour can be deformed past the would-be obstruction.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_2_initial
+      note: Batch 2 lists Landau equations and pinch-surface analysis as explicit prerequisites.
+  status: asserted
+
+- from: qft.pinch_singularities
+  to: technique.contour_deformation_glauber_containment
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The argument distinguishes genuine pinches from deformable regions, so the pinch-singularity concept is part of the operational setup.
+  failure_mode_if_absent: The proof cannot separate harmless soft regions from genuinely obstructed Glauber configurations.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_2_initial
+      note: Batch 2 names pinch-surface reasoning as an explicit prerequisite.
+  status: asserted
+
+# ── Contrastive term grouping ────────────────────────────────────────────────
+
+- from: qft.spinor_helicity_notation
+  to: technique.contrastive_term_grouping
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The method embeds terms of spinor-helicity amplitudes, so the spinor-helicity representation is the physics-side prerequisite for defining the input objects.
+  failure_mode_if_absent: Cannot interpret what the individual terms are or why grouping them should preserve amplitude simplifications.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_2_initial
+      note: Batch 2 lists spinor-helicity formalism and bracket notation as an explicit prerequisite.
+  status: asserted
+
+# ── Coulomb Green's function with width ─────────────────────────────────────
+
+- from: qcd.color_su3
+  to: technique.coulomb_green_function_finite_width
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The technique depends on which color channel generates the Coulomb potential, so SU(3) color structure is a direct prerequisite.
+  failure_mode_if_absent: Cannot determine the sign or strength of the threshold potential for a given production channel.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_2_initial
+      note: Batch 2 lists color decomposition of SU(3) tensor products as an explicit prerequisite.
+  status: asserted
+
+- from: qft.optical_theorem
+  to: technique.coulomb_green_function_finite_width
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The cross section is extracted from the imaginary part of the Green's function, which is precisely the optical-theorem step connecting the bound-state calculation to an observable rate.
+  failure_mode_if_absent: Cannot turn the origin Green's function into a production cross section.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_2_initial
+      note: Batch 2 lists the optical theorem as an explicit prerequisite.
+  status: asserted
+
+# ── Cut-diagram IBP and differential equations ──────────────────────────────
+
+- from: qft.optical_theorem
+  to: technique.cut_diagram_ibp_de
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The whole workflow starts from computing total cross sections through cut objects rather than full amplitudes, which still relies on the optical-theorem logic.
+  failure_mode_if_absent: Cannot motivate why cut objects encode the desired inclusive observable.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_2_initial
+      note: Batch 2 lists the optical theorem and unitarity cuts as explicit prerequisites.
+  status: asserted
+
+- from: qft.unitarity_cutting_rules
+  to: technique.cut_diagram_ibp_de
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The method acts directly on cut diagrams, so the existing cutting-rules node is the practical prerequisite for defining those objects.
+  failure_mode_if_absent: Cannot tell how the on-shell delta functions enter or why the cut integrals are legitimate inputs to IBP reduction.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_2_initial
+      note: Batch 2 lists unitarity cuts as an explicit prerequisite.
+  status: asserted
+
+# ── Daisy resummation for gauge invariance ───────────────────────────────────
+
+- from: qft.effective_potential
+  to: technique.daisy_resummation_gauge_invariance
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The daisy resummation is performed inside the effective-potential expansion, so that formalism is the direct upstream object.
+  failure_mode_if_absent: Cannot specify which loop expansion is being resummed or what quantity is claimed to be gauge invariant.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_2_initial
+      note: Batch 2 lists the two-loop effective potential as an explicit prerequisite.
+  status: asserted
+
+- from: qft.r_xi_gauge
+  to: technique.daisy_resummation_gauge_invariance
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The claimed cancellation is demonstrated in general R_xi gauge, so familiarity with that gauge family is part of using the method.
+  failure_mode_if_absent: Cannot track the gauge-parameter dependence that the daisy sum is meant to cancel.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_2_initial
+      note: Batch 2 lists general R_xi-gauge effective-potential calculations as an explicit prerequisite.
+  status: asserted
+
+# ── Delta-F=2 phase scanning ────────────────────────────────────────────────
+
+- from: eft.wilson_coefficient
+  to: technique.delta_f2_complex_phase_scan
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The scan is over complex new-physics Wilson coefficients, so the Wilson-coefficient concept is the explicit EFT-side prerequisite.
+  failure_mode_if_absent: Cannot state what quantities are being fit and phase-scanned in the meson-mixing analysis.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_2_initial
+      note: Batch 2 lists Wilson coefficients as an explicit prerequisite.
+  status: asserted
+
+# ── Destructive interference in top-meson models ────────────────────────────
+
+- from: qft.scattering_amplitude
+  to: technique.destructive_interference_top_mesons
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The mechanism relies on destructive interference among multiple contributions to the same scattering amplitude.
+  failure_mode_if_absent: Cannot formulate the cancellation among the Standard Model and top-meson exchange channels.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_2_initial
+      note: Batch 2 lists quantum interference in scattering amplitudes as an explicit prerequisite.
+  status: asserted
+
+- from: qft.t_channel
+  to: technique.destructive_interference_top_mesons
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The model-building trick is specific to t-channel exchanges, so the t-channel kinematic organization is part of the setup.
+  failure_mode_if_absent: Cannot identify which exchange topology is being tuned to produce the asymmetry and the cancellations.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_2_initial
+      note: Batch 2 lists color structure of t-channel exchanges as an explicit prerequisite.
+  status: asserted
+
+- from: qft.narrow_width_approximation
+  to: technique.destructive_interference_top_mesons
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Resonance widths control how the interfering top-meson states contribute to rates, so the narrow-width language is an explicit prerequisite.
+  failure_mode_if_absent: Cannot estimate the resonance contribution consistently or compare the interference picture to rate constraints.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_2_initial
+      note: Batch 2 lists the narrow-width approximation as an explicit prerequisite.
+  status: asserted
+
+# ── Direct tunneling from path integrals ─────────────────────────────────────
+
+- from: qft.path_integral_and_generating_functionals
+  to: technique.direct_minkowski_tunneling_rate
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The method is framed directly in the Minkowski path integral, so the path-integral formalism is the immediate prerequisite.
+  failure_mode_if_absent: Cannot define the constrained functional integral or the turning-surface insertion that isolates the decay contribution.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_2_initial
+      note: Batch 2 lists path-integral formulations of QM and QFT as explicit prerequisites.
+  status: asserted
+
+- from: qft.bounce_solution
+  to: technique.direct_minkowski_tunneling_rate
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Even though the derivation starts in Minkowski space, the dominant semiclassical contribution is still organized around the bounce configuration.
+  failure_mode_if_absent: Cannot recognize which saddle the constrained path integral is isolating.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_2_initial
+      note: Batch 2 lists bounce solutions and the Callan-Coleman formalism as explicit prerequisites.
+  status: asserted
+
+- from: qft.path_integral_and_generating_functionals
+  to: technique.direct_tunneling_method
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The propagator-based tunneling method is built by manipulating the path integral and its steepest-descent contours.
+  failure_mode_if_absent: Cannot define the flux-based functional expression for the decay rate.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_2_initial
+      note: Batch 2 lists path-integral saddle-point methods as explicit prerequisites.
+  status: asserted
+
+- from: qft.bounce_solution
+  to: technique.direct_tunneling_method
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The direct method reproduces the standard bounce result in saddle-point approximation, so the bounce remains an explicit prerequisite object.
+  failure_mode_if_absent: Cannot connect the direct formula to the usual semiclassical tunneling picture.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_2_initial
+      note: Batch 2 lists bounce solutions to Euclidean equations of motion as an explicit prerequisite.
+  status: asserted
+
+- from: qft.decay_rate
+  to: technique.direct_tunneling_method
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The method defines the decay rate through the false-vacuum survival probability and probability flux, so the rate concept is directly upstream.
+  failure_mode_if_absent: Cannot interpret the final quantity extracted from the constrained path integral.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_2_initial
+      note: Batch 2 lists the definition of the decay rate via P_FV(T) as an explicit prerequisite.
+  status: asserted
+
+# ── Dressed-state methods for IR finiteness ──────────────────────────────────
+
+- from: qft.dressed_asymptotic_state
+  to: technique.dressed_state_factorization
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The method is a factorization statement about dressed coherent asymptotic states, so the dressed-state node is the most direct prerequisite.
+  failure_mode_if_absent: Cannot identify what replaces bare Fock states in the infrared-finite scattering problem.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_2_initial
+      note: Batch 2 lists Faddeev-Kulish dressed states as an explicit prerequisite.
+  status: asserted
+
+- from: qft.bloch_nordsieck_theorem
+  to: technique.dressed_state_factorization
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The construction relies on the universal exponentiation of soft radiation that underlies Bloch-Nordsieck-style infrared structure.
+  failure_mode_if_absent: Cannot see why the dressing can be universal and process independent.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_2_initial
+      note: Batch 2 lists Abelian exponentiation and the Bloch-Nordsieck theorem as explicit prerequisites.
+  status: asserted
+
+- from: qft.wilson_line
+  to: technique.dressed_state_factorization
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The factorized soft sector is written in Wilson-line language, making the Wilson-line node a direct prerequisite for using the method.
+  failure_mode_if_absent: Cannot connect the coherent-state dressing to the standard soft-factorization objects.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_2_initial
+      note: Batch 2 lists Wilson lines and soft factorization as explicit prerequisites.
+  status: asserted
+
+- from: qft.dressed_asymptotic_state
+  to: technique.dressed_states_from_asymptotic_evolution
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: This technique makes the dressed-state construction explicit by defining asymptotic evolution operators acting on bare asymptotic states.
+  failure_mode_if_absent: Cannot interpret the in and out states produced by the asymptotic Moller operators.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_2_initial
+      note: Batch 2 lists Faddeev-Kulish coherent states as an explicit prerequisite.
+  status: asserted
+
+# ── Boost-limit scaling and correlator inversion ─────────────────────────────
+
+- from: qft.thrust
+  to: technique.e_scaling_boost_limit
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The result is an explicit mapping from boosted tau_21 to the thrust distribution, so the thrust observable is the core prerequisite.
+  failure_mode_if_absent: Cannot interpret what distribution is being rescaled by the factor of e.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_2_initial
+      note: Batch 2 lists the thrust distribution as an explicit prerequisite.
+  status: asserted
+
+- from: eft.large_logarithm_resummation
+  to: technique.e_scaling_boost_limit
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The relation is stated at NLL accuracy, so resummed logarithmic control is part of the method's stated domain of validity.
+  failure_mode_if_absent: Cannot tell what approximation level the e-scaling statement is claiming or how reliable the comparison is.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_2_initial
+      note: Batch 2 lists thrust at NLL or higher as an explicit prerequisite.
+  status: asserted
+
+- from: qft.connected_generating_functional
+  to: technique.edgeworth_action_reconstruction
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The procedure starts from connected correlators, and the connected generating functional is the authored node that packages exactly that data.
+  failure_mode_if_absent: Cannot state what the input cumulants are or how they are organized.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_2_initial
+      note: Batch 2 lists connected correlation functions as an explicit prerequisite.
+  status: asserted
+
+- from: qft.feynman_rules
+  to: technique.edgeworth_action_reconstruction
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The method introduces a new diagrammatic calculus with propagators and vertices, so ordinary diagram technology is an explicit prerequisite.
+  failure_mode_if_absent: Cannot use the cumulant-vertex expansion operationally.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_2_initial
+      note: Batch 2 lists Feynman-diagram technology as an explicit prerequisite.
+  status: asserted
+
+# ── Effective action versus effective potential in tunneling ────────────────
+
+- from: qft.effective_action
+  to: technique.effective_action_vs_potential_tunneling
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The method's main point is to distinguish the full 1PI effective action from the effective potential, so the effective-action node is directly upstream.
+  failure_mode_if_absent: Cannot formulate the warning against replacing the classical action by V_eff in the bounce problem.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_2_initial
+      note: Batch 2 lists the distinction between the 1PI effective action and the classical action as an explicit prerequisite.
+  status: asserted
+
+- from: classical_fields.action_functional
+  to: technique.effective_action_vs_potential_tunneling
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The correction being emphasized is that the bounce should still be found from the classical action functional rather than from a quantum-corrected potential alone.
+  failure_mode_if_absent: Cannot state what object should actually be extremized to obtain the bounce.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_2_initial
+      note: Batch 2 lists the classical action as part of the explicit prerequisite distinction.
+  status: asserted
+
+- from: qft.functional_determinant
+  to: technique.effective_action_vs_potential_tunneling
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The method relocates the quantum correction into the fluctuation determinant around the bounce, making the determinant formalism a direct prerequisite.
+  failure_mode_if_absent: Cannot explain where the one-loop correction should enter once V_eff is removed from the bounce equation.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_2_initial
+      note: Batch 2 lists the functional determinant around the bounce as an explicit prerequisite.
+  status: asserted
+
+- from: qft.bounce_solution
+  to: technique.effective_action_vs_potential_tunneling
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The practical consequence of the prescription is a corrected way to compute the bounce itself.
+  failure_mode_if_absent: Cannot connect the action-versus-potential distinction to the actual tunneling configuration being computed.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_2_initial
+      note: Batch 2 lists bounce-based one-loop tunneling computations as part of the prerequisite package.
+  status: asserted
+
+# ── EFT above electroweak symmetry breaking ──────────────────────────────────
+
+- from: eft.effective_field_theory
+  to: technique.eft_above_ewsb_for_fcnc
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The method is an EFT reformulation of top FCNC interactions, so the effective-field-theory framework is the direct prerequisite.
+  failure_mode_if_absent: Cannot state what kind of operator expansion is being reorganized.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_2_initial
+      note: Batch 2 lists effective field theory as an explicit prerequisite.
+  status: asserted
+
+- from: sm.ewbreak.electroweak_symmetry_breaking
+  to: technique.eft_above_ewsb_for_fcnc
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The whole point is to write the operator basis before electroweak symmetry breaking rather than after it.
+  failure_mode_if_absent: Cannot distinguish the unbroken-phase operator basis from the broken-phase vertex description being criticized.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_2_initial
+      note: Batch 2 lists electroweak symmetry breaking as an explicit prerequisite.
+  status: asserted
+
+- from: eft.higher_dimensional_operator
+  to: technique.eft_above_ewsb_for_fcnc
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The FCNC description is built from dimension-six operators, so the higher-dimensional-operator node is directly relevant.
+  failure_mode_if_absent: Cannot specify what the allowed top FCNC interactions look like in the EFT basis.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_2_initial
+      note: Batch 2 lists dimension-six operators as an explicit prerequisite.
+  status: asserted
+
+- from: qft.non_abelian_gauge_symmetry
+  to: technique.eft_above_ewsb_for_fcnc
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Imposing the full SU(2)_L x U(1)_Y symmetry before symmetry breaking is the symmetry-side constraint that makes the operator basis stronger.
+  failure_mode_if_absent: Cannot understand why top and bottom observables are linked by the unbroken gauge structure.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_2_initial
+      note: Batch 2 lists gauge-invariant operator construction as an explicit prerequisite.
+  status: asserted
+
+# ── Eikonal subtraction and eikonal jet functions ────────────────────────────
+
+- from: qft.eikonal_soft_factor
+  to: technique.eikonal_identity_soft_subtraction
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The decomposition isolates the eikonal soft-sensitive part of a propagator, so the eikonal-soft-factor node is the closest existing prerequisite.
+  failure_mode_if_absent: Cannot recognize which term in the identity is the universal soft contribution to be factorized.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_2_initial
+      note: Batch 2 lists the eikonal approximation as an explicit prerequisite.
+  status: asserted
+
+- from: qft.wilson_line
+  to: technique.eikonal_identity_soft_subtraction
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The extracted eikonal term is matched onto Wilson-line Feynman rules, so Wilson-line language is operationally required.
+  failure_mode_if_absent: Cannot connect the propagator identity to the factorized soft object it is meant to produce.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_2_initial
+      note: Batch 2 lists Wilson-line Feynman rules as an explicit prerequisite.
+  status: asserted
+
+- from: qft.thrust
+  to: technique.eikonal_jet_function_phase_space_removal
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The paper's concrete implementation is the thrust distribution, so the thrust observable is the authored event-shape prerequisite.
+  failure_mode_if_absent: Cannot place the eikonal jet-function subtraction inside a specific event-shape factorization problem.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_2_initial
+      note: Batch 2 lists event-shape factorization as an explicit prerequisite.
+  status: asserted
+
+- from: eft.jet_function
+  to: technique.eikonal_jet_function_phase_space_removal
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The subtraction removes soft-collinear overlap from the jet sector, so the jet-function node is one of the direct factorized ingredients.
+  failure_mode_if_absent: Cannot identify which sector is being corrected by the eikonal jet function.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_2_initial
+      note: Batch 2 lists hard/jet/soft factorization ingredients as explicit prerequisites.
+  status: asserted
+
+- from: eft.soft_function
+  to: technique.eikonal_jet_function_phase_space_removal
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The point of the method is to cleanly separate the jet sector from the soft sector, making the soft function a direct prerequisite node.
+  failure_mode_if_absent: Cannot describe the overlap that the eikonal jet function is supposed to remove.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_2_initial
+      note: Batch 2 lists hard/jet/soft factorization ingredients as explicit prerequisites.
+  status: asserted
+
+- from: qft.wilson_line
+  to: technique.eikonal_jet_function_phase_space_removal
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The eikonal jet functions are Wilson-line matrix elements, so Wilson-line technology is an explicit prerequisite.
+  failure_mode_if_absent: Cannot define the subtraction object whose phase-space dependence cancels the jet-sector cutoffs.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_2_initial
+      note: Batch 2 lists Wilson-line operators and their phase-space integrals as explicit prerequisites.
+  status: asserted
+
+- from: qft.dimensional_regularization
+  to: technique.eikonal_jet_function_phase_space_removal
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The cancellation between UV and IR structures is organized in dimensional regularization, which the method uses explicitly.
+  failure_mode_if_absent: Cannot keep the unrestricted phase-space integrals under control or interpret which poles belong to which sector.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_2_initial
+      note: Batch 2 lists dimensional regularization and IR/UV separation as explicit prerequisites.
+  status: asserted
+
+# ── Electroweak Sudakov correction ───────────────────────────────────────────
+
+- from: qft.running_coupling
+  to: technique.electroweak_sudakov_correction
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The correction package explicitly depends on the choice and running of alpha_e, making the running-coupling node directly relevant.
+  failure_mode_if_absent: Cannot interpret the stated sensitivity to alpha_e = 1/137 versus 1/129 or move between scales consistently.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_2_initial
+      note: Batch 2 lists the running electromagnetic coupling as an explicit prerequisite.
+  status: asserted
+
+- from: eft.large_logarithm_resummation
+  to: technique.electroweak_sudakov_correction
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Electroweak Sudakov effects are a large-logarithm problem, so the existing resummation node is the cleanest authored prerequisite.
+  failure_mode_if_absent: Cannot explain why high-ET electroweak virtual corrections organize into a logarithmically enhanced correction factor.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_2_initial
+      note: Batch 2 lists Sudakov logarithms from virtual gauge-boson exchange as an explicit prerequisite.
+  status: asserted
+
+# ── Neural-network field theory engineering ──────────────────────────────────
+
+- from: qft.cluster_decomposition_principle
+  to: technique.engineering_actions_via_independence_breaking
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The method uses spatially structured independence breaking to recover locality and cluster decomposition, so that axiom-level node is a direct prerequisite.
+  failure_mode_if_absent: Cannot state the locality condition the engineered parameter deformation is supposed to preserve.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_2_initial
+      note: Batch 2 lists cluster decomposition and locality as explicit prerequisites.
+  status: asserted
+
+- from: qft.jet
+  to: technique.event_image_cnn_classification
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The method turns jet radiation patterns into images, so the jet concept is the existing physics prerequisite for the input representation.
+  failure_mode_if_absent: Cannot interpret what physical object is being rasterized into eta-phi pixels.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_2_initial
+      note: Batch 2 lists jet clustering and jet images as explicit prerequisites.
+  status: asserted
+
+# ── Exact functional determinants around the bounce ──────────────────────────
+
+- from: qft.functional_determinant
+  to: technique.exact_functional_determinants_bounce
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The entire calculation is an exact evaluation of fluctuation determinants, so the functional-determinant node is the primary prerequisite.
+  failure_mode_if_absent: Cannot state what quantity is being computed in closed form around the bounce.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_2_initial
+      note: Batch 2 lists Gelfand-Yaglom functional-determinant methods as explicit prerequisites.
+  status: asserted
+
+- from: qft.faddeev_popov_determinant
+  to: technique.exact_functional_determinants_bounce
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Gauge-field contributions require the associated ghost determinant, making the Faddeev-Popov determinant part of the operational setup.
+  failure_mode_if_absent: Cannot track the ghost-sector contribution needed for the gauge-invariant final prefactor.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_2_initial
+      note: Batch 2 lists ghost determinants as an explicit prerequisite.
+  status: asserted
+
+- from: qft.r_xi_gauge
+  to: technique.exact_functional_determinants_bounce
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The calculation demonstrates gauge-parameter independence in a general R_xi family, so that gauge choice is an explicit prerequisite.
+  failure_mode_if_absent: Cannot see which gauge dependence is being canceled in the closed-form answer.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_2_initial
+      note: Batch 2 lists Fermi and R_xi gauge determinants as explicit prerequisites.
+  status: asserted
+
+# ── External-momentum power counting and factorization gauge ─────────────────
+
+- from: eft.power_counting
+  to: technique.external_momentum_power_counting
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The technique is a revised power-counting prescription, so the generic power-counting node is the direct upstream prerequisite.
+  failure_mode_if_absent: Cannot interpret what is being counted or how the lambda expansion is organized.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_2_initial
+      note: Batch 2 lists infrared power counting as an explicit prerequisite.
+  status: asserted
+
+- from: eft.collinear_mode
+  to: technique.external_momentum_power_counting
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: One of the explicit lambda parameters is attached to each collinear sector, so the collinear-mode node is directly relevant.
+  failure_mode_if_absent: Cannot specify which external directions receive separate small parameters.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_2_initial
+      note: Batch 2 lists collinear scaling as an explicit prerequisite.
+  status: asserted
+
+- from: eft.soft_mode
+  to: technique.external_momentum_power_counting
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The remaining lambda parameter is the soft-sector scaling parameter, so the soft-mode node is the complementary prerequisite.
+  failure_mode_if_absent: Cannot define the soft expansion variable that completes the method.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_2_initial
+      note: Batch 2 lists soft scaling as an explicit prerequisite.
+  status: asserted
+
+- from: qft.gauge_fixing
+  to: technique.factorization_gauge
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Factorization gauge is a specialized gauge-fixing prescription, so ordinary gauge fixing is the immediate prerequisite.
+  failure_mode_if_absent: Cannot interpret the momentum-dependent reference-vector choice as a legitimate gauge condition.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_2_initial
+      note: Batch 2 lists gauge fixing as an explicit prerequisite.
+  status: asserted
+
+- from: qft.faddeev_popov_determinant
+  to: technique.factorization_gauge
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The construction is implemented with a nonlocal gauge-fixing term in the path integral, so the associated Faddeev-Popov factor is part of the setup.
+  failure_mode_if_absent: Cannot justify the ghost and measure structure of the momentum-dependent gauge choice.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_2_initial
+      note: Batch 2 lists the Faddeev-Popov determinant as an explicit prerequisite.
+  status: asserted
+
+- from: eft.soft_collinear_effective_theory
+  to: technique.factorization_gauge
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The point of the gauge choice is to decouple soft and collinear sectors, so SCET sector language is an explicit prerequisite.
+  failure_mode_if_absent: Cannot explain why different reference vectors are assigned to soft, collinear, and hard regions.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_2_initial
+      note: Batch 2 lists soft-collinear effective-theory concepts as an explicit prerequisite.
+  status: asserted
+
+# ── From factorization to SCET ───────────────────────────────────────────────
+
+- from: qcd.factorization_theorem
+  to: technique.factorization_to_scet_derivation
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The derivation starts from an on-shell factorization formula, and the existing factorization-theorem node is the closest authored prerequisite for that starting point.
+  failure_mode_if_absent: Cannot state what pre-existing factorized QCD structure is being reinterpreted as an EFT.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_2_initial
+      note: Batch 2 lists an on-shell factorization formula as an explicit prerequisite.
+  status: asserted
+
+- from: eft.effective_field_theory
+  to: technique.factorization_to_scet_derivation
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The payoff of the argument is an effective theory, so the general EFT construction node is directly upstream.
+  failure_mode_if_absent: Cannot understand what it means to convert the factored matrix elements into a sectorized low-energy theory.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_2_initial
+      note: Batch 2 lists effective-field-theory construction as an explicit prerequisite.
+  status: asserted
+
+- from: qft.anomalous_dimension
+  to: technique.factorization_to_scet_derivation
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The SCET side of the argument is completed by assigning anomalous dimensions that resum the large logarithms.
+  failure_mode_if_absent: Cannot explain how the derived EFT acquires its resummation capability.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_2_initial
+      note: Batch 2 lists anomalous dimensions for resummation as an explicit prerequisite.
+  status: asserted
+
+# ── Fierz-Pauli no-go theorem ────────────────────────────────────────────────
+
+- from: qft.partial_wave_unitarity_bound
+  to: technique.fierz_pauli_extension_no_go
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The no-go statement is about how high one can push the strong-coupling or unitarity scale, so the partial-wave unitarity bound is an authored prerequisite.
+  failure_mode_if_absent: Cannot interpret the claim that no nonlinear completion can improve the theory's energy range of validity.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_2_initial
+      note: Batch 2 lists unitarity bounds from scattering amplitudes as an explicit prerequisite.
+  status: asserted
+
+- from: qft.scattering_amplitude
+  to: technique.fierz_pauli_extension_no_go
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The unitarity obstruction is diagnosed through scattering amplitudes of the longitudinal modes.
+  failure_mode_if_absent: Cannot state what observable is being used to detect the breakdown above Lambda_3.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_2_initial
+      note: Batch 2 lists scattering-amplitude unitarity analysis as an explicit prerequisite.
+  status: asserted
+
+# ── Final-state-only infrared cancellation ───────────────────────────────────
+
+- from: qft.kln_theorem
+  to: technique.final_state_only_ir_cancellation
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The method is framed as a stronger alternative to the KLN theorem, so KLN is the direct comparative prerequisite.
+  failure_mode_if_absent: Cannot see what standard infrared-cancellation statement is being improved upon.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_2_initial
+      note: Batch 2 lists the KLN theorem as an explicit prerequisite.
+  status: asserted
+
+- from: qft.s_matrix_unitarity
+  to: technique.final_state_only_ir_cancellation
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The proof is driven by completeness and unitarity, so S-matrix unitarity is one of the central prerequisites.
+  failure_mode_if_absent: Cannot justify why summing over final states plus forward scattering is sufficient for cancellation.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_2_initial
+      note: Batch 2 lists unitarity of the S matrix as an explicit prerequisite.
+  status: asserted
+
+- from: qft.infrared_divergence
+  to: technique.final_state_only_ir_cancellation
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The target of the argument is cancellation of infrared singularities, so the infrared-divergence node is directly upstream.
+  failure_mode_if_absent: Cannot specify which singular pieces are supposed to cancel in the inclusive sum.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_2_initial
+      note: Batch 2 lists infrared divergence structure as an explicit prerequisite.
+  status: asserted
+
+- from: qft.collinear_divergence
+  to: technique.final_state_only_ir_cancellation
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The result also concerns unresolved collinear structure, so the collinear-divergence node is part of the explicit prerequisite package.
+  failure_mode_if_absent: Cannot tell whether the cancellation statement covers only soft singularities or the full soft-collinear problem.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_2_initial
+      note: Batch 2 lists infrared and collinear divergence structure as an explicit prerequisite.
+  status: asserted

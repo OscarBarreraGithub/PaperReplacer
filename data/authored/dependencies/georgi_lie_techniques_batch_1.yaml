@@ -1,0 +1,480 @@
+- from: math.operator_basics.eigenvalues_and_eigenvectors
+  to: technique.abelian_simultaneous_diagonalization
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: This technique diagonalizes commuting symmetry operators and H in a common basis, so eigenvalues and eigenvectors are the objects that make the shared diagonal basis concrete.
+  failure_mode_if_absent: Cannot apply this technique without understanding the prerequisite.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction from research papers.
+  status: asserted
+- from: qm.commutator
+  to: technique.abelian_simultaneous_diagonalization
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Simultaneous diagonalization only applies when the relevant symmetry operators commute, so the commutator criterion is what tells you the technique can be used.
+  failure_mode_if_absent: Cannot apply this technique without understanding the prerequisite.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction from research papers.
+  status: asserted
+- from: sm.gauge_anomaly
+  to: technique.anomaly_free_representation_condition
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The anomaly-free representation condition is imposed precisely to avoid a gauge anomaly, so that concept motivates the vanishing symmetric-trace constraint.
+  failure_mode_if_absent: Cannot apply this technique without understanding the prerequisite.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction from research papers.
+  status: asserted
+- from: sm.anomaly_cancellation
+  to: technique.anomaly_free_representation_condition
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: This technique enforces quantum consistency representation by representation, which is the anomaly-cancellation requirement stated in practical group-theory form.
+  failure_mode_if_absent: Cannot apply this technique without understanding the prerequisite.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction from research papers.
+  status: asserted
+- from: sm.gauge_anomaly
+  to: technique.anomaly_index_arithmetic
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Anomaly-index arithmetic packages the cubic data that diagnose gauge anomalies, so the gauge-anomaly concept is what those algebraic rules are testing.
+  failure_mode_if_absent: Cannot apply this technique without understanding the prerequisite.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction from research papers.
+  status: asserted
+- from: qft.dirac_algebra
+  to: technique.antisymmetrized_gamma_products_as_k_forms
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The method builds antisymmetrized products of gamma matrices, so the Dirac algebra supplies the anticommutation relations needed to derive those tensor structures.
+  failure_mode_if_absent: Cannot apply this technique without understanding the prerequisite.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction from research papers.
+  status: asserted
+- from: math.differential_form
+  to: technique.antisymmetrized_gamma_products_as_k_forms
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The technique identifies antisymmetrized gamma products with p-form tensors, so differential-form language is needed to interpret the resulting antisymmetric objects as k-forms.
+  failure_mode_if_absent: Cannot apply this technique without understanding the prerequisite.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction from research papers.
+  status: asserted
+- from: eft.scale_separation
+  to: technique.approximate_flavor_su3_from_flavor_blind_gluons
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The argument treats flavor SU(3) as an approximate symmetry by separating flavor-blind gluon dynamics from smaller mass-breaking effects, which depends on scale separation.
+  failure_mode_if_absent: Cannot apply this technique without understanding the prerequisite.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction from research papers.
+  status: asserted
+- from: qcd.quark
+  to: technique.approximate_flavor_su3_from_flavor_blind_gluons
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Approximate flavor SU(3) is a statement about the light quark species being acted on nearly equally by gluons, so quarks are the degrees of freedom the technique organizes.
+  failure_mode_if_absent: Cannot apply this technique without understanding the prerequisite.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction from research papers.
+  status: asserted
+- from: sm.ssb.spontaneous_symmetry_breaking
+  to: technique.break_so10_to_sm_with_45_or_54
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: This technique chooses Higgs-field vacuum patterns that leave the Standard Model subgroup unbroken, so it relies on spontaneous symmetry breaking as the basic mechanism.
+  failure_mode_if_absent: Cannot apply this technique without understanding the prerequisite.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction from research papers.
+  status: asserted
+- from: sm.ssb.vacuum_expectation_value
+  to: technique.break_so10_to_sm_with_45_or_54
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The method classifies 45 or 54 Higgs vacuum values, so vacuum expectation values are the concrete data that implement the breaking pattern.
+  failure_mode_if_absent: Cannot apply this technique without understanding the prerequisite.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction from research papers.
+  status: asserted
+- from: sm.ssb.spontaneous_symmetry_breaking
+  to: technique.break_so10_to_su5_with_16_vev
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Breaking SO(10) to SU(5) with a 16 is a symmetry-breaking construction, so spontaneous symmetry breaking is the mechanism that makes the subgroup selection meaningful.
+  failure_mode_if_absent: Cannot apply this technique without understanding the prerequisite.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction from research papers.
+  status: asserted
+- from: sm.ssb.vacuum_expectation_value
+  to: technique.break_so10_to_su5_with_16_vev
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The technique works by turning on the SU(5)-singlet component of a 16 Higgs field, which is specifically a vacuum expectation value.
+  failure_mode_if_absent: Cannot apply this technique without understanding the prerequisite.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction from research papers.
+  status: asserted
+- from: math.lie_algebra
+  to: technique.cartan_matrix_encoding
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Cartan-matrix encoding is a compact way of recording simple-root data for a Lie algebra, so the Lie algebra is the structure whose root system the matrix describes.
+  failure_mode_if_absent: Cannot apply this technique without understanding the prerequisite.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction from research papers.
+  status: asserted
+- from: math.lie_algebra
+  to: technique.cartan_subalgebra_and_weights
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The technique selects a maximal commuting set of generators and labels states by weights, which is a standard construction inside a Lie algebra.
+  failure_mode_if_absent: Cannot apply this technique without understanding the prerequisite.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction from research papers.
+  status: asserted
+- from: qcd.color_su3
+  to: technique.casimir_computation_via_kd_rules
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The k_D rules compute Casimirs for SU(3) representations, so the SU(3) color group is the representation-theory context in which those Casimirs are used.
+  failure_mode_if_absent: Cannot apply this technique without understanding the prerequisite.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction from research papers.
+  status: asserted
+- from: sm.lepton_number
+  to: technique.charge_quantization_from_semi_simple_embedding
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: This embedding explains electric-charge quantization by placing quarks and leptons inside a semi-simple unified subgroup, so lepton-number assignments are part of the charge structure being reorganized.
+  failure_mode_if_absent: Cannot apply this technique without understanding the prerequisite.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction from research papers.
+  status: asserted
+- from: qft.gamma_five
+  to: technique.chirality_projection_from_gamma_product
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The chiral projector is built from the product of all gamma matrices and distinguished by gamma five, so gamma five is the operator that splits the two chiral sectors.
+  failure_mode_if_absent: Cannot apply this technique without understanding the prerequisite.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction from research papers.
+  status: asserted
+- from: qm.projection_operator
+  to: technique.chirality_projection_from_gamma_product
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: This technique explicitly constructs projection operators onto the two chiral spinor subspaces, so projection-operator language is required to state the method.
+  failure_mode_if_absent: Cannot apply this technique without understanding the prerequisite.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction from research papers.
+  status: asserted
+- from: qft.dirac_algebra
+  to: technique.chirality_projection_from_gamma_product
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The gamma-product projector depends on the anticommutation relations of the gamma matrices, so the Dirac algebra is needed to derive its properties.
+  failure_mode_if_absent: Cannot apply this technique without understanding the prerequisite.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction from research papers.
+  status: asserted
+- from: qft.dirac_algebra
+  to: technique.clifford_algebra_construction_of_so_n
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: This method starts from anticommuting Gamma matrices and turns their commutators into SO(N) generators, so the Dirac algebra is the starting algebraic input.
+  failure_mode_if_absent: Cannot apply this technique without understanding the prerequisite.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction from research papers.
+  status: asserted
+- from: qm.commutator
+  to: technique.clifford_algebra_construction_of_so_n
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The SO(N) generators in this construction are defined from commutators of Clifford elements, so commutator algebra is part of the derivation.
+  failure_mode_if_absent: Cannot apply this technique without understanding the prerequisite.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction from research papers.
+  status: asserted
+- from: qft.spinor_representation
+  to: technique.clifford_embedding_of_su_n_in_so_2n
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The embedding uses Clifford oscillators to build SU(n) generators acting on spinorial states, so spinor representation theory is the target representation being organized.
+  failure_mode_if_absent: Cannot apply this technique without understanding the prerequisite.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction from research papers.
+  status: asserted
+- from: qft.dirac_algebra
+  to: technique.clifford_embedding_of_su_n_in_so_2n
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The construction depends on Clifford bilinears made from gamma-matrix variables, so the Dirac algebra supplies the needed relations.
+  failure_mode_if_absent: Cannot apply this technique without understanding the prerequisite.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction from research papers.
+  status: asserted
+- from: qcd.quark
+  to: technique.color_magnetic_hyperfine_interaction
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The hyperfine interaction models spin-dependent splittings among constituent quarks, so quark degrees of freedom are the particles whose spins and masses enter the formula.
+  failure_mode_if_absent: Cannot apply this technique without understanding the prerequisite.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction from research papers.
+  status: asserted
+- from: qcd.color_su3
+  to: technique.color_magnetic_hyperfine_interaction
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The interaction is explicitly color-magnetic and attributed to gluon exchange, so SU(3) color is needed to interpret the coupling.
+  failure_mode_if_absent: Cannot apply this technique without understanding the prerequisite.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction from research papers.
+  status: asserted
+- from: math.linear_algebra.subspace
+  to: technique.complete_reducibility_of_finite_group_representations
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: Complete reducibility is proved by splitting a representation into invariant pieces and their complements, so subspace language is needed to formulate the decomposition.
+  failure_mode_if_absent: Cannot apply this technique without understanding the prerequisite.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction from research papers.
+  status: asserted
+- from: qm.inner_product
+  to: technique.complete_reducibility_of_finite_group_representations
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The standard proof uses an inner product to construct invariant orthogonal complements, so inner-product structure is required for the derivation.
+  failure_mode_if_absent: Cannot apply this technique without understanding the prerequisite.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction from research papers.
+  status: asserted
+- from: qcd.quark
+  to: technique.constituent_quark_magnetic_moment_sum_rule
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: This sum rule adds the magnetic moments of constituent quarks, so quark content and quark charges are the direct inputs.
+  failure_mode_if_absent: Cannot apply this technique without understanding the prerequisite.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction from research papers.
+  status: asserted
+- from: math.lie_algebra
+  to: technique.construct_lie_algebra_from_simple_roots
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The technique reconstructs all roots and commutators starting from simple roots, so it is explicitly a method for building a Lie algebra.
+  failure_mode_if_absent: Cannot apply this technique without understanding the prerequisite.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction from research papers.
+  status: asserted
+- from: qm.identical_particles_symmetrization
+  to: technique.deuteron_spin_isospin_selection
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The deuteron selection rule combines exchange antisymmetry with spin-isospin quantum numbers, so identical-particle symmetrization is the principle that constrains the allowed state.
+  failure_mode_if_absent: Cannot apply this technique without understanding the prerequisite.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction from research papers.
+  status: asserted
+- from: qft.creation_annihilation_operator
+  to: technique.diagonal_su3_from_coupled_oscillators
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The coupled-oscillator construction is written in terms of creation and annihilation operators that transform as 3 and 3bar, so those operators are the method's basic building blocks.
+  failure_mode_if_absent: Cannot apply this technique without understanding the prerequisite.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction from research papers.
+  status: asserted
+- from: math.lie_group
+  to: technique.division_algebra_filter_for_classical_groups
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: This filter classifies the classical symmetry families that arise as Lie groups over the reals, complexes, and quaternions, so Lie-group language is the object being filtered.
+  failure_mode_if_absent: Cannot apply this technique without understanding the prerequisite.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction from research papers.
+  status: asserted
+- from: math.lie_algebra
+  to: technique.dynkin_diagram_encoding
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Dynkin diagrams are a compressed encoding of simple-root data for a Lie algebra, so the Lie algebra is the structure being encoded.
+  failure_mode_if_absent: Cannot apply this technique without understanding the prerequisite.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction from research papers.
+  status: asserted
+- from: sm.ssb.spontaneous_symmetry_breaking
+  to: technique.e6_breaking_requires_adjoint_78
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The statement that E6 breaking needs a 78 is a claim about which Higgs vacua can break the symmetry far enough, so it relies on spontaneous symmetry breaking.
+  failure_mode_if_absent: Cannot apply this technique without understanding the prerequisite.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction from research papers.
+  status: asserted
+- from: sm.ssb.vacuum_expectation_value
+  to: technique.e6_breaking_requires_adjoint_78
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The argument compares what different Higgs vacuum values can preserve or break inside E6, so vacuum expectation values are the concrete inputs.
+  failure_mode_if_absent: Cannot apply this technique without understanding the prerequisite.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction from research papers.
+  status: asserted
+- from: sm.ewbreak.electroweak_symmetry
+  to: technique.electroweak_tensor_operator_assignment
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: This method assigns fields as tensor operators under SU(2) x U(1), so electroweak symmetry is the group structure that defines those assignments.
+  failure_mode_if_absent: Cannot apply this technique without understanding the prerequisite.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction from research papers.
+  status: asserted
+- from: qm.observable_operator
+  to: technique.electroweak_tensor_operator_assignment
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The construction treats creation and annihilation operators as tensor operators, so operator language is needed to interpret the assignments.
+  failure_mode_if_absent: Cannot apply this technique without understanding the prerequisite.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction from research papers.
+  status: asserted
+- from: qft.parity_transformation
+  to: technique.electroweak_tensor_operator_assignment
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Parity properties distinguish the left- and right-handed operator assignments that appear in the electroweak construction, so parity transformation is part of the setup.
+  failure_mode_if_absent: Cannot apply this technique without understanding the prerequisite.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction from research papers.
+  status: asserted
+- from: qft.creation_annihilation_operator
+  to: technique.emergent_su3_in_isotropic_oscillator
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The emergent SU(3) generators are built as bilinears in oscillator creation and annihilation operators, so those operators are the core ingredients of the construction.
+  failure_mode_if_absent: Cannot apply this technique without understanding the prerequisite.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction from research papers.
+  status: asserted

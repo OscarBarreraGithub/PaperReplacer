@@ -1,19 +1,4 @@
 # Canonical dependency edges for the distributions-and-boundary-values batch.
-- from: qft.feynman_i_epsilon_prescription
-  to: qft.boundary_values.plus_minus_i0_limits
-  relation_type: requires_for_recognize
-  necessity: typical
-  audience_profile: hep_th_grad
-  subfield: amplitudes
-  task_type: literature_reading
-  rationale: In reading practice, plus-or-minus i0 notation is usually encountered as the local boundary-value refinement of the familiar Feynman prescription.
-  failure_mode_if_absent: Cannot tell why the plus-or-minus i0 limit is being written at all or what existing QFT notation it is refining.
-  evidence:
-    - type: expert_claim
-      source_ref: distributions_boundary_values_batch_initial
-      note: Source notes keep i-epsilon language as the entry point into the local boundary-value notation.
-  status: asserted
-  confidence: 0.88
 - from: complex_analysis.poles_vs_branch_points
   to: qft.boundary_values.plus_minus_i0_limits
   relation_type: requires_for_recognize

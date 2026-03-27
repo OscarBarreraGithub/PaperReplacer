@@ -1,0 +1,1104 @@
+- from: "technique.projection_correlation_morphology_proxy"
+  to: "technique.forward_projection_of_simulated_galaxies"
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Morphology from projection-correlation proxies supplies the correlation/morphology/projection ingredient that Forward projection of simulated galaxies into observable space depends on, so it is a reasonable prerequisite edge in the current graph."
+  failure_mode_if_absent: "Without the correlation/morphology/projection background from Morphology from projection-correlation proxies, Forward projection of simulated galaxies into observable space loses part of the setup its summary assumes and is easier to misapply or misinterpret."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary overlap centered on correlation/morphology/projection."
+  status: asserted
+- from: "technique.pfa_oriented_detector_architecture"
+  to: "technique.four_dimensional_tracking_particle_flow_stack"
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Particle-flow-oriented detector architecture supplies the particle/tracking/flow ingredient that 4D tracking and particle-flow reconstruction stack depends on, so it is a reasonable prerequisite edge in the current graph."
+  failure_mode_if_absent: "Without the particle/tracking/flow background from Particle-flow-oriented detector architecture, 4D tracking and particle-flow reconstruction stack loses part of the setup its summary assumes and is easier to misapply or misinterpret."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary overlap centered on particle/tracking/flow."
+  status: asserted
+- from: "technique.hierarchical_global_track_alignment"
+  to: "technique.four_dimensional_tracking_particle_flow_stack"
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Hierarchical global-composite track alignment supplies the tracker geometry and global fit consistency ingredient that 4D tracking and particle-flow reconstruction stack depends on, so it is a reasonable prerequisite edge in the current graph."
+  failure_mode_if_absent: "Without the tracker geometry and global fit consistency background from Hierarchical global-composite track alignment, 4D tracking and particle-flow reconstruction stack loses part of the setup its summary assumes and is easier to misapply or misinterpret."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary overlap centered on tracker geometry and global fit consistency."
+  status: asserted
+- from: "technique.surface_displaced_vertex_llp_detector"
+  to: "technique.fpga_based_modular_vertex_triggering"
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Surface Displaced-Vertex LLP Detector supplies the displaced/geometric/detector ingredient that FPGA-Based Modular Vertex Triggering depends on, so it is a reasonable prerequisite edge in the current graph."
+  failure_mode_if_absent: "Without the displaced/geometric/detector background from Surface Displaced-Vertex LLP Detector, FPGA-Based Modular Vertex Triggering loses part of the setup its summary assumes and is easier to misapply or misinterpret."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary overlap centered on displaced/geometric/detector."
+  status: asserted
+- from: "technique.scaled_variable_y_for_hq_fragmentation"
+  to: "technique.fragmentation_insensitive_polarization_ratio"
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Scaled variable y for heavy-quark fragmentation supplies the fragmentation/main ingredient that Fragmentation-insensitive polarization ratio depends on, so it is a reasonable prerequisite edge in the current graph."
+  failure_mode_if_absent: "Without the fragmentation/main background from Scaled variable y for heavy-quark fragmentation, Fragmentation-insensitive polarization ratio loses part of the setup its summary assumes and is easier to misapply or misinterpret."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary overlap centered on fragmentation/main."
+  status: asserted
+- from: "technique.bulk_averaged_4d_reduction"
+  to: "technique.frame_duality_for_brane_cosmology"
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Bulk-averaged reduction of 5D cosmology to a 4D FRW system supplies the cosmology/averaged/einstein ingredient that Frame changes adapted to UV, IR, and Einstein observers depends on, so it is a reasonable prerequisite edge in the current graph."
+  failure_mode_if_absent: "Without the cosmology/averaged/einstein background from Bulk-averaged reduction of 5D cosmology to a 4D FRW system, Frame changes adapted to UV, IR, and Einstein observers loses part of the setup its summary assumes and is easier to misapply or misinterpret."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary overlap centered on cosmology/averaged/einstein."
+  status: asserted
+- from: "technique.chirp_time_continuity_equation_with_eccentricity"
+  to: "technique.frequency_space_population_from_fpdot"
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Continuity-equation number counts with eccentric chirp time supplies the eccentricity/populations/dependent ingredient that Population forecasting from dn/df_p = R/f_pdot depends on, so it is a reasonable prerequisite edge in the current graph."
+  failure_mode_if_absent: "Without the eccentricity/populations/dependent background from Continuity-equation number counts with eccentric chirp time, Population forecasting from dn/df_p = R/f_pdot loses part of the setup its summary assumes and is easier to misapply or misinterpret."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary overlap centered on eccentricity/populations/dependent."
+  status: asserted
+- from: "technique.frequency_space_population_from_fpdot"
+  to: "technique.population_inference_from_frequency_counts"
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Population forecasting from dn/df_p = R/f_pdot supplies the eccentricity/population/frequency ingredient that Population inference from frequency-bin counts depends on, so it is a reasonable prerequisite edge in the current graph."
+  failure_mode_if_absent: "Without the eccentricity/population/frequency background from Population forecasting from dn/df_p = R/f_pdot, Population inference from frequency-bin counts loses part of the setup its summary assumes and is easier to misapply or misinterpret."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary overlap centered on eccentricity/population/frequency."
+  status: asserted
+- from: "sm.ewbreak.yukawa_coupling"
+  to: "technique.froggatt_nielsen_alignment_textures"
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Yukawa coupling supplies the fermion/masses ingredient that Froggatt-Nielsen Alignment Textures depends on, so it is a reasonable prerequisite edge in the current graph."
+  failure_mode_if_absent: "Without the fermion/masses background from Yukawa coupling, Froggatt-Nielsen Alignment Textures loses part of the setup its summary assumes and is easier to misapply or misinterpret."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary overlap centered on fermion/masses."
+  status: asserted
+- from: "technique.froggatt_nielsen_alignment_textures"
+  to: "technique.froggatt_nielsen_alignment_with_spontaneous_cpv"
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Froggatt-Nielsen Alignment Textures supplies the horizontal/alignment/dangerous ingredient that Horizontal-symmetry alignment with spontaneous CP violation depends on, so it is a reasonable prerequisite edge in the current graph."
+  failure_mode_if_absent: "Without the horizontal/alignment/dangerous background from Froggatt-Nielsen Alignment Textures, Horizontal-symmetry alignment with spontaneous CP violation loses part of the setup its summary assumes and is easier to misapply or misinterpret."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary overlap centered on horizontal/alignment/dangerous."
+  status: asserted
+- from: "technique.gauge_invariant_heat_kernel_regulation"
+  to: "technique.fujikawa_jacobian_method"
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Regularize the Fujikawa trace with a gauge-invariant heat-kernel insertion supplies the fujikawa/built ingredient that Fujikawa Jacobian method depends on, so it is a reasonable prerequisite edge in the current graph."
+  failure_mode_if_absent: "Without the fujikawa/built background from Regularize the Fujikawa trace with a gauge-invariant heat-kernel insertion, Fujikawa Jacobian method loses part of the setup its summary assumes and is easier to misapply or misinterpret."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary overlap centered on fujikawa/built."
+  status: asserted
+- from: "technique.fujikawa_jacobian_method"
+  to: "technique.anomaly_computation_triad"
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Fujikawa Jacobian method supplies the fujikawa/jacobian/anomaly ingredient that Triangle, Spectral-Flow, and Fujikawa Anomaly Triad depends on, so it is a reasonable prerequisite edge in the current graph."
+  failure_mode_if_absent: "Without the fujikawa/jacobian/anomaly background from Fujikawa Jacobian method, Triangle, Spectral-Flow, and Fujikawa Anomaly Triad loses part of the setup its summary assumes and is easier to misapply or misinterpret."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary overlap centered on fujikawa/jacobian/anomaly."
+  status: asserted
+- from: "technique.generalized_D_and_F_density_formulas"
+  to: "technique.full_5d_offshell_sugra_reduction"
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Generalized D and F density formulas supplies the off-shell supergravity density construction ingredient that Full 5D off-shell SUGRA reduction depends on, so it is a reasonable prerequisite edge in the current graph."
+  failure_mode_if_absent: "Without the off-shell supergravity density construction background from Generalized D and F density formulas, Full 5D off-shell SUGRA reduction loses part of the setup its summary assumes and is easier to misapply or misinterpret."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary overlap centered on off-shell supergravity density construction."
+  status: asserted
+- from: "technique.full_5d_offshell_sugra_reduction"
+  to: "technique.anomaly_mediated_soft_terms"
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Full 5D off-shell SUGRA reduction supplies the anomaly ingredient that Anomaly-mediated soft-term derivation depends on, so it is a reasonable prerequisite edge in the current graph."
+  failure_mode_if_absent: "Without the anomaly background from Full 5D off-shell SUGRA reduction, Anomaly-mediated soft-term derivation loses part of the setup its summary assumes and is easier to misapply or misinterpret."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary overlap centered on anomaly."
+  status: asserted
+- from: "technique.scalar_to_graviton_propagator_reduction"
+  to: "technique.full_propagator_off_brane_asymptotics"
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Reduce the graviton propagator problem to a scalar Green function supplies the propagator/brane ingredient that Use the full propagator, not only the zero mode, for off-brane asymptotics depends on, so it is a reasonable prerequisite edge in the current graph."
+  failure_mode_if_absent: "Without the propagator/brane background from Reduce the graviton propagator problem to a scalar Green function, Use the full propagator, not only the zero mode, for off-brane asymptotics loses part of the setup its summary assumes and is easier to misapply or misinterpret."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary overlap centered on propagator/brane."
+  status: asserted
+- from: "technique.doubly_averaged_kozai_hamiltonian"
+  to: "technique.full_three_body_nonsecular_pericenter_kicks"
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Doubly averaged Kozai Hamiltonian in Delaunay variables supplies the averaged/secular/doubly ingredient that Non-secular pericenter-kick treatment beyond Kozai-Lidov averaging depends on, so it is a reasonable prerequisite edge in the current graph."
+  failure_mode_if_absent: "Without the averaged/secular/doubly background from Doubly averaged Kozai Hamiltonian in Delaunay variables, Non-secular pericenter-kick treatment beyond Kozai-Lidov averaging loses part of the setup its summary assumes and is easier to misapply or misinterpret."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary overlap centered on averaged/secular/doubly."
+  status: asserted
+- from: "technique.full_three_body_nonsecular_pericenter_kicks"
+  to: "technique.high_eccentricity_secondary_peak_diagnostic"
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Non-secular pericenter-kick treatment beyond Kozai-Lidov averaging supplies the eccentric ingredient that Secondary-peak diagnostic for extremely eccentric events depends on, so it is a reasonable prerequisite edge in the current graph."
+  failure_mode_if_absent: "Without the eccentric background from Non-secular pericenter-kick treatment beyond Kozai-Lidov averaging, Secondary-peak diagnostic for extremely eccentric events loses part of the setup its summary assumes and is easier to misapply or misinterpret."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary overlap centered on eccentric."
+  status: asserted
+- from: "technique.root_string_master_formula"
+  to: "technique.g2_root_construction"
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Root-string master formula supplies the string/root ingredient that G2 root construction depends on, so it is a reasonable prerequisite edge in the current graph."
+  failure_mode_if_absent: "Without the string/root background from Root-string master formula, G2 root construction loses part of the setup its summary assumes and is easier to misapply or misinterpret."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary overlap centered on string/root."
+  status: asserted
+- from: "technique.coupled_isothermal_poisson_jeans_solver"
+  to: "technique.gas_hydrostatics_dark_disk_constraint"
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Coupled isothermal Poisson-Jeans solver supplies the densities/potential/heights ingredient that Use gas hydrostatics to constrain a dark disk depends on, so it is a reasonable prerequisite edge in the current graph."
+  failure_mode_if_absent: "Without the densities/potential/heights background from Coupled isothermal Poisson-Jeans solver, Use gas hydrostatics to constrain a dark disk loses part of the setup its summary assumes and is easier to misapply or misinterpret."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary overlap centered on densities/potential/heights."
+  status: asserted
+- from: "technique.auxiliary_field_elimination"
+  to: "technique.gauge_auxiliary_field_elimination_and_d_term_potential"
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Auxiliary-Field Elimination supplies the elimination/auxiliary/obtain ingredient that Gauge Auxiliary-Field Elimination and D-Term Potential depends on, so it is a reasonable prerequisite edge in the current graph."
+  failure_mode_if_absent: "Without the elimination/auxiliary/obtain background from Auxiliary-Field Elimination, Gauge Auxiliary-Field Elimination and D-Term Potential loses part of the setup its summary assumes and is easier to misapply or misinterpret."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary overlap centered on elimination/auxiliary/obtain."
+  status: asserted
+- from: "technique.kahler_potential_geometry"
+  to: "technique.gauge_auxiliary_field_elimination_and_d_term_potential"
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Kahler-Potential Geometry supplies the potential/theories ingredient that Gauge Auxiliary-Field Elimination and D-Term Potential depends on, so it is a reasonable prerequisite edge in the current graph."
+  failure_mode_if_absent: "Without the potential/theories background from Kahler-Potential Geometry, Gauge Auxiliary-Field Elimination and D-Term Potential loses part of the setup its summary assumes and is easier to misapply or misinterpret."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary overlap centered on potential/theories."
+  status: asserted
+- from: "technique.holomorphic_spurion_extension"
+  to: "technique.gauge_kinetic_function_derivative_gaugino_masses"
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Holomorphic spurion extension supplies the holomorphic ingredient that Gauge-kinetic-function derivative formula for gaugino masses depends on, so it is a reasonable prerequisite edge in the current graph."
+  failure_mode_if_absent: "Without the holomorphic background from Holomorphic spurion extension, Gauge-kinetic-function derivative formula for gaugino masses loses part of the setup its summary assumes and is easier to misapply or misinterpret."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary overlap centered on holomorphic."
+  status: asserted
+- from: "qft.gaussian_functional_integral"
+  to: "technique.gaussian_vacuum_wave_functionals"
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Gaussian functional integral supplies the gaussian/free ingredient that Gaussian vacuum wave functionals depends on, so it is a reasonable prerequisite edge in the current graph."
+  failure_mode_if_absent: "Without the gaussian/free background from Gaussian functional integral, Gaussian vacuum wave functionals loses part of the setup its summary assumes and is easier to misapply or misinterpret."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary overlap centered on gaussian/free."
+  status: asserted
+- from: "technique.color_rep_from_matter_asymmetric_rehadronization"
+  to: "technique.geant_reinteraction_energy_loss_model"
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Color Representation from Matter-Asymmetric Rehadronization supplies the rehadronization/detector/material ingredient that GEANT Reinteraction and Energy-Loss Modeling depends on, so it is a reasonable prerequisite edge in the current graph."
+  failure_mode_if_absent: "Without the rehadronization/detector/material background from Color Representation from Matter-Asymmetric Rehadronization, GEANT Reinteraction and Energy-Loss Modeling loses part of the setup its summary assumes and is easier to misapply or misinterpret."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary overlap centered on rehadronization/detector/material."
+  status: asserted
+- from: "technique.cartan_subalgebra_and_weights"
+  to: "technique.gell_mann_matrix_basis"
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Cartan subalgebra and weights supplies the generators/hermitian/cartan ingredient that Gell-Mann matrix basis for SU(3) depends on, so it is a reasonable prerequisite edge in the current graph."
+  failure_mode_if_absent: "Without the generators/hermitian/cartan background from Cartan subalgebra and weights, Gell-Mann matrix basis for SU(3) loses part of the setup its summary assumes and is easier to misapply or misinterpret."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary overlap centered on generators/hermitian/cartan."
+  status: asserted
+- from: "technique.gell_mann_matrix_basis"
+  to: "technique.gell_mann_okubo_mass_formula"
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Gell-Mann matrix basis for SU(3) supplies the gell/mann ingredient that Gell-Mann-Okubo mass formula depends on, so it is a reasonable prerequisite edge in the current graph."
+  failure_mode_if_absent: "Without the gell/mann background from Gell-Mann matrix basis for SU(3), Gell-Mann-Okubo mass formula loses part of the setup its summary assumes and is easier to misapply or misinterpret."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary overlap centered on gell/mann."
+  status: asserted
+- from: "technique.generalized_wigner_eckart_su3"
+  to: "technique.gell_mann_okubo_mass_formula"
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Generalize Wigner-Eckart to SU(3) supplies the operator/eckart/wigner ingredient that Gell-Mann-Okubo mass formula depends on, so it is a reasonable prerequisite edge in the current graph."
+  failure_mode_if_absent: "Without the operator/eckart/wigner background from Generalize Wigner-Eckart to SU(3), Gell-Mann-Okubo mass formula loses part of the setup its summary assumes and is easier to misapply or misinterpret."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary overlap centered on operator/eckart/wigner."
+  status: asserted
+- from: "technique.kahler_potential_geometry"
+  to: "technique.generalized_D_and_F_density_formulas"
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Kahler-Potential Geometry supplies the locally supersymmetric sigma-model geometry ingredient that Generalized D and F density formulas depends on, so it is a reasonable prerequisite edge in the current graph."
+  failure_mode_if_absent: "Without the locally supersymmetric sigma-model geometry background from Kahler-Potential Geometry, Generalized D and F density formulas loses part of the setup its summary assumes and is easier to misapply or misinterpret."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary overlap centered on locally supersymmetric sigma-model geometry."
+  status: asserted
+- from: "technique.precision_event_generator_stack"
+  to: "technique.generative_network_precision_control"
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Precision event-generator stack supplies the uncertainty/generation/precision ingredient that Bayesian and Adversarial Precision Control for Generative Networks depends on, so it is a reasonable prerequisite edge in the current graph."
+  failure_mode_if_absent: "Without the uncertainty/generation/precision background from Precision event-generator stack, Bayesian and Adversarial Precision Control for Generative Networks loses part of the setup its summary assumes and is easier to misapply or misinterpret."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary overlap centered on uncertainty/generation/precision."
+  status: asserted
+- from: "technique.model_independent_llp_yield_scaling"
+  to: "technique.geometric_acceptance_decay_factorization"
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Model-independent LLP yield scaling supplies the probability/acceptance/production ingredient that Geometric acceptance times decay-probability reach estimation depends on, so it is a reasonable prerequisite edge in the current graph."
+  failure_mode_if_absent: "Without the probability/acceptance/production background from Model-independent LLP yield scaling, Geometric acceptance times decay-probability reach estimation loses part of the setup its summary assumes and is easier to misapply or misinterpret."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary overlap centered on probability/acceptance/production."
+  status: asserted
+- from: "technique.global_ads_slicing_and_patch_matching"
+  to: "technique.global_ads_box_spectrum_interpretation"
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Global AdS slicing and patch matching for mismatched branes supplies the boundary/slicing/brane ingredient that Interpret the AdS4 brane spectrum as a finite box in global AdS5 depends on, so it is a reasonable prerequisite edge in the current graph."
+  failure_mode_if_absent: "Without the boundary/slicing/brane background from Global AdS slicing and patch matching for mismatched branes, Interpret the AdS4 brane spectrum as a finite box in global AdS5 loses part of the setup its summary assumes and is easier to misapply or misinterpret."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary overlap centered on boundary/slicing/brane."
+  status: asserted
+- from: "technique.global_ads_box_spectrum_interpretation"
+  to: "technique.almost_zero_mode_localization"
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Interpret the AdS4 brane spectrum as a finite box in global AdS5 supplies the gravity/brane/light ingredient that Localized gravity from an almost-zero-mode graviton depends on, so it is a reasonable prerequisite edge in the current graph."
+  failure_mode_if_absent: "Without the gravity/brane/light background from Interpret the AdS4 brane spectrum as a finite box in global AdS5, Localized gravity from an almost-zero-mode graviton loses part of the setup its summary assumes and is easier to misapply or misinterpret."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary overlap centered on gravity/brane/light."
+  status: asserted
+- from: "technique.massless_supermultiplet_construction"
+  to: "technique.goldstino_pairing_diagnostic"
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Massless Supermultiplet Construction supplies the supermultiplet/massless ingredient that Goldstino pairing diagnostic depends on, so it is a reasonable prerequisite edge in the current graph."
+  failure_mode_if_absent: "Without the supermultiplet/massless background from Massless Supermultiplet Construction, Goldstino pairing diagnostic loses part of the setup its summary assumes and is easier to misapply or misinterpret."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary overlap centered on supermultiplet/massless."
+  status: asserted
+- from: "qft.dirac_spinor"
+  to: "technique.gordon_identity_reduction"
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Dirac spinor supplies the Dirac-bilinear spinor algebra ingredient that Gordon identity reduction depends on, so it is a reasonable prerequisite edge in the current graph."
+  failure_mode_if_absent: "Without the Dirac-bilinear spinor algebra background from Dirac spinor, Gordon identity reduction loses part of the setup its summary assumes and is easier to misapply or misinterpret."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary overlap centered on Dirac-bilinear spinor algebra."
+  status: asserted
+- from: "technique.gordon_identity_reduction"
+  to: "technique.form_factor_decomposition_and_ward_constraints"
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Gordon identity reduction supplies the structures ingredient that Form-factor decomposition with Ward constraints depends on, so it is a reasonable prerequisite edge in the current graph."
+  failure_mode_if_absent: "Without the structures background from Gordon identity reduction, Form-factor decomposition with Ward constraints loses part of the setup its summary assumes and is easier to misapply or misinterpret."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary overlap centered on structures."
+  status: asserted
+- from: "technique.matrix_exponential_calculus"
+  to: "technique.graded_parameters_semigroup_construction"
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Calculus of noncommuting exponentials supplies the composition of noncommuting transformation parameters ingredient that Graded-Parameter Semigroup Construction depends on, so it is a reasonable prerequisite edge in the current graph."
+  failure_mode_if_absent: "Without the composition of noncommuting transformation parameters background from Calculus of noncommuting exponentials, Graded-Parameter Semigroup Construction loses part of the setup its summary assumes and is easier to misapply or misinterpret."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary overlap centered on composition of noncommuting transformation parameters."
+  status: asserted
+- from: "technique.graded_parameters_semigroup_construction"
+  to: "technique.haag_lopuszanski_sohnius_analysis"
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Graded-Parameter Semigroup Construction supplies the graded ingredient that Haag-Lopuszanski-Sohnius Analysis depends on, so it is a reasonable prerequisite edge in the current graph."
+  failure_mode_if_absent: "Without the graded background from Graded-Parameter Semigroup Construction, Haag-Lopuszanski-Sohnius Analysis loses part of the setup its summary assumes and is easier to misapply or misinterpret."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary overlap centered on graded."
+  status: asserted
+- from: "technique.highest_weight_lowering_state_construction"
+  to: "technique.gram_schmidt_weight_basis_construction"
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Construct states by lowering from the highest weight supplies the weight ingredient that Gram-Schmidt construction of weight-space bases depends on, so it is a reasonable prerequisite edge in the current graph."
+  failure_mode_if_absent: "Without the weight background from Construct states by lowering from the highest weight, Gram-Schmidt construction of weight-space bases loses part of the setup its summary assumes and is easier to misapply or misinterpret."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary overlap centered on weight."
+  status: asserted
+- from: "technique.regular_subalgebra_by_dynkin_node_deletion"
+  to: "technique.grand_unification_search_criteria"
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Subgroups from Dynkin node deletion supplies the subgroup embedding and breaking-chain analysis ingredient that Grand-unification search criteria depends on, so it is a reasonable prerequisite edge in the current graph."
+  failure_mode_if_absent: "Without the subgroup embedding and breaking-chain analysis background from Subgroups from Dynkin node deletion, Grand-unification search criteria loses part of the setup its summary assumes and is easier to misapply or misinterpret."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary overlap centered on subgroup embedding and breaking-chain analysis."
+  status: asserted
+- from: "sm.gauge_anomaly"
+  to: "technique.gravitational_anomaly_trace_condition"
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Gauge anomaly supplies the anomaly ingredient that Test mixed gauge-gravitational anomalies with tr(T_a)=0 depends on, so it is a reasonable prerequisite edge in the current graph."
+  failure_mode_if_absent: "Without the anomaly background from Gauge anomaly, Test mixed gauge-gravitational anomalies with tr(T_a)=0 loses part of the setup its summary assumes and is easier to misapply or misinterpret."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary overlap centered on anomaly."
+  status: asserted
+- from: "technique.frw_lattice_fragmentation_simulation"
+  to: "technique.gravitational_waves_from_transient_higgs_domains"
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "FRW lattice simulation of modulus-Higgs fragmentation supplies the fragmentation/formation/domain ingredient that Gravitational-wave production from transient Higgs domains depends on, so it is a reasonable prerequisite edge in the current graph."
+  failure_mode_if_absent: "Without the fragmentation/formation/domain background from FRW lattice simulation of modulus-Higgs fragmentation, Gravitational-wave production from transient Higgs domains loses part of the setup its summary assumes and is easier to misapply or misinterpret."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary overlap centered on fragmentation/formation/domain."
+  status: asserted
+- from: "technique.entropy_budget_reheating_bookkeeping"
+  to: "technique.gravitino_cosmology_estimate"
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Entropy-budget bookkeeping through reheating supplies the cosmology/decay/relic ingredient that Gravitino Cosmology Estimate depends on, so it is a reasonable prerequisite edge in the current graph."
+  failure_mode_if_absent: "Without the cosmology/decay/relic background from Entropy-budget bookkeeping through reheating, Gravitino Cosmology Estimate loses part of the setup its summary assumes and is easier to misapply or misinterpret."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary overlap centered on cosmology/decay/relic."
+  status: asserted
+- from: "technique.warped_black_string_counterexample"
+  to: "technique.gregory_laflamme_lichnerowicz_test"
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Counterexample by warped uniform black string supplies the uniform/string/warped ingredient that Gregory-Laflamme instability test via Lichnerowicz modes depends on, so it is a reasonable prerequisite edge in the current graph."
+  failure_mode_if_absent: "Without the uniform/string/warped background from Counterexample by warped uniform black string, Gregory-Laflamme instability test via Lichnerowicz modes loses part of the setup its summary assumes and is easier to misapply or misinterpret."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary overlap centered on uniform/string/warped."
+  status: asserted
+- from: "technique.black_hole_entropy_threshold"
+  to: "technique.greybody_entropy_multiplicity_estimate"
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Entropy Threshold for Semiclassical Black Holes supplies the semiclassical/multiplicity/entropy ingredient that Greybody-Corrected Multiplicity and Lifetime Estimate depends on, so it is a reasonable prerequisite edge in the current graph."
+  failure_mode_if_absent: "Without the semiclassical/multiplicity/entropy background from Entropy Threshold for Semiclassical Black Holes, Greybody-Corrected Multiplicity and Lifetime Estimate loses part of the setup its summary assumes and is easier to misapply or misinterpret."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary overlap centered on semiclassical/multiplicity/entropy."
+  status: asserted
+- from: "technique.ngl_elimination_via_grooming"
+  to: "technique.grooming_sensitivity_variables"
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Elimination of Non-Global Logarithms via Soft Drop supplies the grooming/jet ingredient that Grooming sensitivity as a discriminant depends on, so it is a reasonable prerequisite edge in the current graph."
+  failure_mode_if_absent: "Without the grooming/jet background from Elimination of Non-Global Logarithms via Soft Drop, Grooming sensitivity as a discriminant loses part of the setup its summary assumes and is easier to misapply or misinterpret."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary overlap centered on grooming/jet."
+  status: asserted
+- from: "technique.grooming_sensitivity_variables"
+  to: "technique.multivariate_boosted_w_tagging"
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Grooming sensitivity as a discriminant supplies the observables/grooming ingredient that Multivariate boosted W-tagging combining grooming with substructure depends on, so it is a reasonable prerequisite edge in the current graph."
+  failure_mode_if_absent: "Without the observables/grooming background from Grooming sensitivity as a discriminant, Multivariate boosted W-tagging combining grooming with substructure loses part of the setup its summary assumes and is easier to misapply or misinterpret."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary overlap centered on observables/grooming."
+  status: asserted
+- from: "technique.character_orthogonality_and_projection_operators"
+  to: "technique.group_projection_operators"
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Character orthogonality and projection operators supplies the irreducible/characters/projection ingredient that Finite-group projection operators depends on, so it is a reasonable prerequisite edge in the current graph."
+  failure_mode_if_absent: "Without the irreducible/characters/projection background from Character orthogonality and projection operators, Finite-group projection operators loses part of the setup its summary assumes and is easier to misapply or misinterpret."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary overlap centered on irreducible/characters/projection."
+  status: asserted
+- from: "technique.ch7_internal_symmetry_current_algebra"
+  to: "technique.group_representation_analysis_of_currents"
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Internal-Symmetry Current Algebra supplies the operators ingredient that Group-Representation Analysis of Current Products depends on, so it is a reasonable prerequisite edge in the current graph."
+  failure_mode_if_absent: "Without the operators background from Internal-Symmetry Current Algebra, Group-Representation Analysis of Current Products loses part of the setup its summary assumes and is easier to misapply or misinterpret."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary overlap centered on operators."
+  status: asserted
+- from: "technique.cartan_maurer_integral_invariant"
+  to: "technique.group_volume_formula_for_winding_number"
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Use the Cartan-Maurer integral invariant supplies the homotopy/group ingredient that Evaluate winding numbers by deforming to a standard SU(2) subgroup depends on, so it is a reasonable prerequisite edge in the current graph."
+  failure_mode_if_absent: "Without the homotopy/group background from Use the Cartan-Maurer integral invariant, Evaluate winding numbers by deforming to a standard SU(2) subgroup loses part of the setup its summary assumes and is easier to misapply or misinterpret."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary overlap centered on homotopy/group."
+  status: asserted
+- from: "qft.spectral_and_mass_shell_refinement"
+  to: "technique.h0_plus_v_split_with_physical_masses"
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Spectral and mass-shell refinement supplies the physical spectrum and asymptotic-state bookkeeping ingredient that H = H0 + V Split with Physical Masses depends on, so it is a reasonable prerequisite edge in the current graph."
+  failure_mode_if_absent: "Without the physical spectrum and asymptotic-state bookkeeping background from Spectral and mass-shell refinement, H = H0 + V Split with Physical Masses loses part of the setup its summary assumes and is easier to misapply or misinterpret."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary overlap centered on physical spectrum and asymptotic-state bookkeeping."
+  status: asserted
+- from: "technique.h0_plus_v_split_with_physical_masses"
+  to: "technique.high_energy_form_factor_approximation_in_bound_states"
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "H = H0 + V Split with Physical Masses supplies the bound/free ingredient that High-energy form-factor approximation in bound states depends on, so it is a reasonable prerequisite edge in the current graph."
+  failure_mode_if_absent: "Without the bound/free background from H = H0 + V Split with Physical Masses, High-energy form-factor approximation in bound states loses part of the setup its summary assumes and is easier to misapply or misinterpret."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary overlap centered on bound/free."
+  status: asserted
+- from: "qft.coleman_mandula_theorem"
+  to: "technique.haag_lopuszanski_sohnius_analysis"
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Coleman-Mandula theorem supplies the supersymmetry/algebra/coleman ingredient that Haag-Lopuszanski-Sohnius Analysis depends on, so it is a reasonable prerequisite edge in the current graph."
+  failure_mode_if_absent: "Without the supersymmetry/algebra/coleman background from Coleman-Mandula theorem, Haag-Lopuszanski-Sohnius Analysis loses part of the setup its summary assumes and is easier to misapply or misinterpret."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary overlap centered on supersymmetry/algebra/coleman."
+  status: asserted
+- from: "technique.helicity_handedness_parity_analysis"
+  to: "technique.helicity_suppression_for_spin_zero_to_leptons"
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Helicity-handedness analysis of parity violation supplies the helicity ingredient that Helicity Suppression and Yang-Theorem Diagnostics depends on, so it is a reasonable prerequisite edge in the current graph."
+  failure_mode_if_absent: "Without the helicity background from Helicity-handedness analysis of parity violation, Helicity Suppression and Yang-Theorem Diagnostics loses part of the setup its summary assumes and is easier to misapply or misinterpret."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary overlap centered on helicity."
+  status: asserted
+- from: "math.operator_basics.matrix_representation_of_linear_map"
+  to: "technique.hierarchical_global_track_alignment"
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Matrix representation of a linear map supplies the are ingredient that Hierarchical global-composite track alignment depends on, so it is a reasonable prerequisite edge in the current graph."
+  failure_mode_if_absent: "Without the are background from Matrix representation of a linear map, Hierarchical global-composite track alignment loses part of the setup its summary assumes and is easier to misapply or misinterpret."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary overlap centered on are."
+  status: asserted
+- from: "technique.holomorphic_spurion_extension"
+  to: "technique.hierarchical_limit_holomorphy_matching"
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Holomorphic spurion extension supplies the holomorphy ingredient that Hierarchical-limit matching of exact superpotentials depends on, so it is a reasonable prerequisite edge in the current graph."
+  failure_mode_if_absent: "Without the holomorphy background from Holomorphic spurion extension, Hierarchical-limit matching of exact superpotentials loses part of the setup its summary assumes and is easier to misapply or misinterpret."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary overlap centered on holomorphy."
+  status: asserted
+- from: "technique.peak_frequency_reparameterization_of_eccentric_inspiral"
+  to: "technique.high_eccentricity_secondary_peak_diagnostic"
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Peak-frequency reparameterization of eccentric inspirals supplies the eccentric/frequency/detector ingredient that Secondary-peak diagnostic for extremely eccentric events depends on, so it is a reasonable prerequisite edge in the current graph."
+  failure_mode_if_absent: "Without the eccentric/frequency/detector background from Peak-frequency reparameterization of eccentric inspirals, Secondary-peak diagnostic for extremely eccentric events loses part of the setup its summary assumes and is easier to misapply or misinterpret."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary overlap centered on eccentric/frequency/detector."
+  status: asserted
+- from: "technique.loop_splitting_to_decay_length_mapping"
+  to: "technique.high_pt_track_low_activity_trigger"
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Loop Splitting to Decay-Length Mapping supplies the window ingredient that High-pT track with low hadronic activity trigger depends on, so it is a reasonable prerequisite edge in the current graph."
+  failure_mode_if_absent: "Without the window background from Loop Splitting to Decay-Length Mapping, High-pT track with low hadronic activity trigger loses part of the setup its summary assumes and is easier to misapply or misinterpret."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary overlap centered on window."
+  status: asserted
+- from: "technique.sequestering_with_adjusting_stabilizer"
+  to: "technique.high_scale_stealth_sequestering"
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Sequestering with an adjusting stabilizer supplies the sequestering/mediation ingredient that High-scale stealth model building by sequestering depends on, so it is a reasonable prerequisite edge in the current graph."
+  failure_mode_if_absent: "Without the sequestering/mediation background from Sequestering with an adjusting stabilizer, High-scale stealth model building by sequestering loses part of the setup its summary assumes and is easier to misapply or misinterpret."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary overlap centered on sequestering/mediation."
+  status: asserted
+- from: "technique.high_scale_stealth_sequestering"
+  to: "technique.non_met_stealth_search_strategy"
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "High-scale stealth model building by sequestering supplies the structure/stealth ingredient that Non-MET stealth search strategy depends on, so it is a reasonable prerequisite edge in the current graph."
+  failure_mode_if_absent: "Without the structure/stealth background from High-scale stealth model building by sequestering, Non-MET stealth search strategy loses part of the setup its summary assumes and is easier to misapply or misinterpret."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary overlap centered on structure/stealth."
+  status: asserted
+- from: "technique.rs_cft_holographic_dictionary"
+  to: "technique.holographic_kk_correlator_dictionary"
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Use the RS-CFT dictionary as a phenomenology engine supplies the dictionary ingredient that Holographic KK-correlator dictionary depends on, so it is a reasonable prerequisite edge in the current graph."
+  failure_mode_if_absent: "Without the dictionary background from Use the RS-CFT dictionary as a phenomenology engine, Holographic KK-correlator dictionary loses part of the setup its summary assumes and is easier to misapply or misinterpret."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary overlap centered on dictionary."
+  status: asserted
+- from: "technique.coset_construction_for_broken_symmetry"
+  to: "technique.homotopy_exact_sequence_for_coset_spaces"
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Coset Construction for G to H Breaking supplies the unbroken/coset ingredient that Relate pi_2(G/H) to pi_1(H) via the embedding of H in G depends on, so it is a reasonable prerequisite edge in the current graph."
+  failure_mode_if_absent: "Without the unbroken/coset background from Coset Construction for G to H Breaking, Relate pi_2(G/H) to pi_1(H) via the embedding of H in G loses part of the setup its summary assumes and is easier to misapply or misinterpret."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary overlap centered on unbroken/coset."
+  status: asserted
+- from: "technique.young_tableaux_for_symmetric_groups"
+  to: "technique.hook_length_dimension_formula"
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Young tableaux for symmetric-group irreducibles supplies the symmetric/group ingredient that Hook-length dimension formula depends on, so it is a reasonable prerequisite edge in the current graph."
+  failure_mode_if_absent: "Without the symmetric/group background from Young tableaux for symmetric-group irreducibles, Hook-length dimension formula loses part of the setup its summary assumes and is easier to misapply or misinterpret."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary overlap centered on symmetric/group."
+  status: asserted
+- from: "eft.four_fermi_theory"
+  to: "technique.hubbard_stratonovich_gap_effective_action"
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "4-Fermi theory supplies the interaction/effective/fermion ingredient that Introduce a pair field and derive the gap effective action depends on, so it is a reasonable prerequisite edge in the current graph."
+  failure_mode_if_absent: "Without the interaction/effective/fermion background from 4-Fermi theory, Introduce a pair field and derive the gap effective action loses part of the setup its summary assumes and is easier to misapply or misinterpret."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary overlap centered on interaction/effective/fermion."
+  status: asserted
+- from: "technique.degenerate_fermion_core_support"
+  to: "technique.hydrostatic_fermi_gas_profile_solver"
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Core support from fermionic degeneracy pressure supplies the gravitating/degenerate/pressure ingredient that Hydrostatic profile solver for a self-gravitating Fermi gas depends on, so it is a reasonable prerequisite edge in the current graph."
+  failure_mode_if_absent: "Without the gravitating/degenerate/pressure background from Core support from fermionic degeneracy pressure, Hydrostatic profile solver for a self-gravitating Fermi gas loses part of the setup its summary assumes and is easier to misapply or misinterpret."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary overlap centered on gravitating/degenerate/pressure."
+  status: asserted
+- from: "technique.hydrostatic_fermi_gas_profile_solver"
+  to: "technique.jeans_inversion_without_stellar_profile"
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Hydrostatic profile solver for a self-gravitating Fermi gas supplies the equations/velocity/density ingredient that Jeans inversion without an assumed stellar light profile depends on, so it is a reasonable prerequisite edge in the current graph."
+  failure_mode_if_absent: "Without the equations/velocity/density background from Hydrostatic profile solver for a self-gravitating Fermi gas, Jeans inversion without an assumed stellar light profile loses part of the setup its summary assumes and is easier to misapply or misinterpret."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary overlap centered on equations/velocity/density."
+  status: asserted
+- from: "technique.cartan_matrix_encoding"
+  to: "technique.ii_system_formulation_for_simple_algebras"
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Cartan matrix as q-p data supplies the root ingredient that II-system formulation depends on, so it is a reasonable prerequisite edge in the current graph."
+  failure_mode_if_absent: "Without the root background from Cartan matrix as q-p data, II-system formulation loses part of the setup its summary assumes and is easier to misapply or misinterpret."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary overlap centered on root."
+  status: asserted
+- from: "technique.ii_system_formulation_for_simple_algebras"
+  to: "technique.g2_root_construction"
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "II-system formulation supplies the root ingredient that G2 root construction depends on, so it is a reasonable prerequisite edge in the current graph."
+  failure_mode_if_absent: "Without the root background from II-system formulation, G2 root construction loses part of the setup its summary assumes and is easier to misapply or misinterpret."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary overlap centered on root."
+  status: asserted
+- from: "qft.slavnov_taylor_identity"
+  to: "technique.inductive_counterterm_analysis_from_zinn_justin"
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Slavnov-Taylor identity supplies the gauge-symmetry constraints on loopwise counterterms ingredient that Inductive counterterm analysis from Zinn-Justin depends on, so it is a reasonable prerequisite edge in the current graph."
+  failure_mode_if_absent: "Without the gauge-symmetry constraints on loopwise counterterms background from Slavnov-Taylor identity, Inductive counterterm analysis from Zinn-Justin loses part of the setup its summary assumes and is easier to misapply or misinterpret."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary overlap centered on gauge-symmetry constraints on loopwise counterterms."
+  status: asserted
+- from: "technique.brane_intersection_consistency_filter"
+  to: "technique.intersection_counting_rule_for_brane_annihilation"
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "No-4D-intersection consistency filter supplies the intersections/intersection/branes ingredient that Generic intersection counting rule depends on, so it is a reasonable prerequisite edge in the current graph."
+  failure_mode_if_absent: "Without the intersections/intersection/branes background from No-4D-intersection consistency filter, Generic intersection counting rule loses part of the setup its summary assumes and is easier to misapply or misinterpret."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary overlap centered on intersections/intersection/branes."
+  status: asserted
+- from: "math.linear_algebra.subspace"
+  to: "technique.invariant_subspace_and_direct_sum_decomposition"
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Subspace supplies the subspace structure and direct-sum splitting ingredient that Invariant subspaces and direct-sum decomposition depends on, so it is a reasonable prerequisite edge in the current graph."
+  failure_mode_if_absent: "Without the subspace structure and direct-sum splitting background from Subspace, Invariant subspaces and direct-sum decomposition loses part of the setup its summary assumes and is easier to misapply or misinterpret."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary overlap centered on subspace structure and direct-sum splitting."
+  status: asserted
+- from: "technique.invariant_subspace_and_direct_sum_decomposition"
+  to: "technique.irreducible_tensor_projection"
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Invariant subspaces and direct-sum decomposition supplies the irreducible/reducible ingredient that Project tensor products onto irreducible pieces depends on, so it is a reasonable prerequisite edge in the current graph."
+  failure_mode_if_absent: "Without the irreducible/reducible background from Invariant subspaces and direct-sum decomposition, Project tensor products onto irreducible pieces loses part of the setup its summary assumes and is easier to misapply or misinterpret."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary overlap centered on irreducible/reducible."
+  status: asserted
+- from: "technique.reality_intertwiner_test_via_schur_lemma"
+  to: "technique.invariant_tensor_use_of_reality_matrix"
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Schur-lemma reality intertwiner test supplies the reality ingredient that Reality matrix as an invariant tensor depends on, so it is a reasonable prerequisite edge in the current graph."
+  failure_mode_if_absent: "Without the reality background from Schur-lemma reality intertwiner test, Reality matrix as an invariant tensor loses part of the setup its summary assumes and is easier to misapply or misinterpret."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary overlap centered on reality."
+  status: asserted
+- from: "technique.end_to_end_muon_collider_design_loop"
+  to: "technique.ionization_cooling_demonstrator_staging"
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "End-to-end integrated muon-collider design supplies the integrated/component/cooling ingredient that Staged ionization-cooling demonstrator depends on, so it is a reasonable prerequisite edge in the current graph."
+  failure_mode_if_absent: "Without the integrated/component/cooling background from End-to-end integrated muon-collider design, Staged ionization-cooling demonstrator loses part of the setup its summary assumes and is easier to misapply or misinterpret."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary overlap centered on integrated/component/cooling."
+  status: asserted
+- from: "technique.warped_wavefunction_localization"
+  to: "technique.ir_localized_overlap_enhancement"
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Warped wavefunction localization supplies the localization/couplings/overlap ingredient that IR-Localized Overlap Enhancement depends on, so it is a reasonable prerequisite edge in the current graph."
+  failure_mode_if_absent: "Without the localization/couplings/overlap background from Warped wavefunction localization, IR-Localized Overlap Enhancement loses part of the setup its summary assumes and is easier to misapply or misinterpret."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary overlap centered on localization/couplings/overlap."
+  status: asserted
+- from: "technique.ir_localized_overlap_enhancement"
+  to: "technique.kk_graviton_overlap_interpretation"
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "IR-Localized Overlap Enhancement supplies the couplings/overlap/warped ingredient that Wavefunction-overlap interpretation of TeV KK gravitons depends on, so it is a reasonable prerequisite edge in the current graph."
+  failure_mode_if_absent: "Without the couplings/overlap/warped background from IR-Localized Overlap Enhancement, Wavefunction-overlap interpretation of TeV KK gravitons loses part of the setup its summary assumes and is easier to misapply or misinterpret."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary overlap centered on couplings/overlap/warped."
+  status: asserted
+- from: "technique.ir_localized_overlap_enhancement"
+  to: "technique.kk_mediated_yukawa_corrections"
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "IR-Localized Overlap Enhancement supplies the warped overlap control of KK-induced flavor couplings ingredient that KK-Mediated Yukawa Corrections depends on, so it is a reasonable prerequisite edge in the current graph."
+  failure_mode_if_absent: "Without the warped overlap control of KK-induced flavor couplings background from IR-Localized Overlap Enhancement, KK-Mediated Yukawa Corrections loses part of the setup its summary assumes and is easier to misapply or misinterpret."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary overlap centered on warped overlap control of KK-induced flavor couplings."
+  status: asserted
+- from: "technique.young_tableaux_for_su_n_irreps"
+  to: "technique.irreducible_tensor_projection"
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Young tableaux for SU(N) representations supplies the symmetrizing/indices/tensor ingredient that Project tensor products onto irreducible pieces depends on, so it is a reasonable prerequisite edge in the current graph."
+  failure_mode_if_absent: "Without the symmetrizing/indices/tensor background from Young tableaux for SU(N) representations, Project tensor products onto irreducible pieces loses part of the setup its summary assumes and is easier to misapply or misinterpret."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary overlap centered on symmetrizing/indices/tensor."
+  status: asserted
+- from: "technique.coupled_isothermal_poisson_jeans_solver"
+  to: "technique.jeans_inversion_without_stellar_profile"
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Coupled isothermal Poisson-Jeans solver supplies the equations/potential/stellar ingredient that Jeans inversion without an assumed stellar light profile depends on, so it is a reasonable prerequisite edge in the current graph."
+  failure_mode_if_absent: "Without the equations/potential/stellar background from Coupled isothermal Poisson-Jeans solver, Jeans inversion without an assumed stellar light profile loses part of the setup its summary assumes and is easier to misapply or misinterpret."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary overlap centered on equations/potential/stellar."
+  status: asserted
+- from: "technique.pt_weighted_jet_charge"
+  to: "technique.jet_charge_resonance_discrimination"
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "pT-Weighted Jet Charge Observable supplies the charges/charge/jet ingredient that Jet Charge Log-Likelihood for Resonance Charge Determination depends on, so it is a reasonable prerequisite edge in the current graph."
+  failure_mode_if_absent: "Without the charges/charge/jet background from pT-Weighted Jet Charge Observable, Jet Charge Log-Likelihood for Resonance Charge Determination loses part of the setup its summary assumes and is easier to misapply or misinterpret."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary overlap centered on charges/charge/jet."
+  status: asserted
+- from: "technique.colored_jet_images"
+  to: "technique.jet_image_preprocessing_pipeline"
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Colored Jet Images for CNN Discrimination supplies the jet ingredient that Zero-Center and Standardize Jet Image Preprocessing depends on, so it is a reasonable prerequisite edge in the current graph."
+  failure_mode_if_absent: "Without the jet background from Colored Jet Images for CNN Discrimination, Zero-Center and Standardize Jet Image Preprocessing loses part of the setup its summary assumes and is easier to misapply or misinterpret."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary overlap centered on jet."
+  status: asserted
+- from: "technique.jet_image_preprocessing_pipeline"
+  to: "technique.event_image_cnn_classification"
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Zero-Center and Standardize Jet Image Preprocessing supplies the neural/image/jet ingredient that Event-image CNN for jet classification depends on, so it is a reasonable prerequisite edge in the current graph."
+  failure_mode_if_absent: "Without the neural/image/jet background from Zero-Center and Standardize Jet Image Preprocessing, Event-image CNN for jet classification loses part of the setup its summary assumes and is easier to misapply or misinterpret."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary overlap centered on neural/image/jet."
+  status: asserted
+- from: "technique.qjets_nondeterministic_clustering"
+  to: "technique.jet_volatility"
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Q-jets non-deterministic jet clustering supplies the jets/jet ingredient that Jet volatility as a substructure discriminant depends on, so it is a reasonable prerequisite edge in the current graph."
+  failure_mode_if_absent: "Without the jets/jet background from Q-jets non-deterministic jet clustering, Jet volatility as a substructure discriminant loses part of the setup its summary assumes and is easier to misapply or misinterpret."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary overlap centered on jets/jet."
+  status: asserted
+- from: "technique.flux_quantization_and_zero_resistance"
+  to: "technique.josephson_phase_dynamics"
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Derive flux quantization and zero resistance from compact phase dynamics supplies the dynamics/phase ingredient that Use phase-difference dynamics across a junction depends on, so it is a reasonable prerequisite edge in the current graph."
+  failure_mode_if_absent: "Without the dynamics/phase background from Derive flux quantization and zero resistance from compact phase dynamics, Use phase-difference dynamics across a junction loses part of the setup its summary assumes and is easier to misapply or misinterpret."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary overlap centered on dynamics/phase."
+  status: asserted
+- from: "technique.kahler_metric_sigma_model_on_moduli_space"
+  to: "technique.kahler_potential_geometry"
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Kahler-metric sigma model on moduli space supplies the kahler/metric/sigma ingredient that Kahler-Potential Geometry depends on, so it is a reasonable prerequisite edge in the current graph."
+  failure_mode_if_absent: "Without the kahler/metric/sigma background from Kahler-metric sigma model on moduli space, Kahler-Potential Geometry loses part of the setup its summary assumes and is easier to misapply or misinterpret."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary overlap centered on kahler/metric/sigma."
+  status: asserted
+- from: "technique.dbi_wz_probe_embedding_with_flux"
+  to: "technique.kappa_symmetric_curved_brane_flux_condition"
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Solve brane embeddings with DBI plus Wess-Zumino terms and flux supplies the worldvolume/curvature/brane ingredient that Kappa-symmetry with compensating worldvolume flux depends on, so it is a reasonable prerequisite edge in the current graph."
+  failure_mode_if_absent: "Without the worldvolume/curvature/brane background from Solve brane embeddings with DBI plus Wess-Zumino terms and flux, Kappa-symmetry with compensating worldvolume flux loses part of the setup its summary assumes and is easier to misapply or misinterpret."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary overlap centered on worldvolume/curvature/brane."
+  status: asserted
+- from: "technique.ten_dimensional_iia_iib_heterotic_classification"
+  to: "technique.keinstein_frame_no_scale_identification"
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Type IIA, type IIB, and heterotic multiplet classification supplies the theories/type/iib ingredient that Keinstein-frame identification of no-scale compactifications depends on, so it is a reasonable prerequisite edge in the current graph."
+  failure_mode_if_absent: "Without the theories/type/iib background from Type IIA, type IIB, and heterotic multiplet classification, Keinstein-frame identification of no-scale compactifications loses part of the setup its summary assumes and is easier to misapply or misinterpret."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary overlap centered on theories/type/iib."
+  status: asserted
+- from: "technique.keinstein_frame_no_scale_identification"
+  to: "technique.no_scale_fphi_suppression"
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Keinstein-frame identification of no-scale compactifications supplies the structure/function/kinetic ingredient that F_Phi suppression from single-field no-scale structure depends on, so it is a reasonable prerequisite edge in the current graph."
+  failure_mode_if_absent: "Without the structure/function/kinetic background from Keinstein-frame identification of no-scale compactifications, F_Phi suppression from single-field no-scale structure loses part of the setup its summary assumes and is easier to misapply or misinterpret."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary overlap centered on structure/function/kinetic."
+  status: asserted
+- from: "technique.local_charge_selection_rules"
+  to: "technique.kk_mediated_yukawa_corrections"
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Local Charge and Selection-Rule Power Counting supplies the texture/yukawa ingredient that KK-Mediated Yukawa Corrections depends on, so it is a reasonable prerequisite edge in the current graph."
+  failure_mode_if_absent: "Without the texture/yukawa background from Local Charge and Selection-Rule Power Counting, KK-Mediated Yukawa Corrections loses part of the setup its summary assumes and is easier to misapply or misinterpret."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary overlap centered on texture/yukawa."
+  status: asserted
+- from: "technique.effective_brane_wilsonian_regulator"
+  to: "technique.kk_mode_counting_for_beta_functions"
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Energy-dependent effective brane as a Wilsonian regulator supplies the calculation/dependent/effective ingredient that Count effective KK participation through regulator-dependent loop factors depends on, so it is a reasonable prerequisite edge in the current graph."
+  failure_mode_if_absent: "Without the calculation/dependent/effective background from Energy-dependent effective brane as a Wilsonian regulator, Count effective KK participation through regulator-dependent loop factors loses part of the setup its summary assumes and is easier to misapply or misinterpret."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary overlap centered on calculation/dependent/effective."
+  status: asserted
+- from: "technique.block_mass_matrix_theta_expansion"
+  to: "technique.kk_tower_theta_bar_zero"
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Block-Mass-Matrix Expansion for Delta Theta supplies the theta/mass ingredient that KK Tower Preservation of theta_bar = 0 depends on, so it is a reasonable prerequisite edge in the current graph."
+  failure_mode_if_absent: "Without the theta/mass background from Block-Mass-Matrix Expansion for Delta Theta, KK Tower Preservation of theta_bar = 0 loses part of the setup its summary assumes and is easier to misapply or misinterpret."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary overlap centered on theta/mass."
+  status: asserted
+- from: "technique.deconstruction_derived_position_cutoff"
+  to: "technique.kk_truncation_amplitude_cancellation"
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Derive the position-dependent regulator from the quiver itself supplies the continuum/position/back ingredient that KK tower truncation and amplitude cancellations for local continuum limit depends on, so it is a reasonable prerequisite edge in the current graph."
+  failure_mode_if_absent: "Without the continuum/position/back background from Derive the position-dependent regulator from the quiver itself, KK tower truncation and amplitude cancellations for local continuum limit loses part of the setup its summary assumes and is easier to misapply or misinterpret."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary overlap centered on continuum/position/back."
+  status: asserted
+- from: "technique.zero_mode_coupling_extraction"
+  to: "technique.kk_violation_as_threshold_control"
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Isolating the Zero-Mode Coupling from the KK Tower supplies the tower ingredient that KK-number violation as a control knob for decay thresholding depends on, so it is a reasonable prerequisite edge in the current graph."
+  failure_mode_if_absent: "Without the tower background from Isolating the Zero-Mode Coupling from the KK Tower, KK-number violation as a control knob for decay thresholding loses part of the setup its summary assumes and is easier to misapply or misinterpret."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary overlap centered on tower."
+  status: asserted

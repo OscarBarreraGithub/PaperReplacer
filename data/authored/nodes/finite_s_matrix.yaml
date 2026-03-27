@@ -45,3 +45,87 @@
     - use
   summary: Observable invariant under collinear splittings so perturbative predictions remain finite and can support jet and event-shape analyses.
   status: asserted
+- id: qft.asymptotic_one_particle_state
+  label: Asymptotic one-particle state
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Incoming or outgoing single-particle state used as the external scattering state in LSZ.
+  status: asserted
+- id: qft.cross_section
+  label: Cross section
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Observable that measures scattering probability per unit flux, usually in differential or total form.
+  status: asserted
+- id: qft.infrared_divergence
+  label: Infrared divergence
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Long-distance singular contribution that appears when real or virtual gauge radiation becomes unresolved in a scattering observable.
+  status: asserted
+- id: qft.collinear_divergence
+  label: Collinear divergence
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Infrared singularity produced when energetic particles become aligned along nearly the same lightlike direction.
+  status: asserted
+- id: qft.kln_theorem
+  label: Kinoshita-Lee-Nauenberg theorem
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Cancellation statement that extends infrared safety to inclusive sums over degenerate initial or final states.
+  status: asserted
+- id: qft.inclusive_observable
+  label: Inclusive observable
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Observable defined by summing over unresolved or degenerate radiation so that infrared singularities can cancel in the measured quantity.
+  status: asserted
+- id: qcd.factorization_theorem
+  label: Factorization theorem
+  knowledge_kind: formal_statement
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Statement that separates a hard short-distance coefficient from universal long-distance hadronic structure.
+  status: asserted
+- id: qft.thrust
+  label: Thrust
+  knowledge_kind: concept
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+    - derive
+  summary: Event-shape observable that measures how pencil-like the final state is and serves as a canonical jet-sensitive quantity in factorization and SCET discussions.
+  status: asserted

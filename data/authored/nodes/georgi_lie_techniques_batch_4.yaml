@@ -1,0 +1,420 @@
+- id: technique.su3_fundamental_weight_solver
+  label: Solve the SU(3) fundamental highest weights
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Find the SU(3) fundamental highest weights by imposing orthogonality to the other simple root and the defining normalization of fundamental weights, then descend with q-p notation to enumerate the weights of the 3 and 3bar.
+  status: asserted
+- id: technique.su3_multiplet_clebsch_gordan_decomposition
+  label: Decompose SU(3) multiplets with tensor methods
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Apply irreducible tensor projection to physically relevant products such as 3 x 3 = 6 + 3bar, 3 x 3bar = 8 + 1, and 3 x 8 = 15 + 6bar + 3, while simultaneously constructing the corresponding component wave functions.
+  status: asserted
+- id: technique.su3_multiplet_identification_from_weight_diagrams
+  label: Identify SU(3) multiplets from weight multiplicities
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Combine unique lowering paths, Weyl reflections, and commutator identities among same-weight states to determine whether candidate states are distinct or linearly dependent. Georgi uses this to identify (2,0)=6, (1,1)=8, and (3,0)=10 and their conjugates.
+  status: asserted
+- id: technique.su5_family_anomaly_cancellation
+  label: Cancel anomalies with the SU(5) family assignment
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Use the equality of the 5 and 10 anomalies, in the creation-operator convention of the book, so that their combination is anomaly free and the embedded electroweak family is consistent.
+  status: asserted
+- id: technique.su5_higgs_rep_selection_for_fermion_masses
+  label: SU(5) Higgs selection for fermion masses
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: 'Select SU(5) Higgs representations by two tests: they must appear in the fermion-antifermion tensor product and they must contain an (1,2)_(+/-1/2) component; this admits 5 and 45 but excludes 50 for the needed mass terms.'
+  status: asserted
+- id: technique.su5_to_su3_su2_u1_decomposition
+  label: SU(5) Decomposition to SU(3) x SU(2) x U(1)
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: 'Apply the branching rule to SU(5): the 5 becomes (3,1)_2 plus (1,2)_-3, and the adjoint splits into gauge multiplets such as (8,1)_0, (1,3)_0, and (3,2)_5 plus its conjugate.'
+  status: asserted
+- id: technique.su6_baryon_multiplet_decomposition
+  label: Decompose the SU(6) 56 into Baryon Multiplets
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: 'Apply SU(6) branching to three-quark states: the completely symmetric 56 decomposes into the flavor decuplet with spin 3/2 and the flavor octet with spin 1/2.'
+  status: asserted
+- id: technique.su6_wigner_eckart_magnetic_moments
+  label: SU(6) Wigner-Eckart Analysis of Magnetic Moments
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Treat the magnetic moment operator as an SU(6) adjoint and use Wigner-Eckart; because 35 x 56 contains a unique 56, baryon magnetic moment ratios follow from one reduced matrix element, including mu_p/mu_n = -3/2.
+  status: asserted
+- id: technique.su_n_clebsch_gordan_tableau_addition
+  label: Clebsch-Gordan Decomposition by Tableau Addition
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Decompose SU(N) tensor products by Young tableau addition with the a,b,c,... row-ordering constraint, producing each allowed irrep once.
+  status: asserted
+- id: technique.su_n_embedding_via_fermionic_oscillators
+  label: SU(n) embedding via fermionic oscillators
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Combine gamma matrices into fermionic creation and annihilation operators and reconstruct an SU(n) algebra inside SO(2n). This is the efficient starting point for branching spinors and tensors under the SU(n) subgroup.
+  status: asserted
+- id: technique.su_n_tensor_young_tableau_irreps
+  label: SU(N) Irreps from Tensors and Young Tableaux
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: 'Realize SU(N) irreps as tensors and Young tableaux: antisymmetric m-index tensors give the fundamental D_m, general highest weights are encoded by columns of antisymmetric indices, and irreps are projected by row symmetrization plus column antisymmetrization.'
+  status: asserted
+- id: technique.su_nm_branching_via_symmetric_group
+  label: Branch SU(NM) via Symmetric-Group Young Symmetries
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Branch SU(NM) irreps under SU(N) x SU(M) by viewing the defining representation as a tensor product, matching the symmetric-group S_K Young symmetries of the two factor tableaux, and enforcing K = K1 mod N = K2 mod M.
+  status: asserted
+- id: technique.subgroup_coset_and_factor_group_analysis
+  label: Subgroups, cosets, and factor groups
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Use subgroups, cosets, normal subgroups, quotient groups, and the center to simplify group structure and sometimes generate new representations.
+  status: asserted
+- id: technique.symmetric_traceless_tensor_realization
+  label: Realize (n,m) as symmetric traceless tensors
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Identify the SU(3) irrep (n,m) with tensors having n upper and m lower indices that are separately symmetric and traceless; the highest-weight tensor is preserved under lowering, and every tensor with those symmetry properties belongs to the irrep.
+  status: asserted
+- id: technique.symmetric_triplet_antisymmetric_singlet_rule
+  label: Symmetric triplet, antisymmetric singlet
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: In the tensor product of two identical spin-1/2 or isospin-1/2 representations, the spin-1 triplet is symmetric under exchange while the spin-0 singlet is antisymmetric.
+  status: asserted
+- id: technique.symmetry_constrained_operator_matrix_elements
+  label: Symmetry constraints on operator matrix elements
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Apply Schur's lemma in the |a,j,x> basis to show that invariant observables are diagonal in irrep labels and proportional to delta_jk within each irrep block.
+  status: asserted
+- id: technique.symmetry_of_tensor_products_and_particle_statistics
+  label: Use tensor-product symmetry with Bose/Fermi statistics
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Combine tensor symmetries with Bose-Einstein or Fermi-Dirac statistics to determine which multiparticle states survive and which irreducible pieces vanish.
+  status: asserted
+- id: technique.symmetry_reduction_of_normal_modes
+  label: Symmetry-based normal-mode extraction
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Project a mechanical configuration space into symmetry sectors, subtract trivial translation modes, and act on seed vectors to generate the nontrivial vibrational modes.
+  status: asserted
+- id: technique.tensor_normalization_by_contraction
+  label: Normalize tensor states by contraction
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Fix tensor-state normalization by requiring the fully contracted sum of component products to equal one. This determines the constants appearing in explicit tensor wave functions.
+  status: asserted
+- id: technique.tensor_operator_basis_standardization
+  label: Standardizing tensor-operator components
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Convert any equivalent operator basis into the conventional spin-s basis, usually by finding a definite J_3 component and generating the rest with J_+ and J_-.
+  status: asserted
+- id: technique.tensor_operator_extraction_from_reducible_sets
+  label: Tensor operators from reducible operator sets
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Start from a reducible operator basis, form linear combinations with definite J3, pick highest-weight components, and lower them to isolate irreducible tensor operators.
+  status: asserted
+- id: technique.tensor_operator_method
+  label: Tensor-operator method
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Treat operators as objects transforming in representations under commutators with symmetry generators and decompose reducible operator sets into irreducible tensor operators.
+  status: asserted
+- id: technique.tensor_operator_product_decomposition
+  label: Tensor-operator product decomposition
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Treat the product of two tensor operators as a tensor-product representation, add J3 values, and decompose the product into irreducible tensor operators by highest-weight methods.
+  status: asserted
+- id: technique.tensor_product_character_rule
+  label: Character product rule for tensor products
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Use chi_{D1 tensor D2}(g)=chi_{D1}(g) chi_{D2}(g) to read off the irreducible content of composite representations quickly.
+  status: asserted
+- id: technique.tensor_product_representation_construction
+  label: Tensor-product representation construction
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Build composite state spaces |j,x> and define D1 tensor D2 so the product representation acts separately on each factor while its matrix elements factorize.
+  status: asserted
+- id: technique.tensor_product_representation_rule
+  label: Tensor-product representation rule
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Build composite representations on product spaces where each factor transforms independently, so the composite generators act as sums on the two factors.
+  status: asserted
+- id: technique.tensor_wavefunction_interpretation
+  label: Treat tensors as SU(3) wave functions
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Expand a state in a tensor-product basis and interpret the coefficients as tensor components, exactly like a quantum-mechanical wave function in position space. Generator action on the state then induces a concrete action on the components.
+  status: asserted
+- id: technique.three_node_angle_test_for_dynkin_subdiagrams
+  label: Three-node angle test
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Inspect any connected triple of simple roots and use the allowed angles to show that only the A_3 chain or the B_3/C_3-type double-line triple can occur. This is the fastest local test for excluding many candidate diagrams.
+  status: asserted
+- id: technique.total_spin_reduction_of_hyperfine_splittings
+  label: Total-spin reduction of hyperfine splittings
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Reduce pairwise spin-spin interactions to a function of total spin when quark masses are approximately equal, making the ordering of ground-state multiplets depend only on S.
+  status: asserted
+- id: technique.trace_form_canonicalization
+  label: Canonical basis from the adjoint trace form
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Use Tr(T_a T_b) as a scalar product, diagonalize it by linear redefinitions of generators, and in the compact positive-definite basis obtain completely antisymmetric structure constants and a unitary adjoint representation.
+  status: asserted
+- id: technique.tracelessness_filter_for_su5_candidates
+  label: Tracelessness filter for SU(5) matter assignments
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Reject candidate field packagings whose would-be U(1) generator is not traceless on the proposed SU(5) multiplet, using tracelessness as a consistency test for embeddings.
+  status: asserted
+- id: technique.triality_and_n_ality_selection_rules
+  label: Triality and N-ality selection rules
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Track tableau charge modulo N to constrain tensor-product decompositions and identify which invariant tensors can or cannot exist.
+  status: asserted
+- id: technique.u1_charge_tracking_in_so_2n_spinors
+  label: Track the commuting U(1) inside SO(2n) spinors
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Use the SO(2n) generator S that commutes with the SU(n) subgroup to assign U(1) charge m-n/2 to each antisymmetric SU(n) piece of the spinor.
+  status: asserted
+- id: technique.universal_isospin_generator_sum
+  label: Universal isospin-generator sum
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Construct the full isospin generators by summing bilinear contributions over every particle species, using anticommutators for fermion-fermion pairs and commutators otherwise.
+  status: asserted
+- id: technique.upper_lower_index_notation
+  label: Use upper and lower indices to distinguish 3 and 3bar
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Represent the 3 with lower indices and the 3bar with upper indices so contractions always pair one upper with one lower. This turns complex conjugation into index placement and makes mixed tensor products readable.
+  status: asserted
+- id: technique.weight_layer_degeneracy_counting
+  label: Count weight degeneracies by layers
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Analyze the hexagonal or triangular weight diagram of (n,m) by counting upper-lower index differences and the number of paired indices in each inner layer. This proves that the degeneracy rises as k+1 until the first triangular layer and then stays constant.
+  status: asserted
+- id: technique.weyl_group_reflection_method
+  label: Use Weyl reflections to complete weight diagrams
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Reflect a weight p across the hyperplane perpendicular to a root alpha via p -> p - (q-p) alpha. The group generated by all such reflections explains the hexagonal and triangular symmetry of SU(3) weight diagrams and relates equivalent multiplicities.
+  status: asserted
+- id: technique.wigner_eckart_decomposition
+  label: Wigner-Eckart decomposition
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Exploit the fact that a tensor operator acting on a state transforms like a tensor product, then expand it with the same Clebsch-Gordan coefficients used for kets, up to reduced constants k_J.
+  status: asserted
+- id: technique.young_symmetrizer_irrep_construction
+  label: Young-tableau construction of S_n irreps
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Map fillings of a tableau into the regular representation, symmetrize within rows, antisymmetrize within columns, and thereby isolate the irreducible subspace associated with the tableau.
+  status: asserted
+- id: technique.young_tableaux_for_su_n_irreps
+  label: Young tableaux for SU(N) representations
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Map tableaux to tensor symmetries for SU(N) by symmetrizing indices along rows, antisymmetrizing along columns, and enforcing tracelessness.
+  status: asserted
+- id: technique.young_tableaux_for_symmetric_groups
+  label: Young tableaux for symmetric-group irreducibles
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Associate tableaux with conjugacy classes and irreducible representations of S_n, then realize irreps by row symmetrization and column antisymmetrization inside the regular representation.
+  status: asserted
+- id: technique.young_tableaux_labeling
+  label: Young tableaux as S_n labels
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Encode partitions of n with box diagrams whose column lengths track cycle lengths, giving a common label set for conjugacy classes and irreducible representations.
+  status: asserted

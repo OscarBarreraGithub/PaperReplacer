@@ -1,0 +1,398 @@
+# Hand-authored node records for the Schwartz techniques batch 5.
+# All entries are research-level methods promoted from the batch file.
+
+- id: technique.neural_importance_sampling
+  label: Neural Importance Sampling for Phase Space Integration
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Method that replaces or augments VEGAS-style phase-space sampling with trainable normalizing flows that learn correlated maps from uniform random numbers to matrix-element-weighted regions, improving unweighting efficiency for high-multiplicity event generation.
+  status: asserted
+
+- id: technique.neural_ratio_estimation_shape_scan
+  label: Neural Ratio Estimation for Shape Comparison
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Method that trains a neural ratio estimator on observable-shape distributions so the posterior-to-prior ratio p(m_t | shape)/p(m_t) can be extracted and different shape definitions can be ranked by posterior width.
+  status: asserted
+
+- id: technique.ngl_elimination_via_grooming
+  label: Elimination of Non-Global Logarithms via Soft Drop
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: All-orders proof strategy showing that soft-drop grooming removes the soft wide-angle modes that generate non-global logarithms, leaving groomed jet-shape distributions free of NGL contamination.
+  status: asserted
+
+- id: technique.nn_amplitude_surrogate
+  label: Neural Network Surrogate Models for Loop Amplitudes
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Method that trains neural networks, including Bayesian variants, to emulate expensive loop-amplitude evaluations while encoding infrared factorization behavior so accuracy is maintained in singular regions.
+  status: asserted
+
+- id: technique.nnll_hemisphere_factorization
+  label: Complete factorization of hemisphere mass distribution at NNLL
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Technique that uses the observation s_f(L) = s_f(0) at NNLL to factorize the doubly differential hemisphere-mass distribution into single-hemisphere functions, bypassing the full multi-scale soft-function problem at this accuracy.
+  status: asserted
+
+- id: technique.no_sudakov_landau_pole
+  label: Absence of Sudakov-Landau Pole for Additive Observables
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Method that exploits the additive decomposition of an event shape across jets and soft radiation to show that the shoulder resummation avoids a spurious Sudakov-Landau pole and can be performed directly in momentum space.
+  status: asserted
+
+- id: technique.non_analytic_rapidity_regulator
+  label: Non-analytic rapidity regulator for Glauber gluon consistency
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Method that uses non-analytic dependence on external momenta from the rapidity regulator to make the same SCET Glauber operator vanish or contribute in the correct kinematic configurations.
+  status: asserted
+
+- id: technique.non_global_log_identification
+  label: Identification of non-global logarithms from asymptotic behavior of the soft function
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Method that reads the non-global logarithmic content of hemisphere observables from the large-L asymptotics of the soft function, exposing both double- and single-log structures beyond polynomial ansatze.
+  status: asserted
+
+- id: technique.nonperturbative_intersection_suppression
+  label: Non-perturbative Suppression of Higher Intersections
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Semiclassical technique showing that paths with multiple self-intersections are exponentially suppressed in interacting theories, which justifies the standard instanton collective-coordinate treatment up to controlled corrections.
+  status: asserted
+
+- id: technique.normalized_signal_contamination
+  label: Normalized signal contamination diagnostic for ABCD
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Diagnostic criterion that replaces raw control-region contamination checks with the normalized quantity r = delta_A^{-1}(delta_B + delta_C - delta_D), revealing when ABCD bias remains negligible.
+  status: asserted
+
+- id: technique.numerical_scale_setting_eft
+  label: Numerical scale optimization for multi-scale EFT problems
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Procedure that determines natural hard, jet, and soft scales by isolating each factorized contribution at a common scale, extremizing its NLO correction, and then enforcing the factorization-theorem relation among scales.
+  status: asserted
+
+- id: technique.omnifold_classifier_unfolding
+  label: 'OmniFold: Classifier-Based Unbinned Detector Unfolding'
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Iterative unfolding method that learns detector-level likelihood ratios with a classifier, transports the weights through matched simulation, and converges to an unbinned high-dimensional particle-level distribution.
+  status: asserted
+
+- id: technique.onshell_spinor_helicity_factorization
+  label: On-shell proof of factorization using spinor-helicity methods
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Technique that proves leading-power factorization directly in on-shell amplitude language by choosing reference vectors independently in each collinear sector and isolating the soft Wilson-line structure without gauge-dependent field scalings.
+  status: asserted
+
+- id: technique.ope_matching_ads_parameters
+  label: OPE matching to fix AdS/QCD model parameters
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Matching procedure that fixes bulk AdS/QCD parameters by expanding near the UV boundary and equating the resulting correlators to known QCD OPE coefficients.
+  status: asserted
+
+- id: technique.optimal_transport_anomaly_score
+  label: Optimal transport distance as anomaly score
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Method that uses Wasserstein optimal-transport distance between an event and background exemplars as a training-free anomaly score on collider energy patterns.
+  status: asserted
+
+- id: technique.parity_twist_strong_cp
+  label: Parity + Twist Solution to Strong CP
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Model-building method that combines 5D parity, orbifold localization, and twisted bulk masses so the evolution operator has a real determinant, setting the strong CP phase to zero while retaining a large weak CP phase.
+  status: asserted
+
+- id: technique.pham_diagram_constraints
+  label: Pham Diagrams for Sequential Discontinuity Constraints
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Technique that replaces single Landau diagrams by compatible pairs of graph contractions, using Pham-diagram compatibility to determine when sequential discontinuities vanish or collapse to simpler discontinuity data.
+  status: asserted
+
+- id: technique.picard_lefschetz_discontinuities
+  label: Picard-Lefschetz Theory for Feynman Integral Discontinuities
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Geometric method that computes Feynman-integral discontinuities by following contour deformations, vanishing cycles, and monodromies in complexified kinematic space.
+  status: asserted
+
+- id: technique.pinn_unitarity_phase_reconstruction
+  label: Physics-Informed Neural Network for Unitarity Phase Reconstruction
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Method that parameterizes the scattering phase with a neural network and trains it against the nonlinear unitarity integral equation, turning phase reconstruction into a collocation-based PINN problem.
+  status: asserted
+
+- id: technique.poincare_disk_psl2r_symmetry
+  label: PSL(2,R) symmetry of the BMS equation via stereographic projection
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Technique that maps soft-emission dipoles to the Poincare disk so the BMS equation depends only on a geodesic distance, drastically reducing the angular complexity of non-global-log calculations.
+  status: asserted
+
+- id: technique.polar_expansion_nonglobal_soft
+  label: Polar Expansion of 2D Hemisphere Soft Function
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Method that expands the exact two-loop dihemisphere soft function around the near-symmetric configuration to separate global logs, non-global double logs, and non-global single-log pieces for practical N3LL use.
+  status: asserted
+
+- id: technique.position_dependent_cutoff_regularization
+  label: Position-dependent UV cutoff in warped space
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Regularization scheme that imposes a momentum-dependent boundary position in warped space so the effective cutoff tracks the warp factor and matches a 5D Wilsonian description.
+  status: asserted
+
+- id: technique.position_space_sudakov_shoulder
+  label: Position-Space Resummation to Avoid Sudakov Landau Poles
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Resummation method that moves the Sudakov-shoulder calculation into Fourier-conjugate position space, where canonical scale choices avoid the spurious momentum-space Landau-pole singularity.
+  status: asserted
+
+- id: technique.precision_point_tradeoff
+  label: Precision-Point Tradeoff in Analytic Fitting
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Numerical strategy that trades precision at a single point for evaluations at many points, keeping the total information content high enough for lattice-based analytic regression with much lower per-point precision.
+  status: asserted
+
+- id: technique.pt_dependent_jet_radius
+  label: pT-Dependent Jet Radius Scaling
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Jet-finding prescription that adjusts the clustering radius with event hardness so the jet size tracks the expected opening angle of boosted heavy-particle decay products.
+  status: asserted
+
+- id: technique.pt_weighted_jet_charge
+  label: pT-Weighted Jet Charge Observable
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Observable that estimates the initiating parton charge by summing constituent charges with a tunable pT weight, balancing discrimination power against sensitivity to soft contamination.
+  status: asserted
+
+- id: technique.pumml_cnn_pileup_subtraction
+  label: Convolutional neural network pileup mitigation (PUMML)
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Pileup-subtraction method that uses a convolutional neural network on multi-channel jet images to reconstruct the neutral leading-vertex energy pattern from local charged-particle information.
+  status: asserted
+
+- id: technique.pure_sample_calibration
+  label: Pure Sample Extraction for Data-Driven Quark/Gluon Calibration
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Calibration strategy that uses high-purity gamma-plus-jets and symmetric multijet topologies to extract quark- and gluon-enriched samples directly from data.
+  status: asserted
+
+- id: technique.qantikt_event_level_sampling
+  label: 'Qanti-kT: non-deterministic anti-kT for event-level multiple interpretations'
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Method that samples anti-kT-like event partitions probabilistically rather than deterministically, producing a distribution of full-event jet interpretations and continuous event weights.
+  status: asserted
+
+- id: technique.qft_vs_hopf_renormalon_classification
+  label: QFT Classification of Hopf-Series Asymptotics as Renormalons
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Analytic classification technique that interprets factorial growth in Hopf-series self-energy subsectors as ordinary renormalon behavior governed by the UV or IR structure of the underlying loop integrals.
+  status: asserted
+
+- id: technique.qjets_nondeterministic_clustering
+  label: Q-jets non-deterministic jet clustering
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Jet-clustering method that samples many recombination trees with probabilities weighted by their distance from the classical merge sequence, turning single-tree observables into distributions.
+  status: asserted
+
+- id: technique.quadratic_observable_step_discontinuity
+  label: Quadratic Observable Origin of Step Discontinuity
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Phase-space analysis technique that explains why quadratic event shapes like the C-parameter can develop finite shoulder steps by balancing the vanishing gradient against the shrinking available volume.
+  status: asserted
+
+- id: technique.r_core_variables
+  label: R-core variables for characterizing jet energy distribution
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Family of reclustering observables that tracks how a fat jet's pT and mass are retained as the reclustering radius shrinks, exposing radiation spread and subjet separation scales.
+  status: asserted
+
+- id: technique.radial_quantization_wilson_lines
+  label: Radial quantization mapping of Wilson lines to static charges in AdS
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Method that rewrites Wilson lines in radial quantization as static charges in Euclidean AdS, so anomalous dimensions become energies of a classical curved-space electrostatics problem.
+  status: asserted
+
+- id: technique.radial_weighted_jet_charge
+  label: Radially-weighted jet charge observable
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Extension of jet charge that adds a radial weight to the usual pT weighting so the observable captures where charge sits inside the jet as well as how much pT carries it.
+  status: asserted
+
+- id: technique.random_scan_theory_covariance
+  label: Flat Random-Scan Theory Covariance Matrix
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Uncertainty-estimation procedure that builds a theory covariance matrix by flat-scanning theory parameters, propagating each sampled choice through all bins, and extracting the induced bin-to-bin correlations.
+  status: asserted

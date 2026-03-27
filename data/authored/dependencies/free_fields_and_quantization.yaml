@@ -104,15 +104,15 @@
       note: Batch notes separate the classical action-based setup from the quantization step.
   status: asserted
   confidence: 0.92
-- from: qft.free_scalar_field
-  to: qft.mode_expansion
+- from: qft.mode_expansion
+  to: qft.free_scalar_field
   relation_type: requires_for_use
   necessity: necessary
   audience_profile: hep_th_grad
   subfield: qft_foundations
   task_type: literature_reading
-  rationale: The free scalar field is typically used through its mode expansion.
-  failure_mode_if_absent: Cannot write the field in the standard momentum-space form used in QFT calculations.
+  rationale: The free scalar field is typically written in practice through its mode expansion.
+  failure_mode_if_absent: Cannot write the free scalar field in the standard momentum-space form used in QFT calculations.
   evidence:
     - type: expert_claim
       source_ref: free_fields_and_quantization_batch_initial
@@ -149,15 +149,15 @@
       note: Batch notes keep the vector-field branch in the same free-field reading path.
   status: asserted
   confidence: 0.94
-- from: qft.mode_expansion
-  to: qft.creation_annihilation_operator
+- from: qft.creation_annihilation_operator
+  to: qft.mode_expansion
   relation_type: requires_for_use
   necessity: necessary
   audience_profile: hep_th_grad
   subfield: qft_foundations
   task_type: literature_reading
-  rationale: Creation and annihilation operators are the operator language appearing in the free-field mode expansion.
-  failure_mode_if_absent: Cannot interpret the coefficients in the expansion as quantum operators rather than as ordinary amplitudes.
+  rationale: The free-field mode expansion is written in the creation-and-annihilation-operator language, so that operator formalism has to be available first.
+  failure_mode_if_absent: Cannot interpret or write the mode coefficients as quantum operators rather than as ordinary amplitudes.
   evidence:
     - type: expert_claim
       source_ref: free_fields_and_quantization_batch_initial

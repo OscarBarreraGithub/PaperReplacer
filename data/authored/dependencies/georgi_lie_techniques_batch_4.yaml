@@ -1,0 +1,636 @@
+- from: technique.su_n_tensor_young_tableau_irreps
+  to: technique.su3_multiplet_clebsch_gordan_decomposition
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: SU(N) Irreps from Tensors and Young Tableaux covers part of the batch prerequisite irreducible_tensor_projection, so it is a reasonable upstream prerequisite for deriving Decompose SU(3) multiplets with tensor methods.
+  failure_mode_if_absent: Without the prerequisite fragment captured by irreducible_tensor_projection, the method loses part of the setup or justification that the batch description assumes.
+  evidence:
+    - type: expert_claim
+      source_ref: georgi_lie_techniques_batch_4_initial
+      note: Batch prerequisite fragment irreducible_tensor_projection aligned with existing node technique.su_n_tensor_young_tableau_irreps.
+  status: asserted
+- from: qm.inner_product
+  to: technique.su3_multiplet_identification_from_weight_diagrams
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Inner product covers part of the batch prerequisite recursive_inner_product_and_gram_schmidt, so it is a reasonable upstream prerequisite for using Identify SU(3) multiplets from weight multiplicities.
+  failure_mode_if_absent: Without the prerequisite fragment captured by recursive_inner_product_and_gram_schmidt, the method loses part of the setup or justification that the batch description assumes.
+  evidence:
+    - type: expert_claim
+      source_ref: georgi_lie_techniques_batch_4_initial
+      note: Batch prerequisite fragment recursive_inner_product_and_gram_schmidt aligned with existing node qm.inner_product.
+  status: asserted
+- from: technique.weyl_group_reflection_method
+  to: technique.su3_multiplet_identification_from_weight_diagrams
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists weyl_group_reflection_method as an explicit prerequisite for Identify SU(3) multiplets from weight multiplicities; the existing node Use Weyl reflections to complete weight diagrams is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot derive or justify Identify SU(3) multiplets from weight multiplicities cleanly because the prerequisite weyl_group_reflection_method is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: georgi_lie_techniques_batch_4_initial
+      note: The batch prerequisite list explicitly names weyl_group_reflection_method.
+  status: asserted
+- from: sm.anomaly_cancellation
+  to: technique.su5_family_anomaly_cancellation
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: Anomaly cancellation covers part of the batch prerequisite anomaly_free_representation_condition, so it is a reasonable upstream prerequisite for deriving Cancel anomalies with the SU(5) family assignment.
+  failure_mode_if_absent: Without the prerequisite fragment captured by anomaly_free_representation_condition, the method loses part of the setup or justification that the batch description assumes.
+  evidence:
+    - type: expert_claim
+      source_ref: georgi_lie_techniques_batch_4_initial
+      note: Batch prerequisite fragment anomaly_free_representation_condition aligned with existing node sm.anomaly_cancellation.
+  status: asserted
+- from: sm.gauge_anomaly
+  to: technique.su5_family_anomaly_cancellation
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Gauge anomaly covers part of the batch prerequisite anomaly_index_arithmetic, so it is a reasonable upstream prerequisite for using Cancel anomalies with the SU(5) family assignment.
+  failure_mode_if_absent: Without the prerequisite fragment captured by anomaly_index_arithmetic, the method loses part of the setup or justification that the batch description assumes.
+  evidence:
+    - type: expert_claim
+      source_ref: georgi_lie_techniques_batch_4_initial
+      note: Batch prerequisite fragment anomaly_index_arithmetic aligned with existing node sm.gauge_anomaly.
+  status: asserted
+- from: technique.su_n_clebsch_gordan_tableau_addition
+  to: technique.su5_higgs_rep_selection_for_fermion_masses
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: Clebsch-Gordan Decomposition by Tableau Addition covers part of the batch prerequisite Higgs tensor-product mass rule, so it is a reasonable upstream prerequisite for deriving SU(5) Higgs selection for fermion masses.
+  failure_mode_if_absent: Without the prerequisite fragment captured by Higgs tensor-product mass rule, the method loses part of the setup or justification that the batch description assumes.
+  evidence:
+    - type: expert_claim
+      source_ref: georgi_lie_techniques_batch_4_initial
+      note: Batch prerequisite fragment Higgs tensor-product mass rule aligned with existing node technique.su_n_clebsch_gordan_tableau_addition.
+  status: asserted
+- from: technique.tracelessness_filter_for_su5_candidates
+  to: technique.su5_higgs_rep_selection_for_fermion_masses
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Tracelessness filter for SU(5) matter assignments covers part of the batch prerequisite Matter unification into 5 plus 10 of SU(5), so it is a reasonable upstream prerequisite for using SU(5) Higgs selection for fermion masses.
+  failure_mode_if_absent: Without the prerequisite fragment captured by Matter unification into 5 plus 10 of SU(5), the method loses part of the setup or justification that the batch description assumes.
+  evidence:
+    - type: expert_claim
+      source_ref: georgi_lie_techniques_batch_4_initial
+      note: Batch prerequisite fragment Matter unification into 5 plus 10 of SU(5) aligned with existing node technique.tracelessness_filter_for_su5_candidates.
+  status: asserted
+- from: technique.su5_to_su3_su2_u1_decomposition
+  to: technique.su5_higgs_rep_selection_for_fermion_masses
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: SU(5) Decomposition to SU(3) x SU(2) x U(1) covers part of the batch prerequisite Subgroup decomposition under SU(3) x SU(2) x U(1), so it is a reasonable upstream prerequisite for using SU(5) Higgs selection for fermion masses.
+  failure_mode_if_absent: Without the prerequisite fragment captured by Subgroup decomposition under SU(3) x SU(2) x U(1), the method loses part of the setup or justification that the batch description assumes.
+  evidence:
+    - type: expert_claim
+      source_ref: georgi_lie_techniques_batch_4_initial
+      note: Batch prerequisite fragment Subgroup decomposition under SU(3) x SU(2) x U(1) aligned with existing node technique.su5_to_su3_su2_u1_decomposition.
+  status: asserted
+- from: technique.su_n_clebsch_gordan_tableau_addition
+  to: technique.su5_to_su3_su2_u1_decomposition
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: Clebsch-Gordan Decomposition by Tableau Addition covers part of the batch prerequisite su_n_plus_m_branching_rule, so it is a reasonable upstream prerequisite for deriving SU(5) Decomposition to SU(3) x SU(2) x U(1).
+  failure_mode_if_absent: Without the prerequisite fragment captured by su_n_plus_m_branching_rule, the method loses part of the setup or justification that the batch description assumes.
+  evidence:
+    - type: expert_claim
+      source_ref: georgi_lie_techniques_batch_4_initial
+      note: Batch prerequisite fragment su_n_plus_m_branching_rule aligned with existing node technique.su_n_clebsch_gordan_tableau_addition.
+  status: asserted
+- from: technique.su_n_tensor_young_tableau_irreps
+  to: technique.su5_to_su3_su2_u1_decomposition
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: SU(N) Irreps from Tensors and Young Tableaux covers part of the batch prerequisite factors_over_hooks_dimension_formula, so it is a reasonable upstream prerequisite for deriving SU(5) Decomposition to SU(3) x SU(2) x U(1).
+  failure_mode_if_absent: Without the prerequisite fragment captured by factors_over_hooks_dimension_formula, the method loses part of the setup or justification that the batch description assumes.
+  evidence:
+    - type: expert_claim
+      source_ref: georgi_lie_techniques_batch_4_initial
+      note: Batch prerequisite fragment factors_over_hooks_dimension_formula aligned with existing node technique.su_n_tensor_young_tableau_irreps.
+  status: asserted
+- from: technique.su_nm_branching_via_symmetric_group
+  to: technique.su6_baryon_multiplet_decomposition
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists su_nm_branching_via_symmetric_group as an explicit prerequisite for Decompose the SU(6) 56 into Baryon Multiplets; the existing node Branch SU(NM) via Symmetric-Group Young Symmetries is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot derive or justify Decompose the SU(6) 56 into Baryon Multiplets cleanly because the prerequisite su_nm_branching_via_symmetric_group is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: georgi_lie_techniques_batch_4_initial
+      note: The batch prerequisite list explicitly names su_nm_branching_via_symmetric_group.
+  status: asserted
+- from: technique.su6_baryon_multiplet_decomposition
+  to: technique.su6_wigner_eckart_magnetic_moments
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists su6_baryon_multiplet_decomposition as an explicit prerequisite for SU(6) Wigner-Eckart Analysis of Magnetic Moments; the existing node Decompose the SU(6) 56 into Baryon Multiplets is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply SU(6) Wigner-Eckart Analysis of Magnetic Moments cleanly because the prerequisite su6_baryon_multiplet_decomposition is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: georgi_lie_techniques_batch_4_initial
+      note: The batch prerequisite list explicitly names su6_baryon_multiplet_decomposition.
+  status: asserted
+- from: technique.su_n_tensor_young_tableau_irreps
+  to: technique.su_n_clebsch_gordan_tableau_addition
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists su_n_tensor_young_tableau_irreps as an explicit prerequisite for Clebsch-Gordan Decomposition by Tableau Addition; the existing node SU(N) Irreps from Tensors and Young Tableaux is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot derive or justify Clebsch-Gordan Decomposition by Tableau Addition cleanly because the prerequisite su_n_tensor_young_tableau_irreps is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: georgi_lie_techniques_batch_4_initial
+      note: The batch prerequisite list explicitly names su_n_tensor_young_tableau_irreps.
+  status: asserted
+- from: qft.dirac_algebra
+  to: technique.su_n_embedding_via_fermionic_oscillators
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Dirac algebra covers part of the batch prerequisite Clifford algebra, so it is a reasonable upstream prerequisite for using SU(n) embedding via fermionic oscillators.
+  failure_mode_if_absent: Without the prerequisite fragment captured by Clifford algebra, the method loses part of the setup or justification that the batch description assumes.
+  evidence:
+    - type: expert_claim
+      source_ref: georgi_lie_techniques_batch_4_initial
+      note: Batch prerequisite fragment Clifford algebra aligned with existing node qft.dirac_algebra.
+  status: asserted
+- from: qft.creation_annihilation_operator
+  to: technique.su_n_embedding_via_fermionic_oscillators
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Creation and annihilation operator covers part of the batch prerequisite fermionic creation and annihilation operators, so it is a reasonable upstream prerequisite for using SU(n) embedding via fermionic oscillators.
+  failure_mode_if_absent: Without the prerequisite fragment captured by fermionic creation and annihilation operators, the method loses part of the setup or justification that the batch description assumes.
+  evidence:
+    - type: expert_claim
+      source_ref: georgi_lie_techniques_batch_4_initial
+      note: Batch prerequisite fragment fermionic creation and annihilation operators aligned with existing node qft.creation_annihilation_operator.
+  status: asserted
+- from: technique.su_n_tensor_young_tableau_irreps
+  to: technique.su_nm_branching_via_symmetric_group
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists su_n_tensor_young_tableau_irreps as an explicit prerequisite for Branch SU(NM) via Symmetric-Group Young Symmetries; the existing node SU(N) Irreps from Tensors and Young Tableaux is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot derive or justify Branch SU(NM) via Symmetric-Group Young Symmetries cleanly because the prerequisite su_n_tensor_young_tableau_irreps is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: georgi_lie_techniques_batch_4_initial
+      note: The batch prerequisite list explicitly names su_n_tensor_young_tableau_irreps.
+  status: asserted
+- from: technique.triality_and_n_ality_selection_rules
+  to: technique.su_nm_branching_via_symmetric_group
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Triality and N-ality selection rules covers part of the batch prerequisite n_ality_selection_rule, so it is a reasonable upstream prerequisite for using Branch SU(NM) via Symmetric-Group Young Symmetries.
+  failure_mode_if_absent: Without the prerequisite fragment captured by n_ality_selection_rule, the method loses part of the setup or justification that the batch description assumes.
+  evidence:
+    - type: expert_claim
+      source_ref: georgi_lie_techniques_batch_4_initial
+      note: Batch prerequisite fragment n_ality_selection_rule aligned with existing node technique.triality_and_n_ality_selection_rules.
+  status: asserted
+- from: technique.tensor_wavefunction_interpretation
+  to: technique.symmetric_traceless_tensor_realization
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists tensor_wavefunction_interpretation as an explicit prerequisite for Realize (n,m) as symmetric traceless tensors; the existing node Treat tensors as SU(3) wave functions is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot derive or justify Realize (n,m) as symmetric traceless tensors cleanly because the prerequisite tensor_wavefunction_interpretation is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: georgi_lie_techniques_batch_4_initial
+      note: The batch prerequisite list explicitly names tensor_wavefunction_interpretation.
+  status: asserted
+- from: qm.angular_momentum_addition
+  to: technique.symmetric_triplet_antisymmetric_singlet_rule
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Angular momentum addition covers part of the batch prerequisite clebsch_gordan_decomposition, so it is a reasonable upstream prerequisite for using Symmetric triplet, antisymmetric singlet.
+  failure_mode_if_absent: Without the prerequisite fragment captured by clebsch_gordan_decomposition, the method loses part of the setup or justification that the batch description assumes.
+  evidence:
+    - type: expert_claim
+      source_ref: georgi_lie_techniques_batch_4_initial
+      note: Batch prerequisite fragment clebsch_gordan_decomposition aligned with existing node qm.angular_momentum_addition.
+  status: asserted
+- from: technique.tensor_operator_product_decomposition
+  to: technique.symmetric_triplet_antisymmetric_singlet_rule
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Tensor-operator product decomposition covers part of the batch prerequisite multiparticle_tensor_product_isospin, so it is a reasonable upstream prerequisite for using Symmetric triplet, antisymmetric singlet.
+  failure_mode_if_absent: Without the prerequisite fragment captured by multiparticle_tensor_product_isospin, the method loses part of the setup or justification that the batch description assumes.
+  evidence:
+    - type: expert_claim
+      source_ref: georgi_lie_techniques_batch_4_initial
+      note: Batch prerequisite fragment multiparticle_tensor_product_isospin aligned with existing node technique.tensor_operator_product_decomposition.
+  status: asserted
+- from: math.linear_algebra.basis_and_coordinates
+  to: technique.symmetry_constrained_operator_matrix_elements
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Basis and coordinates covers part of the batch prerequisite canonical_irrep_basis_for_hilbert_space, so it is a reasonable upstream prerequisite for using Symmetry constraints on operator matrix elements.
+  failure_mode_if_absent: Without the prerequisite fragment captured by canonical_irrep_basis_for_hilbert_space, the method loses part of the setup or justification that the batch description assumes.
+  evidence:
+    - type: expert_claim
+      source_ref: georgi_lie_techniques_batch_4_initial
+      note: Batch prerequisite fragment canonical_irrep_basis_for_hilbert_space aligned with existing node math.linear_algebra.basis_and_coordinates.
+  status: asserted
+- from: qm.hilbert_space
+  to: technique.symmetry_constrained_operator_matrix_elements
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Hilbert space covers part of the batch prerequisite canonical_irrep_basis_for_hilbert_space, so it is a reasonable upstream prerequisite for using Symmetry constraints on operator matrix elements.
+  failure_mode_if_absent: Without the prerequisite fragment captured by canonical_irrep_basis_for_hilbert_space, the method loses part of the setup or justification that the batch description assumes.
+  evidence:
+    - type: expert_claim
+      source_ref: georgi_lie_techniques_batch_4_initial
+      note: Batch prerequisite fragment canonical_irrep_basis_for_hilbert_space aligned with existing node qm.hilbert_space.
+  status: asserted
+- from: technique.tensor_product_representation_construction
+  to: technique.symmetry_of_tensor_products_and_particle_statistics
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Tensor-product representation construction covers part of the batch prerequisite tensor products, so it is a reasonable upstream prerequisite for using Use tensor-product symmetry with Bose/Fermi statistics.
+  failure_mode_if_absent: Without the prerequisite fragment captured by tensor products, the method loses part of the setup or justification that the batch description assumes.
+  evidence:
+    - type: expert_claim
+      source_ref: georgi_lie_techniques_batch_4_initial
+      note: Batch prerequisite fragment tensor products aligned with existing node technique.tensor_product_representation_construction.
+  status: asserted
+- from: qft.creation_annihilation_operator
+  to: technique.symmetry_of_tensor_products_and_particle_statistics
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Creation and annihilation operator covers part of the batch prerequisite creation operators, so it is a reasonable upstream prerequisite for using Use tensor-product symmetry with Bose/Fermi statistics.
+  failure_mode_if_absent: Without the prerequisite fragment captured by creation operators, the method loses part of the setup or justification that the batch description assumes.
+  evidence:
+    - type: expert_claim
+      source_ref: georgi_lie_techniques_batch_4_initial
+      note: Batch prerequisite fragment creation operators aligned with existing node qft.creation_annihilation_operator.
+  status: asserted
+- from: qm.projection_operator
+  to: technique.symmetry_reduction_of_normal_modes
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Projection operator covers part of the batch prerequisite group_projection_operators, so it is a reasonable upstream prerequisite for using Symmetry-based normal-mode extraction.
+  failure_mode_if_absent: Without the prerequisite fragment captured by group_projection_operators, the method loses part of the setup or justification that the batch description assumes.
+  evidence:
+    - type: expert_claim
+      source_ref: georgi_lie_techniques_batch_4_initial
+      note: Batch prerequisite fragment group_projection_operators aligned with existing node qm.projection_operator.
+  status: asserted
+- from: technique.tensor_wavefunction_interpretation
+  to: technique.tensor_normalization_by_contraction
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists tensor_wavefunction_interpretation as an explicit prerequisite for Normalize tensor states by contraction; the existing node Treat tensors as SU(3) wave functions is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot derive or justify Normalize tensor states by contraction cleanly because the prerequisite tensor_wavefunction_interpretation is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: georgi_lie_techniques_batch_4_initial
+      note: The batch prerequisite list explicitly names tensor_wavefunction_interpretation.
+  status: asserted
+- from: technique.symmetry_constrained_operator_matrix_elements
+  to: technique.tensor_normalization_by_contraction
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Symmetry constraints on operator matrix elements covers part of the batch prerequisite invariant_tensor_matrix_elements, so it is a reasonable upstream prerequisite for using Normalize tensor states by contraction.
+  failure_mode_if_absent: Without the prerequisite fragment captured by invariant_tensor_matrix_elements, the method loses part of the setup or justification that the batch description assumes.
+  evidence:
+    - type: expert_claim
+      source_ref: georgi_lie_techniques_batch_4_initial
+      note: Batch prerequisite fragment invariant_tensor_matrix_elements aligned with existing node technique.symmetry_constrained_operator_matrix_elements.
+  status: asserted
+- from: qm.angular_momentum_addition
+  to: technique.tensor_operator_basis_standardization
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: Angular momentum addition covers part of the batch prerequisite highest_weight_and_ladder_construction, so it is a reasonable upstream prerequisite for deriving Standardizing tensor-operator components.
+  failure_mode_if_absent: Without the prerequisite fragment captured by highest_weight_and_ladder_construction, the method loses part of the setup or justification that the batch description assumes.
+  evidence:
+    - type: expert_claim
+      source_ref: georgi_lie_techniques_batch_4_initial
+      note: Batch prerequisite fragment highest_weight_and_ladder_construction aligned with existing node qm.angular_momentum_addition.
+  status: asserted
+- from: qm.angular_momentum_addition
+  to: technique.tensor_operator_extraction_from_reducible_sets
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: Angular momentum addition covers part of the batch prerequisite highest_weight_construction, so it is a reasonable upstream prerequisite for deriving Tensor operators from reducible operator sets.
+  failure_mode_if_absent: Without the prerequisite fragment captured by highest_weight_construction, the method loses part of the setup or justification that the batch description assumes.
+  evidence:
+    - type: expert_claim
+      source_ref: georgi_lie_techniques_batch_4_initial
+      note: Batch prerequisite fragment highest_weight_construction aligned with existing node qm.angular_momentum_addition.
+  status: asserted
+- from: technique.tensor_operator_extraction_from_reducible_sets
+  to: technique.tensor_operator_product_decomposition
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists tensor_operator_extraction_from_reducible_sets as an explicit prerequisite for Tensor-operator product decomposition; the existing node Tensor operators from reducible operator sets is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot derive or justify Tensor-operator product decomposition cleanly because the prerequisite tensor_operator_extraction_from_reducible_sets is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: georgi_lie_techniques_batch_4_initial
+      note: The batch prerequisite list explicitly names tensor_operator_extraction_from_reducible_sets.
+  status: asserted
+- from: qm.angular_momentum_addition
+  to: technique.tensor_operator_product_decomposition
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: Angular momentum addition covers part of the batch prerequisite highest_weight_construction, so it is a reasonable upstream prerequisite for deriving Tensor-operator product decomposition.
+  failure_mode_if_absent: Without the prerequisite fragment captured by highest_weight_construction, the method loses part of the setup or justification that the batch description assumes.
+  evidence:
+    - type: expert_claim
+      source_ref: georgi_lie_techniques_batch_4_initial
+      note: Batch prerequisite fragment highest_weight_construction aligned with existing node qm.angular_momentum_addition.
+  status: asserted
+- from: qm.angular_momentum_addition
+  to: technique.tensor_operator_method
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: Angular momentum addition covers part of the batch prerequisite highest_weight_tensor_product_decomposition, so it is a reasonable upstream prerequisite for deriving Tensor-operator method.
+  failure_mode_if_absent: Without the prerequisite fragment captured by highest_weight_tensor_product_decomposition, the method loses part of the setup or justification that the batch description assumes.
+  evidence:
+    - type: expert_claim
+      source_ref: georgi_lie_techniques_batch_4_initial
+      note: Batch prerequisite fragment highest_weight_tensor_product_decomposition aligned with existing node qm.angular_momentum_addition.
+  status: asserted
+- from: technique.tensor_product_representation_construction
+  to: technique.tensor_product_character_rule
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists tensor_product_representation_construction as an explicit prerequisite for Character product rule for tensor products; the existing node Tensor-product representation construction is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot derive or justify Character product rule for tensor products cleanly because the prerequisite tensor_product_representation_construction is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: georgi_lie_techniques_batch_4_initial
+      note: The batch prerequisite list explicitly names tensor_product_representation_construction.
+  status: asserted
+- from: technique.upper_lower_index_notation
+  to: technique.tensor_wavefunction_interpretation
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists upper_lower_index_notation as an explicit prerequisite for Treat tensors as SU(3) wave functions; the existing node Use upper and lower indices to distinguish 3 and 3bar is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Treat tensors as SU(3) wave functions cleanly because the prerequisite upper_lower_index_notation is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: georgi_lie_techniques_batch_4_initial
+      note: The batch prerequisite list explicitly names upper_lower_index_notation.
+  status: asserted
+- from: math.lie_algebra
+  to: technique.three_node_angle_test_for_dynkin_subdiagrams
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Lie algebra covers part of the batch prerequisite simple roots, so it is a reasonable upstream prerequisite for using Three-node angle test.
+  failure_mode_if_absent: Without the prerequisite fragment captured by simple roots, the method loses part of the setup or justification that the batch description assumes.
+  evidence:
+    - type: expert_claim
+      source_ref: georgi_lie_techniques_batch_4_initial
+      note: Batch prerequisite fragment simple roots aligned with existing node math.lie_algebra.
+  status: asserted
+- from: qm.angular_momentum_addition
+  to: technique.total_spin_reduction_of_hyperfine_splittings
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Angular momentum addition covers part of the batch prerequisite Spin addition, so it is a reasonable upstream prerequisite for using Total-spin reduction of hyperfine splittings.
+  failure_mode_if_absent: Without the prerequisite fragment captured by Spin addition, the method loses part of the setup or justification that the batch description assumes.
+  evidence:
+    - type: expert_claim
+      source_ref: georgi_lie_techniques_batch_4_initial
+      note: Batch prerequisite fragment Spin addition aligned with existing node qm.angular_momentum_addition.
+  status: asserted
+- from: qcd.color_su3
+  to: technique.total_spin_reduction_of_hyperfine_splittings
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Color SU(3) covers part of the batch prerequisite Color-magnetic hyperfine interaction, so it is a reasonable upstream prerequisite for using Total-spin reduction of hyperfine splittings.
+  failure_mode_if_absent: Without the prerequisite fragment captured by Color-magnetic hyperfine interaction, the method loses part of the setup or justification that the batch description assumes.
+  evidence:
+    - type: expert_claim
+      source_ref: georgi_lie_techniques_batch_4_initial
+      note: Batch prerequisite fragment Color-magnetic hyperfine interaction aligned with existing node qcd.color_su3.
+  status: asserted
+- from: math.lie_algebra
+  to: technique.trace_form_canonicalization
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: Lie algebra covers part of the batch prerequisite adjoint_representation_from_structure_constants, so it is a reasonable upstream prerequisite for deriving Canonical basis from the adjoint trace form.
+  failure_mode_if_absent: Without the prerequisite fragment captured by adjoint_representation_from_structure_constants, the method loses part of the setup or justification that the batch description assumes.
+  evidence:
+    - type: expert_claim
+      source_ref: georgi_lie_techniques_batch_4_initial
+      note: Batch prerequisite fragment adjoint_representation_from_structure_constants aligned with existing node math.lie_algebra.
+  status: asserted
+- from: technique.su5_to_su3_su2_u1_decomposition
+  to: technique.tracelessness_filter_for_su5_candidates
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: SU(5) Decomposition to SU(3) x SU(2) x U(1) covers part of the batch prerequisite Block-diagonal embedding of the Standard Model subgroup in SU(5), so it is a reasonable upstream prerequisite for using Tracelessness filter for SU(5) matter assignments.
+  failure_mode_if_absent: Without the prerequisite fragment captured by Block-diagonal embedding of the Standard Model subgroup in SU(5), the method loses part of the setup or justification that the batch description assumes.
+  evidence:
+    - type: expert_claim
+      source_ref: georgi_lie_techniques_batch_4_initial
+      note: Batch prerequisite fragment Block-diagonal embedding of the Standard Model subgroup in SU(5) aligned with existing node technique.su5_to_su3_su2_u1_decomposition.
+  status: asserted
+- from: math.lie_algebra
+  to: technique.tracelessness_filter_for_su5_candidates
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Lie algebra covers part of the batch prerequisite Trace properties of SU(N) generators, so it is a reasonable upstream prerequisite for using Tracelessness filter for SU(5) matter assignments.
+  failure_mode_if_absent: Without the prerequisite fragment captured by Trace properties of SU(N) generators, the method loses part of the setup or justification that the batch description assumes.
+  evidence:
+    - type: expert_claim
+      source_ref: georgi_lie_techniques_batch_4_initial
+      note: Batch prerequisite fragment Trace properties of SU(N) generators aligned with existing node math.lie_algebra.
+  status: asserted
+- from: technique.young_tableaux_for_su_n_irreps
+  to: technique.triality_and_n_ality_selection_rules
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists young_tableaux_for_su_n_irreps as an explicit prerequisite for Triality and N-ality selection rules; the existing node Young tableaux for SU(N) representations is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Triality and N-ality selection rules cleanly because the prerequisite young_tableaux_for_su_n_irreps is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: georgi_lie_techniques_batch_4_initial
+      note: The batch prerequisite list explicitly names young_tableaux_for_su_n_irreps.
+  status: asserted
+- from: technique.su_n_embedding_via_fermionic_oscillators
+  to: technique.u1_charge_tracking_in_so_2n_spinors
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: SU(n) embedding via fermionic oscillators covers part of the batch prerequisite clifford_embedding_of_su_n_in_so_2n, so it is a reasonable upstream prerequisite for deriving Track the commuting U(1) inside SO(2n) spinors.
+  failure_mode_if_absent: Without the prerequisite fragment captured by clifford_embedding_of_su_n_in_so_2n, the method loses part of the setup or justification that the batch description assumes.
+  evidence:
+    - type: expert_claim
+      source_ref: georgi_lie_techniques_batch_4_initial
+      note: Batch prerequisite fragment clifford_embedding_of_su_n_in_so_2n aligned with existing node technique.su_n_embedding_via_fermionic_oscillators.
+  status: asserted
+- from: qft.creation_annihilation_operator
+  to: technique.universal_isospin_generator_sum
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Creation and annihilation operator covers part of the batch prerequisite isospin_generators_from_bilinears, so it is a reasonable upstream prerequisite for using Universal isospin-generator sum.
+  failure_mode_if_absent: Without the prerequisite fragment captured by isospin_generators_from_bilinears, the method loses part of the setup or justification that the batch description assumes.
+  evidence:
+    - type: expert_claim
+      source_ref: georgi_lie_techniques_batch_4_initial
+      note: Batch prerequisite fragment isospin_generators_from_bilinears aligned with existing node qft.creation_annihilation_operator.
+  status: asserted
+- from: technique.weyl_group_reflection_method
+  to: technique.weight_layer_degeneracy_counting
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists weyl_group_reflection_method as an explicit prerequisite for Count weight degeneracies by layers; the existing node Use Weyl reflections to complete weight diagrams is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot derive or justify Count weight degeneracies by layers cleanly because the prerequisite weyl_group_reflection_method is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: georgi_lie_techniques_batch_4_initial
+      note: The batch prerequisite list explicitly names weyl_group_reflection_method.
+  status: asserted
+- from: technique.symmetric_traceless_tensor_realization
+  to: technique.weight_layer_degeneracy_counting
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists symmetric_traceless_tensor_realization as an explicit prerequisite for Count weight degeneracies by layers; the existing node Realize (n,m) as symmetric traceless tensors is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot derive or justify Count weight degeneracies by layers cleanly because the prerequisite symmetric_traceless_tensor_realization is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: georgi_lie_techniques_batch_4_initial
+      note: The batch prerequisite list explicitly names symmetric_traceless_tensor_realization.
+  status: asserted
+- from: technique.su_n_tensor_young_tableau_irreps
+  to: technique.weight_layer_degeneracy_counting
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: SU(N) Irreps from Tensors and Young Tableaux covers part of the batch prerequisite dimension_formula_from_tensor_counting, so it is a reasonable upstream prerequisite for using Count weight degeneracies by layers.
+  failure_mode_if_absent: Without the prerequisite fragment captured by dimension_formula_from_tensor_counting, the method loses part of the setup or justification that the batch description assumes.
+  evidence:
+    - type: expert_claim
+      source_ref: georgi_lie_techniques_batch_4_initial
+      note: Batch prerequisite fragment dimension_formula_from_tensor_counting aligned with existing node technique.su_n_tensor_young_tableau_irreps.
+  status: asserted
+- from: technique.tensor_product_representation_rule
+  to: technique.wigner_eckart_decomposition
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists tensor_product_representation_rule as an explicit prerequisite for Wigner-Eckart decomposition; the existing node Tensor-product representation rule is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot derive or justify Wigner-Eckart decomposition cleanly because the prerequisite tensor_product_representation_rule is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: georgi_lie_techniques_batch_4_initial
+      note: The batch prerequisite list explicitly names tensor_product_representation_rule.
+  status: asserted
+- from: technique.tensor_operator_basis_standardization
+  to: technique.wigner_eckart_decomposition
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists tensor_operator_basis_standardization as an explicit prerequisite for Wigner-Eckart decomposition; the existing node Standardizing tensor-operator components is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot derive or justify Wigner-Eckart decomposition cleanly because the prerequisite tensor_operator_basis_standardization is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: georgi_lie_techniques_batch_4_initial
+      note: The batch prerequisite list explicitly names tensor_operator_basis_standardization.
+  status: asserted
+- from: qm.angular_momentum_addition
+  to: technique.wigner_eckart_decomposition
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Angular momentum addition covers part of the batch prerequisite clebsch_gordan_highest_weight_decomposition, so it is a reasonable upstream prerequisite for using Wigner-Eckart decomposition.
+  failure_mode_if_absent: Without the prerequisite fragment captured by clebsch_gordan_highest_weight_decomposition, the method loses part of the setup or justification that the batch description assumes.
+  evidence:
+    - type: expert_claim
+      source_ref: georgi_lie_techniques_batch_4_initial
+      note: Batch prerequisite fragment clebsch_gordan_highest_weight_decomposition aligned with existing node qm.angular_momentum_addition.
+  status: asserted
+- from: technique.young_tableaux_labeling
+  to: technique.young_symmetrizer_irrep_construction
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists young_tableaux_labeling as an explicit prerequisite for Young-tableau construction of S_n irreps; the existing node Young tableaux as S_n labels is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Young-tableau construction of S_n irreps cleanly because the prerequisite young_tableaux_labeling is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: georgi_lie_techniques_batch_4_initial
+      note: The batch prerequisite list explicitly names young_tableaux_labeling.
+  status: asserted
+- from: technique.young_tableaux_for_symmetric_groups
+  to: technique.young_tableaux_for_su_n_irreps
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists young_tableaux_for_symmetric_groups as an explicit prerequisite for Young tableaux for SU(N) representations; the existing node Young tableaux for symmetric-group irreducibles is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Young tableaux for SU(N) representations cleanly because the prerequisite young_tableaux_for_symmetric_groups is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: georgi_lie_techniques_batch_4_initial
+      note: The batch prerequisite list explicitly names young_tableaux_for_symmetric_groups.
+  status: asserted
+- from: technique.su_n_tensor_young_tableau_irreps
+  to: technique.young_tableaux_for_su_n_irreps
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: SU(N) Irreps from Tensors and Young Tableaux covers part of the batch prerequisite tensor symmetrization, so it is a reasonable upstream prerequisite for using Young tableaux for SU(N) representations.
+  failure_mode_if_absent: Without the prerequisite fragment captured by tensor symmetrization, the method loses part of the setup or justification that the batch description assumes.
+  evidence:
+    - type: expert_claim
+      source_ref: georgi_lie_techniques_batch_4_initial
+      note: Batch prerequisite fragment tensor symmetrization aligned with existing node technique.su_n_tensor_young_tableau_irreps.
+  status: asserted
+- from: qm.projection_operator
+  to: technique.young_tableaux_for_symmetric_groups
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Projection operator covers part of the batch prerequisite character_orthogonality_and_projection_operators, so it is a reasonable upstream prerequisite for using Young tableaux for symmetric-group irreducibles.
+  failure_mode_if_absent: Without the prerequisite fragment captured by character_orthogonality_and_projection_operators, the method loses part of the setup or justification that the batch description assumes.
+  evidence:
+    - type: expert_claim
+      source_ref: georgi_lie_techniques_batch_4_initial
+      note: Batch prerequisite fragment character_orthogonality_and_projection_operators aligned with existing node qm.projection_operator.
+  status: asserted

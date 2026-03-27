@@ -1,0 +1,2496 @@
+- from: technique.cycle_decomposition_of_permutations
+  to: technique.conjugacy_class_analysis
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Cycle decomposition of permutations provides the cycle structure that organizes symmetric-group elements into conjugacy classes, which Conjugacy-class analysis depends on.'
+  failure_mode_if_absent: 'Without Cycle decomposition of permutations, Conjugacy-class analysis lacks the cycle structure that organizes symmetric-group elements into conjugacy classes and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Cycle decomposition of permutations provides the cycle structure that organizes symmetric-group elements into conjugacy classes.'
+  status: asserted
+- from: technique.cycle_decomposition_of_permutations
+  to: technique.young_tableaux_for_symmetric_groups
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Cycle decomposition of permutations provides the permutation-level decomposition needed to connect S_n elements to tableau-labeled irreps, which Young tableaux for symmetric-group irreducibles depends on.'
+  failure_mode_if_absent: 'Without Cycle decomposition of permutations, Young tableaux for symmetric-group irreducibles lacks the permutation-level decomposition needed to connect S_n elements to tableau-labeled irreps and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Cycle decomposition of permutations provides the permutation-level decomposition needed to connect S_n elements to tableau-labeled irreps.'
+  status: asserted
+- from: technique.conjugacy_class_analysis
+  to: technique.character_table_construction
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Conjugacy-class analysis provides the class data that character tables are built from, which Character-table construction depends on.'
+  failure_mode_if_absent: 'Without Conjugacy-class analysis, Character-table construction lacks the class data that character tables are built from and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Conjugacy-class analysis provides the class data that character tables are built from.'
+  status: asserted
+- from: technique.conjugacy_class_analysis
+  to: technique.odd_polygon_character_construction
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Conjugacy-class analysis provides the rotation/reflection class structure needed to build dihedral characters, which Character construction for odd-gon symmetry groups depends on.'
+  failure_mode_if_absent: 'Without Conjugacy-class analysis, Character construction for odd-gon symmetry groups lacks the rotation/reflection class structure needed to build dihedral characters and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Conjugacy-class analysis provides the rotation/reflection class structure needed to build dihedral characters.'
+  status: asserted
+- from: technique.complete_reducibility_of_finite_group_representations
+  to: technique.character_table_construction
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Complete reducibility of finite-group representations provides the irreducible decomposition logic needed to solve for unknown characters consistently, which Character-table construction depends on.'
+  failure_mode_if_absent: 'Without Complete reducibility of finite-group representations, Character-table construction lacks the irreducible decomposition logic needed to solve for unknown characters consistently and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Complete reducibility of finite-group representations provides the irreducible decomposition logic needed to solve for unknown characters consistently.'
+  status: asserted
+- from: technique.character_table_construction
+  to: technique.character_orthogonality_and_projection_operators
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Character-table construction provides the explicit character data needed to apply orthogonality relations and build projectors, which Character orthogonality and projection operators depends on.'
+  failure_mode_if_absent: 'Without Character-table construction, Character orthogonality and projection operators lacks the explicit character data needed to apply orthogonality relations and build projectors and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Character-table construction provides the explicit character data needed to apply orthogonality relations and build projectors.'
+  status: asserted
+- from: technique.complete_reducibility_of_finite_group_representations
+  to: technique.character_orthogonality_and_projection_operators
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Complete reducibility of finite-group representations provides the guarantee that the reducible representation can be split into irreducible pieces before projecting, which Character orthogonality and projection operators depends on.'
+  failure_mode_if_absent: 'Without Complete reducibility of finite-group representations, Character orthogonality and projection operators lacks the guarantee that the reducible representation can be split into irreducible pieces before projecting and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Complete reducibility of finite-group representations provides the guarantee that the reducible representation can be split into irreducible pieces before projecting.'
+  status: asserted
+- from: technique.character_orthogonality_and_projection_operators
+  to: technique.projection_operators_from_characters
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Character orthogonality and projection operators provides the orthogonality formula behind explicit character-based projectors, which Projectors from characters depends on.'
+  failure_mode_if_absent: 'Without Character orthogonality and projection operators, Projectors from characters lacks the orthogonality formula behind explicit character-based projectors and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Character orthogonality and projection operators provides the orthogonality formula behind explicit character-based projectors.'
+  status: asserted
+- from: technique.character_table_construction
+  to: technique.character_theory_for_gukov_witten_defects
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Character-table construction provides the character-table input needed to test whether line operators are acted on trivially, which Character-Theory Classification of Gukov-Witten Defects depends on.'
+  failure_mode_if_absent: 'Without Character-table construction, Character-Theory Classification of Gukov-Witten Defects lacks the character-table input needed to test whether line operators are acted on trivially and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Character-table construction provides the character-table input needed to test whether line operators are acted on trivially.'
+  status: asserted
+- from: technique.character_orthogonality_and_projection_operators
+  to: technique.character_theory_for_gukov_witten_defects
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Character orthogonality and projection operators provides the projection logic needed to isolate how representations contribute to defect actions, which Character-Theory Classification of Gukov-Witten Defects depends on.'
+  failure_mode_if_absent: 'Without Character orthogonality and projection operators, Character-Theory Classification of Gukov-Witten Defects lacks the projection logic needed to isolate how representations contribute to defect actions and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Character orthogonality and projection operators provides the projection logic needed to isolate how representations contribute to defect actions.'
+  status: asserted
+- from: technique.tensor_product_representation_construction
+  to: technique.clebsch_gordan_coefficients_from_tensor_products
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Tensor-product representation construction provides the product-state representation space from which Clebsch-Gordan coefficients are extracted, which Clebsch-Gordan coefficients from tensor products depends on.'
+  failure_mode_if_absent: 'Without Tensor-product representation construction, Clebsch-Gordan coefficients from tensor products lacks the product-state representation space from which Clebsch-Gordan coefficients are extracted and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Tensor-product representation construction provides the product-state representation space from which Clebsch-Gordan coefficients are extracted.'
+  status: asserted
+- from: technique.irreducible_tensor_projection
+  to: technique.clebsch_gordan_coefficients_from_tensor_products
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Project tensor products onto irreducible pieces provides the projection machinery that isolates irreducible components inside tensor products, which Clebsch-Gordan coefficients from tensor products depends on.'
+  failure_mode_if_absent: 'Without Project tensor products onto irreducible pieces, Clebsch-Gordan coefficients from tensor products lacks the projection machinery that isolates irreducible components inside tensor products and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Project tensor products onto irreducible pieces provides the projection machinery that isolates irreducible components inside tensor products.'
+  status: asserted
+- from: technique.clebsch_gordan_coefficients_from_tensor_products
+  to: technique.ch5_lorentz_scalar_coupling_via_clebsch_gordan
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Clebsch-Gordan coefficients from tensor products provides the group-theoretic coefficients that couple component fields into Lorentz scalars, which Lorentz-Scalar Coupling via Clebsch-Gordan Methods depends on.'
+  failure_mode_if_absent: 'Without Clebsch-Gordan coefficients from tensor products, Lorentz-Scalar Coupling via Clebsch-Gordan Methods lacks the group-theoretic coefficients that couple component fields into Lorentz scalars and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Clebsch-Gordan coefficients from tensor products provides the group-theoretic coefficients that couple component fields into Lorentz scalars.'
+  status: asserted
+- from: technique.clebsch_gordan_coefficients_from_tensor_products
+  to: technique.su3_multiplet_clebsch_gordan_decomposition
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Clebsch-Gordan coefficients from tensor products provides the coefficient bookkeeping needed to convert SU(3) product states into irreducible multiplets, which Decompose SU(3) multiplets with tensor methods depends on.'
+  failure_mode_if_absent: 'Without Clebsch-Gordan coefficients from tensor products, Decompose SU(3) multiplets with tensor methods lacks the coefficient bookkeeping needed to convert SU(3) product states into irreducible multiplets and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Clebsch-Gordan coefficients from tensor products provides the coefficient bookkeeping needed to convert SU(3) product states into irreducible multiplets.'
+  status: asserted
+- from: technique.cartan_subalgebra_and_weights
+  to: technique.defining_weight_root_geometry
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Cartan subalgebra and weights provides the weight-space language from which simple roots and fundamental weights are computed, which Weight and Root Geometry of SU(N) depends on.'
+  failure_mode_if_absent: 'Without Cartan subalgebra and weights, Weight and Root Geometry of SU(N) lacks the weight-space language from which simple roots and fundamental weights are computed and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Cartan subalgebra and weights provides the weight-space language from which simple roots and fundamental weights are computed.'
+  status: asserted
+- from: math.lie_algebra
+  to: technique.defining_weight_root_geometry
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Lie algebra provides the algebraic structure whose generators, roots, and weights are being organized geometrically, which Weight and Root Geometry of SU(N) depends on.'
+  failure_mode_if_absent: 'Without Lie algebra, Weight and Root Geometry of SU(N) lacks the algebraic structure whose generators, roots, and weights are being organized geometrically and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Lie algebra provides the algebraic structure whose generators, roots, and weights are being organized geometrically.'
+  status: asserted
+- from: technique.defining_weight_root_geometry
+  to: technique.highest_weight_dynkin_classification
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Weight and Root Geometry of SU(N) provides the root and fundamental-weight geometry used to label irreps by Dynkin data, which Classify irreps by highest weights and Dynkin coefficients depends on.'
+  failure_mode_if_absent: 'Without Weight and Root Geometry of SU(N), Classify irreps by highest weights and Dynkin coefficients lacks the root and fundamental-weight geometry used to label irreps by Dynkin data and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Weight and Root Geometry of SU(N) provides the root and fundamental-weight geometry used to label irreps by Dynkin data.'
+  status: asserted
+- from: technique.defining_weight_root_geometry
+  to: technique.complex_conjugate_representation_mapping
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Weight and Root Geometry of SU(N) provides the weight-space picture in which conjugate representations have negated weights, which Map representations by complex conjugation depends on.'
+  failure_mode_if_absent: 'Without Weight and Root Geometry of SU(N), Map representations by complex conjugation lacks the weight-space picture in which conjugate representations have negated weights and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Weight and Root Geometry of SU(N) provides the weight-space picture in which conjugate representations have negated weights.'
+  status: asserted
+- from: technique.defining_weight_root_geometry
+  to: technique.clebsch_gordan_highest_weight_decomposition
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Weight and Root Geometry of SU(N) provides the weight-addition geometry needed to decompose tensor products by highest weights, which Clebsch-Gordan decomposition by highest weights depends on.'
+  failure_mode_if_absent: 'Without Weight and Root Geometry of SU(N), Clebsch-Gordan decomposition by highest weights lacks the weight-addition geometry needed to decompose tensor products by highest weights and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Weight and Root Geometry of SU(N) provides the weight-addition geometry needed to decompose tensor products by highest weights.'
+  status: asserted
+- from: technique.highest_weight_and_ladder_construction
+  to: technique.clebsch_gordan_highest_weight_decomposition
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Highest-weight and ladder construction for SU(2) provides the ladder-operator construction used to build the states inside each SU(2) multiplet, which Clebsch-Gordan decomposition by highest weights depends on.'
+  failure_mode_if_absent: 'Without Highest-weight and ladder construction for SU(2), Clebsch-Gordan decomposition by highest weights lacks the ladder-operator construction used to build the states inside each SU(2) multiplet and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Highest-weight and ladder construction for SU(2) provides the ladder-operator construction used to build the states inside each SU(2) multiplet.'
+  status: asserted
+- from: technique.clebsch_gordan_highest_weight_decomposition
+  to: technique.ch5_lorentz_scalar_coupling_via_clebsch_gordan
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Clebsch-Gordan decomposition by highest weights provides the highest-weight decomposition of angular-momentum products that underlies Lorentz-scalar coupling, which Lorentz-Scalar Coupling via Clebsch-Gordan Methods depends on.'
+  failure_mode_if_absent: 'Without Clebsch-Gordan decomposition by highest weights, Lorentz-Scalar Coupling via Clebsch-Gordan Methods lacks the highest-weight decomposition of angular-momentum products that underlies Lorentz-scalar coupling and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Clebsch-Gordan decomposition by highest weights provides the highest-weight decomposition of angular-momentum products that underlies Lorentz-scalar coupling.'
+  status: asserted
+- from: technique.complex_conjugate_representation_mapping
+  to: technique.complementary_tableaux_for_complex_conjugates
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Map representations by complex conjugation provides the general notion of conjugate representations that the tableau rule specializes to SU(N), which Complex Conjugates from Complementary Tableaux depends on.'
+  failure_mode_if_absent: 'Without Map representations by complex conjugation, Complex Conjugates from Complementary Tableaux lacks the general notion of conjugate representations that the tableau rule specializes to SU(N) and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Map representations by complex conjugation provides the general notion of conjugate representations that the tableau rule specializes to SU(N).'
+  status: asserted
+- from: technique.young_tableaux_for_su_n_irreps
+  to: technique.complementary_tableaux_for_complex_conjugates
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Young tableaux for SU(N) representations provides the tableau language in which complementary-column conjugation is carried out, which Complex Conjugates from Complementary Tableaux depends on.'
+  failure_mode_if_absent: 'Without Young tableaux for SU(N) representations, Complex Conjugates from Complementary Tableaux lacks the tableau language in which complementary-column conjugation is carried out and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Young tableaux for SU(N) representations provides the tableau language in which complementary-column conjugation is carried out.'
+  status: asserted
+- from: technique.complex_conjugate_representation_mapping
+  to: technique.chiral_fermion_rewriting
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Map representations by complex conjugation provides the conjugate-representation bookkeeping needed when right-handed fields are rewritten as left-handed conjugates, which Rewrite right-handed fermions as left-handed conjugates depends on.'
+  failure_mode_if_absent: 'Without Map representations by complex conjugation, Rewrite right-handed fermions as left-handed conjugates lacks the conjugate-representation bookkeeping needed when right-handed fields are rewritten as left-handed conjugates and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Map representations by complex conjugation provides the conjugate-representation bookkeeping needed when right-handed fields are rewritten as left-handed conjugates.'
+  status: asserted
+- from: qft.on_shell
+  to: technique.ch6_spin_sum_polynomial_method
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'On shell provides the on-shell kinematics that make spin sums collapse to covariant numerator polynomials, which Spin-Sum Polynomial Method depends on.'
+  failure_mode_if_absent: 'Without On shell, Spin-Sum Polynomial Method lacks the on-shell kinematics that make spin sums collapse to covariant numerator polynomials and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'On shell provides the on-shell kinematics that make spin sums collapse to covariant numerator polynomials.'
+  status: asserted
+- from: technique.ch5_vector_polarization_sum_construction
+  to: technique.ch6_spin_sum_polynomial_method
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Vector Polarization-Sum Construction provides the polarization-sum construction that the spin-sum polynomial method generalizes, which Spin-Sum Polynomial Method depends on.'
+  failure_mode_if_absent: 'Without Vector Polarization-Sum Construction, Spin-Sum Polynomial Method lacks the polarization-sum construction that the spin-sum polynomial method generalizes and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Vector Polarization-Sum Construction provides the polarization-sum construction that the spin-sum polynomial method generalizes.'
+  status: asserted
+- from: technique.ch6_spin_sum_polynomial_method
+  to: technique.external_state_polarization_methods
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Spin-Sum Polynomial Method provides the covariant spin-sum identities used to evaluate external-state sums efficiently, which External-state polarization methods depends on.'
+  failure_mode_if_absent: 'Without Spin-Sum Polynomial Method, External-state polarization methods lacks the covariant spin-sum identities used to evaluate external-state sums efficiently and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Spin-Sum Polynomial Method provides the covariant spin-sum identities used to evaluate external-state sums efficiently.'
+  status: asserted
+- from: qft.canonical_quantization
+  to: technique.ch7_constraint_classification_and_poisson_brackets
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Canonical quantization provides the canonical phase-space framework in which constraints and Poisson brackets are defined, which Constraint Classification and Poisson Brackets depends on.'
+  failure_mode_if_absent: 'Without Canonical quantization, Constraint Classification and Poisson Brackets lacks the canonical phase-space framework in which constraints and Poisson brackets are defined and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Canonical quantization provides the canonical phase-space framework in which constraints and Poisson brackets are defined.'
+  status: asserted
+- from: technique.ch7_constraint_classification_and_poisson_brackets
+  to: qft.gauge_fixing
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Constraint classification and Poisson-bracket analysis provide the Hamiltonian meaning of gauge redundancy and gauge conditions, which gauge fixing depends on in constrained systems.'
+  failure_mode_if_absent: 'Without constraint classification and Poisson-bracket analysis, gauge fixing in constrained systems is disconnected from the first-class gauge redundancy it is meant to restrict.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Constraint classification and Poisson brackets provide the gauge-redundancy context needed to interpret gauge fixing in constrained systems.'
+  status: asserted
+- from: technique.ch7_constraint_classification_and_poisson_brackets
+  to: technique.dirac_bracket_quantization_in_coulomb_gauge
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Constraint Classification and Poisson Brackets provides the classification of second-class constraints needed before replacing Poisson brackets by Dirac brackets, which Dirac bracket quantization in Coulomb gauge depends on.'
+  failure_mode_if_absent: 'Without Constraint Classification and Poisson Brackets, Dirac bracket quantization in Coulomb gauge lacks the classification of second-class constraints needed before replacing Poisson brackets by Dirac brackets and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Constraint Classification and Poisson Brackets provides the classification of second-class constraints needed before replacing Poisson brackets by Dirac brackets.'
+  status: asserted
+- from: technique.ch7_constraint_classification_and_poisson_brackets
+  to: technique.hamiltonian_constraint_kk_reduction_to_massive_gravity
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Constraint Classification and Poisson Brackets provides the Hamiltonian-constraint analysis needed to track what survives dimensional reduction, which KK reduction of the Hamiltonian constraint to massive gravity depends on.'
+  failure_mode_if_absent: 'Without Constraint Classification and Poisson Brackets, KK reduction of the Hamiltonian constraint to massive gravity lacks the Hamiltonian-constraint analysis needed to track what survives dimensional reduction and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Constraint Classification and Poisson Brackets provides the Hamiltonian-constraint analysis needed to track what survives dimensional reduction.'
+  status: asserted
+- from: qft.chirality_projector
+  to: technique.chiral_fermion_rewriting
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Chirality projector provides the projector language that distinguishes left-handed from right-handed fermion components, which Rewrite right-handed fermions as left-handed conjugates depends on.'
+  failure_mode_if_absent: 'Without Chirality projector, Rewrite right-handed fermions as left-handed conjugates lacks the projector language that distinguishes left-handed from right-handed fermion components and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Chirality projector provides the projector language that distinguishes left-handed from right-handed fermion components.'
+  status: asserted
+- from: technique.weyl_chiral_decomposition
+  to: technique.chiral_fermion_rewriting
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Weyl chiral decomposition provides the two-component chiral split needed before right-handed fields can be rewritten in a left-handed basis, which Rewrite right-handed fermions as left-handed conjugates depends on.'
+  failure_mode_if_absent: 'Without Weyl chiral decomposition, Rewrite right-handed fermions as left-handed conjugates lacks the two-component chiral split needed before right-handed fields can be rewritten in a left-handed basis and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Weyl chiral decomposition provides the two-component chiral split needed before right-handed fields can be rewritten in a left-handed basis.'
+  status: asserted
+- from: technique.complex_conjugate_representation_mapping
+  to: technique.chiral_fermion_rewriting
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Map representations by complex conjugation provides the conjugate-representation map needed when a right-handed field is recast as a left-handed antifermion, which Rewrite right-handed fermions as left-handed conjugates depends on.'
+  failure_mode_if_absent: 'Without Map representations by complex conjugation, Rewrite right-handed fermions as left-handed conjugates lacks the conjugate-representation map needed when a right-handed field is recast as a left-handed antifermion and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Map representations by complex conjugation provides the conjugate-representation map needed when a right-handed field is recast as a left-handed antifermion.'
+  status: asserted
+- from: technique.chiral_fermion_rewriting
+  to: technique.chiral_fermion_representation_assignment
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Rewrite right-handed fermions as left-handed conjugates provides the all-left-handed bookkeeping used to assign chiral matter content consistently, which Chiral fermion representation assignment depends on.'
+  failure_mode_if_absent: 'Without Rewrite right-handed fermions as left-handed conjugates, Chiral fermion representation assignment lacks the all-left-handed bookkeeping used to assign chiral matter content consistently and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Rewrite right-handed fermions as left-handed conjugates provides the all-left-handed bookkeeping used to assign chiral matter content consistently.'
+  status: asserted
+- from: technique.chiral_fermion_rewriting
+  to: technique.anomaly_free_representation_condition
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Rewrite right-handed fermions as left-handed conjugates provides the left-handed conjugate basis in which gauge-anomaly traces are computed uniformly, which Impose the anomaly-free representation condition depends on.'
+  failure_mode_if_absent: 'Without Rewrite right-handed fermions as left-handed conjugates, Impose the anomaly-free representation condition lacks the left-handed conjugate basis in which gauge-anomaly traces are computed uniformly and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Rewrite right-handed fermions as left-handed conjugates provides the left-handed conjugate basis in which gauge-anomaly traces are computed uniformly.'
+  status: asserted
+- from: qft.false_vacuum_decay
+  to: technique.coleman_de_luccia_bubble_bound
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'False vacuum decay provides the vacuum-tunneling framework in which bubble nucleation rates and bounce actions are defined, which Coleman-de Luccia bubble bound depends on.'
+  failure_mode_if_absent: 'Without False vacuum decay, Coleman-de Luccia bubble bound lacks the vacuum-tunneling framework in which bubble nucleation rates and bounce actions are defined and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'False vacuum decay provides the vacuum-tunneling framework in which bubble nucleation rates and bounce actions are defined.'
+  status: asserted
+- from: technique.euclidean_bounce_method_for_vacuum_decay
+  to: technique.coleman_de_luccia_bubble_bound
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Compute false-vacuum decay from the Euclidean bounce provides the bounce-action machinery used to relate wall tension and vacuum energy to metastability, which Coleman-de Luccia bubble bound depends on.'
+  failure_mode_if_absent: 'Without Compute false-vacuum decay from the Euclidean bounce, Coleman-de Luccia bubble bound lacks the bounce-action machinery used to relate wall tension and vacuum energy to metastability and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Compute false-vacuum decay from the Euclidean bounce provides the bounce-action machinery used to relate wall tension and vacuum energy to metastability.'
+  status: asserted
+- from: technique.supergravity_vacuum_energy_balance
+  to: technique.coleman_de_luccia_bubble_bound
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Supergravity vacuum-energy balance provides the supergravity vacuum-energy accounting that sets the relevant flat-space versus AdS comparison, which Coleman-de Luccia bubble bound depends on.'
+  failure_mode_if_absent: 'Without Supergravity vacuum-energy balance, Coleman-de Luccia bubble bound lacks the supergravity vacuum-energy accounting that sets the relevant flat-space versus AdS comparison and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Supergravity vacuum-energy balance provides the supergravity vacuum-energy accounting that sets the relevant flat-space versus AdS comparison.'
+  status: asserted
+- from: technique.coleman_de_luccia_bubble_bound
+  to: technique.compactification_by_brane_nucleation
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Coleman-de Luccia bubble bound provides the metastability criterion needed before treating compactification as a bubble-nucleation process, which Compactification by Nucleation of Brane-Like Geometries depends on.'
+  failure_mode_if_absent: 'Without Coleman-de Luccia bubble bound, Compactification by Nucleation of Brane-Like Geometries lacks the metastability criterion needed before treating compactification as a bubble-nucleation process and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Coleman-de Luccia bubble bound provides the metastability criterion needed before treating compactification as a bubble-nucleation process.'
+  status: asserted
+- from: technique.superfield_superspace_formalism
+  to: technique.component_propagator_extraction_from_superpropagators
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Superfield Superspace Formalism provides the superspace representation in which superpropagators are defined before components are projected out, which Component propagator extraction depends on.'
+  failure_mode_if_absent: 'Without Superfield Superspace Formalism, Component propagator extraction lacks the superspace representation in which superpropagators are defined before components are projected out and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Superfield Superspace Formalism provides the superspace representation in which superpropagators are defined before components are projected out.'
+  status: asserted
+- from: technique.berezin_superspace_integration
+  to: technique.component_propagator_extraction_from_superpropagators
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Berezin Superspace Integration provides the Grassmann-integration rules needed to strip off theta dependence cleanly, which Component propagator extraction depends on.'
+  failure_mode_if_absent: 'Without Berezin Superspace Integration, Component propagator extraction lacks the Grassmann-integration rules needed to strip off theta dependence cleanly and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Berezin Superspace Integration provides the Grassmann-integration rules needed to strip off theta dependence cleanly.'
+  status: asserted
+- from: technique.gaussian_grassmann_wick_expansion
+  to: technique.component_propagator_extraction_from_superpropagators
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Gaussian Grassmann Wick expansion provides the fermionic Wick-contraction rules needed to interpret the projected component propagators, which Component propagator extraction depends on.'
+  failure_mode_if_absent: 'Without Gaussian Grassmann Wick expansion, Component propagator extraction lacks the fermionic Wick-contraction rules needed to interpret the projected component propagators and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Gaussian Grassmann Wick expansion provides the fermionic Wick-contraction rules needed to interpret the projected component propagators.'
+  status: asserted
+- from: qft.conformal_invariance
+  to: technique.conformal_field_theory_methods
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Conformal invariance provides the symmetry principle that constrains dimensions and correlators in two-dimensional CFT, which Conformal-field-theory methods in two dimensions depends on.'
+  failure_mode_if_absent: 'Without Conformal invariance, Conformal-field-theory methods in two dimensions lacks the symmetry principle that constrains dimensions and correlators in two-dimensional CFT and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Conformal invariance provides the symmetry principle that constrains dimensions and correlators in two-dimensional CFT.'
+  status: asserted
+- from: complex_analysis.conformal_map
+  to: technique.conformal_field_theory_methods
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Conformal map provides the complex-variable map technology used to move between equivalent 2D geometries, which Conformal-field-theory methods in two dimensions depends on.'
+  failure_mode_if_absent: 'Without Conformal map, Conformal-field-theory methods in two dimensions lacks the complex-variable map technology used to move between equivalent 2D geometries and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Conformal map provides the complex-variable map technology used to move between equivalent 2D geometries.'
+  status: asserted
+- from: qft.critical_phenomena_and_conformal_basics
+  to: technique.conformal_field_theory_methods
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Critical phenomena and conformal basics provides the fixed-point context in which conformal methods become the right computational language, which Conformal-field-theory methods in two dimensions depends on.'
+  failure_mode_if_absent: 'Without Critical phenomena and conformal basics, Conformal-field-theory methods in two dimensions lacks the fixed-point context in which conformal methods become the right computational language and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Critical phenomena and conformal basics provides the fixed-point context in which conformal methods become the right computational language.'
+  status: asserted
+- from: technique.conformal_field_theory_methods
+  to: technique.defect_cft_degree_counting_test
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Conformal-field-theory methods in two dimensions provides the conformal correlator and operator-dimension tools needed to count defect degrees of freedom, which Use defect-CFT degree counting as a localization diagnostic depends on.'
+  failure_mode_if_absent: 'Without Conformal-field-theory methods in two dimensions, Use defect-CFT degree counting as a localization diagnostic lacks the conformal correlator and operator-dimension tools needed to count defect degrees of freedom and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Conformal-field-theory methods in two dimensions provides the conformal correlator and operator-dimension tools needed to count defect degrees of freedom.'
+  status: asserted
+- from: classical_fields.lagrangian_density
+  to: technique.coupling_normalization_by_field_rescaling
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Lagrangian density provides the kinetic-term normalization problem that field rescalings are designed to fix, which Coupling normalization by field rescaling depends on.'
+  failure_mode_if_absent: 'Without Lagrangian density, Coupling normalization by field rescaling lacks the kinetic-term normalization problem that field rescalings are designed to fix and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Lagrangian density provides the kinetic-term normalization problem that field rescalings are designed to fix.'
+  status: asserted
+- from: math.lie_algebra
+  to: technique.coupling_normalization_by_field_rescaling
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Lie algebra provides the generator normalization data that are rescaled together with the gauge fields, which Coupling normalization by field rescaling depends on.'
+  failure_mode_if_absent: 'Without Lie algebra, Coupling normalization by field rescaling lacks the generator normalization data that are rescaled together with the gauge fields and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Lie algebra provides the generator normalization data that are rescaled together with the gauge fields.'
+  status: asserted
+- from: technique.coupling_normalization_by_field_rescaling
+  to: technique.coupling_unification_extrapolation
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Coupling normalization by field rescaling provides the canonically normalized gauge couplings that are subsequently run to high scales, which Coupling-unification extrapolation depends on.'
+  failure_mode_if_absent: 'Without Coupling normalization by field rescaling, Coupling-unification extrapolation lacks the canonically normalized gauge couplings that are subsequently run to high scales and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Coupling normalization by field rescaling provides the canonically normalized gauge couplings that are subsequently run to high scales.'
+  status: asserted
+- from: technique.coupling_normalization_by_field_rescaling
+  to: technique.derivation_of_massive_gauge_boson_vertices
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Coupling normalization by field rescaling provides the correctly normalized gauge fields and couplings needed before rotating into the mass basis, which Derive massive gauge-boson interaction vertices depends on.'
+  failure_mode_if_absent: 'Without Coupling normalization by field rescaling, Derive massive gauge-boson interaction vertices lacks the correctly normalized gauge fields and couplings needed before rotating into the mass basis and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Coupling normalization by field rescaling provides the correctly normalized gauge fields and couplings needed before rotating into the mass basis.'
+  status: asserted
+- from: qft.running_coupling
+  to: technique.coupling_unification_extrapolation
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Running coupling provides the renormalization-group evolution that extrapolates gauge couplings across scales, which Coupling-unification extrapolation depends on.'
+  failure_mode_if_absent: 'Without Running coupling, Coupling-unification extrapolation lacks the renormalization-group evolution that extrapolates gauge couplings across scales and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Running coupling provides the renormalization-group evolution that extrapolates gauge couplings across scales.'
+  status: asserted
+- from: qcd.asymptotic_freedom
+  to: technique.coupling_unification_extrapolation
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Asymptotic freedom provides the qualitative running behavior that makes high-scale gauge-coupling convergence meaningful, which Coupling-unification extrapolation depends on.'
+  failure_mode_if_absent: 'Without Asymptotic freedom, Coupling-unification extrapolation lacks the qualitative running behavior that makes high-scale gauge-coupling convergence meaningful and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Asymptotic freedom provides the qualitative running behavior that makes high-scale gauge-coupling convergence meaningful.'
+  status: asserted
+- from: technique.coupling_unification_extrapolation
+  to: technique.generator_normalization_and_one_loop_rg_unification
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Coupling-unification extrapolation provides the actual high-scale meeting test that subgroup normalization is matched against, which Test grand unification by subgroup normalization and one-loop running depends on.'
+  failure_mode_if_absent: 'Without Coupling-unification extrapolation, Test grand unification by subgroup normalization and one-loop running lacks the actual high-scale meeting test that subgroup normalization is matched against and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Coupling-unification extrapolation provides the actual high-scale meeting test that subgroup normalization is matched against.'
+  status: asserted
+- from: technique.coupling_unification_extrapolation
+  to: technique.grand_unification_search_criteria
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Coupling-unification extrapolation provides the running-based check that tells whether a candidate unified group is phenomenologically credible, which Grand-unification search criteria depends on.'
+  failure_mode_if_absent: 'Without Coupling-unification extrapolation, Grand-unification search criteria lacks the running-based check that tells whether a candidate unified group is phenomenologically credible and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Coupling-unification extrapolation provides the running-based check that tells whether a candidate unified group is phenomenologically credible.'
+  status: asserted
+- from: technique.ch7_internal_symmetry_current_algebra
+  to: technique.current_algebra_multi_goldstone_amplitudes
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Internal-Symmetry Current Algebra provides the equal-time current commutators used to derive multi-Goldstone soft limits, which Current-Algebra Multi-Goldstone Amplitudes depends on.'
+  failure_mode_if_absent: 'Without Internal-Symmetry Current Algebra, Current-Algebra Multi-Goldstone Amplitudes lacks the equal-time current commutators used to derive multi-Goldstone soft limits and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Internal-Symmetry Current Algebra provides the equal-time current commutators used to derive multi-Goldstone soft limits.'
+  status: asserted
+- from: sm.ssb.goldstone_theorem
+  to: technique.current_algebra_multi_goldstone_amplitudes
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Goldstone''s theorem provides the broken-symmetry Goldstone structure whose amplitudes are being constrained, which Current-Algebra Multi-Goldstone Amplitudes depends on.'
+  failure_mode_if_absent: 'Without Goldstone''s theorem, Current-Algebra Multi-Goldstone Amplitudes lacks the broken-symmetry Goldstone structure whose amplitudes are being constrained and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Goldstone''s theorem provides the broken-symmetry Goldstone structure whose amplitudes are being constrained.'
+  status: asserted
+- from: technique.current_algebra_spectral_proof_of_goldstone_theorem
+  to: technique.current_algebra_multi_goldstone_amplitudes
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Current-Algebra Spectral Proof of Goldstone''s Theorem provides the current-algebra derivation of Goldstone poles that is extended to multiple soft bosons, which Current-Algebra Multi-Goldstone Amplitudes depends on.'
+  failure_mode_if_absent: 'Without Current-Algebra Spectral Proof of Goldstone''s Theorem, Current-Algebra Multi-Goldstone Amplitudes lacks the current-algebra derivation of Goldstone poles that is extended to multiple soft bosons and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Current-Algebra Spectral Proof of Goldstone''s Theorem provides the current-algebra derivation of Goldstone poles that is extended to multiple soft bosons.'
+  status: asserted
+- from: technique.current_algebra_multi_goldstone_amplitudes
+  to: technique.zero_momentum_goldstone_constraints
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Current-Algebra Multi-Goldstone Amplitudes provides the soft-Goldstone commutator machinery behind zero-momentum selection rules, which Zero-Momentum Goldstone Constraints depends on.'
+  failure_mode_if_absent: 'Without Current-Algebra Multi-Goldstone Amplitudes, Zero-Momentum Goldstone Constraints lacks the soft-Goldstone commutator machinery behind zero-momentum selection rules and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Current-Algebra Multi-Goldstone Amplitudes provides the soft-Goldstone commutator machinery behind zero-momentum selection rules.'
+  status: asserted
+- from: classical_fields.noether_current
+  to: technique.current_orthogonality_to_gauge_null_directions
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Noether current provides the conserved-current object that annihilates gauge-null propagator directions, which Current orthogonality to gauge null directions depends on.'
+  failure_mode_if_absent: 'Without Noether current, Current orthogonality to gauge null directions lacks the conserved-current object that annihilates gauge-null propagator directions and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Noether current provides the conserved-current object that annihilates gauge-null propagator directions.'
+  status: asserted
+- from: technique.conserved_current_coupling
+  to: technique.current_orthogonality_to_gauge_null_directions
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Coupling to conserved currents provides the statement that only conserved currents can be inserted without exciting gauge artifacts, which Current orthogonality to gauge null directions depends on.'
+  failure_mode_if_absent: 'Without Coupling to conserved currents, Current orthogonality to gauge null directions lacks the statement that only conserved currents can be inserted without exciting gauge artifacts and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Coupling to conserved currents provides the statement that only conserved currents can be inserted without exciting gauge artifacts.'
+  status: asserted
+- from: qft.gauge_fixing
+  to: technique.current_orthogonality_to_gauge_null_directions
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Gauge fixing provides the gauge-dependent propagator structure whose null directions must be shown to decouple, which Current orthogonality to gauge null directions depends on.'
+  failure_mode_if_absent: 'Without Gauge fixing, Current orthogonality to gauge null directions lacks the gauge-dependent propagator structure whose null directions must be shown to decouple and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Gauge fixing provides the gauge-dependent propagator structure whose null directions must be shown to decouple.'
+  status: asserted
+- from: technique.current_orthogonality_to_gauge_null_directions
+  to: technique.photon_polarization_sum
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Current orthogonality to gauge null directions provides the Ward-identity decoupling that justifies replacing physical sums by covariant tensors, which External-photon polarization sum depends on.'
+  failure_mode_if_absent: 'Without Current orthogonality to gauge null directions, External-photon polarization sum lacks the Ward-identity decoupling that justifies replacing physical sums by covariant tensors and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Current orthogonality to gauge null directions provides the Ward-identity decoupling that justifies replacing physical sums by covariant tensors.'
+  status: asserted
+- from: technique.current_orthogonality_to_gauge_null_directions
+  to: technique.form_factor_decomposition_and_ward_constraints
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Current orthogonality to gauge null directions provides the current-conservation logic that removes gauge-forbidden tensor structures, which Form-factor decomposition with Ward constraints depends on.'
+  failure_mode_if_absent: 'Without Current orthogonality to gauge null directions, Form-factor decomposition with Ward constraints lacks the current-conservation logic that removes gauge-forbidden tensor structures and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Current orthogonality to gauge null directions provides the current-conservation logic that removes gauge-forbidden tensor structures.'
+  status: asserted
+- from: qft.infrared_divergence
+  to: technique.dangerous_state_projection_analysis
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Infrared divergence provides the endpoint singular behavior that the dangerous-state projection isolates, which Dangerous-state projection analysis depends on.'
+  failure_mode_if_absent: 'Without Infrared divergence, Dangerous-state projection analysis lacks the endpoint singular behavior that the dangerous-state projection isolates and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Infrared divergence provides the endpoint singular behavior that the dangerous-state projection isolates.'
+  status: asserted
+- from: qft.lsz_reduction_formula
+  to: technique.dangerous_state_projection_analysis
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'LSZ reduction formula provides the scattering-amplitude framework in which problematic intermediate states are identified, which Dangerous-state projection analysis depends on.'
+  failure_mode_if_absent: 'Without LSZ reduction formula, Dangerous-state projection analysis lacks the scattering-amplitude framework in which problematic intermediate states are identified and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'LSZ reduction formula provides the scattering-amplitude framework in which problematic intermediate states are identified.'
+  status: asserted
+- from: technique.dangerous_state_projection_analysis
+  to: technique.ir_sensitivity_vs_ir_divergence
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Dangerous-state projection analysis provides the explicit identification of soft and collinear states needed before distinguishing sensitivity from true divergence, which IR sensitivity (regulator-independent IR characterization) depends on.'
+  failure_mode_if_absent: 'Without Dangerous-state projection analysis, IR sensitivity (regulator-independent IR characterization) lacks the explicit identification of soft and collinear states needed before distinguishing sensitivity from true divergence and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Dangerous-state projection analysis provides the explicit identification of soft and collinear states needed before distinguishing sensitivity from true divergence.'
+  status: asserted
+- from: technique.dangerous_state_projection_analysis
+  to: technique.hard_s_matrix_construction
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Dangerous-state projection analysis provides the diagnosis of infrared-dangerous intermediate states that motivates an IR-finite asymptotic Hamiltonian, which Hard S-matrix (S_H) construction via asymptotic Hamiltonian depends on.'
+  failure_mode_if_absent: 'Without Dangerous-state projection analysis, Hard S-matrix (S_H) construction via asymptotic Hamiltonian lacks the diagnosis of infrared-dangerous intermediate states that motivates an IR-finite asymptotic Hamiltonian and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Dangerous-state projection analysis provides the diagnosis of infrared-dangerous intermediate states that motivates an IR-finite asymptotic Hamiltonian.'
+  status: asserted
+- from: relativity.lorentz_transformation
+  to: technique.de_broglie_relations
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Lorentz transformation provides the Lorentz-covariant phase matching that ties frequency and wavelength to energy and momentum, which de Broglie Relations depends on.'
+  failure_mode_if_absent: 'Without Lorentz transformation, de Broglie Relations lacks the Lorentz-covariant phase matching that ties frequency and wavelength to energy and momentum and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Lorentz transformation provides the Lorentz-covariant phase matching that ties frequency and wavelength to energy and momentum.'
+  status: asserted
+- from: qft.lorentz_poincare_representations
+  to: technique.de_broglie_relations
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Lorentz and Poincare representations provides the relativistic representation-theory viewpoint that treats momentum and phase as linked invariants, which de Broglie Relations depends on.'
+  failure_mode_if_absent: 'Without Lorentz and Poincare representations, de Broglie Relations lacks the relativistic representation-theory viewpoint that treats momentum and phase as linked invariants and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Lorentz and Poincare representations provides the relativistic representation-theory viewpoint that treats momentum and phase as linked invariants.'
+  status: asserted
+- from: technique.de_broglie_relations
+  to: technique.klein_gordon_equation_construction
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'de Broglie Relations provides the operator substitution that turns relativistic dispersion into a scalar wave equation, which Klein-Gordon Equation Construction depends on.'
+  failure_mode_if_absent: 'Without de Broglie Relations, Klein-Gordon Equation Construction lacks the operator substitution that turns relativistic dispersion into a scalar wave equation and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'de Broglie Relations provides the operator substitution that turns relativistic dispersion into a scalar wave equation.'
+  status: asserted
+- from: technique.de_broglie_relations
+  to: technique.dirac_linearization_of_dispersion
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'de Broglie Relations provides the wave-particle identification needed before linearizing E^2-p^2 into a first-order equation, which Dirac Linearization of Dispersion depends on.'
+  failure_mode_if_absent: 'Without de Broglie Relations, Dirac Linearization of Dispersion lacks the wave-particle identification needed before linearizing E^2-p^2 into a first-order equation and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'de Broglie Relations provides the wave-particle identification needed before linearizing E^2-p^2 into a first-order equation.'
+  status: asserted
+- from: sm.higgs.higgs_mechanism
+  to: technique.derivation_of_massive_gauge_boson_vertices
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Higgs mechanism provides the broken-gauge-theory mass basis in which WWgamma and WWZ interactions are derived, which Derive massive gauge-boson interaction vertices depends on.'
+  failure_mode_if_absent: 'Without Higgs mechanism, Derive massive gauge-boson interaction vertices lacks the broken-gauge-theory mass basis in which WWgamma and WWZ interactions are derived and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Higgs mechanism provides the broken-gauge-theory mass basis in which WWgamma and WWZ interactions are derived.'
+  status: asserted
+- from: sm.ewbreak.electroweak_mixing_angle
+  to: technique.derivation_of_massive_gauge_boson_vertices
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Electroweak mixing angle provides the weak-mixing rotation needed to separate photon and Z interactions, which Derive massive gauge-boson interaction vertices depends on.'
+  failure_mode_if_absent: 'Without Electroweak mixing angle, Derive massive gauge-boson interaction vertices lacks the weak-mixing rotation needed to separate photon and Z interactions and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Electroweak mixing angle provides the weak-mixing rotation needed to separate photon and Z interactions.'
+  status: asserted
+- from: technique.derivation_of_massive_gauge_boson_vertices
+  to: technique.goldstone_vector_continuity_argument
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Derive massive gauge-boson interaction vertices provides the explicit massive-vector couplings needed when comparing vector exchange to Goldstone exchange, which Match zero-coupling vector exchange to Goldstone exchange depends on.'
+  failure_mode_if_absent: 'Without Derive massive gauge-boson interaction vertices, Match zero-coupling vector exchange to Goldstone exchange lacks the explicit massive-vector couplings needed when comparing vector exchange to Goldstone exchange and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Derive massive gauge-boson interaction vertices provides the explicit massive-vector couplings needed when comparing vector exchange to Goldstone exchange.'
+  status: asserted
+- from: qft.topology_and_solitons
+  to: technique.derrick_scaling_argument
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Topology and solitons in QFT provides the soliton-existence question that Derrick scaling is used to test, which Use Derrick scaling to test whether finite-size solitons can exist depends on.'
+  failure_mode_if_absent: 'Without Topology and solitons in QFT, Use Derrick scaling to test whether finite-size solitons can exist lacks the soliton-existence question that Derrick scaling is used to test and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Topology and solitons in QFT provides the soliton-existence question that Derrick scaling is used to test.'
+  status: asserted
+- from: classical_fields.field_configuration
+  to: technique.derrick_scaling_argument
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Field configuration provides the rescaled field configurations whose energy or action scaling is being examined, which Use Derrick scaling to test whether finite-size solitons can exist depends on.'
+  failure_mode_if_absent: 'Without Field configuration, Use Derrick scaling to test whether finite-size solitons can exist lacks the rescaled field configurations whose energy or action scaling is being examined and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Field configuration provides the rescaled field configurations whose energy or action scaling is being examined.'
+  status: asserted
+- from: technique.derrick_scaling_argument
+  to: technique.fixed_sector_minimization_for_soliton_search
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Use Derrick scaling to test whether finite-size solitons can exist provides the scaling obstruction test that tells whether a topological-sector minimization has a chance to find a finite-size solution, which Minimize the action inside a fixed topological sector depends on.'
+  failure_mode_if_absent: 'Without Use Derrick scaling to test whether finite-size solitons can exist, Minimize the action inside a fixed topological sector lacks the scaling obstruction test that tells whether a topological-sector minimization has a chance to find a finite-size solution and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Use Derrick scaling to test whether finite-size solitons can exist provides the scaling obstruction test that tells whether a topological-sector minimization has a chance to find a finite-size solution.'
+  status: asserted
+- from: technique.junipr_probabilistic_jet_model
+  to: technique.clustering_algorithm_independence
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'JUNIPR Probabilistic Jet Model via Clustering Trees provides the JUNIPR likelihood factorization whose tree-independence is being tested, which Clustering-Algorithm Independence of Learned Jet Probabilities depends on.'
+  failure_mode_if_absent: 'Without JUNIPR Probabilistic Jet Model via Clustering Trees, Clustering-Algorithm Independence of Learned Jet Probabilities lacks the JUNIPR likelihood factorization whose tree-independence is being tested and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'JUNIPR Probabilistic Jet Model via Clustering Trees provides the JUNIPR likelihood factorization whose tree-independence is being tested.'
+  status: asserted
+- from: technique.qjets_nondeterministic_clustering
+  to: technique.clustering_algorithm_independence
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Q-jets non-deterministic jet clustering provides the alternative clustering-tree viewpoint needed to check whether the learned probability is tree-agnostic, which Clustering-Algorithm Independence of Learned Jet Probabilities depends on.'
+  failure_mode_if_absent: 'Without Q-jets non-deterministic jet clustering, Clustering-Algorithm Independence of Learned Jet Probabilities lacks the alternative clustering-tree viewpoint needed to check whether the learned probability is tree-agnostic and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Q-jets non-deterministic jet clustering provides the alternative clustering-tree viewpoint needed to check whether the learned probability is tree-agnostic.'
+  status: asserted
+- from: technique.clustering_algorithm_independence
+  to: technique.branching_step_interpretability
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Clustering-Algorithm Independence of Learned Jet Probabilities provides the assurance that per-branching explanations do not depend on an arbitrary clustering choice, which Branching-step decomposition for classifier interpretability depends on.'
+  failure_mode_if_absent: 'Without Clustering-Algorithm Independence of Learned Jet Probabilities, Branching-step decomposition for classifier interpretability lacks the assurance that per-branching explanations do not depend on an arbitrary clustering choice and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Clustering-Algorithm Independence of Learned Jet Probabilities provides the assurance that per-branching explanations do not depend on an arbitrary clustering choice.'
+  status: asserted
+- from: technique.clustering_algorithm_independence
+  to: technique.binary_junipr_objective
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Clustering-Algorithm Independence of Learned Jet Probabilities provides the tree-agnostic likelihood interpretation needed before using JUNIPR probabilities in a supervised objective, which Binary JUNIPR objective function for jet discrimination depends on.'
+  failure_mode_if_absent: 'Without Clustering-Algorithm Independence of Learned Jet Probabilities, Binary JUNIPR objective function for jet discrimination lacks the tree-agnostic likelihood interpretation needed before using JUNIPR probabilities in a supervised objective and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Clustering-Algorithm Independence of Learned Jet Probabilities provides the tree-agnostic likelihood interpretation needed before using JUNIPR probabilities in a supervised objective.'
+  status: asserted
+- from: technique.significance_improvement_characteristic
+  to: technique.comprehensive_qg_variable_ranking
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Significance Improvement Characteristic (SIC) for discriminant evaluation provides the ROC-based performance metric used to compare quark/gluon observables systematically, which Systematic Ranking of Quark/Gluon Discriminants via ROC Curves depends on.'
+  failure_mode_if_absent: 'Without Significance Improvement Characteristic (SIC) for discriminant evaluation, Systematic Ranking of Quark/Gluon Discriminants via ROC Curves lacks the ROC-based performance metric used to compare quark/gluon observables systematically and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Significance Improvement Characteristic (SIC) for discriminant evaluation provides the ROC-based performance metric used to compare quark/gluon observables systematically.'
+  status: asserted
+- from: technique.kinematic_quark_gluon_purification
+  to: technique.comprehensive_qg_variable_ranking
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Kinematic purification of quark and gluon jet samples provides the quark-enriched and gluon-enriched samples needed to benchmark observables fairly, which Systematic Ranking of Quark/Gluon Discriminants via ROC Curves depends on.'
+  failure_mode_if_absent: 'Without Kinematic purification of quark and gluon jet samples, Systematic Ranking of Quark/Gluon Discriminants via ROC Curves lacks the quark-enriched and gluon-enriched samples needed to benchmark observables fairly and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Kinematic purification of quark and gluon jet samples provides the quark-enriched and gluon-enriched samples needed to benchmark observables fairly.'
+  status: asserted
+- from: technique.pure_sample_calibration
+  to: technique.comprehensive_qg_variable_ranking
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Pure Sample Extraction for Data-Driven Quark/Gluon Calibration provides the data-driven purity control needed to trust ranked quark/gluon variables, which Systematic Ranking of Quark/Gluon Discriminants via ROC Curves depends on.'
+  failure_mode_if_absent: 'Without Pure Sample Extraction for Data-Driven Quark/Gluon Calibration, Systematic Ranking of Quark/Gluon Discriminants via ROC Curves lacks the data-driven purity control needed to trust ranked quark/gluon variables and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Pure Sample Extraction for Data-Driven Quark/Gluon Calibration provides the data-driven purity control needed to trust ranked quark/gluon variables.'
+  status: asserted
+- from: technique.precision_event_generator_stack
+  to: technique.cross_generator_robustness_test
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Precision event-generator stack provides the generator-level control needed to compare learned discriminants across simulation pipelines, which Cross-Generator Robustness of Learned Discriminants depends on.'
+  failure_mode_if_absent: 'Without Precision event-generator stack, Cross-Generator Robustness of Learned Discriminants lacks the generator-level control needed to compare learned discriminants across simulation pipelines and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Precision event-generator stack provides the generator-level control needed to compare learned discriminants across simulation pipelines.'
+  status: asserted
+- from: technique.event_image_cnn_classification
+  to: technique.cross_generator_robustness_test
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Event-image CNN for jet classification provides a representative high-dimensional jet classifier architecture whose robustness can be stress-tested across generators, which Cross-Generator Robustness of Learned Discriminants depends on.'
+  failure_mode_if_absent: 'Without Event-image CNN for jet classification, Cross-Generator Robustness of Learned Discriminants lacks a representative high-dimensional jet classifier architecture whose robustness can be stress-tested across generators and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Event-image CNN for jet classification provides a representative high-dimensional jet classifier architecture whose robustness can be stress-tested across generators.'
+  status: asserted
+- from: technique.significance_improvement_characteristic
+  to: technique.cut_weights_statistical_framework
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Significance Improvement Characteristic (SIC) for discriminant evaluation provides the significance metric that weighted event selections are trying to improve, which Cut-weight framework for weighted event analysis depends on.'
+  failure_mode_if_absent: 'Without Significance Improvement Characteristic (SIC) for discriminant evaluation, Cut-weight framework for weighted event analysis lacks the significance metric that weighted event selections are trying to improve and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Significance Improvement Characteristic (SIC) for discriminant evaluation provides the significance metric that weighted event selections are trying to improve.'
+  status: asserted
+- from: technique.telescoping_jets_multi_r
+  to: technique.cut_weights_statistical_framework
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Telescoping jets: multiple deterministic R interpretations provides the multiple event interpretations that the cut-weight framework turns into weighted pass fractions, which Cut-weight framework for weighted event analysis depends on.'
+  failure_mode_if_absent: 'Without Telescoping jets: multiple deterministic R interpretations, Cut-weight framework for weighted event analysis lacks the multiple event interpretations that the cut-weight framework turns into weighted pass fractions and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Telescoping jets: multiple deterministic R interpretations provides the multiple event interpretations that the cut-weight framework turns into weighted pass fractions.'
+  status: asserted
+- from: technique.kinematic_quark_gluon_purification
+  to: technique.cwola_high_dimensional
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Kinematic purification of quark and gluon jet samples provides the mixed samples with different class fractions that weak supervision learns from, which Classification Without Labels (CWoLa) for high-dimensional inputs depends on.'
+  failure_mode_if_absent: 'Without Kinematic purification of quark and gluon jet samples, Classification Without Labels (CWoLa) for high-dimensional inputs lacks the mixed samples with different class fractions that weak supervision learns from and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Kinematic purification of quark and gluon jet samples provides the mixed samples with different class fractions that weak supervision learns from.'
+  status: asserted
+- from: technique.colored_jet_images
+  to: technique.cwola_high_dimensional
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Colored Jet Images for CNN Discrimination provides a high-dimensional jet representation on which CWoLa classifiers can be trained, which Classification Without Labels (CWoLa) for high-dimensional inputs depends on.'
+  failure_mode_if_absent: 'Without Colored Jet Images for CNN Discrimination, Classification Without Labels (CWoLa) for high-dimensional inputs lacks a high-dimensional jet representation on which CWoLa classifiers can be trained and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Colored Jet Images for CNN Discrimination provides a high-dimensional jet representation on which CWoLa classifiers can be trained.'
+  status: asserted
+- from: technique.soft_flare_spectral_template
+  to: technique.dark_moon_background_subtraction
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Soft Background Flare Spectral Template Subtraction provides the residual soft-flare cleanup needed before particle-background templates can be normalized reliably, which Dark Moon Instrumental Background Calibration depends on.'
+  failure_mode_if_absent: 'Without Soft Background Flare Spectral Template Subtraction, Dark Moon Instrumental Background Calibration lacks the residual soft-flare cleanup needed before particle-background templates can be normalized reliably and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Soft Background Flare Spectral Template Subtraction provides the residual soft-flare cleanup needed before particle-background templates can be normalized reliably.'
+  status: asserted
+- from: technique.warped_deconstruction_quiver
+  to: technique.deconstruction_of_twist
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Deconstruct AdS with a quiver whose link VEVs follow the warp factor provides the moose-style deconstruction machinery used to mimic extra-dimensional flavor twisting in four dimensions, which Four-Dimensional Deconstruction of Flavor Twisting depends on.'
+  failure_mode_if_absent: 'Without Deconstruct AdS with a quiver whose link VEVs follow the warp factor, Four-Dimensional Deconstruction of Flavor Twisting lacks the moose-style deconstruction machinery used to mimic extra-dimensional flavor twisting in four dimensions and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Deconstruct AdS with a quiver whose link VEVs follow the warp factor provides the moose-style deconstruction machinery used to mimic extra-dimensional flavor twisting in four dimensions.'
+  status: asserted
+- from: technique.froggatt_nielsen_alignment_textures
+  to: technique.deconstruction_of_twist
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Froggatt-Nielsen Alignment Textures provides the flavor-structure intuition that the twisted deconstruction is designed to reproduce geometrically, which Four-Dimensional Deconstruction of Flavor Twisting depends on.'
+  failure_mode_if_absent: 'Without Froggatt-Nielsen Alignment Textures, Four-Dimensional Deconstruction of Flavor Twisting lacks the flavor-structure intuition that the twisted deconstruction is designed to reproduce geometrically and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Froggatt-Nielsen Alignment Textures provides the flavor-structure intuition that the twisted deconstruction is designed to reproduce geometrically.'
+  status: asserted
+- from: technique.n_subjettiness_for_qg
+  to: technique.delta_tau_isr_ue_subtraction
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'N-Subjettiness tau_N for Quark/Gluon Discrimination provides the subjettiness observable whose contamination is being corrected analytically, which Analytic ISR/UE subtraction via Delta-tau correction depends on.'
+  failure_mode_if_absent: 'Without N-Subjettiness tau_N for Quark/Gluon Discrimination, Analytic ISR/UE subtraction via Delta-tau correction lacks the subjettiness observable whose contamination is being corrected analytically and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'N-Subjettiness tau_N for Quark/Gluon Discrimination provides the subjettiness observable whose contamination is being corrected analytically.'
+  status: asserted
+- from: qft.infrared_divergences_and_jets
+  to: technique.delta_tau_isr_ue_subtraction
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Infrared divergences and jets provides the ISR and soft-radiation structure that the Delta-tau correction is built to cancel, which Analytic ISR/UE subtraction via Delta-tau correction depends on.'
+  failure_mode_if_absent: 'Without Infrared divergences and jets, Analytic ISR/UE subtraction via Delta-tau correction lacks the ISR and soft-radiation structure that the Delta-tau correction is built to cancel and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Infrared divergences and jets provides the ISR and soft-radiation structure that the Delta-tau correction is built to cancel.'
+  status: asserted
+- from: technique.pfa_oriented_detector_architecture
+  to: technique.cyberpfa_crystal_bar_reconstruction
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Particle-flow-oriented detector architecture provides the particle-flow detector philosophy that CyberPFA is adapting to crystal-bar calorimetry, which CyberPFA for orthogonal crystal-bar calorimetry depends on.'
+  failure_mode_if_absent: 'Without Particle-flow-oriented detector architecture, CyberPFA for orthogonal crystal-bar calorimetry lacks the particle-flow detector philosophy that CyberPFA is adapting to crystal-bar calorimetry and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Particle-flow-oriented detector architecture provides the particle-flow detector philosophy that CyberPFA is adapting to crystal-bar calorimetry.'
+  status: asserted
+- from: technique.background_driven_detector_optimization
+  to: technique.cyberpfa_crystal_bar_reconstruction
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Beam-background-driven detector optimization provides the realistic occupancy and detector-response constraints that the reconstruction must respect, which CyberPFA for orthogonal crystal-bar calorimetry depends on.'
+  failure_mode_if_absent: 'Without Beam-background-driven detector optimization, CyberPFA for orthogonal crystal-bar calorimetry lacks the realistic occupancy and detector-response constraints that the reconstruction must respect and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Beam-background-driven detector optimization provides the realistic occupancy and detector-response constraints that the reconstruction must respect.'
+  status: asserted
+- from: technique.bayesian_crater_timeline_fit_with_galactic_priors
+  to: technique.cvm_goodness_of_fit_for_crater_models
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Bayesian crater-time fitting with galactic priors provides the already-selected crater model whose absolute fit quality still needs to be tested, which Cramer-von Mises goodness-of-fit check depends on.'
+  failure_mode_if_absent: 'Without Bayesian crater-time fitting with galactic priors, Cramer-von Mises goodness-of-fit check lacks the already-selected crater model whose absolute fit quality still needs to be tested and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Bayesian crater-time fitting with galactic priors provides the already-selected crater model whose absolute fit quality still needs to be tested.'
+  status: asserted
+- from: technique.dark_disk_tidal_trigger_model
+  to: technique.cvm_goodness_of_fit_for_crater_models
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Dark-disk tidal triggering of comet showers provides the specific periodic-impact model whose cumulative crater-time fit is being checked, which Cramer-von Mises goodness-of-fit check depends on.'
+  failure_mode_if_absent: 'Without Dark-disk tidal triggering of comet showers, Cramer-von Mises goodness-of-fit check lacks the specific periodic-impact model whose cumulative crater-time fit is being checked and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Dark-disk tidal triggering of comet showers provides the specific periodic-impact model whose cumulative crater-time fit is being checked.'
+  status: asserted
+- from: technique.boltzmann_freezeout_with_asymmetry
+  to: technique.chemical_potential_suppression_equations
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Asymmetric freeze-out integration with residual symmetric component provides the asymmetric-thermal bookkeeping that the suppressed chemical-equilibrium equations refine, which Chemical-Potential Equations with Thermal Suppression depends on.'
+  failure_mode_if_absent: 'Without Asymmetric freeze-out integration with residual symmetric component, Chemical-Potential Equations with Thermal Suppression lacks the asymmetric-thermal bookkeeping that the suppressed chemical-equilibrium equations refine and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Asymmetric freeze-out integration with residual symmetric component provides the asymmetric-thermal bookkeeping that the suppressed chemical-equilibrium equations refine.'
+  status: asserted
+- from: technique.chemical_potential_suppression_equations
+  to: technique.thermal_suppression_at_transfer_freezeout
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Chemical-Potential Equations with Thermal Suppression provides the Boltzmann-suppressed density relations that make heavy transfer freeze-out quantitatively viable, which Thermal Suppression at Transfer Freeze-Out depends on.'
+  failure_mode_if_absent: 'Without Chemical-Potential Equations with Thermal Suppression, Thermal Suppression at Transfer Freeze-Out lacks the Boltzmann-suppressed density relations that make heavy transfer freeze-out quantitatively viable and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Chemical-Potential Equations with Thermal Suppression provides the Boltzmann-suppressed density relations that make heavy transfer freeze-out quantitatively viable.'
+  status: asserted
+- from: technique.chemical_potential_suppression_equations
+  to: technique.coupled_relic_asymmetry_boltzmann_system
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Chemical-Potential Equations with Thermal Suppression provides the suppressed equilibrium-density inputs needed to evolve the asymmetry and relic abundance together, which Coupled Boltzmann system for relic density and asymmetry depends on.'
+  failure_mode_if_absent: 'Without Chemical-Potential Equations with Thermal Suppression, Coupled Boltzmann system for relic density and asymmetry lacks the suppressed equilibrium-density inputs needed to evolve the asymmetry and relic abundance together and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Chemical-Potential Equations with Thermal Suppression provides the suppressed equilibrium-density inputs needed to evolve the asymmetry and relic abundance together.'
+  status: asserted
+- from: technique.nonrelativistic_operator_basis
+  to: technique.chi_square_spectral_fit_to_dama
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Nonrelativistic operator basis for direct detection provides the operator-level recoil spectrum needed before fitting DAMA energy bins, which Chi-Square Spectral Fit to DAMA depends on.'
+  failure_mode_if_absent: 'Without Nonrelativistic operator basis for direct detection, Chi-Square Spectral Fit to DAMA lacks the operator-level recoil spectrum needed before fitting DAMA energy bins and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Nonrelativistic operator basis for direct detection provides the operator-level recoil spectrum needed before fitting DAMA energy bins.'
+  status: asserted
+- from: technique.uv_to_nuclear_matching_chain_for_direct_detection
+  to: technique.chi_square_spectral_fit_to_dama
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'UV-to-Nuclear Matching Chain for Direct Detection provides the UV-to-detector recoil prediction needed to compare a model with modulation data, which Chi-Square Spectral Fit to DAMA depends on.'
+  failure_mode_if_absent: 'Without UV-to-Nuclear Matching Chain for Direct Detection, Chi-Square Spectral Fit to DAMA lacks the UV-to-detector recoil prediction needed to compare a model with modulation data and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'UV-to-Nuclear Matching Chain for Direct Detection provides the UV-to-detector recoil prediction needed to compare a model with modulation data.'
+  status: asserted
+- from: technique.peak_frequency_reparameterization_of_eccentric_inspiral
+  to: technique.chirp_acceleration_correlation_diagnosis
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Peak-frequency reparameterization of eccentric inspirals provides the peak-frequency description needed to separate intrinsic inspiral chirping from environmental drift, which Correlation diagnosis between intrinsic chirp and orbital acceleration depends on.'
+  failure_mode_if_absent: 'Without Peak-frequency reparameterization of eccentric inspirals, Correlation diagnosis between intrinsic chirp and orbital acceleration lacks the peak-frequency description needed to separate intrinsic inspiral chirping from environmental drift and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Peak-frequency reparameterization of eccentric inspirals provides the peak-frequency description needed to separate intrinsic inspiral chirping from environmental drift.'
+  status: asserted
+- from: technique.kl_eccentricity_phase_drift_forecast
+  to: technique.chirp_acceleration_correlation_diagnosis
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Phase-drift forecast for secular eccentricity oscillations provides the phase-drift intuition needed to recognize when acceleration contaminates chirp measurements, which Correlation diagnosis between intrinsic chirp and orbital acceleration depends on.'
+  failure_mode_if_absent: 'Without Phase-drift forecast for secular eccentricity oscillations, Correlation diagnosis between intrinsic chirp and orbital acceleration lacks the phase-drift intuition needed to recognize when acceleration contaminates chirp measurements and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Phase-drift forecast for secular eccentricity oscillations provides the phase-drift intuition needed to recognize when acceleration contaminates chirp measurements.'
+  status: asserted
+- from: technique.chirp_acceleration_correlation_diagnosis
+  to: technique.phase_doppler_environment_tomography
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Correlation diagnosis between intrinsic chirp and orbital acceleration provides the parameter-degeneracy control needed before interpreting phase drift as environmental Doppler information, which Environmental tomography from Doppler phase drift depends on.'
+  failure_mode_if_absent: 'Without Correlation diagnosis between intrinsic chirp and orbital acceleration, Environmental tomography from Doppler phase drift lacks the parameter-degeneracy control needed before interpreting phase drift as environmental Doppler information and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Correlation diagnosis between intrinsic chirp and orbital acceleration provides the parameter-degeneracy control needed before interpreting phase drift as environmental Doppler information.'
+  status: asserted
+- from: technique.peak_frequency_reparameterization_of_eccentric_inspiral
+  to: technique.circular_reference_binary_mapping
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Peak-frequency reparameterization of eccentric inspirals provides the peak-frequency variable used to match an eccentric source to a circular reference binary, which Mapping to a circular binary at the same peak frequency depends on.'
+  failure_mode_if_absent: 'Without Peak-frequency reparameterization of eccentric inspirals, Mapping to a circular binary at the same peak frequency lacks the peak-frequency variable used to match an eccentric source to a circular reference binary and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Peak-frequency reparameterization of eccentric inspirals provides the peak-frequency variable used to match an eccentric source to a circular reference binary.'
+  status: asserted
+- from: technique.circular_reference_binary_mapping
+  to: technique.peak_frequency_local_noise_approximation
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Mapping to a circular binary at the same peak frequency provides the circular-reference normalization that isolates the eccentric correction to the SNR, which Peak-frequency local-noise approximation for eccentric SNR depends on.'
+  failure_mode_if_absent: 'Without Mapping to a circular binary at the same peak frequency, Peak-frequency local-noise approximation for eccentric SNR lacks the circular-reference normalization that isolates the eccentric correction to the SNR and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Mapping to a circular binary at the same peak frequency provides the circular-reference normalization that isolates the eccentric correction to the SNR.'
+  status: asserted
+- from: technique.circular_reference_binary_mapping
+  to: technique.template_free_eccentric_snr_formula
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Mapping to a circular binary at the same peak frequency provides the comparison baseline used to turn full eccentric waveforms into a closed SNR scaling, which Template-free SNR scaling for eccentric binaries depends on.'
+  failure_mode_if_absent: 'Without Mapping to a circular binary at the same peak frequency, Template-free SNR scaling for eccentric binaries lacks the comparison baseline used to turn full eccentric waveforms into a closed SNR scaling and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Mapping to a circular binary at the same peak frequency provides the comparison baseline used to turn full eccentric waveforms into a closed SNR scaling.'
+  status: asserted
+- from: technique.perturbative_unitarity_bound_on_axion_potential
+  to: technique.clockwork_alignment_uv_consistency_bound
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Perturbative unitarity bound on the cosine potential provides the single-axion strong-coupling bound that is propagated through clockwork or alignment chains, which Clockwork/alignment UV consistency bound depends on.'
+  failure_mode_if_absent: 'Without Perturbative unitarity bound on the cosine potential, Clockwork/alignment UV consistency bound lacks the single-axion strong-coupling bound that is propagated through clockwork or alignment chains and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Perturbative unitarity bound on the cosine potential provides the single-axion strong-coupling bound that is propagated through clockwork or alignment chains.'
+  status: asserted
+- from: technique.single_eft_consistency_criterion
+  to: technique.clockwork_alignment_uv_consistency_bound
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Single-EFT consistency over axion moduli space provides the requirement that one EFT remain valid across the enhanced field range, which Clockwork/alignment UV consistency bound depends on.'
+  failure_mode_if_absent: 'Without Single-EFT consistency over axion moduli space, Clockwork/alignment UV consistency bound lacks the requirement that one EFT remain valid across the enhanced field range and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Single-EFT consistency over axion moduli space provides the requirement that one EFT remain valid across the enhanced field range.'
+  status: asserted
+- from: technique.clockwork_alignment_uv_consistency_bound
+  to: technique.confinement_tower_clockwork_axion
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Clockwork/alignment UV consistency bound provides the UV consistency ceiling that a confinement-tower realization must satisfy, which Confinement-tower clockwork depends on.'
+  failure_mode_if_absent: 'Without Clockwork/alignment UV consistency bound, Confinement-tower clockwork lacks the UV consistency ceiling that a confinement-tower realization must satisfy and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Clockwork/alignment UV consistency bound provides the UV consistency ceiling that a confinement-tower realization must satisfy.'
+  status: asserted
+- from: technique.clockwork_alignment_uv_consistency_bound
+  to: technique.uv_completion_audit_from_large_couplings
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Clockwork/alignment UV consistency bound provides the consistency check that translates large effective axion couplings into UV viability conditions, which Infer required extra states from large axion couplings depends on.'
+  failure_mode_if_absent: 'Without Clockwork/alignment UV consistency bound, Infer required extra states from large axion couplings lacks the consistency check that translates large effective axion couplings into UV viability conditions and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Clockwork/alignment UV consistency bound provides the consistency check that translates large effective axion couplings into UV viability conditions.'
+  status: asserted
+- from: technique.loop_to_tree_gluino_decay_ratio
+  to: technique.collider_cutflow_parameter_inference
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Loop-versus-tree gluino decay ratio as a heavy-scalar probe provides the loop-sensitive gluino observable that anchors the inferred heavy-scalar scale, which Cut-flow parameter inference in the (m0, tan beta) plane depends on.'
+  failure_mode_if_absent: 'Without Loop-versus-tree gluino decay ratio as a heavy-scalar probe, Cut-flow parameter inference in the (m0, tan beta) plane lacks the loop-sensitive gluino observable that anchors the inferred heavy-scalar scale and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Loop-versus-tree gluino decay ratio as a heavy-scalar probe provides the loop-sensitive gluino observable that anchors the inferred heavy-scalar scale.'
+  status: asserted
+- from: technique.mssm_higgs_mass_contour_inference
+  to: technique.collider_cutflow_parameter_inference
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Higgs-mass contour inference for stop parameters provides the Higgs-mass contour overlay used to interpret the collider-fitted parameter region, which Cut-flow parameter inference in the (m0, tan beta) plane depends on.'
+  failure_mode_if_absent: 'Without Higgs-mass contour inference for stop parameters, Cut-flow parameter inference in the (m0, tan beta) plane lacks the Higgs-mass contour overlay used to interpret the collider-fitted parameter region and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Higgs-mass contour inference for stop parameters provides the Higgs-mass contour overlay used to interpret the collider-fitted parameter region.'
+  status: asserted
+- from: technique.collider_extraction_of_super_oblique_effects
+  to: technique.collider_cutflow_parameter_inference
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Collider extraction of super-oblique effects provides the experimentally accessible super-oblique observables needed to turn event counts into SUSY parameter inference, which Cut-flow parameter inference in the (m0, tan beta) plane depends on.'
+  failure_mode_if_absent: 'Without Collider extraction of super-oblique effects, Cut-flow parameter inference in the (m0, tan beta) plane lacks the experimentally accessible super-oblique observables needed to turn event counts into SUSY parameter inference and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Collider extraction of super-oblique effects provides the experimentally accessible super-oblique observables needed to turn event counts into SUSY parameter inference.'
+  status: asserted
+- from: technique.super_oblique_parameterization
+  to: technique.collider_extraction_of_super_oblique_effects
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Super-oblique parameterization provides the process-independent parameter language that the collider observables are extracting, which Collider extraction of super-oblique effects depends on.'
+  failure_mode_if_absent: 'Without Super-oblique parameterization, Collider extraction of super-oblique effects lacks the process-independent parameter language that the collider observables are extracting and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Super-oblique parameterization provides the process-independent parameter language that the collider observables are extracting.'
+  status: asserted
+- from: technique.super_oblique_effective_couplings
+  to: technique.collider_extraction_of_super_oblique_effects
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Super-oblique effective couplings provides the effective-coupling framework that connects heavy thresholds to measurable cross sections, which Collider extraction of super-oblique effects depends on.'
+  failure_mode_if_absent: 'Without Super-oblique effective couplings, Collider extraction of super-oblique effects lacks the effective-coupling framework that connects heavy thresholds to measurable cross sections and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Super-oblique effective couplings provides the effective-coupling framework that connects heavy thresholds to measurable cross sections.'
+  status: asserted
+- from: qft.jet
+  to: technique.collimation_fraction_scan
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Jet provides the jet-level reconstruction setting in which boosted top decay products merge, which Collimation-fraction scan in boosted top events depends on.'
+  failure_mode_if_absent: 'Without Jet, Collimation-fraction scan in boosted top events lacks the jet-level reconstruction setting in which boosted top decay products merge and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Jet provides the jet-level reconstruction setting in which boosted top decay products merge.'
+  status: asserted
+- from: technique.collimation_fraction_scan
+  to: technique.w_mass_window_in_subjet_pairs
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Collimation-fraction scan in boosted top events provides the collimation diagnostic used to decide whether subjet-based top reconstruction is kinematically sensible, which W-mass Reconstruction from Subjet Pairs depends on.'
+  failure_mode_if_absent: 'Without Collimation-fraction scan in boosted top events, W-mass Reconstruction from Subjet Pairs lacks the collimation diagnostic used to decide whether subjet-based top reconstruction is kinematically sensible and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Collimation-fraction scan in boosted top events provides the collimation diagnostic used to decide whether subjet-based top reconstruction is kinematically sensible.'
+  status: asserted
+- from: technique.collimation_fraction_scan
+  to: technique.w_helicity_angle_cut
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Collimation-fraction scan in boosted top events provides the boosted-top regime map needed before applying helicity-angle top-tagging cuts, which W Helicity Angle Cut for Top vs QCD Discrimination depends on.'
+  failure_mode_if_absent: 'Without Collimation-fraction scan in boosted top events, W Helicity Angle Cut for Top vs QCD Discrimination lacks the boosted-top regime map needed before applying helicity-angle top-tagging cuts and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Collimation-fraction scan in boosted top events provides the boosted-top regime map needed before applying helicity-angle top-tagging cuts.'
+  status: asserted
+- from: qcd.color_su3
+  to: technique.color_rep_from_matter_asymmetric_rehadronization
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Color SU(3) provides the SU(3) representation structure that distinguishes triplets, antitriplets, and octets, which Color Representation from Matter-Asymmetric Rehadronization depends on.'
+  failure_mode_if_absent: 'Without Color SU(3), Color Representation from Matter-Asymmetric Rehadronization lacks the SU(3) representation structure that distinguishes triplets, antitriplets, and octets and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Color SU(3) provides the SU(3) representation structure that distinguishes triplets, antitriplets, and octets.'
+  status: asserted
+- from: qcd.confinement
+  to: technique.color_rep_from_matter_asymmetric_rehadronization
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Confinement provides the hadronization physics that makes detector-material rehadronization representation-dependent, which Color Representation from Matter-Asymmetric Rehadronization depends on.'
+  failure_mode_if_absent: 'Without Confinement, Color Representation from Matter-Asymmetric Rehadronization lacks the hadronization physics that makes detector-material rehadronization representation-dependent and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Confinement provides the hadronization physics that makes detector-material rehadronization representation-dependent.'
+  status: asserted
+- from: technique.gould_capture_integral_inelastic
+  to: technique.compact_star_inelastic_capture
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Generalized Gould capture integral for inelastic scattering provides the inelastic stellar-capture formalism needed to compute thresholded compact-star capture rates, which Compact-star capture of inelastic dark matter depends on.'
+  failure_mode_if_absent: 'Without Generalized Gould capture integral for inelastic scattering, Compact-star capture of inelastic dark matter lacks the inelastic stellar-capture formalism needed to compute thresholded compact-star capture rates and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Generalized Gould capture integral for inelastic scattering provides the inelastic stellar-capture formalism needed to compute thresholded compact-star capture rates.'
+  status: asserted
+- from: technique.geometric_saturation_capture_limit
+  to: technique.compact_star_inelastic_capture
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Geometric-saturation capture ceiling provides the large-cross-section ceiling needed to keep compact-star capture estimates self-consistent, which Compact-star capture of inelastic dark matter depends on.'
+  failure_mode_if_absent: 'Without Geometric-saturation capture ceiling, Compact-star capture of inelastic dark matter lacks the large-cross-section ceiling needed to keep compact-star capture estimates self-consistent and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Geometric-saturation capture ceiling provides the large-cross-section ceiling needed to keep compact-star capture estimates self-consistent.'
+  status: asserted
+- from: qft.false_vacuum_decay
+  to: technique.compactification_by_brane_nucleation
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'False vacuum decay provides the bubble-nucleation framework used when compactification is treated as a cosmological transition, which Compactification by Nucleation of Brane-Like Geometries depends on.'
+  failure_mode_if_absent: 'Without False vacuum decay, Compactification by Nucleation of Brane-Like Geometries lacks the bubble-nucleation framework used when compactification is treated as a cosmological transition and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'False vacuum decay provides the bubble-nucleation framework used when compactification is treated as a cosmological transition.'
+  status: asserted
+- from: technique.thin_brane_flux_tunneling_estimate
+  to: technique.compactification_by_brane_nucleation
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Thin-brane flux-tunneling estimate provides the thin-wall membrane-nucleation estimate used to model brane-driven compactification events, which Compactification by Nucleation of Brane-Like Geometries depends on.'
+  failure_mode_if_absent: 'Without Thin-brane flux-tunneling estimate, Compactification by Nucleation of Brane-Like Geometries lacks the thin-wall membrane-nucleation estimate used to model brane-driven compactification events and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Thin-brane flux-tunneling estimate provides the thin-wall membrane-nucleation estimate used to model brane-driven compactification events.'
+  status: asserted
+- from: technique.coleman_de_luccia_bubble_bound
+  to: technique.compactification_by_brane_nucleation
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Coleman-de Luccia bubble bound provides the metastability bound needed before allowing de Sitter regions to nucleate compactified interiors, which Compactification by Nucleation of Brane-Like Geometries depends on.'
+  failure_mode_if_absent: 'Without Coleman-de Luccia bubble bound, Compactification by Nucleation of Brane-Like Geometries lacks the metastability bound needed before allowing de Sitter regions to nucleate compactified interiors and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Coleman-de Luccia bubble bound provides the metastability bound needed before allowing de Sitter regions to nucleate compactified interiors.'
+  status: asserted
+- from: technique.compressed_spectrum_recoil_and_track_searches
+  to: technique.jet_plus_met_trigger_for_compressed_charginos
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Recoil and disappearing-track searches for compressed spectra provides the generic recoil-based compressed-spectrum strategy that the ISR-plus-disappearing-track search instantiates, which ISR jet plus missing-energy trigger for compressed charginos depends on.'
+  failure_mode_if_absent: 'Without Recoil and disappearing-track searches for compressed spectra, ISR jet plus missing-energy trigger for compressed charginos lacks the generic recoil-based compressed-spectrum strategy that the ISR-plus-disappearing-track search instantiates and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Recoil and disappearing-track searches for compressed spectra provides the generic recoil-based compressed-spectrum strategy that the ISR-plus-disappearing-track search instantiates.'
+  status: asserted
+- from: technique.compressed_spectrum_recoil_and_track_searches
+  to: technique.compressed_wino_disappearing_track_search
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Recoil and disappearing-track searches for compressed spectra provides the general disappearing-track logic specialized by compressed Wino searches, which Disappearing-track search for compressed Winos depends on.'
+  failure_mode_if_absent: 'Without Recoil and disappearing-track searches for compressed spectra, Disappearing-track search for compressed Winos lacks the general disappearing-track logic specialized by compressed Wino searches and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Recoil and disappearing-track searches for compressed spectra provides the general disappearing-track logic specialized by compressed Wino searches.'
+  status: asserted
+- from: technique.compressed_spectrum_recoil_and_track_searches
+  to: technique.stub_track_search_for_degenerate_higgsinos
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Recoil and disappearing-track searches for compressed spectra provides the generic compressed-spectrum track strategy specialized by stub-track higgsino searches, which Stub-track search for degenerate higgsinos depends on.'
+  failure_mode_if_absent: 'Without Recoil and disappearing-track searches for compressed spectra, Stub-track search for degenerate higgsinos lacks the generic compressed-spectrum track strategy specialized by stub-track higgsino searches and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Recoil and disappearing-track searches for compressed spectra provides the generic compressed-spectrum track strategy specialized by stub-track higgsino searches.'
+  status: asserted
+- from: technique.ope_matching_ads_parameters
+  to: technique.condensate_backreaction_as_ir_wall
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'OPE matching to fix AdS/QCD model parameters provides the UV and IR matching needed to tie the soft-wall geometry to QCD condensate data, which Use condensate backreaction as the IR wall depends on.'
+  failure_mode_if_absent: 'Without OPE matching to fix AdS/QCD model parameters, Use condensate backreaction as the IR wall lacks the UV and IR matching needed to tie the soft-wall geometry to QCD condensate data and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'OPE matching to fix AdS/QCD model parameters provides the UV and IR matching needed to tie the soft-wall geometry to QCD condensate data.'
+  status: asserted
+- from: technique.nec_holographic_c_function_constraint
+  to: technique.condensate_backreaction_as_ir_wall
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Null-energy-condition control of admissible soft walls provides the consistency criteria that a dynamical holographic IR wall must satisfy, which Use condensate backreaction as the IR wall depends on.'
+  failure_mode_if_absent: 'Without Null-energy-condition control of admissible soft walls, Use condensate backreaction as the IR wall lacks the consistency criteria that a dynamical holographic IR wall must satisfy and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Null-energy-condition control of admissible soft walls provides the consistency criteria that a dynamical holographic IR wall must satisfy.'
+  status: asserted
+- from: technique.knp_alignment_for_qcd_axion
+  to: technique.confinement_tower_clockwork_axion
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'KNP alignment for the QCD axion provides the multi-axion alignment logic that the confinement tower iterates through many gauge sectors, which Confinement-tower clockwork depends on.'
+  failure_mode_if_absent: 'Without KNP alignment for the QCD axion, Confinement-tower clockwork lacks the multi-axion alignment logic that the confinement tower iterates through many gauge sectors and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'KNP alignment for the QCD axion provides the multi-axion alignment logic that the confinement tower iterates through many gauge sectors.'
+  status: asserted
+- from: technique.oraifeartaigh_supersymmetry_breaking
+  to: technique.constant_superpotential_for_r_axion_mass
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'O''Raifeartaigh Supersymmetry Breaking provides the dynamical SUSY-breaking setup in which a constant superpotential term lifts the R axion, which Constant-superpotential generation of the R-axion mass depends on.'
+  failure_mode_if_absent: 'Without O''Raifeartaigh Supersymmetry Breaking, Constant-superpotential generation of the R-axion mass lacks the dynamical SUSY-breaking setup in which a constant superpotential term lifts the R axion and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'O''Raifeartaigh Supersymmetry Breaking provides the dynamical SUSY-breaking setup in which a constant superpotential term lifts the R axion.'
+  status: asserted
+- from: technique.supergravity_vacuum_energy_balance
+  to: technique.constant_superpotential_for_r_axion_mass
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Supergravity vacuum-energy balance provides the supergravity constant-term bookkeeping that turns cosmological-constant cancellation into explicit R breaking, which Constant-superpotential generation of the R-axion mass depends on.'
+  failure_mode_if_absent: 'Without Supergravity vacuum-energy balance, Constant-superpotential generation of the R-axion mass lacks the supergravity constant-term bookkeeping that turns cosmological-constant cancellation into explicit R breaking and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Supergravity vacuum-energy balance provides the supergravity constant-term bookkeeping that turns cosmological-constant cancellation into explicit R breaking.'
+  status: asserted
+- from: technique.constant_superpotential_for_r_axion_mass
+  to: technique.cosmological_bound_from_coherent_r_axion_oscillations
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Constant-superpotential generation of the R-axion mass provides the actual R-axion mass input needed before estimating coherent-oscillation cosmology, which Cosmological bound from coherent R-axion oscillations depends on.'
+  failure_mode_if_absent: 'Without Constant-superpotential generation of the R-axion mass, Cosmological bound from coherent R-axion oscillations lacks the actual R-axion mass input needed before estimating coherent-oscillation cosmology and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Constant-superpotential generation of the R-axion mass provides the actual R-axion mass input needed before estimating coherent-oscillation cosmology.'
+  status: asserted
+- from: technique.euclidean_bounce_method_for_vacuum_decay
+  to: technique.constrained_bounce_action_estimation
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Compute false-vacuum decay from the Euclidean bounce provides the baseline bounce formalism that is being generalized to complicated multifield spaces, which Constrained bounce-action estimation depends on.'
+  failure_mode_if_absent: 'Without Compute false-vacuum decay from the Euclidean bounce, Constrained bounce-action estimation lacks the baseline bounce formalism that is being generalized to complicated multifield spaces and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Compute false-vacuum decay from the Euclidean bounce provides the baseline bounce formalism that is being generalized to complicated multifield spaces.'
+  status: asserted
+- from: technique.approximate_bounce_solutions
+  to: technique.constrained_bounce_action_estimation
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Approximate Analytic Bounces for SM-like Potentials provides the one-dimensional bounce estimates used to seed and bound the full multifield problem, which Constrained bounce-action estimation depends on.'
+  failure_mode_if_absent: 'Without Approximate Analytic Bounces for SM-like Potentials, Constrained bounce-action estimation lacks the one-dimensional bounce estimates used to seed and bound the full multifield problem and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Approximate Analytic Bounces for SM-like Potentials provides the one-dimensional bounce estimates used to seed and bound the full multifield problem.'
+  status: asserted
+- from: technique.constrained_bounce_action_estimation
+  to: technique.radion_bounce_regime_scan
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Constrained bounce-action estimation provides the tractable bounce-action estimate needed when scanning many nucleation regimes, which Radion bounce regime scan depends on.'
+  failure_mode_if_absent: 'Without Constrained bounce-action estimation, Radion bounce regime scan lacks the tractable bounce-action estimate needed when scanning many nucleation regimes and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Constrained bounce-action estimation provides the tractable bounce-action estimate needed when scanning many nucleation regimes.'
+  status: asserted
+- from: technique.constrained_bounce_action_estimation
+  to: technique.radion_bounce_across_thin_and_thick_wall
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Constrained bounce-action estimation provides the optimized trajectory estimate needed before refining thin-wall and thick-wall radion bounces numerically, which Radion bounce across thin- and thick-wall regimes depends on.'
+  failure_mode_if_absent: 'Without Constrained bounce-action estimation, Radion bounce across thin- and thick-wall regimes lacks the optimized trajectory estimate needed before refining thin-wall and thick-wall radion bounces numerically and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Constrained bounce-action estimation provides the optimized trajectory estimate needed before refining thin-wall and thick-wall radion bounces numerically.'
+  status: asserted
+- from: technique.dissipative_dark_disk_cooling
+  to: technique.cooling_timescale_comparison
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Dissipative dark-disk cooling with heavy and light dark charges provides the concrete bremsstrahlung and Compton cooling channels whose timescales must be compared with halo evolution, which Cooling-timescale comparison against halo evolution depends on.'
+  failure_mode_if_absent: 'Without Dissipative dark-disk cooling with heavy and light dark charges, Cooling-timescale comparison against halo evolution lacks the concrete bremsstrahlung and Compton cooling channels whose timescales must be compared with halo evolution and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Dissipative dark-disk cooling with heavy and light dark charges provides the concrete bremsstrahlung and Compton cooling channels whose timescales must be compared with halo evolution.'
+  status: asserted
+- from: technique.dark_sector_cooling_timescale_test
+  to: technique.cooling_timescale_comparison
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Cooling-timescale test for dissipative dark collapse provides the first-pass cooling criterion that the more detailed halo-evolution comparison refines, which Cooling-timescale comparison against halo evolution depends on.'
+  failure_mode_if_absent: 'Without Cooling-timescale test for dissipative dark collapse, Cooling-timescale comparison against halo evolution lacks the first-pass cooling criterion that the more detailed halo-evolution comparison refines and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Cooling-timescale test for dissipative dark collapse provides the first-pass cooling criterion that the more detailed halo-evolution comparison refines.'
+  status: asserted
+- from: technique.cooling_timescale_comparison
+  to: technique.coupled_isothermal_poisson_jeans_solver
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Cooling-timescale comparison against halo evolution provides the prior determination that a dissipative component can actually collapse into a disk worth solving for, which Coupled isothermal Poisson-Jeans solver depends on.'
+  failure_mode_if_absent: 'Without Cooling-timescale comparison against halo evolution, Coupled isothermal Poisson-Jeans solver lacks the prior determination that a dissipative component can actually collapse into a disk worth solving for and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Cooling-timescale comparison against halo evolution provides the prior determination that a dissipative component can actually collapse into a disk worth solving for.'
+  status: asserted
+- from: technique.cooling_timescale_comparison
+  to: technique.dark_disk_toomre_fragmentation
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Cooling-timescale comparison against halo evolution provides the parameter-space check that a thin dark disk forms before asking how it fragments, which Toomre fragmentation of a dissipative dark disk depends on.'
+  failure_mode_if_absent: 'Without Cooling-timescale comparison against halo evolution, Toomre fragmentation of a dissipative dark disk lacks the parameter-space check that a thin dark disk forms before asking how it fragments and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Cooling-timescale comparison against halo evolution provides the parameter-space check that a thin dark disk forms before asking how it fragments.'
+  status: asserted
+- from: technique.cooling_timescale_comparison
+  to: technique.dark_disk_seeded_tidal_dwarf_formation
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Cooling-timescale comparison against halo evolution provides the existence criterion for the thin dark disk that tidal interactions later strip into dwarfs, which Use a thin dark disk to seed dark-matter-rich tidal dwarfs depends on.'
+  failure_mode_if_absent: 'Without Cooling-timescale comparison against halo evolution, Use a thin dark disk to seed dark-matter-rich tidal dwarfs lacks the existence criterion for the thin dark disk that tidal interactions later strip into dwarfs and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Cooling-timescale comparison against halo evolution provides the existence criterion for the thin dark disk that tidal interactions later strip into dwarfs.'
+  status: asserted
+- from: technique.wrong_chirality_heavy_kk_sum
+  to: technique.correct_chirality_kk_higgs_nondecoupling
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Wrong-chirality heavy-KK summation provides the heavy-KK summation logic that already shows why naive chirality suppression can fail, which Non-decoupling of KK Higgs contributions through correct-chirality couplings depends on.'
+  failure_mode_if_absent: 'Without Wrong-chirality heavy-KK summation, Non-decoupling of KK Higgs contributions through correct-chirality couplings lacks the heavy-KK summation logic that already shows why naive chirality suppression can fail and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Wrong-chirality heavy-KK summation provides the heavy-KK summation logic that already shows why naive chirality suppression can fail.'
+  status: asserted
+- from: technique.kk_higgs_tower_in_dipole_loops
+  to: technique.correct_chirality_kk_higgs_nondecoupling
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Include the full KK Higgs tower in warped dipole loops provides the full KK-Higgs loop picture in which correct-chirality nondecoupling becomes visible, which Non-decoupling of KK Higgs contributions through correct-chirality couplings depends on.'
+  failure_mode_if_absent: 'Without Include the full KK Higgs tower in warped dipole loops, Non-decoupling of KK Higgs contributions through correct-chirality couplings lacks the full KK-Higgs loop picture in which correct-chirality nondecoupling becomes visible and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Include the full KK Higgs tower in warped dipole loops provides the full KK-Higgs loop picture in which correct-chirality nondecoupling becomes visible.'
+  status: asserted
+- from: technique.jeans_inversion_without_stellar_profile
+  to: technique.coupled_isothermal_poisson_jeans_solver
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Jeans inversion without an assumed stellar light profile provides the Jeans-equation mindset needed to solve for disk structure in a specified gravitational potential, which Coupled isothermal Poisson-Jeans solver depends on.'
+  failure_mode_if_absent: 'Without Jeans inversion without an assumed stellar light profile, Coupled isothermal Poisson-Jeans solver lacks the Jeans-equation mindset needed to solve for disk structure in a specified gravitational potential and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Jeans inversion without an assumed stellar light profile provides the Jeans-equation mindset needed to solve for disk structure in a specified gravitational potential.'
+  status: asserted
+- from: technique.coupled_isothermal_poisson_jeans_solver
+  to: technique.gas_hydrostatics_dark_disk_constraint
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Coupled isothermal Poisson-Jeans solver provides the vertical-potential solver needed to translate gas scale heights into a dark-disk constraint, which Use gas hydrostatics to constrain a dark disk depends on.'
+  failure_mode_if_absent: 'Without Coupled isothermal Poisson-Jeans solver, Use gas hydrostatics to constrain a dark disk lacks the vertical-potential solver needed to translate gas scale heights into a dark-disk constraint and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Coupled isothermal Poisson-Jeans solver provides the vertical-potential solver needed to translate gas scale heights into a dark-disk constraint.'
+  status: asserted
+- from: technique.coupled_isothermal_poisson_jeans_solver
+  to: technique.self_consistent_poisson_jeans_with_dark_disk_backreaction
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Coupled isothermal Poisson-Jeans solver provides the baseline multicomponent disk solver that the backreacted treatment extends, which Self-consistent Poisson-Jeans modeling with dark-disk backreaction depends on.'
+  failure_mode_if_absent: 'Without Coupled isothermal Poisson-Jeans solver, Self-consistent Poisson-Jeans modeling with dark-disk backreaction lacks the baseline multicomponent disk solver that the backreacted treatment extends and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Coupled isothermal Poisson-Jeans solver provides the baseline multicomponent disk solver that the backreacted treatment extends.'
+  status: asserted
+- from: technique.boltzmann_freezeout_with_asymmetry
+  to: technique.coupled_relic_asymmetry_boltzmann_system
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Asymmetric freeze-out integration with residual symmetric component provides the asymmetric freeze-out evolution that the coupled relic-plus-asymmetry system generalizes, which Coupled Boltzmann system for relic density and asymmetry depends on.'
+  failure_mode_if_absent: 'Without Asymmetric freeze-out integration with residual symmetric component, Coupled Boltzmann system for relic density and asymmetry lacks the asymmetric freeze-out evolution that the coupled relic-plus-asymmetry system generalizes and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Asymmetric freeze-out integration with residual symmetric component provides the asymmetric freeze-out evolution that the coupled relic-plus-asymmetry system generalizes.'
+  status: asserted
+- from: technique.washout_before_dm_freezeout
+  to: technique.coupled_relic_asymmetry_boltzmann_system
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Washout freeze-out before dark matter freeze-out provides the washout sink terms that have to be evolved alongside annihilation and asymmetry production, which Coupled Boltzmann system for relic density and asymmetry depends on.'
+  failure_mode_if_absent: 'Without Washout freeze-out before dark matter freeze-out, Coupled Boltzmann system for relic density and asymmetry lacks the washout sink terms that have to be evolved alongside annihilation and asymmetry production and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Washout freeze-out before dark matter freeze-out provides the washout sink terms that have to be evolved alongside annihilation and asymmetry production.'
+  status: asserted
+- from: technique.caustic_finding_from_null_expansion
+  to: technique.covariant_lightsheet_domain_construction
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Locate holographic boundaries by solving for caustics of null congruences provides the null-congruence stopping rule needed to know where the light-sheet-defined holographic domain ends, which Assign a brane a bulk holographic domain using light-sheets depends on.'
+  failure_mode_if_absent: 'Without Locate holographic boundaries by solving for caustics of null congruences, Assign a brane a bulk holographic domain using light-sheets lacks the null-congruence stopping rule needed to know where the light-sheet-defined holographic domain ends and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Locate holographic boundaries by solving for caustics of null congruences provides the null-congruence stopping rule needed to know where the light-sheet-defined holographic domain ends.'
+  status: asserted
+- from: technique.covariant_lightsheet_domain_construction
+  to: technique.causal_wedge_inclusion_constraint
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Assign a brane a bulk holographic domain using light-sheets provides the properly defined brane holographic domain needed before applying causal consistency tests, which Causal wedge inclusion constraint depends on.'
+  failure_mode_if_absent: 'Without Assign a brane a bulk holographic domain using light-sheets, Causal wedge inclusion constraint lacks the properly defined brane holographic domain needed before applying causal consistency tests and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Assign a brane a bulk holographic domain using light-sheets provides the properly defined brane holographic domain needed before applying causal consistency tests.'
+  status: asserted
+- from: technique.covariant_lightsheet_domain_construction
+  to: technique.dgp_modified_entropy_functional
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Assign a brane a bulk holographic domain using light-sheets provides the legitimate brane-encoded bulk region needed when comparing competing extremal surfaces in doubly holographic setups, which DGP-modified entropy functional depends on.'
+  failure_mode_if_absent: 'Without Assign a brane a bulk holographic domain using light-sheets, DGP-modified entropy functional lacks the legitimate brane-encoded bulk region needed when comparing competing extremal surfaces in doubly holographic setups and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Assign a brane a bulk holographic domain using light-sheets provides the legitimate brane-encoded bulk region needed when comparing competing extremal surfaces in doubly holographic setups.'
+  status: asserted
+- from: technique.molecular_internal_field_amplification
+  to: technique.cpv_search_figure_of_merit_factorization
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Internal-field amplification in polar molecules provides the internal-field enhancement factor that enters the common CPV sensitivity metric, which Coherence-amplification-count-rate figure of merit depends on.'
+  failure_mode_if_absent: 'Without Internal-field amplification in polar molecules, Coherence-amplification-count-rate figure of merit lacks the internal-field enhancement factor that enters the common CPV sensitivity metric and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Internal-field amplification in polar molecules provides the internal-field enhancement factor that enters the common CPV sensitivity metric.'
+  status: asserted
+- from: technique.laser_cooling_and_trapping_for_cpv
+  to: technique.cpv_search_figure_of_merit_factorization
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Laser cooling and trapping for molecular CPV searches provides the coherence-time and control advantages that the figure of merit factors out explicitly, which Coherence-amplification-count-rate figure of merit depends on.'
+  failure_mode_if_absent: 'Without Laser cooling and trapping for molecular CPV searches, Coherence-amplification-count-rate figure of merit lacks the coherence-time and control advantages that the figure of merit factors out explicitly and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Laser cooling and trapping for molecular CPV searches provides the coherence-time and control advantages that the figure of merit factors out explicitly.'
+  status: asserted
+- from: technique.source_coupled_hmchpt_for_threshold_production
+  to: technique.cross_section_ratio_to_cancel_source_couplings
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Source-coupled heavy-meson chiral EFT near threshold provides the threshold production amplitudes whose source dependence is removed by taking ratios, which Cross-section ratios that cancel unknown source couplings depends on.'
+  failure_mode_if_absent: 'Without Source-coupled heavy-meson chiral EFT near threshold, Cross-section ratios that cancel unknown source couplings lacks the threshold production amplitudes whose source dependence is removed by taking ratios and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Source-coupled heavy-meson chiral EFT near threshold provides the threshold production amplitudes whose source dependence is removed by taking ratios.'
+  status: asserted
+- from: technique.nonrelativistic_phase_space_counting_for_bbpi
+  to: technique.cross_section_ratio_to_cancel_source_couplings
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Nonrelativistic phase-space counting for B Bbar pi provides the threshold scaling needed to normalize the B B pi rate against B Bbar production sensibly, which Cross-section ratios that cancel unknown source couplings depends on.'
+  failure_mode_if_absent: 'Without Nonrelativistic phase-space counting for B Bbar pi, Cross-section ratios that cancel unknown source couplings lacks the threshold scaling needed to normalize the B B pi rate against B Bbar production sensibly and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Nonrelativistic phase-space counting for B Bbar pi provides the threshold scaling needed to normalize the B B pi rate against B Bbar production sensibly.'
+  status: asserted
+- from: technique.goldberger_wise_as_operator_running
+  to: technique.cubic_goldberger_wise_deformation
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Interpret Goldberger-Wise stabilization as running of a nearly marginal operator provides the Goldberger-Wise stabilization picture that is being modified by adding a cubic interaction, which Cubic Goldberger-Wise deformation depends on.'
+  failure_mode_if_absent: 'Without Interpret Goldberger-Wise stabilization as running of a nearly marginal operator, Cubic Goldberger-Wise deformation lacks the Goldberger-Wise stabilization picture that is being modified by adding a cubic interaction and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Interpret Goldberger-Wise stabilization as running of a nearly marginal operator provides the Goldberger-Wise stabilization picture that is being modified by adding a cubic interaction.'
+  status: asserted
+- from: technique.radion_mass_from_effective_potential
+  to: technique.cubic_goldberger_wise_deformation
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Radion mass and stability from the effective potential provides the radion-potential diagnostics needed to see how the cubic term changes the phase transition, which Cubic Goldberger-Wise deformation depends on.'
+  failure_mode_if_absent: 'Without Radion mass and stability from the effective potential, Cubic Goldberger-Wise deformation lacks the radion-potential diagnostics needed to see how the cubic term changes the phase transition and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Radion mass and stability from the effective potential provides the radion-potential diagnostics needed to see how the cubic term changes the phase transition.'
+  status: asserted
+- from: technique.cubic_goldberger_wise_deformation
+  to: technique.holographic_rs_phase_transition_gw_forecast
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Cubic Goldberger-Wise deformation provides the modified stabilization dynamics that feed directly into the predicted RS gravitational-wave signal, which Holographic RS phase-transition GW forecast depends on.'
+  failure_mode_if_absent: 'Without Cubic Goldberger-Wise deformation, Holographic RS phase-transition GW forecast lacks the modified stabilization dynamics that feed directly into the predicted RS gravitational-wave signal and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Cubic Goldberger-Wise deformation provides the modified stabilization dynamics that feed directly into the predicted RS gravitational-wave signal.'
+  status: asserted
+- from: math.de_rham_cohomology
+  to: technique.cycle_volume_poincare_dual_scaling_estimate
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'de Rham cohomology provides the cohomological statement that cycle volumes can be computed from dual forms, which Cycle-Volume Scaling from Poincare Dual Forms depends on.'
+  failure_mode_if_absent: 'Without de Rham cohomology, Cycle-Volume Scaling from Poincare Dual Forms lacks the cohomological statement that cycle volumes can be computed from dual forms and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'de Rham cohomology provides the cohomological statement that cycle volumes can be computed from dual forms.'
+  status: asserted
+- from: math.differential_form
+  to: technique.cycle_volume_poincare_dual_scaling_estimate
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Differential form provides the harmonic-form technology used to normalize axion kinetic terms and wrapped-brane actions, which Cycle-Volume Scaling from Poincare Dual Forms depends on.'
+  failure_mode_if_absent: 'Without Differential form, Cycle-Volume Scaling from Poincare Dual Forms lacks the harmonic-form technology used to normalize axion kinetic terms and wrapped-brane actions and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Differential form provides the harmonic-form technology used to normalize axion kinetic terms and wrapped-brane actions.'
+  status: asserted
+- from: technique.cycle_volume_poincare_dual_scaling_estimate
+  to: technique.calabi_yau_multi_axion_tension_formula
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Cycle-Volume Scaling from Poincare Dual Forms provides the geometric scaling relations that the full Calabi-Yau tension formula generalizes, which Calabi-Yau Multi-Axion Tension Formula depends on.'
+  failure_mode_if_absent: 'Without Cycle-Volume Scaling from Poincare Dual Forms, Calabi-Yau Multi-Axion Tension Formula lacks the geometric scaling relations that the full Calabi-Yau tension formula generalizes and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Cycle-Volume Scaling from Poincare Dual Forms provides the geometric scaling relations that the full Calabi-Yau tension formula generalizes.'
+  status: asserted
+- from: technique.cycle_volume_poincare_dual_scaling_estimate
+  to: technique.wrapped_brane_instanton_action_matching
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Cycle-Volume Scaling from Poincare Dual Forms provides the cycle-volume estimate connecting lower-dimensional instantons to wrapped higher-dimensional objects, which Matching lower-dimensional instantons to wrapped higher-dimensional branes depends on.'
+  failure_mode_if_absent: 'Without Cycle-Volume Scaling from Poincare Dual Forms, Matching lower-dimensional instantons to wrapped higher-dimensional branes lacks the cycle-volume estimate connecting lower-dimensional instantons to wrapped higher-dimensional objects and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Cycle-Volume Scaling from Poincare Dual Forms provides the cycle-volume estimate connecting lower-dimensional instantons to wrapped higher-dimensional objects.'
+  status: asserted
+- from: technique.dark_disk_toomre_fragmentation
+  to: technique.dark_disk_seeded_tidal_dwarf_formation
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Toomre fragmentation of a dissipative dark disk provides the unstable dark-disk clump scale that seeds dark-rich tidal remnants, which Use a thin dark disk to seed dark-matter-rich tidal dwarfs depends on.'
+  failure_mode_if_absent: 'Without Toomre fragmentation of a dissipative dark disk, Use a thin dark disk to seed dark-matter-rich tidal dwarfs lacks the unstable dark-disk clump scale that seeds dark-rich tidal remnants and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Toomre fragmentation of a dissipative dark disk provides the unstable dark-disk clump scale that seeds dark-rich tidal remnants.'
+  status: asserted
+- from: technique.coupled_isothermal_poisson_jeans_solver
+  to: technique.dark_disk_tidal_trigger_model
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Coupled isothermal Poisson-Jeans solver provides the Galactic dark-disk profile needed to predict Solar System crossings and tidal forcing, which Dark-disk tidal triggering of comet showers depends on.'
+  failure_mode_if_absent: 'Without Coupled isothermal Poisson-Jeans solver, Dark-disk tidal triggering of comet showers lacks the Galactic dark-disk profile needed to predict Solar System crossings and tidal forcing and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Coupled isothermal Poisson-Jeans solver provides the Galactic dark-disk profile needed to predict Solar System crossings and tidal forcing.'
+  status: asserted
+- from: technique.dark_disk_tidal_trigger_model
+  to: technique.bayesian_crater_timeline_fit_with_galactic_priors
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Dark-disk tidal triggering of comet showers provides the specific dark-disk impact model whose evidence is compared with a constant-rate null hypothesis, which Bayesian crater-time fitting with galactic priors depends on.'
+  failure_mode_if_absent: 'Without Dark-disk tidal triggering of comet showers, Bayesian crater-time fitting with galactic priors lacks the specific dark-disk impact model whose evidence is compared with a constant-rate null hypothesis and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Dark-disk tidal triggering of comet showers provides the specific dark-disk impact model whose evidence is compared with a constant-rate null hypothesis.'
+  status: asserted
+- from: technique.dark_disk_seeded_tidal_dwarf_formation
+  to: technique.low_dispersion_dark_capture_bias
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Use a thin dark disk to seed dark-matter-rich tidal dwarfs provides the tidal-dwarf setup in which low dark-matter velocity dispersion can keep remnants bound, which Lower dark-matter dispersion makes tidal remnants stay bound depends on.'
+  failure_mode_if_absent: 'Without Use a thin dark disk to seed dark-matter-rich tidal dwarfs, Lower dark-matter dispersion makes tidal remnants stay bound lacks the tidal-dwarf setup in which low dark-matter velocity dispersion can keep remnants bound and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Use a thin dark disk to seed dark-matter-rich tidal dwarfs provides the tidal-dwarf setup in which low dark-matter velocity dispersion can keep remnants bound.'
+  status: asserted
+- from: technique.dark_disk_toomre_fragmentation
+  to: technique.toomre_scale_patch_selection
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Toomre fragmentation of a dissipative dark disk provides the Toomre-instability scale that sets the natural size of tidally removed disk patches, which Choose tidal patch sizes from the Toomre instability scale depends on.'
+  failure_mode_if_absent: 'Without Toomre fragmentation of a dissipative dark disk, Choose tidal patch sizes from the Toomre instability scale lacks the Toomre-instability scale that sets the natural size of tidally removed disk patches and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Toomre fragmentation of a dissipative dark disk provides the Toomre-instability scale that sets the natural size of tidally removed disk patches.'
+  status: asserted
+- from: technique.dissipative_dark_disk_cooling
+  to: technique.dark_sector_cooling_timescale_test
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Dissipative dark-disk cooling with heavy and light dark charges provides the actual dark bremsstrahlung and Compton processes whose collapse times are being estimated, which Cooling-timescale test for dissipative dark collapse depends on.'
+  failure_mode_if_absent: 'Without Dissipative dark-disk cooling with heavy and light dark charges, Cooling-timescale test for dissipative dark collapse lacks the actual dark bremsstrahlung and Compton processes whose collapse times are being estimated and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Dissipative dark-disk cooling with heavy and light dark charges provides the actual dark bremsstrahlung and Compton processes whose collapse times are being estimated.'
+  status: asserted
+- from: technique.dark_sector_temperature_neff_tracking
+  to: technique.dark_sector_cooling_timescale_test
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Separate dark-sector temperature and N_eff tracking provides the dark-sector temperature history that sets the relevant post-virial cooling regime, which Cooling-timescale test for dissipative dark collapse depends on.'
+  failure_mode_if_absent: 'Without Separate dark-sector temperature and N_eff tracking, Cooling-timescale test for dissipative dark collapse lacks the dark-sector temperature history that sets the relevant post-virial cooling regime and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Separate dark-sector temperature and N_eff tracking provides the dark-sector temperature history that sets the relevant post-virial cooling regime.'
+  status: asserted
+- from: technique.entropy_temperature_ratio_constraint
+  to: technique.dark_sector_temperature_neff_tracking
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Entropy-ratio calculation for dark-radiation temperature bounds provides the entropy-conservation estimate that initializes the dark-to-visible temperature ratio, which Separate dark-sector temperature and N_eff tracking depends on.'
+  failure_mode_if_absent: 'Without Entropy-ratio calculation for dark-radiation temperature bounds, Separate dark-sector temperature and N_eff tracking lacks the entropy-conservation estimate that initializes the dark-to-visible temperature ratio and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Entropy-ratio calculation for dark-radiation temperature bounds provides the entropy-conservation estimate that initializes the dark-to-visible temperature ratio.'
+  status: asserted
+- from: cosmology.cosmic_microwave_background
+  to: technique.dark_sector_temperature_neff_tracking
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Cosmic microwave background provides the N_eff observational context that the temperature-ratio tracking is constrained against, which Separate dark-sector temperature and N_eff tracking depends on.'
+  failure_mode_if_absent: 'Without Cosmic microwave background, Separate dark-sector temperature and N_eff tracking lacks the N_eff observational context that the temperature-ratio tracking is constrained against and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Cosmic microwave background provides the N_eff observational context that the temperature-ratio tracking is constrained against.'
+  status: asserted
+- from: qft.decay_rate
+  to: technique.decay_geometry_acceptance_integration
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Decay rate provides the decay-length probability law that is integrated through target and detector geometry, which Decay-Geometry Acceptance Integration depends on.'
+  failure_mode_if_absent: 'Without Decay rate, Decay-Geometry Acceptance Integration lacks the decay-length probability law that is integrated through target and detector geometry and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Decay rate provides the decay-length probability law that is integrated through target and detector geometry.'
+  status: asserted
+- from: technique.geometric_acceptance_decay_factorization
+  to: technique.decay_geometry_acceptance_integration
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Geometric acceptance times decay-probability reach estimation provides the reach-estimation factorization that the full target-to-fiducial integration makes explicit, which Decay-Geometry Acceptance Integration depends on.'
+  failure_mode_if_absent: 'Without Geometric acceptance times decay-probability reach estimation, Decay-Geometry Acceptance Integration lacks the reach-estimation factorization that the full target-to-fiducial integration makes explicit and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Geometric acceptance times decay-probability reach estimation provides the reach-estimation factorization that the full target-to-fiducial integration makes explicit.'
+  status: asserted
+- from: technique.decay_geometry_acceptance_integration
+  to: technique.detector_lifetime_tomography
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Decay-Geometry Acceptance Integration provides the geometry-folded decay probabilities needed before different detector regions can be treated as separate lifetime channels, which Detector lifetime tomography depends on.'
+  failure_mode_if_absent: 'Without Decay-Geometry Acceptance Integration, Detector lifetime tomography lacks the geometry-folded decay probabilities needed before different detector regions can be treated as separate lifetime channels and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Decay-Geometry Acceptance Integration provides the geometry-folded decay probabilities needed before different detector regions can be treated as separate lifetime channels.'
+  status: asserted
+- from: qcd.confinement
+  to: technique.deconfinement_plus_kutasov_schwimmer_duality
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Confinement provides the confining gauge dynamics used in the deconfinement step that replaces antisymmetric tensors, which Deconfinement plus Kutasov-Schwimmer duality depends on.'
+  failure_mode_if_absent: 'Without Confinement, Deconfinement plus Kutasov-Schwimmer duality lacks the confining gauge dynamics used in the deconfinement step that replaces antisymmetric tensors and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Confinement provides the confining gauge dynamics used in the deconfinement step that replaces antisymmetric tensors.'
+  status: asserted
+- from: technique.analytic_continuation_superspace_duality_map
+  to: technique.deconfinement_plus_kutasov_schwimmer_duality
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Analytic continuation into superspace across Seiberg duality provides the supersymmetric duality technology needed once the deconfined theory is recast in a magnetic description, which Deconfinement plus Kutasov-Schwimmer duality depends on.'
+  failure_mode_if_absent: 'Without Analytic continuation into superspace across Seiberg duality, Deconfinement plus Kutasov-Schwimmer duality lacks the supersymmetric duality technology needed once the deconfined theory is recast in a magnetic description and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Analytic continuation into superspace across Seiberg duality provides the supersymmetric duality technology needed once the deconfined theory is recast in a magnetic description.'
+  status: asserted
+- from: technique.deconfinement_plus_kutasov_schwimmer_duality
+  to: technique.dual_phase_dsb_analysis
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Deconfinement plus Kutasov-Schwimmer duality provides the tractable magnetic dual needed to analyze dynamical supersymmetry breaking in the deformed theory, which DSB analysis in the dual magnetic/conformal phase depends on.'
+  failure_mode_if_absent: 'Without Deconfinement plus Kutasov-Schwimmer duality, DSB analysis in the dual magnetic/conformal phase lacks the tractable magnetic dual needed to analyze dynamical supersymmetry breaking in the deformed theory and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Deconfinement plus Kutasov-Schwimmer duality provides the tractable magnetic dual needed to analyze dynamical supersymmetry breaking in the deformed theory.'
+  status: asserted
+- from: technique.warped_deconstruction_quiver
+  to: technique.deconstructed_6d_pnpg_hybrid_model
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Deconstruct AdS with a quiver whose link VEVs follow the warp factor provides the quiver deconstruction machinery used to turn higher-dimensional gauge locality into a four-dimensional moose, which Deconstruct a 6D gauge model into a 4D PNGB hybrid-inflation theory depends on.'
+  failure_mode_if_absent: 'Without Deconstruct AdS with a quiver whose link VEVs follow the warp factor, Deconstruct a 6D gauge model into a 4D PNGB hybrid-inflation theory lacks the quiver deconstruction machinery used to turn higher-dimensional gauge locality into a four-dimensional moose and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Deconstruct AdS with a quiver whose link VEVs follow the warp factor provides the quiver deconstruction machinery used to turn higher-dimensional gauge locality into a four-dimensional moose.'
+  status: asserted
+- from: cosmology.inflation
+  to: technique.deconstructed_6d_pnpg_hybrid_model
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Inflation provides the hybrid-inflation target problem that the deconstructed six-dimensional model is built to realize concretely, which Deconstruct a 6D gauge model into a 4D PNGB hybrid-inflation theory depends on.'
+  failure_mode_if_absent: 'Without Inflation, Deconstruct a 6D gauge model into a 4D PNGB hybrid-inflation theory lacks the hybrid-inflation target problem that the deconstructed six-dimensional model is built to realize concretely and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Inflation provides the hybrid-inflation target problem that the deconstructed six-dimensional model is built to realize concretely.'
+  status: asserted
+- from: technique.intersecting_brane_defect_cft_construction
+  to: technique.defect_cft_degree_counting_test
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Build defect and boundary CFTs from intersecting branes provides the concrete defect-CFT realization whose degree counting is then used as a localization diagnostic, which Use defect-CFT degree counting as a localization diagnostic depends on.'
+  failure_mode_if_absent: 'Without Build defect and boundary CFTs from intersecting branes, Use defect-CFT degree counting as a localization diagnostic lacks the concrete defect-CFT realization whose degree counting is then used as a localization diagnostic and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Build defect and boundary CFTs from intersecting branes provides the concrete defect-CFT realization whose degree counting is then used as a localization diagnostic.'
+  status: asserted
+- from: technique.defect_cft_degree_counting_test
+  to: technique.cft_degree_bound_from_weak_gauging
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Use defect-CFT degree counting as a localization diagnostic provides the defect degree-counting logic needed before bounding hidden-sector size through weak gauging, which Bounding CFT size from weakly gauged Standard Model couplings depends on.'
+  failure_mode_if_absent: 'Without Use defect-CFT degree counting as a localization diagnostic, Bounding CFT size from weakly gauged Standard Model couplings lacks the defect degree-counting logic needed before bounding hidden-sector size through weak gauging and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Use defect-CFT degree counting as a localization diagnostic provides the defect degree-counting logic needed before bounding hidden-sector size through weak gauging.'
+  status: asserted
+- from: cosmology.dark_matter
+  to: technique.degenerate_fermion_core_support
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Dark matter provides the dark-matter setting in which fermionic degeneracy pressure is being used to support a core, which Core support from fermionic degeneracy pressure depends on.'
+  failure_mode_if_absent: 'Without Dark matter, Core support from fermionic degeneracy pressure lacks the dark-matter setting in which fermionic degeneracy pressure is being used to support a core and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Dark matter provides the dark-matter setting in which fermionic degeneracy pressure is being used to support a core.'
+  status: asserted
+- from: technique.degenerate_fermion_core_support
+  to: technique.flooded_dm_link_to_fermion_cores
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Core support from fermionic degeneracy pressure provides the actual Fermi-pressure core mechanism that the Flooded Dark Matter cosmology is trying to realize, which Use Flooded Dark Matter cosmology to realize light fermion cores depends on.'
+  failure_mode_if_absent: 'Without Core support from fermionic degeneracy pressure, Use Flooded Dark Matter cosmology to realize light fermion cores lacks the actual Fermi-pressure core mechanism that the Flooded Dark Matter cosmology is trying to realize and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Core support from fermionic degeneracy pressure provides the actual Fermi-pressure core mechanism that the Flooded Dark Matter cosmology is trying to realize.'
+  status: asserted
+- from: technique.degenerate_fermion_core_support
+  to: technique.proper_motion_jeans_degeneracy_breaking
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Core support from fermionic degeneracy pressure provides the cored-halo hypothesis whose observational degeneracy proper motions are meant to break, which Proper-motion breaking of the Jeans cusp-core degeneracy depends on.'
+  failure_mode_if_absent: 'Without Core support from fermionic degeneracy pressure, Proper-motion breaking of the Jeans cusp-core degeneracy lacks the cored-halo hypothesis whose observational degeneracy proper motions are meant to break and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Core support from fermionic degeneracy pressure provides the cored-halo hypothesis whose observational degeneracy proper motions are meant to break.'
+  status: asserted
+- from: technique.incoherent_mass_eigenstate_density_matrix
+  to: technique.density_matrix_with_decoherence
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Incoherent mass-eigenstate density matrix for solar neutrinos provides the basic density-matrix description of mixed states that thermal decoherence generalizes, which Density-Matrix Evolution with Thermal Decoherence depends on.'
+  failure_mode_if_absent: 'Without Incoherent mass-eigenstate density matrix for solar neutrinos, Density-Matrix Evolution with Thermal Decoherence lacks the basic density-matrix description of mixed states that thermal decoherence generalizes and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Incoherent mass-eigenstate density matrix for solar neutrinos provides the basic density-matrix description of mixed states that thermal decoherence generalizes.'
+  status: asserted
+- from: technique.spin_and_polarization_density_matrix_methods
+  to: technique.density_matrix_with_decoherence
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Spin and polarization density matrix methods provides the general density-matrix formalism needed before adding collisions and decohering scatterings, which Density-Matrix Evolution with Thermal Decoherence depends on.'
+  failure_mode_if_absent: 'Without Spin and polarization density matrix methods, Density-Matrix Evolution with Thermal Decoherence lacks the general density-matrix formalism needed before adding collisions and decohering scatterings and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Spin and polarization density matrix methods provides the general density-matrix formalism needed before adding collisions and decohering scatterings.'
+  status: asserted
+- from: technique.density_matrix_with_decoherence
+  to: technique.asymmetry_transfer_by_dynamic_mass_mixing
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Density-Matrix Evolution with Thermal Decoherence provides the oscillation-plus-decoherence evolution needed when asymmetry transfer proceeds through mixed states, which Asymmetry Transfer by Dynamic Mass Mixing depends on.'
+  failure_mode_if_absent: 'Without Density-Matrix Evolution with Thermal Decoherence, Asymmetry Transfer by Dynamic Mass Mixing lacks the oscillation-plus-decoherence evolution needed when asymmetry transfer proceeds through mixed states and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Density-Matrix Evolution with Thermal Decoherence provides the oscillation-plus-decoherence evolution needed when asymmetry transfer proceeds through mixed states.'
+  status: asserted
+- from: technique.displaced_acceptance_parameterization
+  to: technique.detector_lifetime_tomography
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Lifetime acceptance parameterization for displaced decays provides the lifetime-dependent acceptance model needed to treat detector subsystems as separate lifetime bins, which Detector lifetime tomography depends on.'
+  failure_mode_if_absent: 'Without Lifetime acceptance parameterization for displaced decays, Detector lifetime tomography lacks the lifetime-dependent acceptance model needed to treat detector subsystems as separate lifetime bins and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Lifetime acceptance parameterization for displaced decays provides the lifetime-dependent acceptance model needed to treat detector subsystems as separate lifetime bins.'
+  status: asserted
+- from: technique.track_length_acceptance_model
+  to: technique.detector_lifetime_tomography
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Track-Length Acceptance Modeling provides the path-length acceptance mapping that underlies subsystem-by-subsystem lifetime sensitivity, which Detector lifetime tomography depends on.'
+  failure_mode_if_absent: 'Without Track-Length Acceptance Modeling, Detector lifetime tomography lacks the path-length acceptance mapping that underlies subsystem-by-subsystem lifetime sensitivity and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Track-Length Acceptance Modeling provides the path-length acceptance mapping that underlies subsystem-by-subsystem lifetime sensitivity.'
+  status: asserted
+- from: technique.detector_lifetime_tomography
+  to: technique.displaced_template_fits
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Detector lifetime tomography provides the region-by-region lifetime information that makes template fitting for mass and lifetime sharper, which Template fitting for mass and lifetime depends on.'
+  failure_mode_if_absent: 'Without Detector lifetime tomography, Template fitting for mass and lifetime lacks the region-by-region lifetime information that makes template fitting for mass and lifetime sharper and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Detector lifetime tomography provides the region-by-region lifetime information that makes template fitting for mass and lifetime sharper.'
+  status: asserted
+- from: technique.detector_lifetime_tomography
+  to: technique.z_polarization_from_displaced_angles
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Detector lifetime tomography provides the detector-region classification needed to collect displaced Z decays with controlled lifetime biases, which Z polarization from displaced decay angles depends on.'
+  failure_mode_if_absent: 'Without Detector lifetime tomography, Z polarization from displaced decay angles lacks the detector-region classification needed to collect displaced Z decays with controlled lifetime biases and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Detector lifetime tomography provides the detector-region classification needed to collect displaced Z decays with controlled lifetime biases.'
+  status: asserted
+- from: technique.differential_astrometry_point_and_stare
+  to: technique.proper_motion_jeans_degeneracy_breaking
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Point-and-stare differential astrometry provides the relative proper-motion measurement method needed to supply the astrometric inputs for Jeans analyses, which Proper-motion breaking of the Jeans cusp-core degeneracy depends on.'
+  failure_mode_if_absent: 'Without Point-and-stare differential astrometry, Proper-motion breaking of the Jeans cusp-core degeneracy lacks the relative proper-motion measurement method needed to supply the astrometric inputs for Jeans analyses and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Point-and-stare differential astrometry provides the relative proper-motion measurement method needed to supply the astrometric inputs for Jeans analyses.'
+  status: asserted
+- from: technique.antideuteron_channel_targeting
+  to: technique.diffusion_convection_bessel_propagation
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Antideuteron Channel Targeting provides the charged-antinucleus phenomenology context in which semianalytic Galactic propagation is being applied, which Two-zone diffusion-convection propagation with Bessel expansion depends on.'
+  failure_mode_if_absent: 'Without Antideuteron Channel Targeting, Two-zone diffusion-convection propagation with Bessel expansion lacks the charged-antinucleus phenomenology context in which semianalytic Galactic propagation is being applied and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Antideuteron Channel Targeting provides the charged-antinucleus phenomenology context in which semianalytic Galactic propagation is being applied.'
+  status: asserted
+- from: technique.event_by_event_coalescence_afterburner
+  to: technique.diffusion_convection_bessel_propagation
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Event-by-event coalescence afterburner for antideuterons provides the source antideuteron spectrum that must be propagated through the Galactic diffusion zone, which Two-zone diffusion-convection propagation with Bessel expansion depends on.'
+  failure_mode_if_absent: 'Without Event-by-event coalescence afterburner for antideuterons, Two-zone diffusion-convection propagation with Bessel expansion lacks the source antideuteron spectrum that must be propagated through the Galactic diffusion zone and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Event-by-event coalescence afterburner for antideuterons provides the source antideuteron spectrum that must be propagated through the Galactic diffusion zone.'
+  status: asserted
+- from: technique.diffusion_convection_bessel_propagation
+  to: technique.diffusion_plus_solar_modulation_pipeline
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Two-zone diffusion-convection propagation with Bessel expansion provides the interstellar transport solution that the near-Earth flux pipeline starts from, which Diffusion Plus Solar Modulation Pipeline depends on.'
+  failure_mode_if_absent: 'Without Two-zone diffusion-convection propagation with Bessel expansion, Diffusion Plus Solar Modulation Pipeline lacks the interstellar transport solution that the near-Earth flux pipeline starts from and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Two-zone diffusion-convection propagation with Bessel expansion provides the interstellar transport solution that the near-Earth flux pipeline starts from.'
+  status: asserted
+- from: technique.force_field_solar_modulation
+  to: technique.diffusion_plus_solar_modulation_pipeline
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Force-field heliospheric modulation provides the heliospheric energy shift needed to turn interstellar antideuteron spectra into top-of-atmosphere predictions, which Diffusion Plus Solar Modulation Pipeline depends on.'
+  failure_mode_if_absent: 'Without Force-field heliospheric modulation, Diffusion Plus Solar Modulation Pipeline lacks the heliospheric energy shift needed to turn interstellar antideuteron spectra into top-of-atmosphere predictions and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Force-field heliospheric modulation provides the heliospheric energy shift needed to turn interstellar antideuteron spectra into top-of-atmosphere predictions.'
+  status: asserted
+- from: technique.diffusion_plus_solar_modulation_pipeline
+  to: technique.hidden_sector_antideuteron_targeting
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Diffusion Plus Solar Modulation Pipeline provides the near-Earth antideuteron flux prediction needed to judge hidden-sector search prospects, which Low-energy antideuterons as a hidden-sector dark matter target depends on.'
+  failure_mode_if_absent: 'Without Diffusion Plus Solar Modulation Pipeline, Low-energy antideuterons as a hidden-sector dark matter target lacks the near-Earth antideuteron flux prediction needed to judge hidden-sector search prospects and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Diffusion Plus Solar Modulation Pipeline provides the near-Earth antideuteron flux prediction needed to judge hidden-sector search prospects.'
+  status: asserted
+- from: technique.diffusion_plus_solar_modulation_pipeline
+  to: technique.poisson_ncrit_discovery_metric
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Diffusion Plus Solar Modulation Pipeline provides the detector-facing event-rate input needed before converting fluxes into discovery thresholds, which Poisson Ncrit Discovery Metric depends on.'
+  failure_mode_if_absent: 'Without Diffusion Plus Solar Modulation Pipeline, Poisson Ncrit Discovery Metric lacks the detector-facing event-rate input needed before converting fluxes into discovery thresholds and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Diffusion Plus Solar Modulation Pipeline provides the detector-facing event-rate input needed before converting fluxes into discovery thresholds.'
+  status: asserted
+- from: technique.doubly_holographic_brane_construction
+  to: technique.dgp_modified_entropy_functional
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Doubly holographic brane construction provides the brane-plus-bulk setup in which DGP boundary terms modify the entropy extremization problem, which DGP-modified entropy functional depends on.'
+  failure_mode_if_absent: 'Without Doubly holographic brane construction, DGP-modified entropy functional lacks the brane-plus-bulk setup in which DGP boundary terms modify the entropy extremization problem and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Doubly holographic brane construction provides the brane-plus-bulk setup in which DGP boundary terms modify the entropy extremization problem.'
+  status: asserted
+- from: technique.causal_wedge_inclusion_constraint
+  to: technique.dgp_modified_entropy_functional
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'Causal wedge inclusion constraint provides the causal-consistency veto needed when altered entropy functionals make unusual surfaces competitive, which DGP-modified entropy functional depends on.'
+  failure_mode_if_absent: 'Without Causal wedge inclusion constraint, DGP-modified entropy functional lacks the causal-consistency veto needed when altered entropy functionals make unusual surfaces competitive and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'Causal wedge inclusion constraint provides the causal-consistency veto needed when altered entropy functionals make unusual surfaces competitive.'
+  status: asserted
+- from: technique.dgp_modified_entropy_functional
+  to: technique.page_transition_from_hm_vs_brane_surface
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: 'DGP-modified entropy functional provides the modified entropy functional that decides which Hartman-Maldacena or brane-anchored surface dominates, which Page transition from Hartman-Maldacena versus brane-anchored surfaces depends on.'
+  failure_mode_if_absent: 'Without DGP-modified entropy functional, Page transition from Hartman-Maldacena versus brane-anchored surfaces lacks the modified entropy functional that decides which Hartman-Maldacena or brane-anchored surface dominates and cannot be applied cleanly.'
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: 'DGP-modified entropy functional provides the modified entropy functional that decides which Hartman-Maldacena or brane-anchored surface dominates.'
+  status: asserted

@@ -1,0 +1,398 @@
+# Hand-authored node records for the Schwartz techniques batch 2.
+# All records in this batch are research-level methods extracted from Matt Schwartz papers.
+
+- id: technique.consistent_veff_power_counting
+  label: Modified Power Counting for Gauge-Invariant Effective Potential Extrema
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Perturbative reorganization for radiatively generated extrema that counts the quartic as lambda ~ hbar so tree, loop, and daisy contributions are kept at the same effective order and V_min stays gauge invariant order by order.
+  status: asserted
+
+- id: technique.contour_deformation_glauber_containment
+  label: Contour deformation argument for Glauber containment
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Complex-contour argument showing that Glauber-region contributions are already contained in the soft eikonal sector whenever incoming momenta are not collinear to outgoing momenta.
+  status: asserted
+
+- id: technique.contrastive_term_grouping
+  label: Contrastive Learning for Grouping Simplifiable Subexpressions
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Contrastive-embedding pipeline that clusters spinor-helicity amplitude terms likely to simplify together before passing each subgroup to a downstream simplification network.
+  status: asserted
+
+- id: technique.coulomb_green_function_finite_width
+  label: Coulomb Green's function with finite particle width
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Threshold method that solves the Coulomb Schrodinger problem at complex energy E + iGamma so the origin Green's function captures both bound-state resonances and continuum enhancement in production rates.
+  status: asserted
+
+- id: technique.cross_generator_robustness_test
+  label: Cross-Generator Robustness of Learned Discriminants
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Validation protocol that trains a learned jet discriminant on one event generator and evaluates it on another to separate robust physics from generator-specific artifacts.
+  status: asserted
+
+- id: technique.cut_diagram_ibp_de
+  label: Cut-diagram IBP reduction with differential equations
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Cross-section computation workflow that applies IBP reduction and differential equations directly to cut diagrams, shrinking the master-integral system relative to the full forward amplitude.
+  status: asserted
+
+- id: technique.cut_weights_statistical_framework
+  label: Cut-weight framework for weighted event analysis
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Weighted-analysis framework that replaces binary cuts by per-event pass fractions over multiple interpretations and proves that the resulting z-weighting can improve significance for ambiguous events.
+  status: asserted
+
+- id: technique.cwola_high_dimensional
+  label: Classification Without Labels (CWoLa) for high-dimensional inputs
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Weak-supervision method that trains on mixed samples rather than pure labels, exploiting the theorem that the mixed-sample classifier is monotonic with the optimal signal-background likelihood ratio.
+  status: asserted
+
+- id: technique.daisy_resummation_gauge_invariance
+  label: Daisy Resummation for Order-by-Order Gauge Invariance of V_min
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Resummation prescription that includes the infinite daisy or ring series required by modified lambda power counting so the vacuum energy at the minimum remains gauge invariant order by order.
+  status: asserted
+
+- id: technique.dark_moon_background_subtraction
+  label: Dark Moon Instrumental Background Calibration
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Instrumental-background calibration method that uses Chandra observations of the dark Moon, normalized in a celestial-free high-energy band, to subtract particle backgrounds from diffuse X-ray measurements.
+  status: asserted
+
+- id: technique.deconstruction_anomaly_mediation
+  label: Deconstructed anomaly mediation with massive supergravity
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Theory-space construction that reproduces anomaly-mediation sequestering with a finite deconstruction lattice of massive supergravity multiplets instead of a literal extra dimension.
+  status: asserted
+
+- id: technique.deconstruction_of_twist
+  label: Four-Dimensional Deconstruction of Flavor Twisting
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Four-dimensional deconstruction of twisted split-fermion flavor structure, implemented with moose-style gauge sites and misaligned Yukawas to mimic the original five-dimensional mechanism.
+  status: asserted
+
+- id: technique.delta_f2_complex_phase_scan
+  label: Delta-F=2 Constraints with Complex NP Phase Scanning
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Global-fit strategy that scans complex new-physics phases in Delta-F=2 observables together with CKM parameters to expose weakly constrained cancellation directions in meson mixing.
+  status: asserted
+
+- id: technique.delta_tau_isr_ue_subtraction
+  label: Analytic ISR/UE subtraction via Delta-tau correction
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Event-by-event correction that subtracts ISR and underlying-event contamination from subjettiness ratios using Delta_tau = T1 - T1_hat, leaving tau_21 insensitive up to 1/Q effects.
+  status: asserted
+
+- id: technique.destructive_interference_top_mesons
+  label: Destructive interference among top-mesons and SM in tt-bar production
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Interference strategy that uses cancellations among multiple top-meson resonances and the Standard Model to preserve a large asymmetry while suppressing total-rate and same-sign-top constraints.
+  status: asserted
+
+- id: technique.direct_minkowski_tunneling_rate
+  label: Tunneling rate from the Minkowski path integral without potential deformation
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Path-integral tunneling derivation that inserts a turning-surface constraint into the Minkowski amplitude, isolates the bounce contribution, and yields the decay rate without deforming the potential or hand-fixing prefactors.
+  status: asserted
+
+- id: technique.direct_tunneling_method
+  label: Direct (Propagator-Based) Method for QFT Tunneling Rates
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Propagator-based tunneling framework that defines the decay rate as probability flux through a boundary surface and evaluates it by steepest descent in the complexified path integral.
+  status: asserted
+
+- id: technique.disco_decorrelation
+  label: Distance Correlation (DisCo) decorrelation for ABCD
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Loss-function regularization technique that penalizes distance correlation between classifier outputs on background so neural taggers remain powerful while satisfying the independence assumptions of ABCD.
+  status: asserted
+
+- id: technique.dressed_state_factorization
+  label: Dressed-state / coherent-state factorization for IR finiteness
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Infrared-finiteness construction that rewrites hard scattering matrix elements as ordinary S-matrix elements between universal dressed coherent states generated by asymptotic evolution.
+  status: asserted
+
+- id: technique.dressed_states_from_asymptotic_evolution
+  label: Dressed states via asymptotic soft-collinear evolution
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Explicit dressed-state construction that computes asymptotic soft-collinear Moller operators with time-ordered perturbation theory and equates hard Fock-space matrix elements to amplitudes between dressed states.
+  status: asserted
+
+- id: technique.e_scaling_boost_limit
+  label: e-scaling relation between Q=0 and Q=infinity substructure distributions
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Analytic rescaling relation that maps the infinite-boost tau_21 distribution onto the thrust distribution by a universal factor of Euler's number after helicity-angle averaging.
+  status: asserted
+
+- id: technique.edgeworth_action_reconstruction
+  label: Action Reconstruction from Connected Correlators via Edgeworth Expansion
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Inverse field-theory procedure that reconstructs an approximate action from connected correlators via an Edgeworth expansion and a diagrammatic calculus with cumulant vertices.
+  status: asserted
+
+- id: technique.effective_action_vs_potential_tunneling
+  label: Proper Use of Effective Actions (Not Effective Potentials) in Tunneling
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Precision-tunneling prescription that keeps bounce finding at the classical-action level and reserves radiative corrections for the fluctuation determinant, avoiding double counting from naive use of V_eff as the classical potential.
+  status: asserted
+
+- id: technique.eft_above_ewsb_for_fcnc
+  label: EFT Above Electroweak Symmetry Breaking for Top FCNCs
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Broken-to-unbroken-phase EFT reformulation of top flavor-changing neutral currents that imposes full SU(2)_L x U(1)_Y gauge invariance on the operator basis before electroweak symmetry breaking.
+  status: asserted
+
+- id: technique.eikonal_identity_soft_subtraction
+  label: Eikonal identity for soft-limit subtraction
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Soft-subtraction identity that splits a propagator into an eikonal term plus a k^2-suppressed remainder, cleanly isolating the soft-sensitive Wilson-line contribution.
+  status: asserted
+
+- id: technique.eikonal_jet_function_phase_space_removal
+  label: Eikonal jet function subtraction for unrestricted phase-space factorization
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Factorization refinement that removes auxiliary cone and energy cutoffs by dividing out eikonal jet functions capturing the soft-collinear overlap in unrestricted event-shape phase space.
+  status: asserted
+
+- id: technique.electroweak_sudakov_correction
+  label: Leading-log electroweak Sudakov corrections for high-ET photon production
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Phenomenology correction that folds leading electroweak Sudakov logarithms into high-ET photon predictions, including the associated choice of alpha_e scale.
+  status: asserted
+
+- id: technique.energy_weighted_density_learning
+  label: Energy-Weighted KL Divergence for Observable Learning
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Observable-learning loss that weights the KL divergence by event energy products so a surrogate model learns the physically relevant energy-weighted correlator rather than the underlying unweighted density.
+  status: asserted
+
+- id: technique.engineering_actions_via_independence_breaking
+  label: Engineering Desired Actions by Deforming Parameter Distributions
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Design rule for neural-network field theories that engineers target interaction terms by controlled, spatially structured departures from parameter independence.
+  status: asserted
+
+- id: technique.event_image_cnn_classification
+  label: Event-image CNN for jet classification
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Jet-tagging pipeline that rasterizes energy flow in eta-phi into images and applies convolutional neural networks to learn substructure features directly from pixels.
+  status: asserted
+
+- id: technique.exact_functional_determinants_bounce
+  label: Exact Closed-Form Functional Determinants Around the Scale-Invariant Bounce
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Closed-form determinant calculation around the scale-invariant bounce using conformal bases on the four-sphere, extending to scalars, fermions, and gauge fields with manifest gauge-parameter cancellation.
+  status: asserted
+
+- id: technique.external_momentum_power_counting
+  label: External-momentum power counting with lambda
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Factorization power-counting scheme that expands only in external-sector lambda parameters while using virtual-momentum scaling solely to diagnose infrared sensitivity.
+  status: asserted
+
+- id: technique.factorization_gauge
+  label: Factorization gauge (momentum-dependent lightcone reference vector)
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Momentum-dependent gauge-fixing choice that assigns different lightcone reference vectors to soft, collinear, and hard regions so soft-collinear decoupling becomes manifest in loop proofs.
+  status: asserted
+
+- id: technique.factorization_to_scet_derivation
+  label: Deriving SCET from on-shell factorization
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Minimal route from an on-shell factorization formula to leading-power SCET, obtained by reinterpreting factored QCD matrix elements as matrix elements of decoupled sector Lagrangians and resummed operators.
+  status: asserted
+
+- id: technique.fierz_pauli_extension_no_go
+  label: No-go theorem for extending Fierz-Pauli beyond Lambda_3
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Goldstone-based classification argument showing that no nonlinear completion of Fierz-Pauli massive gravity can raise the strong-coupling scale above Lambda_3.
+  status: asserted
+
+- id: technique.final_state_only_ir_cancellation
+  label: IR divergence cancellation via final-state-only sum with forward scattering
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: true
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Infrared-cancellation argument that achieves finiteness for fixed initial states by summing only over final states, provided forward scattering is included, rather than invoking full KLN initial-state averaging.
+  status: asserted

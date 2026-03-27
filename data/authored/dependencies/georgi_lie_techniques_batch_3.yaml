@@ -1,0 +1,338 @@
+- from: qft.gamma_matrices
+  to: technique.projection_operator_decomposition_of_so_even_bilinears
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: "The batch technique Projection-operator decomposition of even-dimensional bilinears depends on Clifford algebra; the existing node Gamma matrices is the authored-graph match that supplies that ingredient."
+  failure_mode_if_absent: "Cannot apply Projection-operator decomposition of even-dimensional bilinears cleanly because the prerequisite Clifford algebra is missing from the learner's background."
+  evidence:
+    - type: expert_claim
+      source_ref: georgi_lie_techniques_batch_3_initial
+      note: "The batch prerequisite list explicitly names Clifford algebra."
+  status: asserted
+
+- from: qft.chirality_projector
+  to: technique.projection_operator_decomposition_of_so_even_bilinears
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: "The batch technique Projection-operator decomposition of even-dimensional bilinears depends on chirality projectors; the existing node Chirality projector is the authored-graph match that supplies that ingredient."
+  failure_mode_if_absent: "Cannot apply Projection-operator decomposition of even-dimensional bilinears cleanly because the prerequisite chirality projectors is missing from the learner's background."
+  evidence:
+    - type: expert_claim
+      source_ref: georgi_lie_techniques_batch_3_initial
+      note: "The batch prerequisite list explicitly names chirality projectors."
+  status: asserted
+
+- from: sm.ssb.spontaneous_symmetry_breaking
+  to: technique.proton_decay_from_quark_lepton_unification
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: "The batch technique Proton decay from quark-lepton unification depends on Adjoint-24 breaking of SU(5); the existing node Spontaneous symmetry breaking is the authored-graph match that supplies that ingredient."
+  failure_mode_if_absent: "Cannot apply Proton decay from quark-lepton unification cleanly because the prerequisite Adjoint-24 breaking of SU(5) is missing from the learner's background."
+  evidence:
+    - type: expert_claim
+      source_ref: georgi_lie_techniques_batch_3_initial
+      note: "The batch prerequisite list explicitly names Adjoint-24 breaking of SU(5)."
+  status: asserted
+
+- from: sm.baryon_number_conservation
+  to: technique.proton_decay_from_quark_lepton_unification
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: "The batch technique Proton decay from quark-lepton unification depends on Baryon number as an approximate low-energy symmetry; the existing node Baryon number conservation is the authored-graph match that supplies that ingredient."
+  failure_mode_if_absent: "Cannot apply Proton decay from quark-lepton unification cleanly because the prerequisite Baryon number as an approximate low-energy symmetry is missing from the learner's background."
+  evidence:
+    - type: expert_claim
+      source_ref: georgi_lie_techniques_batch_3_initial
+      note: "The batch prerequisite list explicitly names Baryon number as an approximate low-energy symmetry."
+  status: asserted
+
+- from: qm.identical_particles_symmetrization
+  to: technique.quark_model_constituent_sum_rules
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: "The batch technique Constituent-quark sum rules depends on symmetry_of_tensor_products_and_particle_statistics; the existing node Identical particles and symmetrization postulate is the authored-graph match that supplies that ingredient."
+  failure_mode_if_absent: "Cannot apply Constituent-quark sum rules cleanly because the prerequisite symmetry_of_tensor_products_and_particle_statistics is missing from the learner's background."
+  evidence:
+    - type: expert_claim
+      source_ref: georgi_lie_techniques_batch_3_initial
+      note: "The batch prerequisite list explicitly names symmetry_of_tensor_products_and_particle_statistics."
+  status: asserted
+
+- from: math.lie_group
+  to: technique.quaternionic_interpretation_of_sp_2n
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: "The batch technique Quaternionic picture of Sp(2n) depends on matrix representations of Lie groups; the existing node Lie group is the authored-graph match that supplies that ingredient."
+  failure_mode_if_absent: "Cannot apply Quaternionic picture of Sp(2n) cleanly because the prerequisite matrix representations of Lie groups is missing from the learner's background."
+  evidence:
+    - type: expert_claim
+      source_ref: georgi_lie_techniques_batch_3_initial
+      note: "The batch prerequisite list explicitly names matrix representations of Lie groups."
+  status: asserted
+
+- from: math.operator_basics.matrix_representation_of_linear_map
+  to: technique.quaternionic_interpretation_of_sp_2n
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: "The batch technique Quaternionic picture of Sp(2n) depends on matrix representations of Lie groups; the existing node Matrix representation of a linear map is the authored-graph match that supplies that ingredient."
+  failure_mode_if_absent: "Cannot apply Quaternionic picture of Sp(2n) cleanly because the prerequisite matrix representations of Lie groups is missing from the learner's background."
+  evidence:
+    - type: expert_claim
+      source_ref: georgi_lie_techniques_batch_3_initial
+      note: "The batch prerequisite list explicitly names matrix representations of Lie groups."
+  status: asserted
+
+- from: sm.ssb.spontaneous_symmetry_breaking
+  to: technique.right_handed_neutrino_mass_from_126
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: "The batch technique Give the right-handed neutrino a large mass with a 126 depends on spontaneous_symmetry_breaking_via_higgs_vevs; the existing node Spontaneous symmetry breaking is the authored-graph match that supplies that ingredient."
+  failure_mode_if_absent: "Cannot apply Give the right-handed neutrino a large mass with a 126 cleanly because the prerequisite spontaneous_symmetry_breaking_via_higgs_vevs is missing from the learner's background."
+  evidence:
+    - type: expert_claim
+      source_ref: georgi_lie_techniques_batch_3_initial
+      note: "The batch prerequisite list explicitly names spontaneous_symmetry_breaking_via_higgs_vevs."
+  status: asserted
+
+- from: sm.right_handed_neutrino
+  to: technique.right_handed_neutrino_mass_from_126
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: "The batch technique Give the right-handed neutrino a large mass with a 126 depends on right-handed neutrino concept; the existing node Right-handed neutrino is the authored-graph match that supplies that ingredient."
+  failure_mode_if_absent: "Cannot apply Give the right-handed neutrino a large mass with a 126 cleanly because the prerequisite right-handed neutrino concept is missing from the learner's background."
+  evidence:
+    - type: expert_claim
+      source_ref: georgi_lie_techniques_batch_3_initial
+      note: "The technique description itself centers on giving the right-handed neutrino a large mass."
+  status: asserted
+
+- from: sm.majorana_mass
+  to: technique.right_handed_neutrino_mass_from_126
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: "The batch technique Give the right-handed neutrino a large mass with a 126 depends on Majorana mass concept; the existing node Majorana mass is the authored-graph match that supplies that ingredient."
+  failure_mode_if_absent: "Cannot apply Give the right-handed neutrino a large mass with a 126 cleanly because the prerequisite Majorana mass concept is missing from the learner's background."
+  evidence:
+    - type: expert_claim
+      source_ref: georgi_lie_techniques_batch_3_initial
+      note: "The technique description itself centers on generating a large Majorana mass with the 126."
+  status: asserted
+
+- from: math.lie_algebra
+  to: technique.roots_as_adjoint_weights
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: "The batch technique Roots as adjoint weights depends on adjoint_representation_generator_space; the existing node Lie algebra is the authored-graph match that supplies that ingredient."
+  failure_mode_if_absent: "Cannot derive or justify Roots as adjoint weights cleanly because the prerequisite adjoint_representation_generator_space is missing from the learner's background."
+  evidence:
+    - type: expert_claim
+      source_ref: georgi_lie_techniques_batch_3_initial
+      note: "The batch prerequisite list explicitly names adjoint_representation_generator_space."
+  status: asserted
+
+- from: math.lie_algebra
+  to: technique.simple_root_commutator_algebra_construction
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: "The batch technique Build the algebra from simple-root commutators depends on jacobi_identity; the existing node Lie algebra is the authored-graph match that supplies that ingredient."
+  failure_mode_if_absent: "Cannot derive or justify Build the algebra from simple-root commutators cleanly because the prerequisite jacobi_identity is missing from the learner's background."
+  evidence:
+    - type: expert_claim
+      source_ref: georgi_lie_techniques_batch_3_initial
+      note: "The batch prerequisite list explicitly names jacobi_identity."
+  status: asserted
+
+- from: qcd.color_su3
+  to: technique.sm_multiplet_bookkeeping_with_d_d_s_labels
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: "The batch technique Standard Model bookkeeping with (D,d)_s labels depends on Color SU(3); the existing node Color SU(3) is the authored-graph match that supplies that ingredient."
+  failure_mode_if_absent: "Cannot apply Standard Model bookkeeping with (D,d)_s labels cleanly because the prerequisite Color SU(3) is missing from the learner's background."
+  evidence:
+    - type: expert_claim
+      source_ref: georgi_lie_techniques_batch_3_initial
+      note: "The batch prerequisite list explicitly names Color SU(3)."
+  status: asserted
+
+- from: sm.ewbreak.electroweak_symmetry
+  to: technique.sm_multiplet_bookkeeping_with_d_d_s_labels
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: "The batch technique Standard Model bookkeeping with (D,d)_s labels depends on Electroweak tensor-operator assignment; the existing node Electroweak symmetry is the authored-graph match that supplies that ingredient."
+  failure_mode_if_absent: "Cannot apply Standard Model bookkeeping with (D,d)_s labels cleanly because the prerequisite Electroweak tensor-operator assignment is missing from the learner's background."
+  evidence:
+    - type: expert_claim
+      source_ref: georgi_lie_techniques_batch_3_initial
+      note: "The batch prerequisite list explicitly names Electroweak tensor-operator assignment."
+  status: asserted
+
+- from: sm.ewbreak.electroweak_mixing_angle
+  to: technique.sm_multiplet_bookkeeping_with_d_d_s_labels
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: "The batch technique Standard Model bookkeeping with (D,d)_s labels depends on Charge operator from electroweak generators; the existing node Electroweak mixing angle is the authored-graph match that supplies that ingredient."
+  failure_mode_if_absent: "Cannot apply Standard Model bookkeeping with (D,d)_s labels cleanly because the prerequisite Charge operator from electroweak generators is missing from the learner's background."
+  evidence:
+    - type: expert_claim
+      source_ref: georgi_lie_techniques_batch_3_initial
+      note: "The batch prerequisite list explicitly names Charge operator from electroweak generators."
+  status: asserted
+
+- from: qft.spinor_representation
+  to: technique.sixteen_tensor_sixteen_decomposition
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: "The batch technique Decompose 16 x 16 into 10 + 120 + 126 depends on SO(10) spinor representation; the existing node Spinor representation is the authored-graph match that supplies that ingredient."
+  failure_mode_if_absent: "Cannot apply Decompose 16 x 16 into 10 + 120 + 126 cleanly because the prerequisite SO(10) spinor representation is missing from the learner's background."
+  evidence:
+    - type: expert_claim
+      source_ref: georgi_lie_techniques_batch_3_initial
+      note: "The technique description itself centers on decomposing the SO(10) spinor tensor product 16 x 16."
+  status: asserted
+
+
+- from: qft.spinor_representation
+  to: technique.so10_spinor_product_for_gut_tensors
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: "The batch technique SO(10) spinor products for unified-model tensors depends on SO(10) spinors; the existing node Spinor representation is the authored-graph match that supplies that ingredient."
+  failure_mode_if_absent: "Cannot apply SO(10) spinor products for unified-model tensors cleanly because the prerequisite SO(10) spinors is missing from the learner's background."
+  evidence:
+    - type: expert_claim
+      source_ref: georgi_lie_techniques_batch_3_initial
+      note: "The batch prerequisite list explicitly names SO(10) spinors."
+  status: asserted
+
+- from: qm.angular_momentum_addition
+  to: technique.so10_spinor_product_for_gut_tensors
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: "The batch technique SO(10) spinor products for unified-model tensors depends on tensor-product decomposition; the existing node Angular momentum addition is the authored-graph match that supplies that ingredient."
+  failure_mode_if_absent: "Cannot apply SO(10) spinor products for unified-model tensors cleanly because the prerequisite tensor-product decomposition is missing from the learner's background."
+  evidence:
+    - type: expert_claim
+      source_ref: georgi_lie_techniques_batch_3_initial
+      note: "The batch prerequisite list explicitly names tensor-product decomposition."
+  status: asserted
+
+- from: qm.angular_momentum_addition
+  to: technique.sp_2n_root_construction_from_pauli_tensor_products
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: "The batch technique Sp(2n) from Pauli-tensor generators depends on tensor products of representations; the existing node Angular momentum addition is the authored-graph match that supplies that ingredient."
+  failure_mode_if_absent: "Cannot apply Sp(2n) from Pauli-tensor generators cleanly because the prerequisite tensor products of representations is missing from the learner's background."
+  evidence:
+    - type: expert_claim
+      source_ref: georgi_lie_techniques_batch_3_initial
+      note: "The batch prerequisite list explicitly names tensor products of representations."
+  status: asserted
+
+- from: qft.gamma_matrices
+  to: technique.spinor_branching_so_2n_to_su_n
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: "The batch technique Branch SO(2n) spinors into SU(n) antisymmetric tensors depends on clifford_embedding_of_su_n_in_so_2n; the existing node Gamma matrices is the authored-graph match that supplies that ingredient."
+  failure_mode_if_absent: "Cannot apply Branch SO(2n) spinors into SU(n) antisymmetric tensors cleanly because the prerequisite clifford_embedding_of_su_n_in_so_2n is missing from the learner's background."
+  evidence:
+    - type: expert_claim
+      source_ref: georgi_lie_techniques_batch_3_initial
+      note: "The batch prerequisite list explicitly names clifford_embedding_of_su_n_in_so_2n."
+  status: asserted
+
+- from: qft.spinor_representation
+  to: technique.spinor_tensor_product_decomposition_by_form_rank
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: "The batch technique Rank-by-rank spinor tensor-product decomposition depends on spinor tensor products; the existing node Spinor representation is the authored-graph match that supplies that ingredient."
+  failure_mode_if_absent: "Cannot apply Rank-by-rank spinor tensor-product decomposition cleanly because the prerequisite spinor tensor products is missing from the learner's background."
+  evidence:
+    - type: expert_claim
+      source_ref: georgi_lie_techniques_batch_3_initial
+      note: "The batch prerequisite list explicitly names spinor tensor products."
+  status: asserted
+
+- from: qm.angular_momentum_addition
+  to: technique.spinor_tensor_product_decomposition_by_form_rank
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: "The batch technique Rank-by-rank spinor tensor-product decomposition depends on spinor tensor products; the existing node Angular momentum addition is the authored-graph match that supplies that ingredient."
+  failure_mode_if_absent: "Cannot derive or justify Rank-by-rank spinor tensor-product decomposition cleanly because the prerequisite spinor tensor products is missing from the learner's background."
+  evidence:
+    - type: expert_claim
+      source_ref: georgi_lie_techniques_batch_3_initial
+      note: "The batch prerequisite list explicitly names spinor tensor products."
+  status: asserted
+
+- from: math.lie_group
+  to: technique.state_and_operator_transformation_rules
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: "The batch technique State, bra, and operator transformation rules depends on exponential_parameterization_of_lie_groups; the existing node Lie group is the authored-graph match that supplies that ingredient."
+  failure_mode_if_absent: "Cannot derive or justify State, bra, and operator transformation rules cleanly because the prerequisite exponential_parameterization_of_lie_groups is missing from the learner's background."
+  evidence:
+    - type: expert_claim
+      source_ref: georgi_lie_techniques_batch_3_initial
+      note: "The batch prerequisite list explicitly names exponential_parameterization_of_lie_groups."
+  status: asserted
+
+- from: math.lie_algebra
+  to: technique.state_and_operator_transformation_rules
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: "The batch technique State, bra, and operator transformation rules depends on lie_algebra_from_group_multiplication; the existing node Lie algebra is the authored-graph match that supplies that ingredient."
+  failure_mode_if_absent: "Cannot derive or justify State, bra, and operator transformation rules cleanly because the prerequisite lie_algebra_from_group_multiplication is missing from the learner's background."
+  evidence:
+    - type: expert_claim
+      source_ref: georgi_lie_techniques_batch_3_initial
+      note: "The batch prerequisite list explicitly names lie_algebra_from_group_multiplication."
+  status: asserted
+
+- from: math.lie_algebra
+  to: technique.su2_subalgebra_from_roots
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: "The batch technique SU(2) subalgebra from each root depends on cartan_commutator_from_root_pairs; the existing node Lie algebra is the authored-graph match that supplies that ingredient."
+  failure_mode_if_absent: "Cannot derive or justify SU(2) subalgebra from each root cleanly because the prerequisite cartan_commutator_from_root_pairs is missing from the learner's background."
+  evidence:
+    - type: expert_claim
+      source_ref: georgi_lie_techniques_batch_3_initial
+      note: "The batch prerequisite list explicitly names cartan_commutator_from_root_pairs."
+  status: asserted
+
+- from: math.lie_algebra
+  to: technique.simplicity_and_semisimplicity_analysis
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: "The batch technique Invariant-subalgebra, simple, semisimple, and U(1) analysis depends on adjoint_representation_from_structure_constants; the existing node Lie algebra is the authored-graph match that supplies that ingredient."
+  failure_mode_if_absent: "Cannot derive or justify Invariant-subalgebra, simple, semisimple, and U(1) analysis cleanly because the prerequisite adjoint_representation_from_structure_constants is missing from the learner's background."
+  evidence:
+    - type: expert_claim
+      source_ref: georgi_lie_techniques_batch_3_initial
+      note: "The batch prerequisite list explicitly names adjoint_representation_from_structure_constants."
+  status: asserted

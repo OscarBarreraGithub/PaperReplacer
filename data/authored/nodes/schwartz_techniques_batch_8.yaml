@@ -1,0 +1,386 @@
+# Hand-authored node records for the Schwartz techniques batch 8.
+
+- id: technique.toy_potential_for_localization
+  label: Solvable toy potential for graviton localization
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Analytically tractable replacement of the Randall-Sundrum graviton volcano potential by a flat region with a brane delta spike and an AdS-boundary wall, used to show how a localized graviton bound state emerges as brane tension increases.
+  status: asserted
+
+- id: technique.transformer_symbol_integration
+  label: Transformer Network for Symbol-to-Function Integration
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Sequence-to-sequence method that feeds a simplified symbol expression to a transformer and outputs a closed-form polylogarithmic function, turning symbol integration into supervised translation.
+  status: asserted
+
+- id: technique.transverse_mass_endpoint
+  label: Transverse mass endpoint for invisible-particle mass measurement
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Method that uses the bounded transverse mass of visible plus invisible decay products to infer the parent mass from the endpoint of the m_T distribution while reducing sensitivity to longitudinal boosts and recoil.
+  status: asserted
+
+- id: technique.trijet_factorization_formula
+  label: Factorization Formula for Sudakov Shoulder with Light/Heavy Hemisphere Competition
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Shoulder-region factorization method that differentiates the heavy-jet-mass spectrum near rho = 1/3 to turn light-heavy hemisphere competition into a delta-function measurement, enabling resummation before integrating back.
+  status: asserted
+
+- id: technique.turning_point_surface_constraint
+  label: Turning-point surface delta-function in the path integral
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Path-integral constraint method that inserts delta(tau_Sigma[phi]) to force configurations through the turning-point surface at tau = 0, removing the false-vacuum saddle and approximate multi-bounce contamination from the decay-rate expansion.
+  status: asserted
+
+- id: technique.twist_angle_discriminant
+  label: Twist angle as a boost-invariant discriminant
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Boost-invariant jet-substructure discriminant defined by tau = arctan(Delta phi / Delta eta), separating isotropic heavy-particle decays from beam-aligned QCD backgrounds by the orientation of the decay plane.
+  status: asserted
+
+- id: technique.twisted_bulk_mass_flavor
+  label: Twisted Bulk Mass Matrices for Flavor Generation
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Extra-dimensional flavor-construction method in which non-commuting bulk fermion mass matrices generate path-ordered zero-mode wavefunctions, producing flavor hierarchies and CKM structure geometrically without textured 5D Yukawas.
+  status: asserted
+
+- id: technique.two_dim_shape_function_basis
+  label: Two-Dimensional Non-Perturbative Shape Function Basis
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Orthonormal two-variable basis construction for the dihemisphere nonperturbative shape function F(k_1, k_2), allowing systematic hadronization corrections in double-differential event-shape factorization.
+  status: asserted
+
+- id: technique.two_loop_jet_thrust_soft_function
+  label: Two-loop soft function calculation for jet mass with a veto
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Two-loop computation of the jet-thrust soft function with an out-of-jet energy veto, isolating the complete singular structure and separating global from non-global logarithms at O(alpha_s^2).
+  status: asserted
+
+- id: technique.two_loop_multi_scale_soft_function
+  label: Analytic calculation of the first multi-scale soft function at two loops
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Analytic two-loop evaluation of the hemisphere soft function S(k_L, k_R, mu), including full opposite-hemisphere k_L/k_R dependence, to provide the first exact multi-scale soft function needed for N3LL event-shape predictions.
+  status: asserted
+
+- id: technique.two_loop_soft_extraction
+  label: Numerical extraction of two-loop soft function constant from total cross section
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Sum-rule extraction method that fixes the unknown two-loop thrust soft constant by demanding that the integrated thrust spectrum reproduce the known O(alpha_s^2) total hadronic cross section after infrared extrapolation.
+  status: asserted
+
+- id: technique.two_variable_qg_likelihood
+  label: Track Count + Girth Two-Variable Likelihood Tagger
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Quark-gluon tagging method that combines charged-track multiplicity and girth in a two-dimensional likelihood q/(q+g), capturing complementary discrete and continuous jet-shape information with minimal inputs.
+  status: asserted
+
+- id: technique.universal_soft_function_color_evolution
+  label: Universal structure of soft function color evolution
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: SCET color-evolution method that derives the off-diagonal soft anomalous dimension from RG consistency with the hard function, leaving only observable-dependent diagonal terms to compute case by case.
+  status: asserted
+
+- id: technique.universal_splitting_and_soft_current
+  label: All-orders universality of splitting functions and soft currents
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: All-orders factorization method that defines splitting functions and soft currents as gauge-invariant operator ratios, proving their process independence beyond tree level and large-N_c limits.
+  status: asserted
+
+- id: technique.uv_ir_connection_discrete_gravity
+  label: UV/IR connection in discrete gravitational dimensions
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Discrete-gravity consistency method that derives the UV/IR-linked strong-coupling scale of a latticized gravitational extra dimension, showing that the maximal cutoff is set jointly by the lattice spacing and the total size R.
+  status: asserted
+
+- id: technique.uv_ir_connection_entropy
+  label: UV/IR connection for state counting in curved space
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Curved-space state-counting method that enforces a local energy cutoff by reducing the accessible region of spacetime at fixed energy, replacing ad hoc near-horizon regulators in entropy calculations.
+  status: asserted
+
+- id: technique.vae_latent_transport_connection
+  label: VAE latent space as implicit optimal transport embedding
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Diagnostic method that compares VAE latent-space distances to Wasserstein distances between event images, using the correlation to interpret the learned representation as an implicit transport embedding.
+  status: asserted
+
+- id: technique.vf_mode_background_filtering
+  label: Very Faint Mode Background Rejection
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Chandra ACIS background-rejection method that uses Very Faint 5x5 pixel islands, after CTI correction, to veto particle events with outer-pixel charge while retaining nearly all real X-ray photons.
+  status: asserted
+
+- id: technique.w_calibration_jec
+  label: W-mass calibration for jet energy scale correction
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Event-by-event jet-energy calibration that rescales hadronic top candidates so the reconstructed W mass matches its reference value, cancelling detector and soft-QCD shifts in Monte Carlo top-mass extractions.
+  status: asserted
+
+- id: technique.w_helicity_angle_cut
+  label: W Helicity Angle Cut for Top vs QCD Discrimination
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Top-tagger refinement that cuts on the W helicity angle in the W rest frame, exploiting the flat top-decay distribution versus the soft-singular QCD fake distribution.
+  status: asserted
+
+- id: technique.w_mass_calibration_soft_drop
+  label: W-mass calibration combined with soft-drop grooming
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Two-stage preprocessing method that first rescales top candidates by m_W / m_2j and then applies soft-drop grooming, sharply reducing Monte Carlo tune sensitivity in top-mass fits.
+  status: asserted
+
+- id: technique.w_mass_window_in_subjet_pairs
+  label: W-mass Reconstruction from Subjet Pairs
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Resonance-aware top-tagging method that requires a subjet pair inside a fat jet to reconstruct the W mass simultaneously with a total jet mass near m_t, rejecting QCD three-subjet lookalikes.
+  status: asserted
+
+- id: technique.warped_lattice_gravity
+  label: Lattice gravity in warped (AdS) spacetime
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Warped-geometry discretization method that latticizes AdS5 in the geodesic coordinate so the warp factor localizes lattice modes and reproduces geometric KK spacing without the flat-space nonlocal mixing pathology.
+  status: asserted
+
+- id: technique.warped_lattice_strong_coupling
+  label: IR-independent strong coupling scale for warped lattice gravity
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Consistency analysis showing that warped lattice gravity avoids the flat-space UV/IR strong-coupling problem because the warp factor localizes mode mixing, leaving the cutoff independent of the total IR size.
+  status: asserted
+
+- id: technique.wess_zumino_witten_5d_decay
+  label: 5D Wess-Zumino-Witten term for anomalous meson decays
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Holographic decay-amplitude method that evaluates anomalous P -> gamma gamma processes from the 5D Chern-Simons plus IR-boundary Wess-Zumino-Witten terms, reducing the answer to boundary values of bulk wavefunctions.
+  status: asserted
+
+- id: technique.zero_bin_as_wilson_line_vev
+  label: Zero-bin subtraction as vacuum matrix elements of Wilson lines
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: All-orders zero-bin definition that divides collinear matrix elements by a vacuum Wilson-line expectation value, replacing integral-by-integral subtractions with a gauge-invariant soft-insensitive ratio.
+  status: asserted
+
+- id: technique.zero_mode_coupling_extraction
+  label: Isolating the Zero-Mode Coupling from the KK Tower
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Extra-dimensional renormalization method that isolates the running of the physical zero-mode gauge coupling from the tree-level logarithmic running of the full KK tower, preventing spurious claims of power-law running.
+  status: asserted
+
+- id: technique.zombie_lemma_ir_infection
+  label: Zombie lemma (IR-insensitive infection)
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Diagrammatic IR-proof technique stating that any line attached to an IR-insensitive subdiagram inherits IR insensitivity, allowing iterative growth of the hard core of a reduced diagram.
+  status: asserted
+
+- id: technique.borel_action_correspondence
+  label: Action-Borel Transform Correspondence
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Resurgence method that identifies the Borel variable with the action, turns saddle points of S(z) into Borel-plane branch points, and makes the Borel transform a multivalued inverse of the action in one dimension.
+  status: asserted
+
+- id: technique.gravitational_goldstone_equivalence
+  label: Gravitational Goldstone Boson Equivalence (Stueckelberg for Gravity)
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Stueckelberg restoration method for massive gravity that introduces Goldstone link fields to recover diffeomorphism invariance and expose the high-energy longitudinal dynamics and strong-coupling scale.
+  status: asserted
+
+- id: technique.left_shoulder_factorization
+  label: Left-shoulder factorization for heavy jet mass
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Heavy-jet-mass shoulder factorization method that isolates the rho < 1/3 side into narrow-jet hemisphere contributions with a dedicated soft function, enabling NLL resummation without non-global logarithms.
+  status: asserted
+
+- id: technique.monodromy_group_for_polylogs
+  label: Monodromy group action on polylogarithms
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Algebraic discontinuity method that acts with monodromy matrices on variation matrices of polylogarithms to compute sequential discontinuities systematically.
+  status: asserted
+
+- id: technique.nn_ft_correspondence
+  label: Neural Network / Field Theory Correspondence
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Correspondence method that maps neural-network ensembles to field theories, with the infinite-width limit giving a Gaussian free theory and finite-width corrections generating interactions in a path-integral language.
+  status: asserted
+
+- id: technique.scet_thrust_factorization
+  label: SCET factorization theorem for thrust
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: SCET factorization method that writes the thrust distribution as a product and convolution of single-scale hard, jet, and soft functions, enabling high-order logarithmic resummation.
+  status: asserted
+
+- id: technique.sudakov_shoulder_resummation
+  label: Sudakov shoulder logarithm resummation
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Resummation method for the Sudakov shoulder at intermediate event-shape values, factorizing narrow-jet radiation near the symmetric trijet boundary and evolving the result with RG to sum logarithms of 1/3 - rho.
+  status: asserted

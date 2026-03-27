@@ -1,0 +1,1056 @@
+- from: technique.global_ads_slicing_and_patch_matching
+  to: technique.kklt_to_rs_mismatched_brane_dictionary
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The dictionary works by reexpressing a warped throat in the mismatched-brane language developed by global AdS slicing and patch matching.
+  failure_mode_if_absent: Without that slicing-and-matching framework, the KKLT throat cannot be translated into a controlled 5D UV/IR brane picture.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Relation chosen from the orphan technique summaries and nearby node summaries.
+  status: asserted
+- from: technique.doubly_averaged_kozai_hamiltonian
+  to: technique.kl_as_quasi_switched_off_radiation
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The switched-off-radiation approximation assumes secular Kozai-Lidov cycling is already encoded in the doubly averaged KL Hamiltonian.
+  failure_mode_if_absent: Without the secular KL Hamiltonian, the approximation has no controlled description of when the binary reaches its high-eccentricity GW-loss phases.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Relation chosen from the orphan technique summaries and nearby node summaries.
+  status: asserted
+- from: technique.doubly_averaged_kozai_hamiltonian
+  to: technique.kl_eccentricity_phase_drift_forecast
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Forecasting KL-induced phase drift presumes the secular eccentricity oscillations have already been organized in the doubly averaged KL framework.
+  failure_mode_if_absent: Without the secular KL description, there is no reliable source for the slow eccentricity evolution that drives the phase drift.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Relation chosen from the orphan technique summaries and nearby node summaries.
+  status: asserted
+- from: technique.cooling_timescale_comparison
+  to: technique.knudsen_suppressed_heat_transport
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Knudsen suppression is a refinement of transport-timescale reasoning, so the baseline cooling-timescale comparison is needed before the suppressed-conductivity regime can be identified.
+  failure_mode_if_absent: Without the timescale comparison, the method cannot show when stronger self-interactions stop accelerating core evolution.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Relation chosen from the orphan technique summaries and nearby node summaries.
+  status: asserted
+- from: technique.event_isotropy_via_optimal_transport
+  to: technique.lambda_max_isotropy_plane
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The isotropy-plane method explicitly reuses event isotropy as one of its two coordinates, with lambda_max supplying the complementary axis.
+  failure_mode_if_absent: Without a concrete isotropy construction, the joint isotropy-lambda_max plane loses half of the information it is meant to combine.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Relation chosen from the orphan technique summaries and nearby node summaries.
+  status: asserted
+- from: technique.scet_thrust_factorization
+  to: technique.laplace_transform_rge_solution
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The Laplace-space solution is tailored to the non-local jet and soft RG equations that arise once SCET event-shape factorization has been set up.
+  failure_mode_if_absent: Without the underlying SCET factorization problem, there is no non-local RG equation for the Laplace transform trick to solve.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Relation chosen from the orphan technique summaries and nearby node summaries.
+  status: asserted
+- from: technique.compactification_stability_test_for_wgc
+  to: technique.lattice_wgc_compactification_test
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The lattice-WGC test promotes the same compactification-consistency idea into a sharper criterion for acceptable WGC formulations.
+  failure_mode_if_absent: Without the compactification consistency test, the move to a lattice version of the WGC lacks its motivating stress test.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Relation chosen from the orphan technique summaries and nearby node summaries.
+  status: asserted
+- from: qft.weyl_spinor
+  to: technique.left_handed_conjugate_representation_rewrite
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Rewriting right-handed fields as left-handed antifields is a two-component Weyl-spinor maneuver, so the Weyl formalism is direct prerequisite knowledge.
+  failure_mode_if_absent: Without Weyl-spinor language, the chirality flip and conjugate-representation step become opaque and error-prone.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Relation chosen from the orphan technique summaries and nearby node summaries.
+  status: asserted
+- from: sm.flavor_mixing
+  to: technique.lepton_flavor_alignment_without_right_handed_neutrinos
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The alignment argument is precisely about when lepton flavor mixing does or does not appear, so the general flavor-mixing framework must already be in place.
+  failure_mode_if_absent: Without flavor-mixing background, diagonalizing the charged-lepton Yukawas does not explain why the minimal model stays generation diagonal.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Relation chosen from the orphan technique summaries and nearby node summaries.
+  status: asserted
+- from: technique.precision_event_generator_stack
+  to: technique.lhc_search_recasting_pipeline
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Full recasting relies on a validated event-generator chain before Delphes and CheckMATE can be used to derive exclusions.
+  failure_mode_if_absent: Without the event-generator stack, the recasting pipeline has no trustworthy simulated events to pass through detector and analysis emulation.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Relation chosen from the orphan technique summaries and nearby node summaries.
+  status: asserted
+- from: technique.partially_interacting_subcomponent_dm
+  to: technique.light_catalyst_tight_coupling
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The light-catalyst construction is a concrete realization of partially interacting dark matter, where a small charged subcomponent controls the whole plasma.
+  failure_mode_if_absent: Without the partially interacting subcomponent picture, the catalytic role of the light C population has no consistent dark-sector interpretation.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Relation chosen from the orphan technique summaries and nearby node summaries.
+  status: asserted
+- from: technique.generative_network_precision_control
+  to: technique.likelihood_ratio_from_unsupervised_models
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The unsupervised likelihood-ratio method assumes one can train and calibrate separate probabilistic generative models with controlled fidelity.
+  failure_mode_if_absent: Without reliable generative-model control, the learned likelihood ratio is not trustworthy enough to use as a discriminant.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Relation chosen from the orphan technique summaries and nearby node summaries.
+  status: asserted
+- from: technique.coupled_isothermal_poisson_jeans_solver
+  to: technique.line_of_sight_projection_with_detection_function
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The projection step starts from a predicted three-dimensional tracer density, which the coupled Poisson-Jeans solver is designed to provide.
+  failure_mode_if_absent: Without a modeled 3D density profile, the line-of-sight and detection-function projection has nothing physical to project.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Relation chosen from the orphan technique summaries and nearby node summaries.
+  status: asserted
+- from: technique.subjet_level_pileup_rescaling
+  to: technique.linear_cleansing_gamma0_fixed
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Linear cleansing is a simplified fixed-gamma version of charged-to-neutral subjet rescaling, so the general cleansing setup is its natural prerequisite.
+  failure_mode_if_absent: Without the underlying rescaling picture, fixing gamma0 to a mean value looks ad hoc rather than a controlled pileup-mitigation approximation.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Relation chosen from the orphan technique summaries and nearby node summaries.
+  status: asserted
+- from: technique.dynkin_diagram_encoding
+  to: technique.linear_dependence_certificate_for_forbidden_diagrams
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The linear-dependence certificate is applied directly to proposed Dynkin diagrams, so the diagram-to-root-data encoding is prerequisite structure.
+  failure_mode_if_absent: Without Dynkin-diagram encoding, the method cannot turn a graph into the root relations whose linear dependence rules out the diagram.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Relation chosen from the orphan technique summaries and nearby node summaries.
+  status: asserted
+- from: technique.scalar_to_graviton_propagator_reduction
+  to: technique.linear_isosurface_horizon_estimate
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The isosurface estimate uses linearized brane-sourced gravity data, and the scalar-to-graviton reduction is the standard way to obtain that data tractably.
+  failure_mode_if_absent: Without the reduced linear graviton problem, there is no controlled perturbation whose isosurface can stand in for the horizon.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Relation chosen from the orphan technique summaries and nearby node summaries.
+  status: asserted
+- from: qft.poincare_group_representation
+  to: technique.little_group_classification_of_massless_states
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Classifying massless states by their little group is a direct refinement of the broader Poincare-representation framework.
+  failure_mode_if_absent: Without representation theory for the Poincare group, the reduced little-group classification has no clear parent structure.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Relation chosen from the orphan technique summaries and nearby node summaries.
+  status: asserted
+- from: technique.multichannel_resolution_upsampling
+  to: technique.llp_weak_supervision_batched
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Batched LLP training targets high-dimensional detector inputs, and the multiresolution upsampling trick provides a coherent tensor representation for those inputs.
+  failure_mode_if_absent: Without a unified mixed-resolution input representation, the weak-supervision scheme is much harder to apply to realistic detector data.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Relation chosen from the orphan technique summaries and nearby node summaries.
+  status: asserted
+- from: technique.chiral_fermion_representation_assignment
+  to: technique.local_charge_selection_rules
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Local charge selection rules act on the assigned chiral matter content, so the representation assignment is needed before the texture counting can begin.
+  failure_mode_if_absent: Without specified chiral representations, the local charge bookkeeping cannot say which Yukawa entries vanish or appear.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Relation chosen from the orphan technique summaries and nearby node summaries.
+  status: asserted
+- from: qft.wilsonian_renormalization_group
+  to: technique.local_energy_cutoff_in_curved_space
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The curved-space prescription is a geometry-aware version of ordinary EFT cutoff reasoning, with the Wilsonian cutoff promoted to a locally measured energy bound.
+  failure_mode_if_absent: Without standard cutoff logic, the redshifted local-energy bound has no clear interpretation as an EFT regulator.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Relation chosen from the orphan technique summaries and nearby node summaries.
+  status: asserted
+- from: technique.weak_field_supergravity_action
+  to: technique.local_supersymmetry_covariantization
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Covariantizing local supersymmetry presumes the weak-field supergravity variables and transformation structure are already on the table.
+  failure_mode_if_absent: Without the weak-field supergravity setup, there is no concrete field content in which to promote global SUSY to spacetime-dependent form.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Relation chosen from the orphan technique summaries and nearby node summaries.
+  status: asserted
+- from: technique.gas_hydrostatics_dark_disk_constraint
+  to: technique.local_surface_density_fraction_bound
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The local surface-density bound is another fast dark-disk consistency check built on the same near-plane mass-budget logic as gas-hydrostatics constraints.
+  failure_mode_if_absent: Without a calibrated local surface-density constraint framework, the interacting-fraction estimate near the Galactic plane lacks observational anchoring.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Relation chosen from the orphan technique summaries and nearby node summaries.
+  status: asserted
+- from: technique.kahler_metric_sigma_model_on_moduli_space
+  to: technique.loop_induced_moduli_space_metric
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: A loop-induced moduli metric is still a moduli-space sigma-model metric, so the general Kahler metric framework is the natural starting point.
+  failure_mode_if_absent: Without the underlying moduli-space metric language, the loop computation cannot be interpreted as a field-space distance effect.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Relation chosen from the orphan technique summaries and nearby node summaries.
+  status: asserted
+- from: technique.loop_momentum_shift_completion_of_square
+  to: technique.loop_integral_parameterization_and_wick_rotation
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The full parameterization-and-Wick-rotation workflow explicitly includes the momentum shift and quadratic completion step before the Euclidean integral is evaluated.
+  failure_mode_if_absent: Without the shift-to-symmetric-quadratic-form step, the later Wick rotation and gamma-function evaluation do not go through cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Relation chosen from the orphan technique summaries and nearby node summaries.
+  status: asserted
+- from: qft.loop_momentum_integration_structure
+  to: technique.loop_momentum_shift_completion_of_square
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Completing the square is a reorganization of the loop-momentum integral, so the structure of loop-momentum integration is direct prerequisite knowledge.
+  failure_mode_if_absent: Without the basic loop-integration setup, the momentum shift has no well-defined denominator structure to simplify.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Relation chosen from the orphan technique summaries and nearby node summaries.
+  status: asserted
+- from: qft.gauge_fixing
+  to: technique.lorentz_violating_photon_mass
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The Lorentz-violating photon-mass construction reorganizes gauge-field degrees of freedom, so it relies on standard control over gauge fixing and physical modes.
+  failure_mode_if_absent: Without gauge-fixing background, it is difficult to see how A0 stays massless while only propagating spatial modes become massive.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Relation chosen from the orphan technique summaries and nearby node summaries.
+  status: asserted
+- from: technique.dark_disk_seeded_tidal_dwarf_formation
+  to: technique.low_dispersion_dark_capture_bias
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The low-dispersion capture-bias argument is a mechanism inside the broader dark-disk tidal-dwarf formation picture.
+  failure_mode_if_absent: Without the tidal-dwarf context, the preferential survival of the dark component after stripping is not tied to any remnant-formation scenario.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Relation chosen from the orphan technique summaries and nearby node summaries.
+  status: asserted
+- from: technique.propagator_pole_method_for_energy_shifts
+  to: technique.low_energy_bound_state_self_energy_sum
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The low-energy self-energy sum is a concrete way to compute the bound-state radiative shift whose extraction is framed by the propagator-pole method.
+  failure_mode_if_absent: Without the pole-shift viewpoint, the summed low-energy contribution is not clearly connected to the observable bound-state energy correction.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Relation chosen from the orphan technique summaries and nearby node summaries.
+  status: asserted
+- from: technique.peak_frequency_reparameterization_of_eccentric_inspiral
+  to: technique.low_frequency_eccentricity_and_precession_lever_arm
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The low-frequency lever arm is useful because earlier inspiral frequencies preserve eccentricity information, which is exactly the perspective of peak-frequency reparameterization.
+  failure_mode_if_absent: Without a way to map the eccentric inspiral into its low-frequency observables, the claimed lever arm across bands is not quantitative.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Relation chosen from the orphan technique summaries and nearby node summaries.
+  status: asserted
+- from: technique.dynkin_diagram_encoding
+  to: technique.low_rank_dynkin_coincidence_check
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Low-rank coincidence checks compare Dynkin data against known exceptional isomorphisms, so the diagram encoding is the prerequisite input.
+  failure_mode_if_absent: Without a canonical Dynkin encoding, there is no precise object to compare against the catalog of low-rank coincidences.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Relation chosen from the orphan technique summaries and nearby node summaries.
+  status: asserted
+- from: technique.qnm_from_bound_state_continuation
+  to: technique.lower_dimensional_braneworld_qnm_probe
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The lower-dimensional braneworld proxy is built to study whether quasinormal spectra reveal a brane, so a standard QNM extraction method is prerequisite.
+  failure_mode_if_absent: Without a controlled QNM computation, the lower-dimensional proxy cannot be used to test whether brane signatures survive in the spectrum.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Relation chosen from the orphan technique summaries and nearby node summaries.
+  status: asserted
+- from: technique.precision_event_generator_stack
+  to: technique.madgraph_color_decomposition_export
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Exporting color-decomposed hard functions starts from a functioning matrix-element generation stack, then adds the extra color-matrix output needed for SCET.
+  failure_mode_if_absent: Without a stable event-generator workflow, there is no trustworthy MadGraph output to augment with color information.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Relation chosen from the orphan technique summaries and nearby node summaries.
+  status: asserted
+- from: technique.local_surface_density_fraction_bound
+  to: technique.magnetic_cosmic_ray_pressure_bracketing
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The magnetic and cosmic-ray bracketing refines the same local dark-disk bound by varying the nonthermal pressure assumptions behind it.
+  failure_mode_if_absent: Without the base local surface-density bound, there is no reference constraint whose sensitivity to nonthermal support can be bracketed.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Relation chosen from the orphan technique summaries and nearby node summaries.
+  status: asserted
+- from: technique.fake_photon_opening_angle_estimate
+  to: technique.magnetic_deflection_and_opening_angle_design
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The detector-design method explicitly uses boosted opening-angle estimates to decide how much magnetic deflection and aperture are needed.
+  failure_mode_if_absent: Without opening-angle estimates, the shielding and acceptance design cannot be matched to the collimation of the signal.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Relation chosen from the orphan technique summaries and nearby node summaries.
+  status: asserted
+- from: technique.effective_cone_holomorphic_curve_translation
+  to: technique.magnetic_infinity_cone_duality
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Identifying the magnetic infinity cone through dual-cone geometry depends on translating charge-lattice data into the underlying holomorphic-curve and cone language.
+  failure_mode_if_absent: Without the cone-to-geometry translation, the proposed magnetic dual cone has no concrete geometric realization to work with.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Relation chosen from the orphan technique summaries and nearby node summaries.
+  status: asserted
+- from: technique.ch5_majorana_reality_condition
+  to: technique.majorana_fierz_algebra
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Majorana-Fierz manipulations presuppose the Majorana reality condition that identifies the allowed bilinears in the first place.
+  failure_mode_if_absent: Without the Majorana reality condition, the Fierz identities used in the algebra are not applied to the correct spinor class.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Relation chosen from the orphan technique summaries and nearby node summaries.
+  status: asserted
+- from: technique.ch5_majorana_reality_condition
+  to: technique.majorana_supercharge_packaging
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Packaging Weyl supercharges into four-component Majorana generators requires knowing the Majorana reality condition those generators satisfy.
+  failure_mode_if_absent: Without the Majorana condition, the covariant four-component repackaging of the supercharges is ill-defined.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Relation chosen from the orphan technique summaries and nearby node summaries.
+  status: asserted
+- from: qft.mandelstam_variables
+  to: technique.mandelstam_variable_kinematics
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The technique is precisely the practical use of Mandelstam variables to organize 2-to-2 kinematics and crossing.
+  failure_mode_if_absent: Without the Mandelstam-variable framework, the kinematic rewrite into s, t, and u cannot even be stated.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Relation chosen from the orphan technique summaries and nearby node summaries.
+  status: asserted
+- from: technique.cluster_decomposition_derivation_of_theta_weighting
+  to: technique.many_body_interactions_from_cluster_consistency
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Both methods elevate cluster decomposition to a hard consistency condition, and the many-body argument applies that principle to interaction terms.
+  failure_mode_if_absent: Without cluster decomposition as a guiding consistency rule, there is no reason to infer irreducible many-body terms from lower-body interactions.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Relation chosen from the orphan technique summaries and nearby node summaries.
+  status: asserted
+- from: technique.gauss_law_commutator_test_for_islands
+  to: technique.massive_graviton_consistency_criterion
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The massive-graviton criterion is motivated by the same Gauss-law obstruction that the commutator test uses to diagnose inconsistent island pictures.
+  failure_mode_if_absent: Without the Gauss-law diagnostic, the claim that a graviton mass is the decisive consistency criterion for islands is unmotivated.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Relation chosen from the orphan technique summaries and nearby node summaries.
+  status: asserted
+- from: technique.ch5_rest_frame_representation_matching
+  to: technique.massive_supermultiplet_construction
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Massive supermultiplets are built in the rest frame, so rest-frame representation matching is a direct prerequisite to the ladder construction.
+  failure_mode_if_absent: Without the rest-frame representation setup, the spin-addition and supercharge action on massive states cannot be organized cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Relation chosen from the orphan technique summaries and nearby node summaries.
+  status: asserted
+- from: technique.ch5_vector_polarization_sum_construction
+  to: technique.massive_vector_polarization_projector
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The massive-vector projector is the covariant polarization-sum formula specialized to on-shell massive vector bosons.
+  failure_mode_if_absent: Without the polarization-sum construction, replacing explicit polarizations by the projector looks like an unexplained identity.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Relation chosen from the orphan technique summaries and nearby node summaries.
+  status: asserted
+- from: technique.little_group_classification_of_massless_states
+  to: technique.massless_supermultiplet_construction
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Massless supermultiplets are assembled by acting with supercharges on little-group representations, so the massless little-group classification is foundational.
+  failure_mode_if_absent: Without the little-group classification, the helicity content of the massless multiplet cannot be organized.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Relation chosen from the orphan technique summaries and nearby node summaries.
+  status: asserted
+- from: technique.kl_as_quasi_switched_off_radiation
+  to: technique.matched_merger_regime_asymptotics
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The matched-regime treatment needs a concrete analytic approximation for the KL-boosted merger channel, which the switched-off-radiation method supplies.
+  failure_mode_if_absent: Without that KL-channel approximation, the regime matching has no controlled expression for one of its central asymptotic branches.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Relation chosen from the orphan technique summaries and nearby node summaries.
+  status: asserted
+- from: math.lie_group
+  to: technique.matrix_exponential_calculus
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Noncommuting exponential calculus is the local machinery for manipulating Lie-group elements near the identity.
+  failure_mode_if_absent: Without Lie-group structure, products of matrix exponentials have no natural algebraic meaning to expand and control.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Relation chosen from the orphan technique summaries and nearby node summaries.
+  status: asserted
+- from: technique.young_tableaux_for_su_n_irreps
+  to: technique.matter_unification_into_su5_five_and_ten
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Fitting one generation into the 5-bar and 10 depends on knowing how SU(N) irreps are built and recognized from tableaux.
+  failure_mode_if_absent: Without SU(N) irrep bookkeeping, the antisymmetric-tensor and conjugate-representation assignments inside SU(5) are not transparent.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Relation chosen from the orphan technique summaries and nearby node summaries.
+  status: asserted
+- from: sm.ccwz_method
+  to: technique.maurer_cartan_covariant_building_blocks
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Maurer-Cartan building blocks are the operational heart of the CCWZ method, decomposing y^-1 d_mu y into broken and unbroken pieces.
+  failure_mode_if_absent: Without CCWZ structure, the Maurer-Cartan decomposition is not connected to the EFT of Goldstone fields.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Relation chosen from the orphan technique summaries and nearby node summaries.
+  status: asserted
+- from: technique.weyl_dimension_counting_for_towers
+  to: technique.maximal_divergence_tower_selection
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: To isolate the asymptotically dominant tower, one first needs a systematic way to count and compare candidate towers.
+  failure_mode_if_absent: Without tower counting, the choice of which family diverges fastest is arbitrary rather than controlled.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Relation chosen from the orphan technique summaries and nearby node summaries.
+  status: asserted
+- from: technique.likelihood_ratio_from_unsupervised_models
+  to: technique.mc_reweighting_via_probability_ratio
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Learned probability-ratio reweighting directly reuses the same likelihood-ratio machinery, but now to correct a Monte Carlo sample rather than classify events.
+  failure_mode_if_absent: Without a trustworthy learned probability ratio, the reweighting prescription has no stable weight function to apply.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Relation chosen from the orphan technique summaries and nearby node summaries.
+  status: asserted
+- from: technique.oraifeartaigh_supersymmetry_breaking
+  to: technique.mediator_gauge_mediation_without_singlet
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Mediator gauge mediation starts from a hidden sector that already breaks supersymmetry, then changes how that breaking is communicated.
+  failure_mode_if_absent: Without a working SUSY-breaking sector, there is no F-term source for the mediator mechanism to transmit.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Relation chosen from the orphan technique summaries and nearby node summaries.
+  status: asserted
+- from: qcd.mellin_moment
+  to: technique.mellin_moment_sum_rules
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Mellin-moment sum rules are the systematic use of Mellin moments to convert convolution and OPE information into algebraic relations.
+  failure_mode_if_absent: Without the Mellin-moment framework, the moment-space sum-rule construction cannot be formulated.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Relation chosen from the orphan technique summaries and nearby node summaries.
+  status: asserted
+- from: technique.multichannel_resolution_upsampling
+  to: technique.merge_layer_feature_probing
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Merge-layer probing assumes the network already processes a coherent mixed-detector input representation, which the upsampling trick supplies.
+  failure_mode_if_absent: Without a unified multiresolution input format, probing what a merge layer adds to the learned representation is poorly defined.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Relation chosen from the orphan technique summaries and nearby node summaries.
+  status: asserted
+- from: technique.fragmentation_insensitive_polarization_ratio
+  to: technique.meson_baryon_control_sample_cancellation
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The meson-baryon control strategy is built to cancel fragmentation and detector effects in exactly the polarization ratios that this earlier method isolates.
+  failure_mode_if_absent: Without a fragmentation-robust polarization observable, comparing baryon and meson samples does not target the right systematic cancellations.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Relation chosen from the orphan technique summaries and nearby node summaries.
+  status: asserted
+- from: qft.microcausality
+  to: technique.microcausality_via_spacelike_commutators
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The spacelike-commutator test is the standard operational check of the general microcausality principle.
+  failure_mode_if_absent: Without the underlying microcausality requirement, vanishing spacelike commutators are just an unmotivated algebraic condition.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Relation chosen from the orphan technique summaries and nearby node summaries.
+  status: asserted
+- from: technique.brane_limit_matching_for_sw_curves
+  to: technique.middle_brane_removal_higgs_constraint
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Removing the middle brane to constrain an SW-curve ansatz presumes one already knows how the brane limit matches onto the curve data.
+  failure_mode_if_absent: Without brane-limit matching, the middle-brane removal condition cannot be translated into a useful constraint on the curve.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Relation chosen from the orphan technique summaries and nearby node summaries.
+  status: asserted
+- from: eft.operator_expansion
+  to: technique.minimal_top_partner_signature_lagrangians
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The minimal-signature Lagrangian approach is an EFT-style truncation to just the interactions needed for the ttbar plus MET signature.
+  failure_mode_if_absent: Without operator-expansion logic, the claim that a small interaction set captures the signature cannot be justified.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Relation chosen from the orphan technique summaries and nearby node summaries.
+  status: asserted
+- from: technique.exothermic_dark_disk_scattering
+  to: technique.minimum_velocity_mapping_exothermic_recoils
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The v_min mapping is the kinematic tool that makes exothermic down-scattering phenomenology interpretable across detectors.
+  failure_mode_if_absent: Without exothermic-scattering kinematics, the shifted recoil-energy mapping and target dependence have no physical basis.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Relation chosen from the orphan technique summaries and nearby node summaries.
+  status: asserted
+- from: technique.brane_limit_matching_for_sw_curves
+  to: technique.modular_form_upgrade_for_conformal_cases
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Upgrading the conformal SW curve with modular forms still presumes one knows how the brane-derived curve data are matched in the first place.
+  failure_mode_if_absent: Without the base curve-matching framework, the modular replacement of scale dependence has no concrete object to modify.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Relation chosen from the orphan technique summaries and nearby node summaries.
+  status: asserted
+- from: technique.worldsheet_supersymmetry_transformations
+  to: technique.modular_invariance_with_rotation_potentials
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Introducing chemical potentials into a supersymmetric worldsheet partition function requires control over the worldsheet supersymmetry structure being twisted.
+  failure_mode_if_absent: Without the worldsheet supersymmetry setup, the modified partition function with charge and rotation potentials cannot be handled consistently.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Relation chosen from the orphan technique summaries and nearby node summaries.
+  status: asserted
+- from: technique.supergravity_scalar_potential_and_auxiliary_elimination
+  to: technique.modulus_gravitino_mass_linkage
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Linking moduli masses to the gravitino scale is a direct consequence of supergravity potential minimization and auxiliary-field structure.
+  failure_mode_if_absent: Without the supergravity scalar-potential framework, the modulus-gravitino mass relation is just an unsupported scaling claim.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Relation chosen from the orphan technique summaries and nearby node summaries.
+  status: asserted
+- from: eft.operator_expansion
+  to: technique.momentum_flow_proof_of_ope
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The momentum-flow proof explains when a product of operators can be replaced by a local operator expansion, so the operator-expansion concept is prerequisite.
+  failure_mode_if_absent: Without the operator-expansion target structure, the hard-momentum analysis has no theorem to prove.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Relation chosen from the orphan technique summaries and nearby node summaries.
+  status: asserted
+- from: technique.global_overlay_of_direct_precision_and_lfv_constraints
+  to: technique.monte_carlo_tuning_contours_for_flavor_bounds
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The tuning-contour scan is the Monte Carlo version of combining direct, precision, and LFV constraints in a common SUSY parameter space.
+  failure_mode_if_absent: Without the combined-constraint viewpoint, the survival-fraction contours do not have a coherent observable basis.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Relation chosen from the orphan technique summaries and nearby node summaries.
+  status: asserted
+- from: technique.one_loop_rge_higgs_constraint_propagation
+  to: technique.mssm_higgs_mass_contour_inference
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Inferring stop-parameter contours from the Higgs mass relies on propagating Higgs constraints through the MSSM parameter space.
+  failure_mode_if_absent: Without Higgs-constraint propagation, the measured Higgs mass cannot be turned into viable stop-mass and stop-mixing contours.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Relation chosen from the orphan technique summaries and nearby node summaries.
+  status: asserted
+- from: technique.archived_lisa_search_with_ground_based_priors
+  to: technique.multiband_inspiral_timing_crosscheck
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Both methods hinge on cross-band timing information, and the archived-LISA strategy supplies the same logic of connecting space- and ground-based observations.
+  failure_mode_if_absent: Without multiband timing priors, the claimed advance merger-time prediction and later cross-check lose their observational footing.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Relation chosen from the orphan technique summaries and nearby node summaries.
+  status: asserted
+- from: technique.pumml_cnn_pileup_subtraction
+  to: technique.multichannel_resolution_upsampling
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Multiresolution upsampling generalizes the same detector-image setting in which PUMML already mixes heterogeneous detector channels.
+  failure_mode_if_absent: Without the detector-image multichannel context, conserving weights while upsampling coarse channels into fine pixels is unmotivated.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Relation chosen from the orphan technique summaries and nearby node summaries.
+  status: asserted
+- from: technique.lambda_max_isotropy_plane
+  to: technique.multiprong_plus_soft_sphere_estimator
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The multiprong-plus-soft-sphere estimator is explicitly defined by where events fall in the isotropy-lambda_max plane.
+  failure_mode_if_absent: Without that two-observable plane, the reduced hard-prong plus soft-sphere description has no target geometry in which to be interpreted.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Relation chosen from the orphan technique summaries and nearby node summaries.
+  status: asserted
+- from: technique.linear_cleansing_gamma0_fixed
+  to: technique.multivariate_boosted_w_tagging
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Robust boosted-W tagging at a hadron collider depends on pileup-mitigated substructure inputs, which the linear cleansing prescription provides.
+  failure_mode_if_absent: Without a controlled pileup-cleaning step, the grooming and substructure variables in the tagger are much less stable.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Relation chosen from the orphan technique summaries and nearby node summaries.
+  status: asserted
+- from: technique.ll_vs_nll_pdf_power_counting
+  to: technique.muon_collider_as_gauge_boson_collider
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Treating a muon collider as a gauge-boson collider depends on the same electroweak-PDF logic that distinguishes when vector-boson-fusion intuition is appropriate.
+  failure_mode_if_absent: Without electroweak PDF power counting, the reorganization from incoming muons to emitted gauge bosons is not quantitatively controlled.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Relation chosen from the orphan technique summaries and nearby node summaries.
+  status: asserted
+- from: technique.multichannel_resolution_upsampling
+  to: technique.mutual_information_neuron_probe
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Mutual-information probing presumes a trained network on coherent mixed-resolution detector inputs, which the upsampling trick helps construct.
+  failure_mode_if_absent: Without a usable multiresolution input representation, the hidden neurons being probed are not tied to a stable detector-level model.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Relation chosen from the orphan technique summaries and nearby node summaries.
+  status: asserted
+- from: technique.massless_supermultiplet_construction
+  to: technique.n2_prepotential_constraint
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The N=2 prepotential constraint applies to low-energy massless N=2 multiplets, so building those multiplets is prerequisite to constraining their effective action.
+  failure_mode_if_absent: Without the massless multiplet structure, the holomorphic prepotential has no clearly identified fields and symmetries to govern.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Relation chosen from the orphan technique summaries and nearby node summaries.
+  status: asserted
+- from: technique.low_dispersion_dark_capture_bias
+  to: technique.n_body_patch_binding_energy_analysis
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The N-body patch study numerically follows the same dark-over-baryon retention bias that the low-dispersion capture argument identifies analytically.
+  failure_mode_if_absent: Without the capture-bias mechanism, the simulation has no physical reason to expect dark-dominated remnants after stripping and evaporation.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Relation chosen from the orphan technique summaries and nearby node summaries.
+  status: asserted
+- from: technique.kklt_to_rs_mismatched_brane_dictionary
+  to: technique.mismatched_brane_hyperbolic_inflation_eft
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The hyperbolic-inflation EFT is an application of the same mismatched-brane reinterpretation, now pushed down to a four-dimensional effective theory.
+  failure_mode_if_absent: Without the KKLT-to-RS dictionary, the later EFT loses the geometric brane-language that identifies its radion-inflaton structure.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Relation chosen from the orphan technique summaries and nearby node summaries.
+  status: asserted
+- from: technique.lattice_wgc_compactification_test
+  to: technique.lattice_wgc_cutoff_argument
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The cutoff argument uses the lattice version of the WGC whose motivation in this part of the graph comes from compactification consistency.
+  failure_mode_if_absent: Without the compactification test, the jump from ordinary WGC reasoning to a full lattice statement is much less justified.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Relation chosen from the orphan technique summaries and nearby node summaries.
+  status: asserted
+- from: technique.line_of_sight_projection_with_detection_function
+  to: technique.unbinned_poisson_likelihood_for_stellar_positions
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The unbinned stellar-position likelihood needs the observational surface probability density that the line-of-sight projection and detection function produce.
+  failure_mode_if_absent: Without the projected observational density, the Poisson likelihood has no correctly normalized position-space model to evaluate.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Relation chosen from the orphan technique summaries and nearby node summaries.
+  status: asserted
+- from: technique.local_energy_cutoff_in_curved_space
+  to: technique.local_energy_cutoff_for_holography
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The holographic cutoff prescription is a direct application of the more general rule that the UV bound should be imposed on locally measured energy.
+  failure_mode_if_absent: Without the general local-energy cutoff idea, the holographic position-dependent cutoff looks like an isolated counting trick.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Relation chosen from the orphan technique summaries and nearby node summaries.
+  status: asserted
+- from: technique.madgraph_color_decomposition_export
+  to: technique.mc_hard_function_scet_convolution
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The hybrid Monte Carlo plus SCET convolution needs color-resolved hard functions from MadGraph, which this export workflow is designed to provide.
+  failure_mode_if_absent: Without exported color-decomposed hard matrices, the SCET convolution cannot retain the full color mixing it depends on.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Relation chosen from the orphan technique summaries and nearby node summaries.
+  status: asserted
+- from: technique.matrix_exponential_calculus
+  to: technique.lie_algebra_from_group_multiplication
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Deriving the Lie algebra from group multiplication near the identity depends on controlling products of nearby noncommuting exponentials.
+  failure_mode_if_absent: Without exponential calculus, the passage from group multiplication to the commutator structure constants is not systematic.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Relation chosen from the orphan technique summaries and nearby node summaries.
+  status: asserted
+- from: technique.matter_unification_into_su5_five_and_ten
+  to: technique.su5_family_anomaly_cancellation
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Anomaly cancellation in the SU(5) family assignment only makes sense once the Standard Model generation has been embedded into the 5-bar plus 10.
+  failure_mode_if_absent: Without the 5-bar and 10 matter assignment, there is no unified family content on which to check the anomaly cancellation.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Relation chosen from the orphan technique summaries and nearby node summaries.
+  status: asserted
+- from: technique.maurer_cartan_covariant_building_blocks
+  to: technique.gauged_ccwz_construction
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Gauged CCWZ constructions are assembled from the Maurer-Cartan covariant derivatives, connections, and curvatures of the Goldstone manifold.
+  failure_mode_if_absent: Without those Maurer-Cartan ingredients, the gauged CCWZ EFT has no standard covariant building blocks.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Relation chosen from the orphan technique summaries and nearby node summaries.
+  status: asserted
+- from: technique.molecular_internal_field_amplification
+  to: technique.octupole_deformed_radioactive_molecules
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Radioactive molecular CPV searches rely on the same molecular internal-field amplification mechanism, now paired with octupole-enhanced nuclei.
+  failure_mode_if_absent: Without the internal-field amplification mechanism, the case for radioactive molecules as exceptionally sensitive CPV probes weakens sharply.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Relation chosen from the orphan technique summaries and nearby node summaries.
+  status: asserted
+- from: technique.molecular_internal_field_amplification
+  to: technique.laser_cooling_and_trapping_for_cpv
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Cooling and trapping are worthwhile precisely because the chosen molecules already provide large internal-field amplification of the CPV signal.
+  failure_mode_if_absent: Without internal-field amplification, extending coherence time and count rate by laser control would not target an intrinsically sensitive species.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Relation chosen from the orphan technique summaries and nearby node summaries.
+  status: asserted
+- from: technique.local_supersymmetry_covariantization
+  to: technique.massive_supergravity_lagrangian
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Building a massive supergravity Lagrangian presumes the local supersymmetry transformations have already been written in covariant form.
+  failure_mode_if_absent: Without local-SUSY covariantization, the tuned massive supergravity action cannot be checked against the correct symmetry structure.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Relation chosen from the orphan technique summaries and nearby node summaries.
+  status: asserted
+- from: technique.mediator_gauge_mediation_without_singlet
+  to: technique.messenger_potential_decomposition
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Once mediation is implemented without a singlet spurion, the next practical step is to decompose the resulting messenger potential and analyze its vacua.
+  failure_mode_if_absent: Without the mediator gauge-mediation setup, the messenger-potential analysis has no concrete mediator sector to study.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Relation chosen from the orphan technique summaries and nearby node summaries.
+  status: asserted
+- from: technique.modulus_gravitino_mass_linkage
+  to: technique.gravitino_cosmology_estimate
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Cosmological gravitino estimates are tightly coupled to when moduli become problematic, and this linkage explains why their scales track each other.
+  failure_mode_if_absent: Without the modulus-gravitino mass relation, the cosmological estimate misses why modulus and gravitino sectors constrain the same parameter range.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Relation chosen from the orphan technique summaries and nearby node summaries.
+  status: asserted
+- from: technique.n2_prepotential_constraint
+  to: technique.modular_form_upgrade_for_conformal_cases
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The modular-form upgrade still has to respect the N=2 low-energy structure in which a holomorphic prepotential controls the leading action.
+  failure_mode_if_absent: Without the prepotential constraint, replacing scales by modular functions risks violating the required N=2 effective-action structure.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Relation chosen from the orphan technique summaries and nearby node summaries.
+  status: asserted
+- from: technique.maximal_divergence_tower_selection
+  to: technique.loop_induced_moduli_space_metric
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: When many towers are present, the loop-induced metric is controlled by whichever tower diverges fastest, so that tower-selection rule is practically necessary.
+  failure_mode_if_absent: Without selecting the asymptotically dominant tower, the inferred loop metric is contaminated by subleading families and loses predictive power.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Relation chosen from the orphan technique summaries and nearby node summaries.
+  status: asserted
+- from: technique.majorana_supercharge_packaging
+  to: technique.massive_supermultiplet_construction
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Building massive multiplets by supercharge ladders is easier only after the supercharges have been packaged into covariant Majorana generators.
+  failure_mode_if_absent: Without the Majorana packaging of the supercharges, the ladder action on the massive rest-frame states is cumbersome and noncovariant.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Relation chosen from the orphan technique summaries and nearby node summaries.
+  status: asserted
+- from: technique.majorana_supercharge_packaging
+  to: technique.massless_supermultiplet_construction
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Even in the lightlike frame, the massless multiplet construction still uses the supercharge algebra that the Majorana packaging makes covariant and easy to track.
+  failure_mode_if_absent: Without the packaged supercharges, it is harder to identify and organize the helicity-raising and lowering actions inside the massless multiplet.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Relation chosen from the orphan technique summaries and nearby node summaries.
+  status: asserted

@@ -1,24 +1,22 @@
 #!/usr/bin/env python3
-"""Extract the Schwartz QFT back-of-book index into machine-readable files."""
+"""Extract the Schwartz QFT back-of-book index into machine-readable files.
+
+This script remains as a compatibility wrapper around the broader document-oracle tooling.
+"""
 
 from __future__ import annotations
 
 import argparse
 import json
-import re
 from pathlib import Path
 
-from pypdf import PdfReader
+from document_pipeline import normalize_whitespace
 
 
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_PDF = ROOT / "Ref material" / "Schwartz QFT.pdf"
 DEFAULT_JSON = ROOT / "data" / "generated" / "extracted" / "schwartz_index.json"
 DEFAULT_TXT = ROOT / "data" / "generated" / "extracted" / "schwartz_index.txt"
-
-
-def normalize_whitespace(text: str) -> str:
-    return re.sub(r"\s+", " ", text).strip()
 
 
 def main() -> int:
@@ -33,6 +31,13 @@ def main() -> int:
     pdf_path = Path(args.pdf)
     json_out = Path(args.json_out)
     txt_out = Path(args.txt_out)
+
+    try:
+        from pypdf import PdfReader
+    except ModuleNotFoundError as exc:
+        raise RuntimeError(
+            "pypdf is required for Schwartz index extraction. Use .venv/bin/python for this script."
+        ) from exc
 
     reader = PdfReader(str(pdf_path))
     pages = []

@@ -91,13 +91,13 @@
   confidence: 0.91
 - from: classical_fields.stationary_action_principle
   to: classical_fields.euler_lagrange_field_equation
-  relation_type: requires_for_use
+  relation_type: requires_for_derive
   necessity: necessary
   audience_profile: hep_th_grad
   subfield: qft_foundations
   task_type: literature_reading
-  rationale: In standard field theory reading, the Euler-Lagrange equation is the use-level consequence of stationary variation.
-  failure_mode_if_absent: Cannot move from the variational principle to the differential equation that the source is stating.
+  rationale: In standard field theory reading, the Euler-Lagrange equation is derived by imposing stationary variation of the action.
+  failure_mode_if_absent: Cannot derive the differential equation that follows from the variational principle.
   evidence:
     - type: expert_claim
       source_ref: variational_principles_and_classical_fields_batch_initial

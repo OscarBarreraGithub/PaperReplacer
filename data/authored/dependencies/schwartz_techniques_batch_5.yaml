@@ -1,0 +1,639 @@
+# Hand-authored dependency edges for the Schwartz techniques batch 5.
+# Format: from = prerequisite, to = downstream technique node.
+
+- from: eft.soft_collinear_effective_theory
+  to: technique.ngl_elimination_via_grooming
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The all-orders argument that soft drop eliminates non-global logarithms is formulated in SCET language, where the relevant soft and collinear sectors are separated explicitly.
+  failure_mode_if_absent: Without SCET, the proof has no formal way to identify which soft wide-angle modes generate the non-global correlations being removed.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_5_initial
+      note: The proof depends on the SCET decomposition of the groomed observable into distinct radiation sectors.
+  status: asserted
+
+- from: qcd.factorization_theorem
+  to: technique.ngl_elimination_via_grooming
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The technique proves NGL elimination by analyzing the factorized groomed distribution and showing the problematic soft correlations no longer appear.
+  failure_mode_if_absent: Without factorization-theorem reasoning, the claim that wide-angle soft radiation decouples from the groomed observable is only heuristic.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_5_initial
+      note: The method relies on a factorized description of the groomed jet-shape distribution.
+  status: asserted
+
+- from: qft.scattering_amplitude
+  to: technique.nn_amplitude_surrogate
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The surrogate model is built to approximate loop-level scattering amplitudes, so the target quantity is the ordinary scattering amplitude evaluated in a more expensive regime.
+  failure_mode_if_absent: Without the scattering-amplitude concept, the surrogate has no clearly defined object to emulate or validate.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_5_initial
+      note: The neural model stands in for repeated numerical evaluations of a scattering amplitude.
+  status: asserted
+
+- from: qft.dimensional_regularization
+  to: technique.nn_amplitude_surrogate
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The method targets loop amplitudes in singular regions where infrared structure is expressed in the same regulated language used by dimensional regularization.
+  failure_mode_if_absent: Without dimensional-regularization language, the divergent structure the network must reproduce near singular limits is not operationally specified.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_5_initial
+      note: The surrogate is meant to preserve the regulated infrared behavior of loop amplitudes.
+  status: asserted
+
+- from: qcd.factorization_theorem
+  to: technique.nnll_hemisphere_factorization
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The NNLL simplification is a statement about the factorized hemisphere-mass distribution and about which pieces of the soft sector first matter at a given logarithmic order.
+  failure_mode_if_absent: Without the factorization theorem, there is no formal separation that lets one show the multi-hemisphere dependence collapses at NNLL.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_5_initial
+      note: The simplification is derived by inspecting the factorized structure of the hemisphere observable.
+  status: asserted
+
+- from: eft.soft_function
+  to: technique.nnll_hemisphere_factorization
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The key step is understanding how the hemisphere soft function enters and why only its trivial value contributes up to NNLL.
+  failure_mode_if_absent: Without the soft-function node, one cannot track the interference term whose delayed appearance produces the complete factorization.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_5_initial
+      note: The argument hinges on the logarithmic order at which the nontrivial soft function first contributes.
+  status: asserted
+
+- from: eft.soft_collinear_effective_theory
+  to: technique.no_sudakov_landau_pole
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The absence-of-pole argument is phrased in SCET convolution language, where the observable decomposes into sector-wise contributions with positive support.
+  failure_mode_if_absent: Without SCET, the additive decomposition across jets and soft radiation is not expressed in the form needed to diagnose the spurious pole.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_5_initial
+      note: The method uses the SCET factorized convolution structure of the shoulder region.
+  status: asserted
+
+- from: qcd.factorization_theorem
+  to: technique.no_sudakov_landau_pole
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: Showing that the observable remains additive under the relevant factorization is what makes a momentum-space resummation possible without a spurious pole.
+  failure_mode_if_absent: Without factorization, the claim that each sector contributes a nonnegative additive piece cannot be established cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_5_initial
+      note: The technique relies on a factorized observable written as a sum of sector contributions.
+  status: asserted
+
+- from: qft.landau_pole
+  to: technique.no_sudakov_landau_pole
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The method is explicitly a diagnosis of why a Sudakov-Landau pole does not appear for additive observables.
+  failure_mode_if_absent: Without the Landau-pole concept, one cannot state the pathology that the technique removes or compare momentum-space and position-space treatments.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_5_initial
+      note: The payoff is the absence of the usual spurious Landau-pole obstruction in shoulder resummation.
+  status: asserted
+
+- from: eft.glauber_mode
+  to: technique.non_analytic_rapidity_regulator
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The consistency question being solved is specifically how Glauber exchange is represented so the same operator behaves correctly in different kinematic channels.
+  failure_mode_if_absent: Without the Glauber-mode framework, there is no operator whose regulator-induced non-analyticity needs to be understood.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_5_initial
+      note: The method is a consistency condition on SCET Glauber contributions.
+  status: asserted
+
+- from: qft.analytic_continuation_in_kinematic_invariants
+  to: technique.non_analytic_rapidity_regulator
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The technique distinguishes timelike and spacelike configurations through non-analytic dependence on external momenta, which is a kinematic analytic-continuation question.
+  failure_mode_if_absent: Without analytic continuation in kinematic invariants, one cannot explain why the same Glauber operator vanishes in one channel and survives in another.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_5_initial
+      note: The regulator-induced non-analyticity is meaningful only relative to continuation between physical regions.
+  status: asserted
+
+- from: eft.soft_function
+  to: technique.non_global_log_identification
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The method extracts non-global logarithms directly from the large-argument behavior of the hemisphere soft function.
+  failure_mode_if_absent: Without the soft-function object, there is no place to read off the asymptotic structures that generate the non-global logarithms.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_5_initial
+      note: The asymptotic analysis is carried out on the exact hemisphere soft function.
+  status: asserted
+
+- from: qft.renormalization_group_equation
+  to: technique.non_global_log_identification
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: Part of the result is separating RG-predicted logarithms from genuinely RG-independent contributions in the soft function.
+  failure_mode_if_absent: Without RG-equation reasoning, one cannot cleanly distinguish which logarithms are fixed by evolution and which reveal new non-global information.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_5_initial
+      note: The technique compares asymptotic soft-function terms against the RG-controlled structure.
+  status: asserted
+
+- from: qft.instanton
+  to: technique.nonperturbative_intersection_suppression
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The suppression argument is a refinement of instanton semiclassics and explains why the usual collective-coordinate treatment works in interacting theories.
+  failure_mode_if_absent: Without the instanton concept, the higher-intersection paths being compared to the dominant saddle are not defined.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_5_initial
+      note: The result is framed as a justification of the standard instanton calculation.
+  status: asserted
+
+- from: qm.wkb_approximation
+  to: technique.nonperturbative_intersection_suppression
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: WKB supplies the semiclassical cross-check against which the corrected intersection counting is validated.
+  failure_mode_if_absent: Without WKB, the claimed agreement between the corrected path-integral treatment and standard semiclassical tunneling estimates cannot be checked.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_5_initial
+      note: The paper uses WKB as an independent semiclassical benchmark for the suppression result.
+  status: asserted
+
+- from: eft.scale_separation
+  to: technique.numerical_scale_setting_eft
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The optimization only makes sense once the problem has been decomposed into distinct hard, jet, and soft scales.
+  failure_mode_if_absent: Without scale separation, there is no principled reason to assign different natural scales to different parts of the calculation.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_5_initial
+      note: The method targets genuinely multi-scale EFT setups rather than single-scale perturbation theory.
+  status: asserted
+
+- from: qcd.factorization_theorem
+  to: technique.numerical_scale_setting_eft
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The procedure optimizes scales one factorized function at a time, so it depends on a theorem that separates those contributions.
+  failure_mode_if_absent: Without factorization, one cannot isolate a hard correction, a jet correction, and a soft correction to optimize independently.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_5_initial
+      note: The scale-setting rule is defined by the individual pieces appearing in the factorized cross section.
+  status: asserted
+
+- from: qft.renormalization_scale
+  to: technique.numerical_scale_setting_eft
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The technique is explicitly a prescription for choosing natural renormalization scales for separate EFT functions.
+  failure_mode_if_absent: Without the renormalization-scale notion, there is no quantity to vary or optimize numerically.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_5_initial
+      note: The extrema are found by scanning the scale dependence of each perturbative ingredient.
+  status: asserted
+
+- from: qft.renormalization_group_equation
+  to: technique.numerical_scale_setting_eft
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The final soft-scale relation and the logic of moving between scales are dictated by RG evolution within the EFT.
+  failure_mode_if_absent: Without the RG equation, the relation among hard, jet, and soft scales is ad hoc rather than EFT-controlled.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_5_initial
+      note: The scale-setting procedure uses RG structure to connect the optimized scales.
+  status: asserted
+
+- from: qft.spinor_helicity_notation
+  to: technique.onshell_spinor_helicity_factorization
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The proof is carried out entirely in spinor-helicity language, using polarization reference vectors and on-shell amplitudes rather than off-shell fields.
+  failure_mode_if_absent: Without spinor-helicity notation, the core on-shell manipulations that expose factorization are unavailable.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_5_initial
+      note: The method replaces gauge-fixed field-theory reasoning with explicit spinor-helicity control.
+  status: asserted
+
+- from: qft.scattering_amplitude
+  to: technique.onshell_spinor_helicity_factorization
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The technique proves factorization as a statement about amplitudes, not about operator matrix elements in a fixed gauge.
+  failure_mode_if_absent: Without the amplitude concept, the proof has no direct object whose soft and collinear limits can be compared.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_5_initial
+      note: The derivation is an amplitude-level factorization proof.
+  status: asserted
+
+- from: qft.wilson_line
+  to: technique.onshell_spinor_helicity_factorization
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The soft sector in the final factorized answer is encoded by Wilson lines, so their interpretation is part of the proof's endpoint.
+  failure_mode_if_absent: Without Wilson lines, the universal soft matrix element that survives after the on-shell manipulations cannot be stated precisely.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_5_initial
+      note: The result factorizes amplitudes into collinear pieces times a soft Wilson-line matrix element.
+  status: asserted
+
+- from: eft.mode_scaling
+  to: technique.onshell_spinor_helicity_factorization
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: Even in an on-shell proof, one still needs power counting to identify the leading terms in the soft and collinear expansion.
+  failure_mode_if_absent: Without mode scaling, the statement that subleading terms can be dropped at leading power is not controlled.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_5_initial
+      note: The argument is organized by the same lambda expansion that underlies SCET factorization.
+  status: asserted
+
+- from: qft.parity_transformation
+  to: technique.parity_twist_strong_cp
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The construction uses a 5D parity symmetry to force the relevant bulk mass structures to be Hermitian and to control the determinant phase.
+  failure_mode_if_absent: Without parity, the mechanism that keeps the effective strong CP phase real is not intelligible.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_5_initial
+      note: Parity is the symmetry that enforces the reality properties needed by the model.
+  status: asserted
+
+- from: qft.charge_conjugation
+  to: technique.parity_twist_strong_cp
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The model is formulated as a CP solution, so one must understand how charge conjugation participates in the combined symmetry being broken and preserved.
+  failure_mode_if_absent: Without charge-conjugation language, the distinction between solving strong CP and generating weak CP phases is obscured.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_5_initial
+      note: The payoff is a controlled separation between strong and weak CP phases.
+  status: asserted
+
+- from: sm.ssb.spontaneous_symmetry_breaking
+  to: technique.parity_twist_strong_cp
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The weak CP phase is generated by spontaneous breaking through a bulk scalar profile, so spontaneous-symmetry-breaking language is upstream.
+  failure_mode_if_absent: Without spontaneous symmetry breaking, the twisted scalar background that generates the CP phase cannot be interpreted.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_5_initial
+      note: The model relies on a symmetry-breaking scalar configuration rather than explicit CP violation.
+  status: asserted
+
+- from: qft.landau_singularity_conditions
+  to: technique.pham_diagram_constraints
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: Pham-diagram compatibility is defined by whether the paired graph contractions admit simultaneous Landau solutions.
+  failure_mode_if_absent: Without Landau singularity conditions, one cannot test whether two contracted graphs can support the same sequential discontinuity.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_5_initial
+      note: The technique generalizes Landau-diagram reasoning from single contractions to compatible pairs.
+  status: asserted
+
+- from: qft.steinmann_relations
+  to: technique.pham_diagram_constraints
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: One of the main uses of Pham diagrams is to derive discontinuity constraints that extend and refine the Steinmann logic.
+  failure_mode_if_absent: Without the Steinmann baseline, it is unclear what new sequential-discontinuity information the Pham-diagram method adds.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_5_initial
+      note: The result is explicitly positioned as going beyond the Steinmann relations.
+  status: asserted
+
+- from: qft.analytic_continuation_in_kinematic_invariants
+  to: technique.pham_diagram_constraints
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: Sequential discontinuities are defined by moving between kinematic regions and tracking branch behavior under continuation.
+  failure_mode_if_absent: Without analytic continuation in kinematic invariants, the relation between graph compatibility and channel discontinuities cannot be formulated.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_5_initial
+      note: The method ties graph contractions to the discontinuity structure across different kinematic channels.
+  status: asserted
+
+- from: complex_analysis.contour_deformation
+  to: technique.picard_lefschetz_discontinuities
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: Picard-Lefschetz theory upgrades contour deformation into a homological statement about thimbles and vanishing cycles, so ordinary contour deformation is the local precursor.
+  failure_mode_if_absent: Without contour deformation, the geometric meaning of how Feynman contours jump across singular loci is not operational.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_5_initial
+      note: The method computes discontinuities by tracking contour motion in complexified integration space.
+  status: asserted
+
+- from: qft.s_matrix_unitarity
+  to: technique.pinn_unitarity_phase_reconstruction
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The neural-network loss function is built from the unitarity condition relating phase information to the measured modulus of the amplitude.
+  failure_mode_if_absent: Without S-matrix unitarity, the integral equation used to train the network has no physical source.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_5_initial
+      note: The PINN is constrained directly by a unitarity relation rather than by labeled phase data.
+  status: asserted
+
+- from: qft.partial_wave_expansion
+  to: technique.pinn_unitarity_phase_reconstruction
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The unitarity relation being solved is written in partial-wave language, where phase information is attached to angular-momentum components.
+  failure_mode_if_absent: Without partial-wave decomposition, the phase-reconstruction problem is not expressed in the one-dimensional form the PINN solves.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_5_initial
+      note: The method starts from partial-wave unitarity before translating it into a neural ansatz.
+  status: asserted
+
+- from: eft.soft_function
+  to: technique.polar_expansion_nonglobal_soft
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The method is literally an expansion of the two-loop hemisphere soft function into pieces suited for phenomenological implementation.
+  failure_mode_if_absent: Without the soft-function object, there is nothing to expand polar-wise or to separate into global and non-global components.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_5_initial
+      note: The technique reorganizes the exact hemisphere soft function rather than introducing a new approximation to the observable.
+  status: asserted
+
+- from: eft.large_logarithm_resummation
+  to: technique.polar_expansion_nonglobal_soft
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The point of the polar expansion is to make the exact two-loop result usable inside an N3LL resummation.
+  failure_mode_if_absent: Without large-log resummation context, the separation into global and non-global logarithmic structures loses its intended use.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_5_initial
+      note: The expanded form is designed for direct insertion into a resummed prediction.
+  status: asserted
+
+- from: eft.soft_collinear_effective_theory
+  to: technique.polar_expansion_nonglobal_soft
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The observable being improved is an SCET resummed cross section with distinct hard, jet, and soft sectors.
+  failure_mode_if_absent: Without SCET, it is unclear how the reorganized soft-function pieces fit into the larger factorized calculation.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_5_initial
+      note: The method is presented as a practical improvement to SCET-based hemisphere predictions.
+  status: asserted
+
+- from: qft.wilsonian_renormalization_group
+  to: technique.position_dependent_cutoff_regularization
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The position-dependent cutoff is motivated precisely as the warped-space version of integrating out short-distance modes in a Wilsonian effective action.
+  failure_mode_if_absent: Without Wilsonian RG language, the moving cutoff surface looks like an arbitrary boundary condition instead of a controlled coarse-graining rule.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_5_initial
+      note: The method interprets the warped cutoff as a Wilsonian integration of high-energy modes.
+  status: asserted
+
+- from: eft.soft_collinear_effective_theory
+  to: technique.position_space_sudakov_shoulder
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The position-space resummation is built on the SCET factorization of the trijet shoulder region.
+  failure_mode_if_absent: Without SCET, there is no structured separation of scales that justifies moving the resummation into the conjugate space.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_5_initial
+      note: The method is a change of resummation space within an SCET description of the observable.
+  status: asserted
+
+- from: qcd.factorization_theorem
+  to: technique.position_space_sudakov_shoulder
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The technique relies on a factorized shoulder distribution whose components can be evaluated at canonical scales before being recombined.
+  failure_mode_if_absent: Without factorization, the move from momentum space to position space is not tied to a controlled decomposition of the cross section.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_5_initial
+      note: The position-space formula is meaningful because the observable factorizes into separately evolved ingredients.
+  status: asserted
+
+- from: eft.large_logarithm_resummation
+  to: technique.position_space_sudakov_shoulder
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The whole point of the method is to perform the shoulder resummation in a space where the large logarithms are well behaved.
+  failure_mode_if_absent: Without resummation language, the benefit of switching to position space instead of fixed-order perturbation theory is lost.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_5_initial
+      note: The method is presented as the stable way to resum Sudakov-shoulder logarithms.
+  status: asserted
+
+- from: qft.renormalization_scale
+  to: technique.position_space_sudakov_shoulder
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The avoidance of the spurious pole comes from making canonical scale choices in the conjugate space rather than in ordinary momentum space.
+  failure_mode_if_absent: Without renormalization-scale control, the practical distinction between the unstable and stable resummation prescriptions cannot be stated.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_5_initial
+      note: The method replaces problematic momentum-space scale choices with better-behaved position-space ones.
+  status: asserted
+
+- from: qcd.mellin_moment
+  to: technique.pt_weighted_jet_charge
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The observable is interpreted and optimized through charge-sensitive fragmentation information summarized by Mellin moments.
+  failure_mode_if_absent: Without Mellin-moment language, the link between the weighted constituent sum and the initiating parton's charge distribution is opaque.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_5_initial
+      note: The method's analytic interpretation relies on fragmentation moments rather than on the raw constituent sum alone.
+  status: asserted
+
+- from: qft.renormalon
+  to: technique.qft_vs_hopf_renormalon_classification
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The central claim is that the Hopf-series asymptotics are not new but instead fall into the familiar renormalon class.
+  failure_mode_if_absent: Without renormalons, there is no established asymptotic category into which the Hopf-series growth can be reclassified.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_5_initial
+      note: The method explicitly interprets the factorial growth as renormalon behavior.
+  status: asserted
+
+- from: qft.borel_transform
+  to: technique.qft_vs_hopf_renormalon_classification
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The classification is made in the Borel plane, where the singularity locations and their UV or IR interpretation become visible.
+  failure_mode_if_absent: Without the Borel transform, the factorial growth cannot be turned into a singularity statement that can be compared to renormalons.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_5_initial
+      note: The argument identifies Borel poles and matches them to standard QFT asymptotics.
+  status: asserted
+
+- from: qft.schwinger_dyson_equation
+  to: technique.qft_vs_hopf_renormalon_classification
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The Hopf-series subclasses arise in a Schwinger-Dyson context, and the technique interprets those diagrammatic recursions with standard QFT asymptotic tools.
+  failure_mode_if_absent: Without Schwinger-Dyson structure, the specific diagram class whose asymptotics are being classified is not well defined.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_5_initial
+      note: The method addresses the large-order behavior of a Schwinger-Dyson-generated series of diagrams.
+  status: asserted
+
+- from: qft.lorentz_invariant_phase_space
+  to: technique.quadratic_observable_step_discontinuity
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The explanation of the shoulder step is a local analysis of how phase-space volume behaves near the critical Mercedes configuration.
+  failure_mode_if_absent: Without phase-space language, the cancellation between the shrinking available region and the Jacobian singularity cannot be stated.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_5_initial
+      note: The method studies the behavior of the observable directly on the nearby three-parton phase space.
+  status: asserted
+
+- from: qft.thrust
+  to: technique.quadratic_observable_step_discontinuity
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: One of the payoffs of the analysis is explaining why the C-parameter shoulder has a step while thrust has only a kink.
+  failure_mode_if_absent: Without the thrust comparator, the distinctive consequence of quadratic versus non-quadratic event-shape structure is harder to articulate.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_5_initial
+      note: The technique is framed as a contrast between the shoulder behavior of C-parameter and thrust.
+  status: asserted
+
+- from: qft.wilson_line
+  to: technique.radial_quantization_wilson_lines
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The radial-quantization map starts from Wilson lines and reinterprets them as static charges in the AdS picture.
+  failure_mode_if_absent: Without Wilson lines, there is no operator whose anomalous dimension can be translated into a curved-space energy problem.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_5_initial
+      note: The method is explicitly a geometric rewriting of Wilson-line physics.
+  status: asserted
+
+- from: qft.anomalous_dimension
+  to: technique.radial_quantization_wilson_lines
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The payoff of the map is that the anomalous dimension becomes the energy of the corresponding static-charge configuration.
+  failure_mode_if_absent: Without anomalous dimensions, the AdS electrostatics interpretation loses the quantity it is supposed to compute.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_5_initial
+      note: The technique turns a Wilson-line anomalous-dimension problem into a classical energy problem.
+  status: asserted
+
+- from: qft.conformal_invariance
+  to: technique.radial_quantization_wilson_lines
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The coordinate change to radial time is useful because classical Yang-Mills theory is conformal, making the Minkowski-to-AdS reinterpretation controlled.
+  failure_mode_if_absent: Without conformal invariance, the geometric map to static charges in AdS would lack the symmetry justification that makes it transparent.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_5_initial
+      note: The technique uses conformal symmetry to justify the radial quantization picture.
+  status: asserted

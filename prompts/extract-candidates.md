@@ -9,6 +9,7 @@ Your job is to gather evidence and candidate claims, not to silently author cano
 - batch brief
 - batch contract
 - ontology rules
+- source manifest
 - source notes or references
 
 ## Output Sections
@@ -32,6 +33,7 @@ Produce:
 - do not mix `part_of` with dependency claims
 - do not assign final stable ids
 - do not edit canonical authored graph files
+- every provenance lead must use a registry-backed `source_ref`, for example `doc:schwartz_qft/back_of_book_index#pdf_page=866`
 
 ## HEP-TH Seed Guidance
 

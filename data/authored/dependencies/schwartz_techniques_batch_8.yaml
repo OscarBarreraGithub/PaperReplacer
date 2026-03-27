@@ -1,0 +1,925 @@
+# Hand-authored dependency edges for the Schwartz techniques batch 8.
+# Format: from = prerequisite, to = downstream technique node.
+
+# ── Toy potential and symbol integration ──────────────────────────────────────
+
+- from: analysis.distributions.dirac_delta_distribution
+  to: technique.toy_potential_for_localization
+  relation_type: requires_for_use
+  necessity: helpful
+  confidence: 0.85
+  rationale: The solvable toy potential is built around a brane-localized delta defect, so the existing Dirac-delta-distribution node is the closest authored prerequisite; the Randall-Sundrum-specific graviton equation remains unmatched in the current graph.
+  failure_mode_if_absent: Cannot read the brane defect term as a precise solvable ingredient of the approximation, even before the missing RS-specific machinery is supplied.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_8_initial
+      note: Batch lists Schroedinger equation with delta-function potential among the prerequisites for toy_potential_for_localization.
+  status: asserted
+
+- from: qft.symbol_calculus
+  to: technique.transformer_symbol_integration
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The method takes simplified symbols as its input representation, so symbol calculus is the authored prerequisite that tells the reader what object the transformer is integrating.
+  failure_mode_if_absent: Cannot tell what mathematical representation is being translated back into a polylogarithmic function.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_8_initial
+      note: Batch lists symbol map and its properties among the prerequisites for transformer_symbol_integration.
+  status: asserted
+
+# ── Collider-mass constructions ───────────────────────────────────────────────
+
+- from: relativity.lorentz_transformation
+  to: technique.transverse_mass_endpoint
+  relation_type: requires_for_use
+  necessity: helpful
+  confidence: 0.85
+  rationale: The endpoint argument relies on the special behavior of transverse observables under longitudinal boosts, so Lorentz-transformation language is the closest authored prerequisite for that invariance statement.
+  failure_mode_if_absent: Cannot justify why the construction can isolate the parent mass using only transverse kinematics.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_8_initial
+      note: Batch lists boost invariance of transverse quantities among the prerequisites for transverse_mass_endpoint.
+  status: asserted
+
+- from: qft.narrow_width_approximation
+  to: technique.transverse_mass_endpoint
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The sharp m_T endpoint is interpreted as the parent mass in the same narrow-resonance limit used throughout collider mass extraction arguments.
+  failure_mode_if_absent: Cannot connect the observed endpoint cleanly to the parent-particle mass rather than to a smeared finite-width feature.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_8_initial
+      note: Batch lists Narrow width approximation among the prerequisites for transverse_mass_endpoint.
+  status: asserted
+
+# ── Sudakov-shoulder factorization methods ────────────────────────────────────
+
+- from: qft.thrust
+  to: technique.trijet_factorization_formula
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The construction is organized around the thrust axis and its flip conditions near the trijet configuration, so the existing thrust node is the graph's direct axis-definition prerequisite.
+  failure_mode_if_absent: Cannot specify which hemisphere partition and axis alignment the shoulder measurement function is built around.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_8_initial
+      note: Batch lists thrust axis alignment and flip conditions among the prerequisites for trijet_factorization_formula.
+  status: asserted
+
+- from: eft.soft_collinear_effective_theory
+  to: technique.trijet_factorization_formula
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The shoulder formula isolates the soft and collinear regions around the symmetric trijet point, which is exactly the kind of mode separation encoded by SCET.
+  failure_mode_if_absent: Cannot identify which emissions generate the shoulder logarithms or why they factorize.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_8_initial
+      note: Batch lists soft and collinear kinematics near trijet configuration among the prerequisites for trijet_factorization_formula.
+  status: asserted
+
+- from: qft.distributional_boundary_values
+  to: technique.trijet_factorization_formula
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The method differentiates the spectrum and manipulates plus-type distributions so the measurement function becomes a delta-supported object, making distributional technology operationally necessary.
+  failure_mode_if_absent: Cannot control the derivative-level singular terms that make the shoulder resummation work.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_8_initial
+      note: Batch lists distributions and plus-function technology among the prerequisites for trijet_factorization_formula.
+  status: asserted
+
+- from: qft.bounce_solution
+  to: technique.turning_point_surface_constraint
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The whole point of the turning-point delta constraint is to isolate the single bounce saddle and exclude false-vacuum or multi-bounce saddles.
+  failure_mode_if_absent: Cannot tell which Euclidean saddle the constraint is designed to keep and which ones it removes.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_8_initial
+      note: Batch lists bounce (instanton) solutions in Euclidean field theory among the prerequisites for turning_point_surface_constraint.
+  status: asserted
+
+- from: qft.path_integral_and_generating_functionals
+  to: technique.turning_point_surface_constraint
+  relation_type: requires_for_use
+  necessity: helpful
+  confidence: 0.85
+  rationale: The technique modifies the functional integral itself by inserting a delta constraint on field histories, so the path-integral formalism is the authored base needed to read that modification sensibly.
+  failure_mode_if_absent: Cannot interpret the constraint as an operation on the Euclidean functional integral rather than as an ad hoc classical restriction.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_8_initial
+      note: Batch lists saddle-point approximation for path integrals among the prerequisites for turning_point_surface_constraint.
+  status: asserted
+
+# ── Jet-substructure observables ──────────────────────────────────────────────
+
+- from: relativity.rapidity
+  to: technique.twist_angle_discriminant
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The twist angle is defined directly from Delta eta and Delta phi, so rapidity language is the authored prerequisite for reading the observable.
+  failure_mode_if_absent: Cannot interpret the boost-invariant angular ratio that defines the discriminant.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_8_initial
+      note: Batch lists Rapidity and azimuthal angle definitions among the prerequisites for twist_angle_discriminant.
+  status: asserted
+
+# ── Shape-function and soft-function technology ───────────────────────────────
+
+- from: eft.soft_collinear_effective_theory
+  to: technique.two_dim_shape_function_basis
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The two-dimensional basis is introduced inside SCET factorization for double-differential event shapes, so the SCET node is the direct authored prerequisite for the framework in which the basis lives.
+  failure_mode_if_absent: Cannot place the two-variable shape function inside a factorized hard-jet-soft description.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_8_initial
+      note: Batch lists SCET factorization theorems among the prerequisites for two_dim_shape_function_basis.
+  status: asserted
+
+- from: eft.operator_expansion
+  to: technique.two_dim_shape_function_basis
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The basis is the nonperturbative object left after the event-shape OPE separates perturbative and power-suppressed structure, so operator-expansion language is an authored prerequisite.
+  failure_mode_if_absent: Cannot understand why a full function rather than a few numbers parameterizes the leading power corrections.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_8_initial
+      note: Batch lists operator product expansion for event shapes among the prerequisites for two_dim_shape_function_basis.
+  status: asserted
+
+- from: eft.soft_collinear_effective_theory
+  to: technique.two_loop_jet_thrust_soft_function
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The calculation is posed as a SCET soft-function ingredient for an exclusive jet observable, so SCET is the framework that makes the object well defined.
+  failure_mode_if_absent: Cannot see why the computation separates into a soft function for jet thrust with a veto.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_8_initial
+      note: Batch lists SCET factorization for jet observables among the prerequisites for two_loop_jet_thrust_soft_function.
+  status: asserted
+
+- from: eft.soft_function
+  to: technique.two_loop_jet_thrust_soft_function
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The technique computes a specific two-loop soft function, so the existing soft-function node is the direct authored prerequisite for what quantity is being evaluated.
+  failure_mode_if_absent: Cannot distinguish the target of the calculation from jet or hard-sector ingredients.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_8_initial
+      note: Batch lists hemisphere soft function at two loops among the prerequisites for two_loop_jet_thrust_soft_function.
+  status: asserted
+
+- from: qft.distributional_boundary_values
+  to: technique.two_loop_jet_thrust_soft_function
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The result is expressed through singular plus- and star-type structures, so distributional control is part of using the calculation rather than optional decoration.
+  failure_mode_if_absent: Cannot read the singular soft-function answer as a well-defined distribution.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_8_initial
+      note: Batch lists plus-distribution and star-distribution technology among the prerequisites for two_loop_jet_thrust_soft_function.
+  status: asserted
+
+- from: qft.wilson_line
+  to: technique.two_loop_multi_scale_soft_function
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The hemisphere soft function is defined by emissions from back-to-back Wilson lines, so Wilson-line language is an explicit prerequisite for the object being integrated.
+  failure_mode_if_absent: Cannot state what soft operator is being evaluated at two loops.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_8_initial
+      note: Batch lists Wilson line Feynman rules for soft gluon emission among the prerequisites for two_loop_multi_scale_soft_function.
+  status: asserted
+
+- from: qft.feynman_rules
+  to: technique.two_loop_multi_scale_soft_function
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The calculation proceeds diagram by diagram with real and real-virtual soft emissions, so the relevant emission rules are operationally required.
+  failure_mode_if_absent: Cannot reconstruct the integrands whose two-loop soft contributions are being evaluated.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_8_initial
+      note: Batch lists Wilson line Feynman rules for soft gluon emission among the prerequisites for two_loop_multi_scale_soft_function.
+  status: asserted
+
+- from: qft.lorentz_invariant_phase_space
+  to: technique.two_loop_multi_scale_soft_function
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The opposite- and same-hemisphere pieces are separated by explicit phase-space cuts on emitted partons, so Lorentz-invariant phase-space language is the authored prerequisite for those cuts.
+  failure_mode_if_absent: Cannot formulate the hemisphere restrictions on the emitted soft partons.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_8_initial
+      note: Batch lists Phase-space cuts for hemisphere assignment of emitted partons among the prerequisites for two_loop_multi_scale_soft_function.
+  status: asserted
+
+- from: qft.non_abelian_gauge_symmetry
+  to: technique.two_loop_multi_scale_soft_function
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The color decomposition and non-Abelian exponentiation structure of the two-loop answer depend on non-Abelian gauge-theory combinatorics.
+  failure_mode_if_absent: Cannot interpret why the CF^2 piece exponentiates trivially while the mixed color structures carry the nontrivial dynamics.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_8_initial
+      note: Batch lists Non-Abelian exponentiation theorem for CF^2 structure among the prerequisites for two_loop_multi_scale_soft_function.
+  status: asserted
+
+- from: qft.cross_sections_decay_rates_and_phase_space
+  to: technique.two_loop_soft_extraction
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The extraction works by enforcing a total-cross-section sum rule, so the existing cross-sections-and-phase-space node is the authored prerequisite for the observable constraint being imposed.
+  failure_mode_if_absent: Cannot see why integrating the event-shape spectrum should determine the missing soft constant.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_8_initial
+      note: Batch lists Total hadronic cross section known to O(alpha_s^2) among the prerequisites for two_loop_soft_extraction.
+  status: asserted
+
+# ── Universal SCET/QCD structures ─────────────────────────────────────────────
+
+- from: eft.soft_collinear_effective_theory
+  to: technique.universal_soft_function_color_evolution
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The argument is a SCET RG-consistency statement about factorized hard and soft sectors with explicit color indices, so SCET is the direct authored prerequisite.
+  failure_mode_if_absent: Cannot place the universal color-mixing claim inside a factorized hard-soft evolution equation.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_8_initial
+      note: Batch lists SCET factorization theorem with color indices among the prerequisites for universal_soft_function_color_evolution.
+  status: asserted
+
+- from: eft.renormalization_group_running
+  to: technique.universal_soft_function_color_evolution
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The payoff of the method is an RG-consistency derivation of the soft color-mixing term from the hard evolution, so renormalization-group running is central rather than peripheral.
+  failure_mode_if_absent: Cannot understand why the soft anomalous dimension is fixed by consistency with the hard function.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_8_initial
+      note: Batch lists RG consistency of factorized cross sections among the prerequisites for universal_soft_function_color_evolution.
+  status: asserted
+
+- from: qcd.color_su3
+  to: technique.universal_soft_function_color_evolution
+  relation_type: requires_for_use
+  necessity: helpful
+  confidence: 0.85
+  rationale: The universal statement is about color-space mixing matrices for dijet processes, so the color-SU(3) node is the authored bridge to that matrix structure.
+  failure_mode_if_absent: The off-diagonal evolution looks like abstract matrix bookkeeping rather than QCD color mixing.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_8_initial
+      note: Batch lists Color mixing matrices for 2->2 processes among the prerequisites for universal_soft_function_color_evolution.
+  status: asserted
+
+- from: qcd.factorization_theorem
+  to: technique.universal_splitting_and_soft_current
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The operator-ratio definitions are extracted from the general factorization formula, so the factorization theorem is the authored prerequisite for the whole construction.
+  failure_mode_if_absent: Cannot see why the splitting and soft objects should be universal process-independent building blocks at all orders.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_8_initial
+      note: Batch lists factorization_formula_qcd among the prerequisites for universal_splitting_and_soft_current.
+  status: asserted
+
+- from: qft.wilson_line
+  to: technique.universal_splitting_and_soft_current
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The universal soft current is written as a ratio of Wilson-line matrix elements, so Wilson-line language is an explicit prerequisite for the soft side of the argument.
+  failure_mode_if_absent: Cannot interpret the soft current as a gauge-invariant operator ratio.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_8_initial
+      note: Batch lists wilson_lines among the prerequisites for universal_splitting_and_soft_current.
+  status: asserted
+
+- from: qcd.splitting_function
+  to: technique.universal_splitting_and_soft_current
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The method upgrades the familiar splitting-function object to an all-orders operator definition, so the existing splitting-function node is a direct prerequisite.
+  failure_mode_if_absent: Cannot tell what quantity is being generalized and universalized on the collinear side.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_8_initial
+      note: Batch lists splitting_functions_tree_level among the prerequisites for universal_splitting_and_soft_current.
+  status: asserted
+
+- from: qft.eikonal_soft_factor
+  to: technique.universal_splitting_and_soft_current
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The tree-level soft-current prerequisite is the eikonal emission structure that the method promotes to an all-orders operator definition.
+  failure_mode_if_absent: Cannot recognize the soft current as the all-orders continuation of the familiar universal soft factor.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_8_initial
+      note: Batch lists soft_current_tree_level among the prerequisites for universal_splitting_and_soft_current.
+  status: asserted
+
+# ── Top-tagging and calibration methods ───────────────────────────────────────
+
+- from: sm.precision.w_boson_mass
+  to: technique.w_calibration_jec
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The calibration rescales reconstructed hadronic systems until the W mass matches its reference value, so the W-boson-mass node is the direct upstream standard.
+  failure_mode_if_absent: Cannot define the target value that fixes the event-by-event rescaling.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_8_initial
+      note: Batch lists W boson mass as a known reference standard among the prerequisites for w_calibration_jec.
+  status: asserted
+
+- from: relativity.lorentz_transformation
+  to: technique.w_helicity_angle_cut
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The cut is defined by boosting into the W rest frame and measuring an angle there, so Lorentz-transformation language is the authored prerequisite for the construction.
+  failure_mode_if_absent: Cannot define the helicity angle operationally.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_8_initial
+      note: Batch lists Lorentz boosts and rest-frame kinematics among the prerequisites for w_helicity_angle_cut.
+  status: asserted
+
+- from: qft.soft_limit
+  to: technique.w_helicity_angle_cut
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The background discrimination relies on the soft singular behavior of QCD splittings that piles events near cos(theta_h) = 1, which is exactly the soft-limit logic already authored in the graph.
+  failure_mode_if_absent: Cannot explain why QCD fakes cluster in the forward region that the cut removes.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_8_initial
+      note: Batch lists QCD soft and collinear singularity structure among the prerequisites for w_helicity_angle_cut.
+  status: asserted
+
+- from: qft.collinear_divergence
+  to: technique.w_helicity_angle_cut
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The same fake-top enhancement also uses the collinear side of the QCD singularity structure, so the authored collinear-divergence node is an operational prerequisite.
+  failure_mode_if_absent: Cannot understand why the background remains sharply peaked even after imposing a top-like three-prong structure.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_8_initial
+      note: Batch lists QCD soft and collinear singularity structure among the prerequisites for w_helicity_angle_cut.
+  status: asserted
+
+- from: sm.precision.w_boson_mass
+  to: technique.w_mass_calibration_soft_drop
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The first preprocessing step rescales the reconstructed top candidate by m_W / m_2j, so the known W mass is the fixed normalization input.
+  failure_mode_if_absent: Cannot perform the calibration step that removes correlated shower and hadronization shifts.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_8_initial
+      note: Batch lists W boson mass as calibration standard among the prerequisites for w_mass_calibration_soft_drop.
+  status: asserted
+
+- from: sm.precision.w_boson_mass
+  to: technique.w_mass_window_in_subjet_pairs
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The tagger requires a subjet pair to land in a W-mass window, so the W-boson-mass node is the direct calibration target for the resonance test.
+  failure_mode_if_absent: Cannot state the two-body resonance condition that distinguishes top jets from generic QCD jets.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_8_initial
+      note: Batch lists W boson mass and top quark mass among the prerequisites for w_mass_window_in_subjet_pairs.
+  status: asserted
+
+- from: qft.mass_shell
+  to: technique.w_mass_window_in_subjet_pairs
+  relation_type: requires_for_use
+  necessity: helpful
+  confidence: 0.85
+  rationale: The method works by checking for an on-shell intermediate W inside a larger on-shell top reconstruction, so mass-shell language is the closest authored prerequisite for the resonance logic.
+  failure_mode_if_absent: The mass-window requirement looks like arbitrary numerical tuning rather than a test for intermediate on-shell structure.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_8_initial
+      note: Batch lists invariant mass reconstruction from 4-vectors among the prerequisites for w_mass_window_in_subjet_pairs.
+  status: asserted
+
+# ── Holographic and SCET operator constructions ───────────────────────────────
+
+- from: qft.chern_simons_term
+  to: technique.wess_zumino_witten_5d_decay
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The anomalous decay amplitude is computed from a 5D Chern-Simons term plus its WZW boundary completion, so the Chern-Simons node is the direct authored prerequisite for the bulk-topological part of the method.
+  failure_mode_if_absent: Cannot see why the decay amplitude reduces to a boundary contribution tied to anomaly inflow.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_8_initial
+      note: Batch lists Chern-Simons forms and anomaly inflow among the prerequisites for wess_zumino_witten_5d_decay.
+  status: asserted
+
+- from: eft.soft_collinear_effective_theory
+  to: technique.zero_bin_as_wilson_line_vev
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Zero-bin subtraction is a SCET bookkeeping problem, so the SCET node is the authored prerequisite for why the overlap region exists at all.
+  failure_mode_if_absent: Cannot place the Wilson-line vacuum factor as a correction to soft-collinear double counting.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_8_initial
+      note: Batch lists soft_collinear_effective_theory_concepts among the prerequisites for zero_bin_as_wilson_line_vev.
+  status: asserted
+
+- from: qft.wilson_line
+  to: technique.zero_bin_as_wilson_line_vev
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The whole redefinition is to divide by a vacuum matrix element of kinked Wilson lines, so the Wilson-line node is an explicit prerequisite rather than a contextual extra.
+  failure_mode_if_absent: Cannot interpret the denominator that replaces the ad hoc zero-bin subtraction.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_8_initial
+      note: Batch lists wilson_lines among the prerequisites for zero_bin_as_wilson_line_vev.
+  status: asserted
+
+- from: qft.dimensional_regularization
+  to: technique.zero_bin_as_wilson_line_vev
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The method is meant to work regulator-independently across the same soft-collinear overlap problems usually discussed in dimensional regularization, so that regulator language remains a practical prerequisite.
+  failure_mode_if_absent: Cannot compare the Wilson-line ratio prescription to the standard subtraction procedure it is replacing.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_8_initial
+      note: Batch lists dimensional_regularization among the prerequisites for zero_bin_as_wilson_line_vev.
+  status: asserted
+
+# ── IR-structure and resurgence techniques ────────────────────────────────────
+
+- from: eft.power_counting
+  to: technique.zombie_lemma_ir_infection
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The zombie lemma is an infrared-sensitivity propagation rule, so some power-counting language is required to tell which lines are suppressed or dangerous.
+  failure_mode_if_absent: Cannot decide whether attaching a new line changes the infrared degree of a reduced diagram.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_8_initial
+      note: Batch lists infrared_power_counting among the prerequisites for zombie_lemma_ir_infection.
+  status: asserted
+
+- from: qft.infrared_divergence
+  to: technique.zombie_lemma_ir_infection
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The lemma is about proving infrared insensitivity of the hard subdiagram, so the infrared-divergence node is the direct authored prerequisite for the property being tracked.
+  failure_mode_if_absent: Cannot tell what it means for a subdiagram to be infected with IR insensitivity in the first place.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_8_initial
+      note: Batch lists infrared_power_counting among the prerequisites for zombie_lemma_ir_infection.
+  status: asserted
+
+- from: qft.collinear_divergence
+  to: technique.zombie_lemma_ir_infection
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: One of the bootstrap steps is the collinear lemma, so the authored collinear-divergence node is part of the prerequisite IR analysis even though the named lemma itself is not yet a standalone node.
+  failure_mode_if_absent: Cannot understand why collinear attachments fail to reintroduce the dangerous singular behavior.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_8_initial
+      note: Batch lists collinear_lemma among the prerequisites for zombie_lemma_ir_infection.
+  status: asserted
+
+- from: qft.borel_transform
+  to: technique.borel_action_correspondence
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The correspondence is formulated directly in the Borel plane, identifying the Borel variable with the action, so the Borel transform is its primary authored prerequisite.
+  failure_mode_if_absent: Cannot state the plane in which saddle data is being reconstructed.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_8_initial
+      note: Batch lists Borel transform and inverse Borel transform among the prerequisites for borel_action_correspondence.
+  status: asserted
+
+- from: qft.borel_summability
+  to: technique.borel_action_correspondence
+  relation_type: requires_for_use
+  necessity: helpful
+  confidence: 0.85
+  rationale: Inverse-Borel reconstruction is the operational step that turns the transformed function back into a summed answer, so Borel-summability language is the closest authored match to that prerequisite.
+  failure_mode_if_absent: Cannot connect the Borel-plane branch structure back to a summed observable quantity.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_8_initial
+      note: Batch lists Borel transform and inverse Borel transform among the prerequisites for borel_action_correspondence.
+  status: asserted
+
+- from: qm.wkb_approximation
+  to: technique.borel_action_correspondence
+  relation_type: requires_for_use
+  necessity: helpful
+  confidence: 0.85
+  rationale: The action-saddle side of the correspondence uses the same semiclassical stationary-phase logic that already appears in the WKB approximation.
+  failure_mode_if_absent: Cannot interpret why critical points of the action should control the singular structure of the Borel transform.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_8_initial
+      note: Batch lists saddle point approximation among the prerequisites for borel_action_correspondence.
+  status: asserted
+
+# ── Massive-gravity Stueckelberg method ───────────────────────────────────────
+
+- from: sm.ccwz_method
+  to: technique.gravitational_goldstone_equivalence
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Schwartz's construction explicitly imports CCWZ-style Goldstone reasoning into massive gravity, so the existing CCWZ-method node is the direct authored prerequisite.
+  failure_mode_if_absent: Cannot understand why link fields are introduced or how they encode nonlinear symmetry restoration.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_8_initial
+      note: Batch lists nonlinear sigma model / CCWZ formalism for gauge theories among the prerequisites for gravitational_goldstone_equivalence.
+  status: asserted
+
+- from: math.diffeomorphism
+  to: technique.gravitational_goldstone_equivalence
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The method restores broken general-coordinate symmetry, so diffeomorphism language is the authored prerequisite for the symmetry being Stueckelbergized.
+  failure_mode_if_absent: Cannot formulate what symmetry the Goldstone link fields are restoring.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_8_initial
+      note: Batch lists general coordinate invariance and diffeomorphism algebra among the prerequisites for gravitational_goldstone_equivalence.
+  status: asserted
+
+- from: sm.ewbreak.goldstone_boson_equivalence_theorem
+  to: technique.gravitational_goldstone_equivalence
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The gravitational construction is an explicit spin-2 analog of the usual longitudinal-gauge-boson equivalence theorem, so the existing electroweak theorem is the graph's direct authored anchor.
+  failure_mode_if_absent: Cannot see why replacing longitudinal massive-graviton polarizations with Goldstone modes should be credible at high energy.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_8_initial
+      note: Batch lists equivalence theorem for longitudinal gauge bosons among the prerequisites for gravitational_goldstone_equivalence.
+  status: asserted
+
+- from: eft.power_counting
+  to: technique.gravitational_goldstone_equivalence
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: One of the main uses of the method is to expose the true strong-coupling scale, so EFT power counting is a direct authored prerequisite.
+  failure_mode_if_absent: Cannot read off why different nonlinear completions shift the cutoff from Lambda_5 to Lambda_3.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_8_initial
+      note: Batch lists EFT power counting and naive dimensional analysis among the prerequisites for gravitational_goldstone_equivalence.
+  status: asserted
+
+# ── Shoulder resummation for heavy-jet mass ───────────────────────────────────
+
+- from: qcd.collinear_factorization
+  to: technique.left_shoulder_factorization
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The left-shoulder formula is a special-kinematics factorization statement, so the existing collinear-factorization node is the direct authored prerequisite for its QCD organization.
+  failure_mode_if_absent: Cannot explain why the shoulder region splits into universal narrow-jet and soft pieces.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_8_initial
+      note: Batch lists QCD factorization near special kinematic configurations among the prerequisites for left_shoulder_factorization.
+  status: asserted
+
+- from: qcd.splitting_function
+  to: technique.left_shoulder_factorization
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The shoulder analysis uses polarized splitting information to resolve how the trijet limit populates the observable, so splitting-function language is an authored prerequisite.
+  failure_mode_if_absent: Cannot track the partonic branching structure that seeds the shoulder logarithms.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_8_initial
+      note: Batch lists Polarized splitting functions among the prerequisites for left_shoulder_factorization.
+  status: asserted
+
+- from: eft.large_logarithm_resummation
+  to: technique.left_shoulder_factorization
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The technique exists to resum shoulder logarithms once the special factorization formula is known, so the authored large-logarithm-resummation node is a direct prerequisite.
+  failure_mode_if_absent: Cannot see why the left-shoulder formula is useful beyond being a fixed-order decomposition.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_8_initial
+      note: Batch lists Non-global logarithm analysis among the prerequisites for left_shoulder_factorization.
+  status: asserted
+
+- from: qft.anomalous_dimension
+  to: technique.left_shoulder_factorization
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The cusp anomalous dimension controls the logarithmic evolution in the shoulder formula, so anomalous-dimension language is the closest authored prerequisite for that RG input.
+  failure_mode_if_absent: Cannot identify the universal coefficient governing the resummed logarithms.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_8_initial
+      note: Batch lists Cusp anomalous dimension among the prerequisites for left_shoulder_factorization.
+  status: asserted
+
+# ── Monodromy and neural-network correspondences ──────────────────────────────
+
+- from: qft.symbol_calculus
+  to: technique.monodromy_group_for_polylogs
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The method acts on polylogarithmic analytic data that is already organized in symbol-compatible form, so symbol calculus is an authored prerequisite.
+  failure_mode_if_absent: Cannot connect the monodromy action to the function-space data used in Feynman-integral bootstrap work.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_8_initial
+      note: Batch lists Generalized polylogarithms and their symbols among the prerequisites for monodromy_group_for_polylogs.
+  status: asserted
+
+- from: qft.iterated_integral
+  to: technique.monodromy_group_for_polylogs
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Variation matrices are built from iterated-integral data, so the existing iterated-integral node is the graph's direct authored prerequisite for that representation.
+  failure_mode_if_absent: Cannot interpret what objects the monodromy matrices are acting on.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_8_initial
+      note: Batch lists Variation matrices and iterated integrals among the prerequisites for monodromy_group_for_polylogs.
+  status: asserted
+
+- from: qft.monodromy_group
+  to: technique.monodromy_group_for_polylogs
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The construction computes discontinuities by acting with the monodromy group itself, so the authored monodromy-group node is an explicit prerequisite.
+  failure_mode_if_absent: Cannot tell what algebraic action is generating the sequential discontinuities.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_8_initial
+      note: Batch lists Fundamental group and monodromy representations among the prerequisites for monodromy_group_for_polylogs.
+  status: asserted
+
+- from: qft.connected_generating_functional
+  to: technique.nn_ft_correspondence
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The correspondence leans on cumulant-generating language when translating ensemble statistics into field-theory objects, so the connected-generating-functional node is the closest authored prerequisite.
+  failure_mode_if_absent: Cannot map neural-network ensemble cumulants into the standard field-theory generating-functional hierarchy.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_8_initial
+      note: Batch lists central limit theorem and cumulant generating functionals among the prerequisites for nn_ft_correspondence.
+  status: asserted
+
+- from: qft.gaussian_functional_integral
+  to: technique.nn_ft_correspondence
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The infinite-width limit becomes a Gaussian theory, so the existing Gaussian-functional-integral node is the direct authored prerequisite for that free-field limit.
+  failure_mode_if_absent: Cannot explain why the wide-network ensemble is governed by a solvable free theory.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_8_initial
+      note: Batch lists Gaussian processes and the NNGP correspondence among the prerequisites for nn_ft_correspondence.
+  status: asserted
+
+- from: qft.path_integral_and_generating_functionals
+  to: technique.nn_ft_correspondence
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The correspondence is stated explicitly in path-integral and partition-function language, so the existing path-integral trunk is an authored prerequisite.
+  failure_mode_if_absent: Cannot read the proposed duality between parameter-space ensembles and field-theory partition functions.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_8_initial
+      note: Batch lists path integral and partition function formalism among the prerequisites for nn_ft_correspondence.
+  status: asserted
+
+# ── Thrust factorization and shoulder resummation ─────────────────────────────
+
+- from: eft.soft_collinear_effective_theory
+  to: technique.scet_thrust_factorization
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The method is explicitly the SCET factorization theorem for thrust, so the SCET node is the primary authored prerequisite.
+  failure_mode_if_absent: Cannot place the hard-jet-soft separation inside its intended EFT framework.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_8_initial
+      note: Batch lists Soft-Collinear Effective Theory (SCET) operator formalism among the prerequisites for scet_thrust_factorization.
+  status: asserted
+
+- from: qft.wilson_line
+  to: technique.scet_thrust_factorization
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The thrust soft function is built from soft Wilson lines, so the existing Wilson-line node is the authored prerequisite for that sector definition.
+  failure_mode_if_absent: Cannot interpret the operator content of the soft function that appears in the factorization theorem.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_8_initial
+      note: Batch lists Wilson line definitions for soft and collinear sectors among the prerequisites for scet_thrust_factorization.
+  status: asserted
+
+- from: qft.thrust
+  to: technique.scet_thrust_factorization
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The technique factorizes the thrust distribution itself, so the thrust node is a direct authored prerequisite rather than surrounding context.
+  failure_mode_if_absent: Cannot tell what observable the hard, jet, and soft functions are meant to reproduce.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_8_initial
+      note: Batch lists Hemisphere mass decomposition of thrust among the prerequisites for scet_thrust_factorization.
+  status: asserted
+
+- from: eft.hard_function
+  to: technique.scet_thrust_factorization
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: One term in the factorized theorem is the hard function H, so the existing hard-function node is an explicit authored prerequisite.
+  failure_mode_if_absent: Cannot parse the short-distance factor in the thrust formula.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_8_initial
+      note: Batch lists Hard, jet, and soft function definitions in SCET among the prerequisites for scet_thrust_factorization.
+  status: asserted
+
+- from: eft.jet_function
+  to: technique.scet_thrust_factorization
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The factorized theorem includes jet functions J for the collinear sectors, so the jet-function node is a direct upstream prerequisite.
+  failure_mode_if_absent: Cannot interpret the collinear piece of the thrust factorization theorem.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_8_initial
+      note: Batch lists Hard, jet, and soft function definitions in SCET among the prerequisites for scet_thrust_factorization.
+  status: asserted
+
+- from: eft.soft_function
+  to: technique.scet_thrust_factorization
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The factorized theorem closes with the thrust soft function S_T, so the existing soft-function node is a direct authored prerequisite.
+  failure_mode_if_absent: Cannot interpret the low-energy radiation factor in the SCET thrust formula.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_8_initial
+      note: Batch lists Hard, jet, and soft function definitions in SCET among the prerequisites for scet_thrust_factorization.
+  status: asserted
+
+- from: qft.thrust
+  to: technique.sudakov_shoulder_resummation
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Thrust is one of the benchmark event shapes whose intermediate shoulder logarithms motivate the method, so the existing thrust node is an explicit prerequisite.
+  failure_mode_if_absent: Cannot see which observable class the resummation is designed to control.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_8_initial
+      note: Batch lists Event shapes (thrust, heavy jet mass) among the prerequisites for sudakov_shoulder_resummation.
+  status: asserted
+
+- from: qft.heavy_jet_mass
+  to: technique.sudakov_shoulder_resummation
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Heavy jet mass is the concrete shoulder observable treated in the paper, so the heavy-jet-mass node is another direct prerequisite.
+  failure_mode_if_absent: Cannot interpret what it means for rho to approach the symmetric trijet shoulder at 1/3.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_8_initial
+      note: Batch lists Event shapes (thrust, heavy jet mass) among the prerequisites for sudakov_shoulder_resummation.
+  status: asserted
+
+- from: qft.soft_radiation_factorization
+  to: technique.sudakov_shoulder_resummation
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The shoulder logarithms come from Sudakov soft radiation constrained by the observable boundary, so the existing soft-radiation-factorization node is an authored prerequisite.
+  failure_mode_if_absent: Cannot explain why soft emissions factorize into a universal object near the shoulder.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_8_initial
+      note: Batch lists Sudakov form factors and soft/collinear factorization among the prerequisites for sudakov_shoulder_resummation.
+  status: asserted
+
+- from: qcd.collinear_factorization
+  to: technique.sudakov_shoulder_resummation
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The same shoulder argument also depends on the narrow-jet collinear sectors near the symmetric trijet point, so collinear factorization is part of the authored prerequisite structure.
+  failure_mode_if_absent: Cannot see how the constrained trijet kinematics separates into jet and soft pieces.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_8_initial
+      note: Batch lists Sudakov form factors and soft/collinear factorization among the prerequisites for sudakov_shoulder_resummation.
+  status: asserted
+
+- from: eft.renormalization_group_running
+  to: technique.sudakov_shoulder_resummation
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Once the shoulder factorization formula is established, the large logarithms are summed by RG evolution between the relevant scales, so RG running is a direct prerequisite.
+  failure_mode_if_absent: Cannot turn the factorized shoulder formula into a logarithmically improved prediction.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_8_initial
+      note: Batch lists Renormalization group evolution among the prerequisites for sudakov_shoulder_resummation.
+  status: asserted

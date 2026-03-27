@@ -1,0 +1,175 @@
+- id: technique.passarino_veltman_reduction
+  label: Passarino-Veltman (PV) reduction
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Algebraic one-loop tensor-integral reduction that projects loop-momentum numerators onto an external-momentum basis and rewrites the result in terms of scalar coefficient functions.
+  status: asserted
+
+- id: technique.laporta_algorithm
+  label: Laporta algorithm
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Systematic reduction algorithm that generates large identity systems, orders integrals by complexity, and solves for a master-integral basis.
+  status: asserted
+
+- id: technique.integration_by_parts_reduction
+  label: Integration-by-parts (IBP) reduction
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Loop-integral reduction method that uses total-derivative identities in loop-momentum space to express an integral family in terms of a finite set of master integrals.
+  status: asserted
+
+- id: technique.differential_equations_for_master_integrals
+  label: Differential equations for master integrals
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Strategy that differentiates master integrals with respect to kinematic variables or masses, closes the system with reduction identities, and solves it from boundary data.
+  status: asserted
+
+- id: technique.generalized_unitarity_cuts
+  label: Generalized unitarity cuts
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: On-shell reconstruction method that imposes multiple cut conditions and sews tree amplitudes together to determine loop integrands or integral coefficients.
+  status: asserted
+
+- id: technique.bcfw_recursion_relations
+  label: BCFW recursion relations
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Complex momentum-shift recursion that builds higher-point on-shell tree amplitudes from lower-point factorization channels.
+  status: asserted
+
+- id: technique.csw_mhv_vertex_expansion
+  label: CSW MHV-vertex expansion
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Tree-amplitude construction that treats off-shell-continued MHV amplitudes as effective vertices joined by scalar propagators.
+  status: asserted
+
+- id: technique.color_kinematics_duality_bcj
+  label: Color-kinematics duality and BCJ relations
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Representation method that arranges gauge-theory amplitudes so kinematic numerators satisfy Jacobi-like identities mirroring the color algebra, yielding BCJ relations.
+  status: asserted
+
+- id: technique.double_copy_construction
+  label: Double-copy construction
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Amplitude construction that replaces one set of color factors in a gauge-theory representation by a second kinematic numerator set to produce gravity integrands or amplitudes.
+  status: asserted
+
+- id: technique.method_of_regions
+  label: Method of regions
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Asymptotic-expansion method that separates hard, soft, collinear, and related momentum regions, expands the integrand in each region, and sums the regulated contributions.
+  status: asserted
+
+- id: technique.reverse_unitarity
+  label: Reverse unitarity
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Inclusive-observable method that rewrites phase-space delta functions as cut propagators so cross-section integrals can be reduced with loop-integral machinery.
+  status: asserted
+
+- id: technique.mellin_barnes_representation
+  label: Mellin-Barnes (MB) representation
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Contour-integral representation that splits sums in denominators into factorized terms, enabling residue evaluation, analytic continuation, and asymptotic expansion.
+  status: asserted
+
+- id: technique.feynman_parametrization
+  label: Feynman parametrization
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Standard parameter trick that combines multiple propagator denominators into a single denominator and simplifies the subsequent loop-momentum integration.
+  status: asserted
+
+- id: technique.alpha_parametrization
+  label: Alpha (Schwinger) parametrization
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Exponential parameter representation of propagators that rewrites Feynman integrals in terms of alpha parameters and Symanzik-polynomial structure.
+  status: asserted
+
+- id: technique.generic_sector_decomposition
+  label: Generic sector decomposition
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Recursive parameter-space partitioning method that isolates overlapping endpoint singularities and exposes epsilon poles for analytic expansion or numerical integration.
+  status: asserted
+
+- id: technique.cutkosky_rules
+  label: Cutkosky rules
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Discontinuity rules that replace cut propagators by on-shell delta distributions to compute absorptive parts and channel discontinuities of amplitudes.
+  status: asserted

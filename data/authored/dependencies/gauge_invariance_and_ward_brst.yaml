@@ -1,13 +1,13 @@
 # Canonical dependency edges for the gauge-invariance and Ward/BRST batch.
-- from: qft.yang_mills_action
-  to: qft.gauge_invariance
-  relation_type: requires_for_recognize
+- from: qft.gauge_invariance
+  to: qft.yang_mills_action
+  relation_type: requires_for_derive
   necessity: necessary
   audience_profile: hep_th_grad
   subfield: qft_foundations
   task_type: literature_reading
-  rationale: Gauge invariance is usually read as a property of the Yang-Mills action before gauge fixing is introduced.
-  failure_mode_if_absent: Cannot tell what object is being claimed invariant under the local gauge transformations.
+  rationale: The Yang-Mills action is the canonical non-Abelian action derived by imposing local gauge invariance before gauge fixing is introduced.
+  failure_mode_if_absent: Cannot see why this particular action is singled out as the gauge-theory action compatible with the local symmetry.
   evidence:
     - type: expert_claim
       source_ref: gauge_invariance_and_ward_brst_batch_initial

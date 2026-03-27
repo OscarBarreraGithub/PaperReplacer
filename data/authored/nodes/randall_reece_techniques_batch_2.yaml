@@ -1,0 +1,1110 @@
+- id: "technique.chargino_eigenvalue_bounds"
+  label: "Chargino mass-matrix eigenvalue bounds"
+  knowledge_kind: "method"
+  granularity_level: "atomic"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Analyze the chargino mass matrix to show why the minimal two-Higgs-doublet setup makes large tan beta correlated with light charginos. This is the mathematical obstruction that motivates extending the Higgs sector."
+  status: "asserted"
+- id: "technique.chargino_neutralino_splitting_expansion"
+  label: "Large-mu expansion plus one-loop splitting for Wino masses"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: true
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Compute the chargino-neutralino mass difference by first expanding the mass matrices at large absolute mu and then adding the dominant one-loop custodial-SU(2)-breaking correction from gauge bosons. This identifies the centimeter-to-meter lifetime regime that drives the collider strategy."
+  status: "asserted"
+- id: "technique.chemical_potential_suppression_equations"
+  label: "Chemical-Potential Equations with Thermal Suppression"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: true
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Solve the chemical-equilibrium relations with the explicit f(m/T) number-density suppression factor included, rather than assuming all species are relativistic. This is the mathematical core of the heavy-asymmetric-DM result."
+  status: "asserted"
+- id: "technique.chern_weil_completion_constraint_on_inflation"
+  label: "Chern-Weil Completion Constraint on Inflationary EFTs"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: true
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Treat the SU(2) instanton-number symmetry as a Chern-Weil symmetry that must be gauged or broken in quantum gravity; if one axion does not remove all instantonic symmetries, an additional axion and its strings appear. This translates generalized-symmetry and WGC reasoning into a bound on inflationary scales."
+  status: "asserted"
+- id: "technique.chern_weil_current_diagnosis"
+  label: "Diagnose generalized global symmetries via Chern-Weil currents"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: true
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Construct higher-form conserved currents from closed gauge-invariant Chern-Weil forms and ask whether they define actual global symmetries rather than pure redundancies. This is the starting point for exposing hidden generalized symmetries in gauge theories and compactifications."
+  status: "asserted"
+- id: "technique.chi_square_spectral_fit_to_dama"
+  label: "Chi-Square Spectral Fit to DAMA"
+  knowledge_kind: "method"
+  granularity_level: "atomic"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Fit the DAMA modulation spectrum with a bin-by-bin chi-square analysis while simultaneously checking unmodulated rates and external exclusion datasets. This tests whether a candidate matches the actual spectral shape rather than only the total rate."
+  status: "asserted"
+- id: "technique.chirp_acceleration_correlation_diagnosis"
+  label: "Correlation diagnosis between intrinsic chirp and orbital acceleration"
+  knowledge_kind: "method"
+  granularity_level: "atomic"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Track parameter correlations between chirp mass, outer-orbit frequency, and barycenter acceleration to separate true inspiral chirping from environmental phase drift. Use when acceleration can mimic intrinsic mass-dependent frequency evolution."
+  status: "asserted"
+- id: "technique.chirp_time_continuity_equation_with_eccentricity"
+  label: "Continuity-equation number counts with eccentric chirp time"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: true
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Compute dn/df_p from the merger rate using the eccentricity-dependent f_pdot implied by Peters evolution and the peak-frequency map. Use for rapid forecasts of how long eccentric populations dwell in the LISA band."
+  status: "asserted"
+- id: "technique.circular_reference_binary_mapping"
+  label: "Mapping to a circular binary at the same peak frequency"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: true
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Compare an eccentric source to a circular reference binary with the same peak frequency so the hard part of the waveform is isolated to one eccentric correction factor. Use when detector sensitivity is best understood in terms of circular templates."
+  status: "asserted"
+- id: "technique.clockwork_alignment_uv_consistency_bound"
+  label: "Clockwork/alignment UV consistency bound"
+  knowledge_kind: "method"
+  granularity_level: "atomic"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Propagate the single-axion unitarity bound through multi-axion alignment or clockwork to show that the confinement scale cannot exceed the fundamental axion period. Use when judging whether large effective field ranges genuinely solve a large-coupling problem."
+  status: "asserted"
+- id: "technique.cobordism_and_adams_ss_for_parity_defects"
+  label: "Cobordism and Adams Spectral Sequence for Parity Defects"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: true
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Use oriented and unoriented cobordism together with the Adams spectral sequence to determine which parity defects correspond to genuine charges, which are gauged, and why parity vortices are absent. This converts a heuristic topological argument into a systematic classification."
+  status: "asserted"
+- id: "technique.cohomological_construction_of_chern_weil_symmetries"
+  label: "Cohomological construction of Chern-Weil symmetries"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: true
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Use characteristic classes, descent, and cohomology to classify closed forms modulo exact or gauge-variant pieces. This is the mathematical framework that turns the symmetry diagnosis into a systematic classification."
+  status: "asserted"
+- id: "technique.colder_dark_sector_free_streaming_rescaling"
+  label: "Rescale free-streaming bounds for a colder dark sector"
+  knowledge_kind: "method"
+  granularity_level: "atomic"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Use the suppressed dark-sector temperature after entropy flooding to reinterpret warm-dark-matter free-streaming bounds, allowing lighter dark matter than in conventional thermal histories. This is the main reason very light fermionic dark matter becomes viable later in the Randall-Scholtz-Unwin program."
+  status: "asserted"
+- id: "technique.coleman_weinberg_hidden_valley_quartic"
+  label: "Coleman-Weinberg extraction of the hidden-sector Higgs quartic"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: true
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Compute the one-loop Higgs potential from the full vectorlike mass matrix, or in simple limits from the effective Kahler potential, to isolate the new quartic. This is the calculational core that shows the hidden sector can really lift mh."
+  status: "asserted"
+- id: "technique.collider_cosmology_complementarity"
+  label: "Collider-cosmology complementarity mapping"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: true
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Overlay collider reach with relic-density targets and direct or indirect detection sensitivities so search channels are judged against thermal-WIMP or related benchmarks, not in isolation. This turns collider studies into tests of full dark-matter scenarios."
+  status: "asserted"
+- id: "technique.collider_cutflow_parameter_inference"
+  label: "Cut-flow parameter inference in the (m0, tan beta) plane"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: true
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Build targeted 100 TeV cut-and-count analyses for the loop-sensitive gluino channel and for Z-rich electroweakino production, then propagate statistical and systematic errors into the (m0, tan beta) plane. The final step is to overlay those inferred regions on MSSM Higgs-mass contours to test whether the observed Higgs can be explained internally."
+  status: "asserted"
+- id: "technique.collider_extraction_of_super_oblique_effects"
+  label: "Collider extraction of super-oblique effects"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: true
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Specific selectron, chargino, and squark associated-production observables are proposed that depend directly on the shifted supersymmetric couplings. This connects the formal parameterization to actual experiments."
+  status: "asserted"
+- id: "technique.collider_signal_as_probe_of_large_field_excursions"
+  label: "Cosmological-Collider Signal as a Probe of Large-Field Excursions"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: true
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Interpret deviations from the standard quasi-single-field template as evidence that the inflaton excursion is modulating heavy spectra. The observational target is not just a heavy particle, but the field-space motion that changes its mass."
+  status: "asserted"
+- id: "technique.collimation_fraction_scan"
+  label: "Collimation-fraction scan in boosted top events"
+  knowledge_kind: "method"
+  granularity_level: "atomic"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Quantify how often top decay products merge by scanning isolated-object multiplicities and Delta R collimation fractions versus resonance mass and top pT. Use it to decide which reconstruction strategy is even kinematically plausible."
+  status: "asserted"
+- id: "technique.color_rep_from_matter_asymmetric_rehadronization"
+  label: "Color Representation from Matter-Asymmetric Rehadronization"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: true
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Infer whether the long-lived particle is in a triplet or octet representation by using the detector's matter composition, which makes triplets and antitriplets rehadronize differently from octets as they pass through material."
+  status: "asserted"
+- id: "technique.combined_ewsb_and_ccb_screening"
+  label: "Combined electroweak and color-charge breaking screening"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: true
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Viable parameter space is found by intersecting electroweak symmetry breaking solutions with bounds from deeper color or charge breaking minima. This turns the mechanism into a sharpened phenomenological viability test rather than a loose spectrum estimate."
+  status: "asserted"
+- id: "technique.combined_kappa_and_smeft_global_fit"
+  label: "Combined kappa-framework and SMEFT global fit"
+  knowledge_kind: "method"
+  granularity_level: "atomic"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Combine precision Higgs, electroweak, and Z-pole observables in a correlated fit to coupling modifiers or EFT Wilson coefficients. Use when many small deviations point collectively to BSM physics rather than any single discovery channel."
+  status: "asserted"
+- id: "technique.common_strong_coupling_scale_emergence"
+  label: "Common strong-coupling scale as an emergence principle"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: true
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Assume that the scalar sector and gravity both become strongly coupled at the same quantum-gravity scale generated by a light tower. Use this as a replacement principle from which swampland distance behavior can be derived rather than postulated."
+  status: "asserted"
+- id: "technique.compact_star_inelastic_capture"
+  label: "Compact-star capture of inelastic dark matter"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: true
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Exploit the large escape velocity of white dwarfs or neutron stars to upscatter dark matter into a heavier state that terrestrial targets cannot access. Use when a mass gap shuts off direct detection but gravitational acceleration inside compact stars can overcome the inelastic threshold."
+  status: "asserted"
+- id: "technique.compactification_by_brane_nucleation"
+  label: "Compactification by Nucleation of Brane-Like Geometries"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: true
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Interpret black-brane and Nariai-like solutions as nucleated regions that dynamically compactify extra dimensions inside a higher-dimensional de Sitter background. Compactification becomes a cosmological transition rather than a static assumption."
+  status: "asserted"
+- id: "technique.compactification_stability_test_for_wgc"
+  label: "Compactification stability as a test for WGC variants"
+  knowledge_kind: "method"
+  granularity_level: "atomic"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Demand that the conjecture survive toroidal reduction, Wilson lines, and related operations that every consistent UV theory should admit. This physical test filters out WGC formulations that are too weak or too strong."
+  status: "asserted"
+- id: "technique.compactification_triggered_inflation"
+  label: "Compactification-Triggered Inflation"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: true
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Use the radion released by the compactification transition as an inflaton candidate in the lower-dimensional region. This links extra-dimensional dynamics directly to post-transition slow roll."
+  status: "asserted"
+- id: "technique.compare_z_vertex_and_four_fermion_etc_contributions"
+  label: "Compare Z-vertex and four-fermion ETC contributions"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: true
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Separate indirect ETC effects that shift electroweak vertices from direct ETC four-fermion operators and compare their parametric sizes. Use it to see which mechanism actually controls a rare-decay bound."
+  status: "asserted"
+- id: "technique.competing_channel_vacuum_dominance"
+  label: "Competing-channel vacuum dominance"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: true
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Compute BCFT twist correlators in both bulk and boundary OPE channels, evaluate the identity block in each, and pick the larger contribution. Use it when boundaries or interfaces make the dominant conformal block channel configuration-dependent."
+  status: "asserted"
+- id: "technique.completeness_from_topological_defect_absence"
+  label: "Completeness from Absence of Topological Defects"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: true
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Recast spectrum completeness as the statement that no nontrivial topological operator of the corresponding type survives. This turns a hard dynamical question about charged states into a defect-classification problem."
+  status: "asserted"
+- id: "technique.composite_f_term_sourcing"
+  label: "Composite F-term sourcing"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: true
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Vectorlike composites in the supersymmetry-breaking sector are arranged so their effective F-terms feed the mediator or intermediary couplings. This replaces the usual elementary spurion with a dynamically generated source of supersymmetry breaking."
+  status: "asserted"
+- id: "technique.composite_intermediary_model_building"
+  label: "Composite intermediary model building"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: true
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Confining gauge sectors are used to generate the hidden composites and effective couplings needed for intermediary gauge mediation. This replaces ad hoc singlet sectors with dynamical strong-coupling structure."
+  status: "asserted"
+- id: "technique.composite_mediator_model_building"
+  label: "Composite mediator model building"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: true
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Mediator fields themselves are realized as composites of confining groups so the messenger bridge to the visible sector emerges dynamically. This broadens mediator models beyond elementary bifundamentals."
+  status: "asserted"
+- id: "technique.composite_singlet_nmssm"
+  label: "Composite-singlet NMSSM sector"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: true
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Realize the NMSSM singlet as a confined composite of an SO(n) gauge sector so that the effective low-energy theory contains the needed SHuHd interaction without a fundamental dangerous singlet. Confinement then simultaneously supplies the singlet sector that raises the Higgs mass and helps trigger EWSB."
+  status: "asserted"
+- id: "technique.compressed_spectrum_recoil_and_track_searches"
+  label: "Recoil and disappearing-track searches for compressed spectra"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: true
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "When visible decay products are too soft, search for initial-state recoil, vector-boson-fusion tagging, or metastable charged tracks instead. The review uses this as the standard way to make nearly degenerate electroweak sectors visible."
+  status: "asserted"
+- id: "technique.compressed_wino_disappearing_track_search"
+  label: "Disappearing-track search for compressed Winos"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: true
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Exploit the near degeneracy of charged and neutral Winos so the chargino travels centimeters to meters and then decays to a neutralino plus a very soft pion or lepton. The visible signature is not missing energy alone but a high-pT track that terminates inside the detector."
+  status: "asserted"
+- id: "technique.condensate_backreaction_as_ir_wall"
+  label: "Use condensate backreaction as the IR wall"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: true
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "The model replaces an ad hoc hard IR brane by letting nonperturbative condensate profiles backreact on the 5D geometry until the space ends dynamically. Use it when a holographic QCD model needs an IR cutoff tied to field-theory dynamics rather than by hand."
+  status: "asserted"
+- id: "technique.confined_monopole_diagnosis_of_lwgc_failure"
+  label: "Diagnose LWGC failure via confined fractional monopoles"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: true
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "The core move is to reinterpret LWGC violation as the presence of fractionally charged monopoles confined by flux tubes, with superextremal particles living on the electric sublattice dual to those monopoles. Use it when a theory seems to violate the full charge-lattice WGC but still obeys a weaker sublattice structure."
+  status: "asserted"
+- id: "technique.confinement_generated_mass_terms"
+  label: "Confinement-generated mass terms"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: true
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Planck-suppressed preon operators are matched through confinement to produce effective composite masses and order-one Yukawa couplings in the infrared. This is the core constructive trick that makes the composite models realistic."
+  status: "asserted"
+- id: "technique.confinement_induced_yukawa_mass_transmutation"
+  label: "Confinement-induced Yukawa-to-mass transmutation"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: true
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Exploit the fact that after one gauge factor confines, microscopic Yukawa couplings become mass terms for matter charged under a second gauge factor, thereby changing its phase and triggering new nonperturbative dynamics. Use it when product-group dynamics can reshuffle what counts as a light flavor."
+  status: "asserted"
+- id: "technique.confinement_tower_clockwork_axion"
+  label: "Confinement-tower clockwork"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: true
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Iterate alignment through a chain of confining gauge groups so the light axion inherits exponentially enhanced couplings while each step uses modest charges. Use when a UV completion must realize clockwork without ad hoc scalar potentials."
+  status: "asserted"
+- id: "technique.conformal_two_point_propagator"
+  label: "Conformal two-point function as an effective propagator"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: true
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Use CFT two-point functions in momentum space to replace particle exchange by a noninteger power law in -q^2. This is the mathematical move that turns 'continuum exchange' into an explicit calculational object."
+  status: "asserted"
+- id: "technique.consistent_slicing_constraint"
+  label: "Consistent slicing constraint"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: true
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Require every 4D slice of the warped 5D background to share the same cosmological constant, as enforced by a higher-dimensional Einstein constraint. Use it when local brane energy perturbations threaten to make the 4D EFT inconsistent."
+  status: "asserted"
+- id: "technique.constant_superpotential_for_r_axion_mass"
+  label: "Constant-superpotential generation of the R-axion mass"
+  knowledge_kind: "method"
+  granularity_level: "atomic"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Add the supergravity constant term needed to cancel the cosmological constant and track how it explicitly breaks R symmetry, thereby giving the would-be R axion a mass. Use it whenever a dynamical SUSY-breaking model appears to predict an exactly massless R axion."
+  status: "asserted"
+- id: "technique.constrained_bounce_action_estimation"
+  label: "Constrained bounce-action estimation"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: true
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "The tunneling rate is bounded by restricting the multi-field problem to optimized one-dimensional trajectories and then refining numerically near the best path. This makes metastability estimates feasible even in complicated messenger field spaces."
+  status: "asserted"
+- id: "technique.constrained_instanton_superpotential"
+  label: "Constrained-instanton superpotential"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: true
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Use constrained-instanton methods to derive the nonperturbative superpotential that lifts the classical flat directions. Apply it when dynamical SUSY breaking depends on instanton-generated terms rather than perturbative potentials."
+  status: "asserted"
+- id: "technique.constraint_equation_regularization_of_singular_kinetics"
+  label: "Constraint-equation regularization of singular kinetics"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: true
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Use the gravitational constraint equations to show that numerator and denominator fluctuations in the kinetic term are correlated, so the singular-looking operator remains finite on physical solutions. Use it when naive power counting suggests a pathology that may be removed by constrained dynamics."
+  status: "asserted"
+- id: "technique.continuum_mediator_factorization"
+  label: "Factorized continuum-mediator scattering"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: true
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Write the direct-detection amplitude as dark current times SM current times a mediator two-point function, so a continuum of exchanged states only reweights known nonrelativistic operators by a function of q^2. This makes continuum mediation tractable without inventing new nuclear-response machinery."
+  status: "asserted"
+- id: "technique.controlled_superplanckian_excursion_from_locality"
+  label: "Obtain super-Planckian field range from a sub-Planckian higher-dimensional setup"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: true
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "The effective decay constant f_eff = 1/(2 pi g_4 R) can exceed M_P even when the underlying 5D theory stays weakly coupled and local. This makes large gravitational waves and chaotic-inflation-like predictions compatible with a controlled particle-physics model."
+  status: "asserted"
+- id: "technique.cooling_timescale_comparison"
+  label: "Cooling-timescale comparison against halo evolution"
+  knowledge_kind: "method"
+  granularity_level: "atomic"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Compare bremsstrahlung and Compton cooling times with halo dynamical times and the age of the universe to determine where the interacting dark component can actually collapse. The result is a parameter-space criterion for whether a dark disk forms at all."
+  status: "asserted"
+- id: "technique.coordinate_scaling_limit_analysis"
+  label: "Coordinate-Scaling Limit Analysis"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: true
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Introduce scaled coordinates near coincident horizons and track proper distances and volumes to show that the inter-horizon region survives the extremal limit. This extracts the correct limiting geometry from a coordinate-singular description."
+  status: "asserted"
+- id: "technique.correct_chirality_kk_higgs_nondecoupling"
+  label: "Non-decoupling of KK Higgs contributions through correct-chirality couplings"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: true
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Recognize that KK Higgs bosons couple to KK fermions in a way that makes even same-chirality contributions survive parametrically after summing the tower. This is qualitatively different from the zero-mode Higgs case and changes which diagrams dominate."
+  status: "asserted"
+- id: "technique.correlated_signal_consistency_checks"
+  label: "Correlated-signal consistency checks"
+  knowledge_kind: "method"
+  granularity_level: "atomic"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Infer branching-ratio and production-rate relations across gamma gamma, nu nu gamma gamma, and multi-photon channels and test them against data simultaneously. This is the physical move that turns one excess into a broad consistency problem."
+  status: "asserted"
+- id: "technique.cosmological_bound_from_coherent_r_axion_oscillations"
+  label: "Cosmological bound from coherent R-axion oscillations"
+  knowledge_kind: "method"
+  granularity_level: "atomic"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Estimate the cosmological abundance produced by coherent oscillations and combine it with reheating and gravitino constraints. Use it when a light pseudo-Goldstone mode threatens cosmology more than collider phenomenology."
+  status: "asserted"
+- id: "technique.coulomb_log_transport_integral"
+  label: "Momentum-transfer integral with Coulomb logarithms"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: true
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Compute the rate of energy and momentum exchange by thermal averaging the Rutherford cross section with the correct infrared cutoff, yielding the Coulomb-log dependence of the isotropization time. This is the quantitative core of the revised constraint calculation."
+  status: "asserted"
+- id: "technique.coupled_boltzmann_reheating_system"
+  label: "Coupled Boltzmann system for modulus, radiation, and LSP"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: true
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Track the modulus number density, radiation bath, and LSP abundance with coupled Boltzmann equations through modulus domination, reheating, and post-decay annihilation. This is the quantitative tool that replaces naive freeze-out intuition in the non-thermal regime."
+  status: "asserted"
+- id: "technique.coupled_channel_partial_wave_smatrix"
+  label: "Coupled-channel partial-wave S-matrix extraction"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: true
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Rewrite the spin-dependent two-body problem in a basis of fixed total angular momentum and solve the resulting coupled radial equations to obtain the S matrix. This is the workhorse for tensor forces, state mixing, and inelastic channels."
+  status: "asserted"
+- id: "technique.coupled_isothermal_poisson_jeans_solver"
+  label: "Coupled isothermal Poisson-Jeans solver"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: true
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Solve the multi-component Poisson-Jeans equations for approximately isothermal gas and stellar layers in the combined potential of baryons, halo dark matter, and a candidate dark disk. The solver predicts surface densities and scale heights for a trial dark-disk model."
+  status: "asserted"
+- id: "technique.coupled_relic_asymmetry_boltzmann_system"
+  label: "Coupled Boltzmann system for relic density and asymmetry"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: true
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Solve a coupled set of Boltzmann equations for the comoving dark matter abundance and baryon or lepton asymmetry, with a source term proportional to the annihilation rate and sink terms from inverse processes and washout scattering. This makes the parametric relation between the CP asymmetry, washout scale, and final baryon yield explicit."
+  status: "asserted"
+- id: "technique.covariant_lightsheet_domain_construction"
+  label: "Assign a brane a bulk holographic domain using light-sheets"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: true
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Instead of naively mapping the whole bulk to the brane on a space-like slice, foliate the brane by areas and follow their contracting null light-sheets until caustics. The union of those sheets is the bulk region the brane can legitimately encode."
+  status: "asserted"
+- id: "technique.cp_odd_electron_nucleon_interpretation"
+  label: "CP-odd electron-nucleon reinterpretation"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: true
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Map the molecular EDM observable onto both the electron dipole and scalar electron-nucleon operators, then identify which one dominates in a given UV scenario. Use when the measured atomic or molecular signal need not come mainly from de itself."
+  status: "asserted"
+- id: "technique.cp_selection_for_swave_annihilation"
+  label: "CP Selection Rules for S-Wave Annihilation"
+  knowledge_kind: "method"
+  granularity_level: "atomic"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Use the C, P, and CP properties of dark-matter bilinears to determine whether annihilation is S-wave, P-wave, or helicity suppressed. This tells you immediately which operators can contribute to present-day indirect signals."
+  status: "asserted"
+- id: "technique.cp_violating_wimp_annihilation_baryogenesis"
+  label: "CP-violating WIMP annihilation as the baryogenesis source"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: true
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Use dark matter annihilation into a Standard Model state plus an exotic state to generate a CP-asymmetric visible-sector charge, then arrange the exotic decay pattern so the asymmetry is hidden from rapid washout. This replaces out-of-equilibrium heavy-particle decay by out-of-equilibrium annihilation as the asymmetry source."
+  status: "asserted"
+- id: "technique.cpv_eft_matching_pipeline_for_edms"
+  label: "CP-Violating EFT Matching Pipeline for EDMs"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: true
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Match high-scale CP-violating operators onto hadronic, nuclear, atomic, molecular, and storage-ring EDM observables through a staged EFT chain. This provides a common language for comparing many experiments against the same new-physics sources."
+  status: "asserted"
+- id: "technique.cpv_search_figure_of_merit_factorization"
+  label: "Coherence-amplification-count-rate figure of merit"
+  knowledge_kind: "method"
+  granularity_level: "atomic"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Factor projected sensitivity into enhancement factors such as effective internal field or Schiff-moment amplification, coherence time, particle number, and systematic control. This gives a common quantitative language for comparing very different molecular platforms."
+  status: "asserted"
+- id: "technique.critical_modulus_higgs_potential"
+  label: "Critical modulus-Higgs potential near marginal EWSB"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: true
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Parameterize fine tuning by placing the vacuum close to the point where a modulus makes the Higgs mass change sign, so small modulus motion radically alters electroweak symmetry breaking. Use when early-universe scalar dynamics are sensitive to Higgs-sector tuning."
+  status: "asserted"
+- id: "technique.cross_section_and_mass_difference_contours"
+  label: "Cross section plus mass-difference contour intersection"
+  knowledge_kind: "method"
+  granularity_level: "atomic"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Average ETmiss, HT, M_eff, and MT2-like observables are treated as measuring mainly the mass splitting, while the total cross section fixes the overall mass scale for a chosen spin hypothesis. Use it when event-by-event reconstruction is impossible but a clean sample exists."
+  status: "asserted"
+- id: "technique.cross_section_ratio_to_cancel_source_couplings"
+  label: "Cross-section ratios that cancel unknown source couplings"
+  knowledge_kind: "method"
+  granularity_level: "atomic"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Normalize the B B pi rate to the corresponding B Bbar rate so the poorly known production source cancels. This is the key move that turns a model-dependent source problem into an extraction of the axial coupling g."
+  status: "asserted"
+- id: "technique.cubic_goldberger_wise_deformation"
+  label: "Cubic Goldberger-Wise deformation"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: true
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Add a cubic self-interaction for the Goldberger-Wise scalar so hierarchy generation and confinement triggering are no longer tied to the same small mass term. Use it when the standard light-GW setup suppresses the RS phase transition too strongly."
+  status: "asserted"
+- id: "technique.current_correlator_gauge_running"
+  label: "Derive gauge running from conserved-current correlators"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: true
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Couple a 4D gauge field to a broken CFT current and use the fixed form of the current two-point function to recover logarithmic gauge coupling evolution. This explains why bulk gauge fields in warped space run like 4D couplings rather than with naive power law behavior."
+  status: "asserted"
+- id: "technique.curvature_dependent_kinetic_freezing"
+  label: "Curvature-dependent kinetic freezing"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: true
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Engineer the scalar kinetic term so its coefficient diverges as the Ricci scalar approaches zero, causing the field to slow to a halt before it reaches the negative-energy minimum of its potential. Use it when you want dynamics to stall near vanishing vacuum energy without tuning the potential itself."
+  status: "asserted"
+- id: "technique.cutoff_moments_to_avoid_low_z_extrapolation"
+  label: "Cutoff moments to avoid low-z extrapolation"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: true
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Define moments with a lower z cutoff so poorly measured low-z tails do not dominate the uncertainty. Use it when experimental coverage is good only over part of phase space."
+  status: "asserted"
+- id: "technique.cvm_goodness_of_fit_for_crater_models"
+  label: "Cramer-von Mises goodness-of-fit check"
+  knowledge_kind: "method"
+  granularity_level: "atomic"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "After identifying the favored model, compare the empirical and theoretical cumulative distributions with a Cramer-von Mises test to verify the model is not just preferred relative to a worse alternative but also an acceptable fit in absolute terms."
+  status: "asserted"
+- id: "technique.cyberpfa_crystal_bar_reconstruction"
+  label: "CyberPFA for orthogonal crystal-bar calorimetry"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: true
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "CyberPFA replaces standard PFA clustering by shower-core seeding, Hough-based neutral-shower finding, profile-based energy splitting, and timing/module-aware ghost-hit rejection tailored to orthogonal crystal bars. Use it when conventional sampling-calorimeter PFAs break on homogeneous bar geometries."
+  status: "asserted"
+- id: "technique.cycle_volume_poincare_dual_scaling_estimate"
+  label: "Cycle-Volume Scaling from Poincare Dual Forms"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: true
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Estimate f, instanton actions, and wrapped-brane string tensions from cycle volumes and harmonic-form normalization using Poincare duality. This converts geometric data into parametric relations among axion observables."
+  status: "asserted"
+- id: "technique.dark_disk_seeded_tidal_dwarf_formation"
+  label: "Use a thin dark disk to seed dark-matter-rich tidal dwarfs"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: true
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Start from a progenitor disk that contains a thin dissipative dark component, so tidal stripping in a merger pulls out baryons and dark matter together rather than baryons alone. Because the dark component is already in the disk, tidal dwarfs can inherit substantial dark mass."
+  status: "asserted"
+- id: "technique.dark_disk_tidal_trigger_model"
+  label: "Dark-disk tidal triggering of comet showers"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: true
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Model enhanced comet impacts as Oort-cloud tidal perturbations caused when the Solar System crosses a thin dark disk near the Galactic plane. This supplies a concrete astrophysical mechanism for periodic crater production rather than fitting an abstract periodic function."
+  status: "asserted"
+- id: "technique.dark_disk_toomre_fragmentation"
+  label: "Toomre fragmentation of a dissipative dark disk"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: true
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Treat the dissipative dark component as an unstable disk and use the Toomre dispersion relation to extract the fastest-growing wavelength, then identify characteristic cloud masses and radii from that mode. Use this when full nonlinear simulations are unavailable but compact-object scales are needed."
+  status: "asserted"
+- id: "technique.dark_sector_cooling_timescale_test"
+  label: "Cooling-timescale test for dissipative dark collapse"
+  knowledge_kind: "method"
+  granularity_level: "atomic"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Compare dark bremsstrahlung and dark-Compton cooling times to halo dynamical times after virial shock heating to determine whether a dissipative subcomponent can collapse. Use this as a first-pass criterion for compact dark-structure formation."
+  status: "asserted"
+- id: "technique.dark_sector_temperature_neff_tracking"
+  label: "Separate dark-sector temperature and N_eff tracking"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: true
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Track the temperature ratio between the dark and visible sectors through entropy conservation and use it to compute the extra radiation contribution to N_eff. This turns dark-sector thermal decoupling into direct cosmological bounds."
+  status: "asserted"
+- id: "technique.dbi_wz_probe_embedding_with_flux"
+  label: "Solve brane embeddings with DBI plus Wess-Zumino terms and flux"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: true
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Determine the probe brane profile by combining the DBI action with the Wess-Zumino coupling to background flux and quantized worldvolume flux on the wrapped sphere. This yields explicit AdS_{n+1} defect embeddings and their curvature radii."
+  status: "asserted"
+- id: "technique.decay_geometry_acceptance_integration"
+  label: "Decay-Geometry Acceptance Integration"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: true
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Convolve production along the target with survival and decay probabilities through the shielding and fiducial volume. This turns cross sections into realistic event yields without a full detector simulation."
+  status: "asserted"
+- id: "technique.deconfinement_plus_kutasov_schwimmer_duality"
+  label: "Deconfinement plus Kutasov-Schwimmer duality"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: true
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Antisymmetric tensors are replaced by deconfined gauge sectors and the resulting theory is dualized with Kutasov-Schwimmer methods to obtain an analytically tractable magnetic description. This is the mathematical engine that makes the unified picture calculable."
+  status: "asserted"
+- id: "technique.deconstructed_6d_pnpg_hybrid_model"
+  label: "Deconstruct a 6D gauge model into a 4D PNGB hybrid-inflation theory"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: true
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Start from a 6D gauge theory where A_5 and A_6 zero modes play the inflaton and waterfall roles, then deconstruct it into a 4D moose with plaquette operators and protected PNGBs. This gives a concrete route from extra-dimensional locality to a realistic 4D hybrid inflation model."
+  status: "asserted"
+- id: "technique.deconstruction_derived_position_cutoff"
+  label: "Derive the position-dependent regulator from the quiver itself"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: true
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Integrating out the left-most sites at a given energy naturally replaces the full quiver by one with a shifted effective brane and large boundary kinetic terms. Mapping back to the continuum reproduces the energy-dependent IR cutoff previously motivated by holography."
+  status: "asserted"
+- id: "technique.defect_cft_degree_counting_test"
+  label: "Use defect-CFT degree counting as a localization diagnostic"
+  knowledge_kind: "method"
+  granularity_level: "atomic"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Argue from the boundary theory that a localized 4D graviton requires an interacting 3D defect CFT with enough degrees of freedom, visible in the intersecting-brane quiver description. This provides a dual test of whether the gravity-side construction is viable."
+  status: "asserted"
+- id: "technique.defect_hilbert_space_factorization"
+  label: "Defect Hilbert-space factorization for left-right entropy"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: true
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Define a left/right entanglement entropy using the nongravitating defect where the Hilbert space still factorizes, even though spatial radiation regions in the bath do not. Use when gravity obstructs ordinary subregion factorization on the branes."
+  status: "asserted"
+- id: "technique.degenerate_fermion_core_support"
+  label: "Core support from fermionic degeneracy pressure"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: true
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Model sub-keV fermionic dark matter as a quasi-degenerate self-gravitating Fermi gas whose Pauli pressure counteracts gravitational compression in dwarf galaxies. This naturally produces cored density profiles without invoking baryonic feedback."
+  status: "asserted"
+- id: "technique.degenerate_left_handed_wavefunctions"
+  label: "Degenerate Left-Handed Wavefunctions for Large Mixing"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: true
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Keep left-handed lepton bulk masses nearly degenerate so that anarchic neutrino Yukawas survive into four dimensions as large mixing angles. This isolates the geometric reason quark and lepton mixings can look so different."
+  status: "asserted"
+- id: "technique.density_matrix_with_decoherence"
+  label: "Density-Matrix Evolution with Thermal Decoherence"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: true
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Track oscillations, scattering-induced decoherence, and asymmetry transfer with a density matrix rather than with simple Boltzmann equations. This is essential when the mixed states oscillate between collisions."
+  status: "asserted"
+- id: "technique.desitter_damped_oscillator_solution"
+  label: "Damped-oscillator solutions in de Sitter space"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: true
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Solve the scalar equation of motion in an inflationary background and track the amplitude in terms of e-foldings for different mass regimes. This is the mathematical engine behind the underdamped/overdamped classification."
+  status: "asserted"
+- id: "technique.detector_lifetime_tomography"
+  label: "Detector lifetime tomography"
+  knowledge_kind: "method"
+  granularity_level: "atomic"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Partition neutralino decays by detector subsystem, from inner tracker to muon chambers, and treat each region as a different lifetime channel. This turns decay radius into an analysis variable rather than a nuisance."
+  status: "asserted"
+- id: "technique.dgp_modified_entropy_functional"
+  label: "DGP-modified entropy functional"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: true
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Augment the RT entropy by boundary terms induced by DGP gravity on the brane and extremize the full functional. Use it when higher-derivative defect gravity terms change which surfaces compete in the entropy calculation."
+  status: "asserted"
+- id: "technique.diagrammatic_matching_to_fn_texture"
+  label: "Diagrammatic Matching to a Froggatt-Nielsen Texture"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: true
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Integrate out KK modes diagrammatically to obtain a low-energy Froggatt-Nielsen-like flavor texture while keeping its higher-dimensional origin explicit. This translates geometry into ordinary EFT language."
+  status: "asserted"
+- id: "technique.differential_astrometry_point_and_stare"
+  label: "Point-and-stare differential astrometry"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: true
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Measure target motion relative to local reference stars in repeated pointings instead of relying on all-sky scanning astrometry. Use this when common-mode systematics must cancel at the sub-microarcsecond level."
+  status: "asserted"
+- id: "technique.differential_form_qft_toolkit"
+  label: "Differential-Form Toolkit for Gauge Theory and Topology"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: true
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Rewrite gauge theories, topological terms, and conserved currents in differential-form notation so charge quantization, Hodge duality, and Chern-Simons couplings become transparent. This is the language that makes generalized symmetries and axion couplings tractable."
+  status: "asserted"
+- id: "technique.diffusion_convection_bessel_propagation"
+  label: "Two-zone diffusion-convection propagation with Bessel expansion"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: true
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Solve the galactic transport equation in a cylindrical diffusion zone and encode propagation in a reusable function obtained from a Bessel expansion. Use for semianalytic propagation of charged cosmic-ray antinuclei."
+  status: "asserted"
+- id: "technique.diffusion_plus_solar_modulation_pipeline"
+  label: "Diffusion Plus Solar Modulation Pipeline"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: true
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Propagate antideuterons with a two-zone diffusion model and then apply force-field solar modulation to obtain near-Earth spectra. This is the astrophysical pipeline between halo production and detector counts."
+  status: "asserted"
+- id: "technique.digamma_regge_spectral_ansatz"
+  label: "Digamma-function Regge ansatz"
+  knowledge_kind: "method"
+  granularity_level: "atomic"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Model the polarization operator with digamma functions so that poles lie on approximately Regge-like trajectories rather than KK-like quadratic ones. This gives a tractable analytic benchmark for comparing realistic QCD-like spectra to holographic hard-wall constructions."
+  status: "asserted"
+- id: "technique.dijet_only_susy_search"
+  label: "Dijet-Only SUSY Search"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: true
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Target direct squark production with exactly two hard jets plus neutralinos, avoiding explicit use of full missing-energy reconstruction. This opens a low-multiplicity SUSY channel with different systematics from standard cascade searches."
+  status: "asserted"
+- id: "technique.dilepton_asymmetry_flavor_probe"
+  label: "Dilepton asymmetry as a SUSY flavor probe"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: true
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Use the tiny Standard Model same-sign dilepton asymmetry in Bd and Bs mixing as a null test for new CP-violating phases. Comparing the asymmetries in both systems turns semileptonic B decays into a discriminator of supersymmetric flavor textures."
+  status: "asserted"
+- id: "technique.dilepton_azimuthal_spin_correlation"
+  label: "Dilepton azimuthal spin-correlation test"
+  knowledge_kind: "method"
+  granularity_level: "atomic"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Use the delta-phi distribution of leptons in dileptonic t t-bar events to detect contamination from scalar stop pair production, which lacks the same spin correlations. This turns a subtle stealth-stop problem into a shape analysis of a clean observable."
+  status: "asserted"
+- id: "technique.dimension_six_interpretation_of_precision_data"
+  label: "Dimension-six interpretation of precision Higgs and electroweak data"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: true
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Interpret percent-level Higgs and electroweak measurements through a small set of dimension-six operators common in natural theories. This is the move that lets a Higgs factory speak directly to stops, composite Higgs models, and folded SUSY."
+  status: "asserted"
+- id: "technique.dimensional_reduction_consistency_checks"
+  label: "Dimensional-Reduction Consistency Checks"
+  knowledge_kind: "method"
+  granularity_level: "atomic"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Compactify a theory and demand that WGC-type statements survive the reduction, generating nontrivial relations among particle, string, and higher-form versions of the conjecture. This is a powerful filter on candidate formulations of the WGC."
+  status: "asserted"
+- id: "technique.dimensional_reduction_consistency_test"
+  label: "Dimensional-reduction consistency test for swampland bounds"
+  knowledge_kind: "method"
+  granularity_level: "atomic"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Compactify the theory, track KK and winding descendants, and ask whether repulsiveness or self-repulsiveness is preserved after reduction. Use this as a stress test for any proposed swampland criterion."
+  status: "asserted"
+- id: "technique.dimensionless_kinematic_discriminants"
+  label: "Dimensionless Kinematic Discriminants"
+  knowledge_kind: "method"
+  granularity_level: "atomic"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Favor dimensionless observables like alpha and related angular cuts because they are less sensitive to absolute energy-scale uncertainties than raw MET thresholds. This is especially useful in early detector conditions."
+  status: "asserted"
+- id: "technique.diphoton_dilepton_selection_rule"
+  label: "Diphoton Versus Dilepton Selection Rule"
+  knowledge_kind: "method"
+  granularity_level: "atomic"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Use the coexistence of sizeable e+e- and gamma-gamma branching ratios as evidence that electrons couple directly to the new sector, because Standard-Model-mediated couplings cannot naturally generate both at comparable rates."
+  status: "asserted"
+- id: "technique.dirac_pairing_test_for_fractional_monopoles"
+  label: "Dirac-pairing test for fractional confined monopoles"
+  knowledge_kind: "method"
+  granularity_level: "atomic"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Candidate monopoles are tested by their Dirac pairing against the electric charge lattice to determine whether they are genuine monopoles or fractional objects that must be confined. Use it when the magnetic classification and the electric spectrum appear inconsistent."
+  status: "asserted"
+- id: "technique.direct_detection_ratio_analyzer"
+  label: "Spin-dependent to spin-independent ratio as a tan beta analyzer"
+  knowledge_kind: "method"
+  granularity_level: "atomic"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Use the ratio sigma_SD/sigma_SI so astrophysical density uncertainties largely cancel, then map that ratio onto Higgs and Z couplings of the neutralino to infer tan beta and even the sign of mu. This is the mathematical trick that makes direct detection an electroweak parameter measurement."
+  status: "asserted"
+- id: "technique.disappearing_stub_track_search"
+  label: "Disappearing Stub-Track Search"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: true
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Trigger on MET plus a jet and then look offline for short charged stub tracks that disappear inside the inner tracker. This is the practical search strategy for nearly degenerate electroweak multiplets whose visible decay products are too soft to trigger on."
+  status: "asserted"
+- id: "technique.discontinuous_extremal_limit"
+  label: "Discontinuous Extremal Limit"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: true
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Take the extremal Reissner-Nordstrom limit by separating regions near and between the horizons, revealing that the non-extremal geometry splits into an extremal black hole plus an AdS2 x S2 region rather than approaching extremality smoothly."
+  status: "asserted"

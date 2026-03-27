@@ -1,0 +1,1500 @@
+- from: qcd.splitting_function
+  to: technique.altarelli_parisi_evolution
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "splitting_function_computation" is represented by Splitting function; Altarelli-Parisi evolution uses that ingredient directly.
+  failure_mode_if_absent: Without Splitting function, the step tied to "splitting_function_computation" in Altarelli-Parisi evolution is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.running_coupling
+  to: technique.altarelli_parisi_evolution
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "running_coupling_improvement" is represented by Running coupling; Altarelli-Parisi evolution uses that ingredient directly.
+  failure_mode_if_absent: Without Running coupling, the step tied to "running_coupling_improvement" in Altarelli-Parisi evolution is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: classical_fields.stationary_action_principle
+  to: technique.action_variation_and_euler_lagrange_equations
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "Calculus of variations" is represented by Stationary action principle; deriving Action variation and Euler-Lagrange equations depends on that prior result.
+  failure_mode_if_absent: Without Stationary action principle, the derivation step tied to "Calculus of variations" in Action variation and Euler-Lagrange equations cannot be reconstructed.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: classical_fields.lagrangian_density
+  to: technique.action_variation_and_euler_lagrange_equations
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "Local Lagrangian density" is represented by Lagrangian density; Action variation and Euler-Lagrange equations uses that ingredient directly.
+  failure_mode_if_absent: Without Lagrangian density, the step tied to "Local Lagrangian density" in Action variation and Euler-Lagrange equations is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: sm.chiral_anomaly
+  to: technique.adler_bardeen_nonrenormalization
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "triangle anomalies" is represented by Chiral anomaly; Use the Adler-Bardeen nonrenormalization argument uses that ingredient directly.
+  failure_mode_if_absent: Without Chiral anomaly, the step tied to "triangle anomalies" in Use the Adler-Bardeen nonrenormalization argument is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: eft.power_counting
+  to: technique.adler_bardeen_nonrenormalization
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "power counting" is represented by Power counting; Use the Adler-Bardeen nonrenormalization argument uses that ingredient directly.
+  failure_mode_if_absent: Without Power counting, the step tied to "power counting" in Use the Adler-Bardeen nonrenormalization argument is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.renormalized_perturbation_theory
+  to: technique.adler_bardeen_nonrenormalization
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "radiative corrections" is represented by Renormalized perturbation theory; Use the Adler-Bardeen nonrenormalization argument uses that ingredient directly.
+  failure_mode_if_absent: Without Renormalized perturbation theory, the step tied to "radiative corrections" in Use the Adler-Bardeen nonrenormalization argument is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.dirac_equation
+  to: technique.angular_momentum_parity_decomposition_of_dirac_states
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "dirac_equation_from_field_matrix_elements" is represented by Dirac equation; Angular-momentum and parity decomposition of Dirac states uses that ingredient directly.
+  failure_mode_if_absent: Without Dirac equation, the step tied to "dirac_equation_from_field_matrix_elements" in Angular-momentum and parity decomposition of Dirac states is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.slavnov_taylor_identity
+  to: technique.anomalous_slavnov_taylor_solution_for_goldstones
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "Slavnov-Taylor identities" is represented by Slavnov-Taylor identity; Solve anomalous Slavnov-Taylor identities for Goldstone effective actions uses that ingredient directly.
+  failure_mode_if_absent: Without Slavnov-Taylor identity, the step tied to "Slavnov-Taylor identities" in Solve anomalous Slavnov-Taylor identities for Goldstone effective actions is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: sm.ssb.goldstone_boson
+  to: technique.anomalous_slavnov_taylor_solution_for_goldstones
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "Goldstone fields" is represented by Goldstone boson; Solve anomalous Slavnov-Taylor identities for Goldstone effective actions uses that ingredient directly.
+  failure_mode_if_absent: Without Goldstone boson, the step tied to "Goldstone fields" in Solve anomalous Slavnov-Taylor identities for Goldstone effective actions is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: sm.anomaly
+  to: technique.anomalous_slavnov_taylor_solution_for_goldstones
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "anomaly functional" is represented by Anomaly; Solve anomalous Slavnov-Taylor identities for Goldstone effective actions uses that ingredient directly.
+  failure_mode_if_absent: Without Anomaly, the step tied to "anomaly functional" in Solve anomalous Slavnov-Taylor identities for Goldstone effective actions is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.counterterm_lagrangian
+  to: technique.anomaly_free_subgroup_counterterm_rearrangement
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "local counterterms" is represented by Counterterm Lagrangian; Add local counterterms to preserve an anomaly-free subgroup uses that ingredient directly.
+  failure_mode_if_absent: Without Counterterm Lagrangian, the step tied to "local counterterms" in Add local counterterms to preserve an anomaly-free subgroup is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: sm.anomaly
+  to: technique.anomaly_free_subgroup_counterterm_rearrangement
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "anomaly assignment" is represented by Anomaly; Add local counterterms to preserve an anomaly-free subgroup uses that ingredient directly.
+  failure_mode_if_absent: Without Anomaly, the step tied to "anomaly assignment" in Add local counterterms to preserve an anomaly-free subgroup is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: technique.subgroup_coset_and_factor_group_analysis
+  to: technique.anomaly_free_subgroup_counterterm_rearrangement
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "unbroken subgroup structure" is represented by Subgroups, cosets, and factor groups; Add local counterterms to preserve an anomaly-free subgroup uses that ingredient directly.
+  failure_mode_if_absent: Without Subgroups, cosets, and factor groups, the step tied to "unbroken subgroup structure" in Add local counterterms to preserve an anomaly-free subgroup is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.effective_action
+  to: technique.anomaly_matching_to_effective_action
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "effective actions" is represented by Effective action; Match the anomalous Jacobian to a local effective action term uses that ingredient directly.
+  failure_mode_if_absent: Without Effective action, the step tied to "effective actions" in Match the anomalous Jacobian to a local effective action term is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: classical_fields.continuous_symmetry_of_action
+  to: technique.anomaly_matching_to_effective_action
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "symmetry variation of the action" is represented by Continuous symmetry of the action; deriving Match the anomalous Jacobian to a local effective action term depends on that prior result.
+  failure_mode_if_absent: Without Continuous symmetry of the action, the derivation step tied to "symmetry variation of the action" in Match the anomalous Jacobian to a local effective action term cannot be reconstructed.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: technique.anomaly_computation_triad
+  to: technique.anomaly_matching_to_effective_action
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "Fujikawa anomaly" is represented by Triangle, Spectral-Flow, and Fujikawa Anomaly Triad; Match the anomalous Jacobian to a local effective action term uses that ingredient directly.
+  failure_mode_if_absent: Without Triangle, Spectral-Flow, and Fujikawa Anomaly Triad, the step tied to "Fujikawa anomaly" in Match the anomalous Jacobian to a local effective action term is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: sm.chiral_anomaly
+  to: technique.anomaly_matching_to_pion_decay
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "triangle_diagram_anomaly" is represented by Chiral anomaly; Anomaly matching to neutral-pion decay uses that ingredient directly.
+  failure_mode_if_absent: Without Chiral anomaly, the step tied to "triangle_diagram_anomaly" in Anomaly matching to neutral-pion decay is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: sm.ssb.chiral_symmetry_breaking
+  to: technique.anomaly_matching_to_pion_decay
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "spontaneous_chiral_symmetry_breaking_and_goldstone_bosons" is represented by Chiral symmetry breaking; Anomaly matching to neutral-pion decay uses that ingredient directly.
+  failure_mode_if_absent: Without Chiral symmetry breaking, the step tied to "spontaneous_chiral_symmetry_breaking_and_goldstone_bosons" in Anomaly matching to neutral-pion decay is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: sm.ssb.goldstone_boson
+  to: technique.anomaly_matching_to_pion_decay
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "spontaneous_chiral_symmetry_breaking_and_goldstone_bosons" is represented by Goldstone boson; Anomaly matching to neutral-pion decay uses that ingredient directly.
+  failure_mode_if_absent: Without Goldstone boson, the step tied to "spontaneous_chiral_symmetry_breaking_and_goldstone_bosons" in Anomaly matching to neutral-pion decay is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.ward_takahashi_identity
+  to: technique.anomaly_matching_to_pion_decay
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "form_factor_decomposition_and_ward_constraints" is represented by Ward-Takahashi identity; Anomaly matching to neutral-pion decay uses that ingredient directly.
+  failure_mode_if_absent: Without Ward-Takahashi identity, the step tied to "form_factor_decomposition_and_ward_constraints" in Anomaly matching to neutral-pion decay is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: sm.chiral_anomaly
+  to: technique.anomaly_selection_rules_from_instantons
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "chiral anomaly" is represented by Chiral anomaly; Derive global-charge violation from the chiral anomaly in an instanton background uses that ingredient directly.
+  failure_mode_if_absent: Without Chiral anomaly, the step tied to "chiral anomaly" in Derive global-charge violation from the chiral anomaly in an instanton background is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qcd.topological_charge
+  to: technique.anomaly_selection_rules_from_instantons
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "instanton number" is represented by Topological charge; Derive global-charge violation from the chiral anomaly in an instanton background uses that ingredient directly.
+  failure_mode_if_absent: Without Topological charge, the step tied to "instanton number" in Derive global-charge violation from the chiral anomaly in an instanton background is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.canonical_quantization
+  to: technique.antiparticle_reinterpretation_of_negative_frequency_modes
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "field_action_and_canonical_quantization" is represented by Canonical quantization; Antiparticle Reinterpretation of Negative-Frequency Modes uses that ingredient directly.
+  failure_mode_if_absent: Without Canonical quantization, the step tied to "field_action_and_canonical_quantization" in Antiparticle Reinterpretation of Negative-Frequency Modes is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.creation_annihilation_operator
+  to: technique.antiparticle_reinterpretation_of_negative_frequency_modes
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "fermionic_second_quantization" is represented by Creation and annihilation operator; Antiparticle Reinterpretation of Negative-Frequency Modes uses that ingredient directly.
+  failure_mode_if_absent: Without Creation and annihilation operator, the step tied to "fermionic_second_quantization" in Antiparticle Reinterpretation of Negative-Frequency Modes is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: sm.chiral_anomaly
+  to: technique.atiyah_singer_index_theorem
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "Euclidean anomaly formula" is represented by Chiral anomaly; deriving Derive the Atiyah-Singer index theorem from the anomaly depends on that prior result.
+  failure_mode_if_absent: Without Chiral anomaly, the derivation step tied to "Euclidean anomaly formula" in Derive the Atiyah-Singer index theorem from the anomaly cannot be reconstructed.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.dirac_equation
+  to: technique.atiyah_singer_index_theorem
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "Dirac zero modes" is represented by Dirac equation; Derive the Atiyah-Singer index theorem from the anomaly uses that ingredient directly.
+  failure_mode_if_absent: Without Dirac equation, the step tied to "Dirac zero modes" in Derive the Atiyah-Singer index theorem from the anomaly is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qcd.topological_charge
+  to: technique.atiyah_singer_index_theorem
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "topological charge density" is represented by Topological charge; Derive the Atiyah-Singer index theorem from the anomaly uses that ingredient directly.
+  failure_mode_if_absent: Without Topological charge, the step tied to "topological charge density" in Derive the Atiyah-Singer index theorem from the anomaly is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: technique.mod8_reality_classification_of_so_spinors
+  to: technique.automorphism_group_identification
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "mod_8_canonical_form_classification" is represented by Mod-8 reality classification of SO(N) spinors; deriving Automorphism-group identification depends on that prior result.
+  failure_mode_if_absent: Without Mod-8 reality classification of SO(N) spinors, the derivation step tied to "mod_8_canonical_form_classification" in Automorphism-group identification cannot be reconstructed.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: classical_fields.continuous_symmetry_of_action
+  to: technique.auxiliary_field_elimination
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "invariance_based_lagrangian_construction" is represented by Continuous symmetry of the action; deriving Auxiliary-Field Elimination depends on that prior result.
+  failure_mode_if_absent: Without Continuous symmetry of the action, the derivation step tied to "invariance_based_lagrangian_construction" in Auxiliary-Field Elimination cannot be reconstructed.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.magnetic_monopole
+  to: technique.bogomolny_bound_and_bps_monopole_equations
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "monopole energy functional" is represented by Magnetic monopole (t'Hooft-Polyakov); Derive the Bogomolny bound and BPS monopole equations uses that ingredient directly.
+  failure_mode_if_absent: Without Magnetic monopole (t'Hooft-Polyakov), the step tied to "monopole energy functional" in Derive the Bogomolny bound and BPS monopole equations is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: math.exterior_derivative
+  to: technique.bogomolny_bound_and_bps_monopole_equations
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "Bianchi identity" is represented by Exterior derivative; Derive the Bogomolny bound and BPS monopole equations uses that ingredient directly.
+  failure_mode_if_absent: Without Exterior derivative, the step tied to "Bianchi identity" in Derive the Bogomolny bound and BPS monopole equations is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.bogomolny_bps_bound
+  to: technique.bogomolny_completion_for_domain_walls
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: "The batch prerequisite \"completing the square\" is represented by Bogomol'ny\u2013Prasad\u2013Sommerfield (BPS) bound; deriving Complete the square for domain-wall tension depends on that prior result."
+  failure_mode_if_absent: "Without Bogomol'ny\u2013Prasad\u2013Sommerfield (BPS) bound, the derivation step tied to \"completing the square\" in Complete the square for domain-wall tension cannot be reconstructed."
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: classical_fields.boundary_terms_in_variation
+  to: technique.bogomolny_completion_for_domain_walls
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "boundary terms" is represented by Boundary terms in variation; Complete the square for domain-wall tension uses that ingredient directly.
+  failure_mode_if_absent: Without Boundary terms in variation, the step tied to "boundary terms" in Complete the square for domain-wall tension is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.dirac_equation
+  to: technique.boosted_plane_wave_spinor_solutions
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "Dirac equation" is represented by Dirac equation; Boosted plane-wave spinor solutions uses that ingredient directly.
+  failure_mode_if_absent: Without Dirac equation, the step tied to "Dirac equation" in Boosted plane-wave spinor solutions is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: relativity.lorentz_transformation
+  to: technique.boosted_plane_wave_spinor_solutions
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "Finite boosts" is represented by Lorentz transformation; Boosted plane-wave spinor solutions uses that ingredient directly.
+  failure_mode_if_absent: Without Lorentz transformation, the step tied to "Finite boosts" in Boosted plane-wave spinor solutions is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: complex_analysis.residue_theorem
+  to: technique.born_matching_to_effective_potential
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "contour_integration_for_effective_potentials" is represented by Residue theorem; Born matching to an effective potential uses that ingredient directly.
+  failure_mode_if_absent: Without Residue theorem, the step tied to "contour_integration_for_effective_potentials" in Born matching to an effective potential is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.on_shell_propagator_conditions
+  to: technique.born_matching_to_effective_potential
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "on_shell_renormalization_conditions" is represented by On-shell propagator conditions; Born matching to an effective potential uses that ingredient directly.
+  failure_mode_if_absent: Without On-shell propagator conditions, the step tied to "on_shell_renormalization_conditions" in Born matching to an effective potential is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.mode_expansion
+  to: technique.bosonic_second_quantization
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "mode_expansion_of_quantized_fields" is represented by Mode expansion; Bosonic Second Quantization uses that ingredient directly.
+  failure_mode_if_absent: Without Mode expansion, the step tied to "mode_expansion_of_quantized_fields" in Bosonic Second Quantization is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qed.electron_self_energy
+  to: technique.bound_state_master_formula_in_momentum_space
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "one_loop_self_energy_in_external_field" is represented by Electron self-energy; Momentum-space master formula for bound-state shifts uses that ingredient directly.
+  failure_mode_if_absent: Without Electron self-energy, the step tied to "one_loop_self_energy_in_external_field" in Momentum-space master formula for bound-state shifts is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.bphz_renormalization
+  to: technique.bphz_forest_subtraction
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "external_momentum_differentiation_subtraction" is represented by BPHZ renormalization; deriving BPHZ forest subtraction depends on that prior result.
+  failure_mode_if_absent: Without BPHZ renormalization, the derivation step tied to "external_momentum_differentiation_subtraction" in BPHZ forest subtraction cannot be reconstructed.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.ultraviolet_divergence
+  to: technique.bphz_forest_subtraction
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "overlapping_divergence_analysis" is represented by Ultraviolet divergence; BPHZ forest subtraction uses that ingredient directly.
+  failure_mode_if_absent: Without Ultraviolet divergence, the step tied to "overlapping_divergence_analysis" in BPHZ forest subtraction is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.bogomolny_bps_bound
+  to: technique.bps_mass_saturation_in_n2_gauge_theory
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: "The batch prerequisite \"bps_bound_and_short_multiplets\" is represented by Bogomol'ny\u2013Prasad\u2013Sommerfield (BPS) bound; BPS Mass Saturation in N=2 Gauge Theory uses that ingredient directly."
+  failure_mode_if_absent: "Without Bogomol'ny\u2013Prasad\u2013Sommerfield (BPS) bound, the step tied to \"bps_bound_and_short_multiplets\" in BPS Mass Saturation in N=2 Gauge Theory is unavailable, so the method cannot be applied cleanly."
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.spin_statistics
+  to: technique.braid_group_anyon_statistics
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "permutation_group_derivation_of_statistics" is represented by Spin-statistics; deriving Braid-group anyon statistics depends on that prior result.
+  failure_mode_if_absent: Without Spin-statistics, the derivation step tied to "permutation_group_derivation_of_statistics" in Braid-group anyon statistics cannot be reconstructed.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.homotopy_group
+  to: technique.braid_group_anyon_statistics
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: "The batch prerequisite \"configuration_space_topology\" is represented by Homotopy groups (\u03C0_k classification); Braid-group anyon statistics uses that ingredient directly."
+  failure_mode_if_absent: "Without Homotopy groups (\u03C0_k classification), the step tied to \"configuration_space_topology\" in Braid-group anyon statistics is unavailable, so the method cannot be applied cleanly."
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.faddeev_popov_determinant
+  to: technique.broken_symmetry_ghost_lagrangian
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "Faddeev-Popov method" is represented by Faddeev-Popov determinant; Derive the Faddeev-Popov ghost sector after symmetry breaking uses that ingredient directly.
+  failure_mode_if_absent: Without Faddeev-Popov determinant, the step tied to "Faddeev-Popov method" in Derive the Faddeev-Popov ghost sector after symmetry breaking is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.gauge_invariance
+  to: technique.broken_symmetry_ghost_lagrangian
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "gauge transformations" is represented by Gauge invariance; Derive the Faddeev-Popov ghost sector after symmetry breaking uses that ingredient directly.
+  failure_mode_if_absent: Without Gauge invariance, the step tied to "gauge transformations" in Derive the Faddeev-Popov ghost sector after symmetry breaking is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.r_xi_gauge
+  to: technique.broken_symmetry_ghost_lagrangian
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "R_xi gauges" is represented by R_xi gauge; Derive the Faddeev-Popov ghost sector after symmetry breaking uses that ingredient directly.
+  failure_mode_if_absent: Without R_xi gauge, the step tied to "R_xi gauges" in Derive the Faddeev-Popov ghost sector after symmetry breaking is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.brst_symmetry
+  to: technique.brst_cohomology_unitarity
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "brst_symmetry" is represented by BRST symmetry; BRST cohomology and physical-state unitarity uses that ingredient directly.
+  failure_mode_if_absent: Without BRST symmetry, the step tied to "brst_symmetry" in BRST cohomology and physical-state unitarity is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.optical_theorem_and_unitarity_cutting_basics
+  to: technique.brst_cohomology_unitarity
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "optical_theorem_and_cutkosky_rules" is represented by Optical theorem and unitarity cutting basics; BRST cohomology and physical-state unitarity uses that ingredient directly.
+  failure_mode_if_absent: Without Optical theorem and unitarity cutting basics, the step tied to "optical_theorem_and_cutkosky_rules" in BRST cohomology and physical-state unitarity is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.brst_symmetry
+  to: technique.bv_antifield_master_equation
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "generalized_brst_for_reducible_symmetries" is represented by BRST symmetry; deriving BV antifield master equation depends on that prior result.
+  failure_mode_if_absent: Without BRST symmetry, the derivation step tied to "generalized_brst_for_reducible_symmetries" in BV antifield master equation cannot be reconstructed.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.brst_cohomology
+  to: technique.bv_cohomological_renormalization_of_effective_gauge_theories
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "brst_cohomology_theorem" is represented by BRST cohomology; BV cohomological renormalization of effective gauge theories uses that ingredient directly.
+  failure_mode_if_absent: Without BRST cohomology, the step tied to "brst_cohomology_theorem" in BV cohomological renormalization of effective gauge theories is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.creation_annihilation_operator
+  to: technique.canonical_fock_algebra
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "creation_annihilation_operator_definition" is represented by Creation and annihilation operator; Canonical Fock Algebra uses that ingredient directly.
+  failure_mode_if_absent: Without Creation and annihilation operator, the step tied to "creation_annihilation_operator_definition" in Canonical Fock Algebra is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.gamma_matrices
+  to: technique.cartan_eigenvalue_identification_of_fundamental_spinors
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "oscillator_construction_of_gamma_matrices" is represented by Gamma matrices; Cartan-eigenvalue identification of fundamental spinors uses that ingredient directly.
+  failure_mode_if_absent: Without Gamma matrices, the step tied to "oscillator_construction_of_gamma_matrices" in Cartan-eigenvalue identification of fundamental spinors is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: math.lie_group
+  to: technique.cartan_maurer_integral_invariant
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "Lie groups" is represented by Lie group; Use the Cartan-Maurer integral invariant uses that ingredient directly.
+  failure_mode_if_absent: Without Lie group, the step tied to "Lie groups" in Use the Cartan-Maurer integral invariant is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: math.differential_form
+  to: technique.cartan_maurer_integral_invariant
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "matrix-valued differential forms" is represented by Differential form; Use the Cartan-Maurer integral invariant uses that ingredient directly.
+  failure_mode_if_absent: Without Differential form, the step tied to "matrix-valued differential forms" in Use the Cartan-Maurer integral invariant is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: math.de_rham_cohomology
+  to: technique.cartan_maurer_integral_invariant
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "homotopy invariance" is represented by de Rham cohomology; deriving Use the Cartan-Maurer integral invariant depends on that prior result.
+  failure_mode_if_absent: Without de Rham cohomology, the derivation step tied to "homotopy invariance" in Use the Cartan-Maurer integral invariant cannot be reconstructed.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.dirac_algebra
+  to: technique.ch5_bilinear_covariant_classification
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "ch5_clifford_algebra_dirac_formalism" is represented by Dirac algebra; Dirac Bilinear Covariant Classification uses that ingredient directly.
+  failure_mode_if_absent: Without Dirac algebra, the step tied to "ch5_clifford_algebra_dirac_formalism" in Dirac Bilinear Covariant Classification is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.dirac_spinor
+  to: technique.ch5_bilinear_covariant_classification
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "ch5_dirac_causal_field_construction" is represented by Dirac spinor; Dirac Bilinear Covariant Classification uses that ingredient directly.
+  failure_mode_if_absent: Without Dirac spinor, the step tied to "ch5_dirac_causal_field_construction" in Dirac Bilinear Covariant Classification is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.little_group
+  to: technique.ch5_gauge_compensated_massless_fields_and_long_range_force_constraints
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "ch5_massless_little_group_analysis" is represented by Little group; Gauge-Compensated Massless Fields and Long-Range Force Constraints uses that ingredient directly.
+  failure_mode_if_absent: Without Little group, the step tied to "ch5_massless_little_group_analysis" in Gauge-Compensated Massless Fields and Long-Range Force Constraints is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: classical_fields.noether_current
+  to: technique.ch5_gauge_compensated_massless_fields_and_long_range_force_constraints
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "ch5_current_conservation_in_massless_limit" is represented by Noether current; Gauge-Compensated Massless Fields and Long-Range Force Constraints uses that ingredient directly.
+  failure_mode_if_absent: Without Noether current, the step tied to "ch5_current_conservation_in_massless_limit" in Gauge-Compensated Massless Fields and Long-Range Force Constraints is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.lorentz_group_representation
+  to: technique.ch5_general_ab_causal_field_construction
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "ch5_su2_x_su2_lorentz_rep_classification" is represented by Lorentz group representation; deriving General (A,B) Causal Field Construction depends on that prior result.
+  failure_mode_if_absent: Without Lorentz group representation, the derivation step tied to "ch5_su2_x_su2_lorentz_rep_classification" in General (A,B) Causal Field Construction cannot be reconstructed.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.one_particle_state
+  to: technique.ch5_general_ab_causal_field_construction
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "ch5_rest_frame_representation_matching" is represented by One-particle state; deriving General (A,B) Causal Field Construction depends on that prior result.
+  failure_mode_if_absent: Without One-particle state, the derivation step tied to "ch5_rest_frame_representation_matching" in General (A,B) Causal Field Construction cannot be reconstructed.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: technique.clebsch_gordan_decomposition
+  to: technique.ch5_general_ab_causal_field_construction
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "ch5_lorentz_scalar_coupling_via_clebsch_gordan" is represented by Clebsch-Gordan decomposition; deriving General (A,B) Causal Field Construction depends on that prior result.
+  failure_mode_if_absent: Without Clebsch-Gordan decomposition, the derivation step tied to "ch5_lorentz_scalar_coupling_via_clebsch_gordan" in General (A,B) Causal Field Construction cannot be reconstructed.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.microcausality
+  to: technique.ch5_general_ab_causal_field_construction
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "ch5_microcausality_condition" is represented by Microcausality; deriving General (A,B) Causal Field Construction depends on that prior result.
+  failure_mode_if_absent: Without Microcausality, the derivation step tied to "ch5_microcausality_condition" in General (A,B) Causal Field Construction cannot be reconstructed.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.dirac_spinor
+  to: technique.ch5_majorana_reality_condition
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "ch5_dirac_causal_field_construction" is represented by Dirac spinor; Majorana Reality Condition uses that ingredient directly.
+  failure_mode_if_absent: Without Dirac spinor, the step tied to "ch5_dirac_causal_field_construction" in Majorana Reality Condition is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.one_particle_state
+  to: technique.ch5_vector_polarization_sum_construction
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "ch5_rest_frame_representation_matching" is represented by One-particle state; Vector Polarization-Sum Construction uses that ingredient directly.
+  failure_mode_if_absent: Without One-particle state, the step tied to "ch5_rest_frame_representation_matching" in Vector Polarization-Sum Construction is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.microcausality
+  to: technique.ch5_vector_polarization_sum_construction
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "ch5_microcausality_condition" is represented by Microcausality; Vector Polarization-Sum Construction uses that ingredient directly.
+  failure_mode_if_absent: Without Microcausality, the step tied to "ch5_microcausality_condition" in Vector Polarization-Sum Construction is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.feynman_rules
+  to: technique.ch6_connected_diagram_extraction
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "ch6_coordinate_space_feynman_rules" is represented by Feynman rules; Connected-Diagram Extraction uses that ingredient directly.
+  failure_mode_if_absent: Without Feynman rules, the step tied to "ch6_coordinate_space_feynman_rules" in Connected-Diagram Extraction is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.feynman_i_epsilon_prescription
+  to: technique.ch6_covariant_off_shell_extension_and_local_counterterms
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "ch6_feynman_i_epsilon_and_green_function" is represented by Feynman i epsilon prescription; Covariant Off-Shell Extension and Local Counterterms uses that ingredient directly.
+  failure_mode_if_absent: Without Feynman i epsilon prescription, the step tied to "ch6_feynman_i_epsilon_and_green_function" in Covariant Off-Shell Extension and Local Counterterms is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.wick_theorem
+  to: technique.ch6_fermion_sign_bookkeeping
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "ch6_operator_pairing_wick_expansion" is represented by Wick theorem; Fermion Sign Bookkeeping uses that ingredient directly.
+  failure_mode_if_absent: Without Wick theorem, the step tied to "ch6_operator_pairing_wick_expansion" in Fermion Sign Bookkeeping is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.feynman_rules
+  to: technique.ch6_fermion_sign_bookkeeping
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "ch6_coordinate_space_feynman_rules" is represented by Feynman rules; Fermion Sign Bookkeeping uses that ingredient directly.
+  failure_mode_if_absent: Without Feynman rules, the step tied to "ch6_coordinate_space_feynman_rules" in Fermion Sign Bookkeeping is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.dyson_series
+  to: technique.ch6_heisenberg_correlator_theorem
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "ch6_dyson_series_perturbation_expansion" is represented by Dyson series; Heisenberg Correlator Theorem uses that ingredient directly.
+  failure_mode_if_absent: Without Dyson series, the step tied to "ch6_dyson_series_perturbation_expansion" in Heisenberg Correlator Theorem is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.off_shell
+  to: technique.ch6_heisenberg_correlator_theorem
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "ch6_off_shell_amplitude_and_source_insertion_method" is represented by Off shell; Heisenberg Correlator Theorem uses that ingredient directly.
+  failure_mode_if_absent: Without Off shell, the step tied to "ch6_off_shell_amplitude_and_source_insertion_method" in Heisenberg Correlator Theorem is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.feynman_rules
+  to: technique.ch6_off_shell_amplitude_and_source_insertion_method
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "ch6_momentum_space_feynman_rules" is represented by Feynman rules; Off-Shell Amplitude and Source-Insertion Method uses that ingredient directly.
+  failure_mode_if_absent: Without Feynman rules, the step tied to "ch6_momentum_space_feynman_rules" in Off-Shell Amplitude and Source-Insertion Method is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.feynman_rules
+  to: technique.ch6_symmetry_factor_accounting
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "ch6_coordinate_space_feynman_rules" is represented by Feynman rules; Symmetry-Factor Accounting uses that ingredient directly.
+  failure_mode_if_absent: Without Feynman rules, the step tied to "ch6_coordinate_space_feynman_rules" in Symmetry-Factor Accounting is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.canonical_quantization
+  to: technique.ch7_auxiliary_field_separation
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "ch7_general_legendre_transform_to_hamiltonian" is represented by Canonical quantization; Auxiliary-Field Separation uses that ingredient directly.
+  failure_mode_if_absent: Without Canonical quantization, the step tied to "ch7_general_legendre_transform_to_hamiltonian" in Auxiliary-Field Separation is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.equal_time_commutation_relations
+  to: technique.ch7_auxiliary_field_separation
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "ch7_equal_time_canonical_identification" is represented by Equal-time commutation relations; Auxiliary-Field Separation uses that ingredient directly.
+  failure_mode_if_absent: Without Equal-time commutation relations, the step tied to "ch7_equal_time_canonical_identification" in Auxiliary-Field Separation is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: classical_fields.noether_current
+  to: technique.ch7_internal_symmetry_current_algebra
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "ch7_noether_current_construction" is represented by Noether current; Internal-Symmetry Current Algebra uses that ingredient directly.
+  failure_mode_if_absent: Without Noether current, the step tied to "ch7_noether_current_construction" in Internal-Symmetry Current Algebra is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qm.commutator
+  to: technique.ch7_internal_symmetry_current_algebra
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "ch7_symmetry_generator_commutator_method" is represented by Commutator; Internal-Symmetry Current Algebra uses that ingredient directly.
+  failure_mode_if_absent: Without Commutator, the step tied to "ch7_symmetry_generator_commutator_method" in Internal-Symmetry Current Algebra is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.interaction_picture
+  to: technique.ch7_noncovariant_term_recovery_from_canonical_quantization
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "ch7_interaction_picture_from_lagrangian" is represented by Interaction picture; Automatic Recovery of Noncovariant Contact Terms uses that ingredient directly.
+  failure_mode_if_absent: Without Interaction picture, the step tied to "ch7_interaction_picture_from_lagrangian" in Automatic Recovery of Noncovariant Contact Terms is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.canonical_quantization
+  to: technique.ch7_noncovariant_term_recovery_from_canonical_quantization
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "ch7_auxiliary_field_separation" is represented by Canonical quantization; Automatic Recovery of Noncovariant Contact Terms uses that ingredient directly.
+  failure_mode_if_absent: Without Canonical quantization, the step tied to "ch7_auxiliary_field_separation" in Automatic Recovery of Noncovariant Contact Terms is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.equal_time_commutation_relations
+  to: technique.ch7_quantum_functional_derivatives
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "ch7_equal_time_canonical_identification" is represented by Equal-time commutation relations; Quantum Functional Derivatives uses that ingredient directly.
+  failure_mode_if_absent: Without Equal-time commutation relations, the step tied to "ch7_equal_time_canonical_identification" in Quantum Functional Derivatives is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.gamma_five
+  to: technique.chiral_current_decomposition
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "Gamma5" is represented by Gamma five; Chiral current decomposition uses that ingredient directly.
+  failure_mode_if_absent: Without Gamma five, the step tied to "Gamma5" in Chiral current decomposition is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: classical_fields.noether_current
+  to: technique.chiral_current_decomposition
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "Noether current construction" is represented by Noether current; Chiral current decomposition uses that ingredient directly.
+  failure_mode_if_absent: Without Noether current, the step tied to "Noether current construction" in Chiral current decomposition is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: sm.ewbreak.electroweak_symmetry
+  to: technique.chiral_fermion_representation_assignment
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "electroweak_gauge_group_construction" is represented by Electroweak symmetry; Chiral fermion representation assignment uses that ingredient directly.
+  failure_mode_if_absent: Without Electroweak symmetry, the step tied to "electroweak_gauge_group_construction" in Chiral fermion representation assignment is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: sm.chiral_lagrangian
+  to: technique.chiral_lagrangian_for_axion_mass_and_mixing
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "chiral perturbation theory" is represented by Chiral Lagrangian; Match the axion into the chiral Lagrangian uses that ingredient directly.
+  failure_mode_if_absent: Without Chiral Lagrangian, the step tied to "chiral perturbation theory" in Match the axion into the chiral Lagrangian is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: sm.peccei_quinn_symmetry
+  to: technique.chiral_lagrangian_for_axion_mass_and_mixing
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "axion shift symmetry" is represented by Peccei-Quinn symmetry; Match the axion into the chiral Lagrangian uses that ingredient directly.
+  failure_mode_if_absent: Without Peccei-Quinn symmetry, the step tied to "axion shift symmetry" in Match the axion into the chiral Lagrangian is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: technique.flavor_breaking_mass_term_decomposition
+  to: technique.chiral_lagrangian_for_axion_mass_and_mixing
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "light-quark mass terms" is represented by Mass-term decomposition into SU(3) channels; Match the axion into the chiral Lagrangian uses that ingredient directly.
+  failure_mode_if_absent: Without Mass-term decomposition into SU(3) channels, the step tied to "light-quark mass terms" in Match the axion into the chiral Lagrangian is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: sm.ssb.chiral_symmetry
+  to: technique.chiral_matrix_field_parameterization
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "chiral_symmetry_identification_in_qcd" is represented by Chiral symmetry; Chiral Matrix-Field Parameterization uses that ingredient directly.
+  failure_mode_if_absent: Without Chiral symmetry, the step tied to "chiral_symmetry_identification_in_qcd" in Chiral Matrix-Field Parameterization is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: technique.tensor_operator_product_decomposition
+  to: technique.chiral_representation_counting_for_massless_bound_states
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "tensor-product decomposition" is represented by Tensor-operator product decomposition; Count allowed massless composite representations uses that ingredient directly.
+  failure_mode_if_absent: Without Tensor-operator product decomposition, the step tied to "tensor-product decomposition" in Count allowed massless composite representations is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: sm.global_symmetry_anomaly
+  to: technique.chiral_representation_counting_for_massless_bound_states
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "anomaly matching" is represented by Global symmetry anomaly; Count allowed massless composite representations uses that ingredient directly.
+  failure_mode_if_absent: Without Global symmetry anomaly, the step tied to "anomaly matching" in Count allowed massless composite representations is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: sm.ssb.chiral_symmetry
+  to: technique.chiral_representation_counting_for_massless_bound_states
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "chiral global symmetries" is represented by Chiral symmetry; Count allowed massless composite representations uses that ingredient directly.
+  failure_mode_if_absent: Without Chiral symmetry, the step tied to "chiral global symmetries" in Count allowed massless composite representations is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: sm.chiral_anomaly
+  to: technique.chiral_rotation_elimination_of_theta_terms
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "triangle_anomaly_diagnosis" is represented by Chiral anomaly; Eliminate theta-like terms by chiral rotations uses that ingredient directly.
+  failure_mode_if_absent: Without Chiral anomaly, the step tied to "triangle_anomaly_diagnosis" in Eliminate theta-like terms by chiral rotations is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: sm.chiral_anomaly
+  to: technique.chiral_rotation_shift_of_theta
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "chiral anomaly" is represented by Chiral anomaly; Shift theta into quark-mass phases with anomalous chiral rotations uses that ingredient directly.
+  failure_mode_if_absent: Without Chiral anomaly, the step tied to "chiral anomaly" in Shift theta into quark-mass phases with anomalous chiral rotations is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: technique.flavor_breaking_mass_term_decomposition
+  to: technique.chiral_rotation_shift_of_theta
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "quark mass terms" is represented by Mass-term decomposition into SU(3) channels; Shift theta into quark-mass phases with anomalous chiral rotations uses that ingredient directly.
+  failure_mode_if_absent: Without Mass-term decomposition into SU(3) channels, the step tied to "quark mass terms" in Shift theta into quark-mass phases with anomalous chiral rotations is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: classical_fields.noether_current
+  to: technique.chiral_ward_identity_suppression
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "axial currents" is represented by Noether current; Use axial Ward identities to derive the Sutherland-Veltman suppression uses that ingredient directly.
+  failure_mode_if_absent: Without Noether current, the step tied to "axial currents" in Use axial Ward identities to derive the Sutherland-Veltman suppression is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.ward_takahashi_identity
+  to: technique.chiral_ward_identity_suppression
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "Ward identities" is represented by Ward-Takahashi identity; Use axial Ward identities to derive the Sutherland-Veltman suppression uses that ingredient directly.
+  failure_mode_if_absent: Without Ward-Takahashi identity, the step tied to "Ward identities" in Use axial Ward identities to derive the Sutherland-Veltman suppression is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: sm.ssb.goldstone_boson
+  to: technique.chiral_ward_identity_suppression
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "Goldstone-boson couplings" is represented by Goldstone boson; Use axial Ward identities to derive the Sutherland-Veltman suppression uses that ingredient directly.
+  failure_mode_if_absent: Without Goldstone boson, the step tied to "Goldstone-boson couplings" in Use axial Ward identities to derive the Sutherland-Veltman suppression is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: complex_analysis.contour_deformation
+  to: technique.classical_current_source_method
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "contour_integration" is represented by Contour deformation; Classical current-source method uses that ingredient directly.
+  failure_mode_if_absent: Without Contour deformation, the step tied to "contour_integration" in Classical current-source method is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.mode_expansion
+  to: technique.classical_source_particle_production
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "Free-field mode expansion" is represented by Mode expansion; Particle production by a classical source uses that ingredient directly.
+  failure_mode_if_absent: Without Mode expansion, the step tied to "Free-field mode expansion" in Particle production by a classical source is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: math.lie_algebra
+  to: technique.classification_of_compact_simple_lie_algebras
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "lie_algebra_generator_structure" is represented by Lie algebra; deriving Classification of Compact Simple Lie Algebras depends on that prior result.
+  failure_mode_if_absent: Without Lie algebra, the derivation step tied to "lie_algebra_generator_structure" in Classification of Compact Simple Lie Algebras cannot be reconstructed.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.cluster_decomposition_principle
+  to: technique.cluster_decomposition_derivation_of_theta_weighting
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "cluster decomposition" is represented by Cluster decomposition principle; deriving Derive sector weights from cluster decomposition depends on that prior result.
+  failure_mode_if_absent: Without Cluster decomposition principle, the derivation step tied to "cluster decomposition" in Derive sector weights from cluster decomposition cannot be reconstructed.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qcd.topological_charge
+  to: technique.cluster_decomposition_derivation_of_theta_weighting
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "topological sectors" is represented by Topological charge; Derive sector weights from cluster decomposition uses that ingredient directly.
+  failure_mode_if_absent: Without Topological charge, the step tied to "topological sectors" in Derive sector weights from cluster decomposition is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.path_integral_and_generating_functionals
+  to: technique.cluster_decomposition_derivation_of_theta_weighting
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "Euclidean path integrals" is represented by Path integral and generating functionals; Derive sector weights from cluster decomposition uses that ingredient directly.
+  failure_mode_if_absent: Without Path integral and generating functionals, the step tied to "Euclidean path integrals" in Derive sector weights from cluster decomposition is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.renormalization_group_equation
+  to: technique.coleman_weinberg_field_scale_choice
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "renormalization_group_improvement" is represented by Renormalization-group equation; Field-Value Choice of Renormalization Scale uses that ingredient directly.
+  failure_mode_if_absent: Without Renormalization-group equation, the step tied to "renormalization_group_improvement" in Field-Value Choice of Renormalization Scale is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.effective_potential
+  to: technique.coleman_weinberg_field_scale_choice
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "effective_potential" is represented by Effective potential; Field-Value Choice of Renormalization Scale uses that ingredient directly.
+  failure_mode_if_absent: Without Effective potential, the step tied to "effective_potential" in Field-Value Choice of Renormalization Scale is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.bounce_solution
+  to: technique.collective_coordinate_and_zero_mode_expansion
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "semiclassical saddle-point expansion" is represented by Bounce solution; Expand around extended saddles with collective coordinates uses that ingredient directly.
+  failure_mode_if_absent: Without Bounce solution, the step tied to "semiclassical saddle-point expansion" in Expand around extended saddles with collective coordinates is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.functional_determinant
+  to: technique.collective_coordinate_and_zero_mode_expansion
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "functional determinants" is represented by Functional determinant; Expand around extended saddles with collective coordinates uses that ingredient directly.
+  failure_mode_if_absent: Without Functional determinant, the step tied to "functional determinants" in Expand around extended saddles with collective coordinates is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: math.operator_basics.kernel_and_image
+  to: technique.collective_coordinate_and_zero_mode_expansion
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "zero modes" is represented by Kernel and image; Expand around extended saddles with collective coordinates uses that ingredient directly.
+  failure_mode_if_absent: Without Kernel and image, the step tied to "zero modes" in Expand around extended saddles with collective coordinates is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.little_group
+  to: technique.combinatorial_supercharge_counting
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "little_group_classification_of_massless_states" is represented by Little group; Combinatorial supercharge counting uses that ingredient directly.
+  failure_mode_if_absent: Without Little group, the step tied to "little_group_classification_of_massless_states" in Combinatorial supercharge counting is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: technique.kahler_metric_sigma_model_on_moduli_space
+  to: technique.complexified_symmetry_orbit_method
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "kahler_potential_geometry" is represented by Kahler-metric sigma model on moduli space; Complexified Symmetry-Orbit Method uses that ingredient directly.
+  failure_mode_if_absent: Without Kahler-metric sigma model on moduli space, the step tied to "kahler_potential_geometry" in Complexified Symmetry-Orbit Method is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: eft.operator_expansion
+  to: technique.composite_operator_renormalization_in_ope
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "momentum_flow_proof_of_ope" is represented by Operator expansion; Composite-Operator Renormalization in the OPE uses that ingredient directly.
+  failure_mode_if_absent: Without Operator expansion, the step tied to "momentum_flow_proof_of_ope" in Composite-Operator Renormalization in the OPE is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.anomalous_dimension
+  to: technique.composite_operator_renormalization_in_ope
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "composite_operator_renormalization" is represented by Anomalous dimension; Composite-Operator Renormalization in the OPE uses that ingredient directly.
+  failure_mode_if_absent: Without Anomalous dimension, the step tied to "composite_operator_renormalization" in Composite-Operator Renormalization in the OPE is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.kallen_lehmann_representation
+  to: technique.compositeness_condition_z_zero
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "spectral_positivity_bounds" is represented by Kallen-Lehmann representation; deriving Compositeness condition Z equals zero depends on that prior result.
+  failure_mode_if_absent: Without Kallen-Lehmann representation, the derivation step tied to "spectral_positivity_bounds" in Compositeness condition Z equals zero cannot be reconstructed.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.t_matrix
+  to: technique.connected_amputated_diagram_rule
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "S-matrix and T-matrix extraction" is represented by T-matrix; Connected amputated diagram rule uses that ingredient directly.
+  failure_mode_if_absent: Without T-matrix, the step tied to "S-matrix and T-matrix extraction" in Connected amputated diagram rule is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.feynman_rules
+  to: technique.connected_amputated_diagram_rule
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "Momentum-space Feynman rules" is represented by Feynman rules; Connected amputated diagram rule uses that ingredient directly.
+  failure_mode_if_absent: Without Feynman rules, the step tied to "Momentum-space Feynman rules" in Connected amputated diagram rule is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.dyson_series
+  to: technique.connected_diagram_combinatorics
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "interaction_picture_dyson_series" is represented by Dyson series; Connected-Diagram Combinatorics uses that ingredient directly.
+  failure_mode_if_absent: Without Dyson series, the step tied to "interaction_picture_dyson_series" in Connected-Diagram Combinatorics is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.normal_ordering
+  to: technique.connected_diagram_combinatorics
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "normal_ordering_reduction" is represented by Normal ordering; Connected-Diagram Combinatorics uses that ingredient directly.
+  failure_mode_if_absent: Without Normal ordering, the step tied to "normal_ordering_reduction" in Connected-Diagram Combinatorics is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.lippmann_schwinger_equation
+  to: technique.connected_kernel_scattering_equations
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "lippmann_schwinger_equations" is represented by Lippmann-Schwinger equation; Connected-Kernel Scattering Equations uses that ingredient directly.
+  failure_mode_if_absent: Without Lippmann-Schwinger equation, the step tied to "lippmann_schwinger_equations" in Connected-Kernel Scattering Equations is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.gauge_invariance
+  to: technique.conserved_current_coupling
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "gauge_invariance_from_massless_spin_one" is represented by Gauge invariance; Coupling to conserved currents uses that ingredient directly.
+  failure_mode_if_absent: Without Gauge invariance, the step tied to "gauge_invariance_from_massless_spin_one" in Coupling to conserved currents is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: classical_fields.noether_current
+  to: technique.conserved_current_coupling
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "noether_current_construction" is represented by Noether current; Coupling to conserved currents uses that ingredient directly.
+  failure_mode_if_absent: Without Noether current, the step tied to "noether_current_construction" in Coupling to conserved currents is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: complex_analysis.residue_theorem
+  to: technique.contour_fourier_transform_to_yukawa_or_coulomb_potential
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "Residue theorem" is represented by Residue theorem; Contour Fourier transform to Yukawa or Coulomb potentials uses that ingredient directly.
+  failure_mode_if_absent: Without Residue theorem, the step tied to "Residue theorem" in Contour Fourier transform to Yukawa or Coulomb potentials is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: sm.nonlinear_sigma_model
+  to: technique.coset_construction_for_broken_symmetry
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "nonlinear_realization_of_broken_symmetry" is represented by Nonlinear sigma model; Coset Construction for G to H Breaking uses that ingredient directly.
+  failure_mode_if_absent: Without Nonlinear sigma model, the step tied to "nonlinear_realization_of_broken_symmetry" in Coset Construction for G to H Breaking is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: math.lie_group
+  to: technique.coset_construction_for_broken_symmetry
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite "Lie_group_theory" is represented by Lie group; Coset Construction for G to H Breaking uses that ingredient directly.
+  failure_mode_if_absent: Without Lie group, the step tied to "Lie_group_theory" in Coset Construction for G to H Breaking is unavailable, so the method cannot be applied cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted

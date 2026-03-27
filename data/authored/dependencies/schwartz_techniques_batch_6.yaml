@@ -1,0 +1,1301 @@
+# Hand-authored dependency edges for the Schwartz techniques batch 6.
+# Format: from = existing prerequisite node, to = technique node.
+- from: relativity.lorentz_transformation
+  to: technique.rapidity_boost_invariant_observables
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Lorentz transformation is a listed prerequisite for Rapidity and boost-invariant observable design; it is needed to establish the longitudinal boost law that makes rapidity shifts useful for observable design.
+  failure_mode_if_absent: Cannot establish the longitudinal boost law that makes rapidity shifts useful for observable design without Lorentz transformation.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_6
+      note: Batch 6 lists Special relativity (Lorentz boosts) among the prerequisites for Rapidity and boost-invariant observable design.
+  status: asserted
+
+- from: relativity.rapidity
+  to: technique.rapidity_boost_invariant_observables
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Rapidity is a listed prerequisite for Rapidity and boost-invariant observable design; it is needed to work with the boost-invariant rapidity variable rather than a detector-specific surrogate.
+  failure_mode_if_absent: Cannot work with the boost-invariant rapidity variable rather than a detector-specific surrogate without Rapidity.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_6
+      note: Batch 6 lists Pseudorapidity vs rapidity distinction among the prerequisites for Rapidity and boost-invariant observable design.
+  status: asserted
+
+- from: qcd.parton_model
+  to: technique.rapidity_boost_invariant_observables
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Parton model is a listed prerequisite for Rapidity and boost-invariant observable design; it is needed to separate hard-scattering kinematics from the unknown longitudinal boost of the incoming parton system.
+  failure_mode_if_absent: Cannot separate hard-scattering kinematics from the unknown longitudinal boost of the incoming parton system without Parton model.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_6
+      note: Batch 6 lists Parton model and momentum fractions among the prerequisites for Rapidity and boost-invariant observable design.
+  status: asserted
+
+- from: eft.soft_collinear_effective_theory
+  to: technique.rapidity_regulated_matching
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: Soft-collinear effective theory is a listed prerequisite for Rapidity-regulated one-loop matching for Glauber SCET; it is needed to set up the mode-separated effective theory that is being matched to QCD.
+  failure_mode_if_absent: Cannot set up the mode-separated effective theory that is being matched to QCD without Soft-collinear effective theory.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_6
+      note: Batch 6 lists SCET Feynman rules with Glauber operators among the prerequisites for Rapidity-regulated one-loop matching for Glauber SCET.
+  status: asserted
+
+- from: eft.glauber_mode
+  to: technique.rapidity_regulated_matching
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: Glauber mode is a listed prerequisite for Rapidity-regulated one-loop matching for Glauber SCET; it is needed to identify the Glauber exchange sector whose one-loop coefficient is being checked.
+  failure_mode_if_absent: Cannot identify the Glauber exchange sector whose one-loop coefficient is being checked without Glauber mode.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_6
+      note: Batch 6 lists SCET Feynman rules with Glauber operators among the prerequisites for Rapidity-regulated one-loop matching for Glauber SCET.
+  status: asserted
+
+- from: qft.renormalized_perturbation_theory
+  to: technique.rapidity_regulated_matching
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: Renormalized perturbation theory is a listed prerequisite for Rapidity-regulated one-loop matching for Glauber SCET; it is needed to compare the renormalized one-loop QCD amplitude against the EFT result.
+  failure_mode_if_absent: Cannot compare the renormalized one-loop QCD amplitude against the EFT result without Renormalized perturbation theory.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_6
+      note: Batch 6 lists One-loop Feynman diagram calculation in QCD among the prerequisites for Rapidity-regulated one-loop matching for Glauber SCET.
+  status: asserted
+
+- from: qft.landau_singularity_conditions
+  to: technique.reduced_diagram_construction
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: Landau singularity conditions is a listed prerequisite for Reduced-diagram construction via IR-sensitivity lemmas; it is needed to identify the pinch surfaces that the IR-sensitivity lemmas constrain.
+  failure_mode_if_absent: Cannot identify the pinch surfaces that the IR-sensitivity lemmas constrain without Landau singularity conditions.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_6
+      note: Batch 6 lists pinch_surfaces_landau_equations among the prerequisites for Reduced-diagram construction via IR-sensitivity lemmas.
+  status: asserted
+
+- from: qft.pinch_singularities
+  to: technique.reduced_diagram_construction
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: Pinch singularities is a listed prerequisite for Reduced-diagram construction via IR-sensitivity lemmas; it is needed to organize which contour obstructions define the reduced-diagram topology.
+  failure_mode_if_absent: Cannot organize which contour obstructions define the reduced-diagram topology without Pinch singularities.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_6
+      note: Batch 6 lists pinch_surfaces_landau_equations among the prerequisites for Reduced-diagram construction via IR-sensitivity lemmas.
+  status: asserted
+
+- from: qft.spinor_helicity_notation
+  to: technique.reference_vector_freedom_factorization
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Spinor-helicity notation is a listed prerequisite for Exploiting reference vector freedom to simplify collinear limits; it is needed to write polarization vectors with explicit reference-vector dependence.
+  failure_mode_if_absent: Cannot write polarization vectors with explicit reference-vector dependence without Spinor-helicity notation.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_6
+      note: Batch 6 lists spinor-helicity formalism among the prerequisites for Exploiting reference vector freedom to simplify collinear limits.
+  status: asserted
+
+- from: qft.gauge_invariance
+  to: technique.reference_vector_freedom_factorization
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Gauge invariance is a listed prerequisite for Exploiting reference vector freedom to simplify collinear limits; it is needed to change reference vectors without altering the physical amplitude.
+  failure_mode_if_absent: Cannot change reference vectors without altering the physical amplitude without Gauge invariance.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_6
+      note: Batch 6 lists Ward identity / gauge invariance among the prerequisites for Exploiting reference vector freedom to simplify collinear limits.
+  status: asserted
+
+- from: qft.eikonal_soft_factor
+  to: technique.reference_vector_freedom_factorization
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Eikonal soft factor is a listed prerequisite for Exploiting reference vector freedom to simplify collinear limits; it is needed to recognize the universal soft factor that appears after the reference-vector choice.
+  failure_mode_if_absent: Cannot recognize the universal soft factor that appears after the reference-vector choice without Eikonal soft factor.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_6
+      note: Batch 6 lists collinear and soft limits of QCD amplitudes among the prerequisites for Exploiting reference vector freedom to simplify collinear limits.
+  status: asserted
+
+- from: qcd.splitting_function
+  to: technique.reference_vector_freedom_factorization
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Splitting function is a listed prerequisite for Exploiting reference vector freedom to simplify collinear limits; it is needed to recognize the universal collinear factorization pattern sector by sector.
+  failure_mode_if_absent: Cannot recognize the universal collinear factorization pattern sector by sector without Splitting function.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_6
+      note: Batch 6 lists collinear and soft limits of QCD amplitudes among the prerequisites for Exploiting reference vector freedom to simplify collinear limits.
+  status: asserted
+
+- from: eft.soft_collinear_effective_theory
+  to: technique.regional_soft_function_factorization
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Soft-collinear effective theory is a listed prerequisite for Regional soft function for separating in-jet and out-of-jet soft scales; it is needed to organize separate in-jet and out-of-jet soft modes inside a common EFT framework.
+  failure_mode_if_absent: Cannot organize separate in-jet and out-of-jet soft modes inside a common EFT framework without Soft-collinear effective theory.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_6
+      note: Batch 6 lists multi-scale soft functions in SCET among the prerequisites for Regional soft function for separating in-jet and out-of-jet soft scales.
+  status: asserted
+
+- from: eft.soft_function
+  to: technique.regional_soft_function_factorization
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Soft function is a listed prerequisite for Regional soft function for separating in-jet and out-of-jet soft scales; it is needed to start from the soft operator that is being split into regional and remainder pieces.
+  failure_mode_if_absent: Cannot start from the soft operator that is being split into regional and remainder pieces without Soft function.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_6
+      note: Batch 6 lists multi-scale soft functions in SCET among the prerequisites for Regional soft function for separating in-jet and out-of-jet soft scales.
+  status: asserted
+
+- from: eft.renormalization_group_running
+  to: technique.regional_soft_function_factorization
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Renormalization-group running is a listed prerequisite for Regional soft function for separating in-jet and out-of-jet soft scales; it is needed to evolve the regional and remainder soft functions from their natural scales.
+  failure_mode_if_absent: Cannot evolve the regional and remainder soft functions from their natural scales without Renormalization-group running.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_6
+      note: Batch 6 lists RG evolution of Wilson line operators among the prerequisites for Regional soft function for separating in-jet and out-of-jet soft scales.
+  status: asserted
+
+- from: qft.jet
+  to: technique.regional_soft_function_factorization
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Jet is a listed prerequisite for Regional soft function for separating in-jet and out-of-jet soft scales; it is needed to define the in-jet versus out-of-jet partition tracked by the regional soft function.
+  failure_mode_if_absent: Cannot define the in-jet versus out-of-jet partition tracked by the regional soft function without Jet.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_6
+      note: Batch 6 lists jet algorithm dependence of soft radiation among the prerequisites for Regional soft function for separating in-jet and out-of-jet soft scales.
+  status: asserted
+
+- from: qft.renormalon
+  to: technique.renormalon_saddle_identification
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: Renormalon is a listed prerequisite for Renormalons as Saddle Points of the 1-Loop Effective Action; it is needed to identify the Borel singularity whose path-integral origin is being explained.
+  failure_mode_if_absent: Cannot identify the Borel singularity whose path-integral origin is being explained without Renormalon.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_6
+      note: Batch 6 lists renormalons and their Borel-plane signatures among the prerequisites for Renormalons as Saddle Points of the 1-Loop Effective Action.
+  status: asserted
+
+- from: qft.beta_function
+  to: technique.renormalon_saddle_identification
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: Beta function is a listed prerequisite for Renormalons as Saddle Points of the 1-Loop Effective Action; it is needed to generate the logarithmic scale dependence that creates the saddle.
+  failure_mode_if_absent: Cannot generate the logarithmic scale dependence that creates the saddle without Beta function.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_6
+      note: Batch 6 lists scale anomaly and beta function among the prerequisites for Renormalons as Saddle Points of the 1-Loop Effective Action.
+  status: asserted
+
+- from: qft.one_loop_effective_action
+  to: technique.renormalon_saddle_identification
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: One-loop effective action is a listed prerequisite for Renormalons as Saddle Points of the 1-Loop Effective Action; it is needed to analyze the semiclassical effective action whose saddles reproduce the renormalon.
+  failure_mode_if_absent: Cannot analyze the semiclassical effective action whose saddles reproduce the renormalon without One-loop effective action.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_6
+      note: Batch 6 lists 1-loop effective action among the prerequisites for Renormalons as Saddle Points of the 1-Loop Effective Action.
+  status: asserted
+
+- from: qft.s_matrix_unitarity
+  to: technique.repulsive_loss_phase_ambiguity
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: S-matrix unitarity is a listed prerequisite for Repulsive Loss for Detecting Phase Ambiguities; it is needed to impose the elastic-unitarity constraint that each candidate phase must satisfy.
+  failure_mode_if_absent: Cannot impose the elastic-unitarity constraint that each candidate phase must satisfy without S-matrix unitarity.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_6
+      note: Batch 6 lists unitarity integral equation for elastic scattering among the prerequisites for Repulsive Loss for Detecting Phase Ambiguities.
+  status: asserted
+
+- from: qft.partial_wave_expansion
+  to: technique.repulsive_loss_phase_ambiguity
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Partial-wave expansion is a listed prerequisite for Repulsive Loss for Detecting Phase Ambiguities; it is needed to parameterize the phase solutions that the networks compare and repel.
+  failure_mode_if_absent: Cannot parameterize the phase solutions that the networks compare and repel without Partial-wave expansion.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_6
+      note: Batch 6 lists partial wave decomposition and phase shifts among the prerequisites for Repulsive Loss for Detecting Phase Ambiguities.
+  status: asserted
+
+- from: eft.large_logarithm_resummation
+  to: technique.resummed_fixed_order_matching
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Large-logarithm resummation is a listed prerequisite for Additive matching of resummed and fixed-order distributions; it is needed to construct the singular endpoint prediction whose fixed-order expansion is subtracted.
+  failure_mode_if_absent: Cannot construct the singular endpoint prediction whose fixed-order expansion is subtracted without Large-logarithm resummation.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_6
+      note: Batch 6 lists Resummed distribution in closed analytic form among the prerequisites for Additive matching of resummed and fixed-order distributions.
+  status: asserted
+
+- from: qft.renormalized_perturbation_theory
+  to: technique.resummed_fixed_order_matching
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Renormalized perturbation theory is a listed prerequisite for Additive matching of resummed and fixed-order distributions; it is needed to supply the fixed-order distribution from which the nonsingular remainder is extracted.
+  failure_mode_if_absent: Cannot supply the fixed-order distribution from which the nonsingular remainder is extracted without Renormalized perturbation theory.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_6
+      note: Batch 6 lists Fixed-order distributions (A, B, C functions) to the desired accuracy among the prerequisites for Additive matching of resummed and fixed-order distributions.
+  status: asserted
+
+- from: qft.anomalous_dimension
+  to: technique.rg_sudakov_resummation
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Anomalous dimension is a listed prerequisite for Renormalization group Sudakov resummation via anomalous dimensions; it is needed to build the Sudakov exponent and evolution kernels from anomalous-dimension data.
+  failure_mode_if_absent: Cannot build the Sudakov exponent and evolution kernels from anomalous-dimension data without Anomalous dimension.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_6
+      note: Batch 6 lists Cusp anomalous dimension Gamma_cusp to required loop order among the prerequisites for Renormalization group Sudakov resummation via anomalous dimensions.
+  status: asserted
+
+- from: qft.beta_function
+  to: technique.rg_sudakov_resummation
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Beta function is a listed prerequisite for Renormalization group Sudakov resummation via anomalous dimensions; it is needed to run the coupling inside the Sudakov evolution integrals.
+  failure_mode_if_absent: Cannot run the coupling inside the Sudakov evolution integrals without Beta function.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_6
+      note: Batch 6 lists Beta function coefficients among the prerequisites for Renormalization group Sudakov resummation via anomalous dimensions.
+  status: asserted
+
+- from: qft.renormalon
+  to: technique.rgap_renormalon_subtraction
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Renormalon is a listed prerequisite for R-gap Renormalon Subtraction at O(αs³); it is needed to identify the O(Lambda_QCD) ambiguity that the R-gap scheme cancels.
+  failure_mode_if_absent: Cannot identify the O(Lambda_QCD) ambiguity that the R-gap scheme cancels without Renormalon.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_6
+      note: Batch 6 lists renormalon calculus among the prerequisites for R-gap Renormalon Subtraction at O(αs³).
+  status: asserted
+
+- from: eft.soft_function
+  to: technique.rgap_renormalon_subtraction
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Soft function is a listed prerequisite for R-gap Renormalon Subtraction at O(αs³); it is needed to locate the partonic soft contribution from which the renormalon is subtracted.
+  failure_mode_if_absent: Cannot locate the partonic soft contribution from which the renormalon is subtracted without Soft function.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_6
+      note: Batch 6 lists soft function in SCET among the prerequisites for R-gap Renormalon Subtraction at O(αs³).
+  status: asserted
+
+- from: qft.subtraction_scheme
+  to: technique.rgap_renormalon_subtraction
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Subtraction scheme is a listed prerequisite for R-gap Renormalon Subtraction at O(αs³); it is needed to define the subtraction prescription that turns the power-correction parameter into a short-distance quantity.
+  failure_mode_if_absent: Cannot define the subtraction prescription that turns the power-correction parameter into a short-distance quantity without Subtraction scheme.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_6
+      note: Batch 6 lists gap subtraction scheme among the prerequisites for R-gap Renormalon Subtraction at O(αs³).
+  status: asserted
+
+- from: eft.large_logarithm_resummation
+  to: technique.rgap_renormalon_subtraction
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Large-logarithm resummation is a listed prerequisite for R-gap Renormalon Subtraction at O(αs³); it is needed to keep the high-order logarithmic structure under control after the subtraction.
+  failure_mode_if_absent: Cannot keep the high-order logarithmic structure under control after the subtraction without Large-logarithm resummation.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_6
+      note: Batch 6 lists perturbative QCD at N3LL among the prerequisites for R-gap Renormalon Subtraction at O(αs³).
+  status: asserted
+
+- from: eft.power_counting
+  to: technique.scalar_longitudinal_power_counting
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Power counting is a listed prerequisite for Scalar Longitudinal Mode Power Counting for Massive Spin-2; it is needed to read off the true suppression scale of the canonically normalized longitudinal mode.
+  failure_mode_if_absent: Cannot read off the true suppression scale of the canonically normalized longitudinal mode without Power counting.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_6
+      note: Batch 6 lists EFT operator power counting among the prerequisites for Scalar Longitudinal Mode Power Counting for Massive Spin-2.
+  status: asserted
+
+- from: qft.dimensional_transmutation
+  to: technique.scale_invariance_power_counting
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: Dimensional transmutation is a listed prerequisite for Resummed Power Counting for the Scale Collective Coordinate Integral; it is needed to turn the running quartic into a preferred scale for the ln R integral.
+  failure_mode_if_absent: Cannot turn the running quartic into a preferred scale for the ln R integral without Dimensional transmutation.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_6
+      note: Batch 6 lists dimensional transmutation and the running quartic coupling among the prerequisites for Resummed Power Counting for the Scale Collective Coordinate Integral.
+  status: asserted
+
+- from: qft.beta_function
+  to: technique.scale_invariance_power_counting
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: Beta function is a listed prerequisite for Resummed Power Counting for the Scale Collective Coordinate Integral; it is needed to locate the scale where the resummed Gaussian over ln R is centered.
+  failure_mode_if_absent: Cannot locate the scale where the resummed Gaussian over ln R is centered without Beta function.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_6
+      note: Batch 6 lists dimensional transmutation and the running quartic coupling among the prerequisites for Resummed Power Counting for the Scale Collective Coordinate Integral.
+  status: asserted
+
+- from: eft.soft_collinear_effective_theory
+  to: technique.scale_invariant_glauber_cancellation
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: Soft-collinear effective theory is a listed prerequisite for Scale-invariance-based proof of Glauber ladder cancellation; it is needed to set up the spectator-scattering EFT whose ladder graphs are analyzed.
+  failure_mode_if_absent: Cannot set up the spectator-scattering EFT whose ladder graphs are analyzed without Soft-collinear effective theory.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_6
+      note: Batch 6 lists SCET Glauber interactions and ladder diagrams among the prerequisites for Scale-invariance-based proof of Glauber ladder cancellation.
+  status: asserted
+
+- from: eft.glauber_mode
+  to: technique.scale_invariant_glauber_cancellation
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: Glauber mode is a listed prerequisite for Scale-invariance-based proof of Glauber ladder cancellation; it is needed to identify the ladder exchanges whose cancellation is being generalized.
+  failure_mode_if_absent: Cannot identify the ladder exchanges whose cancellation is being generalized without Glauber mode.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_6
+      note: Batch 6 lists SCET Glauber interactions and ladder diagrams among the prerequisites for Scale-invariance-based proof of Glauber ladder cancellation.
+  status: asserted
+
+- from: qcd.factorization_theorem
+  to: technique.scale_invariant_glauber_cancellation
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: Factorization theorem is a listed prerequisite for Scale-invariance-based proof of Glauber ladder cancellation; it is needed to import the known qT cancellation result that the scale-invariance argument extends.
+  failure_mode_if_absent: Cannot import the known qT cancellation result that the scale-invariance argument extends without Factorization theorem.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_6
+      note: Batch 6 lists Collins-Soper-Sterman factorization proof for qT among the prerequisites for Scale-invariance-based proof of Glauber ladder cancellation.
+  status: asserted
+
+- from: qft.dimensional_regularization
+  to: technique.scale_invariant_glauber_cancellation
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: Dimensional regularization is a listed prerequisite for Scale-invariance-based proof of Glauber ladder cancellation; it is needed to regulate the collinear regions while preserving the scale-invariant setup.
+  failure_mode_if_absent: Cannot regulate the collinear regions while preserving the scale-invariant setup without Dimensional regularization.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_6
+      note: Batch 6 lists Dimensional regularization of collinear singularities among the prerequisites for Scale-invariance-based proof of Glauber ladder cancellation.
+  status: asserted
+
+- from: eft.soft_collinear_effective_theory
+  to: technique.scet_1loop_wilson_coefficients_all_channels
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: Soft-collinear effective theory is a listed prerequisite for Complete 1-loop SCET Wilson coefficients for all 2->2 QCD processes; it is needed to provide the EFT operator basis receiving the one-loop coefficients.
+  failure_mode_if_absent: Cannot provide the EFT operator basis receiving the one-loop coefficients without Soft-collinear effective theory.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_6
+      note: Batch 6 lists SCET operator basis and matching procedure among the prerequisites for Complete 1-loop SCET Wilson coefficients for all 2->2 QCD processes.
+  status: asserted
+
+- from: eft.matching
+  to: technique.scet_1loop_wilson_coefficients_all_channels
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: Matching is a listed prerequisite for Complete 1-loop SCET Wilson coefficients for all 2->2 QCD processes; it is needed to define the amplitude comparison used to extract each coefficient.
+  failure_mode_if_absent: Cannot define the amplitude comparison used to extract each coefficient without Matching.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_6
+      note: Batch 6 lists SCET operator basis and matching procedure among the prerequisites for Complete 1-loop SCET Wilson coefficients for all 2->2 QCD processes.
+  status: asserted
+
+- from: eft.wilson_coefficient
+  to: technique.scet_1loop_wilson_coefficients_all_channels
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: Wilson coefficient is a listed prerequisite for Complete 1-loop SCET Wilson coefficients for all 2->2 QCD processes; it is needed to identify the short-distance objects being solved for channel by channel.
+  failure_mode_if_absent: Cannot identify the short-distance objects being solved for channel by channel without Wilson coefficient.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_6
+      note: Batch 6 lists SCET operator basis and matching procedure among the prerequisites for Complete 1-loop SCET Wilson coefficients for all 2->2 QCD processes.
+  status: asserted
+
+- from: qft.renormalized_perturbation_theory
+  to: technique.scet_1loop_wilson_coefficients_all_channels
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: Renormalized perturbation theory is a listed prerequisite for Complete 1-loop SCET Wilson coefficients for all 2->2 QCD processes; it is needed to supply the one-loop QCD amplitudes used in the match.
+  failure_mode_if_absent: Cannot supply the one-loop QCD amplitudes used in the match without Renormalized perturbation theory.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_6
+      note: Batch 6 lists 1-loop QCD amplitudes for 2->2 processes among the prerequisites for Complete 1-loop SCET Wilson coefficients for all 2->2 QCD processes.
+  status: asserted
+
+- from: qcd.color_su3
+  to: technique.scet_1loop_wilson_coefficients_all_channels
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: Color SU(3) is a listed prerequisite for Complete 1-loop SCET Wilson coefficients for all 2->2 QCD processes; it is needed to organize the color basis of the four-parton operators.
+  failure_mode_if_absent: Cannot organize the color basis of the four-parton operators without Color SU(3).
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_6
+      note: Batch 6 lists Color algebra and trace identities for SU(3) among the prerequisites for Complete 1-loop SCET Wilson coefficients for all 2->2 QCD processes.
+  status: asserted
+
+- from: qft.spinor_helicity_notation
+  to: technique.scet_1loop_wilson_coefficients_all_channels
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: Spinor-helicity notation is a listed prerequisite for Complete 1-loop SCET Wilson coefficients for all 2->2 QCD processes; it is needed to organize the helicity-resolved amplitudes in compact form.
+  failure_mode_if_absent: Cannot organize the helicity-resolved amplitudes in compact form without Spinor-helicity notation.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_6
+      note: Batch 6 lists Spinor helicity formalism or Mandelstam invariant decomposition among the prerequisites for Complete 1-loop SCET Wilson coefficients for all 2->2 QCD processes.
+  status: asserted
+
+- from: eft.soft_collinear_effective_theory
+  to: technique.scet_amplitude_vs_probability_resummation
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Soft-collinear effective theory is a listed prerequisite for Amplitude-level resummation via RG equations versus probability-level emission sums; it is needed to set up the amplitude-level EFT description.
+  failure_mode_if_absent: Cannot set up the amplitude-level EFT description without Soft-collinear effective theory.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_6
+      note: Batch 6 lists SCET Lagrangian and operator formalism among the prerequisites for Amplitude-level resummation via RG equations versus probability-level emission sums.
+  status: asserted
+
+- from: eft.wilson_coefficient
+  to: technique.scet_amplitude_vs_probability_resummation
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Wilson coefficient is a listed prerequisite for Amplitude-level resummation via RG equations versus probability-level emission sums; it is needed to encode the hard amplitude being evolved.
+  failure_mode_if_absent: Cannot encode the hard amplitude being evolved without Wilson coefficient.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_6
+      note: Batch 6 lists Factorization of cross sections into Wilson coefficient, jet function, soft function among the prerequisites for Amplitude-level resummation via RG equations versus probability-level emission sums.
+  status: asserted
+
+- from: eft.jet_function
+  to: technique.scet_amplitude_vs_probability_resummation
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Jet function is a listed prerequisite for Amplitude-level resummation via RG equations versus probability-level emission sums; it is needed to encode the collinear sector of the factorized event shape.
+  failure_mode_if_absent: Cannot encode the collinear sector of the factorized event shape without Jet function.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_6
+      note: Batch 6 lists Factorization of cross sections into Wilson coefficient, jet function, soft function among the prerequisites for Amplitude-level resummation via RG equations versus probability-level emission sums.
+  status: asserted
+
+- from: eft.soft_function
+  to: technique.scet_amplitude_vs_probability_resummation
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Soft function is a listed prerequisite for Amplitude-level resummation via RG equations versus probability-level emission sums; it is needed to encode the soft sector of the factorized event shape.
+  failure_mode_if_absent: Cannot encode the soft sector of the factorized event shape without Soft function.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_6
+      note: Batch 6 lists Factorization of cross sections into Wilson coefficient, jet function, soft function among the prerequisites for Amplitude-level resummation via RG equations versus probability-level emission sums.
+  status: asserted
+
+- from: eft.renormalization_group_running
+  to: technique.scet_amplitude_vs_probability_resummation
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Renormalization-group running is a listed prerequisite for Amplitude-level resummation via RG equations versus probability-level emission sums; it is needed to carry the amplitude-level evolution between the separated scales.
+  failure_mode_if_absent: Cannot carry the amplitude-level evolution between the separated scales without Renormalization-group running.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_6
+      note: Batch 6 lists SCET Lagrangian and operator formalism among the prerequisites for Amplitude-level resummation via RG equations versus probability-level emission sums.
+  status: asserted
+
+- from: eft.soft_collinear_effective_theory
+  to: technique.scet_event_generation
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Soft-collinear effective theory is a listed prerequisite for SCET-based event generation algorithm; it is needed to provide the mode-separated framework for hard matching, running, and threshold matchings.
+  failure_mode_if_absent: Cannot provide the mode-separated framework for hard matching, running, and threshold matchings without Soft-collinear effective theory.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_6
+      note: Batch 6 lists soft-collinear effective theory (SCET) among the prerequisites for SCET-based event generation algorithm.
+  status: asserted
+
+- from: eft.renormalization_group_running
+  to: technique.scet_event_generation
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Renormalization-group running is a listed prerequisite for SCET-based event generation algorithm; it is needed to generate the Sudakov evolution between resolved scales.
+  failure_mode_if_absent: Cannot generate the Sudakov evolution between resolved scales without Renormalization-group running.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_6
+      note: Batch 6 lists renormalization group evolution among the prerequisites for SCET-based event generation algorithm.
+  status: asserted
+
+- from: qft.kln_theorem
+  to: technique.scet_event_generation
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Kinoshita-Lee-Nauenberg theorem is a listed prerequisite for SCET-based event generation algorithm; it is needed to justify the cancellation structure needed for an infrared-safe event generator.
+  failure_mode_if_absent: Cannot justify the cancellation structure needed for an infrared-safe event generator without Kinoshita-Lee-Nauenberg theorem.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_6
+      note: Batch 6 lists infrared divergence cancellation among the prerequisites for SCET-based event generation algorithm.
+  status: asserted
+
+- from: qft.renormalized_perturbation_theory
+  to: technique.scet_event_generation
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Renormalized perturbation theory is a listed prerequisite for SCET-based event generation algorithm; it is needed to supply the fixed-order ingredients matched into the shower.
+  failure_mode_if_absent: Cannot supply the fixed-order ingredients matched into the shower without Renormalized perturbation theory.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_6
+      note: Batch 6 lists NLO QCD calculations among the prerequisites for SCET-based event generation algorithm.
+  status: asserted
+
+- from: eft.soft_collinear_effective_theory
+  to: technique.scet_factorization_of_branchings
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: Soft-collinear effective theory is a listed prerequisite for Proof of branching factorization from SCET; it is needed to provide the EFT fields and leading-power interactions used in the proof.
+  failure_mode_if_absent: Cannot provide the EFT fields and leading-power interactions used in the proof without Soft-collinear effective theory.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_6
+      note: Batch 6 lists SCET Feynman rules among the prerequisites for Proof of branching factorization from SCET.
+  status: asserted
+
+- from: qft.feynman_rules
+  to: technique.scet_factorization_of_branchings
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: Feynman rules is a listed prerequisite for Proof of branching factorization from SCET; it is needed to turn the operator statement into explicit matrix-element manipulations.
+  failure_mode_if_absent: Cannot turn the operator statement into explicit matrix-element manipulations without Feynman rules.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_6
+      note: Batch 6 lists SCET Feynman rules among the prerequisites for Proof of branching factorization from SCET.
+  status: asserted
+
+- from: qcd.splitting_function
+  to: technique.scet_factorization_of_branchings
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: Splitting function is a listed prerequisite for Proof of branching factorization from SCET; it is needed to identify the universal kernel that appears after factorization.
+  failure_mode_if_absent: Cannot identify the universal kernel that appears after factorization without Splitting function.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_6
+      note: Batch 6 lists splitting functions among the prerequisites for Proof of branching factorization from SCET.
+  status: asserted
+
+- from: eft.collinear_mode
+  to: technique.scet_factorization_of_branchings
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: Collinear mode is a listed prerequisite for Proof of branching factorization from SCET; it is needed to specify the kinematic regime in which the leading-power factorization statement holds.
+  failure_mode_if_absent: Cannot specify the kinematic regime in which the leading-power factorization statement holds without Collinear mode.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_6
+      note: Batch 6 lists collinear limit of QCD amplitudes among the prerequisites for Proof of branching factorization from SCET.
+  status: asserted
+
+- from: eft.soft_collinear_effective_theory
+  to: technique.scet_matching_and_running_for_jets
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Soft-collinear effective theory is a listed prerequisite for SCET matching and RG evolution for jet distributions; it is needed to provide the EFT description used for the jet distribution.
+  failure_mode_if_absent: Cannot provide the EFT description used for the jet distribution without Soft-collinear effective theory.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_6
+      note: Batch 6 lists soft-collinear effective theory (SCET) among the prerequisites for SCET matching and RG evolution for jet distributions.
+  status: asserted
+
+- from: eft.matching
+  to: technique.scet_matching_and_running_for_jets
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Matching is a listed prerequisite for SCET matching and RG evolution for jet distributions; it is needed to extract the hard coefficients at the scale Q.
+  failure_mode_if_absent: Cannot extract the hard coefficients at the scale Q without Matching.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_6
+      note: Batch 6 lists Wilson coefficients and operator matching among the prerequisites for SCET matching and RG evolution for jet distributions.
+  status: asserted
+
+- from: eft.wilson_coefficient
+  to: technique.scet_matching_and_running_for_jets
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Wilson coefficient is a listed prerequisite for SCET matching and RG evolution for jet distributions; it is needed to carry the short-distance information into the jet calculation.
+  failure_mode_if_absent: Cannot carry the short-distance information into the jet calculation without Wilson coefficient.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_6
+      note: Batch 6 lists Wilson coefficients and operator matching among the prerequisites for SCET matching and RG evolution for jet distributions.
+  status: asserted
+
+- from: eft.renormalization_group_running
+  to: technique.scet_matching_and_running_for_jets
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Renormalization-group running is a listed prerequisite for SCET matching and RG evolution for jet distributions; it is needed to evolve the operators across the separated scales.
+  failure_mode_if_absent: Cannot evolve the operators across the separated scales without Renormalization-group running.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_6
+      note: Batch 6 lists renormalization group evolution among the prerequisites for SCET matching and RG evolution for jet distributions.
+  status: asserted
+
+- from: qft.scattering_amplitude
+  to: technique.scet_matching_and_running_for_jets
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Scattering amplitude is a listed prerequisite for SCET matching and RG evolution for jet distributions; it is needed to supply the fixed-order matrix elements that seed the match.
+  failure_mode_if_absent: Cannot supply the fixed-order matrix elements that seed the match without Scattering amplitude.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_6
+      note: Batch 6 lists QCD matrix elements among the prerequisites for SCET matching and RG evolution for jet distributions.
+  status: asserted
+
+- from: eft.large_logarithm_resummation
+  to: technique.scet_matching_and_running_for_jets
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Large-logarithm resummation is a listed prerequisite for SCET matching and RG evolution for jet distributions; it is needed to encode the resummed suppression between widely separated scales.
+  failure_mode_if_absent: Cannot encode the resummed suppression between widely separated scales without Large-logarithm resummation.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_6
+      note: Batch 6 lists Sudakov factors among the prerequisites for SCET matching and RG evolution for jet distributions.
+  status: asserted
+
+- from: eft.soft_collinear_effective_theory
+  to: technique.scet_multiscale_bsm_constraint
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Soft-collinear effective theory is a listed prerequisite for Multi-scale SCET event shapes to constrain new colored particles; it is needed to provide the multiscale factorization framework.
+  failure_mode_if_absent: Cannot provide the multiscale factorization framework without Soft-collinear effective theory.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_6
+      note: Batch 6 lists Soft-Collinear Effective Theory (SCET) among the prerequisites for Multi-scale SCET event shapes to constrain new colored particles.
+  status: asserted
+
+- from: qft.thrust
+  to: technique.scet_multiscale_bsm_constraint
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Thrust is a listed prerequisite for Multi-scale SCET event shapes to constrain new colored particles; it is needed to specify the event-shape observable whose spectrum is analyzed across hard, jet, and soft scales.
+  failure_mode_if_absent: Cannot specify the event-shape observable whose spectrum is analyzed across hard, jet, and soft scales without Thrust.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_6
+      note: Batch 6 lists Thrust distribution and event shape resummation (N3LL) among the prerequisites for Multi-scale SCET event shapes to constrain new colored particles.
+  status: asserted
+
+- from: eft.large_logarithm_resummation
+  to: technique.scet_multiscale_bsm_constraint
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Large-logarithm resummation is a listed prerequisite for Multi-scale SCET event shapes to constrain new colored particles; it is needed to supply the high-logarithmic-accuracy evolution across the separated scales.
+  failure_mode_if_absent: Cannot supply the high-logarithmic-accuracy evolution across the separated scales without Large-logarithm resummation.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_6
+      note: Batch 6 lists Thrust distribution and event shape resummation (N3LL) among the prerequisites for Multi-scale SCET event shapes to constrain new colored particles.
+  status: asserted
+
+- from: qft.beta_function
+  to: technique.scet_multiscale_bsm_constraint
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Beta function is a listed prerequisite for Multi-scale SCET event shapes to constrain new colored particles; it is needed to track how new colored states modify the running between the soft and hard scales.
+  failure_mode_if_absent: Cannot track how new colored states modify the running between the soft and hard scales without Beta function.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_6
+      note: Batch 6 lists QCD beta function with BSM flavor thresholds among the prerequisites for Multi-scale SCET event shapes to constrain new colored particles.
+  status: asserted
+
+- from: qft.renormalized_perturbation_theory
+  to: technique.scet_multiscale_bsm_constraint
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Renormalized perturbation theory is a listed prerequisite for Multi-scale SCET event shapes to constrain new colored particles; it is needed to provide the fixed-order event-shape ingredients combined with the resummation.
+  failure_mode_if_absent: Cannot provide the fixed-order event-shape ingredients combined with the resummation without Renormalized perturbation theory.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_6
+      note: Batch 6 lists NNLO fixed-order event shapes among the prerequisites for Multi-scale SCET event shapes to constrain new colored particles.
+  status: asserted
+
+- from: eft.soft_collinear_effective_theory
+  to: technique.scet_photon_w_threshold_resummation
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Soft-collinear effective theory is a listed prerequisite for SCET threshold resummation for direct photon and W spectra with ATLAS comparison; it is needed to provide the threshold-factorization framework for the hadronic spectrum.
+  failure_mode_if_absent: Cannot provide the threshold-factorization framework for the hadronic spectrum without Soft-collinear effective theory.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_6
+      note: Batch 6 lists soft-collinear effective theory (SCET) among the prerequisites for SCET threshold resummation for direct photon and W spectra with ATLAS comparison.
+  status: asserted
+
+- from: eft.hard_function
+  to: technique.scet_photon_w_threshold_resummation
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Hard function is a listed prerequisite for SCET threshold resummation for direct photon and W spectra with ATLAS comparison; it is needed to encode the short-distance production channels near threshold.
+  failure_mode_if_absent: Cannot encode the short-distance production channels near threshold without Hard function.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_6
+      note: Batch 6 lists NLO hard functions for Compton and annihilation channels among the prerequisites for SCET threshold resummation for direct photon and W spectra with ATLAS comparison.
+  status: asserted
+
+- from: eft.jet_function
+  to: technique.scet_photon_w_threshold_resummation
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Jet function is a listed prerequisite for SCET threshold resummation for direct photon and W spectra with ATLAS comparison; it is needed to supply the collinear ingredient recycled from other threshold problems.
+  failure_mode_if_absent: Cannot supply the collinear ingredient recycled from other threshold problems without Jet function.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_6
+      note: Batch 6 lists two-loop jet and soft functions among the prerequisites for SCET threshold resummation for direct photon and W spectra with ATLAS comparison.
+  status: asserted
+
+- from: eft.soft_function
+  to: technique.scet_photon_w_threshold_resummation
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Soft function is a listed prerequisite for SCET threshold resummation for direct photon and W spectra with ATLAS comparison; it is needed to supply the soft ingredient recycled from other threshold problems.
+  failure_mode_if_absent: Cannot supply the soft ingredient recycled from other threshold problems without Soft function.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_6
+      note: Batch 6 lists two-loop jet and soft functions among the prerequisites for SCET threshold resummation for direct photon and W spectra with ATLAS comparison.
+  status: asserted
+
+- from: qcd.parton_distribution_function
+  to: technique.scet_photon_w_threshold_resummation
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Parton distribution function is a listed prerequisite for SCET threshold resummation for direct photon and W spectra with ATLAS comparison; it is needed to connect the partonic threshold formula to the hadronic spectrum.
+  failure_mode_if_absent: Cannot connect the partonic threshold formula to the hadronic spectrum without Parton distribution function.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_6
+      note: Batch 6 lists parton distribution functions at NNLO among the prerequisites for SCET threshold resummation for direct photon and W spectra with ATLAS comparison.
+  status: asserted
+
+- from: eft.soft_collinear_effective_theory
+  to: technique.scet_threshold_resummation_vector_boson_pt
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Soft-collinear effective theory is a listed prerequisite for SCET threshold resummation for vector boson pT spectra; it is needed to provide the hard-jet-soft factorization for large-pT vector bosons.
+  failure_mode_if_absent: Cannot provide the hard-jet-soft factorization for large-pT vector bosons without Soft-collinear effective theory.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_6
+      note: Batch 6 lists soft-collinear effective theory (SCET) among the prerequisites for SCET threshold resummation for vector boson pT spectra.
+  status: asserted
+
+- from: eft.hard_function
+  to: technique.scet_threshold_resummation_vector_boson_pt
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Hard function is a listed prerequisite for SCET threshold resummation for vector boson pT spectra; it is needed to encode the virtual short-distance corrections entering the threshold formula.
+  failure_mode_if_absent: Cannot encode the virtual short-distance corrections entering the threshold formula without Hard function.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_6
+      note: Batch 6 lists NLO virtual corrections for Compton and annihilation channels among the prerequisites for SCET threshold resummation for vector boson pT spectra.
+  status: asserted
+
+- from: eft.renormalization_group_running
+  to: technique.scet_threshold_resummation_vector_boson_pt
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Renormalization-group running is a listed prerequisite for SCET threshold resummation for vector boson pT spectra; it is needed to evolve the factorized pieces from their natural scales.
+  failure_mode_if_absent: Cannot evolve the factorized pieces from their natural scales without Renormalization-group running.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_6
+      note: Batch 6 lists renormalization group evolution among the prerequisites for SCET threshold resummation for vector boson pT spectra.
+  status: asserted
+
+- from: eft.large_logarithm_resummation
+  to: technique.scet_threshold_resummation_vector_boson_pt
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Large-logarithm resummation is a listed prerequisite for SCET threshold resummation for vector boson pT spectra; it is needed to supply the logarithmic resummation framework used after factorization.
+  failure_mode_if_absent: Cannot supply the logarithmic resummation framework used after factorization without Large-logarithm resummation.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_6
+      note: Batch 6 lists Laplace-space resummation formalism among the prerequisites for SCET threshold resummation for vector boson pT spectra.
+  status: asserted
+
+- from: qft.schwinger_dyson_equation
+  to: technique.sde_borel_singularity_extraction
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: Schwinger-Dyson equation is a listed prerequisite for Borel Singularity Extraction from Schwinger-Dyson Equations; it is needed to furnish the integral equation whose leading-log solution seeds the asymptotic analysis.
+  failure_mode_if_absent: Cannot furnish the integral equation whose leading-log solution seeds the asymptotic analysis without Schwinger-Dyson equation.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_6
+      note: Batch 6 lists Schwinger-Dyson equations among the prerequisites for Borel Singularity Extraction from Schwinger-Dyson Equations.
+  status: asserted
+
+- from: qft.borel_transform
+  to: technique.sde_borel_singularity_extraction
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: Borel transform is a listed prerequisite for Borel Singularity Extraction from Schwinger-Dyson Equations; it is needed to convert perturbative growth into singularity data in the Borel plane.
+  failure_mode_if_absent: Cannot convert perturbative growth into singularity data in the Borel plane without Borel transform.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_6
+      note: Batch 6 lists Borel and Borel-Leroy transforms among the prerequisites for Borel Singularity Extraction from Schwinger-Dyson Equations.
+  status: asserted
+
+- from: eft.soft_collinear_effective_theory
+  to: technique.sdoe_power_corrections
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Soft-collinear effective theory is a listed prerequisite for Soft-Drop Operator Expansion for Nonperturbative Corrections; it is needed to provide the factorized description of the groomed jet observable.
+  failure_mode_if_absent: Cannot provide the factorized description of the groomed jet observable without Soft-collinear effective theory.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_6
+      note: Batch 6 lists SCET factorization for soft-drop jet mass among the prerequisites for Soft-Drop Operator Expansion for Nonperturbative Corrections.
+  status: asserted
+
+- from: eft.soft_function
+  to: technique.sdoe_power_corrections
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Soft function is a listed prerequisite for Soft-Drop Operator Expansion for Nonperturbative Corrections; it is needed to capture the low-energy radiation whose moments feed the operator expansion.
+  failure_mode_if_absent: Cannot capture the low-energy radiation whose moments feed the operator expansion without Soft function.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_6
+      note: Batch 6 lists SCET factorization for soft-drop jet mass among the prerequisites for Soft-Drop Operator Expansion for Nonperturbative Corrections.
+  status: asserted
+
+- from: eft.wilson_coefficient
+  to: technique.sdoe_power_corrections
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Wilson coefficient is a listed prerequisite for Soft-Drop Operator Expansion for Nonperturbative Corrections; it is needed to encode the short-distance coefficients multiplying the power-suppressed operators.
+  failure_mode_if_absent: Cannot encode the short-distance coefficients multiplying the power-suppressed operators without Wilson coefficient.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_6
+      note: Batch 6 lists Wilson coefficient computation for power corrections among the prerequisites for Soft-Drop Operator Expansion for Nonperturbative Corrections.
+  status: asserted
+
+- from: qft.dimensional_regularization
+  to: technique.sector_decomposition_overlapping_singularities
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Dimensional regularization is a listed prerequisite for Sector decomposition for multi-scale soft function integrals with overlapping singularities; it is needed to organize the epsilon expansion in which the poles are extracted.
+  failure_mode_if_absent: Cannot organize the epsilon expansion in which the poles are extracted without Dimensional regularization.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_6
+      note: Batch 6 lists Dimensional regularization in d = 4 - 2*epsilon dimensions among the prerequisites for Sector decomposition for multi-scale soft function integrals with overlapping singularities.
+  status: asserted
+
+- from: qft.distributional_boundary_values
+  to: technique.sector_decomposition_overlapping_singularities
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Distributional boundary values is a listed prerequisite for Sector decomposition for multi-scale soft function integrals with overlapping singularities; it is needed to rewrite the mapped boundary singularities as distributional terms.
+  failure_mode_if_absent: Cannot rewrite the mapped boundary singularities as distributional terms without Distributional boundary values.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_6
+      note: Batch 6 lists Distribution-valued expansion of singular integrands among the prerequisites for Sector decomposition for multi-scale soft function integrals with overlapping singularities.
+  status: asserted
+
+- from: eft.power_counting
+  to: technique.seesaw_scale_identification
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Power counting is a listed prerequisite for Dynamical seesaw scale in SCET factorization; it is needed to identify how the observable organizes its hard, jet, and soft scales.
+  failure_mode_if_absent: Cannot identify how the observable organizes its hard, jet, and soft scales without Power counting.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_6
+      note: Batch 6 lists Power counting in SCET among the prerequisites for Dynamical seesaw scale in SCET factorization.
+  status: asserted
+
+- from: eft.mode_scaling
+  to: technique.seesaw_scale_identification
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Mode scaling is a listed prerequisite for Dynamical seesaw scale in SCET factorization; it is needed to derive the parametric relation mu_s = mu_j^2 / mu_h.
+  failure_mode_if_absent: Cannot derive the parametric relation mu_s = mu_j^2 / mu_h without Mode scaling.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_6
+      note: Batch 6 lists Momentum scaling of collinear and soft modes among the prerequisites for Dynamical seesaw scale in SCET factorization.
+  status: asserted
+
+- from: eft.collinear_mode
+  to: technique.seesaw_scale_identification
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Collinear mode is a listed prerequisite for Dynamical seesaw scale in SCET factorization; it is needed to define the jet scale entering the seesaw relation.
+  failure_mode_if_absent: Cannot define the jet scale entering the seesaw relation without Collinear mode.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_6
+      note: Batch 6 lists Momentum scaling of collinear and soft modes among the prerequisites for Dynamical seesaw scale in SCET factorization.
+  status: asserted
+
+- from: eft.soft_mode
+  to: technique.seesaw_scale_identification
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Soft mode is a listed prerequisite for Dynamical seesaw scale in SCET factorization; it is needed to define the softer mode separated from the jet scale.
+  failure_mode_if_absent: Cannot define the softer mode separated from the jet scale without Soft mode.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_6
+      note: Batch 6 lists Momentum scaling of collinear and soft modes among the prerequisites for Dynamical seesaw scale in SCET factorization.
+  status: asserted
+
+- from: eft.large_logarithm_resummation
+  to: technique.seesaw_scale_identification
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Large-logarithm resummation is a listed prerequisite for Dynamical seesaw scale in SCET factorization; it is needed to recognize why the extra scale produces an additional tower of large logarithms.
+  failure_mode_if_absent: Cannot recognize why the extra scale produces an additional tower of large logarithms without Large-logarithm resummation.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_6
+      note: Batch 6 lists Understanding of which logs arise from which scale ratios among the prerequisites for Dynamical seesaw scale in SCET factorization.
+  status: asserted
+
+- from: qft.unitarity_cutting_rules
+  to: technique.sequential_disc_via_topt
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: Unitarity cutting rules is a listed prerequisite for Sequential discontinuities from time-ordered perturbation theory; it is needed to generalize the single-cut rules to repeated discontinuities.
+  failure_mode_if_absent: Cannot generalize the single-cut rules to repeated discontinuities without Unitarity cutting rules.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_6
+      note: Batch 6 lists Cutkosky cutting rules and optical theorem among the prerequisites for Sequential discontinuities from time-ordered perturbation theory.
+  status: asserted
+
+- from: qft.optical_theorem
+  to: technique.sequential_disc_via_topt
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: Optical theorem is a listed prerequisite for Sequential discontinuities from time-ordered perturbation theory; it is needed to relate discontinuities to cut amplitudes through unitarity.
+  failure_mode_if_absent: Cannot relate discontinuities to cut amplitudes through unitarity without Optical theorem.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_6
+      note: Batch 6 lists Cutkosky cutting rules and optical theorem among the prerequisites for Sequential discontinuities from time-ordered perturbation theory.
+  status: asserted
+
+- from: qft.analytic_continuation_in_kinematic_invariants
+  to: technique.sequential_disc_via_topt
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: Analytic continuation in kinematic invariants is a listed prerequisite for Sequential discontinuities from time-ordered perturbation theory; it is needed to track repeated discontinuity operations across kinematic channels.
+  failure_mode_if_absent: Cannot track repeated discontinuity operations across kinematic channels without Analytic continuation in kinematic invariants.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_6
+      note: Batch 6 lists Analytic continuation of Feynman integrals among the prerequisites for Sequential discontinuities from time-ordered perturbation theory.
+  status: asserted
+
+- from: qft.time_ordered_product
+  to: technique.sequential_disc_via_topt
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: Time-ordered product is a listed prerequisite for Sequential discontinuities from time-ordered perturbation theory; it is needed to supply the time-ordered decomposition on which TOPT is built.
+  failure_mode_if_absent: Cannot supply the time-ordered decomposition on which TOPT is built without Time-ordered product.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_6
+      note: Batch 6 lists Time-ordered perturbation theory among the prerequisites for Sequential discontinuities from time-ordered perturbation theory.
+  status: asserted
+
+- from: eft.soft_collinear_effective_theory
+  to: technique.shoulder_dijet_matching
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Soft-collinear effective theory is a listed prerequisite for Matching Sudakov Shoulder and Dijet Resummations; it is needed to provide the factorization framework on both sides of the shoulder transition.
+  failure_mode_if_absent: Cannot provide the factorization framework on both sides of the shoulder transition without Soft-collinear effective theory.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_6
+      note: Batch 6 lists SCET factorization for dijet and trijet limits among the prerequisites for Matching Sudakov Shoulder and Dijet Resummations.
+  status: asserted
+
+- from: eft.large_logarithm_resummation
+  to: technique.shoulder_dijet_matching
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Large-logarithm resummation is a listed prerequisite for Matching Sudakov Shoulder and Dijet Resummations; it is needed to supply the resummed logarithms in the dijet and shoulder regions.
+  failure_mode_if_absent: Cannot supply the resummed logarithms in the dijet and shoulder regions without Large-logarithm resummation.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_6
+      note: Batch 6 lists Sudakov shoulder factorization formula with relative minus sign among the prerequisites for Matching Sudakov Shoulder and Dijet Resummations.
+  status: asserted
+
+- from: qft.renormalized_perturbation_theory
+  to: technique.shoulder_dijet_matching
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Renormalized perturbation theory is a listed prerequisite for Matching Sudakov Shoulder and Dijet Resummations; it is needed to provide the fixed-order correction matched onto the two resummed limits.
+  failure_mode_if_absent: Cannot provide the fixed-order correction matched onto the two resummed limits without Renormalized perturbation theory.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_6
+      note: Batch 6 lists fixed-order matching at NLO among the prerequisites for Matching Sudakov Shoulder and Dijet Resummations.
+  status: asserted
+
+- from: eft.soft_collinear_effective_theory
+  to: technique.shoulder_plus_dijet_matching
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Soft-collinear effective theory is a listed prerequisite for Dijet + Sudakov Shoulder Resummation Matching; it is needed to provide the factorized event-shape description in the dijet limit.
+  failure_mode_if_absent: Cannot provide the factorized event-shape description in the dijet limit without Soft-collinear effective theory.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_6
+      note: Batch 6 lists SCET factorization for event shapes among the prerequisites for Dijet + Sudakov Shoulder Resummation Matching.
+  status: asserted
+
+- from: eft.large_logarithm_resummation
+  to: technique.shoulder_plus_dijet_matching
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Large-logarithm resummation is a listed prerequisite for Dijet + Sudakov Shoulder Resummation Matching; it is needed to supply the logarithmic structure of the shoulder region and its subtraction terms.
+  failure_mode_if_absent: Cannot supply the logarithmic structure of the shoulder region and its subtraction terms without Large-logarithm resummation.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_6
+      note: Batch 6 lists Sudakov shoulder resummation among the prerequisites for Dijet + Sudakov Shoulder Resummation Matching.
+  status: asserted
+
+- from: qft.renormalized_perturbation_theory
+  to: technique.shoulder_plus_dijet_matching
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Renormalized perturbation theory is a listed prerequisite for Dijet + Sudakov Shoulder Resummation Matching; it is needed to provide the fixed-order baseline whose overlaps with the resummed pieces are subtracted.
+  failure_mode_if_absent: Cannot provide the fixed-order baseline whose overlaps with the resummed pieces are subtracted without Renormalized perturbation theory.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_6
+      note: Batch 6 lists fixed-order perturbative QCD at O(αs^3) among the prerequisites for Dijet + Sudakov Shoulder Resummation Matching.
+  status: asserted
+
+- from: eft.effective_field_theory
+  to: technique.simplified_model_framework
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Effective field theory is a listed prerequisite for Simplified model framework for LHC search characterization; it is needed to define the reduced Lagrangian description used to specify the simplified model.
+  failure_mode_if_absent: Cannot define the reduced Lagrangian description used to specify the simplified model without Effective field theory.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_6
+      note: Batch 6 lists Effective field theory and particle content specification among the prerequisites for Simplified model framework for LHC search characterization.
+  status: asserted
+
+- from: qft.cross_section
+  to: technique.simplified_model_framework
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Cross section is a listed prerequisite for Simplified model framework for LHC search characterization; it is needed to quantify the production rates that parameterize the search reach.
+  failure_mode_if_absent: Cannot quantify the production rates that parameterize the search reach without Cross section.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_6
+      note: Batch 6 lists LHC production cross sections for colored particles among the prerequisites for Simplified model framework for LHC search characterization.
+  status: asserted
+
+- from: qcd.color_su3
+  to: technique.simplified_model_framework
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Color SU(3) is a listed prerequisite for Simplified model framework for LHC search characterization; it is needed to identify the colored states whose production topologies dominate many simplified models.
+  failure_mode_if_absent: Cannot identify the colored states whose production topologies dominate many simplified models without Color SU(3).
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_6
+      note: Batch 6 lists LHC production cross sections for colored particles among the prerequisites for Simplified model framework for LHC search characterization.
+  status: asserted

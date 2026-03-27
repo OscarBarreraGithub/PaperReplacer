@@ -1,0 +1,396 @@
+# Hand-authored node records for the Schwartz techniques batch 6.
+- id: technique.rapidity_boost_invariant_observables
+  label: Rapidity and boost-invariant observable design
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Method for parameterizing hadron-collider kinematics with rapidity, transverse momentum, azimuth, and DeltaR so observables are invariant under longitudinal boosts.
+  status: asserted
+
+- id: technique.rapidity_regulated_matching
+  label: Rapidity-regulated one-loop matching for Glauber SCET
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: One-loop matching procedure between QCD and Glauber SCET that uses the eta rapidity regulator to reproduce full quark-gluon backscattering amplitudes, including rapidity divergences and Glauber phases.
+  status: asserted
+
+- id: technique.reduced_diagram_construction
+  label: Reduced-diagram construction via IR-sensitivity lemmas
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Proof technique that chains IR-sensitivity lemmas in physical gauge to reduce leading-power colored graphs to a hard core, jet blobs, and an eikonal soft blob.
+  status: asserted
+
+- id: technique.reference_vector_freedom_factorization
+  label: Exploiting reference vector freedom to simplify collinear limits
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Amplitude-level method that chooses polarization reference vectors independently in each collinear sector to expose eikonal soft emission and leading-power factorization.
+  status: asserted
+
+- id: technique.regional_soft_function_factorization
+  label: Regional soft function for separating in-jet and out-of-jet soft scales
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: SCET factorization method that isolates a regional in-jet soft function from the remaining non-global soft radiation so distinct in-cone and out-of-cone scales can be treated separately.
+  status: asserted
+
+- id: technique.renormalon_saddle_identification
+  label: Renormalons as Saddle Points of the 1-Loop Effective Action
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Semiclassical method that identifies renormalons as saddle points of the one-loop effective action in scale-collective-coordinate space.
+  status: asserted
+
+- id: technique.repulsive_loss_phase_ambiguity
+  label: Repulsive Loss for Detecting Phase Ambiguities
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Multi-network training method that adds a repulsive loss between candidate phase solutions to uncover genuine phase ambiguities in elastic scattering.
+  status: asserted
+
+- id: technique.resummed_fixed_order_matching
+  label: Additive matching of resummed and fixed-order distributions
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Additive matching prescription that subtracts the fixed-order expansion of a resummed distribution from the full fixed-order result and restores the nonsingular remainder.
+  status: asserted
+
+- id: technique.rg_sudakov_resummation
+  label: Renormalization group Sudakov resummation via anomalous dimensions
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: RG method that evaluates hard, jet, and soft functions at natural scales and evolves them with anomalous dimensions to resum Sudakov logarithms.
+  status: asserted
+
+- id: technique.rgap_renormalon_subtraction
+  label: R-gap Renormalon Subtraction at O(αs³)
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: R-gap scheme for subtracting the leading soft-function renormalon from event-shape power corrections while preserving perturbative resummation through O(alpha_s^3).
+  status: asserted
+
+- id: technique.rl_identity_search
+  label: Reinforcement Learning for Identity Application Ordering
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Reinforcement-learning search strategy that learns the ordering of dilogarithm functional identities needed to simplify polylogarithmic expressions.
+  status: asserted
+
+- id: technique.rnn_distance_inputs_jets
+  label: Recurrent neural network with clustering-distance inputs for jet classification
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Jet-classification architecture that augments per-particle inputs to a recurrent network with clustering-distance features capturing jet geometry.
+  status: asserted
+
+- id: technique.rnn_global_state_for_factorization_violation
+  label: RNN Global State to Capture Factorization-Violating Effects
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Recurrent branching model that feeds a global hidden state into each jet branching to encode non-Markovian, factorization-violating correlations.
+  status: asserted
+
+- id: technique.scalar_longitudinal_power_counting
+  label: Scalar Longitudinal Mode Power Counting for Massive Spin-2
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Power-counting method that canonically normalizes the longitudinal scalar of a massive graviton to read off the true strong-coupling scale.
+  status: asserted
+
+- id: technique.scale_invariance_power_counting
+  label: Resummed Power Counting for the Scale Collective Coordinate Integral
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Resummed loop-order counting method for the instanton scale integral in classically scale-invariant theories, summing the dominant hbar-enhanced series into a Gaussian over ln R.
+  status: asserted
+
+- id: technique.scale_invariant_glauber_cancellation
+  label: Scale-invariance-based proof of Glauber ladder cancellation
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Conformal-coordinate method that uses transverse-plane scale invariance to extend qT Glauber-ladder cancellation to arbitrary single-scale observables.
+  status: asserted
+
+- id: technique.scet_1loop_wilson_coefficients_all_channels
+  label: Complete 1-loop SCET Wilson coefficients for all 2->2 QCD processes
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: All-channel one-loop matching program that computes the Wilson coefficients of four-parton SCET operators for every 2->2 QCD channel.
+  status: asserted
+
+- id: technique.scet_amplitude_vs_probability_resummation
+  label: Amplitude-level resummation via RG equations versus probability-level emission sums
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Comparative resummation framework that rewrites event-shape logarithm summation as amplitude-level RG evolution of SCET operators rather than emission-probability iteration.
+  status: asserted
+
+- id: technique.scet_event_generation
+  label: SCET-based event generation algorithm
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Event-generation algorithm that uses SCET matching, RG evolution, and threshold matching to produce exclusive collider events with systematically improvable shower structure.
+  status: asserted
+
+- id: technique.scet_factorization_of_branchings
+  label: Proof of branching factorization from SCET
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Leading-power derivation in SCET that factorizes an (n+1)-parton matrix element into an n-parton matrix element times a splitting function.
+  status: asserted
+
+- id: technique.scet_matching_and_running_for_jets
+  label: SCET matching and RG evolution for jet distributions
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: SCET workflow that matches QCD onto collinear operators and runs them between scales to combine fixed-order jet matrix elements with resummation.
+  status: asserted
+
+- id: technique.scet_multiscale_bsm_constraint
+  label: Multi-scale SCET event shapes to constrain new colored particles
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Event-shape analysis method that uses SCET factorization of thrust across hard, jet, and soft scales to constrain new colored particles through their effects on running and matching.
+  status: asserted
+
+- id: technique.scet_photon_w_threshold_resummation
+  label: SCET threshold resummation for direct photon and W spectra with ATLAS comparison
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Threshold-resummation framework in SCET for direct-photon and W transverse-momentum spectra, matched to fixed order and built from hard, jet, and soft functions.
+  status: asserted
+
+- id: technique.scet_threshold_resummation_vector_boson_pt
+  label: SCET threshold resummation for vector boson pT spectra
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: SCET factorization and RG method for resumming threshold logarithms in large-pT vector-boson production.
+  status: asserted
+
+- id: technique.sde_borel_singularity_extraction
+  label: Borel Singularity Extraction from Schwinger-Dyson Equations
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Schwinger-Dyson / Borel-Leroy method that extracts the leading asymptotic growth and Borel singularities of infinite diagram classes from resummed leading logs.
+  status: asserted
+
+- id: technique.sdoe_power_corrections
+  label: Soft-Drop Operator Expansion for Nonperturbative Corrections
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Soft-drop operator-expansion method that parameterizes leading nonperturbative corrections to groomed jet mass by universal constants instead of Monte Carlo hadronization models.
+  status: asserted
+
+- id: technique.sector_decomposition_overlapping_singularities
+  label: Sector decomposition for multi-scale soft function integrals with overlapping singularities
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Sector-decomposition procedure that maps internal overlapping singularities of multi-scale soft-function integrals to boundary singularities so epsilon poles can be expanded distributionally.
+  status: asserted
+
+- id: technique.seesaw_scale_identification
+  label: Dynamical seesaw scale in SCET factorization
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: SCET scaling argument that identifies the dynamical soft scale mu_s = mu_j^2 / mu_h and the extra logarithmic tower it generates.
+  status: asserted
+
+- id: technique.sequential_disc_via_topt
+  label: Sequential discontinuities from time-ordered perturbation theory
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: TOPT-based cutting procedure that derives sequential discontinuities of Feynman integrals from weighted multi-cut rules and controlled i epsilon prescriptions.
+  status: asserted
+
+- id: technique.shoulder_dijet_matching
+  label: Matching Sudakov Shoulder and Dijet Resummations
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Matching and profile-function procedure that combines Sudakov-shoulder, dijet, and fixed-order descriptions of heavy-jet-mass spectra.
+  status: asserted
+
+- id: technique.shoulder_plus_dijet_matching
+  label: Dijet + Sudakov Shoulder Resummation Matching
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Multi-region matching formula that combines fixed-order, dijet-resummed, and Sudakov-shoulder-resummed cross sections while subtracting overlaps.
+  status: asserted
+
+- id: technique.significance_improvement_characteristic
+  label: Significance Improvement Characteristic (SIC) for discriminant evaluation
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Diagnostic criterion SIC = epsilon_S / sqrt(epsilon_B) used to rank cuts or multivariate discriminants as a function of signal efficiency.
+  status: asserted
+
+- id: technique.simplified_model_framework
+  label: Simplified model framework for LHC search characterization
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Search-design framework that parameterizes new-physics signatures by a small effective Lagrangian, masses, cross sections, and branching fractions so limits can be transferred between models.
+  status: asserted
+
+- id: technique.simulation_based_inference_madminer
+  label: Simulation-Based Inference via Joint Likelihood Ratios (MadMiner)
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Simulation-based inference method that learns detector-level likelihood ratios or scores from joint likelihood information available along the Monte Carlo chain.
+  status: asserted
+
+- id: technique.simulation_based_inference_pipeline
+  label: Simulation-based ML inference pipeline
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Particle-physics ML workflow that turns high-fidelity Monte Carlo simulations and mixture-model reasoning into detector-level inference without per-event truth labels.
+  status: asserted
+
+- id: technique.slowly_instantaneous_signal
+  label: Slowly instantaneous signal propagation
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Exact-solution method for Lorentz-violating massive electrodynamics showing immediate but slowly building electric-field response with persistent pre-light-cone oscillations.
+  status: asserted

@@ -1,0 +1,430 @@
+- id: technique.dynkin_diagram_encoding
+  label: Dynkin-diagram encoding
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Encode the simple roots by nodes and line multiplicities determined by their pairwise angles, giving a compact signature of the algebra up to relative root lengths.
+  status: asserted
+- id: technique.abelian_simultaneous_diagonalization
+  label: Simultaneous diagonalization for finite Abelian groups
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Use the fact that every irreducible representation of a finite Abelian group is one-dimensional to diagonalize commuting symmetry operators and H simultaneously.
+  status: asserted
+- id: technique.algebra_construction_from_simple_root_commutators
+  label: Algebra construction from simple-root commutators
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Once the root system and root strings are known, fix normalized commutators among simple-root generators and recover the rest of the algebra with SU(2) action and the Jacobi identity.
+  status: asserted
+- id: technique.angular_momentum_as_su3_subgroup
+  label: Angular Momentum as an SU(3) Subgroup
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Identify angular momentum inside the oscillator SU(3), showing that one oscillator level can contain several L multiplets whose exact degeneracy is enforced by SU(3), not just by rotational invariance.
+  status: asserted
+- id: technique.anomaly_free_representation_condition
+  label: Impose the anomaly-free representation condition
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Require the symmetric trace Tr({T_a,T_b}T_c) to vanish for the right-handed fermion representation so that the unified gauge theory is quantum mechanically consistent.
+  status: asserted
+- id: technique.anomaly_index_arithmetic
+  label: Compute anomaly indices algebraically
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Define the anomaly coefficient A(D) through the cubic symmetric trace and use its conjugation, direct-sum, and tensor-product rules to test representations quickly.
+  status: asserted
+- id: technique.antisymmetrized_gamma_products_as_k_forms
+  label: Antisymmetrized gamma products as k-forms
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Take antisymmetrized products of distinct gamma matrices to realize antisymmetric tensor representations of SO(N). This is the standard map from spinor bilinears to p-form tensors.
+  status: asserted
+- id: technique.approximate_flavor_su3_from_flavor_blind_gluons
+  label: Approximate flavor SU(3) from flavor-blind gluons
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Treat gluon interactions as independent of light flavor so the strong Hamiltonian is approximately flavor SU(3) invariant, with quark masses as the leading source of breaking.
+  status: asserted
+- id: technique.approximate_isospin_symmetry
+  label: Approximate isospin symmetry
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Split the Hamiltonian as H0 plus DeltaH with H0 commuting with isospin and DeltaH collecting small symmetry-breaking effects such as electromagnetic, weak, and up-down mass differences.
+  status: asserted
+- id: technique.arbitrary_su3_irreps_from_3_and_3bar_oscillators
+  label: Build Arbitrary SU(3) Irreps from 3 and 3bar Oscillators
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Construct fixed-(N_a,N_b) states transforming as arbitrary (n,m) irreps, impose tracelessness by removing singlet contractions, and extract energies from highest-weight states.
+  status: asserted
+- id: technique.branch_reduction_rule
+  label: Branch-reduction rule
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Apply the shrinking logic to branched diagrams to show that only a single three-pronged branch with single lines can survive. This is the key local move that isolates the D_n and E_n branching patterns.
+  status: asserted
+- id: technique.break_so10_to_sm_with_45_or_54
+  label: Break SO(10) to the Standard Model with 45 or 54 Higgs fields
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Classify antisymmetric 45 or symmetric traceless 54 vacuum values into canonical forms and choose patterns that preserve SU(3) x SU(2) x U(1) or an intermediate SO(6) x SO(4).
+  status: asserted
+- id: technique.break_so10_to_su5_with_16_vev
+  label: Break SO(10) to SU(5) with a 16 vacuum value
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Use the SU(5)-singlet component inside a 16 or 16-bar Higgs to break SO(10) down to its SU(5) subgroup.
+  status: asserted
+- id: technique.cartan_matrix_encoding
+  label: Cartan matrix as q-p data
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Define A_ji = 2 alpha_j.alpha_i / alpha_i^2 so each row gives the q_i-p_i integers for a simple root; diagonal entries are 2 and off-diagonal entries encode simple-root angles and relative lengths exactly as Dynkin data.
+  status: asserted
+- id: technique.cartan_subalgebra_and_weights
+  label: Cartan subalgebra and weights
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Choose a maximal commuting hermitian set of generators, diagonalize them simultaneously, and label states by their real weight vectors; the number of Cartan generators is the rank.
+  status: asserted
+- id: technique.casimir_computation_via_kd_rules
+  label: Casimir computation via k_D rules
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Compute SU(3) Casimirs for small representations from C(D) = 8 k_D / dim(D), using the simple direct-sum and tensor-product rules obeyed by the trace-normalization coefficient k_D.
+  status: asserted
+- id: technique.character_orthogonality_and_projection_operators
+  label: Character orthogonality and projection operators
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Use orthogonality of characters to decompose reducible representations and build explicit projection operators onto irreducible subspaces.
+  status: asserted
+- id: technique.character_table_construction
+  label: Character-table construction
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Combine conjugacy classes, known low-dimensional representations, quotient-group information, and orthogonality to fill in the full character table of a finite group.
+  status: asserted
+- id: technique.charge_quantization_from_semi_simple_embedding
+  label: Quantize charge via semi-simple embedding
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Embed SU(3) x SU(2) x U(1) into the semi-simple SU(4) x SU(2) x SU(2) subgroup so that electric charge is fixed by non-Abelian commutation relations rather than by a free U(1) normalization.
+  status: asserted
+- id: technique.chirality_projection_from_gamma_product
+  label: Chiral projection from the gamma-product operator
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Use the product of all gamma matrices to build projection operators onto the two irreducible chiral SO(2n) spinor spaces. This is the group-theory version of chirality projection.
+  status: asserted
+- id: technique.clebsch_gordan_coefficients_from_tensor_products
+  label: Clebsch-Gordan coefficients from tensor products
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Extract the purely group-theoretic coefficients that relate product states to states of definite total representation content.
+  status: asserted
+- id: technique.clebsch_gordan_decomposition
+  label: Clebsch-Gordan decomposition
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Decompose tensor products into irreducible pieces with fixed total quantum numbers using Clebsch-Gordan coefficients.
+  status: asserted
+- id: technique.clebsch_gordan_highest_weight_decomposition
+  label: Clebsch-Gordan decomposition by highest weights
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Use additive J_3 weights and lowering operators to decompose SU(2) tensor products into irreducible representations and construct the corresponding linear combinations of product states.
+  status: asserted
+- id: technique.clifford_algebra_construction_of_so_n
+  label: Clifford algebra to SO(N) generators
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Start from a Clifford algebra with anticommuting Gamma matrices and define the Lie generators from their commutators. This gives an immediate construction of SO(N) generators and a bridge between Lie-algebra and gamma-matrix language.
+  status: asserted
+- id: technique.clifford_embedding_of_su_n_in_so_2n
+  label: Clifford embedding of SU(n) in SO(2n)
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Build SU(n) generators from traceless bilinears of Clifford creation and annihilation operators and show that they are linear combinations of SO(2n) generators.
+  status: asserted
+- id: technique.color_magnetic_hyperfine_interaction
+  label: Color-magnetic hyperfine interaction
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Model leading spin-dependent splittings by a color-magnetic term proportional to -(sigma_i dot sigma_j)/(m_i m_j), reflecting gluon exchange between constituent quarks.
+  status: asserted
+- id: technique.complementary_tableaux_for_complex_conjugates
+  label: Complex Conjugates from Complementary Tableaux
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Obtain the complex conjugate of an SU(N) irrep by completing its tableau to an N-box-high rectangle; in particular, [m] conjugates to [N-m].
+  status: asserted
+- id: technique.complete_reducibility_of_finite_group_representations
+  label: Complete reducibility of finite-group representations
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Use unitarity and complementary invariant subspaces to show that every finite-group representation splits into a direct sum of irreducible pieces.
+  status: asserted
+- id: technique.complex_conjugate_representation_mapping
+  label: Map representations by complex conjugation
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Construct the complex-conjugate representation from -T*; its weights are the negatives of the original weights, so for SU(3) the conjugate of (n,m) is (m,n), while irreps with n = m are real.
+  status: asserted
+- id: technique.conjugacy_class_analysis
+  label: Conjugacy-class analysis
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Organize elements by conjugation, interpret inner automorphisms geometrically, and reduce representation data to class data.
+  status: asserted
+- id: technique.constituent_quark_magnetic_moment_sum_rule
+  label: Constituent Quark Magnetic Moment Sum Rule
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: In the constituent quark model, sum the individual quark moments proportional to Q sigma / 2m_q to reproduce the SU(6) ratios and estimate the overall scale from constituent masses.
+  status: asserted
+- id: technique.construct_lie_algebra_from_simple_roots
+  label: Construct a Lie algebra from its simple roots
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Starting from simple roots, use root strings, highest weights, and Jacobi identities to generate all roots and commutators of the algebra.
+  status: asserted
+- id: technique.cycle_decomposition_of_permutations
+  label: Cycle decomposition of permutations
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Represent elements of S_n as disjoint cycles and realize them in the defining n-dimensional permutation representation.
+  status: asserted
+- id: technique.defining_weight_root_geometry
+  label: Weight and Root Geometry of SU(N)
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Compute defining weights, roots as weight differences, simple roots, Dynkin diagram, and fundamental weights; the defining weights sit at the vertices of an (N-1)-simplex.
+  status: asserted
+- id: technique.deuteron_spin_isospin_selection
+  label: Deuteron spin-isospin selection
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Combine S-wave spatial symmetry, fermion antisymmetry, and triplet-singlet exchange properties to restrict two-nucleon states and identify the deuteron as isospin 0 with spin 1.
+  status: asserted
+- id: technique.diagonal_su3_from_coupled_oscillators
+  label: Diagonal SU(3) from a Coupled Two-Oscillator Model
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Engineer a two-oscillator Hamiltonian whose singlet coupling preserves only the diagonal SU(3), with one creation operator transforming as a 3 and the other as a 3bar.
+  status: asserted
+- id: technique.dimension_formula_from_tensor_counting
+  label: Count tensor components to get dim(n,m)
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Count separately symmetric upper and lower tensor components and subtract the traced sector to derive dim(n,m) = (n+1)(m+1)(n+m+2)/2.
+  status: asserted
+- id: technique.division_algebra_filter_for_classical_groups
+  label: Division-algebra filter for classical groups
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Use the existence of a multiplicative norm in the real numbers, complex numbers, and quaternions to explain why those three give the classical rotation families. This also clarifies why octonions point toward exceptional algebras rather than another classical series.
+  status: asserted
+- id: technique.e6_branching_via_extended_dynkin_analysis
+  label: Branch E6 representations with extended Dynkin analysis
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Construct the 27 from Dynkin coefficients and branch it under SU(3) x SU(3) x SU(3), SU(6) x SU(2), SO(10), and SU(5) by deleting nodes and dropping the associated coefficients.
+  status: asserted
+- id: technique.e6_breaking_requires_adjoint_78
+  label: Recognize that E6 to Standard Model breaking needs a 78
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Show that 27-Higgs vacuum values can break E6 only as far as SU(5), so an adjoint 78 is needed to continue down to SU(3) x SU(2) x U(1).
+  status: asserted
+- id: technique.electroweak_breaking_from_so10_higgs_multiplets
+  label: Use SO(10) Higgs multiplets for electroweak breaking and fermion masses
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Exploit the 10, 120, and 126 from 16 x 16 because each contains SU(5) 5 or 45 pieces that can break SU(2) x U(1) and produce different fermion-mass relations.
+  status: asserted
+- id: technique.electroweak_tensor_operator_assignment
+  label: Electroweak tensor-operator assignment
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Treat fermion creation and annihilation operators as tensor operators of SU(2) x U(1), placing the relevant fields into SU(2) doublets or singlets with definite S charges.
+  status: asserted
+- id: technique.emergent_su3_in_isotropic_oscillator
+  label: Emergent SU(3) in the 3D Isotropic Oscillator
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Construct SU(3) generators Q_a = a^dagger T_a a that commute with the 3D isotropic oscillator Hamiltonian, making the level-n states a single (n,0) irrep generated from the vacuum by a^dagger.
+  status: asserted

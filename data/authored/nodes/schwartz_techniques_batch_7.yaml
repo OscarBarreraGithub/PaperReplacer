@@ -1,0 +1,398 @@
+# Hand-authored node records for the Schwartz techniques batch 7.
+# Source batch: /tmp/technique_batches/batch_7.yaml
+
+- id: technique.small_r_ngl_universality
+  label: Small-R universality of non-global logarithms
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Small-R expansion that rewrites the full non-global contribution to integrated jet thrust in terms of the hemisphere soft function, so narrow-jet observables can reuse the known hemisphere functional form instead of requiring a fresh non-global calculation.
+  status: asserted
+
+- id: technique.soft_drop_alpha_s_extraction
+  label: Soft-Drop Jet Mass for alpha_s Determination at Hadron Colliders
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Method for extracting alpha_s from soft-drop groomed jet mass at hadron colliders by combining NNLL predictions with field-theoretic power corrections, using grooming to suppress pileup, hadronization, and non-global contamination.
+  status: asserted
+
+- id: technique.soft_drop_factorization_theorem
+  label: SCET Factorization Theorem for Soft-Drop Groomed Observables
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: All-orders SCET derivation for soft-drop observables in which wide-angle soft radiation is removed, leaving a single-scale collinear-soft function and enabling NNLL resummation of groomed jet substructure observables.
+  status: asserted
+
+- id: technique.soft_drop_grooming
+  label: Soft Drop Grooming Algorithm
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Jet-grooming algorithm that reclusters with Cambridge-Aachen and recursively drops soft branches failing z > z_cut (theta/R)^beta, removing wide-angle contamination while preserving hard prong structure.
+  status: asserted
+
+- id: technique.soft_drop_grooming_mass_stabilization
+  label: Soft-drop grooming for MC mass stabilization
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Post-W-calibration grooming procedure that applies soft drop or trimming to hadronic top jets to suppress underlying-event sensitivity and stabilize Monte Carlo top-mass extraction.
+  status: asserted
+
+- id: technique.soft_drop_ngl_free_factorization
+  label: Soft drop grooming for non-global-logarithm-free jet mass factorization
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Soft-drop jet-mass factorization strategy in which wide-angle soft radiation contributes only an overall z_cut normalization, leaving an ultra-local hard/jet/collinear-soft formula free of non-global logarithms.
+  status: asserted
+
+- id: technique.soft_flare_spectral_template
+  label: Soft Background Flare Spectral Template Subtraction
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Universal spectral-template subtraction procedure for ACIS BI soft background flares, fitting residual low-level flare contamination with a fixed power-law-plus-cutoff shape to recover exposure and control diffuse-emission systematics.
+  status: asserted
+
+- id: technique.soft_function_refactorization
+  label: Refactorization of multi-scale soft functions into in-jet and out-of-jet pieces
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Refactorization method that splits a multi-scale jet soft function into in-jet, out-of-jet, and non-global pieces with separate anomalous dimensions, allowing independent RG treatment of jet mass, veto, and radius logarithms.
+  status: asserted
+
+- id: technique.soft_function_refactorization_small_r
+  label: Soft function refactorization in the small-R limit
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Small-R refactorization ansatz for exclusive dijet soft functions that separates in-cone and out-of-cone dependence and validates the split by comparison with fixed-order QCD through O(alpha_s^2).
+  status: asserted
+
+- id: technique.softest_jet_purity_selection
+  label: Softest jet selection for maximum flavor purity
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Sample-selection method that chooses the softest jet in an all-jets-above-threshold event as the highest-purity quark or gluon candidate, exploiting subprocess kinematic constraints without destabilizing the cross section.
+  status: asserted
+
+- id: technique.sorted_ensemble_regression
+  label: Sorted ensemble regression for parameter extraction
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Parameter-extraction method that sorts large ensembles of events into fixed-length vectors and feeds the ordered distribution directly into linear regression or simple neural networks to learn tune-sensitive shape information.
+  status: asserted
+
+- id: technique.spin2_kk_mass_prediction
+  label: Spin-2 KK Mode Mass Prediction via Bessel Function Zeros
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: AdS/QCD mass-prediction method that models the f2 tensor meson as a spin-2 KK mode, fixes masses from Bessel-function zeros, and obtains nearly parameter-free Regge-scale predictions once the rho mass sets the infrared scale.
+  status: asserted
+
+- id: technique.sprig_of_thyme_induction
+  label: Sprig-of-thyme (stripping soft lines off jet amplitudes)
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Inductive factorization proof that strips arbitrarily many soft attachments from a jet amplitude and replaces them with the corresponding soft Wilson-line expansion, establishing all-orders soft-collinear factorization.
+  status: asserted
+
+- id: technique.steinmann_from_topt
+  label: Steinmann relations from TOPT energy structure
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: TOPT-based proof strategy for Steinmann relations in which the nested-or-disjoint structure of energy denominators makes double discontinuities in overlapping channels vanish integral by integral.
+  status: asserted
+
+- id: technique.subcritical_brane_bound_state
+  label: Localized gravity from sub-critical brane tension
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Brane-tension tuning method that recasts the graviton fluctuation problem as a Schrodinger volcano-potential system, revealing a localized bound graviton below critical tension in AdS5.
+  status: asserted
+
+- id: technique.subjet_level_pileup_rescaling
+  label: Subjet-level charged-to-neutral rescaling (jet cleansing)
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Local pileup-removal algorithm that reclusters a fat jet into small subjets and rescales each subjet by charged-to-neutral information measured per vertex, outperforming global area subtraction at very high pileup.
+  status: asserted
+
+- id: technique.supergravity_goldstone_multiplet
+  label: Chiral Goldstone multiplet for massive supergravity
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Goldstone-mode identification method for massive supergravity that packages the longitudinal graviton, vector, and gravitino degrees of freedom into a chiral multiplet, exposing the strong-coupling scale and dominant interactions.
+  status: asserted
+
+- id: technique.supersplit_susy_spectrum
+  label: "Supersplit SUSY: decoupling all superpartners"
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Spectrum-decoupling construction that pushes scalar, gaugino, and Higgsino superpartners up to near the Planck scale, leaving a tuned Standard Model-like Higgs sector as the low-energy remnant of supersymmetry.
+  status: asserted
+
+- id: technique.superstructure_observables
+  label: "Jet Superstructure: Inter-jet Observables Beyond Four-momenta"
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Observable-design framework that treats inter-jet color-flow information as measurable jet superstructure, using pull and related moments to probe singlet/octet topology and resolve combinatorics beyond four-momentum kinematics.
+  status: asserted
+
+- id: technique.symbol_coproduct_ngl_integration
+  label: Symbol and coproduct techniques for iterated NGL integrals
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Integration method that rewrites post-azimuthal non-global-logarithm integrands as GPLs and then uses symbol and coproduct manipulations to place them in canonical iterated-integral form for direct evaluation.
+  status: asserted
+
+- id: technique.symbol_map_simplification
+  label: Symbol Map for Polylogarithm Simplification
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Polylog simplification method that converts complicated iterated-integral expressions into their symbols, performs algebraic simplifications at the tensor level, and reconstructs a simpler functional representative afterward.
+  status: asserted
+
+- id: technique.systematic_variable_exploration
+  label: Systematic menu-method variable exploration for collider searches
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Collider-variable search procedure that enumerates candidate observables systematically across particle, frame, kinematic property, and combination choices, then ranks them by SIC and incremental BDT gain to find the minimal high-value variable set.
+  status: asserted
+
+- id: technique.telescoping_jets_multi_r
+  label: "Telescoping jets: multiple deterministic R interpretations"
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Multi-radius jet-analysis method that reconstructs the same event at several fixed R values and uses the correlation pattern of mass observables across R as extra signal-background discrimination power.
+  status: asserted
+
+- id: technique.tensor_photon_coupling_from_ope
+  label: "f2 -> gamma gamma Coupling from OPE Matching"
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: OPE-matching method that fixes the f2 tensor coupling from the energy-momentum-tensor correlator and then predicts the two-photon decay width from the overlap of the KK wavefunction with the external photon profile.
+  status: asserted
+
+- id: technique.theory_space_plaquette
+  label: Theory-Space Plaquette Construction for Gravitational Dimensions
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Theory-space construction that forms gravitational plaquette operators from composed link maps around closed loops, giving GC-invariant potentials that lift uneaten Goldstones in discretized extra dimensions.
+  status: asserted
+
+- id: technique.thimble_borel_resummation
+  label: Lefschetz Thimble Integration for Borel Resummation
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Borel-resummation method that deforms ambiguous integrals onto Lefschetz thimbles, separating the lateral Borel sum from the saddle thimble that carries the imaginary ambiguity associated with renormalon or instanton saddles.
+  status: asserted
+
+- id: technique.three_direction_scet_factorization
+  label: SCET factorization theorem for processes with three directions of energy flow
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Multi-direction SCET factorization construction for direct-photon production with two beam directions and one recoil-jet direction, enabling NNLL threshold resummation for the first three-collinear-sector collider process.
+  status: asserted
+
+- id: technique.threshold_boundary_conditions
+  label: Threshold-limit boundary conditions for master integrals
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Boundary-condition method for master-integral differential equations that takes the threshold limit where loop and phase-space factors simplify, then uses rationalized variables to express the solution space in GPL form.
+  status: asserted
+
+- id: technique.threshold_interpolation_new_physics
+  label: Smooth mass-threshold interpolation for BSM particles in EFT
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Smooth-threshold interpolation scheme that inserts a finite-mass colored state into SCET hard, jet, and soft functions continuously across its threshold, avoiding step-function discontinuities in thrust-based exclusion scans.
+  status: asserted
+
+- id: technique.threshold_matching_in_scet
+  label: Threshold matching for successive parton emissions in SCET
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Successive-emission matching framework in SCET that adds new collinear fields when the renormalization scale crosses a resolved emission scale, reproducing splitting kernels and Sudakov evolution from EFT threshold matching.
+  status: asserted
+
+- id: technique.threshold_resummation_hadron_collider
+  label: Threshold resummation at hadron colliders via SCET
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Hadron-collider threshold-resummation method that combines SCET factorization, plus distributions, and endpoint PDF evolution to resum direct-photon-like cross sections near partonic and hadronic threshold.
+  status: asserted
+
+- id: technique.threshold_resummation_nnnll_matching
+  label: N3LL threshold resummation matched to NLO+fragmentation for photon spectra
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Matching prescription that combines N3LL SCET threshold resummation with NLO direct-photon calculations including isolation and fragmentation, subtracting the common fixed-order expansion to avoid double counting.
+  status: asserted
+
+- id: technique.threshold_symmetrized_expansion
+  label: Symmetrized threshold expansion for rapidity-symmetric cross sections
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Symmetrized expansion trick that averages threshold expansions performed at fixed x1 and fixed x2 so rapidity-symmetric hadronic cross sections remain manifestly symmetric under beam exchange.
+  status: asserted
+
+- id: technique.threshold_thrust_hadronic
+  label: Threshold thrust for hadron colliders via SCET
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Hadronic threshold-thrust construction that generalizes e+e- thrust to proton collisions near machine threshold and organizes the observable with hard matrices, jet functions, PDFs, and a hemisphere-like soft function.
+  status: asserted
+
+- id: technique.topcolor_tchannel_afb
+  label: t-channel top-meson exchange for forward-backward asymmetry
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Topcolor asymmetry model-building method that uses t-channel exchange of top-meson states with large tR-uR mixing to generate the Tevatron top forward-backward asymmetry while threading flavor and same-sign-top constraints.
+  status: asserted
+
+- id: technique.topology_based_limit_combination
+  label: Combining limits across simplified model topologies
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Reinterpretation method that combines simplified-model topology limits by summing efficiency-weighted topology cross sections and comparing the result with published signal-region upper bounds or likelihoods.
+  status: asserted

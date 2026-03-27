@@ -1,0 +1,220 @@
+- from: qft.creation_annihilation_operator
+  to: technique.emergent_su_n_for_equal_mass_modes
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists oscillator_creation_annihilation_method as the prerequisite for Emergent SU(N) for Equal-Mass Modes, and qft.creation_annihilation_operator is the authored-graph match that supplies that operator formalism.
+  failure_mode_if_absent: Cannot apply the equal-mass SU(N) symmetry argument cleanly because the operator language needed to define modes and number operators is missing.
+  evidence:
+    - type: expert_claim
+      source_ref: georgi_lie_techniques_batch_2_initial
+      note: The batch prerequisite list explicitly names oscillator_creation_annihilation_method.
+  status: asserted
+
+- from: qft.dirac_algebra
+  to: technique.gamma_matrix_invariant_tensor_method_for_cg
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists Clifford algebra as a prerequisite for Gamma-matrix invariant-tensor method, and qft.dirac_algebra is the authored-graph match for that gamma-matrix anticommutation structure.
+  failure_mode_if_absent: Cannot use the gamma-matrix invariant tensors systematically because the algebraic identities that make the construction work are unavailable.
+  evidence:
+    - type: expert_claim
+      source_ref: georgi_lie_techniques_batch_2_initial
+      note: The batch prerequisite list explicitly names Clifford algebra.
+  status: asserted
+
+- from: qm.angular_momentum_addition
+  to: technique.gamma_matrix_invariant_tensor_method_for_cg
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists Clebsch-Gordan decomposition as a prerequisite for Gamma-matrix invariant-tensor method, and qm.angular_momentum_addition is the authored-graph match that supplies Clebsch-Gordan machinery.
+  failure_mode_if_absent: Cannot use the method to organize spinor products into irreducible channels because the Clebsch-Gordan decomposition step is missing.
+  evidence:
+    - type: expert_claim
+      source_ref: georgi_lie_techniques_batch_2_initial
+      note: The batch prerequisite list explicitly names Clebsch-Gordan decomposition.
+  status: asserted
+
+- from: qft.creation_annihilation_operator
+  to: technique.generalized_exclusion_principle
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists creation_annihilation_operator_formalism as the prerequisite for Generalized exclusion principle, and qft.creation_annihilation_operator is the direct authored-graph match.
+  failure_mode_if_absent: Cannot derive the generalized proton-neutron anticommutation rules cleanly because the underlying operator algebra is not in place.
+  evidence:
+    - type: expert_claim
+      source_ref: georgi_lie_techniques_batch_2_initial
+      note: The batch prerequisite list explicitly names creation_annihilation_operator_formalism.
+  status: asserted
+
+- from: qft.spin_label
+  to: technique.helicity_handedness_parity_analysis
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists Spin-1/2 kinematics as a prerequisite for Helicity-handedness analysis of parity violation, and qft.spin_label is the closest authored-graph match because it carries the spin and helicity labeling used in that discussion.
+  failure_mode_if_absent: Cannot distinguish the relevant helicity assignments or track which spin states the parity argument refers to.
+  evidence:
+    - type: expert_claim
+      source_ref: georgi_lie_techniques_batch_2_initial
+      note: The batch prerequisite list explicitly names Spin-1/2 kinematics.
+  status: asserted
+
+- from: qft.parity_transformation
+  to: technique.helicity_handedness_parity_analysis
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists Parity transformation as a prerequisite for Helicity-handedness analysis of parity violation, and qft.parity_transformation is the exact authored-graph match.
+  failure_mode_if_absent: Cannot analyze how helicity or handedness behave under spatial inversion, which is the central comparison in the technique.
+  evidence:
+    - type: expert_claim
+      source_ref: georgi_lie_techniques_batch_2_initial
+      note: The batch prerequisite list explicitly names Parity transformation.
+  status: asserted
+
+- from: qft.charge_conjugation
+  to: technique.helicity_handedness_parity_analysis
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists Particle-antiparticle conjugation as a prerequisite for Helicity-handedness analysis of parity violation, and qft.charge_conjugation is the authored-graph match for that operation.
+  failure_mode_if_absent: Cannot track how the handedness discussion changes between particles and antiparticles in the weak-interaction analysis.
+  evidence:
+    - type: expert_claim
+      source_ref: georgi_lie_techniques_batch_2_initial
+      note: The batch prerequisite list explicitly names Particle-antiparticle conjugation.
+  status: asserted
+
+- from: qft.creation_annihilation_operator
+  to: technique.isospin_generators_from_bilinears
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists creation_annihilation_operator_formalism as a prerequisite for Isospin generators from bilinears, and qft.creation_annihilation_operator is the direct authored-graph match.
+  failure_mode_if_absent: Cannot derive the proton-neutron bilinear generators or check their commutators without the underlying operator formalism.
+  evidence:
+    - type: expert_claim
+      source_ref: georgi_lie_techniques_batch_2_initial
+      note: The batch prerequisite list explicitly names creation_annihilation_operator_formalism.
+  status: asserted
+
+- from: technique.infinitesimal_generator_extraction
+  to: technique.lie_algebra_from_group_multiplication
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists infinitesimal_generator_extraction as a prerequisite for Deriving the Lie algebra from group multiplication, and that exact prerequisite is present in this batch as technique.infinitesimal_generator_extraction.
+  failure_mode_if_absent: Cannot extract the Lie bracket from group multiplication cleanly because the infinitesimal generators themselves have not yet been defined.
+  evidence:
+    - type: expert_claim
+      source_ref: georgi_lie_techniques_batch_2_initial
+      note: The batch prerequisite list explicitly names infinitesimal_generator_extraction.
+  status: asserted
+
+- from: technique.lie_algebra_from_group_multiplication
+  to: technique.highest_weight_and_ladder_construction
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists lie_algebra_from_group_multiplication as the prerequisite for Highest-weight and ladder construction for SU(2), and that exact prerequisite is present in this batch as technique.lie_algebra_from_group_multiplication.
+  failure_mode_if_absent: Cannot apply the ladder-operator construction coherently because the SU(2) commutator algebra has not been established from the group side.
+  evidence:
+    - type: expert_claim
+      source_ref: georgi_lie_techniques_batch_2_initial
+      note: The batch prerequisite list explicitly names lie_algebra_from_group_multiplication.
+  status: asserted
+
+- from: technique.highest_weight_dynkin_classification
+  to: technique.highest_weight_lowering_state_construction
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists highest_weight_dynkin_classification as a prerequisite for Construct states by lowering from the highest weight, and that exact prerequisite is present in this batch as technique.highest_weight_dynkin_classification.
+  failure_mode_if_absent: Cannot identify which highest-weight state to lower from or how to label the reachable weights inside the irrep.
+  evidence:
+    - type: expert_claim
+      source_ref: georgi_lie_techniques_batch_2_initial
+      note: The batch prerequisite list explicitly names highest_weight_dynkin_classification.
+  status: asserted
+
+- from: technique.invariant_tensors_delta_epsilon
+  to: technique.invariant_tensor_matrix_elements
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists invariant_tensors_delta_epsilon as a prerequisite for Build matrix elements from invariant contractions, and that exact prerequisite is present in this batch as technique.invariant_tensors_delta_epsilon.
+  failure_mode_if_absent: Cannot write the needed invariant contractions explicitly because the primitive delta and epsilon tensors have not been introduced.
+  evidence:
+    - type: expert_claim
+      source_ref: georgi_lie_techniques_batch_2_initial
+      note: The batch prerequisite list explicitly names invariant_tensors_delta_epsilon.
+  status: asserted
+
+- from: technique.invariant_tensor_matrix_elements
+  to: technique.generalized_wigner_eckart_su3
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists invariant_tensor_matrix_elements as a prerequisite for Generalize Wigner-Eckart to SU(3), and that exact prerequisite is present in this batch as technique.invariant_tensor_matrix_elements.
+  failure_mode_if_absent: Cannot derive the reduced-coefficient form of SU(3) matrix elements because the invariant-contraction representation of matrix elements is missing.
+  evidence:
+    - type: expert_claim
+      source_ref: georgi_lie_techniques_batch_2_initial
+      note: The batch prerequisite list explicitly names invariant_tensor_matrix_elements.
+  status: asserted
+
+- from: qft.weyl_spinor
+  to: technique.mod8_reality_classification_of_so_spinors
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists chiral spinors as a prerequisite for Mod-8 reality classification of SO(N) spinors, and qft.weyl_spinor is the authored-graph match for that chiral-spinor notion.
+  failure_mode_if_absent: Cannot state the even-versus-odd dimensional spinor cases cleanly because the chiral spinor vocabulary is missing.
+  evidence:
+    - type: expert_claim
+      source_ref: georgi_lie_techniques_batch_2_initial
+      note: The batch prerequisite list explicitly names chiral spinors.
+  status: asserted
+
+- from: technique.isospin_generators_from_bilinears
+  to: technique.multiparticle_tensor_product_isospin
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists isospin_generators_from_bilinears as a prerequisite for Multiparticle states as tensor products, and that exact prerequisite is present in this batch as technique.isospin_generators_from_bilinears.
+  failure_mode_if_absent: Cannot combine single-particle isospin actions into many-particle tensor-product actions because the one-body generators have not been constructed.
+  evidence:
+    - type: expert_claim
+      source_ref: georgi_lie_techniques_batch_2_initial
+      note: The batch prerequisite list explicitly names isospin_generators_from_bilinears.
+  status: asserted
+
+- from: qft.creation_annihilation_operator
+  to: technique.number_operator_construction
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists creation_annihilation_operator_formalism as a prerequisite for Number-operator construction, and qft.creation_annihilation_operator is the direct authored-graph match.
+  failure_mode_if_absent: Cannot derive the occupation-number operator because the ladder operators whose product defines it are missing.
+  evidence:
+    - type: expert_claim
+      source_ref: georgi_lie_techniques_batch_2_initial
+      note: The batch prerequisite list explicitly names creation_annihilation_operator_formalism.
+  status: asserted
+
+- from: qft.creation_annihilation_operator
+  to: technique.pion_triplet_boson_formalism
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists creation_annihilation_operator_formalism as a prerequisite for Pion triplet boson formalism, and qft.creation_annihilation_operator is the direct authored-graph match.
+  failure_mode_if_absent: Cannot write the pion triplet states or act on them with isospin in the intended bosonic operator language.
+  evidence:
+    - type: expert_claim
+      source_ref: georgi_lie_techniques_batch_2_initial
+      note: The batch prerequisite list explicitly names creation_annihilation_operator_formalism.
+  status: asserted

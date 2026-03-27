@@ -1,0 +1,1332 @@
+- from: technique.susy_recast_for_top_partner_cascades
+  to: technique.dilepton_azimuthal_spin_correlation
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Stop/top-partner cascade phenomenology is needed to interpret the dilepton azimuthal spectrum as a stop-versus-top discriminator."
+  failure_mode_if_absent: "Without stop/top-partner cascade phenomenology, the method cannot interpret the dilepton azimuthal spectrum as a stop-versus-top discriminator reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing graph node that supplies a source-batch prerequisite ingredient."
+  status: asserted
+- from: technique.symmetric_traceless_tensor_realization
+  to: technique.dimension_formula_from_tensor_counting
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Symmetric-traceless tensor realization of SU(3) irreps is needed to count irreducible tensor components without overcounting trace pieces."
+  failure_mode_if_absent: "Without symmetric-traceless tensor realization of SU(3) irreps, the method cannot count irreducible tensor components without overcounting trace pieces reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing graph node that supplies a source-batch prerequisite ingredient."
+  status: asserted
+- from: technique.systematic_variable_exploration
+  to: technique.dimensionless_kinematic_discriminants
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Collider-variable design under systematics is needed to choose observables that stay stable against early energy-scale uncertainties."
+  failure_mode_if_absent: "Without collider-variable design under systematics, the method cannot choose observables that stay stable against early energy-scale uncertainties reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing graph node that supplies a source-batch prerequisite ingredient."
+  status: asserted
+- from: qm.dirac_monopole
+  to: technique.dirac_patchwise_potential_and_charge_quantization
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Dirac monopole gauge-patch construction is needed to compare patchwise potentials and impose single-valued charged states."
+  failure_mode_if_absent: "Without Dirac monopole gauge-patch construction, the method cannot compare patchwise potentials and impose single-valued charged states reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing graph node that supplies a source-batch prerequisite ingredient."
+  status: asserted
+- from: technique.dirac_patchwise_potential_and_charge_quantization
+  to: technique.dirac_pairing_test_for_fractional_monopoles
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Dirac quantization logic from patchwise gauge potentials is needed to test whether confined monopole charges satisfy the required pairing lattice."
+  failure_mode_if_absent: "Without Dirac quantization logic from patchwise gauge potentials, the method cannot test whether confined monopole charges satisfy the required pairing lattice reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing downstream technique supported by the orphan's source-batch unlock language."
+  status: asserted
+- from: technique.massless_supermultiplet_construction
+  to: technique.direct_field_supermultiplet_construction
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Supermultiplet state-counting and representation rules is needed to build component fields directly from supercharge algebra on known multiplets."
+  failure_mode_if_absent: "Without supermultiplet state-counting and representation rules, the method cannot build component fields directly from supercharge algebra on known multiplets reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing graph node that supplies a source-batch prerequisite ingredient."
+  status: asserted
+- from: technique.auxiliary_field_elimination
+  to: technique.direct_field_supermultiplet_construction
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Off-shell auxiliary-field control is needed to close the supersymmetry algebra on fields without leaving untracked nonpropagating pieces."
+  failure_mode_if_absent: "Without off-shell auxiliary-field control, the method cannot close the supersymmetry algebra on fields without leaving untracked nonpropagating pieces reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing graph node that supplies a source-batch prerequisite ingredient."
+  status: asserted
+- from: technique.direct_field_supermultiplet_construction
+  to: technique.superfield_superspace_formalism
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Component-level supermultiplet construction is needed to package the same multiplet structure into superspace objects cleanly."
+  failure_mode_if_absent: "Without component-level supermultiplet construction, the method cannot package the same multiplet structure into superspace objects cleanly reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing downstream technique supported by the orphan's source-batch unlock language."
+  status: asserted
+- from: technique.normalized_signal_contamination
+  to: technique.disco_decorrelation
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "ABCD-style independence diagnostics is needed to regularize a classifier toward background independence without losing track of signal contamination."
+  failure_mode_if_absent: "Without ABCD-style independence diagnostics, the method cannot regularize a classifier toward background independence without losing track of signal contamination reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing graph node that supplies a source-batch prerequisite ingredient."
+  status: asserted
+- from: technique.arbitrary_dimensional_black_brane_extremality
+  to: technique.discontinuous_extremal_limit
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Extremal black-hole geometry and limits is needed to analyze how the nonextremal solution splits as the extremal limit is approached."
+  failure_mode_if_absent: "Without extremal black-hole geometry and limits, the method cannot analyze how the nonextremal solution splits as the extremal limit is approached reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing graph node that supplies a source-batch prerequisite ingredient."
+  status: asserted
+- from: technique.discontinuous_extremal_limit
+  to: technique.entropy_reassignment_to_compactification_region
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "The split between extremal and compactification regions is needed to reassign the nonzero extremal entropy to the AdS2 x S2 compactification throat rather than the exterior geometry."
+  failure_mode_if_absent: "Without the split between extremal and compactification regions, the method cannot reassign the nonzero extremal entropy to the AdS2 x S2 compactification throat rather than the exterior geometry reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing downstream technique supported by the orphan's source-batch unlock language."
+  status: asserted
+- from: technique.brane_limit_matching_for_sw_curves
+  to: technique.discriminant_matching_to_known_dual_curve
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Seiberg-Witten curve matching by singularity data is needed to identify a candidate dual curve when explicit coordinate changes are unwieldy."
+  failure_mode_if_absent: "Without Seiberg-Witten curve matching by singularity data, the method cannot identify a candidate dual curve when explicit coordinate changes are unwieldy reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing graph node that supplies a source-batch prerequisite ingredient."
+  status: asserted
+- from: technique.line_of_sight_projection_with_detection_function
+  to: technique.disk_geometry_signal_morphology
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Line-of-sight projection of spatial signals is needed to turn disk geometry into a morphological discriminant for dark-matter observables."
+  failure_mode_if_absent: "Without line-of-sight projection of spatial signals, the method cannot turn disk geometry into a morphological discriminant for dark-matter observables reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing graph node that supplies a source-batch prerequisite ingredient."
+  status: asserted
+- from: technique.nlsp_lifetime_from_messenger_scale
+  to: technique.displaced_acceptance_parameterization
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "NLSP lifetime systematics is needed to parameterize displaced-decay reach across masses, boosts, and lifetimes instead of a single benchmark."
+  failure_mode_if_absent: "Without NLSP lifetime systematics, the method cannot parameterize displaced-decay reach across masses, boosts, and lifetimes instead of a single benchmark reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing graph node that supplies a source-batch prerequisite ingredient."
+  status: asserted
+- from: technique.displaced_acceptance_parameterization
+  to: technique.displaced_template_fits
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Detector acceptance across displaced-decay phase space is needed to compare mass-lifetime templates consistently across prompt, displaced, and quasi-stable regimes."
+  failure_mode_if_absent: "Without detector acceptance across displaced-decay phase space, the method cannot compare mass-lifetime templates consistently across prompt, displaced, and quasi-stable regimes reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing graph node that supplies a source-batch prerequisite ingredient."
+  status: asserted
+- from: technique.nahm_weight_argument_for_spinor_supercharges
+  to: technique.double_commutator_proof_of_q_p_commutation
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Weight-counting for supercharge commutators is needed to show that repeated commutators force supercharges to commute with momentum."
+  failure_mode_if_absent: "Without weight-counting for supercharge commutators, the method cannot show that repeated commutators force supercharges to commute with momentum reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing graph node that supplies a source-batch prerequisite ingredient."
+  status: asserted
+- from: technique.double_commutator_proof_of_q_p_commutation
+  to: technique.super_Jacobi_central_charge_proof
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "The Q-P commutation step in the superalgebra is needed to establish the algebraic groundwork for the central-charge Jacobi argument."
+  failure_mode_if_absent: "Without the Q-P commutation step in the superalgebra, the method cannot establish the algebraic groundwork for the central-charge Jacobi argument reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing downstream technique supported by the orphan's source-batch unlock language."
+  status: asserted
+- from: technique.dgp_modified_entropy_functional
+  to: technique.double_extremization_for_gravitating_bath
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Entropy functionals with induced gravity is needed to extremize over both island and radiation regions when the bath itself gravitates."
+  failure_mode_if_absent: "Without entropy functionals with induced gravity, the method cannot extremize over both island and radiation regions when the bath itself gravitates reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing graph node that supplies a source-batch prerequisite ingredient."
+  status: asserted
+- from: technique.double_extremization_for_gravitating_bath
+  to: technique.extremal_surface_shooting_scan
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "The need to extremize both island and bath regions is needed to numerically compare candidate surfaces in fully gravitating bath setups."
+  failure_mode_if_absent: "Without the need to extremize both island and bath regions, the method cannot numerically compare candidate surfaces in fully gravitating bath setups reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing downstream technique supported by the orphan's source-batch unlock language."
+  status: asserted
+- from: technique.higgsstrahlung_recoil_mass_tagging
+  to: technique.double_higgs_vbf_and_zhh_template_fit
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Clean Zhh channel tagging and differential reconstruction is needed to combine Zhh information with VBF di-Higgs templates in a self-coupling fit."
+  failure_mode_if_absent: "Without clean Zhh channel tagging and differential reconstruction, the method cannot combine Zhh information with VBF di-Higgs templates in a self-coupling fit reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing graph node that supplies a source-batch prerequisite ingredient."
+  status: asserted
+- from: technique.bulk_higgs_profile_saturation
+  to: technique.double_kk_sum_compensation
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Bulk-Higgs profile effects in warped towers is needed to see why narrow-profile suppressions are compensated after summing over KK structure."
+  failure_mode_if_absent: "Without bulk-Higgs profile effects in warped towers, the method cannot see why narrow-profile suppressions are compensated after summing over KK structure reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing graph node that supplies a source-batch prerequisite ingredient."
+  status: asserted
+- from: technique.double_kk_sum_compensation
+  to: technique.correct_chirality_kk_higgs_nondecoupling
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Tower-level compensation of KK-Higgs suppressions is needed to justify why correct-chirality KK Higgs contributions remain nondecoupling."
+  failure_mode_if_absent: "Without tower-level compensation of KK-Higgs suppressions, the method cannot justify why correct-chirality KK Higgs contributions remain nondecoupling reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing downstream technique supported by the orphan's source-batch unlock language."
+  status: asserted
+- from: technique.low_frequency_eccentricity_and_precession_lever_arm
+  to: technique.doubly_averaged_kozai_hamiltonian
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Secular eccentricity and precession intuition for hierarchical triples is needed to set up the averaged Hamiltonian with PN and gravitational-radiation corrections."
+  failure_mode_if_absent: "Without secular eccentricity and precession intuition for hierarchical triples, the method cannot set up the averaged Hamiltonian with PN and gravitational-radiation corrections reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing graph node that supplies a source-batch prerequisite ingredient."
+  status: asserted
+- from: technique.doubly_averaged_kozai_hamiltonian
+  to: technique.semianalytic_triple_eccentricity_estimator
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "The secular Hamiltonian for triple-driven eccentricity evolution is needed to produce fast semianalytic eccentricity mappings without full integrations."
+  failure_mode_if_absent: "Without the secular Hamiltonian for triple-driven eccentricity evolution, the method cannot produce fast semianalytic eccentricity mappings without full integrations reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing downstream technique supported by the orphan's source-batch unlock language."
+  status: asserted
+- from: technique.analytic_bcft_black_hole_dictionary
+  to: technique.doubly_holographic_brane_construction
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "BCFT-to-bulk dictionary for end-of-world branes is needed to build a setup with simultaneous bulk, brane, and boundary descriptions."
+  failure_mode_if_absent: "Without BCFT-to-bulk dictionary for end-of-world branes, the method cannot build a setup with simultaneous bulk, brane, and boundary descriptions reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing graph node that supplies a source-batch prerequisite ingredient."
+  status: asserted
+- from: technique.doubly_holographic_brane_construction
+  to: technique.double_extremization_for_gravitating_bath
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "A doubly holographic brane/bath setup is needed to formulate the gravitating-bath entropy problem in a consistent geometric model."
+  failure_mode_if_absent: "Without a doubly holographic brane/bath setup, the method cannot formulate the gravitating-bath entropy problem in a consistent geometric model reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing downstream technique supported by the orphan's source-batch unlock language."
+  status: asserted
+- from: technique.confined_monopole_diagnosis_of_lwgc_failure
+  to: technique.dual_lattice_from_confined_monopoles
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Magnetic data from confined monopoles in LWGC-violating examples is needed to infer the dual electric sublattice from the confined-monopole superlattice."
+  failure_mode_if_absent: "Without magnetic data from confined monopoles in LWGC-violating examples, the method cannot infer the dual electric sublattice from the confined-monopole superlattice reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing graph node that supplies a source-batch prerequisite ingredient."
+  status: asserted
+- from: technique.dual_lattice_from_confined_monopoles
+  to: technique.quotient_group_charge_lattice_identification
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "The dual-lattice construction for superextremal charges is needed to identify the electric charge lattice associated with the quotient G/K."
+  failure_mode_if_absent: "Without the dual-lattice construction for superextremal charges, the method cannot identify the electric charge lattice associated with the quotient G/K reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing downstream technique supported by the orphan's source-batch unlock language."
+  status: asserted
+- from: technique.analytic_continuation_superspace_duality_map
+  to: technique.dual_phase_dsb_analysis
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Seiberg-duality control in superspace variables is needed to move to the magnetic or conformal description where SUSY breaking becomes visible."
+  failure_mode_if_absent: "Without Seiberg-duality control in superspace variables, the method cannot move to the magnetic or conformal description where SUSY breaking becomes visible reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing graph node that supplies a source-batch prerequisite ingredient."
+  status: asserted
+- from: technique.oraifeartaigh_supersymmetry_breaking
+  to: technique.dual_phase_dsb_analysis
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "O'Raifeartaigh-type SUSY-breaking structure is needed to recognize when the dual magnetic description destabilizes the supersymmetric vacuum."
+  failure_mode_if_absent: "Without O'Raifeartaigh-type SUSY-breaking structure, the method cannot recognize when the dual magnetic description destabilizes the supersymmetric vacuum reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing graph node that supplies a source-batch prerequisite ingredient."
+  status: asserted
+- from: technique.p_form_duality
+  to: technique.dual_two_form_description_of_axion_strings
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Four-dimensional dualization of axions into higher-form gauge fields is needed to rewrite axion strings as electrically charged objects of a two-form field."
+  failure_mode_if_absent: "Without four-dimensional dualization of axions into higher-form gauge fields, the method cannot rewrite axion strings as electrically charged objects of a two-form field reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing graph node that supplies a source-batch prerequisite ingredient."
+  status: asserted
+- from: technique.dual_two_form_description_of_axion_strings
+  to: technique.chained_wgc_bound_from_axion_to_string
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "The two-form description of axion strings is needed to translate axion-sector constraints into string-tension weak-gravity bounds."
+  failure_mode_if_absent: "Without the two-form description of axion strings, the method cannot translate axion-sector constraints into string-tension weak-gravity bounds reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing downstream technique supported by the orphan's source-batch unlock language."
+  status: asserted
+- from: technique.extended_dynkin_diagram_subalgebra_search
+  to: technique.e6_branching_via_extended_dynkin_analysis
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Extended-Dynkin subalgebra enumeration is needed to branch the 27 by deleting nodes associated with maximal same-rank subgroups."
+  failure_mode_if_absent: "Without extended-Dynkin subalgebra enumeration, the method cannot branch the 27 by deleting nodes associated with maximal same-rank subgroups reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing graph node that supplies a source-batch prerequisite ingredient."
+  status: asserted
+- from: technique.dynkin_diagram_encoding
+  to: technique.e6_branching_via_extended_dynkin_analysis
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Dynkin-coefficient encoding of irreps is needed to track how E6 weights decompose under subgroup deletion rules."
+  failure_mode_if_absent: "Without Dynkin-coefficient encoding of irreps, the method cannot track how E6 weights decompose under subgroup deletion rules reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing graph node that supplies a source-batch prerequisite ingredient."
+  status: asserted
+- from: technique.e6_branching_via_extended_dynkin_analysis
+  to: technique.e6_breaking_requires_adjoint_78
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Explicit E6 branching data for 27-dimensional Higgs sectors is needed to see why 27 vevs cannot break all the way to the Standard Model without a 78."
+  failure_mode_if_absent: "Without explicit E6 branching data for 27-dimensional Higgs sectors, the method cannot see why 27 vevs cannot break all the way to the Standard Model without a 78 reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing downstream technique supported by the orphan's source-batch unlock language."
+  status: asserted
+- from: technique.population_inference_from_frequency_counts
+  to: technique.eccentricity_binned_population_inference
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Frequency-binned population inference machinery is needed to treat mHz-band eccentricity as a population label rather than a nuisance parameter."
+  failure_mode_if_absent: "Without frequency-binned population inference machinery, the method cannot treat mHz-band eccentricity as a population label rather than a nuisance parameter reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing graph node that supplies a source-batch prerequisite ingredient."
+  status: asserted
+- from: technique.wrapped_brane_instanton_action_matching
+  to: technique.effective_cone_holomorphic_curve_translation
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Wrapped-brane interpretation of BPS charge sectors is needed to translate charge lattices into effective cones of holomorphic curve classes."
+  failure_mode_if_absent: "Without wrapped-brane interpretation of BPS charge sectors, the method cannot translate charge lattices into effective cones of holomorphic curve classes reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing graph node that supplies a source-batch prerequisite ingredient."
+  status: asserted
+- from: technique.sixteen_tensor_sixteen_decomposition
+  to: technique.electroweak_breaking_from_so10_higgs_multiplets
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "The 16 x 16 decomposition into 10, 120, and 126 is needed to identify which SO(10) Higgs multiplets can furnish electroweak doublets and fermion masses."
+  failure_mode_if_absent: "Without the 16 x 16 decomposition into 10, 120, and 126, the method cannot identify which SO(10) Higgs multiplets can furnish electroweak doublets and fermion masses reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing graph node that supplies a source-batch prerequisite ingredient."
+  status: asserted
+- from: technique.break_so10_to_sm_with_45_or_54
+  to: technique.electroweak_breaking_from_so10_higgs_multiplets
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "SO(10)-breaking Higgs-sector structure is needed to embed electroweak breaking inside a viable unified symmetry-breaking chain."
+  failure_mode_if_absent: "Without SO(10)-breaking Higgs-sector structure, the method cannot embed electroweak breaking inside a viable unified symmetry-breaking chain reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing graph node that supplies a source-batch prerequisite ingredient."
+  status: asserted
+- from: technique.hypercharge_assignment_from_anomaly_constraints
+  to: technique.electroweak_current_construction
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "The charge embedding needed to separate photon and Z couplings is needed to write explicit electromagnetic and neutral-current combinations correctly."
+  failure_mode_if_absent: "Without the charge embedding needed to separate photon and Z couplings, the method cannot write explicit electromagnetic and neutral-current combinations correctly reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing graph node that supplies a source-batch prerequisite ingredient."
+  status: asserted
+- from: technique.chiral_fermion_representation_assignment
+  to: technique.electroweak_current_construction
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Fermion chiral representation assignments is needed to assemble the charged and neutral electroweak currents with the right left-right structure."
+  failure_mode_if_absent: "Without fermion chiral representation assignments, the method cannot assemble the charged and neutral electroweak currents with the right left-right structure reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing graph node that supplies a source-batch prerequisite ingredient."
+  status: asserted
+- from: technique.electroweak_current_construction
+  to: technique.flavor_basis_rotation
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Explicit weak-current structure before flavor rotations is needed to rotate quark fields between interaction and flavor bases without losing current assignments."
+  failure_mode_if_absent: "Without explicit weak-current structure before flavor rotations, the method cannot rotate quark fields between interaction and flavor bases without losing current assignments reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing downstream technique supported by the orphan's source-batch unlock language."
+  status: asserted
+- from: technique.neutralino_mixing_branching_map
+  to: technique.electroweakino_cascade_ratio_tanbeta_probe
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Neutralino composition and branching-fraction patterns is needed to read tan beta from the relative Z-rich and h-rich electroweakino cascades."
+  failure_mode_if_absent: "Without neutralino composition and branching-fraction patterns, the method cannot read tan beta from the relative Z-rich and h-rich electroweakino cascades reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing graph node that supplies a source-batch prerequisite ingredient."
+  status: asserted
+- from: technique.combinatorial_supercharge_counting
+  to: technique.eleven_dimensional_multiplet_counting
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Supercharge state counting in high dimensions is needed to match the d=11 supergravity multiplet to unique O(9) tensor and spinor content."
+  failure_mode_if_absent: "Without supercharge state counting in high dimensions, the method cannot match the d=11 supergravity multiplet to unique O(9) tensor and spinor content reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing graph node that supplies a source-batch prerequisite ingredient."
+  status: asserted
+- from: technique.autonomous_rescaling_of_frw_dynamics
+  to: technique.emden_fowler_scalar_classification
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Autonomous FRW scalar dynamics is needed to map thawing-scalar equations into Emden-Fowler form and classify the resulting asymptotics."
+  failure_mode_if_absent: "Without autonomous FRW scalar dynamics, the method cannot map thawing-scalar equations into Emden-Fowler form and classify the resulting asymptotics reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing graph node that supplies a source-batch prerequisite ingredient."
+  status: asserted
+- from: technique.emden_fowler_scalar_classification
+  to: technique.exact_rolling_background_and_perturbations
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Classification of thawing-scalar backgrounds is needed to pick controlled scalar potentials before evolving the exact background and perturbations."
+  failure_mode_if_absent: "Without classification of thawing-scalar backgrounds, the method cannot pick controlled scalar potentials before evolving the exact background and perturbations reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing downstream technique supported by the orphan's source-batch unlock language."
+  status: asserted
+- from: technique.ppe_waveform_deformation_framework
+  to: technique.emri_multipole_mapping
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Strong-field waveform parameterization is needed to map EMRI phase evolution into constraints on the central object's multipole hierarchy."
+  failure_mode_if_absent: "Without strong-field waveform parameterization, the method cannot map EMRI phase evolution into constraints on the central object's multipole hierarchy reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing graph node that supplies a source-batch prerequisite ingredient."
+  status: asserted
+- from: technique.cobordism_and_adams_ss_for_parity_defects
+  to: technique.end_of_world_brane_parity_vortices
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Cobordism classification of parity defects is needed to extend parity-wall reasoning to singular spaces and end-of-world branes."
+  failure_mode_if_absent: "Without cobordism classification of parity defects, the method cannot extend parity-wall reasoning to singular spaces and end-of-world branes reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing graph node that supplies a source-batch prerequisite ingredient."
+  status: asserted
+- from: technique.background_driven_detector_optimization
+  to: technique.end_to_end_muon_collider_design_loop
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Machine-detector optimization under realistic backgrounds is needed to close the full design loop across source, cooling, acceleration, collider, and detector constraints."
+  failure_mode_if_absent: "Without machine-detector optimization under realistic backgrounds, the method cannot close the full design loop across source, cooling, acceleration, collider, and detector constraints reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing graph node that supplies a source-batch prerequisite ingredient."
+  status: asserted
+- from: technique.end_to_end_muon_collider_design_loop
+  to: technique.beam_induced_background_timing_rejection
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "System-level muon-collider design constraints is needed to set realistic timing and reconstruction requirements for beam-background rejection."
+  failure_mode_if_absent: "Without system-level muon-collider design constraints, the method cannot set realistic timing and reconstruction requirements for beam-background rejection reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing downstream technique supported by the orphan's source-batch unlock language."
+  status: asserted
+- from: technique.homotopy_group_composition_as_fusion_rule
+  to: technique.endability_by_linking_obstruction
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Defect fusion algebra and topological composition rules is needed to test whether an extended operator can end by checking its linking with all topological sectors."
+  failure_mode_if_absent: "Without defect fusion algebra and topological composition rules, the method cannot test whether an extended operator can end by checking its linking with all topological sectors reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing graph node that supplies a source-batch prerequisite ingredient."
+  status: asserted
+- from: technique.endability_by_linking_obstruction
+  to: technique.completeness_from_topological_defect_absence
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Linking-based endability criteria for defects is needed to turn endpoint obstructions into completeness statements about dynamical charged objects."
+  failure_mode_if_absent: "Without linking-based endability criteria for defects, the method cannot turn endpoint obstructions into completeness statements about dynamical charged objects reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing downstream technique supported by the orphan's source-batch unlock language."
+  status: asserted
+- from: technique.junipr_probabilistic_jet_model
+  to: technique.energy_weighted_density_learning
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Neural density modeling of collider events is needed to learn a density surrogate that still tracks energy-weighted observables rather than only high-probability regions."
+  failure_mode_if_absent: "Without neural density modeling of collider events, the method cannot learn a density surrogate that still tracks energy-weighted observables rather than only high-probability regions reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing graph node that supplies a source-batch prerequisite ingredient."
+  status: asserted
+- from: technique.kahler_metric_sigma_model_on_moduli_space
+  to: technique.enhanced_symmetry_moduli_alignment
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Moduli-space geometry near special loci is needed to analyze whether cosmological evolution keeps moduli aligned near enhanced-symmetry points."
+  failure_mode_if_absent: "Without moduli-space geometry near special loci, the method cannot analyze whether cosmological evolution keeps moduli aligned near enhanced-symmetry points reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing graph node that supplies a source-batch prerequisite ingredient."
+  status: asserted
+- from: qft.monodromy_group
+  to: technique.entire_function_uniqueness_check
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Monodromy and singularity control of exact solutions is needed to prove candidate periods are uniquely fixed by their analytic structure and asymptotics."
+  failure_mode_if_absent: "Without monodromy and singularity control of exact solutions, the method cannot prove candidate periods are uniquely fixed by their analytic structure and asymptotics reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing graph node that supplies a source-batch prerequisite ingredient."
+  status: asserted
+- from: technique.black_hole_entropy_threshold
+  to: technique.entropy_balance_for_tip_droplets
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Entropy accounting for semiclassical black objects is needed to check whether tip-droplet emission is thermodynamically favored in warped geometries."
+  failure_mode_if_absent: "Without entropy accounting for semiclassical black objects, the method cannot check whether tip-droplet emission is thermodynamically favored in warped geometries reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing graph node that supplies a source-batch prerequisite ingredient."
+  status: asserted
+- from: technique.coupled_boltzmann_reheating_system
+  to: technique.entropy_budget_reheating_bookkeeping
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Multi-component reheating and abundance evolution is needed to track dilution factors and relic abundances through successive entropy dumps."
+  failure_mode_if_absent: "Without multi-component reheating and abundance evolution, the method cannot track dilution factors and relic abundances through successive entropy dumps reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing graph node that supplies a source-batch prerequisite ingredient."
+  status: asserted
+- from: technique.entropy_budget_reheating_bookkeeping
+  to: technique.flooded_dark_matter_entropy_dilution
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Entropy accounting through reheating and late decays is needed to verify that visible-sector reheating can leave a colder decoupled dark sector."
+  failure_mode_if_absent: "Without entropy accounting through reheating and late decays, the method cannot verify that visible-sector reheating can leave a colder decoupled dark sector reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing graph node that supplies a source-batch prerequisite ingredient."
+  status: asserted
+- from: technique.relic_density_from_decay_rate_ratios
+  to: technique.entropy_temperature_ratio_constraint
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Entropy-ratio bookkeeping for decoupled sectors is needed to compute dark-to-visible temperature ratios and resulting dark-radiation bounds."
+  failure_mode_if_absent: "Without entropy-ratio bookkeeping for decoupled sectors, the method cannot compute dark-to-visible temperature ratios and resulting dark-radiation bounds reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing graph node that supplies a source-batch prerequisite ingredient."
+  status: asserted
+- from: technique.gauge_invariant_heat_kernel_regulation
+  to: technique.euclidean_dirac_eigenfunction_expansion
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Heat-kernel regulation of the Euclidean fermion measure is needed to expand fields in a Hermitian Euclidean Dirac basis and control anomaly traces rigorously."
+  failure_mode_if_absent: "Without heat-kernel regulation of the Euclidean fermion measure, the method cannot expand fields in a Hermitian Euclidean Dirac basis and control anomaly traces rigorously reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing graph node that supplies a source-batch prerequisite ingredient."
+  status: asserted
+- from: qcd.nonperturbative_qcd_and_topology
+  to: technique.event_by_event_coalescence_afterburner
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Nonperturbative hadronization and light-nucleus formation is needed to model antideuteron formation with an event-level coalescence prescription."
+  failure_mode_if_absent: "Without nonperturbative hadronization and light-nucleus formation, the method cannot model antideuteron formation with an event-level coalescence prescription reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing graph node that supplies a source-batch prerequisite ingredient."
+  status: asserted
+- from: technique.event_by_event_coalescence_afterburner
+  to: technique.hidden_sector_antideuteron_targeting
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Event-level antideuteron source spectra is needed to turn hidden-sector hadronic final states into observable antideuteron search targets."
+  failure_mode_if_absent: "Without event-level antideuteron source spectra, the method cannot turn hidden-sector hadronic final states into observable antideuteron search targets reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing downstream technique supported by the orphan's source-batch unlock language."
+  status: asserted
+- from: technique.boosted_event_shape_recycling
+  to: technique.event_isotropy_via_optimal_transport
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Event-shape language for global energy flow is needed to define isotropy by optimal transport to a uniform reference distribution."
+  failure_mode_if_absent: "Without event-shape language for global energy flow, the method cannot define isotropy by optimal transport to a uniform reference distribution reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing graph node that supplies a source-batch prerequisite ingredient."
+  status: asserted
+- from: technique.event_isotropy_via_optimal_transport
+  to: technique.event_shape_diagnosis_of_hadronization
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "An isotropy observable that distinguishes spherical from jet-like events is needed to diagnose hidden-sector hadronization patterns beyond standard QCD event shapes."
+  failure_mode_if_absent: "Without an isotropy observable that distinguishes spherical from jet-like events, the method cannot diagnose hidden-sector hadronization patterns beyond standard QCD event shapes reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing downstream technique supported by the orphan's source-batch unlock language."
+  status: asserted
+- from: technique.warped_cascade_event_shape_tuning
+  to: technique.event_shape_diagnosis_of_hadronization
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Hidden-sector event-shape modeling is needed to compare isotropic cascades against jet-like flux-tube fragmentation in collider data."
+  failure_mode_if_absent: "Without hidden-sector event-shape modeling, the method cannot compare isotropic cascades against jet-like flux-tube fragmentation in collider data reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing graph node that supplies a source-batch prerequisite ingredient."
+  status: asserted
+- from: technique.minimum_velocity_mapping_exothermic_recoils
+  to: technique.exothermic_dark_disk_scattering
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Exothermic recoil kinematics is needed to show how internal-state energy release overcomes the tiny Earth-disk relative velocity."
+  failure_mode_if_absent: "Without exothermic recoil kinematics, the method cannot show how internal-state energy release overcomes the tiny Earth-disk relative velocity reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing graph node that supplies a source-batch prerequisite ingredient."
+  status: asserted
+- from: technique.exothermic_dark_disk_scattering
+  to: technique.narrow_recoil_spectrum_from_cold_disk
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Exothermic cold-disk scattering kinematics is needed to derive the distinctive narrow recoil spectrum expected for a co-rotating dark disk."
+  failure_mode_if_absent: "Without exothermic cold-disk scattering kinematics, the method cannot derive the distinctive narrow recoil spectrum expected for a co-rotating dark disk reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing downstream technique supported by the orphan's source-batch unlock language."
+  status: asserted
+- from: technique.boosted_plane_wave_spinor_solutions
+  to: technique.explicit_helicity_amplitude_evaluation
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Explicit boosted spinor wavefunctions is needed to evaluate polarized matrix elements directly in a chosen helicity basis."
+  failure_mode_if_absent: "Without explicit boosted spinor wavefunctions, the method cannot evaluate polarized matrix elements directly in a chosen helicity basis reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing graph node that supplies a source-batch prerequisite ingredient."
+  status: asserted
+- from: technique.pauli_tensor_realization_of_so_odd_spinors
+  to: technique.explicit_r_matrix_for_so_odd_spinors
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Pauli-tensor construction of odd-orthogonal spinors is needed to write the reality matrix explicitly and expose the mod-8 pattern."
+  failure_mode_if_absent: "Without Pauli-tensor construction of odd-orthogonal spinors, the method cannot write the reality matrix explicitly and expose the mod-8 pattern reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing graph node that supplies a source-batch prerequisite ingredient."
+  status: asserted
+- from: technique.explicit_r_matrix_for_so_odd_spinors
+  to: technique.mod8_reality_classification_of_so_spinors
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "The explicit odd-spinor reality matrix is needed to classify real and pseudoreal SO(N) spinors across mod-8 cases."
+  failure_mode_if_absent: "Without the explicit odd-spinor reality matrix, the method cannot classify real and pseudoreal SO(N) spinors across mod-8 cases reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing downstream technique supported by the orphan's source-batch unlock language."
+  status: asserted
+- from: technique.su6_baryon_multiplet_decomposition
+  to: technique.explicit_spin_flavor_baryon_wavefunctions
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "The SU(6) decomposition of baryon multiplets is needed to write explicit octet and decuplet spin-flavor wavefunctions."
+  failure_mode_if_absent: "Without the SU(6) decomposition of baryon multiplets, the method cannot write explicit octet and decuplet spin-flavor wavefunctions reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing graph node that supplies a source-batch prerequisite ingredient."
+  status: asserted
+- from: technique.explicit_spin_flavor_baryon_wavefunctions
+  to: technique.quark_model_constituent_sum_rules
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Explicit constituent-quark wavefunctions is needed to derive quark-model sum rules for baryon observables from resolved spin-flavor states."
+  failure_mode_if_absent: "Without explicit constituent-quark wavefunctions, the method cannot derive quark-model sum rules for baryon observables from resolved spin-flavor states reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing downstream technique supported by the orphan's source-batch unlock language."
+  status: asserted
+- from: technique.dynkin_diagram_encoding
+  to: technique.extended_dynkin_diagram_subalgebra_search
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Dynkin-diagram representation data is needed to add the lowest root and delete nodes to enumerate regular same-rank subalgebras."
+  failure_mode_if_absent: "Without Dynkin-diagram representation data, the method cannot add the lowest root and delete nodes to enumerate regular same-rank subalgebras reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing graph node that supplies a source-batch prerequisite ingredient."
+  status: asserted
+- from: technique.supersymmetric_nonrenormalization
+  to: technique.extended_susy_beta_function_control
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Nonrenormalization structure in supersymmetric theories is needed to see why extended supersymmetry sharply constrains or cancels beta functions."
+  failure_mode_if_absent: "Without nonrenormalization structure in supersymmetric theories, the method cannot see why extended supersymmetry sharply constrains or cancels beta functions reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing graph node that supplies a source-batch prerequisite ingredient."
+  status: asserted
+- from: technique.external_field_dressed_propagator
+  to: technique.coulomb_green_function_finite_width
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "The Coulomb Green's function with finite width is a specific background-field resummation built on the more general external-field dressed propagator."
+  failure_mode_if_absent: "Without the general external-field dressed propagator, the finite-width Coulomb Green's-function construction lacks its foundational resummation framework."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "The specific Coulomb/background propagator construction specializes the more general dressed-propagator method."
+  status: asserted
+- from: technique.external_field_dressed_propagator
+  to: technique.propagator_pole_method_for_energy_shifts
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "The exact propagator in a background field is needed to extract bound-state energy shifts from pole locations instead of term-by-term perturbation theory."
+  failure_mode_if_absent: "Without the exact propagator in a background field, the method cannot extract bound-state energy shifts from pole locations instead of term-by-term perturbation theory reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing downstream technique supported by the orphan's source-batch unlock language."
+  status: asserted
+- from: technique.ch5_vector_polarization_sum_construction
+  to: technique.external_state_polarization_methods
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Vector polarization sums for external states is needed to assemble consistent spinor and vector polarization choices for scattering amplitudes."
+  failure_mode_if_absent: "Without vector polarization sums for external states, the method cannot assemble consistent spinor and vector polarization choices for scattering amplitudes reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing graph node that supplies a source-batch prerequisite ingredient."
+  status: asserted
+- from: technique.external_state_polarization_methods
+  to: technique.massive_vector_polarization_projector
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "General external-state polarization bookkeeping is needed to specialize the method to a compact projector for massive vectors."
+  failure_mode_if_absent: "Without general external-state polarization bookkeeping, the method cannot specialize the method to a compact projector for massive vectors reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing downstream technique supported by the orphan's source-batch unlock language."
+  status: asserted
+- from: technique.hierarchical_limit_holomorphy_matching
+  to: technique.extra_flavor_deformation_for_low_energy_superpotential
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Holomorphic matching across supersymmetric deformations is needed to derive a confining superpotential by adding and then decoupling an auxiliary flavor."
+  failure_mode_if_absent: "Without holomorphic matching across supersymmetric deformations, the method cannot derive a confining superpotential by adding and then decoupling an auxiliary flavor reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing graph node that supplies a source-batch prerequisite ingredient."
+  status: asserted
+- from: technique.shooting_method_for_extremal_surfaces
+  to: technique.extremal_surface_shooting_scan
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Numerical shooting for brane-anchored extremal surfaces is needed to scan candidate surfaces across parameter space and compare generalized entropies."
+  failure_mode_if_absent: "Without numerical shooting for brane-anchored extremal surfaces, the method cannot scan candidate surfaces across parameter space and compare generalized entropies reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing graph node that supplies a source-batch prerequisite ingredient."
+  status: asserted
+- from: technique.extremal_surface_shooting_scan
+  to: technique.page_transition_from_hm_vs_brane_surface
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "A numerical map of competing extremal surfaces is needed to locate the Hartman-Maldacena versus brane-surface transition across parameter space."
+  failure_mode_if_absent: "Without a numerical map of competing extremal surfaces, the method cannot locate the Hartman-Maldacena versus brane-surface transition across parameter space reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing downstream technique supported by the orphan's source-batch unlock language."
+  status: asserted
+- from: technique.sector_separated_accidental_symmetry_for_higgs_pgb
+  to: technique.f_term_vev_scaling_solutions
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "The pseudo-Goldstone Higgs vacuum structure protected by small breakings is needed to solve the F-term equations and test whether the intended hierarchy is self-consistent."
+  failure_mode_if_absent: "Without the pseudo-Goldstone Higgs vacuum structure protected by small breakings, the method cannot solve the F-term equations and test whether the intended hierarchy is self-consistent reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing graph node that supplies a source-batch prerequisite ingredient."
+  status: asserted
+- from: technique.young_tableaux_for_su_n_irreps
+  to: technique.factors_over_hooks_dimension_formula
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Tableau combinatorics for SU(N) irreps is needed to compute dimensions by multiplying box factors and dividing by hook lengths."
+  failure_mode_if_absent: "Without tableau combinatorics for SU(N) irreps, the method cannot compute dimensions by multiplying box factors and dividing by hook lengths reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing graph node that supplies a source-batch prerequisite ingredient."
+  status: asserted
+- from: technique.boosted_top_strategy_for_spin2_resonances
+  to: technique.fake_rate_parameterization_for_top_tagging
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Top-tagging efficiency and fake-rate systematics is needed to scan physics reach against uncertain top-tagger performance before detector details settle."
+  failure_mode_if_absent: "Without top-tagging efficiency and fake-rate systematics, the method cannot scan physics reach against uncertain top-tagger performance before detector details settle reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing graph node that supplies a source-batch prerequisite ingredient."
+  status: asserted
+- from: technique.black_hole_extremality_decay_test
+  to: technique.fake_superpotential_black_brane_flows
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Extremality logic for charged black objects is needed to analyze charge-to-mass ratios along first-order fake-superpotential flows."
+  failure_mode_if_absent: "Without extremality logic for charged black objects, the method cannot analyze charge-to-mass ratios along first-order fake-superpotential flows reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing graph node that supplies a source-batch prerequisite ingredient."
+  status: asserted
+- from: technique.neutralino_assisted_partial_reconstruction_cut
+  to: technique.false_resonance_reconstruction
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Partial reconstruction of stealthy visible systems is needed to rebuild apparent invariant-mass peaks even when soft invisible particles are present."
+  failure_mode_if_absent: "Without partial reconstruction of stealthy visible systems, the method cannot rebuild apparent invariant-mass peaks even when soft invisible particles are present reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing graph node that supplies a source-batch prerequisite ingredient."
+  status: asserted
+- from: technique.relevant_irrelevant_fixed_surface_analysis
+  to: technique.field_basis_diagonalization_and_accidental_symmetry_analysis
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Operator-basis structure near fixed surfaces is needed to identify which field redefinitions reveal accidental flavor symmetries in the renormalizable theory."
+  failure_mode_if_absent: "Without operator-basis structure near fixed surfaces, the method cannot identify which field redefinitions reveal accidental flavor symmetries in the renormalizable theory reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing graph node that supplies a source-batch prerequisite ingredient."
+  status: asserted
+- from: technique.field_basis_diagonalization_and_accidental_symmetry_analysis
+  to: technique.flavor_changing_neutral_current_suppression
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Field-basis symmetries and accidental flavor conservation is needed to show why tree-level flavor-changing neutral currents are absent in a given basis."
+  failure_mode_if_absent: "Without field-basis symmetries and accidental flavor conservation, the method cannot show why tree-level flavor-changing neutral currents are absent in a given basis reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing downstream technique supported by the orphan's source-batch unlock language."
+  status: asserted
+- from: technique.population_inference_from_frequency_counts
+  to: technique.fisher_and_chisquare_population_tests
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Binned-population inference from frequency counts is needed to quantify channel separability with Fisher and chi-square summaries without a full hierarchical analysis."
+  failure_mode_if_absent: "Without binned-population inference from frequency counts, the method cannot quantify channel separability with Fisher and chi-square summaries without a full hierarchical analysis reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing graph node that supplies a source-batch prerequisite ingredient."
+  status: asserted
+- from: technique.fisher_and_chisquare_population_tests
+  to: technique.eccentricity_binned_population_inference
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Fast statistical separation tests for mixed populations is needed to turn eccentricity bins into a practical discriminant among binary formation channels."
+  failure_mode_if_absent: "Without fast statistical separation tests for mixed populations, the method cannot turn eccentricity bins into a practical discriminant among binary formation channels reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing downstream technique supported by the orphan's source-batch unlock language."
+  status: asserted
+- from: technique.pole_shift_to_bispectrum_scaling_map
+  to: technique.fisher_matrix_discriminant_for_missing_scalars
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Bispectrum template deformations from shifted poles is needed to forecast whether missing-scalar signals are distinguishable from ordinary mass shifts."
+  failure_mode_if_absent: "Without bispectrum template deformations from shifted poles, the method cannot forecast whether missing-scalar signals are distinguishable from ordinary mass shifts reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing graph node that supplies a source-batch prerequisite ingredient."
+  status: asserted
+- from: technique.template_free_eccentric_snr_formula
+  to: technique.fisher_phase_derivative_scaling
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Closed-form eccentric-binary SNR scaling is needed to estimate Fisher sensitivities directly from accumulated phase derivatives."
+  failure_mode_if_absent: "Without closed-form eccentric-binary SNR scaling, the method cannot estimate Fisher sensitivities directly from accumulated phase derivatives reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing graph node that supplies a source-batch prerequisite ingredient."
+  status: asserted
+- from: technique.fisher_phase_derivative_scaling
+  to: technique.fisher_to_bayesian_multiband_update
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Fisher covariance information for waveform parameters is needed to pass a compact forecast into a downstream Bayesian multiband analysis."
+  failure_mode_if_absent: "Without Fisher covariance information for waveform parameters, the method cannot pass a compact forecast into a downstream Bayesian multiband analysis reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing graph node that supplies a source-batch prerequisite ingredient."
+  status: asserted
+- from: technique.ope_rg_for_coefficient_functions
+  to: technique.fixed_point_scaling_of_ope_coefficients
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "RG evolution of OPE coefficient functions is needed to derive fixed-point scaling laws and anomalous-dimension corrections for the coefficients."
+  failure_mode_if_absent: "Without RG evolution of OPE coefficient functions, the method cannot derive fixed-point scaling laws and anomalous-dimension corrections for the coefficients reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing graph node that supplies a source-batch prerequisite ingredient."
+  status: asserted
+- from: technique.gauge_invariant_flat_direction_classification
+  to: technique.flat_direction_inflaton_identification
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "The catalog of supersymmetric flat directions is needed to identify which weak-scale flat directions can naturally serve as inflatons."
+  failure_mode_if_absent: "Without the catalog of supersymmetric flat directions, the method cannot identify which weak-scale flat directions can naturally serve as inflatons reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing graph node that supplies a source-batch prerequisite ingredient."
+  status: asserted
+- from: technique.flat_direction_inflaton_identification
+  to: technique.weak_scale_inflation_for_moduli_dilution
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "A concrete weak-scale inflaton candidate from SUSY flat directions is needed to embed moduli-diluting inflation inside ordinary supersymmetric field content."
+  failure_mode_if_absent: "Without a concrete weak-scale inflaton candidate from SUSY flat directions, the method cannot embed moduli-diluting inflation inside ordinary supersymmetric field content reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing downstream technique supported by the orphan's source-batch unlock language."
+  status: asserted
+- from: technique.yukawa_matrix_bidiagonalization_ckm
+  to: technique.flavor_basis_rotation
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "CKM-generating flavor rotations of quark fields is needed to rotate weak currents between interaction and flavor bases consistently."
+  failure_mode_if_absent: "Without CKM-generating flavor rotations of quark fields, the method cannot rotate weak currents between interaction and flavor bases consistently reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing graph node that supplies a source-batch prerequisite ingredient."
+  status: asserted
+- from: technique.flavor_basis_rotation
+  to: technique.weak_hamiltonian_isospin_decomposition
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "The rotated weak-interaction basis for quark operators is needed to organize weak four-fermion operators into definite isospin channels."
+  failure_mode_if_absent: "Without the rotated weak-interaction basis for quark operators, the method cannot organize weak four-fermion operators into definite isospin channels reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing downstream technique supported by the orphan's source-batch unlock language."
+  status: asserted
+- from: technique.second_version_moduli_mediation
+  to: technique.flavor_universality_diagnosis_from_kahler_metric
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Moduli-mediated soft-mass generation from Kahler data is needed to read off whether scalar masses stay generation-universal."
+  failure_mode_if_absent: "Without moduli-mediated soft-mass generation from Kahler data, the method cannot read off whether scalar masses stay generation-universal reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing graph node that supplies a source-batch prerequisite ingredient."
+  status: asserted
+- from: technique.flooded_dark_matter_entropy_dilution
+  to: technique.flooded_dm_link_to_fermion_cores
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "A colder dark sector from flooded dark matter cosmology is needed to make sub-keV fermion cores compatible with cosmological free-streaming bounds."
+  failure_mode_if_absent: "Without a colder dark sector from flooded dark matter cosmology, the method cannot make sub-keV fermion cores compatible with cosmological free-streaming bounds reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing downstream technique supported by the orphan's source-batch unlock language."
+  status: asserted
+- from: technique.degenerate_fermion_core_support
+  to: technique.flooded_dm_link_to_fermion_cores
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Fermionic core support in halos is needed to connect the astrophysical core mechanism to a colder dark-sector cosmology."
+  failure_mode_if_absent: "Without fermionic core support in halos, the method cannot connect the astrophysical core mechanism to a colder dark-sector cosmology reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing graph node that supplies a source-batch prerequisite ingredient."
+  status: asserted
+- from: technique.timing_geometry_background_veto
+  to: technique.floor_veto_and_topology_background_rejection
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Timing-and-geometry rejection of through-going backgrounds is needed to specialize the surface-detector veto strategy to upward-going muon backgrounds and displaced topologies."
+  failure_mode_if_absent: "Without timing-and-geometry rejection of through-going backgrounds, the method cannot specialize the surface-detector veto strategy to upward-going muon backgrounds and displaced topologies reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing graph node that supplies a source-batch prerequisite ingredient."
+  status: asserted
+- from: technique.floor_veto_and_topology_background_rejection
+  to: technique.surface_displaced_vertex_llp_search
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "A floor-veto topology cut for surface detectors is needed to realize the near-zero-background LLP search strategy in a concrete detector analysis."
+  failure_mode_if_absent: "Without a floor-veto topology cut for surface detectors, the method cannot realize the near-zero-background LLP search strategy in a concrete detector analysis reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing downstream technique supported by the orphan's source-batch unlock language."
+  status: asserted
+- from: technique.helicity_mode_tachyonic_instability
+  to: technique.floquet_instability_chart_for_tachyonic_modes
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Linear tachyonic-instability analysis for oscillating fields is needed to map the instability bands and growth rates in the modulus-driven Higgs system."
+  failure_mode_if_absent: "Without linear tachyonic-instability analysis for oscillating fields, the method cannot map the instability bands and growth rates in the modulus-driven Higgs system reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing graph node that supplies a source-batch prerequisite ingredient."
+  status: asserted
+- from: technique.floquet_instability_chart_for_tachyonic_modes
+  to: technique.tachyonic_higgs_preheating_from_modulus
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Floquet instability bands for the driven Higgs fluctuations is needed to decide when modulus oscillations produce efficient tachyonic Higgs excitation."
+  failure_mode_if_absent: "Without Floquet instability bands for the driven Higgs fluctuations, the method cannot decide when modulus oscillations produce efficient tachyonic Higgs excitation reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing downstream technique supported by the orphan's source-batch unlock language."
+  status: asserted
+- from: technique.euclidean_bounce_method_for_vacuum_decay
+  to: technique.flux_tube_pair_creation_bounce
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Euclidean bounce methods for metastable decay is needed to estimate flux-tube breaking by nucleating monopole-lined holes in the worldvolume."
+  failure_mode_if_absent: "Without Euclidean bounce methods for metastable decay, the method cannot estimate flux-tube breaking by nucleating monopole-lined holes in the worldvolume reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing graph node that supplies a source-batch prerequisite ingredient."
+  status: asserted
+- from: technique.flux_tube_pair_creation_bounce
+  to: technique.confined_monopole_diagnosis_of_lwgc_failure
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "The pair-creation stability of flux tubes and confined monopoles is needed to judge whether the confined objects remain genuine low-energy states."
+  failure_mode_if_absent: "Without the pair-creation stability of flux tubes and confined monopoles, the method cannot judge whether the confined objects remain genuine low-energy states reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing downstream technique supported by the orphan's source-batch unlock language."
+  status: asserted
+- from: technique.telescope_geometry_interferometric_monitoring
+  to: technique.focal_plane_young_fringe_metrology
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Interferometric geometry monitoring of precision optics is needed to solve for detector-pixel geometry and intrapixel response with projected fringes."
+  failure_mode_if_absent: "Without interferometric geometry monitoring of precision optics, the method cannot solve for detector-pixel geometry and intrapixel response with projected fringes reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing graph node that supplies a source-batch prerequisite ingredient."
+  status: asserted
+- from: technique.focal_plane_young_fringe_metrology
+  to: technique.differential_astrometry_point_and_stare
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Micropixel focal-plane metrology is needed to push detector calibration below the level where it contaminates differential astrometry."
+  failure_mode_if_absent: "Without micropixel focal-plane metrology, the method cannot push detector calibration below the level where it contaminates differential astrometry reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing downstream technique supported by the orphan's source-batch unlock language."
+  status: asserted
+- from: technique.diffusion_plus_solar_modulation_pipeline
+  to: technique.force_field_solar_modulation
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Cosmic-ray propagation combined with heliospheric modulation is needed to map interstellar antideuteron fluxes to top-of-atmosphere predictions with a force-field shift."
+  failure_mode_if_absent: "Without cosmic-ray propagation combined with heliospheric modulation, the method cannot map interstellar antideuteron fluxes to top-of-atmosphere predictions with a force-field shift reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing graph node that supplies a source-batch prerequisite ingredient."
+  status: asserted
+- from: technique.force_field_solar_modulation
+  to: technique.hidden_sector_antideuteron_targeting
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: "Top-of-atmosphere low-energy antideuteron flux predictions is needed to turn propagated galactic spectra into detector-relevant hidden-sector search targets."
+  failure_mode_if_absent: "Without top-of-atmosphere low-energy antideuteron flux predictions, the method cannot turn propagated galactic spectra into detector-relevant hidden-sector search targets reliably."
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Matched to an existing downstream technique supported by the orphan's source-batch unlock language."
+  status: asserted

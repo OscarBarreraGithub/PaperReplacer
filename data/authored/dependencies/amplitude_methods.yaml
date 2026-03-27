@@ -1,0 +1,687 @@
+- from: qft.loop_momentum_integration_structure
+  to: technique.passarino_veltman_reduction
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: standard_computation
+  rationale: Passarino-Veltman reduction starts from tensor loop integrals and projects their loop-momentum dependence onto external kinematic data.
+  failure_mode_if_absent: Cannot identify what object is being reduced or why tensor numerators can be traded for scalar coefficient functions.
+  evidence:
+    - type: expert_claim
+      source_ref: amplitude_methods_gap_fill_2026-03-27
+      note: Standard one-loop reduction wiring matched to the existing loop-momentum-integration node.
+  status: asserted
+  confidence: 0.95
+
+- from: qft.dimensional_regularization
+  to: technique.passarino_veltman_reduction
+  relation_type: requires_for_use
+  necessity: typical
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: standard_computation
+  rationale: In standard perturbative use, Passarino-Veltman coefficients are derived and organized in dimensionally regularized form so singular pieces remain controlled.
+  failure_mode_if_absent: Cannot track how the reduced scalar functions are defined when ultraviolet or infrared singularities are present.
+  evidence:
+    - type: expert_claim
+      source_ref: amplitude_methods_gap_fill_2026-03-27
+      note: Standard PV workflows in the graph sit inside the existing dimensional-regularization branch.
+  status: asserted
+  confidence: 0.88
+
+- from: qft.loop_momentum_integration_structure
+  to: technique.integration_by_parts_reduction
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: standard_computation
+  rationale: IBP reduction treats a loop family as a structured multi-variable integration problem and derives relations by differentiating with respect to loop momenta.
+  failure_mode_if_absent: Cannot state where the total derivatives act or what counts as an integral family to be reduced.
+  evidence:
+    - type: expert_claim
+      source_ref: amplitude_methods_gap_fill_2026-03-27
+      note: The reusable prerequisite is the existing loop-momentum-integration-structure node.
+  status: asserted
+  confidence: 0.96
+
+- from: qft.dimensional_regularization
+  to: technique.integration_by_parts_reduction
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: standard_computation
+  rationale: IBP identities are used in dimensional regularization so total-derivative surface terms vanish while singular integrals remain well defined.
+  failure_mode_if_absent: Cannot justify why the formal total-derivative manipulations produce valid relations among divergent loop integrals.
+  evidence:
+    - type: expert_claim
+      source_ref: amplitude_methods_gap_fill_2026-03-27
+      note: Standard IBP reduction is matched to the existing dimensional-regularization node rather than to a paper-specific implementation.
+  status: asserted
+  confidence: 0.96
+
+- from: technique.integration_by_parts_reduction
+  to: technique.laporta_algorithm
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: standard_computation
+  rationale: The Laporta algorithm is the systematic automation of IBP reduction rather than an unrelated reduction method.
+  failure_mode_if_absent: Cannot tell what identities the algorithm is generating and solving or why its output is a master-integral basis.
+  evidence:
+    - type: expert_claim
+      source_ref: amplitude_methods_gap_fill_2026-03-27
+      note: The algorithmic node is intentionally wired downstream of the generic IBP method node.
+  status: asserted
+  confidence: 0.97
+
+- from: qft.loop_momentum_integration_structure
+  to: technique.laporta_algorithm
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: standard_computation
+  rationale: Laporta reduction orders and solves relations inside a specified loop-integral family, so the integral-family structure has to be visible first.
+  failure_mode_if_absent: Cannot define the sectors or complexity ordering that the algorithm uses to eliminate integrals.
+  evidence:
+    - type: expert_claim
+      source_ref: amplitude_methods_gap_fill_2026-03-27
+      note: Existing loop-momentum structure is the authored graph match for integral-family setup.
+  status: asserted
+  confidence: 0.94
+
+- from: qft.dimensional_regularization
+  to: technique.laporta_algorithm
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: standard_computation
+  rationale: Standard Laporta systems are solved in d dimensions because the reduction identities and master basis are organized around dimensional regularization.
+  failure_mode_if_absent: Cannot interpret the dimension-dependent coefficients in the solved reduction system.
+  evidence:
+    - type: expert_claim
+      source_ref: amplitude_methods_gap_fill_2026-03-27
+      note: Standard Laporta usage is aligned with the existing dimensional-regularization node.
+  status: asserted
+  confidence: 0.94
+
+- from: technique.integration_by_parts_reduction
+  to: technique.differential_equations_for_master_integrals
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: standard_computation
+  rationale: The differential-equation method is formulated for the master basis obtained after IBP reduction closes the integral family.
+  failure_mode_if_absent: Cannot tell what the master integrals are or why the differentiated system closes on a finite basis.
+  evidence:
+    - type: expert_claim
+      source_ref: amplitude_methods_gap_fill_2026-03-27
+      note: Standard master-integral workflows place differential equations downstream of generic IBP reduction.
+  status: asserted
+  confidence: 0.97
+
+- from: qft.mandelstam_variables
+  to: technique.differential_equations_for_master_integrals
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: standard_computation
+  rationale: The method differentiates with respect to external invariants or masses, and Mandelstam variables are the graph's reusable language for those kinematic derivatives.
+  failure_mode_if_absent: Cannot specify which variables the master integrals are being differentiated against or what kinematic channel the system describes.
+  evidence:
+    - type: expert_claim
+      source_ref: amplitude_methods_gap_fill_2026-03-27
+      note: Existing Mandelstam-variable language supplies the kinematic differentiation vocabulary.
+  status: asserted
+  confidence: 0.94
+
+- from: qft.loop_momentum_integration_structure
+  to: technique.differential_equations_for_master_integrals
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: standard_computation
+  rationale: The differential system still concerns loop integrals and their family structure even after reduction to masters.
+  failure_mode_if_absent: Cannot see how the differentiated objects remain tied to the original loop-integral problem.
+  evidence:
+    - type: expert_claim
+      source_ref: amplitude_methods_gap_fill_2026-03-27
+      note: The method is wired back to the existing loop-integral structure node rather than only to function-space nodes.
+  status: asserted
+  confidence: 0.92
+
+- from: qft.unitarity_cutting_rules
+  to: technique.generalized_unitarity_cuts
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: standard_computation
+  rationale: Generalized unitarity extends ordinary cutting rules from single discontinuity cuts to multi-cut on-shell constraints.
+  failure_mode_if_absent: Cannot tell what principle licenses replacing internal propagators by on-shell conditions in the first place.
+  evidence:
+    - type: expert_claim
+      source_ref: amplitude_methods_gap_fill_2026-03-27
+      note: The new generalized-unitarity node is attached directly to the existing cutting-rules branch.
+  status: asserted
+  confidence: 0.96
+
+- from: qft.on_shell_intermediate_state
+  to: technique.generalized_unitarity_cuts
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: standard_computation
+  rationale: The method works by putting several internal lines on shell and sewing the corresponding intermediate tree objects together.
+  failure_mode_if_absent: Cannot interpret what the cut conditions are enforcing or what data the sewn trees share across the cut.
+  evidence:
+    - type: expert_claim
+      source_ref: amplitude_methods_gap_fill_2026-03-27
+      note: The existing on-shell-intermediate-state node captures the reusable state-side input.
+  status: asserted
+  confidence: 0.95
+
+- from: qft.scattering_amplitude
+  to: technique.generalized_unitarity_cuts
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: standard_computation
+  rationale: Generalized unitarity reconstructs loop amplitudes from tree amplitudes, so the generic scattering-amplitude object has to be in place.
+  failure_mode_if_absent: Cannot tell what object is being reconstructed from the cut data.
+  evidence:
+    - type: expert_claim
+      source_ref: amplitude_methods_gap_fill_2026-03-27
+      note: The method is a reusable reconstruction procedure for amplitudes rather than a cut-only formal statement.
+  status: asserted
+  confidence: 0.93
+
+- from: qft.spinor_helicity_notation
+  to: technique.bcfw_recursion_relations
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: standard_computation
+  rationale: BCFW recursion is formulated as a complex shift of on-shell spinors, so the spinor-helicity variables are part of the operational definition.
+  failure_mode_if_absent: Cannot read the shifted momentum data or the large-z behavior statements that define the recursion.
+  evidence:
+    - type: expert_claim
+      source_ref: amplitude_methods_gap_fill_2026-03-27
+      note: The standard on-shell-recursion method is matched to the existing spinor-helicity notation node.
+  status: asserted
+  confidence: 0.97
+
+- from: qft.color_ordered_amplitude
+  to: technique.bcfw_recursion_relations
+  relation_type: requires_for_use
+  necessity: typical
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: standard_computation
+  rationale: In the graph's main amplitudes branch, BCFW is most often applied to color-ordered partial amplitudes where the factorization channels are simplest.
+  failure_mode_if_absent: The recursion can still be named, but its standard color-stripped application in gauge theory is left unanchored.
+  evidence:
+    - type: expert_claim
+      source_ref: amplitude_methods_gap_fill_2026-03-27
+      note: This edge ties BCFW into the existing color-ordered-amplitude node highlighted in the gap review.
+  status: asserted
+  confidence: 0.88
+
+- from: qft.gluon_tree_scattering
+  to: technique.bcfw_recursion_relations
+  relation_type: requires_for_recognize
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: standard_computation
+  rationale: Tree-level gluon scattering is the canonical first application of BCFW recursion in the existing amplitudes slice.
+  failure_mode_if_absent: Cannot place the recursion inside the specific tree-amplitude problem that motivates it in the authored graph.
+  evidence:
+    - type: expert_claim
+      source_ref: amplitude_methods_gap_fill_2026-03-27
+      note: Added to attach a standard recursive technique directly to the existing gluon-tree node.
+  status: asserted
+  confidence: 0.85
+
+- from: qft.square_bracket_spinor_product
+  to: technique.bcfw_recursion_relations
+  relation_type: requires_for_use
+  necessity: typical
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: standard_computation
+  rationale: One canonical BCFW shift acts directly on antiholomorphic spinors, so square-bracket language is part of standard use.
+  failure_mode_if_absent: Cannot parse the shifted spinor variables or the residue formulas written in bracket notation.
+  evidence:
+    - type: expert_claim
+      source_ref: amplitude_methods_gap_fill_2026-03-27
+      note: This edge gives the existing square-bracket node a direct reusable technique child.
+  status: asserted
+  confidence: 0.87
+
+- from: qft.mhv_amplitude
+  to: technique.csw_mhv_vertex_expansion
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: standard_computation
+  rationale: CSW rules are built by using MHV amplitudes as effective vertices, so the MHV amplitude node is intrinsic to the construction.
+  failure_mode_if_absent: Cannot identify what special amplitudes are being promoted to vertices in the expansion.
+  evidence:
+    - type: expert_claim
+      source_ref: amplitude_methods_gap_fill_2026-03-27
+      note: The method is wired directly to the existing MHV-amplitude node singled out in the gap review.
+  status: asserted
+  confidence: 0.97
+
+- from: qft.parke_taylor_formula
+  to: technique.csw_mhv_vertex_expansion
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: standard_computation
+  rationale: In practice the CSW vertices are supplied by the explicit Parke-Taylor form of the MHV amplitudes.
+  failure_mode_if_absent: Cannot tell what explicit vertex factor is being inserted at each MHV vertex.
+  evidence:
+    - type: expert_claim
+      source_ref: amplitude_methods_gap_fill_2026-03-27
+      note: The edge attaches a standard amplitude-construction technique to the existing Parke-Taylor node.
+  status: asserted
+  confidence: 0.95
+
+- from: qft.spinor_helicity_notation
+  to: technique.csw_mhv_vertex_expansion
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: standard_computation
+  rationale: CSW rules use the same spinor-helicity language as the MHV amplitudes that serve as vertices.
+  failure_mode_if_absent: Cannot read the off-shell continuation or the compact vertex factors appearing in the expansion.
+  evidence:
+    - type: expert_claim
+      source_ref: amplitude_methods_gap_fill_2026-03-27
+      note: The method is matched to the existing spinor-helicity notation branch.
+  status: asserted
+  confidence: 0.95
+
+- from: qft.angle_bracket_spinor_product
+  to: technique.csw_mhv_vertex_expansion
+  relation_type: requires_for_use
+  necessity: typical
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: standard_computation
+  rationale: The MHV vertices used in CSW are written primarily in angle-bracket form, so the holomorphic spinor product is a standard local prerequisite.
+  failure_mode_if_absent: Cannot read the dominant bracket structure of the vertex factors being sewn together.
+  evidence:
+    - type: expert_claim
+      source_ref: amplitude_methods_gap_fill_2026-03-27
+      note: Added to give the existing angle-bracket node a direct reusable technique edge.
+  status: asserted
+  confidence: 0.87
+
+- from: qft.non_abelian_gauge_symmetry
+  to: technique.color_kinematics_duality_bcj
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: standard_computation
+  rationale: Color-kinematics duality compares kinematic numerators to the Jacobi identities of the non-Abelian color algebra, so the Yang-Mills setting is essential.
+  failure_mode_if_absent: Cannot explain what color structure the kinematic numerators are supposed to mirror.
+  evidence:
+    - type: expert_claim
+      source_ref: amplitude_methods_gap_fill_2026-03-27
+      note: The new BCJ node is anchored to the existing non-Abelian gauge-symmetry node.
+  status: asserted
+  confidence: 0.96
+
+- from: qft.color_ordered_amplitude
+  to: technique.color_kinematics_duality_bcj
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: standard_computation
+  rationale: BCJ relations are statements among color-ordered partial amplitudes, so that decomposition has to be available before the duality is used operationally.
+  failure_mode_if_absent: Cannot formulate the amplitude relations that result from imposing color-kinematics duality.
+  evidence:
+    - type: expert_claim
+      source_ref: amplitude_methods_gap_fill_2026-03-27
+      note: This edge connects the BCJ node to the existing color-ordered-amplitude branch.
+  status: asserted
+  confidence: 0.96
+
+- from: technique.color_kinematics_duality_bcj
+  to: technique.double_copy_construction
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: standard_computation
+  rationale: The standard double-copy construction assumes a color-kinematics-satisfying representation before color factors are replaced by kinematic numerators.
+  failure_mode_if_absent: Cannot justify why exchanging color data for kinematic data should produce a gravity answer.
+  evidence:
+    - type: expert_claim
+      source_ref: amplitude_methods_gap_fill_2026-03-27
+      note: The double-copy node is intentionally wired downstream of the BCJ node.
+  status: asserted
+  confidence: 0.98
+
+- from: qft.scattering_amplitude
+  to: technique.double_copy_construction
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: standard_computation
+  rationale: Double copy is an amplitude-level construction, so the generic scattering-amplitude object is the right reusable target of the replacement rule.
+  failure_mode_if_absent: Cannot identify what class of object is being built by the construction.
+  evidence:
+    - type: expert_claim
+      source_ref: amplitude_methods_gap_fill_2026-03-27
+      note: The authored graph currently has a reusable scattering-amplitude node but no generic double-copy method node.
+  status: asserted
+  confidence: 0.93
+
+- from: qft.loop_momentum_integration_structure
+  to: technique.method_of_regions
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: standard_computation
+  rationale: The method of regions starts by identifying distinct scalings inside a loop integral, so the loop-integration geometry has to be explicit.
+  failure_mode_if_absent: Cannot specify which integration variables are being assigned hard, soft, collinear, or potential scaling.
+  evidence:
+    - type: expert_claim
+      source_ref: amplitude_methods_gap_fill_2026-03-27
+      note: Region analysis is matched directly to the existing loop-momentum-integration node.
+  status: asserted
+  confidence: 0.96
+
+- from: qft.dimensional_regularization
+  to: technique.method_of_regions
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: standard_computation
+  rationale: The region expansion is normally justified by summing dimensionally regularized contributions from all relevant scalings, including scaleless cancellations.
+  failure_mode_if_absent: Cannot explain why the separately expanded region integrals can be added consistently without double counting.
+  evidence:
+    - type: expert_claim
+      source_ref: amplitude_methods_gap_fill_2026-03-27
+      note: Standard region methods in the graph sit inside the existing dimensional-regularization branch.
+  status: asserted
+  confidence: 0.95
+
+- from: qft.unitarity_cutting_rules
+  to: technique.reverse_unitarity
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: standard_computation
+  rationale: Reverse unitarity takes the cut-propagator logic of ordinary cutting rules and reuses it inside integral-reduction machinery.
+  failure_mode_if_absent: Cannot see why phase-space constraints are allowed to be rewritten as cut denominators at all.
+  evidence:
+    - type: expert_claim
+      source_ref: amplitude_methods_gap_fill_2026-03-27
+      note: The method is attached directly to the existing unitarity-cutting-rules node.
+  status: asserted
+  confidence: 0.95
+
+- from: qft.lorentz_invariant_phase_space
+  to: technique.reverse_unitarity
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: standard_computation
+  rationale: Reverse unitarity is used for inclusive observables precisely because it converts phase-space measures into cut-integral objects.
+  failure_mode_if_absent: Cannot identify what observable-side integral is being rewritten into a loop-style representation.
+  evidence:
+    - type: expert_claim
+      source_ref: amplitude_methods_gap_fill_2026-03-27
+      note: Existing Lorentz-invariant phase space is the authored match for the inclusive-measure ingredient.
+  status: asserted
+  confidence: 0.95
+
+- from: analysis.distributions.dirac_delta_distribution
+  to: technique.reverse_unitarity
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: standard_computation
+  rationale: The rewriting hinges on distribution identities that turn on-shell delta functions into cut-propagator expressions.
+  failure_mode_if_absent: Cannot justify the replacement of phase-space delta functions by algebraic cut-propagator factors.
+  evidence:
+    - type: expert_claim
+      source_ref: amplitude_methods_gap_fill_2026-03-27
+      note: The graph's existing Dirac-delta node captures the distribution-theory ingredient of reverse unitarity.
+  status: asserted
+  confidence: 0.93
+
+- from: complex_analysis.residue_theorem
+  to: technique.mellin_barnes_representation
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: standard_computation
+  rationale: Mellin-Barnes representations are evaluated by closing contours and summing residues of gamma-function poles.
+  failure_mode_if_absent: Cannot carry out the contour step that turns the representation into convergent series or asymptotic expansions.
+  evidence:
+    - type: expert_claim
+      source_ref: amplitude_methods_gap_fill_2026-03-27
+      note: The graph already has a reusable residue-theorem node for contour-based evaluation.
+  status: asserted
+  confidence: 0.96
+
+- from: qft.analytic_continuation_in_kinematic_invariants
+  to: technique.mellin_barnes_representation
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: standard_computation
+  rationale: Mellin-Barnes contours and residue sums are organized by analytic continuation in parameters and kinematic invariants.
+  failure_mode_if_absent: Cannot track which contour deformations or residue prescriptions correspond to the desired kinematic region.
+  evidence:
+    - type: expert_claim
+      source_ref: amplitude_methods_gap_fill_2026-03-27
+      note: The representation is tied to the existing analytic-continuation node rather than to a paper-specific special-function branch.
+  status: asserted
+  confidence: 0.92
+
+- from: technique.feynman_parametrization
+  to: technique.mellin_barnes_representation
+  relation_type: requires_for_use
+  necessity: typical
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: standard_computation
+  rationale: A standard route to a Mellin-Barnes representation is to introduce it after Feynman parameters combine denominators into a single polynomial structure.
+  failure_mode_if_absent: The method can still be named, but its most common entry point from ordinary loop-integral manipulations is obscured.
+  evidence:
+    - type: expert_claim
+      source_ref: amplitude_methods_gap_fill_2026-03-27
+      note: This edge encodes the usual Feynman-parameter to Mellin-Barnes workflow.
+  status: asserted
+  confidence: 0.86
+
+- from: qft.feynman_propagator
+  to: technique.feynman_parametrization
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: standard_computation
+  rationale: Feynman parametrization combines propagator denominators, so the propagator object is the local starting point of the method.
+  failure_mode_if_absent: Cannot identify what denominators are being combined into a single parameter integral.
+  evidence:
+    - type: expert_claim
+      source_ref: amplitude_methods_gap_fill_2026-03-27
+      note: The graph already has a reusable Feynman-propagator node for this denominator-combination step.
+  status: asserted
+  confidence: 0.96
+
+- from: qft.loop_momentum_integration_structure
+  to: technique.feynman_parametrization
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: standard_computation
+  rationale: The payoff of Feynman parameters is to simplify the coupled loop-momentum integration after the denominators are merged.
+  failure_mode_if_absent: Cannot see why introducing the parameter integrals helps the original loop integral.
+  evidence:
+    - type: expert_claim
+      source_ref: amplitude_methods_gap_fill_2026-03-27
+      note: The parameterization is attached to the existing loop-integration-structure node rather than to a narrow one-loop example.
+  status: asserted
+  confidence: 0.94
+
+- from: qft.feynman_propagator
+  to: technique.alpha_parametrization
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: standard_computation
+  rationale: Alpha parametrization begins by exponentiating propagator denominators with Schwinger parameters.
+  failure_mode_if_absent: Cannot tell what object is being exponentiated into the alpha-parameter integral.
+  evidence:
+    - type: expert_claim
+      source_ref: amplitude_methods_gap_fill_2026-03-27
+      note: The existing Feynman-propagator node is the direct authored prerequisite for Schwinger-parameter introduction.
+  status: asserted
+  confidence: 0.96
+
+- from: qft.loop_momentum_integration_structure
+  to: technique.alpha_parametrization
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: standard_computation
+  rationale: The alpha representation is useful because it reorganizes the full loop-integration problem into parameter integrals with polynomial graph data.
+  failure_mode_if_absent: Cannot interpret the parameter representation as a transformed version of the original loop integral.
+  evidence:
+    - type: expert_claim
+      source_ref: amplitude_methods_gap_fill_2026-03-27
+      note: The representation is grounded in the existing loop-momentum-integration node.
+  status: asserted
+  confidence: 0.93
+
+- from: qft.dimensional_regularization
+  to: technique.generic_sector_decomposition
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: standard_computation
+  rationale: Sector decomposition is designed to expose the epsilon-pole structure of dimensionally regularized parameter integrals.
+  failure_mode_if_absent: Cannot interpret the isolated singular factors as the poles of a regulated expansion.
+  evidence:
+    - type: expert_claim
+      source_ref: amplitude_methods_gap_fill_2026-03-27
+      note: The method is matched to the existing dimensional-regularization node because epsilon expansion is central to its use.
+  status: asserted
+  confidence: 0.96
+
+- from: qft.ultraviolet_divergence
+  to: technique.generic_sector_decomposition
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: standard_computation
+  rationale: One core purpose of sector decomposition is to separate overlapping singular regions so ultraviolet poles can be factorized cleanly.
+  failure_mode_if_absent: Cannot tell what singular behavior the recursive partitioning is trying to isolate.
+  evidence:
+    - type: expert_claim
+      source_ref: amplitude_methods_gap_fill_2026-03-27
+      note: Existing ultraviolet-divergence language supplies the singularity problem the method addresses.
+  status: asserted
+  confidence: 0.92
+
+- from: technique.feynman_parametrization
+  to: technique.generic_sector_decomposition
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: standard_computation
+  rationale: Generic sector decomposition acts on a parameter-space representation of the integral, most commonly the Feynman-parameter form.
+  failure_mode_if_absent: Cannot identify which parameter-space polynomial structure is being recursively partitioned into sectors.
+  evidence:
+    - type: expert_claim
+      source_ref: amplitude_methods_gap_fill_2026-03-27
+      note: This edge encodes the standard parameterization-before-decomposition workflow.
+  status: asserted
+  confidence: 0.95
+
+- from: qft.unitarity_cutting_rules
+  to: technique.cutkosky_rules
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: standard_computation
+  rationale: Cutkosky rules are the canonical propagator-replacement implementation of unitarity cutting for amplitude discontinuities.
+  failure_mode_if_absent: Cannot see how the specific cut-propagator replacement rule fits inside the broader cutting formalism already present in the graph.
+  evidence:
+    - type: expert_claim
+      source_ref: amplitude_methods_gap_fill_2026-03-27
+      note: The new Cutkosky node is deliberately specialized from the existing unitarity-cutting-rules node.
+  status: asserted
+  confidence: 0.97
+
+- from: qft.distributional_boundary_values
+  to: technique.cutkosky_rules
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: standard_computation
+  rationale: The Cutkosky replacement of propagators by on-shell delta functions is a boundary-value identity in distributional form.
+  failure_mode_if_absent: Cannot justify the minus i0 versus plus i0 subtraction that produces the delta-supported cut contribution.
+  evidence:
+    - type: expert_claim
+      source_ref: amplitude_methods_gap_fill_2026-03-27
+      note: Existing distributional-boundary-value language is the authored prerequisite for the cut identity.
+  status: asserted
+  confidence: 0.96
+
+- from: qft.optical_theorem
+  to: technique.cutkosky_rules
+  relation_type: requires_for_recognize
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: standard_computation
+  rationale: The optical theorem is the simplest theorem-level motivation for why amplitude discontinuities are tied to on-shell cuts.
+  failure_mode_if_absent: The rules can still be applied mechanically, but their relation to a familiar unitarity statement stays opaque.
+  evidence:
+    - type: expert_claim
+      source_ref: amplitude_methods_gap_fill_2026-03-27
+      note: This edge anchors the Cutkosky node back to the existing optical-theorem branch.
+  status: asserted
+  confidence: 0.86

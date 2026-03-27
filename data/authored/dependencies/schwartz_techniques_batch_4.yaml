@@ -1,0 +1,626 @@
+# Hand-authored dependency edges for Schwartz techniques batch 4.
+# Format: from = prerequisite, to = downstream technique.
+
+- from: qcd.collinear_factorization
+  to: technique.junipr_probabilistic_jet_model
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: JUNIPR models a jet as a sequence of resolved branchings along a clustering tree; collinear-factorization structure is the closest existing graph prerequisite for making that sequential branching picture physically meaningful.
+  failure_mode_if_absent: The model can still be treated as a black-box density estimator, but its intended interpretation as a structured jet-evolution method is no longer grounded in the graph.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_4
+      note: Collinear-factorization structure is the strongest existing authored prerequisite for the JUNIPR branching-tree construction.
+  status: asserted
+
+- from: qft.cross_section
+  to: technique.kinematic_quark_gluon_purification
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The purification strategy starts from how different processes populate quark and gluon channels in their partonic cross sections, then chooses cuts that enhance the desired component.
+  failure_mode_if_absent: Cannot justify why gamma+jets, multijet, or ordered-jet selections should enrich a given flavor sample without reasoning from process cross sections.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_4
+      note: The method exploits process-dependent cross-section composition to purify quark and gluon jet samples.
+  status: asserted
+
+- from: qcd.parton_distribution_function
+  to: technique.kinematic_quark_gluon_purification
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Parton-distribution flavor content controls which initial states dominate in the candidate purification channels and therefore which jet flavor is preferentially produced.
+  failure_mode_if_absent: Cannot predict which hadronic processes and kinematic regions are quark-rich or gluon-rich without the PDF-driven flavor composition.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_4
+      note: PDF flavor composition is part of the purification logic for selecting quark-enriched and gluon-enriched samples.
+  status: asserted
+
+- from: relativity.rapidity
+  to: technique.kinematic_quark_gluon_purification
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The method sharpens purification by cutting on central-versus-forward jet placement, which is operationally expressed through rapidity differences.
+  failure_mode_if_absent: Cannot implement the key centrality cuts that further improve quark or gluon purity without the rapidity variable.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_4
+      note: Rapidity cuts are one of the explicit kinematic handles used in the purification procedure.
+  status: asserted
+
+- from: qft.landau_singularity_conditions
+  to: technique.landau_bootstrap
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The Landau bootstrap begins by locating singular loci from Landau equations before any alphabet or ansatz constraints are imposed.
+  failure_mode_if_absent: The bootstrap loses its starting point for identifying where the integral can become singular and cannot organize the rest of the constraint chain.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_4
+      note: The first step of the Landau bootstrap is to solve the Landau singularity conditions.
+  status: asserted
+
+- from: qft.symbol_calculus
+  to: technique.landau_bootstrap
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The bootstrap turns singularity information into a function-space ansatz and symbol-entry constraints, so symbol calculus is a direct existing prerequisite.
+  failure_mode_if_absent: Cannot encode first-entry conditions, sequential-discontinuity constraints, or the final symbol-level ansatz without symbol technology.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_4
+      note: Symbol-level constraints are central to the Landau-bootstrap workflow.
+  status: asserted
+
+- from: qft.iterated_integral
+  to: technique.landau_bootstrap
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The bootstrap constrains an iterated-integral function space rather than an arbitrary analytic ansatz, so the iterated-integral basis is part of the method itself.
+  failure_mode_if_absent: Even with the singular loci known, there is no usable polylogarithmic function space to constrain and solve for.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_4
+      note: The Landau bootstrap fixes Feynman integrals inside an iterated-integral function space.
+  status: asserted
+
+- from: qft.steinmann_relations
+  to: technique.landau_bootstrap
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Sequential discontinuity restrictions, including Steinmann-type constraints, are one of the main filters that collapse the bootstrap ansatz.
+  failure_mode_if_absent: The bootstrap remains substantially underconstrained because overlapping-channel discontinuity exclusions cannot be imposed.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_4
+      note: Steinmann relations are an explicit prerequisite in the singularity-based bootstrap strategy.
+  status: asserted
+
+- from: qft.landau_singularity_conditions
+  to: technique.landau_bootstrap_complement
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The complementary workflow still uses Landau analysis to determine the alphabet and admissible function space before regression fixes coefficients.
+  failure_mode_if_absent: The top-down half of the hybrid method disappears and the regression stage no longer knows which analytic letters or branch structure to fit.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_4
+      note: Landau analysis supplies the function-space side of the bootstrap-regression complement.
+  status: asserted
+
+- from: qft.symbol_calculus
+  to: technique.landau_bootstrap_complement
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Once the singularity alphabet is known, the hybrid method needs an integrable symbol construction to define the admissible ansatz before lattice reduction or numerical fitting is useful.
+  failure_mode_if_absent: The regression step has no properly constrained analytic basis to solve for, so the complement loses its top-down control.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_4
+      note: Integrable symbol construction is the authored-graph prerequisite that connects the bootstrap half to the regression half.
+  status: asserted
+
+- from: qft.landau_singularity_conditions
+  to: technique.landau_symbol_constraints
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The method begins with Landau singular loci and their local exponents, then translates that singular data into constraints on allowed symbol entries.
+  failure_mode_if_absent: There is no Landau-side input from which to infer where a symbol letter vanishes or what singular power counting it must reproduce.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_4
+      note: Landau singularity conditions are the analytic starting point for the symbol-position constraint method.
+  status: asserted
+
+- from: qft.symbol_calculus
+  to: technique.landau_symbol_constraints
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The result constrains which letters can appear in a symbol and at what depth, so symbol calculus is directly the representation being controlled.
+  failure_mode_if_absent: The statement about entry positions and allowed letters cannot even be formulated inside the graph without the symbol representation.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_4
+      note: The technique is explicitly a Landau-to-symbol constraint.
+  status: asserted
+
+- from: qft.iterated_integral
+  to: technique.landau_symbol_constraints
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The argument relates Landau exponent data to the singular behavior of iterated integrals, with symbol entry depth serving as the bookkeeping device.
+  failure_mode_if_absent: Cannot interpret the symbol-entry position as a statement about actual integral behavior near the singular locus.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_4
+      note: Iterated-integral behavior is the functional side of the Landau-symbol constraint relation.
+  status: asserted
+
+- from: qft.landau_singularity_conditions
+  to: technique.lattice_reduction_analytic_regression
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The regression method assumes that Landau analysis or similar input has already identified the alphabet and therefore the correct analytic basis to fit.
+  failure_mode_if_absent: High-precision numerics alone do not determine which functional letters or branch structure the lattice reduction should target.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_4
+      note: Landau analysis is part of the prerequisite chain for basis construction in analytic regression.
+  status: asserted
+
+- from: qft.iterated_integral
+  to: technique.lattice_reduction_analytic_regression
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The regression step expands the target integral in a known generalized-polylogarithmic basis, which the existing graph captures through iterated integrals.
+  failure_mode_if_absent: Lattice reduction can recover rational relations only after a concrete transcendental basis has been specified.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_4
+      note: The analytic-regression method fits coefficients of an iterated-integral basis.
+  status: asserted
+
+- from: qft.ward_takahashi_identity
+  to: technique.lightcone_gauge_numerator_suppression
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The numerator suppression is a collinear Ward-identity argument in physical gauge, so the Ward-Takahashi identity is the nearest existing authored prerequisite.
+  failure_mode_if_absent: The claimed cancellation of leading collinear numerator contributions becomes an unexplained diagrammatic rule rather than a justified power-counting statement.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_4
+      note: The technique is explicitly framed as a collinear Ward-identity suppression argument.
+  status: asserted
+
+- from: eft.glauber_mode
+  to: technique.lipatov_vertex_factorization_violation
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The method singles out graphs where soft radiation couples to Glauber exchange, so the existing Glauber-mode node is the direct SCET-side prerequisite.
+  failure_mode_if_absent: Cannot identify which exchanges are being isolated as the carriers of factorization violation.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_4
+      note: Glauber exchange is one of the defining ingredients in the Lipatov-vertex factorization-violation criterion.
+  status: asserted
+
+- from: qft.anomalous_dimension
+  to: technique.lipatov_vertex_factorization_violation
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Schwartz's argument depends on scale invariance being broken by the quantum anomalous dimension, which prevents the cancellation that removes pure ladder graphs.
+  failure_mode_if_absent: Cannot explain why the dangerous graph class survives instead of canceling once real soft radiation is included.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_4
+      note: The non-cancellation mechanism is tied to the anomalous-dimension breaking of scale invariance.
+  status: asserted
+
+- from: qm.wkb_approximation
+  to: technique.local_energy_cutoff_for_holography
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The local-cutoff argument counts modes semiclassically in curved space, which is the exact role played by the WKB approximation in the paper-level derivation.
+  failure_mode_if_absent: Cannot turn the local energy bound into a controlled density-of-states estimate for entropy scaling.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_4
+      note: WKB mode counting is the existing authored prerequisite for the local-energy cutoff construction.
+  status: asserted
+
+- from: qft.partial_wave_unitarity_bound
+  to: technique.loss_landscape_existence_proxy
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The proposed ML proxy tests whether a modulus is compatible with elastic-scattering unitarity, and the partial-wave unitarity bound is the existing graph's operational handle on that constraint class.
+  failure_mode_if_absent: A low or high training loss cannot be interpreted as evidence for or against amplitude existence if the underlying unitarity condition is not already in view.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_4
+      note: The loss proxy is meaningful only relative to established unitarity bounds on elastic scattering.
+  status: asserted
+
+- from: eft.soft_collinear_effective_theory
+  to: technique.mc_hard_function_scet_convolution
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The hybrid method is explicitly an SCET factorization-and-resummation pipeline whose analytic half is built inside soft-collinear effective theory.
+  failure_mode_if_absent: The Monte Carlo hard function has nothing structured to convolve with once the SCET factorized kernel is removed.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_4
+      note: SCET is the analytic framework that makes the hard-function plus resummed-kernel hybrid possible.
+  status: asserted
+
+- from: eft.hard_function
+  to: technique.mc_hard_function_scet_convolution
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The event-generator side of the hybrid prediction furnishes the hard function point by point in phase space, so the hard-function object is a direct prerequisite.
+  failure_mode_if_absent: There is no well-defined quantity to import from MadGraph and multiply by the resummed SCET kernel.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_4
+      note: The technique starts by exporting or sampling the hard function from the Monte Carlo side.
+  status: asserted
+
+- from: eft.jet_function
+  to: technique.mc_hard_function_scet_convolution
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Jet functions are one of the analytic ingredients in the SCET kernel evaluated for each sampled event.
+  failure_mode_if_absent: The supposedly resummed kernel is incomplete because one of its main factorized ingredients is missing.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_4
+      note: Jet functions are named explicitly among the SCET ingredients in the hybrid convolution method.
+  status: asserted
+
+- from: eft.soft_function
+  to: technique.mc_hard_function_scet_convolution
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The hybrid kernel also depends on the soft function, whose color structure and scale evolution are part of the analytic resummation layer.
+  failure_mode_if_absent: Soft wide-angle radiation is left out of the convolved kernel, so the method no longer matches the stated SCET factorization theorem.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_4
+      note: Soft functions are explicit pieces of the analytic SCET convolution.
+  status: asserted
+
+- from: qft.anomalous_dimension
+  to: technique.mc_hard_function_scet_convolution
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The resummed kernel evolves through RG anomalous dimensions, especially when color mixing is retained across hard and soft sectors.
+  failure_mode_if_absent: Cannot carry the sampled hard function between scales or assemble the stated NLL-style evolution kernels.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_4
+      note: RG anomalous dimensions are part of the analytic side of the Monte Carlo plus SCET hybrid.
+  status: asserted
+
+- from: qft.r_xi_gauge
+  to: technique.mixed_position_momentum_propagators
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The mixed-space propagator is derived in an R_xi gauge, so the authored R_xi-gauge node is the direct gauge-fixing prerequisite that anchors the method.
+  failure_mode_if_absent: The propagator equation and its boundary-condition structure lose the gauge-choice context that defines them.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_4
+      note: R_xi gauge fixing is the existing graph node that maps onto the mixed-space AdS5 propagator construction.
+  status: asserted
+
+- from: complex_analysis.contour_deformation
+  to: technique.ml_contour_deformation_loop_integrals
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The ML method does not replace contour deformation; it optimizes it. The complex-analysis contour-deformation node is therefore the direct prerequisite already present in the graph.
+  failure_mode_if_absent: The learned normalizing flow becomes an opaque numerical trick with no analytic notion of what is being deformed or why the deformation is allowed.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_4
+      note: The machine-learning improvement is explicitly an optimization of contour deformation, not a different analytic procedure.
+  status: asserted
+
+- from: qcd.parton_distribution_function
+  to: technique.momentum_weighted_jet_charge
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: One of the method's main payoffs is interpreting rapidity-dependent jet-charge measurements in terms of changing quark-flavor fractions, which requires PDFs.
+  failure_mode_if_absent: The observable can be measured, but its connection to initiating-parton flavor composition across phase space is not controlled.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_4
+      note: PDF flavor fractions are an explicit prerequisite for using momentum-weighted jet charge as a flavor-sensitive probe.
+  status: asserted
+
+- from: qft.thrust
+  to: technique.multi_event_shape_soft_function_probe
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The probing strategy uses thrust as one of the specific event-shape projections through which the hemisphere soft function is sampled.
+  failure_mode_if_absent: One of the main low-dimensional projections used to constrain the soft function is unavailable, leaving the fit underinformed.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_4
+      note: Thrust is one of the explicit observables used to constrain the soft function in the multi-event-shape method.
+  status: asserted
+
+- from: qft.heavy_jet_mass
+  to: technique.multi_event_shape_soft_function_probe
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Heavy jet mass supplies a different projection of the same soft function, which is precisely why combining it with thrust gives additional functional information.
+  failure_mode_if_absent: The method loses the complementary event-shape projection that distinguishes the full soft-function shape from a single-point evaluation.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_4
+      note: Heavy jet mass is the second named projection that makes the soft-function reconstruction nontrivial.
+  status: asserted
+
+- from: eft.hard_function
+  to: technique.multi_scale_uncertainty_band
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The coordinated scale-variation prescription assigns one of its natural scales to the hard function and varies it in a controlled correlated way.
+  failure_mode_if_absent: There is no hard-sector scale to anchor one end of the multi-scale uncertainty envelope.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_4
+      note: The hard function is one of the explicitly varied ingredients in the multi-scale band procedure.
+  status: asserted
+
+- from: eft.jet_function
+  to: technique.multi_scale_uncertainty_band
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The method varies the jet scale in concert with the hard and soft scales rather than independently, so the jet function is one of the core prerequisite objects.
+  failure_mode_if_absent: Cannot define the correlated and anti-correlated scale motions that the method uses to preserve EFT hierarchies.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_4
+      note: The jet function carries one of the central scales in the coordinated-variation prescription.
+  status: asserted
+
+- from: eft.soft_function
+  to: technique.multi_scale_uncertainty_band
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The anti-correlated variation pattern is designed to probe the hard-to-soft hierarchy without moving into unphysical orderings, so the soft function is indispensable to the construction.
+  failure_mode_if_absent: The uncertainty estimate no longer tests the soft-scale sensitivity that the method was designed to preserve.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_4
+      note: The soft function is one of the explicitly scaled sectors in the correlated-band method.
+  status: asserted
+
+- from: qft.bphz_renormalization
+  to: technique.multiplicative_vs_bphz_renormalization_subsets
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The technique explicitly compares BPHZ subtraction against multiplicative renormalization when only restricted diagram families are kept.
+  failure_mode_if_absent: Half of the comparison is undefined, so the question of agreement or disagreement across diagram subsets cannot even be posed.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_4
+      note: BPHZ renormalization is named directly in the subset-comparison technique.
+  status: asserted
+
+- from: qft.callan_symanzik_equation
+  to: technique.multiplicative_vs_bphz_renormalization_subsets
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The equivalence test is organized around whether a consistent renormalization-group equation survives for the chosen graph subset, which the graph already captures through the Callan-Symanzik equation.
+  failure_mode_if_absent: Cannot judge whether a restricted graph family supports the same RG structure in the two renormalization schemes.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_4
+      note: Callan-Symanzik structure is one of the explicit prerequisites for comparing multiplicative and BPHZ renormalization on subsets.
+  status: asserted
+
+- from: qft.schwinger_dyson_equation
+  to: technique.multiplicative_vs_bphz_renormalization_subsets
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The paper-level comparison is carried out on special Schwinger-Dyson graph classes such as chains, Hopf graphs, and rainbows.
+  failure_mode_if_absent: The restricted diagram ensembles under discussion lose their defining equation-level organization.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_4
+      note: Schwinger-Dyson equations organize the graph subsets whose renormalization equivalence is being tested.
+  status: asserted
+
+- from: qcd.color_su3
+  to: technique.narrow_gluinonium_annihilation
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The method distinguishes singlet, symmetric-octet, and antisymmetric-octet annihilation channels, so SU(3) color decomposition is a direct prerequisite.
+  failure_mode_if_absent: Cannot assign the correct color factors or channel symmetries for the bound-state annihilation signals.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_4
+      note: SU(3) color structure is one of the explicit ingredients in the narrow-gluinonium method.
+  status: asserted
+
+- from: qft.narrow_width_approximation
+  to: technique.narrow_gluinonium_annihilation
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The entire discovery-channel argument assumes the bound state can be treated as a narrow resonance whose production and annihilation factorize.
+  failure_mode_if_absent: The factorized resonance picture that turns the bound state into a clean dijet or tt signal no longer applies.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_4
+      note: The narrow-width approximation is explicitly part of the gluinonium discovery-channel setup.
+  status: asserted
+
+- from: qft.anomalous_dimension
+  to: technique.natural_color_diagonal_basis
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The diagonalization target is the color-mixing anomalous-dimension matrix that governs RG evolution of the Wilson coefficients.
+  failure_mode_if_absent: There is no evolution matrix to diagonalize, so the method's main simplification target disappears.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_4
+      note: Anomalous-dimension matrices are explicitly the objects being diagonalized in the natural-color-basis method.
+  status: asserted
+
+- from: qcd.color_su3
+  to: technique.natural_color_diagonal_basis
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The basis change lives in color space for multi-parton QCD amplitudes, so SU(3) color structure is part of the prerequisite language.
+  failure_mode_if_absent: The eigenvectors lose their physical interpretation as color channels in the hard and soft evolution problem.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_4
+      note: The diagonal basis is a basis in QCD color space.
+  status: asserted
+
+- from: math.operator_basics.eigenvalues_and_eigenvectors
+  to: technique.natural_color_diagonal_basis
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The method is concretely an eigenvector decomposition of the color-mixing matrix, so eigenvalues and eigenvectors are the exact existing mathematical prerequisite.
+  failure_mode_if_absent: Cannot construct the diagonal basis that turns coupled color evolution into independent channels.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_4
+      note: Eigenvalue decomposition is the mathematical step that defines the natural color basis.
+  status: asserted
+
+- from: eft.hard_function
+  to: technique.natural_scale_selection_via_extrema
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: One part of the scale-setting rule is to find the extremum of the hard contribution and interpret that scale as the natural hard scale.
+  failure_mode_if_absent: The method loses one of the three sector-by-sector extrema that define its scale choices.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_4
+      note: The hard function is one of the explicitly extremized SCET ingredients.
+  status: asserted
+
+- from: eft.jet_function
+  to: technique.natural_scale_selection_via_extrema
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The jet-function contribution is scanned for its extremum to define the natural jet scale in the factorized cross section.
+  failure_mode_if_absent: There is no principled way to extract the jet-scale part of the natural-scale prescription.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_4
+      note: The jet-function extremum is one of the defining steps in the natural-scale method.
+  status: asserted
+
+- from: eft.soft_function
+  to: technique.natural_scale_selection_via_extrema
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The soft contribution has its own extremum and participates in the seesaw relation linking the hard, jet, and soft scales.
+  failure_mode_if_absent: The low-scale endpoint of the natural-scale prescription cannot be identified or related to the other sectors.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_4
+      note: The soft-function extremum is one of the explicit outputs of the natural-scale scan.
+  status: asserted
+
+- from: qft.renormalization_group_equation
+  to: technique.natural_scale_selection_via_extrema
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The extrema are meaningful only because RG evolution relates these sector functions across scale choices and exposes sensitivity to higher-order logarithms.
+  failure_mode_if_absent: The scale scan becomes a disconnected numerical exercise rather than a controlled renormalization-group prescription.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_4
+      note: Renormalization-group evolution is the existing graph prerequisite that makes the extremum-based scale choice principled.
+  status: asserted
+
+- from: eft.large_logarithm_resummation
+  to: technique.negative_power_correction_evidence
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The whole point of the technique is that the trijet power correction can only be extracted reliably once the shoulder logarithms have been resummed.
+  failure_mode_if_absent: The fitted shift parameter acquires the wrong sign or meaning because the dominant shoulder logarithms are still untreated.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_4
+      note: Shoulder resummation is the precondition for a meaningful trijet power-correction fit.
+  status: asserted
+
+- from: eft.operator_expansion
+  to: technique.negative_power_correction_evidence
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Introducing a dedicated nonperturbative shift parameter for the shoulder region is an operator-expansion style move that separates perturbative and power-suppressed effects.
+  failure_mode_if_absent: The fitted parameter lacks a clear interpretation as a controlled power correction rather than an arbitrary shape adjustment.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_4
+      note: Power-correction language in the shoulder region maps onto the existing operator-expansion node.
+  status: asserted
+
+- from: qft.renormalon
+  to: technique.negative_power_correction_evidence
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The R-gap subtraction ingredient is a renormalon-subtraction scheme, so the existing renormalon node is the graph's closest prerequisite for that part of the method.
+  failure_mode_if_absent: The subtraction scheme used to define the fitted nonperturbative parameter is left unmotivated and disconnected from the perturbative ambiguity it is removing.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_4
+      note: The R-gap piece of the shoulder power-correction method is renormalon-driven.
+  status: asserted

@@ -1,0 +1,1169 @@
+- from: technique.soft_drop_grooming
+  to: technique.soft_drop_grooming_mass_stabilization
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Soft-drop mass stabilization directly applies the soft drop algorithm after calibration to remove soft wide-angle contamination.
+  failure_mode_if_absent: Without the grooming algorithm the stabilization step has no defined way to suppress underlying-event sensitivity in top jets.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Soft-drop mass stabilization directly applies the soft drop algorithm after calibration to remove soft wide-angle contamination.
+  status: asserted
+
+- from: technique.vf_mode_background_filtering
+  to: technique.soft_flare_spectral_template
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Very Faint mode cleaning removes particle events before the residual low-level soft flare component is modeled with a spectral template.
+  failure_mode_if_absent: Without VF cleaning the template fit mixes particle background with residual flare contamination and misattributes the soft excess.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Very Faint mode cleaning removes particle events before the residual low-level soft flare component is modeled with a spectral template.
+  status: asserted
+
+- from: technique.source_coupled_hmchpt_for_threshold_production
+  to: technique.soft_pion_window_for_axial_coupling_extraction
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The soft-pion window is chosen by checking where the source-coupled heavy-meson chiral EFT remains reliable near threshold.
+  failure_mode_if_absent: Without the EFT description the selected pion-energy region is not tied to a controlled extraction of the B-star-B-pi coupling.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: The soft-pion window is chosen by checking where the source-coupled heavy-meson chiral EFT remains reliable near threshold.
+  status: asserted
+
+- from: technique.w_mass_calibration_soft_drop
+  to: technique.sorted_ensemble_regression
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Sorted-ensemble regression is applied to calibrated and groomed reconstructed-mass distributions whose shape encodes tune-sensitive information.
+  failure_mode_if_absent: Without a stable calibrated input distribution the sorted vector no longer isolates the mass-shape information the regression is meant to learn.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Sorted-ensemble regression is applied to calibrated and groomed reconstructed-mass distributions whose shape encodes tune-sensitive information.
+  status: asserted
+
+- from: technique.orthonormal_weight_embedding_for_su_n
+  to: technique.sp2n_root_and_weight_construction
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The Sp 2n construction starts by extending the orthonormal weight embedding already used for SU n.
+  failure_mode_if_absent: Without the embedding the long and short roots and the fundamental weights of Sp 2n cannot be read off systematically.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: The Sp 2n construction starts by extending the orthonormal weight embedding already used for SU n.
+  status: asserted
+
+- from: technique.sp2n_root_and_weight_construction
+  to: technique.sp2n_tensor_calculus_with_symplectic_form
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The tensor calculus uses the Sp 2n representation structure whose fundamental and adjoint content is fixed by the root and weight system.
+  failure_mode_if_absent: Without the root and weight construction the decomposition of D1 times D1 and the identification of the adjoint are opaque.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: The tensor calculus uses the Sp 2n representation structure whose fundamental and adjoint content is fixed by the root and weight system.
+  status: asserted
+
+- from: technique.su3_fundamental_weight_solver
+  to: technique.spin_flavor_su6_embedding
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The SU 6 embedding treats flavor as the fundamental SU 3 triplet inside the larger spin-flavor multiplet.
+  failure_mode_if_absent: Without the SU 3 fundamental weight structure the flavor part of the SU 6 embedding is unspecified.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: The SU 6 embedding treats flavor as the fundamental SU 3 triplet inside the larger spin-flavor multiplet.
+  status: asserted
+
+- from: technique.super_jacobi_identity_method
+  to: technique.state_pairing_and_vacuum_energy_criterion
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: State pairing and the vacuum-energy criterion are derived from the structure of the supersymmetry algebra, which the super Jacobi method organizes consistently.
+  failure_mode_if_absent: Without control of the superalgebra relations the boson-fermion pairing argument and the vacuum-energy test are not justified.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: State pairing and the vacuum-energy criterion are derived from the structure of the supersymmetry algebra, which the super Jacobi method organizes consistently.
+  status: asserted
+
+- from: technique.stealth_portal_catalog
+  to: technique.stealth_hidden_valley_cascade_modeling
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Cascade modeling needs a concrete menu of portal couplings that connect visible superpartners to the stealth sector.
+  failure_mode_if_absent: Without an explicit portal choice the cascade chain from MSSM states into the hidden sector is underspecified.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Cascade modeling needs a concrete menu of portal couplings that connect visible superpartners to the stealth sector.
+  status: asserted
+
+- from: technique.singlet_portal_stealth_construction
+  to: technique.stealth_portal_catalog
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The portal catalog generalizes concrete portal constructions such as the singlet portal into a reusable design space.
+  failure_mode_if_absent: Without at least one worked portal construction the catalog loses the structural criteria that distinguish viable stealth couplings.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: The portal catalog generalizes concrete portal constructions such as the singlet portal into a reusable design space.
+  status: asserted
+
+- from: technique.high_scale_stealth_sequestering
+  to: technique.stealth_sector_small_splitting
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: High-scale sequestering is what protects the tiny boson-fermion splittings needed in a near-supersymmetric stealth sector.
+  failure_mode_if_absent: Without that protection mediation effects naturally spoil the small hidden-sector mass splittings.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: High-scale sequestering is what protects the tiny boson-fermion splittings needed in a near-supersymmetric stealth sector.
+  status: asserted
+
+- from: qft.parity_transformation
+  to: technique.stiefel_whitney_domain_wall_duality
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The domain-wall duality classifies defects of parity itself so the underlying parity symmetry must be identified first.
+  failure_mode_if_absent: Without the parity transformation there is no symmetry defect whose Stiefel-Whitney class can be tracked.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: The domain-wall duality classifies defects of parity itself so the underlying parity symmetry must be identified first.
+  status: asserted
+
+- from: technique.su6_wigner_eckart_magnetic_moments
+  to: technique.strange_quark_mass_breaking_for_magnetic_moments
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Strange-quark mass breaking is introduced as a correction to the SU 6 magnetic-moment relations.
+  failure_mode_if_absent: Without the SU 6 baseline there is no controlled reference prediction to improve by setting ms different from mu and md.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Strange-quark mass breaking is introduced as a correction to the SU 6 magnetic-moment relations.
+  status: asserted
+
+- from: technique.uv_ir_connection_entropy
+  to: technique.strong_coupling_holographic_state_reduction
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The holographic state-reduction argument is a refinement of curved-space state counting and asks which states really contribute once the dual theory is strongly coupled.
+  failure_mode_if_absent: Without a state-counting framework the reduction from naive free-field species to the true asymptotic spectrum has nothing to modify.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: The holographic state-reduction argument is a refinement of curved-space state counting and asks which states really contribute once the dual theory is strongly coupled.
+  status: asserted
+
+- from: technique.disappearing_stub_track_search
+  to: technique.stub_track_search_for_degenerate_higgsinos
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The higgsino search is a specialized stub-track strategy tuned to even shorter chargino tracks in compressed electroweak spectra.
+  failure_mode_if_absent: Without the general stub-track search logic the higgsino-specific selection and acceptance strategy is not grounded.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: The higgsino search is a specialized stub-track strategy tuned to even shorter chargino tracks in compressed electroweak spectra.
+  status: asserted
+
+- from: technique.su2_subalgebra_from_roots
+  to: technique.su2_multiplet_completion_for_roots
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The completion trick works by organizing candidate roots into multiplets of the SU 2 subalgebras associated with simple roots.
+  failure_mode_if_absent: Without those SU 2 subalgebras there is no multiplet structure to complete.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: The completion trick works by organizing candidate roots into multiplets of the SU 2 subalgebras associated with simple roots.
+  status: asserted
+
+- from: technique.defining_weight_root_geometry
+  to: technique.su3_fundamental_weight_solver
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Solving the SU 3 fundamental weights is a direct application of weight-root orthogonality and normalization geometry.
+  failure_mode_if_absent: Without the weight-root geometry the highest-weight equations for the 3 and 3 bar are unmotivated.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Solving the SU 3 fundamental weights is a direct application of weight-root orthogonality and normalization geometry.
+  status: asserted
+
+- from: technique.sublattice_wgc_formulation
+  to: technique.sublattice_splitting_flux_tension_relation
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The splitting versus flux-tension relation quantifies how the sublattice weak-gravity picture fails away from the populated sublattice.
+  failure_mode_if_absent: Without the sublattice WGC baseline the mass-gap and flux-tube-tension diagnostic has no reference notion of allowed superextremal charges.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: The splitting versus flux-tension relation quantifies how the sublattice weak-gravity picture fails away from the populated sublattice.
+  status: asserted
+
+- from: technique.state_pairing_and_vacuum_energy_criterion
+  to: technique.supergravity_vacuum_energy_balance
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The supergravity result is explicitly a modification of the global-supersymmetry vacuum-energy criterion.
+  failure_mode_if_absent: Without the global criterion it is unclear what the supergravity negative contribution is correcting.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: The supergravity result is explicitly a modification of the global-supersymmetry vacuum-energy criterion.
+  status: asserted
+
+- from: technique.fake_superpotential_black_brane_flows
+  to: technique.superpotential_prepotential_method
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The Einstein-dilaton method rewrites second-order background equations as first-order flow equations using a superpotential.
+  failure_mode_if_absent: Without the fake-superpotential flow idea the prepotential reformulation loses its main analytic simplification.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: The Einstein-dilaton method rewrites second-order background equations as first-order flow equations using a superpotential.
+  status: asserted
+
+- from: technique.berezin_superspace_integration
+  to: technique.superspace_integration_by_parts_collapse
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The collapse argument manipulates Grassmann integrals and delta functions inside superspace loop integrals.
+  failure_mode_if_absent: Without Berezin integration rules the derivative shuffling and final theta-collapse cannot be carried out.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: The collapse argument manipulates Grassmann integrals and delta functions inside superspace loop integrals.
+  status: asserted
+
+- from: technique.superspace_integration_by_parts_collapse
+  to: technique.supersymmetric_nonrenormalization
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The integration-by-parts collapse is the diagrammatic step that shows superpotential renormalization reduces to wavefunction factors.
+  failure_mode_if_absent: Without the collapse of loop theta integrals the nonrenormalization structure is not exposed.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: The integration-by-parts collapse is the diagrammatic step that shows superpotential renormalization reduces to wavefunction factors.
+  status: asserted
+
+- from: technique.coupled_isothermal_poisson_jeans_solver
+  to: technique.surface_density_consistency_chi_squared
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The chi-squared test compares observed surface densities to Poisson-Jeans predictions across dark-disk parameters.
+  failure_mode_if_absent: Without the Jeans predictions there is nothing quantitative to put into the consistency statistic.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: The chi-squared test compares observed surface densities to Poisson-Jeans predictions across dark-disk parameters.
+  status: asserted
+
+- from: technique.background_free_llp_search_design
+  to: technique.surface_displaced_vertex_llp_detector
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The dedicated surface LLP detector is the concrete hardware implementation of the near-zero-background surface-search design.
+  failure_mode_if_absent: Without that background-free design principle the detector concept loses the search logic that justifies its large open-air geometry.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: The detector concept is the hardware implementation of the near-zero-background surface-search design.
+  status: asserted
+
+- from: technique.surface_displaced_vertex_llp_detector
+  to: technique.surface_displaced_vertex_llp_search
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The search is defined on top of the dedicated surface detector geometry and acceptance.
+  failure_mode_if_absent: Without the detector concept the displaced-vertex search has no instrumented volume or baseline acceptance model.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: The search is defined on top of the dedicated surface detector geometry and acceptance.
+  status: asserted
+
+- from: technique.generalized_symmetry_and_wgc_phenomenology
+  to: technique.symmetry_based_inference_of_required_branes
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The brane-inference argument applies generalized-symmetry completeness logic to determine what charged objects quantum gravity must contain.
+  failure_mode_if_absent: Without generalized-symmetry reasoning the jump from a missing symmetry-breaking channel to a required brane is unjustified.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: The brane-inference argument applies generalized-symmetry completeness logic to determine what charged objects quantum gravity must contain.
+  status: asserted
+
+- from: classical_fields.continuous_symmetry_of_action
+  to: technique.symmetry_constraint_analysis
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Symmetry constraint analysis starts from the symmetries of the action and tracks how they restrict tensors and divergences.
+  failure_mode_if_absent: Without the symmetry content of the action the allowed structures cannot be narrowed systematically.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Symmetry constraint analysis starts from the symmetries of the action and tracks how they restrict tensors and divergences.
+  status: asserted
+
+- from: technique.multivariate_boosted_w_tagging
+  to: technique.systematic_variable_exploration
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The menu method systematizes the same multivariate collider-variable selection problem that earlier boosted-object taggers addressed more heuristically.
+  failure_mode_if_absent: Without a prior multivariate variable-selection framework the systematic search has no concrete performance target or comparison point.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: The menu method systematizes the same multivariate collider-variable selection problem that earlier boosted-object taggers addressed more heuristically.
+  status: asserted
+
+- from: technique.pseudo_dirac_higgsino_limit
+  to: technique.tanbeta_blind_spot_parity
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The tan beta equals 1 blind spot is a symmetry statement about nearly pure higgsino states in the pseudo-Dirac limit.
+  failure_mode_if_absent: Without the pseudo-Dirac higgsino structure the parity-based coupling zeros are not defined.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: The tan beta equals 1 blind spot is a symmetry statement about nearly pure higgsino states in the pseudo-Dirac limit.
+  status: asserted
+
+- from: qcd.confinement
+  to: technique.technicolor_style_composite_higgs_modeling
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Technicolor-style composite Higgs models borrow the electroweak-breaking mechanism from confinement and chiral symmetry breaking in QCD-like dynamics.
+  failure_mode_if_absent: Without the confining strong-dynamics template the composite-Higgs analogy has no physical basis.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Technicolor-style composite Higgs models borrow the electroweak-breaking mechanism from confinement and chiral symmetry breaking in QCD-like dynamics.
+  status: asserted
+
+- from: technique.qantikt_event_level_sampling
+  to: technique.telescoping_jets_multi_r
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Telescoping jets is a deterministic multiple-interpretation method that builds on the same idea of extracting information from many clustered views of one event.
+  failure_mode_if_absent: Without the multiple-interpretation viewpoint the gain from scanning fixed R values is less well motivated.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Telescoping jets is a deterministic multiple-interpretation method that builds on the same idea of extracting information from many clustered views of one event.
+  status: asserted
+
+- from: technique.template_free_eccentric_snr_formula
+  to: technique.template_cutoff_sensitivity_scan
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The cutoff scan repeatedly recomputes detectability as waveform-template coverage changes and therefore needs a fast eccentric SNR estimate.
+  failure_mode_if_absent: Without a closed SNR scaling the cutoff scan becomes an impractical full-template recalculation each time.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: The cutoff scan repeatedly recomputes detectability as waveform-template coverage changes and therefore needs a fast eccentric SNR estimate.
+  status: asserted
+
+- from: technique.peak_frequency_local_noise_approximation
+  to: technique.template_free_eccentric_snr_formula
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The template-free SNR formula uses detector noise evaluated near the signal peak frequency rather than a full harmonic sum.
+  failure_mode_if_absent: Without the peak-frequency noise approximation the compact eccentric SNR scaling does not close analytically.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: The template-free SNR formula uses detector noise evaluated near the signal peak frequency rather than a full harmonic sum.
+  status: asserted
+
+- from: qft.instanton
+  to: technique.temporal_gauge_tunneling_picture_of_instantons
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The tunneling picture is a reinterpretation of the instanton solution in temporal gauge.
+  failure_mode_if_absent: Without the instanton there is no Euclidean configuration to reinterpret as vacuum tunneling.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: The tunneling picture is a reinterpretation of the instanton solution in temporal gauge.
+  status: asserted
+
+- from: technique.worldsheet_supersymmetry_transformations
+  to: technique.ten_dimensional_iia_iib_heterotic_classification
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The ten-dimensional IIA IIB and heterotic classification is organized by supersymmetry and chirality data inherited from worldsheet-supersymmetric string constructions.
+  failure_mode_if_absent: Without worldsheet supersymmetry the d equals 10 multiplet classification loses its defining superstring structure.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: The ten-dimensional IIA IIB and heterotic classification is organized by supersymmetry and chirality data inherited from worldsheet-supersymmetric string constructions.
+  status: asserted
+
+- from: technique.boltzmann_freezeout_with_asymmetry
+  to: technique.tev_singlet_with_strong_portal
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The strong-portal singlet model is justified by showing that thermal freezeout can still produce the relic abundance at TeV mass.
+  failure_mode_if_absent: Without freezeout bookkeeping the claim that a strong portal keeps a heavy singlet viable is unsupported.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: The strong-portal singlet model is justified by showing that thermal freezeout can still produce the relic abundance at TeV mass.
+  status: asserted
+
+- from: technique.time_dependent_ad_minimum
+  to: technique.thermal_evaporation_survival_criterion
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The evaporation criterion is evaluated along the Affleck-Dine flat-direction trajectory set by the time-dependent minimum.
+  failure_mode_if_absent: Without the evolving condensate background there is no vev history against which to test thermal evaporation.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: The evaporation criterion is evaluated along the Affleck-Dine flat-direction trajectory set by the time-dependent minimum.
+  status: asserted
+
+- from: technique.transfer_rate_estimates_for_higher_dim_operators
+  to: technique.thermal_suppression_at_transfer_freezeout
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Thermal suppression at transfer freezeout is controlled by when the higher-dimension transfer operator decouples relative to the Boltzmann suppression of X.
+  failure_mode_if_absent: Without transfer-rate estimates the required decoupling temperature cannot be located.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Thermal suppression at transfer freezeout is controlled by when the higher-dimension transfer operator decouples relative to the Boltzmann suppression of X.
+  status: asserted
+
+- from: technique.rs_cft_holographic_dictionary
+  to: technique.third_brane_domain_wall_rs_construction
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The third-brane construction is phrased as an extra near-IR threshold in the RS dual picture of conformal symmetry breaking.
+  failure_mode_if_absent: Without the RS CFT dictionary the extra brane or domain wall lacks its intended strong-dynamics interpretation.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: The third-brane construction is phrased as an extra near-IR threshold in the RS dual picture of conformal symmetry breaking.
+  status: asserted
+
+- from: technique.kl_eccentricity_phase_drift_forecast
+  to: technique.tide_vs_gw_sphere_of_influence
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The sphere-of-influence estimate needs a quantitative secular eccentricity-growth rate from an external perturber.
+  failure_mode_if_absent: Without a secular eccentricity-growth model the radius where tides beat gravitational-wave circularization cannot be drawn.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: The sphere-of-influence estimate needs a quantitative secular eccentricity-growth rate from an external perturber.
+  status: asserted
+
+- from: technique.coupled_isothermal_poisson_jeans_solver
+  to: technique.time_averaged_phase_space_probability_for_oscillating_tracers
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The oscillating-tracer likelihood is a non-equilibrium refinement of Jeans-based phase-space inference.
+  failure_mode_if_absent: Without the equilibrium Jeans framework there is no baseline probability description to generalize by time averaging over orbits.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: The oscillating-tracer likelihood is a non-equilibrium refinement of Jeans-based phase-space inference.
+  status: asserted
+
+- from: technique.ch6_heisenberg_correlator_theorem
+  to: technique.time_band_hamiltonian_reconstruction
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Time-band reconstruction uses Heisenberg evolution to move observables through time bands with the boundary Hamiltonian.
+  failure_mode_if_absent: Without Heisenberg evolution the reconstruction map from accessible observables to shifted-time operators is undefined.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Time-band reconstruction uses Heisenberg evolution to move observables through time bands with the boundary Hamiltonian.
+  status: asserted
+
+- from: qft.s_matrix_unitarity
+  to: technique.time_reversal_watson_theorem
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Watsons theorem ties weak amplitudes to strong phases by combining time-reversal reciprocity with unitarity in elastic channels.
+  failure_mode_if_absent: Without S-matrix unitarity the phase-relation part of the theorem does not follow.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Watsons theorem ties weak amplitudes to strong phases by combining time-reversal reciprocity with unitarity in elastic channels.
+  status: asserted
+
+- from: classical_fields.action_functional
+  to: technique.time_slicing_discretization
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Time slicing constructs the path integral by exponentiating the short-time action on each interval.
+  failure_mode_if_absent: Without the action functional the discretized kernel has no weight to integrate.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Time slicing constructs the path integral by exponentiating the short-time action on each interval.
+  status: asserted
+
+- from: technique.timing_geometry_background_veto
+  to: technique.surface_displaced_vertex_llp_search
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The surface LLP search uses the timing-and-geometry veto as one of its specific background-rejection layers.
+  failure_mode_if_absent: Without the timing-and-geometry veto, the surface search loses one of the background-rejection layers targeted to the relevant cosmic and muon backgrounds.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: The timing and geometry veto is one of the specific background-rejection layers used by the surface LLP search.
+  status: asserted
+
+- from: technique.time_band_hamiltonian_reconstruction
+  to: technique.tomita_takesaki_approximate_bulk_localization
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Tomita-Takesaki localization is a more algebraic extension of the same idea that boundary time evolution can recover apparently inaccessible bulk information.
+  failure_mode_if_absent: Without the time-band reconstruction viewpoint the approximate localization claim lacks an operational starting point.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Tomita-Takesaki localization is a more algebraic extension of the same idea that boundary time evolution can recover apparently inaccessible bulk information.
+  status: asserted
+
+- from: technique.dark_disk_toomre_fragmentation
+  to: technique.toomre_scale_patch_selection
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Patch sizes are chosen from the same fastest-growing Toomre fragmentation scale.
+  failure_mode_if_absent: Without the Toomre fragmentation estimate the tidal patch size is arbitrary.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Patch sizes are chosen from the same fastest-growing Toomre fragmentation scale.
+  status: asserted
+
+- from: technique.symmetry_factor_counting
+  to: technique.topological_loop_counting_identities
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Loop-counting identities start from the combinatorics of lines vertices and loops in a Feynman graph.
+  failure_mode_if_absent: Without graph-counting combinatorics the topological relations used to rewrite divergences cannot be assembled.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Loop-counting identities start from the combinatorics of lines vertices and loops in a Feynman graph.
+  status: asserted
+
+- from: technique.systematic_variable_exploration
+  to: technique.topology_driven_cut_optimization
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Topology-driven cut optimization uses the systematic scan of candidate observables to decide which final states and thresholds are worth keeping.
+  failure_mode_if_absent: Without the variable-exploration stage the cut choices revert to ad hoc SUSY selections.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Topology-driven cut optimization uses the systematic scan of candidate observables to decide which final states and thresholds are worth keeping.
+  status: asserted
+
+- from: technique.weak_field_supergravity_action
+  to: technique.torsionful_spin_connection_and_curved_multiplet_calculus
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The curved multiplet calculus extends the weak-field supergravity formalism to gravitino-corrected connections and covariant derivatives.
+  failure_mode_if_absent: Without the weak-field supergravity framework the torsionful spin connection and curved transformation rules have no anchor.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: The curved multiplet calculus extends the weak-field supergravity formalism to gravitino-corrected connections and covariant derivatives.
+  status: asserted
+
+- from: math.operator_basics.eigenvalues_and_eigenvectors
+  to: technique.tortoise_coordinate_frobenius_qnm_solver
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The quasinormal-mode calculation is a spectral boundary-value problem whose complex frequencies are eigenvalues of the radial operator.
+  failure_mode_if_absent: Without an eigenvalue viewpoint the Frobenius recursion has no clear target condition to solve for.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: The quasinormal-mode calculation is a spectral boundary-value problem whose complex frequencies are eigenvalues of the radial operator.
+  status: asserted
+
+- from: technique.parameterized_tpc_digitization
+  to: technique.tpc_cluster_counting_plus_tof_pid
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Cluster counting and PID performance depend on a detailed TPC charge-deposition and digitization model.
+  failure_mode_if_absent: Without TPC digitization the expected dNp over dx resolution and resulting PID reach cannot be quantified.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Cluster counting and PID performance depend on a detailed TPC charge-deposition and digitization model.
+  status: asserted
+
+- from: technique.boundary_partition_of_bulk_holography
+  to: technique.transparent_boundary_condition_as_source_coupling
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The transparent interface is built by explicitly dividing holographic degrees of freedom between coupled boundary sectors.
+  failure_mode_if_absent: Without a boundary-partition picture the source-to-source coupling across the interface is not well defined.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: The transparent interface is built by explicitly dividing holographic degrees of freedom between coupled boundary sectors.
+  status: asserted
+
+- from: complex_analysis.harmonic_function
+  to: technique.two_dimensional_laplace_brane_bending
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The brane-bending approximation is solved by a 2D Laplace equation whose solutions are harmonic functions.
+  failure_mode_if_absent: Without harmonic-function methods the finite-brane bending profile cannot be constructed analytically.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: The brane-bending approximation is solved by a 2D Laplace equation whose solutions are harmonic functions.
+  status: asserted
+
+- from: technique.girth_linear_radial_moment
+  to: technique.two_variable_qg_likelihood
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The two-variable tagger uses girth as one of its two defining inputs.
+  failure_mode_if_absent: Without the girth observable half of the likelihood construction is missing.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: The two-variable tagger uses girth as one of its two defining inputs.
+  status: asserted
+
+- from: technique.transverse_mass_endpoint
+  to: technique.unbinned_likelihood_endpoint_fits
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The unbinned fit extracts masses from the shape near a kinematic endpoint such as the transverse-mass bound.
+  failure_mode_if_absent: Without a well-defined endpoint observable there is no boundary feature to fit.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: The unbinned fit extracts masses from the shape near a kinematic endpoint such as the transverse-mass bound.
+  status: asserted
+
+- from: technique.line_of_sight_projection_with_detection_function
+  to: technique.unbinned_poisson_likelihood_for_stellar_positions
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The infinitesimal-bin Poisson likelihood needs the predicted observational surface density evaluated at each stellar position.
+  failure_mode_if_absent: Without the projected surface-density model the point-process likelihood cannot be formed.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: The infinitesimal-bin Poisson likelihood needs the predicted observational surface density evaluated at each stellar position.
+  status: asserted
+
+- from: technique.unified_product_group_embedding
+  to: technique.unified_dsb_phase_view
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The unified phase view is obtained by seeing several DSB product-group models as vacua inside one parent embedding.
+  failure_mode_if_absent: Without the parent embedding the common origin of the confining dual and instanton-driven phases is lost.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: The unified phase view is obtained by seeing several DSB product-group models as vacua inside one parent embedding.
+  status: asserted
+
+- from: technique.generator_removal_dsb_construction
+  to: technique.unified_product_group_embedding
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The product-group embedding starts from a parent DSB construction and then realizes multiple vacua by adjoint breaking.
+  failure_mode_if_absent: Without a parent DSB construction there is no unified theory to Higgs into the various product-group models.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: The product-group embedding starts from a parent DSB construction and then realizes multiple vacua by adjoint breaking.
+  status: asserted
+
+- from: technique.surface_displaced_vertex_llp_search
+  to: technique.upgrade_and_dedicated_detector_gap_analysis
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Gap analysis needs a concrete benchmark search to identify where lifetime reach is limited by geometry timing or triggers.
+  failure_mode_if_absent: Without an explicit long-lifetime search there is no baseline against which upgrades or dedicated detectors can be compared.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Gap analysis needs a concrete benchmark search to identify where lifetime reach is limited by geometry timing or triggers.
+  status: asserted
+
+- from: technique.gravitational_goldstone_equivalence
+  to: technique.uv_ir_connection_discrete_gravity
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The discrete-gravity UV IR argument is derived by tracking the longitudinal graviton Goldstone modes and their strong coupling.
+  failure_mode_if_absent: Without the gravitational Goldstone description the origin of the strong-coupling scale in the discretized theory stays hidden.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: The discrete-gravity UV IR argument is derived by tracking the longitudinal graviton Goldstone modes and their strong coupling.
+  status: asserted
+
+- from: qed.uehling_potential
+  to: technique.vacuum_polarization_contact_shift
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The contact shift isolates the short-distance bound-state effect generated by vacuum polarization in the Uehling correction.
+  failure_mode_if_absent: Without the vacuum-polarization potential there is no short-distance term to extract.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: The contact shift isolates the short-distance bound-state effect generated by vacuum polarization in the Uehling correction.
+  status: asserted
+
+- from: technique.event_isotropy_via_optimal_transport
+  to: technique.vae_latent_transport_connection
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The VAE diagnostic compares latent distances to Wasserstein transport distances already used in transport-based event geometry.
+  failure_mode_if_absent: Without an optimal-transport notion of event distance the claimed latent-transport correlation has no reference metric.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: The VAE diagnostic compares latent distances to Wasserstein transport distances already used in transport-based event geometry.
+  status: asserted
+
+- from: technique.state_pairing_and_vacuum_energy_criterion
+  to: technique.visible_sector_tree_level_breaking_exclusion
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The exclusion of tree-level visible-sector breaking starts from the same supersymmetry-breaking logic that relates pairing and vacuum energy.
+  failure_mode_if_absent: Without the basic SUSY-breaking criterion the tree-level exclusion argument lacks its algebraic baseline.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: The exclusion of tree-level visible-sector breaking starts from the same supersymmetry-breaking logic that relates pairing and vacuum energy.
+  status: asserted
+
+- from: technique.uv_ir_connection_discrete_gravity
+  to: technique.warped_lattice_strong_coupling
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The warped result is explicitly a refinement of the flat-space discrete-gravity UV IR strong-coupling relation.
+  failure_mode_if_absent: Without the original discrete-gravity UV IR connection there is no pathology for warping to cure.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: The warped result is explicitly a refinement of the flat-space discrete-gravity UV IR strong-coupling relation.
+  status: asserted
+
+- from: technique.approximate_isospin_symmetry
+  to: technique.weak_hamiltonian_isospin_decomposition
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The weak-Hamiltonian method organizes operators by their isospin transformation properties.
+  failure_mode_if_absent: Without approximate isospin symmetry the Delta I one half and three halves split is not meaningful.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: The weak-Hamiltonian method organizes operators by their isospin transformation properties.
+  status: asserted
+
+- from: qft.wilsonian_renormalization_group
+  to: technique.wilson_momentum_shell_rg
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Momentum-shell integration is the canonical implementation of Wilsonian renormalization.
+  failure_mode_if_absent: Without the Wilsonian RG viewpoint the shell-integration step is just an unmotivated cutoff manipulation.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Momentum-shell integration is the canonical implementation of Wilsonian renormalization.
+  status: asserted
+
+- from: qft.weyl_invariance
+  to: technique.worldsheet_supersymmetry_transformations
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Worldsheet supersymmetry is normally formulated after conformal gauge fixing which relies on worldsheet Weyl invariance.
+  failure_mode_if_absent: Without Weyl invariance the gauge-fixed worldsheet action that the supersymmetry transformations preserve is not available.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Worldsheet supersymmetry is normally formulated after conformal gauge fixing which relies on worldsheet Weyl invariance.
+  status: asserted
+
+- from: technique.tanbeta_blind_spot_parity
+  to: technique.z_polarization_from_displaced_angles
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The displaced-Z polarization observable probes the same higgsino versus wino coupling structure that the tan beta equals 1 blind-spot parity sharpens.
+  failure_mode_if_absent: Without the blind-spot coupling pattern the angular signal is less directly interpretable in electroweakino space.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: The displaced-Z polarization observable probes the same higgsino versus wino coupling structure that the tan beta equals 1 blind-spot parity sharpens.
+  status: asserted
+
+- from: technique.stability_test_of_rolling_vs_oscillatory_branches
+  to: technique.zc_fphi_reparametrized_mcmc
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The reparametrized MCMC only makes sense once the physically relevant branch of the early-dark-energy solution has been identified.
+  failure_mode_if_absent: Without branch selection the mapping from phenomenological parameters back to model parameters is multi-valued and unstable.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: The reparametrized MCMC only makes sense once the physically relevant branch of the early-dark-energy solution has been identified.
+  status: asserted
+
+- from: technique.soft_drop_grooming_mass_stabilization
+  to: technique.w_mass_calibration_soft_drop
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The combined W-mass-calibration plus soft-drop method extends the basic soft-drop mass-stabilization step by adding an explicit rescaling stage.
+  failure_mode_if_absent: Without the underlying mass-stabilization procedure the two-stage calibration-plus-grooming construction is incomplete.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: The combined W-mass-calibration plus soft-drop method extends the basic soft-drop mass-stabilization step by adding an explicit rescaling stage.
+  status: asserted
+
+- from: technique.spin_flavor_su6_embedding
+  to: technique.su6_baryon_multiplet_decomposition
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The baryon 56 decomposition is performed inside the spin-flavor SU 6 embedding of quark states.
+  failure_mode_if_absent: Without the SU 6 embedding there is no common representation to branch into flavor and spin multiplets.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: The baryon 56 decomposition is performed inside the spin-flavor SU 6 embedding of quark states.
+  status: asserted
+
+- from: technique.spin_flavor_su6_embedding
+  to: technique.su6_wigner_eckart_magnetic_moments
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The SU 6 magnetic-moment analysis treats both baryons and the magnetic-moment operator inside the spin-flavor SU 6 algebra.
+  failure_mode_if_absent: Without the SU 6 embedding the Wigner-Eckart reduction of baryon magnetic moments cannot be set up.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: The SU 6 magnetic-moment analysis treats both baryons and the magnetic-moment operator inside the spin-flavor SU 6 algebra.
+  status: asserted
+
+- from: technique.state_pairing_and_vacuum_energy_criterion
+  to: technique.weighted_witten_index
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The weighted Witten index refines the same boson-fermion pairing argument by counting pairings sector by sector.
+  failure_mode_if_absent: Without the pairing criterion the meaning of the weighted index as a test for unpaired supersymmetric states is obscured.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: The weighted Witten index refines the same boson-fermion pairing argument by counting pairings sector by sector.
+  status: asserted
+
+- from: technique.stealth_sector_small_splitting
+  to: technique.stealth_hidden_valley_cascade_modeling
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The hidden-valley cascade stays stealthy only because the hidden-sector boson and fermion remain nearly degenerate.
+  failure_mode_if_absent: Without small splittings the cascade dumps substantial missing energy and no longer realizes the stealth mechanism.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: The hidden-valley cascade stays stealthy only because the hidden-sector boson and fermion remain nearly degenerate.
+  status: asserted
+
+- from: technique.stealth_portal_catalog
+  to: technique.zprime_vector_multiplet_stealth_chain
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The light Z-prime chain is one concrete member of the broader catalog of stealth portals.
+  failure_mode_if_absent: Without the portal taxonomy the Z-prime construction is not recognized as a controlled stealth-sector coupling pattern.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: The light Z-prime chain is one concrete member of the broader catalog of stealth portals.
+  status: asserted
+
+- from: technique.stealth_hidden_valley_cascade_modeling
+  to: technique.stealth_susy_simplified_topologies
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The simplified topologies package the cascade logic into reduced spectra that can be searched systematically.
+  failure_mode_if_absent: Without a concrete stealth cascade there is no physically motivated simplified topology to keep.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: The simplified topologies package the cascade logic into reduced spectra that can be searched systematically.
+  status: asserted
+
+- from: technique.stiefel_whitney_domain_wall_duality
+  to: technique.end_of_world_brane_parity_vortices
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The end-of-the-world brane resolution of parity charges uses the same topological bookkeeping for parity defects and wall intersections.
+  failure_mode_if_absent: Without the domain-wall classification the brane picture of parity defects loses its topological charge assignment.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: The end-of-the-world brane resolution of parity charges uses the same topological bookkeeping for parity defects and wall intersections.
+  status: asserted
+
+- from: technique.stub_track_search_for_degenerate_higgsinos
+  to: technique.upgrade_and_dedicated_detector_gap_analysis
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Short-track higgsino searches are a canonical example of an LLP signature whose reach is hardware-limited rather than analysis-limited.
+  failure_mode_if_absent: Without a concrete stub-track benchmark the gap analysis misses a major compressed electroweak blind spot.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Short-track higgsino searches are a canonical example of an LLP signature whose reach is hardware-limited rather than analysis-limited.
+  status: asserted
+
+- from: technique.su3_fundamental_weight_solver
+  to: technique.su3_multiplet_identification_from_weight_diagrams
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Weight-diagram identification of SU 3 multiplets starts from the fundamental highest weights and their lowering patterns.
+  failure_mode_if_absent: Without the fundamental-weight solutions the larger SU 3 diagrams cannot be normalized or recognized cleanly.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Weight-diagram identification of SU 3 multiplets starts from the fundamental highest weights and their lowering patterns.
+  status: asserted
+
+- from: technique.superpotential_prepotential_method
+  to: technique.asymptotic_freedom_via_dilaton_potential
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Engineering asymptotic freedom through a dilaton potential requires analytic control of the underlying Einstein-dilaton background.
+  failure_mode_if_absent: Without the superpotential solution method the dilaton-potential design lacks tractable background equations.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Engineering asymptotic freedom through a dilaton potential requires analytic control of the underlying Einstein-dilaton background.
+  status: asserted
+
+- from: technique.symmetry_constraint_analysis
+  to: technique.ward_identity_constraints_on_divergences
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Ward-identity constraints are a specialized application of the broader symmetry analysis of allowed divergent tensors.
+  failure_mode_if_absent: Without the prior symmetry analysis the Ward-identity reduction of divergent structures appears ad hoc.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Ward-identity constraints are a specialized application of the broader symmetry analysis of allowed divergent tensors.
+  status: asserted
+
+- from: technique.tanbeta_blind_spot_parity
+  to: technique.electroweakino_cascade_ratio_tanbeta_probe
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The cascade-ratio probe exploits the same h versus Z coupling zeros and swaps that become sharp at tan beta equals 1.
+  failure_mode_if_absent: Without the blind-spot parity structure the ratio observable loses its clean tan beta interpretation.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: The cascade-ratio probe exploits the same h versus Z coupling zeros and swaps that become sharp at tan beta equals 1.
+  status: asserted
+
+- from: technique.technicolor_style_composite_higgs_modeling
+  to: technique.nda_for_technicolor_matrix_elements
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: NDA estimates are used after one has committed to a technicolor-like strongly coupled electroweak sector.
+  failure_mode_if_absent: Without a technicolor-style model there is no target set of composite matrix elements to estimate.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: NDA estimates are used after one has committed to a technicolor-like strongly coupled electroweak sector.
+  status: asserted
+
+- from: technique.telescoping_jets_multi_r
+  to: technique.generalized_eml_correlated_interpretations
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Telescoping jets produces many correlated deterministic interpretations of the same event which is exactly the regime the generalized EML formalism addresses.
+  failure_mode_if_absent: Without a multiple-interpretation method there is no correlated-input use case for the generalized likelihood formulas.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Telescoping jets produces many correlated deterministic interpretations of the same event which is exactly the regime the generalized EML formalism addresses.
+  status: asserted
+
+- from: technique.temporal_gauge_tunneling_picture_of_instantons
+  to: technique.strong_cp_reformulation_as_instantonic_symmetry_breaking
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Recasting instantons as tunneling between vacua clarifies the symmetry content of the theta angle and the broken instantonic-symmetry viewpoint.
+  failure_mode_if_absent: Without the tunneling interpretation the symmetry-breaking reformulation of strong CP is less concrete.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Recasting instantons as tunneling between vacua clarifies the symmetry content of the theta angle and the broken instantonic-symmetry viewpoint.
+  status: asserted
+
+- from: technique.differential_astrometry_point_and_stare
+  to: technique.telescope_geometry_interferometric_monitoring
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Interferometric geometry monitoring is deployed inside an ultra-precise differential-astrometry program where baseline drifts must be separated from true sky motion.
+  failure_mode_if_absent: Without the astrometric measurement framework the geometry-monitoring system has no clear calibration target or error budget to anchor it.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Interferometric geometry monitoring is deployed inside an ultra-precise differential-astrometry program where baseline drifts must be separated from true sky motion.
+  status: asserted
+
+- from: technique.time_slicing_discretization
+  to: technique.turning_point_surface_constraint
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The turning-point surface delta function is inserted inside a discretized path integral whose measure is defined by time slicing.
+  failure_mode_if_absent: Without a time-sliced path integral the turning-point constraint lacks a concrete integration prescription.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: The turning-point surface delta function is inserted inside a discretized path integral whose measure is defined by time slicing.
+  status: asserted
+
+- from: technique.topological_loop_counting_identities
+  to: technique.subgraph_convergence_criterion
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The subgraph convergence test uses the same line-vertex-loop identities to evaluate which subintegrations remain divergent.
+  failure_mode_if_absent: Without topological loop counting the divergence criterion cannot be applied consistently to nested subgraphs.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: The subgraph convergence test uses the same line-vertex-loop identities to evaluate which subintegrations remain divergent.
+  status: asserted
+
+- from: technique.torsionful_spin_connection_and_curved_multiplet_calculus
+  to: technique.supergravity_goldstone_multiplet
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Identifying the Goldstone multiplet in massive supergravity requires the curved-space supergravity derivatives and transformation rules.
+  failure_mode_if_absent: Without the torsionful curved multiplet calculus the component organization of the massive supergravity Goldstone modes is incomplete.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: Identifying the Goldstone multiplet in massive supergravity requires the curved-space supergravity derivatives and transformation rules.
+  status: asserted

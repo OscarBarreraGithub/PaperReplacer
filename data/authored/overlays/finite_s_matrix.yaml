@@ -1,25 +1,25 @@
 # Canonical overlay annotations for the finite-S-matrix batch.
 - overlay_type: assumed_background
   target_topic: qft.finite_s_matrix
-  presumed_node: qft.correlators_propagators_lsz
+  presumed_node: qft.asymptotic_one_particle_state
   audience_profile: hep_th_grad
   subfield: amplitudes
-  rationale: Paper-facing finite-S-matrix discussions usually presume the standard asymptotic-state and LSZ bridge before replacing the bare external-state picture.
+  rationale: Paper-facing finite-S-matrix discussions usually presume the standard asymptotic external-state vocabulary before replacing the bare-state picture.
   status: asserted
   confidence: 0.89
 - overlay_type: assumed_background
   target_topic: qft.finite_s_matrix
-  presumed_node: qft.infrared_divergences_and_jets
+  presumed_node: qft.infrared_divergence
   audience_profile: hep_th_grad
   subfield: qcd_ir
-  rationale: The Schwartz papers assume the reader already knows the usual infrared-divergence, cancellation-theorem, and jet-observable vocabulary that motivates the new construction.
+  rationale: The Schwartz papers assume the reader already recognizes the usual infrared-divergence problem that motivates the finite-S-matrix construction.
   status: asserted
   confidence: 0.91
 - overlay_type: assumed_background
   target_topic: qft.finite_s_matrix
-  presumed_node: qft.optical_theorem_and_unitarity_cutting_basics
+  presumed_node: qcd.factorization_theorem
   audience_profile: hep_th_grad
   subfield: amplitudes
-  rationale: The finite-S-matrix proposal is written in standard scattering-operator language and normally presumes the basic S-matrix neighborhood is already familiar.
+  rationale: Both abstracts treat factorization as known background for separating universal asymptotic evolution from the hard process.
   status: asserted
   confidence: 0.84

@@ -134,21 +134,6 @@
       note: Batch notes identify heavy-quark symmetry as the main HQET companion branch.
   status: asserted
   confidence: 0.93
-- from: eft.heavy_quark_effective_theory
-  to: eft.matching
-  relation_type: requires_for_use
-  necessity: necessary
-  audience_profile: hep_th_grad
-  subfield: effective_field_theory
-  task_type: literature_reading
-  rationale: HQET is built by matching the heavy-quark theory onto a lower-energy description.
-  failure_mode_if_absent: Cannot see how the heavy-quark degrees of freedom are integrated into the EFT description.
-  evidence:
-    - type: expert_claim
-      source_ref: effective_field_theory_and_scet_batch_initial
-      note: Batch notes keep HQET inside the standard EFT matching workflow.
-  status: asserted
-  confidence: 0.92
 - from: eft.soft_collinear_effective_theory
   to: eft.mode_scaling
   relation_type: requires_for_recognize

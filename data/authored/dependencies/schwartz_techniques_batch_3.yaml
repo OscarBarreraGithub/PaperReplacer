@@ -1,0 +1,938 @@
+# Hand-authored dependency edges for the Schwartz techniques batch 3.
+# Format: from = existing prerequisite node, to = new technique node.
+
+- from: eft.matching
+  to: technique.finite_parts_from_matching
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists On-shell matching of QCD to SCET operators as an explicit prerequisite for Automatic incorporation of finite loop corrections through EFT matching; the existing node eft.matching is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot derive or justify Automatic incorporation of finite loop corrections through EFT matching cleanly because the prerequisite On-shell matching of QCD to SCET operators is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_3_initial
+      note: The batch prerequisite list explicitly names On-shell matching of QCD to SCET operators.
+  status: asserted
+
+- from: eft.jet_function
+  to: technique.finite_parts_from_matching
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists Jet function from discontinuity of collinear quark propagator as an explicit prerequisite for Automatic incorporation of finite loop corrections through EFT matching; the existing node eft.jet_function is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Automatic incorporation of finite loop corrections through EFT matching cleanly because the prerequisite Jet function from discontinuity of collinear quark propagator is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_3_initial
+      note: The batch prerequisite list explicitly names Jet function from discontinuity of collinear quark propagator.
+  status: asserted
+
+- from: eft.soft_function
+  to: technique.finite_parts_from_matching
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists Soft function from Wilson line matrix elements as an explicit prerequisite for Automatic incorporation of finite loop corrections through EFT matching; the existing node eft.soft_function is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Automatic incorporation of finite loop corrections through EFT matching cleanly because the prerequisite Soft function from Wilson line matrix elements is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_3_initial
+      note: The batch prerequisite list explicitly names Soft function from Wilson line matrix elements.
+  status: asserted
+
+- from: qcd.parton_distribution_function
+  to: technique.forward_central_flavour_extraction
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists PDF-driven flavour composition as a function of rapidity and pT as an explicit prerequisite for Forward-central jet asymmetry for flavour-separated jet charge; the existing node qcd.parton_distribution_function is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Forward-central jet asymmetry for flavour-separated jet charge cleanly because the prerequisite PDF-driven flavour composition as a function of rapidity and pT is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_3_initial
+      note: The batch prerequisite list explicitly names PDF-driven flavour composition as a function of rapidity and pT.
+  status: asserted
+
+- from: relativity.rapidity
+  to: technique.forward_central_flavour_extraction
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists PDF-driven flavour composition as a function of rapidity and pT as an explicit prerequisite for Forward-central jet asymmetry for flavour-separated jet charge; the existing node relativity.rapidity is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Forward-central jet asymmetry for flavour-separated jet charge cleanly because the prerequisite PDF-driven flavour composition as a function of rapidity and pT is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_3_initial
+      note: The batch prerequisite list explicitly names PDF-driven flavour composition as a function of rapidity and pT.
+  status: asserted
+
+- from: qft.lsz_reduction_formula
+  to: technique.forward_scattering_ir_necessity
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists LSZ reduction and S-matrix elements as an explicit prerequisite for Forward scattering as necessary ingredient for IR finiteness; the existing node qft.lsz_reduction_formula is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot derive or justify Forward scattering as necessary ingredient for IR finiteness cleanly because the prerequisite LSZ reduction and S-matrix elements is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_3_initial
+      note: The batch prerequisite list explicitly names LSZ reduction and S-matrix elements.
+  status: asserted
+
+- from: qft.cluster_decomposition_principle
+  to: technique.forward_scattering_ir_necessity
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists Disconnected Feynman diagrams and cluster decomposition as an explicit prerequisite for Forward scattering as necessary ingredient for IR finiteness; the existing node qft.cluster_decomposition_principle is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot derive or justify Forward scattering as necessary ingredient for IR finiteness cleanly because the prerequisite Disconnected Feynman diagrams and cluster decomposition is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_3_initial
+      note: The batch prerequisite list explicitly names Disconnected Feynman diagrams and cluster decomposition.
+  status: asserted
+
+- from: qft.unitarity_cutting_rules
+  to: technique.forward_scattering_ir_necessity
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists Circled-vertex (Veltman) cutting rules as an explicit prerequisite for Forward scattering as necessary ingredient for IR finiteness; the existing node qft.unitarity_cutting_rules is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot derive or justify Forward scattering as necessary ingredient for IR finiteness cleanly because the prerequisite Circled-vertex (Veltman) cutting rules is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_3_initial
+      note: The batch prerequisite list explicitly names Circled-vertex (Veltman) cutting rules.
+  status: asserted
+
+- from: qft.bloch_nordsieck_theorem
+  to: technique.forward_scattering_ir_necessity
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists Bloch-Nordsieck theorem and its failure in QCD as an explicit prerequisite for Forward scattering as necessary ingredient for IR finiteness; the existing node qft.bloch_nordsieck_theorem is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot derive or justify Forward scattering as necessary ingredient for IR finiteness cleanly because the prerequisite Bloch-Nordsieck theorem and its failure in QCD is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_3_initial
+      note: The batch prerequisite list explicitly names Bloch-Nordsieck theorem and its failure in QCD.
+  status: asserted
+
+- from: qcd.mellin_moment
+  to: technique.fragmenting_jet_function_formalism
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists fragmentation functions D^h_j(x,mu) and their Mellin moments as an explicit prerequisite for Fragmenting Jet Functions for Jet Charge Calculation; the existing node qcd.mellin_moment is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Fragmenting Jet Functions for Jet Charge Calculation cleanly because the prerequisite fragmentation functions D^h_j(x,mu) and their Mellin moments is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_3_initial
+      note: The batch prerequisite list explicitly names fragmentation functions D^h_j(x,mu) and their Mellin moments.
+  status: asserted
+
+- from: eft.jet_function
+  to: technique.fragmenting_jet_function_formalism
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists SCET jet functions and matching coefficients as an explicit prerequisite for Fragmenting Jet Functions for Jet Charge Calculation; the existing node eft.jet_function is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Fragmenting Jet Functions for Jet Charge Calculation cleanly because the prerequisite SCET jet functions and matching coefficients is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_3_initial
+      note: The batch prerequisite list explicitly names SCET jet functions and matching coefficients.
+  status: asserted
+
+- from: qcd.dglap_evolution
+  to: technique.fragmenting_jet_function_formalism
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists DGLAP evolution equations as an explicit prerequisite for Fragmenting Jet Functions for Jet Charge Calculation; the existing node qcd.dglap_evolution is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Fragmenting Jet Functions for Jet Charge Calculation cleanly because the prerequisite DGLAP evolution equations is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_3_initial
+      note: The batch prerequisite list explicitly names DGLAP evolution equations.
+  status: asserted
+
+- from: eft.power_counting
+  to: technique.gauge_invariant_new_physics_stability
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists consistent V_eff power counting as an explicit prerequisite for Gauge-Invariant Sensitivity to New Physics via Operator Insertion; the existing node eft.power_counting is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot derive or justify Gauge-Invariant Sensitivity to New Physics via Operator Insertion cleanly because the prerequisite consistent V_eff power counting is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_3_initial
+      note: The batch prerequisite list explicitly names consistent V_eff power counting.
+  status: asserted
+
+- from: eft.higher_dimensional_operator
+  to: technique.gauge_invariant_new_physics_stability
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists higher-dimension operator matching in EFT as an explicit prerequisite for Gauge-Invariant Sensitivity to New Physics via Operator Insertion; the existing node eft.higher_dimensional_operator is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot derive or justify Gauge-Invariant Sensitivity to New Physics via Operator Insertion cleanly because the prerequisite higher-dimension operator matching in EFT is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_3_initial
+      note: The batch prerequisite list explicitly names higher-dimension operator matching in EFT.
+  status: asserted
+
+- from: qft.effective_potential
+  to: technique.gauge_invariant_new_physics_stability
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists SM effective potential at NLO as an explicit prerequisite for Gauge-Invariant Sensitivity to New Physics via Operator Insertion; the existing node qft.effective_potential is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot derive or justify Gauge-Invariant Sensitivity to New Physics via Operator Insertion cleanly because the prerequisite SM effective potential at NLO is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_3_initial
+      note: The batch prerequisite list explicitly names SM effective potential at NLO.
+  status: asserted
+
+- from: qft.sequential_discontinuity
+  to: technique.genealogical_constraints
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists hierarchical principle for sequential discontinuities as an explicit prerequisite for Genealogical Constraints from Topology of Integration Space; the existing node qft.sequential_discontinuity is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot derive or justify Genealogical Constraints from Topology of Integration Space cleanly because the prerequisite hierarchical principle for sequential discontinuities is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_3_initial
+      note: The batch prerequisite list explicitly names hierarchical principle for sequential discontinuities.
+  status: asserted
+
+- from: qft.landau_singularity_conditions
+  to: technique.genealogical_constraints
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists Feynman parameter space and its topology as an explicit prerequisite for Genealogical Constraints from Topology of Integration Space; the existing node qft.landau_singularity_conditions is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot derive or justify Genealogical Constraints from Topology of Integration Space cleanly because the prerequisite Feynman parameter space and its topology is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_3_initial
+      note: The batch prerequisite list explicitly names Feynman parameter space and its topology.
+  status: asserted
+
+- from: qft.lorentz_invariant_phase_space
+  to: technique.generalized_cross_section_n_to_m
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists Phase space integration and Lorentz-invariant measures as an explicit prerequisite for Generalized n-to-m cross section for degenerate state sums; the existing node qft.lorentz_invariant_phase_space is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot derive or justify Generalized n-to-m cross section for degenerate state sums cleanly because the prerequisite Phase space integration and Lorentz-invariant measures is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_3_initial
+      note: The batch prerequisite list explicitly names Phase space integration and Lorentz-invariant measures.
+  status: asserted
+
+- from: qft.t_matrix
+  to: technique.generalized_cross_section_n_to_m
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists S-matrix vs T-matrix decomposition as an explicit prerequisite for Generalized n-to-m cross section for degenerate state sums; the existing node qft.t_matrix is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot derive or justify Generalized n-to-m cross section for degenerate state sums cleanly because the prerequisite S-matrix vs T-matrix decomposition is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_3_initial
+      note: The batch prerequisite list explicitly names S-matrix vs T-matrix decomposition.
+  status: asserted
+
+- from: analysis.distributions.dirac_delta_distribution
+  to: technique.generalized_cross_section_n_to_m
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists Distribution theory (delta-prime functions) as an explicit prerequisite for Generalized n-to-m cross section for degenerate state sums; the existing node analysis.distributions.dirac_delta_distribution is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot derive or justify Generalized n-to-m cross section for degenerate state sums cleanly because the prerequisite Distribution theory (delta-prime functions) is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_3_initial
+      note: The batch prerequisite list explicitly names Distribution theory (delta-prime functions).
+  status: asserted
+
+- from: qft.dimensional_regularization
+  to: technique.generalized_cross_section_n_to_m
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists Dimensional regularization as an explicit prerequisite for Generalized n-to-m cross section for degenerate state sums; the existing node qft.dimensional_regularization is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot derive or justify Generalized n-to-m cross section for degenerate state sums cleanly because the prerequisite Dimensional regularization is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_3_initial
+      note: The batch prerequisite list explicitly names Dimensional regularization.
+  status: asserted
+
+- from: qcd.color_su3
+  to: technique.girth_linear_radial_moment
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists QCD color factors CA and CF as an explicit prerequisite for Girth (Linear Radial Moment) for Quark/Gluon Discrimination; the existing node qcd.color_su3 is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Girth (Linear Radial Moment) for Quark/Gluon Discrimination cleanly because the prerequisite QCD color factors CA and CF is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_3_initial
+      note: The batch prerequisite list explicitly names QCD color factors CA and CF.
+  status: asserted
+
+- from: qft.collinear_safe_observable
+  to: technique.girth_linear_radial_moment
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists infrared and collinear safety as an explicit prerequisite for Girth (Linear Radial Moment) for Quark/Gluon Discrimination; the existing node qft.collinear_safe_observable is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Girth (Linear Radial Moment) for Quark/Gluon Discrimination cleanly because the prerequisite infrared and collinear safety is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_3_initial
+      note: The batch prerequisite list explicitly names infrared and collinear safety.
+  status: asserted
+
+- from: eft.soft_collinear_effective_theory
+  to: technique.glauber_operator_factorization_violation
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists Soft-Collinear Effective Theory (SCET) as an explicit prerequisite for Glauber operator approach to collinear factorization violation; the existing node eft.soft_collinear_effective_theory is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Glauber operator approach to collinear factorization violation cleanly because the prerequisite Soft-Collinear Effective Theory (SCET) is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_3_initial
+      note: The batch prerequisite list explicitly names Soft-Collinear Effective Theory (SCET).
+  status: asserted
+
+- from: eft.glauber_mode
+  to: technique.glauber_operator_factorization_violation
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists Glauber scaling and Glauber gluon modes as an explicit prerequisite for Glauber operator approach to collinear factorization violation; the existing node eft.glauber_mode is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Glauber operator approach to collinear factorization violation cleanly because the prerequisite Glauber scaling and Glauber gluon modes is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_3_initial
+      note: The batch prerequisite list explicitly names Glauber scaling and Glauber gluon modes.
+  status: asserted
+
+- from: eft.soft_collinear_effective_theory
+  to: technique.glauber_quark_scet
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists Soft-Collinear Effective Theory (SCET_II) as an explicit prerequisite for Glauber quark operators in SCET for backward Regge scattering; the existing node eft.soft_collinear_effective_theory is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Glauber quark operators in SCET for backward Regge scattering cleanly because the prerequisite Soft-Collinear Effective Theory (SCET_II) is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_3_initial
+      note: The batch prerequisite list explicitly names Soft-Collinear Effective Theory (SCET_II).
+  status: asserted
+
+- from: eft.glauber_mode
+  to: technique.glauber_quark_scet
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists Glauber modes and potential operators as an explicit prerequisite for Glauber quark operators in SCET for backward Regge scattering; the existing node eft.glauber_mode is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Glauber quark operators in SCET for backward Regge scattering cleanly because the prerequisite Glauber modes and potential operators is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_3_initial
+      note: The batch prerequisite list explicitly names Glauber modes and potential operators.
+  status: asserted
+
+- from: qcd.gluon
+  to: technique.gluon_jet_function_calculation
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists SCET collinear gluon field operators as an explicit prerequisite for One-loop gluon jet function from collinear gluon propagator; the existing node qcd.gluon is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply One-loop gluon jet function from collinear gluon propagator cleanly because the prerequisite SCET collinear gluon field operators is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_3_initial
+      note: The batch prerequisite list explicitly names SCET collinear gluon field operators.
+  status: asserted
+
+- from: qft.wilson_line
+  to: technique.gluon_jet_function_calculation
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists SCET collinear gluon field operators with Wilson lines as an explicit prerequisite for One-loop gluon jet function from collinear gluon propagator; the existing node qft.wilson_line is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply One-loop gluon jet function from collinear gluon propagator cleanly because the prerequisite SCET collinear gluon field operators with Wilson lines is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_3_initial
+      note: The batch prerequisite list explicitly names SCET collinear gluon field operators with Wilson lines.
+  status: asserted
+
+- from: sm.ewbreak.goldstone_boson_equivalence_theorem
+  to: technique.graviton_goldstone_decomposition
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists Goldstone boson equivalence theorem as an explicit prerequisite for Goldstone boson decomposition for massive gravitons; the existing node sm.ewbreak.goldstone_boson_equivalence_theorem is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Goldstone boson decomposition for massive gravitons cleanly because the prerequisite Goldstone boson equivalence theorem is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_3_initial
+      note: The batch prerequisite list explicitly names Goldstone boson equivalence theorem.
+  status: asserted
+
+- from: eft.power_counting
+  to: technique.groomed_hadronization_suppression
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists power counting of collinear-soft mode virtuality as an explicit prerequisite for Reduced Hadronization Corrections for Groomed Observables; the existing node eft.power_counting is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot derive or justify Reduced Hadronization Corrections for Groomed Observables cleanly because the prerequisite power counting of collinear-soft mode virtuality is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_3_initial
+      note: The batch prerequisite list explicitly names power counting of collinear-soft mode virtuality.
+  status: asserted
+
+- from: qcd.confinement
+  to: technique.groomed_hadronization_suppression
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists Lambda_QCD as the confinement scale as an explicit prerequisite for Reduced Hadronization Corrections for Groomed Observables; the existing node qcd.confinement is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Reduced Hadronization Corrections for Groomed Observables cleanly because the prerequisite Lambda_QCD as the confinement scale is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_3_initial
+      note: The batch prerequisite list explicitly names Lambda_QCD as the confinement scale.
+  status: asserted
+
+- from: qcd.splitting_function
+  to: technique.groomed_process_independence
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists universality of collinear splitting functions in QCD as an explicit prerequisite for Process Independence of Groomed Jet Shapes; the existing node qcd.splitting_function is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot derive or justify Process Independence of Groomed Jet Shapes cleanly because the prerequisite universality of collinear splitting functions in QCD is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_3_initial
+      note: The batch prerequisite list explicitly names universality of collinear splitting functions in QCD.
+  status: asserted
+
+- from: qft.soft_radiation_factorization
+  to: technique.groomed_process_independence
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists soft drop grooming removing process-dependent soft radiation as an explicit prerequisite for Process Independence of Groomed Jet Shapes; the existing node qft.soft_radiation_factorization is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Process Independence of Groomed Jet Shapes cleanly because the prerequisite soft drop grooming removing process-dependent soft radiation is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_3_initial
+      note: The batch prerequisite list explicitly names soft drop grooming removing process-dependent soft radiation.
+  status: asserted
+
+- from: eft.soft_function
+  to: technique.hemisphere_soft_function_factorization
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists RG invariance constraints on soft function anomalous dimensions as an explicit prerequisite for Factorization of the hemisphere soft function into mu-dependent and mu-independent parts; the existing node eft.soft_function is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot derive or justify Factorization of the hemisphere soft function into mu-dependent and mu-independent parts cleanly because the prerequisite RG invariance constraints on soft function anomalous dimensions is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_3_initial
+      note: The batch prerequisite list explicitly names RG invariance constraints on soft function anomalous dimensions.
+  status: asserted
+
+- from: qft.heavy_jet_mass
+  to: technique.hemisphere_soft_function_factorization
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists Hemisphere mass factorization theorem in SCET as an explicit prerequisite for Factorization of the hemisphere soft function into mu-dependent and mu-independent parts; the existing node qft.heavy_jet_mass is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Factorization of the hemisphere soft function into mu-dependent and mu-independent parts cleanly because the prerequisite Hemisphere mass factorization theorem in SCET is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_3_initial
+      note: The batch prerequisite list explicitly names Hemisphere mass factorization theorem in SCET.
+  status: asserted
+
+- from: qft.anomalous_dimension
+  to: technique.hemisphere_soft_function_factorization
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists soft-function anomalous dimensions as an explicit prerequisite for Factorization of the hemisphere soft function into mu-dependent and mu-independent parts; the existing node qft.anomalous_dimension is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot derive or justify Factorization of the hemisphere soft function into mu-dependent and mu-independent parts cleanly because the prerequisite soft-function anomalous dimensions is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_3_initial
+      note: The batch prerequisite list explicitly names soft-function anomalous dimensions.
+  status: asserted
+
+- from: eft.effective_field_theory
+  to: technique.higher_dim_operator_sensitivity
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists effective field theory in AdS background as an explicit prerequisite for Higher-Dimension Operator Sensitivity Analysis in AdS/QCD; the existing node eft.effective_field_theory is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Higher-Dimension Operator Sensitivity Analysis in AdS/QCD cleanly because the prerequisite effective field theory in AdS background is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_3_initial
+      note: The batch prerequisite list explicitly names effective field theory in AdS background.
+  status: asserted
+
+- from: eft.higher_dimensional_operator
+  to: technique.higher_dim_operator_sensitivity
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists dimensional analysis for higher-dimension operators as an explicit prerequisite for Higher-Dimension Operator Sensitivity Analysis in AdS/QCD; the existing node eft.higher_dimensional_operator is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Higher-Dimension Operator Sensitivity Analysis in AdS/QCD cleanly because the prerequisite dimensional analysis for higher-dimension operators is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_3_initial
+      note: The batch prerequisite list explicitly names dimensional analysis for higher-dimension operators.
+  status: asserted
+
+- from: eft.soft_collinear_effective_theory
+  to: technique.hjm_moment_extra_np_parameter
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists hemisphere factorization in SCET as an explicit prerequisite for Additional Non-Perturbative Parameter in HJM Moments; the existing node eft.soft_collinear_effective_theory is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot derive or justify Additional Non-Perturbative Parameter in HJM Moments cleanly because the prerequisite hemisphere factorization in SCET is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_3_initial
+      note: The batch prerequisite list explicitly names hemisphere factorization in SCET.
+  status: asserted
+
+- from: qft.background_field_method
+  to: technique.holographic_regularization_running
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists background field method for gauge boson self-energy as an explicit prerequisite for Holographic Regularization for Bulk Gauge Coupling Running in Warped Space; the existing node qft.background_field_method is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Holographic Regularization for Bulk Gauge Coupling Running in Warped Space cleanly because the prerequisite background field method for gauge boson self-energy is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_3_initial
+      note: The batch prerequisite list explicitly names background field method for gauge boson self-energy.
+  status: asserted
+
+- from: qcd.factorization_theorem
+  to: technique.inclusive_normalization_strategy
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists soft-drop jet-mass factorization theorem as an explicit prerequisite for Inclusive Cross-Section Normalization for alpha_s Sensitivity; the existing node qcd.factorization_theorem is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Inclusive Cross-Section Normalization for alpha_s Sensitivity cleanly because the prerequisite soft-drop jet-mass factorization theorem is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_3_initial
+      note: The batch prerequisite list explicitly names soft-drop jet-mass factorization theorem.
+  status: asserted
+
+- from: qft.renormalization_scale
+  to: technique.inclusive_normalization_strategy
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists perturbative scale variation and uncertainty estimation as an explicit prerequisite for Inclusive Cross-Section Normalization for alpha_s Sensitivity; the existing node qft.renormalization_scale is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Inclusive Cross-Section Normalization for alpha_s Sensitivity cleanly because the prerequisite perturbative scale variation and uncertainty estimation is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_3_initial
+      note: The batch prerequisite list explicitly names perturbative scale variation and uncertainty estimation.
+  status: asserted
+
+- from: qft.ir_finite_cross_section
+  to: technique.infrared_safe_jet_flavour_with_soft_drop
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists infrared safety of observables in QCD as an explicit prerequisite for Infrared-safe jet flavour classification via soft drop; the existing node qft.ir_finite_cross_section is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Infrared-safe jet flavour classification via soft drop cleanly because the prerequisite infrared safety of observables in QCD is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_3_initial
+      note: The batch prerequisite list explicitly names infrared safety of observables in QCD.
+  status: asserted
+
+- from: qcd.quark
+  to: technique.infrared_safe_jet_flavour_with_soft_drop
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists quark/gluon jet separation as an explicit prerequisite for Infrared-safe jet flavour classification via soft drop; the existing node qcd.quark is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Infrared-safe jet flavour classification via soft drop cleanly because the prerequisite quark/gluon jet separation is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_3_initial
+      note: The batch prerequisite list explicitly names quark/gluon jet separation.
+  status: asserted
+
+- from: qcd.gluon
+  to: technique.infrared_safe_jet_flavour_with_soft_drop
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists quark/gluon jet separation as an explicit prerequisite for Infrared-safe jet flavour classification via soft drop; the existing node qcd.gluon is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Infrared-safe jet flavour classification via soft drop cleanly because the prerequisite quark/gluon jet separation is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_3_initial
+      note: The batch prerequisite list explicitly names quark/gluon jet separation.
+  status: asserted
+
+- from: qft.iterated_integral
+  to: technique.integrability_product_constraints
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists Integrability of iterated integrals (d^2 = 0) as an explicit prerequisite for Integrability constraints on symbol-letter products near singular points; the existing node qft.iterated_integral is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot derive or justify Integrability constraints on symbol-letter products near singular points cleanly because the prerequisite Integrability of iterated integrals (d^2 = 0) is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_3_initial
+      note: The batch prerequisite list explicitly names Integrability of iterated integrals (d^2 = 0).
+  status: asserted
+
+- from: qft.symbol_calculus
+  to: technique.integrability_product_constraints
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists Symbol calculus and adjacency conditions as an explicit prerequisite for Integrability constraints on symbol-letter products near singular points; the existing node qft.symbol_calculus is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot derive or justify Integrability constraints on symbol-letter products near singular points cleanly because the prerequisite Symbol calculus and adjacency conditions is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_3_initial
+      note: The batch prerequisite list explicitly names Symbol calculus and adjacency conditions.
+  status: asserted
+
+- from: qft.landau_singularity_conditions
+  to: technique.integrability_product_constraints
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists Landau analysis near singular loci as an explicit prerequisite for Integrability constraints on symbol-letter products near singular points; the existing node qft.landau_singularity_conditions is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot derive or justify Integrability constraints on symbol-letter products near singular points cleanly because the prerequisite Landau analysis near singular loci is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_3_initial
+      note: The batch prerequisite list explicitly names Landau analysis near singular loci.
+  status: asserted
+
+- from: qft.distributional_boundary_values
+  to: technique.integrated_soft_function_expansion
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists Distribution theory for multi-variable singular functions as an explicit prerequisite for Expansion of integrated hemisphere soft function in product-and-ratio variables; the existing node qft.distributional_boundary_values is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot derive or justify Expansion of integrated hemisphere soft function in product-and-ratio variables cleanly because the prerequisite Distribution theory for multi-variable singular functions is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_3_initial
+      note: The batch prerequisite list explicitly names Distribution theory for multi-variable singular functions.
+  status: asserted
+
+- from: eft.soft_function
+  to: technique.integrated_soft_function_expansion
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists integrated hemisphere soft function as an explicit prerequisite for Expansion of integrated hemisphere soft function in product-and-ratio variables; the existing node eft.soft_function is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Expansion of integrated hemisphere soft function in product-and-ratio variables cleanly because the prerequisite integrated hemisphere soft function is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_3_initial
+      note: The batch prerequisite list explicitly names integrated hemisphere soft function.
+  status: asserted
+
+- from: qft.heavy_jet_mass
+  to: technique.integrated_soft_function_expansion
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists Connection between integrated soft function and event shape distributions as an explicit prerequisite for Expansion of integrated hemisphere soft function in product-and-ratio variables; the existing node qft.heavy_jet_mass is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Expansion of integrated hemisphere soft function in product-and-ratio variables cleanly because the prerequisite Connection between integrated soft function and event shape distributions is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_3_initial
+      note: The batch prerequisite list explicitly names Connection between integrated soft function and event shape distributions.
+  status: asserted
+
+- from: qft.path_integral_and_generating_functionals
+  to: technique.intersection_number_fix
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists path integral formulation of quantum mechanics and QFT as an explicit prerequisite for Intersection Number Correction for Collective Coordinates; the existing node qft.path_integral_and_generating_functionals is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Intersection Number Correction for Collective Coordinates cleanly because the prerequisite path integral formulation of quantum mechanics and QFT is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_3_initial
+      note: The batch prerequisite list explicitly names path integral formulation of quantum mechanics and QFT.
+  status: asserted
+
+- from: qft.functional_measure
+  to: technique.intersection_number_fix
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists Jacobian factors in path integral variable changes as an explicit prerequisite for Intersection Number Correction for Collective Coordinates; the existing node qft.functional_measure is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Intersection Number Correction for Collective Coordinates cleanly because the prerequisite Jacobian factors in path integral variable changes is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_3_initial
+      note: The batch prerequisite list explicitly names Jacobian factors in path integral variable changes.
+  status: asserted
+
+- from: qft.infrared_divergence
+  to: technique.ir_sensitivity_vs_ir_divergence
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists infrared_divergences_gauge_theory as an explicit prerequisite for IR sensitivity (regulator-independent IR characterization); the existing node qft.infrared_divergence is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply IR sensitivity (regulator-independent IR characterization) cleanly because the prerequisite infrared_divergences_gauge_theory is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_3_initial
+      note: The batch prerequisite list explicitly names infrared_divergences_gauge_theory.
+  status: asserted
+
+- from: eft.power_counting
+  to: technique.ir_sensitivity_vs_ir_divergence
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists soft_and_collinear_power_counting as an explicit prerequisite for IR sensitivity (regulator-independent IR characterization); the existing node eft.power_counting is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot derive or justify IR sensitivity (regulator-independent IR characterization) cleanly because the prerequisite soft_and_collinear_power_counting is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_3_initial
+      note: The batch prerequisite list explicitly names soft_and_collinear_power_counting.
+  status: asserted
+
+- from: qft.kln_theorem
+  to: technique.ir_sensitivity_vs_ir_divergence
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists kln_theorem as an explicit prerequisite for IR sensitivity (regulator-independent IR characterization); the existing node qft.kln_theorem is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply IR sensitivity (regulator-independent IR characterization) cleanly because the prerequisite kln_theorem is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_3_initial
+      note: The batch prerequisite list explicitly names kln_theorem.
+  status: asserted
+
+- from: qft.spinor_helicity_notation
+  to: technique.iterative_amplitude_simplification
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists spinor-helicity formalism as an explicit prerequisite for Iterative Transformer Pipeline for Amplitude Simplification; the existing node qft.spinor_helicity_notation is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Iterative Transformer Pipeline for Amplitude Simplification cleanly because the prerequisite spinor-helicity formalism is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_3_initial
+      note: The batch prerequisite list explicitly names spinor-helicity formalism.
+  status: asserted
+
+- from: qft.schouten_identity
+  to: technique.iterative_amplitude_simplification
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists Schouten identity as an explicit prerequisite for Iterative Transformer Pipeline for Amplitude Simplification; the existing node qft.schouten_identity is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Iterative Transformer Pipeline for Amplitude Simplification cleanly because the prerequisite Schouten identity is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_3_initial
+      note: The batch prerequisite list explicitly names Schouten identity.
+  status: asserted
+
+- from: qft.little_group
+  to: technique.iterative_amplitude_simplification
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists little group scaling and mass dimension constraints as an explicit prerequisite for Iterative Transformer Pipeline for Amplitude Simplification; the existing node qft.little_group is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Iterative Transformer Pipeline for Amplitude Simplification cleanly because the prerequisite little group scaling and mass dimension constraints is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_3_initial
+      note: The batch prerequisite list explicitly names little group scaling and mass dimension constraints.
+  status: asserted
+
+- from: relativity.inertial_frame
+  to: technique.jacobian_peak_mass_extraction
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists Relativistic kinematics (rest frame vs lab frame) as an explicit prerequisite for Jacobian peak technique for mass measurement; the existing node relativity.inertial_frame is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Jacobian peak technique for mass measurement cleanly because the prerequisite Relativistic kinematics (rest frame vs lab frame) is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_3_initial
+      note: The batch prerequisite list explicitly names Relativistic kinematics (rest frame vs lab frame).
+  status: asserted
+
+- from: qft.breit_wigner_distribution
+  to: technique.jacobian_peak_mass_extraction
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists Breit-Wigner resonance shape as an explicit prerequisite for Jacobian peak technique for mass measurement; the existing node qft.breit_wigner_distribution is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Jacobian peak technique for mass measurement cleanly because the prerequisite Breit-Wigner resonance shape is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_3_initial
+      note: The batch prerequisite list explicitly names Breit-Wigner resonance shape.
+  status: asserted
+
+- from: eft.soft_collinear_effective_theory
+  to: technique.jet_mass_threshold_factorization_hadron
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists SCET factorization for jet production as an explicit prerequisite for Jet mass factorization via threshold expansion at hadron colliders; the existing node eft.soft_collinear_effective_theory is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Jet mass factorization via threshold expansion at hadron colliders cleanly because the prerequisite SCET factorization for jet production is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_3_initial
+      note: The batch prerequisite list explicitly names SCET factorization for jet production.
+  status: asserted
+
+- from: eft.large_logarithm_resummation
+  to: technique.jet_mass_threshold_factorization_hadron
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists threshold resummation at hadron colliders as an explicit prerequisite for Jet mass factorization via threshold expansion at hadron colliders; the existing node eft.large_logarithm_resummation is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Jet mass factorization via threshold expansion at hadron colliders cleanly because the prerequisite threshold resummation at hadron colliders is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_3_initial
+      note: The batch prerequisite list explicitly names threshold resummation at hadron colliders.
+  status: asserted
+
+- from: eft.jet_function
+  to: technique.jet_mass_threshold_factorization_hadron
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists inclusive jet function at two loops as an explicit prerequisite for Jet mass factorization via threshold expansion at hadron colliders; the existing node eft.jet_function is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Jet mass factorization via threshold expansion at hadron colliders cleanly because the prerequisite inclusive jet function at two loops is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_3_initial
+      note: The batch prerequisite list explicitly names inclusive jet function at two loops.
+  status: asserted
+
+- from: qcd.color_su3
+  to: technique.jet_pull_angle_colour_flow
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists colour flow / colour connections in QCD as an explicit prerequisite for Jet pull angle as a colour-connection discriminant; the existing node qcd.color_su3 is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Jet pull angle as a colour-connection discriminant cleanly because the prerequisite colour flow / colour connections in QCD is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_3_initial
+      note: The batch prerequisite list explicitly names colour flow / colour connections in QCD.
+  status: asserted
+
+- from: qft.jet
+  to: technique.jet_pull_angle_colour_flow
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists jet substructure and constituent-level observables as an explicit prerequisite for Jet pull angle as a colour-connection discriminant; the existing node qft.jet is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Jet pull angle as a colour-connection discriminant cleanly because the prerequisite jet substructure and constituent-level observables is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_3_initial
+      note: The batch prerequisite list explicitly names jet substructure and constituent-level observables.
+  status: asserted
+
+- from: qcd.color_su3
+  to: technique.jet_pull_vector
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists color flow and color connections in QCD (large-N_c dipole picture) as an explicit prerequisite for Jet Pull Vector for Color Flow Determination; the existing node qcd.color_su3 is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Jet Pull Vector for Color Flow Determination cleanly because the prerequisite color flow and color connections in QCD (large-N_c dipole picture) is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_3_initial
+      note: The batch prerequisite list explicitly names color flow and color connections in QCD (large-N_c dipole picture).
+  status: asserted
+
+- from: relativity.rapidity
+  to: technique.jet_pull_vector
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists rapidity vs pseudorapidity distinction for massive jets as an explicit prerequisite for Jet Pull Vector for Color Flow Determination; the existing node relativity.rapidity is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Jet Pull Vector for Color Flow Determination cleanly because the prerequisite rapidity vs pseudorapidity distinction for massive jets is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_3_initial
+      note: The batch prerequisite list explicitly names rapidity vs pseudorapidity distinction for massive jets.
+  status: asserted
+
+- from: qft.thrust
+  to: technique.jet_thrust_observable
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists thrust distribution and its SCET factorization as an explicit prerequisite for Jet thrust as a resummed finite-R event shape; the existing node qft.thrust is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Jet thrust as a resummed finite-R event shape cleanly because the prerequisite thrust distribution and its SCET factorization is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_3_initial
+      note: The batch prerequisite list explicitly names thrust distribution and its SCET factorization.
+  status: asserted
+
+- from: eft.soft_collinear_effective_theory
+  to: technique.jet_thrust_observable
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists Thrust distribution and its SCET factorization as an explicit prerequisite for Jet thrust as a resummed finite-R event shape; the existing node eft.soft_collinear_effective_theory is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Jet thrust as a resummed finite-R event shape cleanly because the prerequisite Thrust distribution and its SCET factorization is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_3_initial
+      note: The batch prerequisite list explicitly names Thrust distribution and its SCET factorization.
+  status: asserted
+
+- from: eft.jet_function
+  to: technique.jet_thrust_observable
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists Inclusive jet functions (R-independent) as an explicit prerequisite for Jet thrust as a resummed finite-R event shape; the existing node eft.jet_function is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Jet thrust as a resummed finite-R event shape cleanly because the prerequisite Inclusive jet functions (R-independent) is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_3_initial
+      note: The batch prerequisite list explicitly names Inclusive jet functions (R-independent).
+  status: asserted

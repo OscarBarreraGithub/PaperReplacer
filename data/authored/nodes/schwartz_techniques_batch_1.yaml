@@ -1,0 +1,398 @@
+# Hand-authored node records for Matt Schwartz techniques batch 1.
+# Source batch: /tmp/technique_batches/batch_1.yaml
+
+- id: technique.dynamical_threshold_enhancement
+  label: Dynamical threshold enhancement from PDF fall-off
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Method that uses the steep large-x fall-off of PDFs to show that threshold logarithms can dominate hadronic cross sections well away from machine threshold, extending threshold resummation into phenomenologically relevant moderate-pT regimes.
+  status: asserted
+
+- id: technique.hard_s_matrix_construction
+  label: Hard S-matrix (S_H) construction via asymptotic Hamiltonian
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Construction that replaces free asymptotic evolution with a soft-collinear asymptotic Hamiltonian so the hard S-matrix has IR-finite, gauge-invariant matrix elements, giving a well-defined scattering operator for massless gauge theories.
+  status: asserted
+
+- id: technique.absorb_np_into_ckm_refit
+  label: Absorbing New Physics into CKM Refits
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Method that folds tree-level new-physics shifts with Standard-Model-like Dirac structure into experimentally extracted CKM elements and then refits the unitarity constraints so genuinely new effects are isolated in loop observables.
+  status: asserted
+
+- id: technique.adiabatic_approximation_extra_dim
+  label: Adiabatic Approximation for Twisted Fermion Profiles
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Method that applies the quantum-mechanical adiabatic approximation to position-dependent bulk-mass matrices so each fermion zero mode tracks a local eigenvector, yielding analytic localized profiles with controlled flavor-space rotation.
+  status: asserted
+
+- id: technique.ads5_logarithmic_running
+  label: Logarithmic gauge coupling running in AdS5
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Method that computes 5D gauge self-energies in warped AdS with position-space propagators and a position-dependent cutoff, showing that couplings run logarithmically rather than with naive power laws and preserving high-scale unification.
+  status: asserted
+
+- id: technique.ads_qcd_pseudoscalar_sector
+  label: AdS/QCD modeling of the pseudoscalar meson sector
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Method that augments hard-wall AdS/QCD with bulk fields dual to quark and gluon operators plus an anomaly-mimicking bulk coupling, enabling controlled calculations of eta and eta-prime masses, decay constants, and photon couplings.
+  status: asserted
+
+- id: technique.algebraic_letter_construction
+  label: Systematic Construction of Algebraic Symbol Letters from Singularities
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Method that builds algebraic symbol letters by solving polynomial constraints of the form P^2 - Q = constant times known Landau polynomials, replacing ad hoc guesswork with a systematic scan of admissible square-root branch structures.
+  status: asserted
+
+- id: technique.alpha_positivity_constraints
+  label: Alpha-Positivity Constraints on Symbol Letters
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Constraint method that uses the positive-alpha Feynman-parameter region to determine which Landau singularities are reachable before analytic continuation, sharply restricting allowed first-entry letters and forcing non-alpha-positive algebraic roots to cancel.
+  status: asserted
+
+- id: technique.amplitude_level_soft_subtraction
+  label: Regulator-independent amplitude-level soft-collinear subtraction
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Subtraction method that recursively constructs matrix elements reproducing all soft and collinear limits at leading power without sector cutoffs, enabling regulator-independent phase-space integration and a potential fixed-order subtraction scheme.
+  status: asserted
+
+- id: technique.angular_dependent_hard_soft_interplay
+  label: Angular dependence cancellation between hard and soft functions
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Cross-check method that matches the angle-dependent logarithms in hard and soft anomalous dimensions so renormalization-group invariance constrains and verifies multi-leg factorization formulas.
+  status: asserted
+
+- id: technique.approximate_bounce_solutions
+  label: Approximate Analytic Bounces for SM-like Potentials
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Method that interpolates between the scale-invariant Fubini-Lipatov bounce and running-coupling corrections to obtain analytic estimates of tunneling actions and bubble radii in Standard-Model-like metastable potentials.
+  status: asserted
+
+- id: technique.asymmetric_thrust_definition
+  label: Asymmetric thrust to avoid beam contamination
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Observable-design method that defines thrust asymmetrically using one measured jet and the rest of the event, suppressing beam-remnant contamination while retaining a hadron-collider event shape that can be resummed in SCET.
+  status: asserted
+
+- id: technique.asymmetric_thrust_jet_mass
+  label: Asymmetric thrust for inclusive jet mass resummation
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Method that defines and averages asymmetric-thrust variants to obtain an inclusive jet-mass observable that matches QCD at NLO and supports NNLL resummation without non-global-logarithm pathologies.
+  status: asserted
+
+- id: technique.asymptotic_region_feynman_rules
+  label: Asymptotic-region Feynman rules from TOPT
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Method that combines time-ordered perturbation theory with the method of regions to derive asymptotic Feynman rules whose pure-dimensional-regularization contributions become scaleless, isolating the finite hard S-matrix piece.
+  status: asserted
+
+- id: technique.b_physics_constraints_on_top_fcnc
+  label: B-Physics Constraints on Top FCNC Operators via Weak-Scale Matching
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Method that matches top-FCNC operators onto the weak-scale B-physics Hamiltonian and runs them to low scales, converting precision flavor data into model-independent bounds on each operator coefficient.
+  status: asserted
+
+- id: technique.backward_generation_training_data
+  label: Backward Generation of Simplification Training Data
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Data-generation method that starts from simple symbolic targets and scrambles them with known identities into harder equivalent expressions, producing unlimited supervised simplification pairs without a forward simplification oracle.
+  status: asserted
+
+- id: technique.binary_junipr_objective
+  label: Binary JUNIPR objective function for jet discrimination
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Training method that refines JUNIPR with a binary cross-entropy objective built from paired class-conditional jet probabilities, combining generative pretraining with interpretable supervised discrimination.
+  status: asserted
+
+- id: technique.bms_fixed_order_iteration
+  label: Fixed-order iteration of the BMS equation as integrand generator
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Iterative method that expands the BMS equation order by order to generate non-global-logarithm integrands automatically, avoiding the combinatorial bookkeeping of explicit real and virtual emission enumerations.
+  status: asserted
+
+- id: technique.boosted_event_shape_recycling
+  label: Computing jet substructure by boosting e+e- event shapes
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Method that maps boosted color-singlet jet-substructure observables onto known e+e- event-shape results in the large-boost limit, recycling high-order thrust technology for hadron-collider substructure predictions.
+  status: asserted
+
+- id: technique.branching_step_interpretability
+  label: Branching-step decomposition for classifier interpretability
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Interpretability method that decomposes JUNIPR classification probabilities into per-branching and per-feature contributions, exposing which emissions and kinematic variables actually drive jet discrimination.
+  status: asserted
+
+- id: technique.c_parameter_shoulder_factorization
+  label: SCET Factorization for the C-Parameter Shoulder
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Method that derives a dedicated SCET factorization theorem near the C-parameter Sudakov shoulder at C = 3/4, introducing specialized jet and soft measurements so the shoulder can be resummed smoothly in momentum space.
+  status: asserted
+
+- id: technique.ca_iterative_declustering
+  label: Cambridge-Aachen Iterative Declustering for Subjet Finding
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Subjet-finding method that reverses a Cambridge-Aachen clustering tree and prunes soft branches iteratively until the hard prongs of a boosted top decay are isolated inside a fat jet.
+  status: asserted
+
+- id: technique.calculation_scale_invariance
+  label: Calculation-Scale Independence for RG-Improved Potentials
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Method that exploits calculation-scale independence of the effective potential at extrema to RG-improve vacuum-energy calculations without resumming the gauge-dependent field-strength factor.
+  status: asserted
+
+- id: technique.casimir_scaling_soft_anomalous_dim
+  label: Casimir scaling to relate soft functions in different partonic channels
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Method that combines Casimir scaling with renormalization-group consistency to infer soft anomalous dimensions across related partonic channels, reducing the number of independent multi-loop soft-function calculations.
+  status: asserted
+
+- id: technique.charged_track_multiplicity_tagger
+  label: Charged Track Multiplicity for Quark/Gluon Tagging
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Tagging method that counts charged tracks inside a jet to exploit the larger radiation multiplicity of gluon jets, giving a simple and powerful discrete quark-gluon discriminator.
+  status: asserted
+
+- id: technique.clustering_algorithm_independence
+  label: Clustering-Algorithm Independence of Learned Jet Probabilities
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Consistency method showing that JUNIPR's learned probability over final-state momenta is independent of the clustering tree used to expose branchings, so different algorithms change interpretability but not the physical distribution.
+  status: asserted
+
+- id: technique.collective_coord_qft_decay_rate
+  label: Correct Collective Coordinate Treatment for QFT Decay Rates
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Semiclassical method that handles translational and dilatational zero modes with the correct intersection-number normalization, resolving the apparent extra spacetime-volume factor in scale-invariant vacuum-decay rates.
+  status: asserted
+
+- id: technique.collinear_rs_decoupling
+  label: Collinear-r_s choice for soft decoupling from a single jet
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Gauge-choice method that sets the soft reference vector equal to a jet direction so leading soft attachments to that jet vanish, making single-sector soft-collinear factorization manifest.
+  status: asserted
+
+- id: technique.color_channel_decomposition_bound_states
+  label: Color-channel decomposition for bound state spectroscopy
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Method that decomposes tensor products of color representations, computes the Coulomb factor in each channel, and combines the result with Fermi statistics to classify which colored bound states can form.
+  status: asserted
+
+- id: technique.colored_diagram_decomposition
+  label: Colored-diagram decomposition (separating soft sensitivities)
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Method that decomposes a Feynman graph into pieces with explicit soft-sensitive and soft-insensitive virtual lines, with subtractions that prevent double counting and expose the infrared structure diagram by diagram.
+  status: asserted
+
+- id: technique.colored_jet_images
+  label: Colored Jet Images for CNN Discrimination
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Representation method that encodes jets as multi-channel eta-phi images with charged, neutral, and multiplicity information so convolutional networks can learn quark-gluon discrimination directly from low-level jet structure.
+  status: asserted
+
+- id: technique.combined_alpha_s_from_multiple_event_shapes
+  label: Combined alpha_s extraction from multiple event shapes to expose systematic biases
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Comparison method that extracts alpha_s from thrust and heavy-jet-mass data within a common N3LL+NNLO framework, using their tension to diagnose missing power corrections and hadronization systematics.
+  status: asserted
+
+- id: technique.compatibility_of_contractions
+  label: Compatibility Test for Landau Singularity Pairs
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Graphical test that decides whether two Landau singularities can coexist by checking simultaneous solvability of their Landau equations, thereby constraining which sequential discontinuities may be nonzero.
+  status: asserted
+
+- id: technique.comprehensive_qg_variable_ranking
+  label: Systematic Ranking of Quark/Gluon Discriminants via ROC Curves
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Benchmarking method that scores large families of jet observables by ROC performance across pT bins and identifies small variable sets that capture most quark-gluon discrimination power.
+  status: asserted
+
+- id: technique.conformal_gauge_ads
+  label: Conformal gauge for simplifying Wilson line calculations in AdS
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Gauge-fixing method in R x AdS coordinates that removes radial-angular kinetic mixing, causing many higher-loop Wilson-line graphs to vanish and simplifying multi-loop anomalous-dimension calculations.
+  status: asserted
+
+- id: technique.conformal_metric_jacobian
+  label: Conformal Inner Product to Regularize the Dilatation Zero Mode
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Method that replaces the standard fluctuation inner product with a conformally weighted one in which the dilatation mode is normalizable, yielding a finite Jacobian for the scale collective coordinate and closed-form determinant calculations around the scale-invariant bounce.
+  status: asserted

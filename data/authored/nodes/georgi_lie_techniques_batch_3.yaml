@@ -1,0 +1,472 @@
+- id: technique.positive_weight_ordering
+  label: "Positive-weight ordering"
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: "Declare weights positive or negative by the sign of the first nonzero Cartan component, producing an ordering and a workable notion of highest weight."
+  status: asserted
+
+- id: technique.projection_operator_decomposition_of_so_even_bilinears
+  label: "Projection-operator decomposition of even-dimensional bilinears"
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: "Insert the chiral projectors P_plus and P_minus around arbitrary gamma products to separate same-chirality and opposite-chirality bilinears in SO(2n). This immediately tells you whether even or odd form ranks appear in each spinor product."
+  status: asserted
+
+- id: technique.projection_operators_from_characters
+  label: "Projectors from characters"
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: "Build P_a=(n_a/|G|) sum_g chi_a(g)^* D(g) to project directly onto the subspace transforming as irrep a, even in the original basis."
+  status: asserted
+
+- id: technique.proton_decay_from_quark_lepton_unification
+  label: "Proton decay from quark-lepton unification"
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: "Recognize proton decay as a generic consequence of placing quarks, antiquarks, and leptons in the same SU(5) irreducible representations, with decay amplitudes suppressed by the large SU(5)-breaking scale."
+  status: asserted
+
+- id: technique.quark_model_constituent_sum_rules
+  label: "Constituent-quark sum rules"
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: "Model hadrons as bound states of constituent quarks so that charges, spins, and magnetic moments are additive over quark constituents."
+  status: asserted
+
+- id: technique.quaternionic_interpretation_of_sp_2n
+  label: "Quaternionic picture of Sp(2n)"
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: "Reinterpret Sp(2n) as the group of norm-preserving rotations of an N-dimensional quaternionic vector space. Use this when the matrix presentation hides why symplectic groups sit alongside SO(N) and SU(N) as classical families."
+  status: asserted
+
+- id: technique.raising_operator_phase_fixing_in_spinor_space
+  label: "Phase-fixing of spinor raising operators"
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: "Determine the explicit raising operators by fixing norms and then using anticommutation relations to lock their relative signs. This replaces an abstract highest-weight construction with concrete matrices."
+  status: asserted
+
+- id: technique.real_vs_pseudoreal_representation_diagnosis
+  label: "Real versus pseudo-real diagnosis"
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: "Classify a real representation by whether the intertwiner R is symmetric or antisymmetric. Symmetric R means the representation can be put in a purely imaginary antisymmetric basis, while antisymmetric R signals a pseudo-real representation such as the SU(2) doublet."
+  status: asserted
+
+- id: technique.reality_intertwiner_test_via_schur_lemma
+  label: "Schur-lemma reality intertwiner test"
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: "Given a unitary irreducible representation, test equivalence to its complex conjugate by solving for an intertwiner R and use Schur's lemma to show R is unique up to scale. This is the core method for deciding whether a representation is genuinely complex or only apparently so."
+  status: asserted
+
+- id: technique.recursive_maximal_subgroup_enumeration
+  label: "Recursive maximal-subgroup enumeration"
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: "Keep applying extended-diagram deletions or splits inside the subalgebras you already found until no further semisimple breakup is possible. This turns one maximal-subgroup result into a full subgroup tree."
+  status: asserted
+
+- id: technique.regular_representation_construction
+  label: "Regular representation construction"
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: "Use the group elements themselves as basis states and let left multiplication act on them to build a universal representation of dimension |G|."
+  status: asserted
+
+- id: technique.regular_subalgebra_by_dynkin_node_deletion
+  label: "Subgroups from Dynkin node deletion"
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: "Delete nodes from a Dynkin diagram to read off regular subalgebras whose simple roots are a subset of the original system. This is the basic subgroup-finding move for symmetry-breaking chains and representation branching."
+  status: asserted
+
+- id: technique.right_handed_neutrino_mass_from_126
+  label: "Give the right-handed neutrino a large mass with a 126"
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: "Use the SU(5)-singlet component of the complex self-dual 126 in 16 x 16 to generate a large Majorana mass for the right-handed neutrino without adding an extra singlet."
+  status: asserted
+
+- id: technique.root_angle_quantization
+  label: "Quantized angles between roots"
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: "Apply the master formula to pairs of roots to restrict the allowed angles between them to a small discrete set."
+  status: asserted
+
+- id: technique.root_generation_by_cartan_rows
+  label: "Generate roots by adding Cartan-matrix rows"
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: "Represent each positive root by its q-p vector; adding a simple root alpha_j adds the jth row of the Cartan matrix, and the resulting p-values tell you whether a new root exists. Georgi organizes this layer by layer in a diagram."
+  status: asserted
+
+- id: technique.root_ladder_operators
+  label: "Root ladder operators"
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: "Use E_plusminus_alpha to shift any weight mu to mu plus or minus alpha, generalizing raising and lowering operators beyond SU(2)."
+  status: asserted
+
+- id: technique.root_string_master_formula
+  label: "Root-string master formula"
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: "Analyze the finite alpha-strings through a weight mu using p steps up and q steps down to get 2 alpha dot mu over alpha squared equals q minus p, fix the highest SU(2) spin, and enforce the integrality condition on weights."
+  status: asserted
+
+- id: technique.roots_as_adjoint_weights
+  label: "Roots as adjoint weights"
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: "Interpret the nonzero weights of the adjoint representation as roots and pair the corresponding nonhermitian generators E_alpha and E_-alpha by Hermitian conjugation."
+  status: asserted
+
+- id: technique.schur_lemma_intertwiner_method
+  label: "Schur-lemma intertwiner test"
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: "Use Schur's lemma to show that intertwiners between inequivalent irreducible representations vanish and that operators commuting with one irrep are proportional to the identity."
+  status: asserted
+
+- id: technique.simple_root_commutator_algebra_construction
+  label: "Build the algebra from simple-root commutators"
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: "Construct non-simple root generators as normalized nested commutators of simple-root generators, fix normalizations from SU(2) raising-operator action, and derive the remaining commutators with repeated use of the Jacobi identity."
+  status: asserted
+
+- id: technique.simple_root_identification
+  label: "Simple-root identification"
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: "Define simple roots as positive roots that cannot be written as sums of other positive roots, so checking only them suffices to test highest-weight annihilation and start rebuilding the algebra."
+  status: asserted
+
+- id: technique.simplicity_and_semisimplicity_analysis
+  label: "Invariant-subalgebra, simple, semisimple, and U(1) analysis"
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: "Identify invariant subalgebras through commutator closure and conjugation, recognize central U(1) factors as zero-norm directions in the trace form, and use adjoint irreducibility to characterize simple and semisimple algebras."
+  status: asserted
+
+- id: technique.single_line_shrinking_rule
+  label: "Single-line shrinking rule"
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: "If two simple roots are joined by a single line, replace them by their sum and shrink the line away. The reduced diagram must still be a II-system, which immediately forbids loops and multiple double lines."
+  status: asserted
+
+- id: technique.sixteen_tensor_sixteen_decomposition
+  label: "Decompose 16 x 16 into 10 + 120 + 126"
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: "Split the SO(10) spinor tensor product into symmetric and antisymmetric pieces, then read off the SU(5) content of the resulting Higgs candidates."
+  status: asserted
+
+- id: technique.sm_multiplet_bookkeeping_with_d_d_s_labels
+  label: "Standard Model bookkeeping with (D,d)_s labels"
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: "Describe fields as (D,d)_s representations of SU(3) x SU(2) x U(1), with s equal to the average electric charge because Tr R3 = 0 in any SU(2) multiplet."
+  status: asserted
+
+- id: technique.so10_left_right_branching
+  label: "Branch SO(10) through SU(4) x SU(2) x SU(2)"
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: "Use extended Dynkin analysis and weight-space arguments to branch the SO(10) spinor under the Pati-Salam subgroup and identify the right-handed neutrino and mirror SU(2)."
+  status: asserted
+
+- id: technique.so10_spinor_product_for_gut_tensors
+  label: "SO(10) spinor products for unified-model tensors"
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: "Apply the general decomposition formulas to the 16 of SO(10) to obtain the tensor channels 10, 120, 126 and, with the conjugate, 1, 45, and 210. This is the practical unified-model payoff because it tells you which tensor and Higgs channels can couple to spinor matter."
+  status: asserted
+
+- id: technique.so8_branching_to_su2_power_4
+  label: "Branch SO(8) under SU(2)^4"
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: "Remove the central node of the extended D4 diagram to obtain SU(2)^4 and decompose each 8 into pairs of bi-doublets, using triality to identify which pattern belongs to which 8."
+  status: asserted
+
+- id: technique.so8_triality_automorphism
+  label: "Exploit SO(8) triality"
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: "Use the special outer automorphisms of D4 to permute the vector 8 and the two spinor 8s, including explicit weight and Cartan-generator maps."
+  status: asserted
+
+- id: technique.so_2n_plus_1_root_construction_with_extra_axis
+  label: "SO(2n+1) roots from adding the extra axis"
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: "Start from the SO(2n) two-plane construction and add the leftover one-dimensional direction. This produces the zero weight and the extra short roots plus or minus e_j that turn the D_n pattern into B_n."
+  status: asserted
+
+- id: technique.so_2n_root_construction_from_two_planes
+  label: "SO(2n) roots from two-plane decomposition"
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: "Split the defining 2n-dimensional real space into n orthogonal 2-planes, take Cartan generators as rotations in those planes, and read weights plus or minus e_k directly. Use this to derive the D_n roots, simple roots, and Dynkin diagram from the defining representation."
+  status: asserted
+
+- id: technique.so_even_spinor_construction_from_so_odd_embedding
+  label: "Even-orthogonal spinors from odd-orthogonal embedding"
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: "Embed SO(2n+1) inside SO(2n+2), reuse the known odd-dimensional spinor construction, and then add the extra Cartan generator to distinguish the two chiral spinors. This bootstraps even-dimensional spinors from the odd-dimensional case."
+  status: asserted
+
+- id: technique.so_odd_spinor_highest_weight_construction
+  label: "SO(2n+1) spinor highest-weight construction"
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: "Take the last fundamental weight of B_n and use Weyl reflections to enumerate all weights of the spinor representation as half-integer sign combinations. This constructs the odd-orthogonal spinor representation and its dimension 2^n directly from root data."
+  status: asserted
+
+- id: technique.sp2n_root_and_weight_construction
+  label: "Construct Sp(2n) roots and fundamental weights"
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: "Extend the SU(n) weight embedding to Sp(2n), derive its long and short roots, and read off the highest weights of the fundamental representations."
+  status: asserted
+
+- id: technique.sp2n_tensor_calculus_with_symplectic_form
+  label: "Sp(2n) tensor calculus with the invariant symplectic form"
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: "Use the antisymmetric invariant tensor R to show pseudoreality, raise and lower indices, and decompose D1 x D1 into the adjoint, an irreducible antisymmetric piece, and a singlet."
+  status: asserted
+
+- id: technique.sp_2n_root_construction_from_pauli_tensor_products
+  label: "Sp(2n) from Pauli-tensor generators"
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: "Write Sp(2n) generators as Pauli-matrix tensor products with antisymmetric and symmetric n by n blocks, then isolate an SU(n) subalgebra to organize the roots. This gives the C_n simple-root system constructively rather than by lookup."
+  status: asserted
+
+- id: technique.spin_flavor_su6_embedding
+  label: "Spin-Flavor SU(6) Embedding"
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: "Embed flavor SU(3) and spin SU(2) into SU(6) by treating each quark as a six-component spin-flavor state; the generators are flavor, spin, and mixed flavor-spin products."
+  status: asserted
+
+- id: technique.spinor_branching_so_2n_to_su_n
+  label: "Branch SO(2n) spinors into SU(n) antisymmetric tensors"
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: "Act with m Clifford creation operators on the vacuum so that the SO(2n) spinor decomposes into SU(n) antisymmetric tensor representations [m]."
+  status: asserted
+
+- id: technique.spinor_tensor_product_decomposition_by_form_rank
+  label: "Rank-by-rank spinor tensor-product decomposition"
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: "Use the gamma-product basis and a binomial dimension count to decompose spinor tensor products into antisymmetric tensors of ranks 0 through n. This makes spinor tensor products computable by form rank rather than by brute-force state matching."
+  status: asserted
+
+- id: technique.state_and_operator_transformation_rules
+  label: "State, bra, and operator transformation rules"
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: "Translate finite and infinitesimal group actions into actions on kets, bras, and operators; operators transform by similarity and infinitesimally by commutators."
+  status: asserted
+
+- id: technique.strange_quark_mass_breaking_for_magnetic_moments
+  label: "Strange-Quark Mass Breaking in Magnetic Moments"
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: "Break SU(3) flavor by taking m_s different from m_u and m_d; this improves magnetic moment predictions such as the Lambda, where the u and d pair is in spin zero and only the s quark contributes."
+  status: asserted
+
+- id: technique.su2_multiplet_completion_for_roots
+  label: "Complete SU(2) multiplets to find roots"
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: "Instead of computing every p and q explicitly, view each root as a weight under the SU(2) subalgebras associated with the simple roots and complete the required multiplets until nothing new starts."
+  status: asserted
+
+- id: technique.su2_subalgebra_from_roots
+  label: "SU(2) subalgebra from each root"
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: "Every root pair together with alpha dot H defines an SU(2) subalgebra, allowing representation-theory questions in the full algebra to be reduced to familiar SU(2) structure."
+  status: asserted

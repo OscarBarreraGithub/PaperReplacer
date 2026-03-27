@@ -1,0 +1,1836 @@
+- from: qft.gauge_fixing
+  to: technique.projector_based_inversion_of_gauge_redundant_quadratic_forms
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Gauge fixing identifies which quadratic-form directions are pure redundancy and therefore must be projected out before any inverse is meaningful.
+  failure_mode_if_absent: The kernel is treated as fully invertible and unphysical gauge zero modes contaminate the propagator construction.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary centers on inverting only orthogonal to gauge redundancies."
+  status: asserted
+- from: math.operator_basics.kernel_and_image
+  to: technique.projector_based_inversion_of_gauge_redundant_quadratic_forms
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The method separates null directions from the physical image of the quadratic operator, which is exactly kernel-and-image language.
+  failure_mode_if_absent: There is no clean way to distinguish invertible physical directions from the gauge kernel.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary is about handling null directions by partial inversion."
+  status: asserted
+- from: qft.feynman_propagator
+  to: technique.propagator_pole_method_for_energy_shifts
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The technique reads energy shifts from the dressed propagator pole, so the propagator itself is the central object being manipulated.
+  failure_mode_if_absent: The pole motion cannot be interpreted as a correction to the two-point function.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary says the level shift comes from movement of the full propagator pole."
+  status: asserted
+- from: qft.on_shell_propagator_conditions
+  to: technique.propagator_pole_method_for_energy_shifts
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Using pole motion as an energy observable requires knowing how on-shell conditions are encoded in the propagator denominator.
+  failure_mode_if_absent: A shifted pole cannot be translated into a bound-state energy correction in a controlled way.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Method extracts physics specifically from pole displacement."
+  status: asserted
+- from: technique.propagator_pole_method_for_energy_shifts
+  to: technique.bound_state_master_formula_in_momentum_space
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The momentum-space master formula is a concrete implementation of reading bound-state shifts from self-energy corrections to the propagator pole.
+  failure_mode_if_absent: The master formula loses its physical interpretation as a bound-state pole-shift computation.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Both summaries concern extracting bound-state energy shifts from self-energy structure."
+  status: asserted
+- from: math.lie_algebra
+  to: technique.quadratic_casimir_operator
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The quadratic Casimir is defined from Lie-algebra generators and their invariant contraction.
+  failure_mode_if_absent: T squared cannot be recognized as an algebraic invariant tied to representation theory.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary defines the operator directly from generators T^a."
+  status: asserted
+- from: technique.cartan_subalgebra_and_weights
+  to: technique.quadratic_casimir_operator
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Casimir eigenvalues are used to label irreducible representations, and weights are the authored representation-language already present in the graph.
+  failure_mode_if_absent: The invariant operator is disconnected from the irrep data it is supposed to classify.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary emphasizes Casimir eigenvalues as irrep labels."
+  status: asserted
+- from: technique.quadratic_casimir_operator
+  to: technique.gauge_group_color_algebra
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Color-algebra reduction repeatedly trades generator products for Casimir invariants in a chosen representation.
+  failure_mode_if_absent: Color factors cannot be compressed to the standard invariant combinations used in amplitude simplification.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Downstream summary explicitly mentions Casimir identities in color reduction."
+  status: asserted
+- from: qft.brst_cohomology
+  to: technique.quantum_master_equation
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The quantum master equation is the quantum consistency condition for the same gauge-redundancy structure BRST cohomology organizes.
+  failure_mode_if_absent: The BV condition looks like a formal equation rather than a statement about physical gauge independence.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary says the equation enforces gauge-fixing independence of quantum amplitudes."
+  status: asserted
+- from: technique.bv_antifield_master_equation
+  to: technique.quantum_master_equation
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The quantum master equation is the antifield master equation upgraded by the BV Laplacian term.
+  failure_mode_if_absent: The quantum condition appears unmotivated because its classical BV predecessor is missing.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary explicitly says the method adds the BV Laplacian term."
+  status: asserted
+- from: technique.quantum_master_equation
+  to: technique.antifield_bv_cohomology_for_higher_order_anomalies
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Higher-order anomaly analysis in the antifield formalism is organized around quantum-master-equation cohomology.
+  failure_mode_if_absent: The anomaly problem is missing the consistency equation that defines the relevant cohomology classes.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Downstream summary studies anomalies through the quantum master equation."
+  status: asserted
+- from: technique.quantum_master_equation
+  to: technique.bv_cohomological_renormalization_of_effective_gauge_theories
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: BV renormalization beyond power counting uses the quantum master equation as its core consistency constraint.
+  failure_mode_if_absent: The renormalization procedure loses the condition that keeps gauge symmetry under control after quantization.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Downstream summary names the classical and quantum master equations as inputs."
+  status: asserted
+- from: qft.instanton
+  to: technique.r_symmetry_anomaly_and_discrete_vacua
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The method uses the instanton anomaly of the gaugino R symmetry to infer discrete vacuum structure.
+  failure_mode_if_absent: The reduction of the continuous R symmetry to a discrete subgroup has no dynamical origin.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary explicitly ties the argument to the instanton anomaly."
+  status: asserted
+- from: sm.gauge_anomaly
+  to: technique.r_symmetry_anomaly_and_discrete_vacua
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The key step is an anomalous symmetry reduction, so anomaly reasoning is part of using the technique.
+  failure_mode_if_absent: Multiple vacua appear as an unexplained assertion rather than a consequence of anomalous symmetry breaking.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary frames the method as anomaly analysis of an R symmetry."
+  status: asserted
+- from: qft.dirac_equation
+  to: technique.radial_dirac_equations_in_central_field
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The technique is a separation and reduction of the Dirac equation in a central potential.
+  failure_mode_if_absent: The coupled radial system cannot be recognized as a reformulation of relativistic fermion dynamics.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary says the method reduces the Dirac equation to radial form."
+  status: asserted
+- from: qft.dirac_algebra
+  to: technique.radial_dirac_equations_in_central_field
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Carrying out the angular and spin decomposition requires the gamma-matrix algebra behind the Dirac operator.
+  failure_mode_if_absent: The quantum number k and the coupling between upper and lower radial components are opaque.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Reduction relies on spinor structure specific to the Dirac algebra."
+  status: asserted
+- from: qft.kallen_lehmann_representation
+  to: technique.resonance_saturation_estimates
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Resonance saturation works by approximating spectral functions with a few dominant poles and resonances.
+  failure_mode_if_absent: It is unclear what quantity is being saturated or why a few hadronic states can approximate it.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary explicitly says the method approximates spectral functions by resonances."
+  status: asserted
+- from: qft.correlators_propagators_lsz
+  to: technique.single_particle_pole_factorization
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Single-particle pole factorization inserts complete states into time-ordered correlators and isolates their pole structure.
+  failure_mode_if_absent: The residue factorization into on-shell matrix elements has no correlator-based starting point.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary says the method factors poles inside time-ordered products."
+  status: asserted
+- from: qft.asymptotic_one_particle_state
+  to: technique.single_particle_pole_factorization
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The factorized residue is written in terms of on-shell one-particle matrix elements, so asymptotic states are essential input.
+  failure_mode_if_absent: The isolated pole cannot be converted into a product of physical amplitudes.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary says residues factorize into on-shell matrix elements."
+  status: asserted
+- from: technique.single_particle_pole_factorization
+  to: technique.onshell_spinor_helicity_factorization
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The on-shell spinor-helicity proof is a specialized realization of the generic single-particle pole factorization argument.
+  failure_mode_if_absent: The spinor-helicity derivation loses the universal pole-factorization principle it is exploiting.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Downstream label is an on-shell proof of factorization."
+  status: asserted
+- from: technique.supersymmetric_nonrenormalization
+  to: technique.singular_superpotential_dsb_criterion
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The method reasons with the exact effective superpotential, so supersymmetric nonrenormalization structure is part of its setup.
+  failure_mode_if_absent: The singular superpotential is treated as arbitrary rather than as a controlled exact object.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary invokes the exact effective superpotential."
+  status: asserted
+- from: technique.wilsonian_versus_1pi_superpotential_separation
+  to: technique.singular_superpotential_dsb_criterion
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The criterion relies on knowing which superpotential singularities are physically meaningful in the exact low-energy description.
+  failure_mode_if_absent: Singular behavior can be misread as an artifact of the wrong superpotential notion.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Technique is framed in terms of singular points of the exact superpotential."
+  status: asserted
+- from: qft.lorentz_group_representation
+  to: technique.sl2c_covering_group_and_homotopy
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The method uses SL(2,C) as the universal cover of the Lorentz group, so Lorentz representation theory is its starting point.
+  failure_mode_if_absent: The covering-group construction is disconnected from the spacetime symmetry it is supposed to lift.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary states SL(2,C) is used as the Lorentz-group universal cover."
+  status: asserted
+- from: qft.homotopy_group
+  to: technique.sl2c_covering_group_and_homotopy
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The method classifies double-valued spin representations by homotopy classes of paths.
+  failure_mode_if_absent: The topological distinction between single-valued and double-valued representations is lost.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary explicitly mentions homotopy classes of paths."
+  status: asserted
+- from: technique.coupled_isothermal_poisson_jeans_solver
+  to: technique.proper_motion_jeans_degeneracy_breaking
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Proper-motion information is fed into a Jeans analysis, so an authored Poisson-Jeans solver is a direct prerequisite for using the method.
+  failure_mode_if_absent: The added proper-motion data cannot be turned into a dynamical halo inference.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary says the method breaks a degeneracy inside Jeans analyses."
+  status: asserted
+- from: technique.jeans_inversion_without_stellar_profile
+  to: technique.proper_motion_jeans_degeneracy_breaking
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The technique is another Jeans-based inversion step that sharpens halo information by adding transverse kinematics.
+  failure_mode_if_absent: Proper motions remain extra observables without a matching inversion framework.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Both summaries are about extracting halo structure from Jeans constraints."
+  status: asserted
+- from: qft.charge_conjugation
+  to: technique.pseudo_dirac_idm_splitting
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Splitting a Dirac or complex field into nearly degenerate states with off-diagonal interactions depends on charge-conjugation structure.
+  failure_mode_if_absent: The off-diagonal inelastic coupling pattern looks ad hoc instead of following from the field decomposition.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary starts from a Dirac fermion or complex scalar and splits it."
+  status: asserted
+- from: technique.pseudo_dirac_idm_splitting
+  to: technique.pseudo_dirac_higgsino_limit
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The pseudo-Dirac higgsino limit is a concrete electroweak realization of the general inelastic-splitting construction.
+  failure_mode_if_absent: The higgsino limit loses the generic mechanism that makes its interactions dominantly inelastic.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Both summaries are organized around tiny splittings and off-diagonal states."
+  status: asserted
+- from: technique.pseudo_dirac_higgsino_limit
+  to: technique.stub_track_search_for_degenerate_higgsinos
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Searching for nearly degenerate higgsinos with disappearing or stub tracks depends on the same compressed pseudo-Dirac higgsino spectrum.
+  failure_mode_if_absent: The collider signature loses the spectrum interpretation that makes short charged-track searches appropriate.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Downstream label is explicitly for degenerate higgsinos."
+  status: asserted
+- from: relativity.rapidity
+  to: technique.pseudorapidity_ellipse_likelihood
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The likelihood is built from eta plus and eta minus, so rapidity language is built into the observable definition.
+  failure_mode_if_absent: The fitted ellipse variables are undefined as collider kinematic quantities.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary says the fit uses the joint distribution of eta plus and eta minus."
+  status: asserted
+- from: technique.subgroup_coset_and_factor_group_analysis
+  to: technique.quotient_group_charge_lattice_identification
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Identifying the charge lattice of G over K requires the authored graph's quotient-group language for passing from a group to its global form.
+  failure_mode_if_absent: The appearance of G over K is reduced to notation rather than a structural statement about global gauge symmetry.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary explicitly phrases the lattice as that of a quotient gauge group."
+  status: asserted
+- from: technique.cartan_subalgebra_and_weights
+  to: technique.quotient_group_charge_lattice_identification
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The superextremal states are organized as a weight lattice, so Cartan-weight technology is the authored prerequisite.
+  failure_mode_if_absent: The claimed lattice cannot be matched to representation-theory data of the gauge group.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary says the relevant charges form the weight lattice of G over K."
+  status: asserted
+- from: technique.quotient_group_charge_lattice_identification
+  to: technique.nonabelian_slwgc_highest_weight_formulation
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The nonabelian sLWGC needs the correct global charge lattice before highest-weight states can be interpreted as superextremal.
+  failure_mode_if_absent: The conjecture is formulated on the wrong set of charges and misses the intended global-structure refinement.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Both summaries focus on superextremal states and nonabelian charge lattices."
+  status: asserted
+- from: technique.quotient_group_charge_lattice_identification
+  to: technique.psun_witten_effect_with_dyon_modes
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The PSU(n) Witten-effect construction is precisely about a nontrivial quotient global structure, so the G over K charge-lattice identification is upstream.
+  failure_mode_if_absent: The role of PSU(n) as a quotient rather than an ordinary simply connected group is obscured.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Both summaries emphasize quotient-group global structure."
+  status: asserted
+- from: qft.magnetic_monopole
+  to: technique.psun_witten_effect_with_dyon_modes
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The Witten effect is a statement about monopole and dyon charge assignments, so monopole physics is a direct prerequisite.
+  failure_mode_if_absent: The worldvolume dyon modes and induced charge shifts have no physical carrier.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary discusses monopole worldvolume modes and the Witten effect."
+  status: asserted
+- from: technique.psun_witten_effect_with_dyon_modes
+  to: technique.witten_effect_monopole_loop_potential
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The monopole-loop axion potential is a later application of Witten-effect physics to monopole sectors.
+  failure_mode_if_absent: The downstream axion potential lacks the charge-shift mechanism it relies on.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Downstream label explicitly builds an axion potential from the Witten effect."
+  status: asserted
+- from: technique.cpv_eft_matching_pipeline_for_edms
+  to: technique.qcd_sum_rule_cedm_to_hadron_matching
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: QCD sum-rule matching is one stage inside the broader EDM matching chain from microscopic CPV to hadronic observables.
+  failure_mode_if_absent: The sum-rule step is disconnected from the larger staged EFT interpretation of EDM limits.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary presents the method as a bridge from quark-level CPV to hadronic EDMs."
+  status: asserted
+- from: technique.operator_mixing_rge_to_edm
+  to: technique.qcd_sum_rule_cedm_to_hadron_matching
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Chromo-EDM sources have to be run and organized before they can be matched onto hadronic matrix elements.
+  failure_mode_if_absent: The hadronic matching starts from ill-specified low-energy operator coefficients.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary starts from quark chromo-EDMs as the microscopic source."
+  status: asserted
+- from: technique.qcd_sum_rule_cedm_to_hadron_matching
+  to: technique.edm_observable_matching
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Observable-level neutron and mercury EDM constraints need a hadronic bridge from quark chromo-EDMs to pion-nucleon and nucleon quantities.
+  failure_mode_if_absent: Experimental observables cannot be connected consistently to CEDM sources.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Downstream summary maps microscopic EDM operators to neutron and mercury observables."
+  status: asserted
+- from: technique.floquet_instability_chart_for_tachyonic_modes
+  to: technique.quartic_consistency_bound_for_light_vectors
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The consistency bound is imposed on a tachyonic vector-production mechanism, so one needs the instability analysis that generates the classical field in the first place.
+  failure_mode_if_absent: The quartic bound is detached from the production regime it is supposed to constrain.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary checks quartics against a tachyonic production mechanism."
+  status: asserted
+- from: qcd.color_su3
+  to: technique.quirkonium_singlet_octet_bookkeeping
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The bookkeeping explicitly tracks singlet and octet populations, which are SU(3) color representation labels.
+  failure_mode_if_absent: The distinction between the relevant quirkonium channels is undefined.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary is organized around color-singlet and color-octet states."
+  status: asserted
+- from: qcd.confinement
+  to: technique.quirkonium_singlet_octet_bookkeeping
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The method follows de-excitation and hidden glueball emission in a confining quirk sector.
+  failure_mode_if_absent: The state evolution and annihilation pattern lose the confining dynamics that make quirkonium distinctive.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary mentions de-excitation and hidden glueball emission."
+  status: asserted
+- from: eft.higher_dimensional_operator
+  to: technique.qule_operator_pathway
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The QULE pathway begins from a specific semileptonic four-fermion operator, so higher-dimensional operator language is required.
+  failure_mode_if_absent: The starting interaction is not recognized as an EFT operator insertion.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary explicitly names a four-fermion operator as the input."
+  status: asserted
+- from: technique.operator_mixing_rge_to_edm
+  to: technique.qule_operator_pathway
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The whole point of the pathway is that RG running mixes the semileptonic operator into the electron EDM.
+  failure_mode_if_absent: The downstream dipole is disconnected from the operator that generates it.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary says renormalization-group running turns the operator into the EDM."
+  status: asserted
+- from: technique.constraint_equation_regularization_of_singular_kinetics
+  to: technique.r_squared_stabilized_singular_kinetic_theory
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The R squared stabilization is a refinement of the same singular-kinetics pathology, now controlled by a healthy higher-derivative sector.
+  failure_mode_if_absent: The stabilization criterion appears without the baseline diagnosis of why the singular kinetic term looked dangerous.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Both summaries address apparent pathologies from singular kinetic operators."
+  status: asserted
+- from: technique.reverse_engineered_radion_action
+  to: technique.radion_dilaton_identification
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Identifying the radion with a lower-dimensional dilaton presupposes a controlled low-energy radion action.
+  failure_mode_if_absent: The radion-to-dilaton map floats free of an effective description of the fluctuating mode.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary says the method dimensionally reduces a radion mode into a dilaton description."
+  status: asserted
+- from: technique.goldberger_wise_radion_readjustment
+  to: technique.radion_runaway_conifold_instability
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The runaway interpretation is a radion readjustment problem after uplift, so the authored radion-readjustment technique is upstream.
+  failure_mode_if_absent: The instability cannot be phrased as a radion-potential effect induced by SUSY-breaking uplift.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary identifies the conifold instability as a radion destabilization after uplift."
+  status: asserted
+- from: technique.harmonic_compensator_for_conifold_deformations
+  to: technique.radion_runaway_conifold_instability
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The method analyzes how a conifold deformation feeds into the effective radion dynamics, and the compensator technique supplies that geometric control.
+  failure_mode_if_absent: The link between the throat deformation and the radion runaway is left purely qualitative.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary explicitly frames the effect as a conifold instability interpreted through radion dynamics."
+  status: asserted
+- from: technique.edm_observable_matching
+  to: technique.ramsey_comagnetometer_neutron_edm_method
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The Ramsey-comagnetometer setup is one of the concrete experimental observables the broader EDM matching program ultimately targets.
+  failure_mode_if_absent: The measured precession-frequency shift is disconnected from the neutron EDM quantity of interest.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary describes the central precision method for neutron EDM searches."
+  status: asserted
+- from: qft.cross_section
+  to: technique.recoil_higgsstrahlung_normalization
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The technique normalizes all other Higgs couplings to an absolute Zh production rate, so cross-section language is intrinsic to it.
+  failure_mode_if_absent: The recoil measurement cannot serve as a normalization channel for couplings and widths.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary calls Zh an absolute normalization channel."
+  status: asserted
+- from: technique.higgsstrahlung_recoil_mass_tagging
+  to: technique.recoil_higgsstrahlung_normalization
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: One has to identify Higgsstrahlung events by recoil before using them as a model-independent normalization sample.
+  failure_mode_if_absent: The normalization channel is not experimentally isolated in a decay-independent way.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Downstream normalization relies on recoil-based identification of Zh events."
+  status: asserted
+- from: technique.nonrelativistic_operator_basis
+  to: technique.recoil_spectrum_operator_diagnosis
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Diagnosing operator structure from recoil shapes requires the nonrelativistic operator basis that organizes possible interactions.
+  failure_mode_if_absent: Recoil spectra cannot be mapped back to distinct interaction operators.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary says the method identifies operators from recoil-spectrum shape."
+  status: asserted
+- from: technique.relativistic_to_nr_matching
+  to: technique.recoil_spectrum_operator_diagnosis
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The recoil diagnosis works only after UV couplings have been translated into the low-velocity operator basis seen by nuclei.
+  failure_mode_if_absent: The inferred operator structure cannot be connected back to a relativistic model.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Both summaries are about translating interaction structure into recoil observables."
+  status: asserted
+- from: technique.nec_holographic_c_function_constraint
+  to: technique.schrodinger_bulk_mode_reduction
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The bulk-mode Schrodinger potential is used to diagnose exactly the soft-wall decoupling behavior constrained by the NEC analysis.
+  failure_mode_if_absent: The reduction lacks the geometric criteria telling which backgrounds are physically admissible.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Both summaries focus on soft-wall backgrounds and decoupling diagnostics."
+  status: asserted
+- from: technique.superpotential_prepotential_method
+  to: technique.schrodinger_bulk_mode_reduction
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: One first needs a controlled warped background before reducing its fluctuation equations to one-dimensional Schrodinger form.
+  failure_mode_if_absent: The Schrodinger potential is introduced without a defined bulk background to expand around.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary says the method reduces bulk fluctuation equations in warped backgrounds."
+  status: asserted
+- from: technique.schrodinger_bulk_mode_reduction
+  to: technique.shooting_method_for_glueball_spectrum
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The shooting calculation needs the fluctuation equations in a numerically tractable one-dimensional spectral form.
+  failure_mode_if_absent: There is no well-posed eigenvalue problem to shoot on for glueball masses.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Downstream summary solves fluctuation equations numerically for the spectrum."
+  status: asserted
+- from: technique.potential_nr_eft_for_sommerfeld_enhancement
+  to: technique.schrodinger_solution_for_multichannel_potentials
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The multichannel Schrodinger solve is the step that turns the potential NR EFT into actual Sommerfeld factors.
+  failure_mode_if_absent: The coupled-channel equation lacks its EFT-derived potential and annihilation operators.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary says the solve turns the EFT into enhancement factors and cross sections."
+  status: asserted
+- from: technique.box_vs_tree_sommerfeld_diagnosis
+  to: technique.schrodinger_solution_for_multichannel_potentials
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The box-versus-tree criterion tells when perturbation theory fails and a full wavefunction solve is required.
+  failure_mode_if_absent: It is unclear why one needs the expensive coupled Schrodinger treatment rather than Born-level amplitudes.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Downstream summary is the full wavefunction solution used for Sommerfeld physics."
+  status: asserted
+- from: technique.single_brane_tt_gauge_reduction
+  to: technique.schrodinger_volcano_mode_mapping
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The mapping starts from the transverse-traceless graviton fluctuation equation after gauge reduction.
+  failure_mode_if_absent: The one-dimensional volcano problem has no clean graviton fluctuation equation to come from.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary explicitly transforms the transverse-traceless graviton equation."
+  status: asserted
+- from: technique.scalar_to_graviton_propagator_reduction
+  to: technique.schrodinger_volcano_mode_mapping
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Both techniques reduce graviton dynamics to simpler one-dimensional problems, with the volcano map being the spectral version of that simplification.
+  failure_mode_if_absent: The Schrodinger reformulation lacks the prior reduction that makes graviton fluctuations tractable.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Both summaries are about reducing graviton problems to simpler scalar-like equations."
+  status: asserted
+- from: technique.schrodinger_volcano_mode_mapping
+  to: technique.toy_potential_for_localization
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The solvable toy potential is an analytically tractable stand-in for the graviton volcano problem.
+  failure_mode_if_absent: The toy model loses the localization question it is meant to approximate.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Downstream summary explicitly replaces the graviton volcano potential by a toy model."
+  status: asserted
+- from: technique.single_brane_tt_gauge_reduction
+  to: technique.schrodinger_volcano_reduction_for_gravitons
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The graviton-mode reduction again starts from the gauge-fixed transverse-traceless fluctuation equation.
+  failure_mode_if_absent: The conformal-coordinate Schrodinger problem has no justified starting equation.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary says the method transforms the graviton fluctuation equation."
+  status: asserted
+- from: technique.scalar_to_graviton_propagator_reduction
+  to: technique.schrodinger_volcano_reduction_for_gravitons
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The volcano reduction is a spectral refinement of the broader strategy of converting graviton dynamics into simpler scalar-like problems.
+  failure_mode_if_absent: The Schrodinger reduction is disconnected from the graph's existing graviton-simplification machinery.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Both summaries reduce graviton problems to simpler effective equations."
+  status: asserted
+- from: technique.schrodinger_volcano_reduction_for_gravitons
+  to: technique.volcano_potential_intersection_localization
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Intersection localization is a higher-dimensional application of the same volcano-potential graviton analysis.
+  failure_mode_if_absent: The intersection result loses the one-dimensional localization diagnostic it is generalizing.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Downstream label explicitly uses a volcano potential for localization."
+  status: asserted
+- from: technique.doubly_averaged_kozai_hamiltonian
+  to: technique.semianalytic_triple_eccentricity_estimator
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The semianalytic estimator builds on secular triple forcing rather than direct three-body integration.
+  failure_mode_if_absent: The eccentricity mapping has no secular dynamical backbone for the ambient perturber.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary combines secular tidal forcing with later GW evolution."
+  status: asserted
+- from: technique.epsilon_min_to_e_ligo_mapping
+  to: technique.semianalytic_triple_eccentricity_estimator
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The estimator ultimately predicts the eccentricity distribution in the observable inspiral band, which needs a mapping into detector-band eccentricity.
+  failure_mode_if_absent: The environmental scan stops at abstract orbital parameters rather than observable eccentricity.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary says the method maps environments to observable inspiral eccentricity."
+  status: asserted
+- from: technique.goldberger_wise_radion_readjustment
+  to: technique.sequestering_with_adjusting_stabilizer
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The technique explicitly tracks how the stabilizer response readjusts the radion while sequestering is tested.
+  failure_mode_if_absent: The stabilizer response is invoked without a radion-adjustment framework.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary says the stabilizing field response is tracked under SUSY-breaking perturbations."
+  status: asserted
+- from: technique.boundary_matching_for_uplift_consistency
+  to: technique.sequestering_with_adjusting_stabilizer
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Maintaining sequestering while the stabilizer communicates changed four-dimensional curvature is a boundary-matching problem.
+  failure_mode_if_absent: The bulk response to vacuum-energy perturbations cannot be connected consistently to the brane data.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary focuses on the bulk response to SUSY breaking and vacuum-energy shifts."
+  status: asserted
+- from: technique.gauge_invariant_flat_direction_classification
+  to: technique.shifted_index_superpotential_engineering
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The point of the shifted-index construction is to lift otherwise allowed classical flat directions, so one must know what those flat directions are.
+  failure_mode_if_absent: The engineered superpotential cannot be judged on whether it actually removes the unwanted moduli.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary says the goal is to lift all classical flat directions."
+  status: asserted
+- from: technique.supersymmetric_nonrenormalization
+  to: technique.shifted_index_superpotential_engineering
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The method deliberately designs tree-level superpotential couplings, so supersymmetric superpotential control is part of its setup.
+  failure_mode_if_absent: The selected operator pattern cannot be interpreted as a controlled superpotential engineering choice.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary is explicitly about choosing tree-level superpotential operators."
+  status: asserted
+- from: technique.neumann_boundary_condition_from_diffeomorphism
+  to: technique.shooting_method_for_extremal_surfaces
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The shooting problem requires the correct brane boundary condition for the extremal surface before numerical integration can start.
+  failure_mode_if_absent: The numerical surface solve uses the wrong endpoint condition at the gravitating brane.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Downstream summary says the shooting uses tailored Dirichlet and Neumann conditions."
+  status: asserted
+- from: technique.shooting_method_for_extremal_surfaces
+  to: technique.hm_vs_island_area_phase_diagram
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The HM-versus-island phase diagram is built from the competing extremal surfaces produced by the shooting calculation.
+  failure_mode_if_absent: Without the shooting calculation, the phase diagram has no numerical surface data to compare.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary explicitly says the method constructs the competing extremal surfaces."
+  status: asserted
+- from: technique.dark_disk_tidal_trigger_model
+  to: technique.shower_profile_convolution
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The response-profile convolution starts from a time-dependent tidal forcing model for comet showers generated by disk crossings.
+  failure_mode_if_absent: There is no forcing history to convolve into a crater-rate prediction.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary says the method convolves tidal forcing from Solar disk crossings."
+  status: asserted
+- from: technique.shower_profile_convolution
+  to: technique.bayesian_crater_timeline_fit_with_galactic_priors
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Bayesian crater-time fitting needs a realistic time-domain crater-rate model rather than an instantaneous-impact approximation.
+  failure_mode_if_absent: The crater-time fit is forced to compare data against an unrealistic forcing history.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Downstream label is a crater-timeline fit, while this method supplies the crater-rate profile."
+  status: asserted
+- from: technique.simplified_model_framework
+  to: technique.signature_based_llp_taxonomy
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The LLP taxonomy is a collider-search organization tool, and the graph's simplified-model framework is the closest authored precursor for organizing searches independent of full UV detail.
+  failure_mode_if_absent: The taxonomy appears as an unanchored list of signatures rather than a search-design framework.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary says the method classifies LLP searches by observable signatures instead of UV models."
+  status: asserted
+- from: technique.signature_based_llp_taxonomy
+  to: technique.background_free_llp_search_design
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Designing a background-free LLP search depends on first knowing which displaced or delayed signature class one is targeting.
+  failure_mode_if_absent: Detector and reconstruction choices are not tied to the specific LLP signature category they are meant to optimize.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Taxonomy summary explicitly aims to expose search gaps by final-state signature."
+  status: asserted
+- from: technique.signature_based_llp_taxonomy
+  to: technique.model_independent_llp_yield_scaling
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Model-independent LLP yield estimates need a signature-level categorization to say which production, acceptance, and decay objects are being counted.
+  failure_mode_if_absent: The analytic yield formula floats free of the signature classes it is supposed to compare.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Both summaries are model-independent tools for LLP search coverage."
+  status: asserted
+- from: technique.stealth_sector_small_splitting
+  to: technique.singlet_portal_stealth_construction
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The portal construction is only meaningful once the hidden sector already has the near-supersymmetric small splitting that makes it stealthy.
+  failure_mode_if_absent: Strong portal couplings are engineered without the stealth property they are supposed to preserve.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary says the portal must preserve the small hidden-sector splittings."
+  status: asserted
+- from: technique.singlet_portal_stealth_construction
+  to: technique.stealth_portal_catalog
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The portal catalog generalizes concrete constructions like the singlet portal into a reusable menu of stealth couplings.
+  failure_mode_if_absent: The catalog lacks one of its explicit portal-building exemplars.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Downstream summary organizes viable stealth couplings into a portal menu."
+  status: asserted
+- from: technique.singlet_portal_stealth_construction
+  to: technique.stealth_branching_hierarchy_estimate
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Branching-hierarchy estimates need a concrete portal so the competing visible and off-shell stealth decays are defined.
+  failure_mode_if_absent: The rate comparison has no specified interaction that feeds the MSSM cascade into the stealth sector.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Both summaries are about making stealth decays prompt yet still stealthy."
+  status: asserted
+- from: technique.bootstrap_model_likelihood_distribution
+  to: technique.small_sample_subsampling_significance
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The subsampling test is a small-sample significance diagnostic, and bootstrap likelihood distributions are the graph's closest existing resampling-based statistical precursor.
+  failure_mode_if_absent: The repeated-resampling logic behind the significance estimate is not grounded in an authored statistical method.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary explicitly uses repeated subsampling or bootstrap-like resampling."
+  status: asserted
+- from: technique.projection_correlation_morphology_proxy
+  to: technique.small_sample_subsampling_significance
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The subsampling method is used to test whether a morphology correlation is real or a small-sample accident, so an existing morphology-correlation proxy is upstream.
+  failure_mode_if_absent: The resampling test has no concrete morphological statistic to challenge.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary says the method tests whether a claimed correlation could arise accidentally."
+  status: asserted
+- from: qft.jet
+  to: technique.pt_dependent_jet_radius
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: A pT-dependent radius is a jet-finding prescription, so the graph's base jet concept is the direct prerequisite.
+  failure_mode_if_absent: The varying radius has no object to act on.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary calls the method a jet-finding prescription."
+  status: asserted
+- from: qft.jet
+  to: technique.pumml_cnn_pileup_subtraction
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: PUMML reconstructs the leading-vertex energy pattern inside a jet, so jet structure is the basic input object.
+  failure_mode_if_absent: The CNN target and input channels are not anchored to a collider object with localized energy flow.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary says the network acts on multi-channel jet images."
+  status: asserted
+- from: technique.colored_jet_images
+  to: technique.pumml_cnn_pileup_subtraction
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: PUMML is formulated on multi-channel jet-image inputs, which is exactly the representation provided by the existing colored-jet-images technique.
+  failure_mode_if_absent: The CNN architecture loses the image-based representation it is built to consume.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary explicitly describes a convolutional network on jet images."
+  status: asserted
+- from: qcd.quark
+  to: technique.pure_sample_calibration
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The calibration method explicitly extracts quark-enriched samples from data.
+  failure_mode_if_absent: One side of the quark-versus-gluon calibration target is undefined.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary says the strategy builds high-purity quark and gluon samples."
+  status: asserted
+- from: qcd.gluon
+  to: technique.pure_sample_calibration
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The same calibration strategy also needs a gluon-enriched control sample from data.
+  failure_mode_if_absent: The calibration loses the second jet class it is trying to separate.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary says the method extracts both quark- and gluon-enriched samples."
+  status: asserted
+- from: technique.pure_sample_calibration
+  to: technique.two_variable_qg_likelihood
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: A quark-gluon likelihood tagger needs calibrated quark-rich and gluon-rich reference samples to set or validate its distributions.
+  failure_mode_if_absent: The likelihood variables are tuned without a trustworthy data-driven class calibration.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Downstream label is a quark-gluon likelihood tagger."
+  status: asserted
+- from: qft.jet
+  to: technique.qjets_nondeterministic_clustering
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Q-jets samples alternative recombination trees for a jet, so the base jet object is indispensable.
+  failure_mode_if_absent: The stochastic clustering has no defined collider object to recluster.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary describes a jet-clustering method that samples recombination trees."
+  status: asserted
+- from: technique.qjets_nondeterministic_clustering
+  to: technique.jet_volatility
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Jet volatility is defined from the spread of observables across Q-jets interpretations.
+  failure_mode_if_absent: The volatility observable loses the nondeterministic ensemble it is measuring.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Downstream summary explicitly says jet volatility is Q-jets based."
+  status: asserted
+- from: technique.qjets_nondeterministic_clustering
+  to: technique.qantikt_event_level_sampling
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Qanti-kT extends the same nondeterministic-clustering idea from single jets to whole-event interpretations.
+  failure_mode_if_absent: The event-level sampling looks unmotivated because the underlying stochastic clustering logic is missing.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Both summaries describe nondeterministic jet or event clustering."
+  status: asserted
+- from: technique.qantikt_event_level_sampling
+  to: technique.generalized_eml_correlated_interpretations
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Correlated-interpretation likelihood formulas are needed precisely when a method like Qanti-kT produces many linked interpretations of the same event.
+  failure_mode_if_absent: Multiple sampled event interpretations are combined with the wrong independent-event statistics.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Downstream summary corrects likelihood formulas for correlated event interpretations."
+  status: asserted
+- from: technique.telescoping_jets_multi_r
+  to: technique.r_core_variables
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: R-core variables track how jet observables evolve as the radius is varied, which is the same multi-R logic telescoping jets provides.
+  failure_mode_if_absent: The shrinking-radius behavior is detached from an existing multi-radius interpretation framework.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Both summaries organize jet information across changing radius scales."
+  status: asserted
+- from: technique.momentum_weighted_jet_charge
+  to: technique.radial_weighted_jet_charge
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The radial-weighted observable is an extension of ordinary momentum-weighted jet charge with an additional radial factor.
+  failure_mode_if_absent: The new observable cannot be recognized as a deformation of the standard jet-charge definition.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary says the method adds a radial weight to the usual pT weighting."
+  status: asserted
+- from: qft.cross_section
+  to: technique.random_scan_theory_covariance
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The covariance matrix is built by propagating theory-parameter scans through binned predictions for rates and distributions.
+  failure_mode_if_absent: The sampled parameter choices are not tied to the observable bins whose correlations are being estimated.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary says sampled theory choices are propagated through all bins."
+  status: asserted
+- from: qft.symbol_calculus
+  to: technique.rl_identity_search
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The RL policy is ordering functional identities for polylogarithmic expressions that are naturally encoded in symbol language.
+  failure_mode_if_absent: The simplification task lacks a consistent representation of the expressions being manipulated.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary describes learned ordering of dilogarithm identities for polylog simplification."
+  status: asserted
+- from: technique.monodromy_group_for_polylogs
+  to: technique.rl_identity_search
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Functional identities among polylogarithms live in the same algebraic space as monodromy relations, making this an authored precursor for identity search.
+  failure_mode_if_absent: The RL search is disconnected from the existing graph's polylog identity structure.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Both techniques concern algorithmic control of polylog identities."
+  status: asserted
+- from: qft.jet
+  to: technique.rnn_distance_inputs_jets
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The recurrent architecture classifies jets, so the base jet concept is the direct prerequisite.
+  failure_mode_if_absent: The per-particle sequence and geometry inputs have no target collider object.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary calls it a jet-classification architecture."
+  status: asserted
+- from: technique.ca_iterative_declustering
+  to: technique.rnn_distance_inputs_jets
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The network augments particles with clustering-distance features, and iterative declustering is the authored graph's nearest source for that tree geometry.
+  failure_mode_if_absent: The extra distance inputs are introduced without a clustering-tree interpretation.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary says the RNN uses clustering-distance inputs to capture jet geometry."
+  status: asserted
+- from: qcd.factorization_theorem
+  to: technique.rnn_global_state_for_factorization_violation
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The whole point of the global-state RNN is to model correlations that violate naive factorized branching assumptions.
+  failure_mode_if_absent: The non-Markovian correlations are not recognized as departures from a factorized baseline.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary explicitly says the model captures factorization-violating effects."
+  status: asserted
+- from: qft.cross_section
+  to: technique.significance_improvement_characteristic
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: SIC evaluates how a cut reshapes signal and background efficiencies, which is a rate-significance question.
+  failure_mode_if_absent: The efficiency ratio is not connected to the discovery metric it is meant to optimize.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary defines SIC as epsilon S over square root epsilon B."
+  status: asserted
+- from: qft.cross_section
+  to: technique.simulation_based_inference_pipeline
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The simulation-based pipeline turns high-fidelity event simulations into detector-level inference about underlying rate parameters.
+  failure_mode_if_absent: The pipeline is detached from the physical predictions the simulations are supposed to encode.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary says the workflow turns Monte Carlo simulations into detector-level inference."
+  status: asserted
+- from: technique.likelihood_ratio_from_unsupervised_models
+  to: technique.simulation_based_inference_pipeline
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The pipeline is framed around detector-level likelihood or mixture-model inference, which the existing likelihood-ratio node already develops.
+  failure_mode_if_absent: The ML workflow lacks a statistical object to learn from simulations.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary explicitly mentions mixture-model reasoning and detector-level inference."
+  status: asserted
+- from: technique.simulation_based_inference_pipeline
+  to: technique.simulation_based_inference_madminer
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: MadMiner is a concrete simulation-based inference realization that sits inside the broader detector-level SBI workflow.
+  failure_mode_if_absent: The MadMiner method appears as an isolated tool rather than a specific SBI pipeline instance.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Both summaries are explicitly about simulation-based detector-level inference."
+  status: asserted
+- from: qft.jet
+  to: technique.soft_drop_grooming
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Soft Drop is a grooming algorithm applied to jets and subjets.
+  failure_mode_if_absent: The recursive soft-branch removal has no collider object to act on.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary calls the method a jet-grooming algorithm."
+  status: asserted
+- from: technique.ca_iterative_declustering
+  to: technique.soft_drop_grooming
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Soft Drop reclusters with Cambridge-Aachen and then recursively declusters the tree.
+  failure_mode_if_absent: The grooming rule has no clustering history on which to apply its soft-drop condition.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary explicitly says the algorithm reclusters with Cambridge-Aachen."
+  status: asserted
+- from: technique.soft_drop_grooming
+  to: technique.soft_drop_grooming_mass_stabilization
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The mass-stabilization method uses Soft Drop as the actual grooming step in the two-stage preprocessing chain.
+  failure_mode_if_absent: The stabilization recipe loses the grooming operation that suppresses tune sensitivity.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Downstream label explicitly says the stabilization uses soft drop."
+  status: asserted
+- from: technique.soft_drop_grooming
+  to: technique.soft_drop_ngl_free_factorization
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The non-global-logarithm-free factorization theorem is the analytic factorization of the Soft Drop groomed jet mass.
+  failure_mode_if_absent: The downstream factorization formula loses the grooming procedure whose scale hierarchy it exploits.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Downstream label explicitly factorizes soft-drop jet mass."
+  status: asserted
+- from: technique.soft_drop_grooming
+  to: technique.groomed_hadronization_suppression
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The hadronization-suppression argument is specifically about groomed observables, with Soft Drop as the canonical grooming procedure in this subgraph.
+  failure_mode_if_absent: The power-counting improvement has no concrete grooming operation to attribute it to.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Downstream summary estimates nonperturbative onset for groomed observables."
+  status: asserted
+- from: technique.soft_drop_grooming
+  to: technique.infrared_safe_jet_flavour_with_soft_drop
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The infrared-safe flavour definition is explicitly constructed by applying Soft Drop before counting groomed quark number.
+  failure_mode_if_absent: The flavour definition loses the grooming step that removes the problematic soft contamination.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Downstream label explicitly says the flavour definition is via soft drop."
+  status: asserted
+- from: technique.soft_drop_grooming
+  to: technique.ngl_elimination_via_grooming
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The all-orders NGL elimination argument is formulated for Soft Drop grooming removing wide-angle soft modes.
+  failure_mode_if_absent: The claim of NGL removal has no concrete grooming algorithm to refer to.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Downstream summary explicitly proves NGL removal by soft-drop grooming."
+  status: asserted
+- from: technique.soft_drop_grooming
+  to: technique.w_mass_calibration_soft_drop
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The calibration method explicitly uses Soft Drop as its second preprocessing stage after the W-mass rescaling.
+  failure_mode_if_absent: The tune-stabilizing calibration chain is missing its stated grooming step.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Downstream label explicitly combines W-mass calibration with soft-drop grooming."
+  status: asserted
+- from: technique.clifford_algebra_construction_of_so_n
+  to: technique.raising_operator_phase_fixing_in_spinor_space
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Fixing explicit spinor raising operators requires concrete gamma-matrix or Clifford-algebra realizations of the orthogonal generators.
+  failure_mode_if_absent: The phase-fixing step cannot leave the abstract highest-weight level and produce matrices.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary says the method replaces abstract construction with concrete matrices."
+  status: asserted
+- from: technique.so_odd_spinor_highest_weight_construction
+  to: technique.raising_operator_phase_fixing_in_spinor_space
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The phase-fixing procedure is a concrete implementation of the same spinor highest-weight construction.
+  failure_mode_if_absent: The explicit operators lose the weight-space structure they are supposed to realize.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Both summaries concern constructing odd-orthogonal spinor representations."
+  status: asserted
+- from: technique.regular_subalgebra_by_dynkin_node_deletion
+  to: technique.recursive_maximal_subgroup_enumeration
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Recursive subgroup enumeration starts by repeatedly applying the same node-deletion move inside the subalgebras already found.
+  failure_mode_if_absent: The recursion has no base subgroup-finding operation to iterate.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary explicitly says the method keeps applying diagram deletions or splits."
+  status: asserted
+- from: technique.extended_dynkin_diagram_subalgebra_search
+  to: technique.recursive_maximal_subgroup_enumeration
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The recursive algorithm extends the same extended-Dynkin search from a single maximal subgroup to a full tree.
+  failure_mode_if_absent: The search lacks the maximal-subgroup step it is repeatedly refining.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary says one maximal-subgroup result is turned into a full subgroup tree."
+  status: asserted
+- from: math.linear_algebra.vector_space
+  to: technique.regular_representation_construction
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The regular representation treats group elements as basis vectors spanning a representation space.
+  failure_mode_if_absent: The left-multiplication action has no underlying space on which to act linearly.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary says the group elements themselves are used as basis states."
+  status: asserted
+- from: math.operator_basics.matrix_representation_of_linear_map
+  to: technique.regular_representation_construction
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Turning left multiplication by each group element into a concrete representation means writing that linear action in matrix form.
+  failure_mode_if_absent: The regular representation remains a verbal action rather than an explicit representation.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary defines the representation by the action of left multiplication."
+  status: asserted
+- from: technique.regular_representation_construction
+  to: technique.character_orthogonality_and_projection_operators
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Character orthogonality and projector formulas are standard consequences of decomposing the regular representation.
+  failure_mode_if_absent: The orthogonality and projection formulas lose the representation-theoretic derivation the graph already supports.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Downstream label explicitly concerns characters and projection operators."
+  status: asserted
+- from: technique.dynkin_diagram_encoding
+  to: technique.regular_subalgebra_by_dynkin_node_deletion
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Node deletion only makes sense once the Lie algebra has been encoded as a Dynkin diagram.
+  failure_mode_if_absent: The subgroup-finding move has no graphical object to delete nodes from.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary explicitly says the method deletes nodes from a Dynkin diagram."
+  status: asserted
+- from: technique.simple_root_identification
+  to: technique.regular_subalgebra_by_dynkin_node_deletion
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Regular subalgebras are read off from subsets of simple roots, so one must know which roots are simple first.
+  failure_mode_if_absent: The deleted-node diagram cannot be interpreted as selecting a subset of simple roots.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary says the subgroup roots are a subset of the original simple-root system."
+  status: asserted
+- from: technique.regular_subalgebra_by_dynkin_node_deletion
+  to: technique.so10_left_right_branching
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The SO(10) to SU(4) times SU(2) times SU(2) branching is carried out by the same Dynkin-node deletion logic.
+  failure_mode_if_absent: The Pati-Salam subgroup appears without the regular-subalgebra construction that identifies it.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Downstream summary explicitly uses extended Dynkin analysis for the branching."
+  status: asserted
+- from: technique.regular_subalgebra_by_dynkin_node_deletion
+  to: technique.so8_branching_to_su2_power_4
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The SU(2) to the fourth subgroup is obtained by removing a node from the extended D4 diagram, which is exactly the node-deletion method.
+  failure_mode_if_absent: The subgroup decomposition has no diagrammatic derivation.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Downstream summary says the construction removes the central node of the extended D4 diagram."
+  status: asserted
+- from: technique.defining_weight_root_geometry
+  to: technique.simple_root_identification
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Simple roots are defined by geometric positivity and decomposability properties inside root space.
+  failure_mode_if_absent: The distinction between simple and non-simple positive roots cannot be stated geometrically.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary defines simple roots as positive roots not expressible as sums."
+  status: asserted
+- from: technique.positive_weight_ordering
+  to: technique.simple_root_identification
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Declaring which roots are positive comes before deciding which positive roots are simple.
+  failure_mode_if_absent: Simplicity is undefined because the positive-root set itself has not been fixed.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Simple roots are defined within the positive-root system."
+  status: asserted
+- from: technique.simple_root_identification
+  to: technique.root_generation_by_cartan_rows
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The Cartan-row growth algorithm starts from simple roots and adds them layer by layer.
+  failure_mode_if_absent: The row-addition procedure has no initial simple-root basis to propagate from.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary says adding a simple root adds the corresponding Cartan-matrix row."
+  status: asserted
+- from: technique.simple_root_identification
+  to: technique.single_line_shrinking_rule
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The shrinking rule acts on pairs of simple roots joined by a single line in the Dynkin diagram.
+  failure_mode_if_absent: The rule cannot tell which connected roots it is allowed to combine.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary explicitly starts from two simple roots joined by a single line."
+  status: asserted
+- from: technique.simple_root_identification
+  to: technique.simple_root_commutator_algebra_construction
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Building the full algebra by nested commutators begins from the generators attached to the simple roots.
+  failure_mode_if_absent: The commutator construction has no minimal generating root set to start from.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Downstream label explicitly says the algebra is built from simple-root commutators."
+  status: asserted
+- from: technique.cartan_matrix_encoding
+  to: technique.root_generation_by_cartan_rows
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The algorithm literally adds rows of the Cartan matrix to test for new roots.
+  failure_mode_if_absent: The q minus p update rule has no encoded Cartan data to use.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary says root generation proceeds by adding Cartan-matrix rows."
+  status: asserted
+- from: technique.cartan_subalgebra_and_weights
+  to: technique.root_ladder_operators
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Ladder operators act by shifting weights, so weights relative to a Cartan subalgebra are the base language.
+  failure_mode_if_absent: The effect of E plus or minus alpha on a state has no weight-space meaning.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary says the operators shift a weight mu by plus or minus alpha."
+  status: asserted
+- from: technique.roots_as_adjoint_weights
+  to: technique.root_ladder_operators
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Interpreting roots as the weights carried by adjoint generators identifies which operators play the ladder role.
+  failure_mode_if_absent: The root labels on the nonhermitian generators have no representation-theoretic origin.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Both summaries identify generators E alpha with root directions."
+  status: asserted
+- from: technique.root_ladder_operators
+  to: technique.root_string_master_formula
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Root strings are defined by repeatedly acting with the ladder operators up and down along a root direction.
+  failure_mode_if_absent: The integers p and q in the master formula have no operational meaning.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary analyzes finite alpha strings using p upward and q downward steps."
+  status: asserted
+- from: technique.su2_subalgebra_from_roots
+  to: technique.root_string_master_formula
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The master formula fixes the highest SU(2) spin inside the root string, so the root-associated SU(2) subalgebra is part of the argument.
+  failure_mode_if_absent: The integrality relation lacks the SU(2) representation-theory interpretation that makes it work.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary explicitly says the method fixes the highest SU(2) spin."
+  status: asserted
+- from: technique.root_string_master_formula
+  to: technique.root_angle_quantization
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The angle-quantization result is obtained by applying the master root-string formula to pairs of roots.
+  failure_mode_if_absent: The discrete angle restriction has no derivation.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary says the method applies the master formula to pairs of roots."
+  status: asserted
+- from: math.operator_basics.linear_operator
+  to: technique.schur_lemma_intertwiner_method
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Schur's lemma is a statement about linear operators that intertwine or commute with a representation.
+  failure_mode_if_absent: The core claim about vanishing intertwiners and identity operators cannot even be formulated.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary is explicitly about intertwiners and commuting operators."
+  status: asserted
+- from: technique.complete_reducibility_of_finite_group_representations
+  to: technique.schur_lemma_intertwiner_method
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Schur's lemma is used on irreducible representations, and complete reducibility is the authored gateway to that setting.
+  failure_mode_if_absent: The method is applied without a graph-native notion of decomposition into irreps.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary states the argument is about inequivalent irreducible representations."
+  status: asserted
+- from: technique.schur_lemma_intertwiner_method
+  to: technique.reality_intertwiner_test_via_schur_lemma
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The reality test is a direct application of Schur's lemma to the intertwiner between a representation and its conjugate.
+  failure_mode_if_absent: The uniqueness and existence statements about the intertwiner have no supporting theorem.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Downstream label explicitly names Schur's lemma and an intertwiner test."
+  status: asserted
+- from: technique.schur_lemma_intertwiner_method
+  to: technique.real_vs_pseudoreal_representation_diagnosis
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The real-versus-pseudoreal diagnosis classifies the symmetry of the same intertwiner whose existence is fixed by Schur's lemma.
+  failure_mode_if_absent: The diagnostic has no reason to trust that the relevant intertwiner is unique up to scale.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Downstream summary classifies representations by properties of the intertwiner R."
+  status: asserted
+- from: technique.so_odd_spinor_highest_weight_construction
+  to: technique.so10_left_right_branching
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The SO(10) branching explicitly decomposes the spinor representation, so the graph's odd-orthogonal spinor construction is upstream representation data.
+  failure_mode_if_absent: The 16 of SO(10) is treated as a black box in the branching calculation.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary says the method branches the SO(10) spinor under Pati-Salam."
+  status: asserted
+- from: technique.outer_automorphisms_from_dynkin_symmetry
+  to: technique.so8_triality_automorphism
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: SO(8) triality is the special outer automorphism of the D4 Dynkin diagram.
+  failure_mode_if_absent: The permutation among the vector and spinor eights has no group-theoretic origin.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary explicitly describes triality as special outer automorphisms of D4."
+  status: asserted
+- from: technique.so_2n_root_construction_from_two_planes
+  to: technique.so8_triality_automorphism
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: Triality acts on the root and weight data of D4, so one first needs the orthogonal root construction specialized to that family.
+  failure_mode_if_absent: The automorphism has no concrete root-system realization to act on.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary says the triality map is implemented in explicit weight and Cartan data."
+  status: asserted
+- from: technique.so8_triality_automorphism
+  to: technique.so8_branching_to_su2_power_4
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The SU(2) to the fourth branching uses triality to decide which bi-doublet pattern belongs to which eight.
+  failure_mode_if_absent: The three inequivalent eight-dimensional representations cannot be distinguished in the branching result.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Downstream summary explicitly says it uses triality to identify the patterns."
+  status: asserted
+- from: math.lie_algebra
+  to: technique.so_2n_root_construction_from_two_planes
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The two-plane construction derives the D_n root system from the orthogonal Lie algebra.
+  failure_mode_if_absent: The rotations in the two-planes are not recognized as Cartan generators of a Lie algebra.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary derives roots and simple roots from the defining representation of SO(2n)."
+  status: asserted
+- from: technique.cartan_subalgebra_and_weights
+  to: technique.so_2n_root_construction_from_two_planes
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The construction reads the weights plus or minus e_k from a chosen Cartan subalgebra of commuting plane rotations.
+  failure_mode_if_absent: The derived roots cannot be organized as weights relative to commuting generators.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary explicitly chooses Cartan generators as rotations in orthogonal two-planes."
+  status: asserted
+- from: technique.so_2n_root_construction_from_two_planes
+  to: technique.so_2n_plus_1_root_construction_with_extra_axis
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The odd-orthogonal root system is built by taking the even-orthogonal construction and adding the extra axis.
+  failure_mode_if_absent: The B_n roots lose the D_n pattern they are supposed to extend.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary explicitly starts from the SO(2n) two-plane construction."
+  status: asserted
+- from: technique.so_2n_plus_1_root_construction_with_extra_axis
+  to: technique.so_odd_spinor_highest_weight_construction
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The odd-orthogonal spinor construction uses the B_n root system whose extra short roots come from the added axis.
+  failure_mode_if_absent: The highest weight of the spinor representation is not attached to the correct root system.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Downstream summary explicitly constructs the spinor of B_n from root data."
+  status: asserted
+- from: technique.highest_weight_dynkin_classification
+  to: technique.so_odd_spinor_highest_weight_construction
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The method takes the last fundamental weight of B_n and enumerates the representation from highest-weight data.
+  failure_mode_if_absent: The half-integer weight system lacks the highest-weight classification that organizes it.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary explicitly starts from the last fundamental weight of B_n."
+  status: asserted
+- from: technique.so_odd_spinor_highest_weight_construction
+  to: technique.so_even_spinor_construction_from_so_odd_embedding
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The even-orthogonal construction is obtained by embedding into one higher odd-orthogonal group and reusing the odd-dimensional spinor result.
+  failure_mode_if_absent: The embedding trick has no odd-dimensional spinor construction to bootstrap from.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary says the method reuses the known odd-dimensional spinor construction."
+  status: asserted
+- from: technique.cartan_eigenvalue_identification_of_fundamental_spinors
+  to: technique.so_even_spinor_construction_from_so_odd_embedding
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: After embedding, the even-orthogonal spinors are separated by the extra Cartan eigenvalue.
+  failure_mode_if_absent: The two chiral spinors cannot be distinguished once the odd-dimensional construction is imported.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary says the extra Cartan generator is added to distinguish the two chiral spinors."
+  status: asserted
+- from: math.diffeomorphism
+  to: technique.ricci_component_total_derivative_identity
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The identity applies when the metric is independent of an isometry direction, which is a diffeomorphism-geometric statement.
+  failure_mode_if_absent: The special coordinate direction is treated as notation rather than as a symmetry direction of the geometry.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary says the metric is independent of a coordinate x along an isometry."
+  status: asserted
+- from: technique.ricci_component_total_derivative_identity
+  to: technique.polar_core_curvature_singularity_formula
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The polar-core formula is introduced precisely because naive use of the total-derivative Ricci identity fails at the degenerate origin.
+  failure_mode_if_absent: The refinement has no baseline identity whose breakdown it is repairing.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Downstream summary explicitly mentions naive total-derivative identities failing at the core."
+  status: asserted
+- from: technique.lorentz_violating_photon_mass
+  to: technique.slowly_instantaneous_signal
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: The exact-solution signal-propagation effect is derived in Lorentz-violating massive electrodynamics, so the modified photon-mass setup is upstream.
+  failure_mode_if_absent: The pre-light-cone response has no underlying theory in which to be computed.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary explicitly says the method is in Lorentz-violating massive electrodynamics."
+  status: asserted
+- from: qft.advanced_propagator
+  to: technique.slowly_instantaneous_signal
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.80
+  rationale: An exact statement about pre-light-cone response and immediate field buildup depends on understanding propagator support in time.
+  failure_mode_if_absent: The signal is discussed without a propagator language for causal versus acausal support.
+  evidence:
+    - type: expert_claim
+      source_ref: orphan_wiring_pass
+      note: "Summary is about exact signal propagation before the usual light cone."
+  status: asserted

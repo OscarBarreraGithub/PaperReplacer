@@ -1,0 +1,790 @@
+# Hand-authored dependency edges for the math-methods-foundations batch.
+#
+# Intra-batch dependencies
+- from: technique.asymptotic_expansion_toolkit
+  to: technique.saddle_point_steepest_descent
+  relation_type: requires_for_derive
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: standard_computation
+  rationale: Saddle-point analysis is itself an asymptotic expansion around critical points, so dominant balance and systematic correction counting are part of its derivation rather than optional decoration.
+  failure_mode_if_absent: Can identify a critical point heuristically but cannot justify why the Gaussian approximation is controlled or how higher-order corrections are organized.
+  evidence:
+    - type: expert_claim
+      source_ref: math_methods_foundations_initial
+      note: Edge chosen from the missing-methods audit and the summaries authored for this batch.
+  status: asserted
+  confidence: 0.94
+
+- from: technique.asymptotic_expansion_toolkit
+  to: technique.airy_functions
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: standard_computation
+  rationale: Airy matching is the canonical uniform-asymptotic repair of naive WKB near a turning point, so it sits directly inside the broader asymptotic-expansion toolkit.
+  failure_mode_if_absent: Cannot explain why Airy functions cure the turning-point breakdown or when a uniform approximation is needed instead of separate local expansions.
+  evidence:
+    - type: expert_claim
+      source_ref: math_methods_foundations_initial
+      note: Edge chosen from the missing-methods audit and the summaries authored for this batch.
+  status: asserted
+  confidence: 0.93
+
+- from: technique.gamma_beta_functions
+  to: technique.hypergeometric_functions
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: standard_computation
+  rationale: Hypergeometric identities, normalization factors, and Euler-type integral representations are written in Gamma and Beta function language throughout the subject.
+  failure_mode_if_absent: Series coefficients and connection formulas remain opaque, making it hard to recognize when two hypergeometric expressions are actually equivalent.
+  evidence:
+    - type: expert_claim
+      source_ref: math_methods_foundations_initial
+      note: Edge chosen from the missing-methods audit and the summaries authored for this batch.
+  status: asserted
+  confidence: 0.95
+
+- from: technique.gamma_beta_functions
+  to: technique.mellin_transform_method
+  relation_type: requires_for_use
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: standard_computation
+  rationale: Mellin transforms and their inversions routinely collapse to Gamma-function products and pole structure, so Gamma/Beta fluency makes the transform method much easier to execute and interpret.
+  failure_mode_if_absent: Can quote the Mellin transform formally but misses the residue structure and closed-form simplifications that make the method practical.
+  evidence:
+    - type: expert_claim
+      source_ref: math_methods_foundations_initial
+      note: Edge chosen from the missing-methods audit and the summaries authored for this batch.
+  status: asserted
+  confidence: 0.87
+
+- from: technique.index_notation_calculus
+  to: technique.two_component_spinor_calculus
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: standard_computation
+  rationale: Two-component spinor manipulations live or die on disciplined index placement, epsilon contractions, and symmetrization conventions, so index calculus is part of the core setup.
+  failure_mode_if_absent: Spinor contractions, sign conventions, and index-raising or lowering steps become error-prone and hard to audit.
+  evidence:
+    - type: expert_claim
+      source_ref: math_methods_foundations_initial
+      note: Edge chosen from the missing-methods audit and the summaries authored for this batch.
+  status: asserted
+  confidence: 0.96
+
+- from: technique.principal_bundle_gauge_theory
+  to: technique.characteristic_classes
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: Characteristic classes are built from the curvature of a bundle connection, so the principal-bundle description supplies the underlying objects whose topology is being measured.
+  failure_mode_if_absent: Chern or Pontryagin classes look like disconnected differential-form formulas rather than invariants of gauge bundles and their connections.
+  evidence:
+    - type: expert_claim
+      source_ref: math_methods_foundations_initial
+      note: Edge chosen from the missing-methods audit and the summaries authored for this batch.
+  status: asserted
+  confidence: 0.96
+
+- from: technique.saddle_point_steepest_descent
+  to: technique.morse_theory_instantons
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: nonperturbative_qft
+  task_type: literature_reading
+  rationale: The Morse-theoretic instanton viewpoint is a geometric refinement of saddle analysis, adding gradient-flow and index data to the same stationary-point backbone.
+  failure_mode_if_absent: Cannot connect thimbles, unstable directions, and gradient flow to the ordinary saddle-point logic they are meant to sharpen.
+  evidence:
+    - type: expert_claim
+      source_ref: math_methods_foundations_initial
+      note: Edge chosen from the missing-methods audit and the summaries authored for this batch.
+  status: asserted
+  confidence: 0.95
+
+- from: technique.characteristic_classes
+  to: technique.morse_theory_instantons
+  relation_type: requires_for_use
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: nonperturbative_qft
+  task_type: literature_reading
+  rationale: Gauge-theory instanton sectors are indexed by characteristic-class data, so those classes clarify which critical-point families Morse theory is organizing.
+  failure_mode_if_absent: Can discuss flow lines and Morse index abstractly but not the topological sector labels that distinguish physically different instanton saddles.
+  evidence:
+    - type: expert_claim
+      source_ref: math_methods_foundations_initial
+      note: Edge chosen from the missing-methods audit and the summaries authored for this batch.
+  status: asserted
+  confidence: 0.89
+
+#
+# Cross-batch dependencies: existing graph -> new foundations
+- from: complex_analysis.contour_deformation
+  to: technique.saddle_point_steepest_descent
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: amplitudes
+  task_type: standard_computation
+  rationale: Steepest-descent arguments are contour-deformation arguments with extra control over the phase and decay directions through a saddle.
+  failure_mode_if_absent: Cannot justify how the original contour is moved onto the steepest path or why singularities obstruct some deformations but not others.
+  evidence:
+    - type: expert_claim
+      source_ref: math_methods_foundations_initial
+      note: Existing contour-deformation and missing-method summaries line up directly.
+  status: asserted
+  confidence: 0.96
+
+- from: qm.wkb_approximation
+  to: technique.airy_functions
+  relation_type: requires_for_use
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: standard_computation
+  rationale: Airy-function matching is most naturally introduced as the turning-point repair of ordinary WKB reasoning, so WKB provides the background that makes the method legible.
+  failure_mode_if_absent: Can manipulate Airy identities formally but misses why they are the correct local replacement for the broken WKB ansatz.
+  evidence:
+    - type: expert_claim
+      source_ref: math_methods_foundations_initial
+      note: The audit explicitly identifies Airy functions as the turning-point completion of the existing WKB coverage.
+  status: asserted
+  confidence: 0.9
+
+- from: technique.fourier_transform_methods
+  to: technique.laplace_transform_method
+  relation_type: requires_for_use
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: standard_computation
+  rationale: Laplace methods are a close integral-transform cousin of the existing Fourier-transform node, so Fourier-space fluency transfers directly to contour inversion and convolution logic in Laplace space.
+  failure_mode_if_absent: Can quote a Laplace transform formula but struggles to see how transform space simplifies differential operators or convolutions.
+  evidence:
+    - type: expert_claim
+      source_ref: math_methods_foundations_initial
+      note: The audit names Laplace transforms as a missing first-class sibling of the already present Fourier-transform method.
+  status: asserted
+  confidence: 0.86
+
+- from: technique.highest_weight_dynkin_classification
+  to: technique.weyl_character_formula
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: The Weyl character formula takes highest-weight data as input, so highest-weight and Dynkin-label fluency is the natural authored prerequisite.
+  failure_mode_if_absent: Cannot identify which dominant weight the character formula should be applied to or how the result labels an irrep.
+  evidence:
+    - type: expert_claim
+      source_ref: math_methods_foundations_initial
+      note: The audit explicitly places character methods next to the existing highest-weight toolkit.
+  status: asserted
+  confidence: 0.97
+
+- from: technique.young_tableaux_for_su_n_irreps
+  to: technique.littlewood_richardson_rule
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: standard_computation
+  rationale: The Littlewood-Richardson rule extends Young-tableau technology from labeling tensor symmetries to computing multiplicities in tableau products.
+  failure_mode_if_absent: Cannot interpret the tableaux being combined or the SU(N) tensor symmetries whose product is being decomposed.
+  evidence:
+    - type: expert_claim
+      source_ref: math_methods_foundations_initial
+      note: The audit explicitly identifies Littlewood-Richardson methods as missing beside the existing Young-tableaux node.
+  status: asserted
+  confidence: 0.97
+
+- from: math.fiber_bundle
+  to: technique.principal_bundle_gauge_theory
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: Principal bundles are the gauge-theory specialization of the more general fiber-bundle concept already in the graph.
+  failure_mode_if_absent: Cannot interpret what data are being added when one passes from a generic bundle to a principal G-bundle with a connection.
+  evidence:
+    - type: expert_claim
+      source_ref: math_methods_foundations_initial
+      note: The audit explicitly identifies principal bundles as the missing refinement of the existing fiber-bundle node.
+  status: asserted
+  confidence: 0.98
+
+- from: math.lie_group
+  to: technique.principal_bundle_gauge_theory
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: A principal bundle is defined by a Lie-group fiber and structure group action, so the Lie-group node supplies essential setup.
+  failure_mode_if_absent: Cannot parse what the structure group is or how transition functions and right actions are supposed to behave.
+  evidence:
+    - type: expert_claim
+      source_ref: math_methods_foundations_initial
+      note: The audit explicitly identifies principal bundles as a gauge-theory refinement of existing differential-geometry nodes.
+  status: asserted
+  confidence: 0.98
+
+- from: math.differential_form
+  to: technique.principal_bundle_gauge_theory
+  relation_type: requires_for_use
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: Connections and curvatures are most compactly handled as Lie-algebra-valued differential forms, so form language makes the bundle formalism operational.
+  failure_mode_if_absent: Can recite the bundle vocabulary abstractly but not read the usual formulas A and F = dA + A wedge A in the standard gauge-theory notation.
+  evidence:
+    - type: expert_claim
+      source_ref: math_methods_foundations_initial
+      note: Existing differential-form and missing principal-bundle summaries overlap directly on connection and curvature language.
+  status: asserted
+  confidence: 0.88
+
+- from: math.de_rham_cohomology
+  to: technique.characteristic_classes
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: Characteristic classes are represented by closed differential forms modulo exact shifts, so de Rham cohomology is the natural authored prerequisite.
+  failure_mode_if_absent: Cannot distinguish a topological invariant from a representative form that changes by an exact term under local redefinitions.
+  evidence:
+    - type: expert_claim
+      source_ref: math_methods_foundations_initial
+      note: Existing de Rham coverage already mentions Chern classes as a downstream use case.
+  status: asserted
+  confidence: 0.97
+
+- from: qft.instanton
+  to: technique.morse_theory_instantons
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: nonperturbative_qft
+  task_type: literature_reading
+  rationale: The new node refines the instanton concept with Morse index and thimble language, so the basic instanton saddle must already be in view.
+  failure_mode_if_absent: Cannot tell which configurations the Morse-theoretic flow is meant to organize or why those critical points matter physically.
+  evidence:
+    - type: expert_claim
+      source_ref: math_methods_foundations_initial
+      note: The audit identifies Morse-theoretic machinery as the missing geometric refinement of existing instanton coverage.
+  status: asserted
+  confidence: 0.97
+
+#
+# Cross-batch dependencies: new foundations -> existing graph
+- from: technique.saddle_point_steepest_descent
+  to: technique.tree_graph_resummation_by_stationary_phase
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: standard_computation
+  rationale: The stationary-phase tree-graph argument is a direct field-theoretic application of generic saddle-point expansion.
+  failure_mode_if_absent: Cannot see why the effective-action argument reduces to a stationary point and controlled fluctuations around it.
+  evidence:
+    - type: expert_claim
+      source_ref: math_methods_foundations_initial
+      note: The existing node names stationary phase explicitly, making the generic saddle-point method the natural upstream dependency.
+  status: asserted
+  confidence: 0.96
+
+- from: technique.saddle_point_steepest_descent
+  to: technique.direct_tunneling_method
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: nonperturbative_qft
+  task_type: standard_computation
+  rationale: The direct tunneling method evaluates the path integral by steepest descent in the complexified domain, so the generic saddle method is its clear prerequisite.
+  failure_mode_if_absent: Cannot follow why the propagator-based decay-rate construction localizes onto a complex saddle and how the leading exponential is extracted.
+  evidence:
+    - type: expert_claim
+      source_ref: math_methods_foundations_initial
+      note: The existing node summary explicitly says the tunneling rate is evaluated by steepest descent.
+  status: asserted
+  confidence: 0.97
+
+- from: technique.asymptotic_expansion_toolkit
+  to: qm.wkb_approximation
+  relation_type: requires_for_use
+  necessity: typical
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: standard_computation
+  rationale: WKB is one canonical asymptotic expansion in a slowly varying regime, so the broader toolkit clarifies why the approximation works and how it should be improved.
+  failure_mode_if_absent: Can quote the leading WKB ansatz but has trouble diagnosing breakdown regions, matching conditions, or subleading corrections.
+  evidence:
+    - type: expert_claim
+      source_ref: math_methods_foundations_initial
+      note: The audit identifies matched asymptotics and boundary layers as missing context around the existing WKB node.
+  status: asserted
+  confidence: 0.91
+
+- from: technique.asymptotic_expansion_toolkit
+  to: technique.wkb_for_time_dependent_massive_modes
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: standard_computation
+  rationale: The time-dependent WKB method is an asymptotic expansion in slow time variation, so the general toolkit is the underlying organizational logic.
+  failure_mode_if_absent: Cannot judge when the slow-variation expansion is controlled or how to repair it if multiple scales begin to compete.
+  evidence:
+    - type: expert_claim
+      source_ref: math_methods_foundations_initial
+      note: Existing WKB-derived node and missing asymptotic-toolkit node are aligned by summary.
+  status: asserted
+  confidence: 0.92
+
+- from: technique.asymptotic_expansion_toolkit
+  to: qft.renormalons_and_trans_series
+  relation_type: requires_for_use
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: nonperturbative_qft
+  task_type: literature_reading
+  rationale: Renormalon and trans-series discussions assume fluency with asymptotic series, matched sectors, and controlled large-order reasoning.
+  failure_mode_if_absent: Can repeat the vocabulary of trans-series sectors but misses how asymptotic matching and dominant balance organize the approximation.
+  evidence:
+    - type: expert_claim
+      source_ref: math_methods_foundations_initial
+      note: The audit explicitly lists asymptotic toolkits as missing context beside the existing renormalon branch.
+  status: asserted
+  confidence: 0.86
+
+- from: technique.bessel_functions
+  to: technique.bessel_matching_for_discrete_warped_modes
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: standard_computation
+  rationale: The warped-mode matching method is a specialized application of Bessel-function solutions to radial Sturm-Liouville problems.
+  failure_mode_if_absent: Cannot tell why the mode equation lands on Bessel functions or how the boundary conditions quantize the spectrum.
+  evidence:
+    - type: expert_claim
+      source_ref: math_methods_foundations_initial
+      note: The audit explicitly names specialized Bessel nodes as the current partial coverage.
+  status: asserted
+  confidence: 0.98
+
+- from: technique.bessel_functions
+  to: technique.triple_bessel_overlap_asymptotics
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: standard_computation
+  rationale: Triple-overlap asymptotics presuppose fluency with Bessel recurrences, normalization, and large-argument behavior.
+  failure_mode_if_absent: Cannot simplify the three-Bessel integral or understand which asymptotic regime controls the coupling estimate.
+  evidence:
+    - type: expert_claim
+      source_ref: math_methods_foundations_initial
+      note: Existing node name and audit both identify this as a Bessel-based application.
+  status: asserted
+  confidence: 0.98
+
+- from: technique.bessel_functions
+  to: technique.diffusion_convection_bessel_propagation
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: standard_computation
+  rationale: The diffusion-convection node uses Bessel propagators in cylindrical geometry, so the generic Bessel toolkit is directly upstream.
+  failure_mode_if_absent: Cannot interpret the radial propagator structure or manipulate the Bessel solutions that encode transport in the model.
+  evidence:
+    - type: expert_claim
+      source_ref: math_methods_foundations_initial
+      note: Existing node name and audit both identify this as a Bessel-based application.
+  status: asserted
+  confidence: 0.95
+
+- from: technique.hypergeometric_functions
+  to: technique.coulomb_green_function_finite_width
+  relation_type: requires_for_use
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: standard_computation
+  rationale: Coulomb Green-function constructions are classically expressed with confluent hypergeometric or Whittaker functions, so the generic hypergeometric toolkit clarifies the exact solution structure.
+  failure_mode_if_absent: Can use a quoted Coulomb Green function formula but cannot recognize its special-function origin or continue it cleanly in complex energy.
+  evidence:
+    - type: expert_claim
+      source_ref: math_methods_foundations_initial
+      note: Edge inferred from the existing Coulomb Green-function summary and the standard special-function form of the solution.
+  status: asserted
+  confidence: 0.82
+
+- from: technique.hypergeometric_functions
+  to: technique.radial_dirac_equations_in_central_field
+  relation_type: requires_for_use
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: standard_computation
+  rationale: Exact central-potential Dirac solutions are organized by confluent hypergeometric structure once the radial equations are reduced to standard form.
+  failure_mode_if_absent: Can set up the radial equations but not recognize the special-function solution family or its connection formulas.
+  evidence:
+    - type: expert_claim
+      source_ref: math_methods_foundations_initial
+      note: Edge inferred from the existing radial-Dirac summary and the standard Coulomb-solution technology.
+  status: asserted
+  confidence: 0.8
+
+- from: technique.gamma_beta_functions
+  to: technique.wick_rotation_and_dimensional_regularization_of_background_integrals
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: standard_computation
+  rationale: Dimensional regularization formulas are saturated with Gamma-function factors and Beta-function-type parameter integrals, so this special-function toolkit is part of the method's working vocabulary.
+  failure_mode_if_absent: Cannot simplify Euclidean loop integrals after dimensional continuation or keep track of pole and normalization factors correctly.
+  evidence:
+    - type: expert_claim
+      source_ref: math_methods_foundations_initial
+      note: The audit explicitly identifies Gamma/Beta methods as missing support for dimensional-regularization-style calculations.
+  status: asserted
+  confidence: 0.95
+
+- from: technique.gamma_beta_functions
+  to: technique.digamma_regge_spectral_ansatz
+  relation_type: requires_for_use
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: The digamma ansatz is built from the logarithmic derivative of the Gamma function, so Gamma-function control makes the spectral model much less ad hoc.
+  failure_mode_if_absent: Can quote the digamma ansatz but cannot relate its poles, asymptotics, or normalization back to standard special-function identities.
+  evidence:
+    - type: expert_claim
+      source_ref: math_methods_foundations_initial
+      note: Existing digamma node and missing Gamma/Beta toolkit align directly by special-function content.
+  status: asserted
+  confidence: 0.89
+
+- from: technique.laplace_transform_method
+  to: technique.laplace_transform_rge_solution
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: effective_field_theory
+  task_type: standard_computation
+  rationale: The SCET RGE node is an explicit specialized application of the generic Laplace-transform method to nonlocal evolution equations.
+  failure_mode_if_absent: Cannot see why the nonlocal RG equation becomes local in transform space or how the inverse transform reconstructs the kernel.
+  evidence:
+    - type: expert_claim
+      source_ref: math_methods_foundations_initial
+      note: The audit explicitly names the existing node as partial Laplace coverage rather than a general transform method.
+  status: asserted
+  confidence: 0.98
+
+- from: technique.laplace_transform_method
+  to: qft.borel_transform
+  relation_type: requires_for_use
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: nonperturbative_qft
+  task_type: standard_computation
+  rationale: Borel summation closes by a Laplace-type integral over the Borel transform, so the general Laplace method clarifies the last step from transformed data back to a summed answer.
+  failure_mode_if_absent: Understands the Borel transform itself but not how or why the transformed function is integrated back into a physical quantity.
+  evidence:
+    - type: expert_claim
+      source_ref: math_methods_foundations_initial
+      note: The existing Borel-transform summary explicitly mentions the Laplace integral that recovers the summed answer.
+  status: asserted
+  confidence: 0.9
+
+- from: technique.mellin_transform_method
+  to: qcd.mellin_moment
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qcd_factorization
+  task_type: standard_computation
+  rationale: The qcd.mellin_moment node is the QCD-specific incarnation of the more general Mellin-transform method.
+  failure_mode_if_absent: Cannot interpret moment-space evolution as a transform method or understand why convolutions become products in the first place.
+  evidence:
+    - type: expert_claim
+      source_ref: math_methods_foundations_initial
+      note: The audit explicitly identifies Mellin transforms as the missing first-class method behind the existing Mellin-moment node.
+  status: asserted
+  confidence: 0.98
+
+- from: technique.mellin_transform_method
+  to: technique.mellin_moment_sum_rules
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qcd_factorization
+  task_type: standard_computation
+  rationale: Moment sum rules are precisely a structured use of Mellin transforms to turn convolution information into algebraic relations.
+  failure_mode_if_absent: Cannot see why moment-space manipulations are legitimate or how the convolution structure got simplified.
+  evidence:
+    - type: expert_claim
+      source_ref: math_methods_foundations_initial
+      note: Existing node name and audit both identify Mellin-space reasoning as the missing generic precursor.
+  status: asserted
+  confidence: 0.97
+
+- from: technique.mellin_transform_method
+  to: technique.mellin_moment_expansion_of_fragmentation
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qcd_factorization
+  task_type: standard_computation
+  rationale: The fragmentation-evolution node uses Mellin moments as its main simplification step, making the generic Mellin method the obvious prerequisite.
+  failure_mode_if_absent: Cannot tell why the fragmentation convolution becomes manageable in moment space or how to invert back to x space.
+  evidence:
+    - type: expert_claim
+      source_ref: math_methods_foundations_initial
+      note: Existing node name and audit both identify Mellin-space reasoning as the missing generic precursor.
+  status: asserted
+  confidence: 0.97
+
+- from: technique.index_notation_calculus
+  to: technique.upper_lower_index_notation
+  relation_type: requires_for_use
+  necessity: typical
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: The existing upper-lower-index node is a narrow SU(3) application of the broader index-calculus language.
+  failure_mode_if_absent: Can memorize which index is written upstairs or downstairs but not why that placement encodes conjugation and valid contractions.
+  evidence:
+    - type: expert_claim
+      source_ref: math_methods_foundations_initial
+      note: The audit explicitly identifies the existing node as only a narrow fragment of the missing general method.
+  status: asserted
+  confidence: 0.95
+
+- from: technique.index_notation_calculus
+  to: technique.irreducible_tensor_projection
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: standard_computation
+  rationale: Irreducible tensor projection depends on symmetrizing indices, subtracting traces, and tracking contractions cleanly, all of which belong to general index calculus.
+  failure_mode_if_absent: Tensor decompositions become a blur of ad hoc contractions with no reliable way to separate symmetric, antisymmetric, and traceless pieces.
+  evidence:
+    - type: expert_claim
+      source_ref: math_methods_foundations_initial
+      note: Existing projection-method summary overlaps directly with the missing index-calculus toolkit.
+  status: asserted
+  confidence: 0.96
+
+- from: qft.weyl_spinor
+  to: technique.two_component_spinor_calculus
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: standard_computation
+  rationale: Two-component spinor calculus is the working calculus built on Weyl spinors, so the representation itself is prerequisite background.
+  failure_mode_if_absent: Cannot identify what objects carry dotted and undotted indices or why chirality is natural in the two-component formalism.
+  evidence:
+    - type: expert_claim
+      source_ref: math_methods_foundations_initial
+      note: The audit explicitly identifies the missing spinor-calculus toolkit as a refinement of existing Weyl-spinor coverage.
+  status: asserted
+  confidence: 0.98
+
+- from: qft.gamma_matrices
+  to: technique.two_component_spinor_calculus
+  relation_type: requires_for_use
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: standard_computation
+  rationale: The sigma-matrix blocks used in two-component notation are the chiral pieces of the gamma-matrix language already present in the graph.
+  failure_mode_if_absent: Can manipulate dotted and undotted spinors symbolically but misses how the formalism embeds into the familiar Dirac-matrix framework.
+  evidence:
+    - type: expert_claim
+      source_ref: math_methods_foundations_initial
+      note: Existing gamma-matrix and missing two-component-spinor summaries overlap through sigma-matrix identities.
+  status: asserted
+  confidence: 0.87
+
+- from: technique.two_component_spinor_calculus
+  to: technique.majorana_fierz_algebra
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: standard_computation
+  rationale: Majorana and Fierz manipulations in supersymmetric theories rely on the same sigma-matrix and bilinear algebra that the two-component calculus packages cleanly.
+  failure_mode_if_absent: Cannot derive or simplify the bilinear rearrangements that the Majorana-Fierz node treats as routine.
+  evidence:
+    - type: expert_claim
+      source_ref: math_methods_foundations_initial
+      note: The audit explicitly identifies Fierz-capable spinor calculus as the missing foundation beneath existing specialized methods.
+  status: asserted
+  confidence: 0.96
+
+- from: technique.two_component_spinor_calculus
+  to: qft.spinor_helicity_notation
+  relation_type: requires_for_use
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: qft_amplitudes
+  task_type: literature_reading
+  rationale: Spinor-helicity notation is a massless on-shell specialization of two-component spinor algebra, so the broader calculus makes the notation much more transparent.
+  failure_mode_if_absent: Can memorize angle and square brackets but not relate them to ordinary Weyl-spinor contractions and sigma-matrix identities.
+  evidence:
+    - type: expert_claim
+      source_ref: math_methods_foundations_initial
+      note: Existing spinor-helicity and missing spinor-calculus summaries overlap through Weyl-spinor technology.
+  status: asserted
+  confidence: 0.9
+
+- from: technique.weyl_character_formula
+  to: technique.tensor_product_character_rule
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: standard_computation
+  rationale: The tensor-product character rule is only computationally useful once one can actually compute the individual characters, which is what the Weyl formula provides.
+  failure_mode_if_absent: Knows that characters multiply under tensor products but cannot turn that statement into explicit multiplicities for concrete irreps.
+  evidence:
+    - type: expert_claim
+      source_ref: math_methods_foundations_initial
+      note: The audit explicitly identifies Weyl-character methods as the missing scalable character-computation tool.
+  status: asserted
+  confidence: 0.95
+
+- from: technique.littlewood_richardson_rule
+  to: technique.su_n_clebsch_gordan_tableau_addition
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: standard_computation
+  rationale: Tableau addition is the SU(N) working version of Littlewood-Richardson combinatorics, so the general rule explains which additions are allowed and with what multiplicity.
+  failure_mode_if_absent: Can draw candidate tableaux but cannot justify which ones survive the product or how multiplicities greater than one arise.
+  evidence:
+    - type: expert_claim
+      source_ref: math_methods_foundations_initial
+      note: The audit explicitly identifies Littlewood-Richardson as the missing tensor-product decomposition method beside existing tableau nodes.
+  status: asserted
+  confidence: 0.96
+
+- from: technique.principal_bundle_gauge_theory
+  to: qft.wilson_loop
+  relation_type: requires_for_use
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: qcd_nonperturbative
+  task_type: literature_reading
+  rationale: A Wilson loop is the trace of bundle holonomy around a closed contour, so principal-bundle language turns the existing Wilson-loop node into a geometric statement instead of a bare path-ordered formula.
+  failure_mode_if_absent: Can manipulate the path-ordered exponential algebraically but not explain why the loop observable is a gauge-invariant holonomy.
+  evidence:
+    - type: expert_claim
+      source_ref: math_methods_foundations_initial
+      note: The audit explicitly names holonomy as part of the missing gauge-bundle toolkit.
+  status: asserted
+  confidence: 0.91
+
+- from: technique.characteristic_classes
+  to: qft.chern_simons_term
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: nonperturbative_qft
+  task_type: literature_reading
+  rationale: Chern-Simons forms arise by transgressing characteristic classes, so the class technology is the clean way to understand what the Chern-Simons term is measuring.
+  failure_mode_if_absent: Sees the Chern-Simons term as an isolated cubic form rather than as the local form whose derivative gives a characteristic density.
+  evidence:
+    - type: expert_claim
+      source_ref: math_methods_foundations_initial
+      note: The existing Chern-Simons summary already points to instanton density as its exterior derivative.
+  status: asserted
+  confidence: 0.97
+
+- from: technique.characteristic_classes
+  to: technique.differential_form_repackaging_and_descent
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qft_foundations
+  task_type: literature_reading
+  rationale: Anomaly descent starts from characteristic-class polynomials built from curvature, so class technology is upstream of the differential-form repackaging method.
+  failure_mode_if_absent: Can follow the algebra of the descent formulas locally but not identify the topological polynomial from which the descent starts.
+  evidence:
+    - type: expert_claim
+      source_ref: math_methods_foundations_initial
+      note: The audit explicitly identifies characteristic classes as missing first-class support for anomaly-descent methods already in the graph.
+  status: asserted
+  confidence: 0.97
+
+- from: technique.characteristic_classes
+  to: qcd.topological_charge
+  relation_type: requires_for_use
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: qcd_nonperturbative
+  task_type: literature_reading
+  rationale: The integer topological charge of Yang-Mills theory is the Pontryagin characteristic number of the gauge bundle, so characteristic classes supply its geometric interpretation.
+  failure_mode_if_absent: Can use topological charge as a named integer but not connect it to curvature integrals and global bundle data.
+  evidence:
+    - type: expert_claim
+      source_ref: math_methods_foundations_initial
+      note: The audit explicitly identifies characteristic classes as missing support for instanton-number reasoning.
+  status: asserted
+  confidence: 0.92
+
+- from: technique.morse_theory_instantons
+  to: technique.thimble_borel_resummation
+  relation_type: requires_for_use
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: nonperturbative_qft
+  task_type: literature_reading
+  rationale: Thimble-based Borel resummation is precisely the finite-dimensional Morse and gradient-flow picture transplanted to resurgence problems.
+  failure_mode_if_absent: Can repeat the thimble prescription algorithmically but misses why downward flows and intersection numbers organize the contour decomposition.
+  evidence:
+    - type: expert_claim
+      source_ref: math_methods_foundations_initial
+      note: The audit explicitly groups Morse and Picard-Lefschetz ideas with thimble methods.
+  status: asserted
+  confidence: 0.94
+
+- from: technique.morse_theory_instantons
+  to: technique.instanton_action_bound_and_semiclassics
+  relation_type: requires_for_use
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: nonperturbative_qft
+  task_type: literature_reading
+  rationale: The instanton action-bound method identifies the critical configurations, while the Morse-theoretic node organizes their unstable directions and fluctuation geometry.
+  failure_mode_if_absent: Can compute the classical bound but not place the contributing saddles inside the broader thimble or gradient-flow picture.
+  evidence:
+    - type: expert_claim
+      source_ref: math_methods_foundations_initial
+      note: The audit explicitly identifies Morse-theoretic instanton analysis as missing geometric support for existing instanton semiclassics.
+  status: asserted
+  confidence: 0.9

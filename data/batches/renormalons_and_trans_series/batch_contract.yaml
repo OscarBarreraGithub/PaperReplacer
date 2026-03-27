@@ -1,0 +1,71 @@
+contract_version: "0.1"
+batch_id: "renormalons_and_trans_series"
+description: "Batch for Borel transforms, Borel summability, renormalon singularities, and trans-series based on Schwartz arXiv:2410.07351 and arXiv:2512.09042."
+
+context:
+  audience_profile: "hep_th_grad"
+  subfield: "nonperturbative_qft"
+  task_type: "literature_reading"
+
+allowed_relations:
+  - "requires_for_recognize"
+  - "requires_for_use"
+  - "requires_for_derive"
+  - "pedagogically_precedes"
+  - "part_of"
+
+allowed_overlay_types:
+  - "assumed_background"
+
+mastery_modes:
+  - "recognize"
+  - "use"
+  - "derive"
+
+closure:
+  allow_transitive_dependency: true
+  allow_heterogeneous_composition: false
+  cross_partonomy: false
+  cross_context: false
+  exclude_statuses:
+    - "disputed"
+
+composition:
+  allowed_relation_chains:
+    - ["requires_for_recognize", "requires_for_recognize"]
+    - ["requires_for_use", "requires_for_use"]
+    - ["requires_for_derive", "requires_for_derive"]
+    - ["pedagogically_precedes", "pedagogically_precedes"]
+  necessity_propagation: "min"
+  confidence_propagation: "min"
+
+query_defaults:
+  expand_composites_default: false
+  prerequisite_set_semantics: "ancestral_frontier"
+  disclose_non_uniqueness: true
+
+autonomy:
+  auto_merge_enabled: true
+  minimum_confidence_for_auto_merge: 0.82
+  block_on_duplicate_risk: true
+  block_on_ontology_drift: true
+  block_on_query_warning: true
+  require_human_review_for:
+    - "contract_changes"
+    - "ontology_changes"
+    - "decomposition_changes"
+    - "disputed_items"
+    - "forbidden_heuristics"
+    - "ambiguous_overlap"
+
+query_suite:
+  - "prereqs_recognize"
+  - "prereqs_use"
+  - "intrinsic_vs_profile_adjusted"
+  - "expanded_slice"
+
+forbidden_heuristics:
+  - "ir_resummation_drift"
+  - "nonperturbative_renormalization_expansion"
+  - "shortest_path_presented_as_pedagogy"
+  - "scheme_regulator_conflation"

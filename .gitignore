@@ -5,3 +5,4 @@ __pycache__/
 data/generated/**
 data/batches/*/proposals/**
 Ref material/**
+data/researchers/*/pdfs/**

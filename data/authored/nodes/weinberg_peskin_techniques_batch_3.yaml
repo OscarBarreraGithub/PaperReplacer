@@ -1,0 +1,920 @@
+- id: technique.gordon_identity_reduction
+  label: Gordon identity reduction
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Rewrite fermion bilinears so vector and magnetic-moment structures are separated cleanly.
+  status: asserted
+- id: technique.graded_parameters_semigroup_construction
+  label: Graded-Parameter Semigroup Construction
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Motivate superalgebras by composing transformations with commuting and anticommuting parameters.
+  status: asserted
+- id: technique.grassmann_eigenstate_construction
+  label: Grassmann eigenstate construction
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Builds fermionic q and p eigenstates with Grassmann values and corresponding completeness relations.
+  status: asserted
+- id: technique.gravitational_anomaly_constraint
+  label: Gravitational anomaly constraint
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Require U(1) generators to satisfy a vanishing trace condition when the chiral gauge theory is coupled to gravity.
+  status: asserted
+- id: technique.gravitational_anomaly_trace_condition
+  label: Test mixed gauge-gravitational anomalies with tr(T_a)=0
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Use the mixed graviton-graviton-gauge anomaly to require vanishing trace of each gauged generator over left-handed fermions.
+  status: asserted
+- id: technique.gravitino_cosmology_estimate
+  label: Gravitino Cosmology Estimate
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Estimate relic gravitino abundance, decay timing, and nucleosynthesis constraints from the supersymmetry-breaking scale.
+  status: asserted
+- id: technique.group_representation_analysis_of_currents
+  label: Group-Representation Analysis of Current Products
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Classifies current-current products by SU(N)xSU(N) representation content to determine which operators can appear in the OPE.
+  status: asserted
+- id: technique.group_volume_formula_for_winding_number
+  label: Evaluate winding numbers by deforming to a standard SU(2) subgroup
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Reduce the homotopy calculation to a standard SU(2) embedding and use the group metric and volume element to compute the invariant exactly.
+  status: asserted
+- id: technique.h0_plus_v_split_with_physical_masses
+  label: H = H0 + V Split with Physical Masses
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Split the Hamiltonian into free and interacting parts using physical masses and any relevant bound states in H0 so the asymptotic spectrum is correct.
+  status: asserted
+- id: technique.haag_lopuszanski_sohnius_analysis
+  label: Haag-Lopuszanski-Sohnius Analysis
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Combine Coleman-Mandula with Lorentz covariance and graded algebra constraints to derive the general four-dimensional supersymmetry algebra.
+  status: asserted
+- id: technique.heavy_field_integrating_out_and_matching
+  label: Integrating out heavy fields and matching
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Eliminates heavy virtual particles and fixes effective couplings by matching low-energy amplitudes to the underlying theory.
+  status: asserted
+- id: technique.hierarchy_problem_naturalness_analysis
+  label: Hierarchy-problem naturalness analysis
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Track additive scalar-mass renormalization to quantify why a weak-scale Higgs mass is unstable against much larger ultraviolet scales.
+  status: asserted
+- id: technique.higgs_boson_coupling_rules
+  label: Higgs boson coupling rules
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: In unitary gauge, identify the physical Higgs field and derive its self-couplings and couplings to vector bosons and fermions, proportional to their masses.
+  status: asserted
+- id: technique.high_energy_form_factor_approximation_in_bound_states
+  label: High-energy form-factor approximation in bound states
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Approximates the high-energy part of the bound-state self-energy by the free-electron renormalized vertex form factors evaluated in a weak external field.
+  status: asserted
+- id: technique.higher_derivative_stabilization_of_skyrmions
+  label: Stabilize skyrmions by balancing derivative orders
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Add higher-derivative terms so the shrinking tendency of the two-derivative sigma-model energy is balanced at a finite size.
+  status: asserted
+- id: technique.holomorphic_spurion_extension
+  label: Holomorphic spurion extension
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Promotes couplings and the gauge parameter tau to chiral spurion superfields so holomorphy can constrain the Wilsonian effective action.
+  status: asserted
+- id: technique.homotopy_exact_sequence_for_coset_spaces
+  label: Relate pi_2(G/H) to pi_1(H) via the embedding of H in G
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Use the exact-sequence relation between the homotopy of a coset and the homotopy of the unbroken subgroup, with the embedding deciding which loops are trivial.
+  status: asserted
+- id: technique.homotopy_group_composition_as_fusion_rule
+  label: Use the homotopy-group product to determine defect fusion
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Interpret the group law on pi_k as the rule for combining topological charges when widely separated defects are brought together.
+  status: asserted
+- id: technique.hubbard_stratonovich_gap_effective_action
+  label: Introduce a pair field and derive the gap effective action
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Use a Hubbard-Stratonovich transformation to rewrite the four-fermion interaction in terms of a gap field, integrate out fermions exactly at one loop, and extremize the resulting effective potential.
+  status: asserted
+- id: technique.hypercharge_assignment_from_anomaly_constraints
+  label: Solve for hypercharges from anomaly-cancellation equations
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Assign generic U(1) charges to quark and lepton multiplets and solve the anomaly constraints to recover the Standard Model pattern and the B-L direction.
+  status: asserted
+- id: technique.inclusive_soft_photon_sums
+  label: Inclusive sums over unobserved soft photons
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Replaces exclusive rates by experimentally meaningful sums over states containing arbitrary unresolved soft photons.
+  status: asserted
+- id: technique.induced_representation_method
+  label: Induced Representation Method
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Build particle representations of the Poincare group from unitary representations of the little group of a standard momentum.
+  status: asserted
+- id: technique.inductive_counterterm_analysis_from_zinn_justin
+  label: Inductive counterterm analysis from Zinn-Justin
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Expands Gamma loop by loop and uses the Zinn-Justin equation inductively to constrain the divergent part at each order.
+  status: asserted
+- id: technique.infinite_volume_superselection_argument
+  label: Infinite-Volume Superselection Argument
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Shows that distinct vacua decouple in infinite volume, selecting symmetry-breaking vacua rather than symmetric superpositions.
+  status: asserted
+- id: technique.infrared_cancellation_in_inclusive_observables
+  label: Inclusive infrared cancellation
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Define measurable cross sections by summing elastic processes with unresolved soft-photon emission so regulator dependence cancels.
+  status: asserted
+- id: technique.inonu_wigner_contraction
+  label: Inonu-Wigner Contraction
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Recover the Galilean algebra as a low-velocity contraction of the Poincare algebra, clarifying the relation between relativistic and nonrelativistic symmetries.
+  status: asserted
+- id: technique.instanton_expansion_in_exp_2pi_i_tau
+  label: Instanton expansion in exp(2 pi i tau)
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Uses positivity of instanton number and weak-coupling suppression to restrict holomorphic nonperturbative terms to positive powers of exp(2 pi i tau).
+  status: asserted
+- id: technique.interaction_picture_transverse_photon_quantization
+  label: Interaction picture quantization of transverse photons
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Expands the transverse photon field in polarization vectors and creation and annihilation operators in the interaction picture.
+  status: asserted
+- id: technique.invariant_metric_and_compact_group_classification
+  label: Invariant metric and compact-group classification
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Uses a positive invariant bilinear form on the Lie algebra to constrain admissible gauge groups to compact simple plus U(1) factors.
+  status: asserted
+- id: technique.josephson_phase_dynamics
+  label: Use phase-difference dynamics across a junction
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Treat the junction energy as a periodic function of the phase difference and evolve that phase with the voltage difference between superconductors.
+  status: asserted
+- id: technique.kahler_potential_geometry
+  label: Kahler-Potential Geometry
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Generalize chiral-matter theories to nonlinear sigma models with a Kahler metric derived from a Kahler potential.
+  status: asserted
+- id: technique.klein_gordon_equation_construction
+  label: Klein-Gordon Equation Construction
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Build the relativistic scalar wave equation by applying operator substitution to the relativistic dispersion relation, including external electromagnetic potentials.
+  status: asserted
+- id: technique.kramers_degeneracy_argument
+  label: Kramers Degeneracy Argument
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Show that T^2 = -1 on half-integer-spin states forces at least a twofold degeneracy in any time-reversal-invariant system.
+  status: asserted
+- id: technique.ladder_operator_diagonalization
+  label: Ladder-operator diagonalization
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Rewrite each free mode in terms of creation and annihilation operators so the Hamiltonian becomes a sum of oscillator number operators.
+  status: asserted
+- id: technique.lagrange_multiplier_constraint_method
+  label: Lagrange Multiplier Constraint Method
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Implement nonlinear constraints inside the functional integral by introducing an auxiliary multiplier field.
+  status: asserted
+- id: technique.left_handed_conjugate_representation_rewrite
+  label: Rewrite to a purely left-handed basis
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Convert right-handed Weyl fermions into left-handed antifermions in the conjugate representation so chiral gauge theories can be analyzed in a uniform left-handed language.
+  status: asserted
+- id: technique.lepton_flavor_alignment_without_right_handed_neutrinos
+  label: Lepton-flavor alignment without right-handed neutrinos
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Diagonalize charged-lepton Yukawas so the gauge sector remains generation diagonal and no lepton mixing appears in the minimal model.
+  status: asserted
+- id: technique.little_group_classification_of_massless_states
+  label: Little-group classification of massless states
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Classifies massless one-particle states by representations of the reduced little group O(d-2) together with the automorphism group.
+  status: asserted
+- id: technique.local_counterterm_absorption
+  label: Local counterterm absorption
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Identifies the divergent polynomial with local operators in the Lagrangian and cancels it by redefining couplings, masses, and fields.
+  status: asserted
+- id: technique.local_operator_renormalization
+  label: Local Operator Renormalization
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Introduce operator renormalization constants so Green functions with operator insertions obey finite normalization conditions.
+  status: asserted
+- id: technique.local_supersymmetry_covariantization
+  label: Local supersymmetry covariantization
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Extends global supersymmetry transformations to spacetime-dependent parameters and rewrites them in covariant-derivative form in Wess-Zumino gauge.
+  status: asserted
+- id: technique.loop_integral_parameterization_and_wick_rotation
+  label: Loop-integral parameterization and Wick rotation
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Combine denominators with Feynman parameters, shift loop momenta, rotate to Euclidean signature, and evaluate integrals with gamma-function formulas.
+  status: asserted
+- id: technique.loop_momentum_shift_completion_of_square
+  label: Loop-momentum shift and completion of the square
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Shift loop momenta after Feynman parameterization so the denominator depends only on a rotationally symmetric quadratic form.
+  status: asserted
+- id: technique.lorentz_invariance_constraints_on_massless_couplings
+  label: Lorentz-invariance constraints on massless couplings
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Uses the transformation of polarization tensors to show that soft spin-1 couplings must conserve charge, soft spin-2 couplings must be universal, and higher-spin long-range couplings are excluded.
+  status: asserted
+- id: technique.low_energy_bound_state_self_energy_sum
+  label: Low-energy bound-state self-energy sum
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Keeps the binding potential to all orders and sums over exact bound and continuum intermediate states in the low-energy self-energy region.
+  status: asserted
+- id: technique.low_energy_power_counting_small_gauge_couplings
+  label: Power count derivatives and weak gauge couplings together
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Organize amplitudes in simultaneous powers of momenta over the strong scale and explicit small gauge couplings.
+  status: asserted
+- id: technique.majorana_fierz_algebra
+  label: Majorana-Fierz Algebra
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Use Majorana bilinear identities and Fierz rearrangements to simplify superspace component expansions and transformation rules.
+  status: asserted
+- id: technique.majorana_supercharge_packaging
+  label: Majorana Supercharge Packaging
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Assemble Weyl supercharges into four-component Majorana generators to express the algebra covariantly.
+  status: asserted
+- id: technique.mandelstam_variable_kinematics
+  label: Mandelstam-variable kinematics
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Reexpress 2-to-2 processes in terms of s, t, and u so crossing relations and channel structure become transparent.
+  status: asserted
+- id: technique.many_body_interactions_from_cluster_consistency
+  label: Many-Body Interactions from Cluster Consistency
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Recognize that once two-body interactions exist, higher-body terms are forced if one insists on cluster decomposition for three or more particles.
+  status: asserted
+- id: technique.massive_supermultiplet_construction
+  label: Massive Supermultiplet Construction
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Go to the rest frame and build massive multiplets with spin addition and supercharge ladder operations.
+  status: asserted
+- id: technique.massive_vector_polarization_projector
+  label: Massive-vector polarization projector
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Replace sums over physical polarizations by the covariant projector -g_mu_nu + q_mu q_nu / m^2 for on-shell massive gauge bosons.
+  status: asserted
+- id: technique.massless_supermultiplet_construction
+  label: Massless Supermultiplet Construction
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Choose a lightlike frame, identify nonvanishing helicity-raising and lowering supercharges, and build multiplets by little-group methods.
+  status: asserted
+- id: technique.maurer_cartan_covariant_building_blocks
+  label: Maurer-Cartan Covariant Building Blocks
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Decomposes y^{-1} d_mu y into broken and unbroken pieces to obtain Goldstone covariant derivatives, connections, curvatures, and higher covariant derivatives.
+  status: asserted
+- id: technique.mellin_moment_sum_rules
+  label: Mellin moments and moment sum rules
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Take Mellin moments of structure functions or PDFs so OPE coefficients and anomalous-dimension matrices become algebraic moment relations or ordinary differential equations.
+  status: asserted
+- id: technique.method_of_characteristics
+  label: Method of Characteristics
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Solve the Callan-Symanzik partial differential equation by flowing along characteristic curves in coupling-constant space.
+  status: asserted
+- id: technique.microcausality_via_spacelike_commutators
+  label: Microcausality via spacelike commutators
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Test causality by evaluating field commutators and showing they vanish at spacelike separation.
+  status: asserted
+- id: technique.momentum_flow_proof_of_ope
+  label: Momentum-Flow Proof of the OPE
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Analyzes how large momenta flow through Feynman graphs and recursively identifies the local operator attached to the hard region.
+  status: asserted
+- id: technique.momentum_subtraction_renormalization
+  label: Momentum-subtraction renormalization
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Defines renormalized parameters at a chosen off-shell momentum point and rewrites amplitudes in terms of these finite quantities.
+  status: asserted
+- id: technique.multiphoton_permutation_factorization
+  label: Multiphoton permutation factorization
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Sums all emission orderings on a given external line and reduces them to a simple product of one-photon eikonal factors.
+  status: asserted
+- id: technique.n2_prepotential_constraint
+  label: N=2 prepotential constraint
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Uses the second supersymmetry and R symmetry to show the leading low-energy action is determined by a single holomorphic prepotential h(a).
+  status: asserted
+- id: technique.nahm_weight_argument_for_spinor_supercharges
+  label: Nahm weight argument for spinor supercharges
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Classifies fermionic symmetry generators by Cartan weights and shows that only fundamental spinor representations are compatible with the supersymmetry algebra.
+  status: asserted
+- id: technique.natural_relations_method
+  label: Natural-relations method
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Identify tree-level observable relations fixed entirely by the underlying Lagrangian parameters so loop corrections to them become finite predictions.
+  status: asserted
+- id: technique.naturalness_estimate_from_supermultiplet_splittings
+  label: Naturalness Estimate from Supermultiplet Splittings
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Estimate superpartner mass scales by requiring loop-induced Higgs mass corrections from split supermultiplets to stay modest.
+  status: asserted
+- id: technique.noether_current_ward_identities
+  label: Noether-current Ward identities from functional integrals
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Promote a global symmetry parameter to a spacetime-dependent variation inside the path integral to derive current-conservation identities with contact terms.
+  status: asserted
+- id: technique.nonrelativistic_reduction_of_bound_dirac_theory
+  label: Nonrelativistic reduction of bound Dirac theory
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Expands the Dirac wave function for Za much less than 1 to recover the Schrodinger equation and leading relativistic operator matrix elements.
+  status: asserted
+- id: technique.nonrelativistic_spinor_expansion
+  label: Nonrelativistic spinor expansion
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Expand Dirac spinors and bilinears to leading order in momentum over mass so relativistic amplitudes reduce to Pauli-spinor structures.
+  status: asserted
+- id: technique.normal_order_expansion_of_arbitrary_operators
+  label: Normal-Order Expansion of Arbitrary Operators
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Expand any operator as a sum of normal-ordered monomials in creation and annihilation operators with coefficient kernels.
+  status: asserted
+- id: technique.one_loop_self_energy_in_external_field
+  label: One-loop self-energy in an external field
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Builds the bound-state self-energy from background-field electron propagators, vacuum-polarization tadpoles, and renormalization counterterms.
+  status: asserted
+- id: technique.ope_rg_for_coefficient_functions
+  label: Renormalization-Group Equations for OPE Coefficients
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Derives RG equations for OPE coefficient functions from the renormalization matrices of the external and inserted operators.
+  status: asserted
+- id: technique.operator_action_formalism
+  label: Operator Action Formalism
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Construct quantum dynamics directly from operator equations and the action principle while keeping covariance explicit.
+  status: asserted
+- id: technique.operator_ordering_by_measure_choice
+  label: Operator ordering by measure choice
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Matches the chosen phase-space measure to a definite Hamiltonian ordering, with all Q operators to the left of all P operators.
+  status: asserted
+- id: technique.operator_relevance_classification
+  label: Relevant/Irrelevant/Marginal Classification
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Classify operators by how their couplings scale under RG rescaling near a fixed point.
+  status: asserted
+- id: technique.operator_substitution_quantization
+  label: Operator Substitution Quantization
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Promote classical energy and momentum to differential operators to obtain wave equations from relativistic mechanics.
+  status: asserted
+- id: technique.oraifeartaigh_supersymmetry_breaking
+  label: O'Raifeartaigh Supersymmetry Breaking
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Arrange a superpotential so that F-term equations are mutually incompatible, breaking supersymmetry already at tree level.
+  status: asserted
+- id: technique.order_parameter_identification_at_continuous_transition
+  label: Order-Parameter Identification at a Continuous Transition
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Near a second-order transition, reassembles Goldstone and nearby massive modes into the nearly massless linear multiplet that serves as the order parameter.
+  status: asserted
+- id: technique.overlapping_divergence_analysis
+  label: Overlapping-divergence analysis
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Tracks UV regions where divergent subgraphs share lines and therefore cannot be treated as independent insertions.
+  status: asserted
+- id: technique.p_form_duality
+  label: p-form duality
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Uses dual forms in D dimensions to map a p-form gauge field to a D minus p minus two form description and recover four-dimensional scalar or vector equivalences.
+  status: asserted
+- id: technique.parton_charge_color_counting_with_asymptotic_freedom
+  label: Parton charge and color counting with asymptotic freedom
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Estimate e plus e minus to hadrons by summing quark charge-squared weights, multiplying by color, and using weak high-energy QCD interactions to justify quark-level counting.
+  status: asserted
+- id: technique.path_integral_derivation_of_feynman_rules
+  label: Path-integral derivation of Feynman rules
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Expands around the quadratic action and recovers covariant Wick pairings, vertices, and diagram rules directly from the Lagrangian.
+  status: asserted
+- id: technique.peccei_quinn_axion_relaxation
+  label: Relax theta dynamically with a Peccei-Quinn Goldstone mode
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Promote theta to a dynamical axion-like field with an anomalous shift symmetry so the vacuum settles at the CP-conserving minimum.
+  status: asserted
+- id: technique.permutation_sum_to_static_source_delta_functions
+  label: Permutation sum to static-source delta functions
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Uses the summed ordering identity for many soft emissions from a heavy line to collapse the amplitude into momentum-conserving delta functions for an external Coulomb source.
+  status: asserted
+- id: technique.photon_field_renormalization
+  label: Photon field renormalization
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Fixes Z_3 by demanding unit residue of the gauge-invariant photon pole.
+  status: asserted
+- id: technique.photon_polarization_sum
+  label: External-photon polarization sum
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Replace sums over physical transverse photon polarizations by -g_mu_nu when the Ward identity guarantees decoupling of unphysical modes.
+  status: asserted
+- id: technique.pion_pole_dominance_matching
+  label: Pion-pole dominance matching
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Saturate axial-current matrix elements with Goldstone-boson poles to derive current-algebra relations such as the pion mass relation and the Goldberger-Treiman relation.
+  status: asserted
+- id: technique.pion_pole_matching_goldberger_treiman
+  label: Pion-Pole Matching and Goldberger-Treiman
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Matches the pion pole in the nucleon axial current to current conservation to derive the Goldberger-Treiman relation and soft-pion couplings.
+  status: asserted
+- id: technique.plus_prescription_distributions
+  label: Plus-prescription distributions
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Regularize endpoint-singular kernels such as 1 divided by 1 minus z so real and virtual collinear contributions combine into finite evolution equations that preserve charges and momentum.
+  status: asserted
+- id: technique.poincare_algebra_derivation
+  label: Poincare Algebra Derivation
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Derive the commutation relations of H, P, J, and K from infinitesimal Lorentz transformations and translations.
+  status: asserted
+- id: technique.polyakov_momentum_shell_argument
+  label: Polyakov Momentum-Shell Argument
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Derive the sign of the nonlinear sigma model beta function by coarse-graining short-wavelength fluctuations of the unit vector field.
+  status: asserted
+- id: technique.pomeranchuk_theorem_argument
+  label: Pomeranchuk theorem argument
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Combines dispersion relations, crossing, and asymptotic assumptions to argue equal high-energy particle and antiparticle total cross-sections.
+  status: asserted
+- id: technique.precision_sin2thetaw_scheme_definition
+  label: Precision definitions of sin^2(theta_W)
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Define multiple observable schemes for the weak mixing angle and compare how radiative corrections shift each one.
+  status: asserted
+- id: technique.production_decay_relation_for_narrow_vector_bound_states
+  label: Production-decay relation for narrow vector bound states
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Relate the resonance production cross section of a narrow vector bound state to its leptonic partial width and the on-shell delta-function peak.
+  status: asserted

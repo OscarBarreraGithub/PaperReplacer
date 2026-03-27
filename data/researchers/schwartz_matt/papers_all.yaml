@@ -1,0 +1,3593 @@
+author_id: M.D.Schwartz.1
+fetched: '2026-03-26'
+total_papers: 108
+papers:
+- inspire_id: 900212
+  title: Simplified Models for LHC New Physics Searches
+  arxiv_id: '1105.2838'
+  arxiv_categories:
+  - hep-ph
+  doi: 10.1088/0954-3899/39/10/105005
+  citation_count: 945
+  year: 2012
+  journal: J.Phys.G
+  collaboration: LHC New Physics Working Group
+  categories:
+  - Experiment-HEP
+  - Phenomenology-HEP
+  keywords:
+  - talk
+  - CERN LHC Coll
+  - new physics
+  - topology
+  - effective Lagrangian
+  - supersymmetry
+  - new particle
+  - Monte Carlo
+  - ATLAS
+  - CMS
+  abstract: This document proposes a collection of simplified models relevant to the design of new-physics searches at the
+    LHC and the characterization of their results. Both ATLAS and CMS have already presented some results in terms of simplified
+    models, and we encourage them to continue and expand this effort, which supplements both signature-based results and benchmark
+    model interpretations. A simplified model is defined by an effective Lagrangian describing the interactions of a small
+    number of new particles. Simplified models can equally well be described by a small number of masses and cross-sections.
+    These parameters are directly related to collider physics observables, making simplified models a particularly effective
+    framework for evaluating searches and a useful starting point for characterizing positive signals of new physics. This
+    document serves as an official summary of the results from the 'Topologies for Early LHC Searches' workshop, held at SLAC
+    in September of 2010, the purpose of which was to develop a set of representative models that can be used to cover all
+    relevant phase space in experimental searches. Particular emphasis is placed on searches relevant for the first ~50-500
+    pb-1 of data and those motivated by supersymmetric models. This note largely summarizes material posted at http://lhcnewphysics.org/,
+    which includes simplified model definitions, Monte Carlo material, and supporting contacts within the theory community.
+    We also comment on future developments that may be useful as more data is gathered and analyzed by the experiments.
+- inspire_id: 600200
+  title: Effective field theory for massive gravitons and gravity in theory space
+  arxiv_id: hep-th/0210184
+  arxiv_categories:
+  - hep-th
+  doi: 10.1016/S0003-4916(03)00068-X
+  citation_count: 863
+  year: 2003
+  journal: Annals Phys.
+  collaboration: null
+  categories:
+  - Theory-HEP
+  keywords:
+  - gravitation
+  - 'graviton: massive'
+  - 'spin: 2'
+  - 'gauge field theory: SU(N) x SU(N)'
+  - effective Lagrangian
+  - Goldstone particle
+  - symmetry breaking
+  - 'graviton: interaction'
+  - 'effect: nonlinear'
+  abstract: We introduce a technique for restoring general coordinate invariance into theories where it is explicitly broken.
+    This is the analog for gravity of the Callan-Coleman-Wess-Zumino formalism for gauge theories. We use this to elucidate
+    the properties of interacting massless and massive gravitons. For a single graviton with a Planck scale Mpl and a mass
+    mg, we find that there is a sensible effective field theory which is valid up to a high-energy cutoff Lambda parametrically
+    above mg. Our methods allow for a transparent understanding of the many peculiarities associated with massive gravitons,
+    among them the need for the Fierz-Pauli form of the Lagrangian, the presence or absence of the van Dam-Veltman-Zakharov
+    discontinuity in general backgrounds, and the onset of non-linear effects and the breakdown of the effective theory at
+    large distances from heavy sources. The natural sizes of all non-linear corrections beyond the Fierz-Pauli term are easily
+    determined. The cutoff scales as Lambda ~ (mg^4 Mpl)^(1/5) for the Fierz-Pauli theory, but can be raised to Lambda ~ (mg^2
+    Mpl)^(1/3) in certain non-linear extensions. Having established that these models make sense as effective theories, there
+    are a number of new avenues for exploration, including model building with gravity in theory space and constructing gravitational
+    dimensions.
+- inspire_id: 787466
+  title: 'Top Tagging: A Method for Identifying Boosted Hadronically Decaying Top Quarks'
+  arxiv_id: '0806.0848'
+  arxiv_categories:
+  - hep-ph
+  doi: 10.1103/PhysRevLett.101.142001
+  citation_count: 458
+  year: 2008
+  journal: Phys.Rev.Lett.
+  collaboration: null
+  categories:
+  - Phenomenology-HEP
+  keywords:
+  - 29.85.Fj
+  - 13.87.-a
+  - 'p p: inclusive reaction'
+  - 'top: pair production'
+  - 'top: decay'
+  - jet
+  - 'particle identification: top'
+  - numerical calculations
+  - CERN LHC Coll
+  - 14000 GeV-cms
+  abstract: A method is introduced for distinguishing top jets -- boosted, hadronically decaying top quarks -- from standard
+    model backgrounds using jet substructure. The procedure involves parsing the jet cluster to resolve features such as three
+    light quark subjets, and then imposing angular and kinematic constraints. This method is much more efficient than simple
+    invariant mass cuts or jet clustering with fixed angular size. With top-tagging, high pT dijets can be rejected with an
+    efficiency of around 99% while retaining 20-40% of the tops. This allows us to reach into the all-hadronic channel for
+    new-physics signals, such as new heavy t-tbar resonances, which ordinarily would be overwhelmed by the enormous dijet
+    background. In addition, it will improve the reach for cases when one of the tops decays semi-leptonically, and may also
+    have applications to single-top searches and studies of b-tagging efficiency at high pT.
+- inspire_id: 780596
+  title: A precise determination of $\alpha_s$ from LEP thrust data using effective field theory
+  arxiv_id: '0803.0342'
+  arxiv_categories:
+  - hep-ph
+  doi: 10.1088/1126-6708/2008/07/034
+  citation_count: 367
+  year: 2008
+  journal: JHEP
+  collaboration: null
+  categories:
+  - Phenomenology-HEP
+  keywords:
+  - 'electron positron: annihilation'
+  - 'hadron: electroproduction'
+  - event shape analysis
+  - 'jet: thrust'
+  - 'strong interaction: coupling constant'
+  - factorization
+  - effective Lagrangian
+  - quantum chromodynamics
+  - 'perturbation theory: higher-order'
+  - 'statistical analysis: error'
+  - 'effect: nonperturbative'
+  - numerical calculations
+  - 'interpretation of experiments: CERN LEP Stor'
+  abstract: Starting from a factorization theorem in Soft-Collinear Effective Theory, the thrust distribution in e+e- collisions
+    is calculated including resummation of the next-to-next-to-next-to leading logarithms. This is a significant improvement
+    over previous calculations which were only valid to next-to-leading logarithmic order. The fixed-order expansion of the
+    resummed result approaches the exact fixed-order distribution towards the kinematic endpoint. This close agreement provides
+    a verification of both the effective field theory expression and recently completed next-to-next-to-leading fixed order
+    event shapes. The resummed distribution is then matched to fixed order, resulting in a distribution valid over a large
+    range of thrust. A fit to ALEPH and OPAL data from LEP 1 and LEP 2 produces alpha_s(m_Z)= 0.1172 +/- 0.0010 +/- 0.0008
+    +/-0.0012 +/- 0.0012, where the uncertainties are respectively statistical, systematic, hadronic, and perturbative. This
+    is one of the world's most precise extractions of alpha_s to date.
+- inspire_id: 1276589
+  title: Quantum Field Theory and the Standard Model
+  arxiv_id: ''
+  arxiv_categories: []
+  doi: 10.1017/9781139540940
+  citation_count: 344
+  year: 2014
+  journal: null
+  collaboration: null
+  categories:
+  - Phenomenology-HEP
+  keywords: []
+  abstract: Providing a comprehensive introduction to quantum field theory, this textbook covers the development of particle
+    physics from its foundations to the discovery of the Higgs boson. Its combination of clear physical explanations, with
+    direct connections to experimental data, and mathematical rigor make the subject accessible to students with a wide variety
+    of backgrounds and interests. Assuming only an undergraduate-level understanding of quantum mechanics, the book steadily
+    develops the Standard Model and state-of-the-art calculation techniques. It includes multiple derivations of many important
+    results, with modern methods such as effective field theory and the renormalization group playing a prominent role. Numerous
+    worked examples and end-of-chapter problems enable students to reproduce classic results and to master quantum field theory
+    as it is used today. Based on a course taught by the author over many years, this book is ideal for an introductory to
+    advanced quantum field theory sequence or for independent study.
+- inspire_id: 1501944
+  title: 'Deep learning in color: towards automated quark/gluon jet discrimination'
+  arxiv_id: '1612.01551'
+  arxiv_categories:
+  - hep-ph
+  - stat.ML
+  doi: 10.1007/JHEP01(2017)110
+  citation_count: 295
+  year: 2017
+  journal: JHEP
+  collaboration: null
+  categories:
+  - Phenomenology-HEP
+  - Other
+  - Computing
+  keywords:
+  - Jets
+  - artificial intelligence
+  - 'particle identification: neural network'
+  - 'gluon: jet'
+  - 'quark: jet'
+  - 'track data analysis: jet'
+  - 'track data analysis: neural network'
+  abstract: Artificial intelligence offers the potential to automate challenging data-processing tasks in collider physics.
+    To establish its prospects, we explore to what extent deep learning with convolutional neural networks can discriminate
+    quark and gluon jets better than observables designed by physicists. Our approach builds upon the paradigm that a jet
+    can be treated as an image, with intensity given by the local calorimeter deposits. We supplement this construction by
+    adding color to the images, with red, green and blue intensities given by the transverse momentum in charged particles,
+    transverse momentum in neutral particles, and pixel-level charged particle counts. Overall, the deep networks match or
+    outperform traditional jet variables. We also find that, while various simulations produce different quark and gluon jets,
+    the neural networks are surprisingly insensitive to these differences, similar to traditional observables. This suggests
+    that the networks can extract robust physical information from imperfect simulations.
+- inspire_id: 561597
+  title: Quantum field theory and unification in AdS5
+  arxiv_id: hep-th/0108114
+  arxiv_categories:
+  - hep-th
+  doi: 10.1088/1126-6708/2001/11/003
+  citation_count: 245
+  year: 2001
+  journal: JHEP
+  collaboration: null
+  categories:
+  - Theory-HEP
+  keywords:
+  - membrane model
+  - 'space-time: anti-de Sitter'
+  - 'dimension: 5'
+  - effective action
+  - 'gauge field theory: Yang-Mills'
+  - Kaluza-Klein model
+  - propagator
+  - 'perturbation theory: higher-order'
+  - background field
+  - 'path integral: determinant'
+  - regularization
+  - beta function
+  - 'radion: potential'
+  - unified field theory
+  abstract: We consider gauge bosons in the bulk of AdS5 in a two-brane theory that addresses the hierarchy problem. We show
+    such a theory can be consistent with gauge coupling unification at a high scale. We discuss subtleties in this calculation
+    and show how to regulate consistently in a bounded AdS5 background. Our regularization is guided by the holographic dual
+    of the calculation.
+- inspire_id: 913922
+  title: Quark and Gluon Tagging at the LHC
+  arxiv_id: '1106.3076'
+  arxiv_categories:
+  - hep-ph
+  doi: 10.1103/PhysRevLett.107.172001
+  citation_count: 230
+  year: 2011
+  journal: Phys.Rev.Lett.
+  collaboration: null
+  categories:
+  - Phenomenology-HEP
+  keywords:
+  - 14.65.Bt
+  - 13.87.-a
+  - 14.70.Dj
+  - 'gluon: particle identification'
+  - 'quark: particle identification'
+  - 'shape analysis: jet'
+  - 'charged particle: multiplicity'
+  - CERN LHC Coll
+  - 'p p: inclusive reaction'
+  - 'quark: jet'
+  - 'gluon: jet'
+  - 'numerical calculations: Monte Carlo'
+  abstract: Being able to distinguish light-quark jets from gluon jets on an event-by-event basis could significantly enhance
+    the reach for many new physics searches at the Large Hadron Collider. Through an exhaustive search of existing and novel
+    jet substructure observables, we find that a multivariate approach can filter out over 95% of the gluon jets while keeping
+    more than half of the light-quark jets. Moreover, a combination of two simple variables, the charge track multiplicity
+    and the $p_T$-weighted linear radial moment (girth), can achieve similar results. While this pair appears very promising,
+    our study is only Monte Carlo based, and other discriminants may work better with real data in a realistic experimental
+    environment. To that end, we explore many other observables constructed using different jet sizes and parameters, and
+    highlight those that deserve further theoretical and experimental scrutiny. Additional information, including distributions
+    of around 10,000 variables, can be found on this website http://jets.physics.harvard.edu/qvg .
+- inspire_id: 844004
+  title: 'Seeing in Color: Jet Superstructure'
+  arxiv_id: '1001.5027'
+  arxiv_categories:
+  - hep-ph
+  doi: 10.1103/PhysRevLett.105.022001
+  citation_count: 217
+  year: 2010
+  journal: Phys.Rev.Lett.
+  collaboration: null
+  categories:
+  - Phenomenology-HEP
+  keywords:
+  - 12.38.-t
+  - 13.87.-a
+  - 'jet: momentum'
+  - 'color: singlet'
+  - 'color: flow'
+  - heavy quark
+  - CERN LHC Coll
+  - background
+  - kinematics
+  - 'p p: interaction'
+  - 'jet: hadroproduction'
+  - event shape analysis
+  - transverse momentum
+  - 'jet: bottom'
+  - 'Higgs particle: hadroproduction'
+  - 'Z0: associated production'
+  - 'Higgs particle: hadronic decay'
+  - numerical calculations
+  abstract: A new class of observables is introduced which aims to characterize the superstructure of an event, that is, features,
+    such as color flow, which are not determined by the jet four-momenta alone. Traditionally, an event is described as having
+    jets which are independent objects; each jet has some energy, size, and possible substructure such as subjets or heavy
+    flavor content. This description discards information connecting the jets to each other, which can be used to determine
+    if the jets came from decay of a color singlet object, or if they were initiated by quarks or gluons. An example superstructure
+    variable, pull, is presented as a simple handle on color flow. It can be used on an event-by-event basis as a tool for
+    distinguishing previously irreducible backgrounds at the Tevatron and the LHC.
+- inspire_id: 1611684
+  title: Scale Invariant Instantons and the Complete Lifetime of the Standard Model
+  arxiv_id: '1707.08124'
+  arxiv_categories:
+  - hep-ph
+  doi: 10.1103/PhysRevD.97.056006
+  citation_count: 189
+  year: 2018
+  journal: Phys.Rev.D
+  collaboration: null
+  categories:
+  - Phenomenology-HEP
+  keywords:
+  - 'top: mass'
+  - 'correction: quantum'
+  - 'invariance: scale'
+  - instanton
+  - lifetime
+  - field theory
+  - infrared problem
+  - tunneling
+  - 'vacuum: stability'
+  abstract: 'In a classically scale-invariant quantum field theory, tunneling rates are infrared divergent due to the existence
+    of instantons of any size. While one expects such divergences to be resolved by quantum effects, it has been unclear how
+    higher-loop corrections can resolve a problem appearing already at one loop. With a careful power counting, we uncover
+    a series of loop contributions that dominate over the one-loop result and sum all the necessary terms. We also clarify
+    previously incomplete treatments of related issues pertaining to global symmetries, gauge fixing, and finite mass effects.
+    In addition, we produce exact closed-form solutions for the functional determinants over scalars, fermions, and vector
+    bosons around the scale-invariant bounce, demonstrating manifest gauge invariance in the vector case. With these problems
+    solved, we produce the first complete calculation of the lifetime of our Universe: 10139  years. With 95% confidence,
+    we expect our Universe to last more than 1058  years. The uncertainty is part experimental uncertainty on the top quark
+    mass and on αs and part theory uncertainty from electroweak threshold corrections. Using our complete result, we provide
+    phase diagrams in the mt/mh and the mt/αs planes, with uncertainty bands. To rule out absolute stability to 3σ confidence,
+    the uncertainty on the top quark pole mass would have to be pushed below 250 MeV or the uncertainty on αs(mZ) pushed below
+    0.00025.'
+- inspire_id: 1437957
+  title: Factorization for groomed jet substructure beyond the next-to-leading logarithm
+  arxiv_id: '1603.09338'
+  arxiv_categories:
+  - hep-ph
+  doi: 10.1007/JHEP07(2016)064
+  citation_count: 178
+  year: 2016
+  journal: JHEP
+  collaboration: null
+  categories:
+  - Phenomenology-HEP
+  keywords:
+  - Jets
+  - NLO Computations
+  - 'quantum chromodynamics: factorization'
+  - 'factorization: collinear'
+  - 'track data analysis: jet'
+  - 'shape analysis: jet'
+  - 'jet: mass'
+  - 'leading logarithm approximation: higher-order'
+  - 'higher-order: 2'
+  - 'electron positron: scattering'
+  - 'dijet: production'
+  - 'dijet: final state'
+  - 'p p: scattering'
+  - 'Z0: associated production'
+  - electron positron --> jet jet
+  - p p --> Z0 jet
+  abstract: Jet grooming algorithms are widely used in experimental analyses at hadron colliders to remove contaminating radiation
+    from within jets. While the algorithms perform a great service to the experiments, their intricate algorithmic structure
+    and multiple parameters has frustrated precision theoretic understanding. In this paper, we demonstrate that one particular
+    groomer called soft drop actually makes precision jet substructure easier. In particular, we derive a factorization formula
+    for a large class of soft drop jet substructure observables, including jet mass. The essential observation that allows
+    for this factorization is that, without the soft wide-angle radiation groomed by soft drop, all singular contributions
+    are collinear. The simplicity and universality of the collinear limit in QCD allows us to show that to all orders, the
+    normalized differential cross section has no contributions from non-global logarithms. It is also independent of process,
+    up to the relative fraction of quark and gluon jets. In fact, soft drop allows us to define this fraction precisely. The
+    factorization theorem also explains why soft drop observables are less sensitive to hadronization than their ungroomed
+    counterparts. Using the factorization theorem, we resum the soft drop jet mass to next-to-next-to-leading logarithmic
+    accuracy. This requires calculating some clustering effects that are closely related to corresponding effects found in
+    jet veto calculations. We match our resummed calculation to fixed order results for both e$^{+}$ e$^{−}$ → dijets and
+    pp → Z + j events, producing the first jet substructure predictions (groomed or ungroomed) to this accuracy for the LHC.
+- inspire_id: 854837
+  title: Resummation of heavy jet mass and comparison to LEP data
+  arxiv_id: '1005.1644'
+  arxiv_categories:
+  - hep-ph
+  doi: 10.1007/JHEP08(2010)058
+  citation_count: 176
+  year: 2010
+  journal: JHEP
+  collaboration: null
+  categories:
+  - Phenomenology-HEP
+  keywords:
+  - Jets
+  - NLO Computations
+  - QCD
+  - 'jet: mass'
+  - 'correction: nonperturbative'
+  - 'numerical calculations: Monte Carlo'
+  - 'jet: thrust'
+  - 'higher-order: 2'
+  - 'strong interaction: coupling constant'
+  - event shape analysis
+  - flat direction
+  - resummation
+  - CERN LEP Stor
+  - ALEPH
+  - 'electron positron: annihilation'
+  - 'jet: electroproduction'
+  - 'quantum chromodynamics: perturbation theory'
+  - 'leading logarithm approximation: higher-order'
+  - soft collinear effective theory
+  - hadronization
+  abstract: The heavy jet mass distribution in e+e- collisions is computed to next-to-next-to-next-to leading logarithmic
+    (NNNLL) and next-to-next-to leading fixed order accuracy (NNLO). The singular terms predicted from the resummed distribution
+    are confirmed by the fixed order distributions allowing a precise extraction of the unknown soft function coefficients.
+    A number of quantitative and qualitative comparisons of heavy jet mass and the related thrust distribution are made. From
+    fitting to ALEPH data, a value of alpha_s is extracted, alpha_s(m_Z)=0.1220 +/- 0.0031, which is larger than, but not
+    in conflict with, the corresponding value for thrust. A weighted average of the two produces alpha_s(m_Z) = 0.1193 +/-
+    0.0027, consistent with the world average. A study of the non-perturbative corrections shows that the flat direction observed
+    for thrust between alpha_s and a simple non-perturbative shape parameter is not lifted in combining with heavy jet mass.
+    The Monte Carlo treatment of hadronization gives qualitatively different results for thrust and heavy jet mass, and we
+    conclude that it cannot be trusted to add power corrections to the event shape distributions at this accuracy. Whether
+    a more sophisticated effective field theory approach to power corrections can reconcile the thrust and heavy jet mass
+    distributions remains an open question.
+- inspire_id: 1185266
+  title: Jet Charge at the LHC
+  arxiv_id: '1209.2421'
+  arxiv_categories:
+  - hep-ph
+  doi: 10.1103/PhysRevLett.110.212001
+  citation_count: 175
+  year: 2013
+  journal: Phys.Rev.Lett.
+  collaboration: null
+  categories:
+  - Phenomenology-HEP
+  - Other
+  keywords:
+  - 13.87.Fh
+  - 12.38.Bx
+  - 12.39.St
+  - 'jet: charge'
+  - 'fragmentation: model'
+  - 'top: pair production'
+  - fragmentation function
+  - CERN LHC Coll
+  - charge distribution
+  - evolution equation
+  - quantum number
+  - electroweak interaction
+  - hadronization
+  - 'p p: interaction'
+  - standard model
+  - new interaction
+  - 'resonance: hadronic decay'
+  - supersymmetry
+  - dijet
+  - 'W: hadronic decay'
+  abstract: Knowing the charge of the parton initiating a light-quark jet could be extremely useful both for testing aspects
+    of the standard model and for characterizing potential beyond-the-standard-model signals. We show that despite the complications
+    of hadronization and out-of-jet radiation such as pileup, a weighted sum of the charges of a jet’s constituents can be
+    used at the LHC to distinguish among jets with different charges. Potential applications include measuring electroweak
+    quantum numbers of hadronically decaying resonances or supersymmetric particles, as well as standard model tests, such
+    as jet charge in dijet events or in hadronically decaying W bosons in tt¯ events. We develop a systematically improvable
+    method to calculate moments of these charge distributions by combining multihadron fragmentation functions with perturbative
+    jet functions and pertubative evolution equations. We show that the dependence on energy and jet size for the average
+    and width of the jet charge can be calculated despite the large experimental uncertainty on fragmentation functions. These
+    calculations can provide a validation tool for data independent of Monte Carlo fragmentation models.
+- inspire_id: 900496
+  title: The two-loop hemisphere soft function
+  arxiv_id: '1105.3676'
+  arxiv_categories:
+  - hep-ph
+  doi: 10.1103/PhysRevD.84.045022
+  citation_count: 170
+  year: 2011
+  journal: Phys.Rev.D
+  collaboration: null
+  categories:
+  - Phenomenology-HEP
+  keywords:
+  - 12.38.Bx
+  - 12.38.Cy
+  - 11.10.Gh
+  - event shape analysis
+  - asymptotic behavior
+  - scale dependence
+  - renormalization
+  - soft collinear effective theory
+  - 'jet: mass spectrum'
+  - 'jet: pair production'
+  abstract: The hemisphere soft function is calculated to order alpha_s^2. This is the first multi-scale soft function calculated
+    to two loops. The renormalization scale dependence of the result agrees exactly with the prediction from effective field
+    theory. This fixes the unknown coefficients of the singular parts of the two-loop thrust and heavy-jet mass distributions.
+    There are four such coefficients, for 2 event shapes and 2 color structures, which are shown to be in excellent agreement
+    with previous numerical extraction. The asymptotic behavior of the soft function has double logs in the CF CA color structure,
+    which agree with non-global log calculations, but also has sub-leading single logs for both the CF CA and CF TF nf color
+    structures. The general form of the soft function is complicated, does not factorize in a simple way, and disagrees with
+    the Hoang-Kluth ansatz. The exact hemisphere soft function will remove one source of uncertainty on the alpha_s fits from
+    e+e- event shapes.
+- inspire_id: 761122
+  title: Resummation and NLO matching of event shapes with effective field theory
+  arxiv_id: '0709.2709'
+  arxiv_categories:
+  - hep-ph
+  doi: 10.1103/PhysRevD.77.014026
+  citation_count: 167
+  year: 2008
+  journal: Phys.Rev.D
+  collaboration: null
+  categories:
+  - Phenomenology-HEP
+  keywords:
+  - 12.39.Hg
+  - 12.38.Cy
+  - soft collinear effective theory
+  - 'electron positron: annihilation'
+  - 'jet: pair production'
+  - total cross section
+  - quantum chromodynamics
+  - perturbation theory
+  - infrared problem
+  - event shape analysis
+  - numerical calculations
+  abstract: 'The resummed differential thrust rate in e+e- annihilation is calculated using Soft-Collinear Effective Theory
+    (SCET). The resulting distribution in the two-jet region T~1 is found to agree with the corresponding expression derived
+    by the standard approach. A matching procedure to account for finite corrections at T < 1 is then described. There are
+    two important advantages of the SCET approach. First, SCET manifests a dynamical seesaw scale q = p^2/Q in addition to
+    the center-of-mass energy Q and the jet mass scale p ~ Q ~ sqrt(1 - T). Thus, the resummation of logs of p/q can be cleanly
+    distinguished from the resummation of logs of Q/p. Second, finite parts of loop amplitudes appear in specific places in
+    the perturbative distribution: in the matching to the hard function, at the scale Q, in matching to the jet function,
+    at the scale p, and in matching to the soft function, at the scale q. This allows for a consistent merger of fixed order
+    corrections and resummation. In particular, the total NLO e+e- cross section is reproduced from these finite parts without
+    having to perform additional infrared regulation.'
+- inspire_id: 1204790
+  title: Quark and Gluon Jet Substructure
+  arxiv_id: '1211.7038'
+  arxiv_categories:
+  - hep-ph
+  doi: 10.1007/JHEP04(2013)090
+  citation_count: 160
+  year: 2013
+  journal: JHEP
+  collaboration: null
+  categories:
+  - Experiment-HEP
+  - Phenomenology-HEP
+  keywords:
+  - 'gluon: jet'
+  - 'quark: jet'
+  - efficiency
+  - quantum chromodynamics
+  - CERN LHC Coll
+  - Monte Carlo
+  - acceptance
+  - tracks
+  - shape analysis
+  - 'jet: mass'
+  abstract: Distinguishing quark-initiated jets from gluon-initiated jets has the potential to significantly improve the reach
+    of many beyond-the-standard model searches at the Large Hadron Collider and to provide additional tests of QCD. To explore
+    whether quark and gluon jets could possibly be distinguished on an event-by-event basis, we perform a comprehensive simulation-based
+    study. We explore a variety of motivated and unmotivated variables with a semi-automated multivariate approach. General
+    conclusions are that at 50% quark jet acceptance efficiency, around 80%-90% of gluon jets can be rejected. Some benefit
+    is gained by combining variables. Different event generators are compared, as are the effects of using only charged tracks
+    to avoid pileup. Additional information, including interactive distributions of most variables and their cut efficiencies,
+    can be found at http://jets.physics.harvard.edu/qvg .
+- inspire_id: 836025
+  title: Direct photon production with effective field theory
+  arxiv_id: '0911.0681'
+  arxiv_categories:
+  - hep-ph
+  doi: 10.1007/JHEP02(2010)040
+  citation_count: 156
+  year: 2010
+  journal: JHEP
+  collaboration: null
+  categories:
+  - Phenomenology-HEP
+  keywords:
+  - Jets
+  - Hadronic Colliders
+  - Renormalization Group
+  - QCD
+  - 'photon: direct production'
+  - 'transverse momentum: high'
+  - 'gluon: jet'
+  - 'hadron hadron: interaction'
+  - soft collinear effective theory
+  - Batavia TEVATRON Coll
+  - anomalous dimension
+  - angular dependence
+  - factorization
+  - numerical calculations
+  - CERN LHC Coll
+  - effective field theory
+  - kinematics
+  - 'perturbation theory: higher-order'
+  - 'renormalization group: invariance'
+  - cross section
+  - 'scaling: Casimir'
+  - renormalization
+  abstract: The production of hard photons in hadronic collisions is studied using Soft-Collinear Effective Theory (SCET).
+    This is the first application of SCET to a physical, observable cross section involving energetic partons in more than
+    two directions. A factorization formula is derived which involves a non-trivial interplay of the angular dependence in
+    the hard and soft functions, both quark and gluon jet functions, and multiple partonic channels. The relevant hard, jet
+    and soft functions are computed to one loop and their anomalous dimensions are determined to three loops. The final resummed
+    inclusive direct photon distribution is valid to next-to-next-to-leading logarithmic order (NNLL), one order beyond previous
+    work. The result is improved by including non-logarithmic terms and photon isolation cuts through matching, and compared
+    to Tevatron data and to fixed order results at the Tevatron and the LHC. The resummed cross section has a significantly
+    smaller theoretical uncertainty than the next-to-leading fixed-order result, particularly at high transverse momentum.
+- inspire_id: 1287360
+  title: Hard-Soft-Collinear Factorization to All Orders
+  arxiv_id: '1403.6472'
+  arxiv_categories:
+  - hep-ph
+  doi: 10.1103/PhysRevD.90.105020
+  citation_count: 147
+  year: 2014
+  journal: Phys.Rev.D
+  collaboration: null
+  categories:
+  - Phenomenology-HEP
+  - Other
+  keywords:
+  - 12.38.Aw
+  - 12.38.-t
+  - 11.15.-q
+  - effective field theory
+  - operator product expansion
+  - 'quantum chromodynamics: factorization'
+  - 'quantum chromodynamics: perturbation theory'
+  - deep inelastic scattering
+  - 'scattering amplitude: factorization'
+  - 'factorization: collinear'
+  - splitting function
+  - Wilson loop
+  abstract: We provide a precise statement of hard-soft-collinear factorization of scattering amplitudes and prove it to all
+    orders in perturbation theory. Factorization is formulated as the equality at leading power of scattering amplitudes in
+    QCD with other amplitudes in QCD computed from a product of operator matrix elements. The equivalence is regulator independent
+    and gauge independent. As the formulation relates amplitudes to the same amplitudes with additional soft or collinear
+    particles, it includes as special cases the factorization of soft currents and collinear splitting functions from generic
+    matrix elements, both of which are shown to be process independent to all orders. We show that the overlapping soft-collinear
+    region is naturally accounted for by vacuum matrix elements of kinked Wilson lines. Although the proof is self-contained,
+    it combines techniques developed for the study of pinch surfaces, scattering amplitudes, and effective field theory.
+- inspire_id: 1309600
+  title: Consistent Use of the Standard Model Effective Potential
+  arxiv_id: '1408.0292'
+  arxiv_categories:
+  - hep-ph
+  doi: 10.1103/PhysRevLett.113.241801
+  citation_count: 146
+  year: 2014
+  journal: Phys.Rev.Lett.
+  collaboration: null
+  categories:
+  - Phenomenology-HEP
+  - Other
+  keywords:
+  - 12.15.Lk
+  - 11.30.Qc
+  - standard model
+  - 'effective potential: Higgs'
+  - 'effective potential: stability'
+  - 'vacuum state: Higgs'
+  - 'vacuum state: stability'
+  - gauge dependence
+  - scale dependence
+  - 'Higgs particle: mass'
+  - 'top: mass'
+  - 'mass: pole'
+  abstract: The stability of the Standard Model is determined by the true minimum of the effective Higgs potential. We show
+    that the potential at its minimum when computed by the traditional method is strongly dependent on the gauge parameter.
+    It moreover depends on the scale where the potential is calculated. We provide a consistent method for determining absolute
+    stability independent of both gauge and calculation scale, order by order in perturbation theory. This leads to a revised
+    stability bounds mH > (129.4 \pm 2.3) GeV and mt < (171.2 \pm 0.3)GeV. We also show how to evaluate the effect of new
+    physics on the stability bound without resorting to unphysical field values.
+- inspire_id: 1449996
+  title: Precision decay rate calculations in quantum field theory
+  arxiv_id: '1604.06090'
+  arxiv_categories:
+  - hep-th
+  - hep-ph
+  doi: 10.1103/PhysRevD.95.085011
+  citation_count: 142
+  year: 2017
+  journal: Phys.Rev.D
+  collaboration: null
+  categories:
+  - Theory-HEP
+  - Phenomenology-HEP
+  keywords:
+  - 'potential: classical'
+  - tunneling
+  - field theory
+  - sensitivity
+  - quantum gravity
+  - path integral
+  - transparency
+  - decay rate
+  - lifetime
+  abstract: Tunneling in quantum field theory is worth understanding properly, not least because it controls the long-term
+    fate of our Universe. There are, however, a number of features of tunneling rate calculations which lack a desirable transparency,
+    such as the necessity of analytic continuation, the appropriateness of using an effective instead of classical potential,
+    and the sensitivity to short-distance physics. This paper attempts to review in pedagogical detail the physical origin
+    of tunneling and its connection to the path integral. Both the traditional potential-deformation method and a recent,
+    more direct, propagator-based method are discussed. Some new insights from using approximate semiclassical solutions are
+    presented. In addition, we explore the sensitivity of the lifetime of our Universe to short-distance physics, such as
+    quantum gravity, emphasizing a number of important subtleties.
+- inspire_id: 2052497
+  title: Machine learning and LHC event generation
+  arxiv_id: '2203.07460'
+  arxiv_categories:
+  - hep-ph
+  - hep-ex
+  doi: 10.21468/SciPostPhys.14.4.079
+  citation_count: 140
+  year: 2023
+  journal: SciPost Phys.
+  collaboration: null
+  categories:
+  - Phenomenology-HEP
+  - Experiment-HEP
+  - Computing
+  keywords:
+  - interface
+  - 'interpretation of experiments: CERN LHC Coll'
+  abstract: First-principle simulations are at the heart of the high-energy physics research program. They link the vast data
+    output of multi-purpose detectors with fundamental theory predictions and interpretation. This review illustrates a wide
+    range of applications of modern machine learning to event generation and simulation-based inference, including conceptional
+    developments driven by the specific requirements of particle physics. New ideas and tools developed at the interface of
+    particle physics and machine learning will improve the speed and precision of forward simulations, handle the complexity
+    of collision data, and enhance inference as an inverse simulation problem.
+- inspire_id: 595880
+  title: Chandra spectra of the soft x-ray diffuse background
+  arxiv_id: astro-ph/0209441
+  arxiv_categories:
+  - astro-ph
+  doi: 10.1086/345347
+  citation_count: 137
+  year: 2003
+  journal: Astrophys.J.
+  collaboration: null
+  categories:
+  - Astrophysics
+  keywords: []
+  abstract: We present an exploratory Chandra ACIS-S3 study of the diffuse component of the Cosmic X-ray Background in the
+    0.3-7 keV band for four directions at high Galactic latitudes, with emphasis on details of the ACIS instrumental background
+    modeling. Observations of the dark Moon are used to model the detector background. A comparison of the Moon data and the
+    data obtained with ACIS stowed outside the focal area showed that the dark Moon does not emit significantly in our band.
+    Point sources down to 3 10^-16 erg/s/cm2 in the 0.5-2 keV band are excluded in our two deepest observations. We estimate
+    the contribution of fainter, undetected sources to be less than 20% of the remaining CXB flux in this band in all four
+    pointings. In the 0.3-1 keV band, the diffuse signal varies strongly from field to field and contributes between 55% and
+    90% of the total CXB signal. It is dominated by emission lines that can be modeled by a kT=0.1-0.4 keV plasma. In particular,
+    the two fields located away from bright Galactic features show a prominent line blend at E=580 eV (O VII + O VIII) and
+    a possible line feature at E~300 eV. The two pointings toward the North Polar Spur exhibit a brighter O blend and additional
+    bright lines at 730-830 eV (Fe XVII). We measure the total 1-2 keV flux of (1.0-1.2 +-0.2) 10^-15 erg/s/cm2/arcmin (mostly
+    resolved), and the 2-7 keV flux of (4.0-4.5 +-1.5) 10^-15 erg/s/cm2/arcmin. At E>2 keV, the diffuse emission is consistent
+    with zero, to an accuracy limited by the short Moon exposure and systematic uncertainties of the S3 background. Assuming
+    Galactic or local origin of the line emission, we put an upper limit of 3 10^-15 erg/s/cm2/arcmin on the 0.3-1 keV extragalactic
+    diffuse flux.
+- inspire_id: 561598
+  title: Unification and the hierarchy from AdS5
+  arxiv_id: hep-th/0108115
+  arxiv_categories:
+  - hep-th
+  doi: 10.1103/PhysRevLett.88.081801
+  citation_count: 135
+  year: 2002
+  journal: Phys.Rev.Lett.
+  collaboration: null
+  categories:
+  - Theory-HEP
+  keywords:
+  - 'space-time: anti-de Sitter'
+  - 'dimension: 5'
+  - unified field theory
+  - regularization
+  - hierarchy
+  abstract: In AdS5, the coupling for bulk gauge bosons runs logarithmically, not as a power law. For this reason, one can
+    preserve perturbative unification of couplings. Depending on the cutoff, this can occur at a high scale. We discuss subtleties
+    in the calculation and present a regularization scheme motivated by the holographic correspondence. We find that generically,
+    as in the standard model, the couplings almost unify. For specific choices of the cutoff and number of scalar multiplets,
+    there is good agreement between the measured couplings and the assumption of high scale unification.
+- inspire_id: 1309598
+  title: Consistent Use of Effective Potentials
+  arxiv_id: '1408.0287'
+  arxiv_categories:
+  - hep-ph
+  doi: 10.1103/PhysRevD.91.016009
+  citation_count: 133
+  year: 2015
+  journal: Phys.Rev.D
+  collaboration: null
+  categories:
+  - Phenomenology-HEP
+  keywords:
+  - 11.30.Qc
+  - 12.15.Lk
+  - 'invariance: gauge'
+  - 'quantum electrodynamics: scalar'
+  - 'vacuum state: energy'
+  - effective potential
+  - perturbation theory
+  - renormalization group
+  - gauge dependence
+  - higher-order
+  abstract: It is well known that effective potentials can be gauge dependent while their values at extrema should be gauge
+    invariant. Unfortunately, establishing this invariance in perturbation theory is not straightforward, since contributions
+    from arbitrarily high-order loops can be of the same size. We show in massless scalar QED that an infinite class of loops
+    can be summed (and must be summed) to give a gauge-invariant value for the potential at its minimum. In addition, we show
+    that the exact potential depends on both the scale at which it is calculated and the normalization of the fields, but
+    the vacuum energy does not. Using these insights, we propose a method to extract some physical quantities from effective
+    potentials which is self-consistent order by order in perturbation theory, including improvement with the renormalization
+    group.
+- inspire_id: 1670172
+  title: 'JUNIPR: a Framework for Unsupervised Machine Learning in Particle Physics'
+  arxiv_id: '1804.09720'
+  arxiv_categories:
+  - hep-ph
+  - stat.ML
+  doi: 10.1140/epjc/s10052-019-6607-9
+  citation_count: 132
+  year: 2019
+  journal: Eur.Phys.J.C
+  collaboration: null
+  categories:
+  - Phenomenology-HEP
+  - Other
+  - Phenomenology-HEP
+  - Other
+  keywords:
+  - computer
+  - 'higher-order: 0'
+  - neural network
+  - Monte Carlo
+  - performance
+  - jet
+  - binary
+  abstract: 'In applications of machine learning to particle physics, a persistent challenge is how to go beyond discrimination
+    to learn about the underlying physics. To this end, a powerful tool would be a framework for unsupervised learning, where
+    the machine learns the intricate high-dimensional contours of the data upon which it is trained, without reference to
+    pre-established labels. In order to approach such a complex task, an unsupervised network must be structured intelligently,
+    based on a qualitative understanding of the data. In this paper, we scaffold the neural network’s architecture around
+    a leading-order model of the physics underlying the data. In addition to making unsupervised learning tractable, this
+    design actually alleviates existing tensions between performance and interpretability. We call the framework Junipr: “Jets
+    from UNsupervised Interpretable PRobabilistic models”. In this approach, the set of particle momenta composing a jet are
+    clustered into a binary tree that the neural network examines sequentially. Training is unsupervised and unrestricted:
+    the network could decide that the data bears little correspondence to the chosen tree structure. However, when there is
+    a correspondence, the network’s output along the tree has a direct physical interpretation. Junipr models can perform
+    discrimination tasks, through the statistically optimal likelihood-ratio test, and they permit visualizations of discrimination
+    power at each branching in a jet’s tree. Additionally, Junipr models provide a probability distribution from which events
+    can be drawn, providing a data-driven Monte Carlo generator. As a third application, Junipr models can reweight events
+    from one (e.g. simulated) data set to agree with distributions from another (e.g. experimental) data set.'
+- inspire_id: 748375
+  title: Deciphering top flavor violation at the LHC with $B$ factories
+  arxiv_id: '0704.1482'
+  arxiv_categories:
+  - hep-ph
+  doi: 10.1103/PhysRevD.78.054008
+  citation_count: 120
+  year: 2008
+  journal: Phys.Rev.D
+  collaboration: null
+  categories:
+  - Phenomenology-HEP
+  keywords:
+  - 'p p: inclusive reaction'
+  - 'quark: pair production'
+  - top
+  - 'top: decay'
+  - 'flavor: violation'
+  - 'neutral current: flavor changing'
+  - effective Lagrangian
+  - 'B: radiative decay'
+  - 'B: semileptonic decay'
+  - 'decay: inclusive reaction'
+  - strangeness
+  - 'decay: exclusive reaction'
+  - 'B: width'
+  - differential cross section
+  - 'B: leptonic decay'
+  - 'electron positron: colliding beams'
+  - B-factory
+  - CERN LHC Coll
+  - numerical calculations
+  - 14000 GeV-cms
+  abstract: The LHC will have unprecedented sensitivity to flavor-changing neutral current (FCNC) top quark decays, whose
+    observation would be a clear sign of physics beyond the standard model. Although many details of top flavor violation
+    are model dependent, the standard model gauge symmetries relate top FCNCs to other processes, which are strongly constrained
+    by existing data. We study these constraints in a model independent way, using a low energy effective theory from which
+    the new physics is integrated out. We consider the most important operators which contribute to top FCNCs and analyze
+    the current constraints on them. We find that the data rule out top FCNCs at a level observable at the LHC due to most
+    of the operators comprising left-handed first or second generation quark fields, while there remains a substantial window
+    for top decays mediated by operators with right-handed charm or up quarks. If FCNC top decays are observed at the LHC,
+    such an analysis may help decipher the underlying physics.
+- inspire_id: 1613324
+  title: Pileup Mitigation with Machine Learning (PUMML)
+  arxiv_id: '1707.08600'
+  arxiv_categories:
+  - hep-ph
+  - hep-ex
+  - stat.ML
+  doi: 10.1007/JHEP12(2017)051
+  citation_count: 118
+  year: 2017
+  journal: JHEP
+  collaboration: null
+  categories:
+  - Phenomenology-HEP
+  - Experiment-HEP
+  - Other
+  keywords:
+  - Jets
+  - pile-up
+  - neutral particle
+  - charged particle
+  - neural network
+  - radiation
+  - vertex
+  - mathematical methods
+  abstract: Pileup involves the contamination of the energy distribution arising from the primary collision of interest (leading
+    vertex) by radiation from soft collisions (pileup). We develop a new technique for removing this contamination using machine
+    learning and convolutional neural networks. The network takes as input the energy distribution of charged leading vertex
+    particles, charged pileup particles, and all neutral particles and outputs the energy distribution of particles coming
+    from leading vertex alone. The PUMML algorithm performs remarkably well at eliminating pileup distortion on a wide range
+    of simple and complex jet observables. We test the robustness of the algorithm in a number of ways and discuss how the
+    network can be trained directly on data.
+- inspire_id: 873423
+  title: Multivariate discrimination and the Higgs + W/Z search
+  arxiv_id: '1010.3698'
+  arxiv_categories:
+  - hep-ph
+  doi: 10.1007/JHEP04(2011)069
+  citation_count: 104
+  year: 2011
+  journal: JHEP
+  collaboration: null
+  categories:
+  - Experiment-HEP
+  - Phenomenology-HEP
+  keywords:
+  - Higgs Physics
+  - Jets
+  - Hadronic Colliders
+  - 'Higgs particle: hadroproduction'
+  - background
+  - CERN LHC Coll
+  - efficiency
+  - Batavia TEVATRON Coll
+  - CDF
+  - DZERO
+  - 'p p: inclusive reaction'
+  - 'anti-p p: inclusive reaction'
+  - 'gauge boson: associated production'
+  - 'Higgs particle: hadronic decay'
+  - 'bottom: pair production'
+  - kinematics
+  - twist
+  - helicity
+  - data analysis method
+  - 'numerical calculations: Monte Carlo'
+  - '1960: 14000 GeV-cms'
+  abstract: A systematic method for optimizing multivariate discriminants is developed and applied to the important example
+    of a light Higgs boson search at the Tevatron and the LHC. The Significance Improvement Characteristic (SIC), defined
+    as the signal efficiency of a cut or multivariate discriminant divided by the square root of the background efficiency,
+    is shown to be an extremely powerful visualization tool. SIC curves demonstrate numerical instabilities in the multivariate
+    discriminants, show convergence as the number of variables is increased, and display the sensitivity to the optimal cut
+    values. For our application, we concentrate on Higgs boson production in association with a W or Z boson with H -> bb
+    and compare to the irreducible standard model background, Z/W + bb. We explore thousands of experimentally motivated,
+    physically motivated, and unmotivated single variable discriminants. Along with the standard kinematic variables, a number
+    of new ones, such as twist, are described which should have applicability to many processes. We find that some single
+    variables, such as the pull angle, are weak discriminants, but when combined with others they provide important marginal
+    improvement. We also find that multiple Higgs boson-candidate mass measures, such as from mild and aggressively trimmed
+    jets, when combined may provide additional discriminating power. Comparing the significance improvement from our variables
+    to those used in recent CDF and DZero searches, we find that a 10-20% improvement in significance against Z/W + bb is
+    possible. Our analysis also suggests that the H + W/Z channel with H -> bb is also viable at the LHC, without requiring
+    a hard cut on the W/Z transverse momentum.
+- inspire_id: 696439
+  title: Tensor mesons in AdS/QCD
+  arxiv_id: hep-ph/0510388
+  arxiv_categories:
+  - hep-ph
+  doi: 10.1103/PhysRevD.74.086004
+  citation_count: 97
+  year: 2006
+  journal: Phys.Rev.D
+  collaboration: null
+  categories:
+  - Phenomenology-HEP
+  keywords:
+  - 11.25.Tq
+  - 14.40.Cs
+  - quantum chromodynamics
+  - 'space-time: anti-de Sitter'
+  - 'tensor meson: mass'
+  - 'f2(1270): radiative decay'
+  - 'f2(1270): width'
+  - 'tensor meson: resonance'
+  - 'spin: 2'
+  - 'f2(1270): hadronic decay'
+  - Regge poles
+  - 'operator: higher-dimensional'
+  - 'numerical calculations: interpretation of experiments'
+  - f2(1270) --> 2photon
+  - f2(1270) --> 2pi
+  abstract: We explore tensor mesons in AdS/QCD focusing on f2 (1270), the lightest spin-two resonance in QCD. We find that
+    the f2 mass and the partial width for f2 -> gamma gamma are in very good agreement with data. In fact, the dimensionless
+    ratio of these two quantities comes out within the current experimental bound. The result for this ratio depends only
+    on Nc and Nf, and the quark and glueball content of the operator responsible for the f2; more importantly, it does not
+    depend on chiral symmetry breaking and so is both independent of much of the arbitrariness of AdS/QCD and completely out
+    of reach of chiral perturbation theory. For comparison, we also explore f2 -> pi pi, which because of its sensitivity
+    to the UV corrections has much more uncertainty. We also calculate the masses of the higher spin resonances on the Regge
+    trajectory of the f2, and find they compare favorably with experiment.
+- inspire_id: 1393758
+  title: Measurement of jet charge in dijet events from $\sqrt{s}$=8  TeV pp collisions with the ATLAS detector
+  arxiv_id: '1509.05190'
+  arxiv_categories:
+  - hep-ex
+  doi: 10.1103/PhysRevD.93.052003
+  citation_count: 96
+  year: 2016
+  journal: Phys.Rev.D
+  collaboration: ATLAS
+  categories:
+  - Experiment-HEP
+  keywords:
+  - 'p p: scattering'
+  - 'p p: colliding beams'
+  - 'jet: charge'
+  - 'jet: charge distribution'
+  - 'parton: distribution function'
+  - 'jet: energy'
+  - 'jet: flavor'
+  - 'dijet: hadroproduction'
+  - 'gluon: radiation'
+  - transverse momentum dependence
+  - 'quantum chromodynamics: perturbation theory'
+  - ATLAS
+  - coupling constant
+  - strong coupling
+  - CERN LHC Coll
+  - 'numerical calculations: Monte Carlo'
+  - tracks
+  - experimental results
+  abstract: The momentum-weighted sum of the charges of tracks associated to a jet is sensitive to the charge of the initiating
+    quark or gluon. This paper presents a measurement of the distribution of momentum-weighted sums, called jet charge, in
+    dijet events using 20.3  fb-1 of data recorded with the ATLAS detector at s=8  TeV in pp collisions at the LHC. The jet
+    charge distribution is unfolded to remove distortions from detector effects and the resulting particle-level distribution
+    is compared with several models. The pT dependence of the jet charge distribution average and standard deviation are compared
+    to predictions obtained with several leading-order and next-to-leading-order parton distribution functions. The data are
+    also compared to different Monte Carlo simulations of QCD dijet production using various settings of the free parameters
+    within these models. The chosen value of the strong coupling constant used to calculate gluon radiation is found to have
+    a significant impact on the predicted jet charge. There is evidence for a pT dependence of the jet charge distribution
+    for a given jet flavor. In agreement with perturbative QCD predictions, the data show that the average jet charge of quark-initiated
+    jets decreases in magnitude as the energy of the jet increases.
+- inspire_id: 615095
+  title: Constructing gravitational dimensions
+  arxiv_id: hep-th/0303114
+  arxiv_categories:
+  - hep-th
+  doi: 10.1103/PhysRevD.68.024029
+  citation_count: 92
+  year: 2003
+  journal: Phys.Rev.D
+  collaboration: null
+  categories:
+  - Theory-HEP
+  keywords:
+  - 04.50.+h
+  - gravitation
+  - 'dimension: >4'
+  - Kaluza-Klein model
+  - scattering amplitude
+  - 'graviton: massive'
+  - Goldstone particle
+  abstract: 'It would be extremely useful to know whether a particular low energy effective theory might have come from a
+    compactification of a higher dimensional space. Here, this problem is approached from the ground up by considering theories
+    with multiple interacting massive gravitons. It is actually very difficult to construct discrete gravitational dimensions
+    which have a local continuum limit. In fact, any model with only nearest neighbor interactions is doomed. If we could
+    find a non-linear extension for the Fierz-Pauli Lagrangian for a graviton of mass mg which does not break down until the
+    scale Lambda_2=(mg Mpl)^(1/2), this could be used to construct a large class of models whose continuum limit is local
+    in the extra dimension. But this is shown to be impossible: a theory with a single graviton must break down by Lambda_3
+    = (mg^2 Mpl)^(1/3). Next, we look at how the discretization prescribed by the truncation of the KK tower of an honest
+    extra diemsinon rasies the scale of strong coupling. It dictates an intricate set of interactions among various fields
+    which conspire to soften the strongest scattering amplitudes and allow for a local continuum limit. A number of canditate
+    symmetries associated with locality in the discretized dimension are also discussed.'
+- inspire_id: 880157
+  title: 'W-jet Tagging: Optimizing the Identification of Boosted Hadronically-Decaying W Bosons'
+  arxiv_id: '1012.2077'
+  arxiv_categories:
+  - hep-ph
+  doi: 10.1103/PhysRevD.83.074023
+  citation_count: 92
+  year: 2011
+  journal: Phys.Rev.D
+  collaboration: null
+  categories:
+  - Experiment-HEP
+  - Phenomenology-HEP
+  keywords:
+  - 13.87.-a
+  - 14.70.Fm
+  - 'jet: particle identification'
+  - 'W: particle identification'
+  - 'W: hadronic decay'
+  - 'numerical calculations: Monte Carlo'
+  - underlying event
+  - CERN LHC Coll
+  - 'W: momentum'
+  - 'quantum chromodynamics: jet'
+  - background
+  - 'shape analysis: jet'
+  - 'jet: mass'
+  - 'W: polarization'
+  - 'p p: inclusive reaction'
+  - 'Z'': hadroproduction'
+  - 'W: pair production'
+  - 'mass spectrum: (W+ W-)'
+  - 7000 GeV-cms
+  abstract: A method is proposed for distinguishing highly boosted hadronically decaying W's (W-jets) from QCD-jets using
+    jet substructure. Previous methods, such as the filtering/mass-drop method, can give a factor of ~2 improvement in S/sqrt(B)
+    for jet pT > 200 GeV. In contrast, a multivariate approach including new discriminants such as R-cores, which characterize
+    the shape of the W-jet, subjet planar flow, and grooming-sensitivities is shown to provide a much larger factor of ~5
+    improvement in S/sqrt(B). For longitudinally polarized W's, such as those coming from many new physics models, the discrimination
+    is even better. Comparing different Monte Carlo simulations, we observe a sensitivity of some variables to the underlying
+    event/ however, even with a conservative estimates, the multivariate approach is very powerful. Applications to semileptonic
+    WW resonance searches and all-hadronic W+jet searches at the LHC are also discussed. Code implementing our W-jet tagging
+    algorithm is publicly available at http://jets.physics.harvard.edu/wtag
+- inspire_id: 1663579
+  title: Jet Charge and Machine Learning
+  arxiv_id: '1803.08066'
+  arxiv_categories:
+  - hep-ph
+  - stat.ML
+  doi: 10.1007/JHEP10(2018)093
+  citation_count: 90
+  year: 2018
+  journal: JHEP
+  collaboration: null
+  categories:
+  - Phenomenology-HEP
+  - Other
+  - Phenomenology-HEP
+  - Other
+  keywords:
+  - Jets
+  - 'jet: charge'
+  - 'charge: electric'
+  - 'top: boosted particle'
+  - network
+  - neural network
+  - 'interpretation of experiments: CERN LHC Coll'
+  - structure
+  - quark
+  - gluon
+  abstract: Modern machine learning techniques, such as convolutional, recurrent and recursive neural networks, have shown
+    promise for jet substructure at the Large Hadron Collider. For example, they have demonstrated effectiveness at boosted
+    top or W boson identification or for quark/gluon discrimination. We explore these methods for the purpose of classifying
+    jets according to their electric charge. We find that both neural networks that incorporate distance within the jet as
+    an input and boosted decision trees including radial distance information can provide significant improvement in jet charge
+    extraction over current methods. Specifically, convolutional, recurrent, and recursive networks can provide the largest
+    improvement over traditional methods, in part by effectively utilizing distance within the jet or clustering history.
+    The advantages of using a fixed-size input representation (as with the CNN) or a small input representation (as with the
+    RNN) suggest that both convolutional and recurrent networks will be essential to the future of modern machine learning
+    at colliders.
+- inspire_id: 1254693
+  title: 'Jet Cleansing: Pileup Removal at High Luminosity'
+  arxiv_id: '1309.4777'
+  arxiv_categories:
+  - hep-ph
+  doi: 10.1103/PhysRevD.90.065020
+  citation_count: 88
+  year: 2014
+  journal: Phys.Rev.D
+  collaboration: null
+  categories:
+  - Phenomenology-HEP
+  - Other
+  keywords:
+  - 13.87.-a
+  - 13.87.Fh
+  - 'luminosity: high'
+  - 'new physics: sensitivity'
+  - quantum chromodynamics
+  - tracking detector
+  - correlation
+  - kinematics
+  - 'shape analysis: jet'
+  - calorimeter
+  - 'jet: mass'
+  - 'dijet: mass'
+  abstract: <p>One of the greatest impediments to extracting useful information from high luminosity hadron-collider data
+    is radiation from secondary collisions (i.e. pileup) which can overlap with that of the primary interaction. In this paper
+    we introduce a simple jet-substructure technique termed <italic>cleansing</italic> which can consistently correct for
+    large amounts of pileup in an observable independent way. Cleansing works at the subjet level, combining tracker and calorimeter-based
+    data to reconstruct the pileup-free primary interaction. The technique can be used on its own, with various degrees of
+    sophistication, or in concert with jet grooming. We apply cleansing to both kinematic and jet shape reconstruction, finding
+    in all cases a marked improvement over previous methods both in the correlation of the cleansed data with uncontaminated
+    results and in measures like <inline-formula><mml:math display="inline"><mml:mi>S</mml:mi><mml:mo stretchy="false">/</mml:mo><mml:msqrt><mml:mi>B</mml:mi></mml:msqrt></mml:math></inline-formula>.
+    Cleansing should improve the sensitivity of new-physics searches at high luminosity and could also aid in the comparison
+    of precision QCD calculations to collider data.</p>
+- inspire_id: 1651455
+  title: Learning to classify from impure samples with high-dimensional data
+  arxiv_id: '1801.10158'
+  arxiv_categories:
+  - hep-ph
+  - hep-ex
+  - stat.ML
+  doi: 10.1103/PhysRevD.98.011502
+  citation_count: 87
+  year: 2018
+  journal: Phys.Rev.D
+  collaboration: null
+  categories:
+  - Phenomenology-HEP
+  - Experiment-HEP
+  - Other
+  - Computing
+  - Experiment-HEP
+  - Other
+  keywords:
+  - 'particle identification: neural network'
+  - 'neural network: performance'
+  - mathematical methods
+  - 'numerical calculations: Monte Carlo'
+  abstract: A persistent challenge in practical classification tasks is that labeled training sets are not always available.
+    In particle physics, this challenge is surmounted by the use of simulations. These simulations accurately reproduce most
+    features of data, but cannot be trusted to capture all of the complex correlations exploitable by modern machine learning
+    methods. Recent work in weakly supervised learning has shown that simple, low-dimensional classifiers can be trained using
+    only the impure mixtures present in data. Here, we demonstrate that complex, high-dimensional classifiers can also be
+    trained on impure mixtures using weak supervision techniques, with performance comparable to what could be achieved with
+    pure samples. Using weak supervision will therefore allow us to avoid relying exclusively on simulations for high-dimensional
+    classification. This work opens the door to a new regime whereby complex models are trained directly on data, providing
+    direct access to probe the underlying physics.
+- inspire_id: 1111240
+  title: Precision Jet Substructure from Boosted Event Shapes
+  arxiv_id: '1204.3898'
+  arxiv_categories:
+  - hep-ph
+  doi: 10.1103/PhysRevLett.109.092001
+  citation_count: 85
+  year: 2012
+  journal: Phys.Rev.Lett.
+  collaboration: null
+  categories:
+  - Phenomenology-HEP
+  keywords:
+  - 13.87.-a
+  - 12.38.Cy
+  - 'shape analysis: jet'
+  - event shape analysis
+  - quantum chromodynamics
+  - underlying event
+  - 'higher-order: 3'
+  - scaling
+  - thrust
+  - CERN LHC Coll
+  - 'p p: interaction'
+  - 'jet: hadroproduction'
+  - 'radiation: initial state'
+  - 'Z0: hadronic decay'
+  - 'Z0: width'
+  - 'electron positron: annihilation'
+  - leading logarithm approximation
+  - numerical calculations
+  abstract: Jet substructure has emerged as a critical tool for LHC searches, but studies so far have relied heavily on shower
+    Monte Carlo simulations, which formally approximate QCD at leading-log level. We demonstrate that systematic higher-order
+    QCD computations of jet substructure can be carried out by boosting global event shapes by a large momentum Q, and accounting
+    for effects due to finite jet size, initial-state radiation (ISR), and the underlying event (UE) as 1/Q corrections. In
+    particular, we compute the 2-subjettiness substructure distribution for boosted Z -> q qbar events at the LHC at next-to-next-to-next-to-leading-log
+    order. The calculation is greatly simplified by recycling the known results for the thrust distribution in e+ e- collisions.
+    The 2-subjettiness distribution quickly saturates, becoming Q independent for Q > 400 GeV. Crucially, the effects of jet
+    contamination from ISR/UE can be subtracted out analytically at large Q, without knowing their detailed form. Amusingly,
+    the Q=infinity and Q=0 distributions are related by a scaling by e, up to next-to-leading-log order.
+- inspire_id: 1124589
+  title: Resummation of Jet Mass at Hadron Colliders
+  arxiv_id: '1208.0010'
+  arxiv_categories:
+  - hep-ph
+  doi: 10.1103/PhysRevD.87.014010
+  citation_count: 84
+  year: 2013
+  journal: Phys.Rev.D
+  collaboration: null
+  categories:
+  - Phenomenology-HEP
+  keywords:
+  - 14.70.-e
+  - 12.38.-t
+  - 12.38.Cy
+  - 'jet: mass spectrum'
+  - 'jet: mass'
+  - 'photon: associated production'
+  - resummation
+  - factorization
+  - renormalization group
+  - soft collinear effective theory
+  abstract: A method is developed for calculating the jet mass distribution at hadron colliders using an expansion about the
+    kinematic threshold. In particular, we consider the mass distribution of jets of size R produced in association with a
+    hard photon at the Large Hadron Collider. Expanding around the kinematic threshold, where all the energy goes into the
+    jet and the photon, provides a clean factorization formula and allows for the resummation of logarithms associated with
+    soft and collinear divergences. All of the large logarithms of jet mass are resummed at next-to-leading logarithmic level,
+    and all the global logarithms at next-to-next-to-leading logarithmic level. A key step in the derivation is the factorization
+    of the soft function into pieces associated with single scales and a remainder which contains nonglobal structure. This
+    step, which is standard in traditional resummation, is implemented in effective field theory which is then used to resum
+    the large logarithms using the renormalization group in a systematically improvable manner.
+- inspire_id: 613474
+  title: Discrete gravitational dimensions
+  arxiv_id: hep-th/0302110
+  arxiv_categories:
+  - hep-th
+  doi: 10.1103/PhysRevD.69.104001
+  citation_count: 84
+  year: 2004
+  journal: Phys.Rev.D
+  collaboration: null
+  categories:
+  - Theory-HEP
+  keywords:
+  - 04.60.-m
+  - 04.50.+h
+  - 11.10.Kk
+  - gravitation
+  - 'dimension: 5'
+  - 'space: discrete'
+  - 'field theory: mass generation'
+  - Kaluza-Klein model
+  abstract: We study the physics of a single discrete gravitational extra dimension using the effective field theory for massive
+    gravitons. We first consider a minimal discretization with 4D gravitons on the sites and nearest neighbor hopping terms.
+    At the linear level, 5D continuum physics is recovered correctly, but at the non-linear level the theory becomes highly
+    non-local in the discrete dimension. There is a peculiar UV/IR connection, where the scale of strong interactions at high
+    energies is related to the radius of the dimension. These new effects formally vanish in the limit of zero lattice spacing,
+    but do not do so quickly enough to reproduce the continuum physics consistently in an effective field theory up to the
+    5D Planck scale. Nevertheless, this model does make sense as an effective theory up to energies parametrically higher
+    than the compactification scale. In order to have a discrete theory that appears local in the continuum limit, the lattice
+    action must have interactions between distant sites. We speculate on the relevance of these observations to the construction
+    of finite discrete theories of gravity in four dimensions.
+- inspire_id: 1084055
+  title: 'Qjets: A Non-Deterministic Approach to Tree-Based Jet Substructure'
+  arxiv_id: '1201.1914'
+  arxiv_categories:
+  - hep-ph
+  doi: 10.1103/PhysRevLett.108.182003
+  citation_count: 83
+  year: 2012
+  journal: Phys.Rev.Lett.
+  collaboration: null
+  categories:
+  - Experiment-HEP
+  - Phenomenology-HEP
+  keywords:
+  - 13.87.-a
+  - 'jet: mass'
+  - mass spectrum
+  - background
+  - quantum chromodynamics
+  - fluctuation
+  - 'track data analysis: jet'
+  abstract: 'Jet substructure is typically studied using clustering algorithms, such as kT, which arrange the jets'' constituents
+    into trees. Instead of considering a single tree per jet, we propose that multiple trees should be considered, weighted
+    by an appropriate metric. Then each jet in each event produces a distribution for an observable, rather than a single
+    value. Advantages of this approach include: 1) observables have significantly increased statistical stability; and, 2)
+    new observables, such as the variance of the distribution, provide new handles for signal and background discrimination.
+    For example, we find that employing a set of trees substantially reduces the observed fluctuations in the pruned mass
+    distribution, enhancing the likelihood of new particle discovery for a given integrated luminosity. Furthermore, the resulting
+    pruned mass distributions for (background) QCD jets are found to be substantially wider than that for (signal) jets with
+    intrinsic mass scales, e.g. jets containing a W decay. A cut on this width yields a substantial enhancement in significance
+    relative to a cut on the standard pruned jet mass alone. In particular the luminosity needed for a given significance
+    requirement decreases by a factor of two relative to standard pruning.'
+- inspire_id: 1809060
+  title: Sequential Discontinuities of Feynman Integrals and the Monodromy Group
+  arxiv_id: '2007.13747'
+  arxiv_categories:
+  - hep-th
+  - hep-ph
+  doi: 10.1007/JHEP01(2021)205
+  citation_count: 81
+  year: 2021
+  journal: JHEP
+  collaboration: null
+  categories:
+  - Theory-HEP
+  - Phenomenology-HEP
+  - Theory-HEP
+  - Phenomenology-HEP
+  keywords:
+  - Scattering Amplitudes
+  - Supersymmetric Gauge Theory
+  - monodromy
+  - Feynman graph
+  - scattering amplitude
+  - analytic properties
+  - perturbation theory
+  - phase space
+  abstract: We generalize the relation between discontinuities of scattering amplitudes and cut diagrams to cover sequential
+    discontinuities (discontinuities of discontinuities) in arbitrary momentum channels. The new relations are derived using
+    time-ordered perturbation theory, and hold at phase-space points where all cut momentum channels are simultaneously accessible.
+    As part of this analysis, we explain how to compute sequential discontinuities as monodromies and explore the use of the
+    monodromy group in characterizing the analytic properties of Feynman integrals. We carry out a number of cross-checks
+    of our new formulas in polylogarithmic examples, in some cases to all loop orders.
+- inspire_id: 1809259
+  title: Automating the ABCD method with machine learning
+  arxiv_id: '2007.14400'
+  arxiv_categories:
+  - hep-ph
+  - hep-ex
+  - physics.data-an
+  doi: 10.1103/PhysRevD.103.035021
+  citation_count: 81
+  year: 2021
+  journal: Phys.Rev.D
+  collaboration: null
+  categories:
+  - Phenomenology-HEP
+  - Experiment-HEP
+  - Data Analysis and Statistics
+  - Phenomenology-HEP
+  - Experiment-HEP
+  - Data Analysis and Statistics
+  keywords:
+  - Beyond the standard model
+  - 'dimension: 3'
+  - 'jet: top'
+  - background
+  - performance
+  - dijet
+  abstract: 'The ABCD method is one of the most widely used data-driven background estimation techniques in high energy physics.
+    Cuts on two statistically independent classifiers separate signal and background into four regions, so that background
+    in the signal region can be estimated simply using the other three control regions. Typically, the independent classifiers
+    are chosen “by hand” to be intuitive and physically motivated variables. Here, we explore the possibility of automating
+    the design of one or both of these classifiers using machine learning. We show how to use state-of-the-art decorrelation
+    methods to construct powerful yet independent discriminators. Along the way, we uncover a previously unappreciated aspect
+    of the ABCD method: its accuracy hinges on having low signal contamination in control regions not just overall, but relative
+    to the signal fraction in the signal region. We demonstrate the method with three examples: a simple model consisting
+    of three-dimensional Gaussians; boosted hadronic top jet tagging; and a recasted search for paired dijet resonances. In
+    all cases, automating the ABCD method with machine learning significantly improves performance in terms of ABCD closure,
+    background rejection, and signal contamination.'
+- inspire_id: 1430897
+  title: Precision physics with pile-up insensitive observables
+  arxiv_id: '1603.06375'
+  arxiv_categories:
+  - hep-ph
+  - hep-ex
+  doi: ''
+  citation_count: 81
+  year: null
+  journal: null
+  collaboration: null
+  categories:
+  - Phenomenology-HEP
+  - Experiment-HEP
+  keywords:
+  - quantum chromodynamics
+  - higher-order
+  - pile-up
+  - 'luminosity: high'
+  - 'jet: mass'
+  - Monte Carlo
+  - CERN LHC Coll
+  - numerical calculations
+  - new physics
+  abstract: 'To deepen the search for beyond the Standard Model physics, the Large Hadron Collider is pushing to higher and
+    higher luminosity. At high luminosity, precision physics becomes increasingly difficult due to contamination from additional
+    proton collisions per bunch crossing called pile-up. In recent years, many methods have been developed to cull this excess
+    mostly low-energy radiation away from important signal regions, but it has been unclear if these methods were amenable
+    to systematically-improvable theoretical understanding. In this paper, it is shown that one such method, soft drop jet
+    grooming, has excellent theoretical properties: it is ultra-local, depending on only radiation within a jet, and it is
+    free of non-global logarithms. Calculations of the soft drop jet mass and related observables are presented at next-to-next-to-leading
+    logarithmic accuracy matched to next-to-next-to-leading fixed-order in perturbative Quantum Chromodynamics. Once measured
+    at the Large Hadron Collider, precision comparisons between theory and data can be made, essentially independent of the
+    amount of pile-up contamination.'
+- inspire_id: 1853035
+  title: Modern Machine Learning and Particle Physics
+  arxiv_id: '2103.12226'
+  arxiv_categories:
+  - hep-ph
+  doi: 10.1162/99608f92.beeb1183
+  citation_count: 75
+  year: null
+  journal: null
+  collaboration: null
+  categories:
+  - Phenomenology-HEP
+  - Phenomenology-HEP
+  keywords:
+  - CERN LHC Coll
+  - background
+  - data analysis method
+  - computer
+  - neural network
+  abstract: Over the past five years, modern machine learning has been quietly revolutionizing particle physics. Old methodology
+    is being outdated and entirely new ways of thinking about data are becoming commonplace. This article will review some
+    aspects of the natural synergy between modern machine learning and particle physics, focusing on applications at the Large
+    Hadron Collider. A sampling of examples is given, from signal/background discrimination tasks using supervised learning
+    to direct data-driven approaches. Some comments on persistent challenges and possible future directions for the field
+    are included at the end.
+- inspire_id: 1765751
+  title: $S$ -Matrix for massless particles
+  arxiv_id: '1911.06821'
+  arxiv_categories:
+  - hep-th
+  - hep-ph
+  doi: 10.1103/PhysRevD.101.105001
+  citation_count: 73
+  year: 2020
+  journal: Phys.Rev.D
+  collaboration: null
+  categories:
+  - Theory-HEP
+  - Phenomenology-HEP
+  - Theory-HEP
+  - Phenomenology-HEP
+  keywords:
+  - Formal aspects of field theory, field theory in curved space
+  - S-matrix
+  - 'particle: massless'
+  - coherent state
+  - factorization
+  - Wilson loop
+  - Feynman graph
+  - quantum electrodynamics
+  - 'regularization: dimensional'
+  - 'Yang-Mills: supersymmetry'
+  - 'supersymmetry: 4'
+  - quantum chromodynamics
+  abstract: The traditional S-matrix does not exist for theories with massless particles, such as quantum electrodynamics.
+    The difficulty in isolating asymptotic states manifests itself as infrared divergences at each order in perturbation theory.
+    Building on insights from the literature on coherent states and factorization, we construct an S-matrix that is free of
+    singularities order-by-order in perturbation theory. Factorization guarantees that the asymptotic evolution in gauge theories
+    is universal, i.e., independent of the hard process. Although the hard S-matrix element is computed between well-defined
+    few particle Fock states, dressed/coherent states can be seen to form as intermediate states in the calculation of hard
+    S-matrix elements. We present a framework for the perturbative calculation of hard S-matrix elements combining Lorentz-covariant
+    Feynman rules for the dressed-state scattering with time-ordered perturbation theory for the asymptotic evolution. With
+    hard cutoffs on the asymptotic Hamiltonian, the cancellation of divergences can be seen explicitly. In dimensional regularization,
+    where the hard cutoffs are replaced by a renormalization scale, the contribution from the asymptotic evolution produces
+    scaleless integrals that vanish. A number of illustrative examples are given in QED, QCD, and N=4 super-Yang-Mills theory.
+- inspire_id: 722530
+  title: Event Generation from Effective Field Theory
+  arxiv_id: hep-ph/0607296
+  arxiv_categories:
+  - hep-ph
+  doi: 10.1103/PhysRevD.76.074004
+  citation_count: 68
+  year: 2007
+  journal: Phys.Rev.D
+  collaboration: null
+  categories:
+  - Phenomenology-HEP
+  keywords:
+  - 12.38.Cy
+  - soft collinear effective theory
+  - quantum chromodynamics
+  - 'parton: showers'
+  - renormalization group
+  - 'form factor: Sudakov'
+  - 'electron positron: annihilation'
+  - 'jet: electroproduction'
+  - differential cross section
+  - infrared problem
+  - 'numerical calculations: Monte Carlo'
+  abstract: A procedure is developed for using Soft Collinear Effective Theory (SCET) to generate fully exclusive events,
+    which can then be compared to data from collider experiments. We show that SCET smoothly interpolates between QCD for
+    hard emissions, and the parton shower for soft emissions, while resumming all large logarithms. In SCET, logarithms are
+    resummed using the renormalization group, instead of classical Sudakov factors, so subleading logarithms can be resummed
+    as well. In addition, all loop effects of QCD can be reproduced in SCET, which allows the effective theory to incorporate
+    next-to-leading and higher-order effects. We also show through SCET that in the soft/collinear limit, successive branchings
+    factorize, a fact which is essential to parton showers, and that the splitting functions of QCD are reproduced. Finally,
+    combining these results, we present a example of an algorithm that incorporates the SCET results into an event generator
+    which is systematically improvable.
+- inspire_id: 838847
+  title: Annihilation decays of bound states at the LHC
+  arxiv_id: '0912.0526'
+  arxiv_categories:
+  - hep-ph
+  doi: 10.1007/JHEP04(2010)016
+  citation_count: 67
+  year: 2010
+  journal: JHEP
+  collaboration: null
+  categories:
+  - Phenomenology-HEP
+  keywords:
+  - Beyond Standard Model
+  - Supersymmetric Standard Model
+  - Hadronic Colliders
+  - QCD
+  - 'p p: interaction'
+  - 'top: pair production'
+  - bound state
+  - toponium
+  - 'jet: pair production'
+  - 'bound state: decay modes'
+  - 'gluino: bound state'
+  - 'particle: cascade decay'
+  - CERN LHC Coll
+  - new physics
+  - new particle
+  - 'bound state: (squark)'
+  - 'bound state: (squark gluino)'
+  - quantum chromodynamics
+  - 'numerical calculations: Monte Carlo'
+  abstract: At the Large Hadron Collider, heavy particles may be produced in pairs close to their kinematic threshold. If
+    these particles have strong enough attractive interactions they may form bound states. Consequently, the bound states
+    may decay through annihilation back into the standard model. Such annihilation decays have the potential to provide much
+    information about the bound particles, such as their mass, spin, or charges, in a manner completely complementary to standard
+    single particle cascade decays. Many of the signatures, such as dijet resonances, will be challenging to find, but may
+    be extremely helpful in unraveling the nature of the new physics. In the standard model, the only novel annihilation decays
+    would be for toponium/ these will be hard to see because of the relatively large width of the top quark itself. In models
+    with supersymmetry, marginally visible annihilation decays may occur for example, from bound states of gluinos to dijets
+    or tops. If new particles are bound through forces stronger than QCD, annihilation decays may even be the discovery mode
+    for new physics. This paper presents various theoretical results about bound states and then addresses the practical question
+    of whether any of their annihilation decays can be seen at the LHC.
+- inspire_id: 1286632
+  title: Nonglobal logarithms at three loops, four loops, five loops, and beyond
+  arxiv_id: '1403.4949'
+  arxiv_categories:
+  - hep-ph
+  - hep-th
+  doi: 10.1103/PhysRevD.90.065004
+  citation_count: 66
+  year: 2014
+  journal: Phys.Rev.D
+  collaboration: null
+  categories:
+  - Phenomenology-HEP
+  - Theory-HEP
+  - Other
+  keywords:
+  - 12.38.-t
+  - 'expansion 1/N: color'
+  - mass spectrum
+  - 'energy: high'
+  - 'correction: quantum'
+  - Poincare
+  - numerical calculations
+  - PSL(2,C)
+  abstract: <p>We calculate the coefficients of the leading nonglobal logarithms for the hemisphere mass distribution analytically
+    at 3, 4, and 5 loops at large <inline-formula><mml:math display="inline"><mml:msub><mml:mi>N</mml:mi><mml:mi>c</mml:mi></mml:msub></mml:math></inline-formula>.
+    We confirm that the integrand derived with the strong-energy-ordering approximation and fixed-order iteration of the Banfi-Marchesini-Syme
+    (BMS) equation agree. Our calculation exploits a hidden <inline-formula><mml:math display="inline"><mml:mi>PSL</mml:mi><mml:mo
+    stretchy="false">(</mml:mo><mml:mn>2</mml:mn><mml:mo>,</mml:mo><mml:mi mathvariant="double-struck">R</mml:mi><mml:mo stretchy="false">)</mml:mo></mml:math></inline-formula>
+    symmetry associated with the jet directions, apparent in the BMS equation after a stereographic projection to the Poincaré
+    disk. The required integrals have an iterated form, leading to functions of uniform transcendentality. This allows us
+    to extract the coefficients, and some functional dependence on the jet directions, by computing the symbols and coproducts
+    of appropriate expressions involving classical and Goncharov polylogarithms. Convergence of the series to a numerical
+    solution of the BMS equation is also discussed.</p>
+- inspire_id: 1376945
+  title: Measurement of colour flow with the jet pull angle in $t\bar{t}$ events using the ATLAS detector at $\sqrt{s}=8$
+    TeV
+  arxiv_id: '1506.05629'
+  arxiv_categories:
+  - hep-ex
+  doi: 10.1016/j.physletb.2015.09.051
+  citation_count: 64
+  year: 2015
+  journal: Phys.Lett.B
+  collaboration: ATLAS
+  categories:
+  - Experiment-HEP
+  keywords:
+  - 'p p: scattering'
+  - 'p p: colliding beams'
+  - 'top: pair production'
+  - 'W: leptonic decay'
+  - 'W: hadronic decay'
+  - 'bottom: particle identification'
+  - 'detector: resolution'
+  - 'color: flow'
+  - ATLAS
+  - CERN LHC Coll
+  - acceptance
+  - experimental results
+  - 8000 GeV-cms
+  abstract: The distribution and orientation of energy inside jets is predicted to be an experimental handle on colour connections
+    between the hard-scatter quarks and gluons initiating the jets. This Letter presents a measurement of the distribution
+    of one such variable, the jet pull angle. The pull angle is measured for jets produced in tt¯ events with one W boson
+    decaying leptonically and the other decaying to jets using 20.3 fb −1 of data recorded with the ATLAS detector at a centre-of-mass
+    energy of s=8 TeV at the LHC. The jet pull angle distribution is corrected for detector resolution and acceptance effects
+    and is compared to various models.
+- inspire_id: 1419255
+  title: Direct Approach to Quantum Tunneling
+  arxiv_id: '1602.01102'
+  arxiv_categories:
+  - hep-th
+  - hep-ph
+  doi: 10.1103/PhysRevLett.117.231601
+  citation_count: 63
+  year: 2016
+  journal: Phys.Rev.Lett.
+  collaboration: null
+  categories:
+  - Theory-HEP
+  - Phenomenology-HEP
+  keywords:
+  - 'potential: deformation'
+  - 'tunneling: quantum'
+  - field theory
+  - decay rate
+  - saddle-point approximation
+  - path integral
+  - instanton
+  - Minkowski
+  abstract: The decay rates of quasistable states in quantum field theories are usually calculated using instanton methods.
+    Standard derivations of these methods rely in a crucial way upon deformations and analytic continuations of the physical
+    potential and on the saddle-point approximation. While the resulting procedure can be checked against other semiclassical
+    approaches in some one-dimensional cases, it is challenging to trace the role of the relevant physical scales, and any
+    intuitive handle on the precision of the approximations involved is at best obscure. In this Letter, we use a physical
+    definition of the tunneling probability to derive a formula for the decay rate in both quantum mechanics and quantum field
+    theory directly from the Minkowski path integral, without reference to unphysical deformations of the potential. There
+    are numerous benefits to this approach, from nonperturbative applications to precision calculations and aesthetic simplicity.
+- inspire_id: 865530
+  title: 1-loop matching and NNLL resummation for all partonic 2 to 2 processes in QCD
+  arxiv_id: '1008.2759'
+  arxiv_categories:
+  - hep-ph
+  doi: 10.1103/PhysRevD.83.045022
+  citation_count: 60
+  year: 2011
+  journal: Phys.Rev.D
+  collaboration: null
+  categories:
+  - Phenomenology-HEP
+  keywords:
+  - 12.39.Hg
+  - 12.38.Cy
+  - 'quantum chromodynamics: perturbation theory'
+  - 'higher-order: 1'
+  - 'leading logarithm approximation: higher-order'
+  - soft collinear effective theory
+  - factorization
+  - 'jet: pair production'
+  - 'parton: scattering amplitude'
+  - Wilson
+  - helicity
+  - crossing
+  - renormalization group
+  abstract: The Wilson Coefficients for all 4-parton operators which arise in matching QCD to Soft-Collinear Effective Theory
+    (SCET) are computed at 1-loop. Any dijet observable calculated in SCET beyond leading order will require these results.
+    The Wilson coefficients are separated by spin and color, although most applications will involve only the spin-averaged
+    hard functions. The anomalous dimensions for the Wilson coefficients are given to 2-loop order, and the renormalization
+    group equations are solved explicitly. This will allow for analytical resummation of dijet observables to next-to-next-to-leading
+    logarithmic accuracy. For each channel, there is a natural basis in which the evolution is diagonal in color space. The
+    same basis also diagonalizes the color evolution for the soft function. Even though soft functions required for SCET calculations
+    are observable dependent, it is shown that their renormalization group evolution is almost completely determined by a
+    universal structure. With these results, it will be possible to calculate hadronic event shapes or other dijet observables
+    to next-to-leading order with next-to-next-to-leading log resummation.
+- inspire_id: 914560
+  title: Resummation for W and Z production at large pT
+  arxiv_id: '1106.4310'
+  arxiv_categories:
+  - hep-ph
+  doi: 10.1103/PhysRevLett.108.012001
+  citation_count: 57
+  year: 2012
+  journal: Phys.Rev.Lett.
+  collaboration: null
+  categories:
+  - Experiment-HEP
+  - Phenomenology-HEP
+  keywords:
+  - 12.39.St
+  - 12.38.Bx
+  - 13.85.Qk
+  - 12.38.Cy
+  - 'W: hadroproduction'
+  - 'Z0: hadroproduction'
+  - 'differential cross section: calculated'
+  - 'resummation: threshold'
+  - soft collinear effective theory
+  - Batavia TEVATRON Coll
+  - CERN LHC Coll
+  - 'higher-order: 2'
+  - 'higher-order: 1'
+  - 'parton: distribution function'
+  - renormalization group
+  - 'scale: factorization'
+  - 'jet: mass'
+  - 'jet: transverse momentum'
+  - 'transverse momentum: high'
+  abstract: Soft-Collinear Effective theory is used to perform threshold resummation for W and Z production at large transverse
+    momentum to next-to-next-to-leading logarithmic accuracy including matching to next-to-leading fixed-order results. The
+    results agree very well with data from the Tevatron, and predictions are made for the high-pT spectra at the LHC. While
+    the higher-log terms are of moderate size, their inclusion leads to a substantial reduction of the perturbative uncertainty.
+    With these improvements, the PDF uncertainties now dominate the error on the predicted cross section.
+- inspire_id: 1700182
+  title: Infrared Finiteness and Forward Scattering
+  arxiv_id: '1810.10022'
+  arxiv_categories:
+  - hep-ph
+  doi: 10.1103/PhysRevD.99.056015
+  citation_count: 56
+  year: 2019
+  journal: Phys.Rev.D
+  collaboration: null
+  categories:
+  - Phenomenology-HEP
+  - Phenomenology-HEP
+  keywords:
+  - Phenomenological aspects of field theory, general methods
+  - 'charged particle: final state'
+  - S-matrix
+  - 'higher-order: 1'
+  - photon
+  - forward scattering
+  - 'singularity: infrared'
+  - Compton scattering
+  - angular resolution
+  - infrared problem
+  - Feynman graph
+  - initial state
+  - 'electron positron: annihilation'
+  - electron positron --> Z0
+  abstract: 'Infrared divergences have long been heralded to cancel in sufficiently inclusive cross sections, according to
+    the famous Kinoshita-Lee-Nauenberg theorem which mandates an initial and final state sum. While well motivated, this theorem
+    is much weaker than necessary: for finiteness, one need only sum over initial or final states. Moreover, the cancellation
+    generically requires the inclusion of the forward scattering process. We provide a number of examples showing the importance
+    of this revised understanding: in e+e-→Z at next-to-leading order, one can sum over certain initial and final states with
+    an arbitrary number of extra photons, or only over final states with a finite number of photons, if forward scattering
+    is included. For Compton scattering, infrared finiteness requires the indistinguishability of hard forward-scattered electrons
+    and photons. This implies that in addition to experimental limits on the energy and angular resolution, there must also
+    be an experimental limit on the momentum at which electric charge can be observed. Similar considerations are required
+    to explain why the rate for γγ to scatter into photons alone is infrared divergent, but the rate for γγ to scatter into
+    photons or charged particles is finite. This new understanding sheds light on the importance of including degenerate initial
+    states in physical predictions, the relevance of disconnected Feynman diagrams, the importance of dressing initial or
+    final-state charged particles, and the quest to properly define the S matrix.'
+- inspire_id: 895251
+  title: Pure Samples of Quark and Gluon Jets at the LHC
+  arxiv_id: '1104.1175'
+  arxiv_categories:
+  - hep-ph
+  doi: 10.1007/JHEP10(2011)103
+  citation_count: 55
+  year: 2011
+  journal: JHEP
+  collaboration: null
+  categories:
+  - Experiment-HEP
+  - Phenomenology-HEP
+  keywords:
+  - Jets
+  - Hadronic Colliders
+  - 'gluon: jet'
+  - 'quark: jet'
+  - 'jet: multiple production'
+  - 'bottom: particle identification'
+  - CERN LHC Coll
+  - new physics
+  - 'p p: inclusive reaction'
+  - 'jet: hadroproduction'
+  - tree approximation
+  - cross section
+  - transverse momentum
+  - 'photon: associated production'
+  - 'vector boson: associated production'
+  - 'D0 anti-D0: rapidity: interference'
+  - numerical calculations
+  - 7000 GeV-cms
+  abstract: Having pure samples of quark and gluon jets would greatly facilitate the study of jet properties and substructure,
+    with many potential standard model and new physics applications. To this end, we consider multijet and jets+X samples,
+    to determine the purity that can be achieved by simple kinematic cuts leaving reasonable production cross sections. We
+    find, for example, that at the 7 TeV LHC, the pp {\to} {\gamma}+2jets sample can provide 98% pure quark jets with 200
+    GeV of transverse momentum and a cross section of 5 pb. To get 10 pb of 200 GeV jets with 90% gluon purity, the pp {\to}
+    3jets sample can be used. b+2jets is also useful for gluons, but only if the b-tagging is very efficient.
+- inspire_id: 2627022
+  title: Finite $S$ matrix
+  arxiv_id: '1906.03271'
+  arxiv_categories:
+  - hep-th
+  - hep-ph
+  doi: 10.1103/PhysRevD.107.L021701
+  citation_count: 54
+  year: 2023
+  journal: Phys.Rev.D
+  collaboration: null
+  categories:
+  - Theory-HEP
+  - Theory-HEP
+  - Phenomenology-HEP
+  - Theory-HEP
+  - Phenomenology-HEP
+  keywords:
+  - 'S-matrix: finite'
+  - 'invariance: conformal'
+  - 'particle: massless'
+  abstract: 'When massless particles are involved, the traditional scattering matrix (<math display="inline"><mi>S</mi></math>
+    matrix) does not exist: It has no rigorous nonperturbative definition and has infrared divergences in its perturbative
+    expansion. The problem can be traced to the impossibility of isolating single-particle states at asymptotic times. On
+    the other hand, the troublesome nonseparable interactions are often universal: In gauge theories, they factorize so that
+    the asymptotic evolution is independent of the hard scattering. Exploiting this factorization property, we show how a
+    finite “hard” <math display="inline"><mi>S</mi></math> matrix, <math display="inline"><msub><mi>S</mi><mi>H</mi></msub></math>,
+    can be defined by replacing the free Hamiltonian with a soft-collinear asymptotic Hamiltonian. The elements of <math display="inline"><msub><mi>S</mi><mi>H</mi></msub></math>
+    are gauge invariant and infrared finite and exist even in conformal field theories. One can interpret elements of <math
+    display="inline"><msub><mi>S</mi><mi>H</mi></msub></math> alternatively 1) as elements of the traditional <math display="inline"><mi>S</mi></math>
+    matrix between dressed states, 2) as Wilson coefficients, or 3) as remainder functions. These multiple interpretations
+    provide different insights into the rich structure of <math display="inline"><msub><mi>S</mi><mi>H</mi></msub></math>.'
+- inspire_id: 537196
+  title: The Emergence of localized gravity
+  arxiv_id: hep-th/0011177
+  arxiv_categories:
+  - hep-th
+  doi: 10.1016/S0370-2693(01)00152-6
+  citation_count: 52
+  year: 2001
+  journal: Phys.Lett.B
+  collaboration: null
+  categories:
+  - Theory-HEP
+  keywords:
+  - 'gravitation: local'
+  - Randall-Sundrum model
+  - 'membrane model: tension'
+  - 'graviton: excited state'
+  - 'field theory: conformal'
+  - 'space-time: anti-de Sitter'
+  - quantum mechanics
+  - 'bound state: mass'
+  - 'dimension: 5'
+  - 'dimension: 4'
+  abstract: We explore physics on the boundary of a Randall-Sundrum type model when the brane tension is slightly sub-critical.
+    We calculate the masses of the Kaluza-Klein decomposition of the graviton and use a toy model to show how localized gravity
+    emerges as the brane tension becomes critical. Finally, we discuss some aspects of the boundary conformal field theory
+    and the AdS/CFT correspondence.
+- inspire_id: 1925144
+  title: Implications of the Landau equations for iterated integrals
+  arxiv_id: '2109.09744'
+  arxiv_categories:
+  - hep-th
+  doi: 10.1103/PhysRevD.105.L061701
+  citation_count: 51
+  year: 2022
+  journal: Phys.Rev.D
+  collaboration: null
+  categories:
+  - Theory-HEP
+  keywords:
+  - Feynman graph
+  - Landau-Ginzburg model
+  - asymptotic expansion
+  - kinematics
+  abstract: We introduce a method for deriving constraints on the symbol of Feynman integrals from the form of their asymptotic
+    expansions in the neighborhood of Landau loci. In particular, we show that the behavior of these integrals near singular
+    points is directly related to the position in the symbol where one of the letters vanishes or becomes infinite. We illustrate
+    this method on integrals with generic masses and as a corollary prove the conjectured bound of <math display="inline"><mo
+    stretchy="false">⌊</mo><mfrac><mrow><mi>D</mi><mo stretchy="false">ℓ</mo></mrow><mn>2</mn></mfrac><mo stretchy="false">⌋</mo></math>
+    on the transcendental weight of polylogarithmic <math display="inline"><mo>ℓ</mo></math>-loop integrals of this type in
+    integer numbers of dimensions <math display="inline"><mi>D</mi></math>. We also derive new constraints on the kinematic
+    dependence of certain products of symbol letters that remain finite near singular points.
+- inspire_id: 1519436
+  title: Collinear factorization violation and effective field theory
+  arxiv_id: '1703.08572'
+  arxiv_categories:
+  - hep-ph
+  doi: 10.1103/PhysRevD.96.056005
+  citation_count: 50
+  year: 2017
+  journal: Phys.Rev.D
+  collaboration: null
+  categories:
+  - Phenomenology-HEP
+  keywords:
+  - 'quantum chromodynamics: effective field theory'
+  - 'quantum chromodynamics: factorization'
+  - soft collinear effective theory
+  - 'model: Glauber'
+  - 'scattering amplitude: factorization'
+  - 'factorization: collinear'
+  - 'factorization: violation'
+  abstract: The factorization of amplitudes into hard, soft and collinear parts is known to be violated in situations where
+    incoming particles are collinear to outgoing ones. This result was first derived by studying limits where noncollinear
+    particles become collinear. We show that through an effective field theory framework with Glauber operators, these factorization-violating
+    effects can be reproduced from an amplitude that is factorized before the splitting occurs. We confirm results at one
+    loop, through single Glauber exchange, and at two loops, through double Glauber exchange. To approach the calculation,
+    we begin by reviewing the importance of Glauber scaling for factorization. We show that for any situation where initial-state
+    and final-state particles are not collinear, the Glauber contribution is entirely contained in the soft contribution.
+    The contributions coming from Glauber operators are necessarily nonanalytic functions of external momentum, with the nonanalyticity
+    arising from the rapidity regulator. The nonanalyticity is critical so that Glauber operators can both preserve factorization
+    when it holds and produce factorization-violating effects when they are present.
+- inspire_id: 1944896
+  title: Challenges for unsupervised anomaly detection in particle physics
+  arxiv_id: '2110.06948'
+  arxiv_categories:
+  - hep-ph
+  - cs.LG
+  - hep-ex
+  - physics.data-an
+  doi: 10.1007/JHEP03(2022)066
+  citation_count: 49
+  year: 2022
+  journal: JHEP
+  collaboration: null
+  categories:
+  - Computing
+  - Experiment-HEP
+  - Phenomenology-HEP
+  - Data Analysis and Statistics
+  keywords:
+  - Jet substructure
+  - Beyond Standard Model
+  - Hadron-Hadron Scattering
+  - Jets
+  - 'network: performance'
+  - 'quantum chromodynamics: background'
+  - anomaly
+  - variational
+  abstract: Anomaly detection relies on designing a score to determine whether a particular event is uncharacteristic of a
+    given background distribution. One way to define a score is to use autoencoders, which rely on the ability to reconstruct
+    certain types of data (background) but not others (signals). In this paper, we study some challenges associated with variational
+    autoencoders, such as the dependence on hyperparameters and the metric used, in the context of anomalous signal (top and
+    W) jets in a QCD background. We find that the hyperparameter choices strongly affect the network performance and that
+    the optimal parameters for one signal are non-optimal for another. In exploring the networks, we uncover a connection
+    between the latent space of a variational autoencoder trained using mean-squared-error and the optimal transport distances
+    within the dataset. We then show that optimal transport distances to representative events in the background dataset can
+    be used directly for anomaly detection, with performance comparable to the autoencoders. Whether using autoencoders or
+    optimal transport distances for anomaly detection, we find that the choices that best represent the background are not
+    necessarily best for signal identification. These challenges with unsupervised anomaly detection bolster the case for
+    additional exploration of semi-supervised or alternative approaches.
+- inspire_id: 1120146
+  title: Precision Direct Photon and $W$-Boson Spectra at High $p_T$ and Comparison to LHC Data
+  arxiv_id: '1206.6115'
+  arxiv_categories:
+  - hep-ph
+  doi: 10.1103/PhysRevD.86.054026
+  citation_count: 48
+  year: 2012
+  journal: Phys.Rev.D
+  collaboration: null
+  categories:
+  - Phenomenology-HEP
+  keywords:
+  - 12.38.Bx
+  - 13.85.Qk
+  - 14.70.Fm
+  - 'photon: direct production'
+  - resummation
+  - 'transverse momentum: high'
+  - 'W: hadroproduction'
+  - soft collinear effective theory
+  - renormalization group
+  - CERN LHC Coll
+  - 'p p: inclusive reaction'
+  - 'quantum chromodynamics: perturbation theory'
+  - 'higher-order: 1'
+  - 'leading logarithm approximation: higher-order'
+  - 'transverse momentum: momentum spectrum'
+  - scale
+  - numerical calculations
+  - 7000 GeV-cms
+  abstract: The differential p_T spectrum for vector boson production is computed at next-to-leading fixed order and including
+    the resummation of threshold logarithms at next-to-next-to-leading logarithmic accuracy. A comparison is made to ATLAS
+    data on direct photon and W production at high transverse momentum p_T, finding excellent agreement. The resummation is
+    achieved by factorizing contributions associated with different scales using Soft-Collinear Effective Theory. Each part
+    is then calculated perturbatively and the individual contributions are combined using renormalization group methods. A
+    key advantage of the effective theory framework is that it indicates a set of natural scale choices, in contrast to the
+    fixed-order calculation. Resummation of logarithms of ratios of these scales leads to better agreement with data and reduced
+    theoretical uncertainties.
+- inspire_id: 1081643
+  title: Jet Mass with a Jet Veto at Two Loops and the Universality of Non-Global Structure
+  arxiv_id: '1112.3343'
+  arxiv_categories:
+  - hep-ph
+  doi: 10.1103/PhysRevD.86.054017
+  citation_count: 47
+  year: 2012
+  journal: Phys.Rev.D
+  collaboration: null
+  categories:
+  - Phenomenology-HEP
+  keywords:
+  - 13.87.-a
+  - 12.38.Cy
+  - 'jet: thrust'
+  - 'jet: mass spectrum'
+  - soft collinear effective theory
+  - quantum chromodynamics
+  - 'electron positron: annihilation'
+  - factorization
+  - numerical calculations
+  abstract: We investigate the exclusive jet mass distribution in e+e- events, defined with a veto on the out-of-jet radiation,
+    at two-loop order. In particular, we calculate the two-loop soft function, which is required to describe this distribution
+    in the threshold region. When combined with other ingredients using soft-collinear effective theory, this generates the
+    complete singular distribution for jet thrust, the sum of the jet masses, at two-loop order. The result is in excellent
+    agreement with full QCD. The integrated jet thrust distribution is found to depend in an intricate way on both the finite
+    jet cone size, R, and the jet veto scale. The result clarifies the structure of the potentially large logarithms (both
+    global and non- global) which arise in jet observables for the first time at this order. Somewhat surprisingly, we find
+    that, in the small R limit, there is a precise and simple correspondence between the non-global contribution to the integrated
+    jet thrust distribution and the previously calculated non-global contribution to the integrated hemisphere soft function,
+    including subleading terms. This suggests that the small R limit may provide a useful expansion for studying other exclusive
+    jet substructure observables.
+- inspire_id: 783516
+  title: Constraining Light Colored Particles with Event Shapes
+  arxiv_id: '0804.2477'
+  arxiv_categories:
+  - hep-ph
+  doi: 10.1103/PhysRevLett.101.022002
+  citation_count: 46
+  year: 2008
+  journal: Phys.Rev.Lett.
+  collaboration: null
+  categories:
+  - Phenomenology-HEP
+  keywords:
+  - 14.80.Ly
+  - 12.38.Cy
+  - 'electron positron: annihilation'
+  - multiple production
+  - 'jet: electroproduction'
+  - event shape analysis
+  - supersymmetry
+  - 'gluino: electroproduction'
+  - color
+  - effective Lagrangian
+  - numerical calculations
+  - 'interpretation of experiments: CERN LEP Stor'
+  abstract: Using recently developed techniques for computing event shapes with Soft-Collinear Effective Theory, LEP event
+    shape data is used to derive strong model-independent bounds on new colored particles. In the effective field theory computation,
+    colored particles contribute in loops not only to the running of alpha_s but also to the running of hard, jet and soft
+    functions. Moreover, the differential distribution in the effective theory explicitly probes many energy scales, so event
+    shapes have strong sensitivity to new particle thresholds. Using thrust data from ALEPH and OPAL, colored adjoint fermions
+    (such as a gluino) below 51.0 GeV are ruled out to 95% confidence level. This is nearly an order-of-magnitude improvement
+    over the previous model-independent bound of 6.3 GeV.
+- inspire_id: 913914
+  title: Top condensation as a motivated explanation of the top forward-backward asymmetry
+  arxiv_id: '1106.3086'
+  arxiv_categories:
+  - hep-ph
+  doi: 10.1007/JHEP07(2011)127
+  citation_count: 43
+  year: 2011
+  journal: JHEP
+  collaboration: null
+  categories:
+  - Experiment-HEP
+  - Phenomenology-HEP
+  keywords:
+  - Phenomenological Models
+  - Heavy Quark Physics
+  - Hadronic Colliders
+  - Technicolor and Composite Models
+  - 'top: condensation'
+  - 'angular distribution: asymmetry'
+  - 'top: pair production'
+  - 'top: mass'
+  - 'resonance: mass'
+  - new physics
+  - technicolor
+  - topcolor
+  - Batavia TEVATRON Coll
+  - CERN LHC Coll
+  - 'top: coupling'
+  - 'meson: mixing'
+  - 'quark: mixing'
+  - 'electroweak interaction: symmetry breaking'
+  - 'interference: effect'
+  - 'flavor: violation'
+  abstract: Models of top condensation can provide both a compelling solution to the hierarchy problem as well as an explanation
+    of why the top-quark mass is large. The spectrum of such models, in particular topcolor-assisted technicolor, includes
+    top-pions, top-rhos and the top-Higgs, all of which can easily have large top-charm or top-up couplings. Large top-up
+    couplings in particular would lead to a top forward-backward asymmetry through $t$-channel exchange, easily consistent
+    with the Tevatron measurements. Intriguingly, there is destructive interference between the top-mesons and the standard
+    model which conspire to make the overall top pair production rate consistent with the standard model. The rate for same-sign
+    top production is also small due to destructive interference between the neutral top-pion and the top-Higgs. Flavor physics
+    is under control because new physics is mostly confined to the top quark. In this way, top condensation can explain the
+    asymmetry and be consistent with all experimental bounds. There are many additional signatures of topcolor with large
+    tu mixing, such as top(s)+jet(s) events, in which a top and a jet reconstruct a resonance mass, which make these models
+    easily testable at the LHC.
+- inspire_id: 2181847
+  title: Constraints on sequential discontinuities from the geometry of on-shell spaces
+  arxiv_id: '2211.07633'
+  arxiv_categories:
+  - hep-th
+  doi: 10.1007/JHEP07(2023)236
+  citation_count: 43
+  year: 2023
+  journal: JHEP
+  collaboration: null
+  categories:
+  - Theory-HEP
+  keywords:
+  - Differential and Algebraic Geometry
+  - Scattering Amplitudes
+  - 'momentum: external'
+  - Feynman graph
+  - singularity
+  - homology
+  - critical phenomena
+  - algebra
+  - geometry
+  - homotopy
+  abstract: We present several classes of constraints on the discontinuities of Feynman integrals that go beyond the Steinmann
+    relations. These constraints follow from a geometric formulation of the Landau equations that was advocated by Pham, in
+    which the singularities of Feynman integrals correspond to critical points of maps between on-shell spaces. To establish
+    our results, we review elements of Picard-Lefschetz theory, which connect the homotopy properties of the space of complexified
+    external momenta to the homology of the combined space of on-shell internal and external momenta. An important concept
+    that emerges from this analysis is the question of whether or not a pair of Landau singularities is compatible — namely,
+    whether or not the Landau equations for the two singularities can be satisfied simultaneously. Under conditions we describe,
+    sequential discontinuities with respect to non-compatible Landau singularities must vanish. Although we only rigorously
+    prove results for Feynman integrals with generic masses in this paper, we expect the geometric and algebraic insights
+    that we gain will also assist in the analysis of more general Feynman integrals.
+- inspire_id: 1240095
+  title: An on-shell approach to factorization
+  arxiv_id: '1306.6341'
+  arxiv_categories:
+  - hep-th
+  - hep-ph
+  doi: 10.1103/PhysRevD.88.065021
+  citation_count: 42
+  year: 2013
+  journal: Phys.Rev.D
+  collaboration: null
+  categories:
+  - Phenomenology-HEP
+  - Theory-HEP
+  keywords:
+  - 12.38.Aw
+  - 11.15.-q
+  - 'spinor: helicity'
+  - 'gauge field theory: Yang-Mills'
+  - factorization
+  - quantum chromodynamics
+  - collinear
+  - scaling
+  - soft collinear effective theory
+  - tree approximation
+  - gauge dependence
+  - polarization
+  abstract: Factorization is possible due to the universal behavior of Yang-Mills theories in soft and collinear limits. Here,
+    we take a small step towards a more transparent understanding of these limits by proving a form of perturbative factorization
+    at tree level using on-shell spinor helicity methods. We present a concrete and self-contained expression of factorization
+    in which matrix elements in QCD are related to products of other matrix elements in QCD up to leading order in a power-counting
+    parameter determined by the momenta of certain physical on-shell states. Our approach uses only the scaling of momenta
+    in soft and collinear limits, avoiding any assignment of scaling behavior to unphysical (and gauge-dependent) fields.
+    The proof of factorization exploits many advantages of helicity spinors, such as the freedom to choose different reference
+    vectors for polarizations in different collinear sectors. An advantage of this approach is that once factorization is
+    shown to hold in QCD, the transition to soft-collinear effective theory is effortless.
+- inspire_id: 749875
+  title: 'An Eta primer: Solving the U(1) problem with AdS/QCD'
+  arxiv_id: '0705.0534'
+  arxiv_categories:
+  - hep-ph
+  doi: 10.1088/1126-6708/2007/08/077
+  citation_count: 42
+  year: 2007
+  journal: JHEP
+  collaboration: null
+  categories:
+  - Phenomenology-HEP
+  keywords:
+  - U(1) problem
+  - quantum chromodynamics
+  - 'pseudoscalar meson: mass'
+  - 'space-time: higher-dimensional'
+  - 'space-time: anti-de Sitter'
+  - 'field theory: conformal'
+  - operator product expansion
+  - 'susceptibility: topological'
+  - instanton
+  - 'eta: mass'
+  - 'eta(958): mass'
+  - 'numerical calculations: interpretation of experiments'
+  abstract: Inspired by the AdS/CFT correspondence, we study the pseudoscalar mesons of QCD through a dual embedding in a
+    strongly curved extra dimensional spacetime. This model incorporates the consequences of symmetry and has very few free
+    parameters, due to constraints from five-dimensions and the operator product expansion of QCD. Using as inputs the pion,
+    kaon, and rho masses and fpi, we compute the eta and eta prime masses to be 520 and 867 MeV, respectively. Their decay
+    rates into photons are also computed and found to be in good agreement with data.
+- inspire_id: 646913
+  title: Massive supergravity and deconstruction
+  arxiv_id: hep-th/0403224
+  arxiv_categories:
+  - hep-th
+  doi: 10.1088/1126-6708/2004/07/029
+  citation_count: 41
+  year: 2004
+  journal: JHEP
+  collaboration: null
+  categories:
+  - Theory-HEP
+  keywords:
+  - supergravity
+  - 'supersymmetry: superfield'
+  - 'field theory: massive'
+  - 'approximation: linear'
+  - anomaly
+  - 'perturbation theory: higher-order'
+  - deconstruction
+  abstract: 'We present a simple superfield Lagrangian for massive supergravity. It comprises the minimal supergravity Lagrangian
+    with interactions as well as mass terms for the metric superfield and the chiral compensator. This is the natural generalization
+    of the Fierz-Pauli Lagrangian for massive gravity which comprises mass terms for the metric and its trace. We show that
+    the on-shell bosonic and fermionic fields are degenerate and have the appropriate spins: 2, 3/2, 3/2 and 1. We then study
+    this interacting Lagrangian using goldstone superfields. We find that a chiral multiplet of goldstones gets a kinetic
+    term through mixing, just as the scalar goldstone does in the non-supersymmetric case. This produces Planck scale (Mpl)
+    interactions with matter and all the discontinuities and unitarity bounds associated with massive gravity. In particular,
+    the scale of strong coupling is (Mpl m^4)^1/5, where m is the multiplet''s mass. Next, we consider applications of massive
+    supergravity to deconstruction. We estimate various quantum effects which generate non-local operators in theory space.
+    As an example, we show that the single massive supergravity multiplet in a 2-site model can serve the function of an extra
+    dimension in anomaly mediation.'
+- inspire_id: 714059
+  title: Improving jet distributions with effective field theory
+  arxiv_id: hep-ph/0604065
+  arxiv_categories:
+  - hep-ph
+  doi: 10.1103/PhysRevLett.97.142001
+  citation_count: 40
+  year: 2006
+  journal: Phys.Rev.Lett.
+  collaboration: null
+  categories:
+  - Phenomenology-HEP
+  keywords:
+  - 12.38.Cy
+  - 'electron positron: annihilation'
+  - 'hadron: multiple production'
+  - 'jet: electroproduction'
+  - 'jet: multiple production'
+  - effective Lagrangian
+  - quantum chromodynamics
+  - 'perturbation theory: higher-order'
+  - 'showers: air'
+  - 'jet: thrust'
+  - renormalization group
+  - numerical calculations
+  - electron positron --> 3jet
+  abstract: We obtain perturbative expressions for jet distributions using soft-collinear effective theory (SCET). By matching
+    SCET onto QCD at high energy, tree level matrix elements and higher order virtual corrections can be reproduced in SCET.
+    The resulting operators are then evolved to lower scales, with additional operators being populated by required threshold
+    matchings in the effective theory. We show that the renormalization group evolution and threshold matchings reproduce
+    the Sudakov factors and splitting functions of QCD, and that the effective theory naturally combines QCD matrix elements
+    and parton showers. The effective theory calculation is systematically improvable and any higher order perturbative effects
+    can be included by a well defined procedure.
+- inspire_id: 929847
+  title: Jet Physics from Static Charges in AdS
+  arxiv_id: '1109.6010'
+  arxiv_categories:
+  - hep-th
+  doi: 10.1103/PhysRevD.85.045010
+  citation_count: 38
+  year: 2012
+  journal: Phys.Rev.D
+  collaboration: null
+  categories:
+  - Phenomenology-HEP
+  - Theory-HEP
+  keywords:
+  - 11.25.Tq
+  - 12.38.Cy
+  - 13.87.Ce
+  - 'charge: static'
+  - 'potential: energy'
+  - 'space-time: anti-de Sitter'
+  - Wilson loop
+  - anomalous dimension
+  - jet
+  - conformal gauge
+  abstract: Soft interactions with high-energy jets are explored in radial coordinates which exploit the approximately conformal
+    behavior of perturbative gauge theories. In these coordinates, the jets, approximated by Wilson lines, become static charges
+    in Euclidean AdS. The anomalous dimension of the corresponding Wilson line operator is then determined by the potential
+    energy of the charges. To study these Wilson lines we introduce a "conformal gauge" which does not have kinetic mixing
+    between radial and angular directions, and show that a number of properties of Wilson lines are reproduced through relatively
+    simple calculations. For example, certain non-planar graphs involving multiple Wilson lines automatically vanish. We also
+    discuss the linear growth of the charges' imaginary potential energy with separation, and a relationship between Wilson
+    line diagrams and Witten diagrams.
+- inspire_id: 886651
+  title: Resummation of jet mass with and without a jet veto
+  arxiv_id: '1102.0561'
+  arxiv_categories:
+  - hep-ph
+  doi: ''
+  citation_count: 37
+  year: null
+  journal: null
+  collaboration: null
+  categories:
+  - Phenomenology-HEP
+  keywords:
+  - 'jet: mass'
+  - 'jet: pair production'
+  - 'resummation: threshold'
+  - 'quantum chromodynamics: perturbation theory'
+  - 'electron positron: annihilation'
+  - 'higher-order: 1'
+  - 'leading logarithm approximation: higher-order'
+  - 'jet: electroproduction'
+  - soft collinear effective theory
+  - 'p p: inclusive reaction'
+  - 'jet: hadroproduction'
+  - 'photon: associated production'
+  abstract: Calculating the distribution of jet masses in high-energy collisions is challenging because fixed-order perturbation
+    theory breaks down near the peak region, and because multiple scales complicate the resummation. To avoid using a jet
+    veto, one can consider inclusive observables, in which every particle is in a jet. We demonstrate that calculating the
+    mass of the hardest jet in multijet events can be problematic, and we give an example of an inclusive observable, asymmetric
+    thrust, which can be resummed to next-to-next-to-leading logarithmic accuracy. Exclusive observables with out-of-jet regions
+    are more complicated. Even for e+e- dijet events at energy Q, to calculate the mass m of jets of size R, one must impose
+    a veto on the energy omega of extra jets to force dijet kinematics; then there are both log m/Q and log m/omega singularities.
+    To proceed, we suggest a refactorization of the soft function in the small R limit. To justify this refactorization, we
+    show that the expansion of the resummed distribution is in excellent agreement with fixed order. This motivates considering
+    the expansion around small R as a useful handle on producing phenomenologically useful resummed jet mass distributions.
+    The strong evidence we give for refactorization at small R is independent of non-global logarithms, which are not the
+    subject of this paper.
+- inspire_id: 655014
+  title: Twisted split fermions
+  arxiv_id: hep-ph/0407260
+  arxiv_categories:
+  - hep-ph
+  doi: 10.1103/PhysRevD.71.056007
+  citation_count: 36
+  year: 2005
+  journal: Phys.Rev.D
+  collaboration: null
+  categories:
+  - Phenomenology-HEP
+  keywords:
+  - 11.30.Hv
+  - 12.90.+b
+  - 'fermion: mass'
+  - 'fermion: split'
+  - 'mixing angle: flavor'
+  - 'coupling: Yukawa'
+  - 'dimension: 5'
+  - 'mass: twist'
+  - 'mass: hierarchy'
+  - 'CP: violation'
+  - 'fermion: zero mode'
+  - 'approximation: adiabatic'
+  - numerical calculations
+  abstract: The observed flavor structure of the standard model arises naturally in "split fermion" models which localize
+    fermions at different places in an extra dimension. It has, until now, been assumed that the bulk masses for such fermions
+    can be chosen to be flavor diagonal simultaneously at every point in the extra dimension, with all the flavor violation
+    coming from the Yukawa couplings to the Higgs. We consider the more natural possibility in which the bulk masses cannot
+    be simultaneously diagonalized, that is, that they are twisted in flavor space. We show that, in general, this does not
+    disturb the natural generation of hierarchies in the flavor parameters. Moreover, it is conceivable that all the flavor
+    mixing and CP-violation in the standard model may come only from twisting, with the five-dimensional Yukawa couplings
+    taken to be universal.
+- inspire_id: 664197
+  title: Strong CP, flavor, and twisted split fermions
+  arxiv_id: hep-ph/0411132
+  arxiv_categories:
+  - hep-ph
+  doi: 10.1088/1126-6708/2005/03/068
+  citation_count: 33
+  year: 2005
+  journal: JHEP
+  collaboration: null
+  categories:
+  - Phenomenology-HEP
+  keywords:
+  - 'strong interaction: CP'
+  - Theta parameter
+  - 'CP: violation'
+  - CKM matrix matrix
+  - 'fermion: wave function'
+  - 'dimension: 5'
+  - 'fermion: split'
+  - 'symmetry: flavor'
+  - 'symmetry: nonabelian'
+  - 'parity: violation'
+  - 'mass: hierarchy'
+  - twist
+  - Kaluza-Klein model
+  - 'fermion: zero mode'
+  - 'symmetry: left-right'
+  - 'coupling: Yukawa'
+  abstract: We present a natural solution to the strong CP problem in the context of split fermions. By assuming CP is spontaneously
+    broken in the bulk, a weak CKM phase is created in the standard model due to a twisting in flavor space of the bulk fermion
+    wavefunctions. But the strong CP phase remains zero, being essentially protected by parity in the bulk and CP on the branes.
+    As always in models of spontaneous CP breaking, radiative corrections to theta bar from the standard model are tiny, but
+    even higher dimension operators are not that dangerous. The twisting phenomenon was recently shown to be generic, and
+    not to interfere with the way that split fermions naturally weaves small numbers into the standard model. It follows that
+    out approach to strong CP is compatible with flavor, and we sketch a comprehensive model. We also look at deconstructed
+    version of this setup which provides a viable 4D model of spontaneous CP breaking which is not in the Nelson-Barr class.
+- inspire_id: 679450
+  title: Supersplit supersymmetry
+  arxiv_id: hep-th/0503249
+  arxiv_categories:
+  - hep-th
+  doi: ''
+  citation_count: 33
+  year: null
+  journal: null
+  collaboration: null
+  categories:
+  - Theory-HEP
+  keywords:
+  - 'supersymmetry: split'
+  - 'sparticle: mass'
+  - unified field theory
+  abstract: The possible existence of an exponentially large number of vacua in string theory behooves one to consider possibilities
+    beyond our traditional notions of naturalness. Such an approach to electroweak physics was recently used in Split Supersymmetry,
+    a model which shares some successes and cures some ills of traditional weak-scale supersymmetry by raising the masses
+    of scalar superpartners significantly above a TeV. Here we suggest an extension - we raise, in addition to the scalars,
+    the gaugino and higgsino masses to much higher scales. In addition to maintaining many of the successes of Split Supersymmetry
+    - electroweak precision, flavor-changing neutral currents and CP violation, dimension-4 and 5 proton decay - the model
+    also allows for natural Planck-scale supersymmetry breaking, solves the gluino-decay problem, and resolves the coincidence
+    problem with respect to gaugino and Higgs masses. The lack of unification of couplings suggests a natural solution to
+    possible problems from dimension-6 proton decay. While this model has no weak-scale dark matter candidate, a Peccei-Quinn
+    axion or small black holes can be consistently incorporated in this framework.
+- inspire_id: 1646266
+  title: Factorization Violation and Scale Invariance
+  arxiv_id: '1801.01138'
+  arxiv_categories:
+  - hep-ph
+  doi: 10.1103/PhysRevD.97.096017
+  citation_count: 33
+  year: 2018
+  journal: Phys.Rev.D
+  collaboration: null
+  categories:
+  - Phenomenology-HEP
+  keywords:
+  - 'factorization: violation'
+  - 'transverse energy: hadronic'
+  - 'hadron: scattering'
+  - 'invariance: scale'
+  - Glauber
+  - scattering amplitude
+  - Drell-Yan process
+  - underlying event
+  - scaling
+  - thrust
+  - gluon
+  abstract: Factorization violating effects in hadron scattering are due mainly to spectator-spectator interactions. While
+    it is known that these interactions cancel in inclusive cross sections, as for the Drell-Yan process, not much is known
+    about for what classes of observables factorization is violated. We show that for pure Glauber ladder graphs, all amplitude-level
+    factorization violating effects completely cancel at the cross section level for any single-scale observable (such as
+    hadronic transverse energy or beam thrust). This result disproves previous claims that these pure Glauber graphs are factorization
+    violating. Our proof exploits scale invariance of two-to-two scattering amplitudes in an essential way. The leading factorization
+    violating effects therefore come from graphs with at least one soft gluon, involving the Lipatov vertex off of the Glauber
+    ladders. This implies that real soft radiation must be involved in factorization violation, shedding light on the connection
+    between factorization violation and the underlying event.
+- inspire_id: 675294
+  title: Infrared Lorentz violation and slowly instantaneous electricity
+  arxiv_id: hep-th/0501157
+  arxiv_categories:
+  - hep-th
+  doi: 10.1103/PhysRevLett.94.191602
+  citation_count: 31
+  year: 2005
+  journal: Phys.Rev.Lett.
+  collaboration: null
+  categories:
+  - Theory-HEP
+  keywords:
+  - 11.30.Cp
+  - 12.20.-m
+  - elementary particle symmetry
+  - quantum electrodynamics
+  - electromagnetism
+  - dispersion relations
+  - 'violation: Lorentz'
+  - electromagnetic field
+  - 'photon: mass'
+  - 'electric field: oscillation'
+  - 'force: Coulomb'
+  abstract: We study a modification of electromagnetism which violates Lorentz invariance at large distances. In this theory,
+    electromagnetic waves are massive, but the static force between charged particles is Coulomb not Yukawa. At very short
+    distances the theory looks just like QED. But for distances larger than 1/m the massive dispersion relation of the waves
+    can be appreciated, and the Coulomb force can be used to communicate faster than the speed of light. In fact, electrical
+    signals are transmitted instantly, but take a time ~ 1/m to build up to full strength. After that, undamped oscillations
+    of the electric field are set in and continue until they are dispersed by the arrival of the Lorentz-obeying part of the
+    transmission. We study experimental constraints on such a theory and find that the Compton wavelength of the photon may
+    be as small as 6000 km. This bound is weaker than for a Lorentz-invariant mass, essentially because in our case the Coulomb
+    constraint is removed.
+- inspire_id: 2675173
+  title: 'Neural network field theories: non-Gaussianity, actions, and locality'
+  arxiv_id: '2307.03223'
+  arxiv_categories:
+  - hep-th
+  - cs.LG
+  doi: 10.1088/2632-2153/ad17d3
+  citation_count: 31
+  year: 2024
+  journal: Mach.Learn.Sci.Tech.
+  collaboration: null
+  categories:
+  - Theory-HEP
+  - Computing
+  keywords:
+  - neural network field theory correspondence
+  - Feynman rules for neural network field theories
+  - non-perturbative field theories via neural networks
+  - 'action: deformation'
+  - 'path integral: measure'
+  - neural network
+  - network
+  - correlation function
+  - density
+  - statistical
+  - Feynman graph
+  - non-Gaussianity
+  abstract: Both the path integral measure in field theory (FT) and ensembles of neural networks (NN) describe distributions
+    over functions. When the central limit theorem can be applied in the infinite-width (infinite-N) limit, the ensemble of
+    networks corresponds to a free FT. Although an expansion in corresponds to interactions in the FT, others, such as in
+    a small breaking of the statistical independence of network parameters, can also lead to interacting theories. These other
+    expansions can be advantageous over the -expansion, for example by improved behavior with respect to the universal approximation
+    theorem. Given the connected correlators of a FT, one can systematically reconstruct the action order-by-order in the
+    expansion parameter, using a new Feynman diagram prescription whose vertices are the connected correlators. This method
+    is motivated by the Edgeworth expansion and allows one to derive actions for NN FT. Conversely, the correspondence allows
+    one to engineer architectures realizing a given FT by representing action deformations as deformations of NN parameter
+    densities. As an example, φ$^{4}$ theory is realized as an infinite-N NN FT.
+- inspire_id: 2093808
+  title: Simplifying Polylogarithms with Machine Learning
+  arxiv_id: '2206.04115'
+  arxiv_categories:
+  - cs.LG
+  - hep-ph
+  - hep-th
+  - math-ph
+  - math.MP
+  doi: 10.1142/S2810939223500028
+  citation_count: 31
+  year: 2024
+  journal: Int.J.Data Sci.Math.Sci.
+  collaboration: null
+  categories:
+  - Computing
+  - Phenomenology-HEP
+  - Theory-HEP
+  - Math and Math Physics
+  keywords:
+  - network
+  - algebra
+  - Feynman graph
+  abstract: Polylogrithmic functions, such as the logarithm or dilogarithm, satisfy a number of algebraic identities. For
+    the logarithm, all the identities follow from the product rule. For the dilogarithm and higher-weight classical polylogarithms,
+    the identities can involve five functions or more. In many calculations relevant to particle physics, complicated combinations
+    of polylogarithms often arise from Feynman integrals. Although the initial expressions resulting from the integration
+    usually simplify, it is often difficult to know which identities to apply and in what order. To address this bottleneck,
+    we explore to what extent machine learning methods can help. We consider both a reinforcement learning approach, where
+    the identities are analogous to moves in a game, and a transformer network approach, where the problem is viewed analogously
+    to a language-translation task. While both methods are effective, the transformer network appears more powerful and holds
+    promise for practical use in symbolic manipulation tasks in mathematical physics.
+- inspire_id: 1741234
+  title: 'Binary JUNIPR: an interpretable probabilistic model for discrimination'
+  arxiv_id: '1906.10137'
+  arxiv_categories:
+  - hep-ph
+  doi: 10.1103/PhysRevLett.123.182001
+  citation_count: 26
+  year: 2019
+  journal: Phys.Rev.Lett.
+  collaboration: null
+  categories:
+  - Phenomenology-HEP
+  - Phenomenology-HEP
+  keywords:
+  - Elementary Particles and Fields
+  - 'gluon: jet'
+  - binary
+  - quark
+  - numerical methods
+  - data analysis method
+  abstract: junipr is an approach to unsupervised learning in particle physics that scaffolds a probabilistic model for jets
+    around their representation as binary trees. Separate junipr models can be learned for different event or jet types, then
+    compared and explored for physical insight. The relative probabilities can also be used for discrimination. In this Letter,
+    we show how the training of the separate models can be refined in the context of classification to optimize discrimination
+    power. We refer to this refined approach as binary junipr. binary junipr achieves state-of-the-art performance for quark-gluon
+    discrimination and top tagging. The trained models can then be analyzed to provide physical insight into how the classification
+    is achieved. As examples, we explore differences between quark and gluon jets and between gluon jets generated with two
+    different simulations.
+- inspire_id: 1468171
+  title: Precision direct photon spectra at high energy and comparison to the 8 TeV ATLAS data
+  arxiv_id: '1606.02313'
+  arxiv_categories:
+  - hep-ph
+  doi: 10.1007/JHEP09(2016)005
+  citation_count: 25
+  year: 2016
+  journal: JHEP
+  collaboration: null
+  categories:
+  - Phenomenology-HEP
+  keywords:
+  - CERN LHC Coll
+  - ATLAS
+  - 'photon: direct production'
+  - 'photon: spectrum'
+  - 'fragmentation: effect'
+  - 'quantum chromodynamics: correction'
+  - 'leading logarithm approximation: higher-order'
+  - 'leading logarithm approximation: correction'
+  - 'correction: higher-order'
+  - 'higher-order: 3'
+  - 'resummation: Sudakov'
+  - 'resummation: threshold'
+  - numerical calculations
+  abstract: The direct photon spectrum is computed to the highest currently available precision and compared to ATLAS data
+    from 8 TeV collisions at the LHC. The prediction includes threshold resummation at next-to-next-to-next-to-leading logarithmic
+    order through the program PeTeR, matched to next-to-leading fixed order with fragmentation effects using JetPhox and includes
+    the resummation of leading-logarithmic electroweak Sudakov effects. Remarkably, improved agreement with data can be seen
+    when each component of the calculation is added successively. This comparison demonstrates the importance of both threshold
+    logs and electroweak Sudakov effects. Numerical values for the predictions are included.
+- inspire_id: 687216
+  title: Discretizing gravity in warped spacetime
+  arxiv_id: hep-th/0507102
+  arxiv_categories:
+  - hep-th
+  doi: 10.1088/1126-6708/2005/10/110
+  citation_count: 24
+  year: 2005
+  journal: JHEP
+  collaboration: null
+  categories:
+  - Gravitation and Cosmology
+  - Theory-HEP
+  keywords:
+  - Randall-Sundrum model
+  - 'dimension: 5'
+  - compactification
+  - 'particle: multiplet'
+  - 'gravitation: discrete'
+  - 'space-time: warped'
+  - mass spectrum
+  - 'approximation: strong coupling'
+  - Kaluza-Klein model
+  - numerical calculations
+  abstract: We investigate the discretized version of the compact Randall-Sundrum model. By studying the mass eigenstates
+    of the lattice theory, we demonstrate that for warped space, unlike for flat space, the strong coupling scale does not
+    depend on the IR scale and lattice size. However, strong coupling does prevent us from taking the continuum limit of the
+    lattice theory. Nonetheless, the lattice theory works in the manifestly holographic regime and successfully reproduces
+    the most significant features of the warped theory. It is even in some respects better than the KK theory, which must
+    be carefully regulated to obtain the correct physical results. Because it is easier to construct lattice theories than
+    to find exact solutions to GR, we expect lattice gravity to be a useful tool for exploring field theory in curved space.
+- inspire_id: 2837063
+  title: Applications of the Landau bootstrap
+  arxiv_id: '2410.02424'
+  arxiv_categories:
+  - hep-ph
+  - hep-th
+  doi: 10.1103/PhysRevD.111.085003
+  citation_count: 23
+  year: 2025
+  journal: Phys.Rev.D
+  collaboration: null
+  categories:
+  - Phenomenology-HEP
+  - Theory-HEP
+  keywords: []
+  abstract: We advocate a strategy of bootstrapping Feynman integrals from just knowledge of their singular behavior. This
+    approach is complementary to other bootstrap programs, which exploit nonperturbative constraints such as unitarity, or
+    amplitude-level constraints such as gauge invariance. We begin by studying where a Feynman integral can become singular,
+    and the behavior it exhibits near these singularities. We then characterize the space of functions that we expect the
+    integral to evaluate to, in order to formulate an appropriate ansatz. Finally, we derive constraints on where each singularity
+    can appear in this ansatz, and use information about the expansion of the integral around singular points in order to
+    determine the value of all remaining free coefficients. Throughout, we highlight how constraints that have previously
+    only been derived for integrals with generic masses can be extended to integrals involving particles of equal or vanishing
+    mass. We illustrate the effectiveness of this approach by bootstrapping a number of examples, including the four-point
+    double box with a massive internal loop.
+- inspire_id: 2080561
+  title: Sudakov shoulder resummation for thrust and heavy jet mass
+  arxiv_id: '2205.05702'
+  arxiv_categories:
+  - hep-ph
+  - hep-th
+  doi: 10.1103/PhysRevD.106.074011
+  citation_count: 20
+  year: 2022
+  journal: Phys.Rev.D
+  collaboration: null
+  categories:
+  - Phenomenology-HEP
+  - Theory-HEP
+  keywords:
+  - 'quantum chromodynamics: perturbation theory'
+  - 'quantum chromodynamics: scattering amplitude'
+  - 'scattering amplitude: analytic properties'
+  - 'resummation: Sudakov'
+  - 'jet: mass'
+  - 'jet: thrust'
+  - anomalous dimension
+  - effective field theory
+  abstract: When the allowed range of an observable grows order by order in perturbation theory, its perturbative expansion
+    can have discontinuities (as in the <math display="inline"><mrow><mi>C</mi></mrow></math> parameter) or discontinuities
+    in its derivatives (as in thrust or heavy jet mass) called Sudakov shoulders. We explore the origin of these logarithms
+    using both perturbation theory and effective field theory. We show that for thrust and heavy jet mass, the logarithms
+    arise from kinematic configurations with narrow jets and deduce the next-to-leading logarithmic series. The left-shoulder
+    logarithms in heavy jet mass (<math display="inline"><mi>ρ</mi></math>) of the form <math display="inline"><mrow><mi>r</mi><msubsup><mrow><mi>α</mi></mrow><mrow><mi>s</mi></mrow><mrow><mi>n</mi></mrow></msubsup><msup><mrow><mi>ln</mi></mrow><mrow><mn>2</mn><mi>n</mi></mrow></msup><mi>r</mi></mrow></math>
+    with <math display="inline"><mi>r</mi><mo>=</mo><mfrac><mn>1</mn><mn>3</mn></mfrac><mo>-</mo><mi>ρ</mi></math> are particularly
+    dangerous, because they invalidate fixed-order perturbation theory in regions traditionally used to extract <math display="inline"><msub><mi>α</mi><mi>s</mi></msub></math>.
+    Although the factorization formula shows there are no nonglobal logarithms, we find Landau-pole-like singularities in
+    the resummed distribution associated with the cusp anomalous dimension and that power corrections are exceptionally important.
+- inspire_id: 1623567
+  title: TASI lectures on collider physics.
+  arxiv_id: '1709.04533'
+  arxiv_categories:
+  - hep-ph
+  doi: 10.1142/9789813233348_0002
+  citation_count: 20
+  year: 2018
+  journal: null
+  collaboration: null
+  categories:
+  - Phenomenology-HEP
+  keywords:
+  - 81V35
+  - 81U35
+  - 81Q05
+  - 81V22
+  - 81R40
+  - 81-01
+  - 'mass: transverse'
+  - lectures
+  - Higgs particle
+  - standard model
+  - CERN LHC Coll
+  - decay modes
+  - kinematics
+  - signature
+  - rapidity
+  - 'hadron: colliding beams'
+  abstract: These lectures provide an introduction to the physics of particle colliders. Topics covered include a quantitative
+    examination of the design and operational parameters of Large Hadron Collider, kinematics and observables at colliders,
+    such as rapidity and transverse mass, properties of distributions, such as Jacobian peaks, jets, and an exploration of
+    the decay modes and signatures of important composite and elementary and particles in the Standard Model, from pions to
+    the Higgs boson. The goal of these lectures is to bridge the gap between theory and experiment in particle physics using
+    intuitive arguments and estimates rather than precision calculations.
+- inspire_id: 2890793
+  title: A Precise Determination of $\alpha_s$ from the Heavy Jet Mass Distribution
+  arxiv_id: '2502.12253'
+  arxiv_categories:
+  - hep-ph
+  - hep-ex
+  - nucl-ex
+  - nucl-th
+  doi: ''
+  citation_count: 20
+  year: null
+  journal: null
+  collaboration: null
+  categories:
+  - Phenomenology-HEP
+  - Experiment-HEP
+  - Experiment-Nucl
+  - Theory-Nucl
+  keywords: []
+  abstract: A global fit for $\alpha_s(m_Z)$ is performed on available $e^+e^-$ data for the heavy jet mass distribution.
+    The state-of-the-art theory prediction includes $\mathcal{O}(\alpha_s^3)$ fixed-order results, N$^3$LL$^\prime$ dijet
+    resummation, N$^2$LL Sudakov shoulder resummation, and a first-principles treatment of power corrections in the dijet
+    region. Theoretical correlations are incorporated through a flat random-scan covariance matrix. The global fit results
+    in $0.1145^{+0.0021}_{-0.0019}$, compatible with similar determinations from thrust and $C$-parameter. Dijet resummation
+    is essential for a robust fit, as it engenders insensitivity to the fit-range lower cutoff; without resummation the fit-range
+    sensitivity is overwhelming. In addition, we find evidence for a negative power correction in the trijet region if and
+    only if Sudakov shoulder resummation is included.
+- inspire_id: 866345
+  title: Threshold hadronic event shapes with effective field theory
+  arxiv_id: '1008.4355'
+  arxiv_categories:
+  - hep-ph
+  doi: 10.1103/PhysRevD.83.033001
+  citation_count: 19
+  year: 2011
+  journal: Phys.Rev.D
+  collaboration: null
+  categories:
+  - Phenomenology-HEP
+  keywords:
+  - 13.85.-t
+  - 13.40.Ks
+  - 12.15.Lk
+  - 12.38.Cy
+  - 'jet: hadroproduction'
+  - 'threshold: enhancement'
+  - renormalization group
+  - 'jet: transverse momentum'
+  - soft collinear effective theory
+  - 'hadron hadron: interaction'
+  - resummation
+  - effective field theory
+  - event shape analysis
+  - scale dependence
+  - factorization
+  - threshold
+  - thrust
+  - 'higher-order: 1'
+  - 'leading logarithm approximation: higher-order'
+  - 'parton: distribution function'
+  - 'electron positron: annihilation'
+  abstract: Hadronic event shapes, that is, event shapes at hadron colliders, could provide a great way to test both standard
+    and non-standard theoretical models. However, they are significantly more complicated than event shapes at e+e- colliders,
+    involving multiple hard directions, multiple channels and multiple color structures. In this paper, hadronic event shapes
+    are examined with Soft-Collinear Effective Theory (SCET) by expanding around the dijet limit. A simple event shape, threshold
+    thrust, is defined. This observable is global and has no free parameters, making it ideal for clarifying how resummation
+    of hadronic event shapes can be done in SCET. Threshold thrust is calculated at next-to-leading fixed order (NLO) in SCET
+    and resummed to next-to-next-to-leading logarithmic accuracy (NNLL). The scale-dependent parts of the soft function are
+    shown to agree with what is expected from general observations, and the factorization formula is explicitly shown to be
+    renormalization group invariant to 1-loop. Although threshold thrust is not itself expected to be phenomenologically interesting,
+    it can be modified into a related observable which allows the jet pT distribution to be calculated and resummed to NNLL+NLO
+    accuracy. As in other processes, one expects resummation to be important even for moderate jet momenta due to dynamical
+    threshold enhancement. A general discussion of threshold enhancement and non-global logs in hadronic event shapes is also
+    included.
+- inspire_id: 585004
+  title: Entropy area relations in field theory
+  arxiv_id: hep-th/0204038
+  arxiv_categories:
+  - hep-th
+  doi: 10.1088/1126-6708/2002/06/008
+  citation_count: 18
+  year: 2002
+  journal: JHEP
+  collaboration: null
+  categories:
+  - Theory-HEP
+  keywords:
+  - entropy
+  - 'space-time: anti-de Sitter'
+  - 'space-time: de Sitter'
+  - Randall-Sundrum model
+  - 'field theory: scalar'
+  - regularization
+  - black hole
+  - 'dimension: 5'
+  - holography
+  - beta function
+  - thermodynamics
+  abstract: We consider the contribution to the entropy from fields in the background of a curved time-independent metric.
+    To account for the curvature of space, we postulate a position-dependent UV cutoff. We argue that a UV cutoff on energy
+    naturally implies an IR cutoff on distance. With this procedure, we calculate the scalar contribution in a background
+    anti-de Sitter space, the exterior of a black hole, and de Sitter space. In all cases, we find results that can be simply
+    interpreted in terms of local energy and proper volume, yielding insight into the apparent reduced dimensionality of systems
+    with gravity.
+- inspire_id: 1227660
+  title: 'Jet Sampling: Improving Event Reconstruction through Multiple Interpretations'
+  arxiv_id: '1304.2394'
+  arxiv_categories:
+  - hep-ph
+  doi: 10.1007/JHEP06(2013)006
+  citation_count: 18
+  year: 2013
+  journal: JHEP
+  collaboration: null
+  categories:
+  - Phenomenology-HEP
+  keywords:
+  - 'track data analysis: jet'
+  - CERN LHC Coll
+  - Z0
+  - Higgs particle
+  - Higgs particle --> bottom anti-bottom
+  abstract: The classification of events involving jets as signal-like or background-like can depend strongly on the jet algorithm
+    used and its parameters. This is partly due to the fact that standard jet algorithms yield a single partition of the particles
+    in an event into jets, even if no particular choice stands out from the others. As an alternative, we propose that one
+    should consider multiple interpretations of each event, generalizing the Qjets procedure to event-level analysis. With
+    multiple interpretations, an event is no longer restricted to either satisfy cuts or not satisfy them — it can be assigned
+    a weight between 0 and 1 based on how well it satisfies the cuts. These cut-weights can then be used to improve the discrimination
+    power of an analysis or reduce the uncertainty on mass or cross-section measurements. For example, using this approach
+    on a Higgs plus Z boson sample, with we find an 28% improvement in significance can be realized at the 8TeV LHC. Through
+    a number of other examples, we show various ways in which having multiple interpretations can be useful on the event level.
+- inspire_id: 2668855
+  title: NNLL resummation of Sudakov shoulder logarithms in the heavy jet mass distribution
+  arxiv_id: '2306.08033'
+  arxiv_categories:
+  - hep-ph
+  - nucl-th
+  doi: 10.1007/JHEP11(2023)080
+  citation_count: 17
+  year: 2023
+  journal: JHEP
+  collaboration: null
+  categories:
+  - Phenomenology-HEP
+  - Theory-Nucl
+  keywords:
+  - Effective Field Theories of QCD
+  - Factorization
+  - Renormalization Group
+  - Resummation
+  - The Strong Coupling
+  - quantum chromodynamics
+  - 'resummation: threshold'
+  - 'resummation: Sudakov'
+  - event shape analysis
+  - 'shape analysis: jet'
+  - 'jet: mass spectrum'
+  - 'leading logarithm approximation: higher-order'
+  - 'higher-order: 2'
+  - Drell-Yan process
+  - 'electron positron: scattering'
+  - 'strong interaction: coupling constant'
+  abstract: 'The heavy jet mass event shape has large perturbative logarithms near the leading order kinematic threshold at
+    $ \rho =\frac{1}{3} $. Catani and Webber named these logarithms Sudakov shoulders and resummed them at double-logarithmic
+    level. A resummation to next-to-leading logarithmic level was achieved recently. Here, we extend the resummation using
+    an effective field theory framework to next-to-next-to-leading logarithmic order and show how to combine it with the resummation
+    of dijet logarithms. We also solve the open problem of an unphysical singularity in the resummed momentum space distribution,
+    in a way similar to how it is resolved in the Drell-Yan q$_{T}$ spectrum: through a careful analysis of the kinematics
+    and scale-setting in position space. The heavy jet mass Sudakov shoulder is the first observable that does not involve
+    transverse momentum for which position space resummation is critical. These advances may lead to a more precise extraction
+    of the strong coupling constant from e$^{+}$e$^{−}$ data.'
+- inspire_id: 1846688
+  title: Compton Scattering Total Cross Section at Next-to-Leading Order
+  arxiv_id: '2102.06718'
+  arxiv_categories:
+  - hep-ph
+  doi: 10.1103/PhysRevLett.126.211801
+  citation_count: 15
+  year: 2021
+  journal: Phys.Rev.Lett.
+  collaboration: null
+  categories:
+  - Phenomenology-HEP
+  - Phenomenology-HEP
+  keywords:
+  - Elementary Particles and Fields
+  - 'higher-order: 1'
+  - Compton scattering
+  - pair production
+  - differential equations
+  - total cross section
+  - master integral
+  - electron
+  - photon
+  - formula
+  abstract: An analytic formula is given for the total scattering cross section of an electron and a photon at order α3 in
+    QED. This includes both the double-Compton scattering real-emission contribution as well as the virtual Compton scattering
+    part. When combined with the recent analytic result for the pair-production cross section, the complete α3 cross section
+    is now known. Both the next-to-leading order calculation as well as the pair-production cross section are computed using
+    modern multiloop calculation techniques, where cut diagrams are decomposed into a set of master integrals that are then
+    computed using differential equations.
+- inspire_id: 1600797
+  title: Reducing the Top Quark Mass Uncertainty with Jet Grooming
+  arxiv_id: '1705.07135'
+  arxiv_categories:
+  - hep-ph
+  doi: 10.1007/JHEP10(2017)151
+  citation_count: 15
+  year: 2017
+  journal: JHEP
+  collaboration: null
+  categories:
+  - Phenomenology-HEP
+  keywords:
+  - Jets
+  - 'top: mass'
+  - 'W: mass'
+  - calibration
+  - 'track data analysis: jet'
+  - sensitivity
+  - 'electron positron: colliding beams'
+  - CERN LHC Coll
+  - 'numerical calculations: Monte Carlo'
+  abstract: The measurement of the top quark mass has large systematic uncertainties coming from the Monte Carlo simulations
+    that are used to match theory and experiment. We explore how much that uncertainty can be reduced by using jet grooming
+    procedures. Using the ATLAS A14 tunes of pythia, we estimate the uncertainty from the choice of tuning parameters in what
+    is meant by the Monte Carlo mass to be around 530 MeV without any corrections. This uncertainty can be reduced by 60%
+    to 200 MeV by calibrating to the W mass and by 70% to 140 MeV by additionally applying soft-drop jet grooming (or to 170
+    MeV using trimming). At e$^{+}$ e$^{−}$ colliders, the associated uncertainty is around 110 MeV, reducing to 50 MeV after
+    calibrating to the W mass. By analyzing the tuning parameters, we conclude that the importance of jet grooming after calibrating
+    to the W -mass is to reduce sensitivity to the underlying event.
+- inspire_id: 2164069
+  title: Prospects for strong coupling measurement at hadron colliders using soft-drop jet mass
+  arxiv_id: '2210.04901'
+  arxiv_categories:
+  - hep-ph
+  doi: 10.1007/JHEP04(2023)087
+  citation_count: 15
+  year: 2023
+  journal: JHEP
+  collaboration: null
+  categories:
+  - Phenomenology-HEP
+  keywords:
+  - Factorization
+  - Renormalization Group
+  - Jets and Jet Substructure
+  - Resummation
+  - The Strong Coupling
+  - 'gluon: jet'
+  - 'correction: nonperturbative'
+  - 'quark: jet'
+  - 'jet: mass'
+  - 'p p: scattering'
+  - sensitivity
+  - resummation
+  - higher-order
+  - precision measurement
+  - 'strong interaction: coupling constant'
+  abstract: We compute the soft-drop jet-mass distribution from pp collisions to NNLL accuracy while including nonperturbative
+    corrections through a field-theory based formalism. Using these calculations, we assess the theoretical uncertainties
+    on an α$_{s}$ precision measurement due to higher order perturbative effects, nonperturbative corrections, and PDF uncertainty.
+    We identify which soft-drop parameters are well-suited for measuring α$_{s}$, and find that higher-logarithmic resummation
+    has a qualitatively important effect on the shape of the jet-mass distribution. We find that quark jets and gluon jets
+    have similar sensitivity to α$_{s}$, and emphasize that experimentally distinguishing quark and gluon jets is not required
+    for an α$_{s}$ measurement. We conclude that measuring α$_{s}$ to the 10% level is feasible now, and with improvements
+    in theory a 5% level measurement is possible. Getting down to the 1% level to be competitive with other state-of-the-art
+    measurements will be challenging.
+- inspire_id: 2689354
+  title: Reconstructing S-matrix Phases with Machine Learning
+  arxiv_id: '2308.09451'
+  arxiv_categories:
+  - hep-th
+  - cs.LG
+  - hep-ph
+  doi: 10.1007/JHEP05(2024)200
+  citation_count: 14
+  year: 2024
+  journal: JHEP
+  collaboration: null
+  categories:
+  - Theory-HEP
+  - Computing
+  - Phenomenology-HEP
+  keywords:
+  - Nonperturbative Effects
+  - Scattering Amplitudes
+  - 'unitarity: constraint'
+  - machine learning
+  - integral equations
+  - elastic scattering
+  - bootstrap
+  abstract: An important element of the S-matrix bootstrap program is the relationship between the modulus of an S-matrix
+    element and its phase. Unitarity relates them by an integral equation. Even in the simplest case of elastic scattering,
+    this integral equation cannot be solved analytically and numerical approaches are required. We apply modern machine learning
+    techniques to studying the unitarity constraint. We find that for a given modulus, when a phase exists it can generally
+    be reconstructed to good accuracy with machine learning. Moreover, the loss of the reconstruction algorithm provides a
+    good proxy for whether a given modulus can be consistent with unitarity at all. In addition, we study the question of
+    whether multiple phases can be consistent with a single modulus, finding novel phase-ambiguous solutions. In particular,
+    we find a new phase-ambiguous solution which pushes the known limit on such solutions significantly beyond the previous
+    bound.
+- inspire_id: 2762996
+  title: Collective coordinate fix in the path integral
+  arxiv_id: '2402.18633'
+  arxiv_categories:
+  - hep-th
+  - hep-ph
+  - quant-ph
+  doi: 10.1103/PhysRevD.110.116023
+  citation_count: 13
+  year: 2024
+  journal: Phys.Rev.D
+  collaboration: null
+  categories:
+  - Theory-HEP
+  - Phenomenology-HEP
+  - Quantum Physics
+  keywords:
+  - collective
+  - path integral
+  - zero mode
+  - fluctuation
+  - quantum mechanics
+  - suppression
+  abstract: Collective coordinates are frequently employed in path integrals to manage divergences caused by fluctuations
+    around saddle points that align with classical symmetries. These coordinates parametrize a manifold of zero modes and
+    more broadly provide judicious coordinates on the space of fields. However, changing from local coordinates around a saddle
+    point to more global collective coordinates is remarkably subtle. The main complication is that the mapping from local
+    coordinates to collective coordinates is generically multivalued. Consequently one is forced to either restrict the domain
+    of path integral in a delicate way, or otherwise correct for the multivaluedness by dividing the path integral by certain
+    intersection numbers. We provide a careful treatment of how to fix collective coordinates while accounting for these intersection
+    numbers, and then demonstrate the importance of the fix for free theories. We also provide a detailed study of the fix
+    for interacting theories and show that the contributions of higher intersections to the path integral can be nonperturbatively
+    suppressed. Using a variety of examples ranging from single-particle quantum mechanics to quantum field theory, we explain
+    and resolve various pitfalls in the implementation of collective coordinates.
+- inspire_id: 2816931
+  title: Learning the simplicity of scattering amplitudes
+  arxiv_id: '2408.04720'
+  arxiv_categories:
+  - hep-th
+  - cs.LG
+  - hep-ph
+  doi: 10.21468/SciPostPhys.18.2.040
+  citation_count: 12
+  year: 2025
+  journal: SciPost Phys.
+  collaboration: null
+  categories:
+  - Theory-HEP
+  - Computing
+  - Phenomenology-HEP
+  keywords: []
+  abstract: 'The simplification and reorganization of complex expressions lies at the core of scientific progress, particularly
+    in theoretical high-energy physics. This work explores the application of machine learning to a particular facet of this
+    challenge: the task of simplifying scattering amplitudes expressed in terms of spinor-helicity variables. We demonstrate
+    that an encoder-decoder transformer architecture achieves impressive simplification capabilities for expressions composed
+    of handfuls of terms. Lengthier expressions are implemented in an additional embedding network, trained using contrastive
+    learning, which isolates subexpressions that are more likely to simplify. The resulting framework is capable of reducing
+    expressions with hundreds of terms—a regular occurrence in quantum field theory calculations—to vastly simpler equivalent
+    expressions. Starting from lengthy input expressions, our networks can generate the Parke-Taylor formula for five-point
+    gluon scattering, as well as new compact expressions for five-point amplitudes involving scalars and gravitons. An interactive
+    demonstration can be found at https://spinorhelicity.streamlit.app.'
+- inspire_id: 1829268
+  title: Parameter inference from event ensembles and the top-quark mass
+  arxiv_id: '2011.04666'
+  arxiv_categories:
+  - hep-ph
+  doi: 10.1007/JHEP09(2021)058
+  citation_count: 10
+  year: 2021
+  journal: JHEP
+  collaboration: null
+  categories:
+  - Phenomenology-HEP
+  - Phenomenology-HEP
+  keywords:
+  - Hadron-Hadron scattering (experiments)
+  - Top physics
+  - 'top: mass'
+  - neural network
+  - CERN LHC Coll
+  - parameter space
+  - Monte Carlo
+  abstract: 'One of the key tasks of any particle collider is measurement. In practice, this is often done by fitting data
+    to a simulation, which depends on many parameters. Sometimes, when the effects of varying different parameters are highly
+    correlated, a large ensemble of data may be needed to resolve parameter-space degeneracies. An important example is measuring
+    the top-quark mass, where other physical and unphysical parameters in the simulation must be profiled when fitting the
+    top-quark mass parameter. We compare four different methodologies for top-quark mass measurement: a classical histogram
+    fit similar to one commonly used in experiment augmented by soft-drop jet grooming; a 2D profile likelihood fit with a
+    nuisance parameter; a machine-learning method called DCTR; and a linear regression approach, either using a least-squares
+    fit or with a dense linearly-activated neural network. Despite the fact that individual events are totally uncorrelated,
+    we find that the linear regression methods work most effectively when we input an ensemble of events sorted by mass, rather
+    than training them on individual events. Although all methods provide robust extraction of the top-quark mass parameter,
+    the linear network does marginally best and is remarkably simple. For the top study, we conclude that the Monte-Carlo-based
+    uncertainty on current extractions of the top-quark mass from LHC data can be reduced significantly (by perhaps a factor
+    of 2) using networks trained on sorted event ensembles. More generally, machine learning from ensembles for parameter
+    estimation has broad potential for collider physics measurements.'
+- inspire_id: 1384509
+  title: Streamlining resummed QCD calculations using Monte Carlo integration
+  arxiv_id: '1507.06315'
+  arxiv_categories:
+  - hep-ph
+  doi: 10.1007/JHEP08(2016)112
+  citation_count: 9
+  year: 2016
+  journal: JHEP
+  collaboration: null
+  categories:
+  - Phenomenology-HEP
+  keywords:
+  - Jets
+  - QCD Phenomenology
+  - 'quantum chromodynamics: correction'
+  - 'resummation: threshold'
+  - soft collinear effective theory
+  - 'jet: multiple production'
+  - 'programming: Monte Carlo'
+  - 'numerical calculations: Monte Carlo'
+  - 'correction: higher-order'
+  - 'higher-order: 1'
+  - 'differential cross section: correction'
+  - 'p p: scattering'
+  - 'electron positron: scattering'
+  abstract: Some of the most arduous and error-prone aspects of precision resummed calculations are related to the partonic
+    hard process, having nothing to do with the resummation. In particular, interfacing to parton-distribution functions,
+    combining various channels, and performing the phase space integration can be limiting factors in completing calculations.
+    Conveniently, however, most of these tasks are already automated in many Monte Carlo programs, such as MadGraph [1], Alpgen
+    [2] or Sherpa [3]. In this paper, we show how such programs can be used to produce distributions of partonic kinematics
+    with associated color structures representing the hard factor in a resummed distribution. These distributions can then
+    be used to weight convolutions of jet, soft and beam functions producing a complete resummed calculation. In fact, only
+    around 1000 unweighted events are necessary to produce precise distributions. A number of examples and checks are provided,
+    including e$^{+}$ e$^{−}$ two- and four-jet event shapes, n-jettiness and jet-mass related observables at hadron colliders
+    at next-to-leading-log (NLL) matched to leading order (LO). Attached code can be used to modify MadGraph to export the
+    relevant LO hard functions and color structures for arbitrary processes.
+- inspire_id: 1345361
+  title: Removing phase-space restrictions in factorized cross sections
+  arxiv_id: '1502.05411'
+  arxiv_categories:
+  - hep-ph
+  doi: 10.1103/PhysRevD.91.094027
+  citation_count: 9
+  year: 2015
+  journal: Phys.Rev.D
+  collaboration: null
+  categories:
+  - Phenomenology-HEP
+  keywords:
+  - 12.38.Aw
+  - 11.15.-q
+  - 12.38.-t
+  - gauge field theory
+  - 'quantum chromodynamics: perturbation theory'
+  - 'quantum chromodynamics: factorization'
+  - 'cross section: factorization'
+  - 'factorization: collinear'
+  - regularization
+  - soft collinear effective theory
+  abstract: Factorization in gauge theories holds at the amplitude or amplitude-squared level for states of given soft or
+    collinear momenta. When performing phase-space integrals over such states, one would generally like to avoid putting in
+    explicit cuts to separate soft from collinear momenta. Removing these cuts induces an overcounting of the soft-collinear
+    region and adds new infrared-ultraviolet divergences in the collinear region. In this paper, we first present a regulator-independent
+    subtraction algorithm for removing soft-collinear overlap at the amplitude level which may be useful in pertubative QCD.
+    We then discuss how both the soft-collinear and infrared-ultraviolet overlaps can be undone for certain observables in
+    a way which respects factorization. Our discussion clarifies some of the subtleties in phase-space subtractions and includes
+    a proof of the infrared finiteness of a suitably subtracted jet function. These results complete the connection between
+    factorized QCD and the soft-collinear effective theory.
+- inspire_id: 1305649
+  title: Quantifying the power of multiple event interpretations
+  arxiv_id: '1407.2892'
+  arxiv_categories:
+  - hep-ph
+  doi: 10.1007/JHEP12(2014)140
+  citation_count: 7
+  year: 2014
+  journal: JHEP
+  collaboration: null
+  categories:
+  - Phenomenology-HEP
+  - Experiment-HEP
+  keywords:
+  - Jets
+  - CERN LHC Coll
+  - 'Higgs particle: hadronic decay'
+  - 'track data analysis: jet'
+  - 'jet: multiple production'
+  - 'jet: correlation'
+  - 'jet: bottom'
+  - 'bottom: pair production'
+  - statistical analysis
+  - Higgs particle --> bottom anti-bottom
+  abstract: A number of methods have been proposed recently which exploit multiple highly-correlated interpretations of events,
+    or of jets within an event. For example, Qjets reclusters a jet multiple times and telescoping jets uses multiple cone
+    sizes. Previous work has employed these methods in pseudo-experimental analyses and found that, with a simplified statistical
+    treatment, they give sizable improvements over traditional methods. In this paper, the improvement gain from multiple
+    event interpretations is explored with methods much closer to those used in real experiments. To this end, we derive and
+    study a generalized extended maximum likelihood procedure, and find that using multiple jet radii can provide substantial
+    benefit over a single radius in fitting procedures. Another major concern we address is that multiple event interpretations
+    might be exploiting similar information to that already present in the standard kinematic variables. We perform multivariate
+    analyses (boosted decision trees) on a set of standard kinematic variables, a single observable computed with several
+    different cone sizes, and both sets combined. We find that using multiple radii is still helpful even on top of standard
+    kinematic variables (providing a 12% improvement at low p$_{T}$ and 20% at high p$_{T}$ ). These results suggest that
+    including multiple event interpretations in a realistic search for Higgs to $ b\overline{b} $ would give additional sensitivity
+    over traditional approaches.
+- inspire_id: 1699881
+  title: Learning to Remove Pileup at the LHC with Jet Images
+  arxiv_id: ''
+  arxiv_categories: []
+  doi: 10.1088/1742-6596/1085/4/042010
+  citation_count: 7
+  year: 2018
+  journal: J.Phys.Conf.Ser.
+  collaboration: null
+  categories:
+  - Computing
+  - Phenomenology-HEP
+  keywords:
+  - pile-up
+  - CERN LHC Coll
+  - crossing
+  - jet
+  - neural network
+  - computer
+  abstract: We present the Pileup Mitgation with Machine Learning (PUMML) algorithm for pileup removal at the Large Hadron
+    Collider (LHC) based on the jet images framework using state-of-the-art machine learning techniques. We demonstrate that
+    our algorithm outperforms existing methods on a wide range of jet observables up to pileup levels of 140 collisions per
+    bunch crossing. We also investigate what aspects of the event our algorithms are utilizing by understanding the learned
+    parameters of a simplified version of the model.
+- inspire_id: 1940047
+  title: Quark-gluon backscattering in the Regge limit at one-loop
+  arxiv_id: '2110.02978'
+  arxiv_categories:
+  - hep-ph
+  - hep-th
+  doi: 10.1007/JHEP02(2022)091
+  citation_count: 6
+  year: 2022
+  journal: JHEP
+  collaboration: null
+  categories:
+  - Phenomenology-HEP
+  - Theory-HEP
+  keywords:
+  - Effective Field Theories
+  - Perturbative QCD
+  - Scattering Amplitudes
+  abstract: At small momentum transfer, the quark-gluon scattering cross section dσ/dt has a power-law divergence in the backward
+    scattering region where the outgoing quark is nearly collinear to the incoming gluon. In this Regge limit |t| ≪ s, the
+    leading behavior of the 2 → 2 amplitude can be described by the exchange of Glauber quarks. In Soft-Collinear Effective
+    Theory (SCET) at leading power, Glauber quark exchange is given by five non-local Glauber quark operators, of which only
+    one is generated at tree-level. We show that at leading power the QCD amplitude for quark-gluon backscattering at one-loop
+    can be exactly reproduced by SCET using the tree-level Glauber operator. The agreement between QCD and SCET of the ultraviolet,
+    infrared, and rapidity divergences as well as all logarithms, Glauber phases and finite parts for all polarizations of
+    the external gluons is a strong check on the effective theory. We find that the entire one-loop matching vanishes — there
+    is no correction to the operator generated at tree-level, and the coefficients of the other four operators remain zero
+    at one-loop. This suggests that SCET with Glauber operators may be useful for uncovering new aspects of Regge physics
+    in a systematically improvable way.
+- inspire_id: 2933355
+  title: Precision e$^{+}$e$^{−}$ hemisphere masses in the dijet region with power corrections
+  arxiv_id: '2506.09130'
+  arxiv_categories:
+  - hep-ph
+  doi: 10.1007/JHEP09(2025)092
+  citation_count: 6
+  year: 2025
+  journal: JHEP
+  collaboration: null
+  categories:
+  - Phenomenology-HEP
+  keywords:
+  - Factorization
+  - Renormalization Group
+  - Jets and Jet Substructure
+  - Resummation
+  abstract: 'We derive high-precision results for the e$^{+}$e$^{−}$ heavy jet mass (HJM) dσ/dρ and dihemisphere mass (DHM)
+    d$^{2}$σ/(ds$_{1}$ds$_{2}$) distributions, for s$_{1}$ ~ s$_{2}$, in the dijet region. New results include: i) the N$^{3}$LL
+    resummation for HJM of large logarithms ln$^{n}$(ρ) at small ρ including the exact two-loop non-global hemisphere soft
+    function, the 4-loop cusp anomalous dimension and the 3-loop hard and jet functions, ii) N$^{3}$LL results for DHM with
+    resummation of logarithms ln(s$_{1,2}$/Q$^{2}$) when there is no large separation between s$_{1}$ and s$_{2}$, iii) profile
+    functions for HJM to give results simultaneously valid in the peak and tail regions, iv) a complete two-dimensional basis
+    of non-perturbative functions which can be used for double differential observables, that are needed for both HJM and
+    DHM in the peak region, and v) an implementation of renormalon subtractions for large-angle soft radiation to $ \mathcal{O}\left({\alpha}_s^3\right)
+    $ together with a resummation of the additional large ln(Qρ/Λ$_{QCD}$) logarithms. Here Q is the e$^{+}$e$^{−}$ center-of-mass
+    energy. Our resummation results are combined with known fixed-order $ \mathcal{O}\left({\alpha}_s^3\right) $ results and
+    we discuss the convergence and remaining perturbative uncertainty in the cross section. We also prove that, at order 1/Q,
+    the first moment of the HJM distribution involves an additional non-perturbative parameter compared to the power correction
+    that shifts the tail of the spectrum (where 1 ≫ ρ ≫ Λ$_{QCD}$/Q). This differs from thrust where a single non-perturbative
+    parameter at order 1/Q describes both the first moment and the tail, and it disfavors models of power corrections employing
+    a single non-perturbative parameter, such as the low-scale effective coupling model. In this paper we focus only on the
+    dijet region, not the far-tail distribution for ρ ≳ 0.2 beyond which the trijet factorization and resummation become important.'
+- inspire_id: 2838979
+  title: Renormalons as Saddle Points
+  arxiv_id: '2410.07351'
+  arxiv_categories:
+  - hep-th
+  - hep-ph
+  doi: ''
+  citation_count: 5
+  year: null
+  journal: null
+  collaboration: null
+  categories:
+  - Theory-HEP
+  - Phenomenology-HEP
+  keywords: []
+  abstract: Instantons and renormalons play important roles at the interface between perturbative and non-perturbative quantum
+    field theory. They are both associated with branch points in the Borel transform of asymptotic series, and as such can
+    be detected in perturbation theory. However, while instantons are associated with non-perturbative saddle points of the
+    path integral, renormalons have mostly been understood in terms of Feynman diagrams and the operator product expansion.
+    We provide a non-perturbative path integral explanation of how both instantons and renormalons produce singularities in
+    the Borel plane using representative finite-dimensional integrals. In particular, renormalons can be understood as saddle
+    points of the 1-loop effective action, enabled by a crucial contribution from the quantum scale anomaly. These results
+    enable an exploration of renormalons from the path integral and thereby provide a new way to probe connections between
+    perturbative and non-perturbative physics in QCD and other theories.
+- inspire_id: 3097508
+  title: Resummation of the C-Parameter Sudakov Shoulder Using Effective Field Theory
+  arxiv_id: '2601.02484'
+  arxiv_categories:
+  - hep-ph
+  - hep-th
+  doi: ''
+  citation_count: 4
+  year: null
+  journal: null
+  collaboration: null
+  categories:
+  - Phenomenology-HEP
+  - Theory-HEP
+  keywords: []
+  abstract: The C-parameter distribution in $e^+e^-$ annihilation exhibits a kinematic shoulder at $C = 3/4$, where three-parton
+    final states reach their maximum and a fourth parton is required to exceed it. This boundary generates large logarithms
+    that must be resummed. Using soft-collinear effective theory, we derive a factorization theorem involving new jet and
+    soft functions specific to the C-parameter measurement, in which soft radiation contributes quadratically in transverse
+    momentum. This quadratic structure explains the step discontinuity at leading order. We compute all ingredients at one
+    loop, validate against Monte Carlo, and present matched NLL+NLO results. Unlike thrust and heavy jet mass, the C-parameter
+    has no Sudakov--Landau pole, making momentum-space resummation straightforward. All calculations, numerical analysis,
+    and manuscript preparation were performed by Claude, an AI assistant developed by Anthropic, working under physicist supervision.
+- inspire_id: 2960928
+  title: 'Observable optimization for precision theory: machine learning energy correlators'
+  arxiv_id: '2508.10988'
+  arxiv_categories:
+  - hep-ph
+  - hep-th
+  - physics.data-an
+  doi: 10.1007/JHEP01(2026)151
+  citation_count: 3
+  year: 2026
+  journal: JHEP
+  collaboration: null
+  categories:
+  - Phenomenology-HEP
+  - Theory-HEP
+  - Data Analysis and Statistics
+  keywords:
+  - Jets and Jet Substructure
+  - Top Quark
+  abstract: The practice of collider physics typically involves the marginalization of multi-dimensional collider data to
+    uni-dimensional observables relevant for some physics task. In many cases, such as classification or anomaly detection,
+    the observable can be arbitrarily complicated, such as the output of a neural network. However, for precision measurements,
+    the observable must correspond to something computable systematically beyond the level of current simulation tools. In
+    this work, we demonstrate that precision-theory-compatible observable space exploration can be systematized by using neural
+    simulation-based inference techniques from machine learning. We illustrate this approach by exploring the space of marginalizations
+    of the energy 3-point correlator to optimize sensitivity to the top quark mass. We first learn the energy-weighted probability
+    density from simulation, then search in the space of marginalizations for an optimal triangle shape. Although simulations
+    and machine learning are used in the process of observable optimization, the output is an observable definition which
+    can be then computed to high precision and compared directly to data without any memory of the computations which produced
+    it. We find that the optimal marginalization is isosceles triangles on the sphere with a side ratio approximately $ 1:1:\sqrt{2}
+    $ (i.e. right triangles) within the set of marginalizations we consider.
+- inspire_id: 2954221
+  title: Analytic regression of Feynman integrals from high-precision numerical sampling
+  arxiv_id: '2507.17815'
+  arxiv_categories:
+  - hep-th
+  - cs.NA
+  - hep-ph
+  - math.NA
+  doi: 10.1007/JHEP01(2026)014
+  citation_count: 3
+  year: 2026
+  journal: JHEP
+  collaboration: null
+  categories:
+  - Theory-HEP
+  - Computing
+  - Phenomenology-HEP
+  - Math and Math Physics
+  keywords:
+  - Higher-Order Perturbative Calculations
+  - Scattering Amplitudes
+  - Differential and Algebraic Geometry
+  - Supersymmetric Gauge Theory
+  abstract: In mathematics or theoretical physics one is often interested in obtaining an exact analytic description of some
+    data which can be produced, in principle, to arbitrary accuracy. For example, one might like to know the exact analytical
+    form of a definite integral. Such problems are not well-suited to numerical symbolic regression, since typical numerical
+    methods lead only to approximations. However, if one has some sense of the function space in which the analytic result
+    should lie, it is possible to deduce the exact answer by judiciously sampling the data at a sufficient number of points
+    with sufficient precision. We demonstrate how this can be done for the computation of Feynman integrals. We show that
+    by combining high-precision numerical integration with analytic knowledge of the function space one can often deduce the
+    exact answer using lattice reduction. A number of examples are given as well as an exploration of the trade-offs between
+    number of datapoints, number of functional predicates, precision of the data, and compute. This method provides a bottom-up
+    approach that neatly complements the top-down Landau-bootstrap approach of trying to constrain the exact answer using
+    the analytic structure alone. Although we focus on the application to Feynman integrals, the techniques presented here
+    are more general and could apply to a wide range of problems where an exact answer is needed and the function space is
+    sufficiently well understood.
+- inspire_id: 3091819
+  title: Asymptotic Behavior of Diagram Classes
+  arxiv_id: '2512.09042'
+  arxiv_categories:
+  - hep-th
+  - hep-ph
+  doi: ''
+  citation_count: 1
+  year: null
+  journal: null
+  collaboration: null
+  categories:
+  - Theory-HEP
+  - Phenomenology-HEP
+  keywords: []
+  abstract: The asymptotic nature of perturbative expansions in quantum field theory can arise from the factorial growth in
+    the number of Feynman diagrams with loop order, as with instantons, or from a series of individual diagrams whose values
+    grow factorially, as with renormalon chains in QED. Other classes of diagrams are known also to grow factorially, such
+    as the Hopf series of graphs in $ϕ^3$ theory. This Hopf series was studied using Schwinger-Dyson equations and the Connes-Kreimer
+    Hopf algebra of decorated rooted trees. We review the Hopf algebra approach and show that the same results can be obtained
+    using analytic QFT techniques as with Hopf-algebraic ones. We present an efficient method to extract the asymptotic behavior
+    and thereby generalize the analysis of the Hopf series to other classes of diagrams in other theories. We confront the
+    question of whether these classes correspond to new types of asymptotic growth beyond instantons and renormalons, and
+    find that they appear to be incomplete calculations of what would be renormalons in these theories if all diagrams were
+    included. Although the Hopf algebra approach is not essential to deriving asymptotic behavior from Schwinger-Dyson equations,
+    it does provide some other insights into quantum field theory. We therefore attempt also to provide a map between some
+    relevant aspects of the Hopf algebra and quantum field theory.
+- inspire_id: 629097
+  title: Effective field theories for gravity
+  arxiv_id: ''
+  arxiv_categories: []
+  doi: ''
+  citation_count: 0
+  year: null
+  journal: null
+  collaboration: null
+  categories:
+  - Gravitation and Cosmology
+  keywords:
+  - Thesis
+  abstract: ''
+- inspire_id: 2175850
+  title: Should artificial intelligence be interpretable to humans?
+  arxiv_id: ''
+  arxiv_categories: []
+  doi: 10.1038/s42254-022-00538-z
+  citation_count: 0
+  year: 2022
+  journal: Nature Rev.Phys.
+  collaboration: null
+  categories:
+  - Computing
+  keywords: []
+  abstract: As artificial intelligence (AI) makes increasingly impressive contributions to science, scientists increasingly
+    want to understand how AI reaches its conclusions. Matthew D. Schwartz discusses what it means to understand AI and whether
+    such a goal is achievable — or even needed.
+- inspire_id: 1285068
+  title: The heart of factorization
+  arxiv_id: ''
+  arxiv_categories: []
+  doi: 10.1142/S2010194514600143
+  citation_count: 0
+  year: 2014
+  journal: Int.J.Mod.Phys.Conf.Ser.
+  collaboration: null
+  categories:
+  - Phenomenology-HEP
+  keywords:
+  - activity report
+  - quantum chromodynamics
+  - perturbation theory
+  - factorization
+  - effective field theory
+  - collinear
+  - 'spinor: helicity'
+  abstract: Factorization is at the heart of nearly any calculation in pertubative QCD. It follows from the universal behavior
+    of gauge theories in soft and collinear limits. This talk gives a summary of recent progress on producing a more transparent
+    understanding of factorization and connecting traditional approaches to those of Soft-Collinear Effective Theory. The
+    main result is the formulation and proof, at tree-level, of a factorization formula in QCD. The proof exploits the many
+    advantages of spinor helicity methods, but does not use any effective field theory tricks. Once the factorization formula
+    is proven, the transition to an effective theory description is effortless.

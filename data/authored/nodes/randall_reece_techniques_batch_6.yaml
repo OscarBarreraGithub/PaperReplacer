@@ -1,0 +1,1110 @@
+- id: "technique.nda_reset_of_heavy_quark_expansion_scale"
+  label: "NDA reset of the heavy-quark expansion scale"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Use naive dimensional analysis in the combined heavy-quark and chiral theory to argue that the relevant cutoff is the chiral-symmetry-breaking scale rather than a generic Lambda_QCD. Apply this when meson-level EFT, not quark-level intuition, controls the expansion."
+  status: "asserted"
+- id: "technique.nec_holographic_c_function_constraint"
+  label: "Null-energy-condition control of admissible soft walls"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Apply the null energy condition to the warped geometry to derive a monotonic holographic c-function and show that acceptable soft-wall geometries either approach another IR AdS region or end where the low-energy bulk EFT breaks down. This sharply limits what kinds of soft walls can realize decoupling."
+  status: "asserted"
+- id: "technique.negative_hubble_mass_ad_baryogenesis"
+  label: "Negative-Hubble-mass Affleck-Dine baryogenesis"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "A negative Hubble-induced mass drives a baryonic flat direction to a large field value while higher-dimension operators stabilize it. When the Hubble scale falls to the soft scale the condensate begins rotating and generates baryon number efficiently."
+  status: "asserted"
+- id: "technique.neumann_boundary_condition_from_diffeomorphism"
+  label: "Neumann boundary conditions from diffeomorphism invariance"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Derive that the relevant RT surfaces must hit gravitating branes orthogonally, which dynamically sets the location of the radiation region. Use when boundary anchoring cannot be imposed externally without breaking the gravitational variational principle."
+  status: "asserted"
+- id: "technique.neutralino_assisted_partial_reconstruction_cut"
+  label: "Neutralino-Assisted Partial Reconstruction Cut"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Use the measured masses to reconstruct neutralino energies under each slepton-assignment hypothesis and demand consistency of the remaining invisible energy. This kinematic consistency cut suppresses W+W- backgrounds very efficiently."
+  status: "asserted"
+- id: "technique.neutralino_mixing_branching_map"
+  label: "Neutralino composition and branching-fraction map"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Parameterize the general neutralino NLSP by its bino, wino, and Higgsino admixture, then translate that composition into decays to gamma, Z, and h. This reduces a high-dimensional MSSM parameter space to a phenomenologically organized branching-fraction problem."
+  status: "asserted"
+- id: "technique.nlo_nll_significance_extrapolation"
+  label: "NLO+NLL cross-section and significance extrapolation"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Use higher-order production rates together with explicit systematic assumptions to translate simulated event counts into projected mass reach. This is the mathematical backbone of the 100 TeV reach numbers quoted throughout the review."
+  status: "asserted"
+- id: "technique.nlsp_lifetime_from_messenger_scale"
+  label: "NLSP lifetime inferred from the messenger scale"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Translate the messenger scale required by the Higgs sector into a prediction for the NLSP decay length through the goldstino coupling. This links Higgs measurements directly to whether gauge-mediated signals should be prompt, displaced, or detector-stable."
+  status: "asserted"
+- id: "technique.no_one_over_m_correction_in_inclusive_spectra"
+  label: "No-1/m_b correction diagnosis in inclusive spectra"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Use heavy-quark symmetry and the equation of motion to show that the first nonperturbative corrections to inclusive spectra start at 1/m_b^2, not 1/m_b. This is the conceptual unlock that rules out many naive bound-state corrections."
+  status: "asserted"
+- id: "technique.no_scale_breaking_taxonomy"
+  label: "No-scale breaking taxonomy"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Separate radion stabilization, Kahler-potential no-scale breaking, and superpotential no-scale breaking instead of folding them into one effect. Use it when different SUSY-breaking terms seem to contribute similarly in 4D but behave differently in 5D."
+  status: "asserted"
+- id: "technique.no_scale_fphi_suppression"
+  label: "F_Phi suppression from single-field no-scale structure"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Exploit the linear dependence of the volume modulus in the kinetic function to force the conformal-compensator F-term to vanish at leading order. This immediately suppresses anomaly mediation and many other SUSY-breaking effects."
+  status: "asserted"
+- id: "technique.non_equilibrium_holmberg_flynn_method"
+  label: "Non-equilibrium Holmberg-Flynn method for dark-disk bounds"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Generalize the traditional Holmberg-Flynn stellar-tracer analysis to the case where the tracers have a net vertical velocity and are oscillating about the Galactic plane rather than sitting in strict equilibrium. This removes a hidden bias toward excluding dark disks too aggressively."
+  status: "asserted"
+- id: "technique.non_met_stealth_search_strategy"
+  label: "Non-MET stealth search strategy"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Prioritize displaced vertices, photons, heavy-flavor multiplicity, and resonance structure instead of hard missing-energy cuts. This is the collider-analysis shift required once the stealth mechanism has removed the usual SUSY trigger."
+  status: "asserted"
+- id: "technique.nonabelian_slwgc_highest_weight_formulation"
+  label: "Highest-weight formulation of the nonabelian sLWGC"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "State the nonabelian sublattice WGC in terms of superextremal highest-weight representations rather than only Cartan charges. Use when abelianized charge-lattice reasoning misses the multiplicity carried by large nonabelian irreps."
+  status: "asserted"
+- id: "technique.nonanalytic_ms_three_halves_extraction"
+  label: "Extraction of nonanalytic m_s^(3/2) terms"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Track the nonanalytic dependence generated by kaon and eta loops, especially m_s^(3/2) behavior, rather than only analytic Taylor terms. This is the mathematical signal of genuinely infrared chiral physics."
+  status: "asserted"
+- id: "technique.nonholomorphic_ads_field_redefinition"
+  label: "Nonholomorphic ADS field redefinition"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Map the holomorphically constrained fields to nonholomorphic variables that satisfy exact D-flatness, recovering the Affleck-Dine-Seiberg description while preserving the holomorphy of the superpotential. Use it to connect manifestly supersymmetric constructions to the traditional ADS projection."
+  status: "asserted"
+- id: "technique.nonlinear_curvature_transfer_formalism"
+  label: "Nonlinear curvature-transfer formalism"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Propagate inflaton and curvaton perturbations to the final radiation bath with the nonlinear curvature perturbation or delta-N style formalism rather than a purely linear treatment. Use it when the non-Gaussianity comes from post-inflationary conversion of isocurvature into curvature."
+  status: "asserted"
+- id: "technique.nonlinear_positivity_via_hankel_matrices"
+  label: "Nonlinear Positivity via Hankel Matrices"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Package higher-derivative positivity information into determinant or Hankel-matrix inequalities rather than a small set of linear bounds. This dramatically sharpens the allowed Wilson-coefficient region."
+  status: "asserted"
+- id: "technique.nonlinear_shutdown_and_relic_scaling"
+  label: "Nonlinear shutdown and relic-density scaling"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Use the lattice result that production stops shortly after nonlinear backreaction begins and translate the resulting peak momentum into a relic-density estimate. Use when one needs a simple abundance formula that still respects nonlinear dynamics."
+  status: "asserted"
+- id: "technique.nonlocal_4d_effective_action_diagnosis"
+  label: "Diagnose the need for a nonlocal 4D description"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Show that local 4D curvature-squared terms cannot generate the light graviton mass or shift the AdS curvature in the required way. The only consistent low-energy description must therefore remember nonlocal or higher-dimensional physics."
+  status: "asserted"
+- id: "technique.nonlocal_fragmentation_separation"
+  label: "Separation of local and nonlocal contributions"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Contributions where the photon couples to light quarks are identified as intrinsically nonlocal fragmentation effects and separated from the charm-loop OPE piece. This is the conceptual move that explains why some nonperturbative effects are under control and others are not."
+  status: "asserted"
+- id: "technique.nonlocal_mass_fluctuation_signal_extraction"
+  label: "Signal Extraction from Nonlocal Mass Fluctuations"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Separate local mass renormalization from the genuinely nonlocal half-sunset effect induced by the fluctuating light field. The nonlocal piece is what converts invisible scalar fluctuations into an observable squeezed-limit suppression."
+  status: "asserted"
+- id: "technique.nonrelativistic_operator_basis"
+  label: "Nonrelativistic operator basis for direct detection"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Build the scattering amplitude from the complete basis of Galilean-invariant nonrelativistic operators involving spins, momentum transfer, and relative velocity. This avoids assuming that only spin-independent or spin-dependent contact interactions matter."
+  status: "asserted"
+- id: "technique.nonrelativistic_phase_space_counting_for_bbpi"
+  label: "Nonrelativistic phase-space counting for B Bbar pi"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Evaluate the threshold phase space using nonrelativistic heavy-meson kinematics so the pion-energy scaling is explicit. This is the mathematical step needed to compare one-pion and multi-pion channels quantitatively."
+  status: "asserted"
+- id: "technique.nonrenormalizable_or_small_yukawa_waterfall"
+  label: "Nonrenormalizable or small-Yukawa waterfall coupling"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "The inflationary exit is implemented either with higher-dimension operators or with technically natural small Yukawa couplings. This gives a flexible recipe for ending inflation while keeping the inflaton sector simple."
+  status: "asserted"
+- id: "technique.nonthermal_wino_from_moduli_decay"
+  label: "Non-thermal Wino production from modulus decay"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Use late modulus decay to repopulate a Wino LSP whose thermal relic abundance is far too small. The mechanism turns the moduli problem from a catastrophe into a source of viable dark matter."
+  status: "asserted"
+- id: "technique.normalized_second_moment_as_robust_observable"
+  label: "Normalized second moment as a robust observable"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Focus on the normalized second moment because it depends on a single leading nonperturbative Lambda/m correction and is less fragile than full-shape fits. This is the practical observable choice that makes the program numerically viable."
+  status: "asserted"
+- id: "technique.nrqcd_scet_factorization_for_heavy_dm"
+  label: "NRQCD plus SCET Factorization for Heavy Dark Matter"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Combine NRQCD-like methods for Sommerfeld enhancement with SCET resummation of soft, collinear, and endpoint logarithms in heavy dark-matter annihilation. The hybrid EFT is what makes precise indirect-detection predictions possible."
+  status: "asserted"
+- id: "technique.nuclear_many_body_schiff_moment_methods"
+  label: "Nuclear Many-Body Schiff-Moment Methods"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Use shell-model, DFT, IMSRG, and related many-body approaches to propagate hadronic CP violation into nuclear Schiff moments and collective enhancements. This is what makes diamagnetic-atom EDM limits interpretable in terms of microscopic CP sources."
+  status: "asserted"
+- id: "technique.nucleon_nuclear_response_matching"
+  label: "Matching to nucleon matrix elements and nuclear response"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Factor the calculation into quark or gluon operators, nucleon matrix elements, and finally nuclear form factors or responses. This modular pipeline isolates hadronic and nuclear uncertainties instead of burying them inside one effective coupling."
+  status: "asserted"
+- id: "technique.numerical_fit_to_large_scale_power_spectrum"
+  label: "Numerical fit to the large-scale power spectrum"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Compute the coupled perturbations numerically and then fit a simple analytic form to the modified power spectrum for CMB use. Use it when the exact dynamics are numerical but data analysis needs a compact parameterization."
+  status: "asserted"
+- id: "technique.numerical_in_in_with_wick_rotated_contours"
+  label: "Numerical In-In with Wick-Rotated Contours"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Rotate the time integration contour and factor out rapidly oscillating phases to stabilize direct numerical evaluation of the bispectrum. This is the computational move that makes the full time-dependent-mass signal tractable."
+  status: "asserted"
+- id: "technique.oblique_fit_bottleneck_analysis"
+  label: "Bottleneck analysis for S and T fits"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Vary one projected uncertainty at a time inside the electroweak fit to identify which observable most improves S and T next. This turns a vague 'more precision is good' statement into a concrete machine-design priority list."
+  status: "asserted"
+- id: "technique.oblique_nonoblique_separation"
+  label: "Separation of oblique and non-oblique corrections"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "One-loop amplitudes are decomposed into universal coupling shifts and process-specific vertex or box effects so the extracted supersymmetric couplings are not contaminated by nonuniversal pieces. This is the mathematical bookkeeping required for a meaningful super-oblique analysis."
+  status: "asserted"
+- id: "technique.observer_brane_profile_method"
+  label: "Observer-brane profile method"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Read the effective strength of gravity at a given location from the value of the graviton and KK wavefunctions on that observer brane, rather than from the global existence of extra dimensions alone. Use it when different branes in the same warped geometry can experience gravity very differently."
+  status: "asserted"
+- id: "technique.octupole_deformed_radioactive_molecules"
+  label: "Octupole-deformed radioactive molecules for hadronic CPV"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Embed octupole-deformed radioactive nuclei in molecules to combine large nuclear Schiff-moment enhancement with molecular polarization and comagnetometry. Use this when the target is hadronic CP violation rather than purely electronic operators."
+  status: "asserted"
+- id: "technique.off_shell_dark_portal_multileptons"
+  label: "Off-shell portal production of multilepton final states"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Produce heavier hidden-sector states through an off-shell dark photon and identify their visible cascade decays through unusual multilepton topologies. This reframes low-energy machines as probes of whole hidden spectra rather than just a single vector resonance."
+  status: "asserted"
+- id: "technique.on_shell_vbs_loop_interference"
+  label: "On-shell one-loop VBS interference calculation"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "The relevant effect is computed in an on-shell renormalization scheme, keeping the SM tree times BSM loop interference after convolution with muon PDFs. Use it when the discovery handle is a small virtual correction to an otherwise tree-level electroweak process."
+  status: "asserted"
+- id: "technique.one_flavor_reduction_after_dual_dynamics"
+  label: "One-flavor reduction after dual dynamics"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Integrate out the masses induced by confinement or duality until the remaining gauge factor is left with a one-flavor antisymmetric theory, whose dynamical superpotential is known and directly reveals SUSY breaking. Use it when a complicated product-group theory can be funneled into a simple universal endpoint."
+  status: "asserted"
+- id: "technique.one_loop_chiral_self_energy_for_hyperfine_logs"
+  label: "One-loop chiral self-energies for hyperfine logs"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Evaluate heavy-meson self-energy and wavefunction-renormalization loops to isolate the chiral logarithms that feed into hyperfine splitting differences. Use this whenever low-energy Goldstone loops generate the dominant long-distance correction."
+  status: "asserted"
+- id: "technique.one_loop_rge_higgs_constraint_propagation"
+  label: "One-loop RGE propagation of Higgs constraints"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "One-loop renormalization group equations are solved to carry the GUT relation down to the weak scale and determine the resulting Higgs sector. This mathematical machinery is what makes the high-scale boundary condition predictive."
+  status: "asserted"
+- id: "technique.operator_dimension_and_4pi_power_counting"
+  label: "Operator-dimension and 4pi power counting"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Track operator suppression using dimensions and explicit 4pi factors to compare dipole, current-current, and Z-mediated contributions on equal footing. Use it when several new-physics mechanisms compete parametrically."
+  status: "asserted"
+- id: "technique.operator_higgs_mechanism_from_leaky_matter"
+  label: "Operator Higgs mechanism from leaky matter"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Let charged matter leak into the bath so the AdS gauge symmetry is spontaneously broken and the gauge boson becomes massive through an operator version of the Higgs mechanism. Use it when a bath coupling should turn a bulk gauge symmetry into mixed gauge/global structure."
+  status: "asserted"
+- id: "technique.operator_level_model_screening"
+  label: "Operator-Level Screening of Dark Matter Models"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Classify dark matter candidates by the effective operators controlling present-day annihilation and elastic scattering. This quickly identifies which models can light up in antideuterons while evading direct-detection bounds."
+  status: "asserted"
+- id: "technique.operator_matching_to_heavy_meson_fields"
+  label: "Matching heavy-quark operators to heavy-meson operators"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Translate quark-level HQET operators into meson-level chiral operators before estimating their size. This is the move that exposes the correct hadronic scale entering the expansion."
+  status: "asserted"
+- id: "technique.operator_mixing_rge_to_edm"
+  label: "Operator mixing and RGE running to the dipole"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Evolve dimension-six semileptonic operators down to the electron dipole using the SMEFT anomalous-dimension matrix. Use when the EDM arises indirectly rather than from a threshold dipole at the matching scale."
+  status: "asserted"
+- id: "technique.orbifold_sector_charge_bookkeeping"
+  label: "Twisted/untwisted sector charge bookkeeping"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "The paper isolates LWGC-violating and superextremal sites by decomposing heterotic orbifold states into twisted and untwisted sectors with and without Wilson lines. Use it when extremality depends on subtle string-sector selection rules rather than simple field-theory charges."
+  status: "asserted"
+- id: "technique.orientation_marginalized_axis_ratio_inference"
+  label: "Orientation-marginalized inference of intrinsic axis ratios"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Infer intrinsic b/a and c/a by Bayes' rule, marginalizing over viewing angles and penalizing axis ratios that rarely project to observed ellipticities. Use when direct 3D morphology is inaccessible."
+  status: "asserted"
+- id: "technique.oscillating_modulus_higgs_switching"
+  label: "Higgs switching driven by an oscillating modulus"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Couple a heavy oscillating modulus to the Higgs mass term so the effective Higgs mass repeatedly changes sign during inflation, forcing alternating symmetric and broken phases. Use this when a time-dependent heavy sector can leave primordial signatures through repeated phase transitions."
+  status: "asserted"
+- id: "technique.page_curve_by_hamiltonian_truncation"
+  label: "Page curve by Hamiltonian truncation"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Deliberately remove the Hamiltonian from the accessible asymptotic algebra, or give the observer a blind spot, to manufacture a Page curve. Use it when you want to separate genuine information recovery from mere redistribution among observed and unobserved degrees of freedom."
+  status: "asserted"
+- id: "technique.page_transition_from_hm_vs_brane_surface"
+  label: "Page transition from Hartman-Maldacena versus brane-anchored surfaces"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Compute the entropy by comparing the growing Hartman-Maldacena surface to a constant brane-anchored surface and track the phase transition between them. Use to determine whether a Page curve survives in a doubly holographic system."
+  status: "asserted"
+- id: "technique.parameterized_tpc_digitization"
+  label: "Parameterized TPC digitization from Garfield/Heed truth"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "The TPC chain simulates ionization with Heed/Garfield++ and replaces full drift/amplification transport with calibrated parameterized models for diffusion and readout. Use it when full microscopic gas simulation is too slow for large detector studies."
+  status: "asserted"
+- id: "technique.parity_gauging_via_nonorientable_backgrounds"
+  label: "Parity Gauging via Non-Orientable Backgrounds"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Model gauged parity by summing over non-orientable manifolds and study parity breaking on a Klein bottle or similar background. The non-orientable background forces a domain wall and makes its stability question topological rather than merely dynamical."
+  status: "asserted"
+- id: "technique.partial_compositeness_for_natural_susy"
+  label: "Partial compositeness for the Higgs and third generation"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Embed the Higgs, top, and part of the electroweak sector as composite or partially composite degrees of freedom, while keeping the remaining MSSM matter elementary. This concentrates naturalness protection where it is needed and simultaneously suppresses missing-energy-rich signatures."
+  status: "asserted"
+- id: "technique.parton_luminosity_convolution_for_broad_states"
+  label: "Parton-Luminosity Convolution for Broad States"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Convolve partonic resonance and contact-interaction amplitudes with PDF luminosities to see how broad resonances flatten and mimic contact interactions after hadronic smearing. This explains where shape information is genuinely lost."
+  status: "asserted"
+- id: "technique.parton_luminosity_reach_mapping"
+  label: "Parton-Luminosity Reach Mapping"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Map muon-collider reach to an equivalent proton-collider reach by equating inclusive cross sections through effective parton luminosities and a partonic cross-section ratio beta. This gives a fast machine-to-machine comparison before full detector studies."
+  status: "asserted"
+- id: "technique.pauli_villars_local_cutoff_correspondence"
+  label: "Relate the position-dependent cutoff to Pauli-Villars cancellation"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Show that a PV regulator of mass M_PV cancels the physical field wherever g_tt E^2 greatly exceeds M_PV^2, reproducing the same radial exclusion implied by the local cutoff. This ties the curved-space state-counting rule to a familiar regulator framework."
+  status: "asserted"
+- id: "technique.peak_frequency_local_noise_approximation"
+  label: "Peak-frequency local-noise approximation for eccentric SNR"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Approximate the SNR of an eccentric source by evaluating the detector noise near the peak harmonic and replacing the full harmonic sum with a closed eccentricity factor. Use when explicit high-order Bessel-function sums are the computational bottleneck."
+  status: "asserted"
+- id: "technique.peak_frequency_reparameterization_of_eccentric_inspiral"
+  label: "Peak-frequency reparameterization of eccentric inspirals"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Parametrize inspirals by the peak GW frequency rather than 2f_orb, correctly capturing the transfer of power to high harmonics and the existence of a low-frequency cutoff. Use whenever large eccentricity bridges detector bands."
+  status: "asserted"
+- id: "technique.peak_frequency_tracking_for_kl_sources"
+  label: "Peak-frequency tracking for highly eccentric KL sources"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Describe eccentric sources by the peak GW frequency rather than the orbital frequency so highly eccentric binaries are placed in the LISA band correctly. Use whenever harmonics, not the fundamental, control detectability."
+  status: "asserted"
+- id: "technique.peebles_factor_dark_recombination_solver"
+  label: "Peebles-factor solver for dark recombination"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Evolve the free-C fraction with a recombination equation that includes direct recombination, photoionization, dark Lyman-alpha escape, and two-dark-photon decay through a Peebles factor. This captures when the process is in the Saha regime and when a full nonequilibrium treatment is needed."
+  status: "asserted"
+- id: "technique.periodicity_preserving_integration_out"
+  label: "Periodicity-preserving integration of heavy axions"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Integrate out heavy axions in the lattice basis rather than the misaligned propagating-state basis so the surviving light field is still manifestly compact. This avoids spurious claims of emergent non-compact scalars or irrational low-energy couplings."
+  status: "asserted"
+- id: "technique.perturbative_backreaction_with_brane_perturbations"
+  label: "Perturbative backreaction with brane perturbations"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Solve the scalar and warp-factor backreaction perturbatively after detuning either brane, instead of changing the radion potential by hand. Use it when you need the actual 5D response to localized energy shifts."
+  status: "asserted"
+- id: "technique.perturbative_unitarity_bound_on_axion_potential"
+  label: "Perturbative unitarity bound on the cosine potential"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Expand the axion cosine potential and demand that the induced self-scattering amplitudes remain perturbative, giving mu less than about the fundamental period scale. Use when a UV completion claims a confining scale much larger than the microscopic axion period."
+  status: "asserted"
+- id: "technique.perturbativity_backreaction_viability_map"
+  label: "Perturbativity/backreaction viability map"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Overlay nucleation contours with perturbativity and IR-backreaction bounds on the Goldberger-Wise sector instead of treating the phase transition in isolation. Use it when a transition may be strong enough to see but too strong to trust in the 4D radion EFT."
+  status: "asserted"
+- id: "technique.pfa_oriented_detector_architecture"
+  label: "Particle-flow-oriented detector architecture"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "The reference detector is designed so each final-state particle is measured in the subsystem that can do it best: tracking for charged particles, crystal ECAL for photons, and HCAL for neutral hadrons. Use it when jet mass and Higgs-boson separation depend more on confusion reduction than on standalone calorimeter resolution."
+  status: "asserted"
+- id: "technique.phase_doppler_environment_tomography"
+  label: "Environmental tomography from Doppler phase drift"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Treat the outer-orbit motion of a binary black hole barycenter as a time-dependent Doppler phase shift in the GW signal and infer the surrounding mass distribution from that drift. Use when an unresolved tertiary or dense environment imprints long-period motion on the waveform."
+  status: "asserted"
+- id: "technique.phase_space_attractor_and_kasner_analysis"
+  label: "Attractor and Kasner Analysis of the Radion System"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Classify solutions by studying FRW and Kasner attractors near horizons and singularities in the reduced radion dynamics. This separates interpolating, Nariai, oscillatory, and singular branches cleanly."
+  status: "asserted"
+- id: "technique.planck_brane_correlator_definition_of_running"
+  label: "Define high-energy running through Planck-brane zero-mode correlators"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Do not ask for TeV-brane scattering above its strong scale; instead define the coupling through the zero mode seen by Planck-brane observers. This identifies the quantity that can be perturbatively evolved to high energies in a warped model."
+  status: "asserted"
+- id: "technique.planck_suppressed_moduli_mixing"
+  label: "Planck-Suppressed Moduli-Induced Mixing"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Generate dark-visible mixing through moduli or other large field values via Planck-suppressed operators, allowing asymmetry transfer even when no renormalizable connector exists. This naturally accommodates dark matter masses from GeV to multi-TeV."
+  status: "asserted"
+- id: "technique.point_split_bulk_loop_soft_masses"
+  label: "Point-split bulk-loop estimate for soft masses"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Compute bulk-mediated visible soft masses using position-space propagators between separated branes, treating the compactification distance as a physical point-splitting regulator that makes the loop finite. Use it to estimate flavor-safe bulk corrections beneath the Planck scale."
+  status: "asserted"
+- id: "technique.poisson_ncrit_discovery_metric"
+  label: "Poisson Ncrit Discovery Metric"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Define an experiment's reach by the minimum event count Ncrit required to beat the expected background at fixed significance under Poisson statistics. This gives a clean way to turn flux predictions into discovery contours."
+  status: "asserted"
+- id: "technique.poisson_resummation_of_dyon_spectrum"
+  label: "Poisson Resummation of the Dyon Tower"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Transform the sum over electric charge sectors into a sum over winding sectors of the compact dyon coordinate. The resummed expression makes periodicity in the axion and the instanton interpretation manifest."
+  status: "asserted"
+- id: "technique.polar_core_curvature_singularity_formula"
+  label: "Curvature-singularity formula for polar-coordinate cores"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Excise the brane center, compute the missing curvature contribution from the degenerate polar-coordinate origin, and only then take the thin-core limit. Use it when naive application of total-derivative identities fails exactly where the angular metric component vanishes."
+  status: "asserted"
+- id: "technique.polarized_broken_ew_pdf_evolution"
+  label: "Polarized electroweak PDFs with broken-symmetry matching"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Evolve polarized electroweak parton distribution functions in the broken theory, matching through the symmetry-breaking scale while tracking SU(2), U(1), Higgs, and fermion components. Use this when large electroweak logarithms matter for inclusive high-energy rates."
+  status: "asserted"
+- id: "technique.polarized_decay_distribution_calibration"
+  label: "Calibration from polarized decay distributions"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Compute the lepton and neutrino energy distributions for polarized b decay and calibrate the observable-to-polarization map analytically. Use it to turn a clever ratio variable into an actual polarization estimator."
+  status: "asserted"
+- id: "technique.pole_shift_to_bispectrum_scaling_map"
+  label: "Pole-Shift to Bispectrum-Scaling Map"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Read off the large-distance decay of the corrected propagator and translate the shifted exponent into the squeezed-bispectrum power law. This bridges the propagator analysis and the observable non-Gaussian template."
+  status: "asserted"
+- id: "technique.population_inference_from_frequency_counts"
+  label: "Population inference from frequency-bin counts"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Infer eccentricity distributions from the number of LISA binaries per frequency bin, even without directly fitting eccentric templates. Use when population-level depletion or enhancement across the mHz band is more robust than event-by-event eccentricity measurements."
+  status: "asserted"
+- id: "technique.positive_tension_probe_brane_hierarchy"
+  label: "Hierarchy generation with a positive-tension probe brane"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Place a positive-tension probe brane deep in the warped throat generated by a separate Planck brane so all mass scales on the probe are exponentially redshifted, without needing a negative-tension Standard Model brane. Use it when you want RS-style hierarchy generation with only positive-energy objects."
+  status: "asserted"
+- id: "technique.potential_nr_eft_for_sommerfeld_enhancement"
+  label: "Potential NR EFT for Sommerfeld Enhancement"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Match annihilation operators and gauge-boson exchange onto a nonrelativistic potential theory for two-body dark matter states. The long-distance potential problem and the short-distance annihilation problem are then solved in separate layers."
+  status: "asserted"
+- id: "technique.power_law_noise_harmonic_resummation"
+  label: "Exact harmonic resummation for power-law noise curves"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "For noise laws SN ~ f^0, f^-4, or f^2, rewrite the harmonic sums as exact orbit-averaged quadrupole-derivative invariants I0, I-4, and I2. Use when the detector noise is locally close to a power law and a controlled analytic approximation is wanted."
+  status: "asserted"
+- id: "technique.ppe_waveform_consistency_tests"
+  label: "Parameterized post-Einsteinian waveform tests"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Deform inspiral waveforms with PN/ppE coefficients instead of committing to one alternative theory, then fit those deformations to data. Use it when you want model-agnostic null tests of GR with long inspirals."
+  status: "asserted"
+- id: "technique.ppe_waveform_deformation_framework"
+  label: "Parameterized post-Einsteinian waveform deformations"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Introduce generic amplitude and phase deformations of inspiral or merger-ringdown waveforms and map the resulting bounds onto theory classes. Use when you want model-independent constraints on departures from GR."
+  status: "asserted"
+- id: "technique.pq_current_field_redefinition_strategy"
+  label: "PQ-current field redefinition strategy for large axion couplings"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Use chiral field redefinitions to move axion couplings among Yukawa, derivative, and anomalous terms while keeping the PQ current and periodicity manifest. This distinguishes basis artifacts from genuinely large physical couplings."
+  status: "asserted"
+- id: "technique.precision_event_generator_stack"
+  label: "Precision event-generator stack"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Embed accurate matrix elements, showers, hadronization, and uncertainty estimates into Monte Carlo event generators rather than treating simulation as an afterthought. Use it when theory errors from event generation dominate an experimental analysis."
+  status: "asserted"
+- id: "technique.prem_runge_kutta_matter_evolution"
+  label: "PREM-based numerical matter evolution"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Integrate the flavor-evolution equations through the stratified Earth density profile with a Runge-Kutta solver and fold in detector response and cross sections. This turns the conceptual Earth-regeneration argument into observable recoil-energy and zenith-angle predictions."
+  status: "asserted"
+- id: "technique.probe_backreaction_localization_criterion"
+  label: "Use probe geometry and backreaction scaling to locate the localization regime"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Start with the probe-brane embedding to extract the AdS4 curvature, then estimate when 5-brane backreaction becomes comparable to the AdS5 curvature scale. This gives a practical criterion for when the string setup should move from a probe description to true localized gravity."
+  status: "asserted"
+- id: "technique.profile_likelihood_limit_setting_subthreshold_signals"
+  label: "Likelihood and gap methods for threshold-sensitive signals"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Use extended maximum likelihood, Poisson-bin likelihoods, and Pmax or maximum-gap limits with realistic detector response to test narrow, threshold-adjacent ExoDDDM spectra. This is essential because subthreshold fluctuations and finite resolutions materially change the bounds."
+  status: "asserted"
+- id: "technique.projection_correlation_morphology_proxy"
+  label: "Morphology from projection-correlation proxies"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Use the sign of the correlation between projected ellipticity and central surface brightness or stellar velocity dispersion as a proxy for prolate versus oblate intrinsic shape. Use when only one viewing angle is available for each dwarf galaxy."
+  status: "asserted"
+- id: "technique.proper_motion_jeans_degeneracy_breaking"
+  label: "Proper-motion breaking of the Jeans cusp-core degeneracy"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Combine proper motions with line-of-sight velocities in Jeans analyses to separate halo-profile information from stellar-orbit anisotropy. Use when radial velocities alone cannot distinguish cusps from cores in dwarf spheroidals."
+  status: "asserted"
+- id: "technique.pseudo_dirac_higgsino_limit"
+  label: "Pseudo-Dirac higgsino limit"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Treat a nearly pure higgsino as two almost-degenerate neutral Majorana states plus a charged partner, with bino/wino thresholds encoded as a small splitting. Use when direct detection, collider reach, and indirect signals are controlled by whether processes are elastic or kinematically forced to be inelastic."
+  status: "asserted"
+- id: "technique.pseudo_dirac_idm_splitting"
+  label: "Pseudo-Dirac or Pseudo-Complex Inelastic Splitting"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Start from a Dirac fermion or complex scalar and add a tiny symmetry-breaking mass so that gauge interactions become dominantly off-diagonal and scattering is inelastic. This is the structural move that makes IDM natural."
+  status: "asserted"
+- id: "technique.pseudorapidity_ellipse_likelihood"
+  label: "Gaussian eta-plus/eta-minus ellipse fit"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "The joint distribution of eta_+ and eta_- of the two reconstructed tops is fit as an ellipse and compared across hypotheses with a likelihood. Use it when spin and overall boost both leave imprint on rapidity correlations."
+  status: "asserted"
+- id: "technique.psun_witten_effect_with_dyon_modes"
+  label: "PSU(n) Witten Effect with Dyon Worldvolume Modes"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Introduce background two-form fields to derive the PSU(n) Witten effect, then add compact dyon modes on the monopole worldvolume so a dynamical axion remains gauge consistent. This generalizes familiar abelian Witten-effect logic to nonabelian global structure."
+  status: "asserted"
+- id: "technique.pty_ratio_rapidity_tagger"
+  label: "pT, Rapidity, and m/pT ISR Tagger"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Tag ISR through rule-based cuts on outlier transverse momentum, rapidity separation, and jet-mass over pT relative to the expected FSR jets. This provides a simple high-level classifier with controlled mistag rates."
+  status: "asserted"
+- id: "technique.pure_eigenstate_simplified_limits"
+  label: "Pure-eigenstate benchmark limits"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Use bino, wino co-NLSP, and Higgsino limiting cases as anchor benchmarks and interpolate from them to the general neutralino case. This is the simplified-model move that reveals which search channels matter across the wider parameter space."
+  status: "asserted"
+- id: "technique.qcd_sum_rule_cedm_to_hadron_matching"
+  label: "QCD sum-rule matching from CEDMs to hadronic EDMs"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Use hadronic matrix elements and QCD sum-rule relations to convert quark chromo-EDMs into pion-nucleon couplings and then into neutron or mercury EDM sensitivity. This is the mathematical bridge from quark-level CP violation to hadronic experiments."
+  status: "asserted"
+- id: "technique.qnm_from_bound_state_continuation"
+  label: "Quasinormal modes from analytic continuation of bound states"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Recast the quasinormal-mode problem as an analytically continued bound-state problem around a potential extremum. This replaces awkward outgoing-wave boundary conditions with a perturbative eigenvalue problem."
+  status: "asserted"
+- id: "technique.quality_to_inflation_bound_translation"
+  label: "Translate Nelson-Barr Quality Bounds into Inflation Bounds"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Combine the exact stability of CP domain walls with estimates of higher-dimension operators that spoil theta to turn an upper bound on the CP-breaking scale into bounds on Hubble during inflation, reheating temperature, and the tensor-to-scalar ratio. This is the paper's main cosmology move."
+  status: "asserted"
+- id: "technique.quartic_consistency_bound_for_light_vectors"
+  label: "Quartic-consistency bound for the produced vector field"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Demand that quartic self-interactions or Higgs-sector backreaction of the dark photon stay subdominant while the large classical field is produced. Use to test whether a proposed UV origin of the vector mass is compatible with the tachyonic production mechanism."
+  status: "asserted"
+- id: "technique.quirkonium_singlet_octet_bookkeeping"
+  label: "Quirkonium singlet/octet bookkeeping"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Track how color-singlet and color-octet quirkonium states are populated, split, and annihilate, including the role of de-excitation and hidden glueball emission. This is the organizing principle that makes quirk explanations calculable enough to confront data."
+  status: "asserted"
+- id: "technique.qule_operator_pathway"
+  label: "QULE-operator pathway to the electron EDM"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Generate the four-fermion operator (q sigma ubar) dot (l sigma ebar) and let renormalization-group running turn it into the electron EDM. Use when direct dipole matching is absent or subleading but semileptonic new physics is present."
+  status: "asserted"
+- id: "technique.quotient_group_charge_lattice_identification"
+  label: "Identify the superextremal sublattice as the charge lattice of G/K"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "The superextremal charges are organized as the weight lattice of a quotient gauge group G/K with K a subgroup of the center. Use it when a heterotic orbifold spectrum looks sparse and you need the right global gauge-group interpretation."
+  status: "asserted"
+- id: "technique.r_squared_stabilized_singular_kinetic_theory"
+  label: "R^2-stabilized singular kinetic theory"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Add an alpha R^2 term and impose sound-speed and scaling inequalities so the higher-derivative sector is controlled by the healthy R^2 piece rather than by the singular kinetic operator. Use it when a seemingly dangerous low-curvature singularity threatens to destabilize gravity."
+  status: "asserted"
+- id: "technique.radiative_meson_decay_recasting"
+  label: "Recasting radiative meson decays into dark photon searches"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Replace an ordinary photon in rare meson decays such as phi to eta gamma by an on-shell dark photon and rescale by kinetic mixing and transition form factors. This converts precision meson factories into dark-sector experiments with minimal extra model dependence."
+  status: "asserted"
+- id: "technique.radion_bounce_across_thin_and_thick_wall"
+  label: "Radion bounce across thin- and thick-wall regimes"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Compute nucleation in the radion EFT using both thin-wall estimates and fully numerical thick-wall bounces, rather than trusting one regime everywhere. Use it when supercooling and IR effects can move the transition away from the thin-wall limit."
+  status: "asserted"
+- id: "technique.radion_bounce_regime_scan"
+  label: "Radion bounce regime scan"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Compare thin-wall, thick-wall, thermal O(3), and quantum O(4) bounces instead of assuming a single nucleation regime. Use it when supercooling is large and the correct bounce symmetry is not obvious."
+  status: "asserted"
+- id: "technique.radion_dilaton_identification"
+  label: "Radion-dilaton identification"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Dimensional-reduce fluctuating AdS3 wedge/Karch-Randall branes and identify the radion as the JT dilaton. Use it when a braneworld with moving branes needs a low-energy 2D gravity description."
+  status: "asserted"
+- id: "technique.radion_higgs_mixing_diagonalization"
+  label: "Radion-Higgs kinetic and mass mixing diagonalization"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "After electroweak symmetry breaking, diagonalize the radion-Higgs system by field redefinitions that remove kinetic mixing and expose the physical scalar eigenstates. This identifies the radion couplings as renormalizable Higgs-like interactions scaled by the warped cutoff."
+  status: "asserted"
+- id: "technique.radion_legendre_transform_mode"
+  label: "Identify the radion as the Legendre-transform field of the deforming operator"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Minimize the CFT energy at fixed operator expectation value and show that the radion is the Legendre-transform variable conjugate to the deformation source. This gives a clean functional interpretation of why moving the IR brane corresponds to changing the operator vev."
+  status: "asserted"
+- id: "technique.radion_mass_from_effective_potential"
+  label: "Radion mass and stability from the effective potential"
+  knowledge_kind: "method"
+  granularity_level: "intermediate"
+  composite: false
+  mastery_modes_supported:
+    - "recognize"
+    - "use"
+  summary: "Extract the radion mass and its sign by expanding the effective potential about constant-radion solutions, paying attention to which extremum corresponds to the physical two-brane setup. Use when detuned branes or de Sitter slices make naive mass-sign arguments misleading."
+  status: "asserted"

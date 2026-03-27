@@ -1,0 +1,165 @@
+# Hand-authored node records for the math-methods-foundations batch.
+- id: technique.saddle_point_steepest_descent
+  label: Saddle-point and steepest-descent method
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Locate critical points of an integral or action, deform onto steepest-descent contours through them, and expand the resulting Gaussian and higher-order fluctuations to extract controlled asymptotics.
+  status: asserted
+
+- id: technique.asymptotic_expansion_toolkit
+  label: Asymptotic expansion toolkit
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Organize solutions in small or large parameters using dominant balance, matched asymptotic expansions, boundary layers, and uniform approximations across overlapping regimes.
+  status: asserted
+
+- id: technique.bessel_functions
+  label: Bessel-function methods
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Recognize Bessel or modified-Bessel equations, use recurrence relations, orthogonality, integral representations, and large-argument asymptotics, and apply them to radial and cylindrical problems.
+  status: asserted
+
+- id: technique.hypergeometric_functions
+  label: Hypergeometric-function methods
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Reduce differential equations or integrals to Gauss or confluent hypergeometric form and use series, connection formulas, and integral representations to continue solutions between regimes.
+  status: asserted
+
+- id: technique.gamma_beta_functions
+  label: Gamma and Beta function methods
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Use Gamma and Beta function identities, analytic continuation, reflection and duplication formulas, and Stirling asymptotics to normalize integrals, simplify special functions, and control large-parameter behavior.
+  status: asserted
+
+- id: technique.airy_functions
+  label: Airy-function methods
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Use Airy Ai and Bi as the universal turning-point solutions that uniformly interpolate between oscillatory and exponential WKB regimes near a simple zero of the effective potential.
+  status: asserted
+
+- id: technique.laplace_transform_method
+  label: Laplace transform method
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Transform initial-value, convolution, or nonlocal evolution problems into algebraic relations or local differential equations in Laplace space, then recover answers by contour inversion.
+  status: asserted
+
+- id: technique.mellin_transform_method
+  label: Mellin transform method
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Use Mellin transforms to convert scaling laws and multiplicative convolutions into products, making moment-space evolution, asymptotic inversion, and pole analysis systematic.
+  status: asserted
+
+- id: technique.index_notation_calculus
+  label: Index-notation calculus
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Manipulate tensor equations with Einstein summation, index placement, symmetrization and antisymmetrization, metric contractions, epsilon tensors, and trace subtraction without dropping covariance.
+  status: asserted
+
+- id: technique.two_component_spinor_calculus
+  label: Two-component spinor calculus
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Work directly with Weyl spinors, sigma and bar-sigma matrices, epsilon tensors, bilinears, and Fierz identities so chiral fermion calculations stay compact and manifestly Lorentz covariant.
+  status: asserted
+
+- id: technique.weyl_character_formula
+  label: Weyl character formula
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Compute irreducible characters from highest-weight data by the alternating Weyl-group sum, making multiplicities, dimension formulas, and branching checks accessible without constructing states explicitly.
+  status: asserted
+
+- id: technique.littlewood_richardson_rule
+  label: Littlewood-Richardson rule
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Decompose tensor products by counting semistandard tableau fillings that obey the Littlewood-Richardson rule, turning Young-diagram combinatorics into multiplicities of irreducible representations.
+  status: asserted
+
+- id: technique.principal_bundle_gauge_theory
+  label: Principal-bundle gauge theory
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Formulate gauge fields as connections on principal bundles with transition functions, associated bundles, curvature, and holonomy, so local gauge data and global topology are treated in one framework.
+  status: asserted
+
+- id: technique.characteristic_classes
+  label: Characteristic classes
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Extract Chern, Pontryagin, Euler, and related classes from curvature forms and transgression formulas, relating bundle geometry to topological charges, anomaly polynomials, and Chern-Simons terms.
+  status: asserted
+
+- id: technique.morse_theory_instantons
+  label: Morse-theoretic instanton analysis
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Analyze instanton sectors by Morse functions, gradient flow, Lefschetz thimbles, and Morse index so saddle contributions and fluctuation directions are organized geometrically rather than ad hoc.
+  status: asserted

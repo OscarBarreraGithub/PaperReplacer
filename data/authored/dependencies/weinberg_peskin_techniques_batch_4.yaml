@@ -1,0 +1,948 @@
+- from: sm.ssb.goldstone_theorem
+  to: technique.pseudo_goldstone_mass_from_double_commutator
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite goldstone_theorem_from_effective_potential aligns with existing node sm.ssb.goldstone_theorem, so it is a reasonable upstream prerequisite for Pseudo-Goldstone Mass from Double Commutators.
+  failure_mode_if_absent: Cannot derive Pseudo-Goldstone Mass from Double Commutators cleanly because the prerequisite goldstone_theorem_from_effective_potential is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: eft.power_counting
+  to: technique.relevant_irrelevant_fixed_surface_analysis
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite low_energy_derivative_power_counting aligns with existing node eft.power_counting, so it is a reasonable upstream prerequisite for Relevant-irrelevant fixed-surface analysis.
+  failure_mode_if_absent: Cannot apply Relevant-irrelevant fixed-surface analysis cleanly because the prerequisite low_energy_derivative_power_counting is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.wilsonian_renormalization_group
+  to: technique.relevant_irrelevant_fixed_surface_analysis
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite wilsonian_floating_cutoff_renormalization_group aligns with existing node qft.wilsonian_renormalization_group, so it is a reasonable upstream prerequisite for Relevant-irrelevant fixed-surface analysis.
+  failure_mode_if_absent: Cannot derive Relevant-irrelevant fixed-surface analysis cleanly because the prerequisite wilsonian_floating_cutoff_renormalization_group is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.superficial_degree_of_divergence
+  to: technique.renormalizable_operator_classification
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite superficial_degree_of_divergence_power_counting aligns with existing node qft.superficial_degree_of_divergence, so it is a reasonable upstream prerequisite for Renormalizable operator classification.
+  failure_mode_if_absent: Cannot derive Renormalizable operator classification cleanly because the prerequisite superficial_degree_of_divergence_power_counting is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.gauge_fixing
+  to: technique.renormalizable_r_xi_gauge_fixing
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite gauge fixing aligns with existing node qft.gauge_fixing, so it is a reasonable upstream prerequisite for Use renormalizable R_xi gauges in the broken phase.
+  failure_mode_if_absent: Cannot apply Use renormalizable R_xi gauges in the broken phase cleanly because the prerequisite gauge fixing is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: eft.power_counting
+  to: technique.renormalizable_r_xi_gauge_fixing
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite power counting aligns with existing node eft.power_counting, so it is a reasonable upstream prerequisite for Use renormalizable R_xi gauges in the broken phase.
+  failure_mode_if_absent: Cannot apply Use renormalizable R_xi gauges in the broken phase cleanly because the prerequisite power counting is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: sm.higgs.higgs_mechanism
+  to: technique.renormalizable_r_xi_gauge_fixing
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite broken gauge symmetry aligns with existing node sm.higgs.higgs_mechanism, so it is a reasonable upstream prerequisite for Use renormalizable R_xi gauges in the broken phase.
+  failure_mode_if_absent: Cannot apply Use renormalizable R_xi gauges in the broken phase cleanly because the prerequisite broken gauge symmetry is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: technique.real_vs_pseudoreal_representation_diagnosis
+  to: technique.representation_reality_test_for_vanishing_anomaly
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite real and pseudoreal representations aligns with existing node technique.real_vs_pseudoreal_representation_diagnosis, so it is a reasonable upstream prerequisite for Use real or pseudoreal representations to rule out anomalies.
+  failure_mode_if_absent: Cannot derive Use real or pseudoreal representations to rule out anomalies cleanly because the prerequisite real and pseudoreal representations is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: technique.reality_intertwiner_test_via_schur_lemma
+  to: technique.representation_reality_test_for_vanishing_anomaly
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite Schur's lemma aligns with existing node technique.reality_intertwiner_test_via_schur_lemma, so it is a reasonable upstream prerequisite for Use real or pseudoreal representations to rule out anomalies.
+  failure_mode_if_absent: Cannot derive Use real or pseudoreal representations to rule out anomalies cleanly because the prerequisite Schur's lemma is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: technique.anomaly_mediated_soft_terms
+  to: technique.rg_spurion_method_for_gaugino_and_A_B_terms
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite anomaly_mediated_soft_terms_via_X_superfield aligns with existing node technique.anomaly_mediated_soft_terms, so it is a reasonable upstream prerequisite for RG spurion method for gaugino and A/B terms.
+  failure_mode_if_absent: Cannot derive RG spurion method for gaugino and A/B terms cleanly because the prerequisite anomaly_mediated_soft_terms_via_X_superfield is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: classical_fields.noether_current
+  to: technique.rotational_noether_charge_for_spin_extraction
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite Noether current construction aligns with existing node classical_fields.noether_current, so it is a reasonable upstream prerequisite for Rotational Noether charge for spin extraction.
+  failure_mode_if_absent: Cannot derive Rotational Noether charge for spin extraction cleanly because the prerequisite Noether current construction is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.free_dirac_field
+  to: technique.rotational_noether_charge_for_spin_extraction
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite Quantized Dirac field aligns with existing node qft.free_dirac_field, so it is a reasonable upstream prerequisite for Rotational Noether charge for spin extraction.
+  failure_mode_if_absent: Cannot apply Rotational Noether charge for spin extraction cleanly because the prerequisite Quantized Dirac field is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.running_coupling
+  to: technique.running_coupling_estimate_of_instanton_weight
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite running coupling aligns with existing node qft.running_coupling, so it is a reasonable upstream prerequisite for Estimate instanton weights with the running coupling.
+  failure_mode_if_absent: Cannot apply Estimate instanton weights with the running coupling cleanly because the prerequisite running coupling is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.callan_symanzik_equation
+  to: technique.scheme_invariance_of_leading_beta_coefficients
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite callan_symanzik_running_coupling_equation aligns with existing node qft.callan_symanzik_equation, so it is a reasonable upstream prerequisite for Scheme Invariance of Leading Beta Coefficients.
+  failure_mode_if_absent: Cannot derive Scheme Invariance of Leading Beta Coefficients cleanly because the prerequisite callan_symanzik_running_coupling_equation is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: technique.supergravity_scalar_potential_and_auxiliary_elimination
+  to: technique.second_version_moduli_mediation
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists supergravity_scalar_potential_and_auxiliary_elimination as an explicit prerequisite for Second version with modular-field mediation; the authored node technique.supergravity_scalar_potential_and_auxiliary_elimination is the exact graph node that supplies that ingredient.
+  failure_mode_if_absent: Cannot derive Second version with modular-field mediation cleanly because the prerequisite supergravity_scalar_potential_and_auxiliary_elimination is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: technique.theta_angle_holomorphic_coupling
+  to: technique.seiberg_holomorphy_nonrenormalization_proof
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists theta_angle_holomorphic_coupling as an explicit prerequisite for Seiberg-Holomorphy Non-Renormalization Proof; the authored node technique.theta_angle_holomorphic_coupling is the exact graph node that supplies that ingredient.
+  failure_mode_if_absent: Cannot derive Seiberg-Holomorphy Non-Renormalization Proof cleanly because the prerequisite theta_angle_holomorphic_coupling is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qcd.topological_charge
+  to: technique.self_duality_and_bpst_instanton_construction
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite Pontryagin number aligns with existing node qcd.topological_charge, so it is a reasonable upstream prerequisite for Use self-duality to construct BPST instantons.
+  failure_mode_if_absent: Cannot apply Use self-duality to construct BPST instantons cleanly because the prerequisite Pontryagin number is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: sm.precision.gauge_boson_self_energy
+  to: technique.self_energy_matching_to_observables
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite vacuum_polarization_tensor_decomposition aligns with existing node sm.precision.gauge_boson_self_energy, so it is a reasonable upstream prerequisite for Match self-energies to electroweak observables.
+  failure_mode_if_absent: Cannot apply Match self-energies to electroweak observables cleanly because the prerequisite vacuum_polarization_tensor_decomposition is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: sm.precision.effective_weak_mixing_angle
+  to: technique.self_energy_matching_to_observables
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite precision_sin2thetaw_scheme_definition aligns with existing node sm.precision.effective_weak_mixing_angle, so it is a reasonable upstream prerequisite for Match self-energies to electroweak observables.
+  failure_mode_if_absent: Cannot apply Match self-energies to electroweak observables cleanly because the prerequisite precision_sin2thetaw_scheme_definition is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.normal_ordering
+  to: technique.single_delta_hamiltonian_criterion
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite normal_order_expansion_of_arbitrary_operators aligns with existing node qft.normal_ordering, so it is a reasonable upstream prerequisite for Single-Delta Hamiltonian Criterion.
+  failure_mode_if_absent: Cannot apply Single-Delta Hamiltonian Criterion cleanly because the prerequisite normal_order_expansion_of_arbitrary_operators is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.cluster_decomposition_principle
+  to: technique.single_delta_hamiltonian_criterion
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite momentum_space_cluster_test aligns with existing node qft.cluster_decomposition_principle, so it is a reasonable upstream prerequisite for Single-Delta Hamiltonian Criterion.
+  failure_mode_if_absent: Cannot derive Single-Delta Hamiltonian Criterion cleanly because the prerequisite momentum_space_cluster_test is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: sm.ewbreak.fermion_mass_generation
+  to: technique.singular_value_decomposition_of_yukawas
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite yukawa_mass_generation aligns with existing node sm.ewbreak.fermion_mass_generation, so it is a reasonable upstream prerequisite for Singular-value decomposition of Yukawa matrices.
+  failure_mode_if_absent: Cannot apply Singular-value decomposition of Yukawa matrices cleanly because the prerequisite yukawa_mass_generation is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.wigner_classification
+  to: technique.soft_current_spin_bound
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite little_group_classification_of_massless_states aligns with existing node qft.wigner_classification, so it is a reasonable upstream prerequisite for Soft-current spin bound.
+  failure_mode_if_absent: Cannot derive Soft-current spin bound cleanly because the prerequisite little_group_classification_of_massless_states is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.feynman_rules
+  to: technique.spin_and_polarization_density_matrix_methods
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite spinor_qed_feynman_rules aligns with existing node qft.feynman_rules, so it is a reasonable upstream prerequisite for Spin and polarization density matrix methods.
+  failure_mode_if_absent: Cannot apply Spin and polarization density matrix methods cleanly because the prerequisite spinor_qed_feynman_rules is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.covariant_derivative
+  to: technique.spin_orbit_and_thomas_correction
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite minimal_electromagnetic_coupling aligns with existing node qft.covariant_derivative, so it is a reasonable upstream prerequisite for Spin-Orbit and Thomas Correction.
+  failure_mode_if_absent: Cannot apply Spin-Orbit and Thomas Correction cleanly because the prerequisite minimal_electromagnetic_coupling is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.dirac_equation
+  to: technique.spin_orbit_and_thomas_correction
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite dirac_linearization_of_dispersion aligns with existing node qft.dirac_equation, so it is a reasonable upstream prerequisite for Spin-Orbit and Thomas Correction.
+  failure_mode_if_absent: Cannot apply Spin-Orbit and Thomas Correction cleanly because the prerequisite dirac_linearization_of_dispersion is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.dirac_spinor
+  to: technique.spin_sum_completeness_relations
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite Explicit u and v spinors aligns with existing node qft.dirac_spinor, so it is a reasonable upstream prerequisite for Spin-sum completeness relations.
+  failure_mode_if_absent: Cannot apply Spin-sum completeness relations cleanly because the prerequisite Explicit u and v spinors is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.one_particle_state
+  to: technique.spin_sum_completeness_relations
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite Lorentz-invariant normalization aligns with existing node qft.one_particle_state, so it is a reasonable upstream prerequisite for Spin-sum completeness relations.
+  failure_mode_if_absent: Cannot apply Spin-sum completeness relations cleanly because the prerequisite Lorentz-invariant normalization is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.lorentz_group_representation
+  to: technique.spin_three_halves_propagator_construction
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite representation_theory_of_lorentz_group aligns with existing node qft.lorentz_group_representation, so it is a reasonable upstream prerequisite for Spin-3/2 propagator construction.
+  failure_mode_if_absent: Cannot apply Spin-3/2 propagator construction cleanly because the prerequisite representation_theory_of_lorentz_group is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: sm.gauge_anomaly
+  to: technique.standard_model_anomaly_cancellation_arithmetic
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite anomaly traces aligns with existing node sm.gauge_anomaly, so it is a reasonable upstream prerequisite for Check Standard Model anomaly cancellation explicitly.
+  failure_mode_if_absent: Cannot apply Check Standard Model anomaly cancellation explicitly cleanly because the prerequisite anomaly traces is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qcd.confinement
+  to: technique.string_flux_tube_modeling
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite strong_coupling_expansion_for_confinement aligns with existing node qcd.confinement, so it is a reasonable upstream prerequisite for String or flux-tube modeling of confinement.
+  failure_mode_if_absent: Cannot apply String or flux-tube modeling of confinement cleanly because the prerequisite strong_coupling_expansion_for_confinement is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.superficial_degree_of_divergence
+  to: technique.subgraph_convergence_criterion
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite superficial_degree_of_divergence_power_counting aligns with existing node qft.superficial_degree_of_divergence, so it is a reasonable upstream prerequisite for Subgraph convergence criterion.
+  failure_mode_if_absent: Cannot derive Subgraph convergence criterion cleanly because the prerequisite superficial_degree_of_divergence_power_counting is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.forward_scattering_amplitude
+  to: technique.subtracted_dispersion_relations
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite causal_analyticity_of_forward_amplitudes aligns with existing node qft.forward_scattering_amplitude, so it is a reasonable upstream prerequisite for Subtracted dispersion relations.
+  failure_mode_if_absent: Cannot apply Subtracted dispersion relations cleanly because the prerequisite causal_analyticity_of_forward_amplitudes is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.optical_theorem
+  to: technique.subtracted_dispersion_relations
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite optical_theorem_cross_section_relation aligns with existing node qft.optical_theorem, so it is a reasonable upstream prerequisite for Subtracted dispersion relations.
+  failure_mode_if_absent: Cannot derive Subtracted dispersion relations cleanly because the prerequisite optical_theorem_cross_section_relation is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: complex_analysis.residue_theorem
+  to: technique.subtracted_dispersion_relations
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite residue_theorem aligns with existing node complex_analysis.residue_theorem, so it is a reasonable upstream prerequisite for Subtracted dispersion relations.
+  failure_mode_if_absent: Cannot derive Subtracted dispersion relations cleanly because the prerequisite residue_theorem is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qm.commutator
+  to: technique.super_Jacobi_central_charge_proof
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite double_commutator_proof_of_q_p_commutation aligns with existing node qm.commutator, so it is a reasonable upstream prerequisite for Super-Jacobi proof of central charges.
+  failure_mode_if_absent: Cannot derive Super-Jacobi proof of central charges cleanly because the prerequisite double_commutator_proof_of_q_p_commutation is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: math.lie_algebra
+  to: technique.super_jacobi_identity_method
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite graded_lie_algebra_formalism aligns with existing node math.lie_algebra, so it is a reasonable upstream prerequisite for Super-Jacobi Identity Method.
+  failure_mode_if_absent: Cannot derive Super-Jacobi Identity Method cleanly because the prerequisite graded_lie_algebra_formalism is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.gauge_invariance
+  to: technique.superconducting_goldstone_eft
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite compact U(1) symmetry aligns with existing node qft.gauge_invariance, so it is a reasonable upstream prerequisite for Describe superconductivity with a Goldstone-phase EFT.
+  failure_mode_if_absent: Cannot apply Describe superconductivity with a Goldstone-phase EFT cleanly because the prerequisite compact U(1) symmetry is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: sm.ssb.goldstone_boson
+  to: technique.superconducting_goldstone_eft
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite Goldstone modes aligns with existing node sm.ssb.goldstone_boson, so it is a reasonable upstream prerequisite for Describe superconductivity with a Goldstone-phase EFT.
+  failure_mode_if_absent: Cannot apply Describe superconductivity with a Goldstone-phase EFT cleanly because the prerequisite Goldstone modes is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.effective_action
+  to: technique.superconducting_goldstone_eft
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite effective action for conserved currents aligns with existing node qft.effective_action, so it is a reasonable upstream prerequisite for Describe superconductivity with a Goldstone-phase EFT.
+  failure_mode_if_absent: Cannot derive Describe superconductivity with a Goldstone-phase EFT cleanly because the prerequisite effective action for conserved currents is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: technique.superfield_superspace_formalism
+  to: technique.supercovariant_derivative_formalism
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists superfield_superspace_formalism as an explicit prerequisite for Supercovariant Derivative Formalism; the authored node technique.superfield_superspace_formalism is the exact graph node that supplies that ingredient.
+  failure_mode_if_absent: Cannot derive Supercovariant Derivative Formalism cleanly because the prerequisite superfield_superspace_formalism is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: technique.superfield_superspace_formalism
+  to: technique.superspace_gauge_covariantization_of_chiral_matter
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists superfield_superspace_formalism as an explicit prerequisite for Superspace Gauge Covariantization of Chiral Matter; the authored node technique.superfield_superspace_formalism is the exact graph node that supplies that ingredient.
+  failure_mode_if_absent: Cannot derive Superspace Gauge Covariantization of Chiral Matter cleanly because the prerequisite superfield_superspace_formalism is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: technique.supercovariant_derivative_formalism
+  to: technique.superspace_variational_principle
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists supercovariant_derivative_formalism as an explicit prerequisite for Superspace Variational Principle; the authored node technique.supercovariant_derivative_formalism is the exact graph node that supplies that ingredient.
+  failure_mode_if_absent: Cannot derive Superspace Variational Principle cleanly because the prerequisite supercovariant_derivative_formalism is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.contraction
+  to: technique.symmetry_factor_counting
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite Wick contractions aligns with existing node qft.contraction, so it is a reasonable upstream prerequisite for Symmetry-factor counting.
+  failure_mode_if_absent: Cannot apply Symmetry-factor counting cleanly because the prerequisite Wick contractions is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: sm.ssb.vacuum_expectation_value
+  to: technique.symmetry_preserving_counterterms
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite field_shift_around_vacuum aligns with existing node sm.ssb.vacuum_expectation_value, so it is a reasonable upstream prerequisite for Symmetry-Preserving Counterterms.
+  failure_mode_if_absent: Cannot apply Symmetry-Preserving Counterterms cleanly because the prerequisite field_shift_around_vacuum is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.renormalized_perturbation_theory
+  to: technique.symmetry_preserving_counterterms
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite renormalized_perturbation_theory aligns with existing node qft.renormalized_perturbation_theory, so it is a reasonable upstream prerequisite for Symmetry-Preserving Counterterms.
+  failure_mode_if_absent: Cannot apply Symmetry-Preserving Counterterms cleanly because the prerequisite renormalized_perturbation_theory is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: technique.weighted_witten_index
+  to: technique.symmetry_projected_index
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists weighted_witten_index as an explicit prerequisite for Symmetry-projected index; the authored node technique.weighted_witten_index is the exact graph node that supplies that ingredient.
+  failure_mode_if_absent: Cannot derive Symmetry-projected index cleanly because the prerequisite weighted_witten_index is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.lippmann_schwinger_equation
+  to: technique.t_matrix_and_born_approximation
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite lippmann_schwinger_equations aligns with existing node qft.lippmann_schwinger_equation, so it is a reasonable upstream prerequisite for T-Matrix Reduction and Born Approximation.
+  failure_mode_if_absent: Cannot derive T-Matrix Reduction and Born Approximation cleanly because the prerequisite lippmann_schwinger_equations is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.s_matrix_unitarity
+  to: technique.t_matrix_and_born_approximation
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite s_matrix_definition_and_unitarity aligns with existing node qft.s_matrix_unitarity, so it is a reasonable upstream prerequisite for T-Matrix Reduction and Born Approximation.
+  failure_mode_if_absent: Cannot apply T-Matrix Reduction and Born Approximation cleanly because the prerequisite s_matrix_definition_and_unitarity is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.partial_wave_expansion
+  to: technique.threshold_analyticity_analysis
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite partial_wave_expansion aligns with existing node qft.partial_wave_expansion, so it is a reasonable upstream prerequisite for Threshold Analyticity Analysis.
+  failure_mode_if_absent: Cannot derive Threshold Analyticity Analysis cleanly because the prerequisite partial_wave_expansion is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: technique.symmetry_preserving_counterterms
+  to: technique.threshold_renormalization_in_broken_phase
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists symmetry_preserving_counterterms as an explicit prerequisite for Broken-Phase Threshold Renormalization; the authored node technique.symmetry_preserving_counterterms is the exact graph node that supplies that ingredient.
+  failure_mode_if_absent: Cannot derive Broken-Phase Threshold Renormalization cleanly because the prerequisite symmetry_preserving_counterterms is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.homotopy_group
+  to: technique.topological_surface_integral_for_magnetic_charge
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite winding number aligns with existing node qft.homotopy_group, so it is a reasonable upstream prerequisite for Compute magnetic charge as a surface integral of Higgs winding.
+  failure_mode_if_absent: Cannot apply Compute magnetic charge as a surface integral of Higgs winding cleanly because the prerequisite winding number is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.off_shell
+  to: technique.translation_invariance_for_off_shell_amplitudes
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite off_shell_symmetry_extension aligns with existing node qft.off_shell, so it is a reasonable upstream prerequisite for Translation invariance for off-shell amplitudes.
+  failure_mode_if_absent: Cannot apply Translation invariance for off-shell amplitudes cleanly because the prerequisite off_shell_symmetry_extension is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.effective_action
+  to: technique.tree_graph_resummation_by_stationary_phase
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite connected_and_1pi_legendre_transform aligns with existing node qft.effective_action, so it is a reasonable upstream prerequisite for Tree-graph resummation by stationary phase.
+  failure_mode_if_absent: Cannot derive Tree-graph resummation by stationary phase cleanly because the prerequisite connected_and_1pi_legendre_transform is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.feynman_rules
+  to: technique.triangle_diagram_anomaly_calculation
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite one-loop Feynman rules aligns with existing node qft.feynman_rules, so it is a reasonable upstream prerequisite for Compute the anomaly directly from triangle diagrams.
+  failure_mode_if_absent: Cannot apply Compute the anomaly directly from triangle diagrams cleanly because the prerequisite one-loop Feynman rules is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.dirac_algebra
+  to: technique.triangle_diagram_anomaly_calculation
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite Dirac traces aligns with existing node qft.dirac_algebra, so it is a reasonable upstream prerequisite for Compute the anomaly directly from triangle diagrams.
+  failure_mode_if_absent: Cannot derive Compute the anomaly directly from triangle diagrams cleanly because the prerequisite Dirac traces is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: technique.self_energy_matching_to_observables
+  to: technique.ultraviolet_finiteness_of_natural_relation_differences
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists self_energy_matching_to_observables as an explicit prerequisite for Ultraviolet finiteness of natural-relation differences; the authored node technique.self_energy_matching_to_observables is the exact graph node that supplies that ingredient.
+  failure_mode_if_absent: Cannot derive Ultraviolet finiteness of natural-relation differences cleanly because the prerequisite self_energy_matching_to_observables is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.gauge_invariance
+  to: technique.vector_current_preserving_bardeen_scheme
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite unbroken gauge symmetry aligns with existing node qft.gauge_invariance, so it is a reasonable upstream prerequisite for Choose the Bardeen scheme that preserves vector currents.
+  failure_mode_if_absent: Cannot apply Choose the Bardeen scheme that preserves vector currents cleanly because the prerequisite unbroken gauge symmetry is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.counterterm_lagrangian
+  to: technique.vector_current_preserving_bardeen_scheme
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite local counterterms aligns with existing node qft.counterterm_lagrangian, so it is a reasonable upstream prerequisite for Choose the Bardeen scheme that preserves vector currents.
+  failure_mode_if_absent: Cannot apply Choose the Bardeen scheme that preserves vector currents cleanly because the prerequisite local counterterms is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.covariant_derivative
+  to: technique.vector_mass_matrix_from_vev
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite covariant derivatives aligns with existing node qft.covariant_derivative, so it is a reasonable upstream prerequisite for Derive the gauge-boson mass matrix from the scalar vev.
+  failure_mode_if_absent: Cannot apply Derive the gauge-boson mass matrix from the scalar vev cleanly because the prerequisite covariant derivatives is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: technique.superspace_gauge_covariantization_of_chiral_matter
+  to: technique.vector_superfield_exponential_connection
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists superspace_gauge_covariantization_of_chiral_matter as an explicit prerequisite for Vector-Superfield Exponential Connection; the authored node technique.superspace_gauge_covariantization_of_chiral_matter is the exact graph node that supplies that ingredient.
+  failure_mode_if_absent: Cannot derive Vector-Superfield Exponential Connection cleanly because the prerequisite superspace_gauge_covariantization_of_chiral_matter is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.ward_takahashi_identity
+  to: technique.ward_identity_constraints_on_divergences
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite ward_identity_gauge_invariance_constraint aligns with existing node qft.ward_takahashi_identity, so it is a reasonable upstream prerequisite for Ward-identity constraints on divergent structures.
+  failure_mode_if_absent: Cannot apply Ward-identity constraints on divergent structures cleanly because the prerequisite ward_identity_gauge_invariance_constraint is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: technique.weak_field_tetrad_expansion
+  to: technique.weak_field_supergravity_action
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists weak_field_tetrad_expansion as an explicit prerequisite for Weak-field supergravity action; the authored node technique.weak_field_tetrad_expansion is the exact graph node that supplies that ingredient.
+  failure_mode_if_absent: Cannot derive Weak-field supergravity action cleanly because the prerequisite weak_field_tetrad_expansion is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: math.operator_basics.eigenvalues_and_eigenvectors
+  to: technique.weak_mixing_angle_diagonalization
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite mass-matrix diagonalization aligns with existing node math.operator_basics.eigenvalues_and_eigenvectors, so it is a reasonable upstream prerequisite for Diagonalize the neutral electroweak gauge sector.
+  failure_mode_if_absent: Cannot apply Diagonalize the neutral electroweak gauge sector cleanly because the prerequisite mass-matrix diagonalization is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: sm.ewbreak.electroweak_symmetry
+  to: technique.weak_mixing_angle_diagonalization
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite electroweak gauge structure aligns with existing node sm.ewbreak.electroweak_symmetry, so it is a reasonable upstream prerequisite for Diagonalize the neutral electroweak gauge sector.
+  failure_mode_if_absent: Cannot apply Diagonalize the neutral electroweak gauge sector cleanly because the prerequisite electroweak gauge structure is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: math.lie_algebra
+  to: technique.wess_zumino_consistency_conditions
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite local symmetry generators aligns with existing node math.lie_algebra, so it is a reasonable upstream prerequisite for Impose the Wess-Zumino consistency conditions.
+  failure_mode_if_absent: Cannot derive Impose the Wess-Zumino consistency conditions cleanly because the prerequisite local symmetry generators is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.background_field_method
+  to: technique.wess_zumino_consistency_conditions
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite effective action in background gauge fields aligns with existing node qft.background_field_method, so it is a reasonable upstream prerequisite for Impose the Wess-Zumino consistency conditions.
+  failure_mode_if_absent: Cannot apply Impose the Wess-Zumino consistency conditions cleanly because the prerequisite effective action in background gauge fields is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.dirac_spinor
+  to: technique.weyl_chiral_decomposition
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite Dirac representation aligns with existing node qft.dirac_spinor, so it is a reasonable upstream prerequisite for Weyl chiral decomposition.
+  failure_mode_if_absent: Cannot apply Weyl chiral decomposition cleanly because the prerequisite Dirac representation is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.dirac_algebra
+  to: technique.weyl_chiral_decomposition
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite Gamma-matrix algebra aligns with existing node qft.dirac_algebra, so it is a reasonable upstream prerequisite for Weyl chiral decomposition.
+  failure_mode_if_absent: Cannot derive Weyl chiral decomposition cleanly because the prerequisite Gamma-matrix algebra is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.one_loop_effective_action
+  to: technique.wick_rotation_and_dimensional_regularization_of_background_integrals
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite constant_background_field_one_loop_method aligns with existing node qft.one_loop_effective_action, so it is a reasonable upstream prerequisite for Wick rotation and dimensional regularization of background integrals.
+  failure_mode_if_absent: Cannot derive Wick rotation and dimensional regularization of background integrals cleanly because the prerequisite constant_background_field_one_loop_method is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.wigner_classification
+  to: technique.wigner_rotation_construction
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite induced_representation_method aligns with existing node qft.wigner_classification, so it is a reasonable upstream prerequisite for Wigner Rotation Construction.
+  failure_mode_if_absent: Cannot derive Wigner Rotation Construction cleanly because the prerequisite induced_representation_method is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.canonical_quantization
+  to: technique.yukawa_exchange_force
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite field_action_and_canonical_quantization aligns with existing node qft.canonical_quantization, so it is a reasonable upstream prerequisite for Yukawa Exchange Force.
+  failure_mode_if_absent: Cannot apply Yukawa Exchange Force cleanly because the prerequisite field_action_and_canonical_quantization is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: sm.ewbreak.yukawa_coupling
+  to: technique.yukawa_matrix_bidiagonalization_ckm
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite Yukawa matrices aligns with existing node sm.ewbreak.yukawa_coupling, so it is a reasonable upstream prerequisite for Diagonalize Yukawa matrices and isolate CKM mixing.
+  failure_mode_if_absent: Cannot apply Diagonalize Yukawa matrices and isolate CKM mixing cleanly because the prerequisite Yukawa matrices is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: sm.ssb.goldstone_theorem
+  to: technique.zero_momentum_goldstone_constraints
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite goldstone_theorem_from_effective_potential aligns with existing node sm.ssb.goldstone_theorem, so it is a reasonable upstream prerequisite for Zero-Momentum Goldstone Constraints.
+  failure_mode_if_absent: Cannot derive Zero-Momentum Goldstone Constraints cleanly because the prerequisite goldstone_theorem_from_effective_potential is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.ward_takahashi_identity
+  to: technique.zero_momentum_vertex_normalization
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite ward_takahashi_identity aligns with existing node qft.ward_takahashi_identity, so it is a reasonable upstream prerequisite for Zero-momentum vertex normalization.
+  failure_mode_if_absent: Cannot apply Zero-momentum vertex normalization cleanly because the prerequisite ward_takahashi_identity is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: technique.threshold_renormalization_in_broken_phase
+  to: technique.zeroth_order_natural_relations
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists threshold_renormalization_in_broken_phase as an explicit prerequisite for Zeroth-Order Natural Relations; the authored node technique.threshold_renormalization_in_broken_phase is the exact graph node that supplies that ingredient.
+  failure_mode_if_absent: Cannot derive Zeroth-Order Natural Relations cleanly because the prerequisite threshold_renormalization_in_broken_phase is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.brst_symmetry
+  to: technique.zinn_justin_equation
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite brst_symmetry_with_auxiliary_field aligns with existing node qft.brst_symmetry, so it is a reasonable upstream prerequisite for Zinn-Justin equation.
+  failure_mode_if_absent: Cannot apply Zinn-Justin equation cleanly because the prerequisite brst_symmetry_with_auxiliary_field is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.effective_action
+  to: technique.zinn_justin_equation
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite connected_and_1pi_legendre_transform aligns with existing node qft.effective_action, so it is a reasonable upstream prerequisite for Zinn-Justin equation.
+  failure_mode_if_absent: Cannot derive Zinn-Justin equation cleanly because the prerequisite connected_and_1pi_legendre_transform is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.slavnov_taylor_identity
+  to: technique.zinn_justin_equation
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch prerequisite slavnov_taylor_identities_for_effective_action aligns with existing node qft.slavnov_taylor_identity, so it is a reasonable upstream prerequisite for Zinn-Justin equation.
+  failure_mode_if_absent: Cannot derive Zinn-Justin equation cleanly because the prerequisite slavnov_taylor_identities_for_effective_action is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted

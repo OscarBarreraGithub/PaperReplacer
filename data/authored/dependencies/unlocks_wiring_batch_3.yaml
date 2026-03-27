@@ -1,0 +1,740 @@
+- from: technique.algebraic_letter_construction
+  to: technique.alpha_positivity_constraints
+  relation_type: requires_for_use
+  necessity: typical
+  confidence: 0.75
+  rationale: "Systematic Construction of Algebraic Symbol Letters from Singularities is needed for Alpha-Positivity Constraints on Symbol Letters because it provides a candidate set of algebraic symbol letters before positivity can prune them."
+  failure_mode_if_absent: "Without Systematic Construction of Algebraic Symbol Letters from Singularities, Alpha-Positivity Constraints on Symbol Letters loses a candidate set of algebraic symbol letters before positivity can prune them and the downstream method has to assume that step instead of computing it cleanly."
+  evidence:
+    - type: expert_claim
+      source_ref: unlocks_wiring_pass
+      note: "Matched a downstream technique whose summary depends on the source technique's capability."
+  status: asserted
+
+- from: technique.landau_symbol_constraints
+  to: technique.integrability_product_constraints
+  relation_type: requires_for_use
+  necessity: typical
+  confidence: 0.75
+  rationale: "Landau-equation constraints on the symbol of Feynman integrals is needed for Integrability constraints on symbol-letter products near singular points because it provides Landau-based admissible letters and singular locations before adjacent-letter integrability can be tested."
+  failure_mode_if_absent: "Without Landau-equation constraints on the symbol of Feynman integrals, Integrability constraints on symbol-letter products near singular points loses Landau-based admissible letters and singular locations before adjacent-letter integrability can be tested and the downstream method has to assume that step instead of computing it cleanly."
+  evidence:
+    - type: expert_claim
+      source_ref: unlocks_wiring_pass
+      note: "Matched a downstream technique whose summary depends on the source technique's capability."
+  status: asserted
+
+- from: technique.compatibility_of_contractions
+  to: technique.pham_diagram_constraints
+  relation_type: requires_for_use
+  necessity: typical
+  confidence: 0.75
+  rationale: "Compatibility Test for Landau Singularity Pairs is needed for Pham Diagrams for Sequential Discontinuity Constraints because it provides compatibility data for pairs of Landau contractions."
+  failure_mode_if_absent: "Without Compatibility Test for Landau Singularity Pairs, Pham Diagrams for Sequential Discontinuity Constraints loses compatibility data for pairs of Landau contractions and the downstream method has to assume that step instead of computing it cleanly."
+  evidence:
+    - type: expert_claim
+      source_ref: unlocks_wiring_pass
+      note: "Matched a downstream technique whose summary depends on the source technique's capability."
+  status: asserted
+
+- from: technique.pham_diagram_constraints
+  to: technique.genealogical_constraints
+  relation_type: requires_for_use
+  necessity: typical
+  confidence: 0.75
+  rationale: "Pham Diagrams for Sequential Discontinuity Constraints is needed for Genealogical Constraints from Topology of Integration Space because it provides a concrete notion of allowed sequential-discontinuity ancestry."
+  failure_mode_if_absent: "Without Pham Diagrams for Sequential Discontinuity Constraints, Genealogical Constraints from Topology of Integration Space loses a concrete notion of allowed sequential-discontinuity ancestry and the downstream method has to assume that step instead of computing it cleanly."
+  evidence:
+    - type: expert_claim
+      source_ref: unlocks_wiring_pass
+      note: "Matched a downstream technique whose summary depends on the source technique's capability."
+  status: asserted
+
+- from: technique.charged_track_multiplicity_tagger
+  to: technique.two_variable_qg_likelihood
+  relation_type: requires_for_use
+  necessity: typical
+  confidence: 0.75
+  rationale: "Charged Track Multiplicity for Quark/Gluon Tagging is needed for Track Count + Girth Two-Variable Likelihood Tagger because it provides the discrete track-count input of the two-variable quark-gluon likelihood."
+  failure_mode_if_absent: "Without Charged Track Multiplicity for Quark/Gluon Tagging, Track Count + Girth Two-Variable Likelihood Tagger loses the discrete track-count input of the two-variable quark-gluon likelihood and the downstream method has to assume that step instead of computing it cleanly."
+  evidence:
+    - type: expert_claim
+      source_ref: unlocks_wiring_pass
+      note: "Matched a downstream technique whose summary depends on the source technique's capability."
+  status: asserted
+
+- from: technique.girth_linear_radial_moment
+  to: technique.two_variable_qg_likelihood
+  relation_type: requires_for_use
+  necessity: typical
+  confidence: 0.75
+  rationale: "Girth (Linear Radial Moment) for Quark/Gluon Discrimination is needed for Track Count + Girth Two-Variable Likelihood Tagger because it provides the girth observable that provides the continuous input of the two-variable quark-gluon likelihood."
+  failure_mode_if_absent: "Without Girth (Linear Radial Moment) for Quark/Gluon Discrimination, Track Count + Girth Two-Variable Likelihood Tagger loses the girth observable that provides the continuous input of the two-variable quark-gluon likelihood and the downstream method has to assume that step instead of computing it cleanly."
+  evidence:
+    - type: expert_claim
+      source_ref: unlocks_wiring_pass
+      note: "Matched a downstream technique whose summary depends on the source technique's capability."
+  status: asserted
+
+- from: technique.jet_pull_vector
+  to: technique.superstructure_observables
+  relation_type: requires_for_use
+  necessity: typical
+  confidence: 0.75
+  rationale: "Jet Pull Vector for Color Flow Determination is needed for Jet Superstructure: Inter-jet Observables Beyond Four-momenta because it provides a concrete color-flow observable to build inter-jet superstructure from."
+  failure_mode_if_absent: "Without Jet Pull Vector for Color Flow Determination, Jet Superstructure: Inter-jet Observables Beyond Four-momenta loses a concrete color-flow observable to build inter-jet superstructure from and the downstream method has to assume that step instead of computing it cleanly."
+  evidence:
+    - type: expert_claim
+      source_ref: unlocks_wiring_pass
+      note: "Matched a downstream technique whose summary depends on the source technique's capability."
+  status: asserted
+
+- from: technique.momentum_weighted_jet_charge
+  to: technique.pt_weighted_jet_charge
+  relation_type: requires_for_use
+  necessity: typical
+  confidence: 0.75
+  rationale: "Momentum-weighted jet charge with tunable kappa is needed for pT-Weighted Jet Charge Observable because it provides the tunable momentum-weighted jet-charge construction specialized by the pT-weighted observable."
+  failure_mode_if_absent: "Without Momentum-weighted jet charge with tunable kappa, pT-Weighted Jet Charge Observable loses the tunable momentum-weighted jet-charge construction specialized by the pT-weighted observable and the downstream method has to assume that step instead of computing it cleanly."
+  evidence:
+    - type: expert_claim
+      source_ref: unlocks_wiring_pass
+      note: "Matched a downstream technique whose summary depends on the source technique's capability."
+  status: asserted
+
+- from: technique.ngl_elimination_via_grooming
+  to: technique.soft_drop_ngl_free_factorization
+  relation_type: requires_for_use
+  necessity: typical
+  confidence: 0.75
+  rationale: "Elimination of Non-Global Logarithms via Soft Drop is needed for Soft drop grooming for non-global-logarithm-free jet mass factorization because it provides the proof that soft drop removes the wide-angle soft modes responsible for non-global logarithms."
+  failure_mode_if_absent: "Without Elimination of Non-Global Logarithms via Soft Drop, Soft drop grooming for non-global-logarithm-free jet mass factorization loses the proof that soft drop removes the wide-angle soft modes responsible for non-global logarithms and the downstream method has to assume that step instead of computing it cleanly."
+  evidence:
+    - type: expert_claim
+      source_ref: unlocks_wiring_pass
+      note: "Matched a downstream technique whose summary depends on the source technique's capability."
+  status: asserted
+
+- from: technique.position_space_sudakov_shoulder
+  to: technique.no_sudakov_landau_pole
+  relation_type: requires_for_use
+  necessity: typical
+  confidence: 0.75
+  rationale: "Position-Space Resummation to Avoid Sudakov Landau Poles is needed for Absence of Sudakov-Landau Pole for Additive Observables because it provides the position-space scale choice that avoids the spurious Sudakov Landau pole."
+  failure_mode_if_absent: "Without Position-Space Resummation to Avoid Sudakov Landau Poles, Absence of Sudakov-Landau Pole for Additive Observables loses the position-space scale choice that avoids the spurious Sudakov Landau pole and the downstream method has to assume that step instead of computing it cleanly."
+  evidence:
+    - type: expert_claim
+      source_ref: unlocks_wiring_pass
+      note: "Matched a downstream technique whose summary depends on the source technique's capability."
+  status: asserted
+
+- from: technique.lattice_reduction_analytic_regression
+  to: technique.landau_bootstrap_complement
+  relation_type: requires_for_use
+  necessity: typical
+  confidence: 0.75
+  rationale: "Lattice Reduction for Analytic Regression of Feynman Integrals is needed for Bottom-Up Complement to the Landau Bootstrap because it provides the analytic-regression step that fixes rational coefficients once the function space is known."
+  failure_mode_if_absent: "Without Lattice Reduction for Analytic Regression of Feynman Integrals, Bottom-Up Complement to the Landau Bootstrap loses the analytic-regression step that fixes rational coefficients once the function space is known and the downstream method has to assume that step instead of computing it cleanly."
+  evidence:
+    - type: expert_claim
+      source_ref: unlocks_wiring_pass
+      note: "Matched a downstream technique whose summary depends on the source technique's capability."
+  status: asserted
+
+- from: technique.single_pion_tagging_in_bbbar_threshold_production
+  to: technique.ratio_to_bbbar_for_source_cancellation
+  relation_type: requires_for_use
+  necessity: typical
+  confidence: 0.75
+  rationale: "Single-pion tagging in B Bbar threshold production is needed for Ratio to B Bbar for source cancellation because it provides a clean exclusive B Bbar pi channel on which the source-cancelling ratio can be formed."
+  failure_mode_if_absent: "Without Single-pion tagging in B Bbar threshold production, Ratio to B Bbar for source cancellation loses a clean exclusive B Bbar pi channel on which the source-cancelling ratio can be formed and the downstream method has to assume that step instead of computing it cleanly."
+  evidence:
+    - type: expert_claim
+      source_ref: unlocks_wiring_pass
+      note: "Matched a downstream technique whose summary depends on the source technique's capability."
+  status: asserted
+
+- from: technique.radiative_meson_decay_recasting
+  to: technique.meson_form_factor_reach_estimation
+  relation_type: requires_for_use
+  necessity: typical
+  confidence: 0.75
+  rationale: "Recasting radiative meson decays into dark photon searches is needed for Meson transition form-factor reach estimation because it provides the conversion from ordinary radiative decays into dark-photon reach estimates."
+  failure_mode_if_absent: "Without Recasting radiative meson decays into dark photon searches, Meson transition form-factor reach estimation loses the conversion from ordinary radiative decays into dark-photon reach estimates and the downstream method has to assume that step instead of computing it cleanly."
+  evidence:
+    - type: expert_claim
+      source_ref: unlocks_wiring_pass
+      note: "Matched a downstream technique whose summary depends on the source technique's capability."
+  status: asserted
+
+- from: technique.random_order_one_texture_sampling
+  to: technique.random_coefficient_naturalness_measure
+  relation_type: requires_for_use
+  necessity: typical
+  confidence: 0.75
+  rationale: "Random O(1) Texture Sampling is needed for Naturalness as surviving fraction of UV coefficient space because it provides the coefficient-sampling ensemble whose survival fraction defines the naturalness metric."
+  failure_mode_if_absent: "Without Random O(1) Texture Sampling, Naturalness as surviving fraction of UV coefficient space loses the coefficient-sampling ensemble whose survival fraction defines the naturalness metric and the downstream method has to assume that step instead of computing it cleanly."
+  evidence:
+    - type: expert_claim
+      source_ref: unlocks_wiring_pass
+      note: "Matched a downstream technique whose summary depends on the source technique's capability."
+  status: asserted
+
+- from: technique.random_coefficient_naturalness_measure
+  to: technique.monte_carlo_tuning_contours_for_flavor_bounds
+  relation_type: requires_for_use
+  necessity: typical
+  confidence: 0.75
+  rationale: "Naturalness as surviving fraction of UV coefficient space is needed for Monte Carlo tuning contours in SUSY parameter space because it provides a survival-fraction notion of tuning that can be contoured over SUSY parameter space."
+  failure_mode_if_absent: "Without Naturalness as surviving fraction of UV coefficient space, Monte Carlo tuning contours in SUSY parameter space loses a survival-fraction notion of tuning that can be contoured over SUSY parameter space and the downstream method has to assume that step instead of computing it cleanly."
+  evidence:
+    - type: expert_claim
+      source_ref: unlocks_wiring_pass
+      note: "Matched a downstream technique whose summary depends on the source technique's capability."
+  status: asserted
+
+- from: technique.relativistic_to_nr_matching
+  to: technique.uv_to_nuclear_matching_chain_for_direct_detection
+  relation_type: requires_for_use
+  necessity: typical
+  confidence: 0.75
+  rationale: "Matching relativistic operators onto nonrelativistic potentials is needed for UV-to-Nuclear Matching Chain for Direct Detection because it provides the UV-to-nonrelativistic bridge inside the full matching chain."
+  failure_mode_if_absent: "Without Matching relativistic operators onto nonrelativistic potentials, UV-to-Nuclear Matching Chain for Direct Detection loses the UV-to-nonrelativistic bridge inside the full matching chain and the downstream method has to assume that step instead of computing it cleanly."
+  evidence:
+    - type: expert_claim
+      source_ref: unlocks_wiring_pass
+      note: "Matched a downstream technique whose summary depends on the source technique's capability."
+  status: asserted
+
+- from: technique.relativistic_to_nr_matching
+  to: technique.continuum_mediator_factorization
+  relation_type: requires_for_use
+  necessity: typical
+  confidence: 0.75
+  rationale: "Matching relativistic operators onto nonrelativistic potentials is needed for Factorized continuum-mediator scattering because it provides the mapping from relativistic mediator exchange to known nonrelativistic operators."
+  failure_mode_if_absent: "Without Matching relativistic operators onto nonrelativistic potentials, Factorized continuum-mediator scattering loses the mapping from relativistic mediator exchange to known nonrelativistic operators and the downstream method has to assume that step instead of computing it cleanly."
+  evidence:
+    - type: expert_claim
+      source_ref: unlocks_wiring_pass
+      note: "Matched a downstream technique whose summary depends on the source technique's capability."
+  status: asserted
+
+- from: technique.relativistic_to_nr_sidm_matching
+  to: technique.boundary_condition_matching_for_self_interactions
+  relation_type: requires_for_use
+  necessity: typical
+  confidence: 0.75
+  rationale: "Relativistic-to-nonrelativistic matching for SIDM mediators is needed for Boundary-Condition Matching for Self-Interactions because it provides the nonrelativistic two-body operator language needed before boundary conditions can encode short-distance physics."
+  failure_mode_if_absent: "Without Relativistic-to-nonrelativistic matching for SIDM mediators, Boundary-Condition Matching for Self-Interactions loses the nonrelativistic two-body operator language needed before boundary conditions can encode short-distance physics and the downstream method has to assume that step instead of computing it cleanly."
+  evidence:
+    - type: expert_claim
+      source_ref: unlocks_wiring_pass
+      note: "Matched a downstream technique whose summary depends on the source technique's capability."
+  status: asserted
+
+- from: technique.relic_and_direct_detection_joint_fit
+  to: technique.collider_cosmology_complementarity
+  relation_type: requires_for_use
+  necessity: typical
+  confidence: 0.75
+  rationale: "Joint Relic-Density and Direct-Detection Targeting is needed for Collider-cosmology complementarity mapping because it provides a common relic-and-direct-detection target region to overlay with collider reach."
+  failure_mode_if_absent: "Without Joint Relic-Density and Direct-Detection Targeting, Collider-cosmology complementarity mapping loses a common relic-and-direct-detection target region to overlay with collider reach and the downstream method has to assume that step instead of computing it cleanly."
+  evidence:
+    - type: expert_claim
+      source_ref: unlocks_wiring_pass
+      note: "Matched a downstream technique whose summary depends on the source technique's capability."
+  status: asserted
+
+- from: technique.relic_and_cr_signal_pipeline
+  to: technique.collider_cosmology_complementarity
+  relation_type: requires_for_use
+  necessity: typical
+  confidence: 0.75
+  rationale: "Relic-to-Cosmic-Ray Signal Pipeline is needed for Collider-cosmology complementarity mapping because it provides the indirect-detection leg of a full collider/cosmology comparison."
+  failure_mode_if_absent: "Without Relic-to-Cosmic-Ray Signal Pipeline, Collider-cosmology complementarity mapping loses the indirect-detection leg of a full collider/cosmology comparison and the downstream method has to assume that step instead of computing it cleanly."
+  evidence:
+    - type: expert_claim
+      source_ref: unlocks_wiring_pass
+      note: "Matched a downstream technique whose summary depends on the source technique's capability."
+  status: asserted
+
+- from: technique.recoil_higgsstrahlung_normalization
+  to: technique.electroweak_multiplet_dark_matter_precision_probe
+  relation_type: requires_for_use
+  necessity: typical
+  confidence: 0.75
+  rationale: "Recoil-based Higgsstrahlung normalization is needed for Electroweak multiplet dark-matter probe through precision observables because it provides the absolute Higgs-recoil measurement used in precision compressed-dark-matter tests."
+  failure_mode_if_absent: "Without Recoil-based Higgsstrahlung normalization, Electroweak multiplet dark-matter probe through precision observables loses the absolute Higgs-recoil measurement used in precision compressed-dark-matter tests and the downstream method has to assume that step instead of computing it cleanly."
+  evidence:
+    - type: expert_claim
+      source_ref: unlocks_wiring_pass
+      note: "Matched a downstream technique whose summary depends on the source technique's capability."
+  status: asserted
+
+- from: technique.recoil_higgsstrahlung_normalization
+  to: technique.combined_kappa_and_smeft_global_fit
+  relation_type: requires_for_use
+  necessity: typical
+  confidence: 0.75
+  rationale: "Recoil-based Higgsstrahlung normalization is needed for Combined kappa-framework and SMEFT global fit because it provides a model-independent Higgs normalization anchor for the correlated precision fit."
+  failure_mode_if_absent: "Without Recoil-based Higgsstrahlung normalization, Combined kappa-framework and SMEFT global fit loses a model-independent Higgs normalization anchor for the correlated precision fit and the downstream method has to assume that step instead of computing it cleanly."
+  evidence:
+    - type: expert_claim
+      source_ref: unlocks_wiring_pass
+      note: "Matched a downstream technique whose summary depends on the source technique's capability."
+  status: asserted
+
+- from: technique.reinterpret_direct_searches_with_mixing_and_lifetime
+  to: technique.global_overlay_of_direct_precision_and_lfv_constraints
+  relation_type: requires_for_use
+  necessity: typical
+  confidence: 0.75
+  rationale: "Reinterpret direct searches with mixing-angle and lifetime effects is needed for Global overlay of direct, precision, and LFV constraints because it provides corrected direct-search limits on the same heavy-neutrino mass-mixing plane."
+  failure_mode_if_absent: "Without Reinterpret direct searches with mixing-angle and lifetime effects, Global overlay of direct, precision, and LFV constraints loses corrected direct-search limits on the same heavy-neutrino mass-mixing plane and the downstream method has to assume that step instead of computing it cleanly."
+  evidence:
+    - type: expert_claim
+      source_ref: unlocks_wiring_pass
+      note: "Matched a downstream technique whose summary depends on the source technique's capability."
+  status: asserted
+
+- from: technique.sequential_higgsing_running
+  to: technique.ads5_logarithmic_running
+  relation_type: requires_for_use
+  necessity: typical
+  confidence: 0.75
+  rationale: "Recover logarithmic running by sequential Higgsing is needed for Logarithmic gauge coupling running in AdS5 because it provides the staged integrating-out argument that produces logarithmic warped-space running."
+  failure_mode_if_absent: "Without Recover logarithmic running by sequential Higgsing, Logarithmic gauge coupling running in AdS5 loses the staged integrating-out argument that produces logarithmic warped-space running and the downstream method has to assume that step instead of computing it cleanly."
+  evidence:
+    - type: expert_claim
+      source_ref: unlocks_wiring_pass
+      note: "Matched a downstream technique whose summary depends on the source technique's capability."
+  status: asserted
+
+- from: technique.species_bound_from_light_towers
+  to: technique.emergence_from_towers_and_species_cutoff
+  relation_type: requires_for_use
+  necessity: typical
+  confidence: 0.75
+  rationale: "Species-bound cutoff from a modulus-dependent tower is needed for Emergence from Towers and the Species Cutoff because it provides an explicit modulus-dependent species cutoff sourced by the light tower."
+  failure_mode_if_absent: "Without Species-bound cutoff from a modulus-dependent tower, Emergence from Towers and the Species Cutoff loses an explicit modulus-dependent species cutoff sourced by the light tower and the downstream method has to assume that step instead of computing it cleanly."
+  evidence:
+    - type: expert_claim
+      source_ref: unlocks_wiring_pass
+      note: "Matched a downstream technique whose summary depends on the source technique's capability."
+  status: asserted
+
+- from: technique.sm_susy_mixing_amplitude_parameterization
+  to: technique.delta_f2_complex_phase_scan
+  relation_type: requires_for_use
+  necessity: typical
+  confidence: 0.75
+  rationale: "Relative-amplitude and phase parameterization of new mixing is needed for Delta-F=2 Constraints with Complex NP Phase Scanning because it provides a compact h-theta description of new mixing amplitudes to scan over."
+  failure_mode_if_absent: "Without Relative-amplitude and phase parameterization of new mixing, Delta-F=2 Constraints with Complex NP Phase Scanning loses a compact h-theta description of new mixing amplitudes to scan over and the downstream method has to assume that step instead of computing it cleanly."
+  evidence:
+    - type: expert_claim
+      source_ref: unlocks_wiring_pass
+      note: "Matched a downstream technique whose summary depends on the source technique's capability."
+  status: asserted
+
+- from: technique.super_oblique_effective_couplings
+  to: technique.super_oblique_parameterization
+  relation_type: requires_for_use
+  necessity: typical
+  confidence: 0.75
+  rationale: "Super-oblique effective couplings is needed for Super-oblique parameterization because it provides process-independent effective couplings that can be packaged into super-oblique parameters."
+  failure_mode_if_absent: "Without Super-oblique effective couplings, Super-oblique parameterization loses process-independent effective couplings that can be packaged into super-oblique parameters and the downstream method has to assume that step instead of computing it cleanly."
+  evidence:
+    - type: expert_claim
+      source_ref: unlocks_wiring_pass
+      note: "Matched a downstream technique whose summary depends on the source technique's capability."
+  status: asserted
+
+- from: technique.super_oblique_effective_couplings
+  to: technique.collider_extraction_of_super_oblique_effects
+  relation_type: requires_for_use
+  necessity: typical
+  confidence: 0.75
+  rationale: "Super-oblique effective couplings is needed for Collider extraction of super-oblique effects because it provides the measurable coupling shifts that collider observables are designed to extract."
+  failure_mode_if_absent: "Without Super-oblique effective couplings, Collider extraction of super-oblique effects loses the measurable coupling shifts that collider observables are designed to extract and the downstream method has to assume that step instead of computing it cleanly."
+  evidence:
+    - type: expert_claim
+      source_ref: unlocks_wiring_pass
+      note: "Matched a downstream technique whose summary depends on the source technique's capability."
+  status: asserted
+
+- from: technique.super_oblique_effective_couplings
+  to: technique.heavy_spectrum_benchmark_inference
+  relation_type: requires_for_use
+  necessity: typical
+  confidence: 0.75
+  rationale: "Super-oblique effective couplings is needed for Heavy-spectrum benchmark inference because it provides a forward map from heavy thresholds to low-energy coupling shifts."
+  failure_mode_if_absent: "Without Super-oblique effective couplings, Heavy-spectrum benchmark inference loses a forward map from heavy thresholds to low-energy coupling shifts and the downstream method has to assume that step instead of computing it cleanly."
+  evidence:
+    - type: expert_claim
+      source_ref: unlocks_wiring_pass
+      note: "Matched a downstream technique whose summary depends on the source technique's capability."
+  status: asserted
+
+- from: technique.super_gim_mass_insertion_lfv_estimates
+  to: technique.lfv_precision_collider_complementarity_map
+  relation_type: requires_for_use
+  necessity: typical
+  confidence: 0.75
+  rationale: "Super-GIM Mass-Insertion LFV Estimates is needed for LFV Precision-Collider Complementarity Map because it provides fast analytic LFV amplitudes in the same slepton-mixing parameters used across probes."
+  failure_mode_if_absent: "Without Super-GIM Mass-Insertion LFV Estimates, LFV Precision-Collider Complementarity Map loses fast analytic LFV amplitudes in the same slepton-mixing parameters used across probes and the downstream method has to assume that step instead of computing it cleanly."
+  evidence:
+    - type: expert_claim
+      source_ref: unlocks_wiring_pass
+      note: "Matched a downstream technique whose summary depends on the source technique's capability."
+  status: asserted
+
+- from: technique.signature_based_llp_taxonomy
+  to: technique.background_free_llp_search_design
+  relation_type: requires_for_use
+  necessity: typical
+  confidence: 0.75
+  rationale: "Signature-based LLP taxonomy is needed for Background-free LLP search design because it provides a signature-level map of LLP gaps that can be turned into detector and search-design choices."
+  failure_mode_if_absent: "Without Signature-based LLP taxonomy, Background-free LLP search design loses a signature-level map of LLP gaps that can be turned into detector and search-design choices and the downstream method has to assume that step instead of computing it cleanly."
+  evidence:
+    - type: expert_claim
+      source_ref: unlocks_wiring_pass
+      note: "Matched a downstream technique whose summary depends on the source technique's capability."
+  status: asserted
+
+- from: technique.surface_displaced_vertex_llp_detector
+  to: technique.surface_displaced_vertex_llp_search
+  relation_type: requires_for_use
+  necessity: typical
+  confidence: 0.75
+  rationale: "Surface Displaced-Vertex LLP Detector is needed for Surface-detector displaced-vertex search for ultra-long-lived particles because it provides the dedicated surface detector needed to realize the LLP search volume."
+  failure_mode_if_absent: "Without Surface Displaced-Vertex LLP Detector, Surface-detector displaced-vertex search for ultra-long-lived particles loses the dedicated surface detector needed to realize the LLP search volume and the downstream method has to assume that step instead of computing it cleanly."
+  evidence:
+    - type: expert_claim
+      source_ref: unlocks_wiring_pass
+      note: "Matched a downstream technique whose summary depends on the source technique's capability."
+  status: asserted
+
+- from: technique.surface_displaced_vertex_llp_search
+  to: technique.bbn_lifetime_targeting
+  relation_type: requires_for_use
+  necessity: typical
+  confidence: 0.75
+  rationale: "Surface-detector displaced-vertex search for ultra-long-lived particles is needed for BBN-lifetime targeting because it provides a concrete ultra-long-lifetime search reach that can be benchmarked against BBN timescales."
+  failure_mode_if_absent: "Without Surface-detector displaced-vertex search for ultra-long-lived particles, BBN-lifetime targeting loses a concrete ultra-long-lifetime search reach that can be benchmarked against BBN timescales and the downstream method has to assume that step instead of computing it cleanly."
+  evidence:
+    - type: expert_claim
+      source_ref: unlocks_wiring_pass
+      note: "Matched a downstream technique whose summary depends on the source technique's capability."
+  status: asserted
+
+- from: technique.timing_geometry_background_veto
+  to: technique.background_free_llp_search_design
+  relation_type: requires_for_use
+  necessity: typical
+  confidence: 0.75
+  rationale: "Timing-and-geometry veto for cosmic and muon backgrounds is needed for Background-free LLP search design because it provides the timing and pointing rejection that makes near-zero-background LLP operation plausible."
+  failure_mode_if_absent: "Without Timing-and-geometry veto for cosmic and muon backgrounds, Background-free LLP search design loses the timing and pointing rejection that makes near-zero-background LLP operation plausible and the downstream method has to assume that step instead of computing it cleanly."
+  evidence:
+    - type: expert_claim
+      source_ref: unlocks_wiring_pass
+      note: "Matched a downstream technique whose summary depends on the source technique's capability."
+  status: asserted
+
+- from: technique.shooting_method_for_extremal_surfaces
+  to: technique.extremal_surface_shooting_scan
+  relation_type: requires_for_use
+  necessity: typical
+  confidence: 0.75
+  rationale: "Shooting method for brane-to-boundary extremal surfaces is needed for Extremal-surface shooting scan because it provides the numerical shooting step used repeatedly in the scan."
+  failure_mode_if_absent: "Without Shooting method for brane-to-boundary extremal surfaces, Extremal-surface shooting scan loses the numerical shooting step used repeatedly in the scan and the downstream method has to assume that step instead of computing it cleanly."
+  evidence:
+    - type: expert_claim
+      source_ref: unlocks_wiring_pass
+      note: "Matched a downstream technique whose summary depends on the source technique's capability."
+  status: asserted
+
+- from: technique.schrodinger_bulk_mode_reduction
+  to: technique.schrodinger_volcano_mode_mapping
+  relation_type: requires_for_use
+  necessity: typical
+  confidence: 0.75
+  rationale: "Schrodinger reduction of bulk fluctuation equations is needed for Map graviton fluctuations to a Schrodinger volcano problem because it provides the generic reduction of bulk fluctuations to one-dimensional Schrodinger problems."
+  failure_mode_if_absent: "Without Schrodinger reduction of bulk fluctuation equations, Map graviton fluctuations to a Schrodinger volcano problem loses the generic reduction of bulk fluctuations to one-dimensional Schrodinger problems and the downstream method has to assume that step instead of computing it cleanly."
+  evidence:
+    - type: expert_claim
+      source_ref: unlocks_wiring_pass
+      note: "Matched a downstream technique whose summary depends on the source technique's capability."
+  status: asserted
+
+- from: technique.schrodinger_volcano_reduction_for_gravitons
+  to: technique.brane_wavefunction_overlap_newton_estimate
+  relation_type: requires_for_use
+  necessity: typical
+  confidence: 0.75
+  rationale: "Schrodinger volcano reduction for graviton modes is needed for Wavefunction-overlap estimate of Newton corrections because it provides explicit graviton volcano wavefunctions whose brane overlap sets Newton-law corrections."
+  failure_mode_if_absent: "Without Schrodinger volcano reduction for graviton modes, Wavefunction-overlap estimate of Newton corrections loses explicit graviton volcano wavefunctions whose brane overlap sets Newton-law corrections and the downstream method has to assume that step instead of computing it cleanly."
+  evidence:
+    - type: expert_claim
+      source_ref: unlocks_wiring_pass
+      note: "Matched a downstream technique whose summary depends on the source technique's capability."
+  status: asserted
+
+- from: technique.scaled_variable_y_for_hq_fragmentation
+  to: technique.factorize_perturbative_and_nonperturbative_fragmentation
+  relation_type: requires_for_use
+  necessity: typical
+  confidence: 0.75
+  rationale: "Scaled variable y for heavy-quark fragmentation is needed for Factorize perturbative evolution from nonperturbative fragmentation because it provides a heavy-flavor-independent fragmentation variable on which the factorized comparison is built."
+  failure_mode_if_absent: "Without Scaled variable y for heavy-quark fragmentation, Factorize perturbative evolution from nonperturbative fragmentation loses a heavy-flavor-independent fragmentation variable on which the factorized comparison is built and the downstream method has to assume that step instead of computing it cleanly."
+  evidence:
+    - type: expert_claim
+      source_ref: unlocks_wiring_pass
+      note: "Matched a downstream technique whose summary depends on the source technique's capability."
+  status: asserted
+
+- from: technique.vector_boson_fusion_muon_collider_regime
+  to: technique.double_higgs_vbf_and_zhh_template_fit
+  relation_type: requires_for_use
+  necessity: typical
+  confidence: 0.75
+  rationale: "Vector-Boson-Fusion Regime at High-Energy Muon Colliders is needed for Double-Higgs VBF plus Zhh template fit because it provides the high-energy VBF regime that makes the VBF leg of the template fit useful."
+  failure_mode_if_absent: "Without Vector-Boson-Fusion Regime at High-Energy Muon Colliders, Double-Higgs VBF plus Zhh template fit loses the high-energy VBF regime that makes the VBF leg of the template fit useful and the downstream method has to assume that step instead of computing it cleanly."
+  evidence:
+    - type: expert_claim
+      source_ref: unlocks_wiring_pass
+      note: "Matched a downstream technique whose summary depends on the source technique's capability."
+  status: asserted
+
+- from: technique.wkb_for_time_dependent_massive_modes
+  to: technique.saddle_point_estimate_of_scale_dependent_clock_signal
+  relation_type: requires_for_use
+  necessity: typical
+  confidence: 0.75
+  rationale: "WKB for Time-Dependent Massive Modes is needed for Saddle-Point Estimate of the Scale-Dependent Clock Signal because it provides controlled analytic heavy-mode phases around the resonant production time."
+  failure_mode_if_absent: "Without WKB for Time-Dependent Massive Modes, Saddle-Point Estimate of the Scale-Dependent Clock Signal loses controlled analytic heavy-mode phases around the resonant production time and the downstream method has to assume that step instead of computing it cleanly."
+  evidence:
+    - type: expert_claim
+      source_ref: unlocks_wiring_pass
+      note: "Matched a downstream technique whose summary depends on the source technique's capability."
+  status: asserted
+
+- from: technique.template_free_eccentric_snr_formula
+  to: technique.peak_frequency_local_noise_approximation
+  relation_type: requires_for_use
+  necessity: typical
+  confidence: 0.75
+  rationale: "Template-free SNR scaling for eccentric binaries is needed for Peak-frequency local-noise approximation for eccentric SNR because it provides a closed peak-frequency eccentric-SNR approximation instead of explicit harmonic sums."
+  failure_mode_if_absent: "Without Template-free SNR scaling for eccentric binaries, Peak-frequency local-noise approximation for eccentric SNR loses a closed peak-frequency eccentric-SNR approximation instead of explicit harmonic sums and the downstream method has to assume that step instead of computing it cleanly."
+  evidence:
+    - type: expert_claim
+      source_ref: unlocks_wiring_pass
+      note: "Matched a downstream technique whose summary depends on the source technique's capability."
+  status: asserted
+
+- from: technique.semianalytic_triple_eccentricity_estimator
+  to: technique.eccentricity_binned_population_inference
+  relation_type: requires_for_use
+  necessity: typical
+  confidence: 0.75
+  rationale: "Semianalytic eccentricity mapping in hierarchical triples is needed for Eccentricity-binned population inference because it provides predicted eccentricity distributions to bin and compare at the population level."
+  failure_mode_if_absent: "Without Semianalytic eccentricity mapping in hierarchical triples, Eccentricity-binned population inference loses predicted eccentricity distributions to bin and compare at the population level and the downstream method has to assume that step instead of computing it cleanly."
+  evidence:
+    - type: expert_claim
+      source_ref: unlocks_wiring_pass
+      note: "Matched a downstream technique whose summary depends on the source technique's capability."
+  status: asserted
+
+- from: technique.transfer_rate_estimates_for_higher_dim_operators
+  to: technique.sphaleron_or_bleeding_transfer_mechanisms
+  relation_type: requires_for_use
+  necessity: typical
+  confidence: 0.75
+  rationale: "Transfer-Rate Estimates for Higher-Dimension Operators is needed for Sphaleron or Lepton-Bleeding Transfer Mechanisms because it provides freeze-out temperatures for candidate asymmetry-transfer operators."
+  failure_mode_if_absent: "Without Transfer-Rate Estimates for Higher-Dimension Operators, Sphaleron or Lepton-Bleeding Transfer Mechanisms loses freeze-out temperatures for candidate asymmetry-transfer operators and the downstream method has to assume that step instead of computing it cleanly."
+  evidence:
+    - type: expert_claim
+      source_ref: unlocks_wiring_pass
+      note: "Matched a downstream technique whose summary depends on the source technique's capability."
+  status: asserted
+
+- from: technique.weak_scale_inflation_for_moduli_dilution
+  to: technique.limited_efolding_to_preserve_primordial_fluctuations
+  relation_type: requires_for_use
+  necessity: typical
+  confidence: 0.75
+  rationale: "Weak-scale inflation for moduli dilution is needed for Limited e-folding to preserve primordial fluctuations because it provides the weak-scale inflationary cure whose duration then must be capped."
+  failure_mode_if_absent: "Without Weak-scale inflation for moduli dilution, Limited e-folding to preserve primordial fluctuations loses the weak-scale inflationary cure whose duration then must be capped and the downstream method has to assume that step instead of computing it cleanly."
+  evidence:
+    - type: expert_claim
+      source_ref: unlocks_wiring_pass
+      note: "Matched a downstream technique whose summary depends on the source technique's capability."
+  status: asserted
+
+- from: technique.saxion_thermal_inflation_dilution
+  to: technique.entropy_budget_reheating_bookkeeping
+  relation_type: requires_for_use
+  necessity: typical
+  confidence: 0.75
+  rationale: "Saxion-driven thermal inflation dilution is needed for Entropy-budget bookkeeping through reheating because it provides a specific entropy-producing history to propagate through reheating."
+  failure_mode_if_absent: "Without Saxion-driven thermal inflation dilution, Entropy-budget bookkeeping through reheating loses a specific entropy-producing history to propagate through reheating and the downstream method has to assume that step instead of computing it cleanly."
+  evidence:
+    - type: expert_claim
+      source_ref: unlocks_wiring_pass
+      note: "Matched a downstream technique whose summary depends on the source technique's capability."
+  status: asserted
+
+- from: technique.singlet_portal_stealth_construction
+  to: technique.stealth_portal_catalog
+  relation_type: requires_for_use
+  necessity: typical
+  confidence: 0.75
+  rationale: "Singlet-portal stealth construction is needed for Portal catalog for stealth sectors because it provides one concrete UV-complete portal family inside the broader stealth-portal design space."
+  failure_mode_if_absent: "Without Singlet-portal stealth construction, Portal catalog for stealth sectors loses one concrete UV-complete portal family inside the broader stealth-portal design space and the downstream method has to assume that step instead of computing it cleanly."
+  evidence:
+    - type: expert_claim
+      source_ref: unlocks_wiring_pass
+      note: "Matched a downstream technique whose summary depends on the source technique's capability."
+  status: asserted
+
+- from: technique.stealth_susy_simplified_topologies
+  to: technique.non_met_stealth_search_strategy
+  relation_type: requires_for_use
+  necessity: typical
+  confidence: 0.75
+  rationale: "Natural-SUSY stealth simplified models is needed for Non-MET stealth search strategy because it provides a systematic picture of reduced-MET stealth event topologies to search for."
+  failure_mode_if_absent: "Without Natural-SUSY stealth simplified models, Non-MET stealth search strategy loses a systematic picture of reduced-MET stealth event topologies to search for and the downstream method has to assume that step instead of computing it cleanly."
+  evidence:
+    - type: expert_claim
+      source_ref: unlocks_wiring_pass
+      note: "Matched a downstream technique whose summary depends on the source technique's capability."
+  status: asserted
+
+- from: technique.small_splitting_soft_invisible_kinematics
+  to: technique.non_met_stealth_search_strategy
+  relation_type: requires_for_use
+  necessity: typical
+  confidence: 0.75
+  rationale: "Small-splitting kinematics for suppressed MET is needed for Non-MET stealth search strategy because it provides the kinematic reason MET-based triggers fail and non-MET tactics are needed."
+  failure_mode_if_absent: "Without Small-splitting kinematics for suppressed MET, Non-MET stealth search strategy loses the kinematic reason MET-based triggers fail and non-MET tactics are needed and the downstream method has to assume that step instead of computing it cleanly."
+  evidence:
+    - type: expert_claim
+      source_ref: unlocks_wiring_pass
+      note: "Matched a downstream technique whose summary depends on the source technique's capability."
+  status: asserted
+
+- from: technique.stub_track_search_for_degenerate_higgsinos
+  to: technique.collider_cosmology_complementarity
+  relation_type: requires_for_use
+  necessity: typical
+  confidence: 0.75
+  rationale: "Stub-track search for degenerate higgsinos is needed for Collider-cosmology complementarity mapping because it provides a collider reach handle on thermal higgsino dark matter to compare with cosmology."
+  failure_mode_if_absent: "Without Stub-track search for degenerate higgsinos, Collider-cosmology complementarity mapping loses a collider reach handle on thermal higgsino dark matter to compare with cosmology and the downstream method has to assume that step instead of computing it cleanly."
+  evidence:
+    - type: expert_claim
+      source_ref: unlocks_wiring_pass
+      note: "Matched a downstream technique whose summary depends on the source technique's capability."
+  status: asserted
+
+- from: technique.simplified_model_reach_projection
+  to: technique.benchmark_collider_scenario_matrix
+  relation_type: requires_for_use
+  necessity: typical
+  confidence: 0.75
+  rationale: "Simplified-model reach projection at 100 TeV is needed for Benchmark Collider Scenario Matrix because it provides projected reach numbers that populate the common collider benchmark table."
+  failure_mode_if_absent: "Without Simplified-model reach projection at 100 TeV, Benchmark Collider Scenario Matrix loses projected reach numbers that populate the common collider benchmark table and the downstream method has to assume that step instead of computing it cleanly."
+  evidence:
+    - type: expert_claim
+      source_ref: unlocks_wiring_pass
+      note: "Matched a downstream technique whose summary depends on the source technique's capability."
+  status: asserted
+
+- from: technique.qantikt_event_level_sampling
+  to: technique.generalized_eml_correlated_interpretations
+  relation_type: requires_for_use
+  necessity: typical
+  confidence: 0.75
+  rationale: "Qanti-kT: non-deterministic anti-kT for event-level multiple interpretations is needed for Generalized extended maximum likelihood for correlated event interpretations because it provides multiple correlated jet interpretations of the same event that require corrected likelihood statistics."
+  failure_mode_if_absent: "Without Qanti-kT: non-deterministic anti-kT for event-level multiple interpretations, Generalized extended maximum likelihood for correlated event interpretations loses multiple correlated jet interpretations of the same event that require corrected likelihood statistics and the downstream method has to assume that step instead of computing it cleanly."
+  evidence:
+    - type: expert_claim
+      source_ref: unlocks_wiring_pass
+      note: "Matched a downstream technique whose summary depends on the source technique's capability."
+  status: asserted
+
+- from: technique.polar_expansion_nonglobal_soft
+  to: technique.small_r_ngl_universality
+  relation_type: requires_for_use
+  necessity: typical
+  confidence: 0.75
+  rationale: "Polar Expansion of 2D Hemisphere Soft Function is needed for Small-R universality of non-global logarithms because it provides a practical decomposition of the hemisphere soft function into the NGL pieces reused at small R."
+  failure_mode_if_absent: "Without Polar Expansion of 2D Hemisphere Soft Function, Small-R universality of non-global logarithms loses a practical decomposition of the hemisphere soft function into the NGL pieces reused at small R and the downstream method has to assume that step instead of computing it cleanly."
+  evidence:
+    - type: expert_claim
+      source_ref: unlocks_wiring_pass
+      note: "Matched a downstream technique whose summary depends on the source technique's capability."
+  status: asserted
+
+- from: technique.integrated_soft_function_expansion
+  to: technique.small_r_ngl_universality
+  relation_type: requires_for_use
+  necessity: typical
+  confidence: 0.75
+  rationale: "Expansion of integrated hemisphere soft function in product-and-ratio variables is needed for Small-R universality of non-global logarithms because it provides an unambiguous integrated hemisphere soft function that can be imported into the small-R formula."
+  failure_mode_if_absent: "Without Expansion of integrated hemisphere soft function in product-and-ratio variables, Small-R universality of non-global logarithms loses an unambiguous integrated hemisphere soft function that can be imported into the small-R formula and the downstream method has to assume that step instead of computing it cleanly."
+  evidence:
+    - type: expert_claim
+      source_ref: unlocks_wiring_pass
+      note: "Matched a downstream technique whose summary depends on the source technique's capability."
+  status: asserted
+
+- from: technique.regional_soft_function_factorization
+  to: technique.soft_function_refactorization_small_r
+  relation_type: requires_for_use
+  necessity: typical
+  confidence: 0.75
+  rationale: "Regional soft function for separating in-jet and out-of-jet soft scales is needed for Soft function refactorization in the small-R limit because it provides the separate in-jet and out-of-jet soft sectors that are later refactorized."
+  failure_mode_if_absent: "Without Regional soft function for separating in-jet and out-of-jet soft scales, Soft function refactorization in the small-R limit loses the separate in-jet and out-of-jet soft sectors that are later refactorized and the downstream method has to assume that step instead of computing it cleanly."
+  evidence:
+    - type: expert_claim
+      source_ref: unlocks_wiring_pass
+      note: "Matched a downstream technique whose summary depends on the source technique's capability."
+  status: asserted
+
+- from: technique.colored_diagram_decomposition
+  to: technique.reduced_diagram_construction
+  relation_type: requires_for_use
+  necessity: typical
+  confidence: 0.75
+  rationale: "Colored-diagram decomposition (separating soft sensitivities) is needed for Reduced-diagram construction via IR-sensitivity lemmas because it provides a diagram-by-diagram separation of soft-sensitive lines before reducing to hard, jet, and soft blobs."
+  failure_mode_if_absent: "Without Colored-diagram decomposition (separating soft sensitivities), Reduced-diagram construction via IR-sensitivity lemmas loses a diagram-by-diagram separation of soft-sensitive lines before reducing to hard, jet, and soft blobs and the downstream method has to assume that step instead of computing it cleanly."
+  evidence:
+    - type: expert_claim
+      source_ref: unlocks_wiring_pass
+      note: "Matched a downstream technique whose summary depends on the source technique's capability."
+  status: asserted
+
+- from: technique.landau_symbol_constraints
+  to: technique.landau_bootstrap_complement
+  relation_type: requires_for_use
+  necessity: typical
+  confidence: 0.75
+  rationale: "Landau-equation constraints on the symbol of Feynman integrals is needed for Bottom-Up Complement to the Landau Bootstrap because it provides Landau-based restrictions on the function space used by the hybrid bootstrap."
+  failure_mode_if_absent: "Without Landau-equation constraints on the symbol of Feynman integrals, Bottom-Up Complement to the Landau Bootstrap loses Landau-based restrictions on the function space used by the hybrid bootstrap and the downstream method has to assume that step instead of computing it cleanly."
+  evidence:
+    - type: expert_claim
+      source_ref: unlocks_wiring_pass
+      note: "Matched a downstream technique whose summary depends on the source technique's capability."
+  status: asserted
+
+- from: technique.integrability_product_constraints
+  to: technique.landau_bootstrap_complement
+  relation_type: requires_for_use
+  necessity: typical
+  confidence: 0.75
+  rationale: "Integrability constraints on symbol-letter products near singular points is needed for Bottom-Up Complement to the Landau Bootstrap because it provides adjacent-letter integrability restrictions inside the bootstrap function space."
+  failure_mode_if_absent: "Without Integrability constraints on symbol-letter products near singular points, Bottom-Up Complement to the Landau Bootstrap loses adjacent-letter integrability restrictions inside the bootstrap function space and the downstream method has to assume that step instead of computing it cleanly."
+  evidence:
+    - type: expert_claim
+      source_ref: unlocks_wiring_pass
+      note: "Matched a downstream technique whose summary depends on the source technique's capability."
+  status: asserted

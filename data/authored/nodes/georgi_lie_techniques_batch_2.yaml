@@ -1,0 +1,461 @@
+- id: technique.emergent_su_n_for_equal_mass_modes
+  label: Emergent SU(N) for Equal-Mass Modes
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Oscillator-based symmetry method that packages N equal-mass modes or species into an SU(N) multiplet by observing that the total number operator is invariant before interactions split the species.
+  status: asserted
+
+- id: technique.explicit_r_matrix_for_so_odd_spinors
+  label: Explicit R matrix for odd-orthogonal spinors
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Spinor-construction method that writes the SO(2n+1) reality matrix as an alternating tensor product of sigma_1 and sigma_2 factors, exposing the mod-8 pattern of real and pseudo-real spinors.
+  status: asserted
+
+- id: technique.explicit_spin_flavor_baryon_wavefunctions
+  label: Explicit Spin-Flavor Baryon Wavefunctions
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Baryon-state construction that combines flavor and spin Young symmetries to write explicit octet and decuplet wavefunctions in the SU(6) quark model.
+  status: asserted
+
+- id: technique.extended_dynkin_diagram_subalgebra_search
+  label: Extended Dynkin diagram search
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Subalgebra search method that adds the lowest root to form the extended Dynkin diagram and then removes one node to enumerate maximal regular same-rank subalgebras.
+  status: asserted
+
+- id: technique.factors_over_hooks_dimension_formula
+  label: Factors-over-hooks dimension formula
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Tableau-dimension formula that computes an SU(N) irrep dimension by multiplying box factors and dividing by hook lengths.
+  status: asserted
+
+- id: technique.flavor_breaking_mass_term_decomposition
+  label: Mass-term decomposition into SU(3) channels
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Symmetry-breaking decomposition that rewrites the light-quark mass term into singlet, isospin-breaking, and octet SU(3) pieces to isolate the dominant breaking channel.
+  status: asserted
+
+- id: technique.g2_root_construction
+  label: G2 root construction
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Root-building method that starts from a long-short simple-root pair at 150 degrees and iterates the root-string relations to generate the G2 root system.
+  status: asserted
+
+- id: technique.gamma_matrix_invariant_tensor_method_for_cg
+  label: Gamma-matrix invariant-tensor method
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Clebsch-Gordan method that treats Gamma_j and Gamma_j R as invariant tensors with one vector and two spinor indices to decompose spinor products systematically.
+  status: asserted
+
+- id: technique.gell_mann_matrix_basis
+  label: Gell-Mann matrix basis for SU(3)
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Basis-choice method that realizes SU(3) with the traceless Hermitian Gell-Mann matrices and uses T3 and T8 as the Cartan generators.
+  status: asserted
+
+- id: technique.gell_mann_okubo_mass_formula
+  label: Gell-Mann-Okubo mass formula
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Mass-relation method that models symmetry breaking as an octet operator and applies Wigner-Eckart reasoning to derive relations among hadron masses in an SU(3) multiplet.
+  status: asserted
+
+- id: technique.generalized_exclusion_principle
+  label: Generalized exclusion principle
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Antisymmetrization method that extends fermionic anticommutation rules to proton-neutron operators so mixed nucleon states are antisymmetric in combined spin-isospin labels.
+  status: asserted
+
+- id: technique.generalized_wigner_eckart_su3
+  label: Generalize Wigner-Eckart to SU(3)
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: SU(3) matrix-element method that decomposes operator insertions into irreducible channels and assigns one reduced coefficient to each copy of the final irrep.
+  status: asserted
+
+- id: technique.gram_schmidt_weight_basis_construction
+  label: Gram-Schmidt construction of weight-space bases
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Basis-construction method that uses Gram-Schmidt orthonormalization inside degenerate weight spaces to turn algebraically generated states into explicit orthonormal representation bases.
+  status: asserted
+
+- id: technique.grand_unification_search_criteria
+  label: Grand-unification search criteria
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Model-screening method that searches for simple unification groups containing SU(3) x SU(2) x U(1) by imposing sufficient rank and complex matter representations.
+  status: asserted
+
+- id: technique.group_projection_operators
+  label: Finite-group projection operators
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Symmetry-adapted projection method that sums representation matrices weighted by characters to isolate irreducible subspaces of a finite-group representation.
+  status: asserted
+
+- id: technique.helicity_handedness_parity_analysis
+  label: Helicity-handedness analysis of parity violation
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Chirality analysis that compares helicity, handedness, and parity transformation properties to explain why weak interactions select left-handed fermion components.
+  status: asserted
+
+- id: technique.highest_weight_and_ladder_construction
+  label: Highest-weight and ladder construction for SU(2)
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: SU(2) representation-building method that diagonalizes J_3, identifies the highest-weight state, and then uses ladder operators to generate the full multiplet with fixed normalizations.
+  status: asserted
+
+- id: technique.highest_weight_dynkin_classification
+  label: Classify irreps by highest weights and Dynkin coefficients
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Irrep-classification method that labels representations by highest weights and Dynkin coefficients using the simple-root and fundamental-weight bases.
+  status: asserted
+
+- id: technique.highest_weight_lowering_state_construction
+  label: Construct states by lowering from the highest weight
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: State-generation method that constructs an irrep by acting with simple lowering operators on the highest-weight state and tracking the reachable weights and multiplicities.
+  status: asserted
+
+- id: technique.hook_length_dimension_formula
+  label: Hook-length dimension formula
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Symmetric-group dimension formula that computes the dimension of an S_n irrep as n! divided by the product of hook lengths of its tableau.
+  status: asserted
+
+- id: technique.ii_system_formulation_for_simple_algebras
+  label: II-system formulation
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Classification method that packages the simple-root constraints into an indecomposable II-system so simple Lie algebras can be organized by finite root-geometry data.
+  status: asserted
+
+- id: technique.infinitesimal_generator_extraction
+  label: Generators from infinitesimal transformations
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Infinitesimal-expansion method that defines Hermitian generators as derivatives of representation matrices with respect to continuous group parameters near the identity.
+  status: asserted
+
+- id: technique.invariant_subspace_and_direct_sum_decomposition
+  label: Invariant subspaces and direct-sum decomposition
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Decomposition method that identifies invariant subspaces, distinguishes reducible from irreducible representations, and splits reducible representations into direct-sum blocks.
+  status: asserted
+
+- id: technique.invariant_tensor_matrix_elements
+  label: Build matrix elements from invariant contractions
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Matrix-element construction method that represents bra and ket states as tensors and forms invariant contractions with delta and epsilon symbols.
+  status: asserted
+
+- id: technique.invariant_tensor_use_of_reality_matrix
+  label: Reality matrix as an invariant tensor
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Invariant-tensor method that recasts the reality matrix R as an invariant tensor in D tensor D to control singlet extraction in real and pseudo-real representations.
+  status: asserted
+
+- id: technique.invariant_tensors_delta_epsilon
+  label: Use delta and epsilon as invariant tensors
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: SU(3) contraction method that uses delta and epsilon tensors as the primitive invariant objects for singlets, index conversion, and tensor decompositions.
+  status: asserted
+
+- id: technique.irreducible_tensor_projection
+  label: Project tensor products onto irreducible pieces
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Tensor-reduction method that projects reducible tensor products onto irreducible components by symmetrizing indices, subtracting traces, and converting antisymmetric pairs with epsilon tensors.
+  status: asserted
+
+- id: technique.isospin_generators_from_bilinears
+  label: Isospin generators from bilinears
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Bilinear-operator method that builds isospin generators from proton and neutron creation and annihilation operators and checks the SU(2) commutators explicitly.
+  status: asserted
+
+- id: technique.lie_algebra_from_group_multiplication
+  label: Deriving the Lie algebra from group multiplication
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Derivation method that expands group multiplication near the identity and extracts the Lie-bracket structure obeyed by the infinitesimal generators.
+  status: asserted
+
+- id: technique.linear_dependence_certificate_for_forbidden_diagrams
+  label: Linear-dependence certificate for forbidden diagrams
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Root-system diagnostic that uses linear dependence among roots to show when a proposed Dynkin diagram cannot represent a simple Lie algebra.
+  status: asserted
+
+- id: technique.low_rank_dynkin_coincidence_check
+  label: Low-rank coincidence check
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Sanity-check method that compares low-rank Dynkin data to known coincidences and exceptional isomorphisms before treating diagrams as distinct algebras.
+  status: asserted
+
+- id: technique.matrix_exponential_calculus
+  label: Calculus of noncommuting exponentials
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Exponential-manipulation method that controls products of noncommuting exponentials and tracks the generator structure that survives near the identity.
+  status: asserted
+
+- id: technique.matter_unification_into_su5_five_and_ten
+  label: Matter unification into 5 plus 10 of SU(5)
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: SU(5) unification method that fits one Standard Model generation into the 5-bar and 10 using subgroup embedding and antisymmetric tensor structure.
+  status: asserted
+
+- id: technique.mod8_reality_classification_of_so_spinors
+  label: Mod-8 reality classification of SO(N) spinors
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Spinor-classification method that combines chirality, intertwiners, and mod-8 periodicity to determine when SO(N) spinor representations are real, pseudo-real, or complex.
+  status: asserted
+
+- id: technique.multiparticle_tensor_product_isospin
+  label: Multiparticle states as tensor products
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Multiparticle-state method that treats many-particle isospin states as tensor products and decomposes them into irreducible total-isospin multiplets.
+  status: asserted
+
+- id: technique.number_operator_construction
+  label: Number-operator construction
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Operator-construction method that builds number operators from creation and annihilation operators and uses them to count occupation in each mode.
+  status: asserted
+
+- id: technique.octonion_fano_plane_multiplication
+  label: Encode octonion multiplication with the Fano-plane pattern
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Multiplication-encoding method that packages octonion products into the oriented-line structure of the Fano plane.
+  status: asserted
+
+- id: technique.odd_polygon_character_construction
+  label: Character construction for odd-gon symmetry groups
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Character-theory method that constructs irreducible characters for odd-gon symmetry groups by organizing rotations and reflections into conjugacy classes.
+  status: asserted
+
+- id: technique.orthonormal_weight_embedding_for_su_n
+  label: Embed SU(n) weights in an orthonormal n-space
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Weight-space method that embeds SU(n) weights in an orthonormal n-dimensional space subject to the vanishing-sum constraint.
+  status: asserted
+
+- id: technique.outer_automorphisms_from_dynkin_symmetry
+  label: Read outer automorphisms from Dynkin-diagram symmetries
+  knowledge_kind: method
+  granularity_level: atomic
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Diagram-symmetry method that reads outer automorphisms directly from symmetries of a Dynkin diagram.
+  status: asserted
+
+- id: technique.pauli_tensor_realization_of_so_odd_spinors
+  label: Pauli-tensor realization of odd-orthogonal spinors
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Spinor-realization method that builds SO(2n+1) spinors from Pauli-matrix tensor products and uses raising and lowering operators to organize the states.
+  status: asserted
+
+- id: technique.pion_triplet_boson_formalism
+  label: Pion triplet boson formalism
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Bosonic isospin formalism that treats the pion triplet with creation and annihilation operators so isospin transformations act transparently on the one-pion states.
+  status: asserted

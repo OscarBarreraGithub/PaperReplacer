@@ -1,0 +1,1104 @@
+- from: classical_fields.noether_current
+  to: technique.current_algebra_spectral_proof_of_goldstone_theorem
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists noether_current_construction as a prerequisite for Current-Algebra Spectral Proof of Goldstone's Theorem; Noether current is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Current-Algebra Spectral Proof of Goldstone's Theorem cleanly because the prerequisite noether_current_construction is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.spectral_and_mass_shell_refinement
+  to: technique.current_algebra_spectral_proof_of_goldstone_theorem
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists spectral_decomposition_of_vacuum_correlators as a prerequisite for Current-Algebra Spectral Proof of Goldstone's Theorem; Spectral and mass-shell refinement is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Current-Algebra Spectral Proof of Goldstone's Theorem cleanly because the prerequisite spectral_decomposition_of_vacuum_correlators is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.superselection_rule
+  to: technique.current_algebra_spectral_proof_of_goldstone_theorem
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists infinite_volume_superselection_argument as a prerequisite for Current-Algebra Spectral Proof of Goldstone's Theorem; Superselection rule is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Current-Algebra Spectral Proof of Goldstone's Theorem cleanly because the prerequisite infinite_volume_superselection_argument is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.ward_takahashi_identity
+  to: technique.current_conservation_nonpole_completion
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists ward_identity_gauge_invariance_constraint as a prerequisite for Current-conservation completion of non-pole terms; Ward-Takahashi identity is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Current-conservation completion of non-pole terms cleanly because the prerequisite ward_identity_gauge_invariance_constraint is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.off_shell
+  to: technique.current_conservation_transversality
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists off_shell_charge_selection_rules as a prerequisite for Current-conservation transversality; Off shell is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Current-conservation transversality cleanly because the prerequisite off_shell_charge_selection_rules is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.ward_takahashi_identity
+  to: technique.current_conservation_transversality
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists current_conservation as a prerequisite for Current-conservation transversality; Ward-Takahashi identity is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Current-conservation transversality cleanly because the prerequisite current_conservation is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.lorentz_invariant_phase_space
+  to: technique.dalitz_plot_analysis
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists phase_space_normalization_and_flux_factor as a prerequisite for Dalitz Plot Analysis; Lorentz-invariant phase space is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Dalitz Plot Analysis cleanly because the prerequisite phase_space_normalization_and_flux_factor is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.flux_factor
+  to: technique.dalitz_plot_analysis
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists phase_space_normalization_and_flux_factor as a prerequisite for Dalitz Plot Analysis; Flux factor is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Dalitz Plot Analysis cleanly because the prerequisite phase_space_normalization_and_flux_factor is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.functional_determinant
+  to: technique.determinant_variation_identity
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists functional_determinant_one_loop_correction as a prerequisite for Determinant Variation Identity; Functional determinant is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Determinant Variation Identity cleanly because the prerequisite functional_determinant_one_loop_correction is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.feynman_rules
+  to: technique.diagrammatic_loop_counting
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists spinor_qed_feynman_rules as a prerequisite for Diagrammatic loop counting; Feynman rules is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Diagrammatic loop counting cleanly because the prerequisite spinor_qed_feynman_rules is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: math.differential_form
+  to: technique.differential_form_repackaging_and_descent
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists differential forms as a prerequisite for Repackage anomalies with differential forms and descent; Differential form is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Repackage anomalies with differential forms and descent cleanly because the prerequisite differential forms is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: math.exterior_derivative
+  to: technique.differential_form_repackaging_and_descent
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists exterior derivative as a prerequisite for Repackage anomalies with differential forms and descent; Exterior derivative is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Repackage anomalies with differential forms and descent cleanly because the prerequisite exterior derivative is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.chern_simons_term
+  to: technique.differential_form_repackaging_and_descent
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists Chern-Simons forms as a prerequisite for Repackage anomalies with differential forms and descent; Chern-Simons term is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Repackage anomalies with differential forms and descent cleanly because the prerequisite Chern-Simons forms is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.optical_theorem
+  to: technique.diffraction_peak_estimate
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists optical_theorem as a prerequisite for Diffraction-Peak Estimate; Optical theorem is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Diffraction-Peak Estimate cleanly because the prerequisite optical_theorem is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.partial_wave_expansion
+  to: technique.diffraction_peak_estimate
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists partial_wave_expansion as a prerequisite for Diffraction-Peak Estimate; Partial-wave expansion is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Diffraction-Peak Estimate cleanly because the prerequisite partial_wave_expansion is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.coulomb_gauge
+  to: technique.dirac_bracket_quantization_in_coulomb_gauge
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists coulomb_gauge_fixing as a prerequisite for Dirac bracket quantization in Coulomb gauge; Coulomb gauge is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Dirac bracket quantization in Coulomb gauge cleanly because the prerequisite coulomb_gauge_fixing is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.dirac_adjoint
+  to: technique.dirac_trace_technology
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists Dirac adjoint notation as a prerequisite for Dirac trace technology; Dirac adjoint is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Dirac trace technology cleanly because the prerequisite Dirac adjoint notation is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.dyson_series
+  to: technique.disconnected_vacuum_bubble_exponentiation
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists Dyson series as a prerequisite for Disconnected vacuum-bubble exponentiation; Dyson series is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Disconnected vacuum-bubble exponentiation cleanly because the prerequisite Dyson series is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: classical_em.kramers_kronig_relations
+  to: technique.dispersion_relations_for_forward_compton_amplitude
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists dispersion_relations as a prerequisite for Dispersion Relations for the Forward Compton Amplitude; Kramers-Kronig relations is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Dispersion Relations for the Forward Compton Amplitude cleanly because the prerequisite dispersion_relations is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.t_matrix
+  to: technique.distorted_wave_born_approximation
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists t_matrix_and_born_approximation as a prerequisite for Distorted-Wave Born Approximation; T-matrix is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Distorted-Wave Born Approximation cleanly because the prerequisite t_matrix_and_born_approximation is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: eft.effective_field_theory
+  to: technique.effective_field_theory_bridge_from_planck_scale
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists effective_field_theory_of_quantum_gravity as a prerequisite for Effective-field-theory bridge from the Planck scale; Effective field theory is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Effective-field-theory bridge from the Planck scale cleanly because the prerequisite effective_field_theory_of_quantum_gravity is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: eft.effective_field_theory
+  to: technique.effective_pi0_2gamma_operator_estimation
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists effective interactions as a prerequisite for Estimate pi0 to 2gamma with the lowest-dimension effective operator; Effective field theory is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Estimate pi0 to 2gamma with the lowest-dimension effective operator cleanly because the prerequisite effective interactions is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.decay_rate
+  to: technique.effective_pi0_2gamma_operator_estimation
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists phase-space decay formulas as a prerequisite for Estimate pi0 to 2gamma with the lowest-dimension effective operator; Decay rate is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Estimate pi0 to 2gamma with the lowest-dimension effective operator cleanly because the prerequisite phase-space decay formulas is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: eft.power_counting
+  to: technique.effective_pi0_2gamma_operator_estimation
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists chiral symmetry power counting as a prerequisite for Estimate pi0 to 2gamma with the lowest-dimension effective operator; Power counting is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Estimate pi0 to 2gamma with the lowest-dimension effective operator cleanly because the prerequisite chiral symmetry power counting is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.effective_action
+  to: technique.energy_interpretation_and_lagrange_multiplier_minimization
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists connected_and_1pi_legendre_transform as a prerequisite for Energy interpretation and Lagrange-multiplier minimization; Effective action is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Energy interpretation and Lagrange-multiplier minimization cleanly because the prerequisite connected_and_1pi_legendre_transform is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: technique.euclidean_time_path_integral_construction
+  to: technique.euclidean_bounce_method_for_vacuum_decay
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists Euclidean path integrals as a prerequisite for Compute false-vacuum decay from the Euclidean bounce; Construct Euclidean-time path integrals for matrix elements, partition functions, and saddles is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Compute false-vacuum decay from the Euclidean bounce cleanly because the prerequisite Euclidean path integrals is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.path_integral_and_generating_functionals
+  to: technique.euclidean_positivity_argument_for_unbroken_vector_symmetries
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists path_integrals as a prerequisite for Euclidean Positivity Argument for Unbroken Vector Symmetries; Path integral and generating functionals is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Euclidean Positivity Argument for Unbroken Vector Symmetries cleanly because the prerequisite path_integrals is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: technique.euclidean_time_path_integral_construction
+  to: technique.euclidean_positivity_argument_for_unbroken_vector_symmetries
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists euclidean_field_theory as a prerequisite for Euclidean Positivity Argument for Unbroken Vector Symmetries; Construct Euclidean-time path integrals for matrix elements, partition functions, and saddles is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Euclidean Positivity Argument for Unbroken Vector Symmetries cleanly because the prerequisite euclidean_field_theory is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.spectral_and_mass_shell_refinement
+  to: technique.euclidean_positivity_argument_for_unbroken_vector_symmetries
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists spectral_decomposition_of_vacuum_correlators as a prerequisite for Euclidean Positivity Argument for Unbroken Vector Symmetries; Spectral and mass-shell refinement is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Euclidean Positivity Argument for Unbroken Vector Symmetries cleanly because the prerequisite spectral_decomposition_of_vacuum_correlators is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.path_integral_and_generating_functionals
+  to: technique.euclidean_time_path_integral_construction
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists canonical path integrals as a prerequisite for Construct Euclidean-time path integrals for matrix elements, partition functions, and saddles; Path integral and generating functionals is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Construct Euclidean-time path integrals for matrix elements, partition functions, and saddles cleanly because the prerequisite canonical path integrals is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.gaussian_functional_integral
+  to: technique.euclidean_time_path_integral_construction
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists Gaussian integration over momenta as a prerequisite for Construct Euclidean-time path integrals for matrix elements, partition functions, and saddles; Gaussian functional integral is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Construct Euclidean-time path integrals for matrix elements, partition functions, and saddles cleanly because the prerequisite Gaussian integration over momenta is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: technique.field_action_and_canonical_quantization
+  to: technique.euler_heisenberg_effective_lagrangian
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists field_action_and_canonical_quantization as a prerequisite for Euler-Heisenberg Effective Lagrangian; Field Action Principle and Canonical Quantization is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Euler-Heisenberg Effective Lagrangian cleanly because the prerequisite field_action_and_canonical_quantization is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.feynman_rules
+  to: technique.external_line_ir_renormalization_bookkeeping
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists qed_counterterm_feynman_rules as a prerequisite for External-line infrared renormalization bookkeeping; Feynman rules is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply External-line infrared renormalization bookkeeping cleanly because the prerequisite qed_counterterm_feynman_rules is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: eft.scale_separation
+  to: technique.external_line_ir_renormalization_bookkeeping
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists soft_hard_scale_separation_with_ir_cutoff as a prerequisite for External-line infrared renormalization bookkeeping; Scale separation is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply External-line infrared renormalization bookkeeping cleanly because the prerequisite soft_hard_scale_separation_with_ir_cutoff is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.r_xi_gauge
+  to: technique.faddeev_popov_quantization_in_broken_gauge_theories
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists r_xi_gauge_fixing as a prerequisite for Faddeev-Popov quantization in broken gauge theories; R_xi gauge is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Faddeev-Popov quantization in broken gauge theories cleanly because the prerequisite r_xi_gauge_fixing is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: eft.matching
+  to: technique.fermi_constant_matching
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists effective field theory matching as a prerequisite for Match low-energy weak exchange onto the Fermi theory; Matching is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Match low-energy weak exchange onto the Fermi theory cleanly because the prerequisite effective field theory matching is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: eft.four_fermi_theory
+  to: technique.fermi_constant_matching
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists four-fermion interactions as a prerequisite for Match low-energy weak exchange onto the Fermi theory; 4-Fermi theory is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Match low-energy weak exchange onto the Fermi theory cleanly because the prerequisite four-fermion interactions is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.wilsonian_renormalization_group
+  to: technique.fermi_surface_rg_for_bcs_pairing
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists renormalization group as a prerequisite for Use Fermi-surface RG to isolate the marginal Cooper channel; Wilsonian renormalization group is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Use Fermi-surface RG to isolate the marginal Cooper channel cleanly because the prerequisite renormalization group is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: eft.power_counting
+  to: technique.fermi_surface_rg_for_bcs_pairing
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists many-fermion power counting as a prerequisite for Use Fermi-surface RG to isolate the marginal Cooper channel; Power counting is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Use Fermi-surface RG to isolate the marginal Cooper channel cleanly because the prerequisite many-fermion power counting is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.wick_theorem
+  to: technique.fermion_line_orientation_and_closed_loop_signs
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists Fermionic Wick theorem as a prerequisite for Fermion-line orientation and closed-loop signs; Wick theorem is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Fermion-line orientation and closed-loop signs cleanly because the prerequisite Fermionic Wick theorem is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.dirac_spinor
+  to: technique.fermion_line_orientation_and_closed_loop_signs
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists Dirac spinor external states as a prerequisite for Fermion-line orientation and closed-loop signs; Dirac spinor is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Fermion-line orientation and closed-loop signs cleanly because the prerequisite Dirac spinor external states is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.fermionic_path_integral
+  to: technique.fermion_zero_mode_selection_rules
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists Grassmann integration as a prerequisite for Use fermion zero modes to determine which amplitudes are nonzero; Fermionic path integral is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Use fermion zero modes to determine which amplitudes are nonzero cleanly because the prerequisite Grassmann integration is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.topology_and_solitons
+  to: technique.fermion_zero_mode_selection_rules
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists topological backgrounds as a prerequisite for Use fermion zero modes to determine which amplitudes are nonzero; Topology and solitons in QFT is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Use fermion zero modes to determine which amplitudes are nonzero cleanly because the prerequisite topological backgrounds is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.mode_expansion
+  to: technique.fermionic_second_quantization
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists mode_expansion_of_quantized_fields as a prerequisite for Fermionic Second Quantization; Mode expansion is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Fermionic Second Quantization cleanly because the prerequisite mode_expansion_of_quantized_fields is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: technique.dirac_linearization_of_dispersion
+  to: technique.fermionic_second_quantization
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists dirac_linearization_of_dispersion as a prerequisite for Fermionic Second Quantization; Dirac Linearization of Dispersion is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Fermionic Second Quantization cleanly because the prerequisite dirac_linearization_of_dispersion is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.canonical_quantization
+  to: technique.fermionic_wick_theorem_and_signs
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists Anticommutation relations as a prerequisite for Fermionic Wick theorem and sign bookkeeping; Canonical quantization is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Fermionic Wick theorem and sign bookkeeping cleanly because the prerequisite Anticommutation relations is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.feynman_propagator
+  to: technique.fermionic_wick_theorem_and_signs
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists Dirac propagator as a prerequisite for Fermionic Wick theorem and sign bookkeeping; Feynman propagator is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Fermionic Wick theorem and sign bookkeeping cleanly because the prerequisite Dirac propagator is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: technique.current_superfield_construction
+  to: technique.ferrara_zumino_supercurrent
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists current_superfield_construction as a prerequisite for Ferrara-Zumino Supercurrent; Current Superfield Construction is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Ferrara-Zumino Supercurrent cleanly because the prerequisite current_superfield_construction is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: technique.fermionic_second_quantization
+  to: technique.field_action_and_canonical_quantization
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists fermionic_second_quantization as a prerequisite for Field Action Principle and Canonical Quantization; Fermionic Second Quantization is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Field Action Principle and Canonical Quantization cleanly because the prerequisite fermionic_second_quantization is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.dirac_equation
+  to: technique.fine_structure_from_relativistic_dirac_spectrum
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists radial_dirac_equations_in_central_field as a prerequisite for Fine structure from the relativistic Dirac spectrum; Dirac equation is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Fine structure from the relativistic Dirac spectrum cleanly because the prerequisite radial_dirac_equations_in_central_field is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.homotopy_group
+  to: technique.finite_action_topological_sector_classification
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: "The batch lists topological equivalence classes as a prerequisite for Classify field space by finite-action or finite-energy deformations; Homotopy groups (\u03C0_k classification) is the authored-graph match that supplies that ingredient."
+  failure_mode_if_absent: Cannot apply Classify field space by finite-action or finite-energy deformations cleanly because the prerequisite topological equivalence classes is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.field_strength_tensor
+  to: technique.finite_gauge_transformations_and_pure_gauge_test
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists field_strength_from_covariant_commutator as a prerequisite for Finite gauge transformations and pure-gauge test; Field strength tensor is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Finite gauge transformations and pure-gauge test cleanly because the prerequisite field_strength_from_covariant_commutator is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: classical_fields.variational_principles_and_classical_fields
+  to: technique.fixed_sector_minimization_for_soliton_search
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists variational principle as a prerequisite for Minimize the action inside a fixed topological sector; Variational principles and classical fields is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Minimize the action inside a fixed topological sector cleanly because the prerequisite variational principle is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.homotopy_group
+  to: technique.fixed_sector_minimization_for_soliton_search
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: "The batch lists topological sectors as a prerequisite for Minimize the action inside a fixed topological sector; Homotopy groups (\u03C0_k classification) is the authored-graph match that supplies that ingredient."
+  failure_mode_if_absent: Cannot apply Minimize the action inside a fixed topological sector cleanly because the prerequisite topological sectors is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: sm.ckm_matrix
+  to: technique.flavor_changing_neutral_current_suppression
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists ckm_matrix_generation as a prerequisite for Tree-level suppression of flavor-changing neutral currents; CKM matrix is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Tree-level suppression of flavor-changing neutral currents cleanly because the prerequisite ckm_matrix_generation is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: math.stokes_theorem
+  to: technique.flux_quantization_and_zero_resistance
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists Stokes theorem as a prerequisite for Derive flux quantization and zero resistance from compact phase dynamics; Stokes theorem on manifolds is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Derive flux quantization and zero resistance from compact phase dynamics cleanly because the prerequisite Stokes theorem is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.order_parameter
+  to: technique.flux_quantization_and_zero_resistance
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists compact order-parameter phase as a prerequisite for Derive flux quantization and zero resistance from compact phase dynamics; Order parameter is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Derive flux quantization and zero resistance from compact phase dynamics cleanly because the prerequisite compact order-parameter phase is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.ward_takahashi_identity
+  to: technique.form_factor_decomposition_and_ward_constraints
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists ward_identity_checks as a prerequisite for Form-factor decomposition with Ward constraints; Ward-Takahashi identity is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Form-factor decomposition with Ward constraints cleanly because the prerequisite ward_identity_checks is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.brst_symmetry
+  to: technique.four_ghost_counterterm_extension
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists renormalized_brst_constraint_on_divergences as a prerequisite for Four-ghost counterterm extension; BRST symmetry is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Four-ghost counterterm extension cleanly because the prerequisite renormalized_brst_constraint_on_divergences is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.brst_cohomology
+  to: technique.four_ghost_counterterm_extension
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists brst_cohomology_and_quantization as a prerequisite for Four-ghost counterterm extension; BRST cohomology is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Four-ghost counterterm extension cleanly because the prerequisite brst_cohomology_and_quantization is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: technique.fourier_transform_methods
+  to: technique.fourier_mode_decomposition_into_oscillators
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists Fourier transform as a prerequisite for Fourier mode decomposition into harmonic oscillators; Fourier transform methods is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Fourier mode decomposition into harmonic oscillators cleanly because the prerequisite Fourier transform is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.free_scalar_field
+  to: technique.fourier_mode_decomposition_into_oscillators
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists Free Klein-Gordon equation as a prerequisite for Fourier mode decomposition into harmonic oscillators; Free scalar field is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Fourier mode decomposition into harmonic oscillators cleanly because the prerequisite Free Klein-Gordon equation is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.path_integral_and_generating_functionals
+  to: technique.fujikawa_measure_jacobian
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists path integrals as a prerequisite for Compute anomalies from the fermion measure; Path integral and generating functionals is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Compute anomalies from the fermion measure cleanly because the prerequisite path integrals is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.fermionic_path_integral
+  to: technique.fujikawa_measure_jacobian
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists fermionic integration measures as a prerequisite for Compute anomalies from the fermion measure; Fermionic path integral is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Compute anomalies from the fermion measure cleanly because the prerequisite fermionic integration measures is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: technique.gamma_trace_reduction_and_epsilon_tensor_identities
+  to: technique.dirac_trace_technology
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Gamma-trace reduction and epsilon-tensor identities are part of the concrete reduction toolkit used inside Dirac trace technology.
+  failure_mode_if_absent: Cannot carry out the standard gamma-matrix reductions that Dirac trace technology relies on.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: sm.higgs.higgs_mechanism
+  to: technique.gauge_boson_mass_matrix_from_vev
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists higgs_mechanism_abelian as a prerequisite for Gauge-boson mass matrix from a vacuum expectation value; Higgs mechanism is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Gauge-boson mass matrix from a vacuum expectation value cleanly because the prerequisite higgs_mechanism_abelian is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: technique.extended_gauge_transformation_method
+  to: technique.gauge_covariant_susy_via_compensating_transformations
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists extended_gauge_transformation_method as a prerequisite for Gauge-Covariant Supersymmetry via Compensating Transformations; Extended Gauge Transformation Method is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Gauge-Covariant Supersymmetry via Compensating Transformations cleanly because the prerequisite extended_gauge_transformation_method is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.gauge_fixing
+  to: technique.gauge_covariant_susy_via_compensating_transformations
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists wess_zumino_gauge_fixing as a prerequisite for Gauge-Covariant Supersymmetry via Compensating Transformations; Gauge fixing is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Gauge-Covariant Supersymmetry via Compensating Transformations cleanly because the prerequisite wess_zumino_gauge_fixing is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.lorentz_group_representation
+  to: technique.gauge_invariance_from_massless_spin_one
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists massless_spin_one_representation_theory as a prerequisite for Gauge invariance from massless spin one; Lorentz group representation is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Gauge invariance from massless spin one cleanly because the prerequisite massless_spin_one_representation_theory is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.non_abelian_gauge_symmetry
+  to: technique.gauge_invariant_em_tensor_for_monopoles
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists broken non-Abelian gauge symmetry as a prerequisite for Build the gauge-invariant electromagnetic field of the broken phase; Non-Abelian gauge symmetry is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Build the gauge-invariant electromagnetic field of the broken phase cleanly because the prerequisite broken non-Abelian gauge symmetry is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.field_strength_tensor
+  to: technique.gauge_invariant_em_tensor_for_monopoles
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists field-strength tensors as a prerequisite for Build the gauge-invariant electromagnetic field of the broken phase; Field strength tensor is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Build the gauge-invariant electromagnetic field of the broken phase cleanly because the prerequisite field-strength tensors is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.dirac_equation
+  to: technique.gauge_invariant_heat_kernel_regulation
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists Dirac operator as a prerequisite for Regularize the Fujikawa trace with a gauge-invariant heat-kernel insertion; Dirac equation is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Regularize the Fujikawa trace with a gauge-invariant heat-kernel insertion cleanly because the prerequisite Dirac operator is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.schwinger_proper_time
+  to: technique.gauge_invariant_heat_kernel_regulation
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists heat-kernel style regularization as a prerequisite for Regularize the Fujikawa trace with a gauge-invariant heat-kernel insertion; Schwinger proper-time method is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Regularize the Fujikawa trace with a gauge-invariant heat-kernel insertion cleanly because the prerequisite heat-kernel style regularization is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.gauge_invariance
+  to: technique.gauge_parameter_independence_and_vev_spurion_renormalization
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists S-matrix gauge independence as a prerequisite for Prove xi-independence and renormalize with vevs treated as external fields; Gauge invariance is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Prove xi-independence and renormalize with vevs treated as external fields cleanly because the prerequisite S-matrix gauge independence is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.regularization_renormalization_rg
+  to: technique.gauge_parameter_independence_and_vev_spurion_renormalization
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists renormalization as a prerequisite for Prove xi-independence and renormalize with vevs treated as external fields; Regularization, renormalization, and RG is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Prove xi-independence and renormalize with vevs treated as external fields cleanly because the prerequisite renormalization is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: sm.nonlinear_sigma_model
+  to: technique.gauged_ccwz_construction
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists nonlinear realizations as a prerequisite for Build the low-energy EFT for dynamical symmetry breaking with a gauged subgroup; Nonlinear sigma model is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Build the low-energy EFT for dynamical symmetry breaking with a gauged subgroup cleanly because the prerequisite nonlinear realizations is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.fermionic_path_integral
+  to: technique.gaussian_grassmann_wick_expansion
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists fermionic_path_integrals as a prerequisite for Gaussian Grassmann Wick expansion; Fermionic path integral is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Gaussian Grassmann Wick expansion cleanly because the prerequisite fermionic_path_integrals is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.gaussian_functional_integral
+  to: technique.gaussian_grassmann_wick_expansion
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists gaussian_functional_integration as a prerequisite for Gaussian Grassmann Wick expansion; Gaussian functional integral is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Gaussian Grassmann Wick expansion cleanly because the prerequisite gaussian_functional_integration is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: eft.power_counting
+  to: technique.general_n_irreducible_ope_recursion
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists power_counting_subgraph_analysis as a prerequisite for General N-Irreducible OPE Recursion; Power counting is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply General N-Irreducible OPE Recursion cleanly because the prerequisite power_counting_subgraph_analysis is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: sm.nonlinear_sigma_model
+  to: technique.general_unitarity_gauge_construction
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists nonlinear sigma-model variables as a prerequisite for Construct unitarity gauge in a general nonlinear setting; Nonlinear sigma model is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Construct unitarity gauge in a general nonlinear setting cleanly because the prerequisite nonlinear sigma-model variables is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: math.lie_group
+  to: technique.general_unitarity_gauge_construction
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists local group actions as a prerequisite for Construct unitarity gauge in a general nonlinear setting; Lie group is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Construct unitarity gauge in a general nonlinear setting cleanly because the prerequisite local group actions is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: math.lie_group
+  to: technique.generator_normalization_and_one_loop_rg_unification
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists simple Lie groups as a prerequisite for Test grand unification by subgroup normalization and one-loop running; Lie group is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Test grand unification by subgroup normalization and one-loop running cleanly because the prerequisite simple Lie groups is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: technique.gauge_group_color_algebra
+  to: technique.generator_normalization_and_one_loop_rg_unification
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists generator traces as a prerequisite for Test grand unification by subgroup normalization and one-loop running; Gauge-group color algebra and Casimir reduction is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Test grand unification by subgroup normalization and one-loop running cleanly because the prerequisite generator traces is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.beta_function
+  to: technique.generator_normalization_and_one_loop_rg_unification
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists one-loop beta functions as a prerequisite for Test grand unification by subgroup normalization and one-loop running; Beta function is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Test grand unification by subgroup normalization and one-loop running cleanly because the prerequisite one-loop beta functions is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: sm.flavor_mixing
+  to: technique.gim_mechanism
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists flavor mixing as a prerequisite for Use generation structure to suppress flavor-changing neutral currents; Flavor mixing is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Use generation structure to suppress flavor-changing neutral currents cleanly because the prerequisite flavor mixing is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.order_parameter
+  to: technique.ginzburg_landau_vortex_analysis
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists order parameters as a prerequisite for Expand in a local order parameter and analyze vortices; Order parameter is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Expand in a local order parameter and analyze vortices cleanly because the prerequisite order parameters is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.phase_transition
+  to: technique.ginzburg_landau_vortex_analysis
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists local EFT near a phase transition as a prerequisite for Expand in a local order parameter and analyze vortices; Phase transition is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Expand in a local order parameter and analyze vortices cleanly because the prerequisite local EFT near a phase transition is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: technique.ginzburg_landau_vortex_analysis
+  to: qft.magnetic_flux_quantization
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: Abrikosov-vortex analysis is one of the standard derivational routes to flux quantization in the Ginzburg-Landau description.
+  failure_mode_if_absent: Cannot derive the flux-quantization result from the local order-parameter and vortex analysis.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.topology_and_solitons
+  to: technique.global_anomaly_obstruction_analysis
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists topology of gauge-field space as a prerequisite for Analyze global anomalies as topological obstructions; Topology and solitons in QFT is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Analyze global anomalies as topological obstructions cleanly because the prerequisite topology of gauge-field space is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.gauge_field
+  to: technique.global_anomaly_obstruction_analysis
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists topology of gauge-field space as a prerequisite for Analyze global anomalies as topological obstructions; Gauge field is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Analyze global anomalies as topological obstructions cleanly because the prerequisite topology of gauge-field space is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: sm.ssb.goldstone_theorem
+  to: technique.goldstone_vector_continuity_argument
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists Goldstone theorem as a prerequisite for Match zero-coupling vector exchange to Goldstone exchange; Goldstone's theorem is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Match zero-coupling vector exchange to Goldstone exchange cleanly because the prerequisite Goldstone theorem is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted
+- from: qft.feynman_propagator
+  to: technique.goldstone_vector_continuity_argument
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The batch lists gauge boson propagators as a prerequisite for Match zero-coupling vector exchange to Goldstone exchange; Feynman propagator is the authored-graph match that supplies that ingredient.
+  failure_mode_if_absent: Cannot apply Match zero-coupling vector exchange to Goldstone exchange cleanly because the prerequisite gauge boson propagators is missing from the learner's background.
+  evidence:
+    - type: expert_claim
+      source_ref: technique_extraction_initial
+      note: Prerequisite identified during technique extraction.
+  status: asserted

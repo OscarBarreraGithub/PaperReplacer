@@ -1,0 +1,3783 @@
+researcher: schwartz_matt
+total_unique_techniques: 250
+classification_summary:
+  new_distinct: 171
+  part_of_existing: 78
+  alias_existing: 1
+techniques:
+- technique_id: dynkin_diagram_encoding
+  label: Dynkin-diagram encoding
+  description: Encode the simple roots by nodes and line multiplicities determined by their pairwise angles, giving a compact
+    signature of the algebra up to relative root lengths.
+  category: mathematical
+  unlocks:
+  - g2_root_construction
+  prerequisites:
+  - simple_root_identification
+  - root_angle_quantization
+  - simple_root_geometry_and_completeness
+  source_papers:
+  - georgi_lie_algebras_ch22-end
+  - georgi_lie_algebras_ch7-9
+  mention_count: 2
+  overlap_classification: new_distinct
+- technique_id: abelian_simultaneous_diagonalization
+  label: Simultaneous diagonalization for finite Abelian groups
+  description: Use the fact that every irreducible representation of a finite Abelian group is one-dimensional to diagonalize
+    commuting symmetry operators and H simultaneously.
+  category: mathematical
+  unlocks:
+  - assign definite Abelian quantum numbers
+  - diagonalize all commuting group operators at once
+  - simplify parity-type symmetry problems
+  prerequisites:
+  - conjugacy_class_analysis
+  - completeness_of_irrep_matrix_elements
+  source_papers:
+  - georgi_lie_algebras_ch1-3
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: algebra_construction_from_simple_root_commutators
+  label: Algebra construction from simple-root commutators
+  description: Once the root system and root strings are known, fix normalized commutators among simple-root generators and
+    recover the rest of the algebra with SU(2) action and the Jacobi identity.
+  category: mathematical
+  unlocks: []
+  prerequisites:
+  - inductive_root_generation
+  - root_string_master_formula
+  source_papers:
+  - georgi_lie_algebras_ch7-9
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: angular_momentum_as_su3_subgroup
+  label: Angular Momentum as an SU(3) Subgroup
+  description: Identify angular momentum inside the oscillator SU(3), showing that one oscillator level can contain several
+    L multiplets whose exact degeneracy is enforced by SU(3), not just by rotational invariance.
+  category: physical
+  unlocks: []
+  prerequisites:
+  - emergent_su3_in_isotropic_oscillator
+  source_papers:
+  - georgi_lie_algebras_ch13-15
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: anomaly_free_representation_condition
+  label: Impose the anomaly-free representation condition
+  description: Require the symmetric trace Tr({T_a,T_b}T_c) to vanish for the right-handed fermion representation so that
+    the unified gauge theory is quantum mechanically consistent.
+  category: physical
+  unlocks:
+  - anomaly_index_arithmetic
+  - su5_family_anomaly_cancellation
+  prerequisites:
+  - quantum field theory
+  - group representations
+  source_papers:
+  - georgi_lie_algebras_ch22-end
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: anomaly_index_arithmetic
+  label: Compute anomaly indices algebraically
+  description: Define the anomaly coefficient A(D) through the cubic symmetric trace and use its conjugation, direct-sum,
+    and tensor-product rules to test representations quickly.
+  category: mathematical
+  unlocks:
+  - su5_family_anomaly_cancellation
+  - anomaly checks in larger GUTs
+  prerequisites:
+  - anomaly_free_representation_condition
+  source_papers:
+  - georgi_lie_algebras_ch22-end
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: antisymmetrized_gamma_products_as_k_forms
+  label: Antisymmetrized gamma products as k-forms
+  description: Take antisymmetrized products of distinct gamma matrices to realize antisymmetric tensor representations of
+    SO(N). This is the standard map from spinor bilinears to p-form tensors.
+  category: mathematical
+  unlocks: Conversion between spinor bilinears and antisymmetric tensor representations.
+  prerequisites:
+  - Clifford algebra
+  - antisymmetric tensors
+  - Jacobi identity
+  source_papers:
+  - georgi_lie_algebras_ch19-21
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: approximate_flavor_su3_from_flavor_blind_gluons
+  label: Approximate flavor SU(3) from flavor-blind gluons
+  description: Treat gluon interactions as independent of light flavor so the strong Hamiltonian is approximately flavor SU(3)
+    invariant, with quark masses as the leading source of breaking.
+  category: physical
+  unlocks:
+  - Explains why Gell-Mann flavor SU(3) is useful.
+  - Turns flavor breaking into a controlled perturbation.
+  prerequisites:
+  - QCD scale separation
+  - Flavor SU(3)
+  - Light quark masses
+  source_papers:
+  - georgi_lie_algebras_ch16-18
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: approximate_isospin_symmetry
+  label: Approximate isospin symmetry
+  description: Split the Hamiltonian as H0 plus DeltaH with H0 commuting with isospin and DeltaH collecting small symmetry-breaking
+    effects such as electromagnetic, weak, and up-down mass differences.
+  category: physical
+  unlocks:
+  - isospin_perturbation_theory
+  prerequisites:
+  - isospin_doublet_charge_independence
+  source_papers:
+  - georgi_lie_algebras_ch7-9
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: arbitrary_su3_irreps_from_3_and_3bar_oscillators
+  label: Build Arbitrary SU(3) Irreps from 3 and 3bar Oscillators
+  description: Construct fixed-(N_a,N_b) states transforming as arbitrary (n,m) irreps, impose tracelessness by removing singlet
+    contractions, and extract energies from highest-weight states.
+  category: physical
+  unlocks: []
+  prerequisites:
+  - su_n_tensor_young_tableau_irreps
+  - diagonal_su3_from_coupled_oscillators
+  source_papers:
+  - georgi_lie_algebras_ch13-15
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: branch_reduction_rule
+  label: Branch-reduction rule
+  description: Apply the shrinking logic to branched diagrams to show that only a single three-pronged branch with single
+    lines can survive. This is the key local move that isolates the D_n and E_n branching patterns.
+  category: mathematical
+  unlocks: Identification of the only allowed branching pattern in simple Dynkin diagrams.
+  prerequisites:
+  - Dynkin diagrams
+  - single-line shrinking rule
+  - simple-root inner products
+  source_papers:
+  - georgi_lie_algebras_ch19-21
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: break_so10_to_sm_with_45_or_54
+  label: Break SO(10) to the Standard Model with 45 or 54 Higgs fields
+  description: Classify antisymmetric 45 or symmetric traceless 54 vacuum values into canonical forms and choose patterns
+    that preserve SU(3) x SU(2) x U(1) or an intermediate SO(6) x SO(4).
+  category: physical
+  unlocks:
+  - electroweak_breaking_from_so10_higgs_multiplets
+  - intermediate-symmetry model building
+  prerequisites:
+  - break_so10_to_su5_with_16_vev
+  - spontaneous_symmetry_breaking_via_higgs_vevs
+  source_papers:
+  - georgi_lie_algebras_ch22-end
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: break_so10_to_su5_with_16_vev
+  label: Break SO(10) to SU(5) with a 16 vacuum value
+  description: Use the SU(5)-singlet component inside a 16 or 16-bar Higgs to break SO(10) down to its SU(5) subgroup.
+  category: physical
+  unlocks:
+  - break_so10_to_sm_with_45_or_54
+  prerequisites:
+  - so10_family_unification_in_16
+  - spontaneous_symmetry_breaking_via_higgs_vevs
+  source_papers:
+  - georgi_lie_algebras_ch22-end
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: cartan_matrix_encoding
+  label: Cartan matrix as q-p data
+  description: Define A_ji = 2 alpha_j.alpha_i / alpha_i^2 so each row gives the q_i-p_i integers for a simple root; diagonal
+    entries are 2 and off-diagonal entries encode simple-root angles and relative lengths exactly as Dynkin data.
+  category: mathematical
+  unlocks:
+  - Replace geometric root calculations with integer bookkeeping.
+  - Read simple-root couplings directly from matrix rows.
+  - Prepare iterative algorithms for generating full root systems.
+  prerequisites:
+  - simple_roots
+  - root_strings
+  - su2_subalgebras_from_roots
+  source_papers:
+  - georgi_lie_algebras_ch10-12
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: cartan_subalgebra_and_weights
+  label: Cartan subalgebra and weights
+  description: Choose a maximal commuting hermitian set of generators, diagonalize them simultaneously, and label states by
+    their real weight vectors; the number of Cartan generators is the rank.
+  category: mathematical
+  unlocks:
+  - roots_as_adjoint_weights
+  - positive_weight_ordering
+  - gell_mann_matrix_basis
+  prerequisites: []
+  source_papers:
+  - georgi_lie_algebras_ch7-9
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: casimir_computation_via_kd_rules
+  label: Casimir computation via k_D rules
+  description: Compute SU(3) Casimirs for small representations from C(D) = 8 k_D / dim(D), using the simple direct-sum and
+    tensor-product rules obeyed by the trace-normalization coefficient k_D.
+  category: mathematical
+  unlocks:
+  - Provides a fast way to evaluate C(6), C(8), C(10), and similar representations.
+  - Supports quantitative color-attraction comparisons.
+  prerequisites:
+  - Trace normalization
+  - Direct sums
+  - Tensor products
+  source_papers:
+  - georgi_lie_algebras_ch16-18
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: character_orthogonality_and_projection_operators
+  label: Character orthogonality and projection operators
+  description: Use orthogonality of characters to decompose reducible representations and build explicit projection operators
+    onto irreducible subspaces.
+  category: mathematical
+  unlocks:
+  - explicit irrep extraction
+  - finite-group character tables
+  prerequisites:
+  - group representations
+  - trace cyclicity
+  source_papers:
+  - georgi_lie_algebras_ch22-end
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: character_table_construction
+  label: Character-table construction
+  description: Combine conjugacy classes, known low-dimensional representations, quotient-group information, and orthogonality
+    to fill in the full character table of a finite group.
+  category: mathematical
+  unlocks:
+  - solve for unknown character values
+  - summarize all irreducible representations compactly
+  - prepare projector and tensor-product calculations
+  prerequisites:
+  - subgroup_coset_and_factor_group_analysis
+  - conjugacy_class_analysis
+  - character_orthogonality_and_multiplicity_extraction
+  source_papers:
+  - georgi_lie_algebras_ch1-3
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: charge_quantization_from_semi_simple_embedding
+  label: Quantize charge via semi-simple embedding
+  description: Embed SU(3) x SU(2) x U(1) into the semi-simple SU(4) x SU(2) x SU(2) subgroup so that electric charge is fixed
+    by non-Abelian commutation relations rather than by a free U(1) normalization.
+  category: physical
+  unlocks:
+  - unified charge assignments
+  prerequisites:
+  - so10_left_right_branching
+  - lepton_number_as_fourth_color
+  source_papers:
+  - georgi_lie_algebras_ch22-end
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: chirality_projection_from_gamma_product
+  label: Chiral projection from the gamma-product operator
+  description: Use the product of all gamma matrices to build projection operators onto the two irreducible chiral SO(2n)
+    spinor spaces. This is the group-theory version of chirality projection.
+  category: mathematical
+  unlocks: Extraction of left- and right-chiral irreducible spinors in even dimensions.
+  prerequisites:
+  - Clifford algebra
+  - projection operators
+  - chirality operator
+  source_papers:
+  - georgi_lie_algebras_ch19-21
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: clebsch_gordan_coefficients_from_tensor_products
+  label: Clebsch-Gordan coefficients from tensor products
+  description: Extract the purely group-theoretic coefficients that relate product states to states of definite total representation
+    content.
+  category: mathematical
+  unlocks:
+  - wigner_eckart_theorem
+  - angular-momentum and isospin addition
+  prerequisites:
+  - highest_weight_tensor_product_decomposition
+  source_papers:
+  - georgi_lie_algebras_ch22-end
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: clebsch_gordan_decomposition
+  label: Clebsch-Gordan decomposition
+  description: Decompose tensor products into irreducible pieces with fixed total quantum numbers using Clebsch-Gordan coefficients.
+  category: mathematical
+  unlocks:
+  - wigner_eckart_theorem
+  - symmetric_triplet_antisymmetric_singlet_rule
+  - channel_amplitude_reduction
+  prerequisites:
+  - highest_weight_construction
+  source_papers:
+  - georgi_lie_algebras_ch7-9
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: clebsch_gordan_highest_weight_decomposition
+  label: Clebsch-Gordan decomposition by highest weights
+  description: Use additive J_3 weights and lowering operators to decompose SU(2) tensor products into irreducible representations
+    and construct the corresponding linear combinations of product states.
+  category: mathematical
+  unlocks:
+  - wigner_eckart_decomposition
+  prerequisites:
+  - tensor_product_representation_rule
+  - highest_weight_reduction_algorithm
+  source_papers:
+  - georgi_lie_algebras_ch4-6
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: clifford_algebra_construction_of_so_n
+  label: Clifford algebra to SO(N) generators
+  description: Start from a Clifford algebra with anticommuting Gamma matrices and define the Lie generators from their commutators.
+    This gives an immediate construction of SO(N) generators and a bridge between Lie-algebra and gamma-matrix language.
+  category: mathematical
+  unlocks: Immediate generation of SO(N) representations from gamma-matrix data.
+  prerequisites:
+  - Clifford algebra
+  - commutators and anticommutators
+  - orthogonal groups
+  source_papers:
+  - georgi_lie_algebras_ch19-21
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: clifford_embedding_of_su_n_in_so_2n
+  label: Clifford embedding of SU(n) in SO(2n)
+  description: Build SU(n) generators from traceless bilinears of Clifford creation and annihilation operators and show that
+    they are linear combinations of SO(2n) generators.
+  category: mathematical
+  unlocks:
+  - spinor_branching_so_2n_to_su_n
+  - u1_charge_tracking_in_so_2n_spinors
+  - so10_family_unification_in_16
+  prerequisites:
+  - Clifford algebra
+  - spinor representations
+  - highest_weight_tensor_product_decomposition
+  source_papers:
+  - georgi_lie_algebras_ch22-end
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: color_magnetic_hyperfine_interaction
+  label: Color-magnetic hyperfine interaction
+  description: Model leading spin-dependent splittings by a color-magnetic term proportional to -(sigma_i dot sigma_j)/(m_i
+    m_j), reflecting gluon exchange between constituent quarks.
+  category: physical
+  unlocks:
+  - Explains why spin-1 mesons are heavier than spin-0 mesons.
+  - Explains why the baryon decuplet is heavier than the octet.
+  - Shows why heavier quarks produce smaller spin splittings.
+  prerequisites:
+  - Nonrelativistic constituent-quark expansion
+  - Pauli matrices
+  - Color attraction between constituent pairs
+  source_papers:
+  - georgi_lie_algebras_ch16-18
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: complementary_tableaux_for_complex_conjugates
+  label: Complex Conjugates from Complementary Tableaux
+  description: Obtain the complex conjugate of an SU(N) irrep by completing its tableau to an N-box-high rectangle; in particular,
+    [m] conjugates to [N-m].
+  category: mathematical
+  unlocks:
+  - su_n_plus_m_branching_rule
+  prerequisites:
+  - defining_weight_root_geometry
+  - su_n_tensor_young_tableau_irreps
+  source_papers:
+  - georgi_lie_algebras_ch13-15
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: complete_reducibility_of_finite_group_representations
+  label: Complete reducibility of finite-group representations
+  description: Use unitarity and complementary invariant subspaces to show that every finite-group representation splits into
+    a direct sum of irreducible pieces.
+  category: mathematical
+  unlocks:
+  - classify states by irreducible multiplets
+  - justify irrep-by-irrep analysis
+  - enable character decomposition formulas
+  prerequisites:
+  - invariant_subspace_and_direct_sum_decomposition
+  - finite_group_unitarization
+  source_papers:
+  - georgi_lie_algebras_ch1-3
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: complex_conjugate_representation_mapping
+  label: Map representations by complex conjugation
+  description: Construct the complex-conjugate representation from -T*; its weights are the negatives of the original weights,
+    so for SU(3) the conjugate of (n,m) is (m,n), while irreps with n = m are real.
+  category: mathematical
+  unlocks:
+  - Fast identification of conjugate multiplets such as 3bar, 6bar, and 10bar.
+  - Reality tests for SU(3) irreps.
+  - Weight-diagram inversion rules.
+  prerequisites:
+  - su3_fundamental_weight_solver
+  - weyl_group_reflection_method
+  source_papers:
+  - georgi_lie_algebras_ch10-12
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: conjugacy_class_analysis
+  label: Conjugacy-class analysis
+  description: Organize elements by conjugation, interpret inner automorphisms geometrically, and reduce representation data
+    to class data.
+  category: mathematical
+  unlocks:
+  - identify class functions
+  - count irreducible representations through conjugacy classes
+  - set up character tables efficiently
+  prerequisites:
+  - subgroup_coset_and_factor_group_analysis
+  source_papers:
+  - georgi_lie_algebras_ch1-3
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: constituent_quark_magnetic_moment_sum_rule
+  label: Constituent Quark Magnetic Moment Sum Rule
+  description: In the constituent quark model, sum the individual quark moments proportional to Q sigma / 2m_q to reproduce
+    the SU(6) ratios and estimate the overall scale from constituent masses.
+  category: physical
+  unlocks:
+  - strange_quark_mass_breaking_for_magnetic_moments
+  prerequisites:
+  - explicit_spin_flavor_baryon_wavefunctions
+  source_papers:
+  - georgi_lie_algebras_ch13-15
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: construct_lie_algebra_from_simple_roots
+  label: Construct a Lie algebra from its simple roots
+  description: Starting from simple roots, use root strings, highest weights, and Jacobi identities to generate all roots
+    and commutators of the algebra.
+  category: mathematical
+  unlocks:
+  - dynkin_analysis_and_extended_dynkin_subalgebras
+  - explicit commutator calculations
+  prerequisites:
+  - master_formula_for_root_geometry
+  - dynkin_diagram_encoding
+  source_papers:
+  - georgi_lie_algebras_ch22-end
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: cycle_decomposition_of_permutations
+  label: Cycle decomposition of permutations
+  description: Represent elements of S_n as disjoint cycles and realize them in the defining n-dimensional permutation representation.
+  category: mathematical
+  unlocks:
+  - cycle_structure_conjugacy_classification
+  prerequisites: []
+  source_papers:
+  - georgi_lie_algebras_ch4-6
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: defining_weight_root_geometry
+  label: Weight and Root Geometry of SU(N)
+  description: Compute defining weights, roots as weight differences, simple roots, Dynkin diagram, and fundamental weights;
+    the defining weights sit at the vertices of an (N-1)-simplex.
+  category: mathematical
+  unlocks:
+  - su_n_tensor_young_tableau_irreps
+  - complementary_tableaux_for_complex_conjugates
+  prerequisites:
+  - generalized_gell_mann_basis
+  source_papers:
+  - georgi_lie_algebras_ch13-15
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: deuteron_spin_isospin_selection
+  label: Deuteron spin-isospin selection
+  description: Combine S-wave spatial symmetry, fermion antisymmetry, and triplet-singlet exchange properties to restrict
+    two-nucleon states and identify the deuteron as isospin 0 with spin 1.
+  category: physical
+  unlocks: []
+  prerequisites:
+  - generalized_exclusion_principle
+  - symmetric_triplet_antisymmetric_singlet_rule
+  source_papers:
+  - georgi_lie_algebras_ch7-9
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: diagonal_su3_from_coupled_oscillators
+  label: Diagonal SU(3) from a Coupled Two-Oscillator Model
+  description: Engineer a two-oscillator Hamiltonian whose singlet coupling preserves only the diagonal SU(3), with one creation
+    operator transforming as a 3 and the other as a 3bar.
+  category: physical
+  unlocks:
+  - arbitrary_su3_irreps_from_3_and_3bar_oscillators
+  prerequisites:
+  - generalized_gell_mann_basis
+  - oscillator_creation_annihilation_method
+  source_papers:
+  - georgi_lie_algebras_ch13-15
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: dimension_formula_from_tensor_counting
+  label: Count tensor components to get dim(n,m)
+  description: Count separately symmetric upper and lower tensor components and subtract the traced sector to derive dim(n,m)
+    = (n+1)(m+1)(n+m+2)/2.
+  category: mathematical
+  unlocks:
+  - Fast dimension calculations for SU(3) irreps.
+  - A check on weight-diagram constructions.
+  - Component-counting intuition for irreducible tensors.
+  prerequisites:
+  - symmetric_traceless_tensor_realization
+  source_papers:
+  - georgi_lie_algebras_ch10-12
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: division_algebra_filter_for_classical_groups
+  label: Division-algebra filter for classical groups
+  description: Use the existence of a multiplicative norm in the real numbers, complex numbers, and quaternions to explain
+    why those three give the classical rotation families. This also clarifies why octonions point toward exceptional algebras
+    rather than another classical series.
+  category: mathematical
+  unlocks: A reasoned filter for why the classical families stop at SO, SU, and Sp.
+  prerequisites:
+  - division algebras
+  - multiplicative norms
+  - classical Lie groups
+  source_papers:
+  - georgi_lie_algebras_ch19-21
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: e6_branching_via_extended_dynkin_analysis
+  label: Branch E6 representations with extended Dynkin analysis
+  description: Construct the 27 from Dynkin coefficients and branch it under SU(3) x SU(3) x SU(3), SU(6) x SU(2), SO(10),
+    and SU(5) by deleting nodes and dropping the associated coefficients.
+  category: mathematical
+  unlocks:
+  - e6_unification_with_27
+  - trinification_with_cyclic_symmetry
+  prerequisites:
+  - dynkin_analysis_and_extended_dynkin_subalgebras
+  - dynkin_diagram_encoding
+  source_papers:
+  - georgi_lie_algebras_ch22-end
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: e6_breaking_requires_adjoint_78
+  label: Recognize that E6 to Standard Model breaking needs a 78
+  description: Show that 27-Higgs vacuum values can break E6 only as far as SU(5), so an adjoint 78 is needed to continue
+    down to SU(3) x SU(2) x U(1).
+  category: physical
+  unlocks:
+  - realistic E6 model building
+  prerequisites:
+  - e6_unification_with_27
+  - spontaneous_symmetry_breaking_via_higgs_vevs
+  source_papers:
+  - georgi_lie_algebras_ch22-end
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: electroweak_breaking_from_so10_higgs_multiplets
+  label: Use SO(10) Higgs multiplets for electroweak breaking and fermion masses
+  description: Exploit the 10, 120, and 126 from 16 x 16 because each contains SU(5) 5 or 45 pieces that can break SU(2) x
+    U(1) and produce different fermion-mass relations.
+  category: physical
+  unlocks:
+  - fermion-mass relation model building
+  prerequisites:
+  - sixteen_tensor_sixteen_decomposition
+  - break_so10_to_sm_with_45_or_54
+  source_papers:
+  - georgi_lie_algebras_ch22-end
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: electroweak_tensor_operator_assignment
+  label: Electroweak tensor-operator assignment
+  description: Treat fermion creation and annihilation operators as tensor operators of SU(2) x U(1), placing the relevant
+    fields into SU(2) doublets or singlets with definite S charges.
+  category: mathematical
+  unlocks:
+  - Encodes the electroweak representation content of quarks, leptons, and their antiparticles.
+  - Makes chirality and charge assignments explicit in Lie-algebra language.
+  prerequisites:
+  - Helicity-handedness analysis of parity violation
+  - Tensor operators
+  - SU(2) and U(1) generators
+  source_papers:
+  - georgi_lie_algebras_ch16-18
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: emergent_su3_in_isotropic_oscillator
+  label: Emergent SU(3) in the 3D Isotropic Oscillator
+  description: Construct SU(3) generators Q_a = a^dagger T_a a that commute with the 3D isotropic oscillator Hamiltonian,
+    making the level-n states a single (n,0) irrep generated from the vacuum by a^dagger.
+  category: physical
+  unlocks:
+  - angular_momentum_as_su3_subgroup
+  prerequisites:
+  - generalized_gell_mann_basis
+  - oscillator_creation_annihilation_method
+  source_papers:
+  - georgi_lie_algebras_ch13-15
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: emergent_su_n_for_equal_mass_modes
+  label: Emergent SU(N) for Equal-Mass Modes
+  description: 'Generalize the oscillator argument to N identical modes or equal-mass particle species: before interactions
+    distinguish the species, the total number operator has an SU(N) symmetry.'
+  category: physical
+  unlocks: []
+  prerequisites:
+  - oscillator_creation_annihilation_method
+  source_papers:
+  - georgi_lie_algebras_ch13-15
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: explicit_r_matrix_for_so_odd_spinors
+  label: Explicit R matrix for odd-orthogonal spinors
+  description: Build R for SO(2n+1) spinors as an alternating tensor product of sigma_1 and sigma_2 factors. That explicit
+    matrix immediately exposes the repeating pattern of real versus pseudo-real odd-orthogonal spinors.
+  category: mathematical
+  unlocks: Explicit mod-8 reality data for SO(2n+1) spinors.
+  prerequisites:
+  - Pauli-matrix tensor products
+  - intertwiner equations
+  - odd orthogonal spinors
+  source_papers:
+  - georgi_lie_algebras_ch19-21
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: explicit_spin_flavor_baryon_wavefunctions
+  label: Explicit Spin-Flavor Baryon Wavefunctions
+  description: 'Construct baryon wavefunctions by combining flavor and spin Young symmetries: decuplet states are separately
+    symmetric, while octet states use correlated mixed-symmetry pieces plus cyclic sums.'
+  category: physical
+  unlocks:
+  - constituent_quark_magnetic_moment_sum_rule
+  prerequisites:
+  - su6_baryon_multiplet_decomposition
+  source_papers:
+  - georgi_lie_algebras_ch13-15
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: extended_dynkin_diagram_subalgebra_search
+  label: Extended Dynkin diagram search
+  description: Add the lowest root to form the extended Dynkin diagram, then remove one node to generate maximal regular semisimple
+    subalgebras. This is the standard shortcut for finding same-rank subgroup embeddings.
+  category: physical
+  unlocks: Maximal regular subgroup searches without constructing roots from scratch.
+  prerequisites:
+  - lowest root
+  - Dynkin diagrams
+  - regular subalgebras
+  source_papers:
+  - georgi_lie_algebras_ch19-21
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: factors_over_hooks_dimension_formula
+  label: Factors-over-hooks dimension formula
+  description: Compute the dimension of an SU(N) representation directly from its Young tableau by dividing the product of
+    box factors by the hook product.
+  category: mathematical
+  unlocks:
+  - dimension counting for tableau irreps
+  prerequisites:
+  - young_tableaux_for_su_n_irreps
+  source_papers:
+  - georgi_lie_algebras_ch22-end
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: factors_over_hooks_dimension_rule
+  label: Factors over Hooks Dimension Formula
+  description: Compute irrep dimensions from a Young tableau by multiplying box factors and dividing by the product of hook
+    lengths.
+  category: mathematical
+  unlocks:
+  - su5_to_su3_su2_u1_decomposition
+  prerequisites:
+  - su_n_tensor_young_tableau_irreps
+  source_papers:
+  - georgi_lie_algebras_ch13-15
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: flavor_breaking_mass_term_decomposition
+  label: Mass-term decomposition into SU(3) channels
+  description: Rewrite the light-quark mass term into an SU(3) singlet piece, an isospin-breaking piece, and an octet piece
+    to isolate the dominant symmetry-breaking operators.
+  category: mathematical
+  unlocks:
+  - Identifies the octet operator responsible for most medium-strong SU(3) breaking.
+  - Separates small isospin breaking from the dominant strange-quark effect.
+  prerequisites:
+  - Flavor SU(3)
+  - Tensor operators
+  - Quark mass terms
+  source_papers:
+  - georgi_lie_algebras_ch16-18
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: g2_root_construction
+  label: G2 root construction
+  description: Use a long-short simple-root pair separated by 150 degrees, together with the master formula and inductive
+    root building, to generate the first nontrivial G2 root string.
+  category: mathematical
+  unlocks: []
+  prerequisites:
+  - dynkin_diagram_encoding
+  - inductive_root_generation
+  - root_angle_quantization
+  source_papers:
+  - georgi_lie_algebras_ch7-9
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: gamma_matrix_invariant_tensor_method_for_cg
+  label: Gamma-matrix invariant-tensor method
+  description: Treat Gamma_j and Gamma_j times R as invariant tensors carrying one vector index and two spinor indices. This
+    is the operative tool for decomposing products of spinors and building Clebsch-Gordan coefficients without guessing tensor
+    structures.
+  category: mathematical
+  unlocks: Systematic Clebsch-Gordan decomposition of spinor products.
+  prerequisites:
+  - invariant tensors
+  - Clifford algebra
+  - Clebsch-Gordan decomposition
+  source_papers:
+  - georgi_lie_algebras_ch19-21
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: gell_mann_matrix_basis
+  label: Gell-Mann matrix basis for SU(3)
+  description: Represent SU(3) with the eight traceless Hermitian Gell-Mann matrices, choose T3 and T8 as the Cartan generators,
+    and use tracelessness to guarantee determinant 1 after exponentiation.
+  category: mathematical
+  unlocks:
+  - su3_weights_and_roots
+  prerequisites:
+  - cartan_subalgebra_and_weights
+  source_papers:
+  - georgi_lie_algebras_ch7-9
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: gell_mann_okubo_mass_formula
+  label: Gell-Mann-Okubo mass formula
+  description: Treat symmetry breaking as an octet operator and use the Wigner-Eckart theorem to derive mass relations inside
+    an SU(3) multiplet.
+  category: physical
+  unlocks:
+  - hadron mass predictions
+  - SU(3) breaking diagnostics
+  prerequisites:
+  - wigner_eckart_theorem
+  - approximate_symmetry_perturbation_theory
+  source_papers:
+  - georgi_lie_algebras_ch22-end
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: generalized_exclusion_principle
+  label: Generalized exclusion principle
+  description: Extend fermionic anticommutation to proton-neutron operators so mixed nucleon states are antisymmetric under
+    exchange of their combined spin-isospin labels.
+  category: physical
+  unlocks:
+  - deuteron_spin_isospin_selection
+  - superselection_rule_reasoning
+  prerequisites:
+  - creation_annihilation_operator_formalism
+  source_papers:
+  - georgi_lie_algebras_ch7-9
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: generalized_wigner_eckart_su3
+  label: Generalize Wigner-Eckart to SU(3)
+  description: 'Decompose W|v> into irreps and use Schur''s lemma: each occurrence of the final-state irrep contributes one
+    reduced constant, and the full matrix element is an invariant tensor made from contracted state and operator components.'
+  category: physical
+  unlocks:
+  - Reduced-parameter descriptions of SU(3) matrix elements.
+  - Selection rules from tensor decompositions.
+  - A practical route from symmetry to phenomenological amplitudes.
+  prerequisites:
+  - tensor_operator_representation
+  - invariant_tensor_matrix_elements
+  - su3_multiplet_clebsch_gordan_decomposition
+  source_papers:
+  - georgi_lie_algebras_ch10-12
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: gram_schmidt_weight_basis_construction
+  label: Gram-Schmidt construction of weight-space bases
+  description: Use Gram-Schmidt orthonormalization inside degenerate weight spaces to turn algebraically generated states
+    into explicit orthonormal representation bases.
+  category: mathematical
+  unlocks:
+  - explicit representation matrices
+  - matrix-element calculations
+  prerequisites:
+  - highest_weight_tensor_product_decomposition
+  source_papers:
+  - georgi_lie_algebras_ch22-end
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: grand_unification_search_criteria
+  label: Grand-unification search criteria
+  description: Search for a simple Lie algebra G containing SU(3) x SU(2) x U(1) by demanding enough rank for T3, T8, R3,
+    and S and complex representations to accommodate chiral electroweak matter.
+  category: mathematical
+  unlocks:
+  - Explains why SU(5) is the minimal viable simple candidate in this discussion.
+  - Turns charge quantization into a subgroup-embedding problem.
+  prerequisites:
+  - Standard Model bookkeeping with (D,d)_s labels
+  - Lie algebra rank
+  - Complex versus real representations
+  source_papers:
+  - georgi_lie_algebras_ch16-18
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: group_projection_operators
+  label: Finite-group projection operators
+  description: Build symmetry-adapted projectors by summing representation matrices weighted by characters to isolate irreducible
+    subspaces.
+  category: mathematical
+  unlocks:
+  - symmetry_reduction_of_normal_modes
+  prerequisites: []
+  source_papers:
+  - georgi_lie_algebras_ch4-6
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: helicity_handedness_parity_analysis
+  label: Helicity-handedness analysis of parity violation
+  description: Use helicity and handedness to describe how weak interactions distinguish left- and right-handed fermion components,
+    with antiparticles carrying the opposite handedness.
+  category: physical
+  unlocks:
+  - Explains parity violation in the weak interactions.
+  - Clarifies why massive fermions need both chiralities while effectively massless neutrinos need not.
+  prerequisites:
+  - Spin-1/2 kinematics
+  - Parity transformation
+  - Particle-antiparticle conjugation
+  source_papers:
+  - georgi_lie_algebras_ch16-18
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: highest_weight_and_ladder_construction
+  label: Highest-weight and ladder construction for SU(2)
+  description: Diagonalize J_3, choose the maximal-weight state, use J_+ to identify the top of the representation, apply
+    J_- to generate the full tower, and fix the ladder normalizations recursively to obtain j = 0, 1/2, 1, ... with dimension
+    2j+1.
+  category: mathematical
+  unlocks:
+  - highest_weight_reduction_algorithm
+  - pauli_matrix_realization_of_su2
+  - clebsch_gordan_highest_weight_decomposition
+  - tensor_operator_basis_standardization
+  prerequisites:
+  - lie_algebra_from_group_multiplication
+  source_papers:
+  - georgi_lie_algebras_ch4-6
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: highest_weight_dynkin_classification
+  label: Classify irreps by highest weights and Dynkin coefficients
+  description: Characterize an irrep by a highest weight mu annihilated by all simple-root raising operators; its Dynkin coefficients
+    l_j = 2 alpha_j.mu / alpha_j^2 are nonnegative integers, and the fundamental weights form the dual basis in which every
+    highest weight expands uniquely.
+  category: mathematical
+  unlocks:
+  - Systematic labeling of irreps by Dynkin coefficients.
+  - Construction of highest weights from the fundamental-weight basis.
+  - Reduction of representation building to lowering from a highest-weight state.
+  prerequisites:
+  - simple_roots
+  - simple_root_commutator_algebra_construction
+  source_papers:
+  - georgi_lie_algebras_ch10-12
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: highest_weight_lowering_state_construction
+  label: Construct states by lowering from the highest weight
+  description: Build an irrep explicitly from its highest-weight state using only products of simple lowering operators; positive-root
+    operators can be commuted away, the highest-weight state is unique, and any weight reached by a unique lowering path is
+    automatically nondegenerate.
+  category: mathematical
+  unlocks:
+  - Algorithmic generation of all states in an irrep.
+  - Multiplicity tests for SU(3) weight diagrams.
+  - Explicit state construction from simple-root data.
+  prerequisites:
+  - highest_weight_dynkin_classification
+  - su3_fundamental_weight_solver
+  source_papers:
+  - georgi_lie_algebras_ch10-12
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: hook_length_dimension_formula
+  label: Hook-length dimension formula
+  description: Compute the dimension of the S_n irrep associated with a tableau as n!/H, where H is the product of the hook
+    lengths of all boxes.
+  category: mathematical
+  unlocks: []
+  prerequisites:
+  - young_symmetrizer_irrep_construction
+  source_papers:
+  - georgi_lie_algebras_ch4-6
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: ii_system_formulation_for_simple_algebras
+  label: II-system formulation
+  description: 'Package the simple-root conditions into the notion of an indecomposable II-system: linear independence, nonpositive
+    Cartan integers between distinct simple roots, and indecomposability. This turns Lie-algebra classification into a finite
+    geometry problem on Dynkin diagrams.'
+  category: mathematical
+  unlocks: Classification of simple Lie algebras via root geometry rather than case-by-case guesswork.
+  prerequisites:
+  - simple roots
+  - Dynkin diagrams
+  - Cartan integers
+  source_papers:
+  - georgi_lie_algebras_ch19-21
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: infinitesimal_generator_extraction
+  label: Generators from infinitesimal transformations
+  description: Taylor-expand representation matrices near the identity to define independent Hermitian generators as derivatives
+    with respect to continuous group parameters.
+  category: mathematical
+  unlocks:
+  - exponential_parameterization_of_lie_groups
+  - lie_algebra_from_group_multiplication
+  prerequisites: []
+  source_papers:
+  - georgi_lie_algebras_ch4-6
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: invariant_subspace_and_direct_sum_decomposition
+  label: Invariant subspaces and direct-sum decomposition
+  description: Detect invariant subspaces with projectors, define reducible versus irreducible representations, and decompose
+    reducible representations into irreducible blocks.
+  category: mathematical
+  unlocks:
+  - identify irreducible representations
+  - write representations in block-diagonal form
+  - separate symmetry sectors cleanly
+  prerequisites:
+  - similarity_transform_equivalence
+  source_papers:
+  - georgi_lie_algebras_ch1-3
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: invariant_tensor_matrix_elements
+  label: Build matrix elements from invariant contractions
+  description: Represent bra states by conjugate tensors with upper and lower indices interchanged, then write matrix elements
+    as fully contracted invariant tensors built from state components and delta or epsilon symbols.
+  category: physical
+  unlocks:
+  - Systematic construction of SU(3)-invariant amplitudes.
+  - Index-level formulas for operator matrix elements.
+  - A starting point for reduced-matrix-element analysis.
+  prerequisites:
+  - tensor_wavefunction_interpretation
+  - invariant_tensors_delta_epsilon
+  source_papers:
+  - georgi_lie_algebras_ch10-12
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: invariant_tensor_use_of_reality_matrix
+  label: Reality matrix as an invariant tensor
+  description: Rewrite the reality condition so that R becomes an invariant tensor in D tensor D. This makes singlet extraction
+    and Clebsch-Gordan analysis of real and pseudo-real representations much more systematic.
+  category: mathematical
+  unlocks: Singlet extraction and tensor-structure control inside D tensor D.
+  prerequisites:
+  - tensor-product representations
+  - invariant tensors
+  - complex conjugation of representations
+  source_papers:
+  - georgi_lie_algebras_ch19-21
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: invariant_tensors_delta_epsilon
+  label: Use delta and epsilon as invariant tensors
+  description: Exploit the invariant tensors delta^i_j, epsilon_ijk, and epsilon^ijk, whose invariance follows from traceless
+    generators. These are the primitive SU(3)-invariant objects for contractions, singlets, and index conversion.
+  category: mathematical
+  unlocks:
+  - Construction of singlets and invariant couplings.
+  - Conversion between antisymmetric upper-index pairs and lower indices.
+  - Projection of reducible tensors into irreducible pieces.
+  prerequisites:
+  - upper_lower_index_notation
+  - trace_zero_generators_unification
+  source_papers:
+  - georgi_lie_algebras_ch10-12
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: irreducible_tensor_projection
+  label: Project tensor products onto irreducible pieces
+  description: Decompose tensor products by symmetrizing upper or lower indices, subtracting traces with delta, and using
+    epsilon to trade antisymmetric index pairs for conjugate indices. This isolates explicit irreducible tensor wave functions.
+  category: mathematical
+  unlocks:
+  - Explicit projector formulas for SU(3) tensors.
+  - Irreducible wave functions inside tensor products.
+  - A reusable method for practical tensor reduction.
+  prerequisites:
+  - symmetric_traceless_tensor_realization
+  - invariant_tensors_delta_epsilon
+  source_papers:
+  - georgi_lie_algebras_ch10-12
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: isospin_generators_from_bilinears
+  label: Isospin generators from bilinears
+  description: Realize the isospin generators as bilinears a-dagger J a so that nucleon creation operators transform as spin-1/2
+    tensor operators under isospin.
+  category: physical
+  unlocks:
+  - multiparticle_tensor_product_isospin
+  - universal_isospin_generator_sum
+  prerequisites:
+  - creation_annihilation_operator_formalism
+  - isospin_doublet_charge_independence
+  source_papers:
+  - georgi_lie_algebras_ch7-9
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: lie_algebra_from_group_multiplication
+  label: Deriving the Lie algebra from group multiplication
+  description: Expand products of noncommuting exponentials and compare logarithms to show that generators must close under
+    commutation with structure constants [X_a, X_b] = i f_{abc} X_c.
+  category: mathematical
+  unlocks:
+  - jacobi_identity_consistency
+  - adjoint_representation_from_structure_constants
+  prerequisites:
+  - infinitesimal_generator_extraction
+  - exponential_parameterization_of_lie_groups
+  source_papers:
+  - georgi_lie_algebras_ch4-6
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: linear_dependence_certificate_for_forbidden_diagrams
+  label: Linear-dependence certificate for forbidden diagrams
+  description: Prove a candidate diagram is impossible by writing an explicit nontrivial linear relation among its putative
+    simple roots. Georgi uses coefficient assignments on forbidden diagrams as a reusable dependence test.
+  category: mathematical
+  unlocks: Fast elimination of candidate exceptional diagrams by explicit dependence relations.
+  prerequisites:
+  - linear independence of roots
+  - Dynkin diagrams
+  - simple-root systems
+  source_papers:
+  - georgi_lie_algebras_ch19-21
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: low_rank_dynkin_coincidence_check
+  label: Low-rank coincidence check
+  description: At small rank, compare the resulting Dynkin diagrams after degenerations to identify accidental isomorphisms
+    such as A_1 equals B_1 equals C_1, B_2 equals C_2, and D_3 equals A_3. This keeps subgroup and representation arguments
+    from double-counting distinct notation for the same algebra.
+  category: mathematical
+  unlocks: Translation between low-rank notation systems and special isomorphisms.
+  prerequisites:
+  - Dynkin diagrams
+  - low-rank Lie algebras
+  - simple versus semisimple algebras
+  source_papers:
+  - georgi_lie_algebras_ch19-21
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: matrix_exponential_calculus
+  label: Calculus of noncommuting exponentials
+  description: Differentiate matrix exponentials using same-direction derivatives and the integral formula that averages derivative
+    insertions through the exponential.
+  category: mathematical
+  unlocks: []
+  prerequisites:
+  - exponential_parameterization_of_lie_groups
+  source_papers:
+  - georgi_lie_algebras_ch4-6
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: matter_unification_into_su5_five_and_ten
+  label: Matter unification into 5 plus 10 of SU(5)
+  description: Pack one fermion family into a 5 and an antisymmetric 10 in Georgi's creation-operator convention, with the
+    10 obtained from the antisymmetric product of two 5s.
+  category: physical
+  unlocks:
+  - Unifies quarks and leptons inside one simple-group description.
+  - Shows how the Standard Model chiral matter content fits neatly into 5 + 10.
+  prerequisites:
+  - Standard Model bookkeeping with (D,d)_s labels
+  - Block-diagonal embedding of the Standard Model subgroup in SU(5)
+  - Antisymmetric tensor products
+  source_papers:
+  - georgi_lie_algebras_ch16-18
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: mod8_reality_classification_of_so_spinors
+  label: Mod-8 reality classification of SO(N) spinors
+  description: Use the explicit intertwiner action and the extra Cartan generator to classify SO(N) spinors modulo 8 as real,
+    pseudo-real, or complex. In practice this tells you when Majorana, Weyl, or Majorana-Weyl style fermion constructions
+    are available.
+  category: physical
+  unlocks: Majorana and Weyl reality checks across orthogonal groups.
+  prerequisites:
+  - chiral spinors
+  - intertwiners
+  - mod-8 periodicity
+  source_papers:
+  - georgi_lie_algebras_ch19-21
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: multiparticle_tensor_product_isospin
+  label: Multiparticle states as tensor products
+  description: Because multiparticle states are built by repeated creation operators, they transform as tensor products of
+    one-particle isospin representations.
+  category: physical
+  unlocks:
+  - symmetric_triplet_antisymmetric_singlet_rule
+  - deuteron_spin_isospin_selection
+  - channel_amplitude_reduction
+  prerequisites:
+  - isospin_generators_from_bilinears
+  - tensor_operator_product_decomposition
+  source_papers:
+  - georgi_lie_algebras_ch7-9
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: number_operator_construction
+  label: Number-operator construction
+  description: Build proton, neutron, and total nucleon counters as bilinears of creation and annihilation operators summed
+    over the allowed single-particle states.
+  category: physical
+  unlocks: []
+  prerequisites:
+  - creation_annihilation_operator_formalism
+  source_papers:
+  - georgi_lie_algebras_ch7-9
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: octonion_fano_plane_multiplication
+  label: Encode octonion multiplication with the Fano-plane pattern
+  description: Represent the seven imaginary octonion units with the oriented Fano-plane cycles, keeping the norm-multiplication
+    property while accepting nonassociativity.
+  category: mathematical
+  unlocks:
+  - g2_as_octonion_invariance_group
+  - exceptional-algebra motivation
+  prerequisites:
+  - division algebras
+  - quaternions
+  source_papers:
+  - georgi_lie_algebras_ch22-end
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: odd_polygon_character_construction
+  label: Character construction for odd-gon symmetry groups
+  description: Use the conjugacy classes of rotations and reflections of the 2n+1-gon to enumerate irreducible representations
+    and write the corresponding character table.
+  category: mathematical
+  unlocks: []
+  prerequisites: []
+  source_papers:
+  - georgi_lie_algebras_ch4-6
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: orthonormal_weight_embedding_for_su_n
+  label: Embed SU(n) weights in an orthonormal n-space
+  description: Represent the defining weights of SU(n) as (e_i-E/n)/sqrt(2) inside an n-dimensional orthonormal space to simplify
+    root manipulations.
+  category: mathematical
+  unlocks:
+  - sp2n_root_and_weight_construction
+  prerequisites:
+  - weights
+  - orthonormal bases
+  source_papers:
+  - georgi_lie_algebras_ch22-end
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: outer_automorphisms_from_dynkin_symmetry
+  label: Read outer automorphisms from Dynkin-diagram symmetries
+  description: Identify nontrivial automorphisms by reflecting or permuting symmetric Dynkin-diagram nodes; complex conjugation
+    is one important case.
+  category: mathematical
+  unlocks:
+  - so8_triality_automorphism
+  - reality checks for representations
+  prerequisites:
+  - dynkin_diagram_encoding
+  source_papers:
+  - georgi_lie_algebras_ch22-end
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: pauli_tensor_realization_of_so_odd_spinors
+  label: Pauli-tensor realization of odd-orthogonal spinors
+  description: Realize the spinor space as a tensor product of n two-state systems and write the Cartan and root generators
+    as Pauli-matrix strings. The rest of the SO(2n+1) generators then follow from commutators.
+  category: mathematical
+  unlocks: Concrete spinor-generator matrices for SO(2n+1).
+  prerequisites:
+  - Pauli matrices
+  - tensor-product spaces
+  - raising and lowering operators
+  source_papers:
+  - georgi_lie_algebras_ch19-21
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: pion_triplet_boson_formalism
+  label: Pion triplet boson formalism
+  description: Treat the three pions as a bosonic isospin triplet with commuting creation and annihilation operators.
+  category: physical
+  unlocks:
+  - universal_isospin_generator_sum
+  - channel_amplitude_reduction
+  prerequisites:
+  - isospin_doublet_charge_independence
+  - creation_annihilation_operator_formalism
+  source_papers:
+  - georgi_lie_algebras_ch7-9
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: positive_weight_ordering
+  label: Positive-weight ordering
+  description: Declare weights positive or negative by the sign of the first nonzero Cartan component, producing an ordering
+    and a workable notion of highest weight.
+  category: mathematical
+  unlocks:
+  - simple_root_identification
+  prerequisites:
+  - cartan_subalgebra_and_weights
+  source_papers:
+  - georgi_lie_algebras_ch7-9
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: projection_operator_decomposition_of_so_even_bilinears
+  label: Projection-operator decomposition of even-dimensional bilinears
+  description: Insert the chiral projectors P_plus and P_minus around arbitrary gamma products to separate same-chirality
+    and opposite-chirality bilinears in SO(2n). This immediately tells you whether even or odd form ranks appear in each spinor
+    product.
+  category: mathematical
+  unlocks: Chirality-resolved decomposition of even-dimensional spinor bilinears.
+  prerequisites:
+  - Clifford algebra
+  - chirality projectors
+  - spinor tensor products
+  source_papers:
+  - georgi_lie_algebras_ch19-21
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: projection_operators_from_characters
+  label: Projectors from characters
+  description: Build P_a=(n_a/|G|) sum_g chi_a(g)^* D(g) to project directly onto the subspace transforming as irrep a, even
+    in the original basis.
+  category: mathematical
+  unlocks:
+  - extract irreducible subspaces explicitly
+  - construct invariant combinations of states
+  - separate symmetry sectors without first diagonalizing the representation
+  prerequisites:
+  - character_orthogonality_and_multiplicity_extraction
+  source_papers:
+  - georgi_lie_algebras_ch1-3
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: proton_decay_from_quark_lepton_unification
+  label: Proton decay from quark-lepton unification
+  description: Recognize proton decay as a generic consequence of placing quarks, antiquarks, and leptons in the same SU(5)
+    irreducible representations, with decay amplitudes suppressed by the large SU(5)-breaking scale.
+  category: physical
+  unlocks:
+  - Predicts baryon-number violation as an observable consequence of grand unification.
+  - Relates proton-lifetime estimates to the 24-Higgs vacuum value and unified interactions.
+  prerequisites:
+  - Matter unification into 5 plus 10 of SU(5)
+  - Adjoint-24 breaking of SU(5)
+  - Baryon number as an approximate low-energy symmetry
+  source_papers:
+  - georgi_lie_algebras_ch16-18
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: quark_model_constituent_sum_rules
+  label: Constituent-quark sum rules
+  description: Model hadrons as bound states of constituent quarks so that charges, spins, and magnetic moments are additive
+    over quark constituents.
+  category: physical
+  unlocks:
+  - magnetic_moment_sum_rules
+  - baryon wavefunction predictions
+  prerequisites:
+  - young_tableaux_for_su_n_irreps
+  - symmetry_of_tensor_products_and_particle_statistics
+  source_papers:
+  - georgi_lie_algebras_ch22-end
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: quaternionic_interpretation_of_sp_2n
+  label: Quaternionic picture of Sp(2n)
+  description: Reinterpret Sp(2n) as the group of norm-preserving rotations of an N-dimensional quaternionic vector space.
+    Use this when the matrix presentation hides why symplectic groups sit alongside SO(N) and SU(N) as classical families.
+  category: mathematical
+  unlocks: A conceptual explanation of Sp(2n) as quaternionic rotations.
+  prerequisites:
+  - quaternions
+  - norm-preserving linear maps
+  - matrix representations of Lie groups
+  source_papers:
+  - georgi_lie_algebras_ch19-21
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: raising_operator_phase_fixing_in_spinor_space
+  label: Phase-fixing of spinor raising operators
+  description: Determine the explicit raising operators by fixing norms and then using anticommutation relations to lock their
+    relative signs. This replaces an abstract highest-weight construction with concrete matrices.
+  category: mathematical
+  unlocks: Explicit matrix forms of spinor raising operators with consistent phases.
+  prerequisites:
+  - root operators
+  - state-phase conventions
+  - tensor-product spinor bases
+  source_papers:
+  - georgi_lie_algebras_ch19-21
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: real_vs_pseudoreal_representation_diagnosis
+  label: Real versus pseudo-real diagnosis
+  description: Classify a real representation by whether the intertwiner R is symmetric or antisymmetric. Symmetric R means
+    the representation can be put in a purely imaginary antisymmetric basis, while antisymmetric R signals a pseudo-real representation
+    such as the SU(2) doublet.
+  category: physical
+  unlocks: Knowing when a fermion multiplet can be treated as real or only pseudo-real.
+  prerequisites:
+  - intertwiners
+  - real and complex representations
+  - Schur's lemma
+  source_papers:
+  - georgi_lie_algebras_ch19-21
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: reality_intertwiner_test_via_schur_lemma
+  label: Schur-lemma reality intertwiner test
+  description: Given a unitary irreducible representation, test equivalence to its complex conjugate by solving for an intertwiner
+    R and use Schur's lemma to show R is unique up to scale. This is the core method for deciding whether a representation
+    is genuinely complex or only apparently so.
+  category: mathematical
+  unlocks: Reliable identification of real versus complex irreducible representations.
+  prerequisites:
+  - Schur's lemma
+  - unitary representations
+  - complex conjugate representations
+  source_papers:
+  - georgi_lie_algebras_ch19-21
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: recursive_maximal_subgroup_enumeration
+  label: Recursive maximal-subgroup enumeration
+  description: Keep applying extended-diagram deletions or splits inside the subalgebras you already found until no further
+    semisimple breakup is possible. This turns one maximal-subgroup result into a full subgroup tree.
+  category: physical
+  unlocks: Complete trees of semisimple regular subgroups.
+  prerequisites:
+  - extended Dynkin diagrams
+  - direct-product Lie algebras
+  - regular subalgebras
+  source_papers:
+  - georgi_lie_algebras_ch19-21
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: regular_representation_construction
+  label: Regular representation construction
+  description: Use the group elements themselves as basis states and let left multiplication act on them to build a universal
+    representation of dimension |G|.
+  category: mathematical
+  unlocks:
+  - realize any finite group concretely
+  - derive orthogonality and completeness results
+  - count irreducible content through the regular representation
+  prerequisites:
+  - group_representation_mapping
+  - operator_matrix_element_method
+  source_papers:
+  - georgi_lie_algebras_ch1-3
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: regular_subalgebra_by_dynkin_node_deletion
+  label: Subgroups from Dynkin node deletion
+  description: Delete nodes from a Dynkin diagram to read off regular subalgebras whose simple roots are a subset of the original
+    system. This is the basic subgroup-finding move for symmetry-breaking chains and representation branching.
+  category: physical
+  unlocks: Subgroup chains relevant to symmetry breaking and branching rules.
+  prerequisites:
+  - Dynkin diagrams
+  - simple roots
+  - subalgebra basics
+  source_papers:
+  - georgi_lie_algebras_ch19-21
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: right_handed_neutrino_mass_from_126
+  label: Give the right-handed neutrino a large mass with a 126
+  description: Use the SU(5)-singlet component of the complex self-dual 126 in 16 x 16 to generate a large Majorana mass for
+    the right-handed neutrino without adding an extra singlet.
+  category: physical
+  unlocks:
+  - heavy right-handed neutrino decoupling
+  - realistic SO(10) symmetry breaking
+  prerequisites:
+  - sixteen_tensor_sixteen_decomposition
+  - spontaneous_symmetry_breaking_via_higgs_vevs
+  source_papers:
+  - georgi_lie_algebras_ch22-end
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: root_angle_quantization
+  label: Quantized angles between roots
+  description: Apply the master formula to pairs of roots to restrict the allowed angles between them to a small discrete
+    set.
+  category: mathematical
+  unlocks:
+  - simple_root_identification
+  - dynkin_diagram_encoding
+  - g2_root_construction
+  prerequisites:
+  - root_string_master_formula
+  source_papers:
+  - georgi_lie_algebras_ch7-9
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: root_generation_by_cartan_rows
+  label: Generate roots by adding Cartan-matrix rows
+  description: Represent each positive root by its q-p vector; adding a simple root alpha_j adds the jth row of the Cartan
+    matrix, and the resulting p-values tell you whether a new root exists. Georgi organizes this layer by layer in a diagram.
+  category: mathematical
+  unlocks:
+  - Generate all positive and negative roots from simple roots.
+  - Turn Dynkin data into explicit root diagrams.
+  - Construct examples such as SU(3) and C3 algorithmically.
+  prerequisites:
+  - cartan_matrix_encoding
+  source_papers:
+  - georgi_lie_algebras_ch10-12
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: root_ladder_operators
+  label: Root ladder operators
+  description: Use E_plusminus_alpha to shift any weight mu to mu plus or minus alpha, generalizing raising and lowering operators
+    beyond SU(2).
+  category: mathematical
+  unlocks:
+  - root_string_master_formula
+  - inductive_root_generation
+  prerequisites:
+  - roots_as_adjoint_weights
+  source_papers:
+  - georgi_lie_algebras_ch7-9
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: root_string_master_formula
+  label: Root-string master formula
+  description: Analyze the finite alpha-strings through a weight mu using p steps up and q steps down to get 2 alpha dot mu
+    over alpha squared equals q minus p, fix the highest SU(2) spin, and enforce the integrality condition on weights.
+  category: mathematical
+  unlocks:
+  - root_angle_quantization
+  - inductive_root_generation
+  - algebra_construction_from_simple_root_commutators
+  prerequisites:
+  - root_ladder_operators
+  - su2_subalgebra_from_roots
+  source_papers:
+  - georgi_lie_algebras_ch7-9
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: roots_as_adjoint_weights
+  label: Roots as adjoint weights
+  description: Interpret the nonzero weights of the adjoint representation as roots and pair the corresponding nonhermitian
+    generators E_alpha and E_-alpha by Hermitian conjugation.
+  category: mathematical
+  unlocks:
+  - root_ladder_operators
+  - su2_subalgebra_from_roots
+  - su3_weights_and_roots
+  prerequisites:
+  - cartan_subalgebra_and_weights
+  - adjoint_representation_generator_space
+  source_papers:
+  - georgi_lie_algebras_ch7-9
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: schur_lemma_intertwiner_method
+  label: Schur-lemma intertwiner test
+  description: Use Schur's lemma to show that intertwiners between inequivalent irreducible representations vanish and that
+    operators commuting with one irrep are proportional to the identity.
+  category: mathematical
+  unlocks:
+  - test equivalence of irreducible representations
+  - derive orthogonality relations
+  - constrain invariant operators
+  prerequisites:
+  - complete_reducibility_of_finite_group_representations
+  - similarity_transform_equivalence
+  source_papers:
+  - georgi_lie_algebras_ch1-3
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: simple_root_commutator_algebra_construction
+  label: Build the algebra from simple-root commutators
+  description: Construct non-simple root generators as normalized nested commutators of simple-root generators, fix normalizations
+    from SU(2) raising-operator action, and derive the remaining commutators with repeated use of the Jacobi identity.
+  category: mathematical
+  unlocks:
+  - Explicit generators for higher roots such as those of G2.
+  - Full commutation relations from simple-root data.
+  - Closure proofs for the Lie algebra.
+  prerequisites:
+  - su2_multiplet_completion_for_roots
+  - jacobi_identity
+  source_papers:
+  - georgi_lie_algebras_ch10-12
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: simple_root_identification
+  label: Simple-root identification
+  description: Define simple roots as positive roots that cannot be written as sums of other positive roots, so checking only
+    them suffices to test highest-weight annihilation and start rebuilding the algebra.
+  category: mathematical
+  unlocks:
+  - simple_root_geometry_and_completeness
+  - inductive_root_generation
+  - dynkin_diagram_encoding
+  prerequisites:
+  - positive_weight_ordering
+  - root_angle_quantization
+  source_papers:
+  - georgi_lie_algebras_ch7-9
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: simplicity_and_semisimplicity_analysis
+  label: Invariant-subalgebra, simple, semisimple, and U(1) analysis
+  description: Identify invariant subalgebras through commutator closure and conjugation, recognize central U(1) factors as
+    zero-norm directions in the trace form, and use adjoint irreducibility to characterize simple and semisimple algebras.
+  category: mathematical
+  unlocks: []
+  prerequisites:
+  - adjoint_representation_from_structure_constants
+  - trace_form_canonicalization
+  source_papers:
+  - georgi_lie_algebras_ch4-6
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: single_line_shrinking_rule
+  label: Single-line shrinking rule
+  description: If two simple roots are joined by a single line, replace them by their sum and shrink the line away. The reduced
+    diagram must still be a II-system, which immediately forbids loops and multiple double lines.
+  category: mathematical
+  unlocks: No-loop and one-double-line constraints for admissible Dynkin diagrams.
+  prerequisites:
+  - Dynkin diagrams
+  - simple-root addition
+  - three-node angle test
+  source_papers:
+  - georgi_lie_algebras_ch19-21
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: sixteen_tensor_sixteen_decomposition
+  label: Decompose 16 x 16 into 10 + 120 + 126
+  description: Split the SO(10) spinor tensor product into symmetric and antisymmetric pieces, then read off the SU(5) content
+    of the resulting Higgs candidates.
+  category: mathematical
+  unlocks:
+  - right_handed_neutrino_mass_from_126
+  - electroweak_breaking_from_so10_higgs_multiplets
+  prerequisites:
+  - highest_weight_tensor_product_decomposition
+  - so10_family_unification_in_16
+  source_papers:
+  - georgi_lie_algebras_ch22-end
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: sm_multiplet_bookkeeping_with_d_d_s_labels
+  label: Standard Model bookkeeping with (D,d)_s labels
+  description: Describe fields as (D,d)_s representations of SU(3) x SU(2) x U(1), with s equal to the average electric charge
+    because Tr R3 = 0 in any SU(2) multiplet.
+  category: mathematical
+  unlocks:
+  - Packages Standard Model fermions into subgroup representations efficiently.
+  - Provides the bookkeeping needed to test grand-unified embeddings.
+  prerequisites:
+  - Color SU(3)
+  - Electroweak tensor-operator assignment
+  - Charge operator from electroweak generators
+  source_papers:
+  - georgi_lie_algebras_ch16-18
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: so10_left_right_branching
+  label: Branch SO(10) through SU(4) x SU(2) x SU(2)
+  description: Use extended Dynkin analysis and weight-space arguments to branch the SO(10) spinor under the Pati-Salam subgroup
+    and identify the right-handed neutrino and mirror SU(2).
+  category: physical
+  unlocks:
+  - charge_quantization_from_semi_simple_embedding
+  - lepton_number_as_fourth_color
+  prerequisites:
+  - so10_family_unification_in_16
+  - dynkin_analysis_and_extended_dynkin_subalgebras
+  source_papers:
+  - georgi_lie_algebras_ch22-end
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: so10_spinor_product_for_gut_tensors
+  label: SO(10) spinor products for unified-model tensors
+  description: Apply the general decomposition formulas to the 16 of SO(10) to obtain the tensor channels 10, 120, 126 and,
+    with the conjugate, 1, 45, and 210. This is the practical unified-model payoff because it tells you which tensor and Higgs
+    channels can couple to spinor matter.
+  category: physical
+  unlocks: SO(10) unified-model coupling channels such as 10, 120, and 126.
+  prerequisites:
+  - SO(10) spinors
+  - tensor-product decomposition
+  - grand unified representation language
+  source_papers:
+  - georgi_lie_algebras_ch19-21
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: so8_branching_to_su2_power_4
+  label: Branch SO(8) under SU(2)^4
+  description: Remove the central node of the extended D4 diagram to obtain SU(2)^4 and decompose each 8 into pairs of bi-doublets,
+    using triality to identify which pattern belongs to which 8.
+  category: mathematical
+  unlocks:
+  - explicit D4 branching patterns
+  prerequisites:
+  - so8_triality_automorphism
+  - dynkin_analysis_and_extended_dynkin_subalgebras
+  source_papers:
+  - georgi_lie_algebras_ch22-end
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: so8_triality_automorphism
+  label: Exploit SO(8) triality
+  description: Use the special outer automorphisms of D4 to permute the vector 8 and the two spinor 8s, including explicit
+    weight and Cartan-generator maps.
+  category: mathematical
+  unlocks:
+  - so8_branching_to_su2_power_4
+  - vector-spinor dual viewpoints
+  prerequisites:
+  - outer_automorphisms_from_dynkin_symmetry
+  - weyl_reflections_and_weyl_group
+  source_papers:
+  - georgi_lie_algebras_ch22-end
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: so_2n_plus_1_root_construction_with_extra_axis
+  label: SO(2n+1) roots from adding the extra axis
+  description: Start from the SO(2n) two-plane construction and add the leftover one-dimensional direction. This produces
+    the zero weight and the extra short roots plus or minus e_j that turn the D_n pattern into B_n.
+  category: mathematical
+  unlocks: Constructive derivation of the B_n roots and the special short simple root.
+  prerequisites:
+  - Cartan subalgebras
+  - weights and roots
+  - orthogonal groups
+  source_papers:
+  - georgi_lie_algebras_ch19-21
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: so_2n_root_construction_from_two_planes
+  label: SO(2n) roots from two-plane decomposition
+  description: Split the defining 2n-dimensional real space into n orthogonal 2-planes, take Cartan generators as rotations
+    in those planes, and read weights plus or minus e_k directly. Use this to derive the D_n roots, simple roots, and Dynkin
+    diagram from the defining representation.
+  category: mathematical
+  unlocks: Direct derivation of the D_n root system and Dynkin diagram from the defining representation.
+  prerequisites:
+  - Cartan subalgebras
+  - weights and roots
+  - orthogonal groups
+  source_papers:
+  - georgi_lie_algebras_ch19-21
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: so_even_spinor_construction_from_so_odd_embedding
+  label: Even-orthogonal spinors from odd-orthogonal embedding
+  description: Embed SO(2n+1) inside SO(2n+2), reuse the known odd-dimensional spinor construction, and then add the extra
+    Cartan generator to distinguish the two chiral spinors. This bootstraps even-dimensional spinors from the odd-dimensional
+    case.
+  category: mathematical
+  unlocks: Concrete construction of chiral SO(2n+2) spinors from known data.
+  prerequisites:
+  - SO(2n+1) spinors
+  - subalgebra embeddings
+  - fundamental weights
+  source_papers:
+  - georgi_lie_algebras_ch19-21
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: so_odd_spinor_highest_weight_construction
+  label: SO(2n+1) spinor highest-weight construction
+  description: Take the last fundamental weight of B_n and use Weyl reflections to enumerate all weights of the spinor representation
+    as half-integer sign combinations. This constructs the odd-orthogonal spinor representation and its dimension 2^n directly
+    from root data.
+  category: mathematical
+  unlocks: Explicit construction of odd-orthogonal spinor weights and dimension.
+  prerequisites:
+  - fundamental weights
+  - Weyl reflections
+  - orthogonal root systems
+  source_papers:
+  - georgi_lie_algebras_ch19-21
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: sp2n_root_and_weight_construction
+  label: Construct Sp(2n) roots and fundamental weights
+  description: Extend the SU(n) weight embedding to Sp(2n), derive its long and short roots, and read off the highest weights
+    of the fundamental representations.
+  category: mathematical
+  unlocks:
+  - sp2n_tensor_calculus_with_symplectic_form
+  prerequisites:
+  - orthonormal_weight_embedding_for_su_n
+  - dynkin_diagram_encoding
+  source_papers:
+  - georgi_lie_algebras_ch22-end
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: sp2n_tensor_calculus_with_symplectic_form
+  label: Sp(2n) tensor calculus with the invariant symplectic form
+  description: Use the antisymmetric invariant tensor R to show pseudoreality, raise and lower indices, and decompose D1 x
+    D1 into the adjoint, an irreducible antisymmetric piece, and a singlet.
+  category: mathematical
+  unlocks:
+  - higher Sp(2n) tensor decompositions
+  prerequisites:
+  - sp2n_root_and_weight_construction
+  - tensor_operator_method
+  source_papers:
+  - georgi_lie_algebras_ch22-end
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: sp_2n_root_construction_from_pauli_tensor_products
+  label: Sp(2n) from Pauli-tensor generators
+  description: Write Sp(2n) generators as Pauli-matrix tensor products with antisymmetric and symmetric n by n blocks, then
+    isolate an SU(n) subalgebra to organize the roots. This gives the C_n simple-root system constructively rather than by
+    lookup.
+  category: mathematical
+  unlocks: Constructive derivation of C_n and its SU(n) embedding.
+  prerequisites:
+  - Pauli matrices
+  - tensor products of representations
+  - symmetric and antisymmetric matrices
+  source_papers:
+  - georgi_lie_algebras_ch19-21
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: spin_flavor_su6_embedding
+  label: Spin-Flavor SU(6) Embedding
+  description: Embed flavor SU(3) and spin SU(2) into SU(6) by treating each quark as a six-component spin-flavor state; the
+    generators are flavor, spin, and mixed flavor-spin products.
+  category: physical
+  unlocks:
+  - su6_baryon_multiplet_decomposition
+  - su6_wigner_eckart_magnetic_moments
+  prerequisites:
+  - generalized_gell_mann_basis
+  source_papers:
+  - georgi_lie_algebras_ch13-15
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: spinor_branching_so_2n_to_su_n
+  label: Branch SO(2n) spinors into SU(n) antisymmetric tensors
+  description: Act with m Clifford creation operators on the vacuum so that the SO(2n) spinor decomposes into SU(n) antisymmetric
+    tensor representations [m].
+  category: mathematical
+  unlocks:
+  - so10_family_unification_in_16
+  - so10_left_right_branching
+  prerequisites:
+  - clifford_embedding_of_su_n_in_so_2n
+  source_papers:
+  - georgi_lie_algebras_ch22-end
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: spinor_tensor_product_decomposition_by_form_rank
+  label: Rank-by-rank spinor tensor-product decomposition
+  description: Use the gamma-product basis and a binomial dimension count to decompose spinor tensor products into antisymmetric
+    tensors of ranks 0 through n. This makes spinor tensor products computable by form rank rather than by brute-force state
+    matching.
+  category: mathematical
+  unlocks: Rank-by-rank decomposition of spinor tensor products with dimension checks.
+  prerequisites:
+  - antisymmetric tensor representations
+  - binomial coefficients
+  - spinor tensor products
+  source_papers:
+  - georgi_lie_algebras_ch19-21
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: state_and_operator_transformation_rules
+  label: State, bra, and operator transformation rules
+  description: Translate finite and infinitesimal group actions into actions on kets, bras, and operators; operators transform
+    by similarity and infinitesimally by commutators.
+  category: mathematical
+  unlocks:
+  - matrix_exponential_calculus
+  - tensor_product_representation_rule
+  - tensor_operator_definition
+  prerequisites:
+  - exponential_parameterization_of_lie_groups
+  - lie_algebra_from_group_multiplication
+  source_papers:
+  - georgi_lie_algebras_ch4-6
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: strange_quark_mass_breaking_for_magnetic_moments
+  label: Strange-Quark Mass Breaking in Magnetic Moments
+  description: Break SU(3) flavor by taking m_s different from m_u and m_d; this improves magnetic moment predictions such
+    as the Lambda, where the u and d pair is in spin zero and only the s quark contributes.
+  category: physical
+  unlocks: []
+  prerequisites:
+  - constituent_quark_magnetic_moment_sum_rule
+  source_papers:
+  - georgi_lie_algebras_ch13-15
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: su2_multiplet_completion_for_roots
+  label: Complete SU(2) multiplets to find roots
+  description: Instead of computing every p and q explicitly, view each root as a weight under the SU(2) subalgebras associated
+    with the simple roots and complete the required multiplets until nothing new starts.
+  category: mathematical
+  unlocks:
+  - Faster root enumeration.
+  - Immediate stopping criteria when all multiplets close.
+  - Intuitive reading of root diagrams such as G2.
+  prerequisites:
+  - cartan_matrix_encoding
+  - root_generation_by_cartan_rows
+  - su2_subalgebras_from_roots
+  source_papers:
+  - georgi_lie_algebras_ch10-12
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: su2_subalgebra_from_roots
+  label: SU(2) subalgebra from each root
+  description: Every root pair together with alpha dot H defines an SU(2) subalgebra, allowing representation-theory questions
+    in the full algebra to be reduced to familiar SU(2) structure.
+  category: mathematical
+  unlocks:
+  - root_uniqueness_and_no_multiples
+  - root_string_master_formula
+  prerequisites:
+  - cartan_commutator_from_root_pairs
+  - roots_as_adjoint_weights
+  source_papers:
+  - georgi_lie_algebras_ch7-9
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: su3_fundamental_weight_solver
+  label: Solve the SU(3) fundamental highest weights
+  description: Find the SU(3) fundamental highest weights by imposing orthogonality to the other simple root and the defining
+    normalization of fundamental weights, then descend with q-p notation to enumerate the weights of the 3 and 3bar.
+  category: mathematical
+  unlocks:
+  - Explicit weights for the defining 3 and conjugate 3bar.
+  - Concrete SU(3) coordinates for later tensor methods.
+  - Worked examples of highest-weight construction.
+  prerequisites:
+  - highest_weight_dynkin_classification
+  - cartan_matrix_encoding
+  source_papers:
+  - georgi_lie_algebras_ch10-12
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: su3_multiplet_clebsch_gordan_decomposition
+  label: Decompose SU(3) multiplets with tensor methods
+  description: Apply irreducible tensor projection to physically relevant products such as 3 x 3 = 6 + 3bar, 3 x 3bar = 8
+    + 1, and 3 x 8 = 15 + 6bar + 3, while simultaneously constructing the corresponding component wave functions.
+  category: physical
+  unlocks:
+  - Multiplet decomposition of composite SU(3) states.
+  - Explicit Clebsch-Gordan wave functions.
+  - Practical SU(3) coupling algebra.
+  prerequisites:
+  - irreducible_tensor_projection
+  source_papers:
+  - georgi_lie_algebras_ch10-12
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: su3_multiplet_identification_from_weight_diagrams
+  label: Identify SU(3) multiplets from weight multiplicities
+  description: Combine unique lowering paths, Weyl reflections, and commutator identities among same-weight states to determine
+    whether candidate states are distinct or linearly dependent. Georgi uses this to identify (2,0)=6, (1,1)=8, and (3,0)=10
+    and their conjugates.
+  category: physical
+  unlocks:
+  - Identification of physical multiplets from abstract highest weights.
+  - Multiplicity checks in the 6, 8, and 10 families.
+  - A bridge between algebraic data and SU(3) state content.
+  prerequisites:
+  - highest_weight_lowering_state_construction
+  - recursive_inner_product_and_gram_schmidt
+  - weyl_group_reflection_method
+  - complex_conjugate_representation_mapping
+  source_papers:
+  - georgi_lie_algebras_ch10-12
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: su5_family_anomaly_cancellation
+  label: Cancel anomalies with the SU(5) family assignment
+  description: Use the equality of the 5 and 10 anomalies, in the creation-operator convention of the book, so that their
+    combination is anomaly free and the embedded electroweak family is consistent.
+  category: physical
+  unlocks:
+  - consistent family assignments in SU(5) and SO(10)
+  prerequisites:
+  - anomaly_free_representation_condition
+  - anomaly_index_arithmetic
+  source_papers:
+  - georgi_lie_algebras_ch22-end
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: su5_higgs_rep_selection_for_fermion_masses
+  label: SU(5) Higgs selection for fermion masses
+  description: 'Select SU(5) Higgs representations by two tests: they must appear in the fermion-antifermion tensor product
+    and they must contain an (1,2)_(+/-1/2) component; this admits 5 and 45 but excludes 50 for the needed mass terms.'
+  category: mathematical
+  unlocks:
+  - Determines which unified Higgs multiplets can generate down-type, charged-lepton, and up-type masses.
+  - Connects unified-model Yukawa structure back to Standard Model Higgs quantum numbers.
+  prerequisites:
+  - Higgs tensor-product mass rule
+  - Matter unification into 5 plus 10 of SU(5)
+  - Subgroup decomposition under SU(3) x SU(2) x U(1)
+  source_papers:
+  - georgi_lie_algebras_ch16-18
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: su5_to_su3_su2_u1_decomposition
+  label: SU(5) Decomposition to SU(3) x SU(2) x U(1)
+  description: 'Apply the branching rule to SU(5): the 5 becomes (3,1)_2 plus (1,2)_-3, and the adjoint splits into gauge
+    multiplets such as (8,1)_0, (1,3)_0, and (3,2)_5 plus its conjugate.'
+  category: physical
+  unlocks: []
+  prerequisites:
+  - su_n_plus_m_branching_rule
+  - factors_over_hooks_dimension_rule
+  source_papers:
+  - georgi_lie_algebras_ch13-15
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: su6_baryon_multiplet_decomposition
+  label: Decompose the SU(6) 56 into Baryon Multiplets
+  description: 'Apply SU(6) branching to three-quark states: the completely symmetric 56 decomposes into the flavor decuplet
+    with spin 3/2 and the flavor octet with spin 1/2.'
+  category: physical
+  unlocks:
+  - explicit_spin_flavor_baryon_wavefunctions
+  - su6_wigner_eckart_magnetic_moments
+  prerequisites:
+  - spin_flavor_su6_embedding
+  - su_nm_branching_via_symmetric_group
+  source_papers:
+  - georgi_lie_algebras_ch13-15
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: su6_wigner_eckart_magnetic_moments
+  label: SU(6) Wigner-Eckart Analysis of Magnetic Moments
+  description: Treat the magnetic moment operator as an SU(6) adjoint and use Wigner-Eckart; because 35 x 56 contains a unique
+    56, baryon magnetic moment ratios follow from one reduced matrix element, including mu_p/mu_n = -3/2.
+  category: physical
+  unlocks:
+  - constituent_quark_magnetic_moment_sum_rule
+  prerequisites:
+  - spin_flavor_su6_embedding
+  - su6_baryon_multiplet_decomposition
+  source_papers:
+  - georgi_lie_algebras_ch13-15
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: su_n_clebsch_gordan_tableau_addition
+  label: Clebsch-Gordan Decomposition by Tableau Addition
+  description: Decompose SU(N) tensor products by Young tableau addition with the a,b,c,... row-ordering constraint, producing
+    each allowed irrep once.
+  category: mathematical
+  unlocks:
+  - n_ality_selection_rule
+  - su_n_plus_m_branching_rule
+  prerequisites:
+  - su_n_tensor_young_tableau_irreps
+  source_papers:
+  - georgi_lie_algebras_ch13-15
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: su_n_embedding_via_fermionic_oscillators
+  label: SU(n) embedding via fermionic oscillators
+  description: Combine gamma matrices into fermionic creation and annihilation operators and reconstruct an SU(n) algebra
+    inside SO(2n). This is the efficient starting point for branching spinors and tensors under the SU(n) subgroup.
+  category: physical
+  unlocks: Branching SO(2n) representations under SU(n) using oscillator language.
+  prerequisites:
+  - Clifford algebra
+  - fermionic creation and annihilation operators
+  - SU(n) defining representation
+  source_papers:
+  - georgi_lie_algebras_ch19-21
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: su_n_tensor_young_tableau_irreps
+  label: SU(N) Irreps from Tensors and Young Tableaux
+  description: 'Realize SU(N) irreps as tensors and Young tableaux: antisymmetric m-index tensors give the fundamental D_m,
+    general highest weights are encoded by columns of antisymmetric indices, and irreps are projected by row symmetrization
+    plus column antisymmetrization.'
+  category: mathematical
+  unlocks:
+  - su_n_clebsch_gordan_tableau_addition
+  - factors_over_hooks_dimension_rule
+  - complementary_tableaux_for_complex_conjugates
+  - arbitrary_su3_irreps_from_3_and_3bar_oscillators
+  - su_nm_branching_via_symmetric_group
+  prerequisites:
+  - defining_weight_root_geometry
+  source_papers:
+  - georgi_lie_algebras_ch13-15
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: su_nm_branching_via_symmetric_group
+  label: Branch SU(NM) via Symmetric-Group Young Symmetries
+  description: Branch SU(NM) irreps under SU(N) x SU(M) by viewing the defining representation as a tensor product, matching
+    the symmetric-group S_K Young symmetries of the two factor tableaux, and enforcing K = K1 mod N = K2 mod M.
+  category: mathematical
+  unlocks:
+  - su6_baryon_multiplet_decomposition
+  prerequisites:
+  - su_n_tensor_young_tableau_irreps
+  - n_ality_selection_rule
+  source_papers:
+  - georgi_lie_algebras_ch13-15
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: subgroup_coset_and_factor_group_analysis
+  label: Subgroups, cosets, and factor groups
+  description: Use subgroups, cosets, normal subgroups, quotient groups, and the center to simplify group structure and sometimes
+    generate new representations.
+  category: mathematical
+  unlocks:
+  - partition groups into cosets
+  - build quotient-group representations
+  - use normal-subgroup structure to simplify character problems
+  prerequisites:
+  - group_representation_mapping
+  source_papers:
+  - georgi_lie_algebras_ch1-3
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: symmetric_traceless_tensor_realization
+  label: Realize (n,m) as symmetric traceless tensors
+  description: Identify the SU(3) irrep (n,m) with tensors having n upper and m lower indices that are separately symmetric
+    and traceless; the highest-weight tensor is preserved under lowering, and every tensor with those symmetry properties
+    belongs to the irrep.
+  category: mathematical
+  unlocks:
+  - Concrete tensor realizations of all SU(3) irreps.
+  - Direct construction of representation states in component form.
+  - The basis for dimension and degeneracy counting.
+  prerequisites:
+  - tensor_wavefunction_interpretation
+  - highest_weight_lowering_state_construction
+  source_papers:
+  - georgi_lie_algebras_ch10-12
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: symmetric_triplet_antisymmetric_singlet_rule
+  label: Symmetric triplet, antisymmetric singlet
+  description: In the tensor product of two identical spin-1/2 or isospin-1/2 representations, the spin-1 triplet is symmetric
+    under exchange while the spin-0 singlet is antisymmetric.
+  category: mathematical
+  unlocks:
+  - deuteron_spin_isospin_selection
+  prerequisites:
+  - clebsch_gordan_decomposition
+  - multiparticle_tensor_product_isospin
+  source_papers:
+  - georgi_lie_algebras_ch7-9
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: symmetry_constrained_operator_matrix_elements
+  label: Symmetry constraints on operator matrix elements
+  description: Apply Schur's lemma in the |a,j,x> basis to show that invariant observables are diagonal in irrep labels and
+    proportional to delta_jk within each irrep block.
+  category: physical
+  unlocks:
+  - reduce matrix elements to dynamical functions
+  - derive selection rules from symmetry
+  - isolate the first Wigner-Eckart-type simplification
+  prerequisites:
+  - schur_lemma_intertwiner_method
+  - canonical_irrep_basis_for_hilbert_space
+  source_papers:
+  - georgi_lie_algebras_ch1-3
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: symmetry_of_tensor_products_and_particle_statistics
+  label: Use tensor-product symmetry with Bose/Fermi statistics
+  description: Combine tensor symmetries with Bose-Einstein or Fermi-Dirac statistics to determine which multiparticle states
+    survive and which irreducible pieces vanish.
+  category: physical
+  unlocks:
+  - quark_model_constituent_sum_rules
+  - baryon and meson state building
+  prerequisites:
+  - tensor products
+  - creation operators
+  source_papers:
+  - georgi_lie_algebras_ch22-end
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: symmetry_reduction_of_normal_modes
+  label: Symmetry-based normal-mode extraction
+  description: Project a mechanical configuration space into symmetry sectors, subtract trivial translation modes, and act
+    on seed vectors to generate the nontrivial vibrational modes.
+  category: physical
+  unlocks: []
+  prerequisites:
+  - group_projection_operators
+  source_papers:
+  - georgi_lie_algebras_ch4-6
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: tensor_normalization_by_contraction
+  label: Normalize tensor states by contraction
+  description: Fix tensor-state normalization by requiring the fully contracted sum of component products to equal one. This
+    determines the constants appearing in explicit tensor wave functions.
+  category: mathematical
+  unlocks:
+  - Correctly normalized SU(3) basis states.
+  - Normalization factors for projected tensors.
+  - Consistent matrix-element calculations.
+  prerequisites:
+  - tensor_wavefunction_interpretation
+  - invariant_tensor_matrix_elements
+  source_papers:
+  - georgi_lie_algebras_ch10-12
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: tensor_operator_basis_standardization
+  label: Standardizing tensor-operator components
+  description: Convert any equivalent operator basis into the conventional spin-s basis, usually by finding a definite J_3
+    component and generating the rest with J_+ and J_-.
+  category: mathematical
+  unlocks:
+  - orbital_angular_momentum_vector_tensor
+  - wigner_eckart_decomposition
+  prerequisites:
+  - tensor_operator_definition
+  - highest_weight_and_ladder_construction
+  source_papers:
+  - georgi_lie_algebras_ch4-6
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: tensor_operator_extraction_from_reducible_sets
+  label: Tensor operators from reducible operator sets
+  description: Start from a reducible operator basis, form linear combinations with definite J3, pick highest-weight components,
+    and lower them to isolate irreducible tensor operators.
+  category: mathematical
+  unlocks:
+  - singlet_from_commutator_constraints
+  - tensor_operator_product_decomposition
+  prerequisites:
+  - highest_weight_construction
+  source_papers:
+  - georgi_lie_algebras_ch7-9
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: tensor_operator_method
+  label: Tensor-operator method
+  description: Treat operators as objects transforming in representations under commutators with symmetry generators and decompose
+    reducible operator sets into irreducible tensor operators.
+  category: mathematical
+  unlocks:
+  - wigner_eckart_theorem
+  - gell_mann_okubo_mass_formula
+  - magnetic_moment_sum_rules
+  prerequisites:
+  - highest_weight_tensor_product_decomposition
+  source_papers:
+  - georgi_lie_algebras_ch22-end
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: tensor_operator_product_decomposition
+  label: Tensor-operator product decomposition
+  description: Treat the product of two tensor operators as a tensor-product representation, add J3 values, and decompose
+    the product into irreducible tensor operators by highest-weight methods.
+  category: mathematical
+  unlocks:
+  - multiparticle_tensor_product_isospin
+  prerequisites:
+  - highest_weight_construction
+  - tensor_operator_extraction_from_reducible_sets
+  source_papers:
+  - georgi_lie_algebras_ch7-9
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: tensor_product_character_rule
+  label: Character product rule for tensor products
+  description: Use chi_{D1 tensor D2}(g)=chi_{D1}(g) chi_{D2}(g) to read off the irreducible content of composite representations
+    quickly.
+  category: mathematical
+  unlocks:
+  - decompose composite-state spaces rapidly
+  - count multiplicities in product representations
+  - connect tensor products to known irreducible data
+  prerequisites:
+  - tensor_product_representation_construction
+  - character_class_function_method
+  source_papers:
+  - georgi_lie_algebras_ch1-3
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: tensor_product_representation_construction
+  label: Tensor-product representation construction
+  description: Build composite state spaces |j,x> and define D1 tensor D2 so the product representation acts separately on
+    each factor while its matrix elements factorize.
+  category: mathematical
+  unlocks:
+  - treat composite systems systematically
+  - organize multi-index states
+  - set up later Clebsch-Gordan-style decompositions
+  prerequisites:
+  - group_representation_mapping
+  - operator_matrix_element_method
+  source_papers:
+  - georgi_lie_algebras_ch1-3
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: tensor_product_representation_rule
+  label: Tensor-product representation rule
+  description: Build composite representations on product spaces where each factor transforms independently, so the composite
+    generators act as sums on the two factors.
+  category: mathematical
+  unlocks:
+  - spin_and_orbital_angular_momentum_coupling
+  - clebsch_gordan_highest_weight_decomposition
+  - wigner_eckart_decomposition
+  prerequisites:
+  - state_and_operator_transformation_rules
+  - highest_weight_and_ladder_construction
+  source_papers:
+  - georgi_lie_algebras_ch4-6
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: tensor_wavefunction_interpretation
+  label: Treat tensors as SU(3) wave functions
+  description: Expand a state in a tensor-product basis and interpret the coefficients as tensor components, exactly like
+    a quantum-mechanical wave function in position space. Generator action on the state then induces a concrete action on
+    the components.
+  category: physical
+  unlocks:
+  - Physical interpretation of SU(3) tensors as state amplitudes.
+  - Component-wise generator action for practical calculations.
+  - A bridge between abstract representations and wave functions.
+  prerequisites:
+  - upper_lower_index_notation
+  source_papers:
+  - georgi_lie_algebras_ch10-12
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: three_node_angle_test_for_dynkin_subdiagrams
+  label: Three-node angle test
+  description: Inspect any connected triple of simple roots and use the allowed angles to show that only the A_3 chain or
+    the B_3/C_3-type double-line triple can occur. This is the fastest local test for excluding many candidate diagrams.
+  category: mathematical
+  unlocks: Rapid exclusion of impossible local Dynkin fragments.
+  prerequisites:
+  - simple roots
+  - Dynkin diagrams
+  - allowed root-angle constraints
+  source_papers:
+  - georgi_lie_algebras_ch19-21
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: total_spin_reduction_of_hyperfine_splittings
+  label: Total-spin reduction of hyperfine splittings
+  description: Reduce pairwise spin-spin interactions to a function of total spin when quark masses are approximately equal,
+    making the ordering of ground-state multiplets depend only on S.
+  category: mathematical
+  unlocks:
+  - Classifies octet versus decuplet splittings.
+  - Classifies pseudoscalar versus vector meson splittings.
+  - Turns many-body spin algebra into a simple spectroscopy rule.
+  prerequisites:
+  - Spin addition
+  - Color-magnetic hyperfine interaction
+  - Approximate flavor degeneracy
+  source_papers:
+  - georgi_lie_algebras_ch16-18
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: trace_form_canonicalization
+  label: Canonical basis from the adjoint trace form
+  description: Use Tr(T_a T_b) as a scalar product, diagonalize it by linear redefinitions of generators, and in the compact
+    positive-definite basis obtain completely antisymmetric structure constants and a unitary adjoint representation.
+  category: mathematical
+  unlocks:
+  - simplicity_and_semisimplicity_analysis
+  prerequisites:
+  - adjoint_representation_from_structure_constants
+  source_papers:
+  - georgi_lie_algebras_ch4-6
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: tracelessness_filter_for_su5_candidates
+  label: Tracelessness filter for SU(5) matter assignments
+  description: Reject candidate field packagings whose would-be U(1) generator is not traceless on the proposed SU(5) multiplet,
+    using tracelessness as a consistency test for embeddings.
+  category: mathematical
+  unlocks:
+  - Rules out the wrong five-dimensional subset of Standard Model fields.
+  - Constrains viable grand-unified matter assignments before detailed branching.
+  prerequisites:
+  - Block-diagonal embedding of the Standard Model subgroup in SU(5)
+  - Trace properties of SU(N) generators
+  source_papers:
+  - georgi_lie_algebras_ch16-18
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: triality_and_n_ality_selection_rules
+  label: Triality and N-ality selection rules
+  description: Track tableau charge modulo N to constrain tensor-product decompositions and identify which invariant tensors
+    can or cannot exist.
+  category: mathematical
+  unlocks:
+  - tensor-product selection rules
+  - color-singlet constraints
+  prerequisites:
+  - young_tableaux_for_su_n_irreps
+  source_papers:
+  - georgi_lie_algebras_ch22-end
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: u1_charge_tracking_in_so_2n_spinors
+  label: Track the commuting U(1) inside SO(2n) spinors
+  description: Use the SO(2n) generator S that commutes with the SU(n) subgroup to assign U(1) charge m-n/2 to each antisymmetric
+    SU(n) piece of the spinor.
+  category: mathematical
+  unlocks:
+  - detailed spinor branching data
+  - so10_family_unification_in_16
+  prerequisites:
+  - clifford_embedding_of_su_n_in_so_2n
+  - spinor_branching_so_2n_to_su_n
+  source_papers:
+  - georgi_lie_algebras_ch22-end
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: universal_isospin_generator_sum
+  label: Universal isospin-generator sum
+  description: Construct the full isospin generators by summing bilinear contributions over every particle species, using
+    anticommutators for fermion-fermion pairs and commutators otherwise.
+  category: physical
+  unlocks:
+  - channel_amplitude_reduction
+  prerequisites:
+  - isospin_generators_from_bilinears
+  - pion_triplet_boson_formalism
+  source_papers:
+  - georgi_lie_algebras_ch7-9
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: upper_lower_index_notation
+  label: Use upper and lower indices to distinguish 3 and 3bar
+  description: Represent the 3 with lower indices and the 3bar with upper indices so contractions always pair one upper with
+    one lower. This turns complex conjugation into index placement and makes mixed tensor products readable.
+  category: mathematical
+  unlocks:
+  - Compact bookkeeping for 3 and 3bar factors.
+  - Tensor-product states with clear transformation rules.
+  - A notation suited to invariant contractions.
+  prerequisites:
+  - complex_conjugate_representation_mapping
+  source_papers:
+  - georgi_lie_algebras_ch10-12
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: weight_layer_degeneracy_counting
+  label: Count weight degeneracies by layers
+  description: Analyze the hexagonal or triangular weight diagram of (n,m) by counting upper-lower index differences and the
+    number of paired indices in each inner layer. This proves that the degeneracy rises as k+1 until the first triangular
+    layer and then stays constant.
+  category: mathematical
+  unlocks:
+  - Closed-form multiplicities across SU(3) weight diagrams.
+  - A proof of Georgi's layer-degeneracy theorem.
+  - Index-based control of large representations.
+  prerequisites:
+  - dimension_formula_from_tensor_counting
+  - weyl_group_reflection_method
+  - symmetric_traceless_tensor_realization
+  source_papers:
+  - georgi_lie_algebras_ch10-12
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: weyl_group_reflection_method
+  label: Use Weyl reflections to complete weight diagrams
+  description: Reflect a weight p across the hyperplane perpendicular to a root alpha via p -> p - (q-p) alpha. The group
+    generated by all such reflections explains the hexagonal and triangular symmetry of SU(3) weight diagrams and relates
+    equivalent multiplicities.
+  category: mathematical
+  unlocks:
+  - Symmetry completion of weight diagrams.
+  - Degeneracy checks via reflected weights.
+  - Geometric understanding of SU(3) representation shapes.
+  prerequisites:
+  - highest_weight_lowering_state_construction
+  - su2_subalgebras_from_roots
+  source_papers:
+  - georgi_lie_algebras_ch10-12
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: wigner_eckart_decomposition
+  label: Wigner-Eckart decomposition
+  description: Exploit the fact that a tensor operator acting on a state transforms like a tensor product, then expand it
+    with the same Clebsch-Gordan coefficients used for kets, up to reduced constants k_J.
+  category: mathematical
+  unlocks: []
+  prerequisites:
+  - tensor_product_representation_rule
+  - clebsch_gordan_highest_weight_decomposition
+  - tensor_operator_definition
+  - tensor_operator_basis_standardization
+  source_papers:
+  - georgi_lie_algebras_ch4-6
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: young_symmetrizer_irrep_construction
+  label: Young-tableau construction of S_n irreps
+  description: Map fillings of a tableau into the regular representation, symmetrize within rows, antisymmetrize within columns,
+    and thereby isolate the irreducible subspace associated with the tableau.
+  category: mathematical
+  unlocks:
+  - hook_length_dimension_formula
+  prerequisites:
+  - young_tableaux_labeling
+  source_papers:
+  - georgi_lie_algebras_ch4-6
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: young_tableaux_for_su_n_irreps
+  label: Young tableaux for SU(N) representations
+  description: Map tableaux to tensor symmetries for SU(N) by symmetrizing indices along rows, antisymmetrizing along columns,
+    and enforcing tracelessness.
+  category: mathematical
+  unlocks:
+  - factors_over_hooks_dimension_formula
+  - triality_and_n_ality_selection_rules
+  - quark_model_constituent_sum_rules
+  prerequisites:
+  - young_tableaux_for_symmetric_groups
+  - tensor symmetrization
+  source_papers:
+  - georgi_lie_algebras_ch22-end
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: young_tableaux_for_symmetric_groups
+  label: Young tableaux for symmetric-group irreducibles
+  description: Associate tableaux with conjugacy classes and irreducible representations of S_n, then realize irreps by row
+    symmetrization and column antisymmetrization inside the regular representation.
+  category: mathematical
+  unlocks:
+  - young_tableaux_for_su_n_irreps
+  - factors_over_hooks_dimension_formula
+  prerequisites:
+  - character_orthogonality_and_projection_operators
+  - tensor symmetrization
+  source_papers:
+  - georgi_lie_algebras_ch22-end
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: young_tableaux_labeling
+  label: Young tableaux as S_n labels
+  description: Encode partitions of n with box diagrams whose column lengths track cycle lengths, giving a common label set
+    for conjugacy classes and irreducible representations.
+  category: mathematical
+  unlocks:
+  - young_symmetrizer_irrep_construction
+  prerequisites:
+  - cycle_structure_conjugacy_classification
+  source_papers:
+  - georgi_lie_algebras_ch4-6
+  mention_count: 1
+  overlap_classification: new_distinct
+- technique_id: wigner_eckart_theorem
+  label: Wigner-Eckart theorem
+  description: Factor a tensor-operator matrix element into a Clebsch-Gordan coefficient times a reduced matrix element, so
+    one nonzero matrix element fixes all others in the same coupling.
+  category: mathematical
+  unlocks:
+  - ladder_operator_matrix_element_bootstrap
+  - commutator_analogy_matrix_elements
+  prerequisites:
+  - clebsch_gordan_decomposition
+  source_papers:
+  - georgi_lie_algebras_ch22-end
+  - georgi_lie_algebras_ch7-9
+  mention_count: 2
+  closest_existing_node: qft.wigners_symmetry_representation_theorem
+  overlap_classification: part_of_existing
+- technique_id: adjoint_24_higgs_breaking_of_su5
+  label: Adjoint-24 breaking of SU(5)
+  description: Break SU(5) to SU(3) x SU(2) x U(1) by giving an adjoint 24 Higgs a vacuum value along the SU(5) S direction
+    that commutes with the Standard Model subgroup.
+  category: physical
+  unlocks:
+  - Supplies the first stage of grand-unified symmetry breaking.
+  - Makes the Standard Model subgroup the unbroken remnant of SU(5).
+  prerequisites:
+  - Block-diagonal embedding of the Standard Model subgroup in SU(5)
+  - Spontaneous symmetry breaking by vacuum alignment
+  - Adjoint representations
+  source_papers:
+  - georgi_lie_algebras_ch16-18
+  mention_count: 1
+  closest_existing_node: technique.proper_motion_jeans_degeneracy_breaking
+  overlap_classification: part_of_existing
+- technique_id: adjoint_representation_from_structure_constants
+  label: Adjoint representation
+  description: Treat the structure constants as matrices T_a with components -i f_{abc}, producing a representation in which
+    generators act on the algebra by commutation.
+  category: mathematical
+  unlocks:
+  - trace_form_canonicalization
+  - simplicity_and_semisimplicity_analysis
+  prerequisites:
+  - lie_algebra_from_group_multiplication
+  - jacobi_identity_consistency
+  source_papers:
+  - georgi_lie_algebras_ch4-6
+  mention_count: 1
+  closest_existing_node: qft.lorentz_group_representation
+  overlap_classification: part_of_existing
+- technique_id: adjoint_representation_generator_space
+  label: Adjoint representation as generator space
+  description: Identify adjoint-representation states with generators themselves, use the commutator as the action, and define
+    their inner product with a trace form.
+  category: mathematical
+  unlocks:
+  - roots_as_adjoint_weights
+  - cartan_commutator_from_root_pairs
+  prerequisites: []
+  source_papers:
+  - georgi_lie_algebras_ch7-9
+  mention_count: 1
+  closest_existing_node: technique.bms_fixed_order_iteration
+  overlap_classification: part_of_existing
+- technique_id: approximate_symmetry_perturbation_theory
+  label: Approximate symmetry in perturbation theory
+  description: Split the Hamiltonian into a symmetric part plus a small symmetry-breaking perturbation and organize observables
+    by irreducible representation under the unbroken symmetry.
+  category: physical
+  unlocks:
+  - gell_mann_okubo_mass_formula
+  - magnetic_moment_sum_rules
+  prerequisites:
+  - wigner_eckart_theorem
+  - tensor_operator_method
+  source_papers:
+  - georgi_lie_algebras_ch22-end
+  mention_count: 1
+  closest_existing_node: qft.renormalized_perturbation_theory
+  overlap_classification: part_of_existing
+- technique_id: canonical_irrep_basis_for_hilbert_space
+  label: Canonical irrep basis for a Hilbert space
+  description: Choose states |a,j,x> labeled by irrep, state inside the irrep, and extra physical labels so symmetry acts
+    only on the irrep indices.
+  category: physical
+  unlocks:
+  - separate symmetry labels from dynamical labels
+  - write symmetry actions in explicit block form
+  - prepare reduced-matrix-element reasoning
+  prerequisites:
+  - symmetry_action_on_hilbert_space
+  - complete_reducibility_of_finite_group_representations
+  source_papers:
+  - georgi_lie_algebras_ch1-3
+  mention_count: 1
+  closest_existing_node: technique.defect_hilbert_space_factorization
+  overlap_classification: part_of_existing
+- technique_id: cartan_commutator_from_root_pairs
+  label: Cartan commutator from root pairs
+  description: Derive the relation [E_alpha, E_-alpha] equals alpha dot H by evaluating the action of opposite-root generators
+    inside the adjoint representation.
+  category: mathematical
+  unlocks:
+  - su2_subalgebra_from_roots
+  prerequisites:
+  - roots_as_adjoint_weights
+  - adjoint_representation_generator_space
+  source_papers:
+  - georgi_lie_algebras_ch7-9
+  mention_count: 1
+  closest_existing_node: technique.w_mass_window_in_subjet_pairs
+  overlap_classification: part_of_existing
+- technique_id: channel_amplitude_reduction
+  label: Amplitude reduction by isospin channels
+  description: Use isospin decomposition to replace many charge channels by a small set of reduced amplitudes; for pion-nucleon
+    scattering, 1 tensor 1/2 reduces to the 3/2 and 1/2 channels.
+  category: physical
+  unlocks: []
+  prerequisites:
+  - isospin_perturbation_theory
+  - multiparticle_tensor_product_isospin
+  - pion_triplet_boson_formalism
+  - clebsch_gordan_decomposition
+  source_papers:
+  - georgi_lie_algebras_ch7-9
+  mention_count: 1
+  closest_existing_node: technique.extra_dimensional_axion_dimensional_reduction
+  overlap_classification: part_of_existing
+- technique_id: character_class_function_method
+  label: Character method
+  description: Use characters, the traces of representation matrices, as basis-independent class functions that distinguish
+    irreducible representations.
+  category: mathematical
+  unlocks:
+  - replace full matrices by class data
+  - build basis-independent representation invariants
+  - reduce many decomposition problems to a small table
+  prerequisites:
+  - similarity_transform_equivalence
+  - conjugacy_class_analysis
+  source_papers:
+  - georgi_lie_algebras_ch1-3
+  mention_count: 1
+  closest_existing_node: sm.ccwz_method
+  overlap_classification: part_of_existing
+- technique_id: character_orthogonality_and_multiplicity_extraction
+  label: Character orthogonality and multiplicity extraction
+  description: Use character orthogonality to count how many times each irreducible representation appears inside a reducible
+    representation.
+  category: mathematical
+  unlocks:
+  - decompose reducible representations
+  - show the regular representation contains each irrep n_a times
+  - infer irreducible content without explicit diagonalization
+  prerequisites:
+  - character_class_function_method
+  - orthogonality_of_irrep_matrix_elements
+  - complete_reducibility_of_finite_group_representations
+  source_papers:
+  - georgi_lie_algebras_ch1-3
+  mention_count: 1
+  closest_existing_node: technique.greybody_entropy_multiplicity_estimate
+  overlap_classification: part_of_existing
+- technique_id: charge_operator_q_equals_r3_plus_s
+  label: Charge operator from electroweak generators
+  description: Construct electric charge as Q = R3 + S so electromagnetic charge is embedded directly inside the SU(2) x U(1)
+    algebra.
+  category: mathematical
+  unlocks:
+  - Recovers the observed charges of quarks, leptons, and neutrinos.
+  - Identifies electromagnetism as the unbroken generator inside the electroweak theory.
+  prerequisites:
+  - Electroweak tensor-operator assignment
+  - Cartan generators
+  source_papers:
+  - georgi_lie_algebras_ch16-18
+  mention_count: 1
+  closest_existing_node: technique.operator_higgs_mechanism_from_leaky_matter
+  overlap_classification: part_of_existing
+- technique_id: chiral_sign_parity_classification
+  label: Chiral sign-parity classification
+  description: Label even-orthogonal spinor weights by sign vectors and separate the two chiral irreducible representations
+    by the parity constraint on the product of the signs. This is the cleanest way to see why the two chiral spinors are distinct.
+  category: mathematical
+  unlocks: Clean separation of the two chiral spinor irreducible representations.
+  prerequisites:
+  - weight systems
+  - Cartan generators
+  - chiral spinors
+  source_papers:
+  - georgi_lie_algebras_ch19-21
+  mention_count: 1
+  closest_existing_node: technique.stiefel_whitney_domain_wall_duality
+  overlap_classification: part_of_existing
+- technique_id: color_casimir_attraction_criterion
+  label: Casimir criterion for color attraction
+  description: Determine which color channels bind most strongly by diagonalizing T_A dot T_B = (T^2 - T_A^2 - T_B^2)/2; smaller
+    total Casimir means a less colorful and more attractive channel.
+  category: mathematical
+  unlocks:
+  - Shows why quark-antiquark singlets are favored.
+  - Shows why the totally antisymmetric three-quark color state is preferred.
+  - Relates binding strength to representation theory.
+  prerequisites:
+  - Tensor product representations
+  - Casimir operators
+  - Schur's lemma
+  source_papers:
+  - georgi_lie_algebras_ch16-18
+  mention_count: 1
+  closest_existing_node: technique.color_channel_decomposition_bound_states
+  overlap_classification: part_of_existing
+- technique_id: color_singlet_hadron_construction
+  label: Color-singlet hadron construction
+  description: Build physical baryons with the epsilon tensor, antibaryons with the conjugate epsilon tensor, and mesons by
+    contracting a quark with an antiquark so observable states are color singlets and the noncolor baryon wavefunction becomes
+    symmetric.
+  category: physical
+  unlocks:
+  - Resolves the spin-statistics problem of the naive quark model.
+  - Explains why low-energy hadrons are organized around colorless three-quark and quark-antiquark states.
+  prerequisites:
+  - Color SU(3)
+  - Fundamental and conjugate representations
+  - Invariant epsilon tensor
+  source_papers:
+  - georgi_lie_algebras_ch16-18
+  mention_count: 1
+  closest_existing_node: technique.singlet_portal_stealth_construction
+  overlap_classification: part_of_existing
+- technique_id: commutator_analogy_matrix_elements
+  label: Commutator-analogy matrix elements
+  description: If two operators have the same commutators with the symmetry generators, their matrix elements have the same
+    group-theoretic pattern up to an overall proportionality constant.
+  category: mathematical
+  unlocks: []
+  prerequisites:
+  - wigner_eckart_theorem
+  - ladder_operator_matrix_element_bootstrap
+  source_papers:
+  - georgi_lie_algebras_ch7-9
+  mention_count: 1
+  closest_existing_node: technique.nucleon_nuclear_response_matching
+  overlap_classification: part_of_existing
+- technique_id: completeness_of_irrep_matrix_elements
+  label: Completeness of irreducible matrix elements
+  description: Expand arbitrary functions on the group in irreducible matrix elements, recover finite-group Fourier analysis,
+    and obtain |G|=sum_i n_i^2.
+  category: mathematical
+  unlocks:
+  - perform harmonic analysis on finite groups
+  - count total irreducible degrees of freedom
+  - understand Fourier series as a group-representation statement
+  prerequisites:
+  - orthogonality_of_irrep_matrix_elements
+  source_papers:
+  - georgi_lie_algebras_ch1-3
+  mention_count: 1
+  closest_existing_node: technique.zero_bin_as_wilson_line_vev
+  overlap_classification: part_of_existing
+- technique_id: composite_operator_symmetry_check
+  label: Composite-operator symmetry check
+  description: Test whether a composite operator can mediate a process by checking its color and charge quantum numbers, as
+    in constructing a proton-decay operator with the correct SU(3) and U(1) properties.
+  category: mathematical
+  unlocks:
+  - Provides a symmetry-based route from unified interactions to explicit decay channels.
+  - Connects operator construction to observable processes such as p -> pi^0 + e^+.
+  prerequisites:
+  - Color-singlet hadron construction
+  - Charge operator from electroweak generators
+  - Proton decay from quark-lepton unification
+  source_papers:
+  - georgi_lie_algebras_ch16-18
+  mention_count: 1
+  closest_existing_node: technique.discrete_symmetry_operator_forbidding
+  overlap_classification: part_of_existing
+- technique_id: constituent_quark_model_for_heavy_hadrons
+  label: Constituent-quark model for heavy hadrons
+  description: Extend the constituent-quark logic to c- and b-containing hadrons even when exact flavor symmetries are badly
+    broken, using direct quark-model reasoning rather than large approximate multiplets.
+  category: physical
+  unlocks:
+  - Provides qualitative spectra for heavy hadrons.
+  - Links light-hadron and heavy-hadron spectroscopy in one approximate framework.
+  prerequisites:
+  - Nonrelativistic constituent-quark expansion
+  - Heavy-hadron classification with light-flavor SU(3)
+  source_papers:
+  - georgi_lie_algebras_ch16-18
+  mention_count: 1
+  closest_existing_node: technique.scaled_variable_y_for_hq_fragmentation
+  overlap_classification: part_of_existing
+- technique_id: cycle_structure_conjugacy_classification
+  label: Conjugacy classes from cycle structure
+  description: Classify S_n elements by cycle counts k_j, show that conjugation preserves cycle structure, and count class
+    sizes by dividing n! by internal cycle rotations and permutations of equal-length cycles.
+  category: mathematical
+  unlocks:
+  - young_tableaux_labeling
+  prerequisites:
+  - cycle_decomposition_of_permutations
+  source_papers:
+  - georgi_lie_algebras_ch4-6
+  mention_count: 1
+  closest_existing_node: technique.no_scale_fphi_suppression
+  overlap_classification: part_of_existing
+- technique_id: dynkin_analysis_and_extended_dynkin_subalgebras
+  label: Dynkin and extended-Dynkin subalgebra analysis
+  description: Delete nodes from Dynkin or extended Dynkin diagrams and track Dynkin coefficients to identify regular maximal
+    subalgebras and branching rules.
+  category: mathematical
+  unlocks:
+  - so10_left_right_branching
+  - so8_branching_to_su2_power_4
+  - e6_branching_via_extended_dynkin_analysis
+  prerequisites:
+  - dynkin_diagram_encoding
+  - construct_lie_algebra_from_simple_roots
+  source_papers:
+  - georgi_lie_algebras_ch22-end
+  mention_count: 1
+  closest_existing_node: technique.oblique_fit_bottleneck_analysis
+  overlap_classification: part_of_existing
+- technique_id: e6_unification_with_27
+  label: Unify matter in the E6 27
+  description: Use 27 = 16 + 10 + 1 under SO(10) so that a family sits in a single E6 irrep together with extra real multiplets
+    that can become heavy after breaking.
+  category: physical
+  unlocks:
+  - e6_breaking_requires_adjoint_78
+  prerequisites:
+  - e6_branching_via_extended_dynkin_analysis
+  - so10_family_unification_in_16
+  source_papers:
+  - georgi_lie_algebras_ch22-end
+  mention_count: 1
+  closest_existing_node: technique.boosted_object_reconstruction_100tev
+  overlap_classification: part_of_existing
+- technique_id: electroweak_gauge_boson_identification
+  label: Electroweak gauge-boson identification
+  description: Associate one gauge boson with each electroweak generator, then form the photon and Z from linear combinations
+    of W3 and X while W+ and W- come from W1 +/- i W2.
+  category: physical
+  unlocks:
+  - Embeds electromagnetism inside the electroweak theory.
+  - Separates electromagnetic and weak force carriers after symmetry breaking.
+  prerequisites:
+  - Charge operator from electroweak generators
+  - Electroweak Lie algebra
+  source_papers:
+  - georgi_lie_algebras_ch16-18
+  mention_count: 1
+  closest_existing_node: sm.precision.gauge_boson_self_energy
+  overlap_classification: part_of_existing
+- technique_id: exponential_parameterization_of_lie_groups
+  label: Exponential parameterization
+  description: Promote infinitesimal transformations to finite ones by exponentiating linear combinations of generators, organizing
+    group elements into one-parameter subgroups.
+  category: mathematical
+  unlocks:
+  - lie_algebra_from_group_multiplication
+  - matrix_exponential_calculus
+  prerequisites:
+  - infinitesimal_generator_extraction
+  source_papers:
+  - georgi_lie_algebras_ch4-6
+  mention_count: 1
+  closest_existing_node: technique.alpha_beta_parameterization_of_gw_signal
+  overlap_classification: part_of_existing
+- technique_id: finite_group_unitarization
+  label: Finite-group unitarization by averaging
+  description: Average S=sum_g D(g)^dagger D(g) over a finite group to construct an inner product in which any finite-group
+    representation becomes unitary.
+  category: mathematical
+  unlocks:
+  - replace arbitrary finite-group representations by unitary ones
+  - prove complete reducibility for finite groups
+  - contrast finite-group behavior with infinite-group counterexamples
+  prerequisites:
+  - group_representation_mapping
+  - similarity_transform_equivalence
+  source_papers:
+  - georgi_lie_algebras_ch1-3
+  mention_count: 1
+  closest_existing_node: technique.vectorlike_hidden_gauge_higgs_lift
+  overlap_classification: part_of_existing
+- technique_id: fundamental_representation_branching_for_subalgebra_detection
+  label: Fundamental-branching principle for subalgebras
+  description: Track how the smallest useful representation transforms under a candidate subalgebra and use that transformation
+    law to identify the embedding. Once that is known, all other branching rules follow mechanically.
+  category: physical
+  unlocks: Identification of nontrivial subgroup embeddings from branching of the smallest representation.
+  prerequisites:
+  - representation decomposition
+  - subalgebra embeddings
+  - defining representations
+  source_papers:
+  - georgi_lie_algebras_ch19-21
+  mention_count: 1
+  closest_existing_node: technique.branching_step_interpretability
+  overlap_classification: part_of_existing
+- technique_id: g2_as_octonion_invariance_group
+  label: Identify G2 as the octonion invariance group
+  description: View G2 as the subgroup of SO(7) that preserves the octonion structure constants g_abc.
+  category: mathematical
+  unlocks:
+  - exceptional-algebra intuition
+  prerequisites:
+  - octonion_fano_plane_multiplication
+  source_papers:
+  - georgi_lie_algebras_ch22-end
+  mention_count: 1
+  closest_existing_node: technique.quotient_group_charge_lattice_identification
+  overlap_classification: part_of_existing
+- technique_id: generalized_gell_mann_basis
+  label: Generalized Gell-Mann Basis for SU(N)
+  description: Build an explicit SU(N) basis from normalized off-diagonal step operators and N-1 traceless diagonal generators,
+    generalizing the Gell-Mann matrices and fixing a concrete Cartan basis.
+  category: mathematical
+  unlocks:
+  - defining_weight_root_geometry
+  - emergent_su3_in_isotropic_oscillator
+  - diagonal_su3_from_coupled_oscillators
+  - spin_flavor_su6_embedding
+  prerequisites: []
+  source_papers:
+  - georgi_lie_algebras_ch13-15
+  mention_count: 1
+  closest_existing_node: technique.lattice_basis_axion_reduction
+  overlap_classification: part_of_existing
+- technique_id: global_dynkin_classification_by_local_constraints
+  label: Classification by local Dynkin constraints
+  description: Combine the local angle, shrinking, branching, and dependence constraints to recover exactly the four classical
+    infinite families and the five exceptional diagrams. Use this when you need the full Cartan classification from elementary
+    root geometry.
+  category: mathematical
+  unlocks: Recovery of the full Cartan list A_n, B_n, C_n, D_n, G_2, F_4, E_6, E_7, and E_8.
+  prerequisites:
+  - II-systems
+  - local Dynkin constraints
+  - classical root systems
+  source_papers:
+  - georgi_lie_algebras_ch19-21
+  mention_count: 1
+  closest_existing_node: technique.local_surface_density_fraction_bound
+  overlap_classification: part_of_existing
+- technique_id: group_representation_mapping
+  label: Group-to-representation mapping
+  description: Define a group by its composition law and realize each element as an operator D(g) with D(g1)D(g2)=D(g1g2),
+    converting symmetry into linear algebra.
+  category: mathematical
+  unlocks:
+  - translate abstract symmetry into operator algebra
+  - define the dimension of a representation
+  - build regular and tensor-product representations
+  prerequisites: []
+  source_papers:
+  - georgi_lie_algebras_ch1-3
+  mention_count: 1
+  closest_existing_node: qft.lorentz_group_representation
+  overlap_classification: part_of_existing
+- technique_id: heavy_quark_flavor_su3_classification
+  label: Heavy-hadron classification with light-flavor SU(3)
+  description: Classify hadrons containing c or b quarks by letting only the light u, d, s constituents transform under flavor
+    SU(3), so heavy-light mesons form 3 or 3bar multiplets and single-heavy baryons split into 6 and 3bar.
+  category: physical
+  unlocks:
+  - Extends flavor classification to heavy hadrons without enlarging flavor symmetry.
+  - Keeps group theory useful when heavy quarks act as flavor spectators.
+  prerequisites:
+  - Flavor SU(3)
+  - Quark and antiquark representations
+  - Heavy-light hadron composition
+  source_papers:
+  - georgi_lie_algebras_ch16-18
+  mention_count: 1
+  closest_existing_node: technique.trijet_factorization_formula
+  overlap_classification: part_of_existing
+- technique_id: higgs_doublet_vev_mechanism
+  label: Higgs-doublet vacuum expectation value mechanism
+  description: Use a scalar Higgs doublet with S = 1/2 and a potential minimized at nonzero phi^dagger phi to choose a vacuum
+    orientation that preserves only Q = R3 + S.
+  category: physical
+  unlocks:
+  - Provides a concrete model of electroweak spontaneous symmetry breaking.
+  - Explains why vacuum directions related by SU(2) x U(1) give the same physics.
+  - Identifies the unbroken electromagnetic U(1).
+  prerequisites:
+  - Spontaneous symmetry breaking by vacuum alignment
+  - SU(2) doublets
+  - Scalar-field potentials
+  source_papers:
+  - georgi_lie_algebras_ch16-18
+  mention_count: 1
+  closest_existing_node: sm.ssb.vacuum_expectation_value
+  overlap_classification: part_of_existing
+- technique_id: higgs_tensor_product_mass_rule
+  label: Higgs tensor-product mass rule
+  description: Allow a Higgs field to generate a fermion mass only when the tensor product of a right-handed fermion representation
+    with the corresponding antifermion representation contains the Higgs representation or its conjugate.
+  category: mathematical
+  unlocks:
+  - Provides the representation-theoretic test for electron and quark mass terms.
+  - Generalizes immediately to unified theories.
+  prerequisites:
+  - Higgs-doublet vacuum expectation value mechanism
+  - Tensor products of representations
+  - Fermion and antifermion representations
+  source_papers:
+  - georgi_lie_algebras_ch16-18
+  mention_count: 1
+  closest_existing_node: technique.radion_higgs_mixing_diagonalization
+  overlap_classification: part_of_existing
+- technique_id: highest_weight_construction
+  label: Highest-weight construction
+  description: Identify a highest-weight state or operator annihilated by the raising operator, then lower it to generate
+    an irreducible representation and peel off additional irreps by finding new highest weights.
+  category: mathematical
+  unlocks:
+  - clebsch_gordan_decomposition
+  - tensor_operator_extraction_from_reducible_sets
+  - tensor_operator_product_decomposition
+  prerequisites: []
+  source_papers:
+  - georgi_lie_algebras_ch7-9
+  mention_count: 1
+  closest_existing_node: technique.nonabelian_slwgc_highest_weight_formulation
+  overlap_classification: part_of_existing
+- technique_id: highest_weight_reduction_algorithm
+  label: Highest-weight block diagonalization
+  description: Reduce any finite-dimensional SU(2) representation by repeatedly extracting highest-weight states, generating
+    each irreducible multiplet, and iterating on the orthogonal complement.
+  category: mathematical
+  unlocks:
+  - clebsch_gordan_highest_weight_decomposition
+  prerequisites:
+  - highest_weight_and_ladder_construction
+  source_papers:
+  - georgi_lie_algebras_ch4-6
+  mention_count: 1
+  closest_existing_node: technique.block_matrix_diagonalization_for_neutrino_masses
+  overlap_classification: part_of_existing
+- technique_id: highest_weight_tensor_product_decomposition
+  label: Highest-weight tensor-product decomposition
+  description: Identify the highest-weight state in a product representation and apply lowering operators to generate each
+    irreducible component systematically.
+  category: mathematical
+  unlocks:
+  - clebsch_gordan_coefficients_from_tensor_products
+  - tensor_operator_method
+  - spinor_branching_so_2n_to_su_n
+  prerequisites:
+  - raising and lowering operators
+  - Cartan generators
+  source_papers:
+  - georgi_lie_algebras_ch22-end
+  mention_count: 1
+  closest_existing_node: technique.nonabelian_slwgc_highest_weight_formulation
+  overlap_classification: part_of_existing
+- technique_id: inductive_root_generation
+  label: Inductive generation of roots
+  description: Generate every positive root by starting from simple roots and repeatedly applying simple-root raising operators,
+    using the master formula to decide when alpha plus phi remains a root.
+  category: mathematical
+  unlocks:
+  - algebra_construction_from_simple_root_commutators
+  - g2_root_construction
+  prerequisites:
+  - simple_root_identification
+  - root_string_master_formula
+  - simple_root_geometry_and_completeness
+  source_papers:
+  - georgi_lie_algebras_ch7-9
+  mention_count: 1
+  closest_existing_node: technique.backward_generation_training_data
+  overlap_classification: part_of_existing
+- technique_id: isospin_doublet_charge_independence
+  label: Isospin doublet for charge independence
+  description: Model the proton and neutron as the two components of an isospin-1/2 doublet so that charge-independent strong
+    forces are represented as an internal SU(2) symmetry.
+  category: physical
+  unlocks:
+  - creation_annihilation_operator_formalism
+  - isospin_generators_from_bilinears
+  - approximate_isospin_symmetry
+  prerequisites: []
+  source_papers:
+  - georgi_lie_algebras_ch7-9
+  mention_count: 1
+  closest_existing_node: technique.calculation_scale_invariance
+  overlap_classification: part_of_existing
+- technique_id: isospin_perturbation_theory
+  label: Isospin perturbation theory
+  description: Classify states by the isospin-symmetric Hamiltonian and treat the symmetry-breaking terms as perturbations
+    when strong dynamics dominate.
+  category: physical
+  unlocks:
+  - channel_amplitude_reduction
+  prerequisites:
+  - approximate_isospin_symmetry
+  source_papers:
+  - georgi_lie_algebras_ch7-9
+  mention_count: 1
+  closest_existing_node: qft.renormalized_perturbation_theory
+  overlap_classification: part_of_existing
+- technique_id: jacobi_identity_consistency
+  label: Jacobi identity as algebraic consistency
+  description: Use nested commutators to enforce the Jacobi identity, the key consistency condition that any Lie product must
+    satisfy.
+  category: mathematical
+  unlocks:
+  - adjoint_representation_from_structure_constants
+  prerequisites:
+  - lie_algebra_from_group_multiplication
+  source_papers:
+  - georgi_lie_algebras_ch4-6
+  mention_count: 1
+  closest_existing_node: technique.lattice_wgc_compactification_test
+  overlap_classification: part_of_existing
+- technique_id: ladder_operator_matrix_element_bootstrap
+  label: Ladder-operator matrix-element bootstrap
+  description: Compute unknown tensor-operator matrix elements by moving within a representation with raising and lowering
+    operators, often avoiding explicit table lookup.
+  category: mathematical
+  unlocks:
+  - commutator_analogy_matrix_elements
+  prerequisites:
+  - highest_weight_construction
+  - wigner_eckart_theorem
+  source_papers:
+  - georgi_lie_algebras_ch7-9
+  mention_count: 1
+  closest_existing_node: technique.matrix_element_spin_likelihood
+  overlap_classification: part_of_existing
+- technique_id: lepton_number_as_fourth_color
+  label: Treat lepton number as a fourth color
+  description: Interpret SU(4) as extending color by one lepton direction so that leptons and quarks differ only after spontaneous
+    breaking leaves the SU(3) color subgroup unbroken.
+  category: physical
+  unlocks:
+  - charge_quantization_from_semi_simple_embedding
+  - Pati-Salam intuition
+  prerequisites:
+  - so10_left_right_branching
+  source_papers:
+  - georgi_lie_algebras_ch22-end
+  mention_count: 1
+  closest_existing_node: technique.kk_violation_as_threshold_control
+  overlap_classification: part_of_existing
+- technique_id: magnetic_moment_sum_rules
+  label: Magnetic-moment sum rules
+  description: Use SU(3) or SU(6) symmetry, often with the Wigner-Eckart theorem or the constituent quark model, to relate
+    baryon magnetic moments and transition moments.
+  category: physical
+  unlocks:
+  - baryon magnetic-moment predictions
+  prerequisites:
+  - wigner_eckart_theorem
+  - approximate_symmetry_perturbation_theory
+  - quark_model_constituent_sum_rules
+  source_papers:
+  - georgi_lie_algebras_ch22-end
+  mention_count: 1
+  closest_existing_node: qed.anomalous_magnetic_moment
+  overlap_classification: part_of_existing
+- technique_id: master_formula_for_root_geometry
+  label: Master formula for root geometry
+  description: Use the root-string relation between weights and SU(2) ladders to constrain inner products and the allowed
+    angles between roots of compact Lie algebras.
+  category: mathematical
+  unlocks:
+  - dynkin_diagram_encoding
+  - construct_lie_algebra_from_simple_roots
+  prerequisites:
+  - roots
+  - SU(2) subalgebras
+  source_papers:
+  - georgi_lie_algebras_ch22-end
+  mention_count: 1
+  closest_existing_node: technique.polar_core_curvature_singularity_formula
+  overlap_classification: part_of_existing
+- technique_id: n_ality_selection_rule
+  label: N-ality Selection Rule
+  description: Track box number modulo N through tensor products; because boxes disappear only in columns of N, each channel
+    conserves N-ality.
+  category: mathematical
+  unlocks:
+  - su_nm_branching_via_symmetric_group
+  prerequisites:
+  - su_n_clebsch_gordan_tableau_addition
+  source_papers:
+  - georgi_lie_algebras_ch13-15
+  mention_count: 1
+  closest_existing_node: technique.local_charge_selection_rules
+  overlap_classification: part_of_existing
+- technique_id: nonrelativistic_constituent_quark_expansion
+  label: Nonrelativistic constituent-quark expansion
+  description: Approximate hadrons by nonrelativistic bound states when quark masses are large compared to the strong scale,
+    organizing energies as a leading constituent-mass sum plus subleading spin-independent and spin-dependent corrections.
+  category: physical
+  unlocks:
+  - Provides a practical qualitative mass model for ground-state mesons and baryons.
+  - Explains why an approximate SU(6) picture appears before spin effects are added.
+  prerequisites:
+  - QCD scale separation
+  - Bound-state quantum mechanics
+  - Constituent quark picture
+  source_papers:
+  - georgi_lie_algebras_ch16-18
+  mention_count: 1
+  closest_existing_node: technique.analytic_matching_of_accmm_to_hqe
+  overlap_classification: part_of_existing
+- technique_id: operator_matrix_element_method
+  label: Operator-to-matrix conversion
+  description: Choose a basis, write matrices as <ei|D(g)|ej>, and insert complete sets of states so operator products become
+    matrix products.
+  category: mathematical
+  unlocks:
+  - compute explicit representation matrices
+  - move cleanly between operators and matrices
+  - perform basis-dependent calculations systematically
+  prerequisites:
+  - group_representation_mapping
+  source_papers:
+  - georgi_lie_algebras_ch1-3
+  mention_count: 1
+  closest_existing_node: technique.bilocal_lightcone_operator_matching_to_hqet
+  overlap_classification: part_of_existing
+- technique_id: orbital_angular_momentum_vector_tensor
+  label: Position operator as a spin-1 tensor
+  description: In a spherically symmetric potential, use orbital angular momentum commutators to show that the position operator
+    transforms as a vector tensor and rewrite Cartesian components as spherical components r_0 and r_{+/-1}.
+  category: physical
+  unlocks:
+  - wigner_eckart_decomposition
+  prerequisites:
+  - tensor_operator_definition
+  - tensor_operator_basis_standardization
+  source_papers:
+  - georgi_lie_algebras_ch4-6
+  mention_count: 1
+  closest_existing_node: technique.goldberger_wise_as_operator_running
+  overlap_classification: part_of_existing
+- technique_id: orthogonality_of_irrep_matrix_elements
+  label: Orthogonality of irreducible matrix elements
+  description: Sum over the finite group and use Schur's lemma to derive orthogonality relations for matrix elements of inequivalent
+    irreducible representations.
+  category: mathematical
+  unlocks:
+  - normalize irreducible matrix elements
+  - derive character orthogonality
+  - build projection formulas
+  prerequisites:
+  - schur_lemma_intertwiner_method
+  - regular_representation_construction
+  source_papers:
+  - georgi_lie_algebras_ch1-3
+  mention_count: 1
+  closest_existing_node: technique.zero_bin_as_wilson_line_vev
+  overlap_classification: part_of_existing
+- technique_id: oscillator_creation_annihilation_method
+  label: Creation and Annihilation Operator Method for the Oscillator
+  description: Rewrite the isotropic harmonic oscillator in terms of bosonic creation and annihilation operators so the spectrum
+    is labeled by occupation numbers and symmetric tensor structures.
+  category: physical
+  unlocks:
+  - emergent_su3_in_isotropic_oscillator
+  - emergent_su_n_for_equal_mass_modes
+  - diagonal_su3_from_coupled_oscillators
+  prerequisites: []
+  source_papers:
+  - georgi_lie_algebras_ch13-15
+  mention_count: 1
+  closest_existing_node: qft.creation_annihilation_operator
+  overlap_classification: part_of_existing
+- technique_id: parity_irrep_classification
+  label: Parity as Z2 representation theory
+  description: Treat parity as the two-element group Z2 and decompose a parity-invariant Hilbert space into even and odd states
+    with definite parity.
+  category: physical
+  unlocks:
+  - assign parity quantum numbers
+  - separate symmetric and antisymmetric states
+  - build the template for symmetry-based state classification
+  prerequisites:
+  - symmetry_action_on_hilbert_space
+  - complete_reducibility_of_finite_group_representations
+  source_papers:
+  - georgi_lie_algebras_ch1-3
+  mention_count: 1
+  closest_existing_node: technique.su3_triality_representation_congruence
+  overlap_classification: part_of_existing
+- technique_id: pauli_matrix_realization_of_su2
+  label: Pauli-matrix realization of SU(2)
+  description: Realize the defining spin-1/2 representation with Pauli matrices and exponentiate it to obtain the most general
+    2x2 unitary matrices with determinant 1.
+  category: mathematical
+  unlocks: []
+  prerequisites:
+  - highest_weight_and_ladder_construction
+  - exponential_parameterization_of_lie_groups
+  source_papers:
+  - georgi_lie_algebras_ch4-6
+  mention_count: 1
+  closest_existing_node: technique.block_matrix_diagonalization_for_neutrino_masses
+  overlap_classification: part_of_existing
+- technique_id: qcd_scale_separation
+  label: QCD scale separation
+  description: Use Lambda_QCD to separate short-distance weakly coupled quark-gluon behavior from long-distance confinement
+    into colorless hadrons.
+  category: physical
+  unlocks:
+  - Explains why quarks and gluons appear in high-energy scattering but not as isolated low-energy particles.
+  - Provides the dynamical setting for hadron spectroscopy.
+  prerequisites:
+  - QCD color SU(3)
+  - Short-distance versus long-distance dynamics
+  source_papers:
+  - georgi_lie_algebras_ch16-18
+  mention_count: 1
+  closest_existing_node: eft.scale_separation
+  overlap_classification: part_of_existing
+- technique_id: quark_mass_ratio_extraction_from_hyperfine_splittings
+  label: Constituent-mass extraction from hyperfine splittings
+  description: Infer constituent-mass ratios such as m_s / m_u,d by comparing observed hyperfine splittings, since the interaction
+    strength scales as 1 / (m_i m_j).
+  category: physical
+  unlocks:
+  - Relates meson splittings and baryon splittings to strange-versus-light constituent masses.
+  - Checks consistency of the constituent picture across different hadron sectors.
+  prerequisites:
+  - Color-magnetic hyperfine interaction
+  - Observed hadron mass splittings
+  - Constituent quark masses
+  source_papers:
+  - georgi_lie_algebras_ch16-18
+  mention_count: 1
+  closest_existing_node: technique.nonlocal_mass_fluctuation_signal_extraction
+  overlap_classification: part_of_existing
+- technique_id: recursive_inner_product_and_gram_schmidt
+  label: Compute overlaps recursively and orthonormalize
+  description: Compute norms and overlaps by commuting raising operators through strings of lowering operators until they
+    annihilate the highest-weight state, then resolve same-weight spaces with Gram-Schmidt. Georgi emphasizes that the procedure
+    is tedious but completely systematic and programmable.
+  category: mathematical
+  unlocks:
+  - Explicit orthonormal bases for degenerate weight spaces.
+  - Tests of linear dependence between different lowering paths.
+  - Computer implementation of representation construction.
+  prerequisites:
+  - highest_weight_lowering_state_construction
+  - jacobi_identity
+  source_papers:
+  - georgi_lie_algebras_ch10-12
+  mention_count: 1
+  closest_existing_node: technique.wkb_density_of_states_with_metric_weights
+  overlap_classification: part_of_existing
+- technique_id: rejecting_flavor_su4_and_su5
+  label: Rejection of flavor SU(4) and SU(5)
+  description: Discard flavor SU(4) or SU(5) as useful approximate symmetries because c and b mass splittings are much larger
+    than Lambda_QCD, so the perturbative breaking logic that works for flavor SU(3) fails.
+  category: physical
+  unlocks:
+  - Prevents overextending light-flavor symmetry arguments.
+  - Motivates switching from enlarged flavor groups to heavy-quark approximations.
+  prerequisites:
+  - QCD scale separation
+  - Approximate flavor SU(3) from flavor-blind gluons
+  - Heavy quark masses
+  source_papers:
+  - georgi_lie_algebras_ch16-18
+  mention_count: 1
+  closest_existing_node: technique.barr_zee_inner_outer_factorization
+  overlap_classification: part_of_existing
+- technique_id: root_uniqueness_and_no_multiples
+  label: Uniqueness of roots and generators
+  description: SU(2) subalgebra arguments show that each nonzero root labels a unique generator and that no multiple k alpha
+    with k not equal to plus or minus 1 can also be a root.
+  category: mathematical
+  unlocks:
+  - simple_root_geometry_and_completeness
+  prerequisites:
+  - su2_subalgebra_from_roots
+  source_papers:
+  - georgi_lie_algebras_ch7-9
+  mention_count: 1
+  closest_existing_node: technique.barr_zee_inner_outer_factorization
+  overlap_classification: part_of_existing
+- technique_id: self_duality_constraints_on_middle_forms
+  label: Middle-form self-duality constraints
+  description: For rank n antisymmetric tensors in even dimensions, impose self-duality, anti-self-duality, or complex self-duality
+    to remove redundant components. This explains the special middle-form representations that appear in chiral spinor products.
+  category: mathematical
+  unlocks: Correct counting and identification of middle-form tensor representations.
+  prerequisites:
+  - even-dimensional spinors
+  - epsilon tensor
+  - antisymmetric middle forms
+  source_papers:
+  - georgi_lie_algebras_ch19-21
+  mention_count: 1
+  closest_existing_node: technique.worldsheet_self_duality_and_inflow_bookkeeping
+  overlap_classification: part_of_existing
+- technique_id: similarity_transform_equivalence
+  label: Similarity-transform equivalence of representations
+  description: Change basis with D'(g)=S^-1 D(g) S to identify equivalent representations and pick forms that are easier to
+    analyze.
+  category: mathematical
+  unlocks:
+  - choose canonical representation forms
+  - prepare block diagonalization
+  - show characters are basis independent
+  prerequisites:
+  - group_representation_mapping
+  - operator_matrix_element_method
+  source_papers:
+  - georgi_lie_algebras_ch1-3
+  mention_count: 1
+  closest_existing_node: technique.radion_legendre_transform_mode
+  overlap_classification: part_of_existing
+- technique_id: simple_root_geometry_and_completeness
+  label: Simple-root geometry and completeness
+  description: Use the geometry of simple roots to show they meet at obtuse or right angles, are linearly independent, generate
+    all positive roots with nonnegative integer coefficients, and are as numerous as the rank.
+  category: mathematical
+  unlocks:
+  - inductive_root_generation
+  - algebra_construction_from_simple_root_commutators
+  - dynkin_diagram_encoding
+  prerequisites:
+  - simple_root_identification
+  - root_uniqueness_and_no_multiples
+  source_papers:
+  - georgi_lie_algebras_ch7-9
+  mention_count: 1
+  closest_existing_node: technique.probe_backreaction_localization_criterion
+  overlap_classification: part_of_existing
+- technique_id: singlet_from_commutator_constraints
+  label: Singlet extraction from commutators
+  description: When operators do not come with a scalar product, identify leftover singlets by solving for combinations whose
+    commutator with the raising operator vanishes.
+  category: mathematical
+  unlocks: []
+  prerequisites:
+  - tensor_operator_extraction_from_reducible_sets
+  source_papers:
+  - georgi_lie_algebras_ch7-9
+  mention_count: 1
+  closest_existing_node: technique.combined_alpha_s_from_multiple_event_shapes
+  overlap_classification: part_of_existing
+- technique_id: so10_family_unification_in_16
+  label: Family unification in the SO(10) 16
+  description: Place one full family of quarks and leptons, plus a singlet state, into a single irreducible spinor representation
+    of SO(10).
+  category: physical
+  unlocks:
+  - so10_left_right_branching
+  - break_so10_to_su5_with_16_vev
+  - right_handed_neutrino_mass_from_126
+  prerequisites:
+  - spinor_branching_so_2n_to_su_n
+  - clifford_embedding_of_su_n_in_so_2n
+  source_papers:
+  - georgi_lie_algebras_ch22-end
+  mention_count: 1
+  closest_existing_node: technique.boosted_object_reconstruction_100tev
+  overlap_classification: part_of_existing
+- technique_id: spin_and_orbital_angular_momentum_coupling
+  label: Spin-orbital angular momentum coupling
+  description: Model a particle carrying both spin and orbital angular momentum as a tensor-product state space and interpret
+    total angular momentum as the sum of the two SU(2) actions.
+  category: physical
+  unlocks:
+  - clebsch_gordan_highest_weight_decomposition
+  prerequisites:
+  - tensor_product_representation_rule
+  source_papers:
+  - georgi_lie_algebras_ch4-6
+  mention_count: 1
+  closest_existing_node: qm.angular_momentum_addition
+  overlap_classification: part_of_existing
+- technique_id: spontaneous_symmetry_breaking_by_vacuum_alignment
+  label: Spontaneous symmetry breaking by vacuum alignment
+  description: Interpret electroweak symmetry breaking as a vacuum that is not an SU(2) x U(1) singlet even though the Hamiltonian
+    commutes with the generators.
+  category: physical
+  unlocks:
+  - Explains how W and Z can be massive while the photon remains massless.
+  - Shows why physical states built on the vacuum need not fill full SU(2) x U(1) multiplets.
+  prerequisites:
+  - Electroweak gauge-boson identification
+  - Vacuum states in quantum theory
+  - Symmetry generators commuting with the Hamiltonian
+  source_papers:
+  - georgi_lie_algebras_ch16-18
+  mention_count: 1
+  closest_existing_node: sm.ssb.spontaneous_symmetry_breaking
+  overlap_classification: part_of_existing
+- technique_id: spontaneous_symmetry_breaking_via_higgs_vevs
+  label: Spontaneous symmetry breaking via Higgs vacuum values
+  description: Choose vacuum expectation values in selected representations to preserve a desired subgroup while giving masses
+    to gauge bosons and matter fields.
+  category: physical
+  unlocks:
+  - break_so10_to_su5_with_16_vev
+  - break_so10_to_sm_with_45_or_54
+  - e6_breaking_requires_adjoint_78
+  prerequisites:
+  - gauge symmetry
+  - vacuum structure
+  source_papers:
+  - georgi_lie_algebras_ch22-end
+  mention_count: 1
+  closest_existing_node: sm.ssb.spontaneous_symmetry_breaking
+  overlap_classification: part_of_existing
+- technique_id: su3_weights_and_roots
+  label: SU(3) weights and roots
+  description: Read the three defining-representation weights from T3 and T8, interpret the roots as weight differences, and
+    identify the off-diagonal generators as the corresponding root operators.
+  category: mathematical
+  unlocks:
+  - dynkin_diagram_encoding
+  - algebra_construction_from_simple_root_commutators
+  prerequisites:
+  - gell_mann_matrix_basis
+  - roots_as_adjoint_weights
+  source_papers:
+  - georgi_lie_algebras_ch7-9
+  mention_count: 1
+  closest_existing_node: technique.su3_triality_representation_congruence
+  overlap_classification: part_of_existing
+- technique_id: su5_block_diagonal_subgroup_embedding
+  label: Block-diagonal embedding of the Standard Model subgroup in SU(5)
+  description: Embed SU(3) and SU(2) in SU(5) as traceless block-diagonal matrices acting on the first three and last two
+    indices, with a commuting diagonal S generator.
+  category: mathematical
+  unlocks:
+  - Realizes the Standard Model subgroup explicitly inside SU(5).
+  - Makes SU(5) representation branching computable by index position.
+  prerequisites:
+  - Grand-unification search criteria
+  - Matrix representations of Lie algebras
+  - Traceless generators
+  source_papers:
+  - georgi_lie_algebras_ch16-18
+  mention_count: 1
+  closest_existing_node: sm.anomalies_and_precision_sm
+  overlap_classification: part_of_existing
+- technique_id: su_n_plus_m_branching_rule
+  label: Branching SU(N+M) to SU(N) x SU(M) x U(1)
+  description: Branch an SU(N+M) irrep to SU(N) x SU(M) x U(1) by matching multiplicities in A tensor B and assigning U(1)
+    charge nM-mN when n boxes go to SU(N) and m boxes go to SU(M).
+  category: mathematical
+  unlocks:
+  - su5_to_su3_su2_u1_decomposition
+  prerequisites:
+  - su_n_clebsch_gordan_tableau_addition
+  - complementary_tableaux_for_complex_conjugates
+  source_papers:
+  - georgi_lie_algebras_ch13-15
+  mention_count: 1
+  closest_existing_node: technique.generalized_cross_section_n_to_m
+  overlap_classification: part_of_existing
+- technique_id: superselection_rule_reasoning
+  label: Superselection-rule reasoning
+  description: Use exactly conserved quantum numbers to explain why some formal superpositions are physically irrelevant,
+    clarifying the limits of naive arguments for proton-neutron anticommutation.
+  category: physical
+  unlocks: []
+  prerequisites:
+  - creation_annihilation_operator_formalism
+  source_papers:
+  - georgi_lie_algebras_ch7-9
+  mention_count: 1
+  closest_existing_node: qft.superselection_rule
+  overlap_classification: part_of_existing
+- technique_id: symmetry_action_on_hilbert_space
+  label: Symmetry action on Hilbert space
+  description: Represent physical symmetries by unitary operators D(g) acting on Hilbert space so that true symmetries commute
+    with the Hamiltonian.
+  category: physical
+  unlocks:
+  - classify states by symmetry
+  - connect abstract groups to observables and energies
+  - turn symmetry into a practical quantum-mechanical tool
+  prerequisites:
+  - group_representation_mapping
+  source_papers:
+  - georgi_lie_algebras_ch1-3
+  mention_count: 1
+  closest_existing_node: classical_fields.continuous_symmetry_of_action
+  overlap_classification: part_of_existing
+- technique_id: symmetry_based_normal_mode_analysis
+  label: Symmetry-based normal-mode analysis
+  description: Treat the coordinates of a symmetric system as a representation, decompose them into irreps with characters
+    and projectors, and identify normal modes such as the triangle's breathing mode.
+  category: physical
+  unlocks:
+  - extract normal modes without full brute-force diagonalization
+  - organize degenerate mode subspaces
+  - apply symmetry methods directly to dynamical systems
+  prerequisites:
+  - tensor_product_representation_construction
+  - tensor_product_character_rule
+  - projection_operators_from_characters
+  - symmetry_eigenstate_selection
+  source_papers:
+  - georgi_lie_algebras_ch1-3
+  mention_count: 1
+  closest_existing_node: technique.local_flat_space_mode_analysis
+  overlap_classification: part_of_existing
+- technique_id: symmetry_classification_of_spinor_bilinears
+  label: Symmetry test for spinor bilinears
+  description: Transpose gamma products multiplied by R to determine whether each resulting bilinear is symmetric or antisymmetric
+    under exchange of identical spinors. This is the clean way to organize which tensor channels survive in identical-spinor
+    couplings.
+  category: mathematical
+  unlocks: Selection rules for identical-spinor couplings.
+  prerequisites:
+  - Clifford algebra
+  - reality matrix R
+  - transpose symmetry
+  source_papers:
+  - georgi_lie_algebras_ch19-21
+  mention_count: 1
+  closest_existing_node: technique.symmetry_test_for_large_tan_beta_naturalness
+  overlap_classification: part_of_existing
+- technique_id: symmetry_eigenstate_selection
+  label: Symmetry selection of eigenstates
+  description: For any invariant Hermitian operator, choose eigenstates that transform as irreducible representations; if
+    an irrep appears once, that whole multiplet has one eigenvalue.
+  category: physical
+  unlocks:
+  - classify eigenstates by multiplets
+  - predict degeneracy patterns from symmetry alone
+  - identify unique symmetry multiplets as exact modes or states
+  prerequisites:
+  - symmetry_action_on_hilbert_space
+  - complete_reducibility_of_finite_group_representations
+  source_papers:
+  - georgi_lie_algebras_ch1-3
+  mention_count: 1
+  closest_existing_node: classical_fields.continuous_symmetry_of_action
+  overlap_classification: part_of_existing
+- technique_id: tensor_operator_definition
+  label: Tensor operators as operator irreps
+  description: Treat a set of operators as a spin-s object when its commutators with the generators reproduce the spin-s representation
+    matrices.
+  category: mathematical
+  unlocks:
+  - tensor_operator_basis_standardization
+  - orbital_angular_momentum_vector_tensor
+  - wigner_eckart_decomposition
+  prerequisites:
+  - state_and_operator_transformation_rules
+  - highest_weight_and_ladder_construction
+  source_papers:
+  - georgi_lie_algebras_ch4-6
+  mention_count: 1
+  closest_existing_node: technique.radion_legendre_transform_mode
+  overlap_classification: part_of_existing
+- technique_id: tensor_operator_representation
+  label: Represent operators as tensors
+  description: Treat the coefficients of operators that transform in an SU(3) irrep as tensor components themselves, with
+    the transformation law defined by commutators with the generators.
+  category: physical
+  unlocks:
+  - A tensor language for SU(3) operators.
+  - Uniform treatment of states and operators.
+  - Preparation for Wigner-Eckart-type arguments.
+  prerequisites:
+  - tensor_wavefunction_interpretation
+  source_papers:
+  - georgi_lie_algebras_ch10-12
+  mention_count: 1
+  closest_existing_node: technique.monopole_operator_bianchi_violation
+  overlap_classification: part_of_existing
+- technique_id: trace_zero_generators_unification
+  label: Use traceless generators as a unification constraint
+  description: Prove that every generator in every representation of a compact simple Lie group has zero trace by decomposing
+    generators into Cartan plus raising/lowering parts and using the symmetry of SU(2) multiplets. Georgi explicitly flags
+    this theorem as crucial for force-unification arguments.
+  category: physical
+  unlocks:
+  - Trace constraints in model building.
+  - Consistency checks for embedded generators.
+  - A group-theoretic ingredient in unification calculations.
+  prerequisites:
+  - highest_weight_dynkin_classification
+  - su2_subalgebras_from_roots
+  source_papers:
+  - georgi_lie_algebras_ch10-12
+  mention_count: 1
+  closest_existing_node: technique.rs_cft_holographic_dictionary
+  overlap_classification: part_of_existing
+- technique_id: triality_selection_rule
+  label: Use triality as a selection rule
+  description: Track the conserved quantity (n-m) mod 3 through tensor-product decompositions. Because the invariant tensors
+    carry zero triality, tensor methods cannot change this quantity.
+  category: physical
+  unlocks:
+  - A quick filter for allowed couplings.
+  - Sanity checks on SU(3) decompositions.
+  - Classification of states by triality sector.
+  prerequisites:
+  - su3_multiplet_clebsch_gordan_decomposition
+  - invariant_tensors_delta_epsilon
+  source_papers:
+  - georgi_lie_algebras_ch10-12
+  mention_count: 1
+  closest_existing_node: technique.rs_cft_holographic_dictionary
+  overlap_classification: part_of_existing
+- technique_id: trinification_with_cyclic_symmetry
+  label: Trinification with cyclic discrete symmetry
+  description: Use SU(3) x SU(3) x SU(3) together with the cyclic symmetry that permutes the three SU(3) factors so that the
+    27 remains irreducible and symmetry breaking can be done with 27 Higgs fields.
+  category: physical
+  unlocks:
+  - non-simple unified model alternatives
+  prerequisites:
+  - e6_branching_via_extended_dynkin_analysis
+  - outer_automorphisms_from_dynkin_symmetry
+  source_papers:
+  - georgi_lie_algebras_ch22-end
+  mention_count: 1
+  closest_existing_node: technique.polarized_broken_ew_pdf_evolution
+  overlap_classification: part_of_existing
+- technique_id: weyl_reflections_and_weyl_group
+  label: Weyl reflections and the Weyl group
+  description: Reflect weights across hyperplanes orthogonal to roots to organize weight diagrams, generate symmetry-related
+    weights, and understand representation geometry.
+  category: mathematical
+  unlocks:
+  - weight-diagram symmetries
+  - complex-conjugation patterns
+  prerequisites:
+  - master_formula_for_root_geometry
+  - roots
+  source_papers:
+  - georgi_lie_algebras_ch22-end
+  mention_count: 1
+  closest_existing_node: sm.symmetry_breaking_and_standard_model
+  overlap_classification: part_of_existing
+- technique_id: creation_annihilation_operator_formalism
+  label: Creation-annihilation operator formalism
+  description: Represent proton and neutron states with creation and annihilation operators acting on the vacuum, making particle-number-changing
+    dynamics and many-body state construction explicit.
+  category: physical
+  unlocks:
+  - generalized_exclusion_principle
+  - number_operator_construction
+  - isospin_generators_from_bilinears
+  - multiparticle_tensor_product_isospin
+  prerequisites:
+  - isospin_doublet_charge_independence
+  source_papers:
+  - georgi_lie_algebras_ch7-9
+  mention_count: 1
+  closest_existing_node: qft.creation_annihilation_operator
+  overlap_classification: alias_existing

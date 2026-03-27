@@ -1,0 +1,176 @@
+# Canonical node records for the lattice-QCD, DIS/Drell-Yan, and cosmology methods batch.
+- id: technique.monte_carlo_lattice_sampling
+  label: Monte Carlo lattice sampling
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Sample the Euclidean lattice gauge-theory path integral with Metropolis updates or Hybrid Monte Carlo trajectories to estimate observables from gauge ensembles. Use it when lattice QCD expectation values must be computed nonperturbatively by importance sampling.
+  status: asserted
+
+- id: technique.wilson_fermion_discretization
+  label: Wilson fermion discretization
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Discretize Dirac fermions with a Wilson term that lifts species doublers at the cost of explicit chiral-symmetry breaking. Use it when a local lattice fermion action without doubling is needed.
+  status: asserted
+
+- id: technique.staggered_fermion_discretization
+  label: Staggered fermion discretization
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Spin-diagonalize the lattice Dirac action so fermion components live on neighboring sites, reducing doubling to tastes while preserving a remnant chiral symmetry. Use it for efficient dynamical-fermion simulations where taste breaking can be controlled.
+  status: asserted
+
+- id: technique.domain_wall_fermions
+  label: Domain-wall fermions
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Realize chiral lattice fermions with a five-dimensional construction whose light left- and right-handed modes are localized on opposite walls. Use it when near-continuum chiral symmetry is needed without abandoning a Wilson-type kernel.
+  status: asserted
+
+- id: technique.lattice_continuum_extrapolation
+  label: Lattice continuum extrapolation
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Fit observables computed at several lattice spacings and extrapolate them to a -> 0 while holding physical scales fixed. Use it to remove discretization artifacts and quote continuum QCD predictions.
+  status: asserted
+
+- id: technique.dis_structure_function_extraction
+  label: DIS structure-function extraction
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Extract F1, F2, and FL by fitting lepton-hadron differential cross sections and separating the associated kinematic tensor structures or Rosenbluth combinations. Use it when turning DIS event rates into hadronic structure observables.
+  status: asserted
+
+- id: technique.altarelli_parisi_splitting
+  label: Altarelli-Parisi splitting kernels
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Compute or apply the universal q -> qg, g -> gg, and related DGLAP kernels that govern logarithmic scale evolution of PDFs and fragmentation functions. Use it when organizing scaling violations in collinear QCD.
+  status: asserted
+
+- id: technique.drell_yan_cross_section
+  label: Drell-Yan cross-section calculation
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Factorize hadronic dilepton production into parton distributions and a perturbatively calculable hard kernel, then evaluate the resulting rapidity or invariant-mass cross section. Use it for inclusive Drell-Yan predictions from parton-level QCD.
+  status: asserted
+
+- id: technique.collinear_subtraction_scheme
+  label: Collinear subtraction scheme
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Construct counterterms that isolate and remove initial- or final-state collinear singularities so virtual and real NLO pieces can be combined in a factorized cross section. Use it when fixed-order QCD expressions contain unresolved collinear limits.
+  status: asserted
+
+- id: technique.dipole_subtraction_catani_seymour
+  label: Catani-Seymour dipole subtraction
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Build local dipole counterterms and analytic integrated dipoles that reproduce the soft and collinear limits of real-emission matrix elements at NLO. Use it to make NLO phase-space integrals numerically finite event by event.
+  status: asserted
+
+- id: technique.fks_subtraction
+  label: FKS subtraction
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Partition phase space into sectors with at most one soft and one collinear singular emitter, then subtract the singular limits in each sector separately. Use it when NLO QCD calculations benefit from sector decomposition rather than dipoles.
+  status: asserted
+
+- id: technique.cosmological_perturbation_theory
+  label: Cosmological perturbation theory
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Expand the FRW background and matter variables about homogeneity, then decompose fluctuations into scalar, vector, and tensor modes. Use it to derive linearized evolution equations for CMB and structure-formation observables.
+  status: asserted
+
+- id: technique.boltzmann_hierarchy
+  label: Boltzmann hierarchy
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Turn the photon and neutrino Boltzmann equations into coupled multipole hierarchies whose solutions feed CMB anisotropies and matter perturbations. Use it when evolving free-streaming radiation and baryon-photon perturbations.
+  status: asserted
+
+- id: technique.transfer_function_computation
+  label: Transfer-function computation
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Evolve primordial perturbations through radiation and matter domination to compute the scale-dependent transfer function T(k) used in matter and CMB observables. Use it when connecting initial conditions to the late-time power spectrum.
+  status: asserted
+
+- id: technique.fisher_matrix_forecasting
+  label: Fisher-matrix forecasting
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Linearize the observable dependence on cosmological parameters and use the Fisher information matrix to estimate expected parameter errors and degeneracies. Use it for survey design or fast sensitivity forecasts before running full inference.
+  status: asserted
+
+- id: technique.mcmc_parameter_estimation
+  label: MCMC parameter estimation
+  knowledge_kind: method
+  granularity_level: intermediate
+  composite: false
+  mastery_modes_supported:
+    - recognize
+    - use
+  summary: Sample the posterior distribution of cosmological parameters with Markov chains to infer credible regions from CMB, BAO, supernova, or large-scale-structure data. Use it when nonlinear parameter degeneracies make Gaussian approximations unreliable.
+  status: asserted

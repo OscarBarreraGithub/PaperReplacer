@@ -149,15 +149,15 @@
       note: Batch notes list the W mass as one of the core precision quantities.
   status: asserted
   confidence: 0.95
-- from: sm.precision.rho_parameter
-  to: sm.precision.electroweak_precision_observable
+- from: sm.precision.electroweak_precision_observable
+  to: sm.precision.rho_parameter
   relation_type: requires_for_recognize
   necessity: helpful
   audience_profile: hep_th_grad
   subfield: standard_model
   task_type: literature_reading
-  rationale: The rho parameter is a standard electroweak-precision quantity used to test symmetry-breaking and radiative-correction structure.
-  failure_mode_if_absent: Cannot recognize the rho parameter as part of the precision-test vocabulary.
+  rationale: The rho parameter is recognized as one of the standard electroweak precision observables used to test symmetry-breaking and radiative-correction structure.
+  failure_mode_if_absent: Cannot place the rho parameter inside the electroweak precision-test vocabulary.
   evidence:
     - type: expert_claim
       source_ref: anomalies_and_precision_sm_batch_initial

@@ -1,0 +1,825 @@
+# Hand-authored dependency edges for the Schwartz techniques batch 7.
+# Format: from = prerequisite already present in the authored graph, to = new technique node.
+
+# -- technique.small_r_ngl_universality ---------------------------------------
+
+- from: eft.soft_function
+  to: technique.small_r_ngl_universality
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The method works by importing hemisphere soft-function structure into the small-R observable, so the existing soft-function node captures the authored part of that prerequisite; jet-thrust-specific and small-R phase-space details are not yet separate nodes.
+  failure_mode_if_absent: Cannot identify the soft object whose non-global structure is being recycled into the narrow-jet calculation.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_7
+      note: The batch entry explicitly phrases the method as an exact relation to the hemisphere soft function.
+  status: asserted
+
+- from: eft.large_logarithm_resummation
+  to: technique.small_r_ngl_universality
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The universality statement is useful only in the logarithmic organization of the observable, and large-logarithm resummation is the closest authored node for the non-global-logarithm prerequisite.
+  failure_mode_if_absent: Cannot place the claimed small-R universality relation inside a controlled logarithmic prediction.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_7
+      note: The prerequisite list names non-global logarithms and their resummation directly.
+  status: asserted
+
+# -- technique.soft_drop_alpha_s_extraction -----------------------------------
+
+- from: eft.soft_collinear_effective_theory
+  to: technique.soft_drop_alpha_s_extraction
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The extraction strategy is built on SCET factorization for groomed jet mass, so the existing SCET node covers the authored part of that prerequisite; soft-drop-specific parameter-space details are not yet standalone nodes.
+  failure_mode_if_absent: Cannot formulate the factorized hadron-collider observable on which the alpha_s extraction is based.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_7
+      note: The batch entry names SCET factorization as a prerequisite for the extraction method.
+  status: asserted
+
+- from: eft.large_logarithm_resummation
+  to: technique.soft_drop_alpha_s_extraction
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The method depends on NNLL control of the groomed mass distribution, so the existing resummation node captures the authored part of that prerequisite even though the exact NNLL implementation is more specialized.
+  failure_mode_if_absent: Cannot control the logarithmic hierarchy well enough to interpret the fitted distribution as a precision alpha_s observable.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_7
+      note: The description states that the observable is used at NNLL accuracy.
+  status: asserted
+
+# -- technique.soft_drop_factorization_theorem --------------------------------
+
+- from: eft.soft_collinear_effective_theory
+  to: technique.soft_drop_factorization_theorem
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The theorem is an all-orders SCET factorization statement, so the existing SCET node captures the main authored prerequisite; Cambridge-Aachen rescaling properties remain unmodeled as a separate node.
+  failure_mode_if_absent: Cannot identify the EFT sectors or even state the factorized structure that the derivation produces.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_7
+      note: The technique is explicitly presented as an SCET factorization theorem.
+  status: asserted
+
+- from: eft.renormalization_group_running
+  to: technique.soft_drop_factorization_theorem
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The point of the derivation is that the remaining modes evolve with a single scale and can therefore be resummed, so renormalization-group running is a direct authored prerequisite.
+  failure_mode_if_absent: Cannot turn the factorized functions into the resummed prediction that justifies the theorem's practical value.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_7
+      note: The batch entry highlights resummation and anomalous-dimension control as central to the theorem.
+  status: asserted
+
+# -- technique.soft_drop_ngl_free_factorization -------------------------------
+
+- from: eft.soft_collinear_effective_theory
+  to: technique.soft_drop_ngl_free_factorization
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The non-global-logarithm-free factorization formula is stated in SCET language, so the existing SCET node captures the authored part of the factorization prerequisite; the grooming algorithm itself is not yet a pre-existing node.
+  failure_mode_if_absent: Cannot organize the hard, collinear, and soft sectors needed to explain why the groomed observable becomes ultra-local.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_7
+      note: The prerequisite list names SCET factorization directly.
+  status: asserted
+
+- from: eft.soft_function
+  to: technique.soft_drop_ngl_free_factorization
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The derivation hinges on showing that wide-angle soft radiation collapses into a z_cut-dependent normalization, so the existing soft-function node is a direct authored prerequisite for that argument.
+  failure_mode_if_absent: Cannot explain what happens to the soft sector after grooming or why non-global structure drops out of the measured mass dependence.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_7
+      note: The factorization formula in the batch description includes an explicit soft-function component.
+  status: asserted
+
+# -- technique.soft_function_refactorization ----------------------------------
+
+- from: eft.soft_function
+  to: technique.soft_function_refactorization
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The method starts from a multi-scale soft function and refactorizes it into pieces, so the existing soft-function node captures the central authored prerequisite.
+  failure_mode_if_absent: Cannot specify the object being split into in-jet, out-of-jet, and non-global pieces.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_7
+      note: The batch entry defines the method as a refactorization of the soft function itself.
+  status: asserted
+
+- from: qft.anomalous_dimension
+  to: technique.soft_function_refactorization
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: Separate anomalous dimensions for the refactorized pieces are the operational payoff of the method, so anomalous-dimension control is a direct authored prerequisite even though the cusp specialization is not yet a standalone node.
+  failure_mode_if_absent: Cannot justify why the separated soft pieces can run independently at their own natural scales.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_7
+      note: The description emphasizes cusp and piecewise anomalous dimensions.
+  status: asserted
+
+# -- technique.soft_function_refactorization_small_r --------------------------
+
+- from: eft.soft_collinear_effective_theory
+  to: technique.soft_function_refactorization_small_r
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The small-R refactorization proposal is a soft-function statement inside SCET, so the existing SCET node captures the authored framework prerequisite; EVENT2 validation remains outside the current graph.
+  failure_mode_if_absent: Cannot set up the effective-theory problem in which in-cone and out-of-cone soft physics are separated.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_7
+      note: The prerequisite list names SCET soft-function calculation explicitly.
+  status: asserted
+
+- from: eft.soft_function
+  to: technique.soft_function_refactorization_small_r
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The proposed refactorization acts directly on the vetoed soft function, so the existing soft-function node is the most direct authored prerequisite for the method.
+  failure_mode_if_absent: Cannot describe what is being decomposed into separate small-R pieces.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_7
+      note: The batch entry frames the method as a refactorization of the soft function in the small-R limit.
+  status: asserted
+
+# -- technique.softest_jet_purity_selection -----------------------------------
+
+- from: qft.jet
+  to: technique.softest_jet_purity_selection
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The selection rule operates on multi-jet event samples, so the existing jet node captures the authored part of the event-topology prerequisite; flavor-purity heuristics are more specialized than the current graph.
+  failure_mode_if_absent: Cannot define which object is being ordered by pT or interpreted as the softest jet.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_7
+      note: The method is stated entirely in terms of choosing among jets in a multijet sample.
+  status: asserted
+
+- from: qft.cross_section
+  to: technique.softest_jet_purity_selection
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The method trades purity against usable rate, so the existing cross-section node captures the authored part of the cross-section-scaling prerequisite.
+  failure_mode_if_absent: Cannot assess whether the purity gain survives at a practical event rate after the pT cuts are imposed.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_7
+      note: The batch description quantifies the method in terms of purity at practical cross sections.
+  status: asserted
+
+# -- technique.sprig_of_thyme_induction ---------------------------------------
+
+- from: qft.wilson_line
+  to: technique.sprig_of_thyme_induction
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The proof replaces soft attachments by a soft Wilson-line expansion, so the existing Wilson-line node captures the most direct authored prerequisite; reduced-diagram language is not yet separately modeled.
+  failure_mode_if_absent: Cannot understand what object the jet attachments are being converted into during the induction.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_7
+      note: The batch entry states the induction target as the soft Wilson line Y_j.
+  status: asserted
+
+- from: qft.eikonal_soft_factor
+  to: technique.sprig_of_thyme_induction
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The argument depends on soft emissions reducing to their eikonal form before being packaged into Wilson lines, so the eikonal soft-factor node captures the authored approximation prerequisite.
+  failure_mode_if_absent: Cannot justify why soft gluon attachments may be peeled off and replaced by universal Wilson-line emissions.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_7
+      note: The prerequisite list includes the eikonal approximation explicitly.
+  status: asserted
+
+# -- technique.steinmann_from_topt --------------------------------------------
+
+- from: qft.steinmann_relations
+  to: technique.steinmann_from_topt
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The method is a new proof of the Steinmann relations themselves, so the existing Steinmann node captures the exact authored statement being rederived.
+  failure_mode_if_absent: Cannot tell which discontinuity constraint the TOPT argument is meant to establish.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_7
+      note: The batch entry names the Steinmann relations as both target and prerequisite.
+  status: asserted
+
+- from: qft.landau_analytic_structure
+  to: technique.steinmann_from_topt
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The proof is about which discontinuities and overlap patterns can occur in Feynman integrals, so the existing Landau-analytic-structure node captures the authored analytic-structure prerequisite; TOPT denominators remain more specialized.
+  failure_mode_if_absent: Cannot relate the TOPT denominator pattern to the allowed discontinuity structure of the integral.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_7
+      note: The prerequisite list calls out the analytic structure of Feynman integrals directly.
+  status: asserted
+
+# -- technique.subjet_level_pileup_rescaling ----------------------------------
+
+- from: qft.jet
+  to: technique.subjet_level_pileup_rescaling
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Jet cleansing works by reclustering and rescaling subjets inside a larger jet, so the existing jet node captures the authored part of the jet-substructure prerequisite; tracker-specific details are not standalone nodes.
+  failure_mode_if_absent: Cannot define the parent object that is being decomposed into subjets and corrected for pileup.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_7
+      note: The method begins by reclustering a large-R jet into subjets.
+  status: asserted
+
+# -- technique.supergravity_goldstone_multiplet -------------------------------
+
+- from: sm.ssb.goldstone_theorem
+  to: technique.supergravity_goldstone_multiplet
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The construction identifies massive-supergravity longitudinal modes by Goldstone reasoning, so Goldstone's theorem captures the authored part of the symmetry-breaking prerequisite even though the supergravity completion is not yet in the graph.
+  failure_mode_if_absent: Cannot see why the longitudinal modes should be organized as Goldstone degrees of freedom in the first place.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_7
+      note: The prerequisite list explicitly includes Goldstone-theorem reasoning.
+  status: asserted
+
+# -- technique.supersplit_susy_spectrum ---------------------------------------
+
+- from: sm.mass_naturalness
+  to: technique.supersplit_susy_spectrum
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Supersplit SUSY is motivated by abandoning conventional naturalness expectations, so the existing mass-naturalness node captures the authored part of that prerequisite; MSSM and string-landscape details are not yet separate nodes.
+  failure_mode_if_absent: Cannot understand what problem the extreme superpartner decoupling is deliberately choosing not to solve.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_7
+      note: Naturalness and fine-tuning arguments are listed explicitly in the prerequisites.
+  status: asserted
+
+- from: qft.fine_tuning
+  to: technique.supersplit_susy_spectrum
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The construction keeps a tuned Higgs sector while decoupling all superpartners, so fine-tuning is a direct authored prerequisite for using the proposal coherently.
+  failure_mode_if_absent: Cannot interpret why the low-energy theory is allowed to retain only a single tuned Higgs degree of freedom.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_7
+      note: The batch description emphasizes a single tuned Higgs as the low-energy remnant.
+  status: asserted
+
+# -- technique.superstructure_observables -------------------------------------
+
+- from: qft.collinear_safe_observable
+  to: technique.superstructure_observables
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The proposed inter-jet observables are only meaningful if they remain perturbatively well defined under unresolved splittings, so collinear safety captures the authored part of the safety prerequisite; color-coherence details are not separate nodes yet.
+  failure_mode_if_absent: Cannot tell whether the proposed superstructure observables are theoretically calculable rather than artifacts of unresolved radiation.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_7
+      note: Infrared and collinear safety appears directly in the prerequisite list.
+  status: asserted
+
+# -- technique.symbol_coproduct_ngl_integration -------------------------------
+
+- from: qft.iterated_integral
+  to: technique.symbol_coproduct_ngl_integration
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The method rewrites the remaining non-global integrals in canonical iterated-integral form, so the existing iterated-integral node captures the authored function-space prerequisite; contour-integration details are separate.
+  failure_mode_if_absent: Cannot understand the target functional form into which the GPL integrands are being converted.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_7
+      note: The description explicitly ends with direct integration via the GPL and iterated-integral form.
+  status: asserted
+
+- from: qft.symbol_calculus
+  to: technique.symbol_coproduct_ngl_integration
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Symbol and coproduct manipulations are the core algebraic step in the method, so the existing symbol-calculus node is a direct authored prerequisite even though the coproduct is not split into its own node.
+  failure_mode_if_absent: Cannot perform the simplification that turns the GPL expression into a directly integrable canonical form.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_7
+      note: The batch label itself centers the method on symbol and coproduct techniques.
+  status: asserted
+
+# -- technique.symbol_map_simplification --------------------------------------
+
+- from: qft.iterated_integral
+  to: technique.symbol_map_simplification
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The symbol map acts on iterated-integral or polylogarithmic functions, so the iterated-integral node captures the authored function-space prerequisite; classical-polylog specifics are not separate nodes.
+  failure_mode_if_absent: Cannot identify the class of functions whose symbol is being simplified.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_7
+      note: The batch description defines the symbol in terms of iterated integrals and d-log kernels.
+  status: asserted
+
+- from: qft.symbol_calculus
+  to: technique.symbol_map_simplification
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The technique is exactly the use of the symbol map for simplification, so the existing symbol-calculus node is the most direct authored prerequisite.
+  failure_mode_if_absent: Cannot carry out the algebraic tensor-level simplification step that makes the method valuable.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_7
+      note: The label and description both name the symbol map as the core device.
+  status: asserted
+
+# -- technique.tensor_photon_coupling_from_ope -------------------------------
+
+- from: math.diffeomorphism
+  to: technique.tensor_photon_coupling_from_ope
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The matching argument relies in part on general-coordinate-invariant spin-2 couplings, so the existing diffeomorphism node captures the authored geometry prerequisite; OPE and AdS bulk-to-boundary technology remain unmodeled.
+  failure_mode_if_absent: Cannot motivate the form of the spin-2 coupling structure whose normalization is being matched.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_7
+      note: General coordinate invariance for spin-2 couplings is listed explicitly as a prerequisite.
+  status: asserted
+
+# -- technique.theory_space_plaquette -----------------------------------------
+
+- from: math.diffeomorphism
+  to: technique.theory_space_plaquette
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The construction composes gravitational link maps in a GC-invariant way, so the diffeomorphism node captures the authored symmetry prerequisite; the specific geodesic-distance potential is not yet a standalone node.
+  failure_mode_if_absent: Cannot state why the composed plaquette object transforms correctly under the relevant coordinate symmetries.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_7
+      note: The prerequisite list names pullback-map composition under diffeomorphisms directly.
+  status: asserted
+
+- from: qcd.link_field
+  to: technique.theory_space_plaquette
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The method builds gravitational dimensions from link-like variables on theory space, so the existing link-field node captures the authored part of the plaquette-construction analogy.
+  failure_mode_if_absent: Cannot see how the closed-loop object is assembled from individual link variables before the plaquette potential is defined.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_7
+      note: The description explicitly composes link fields around closed loops.
+  status: asserted
+
+- from: qft.wilson_loop
+  to: technique.theory_space_plaquette
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The gravitational plaquette is introduced as the analog of a Wilson plaquette, so the Wilson-loop node captures the authored lattice-gauge-theory analogy even though the full lattice construction is broader.
+  failure_mode_if_absent: Cannot understand why the closed-loop product of link variables is the natural invariant object to use.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_7
+      note: The batch entry explicitly identifies the method as a gravitational analog of Wilson plaquettes.
+  status: asserted
+
+# -- technique.thimble_borel_resummation --------------------------------------
+
+- from: qft.borel_transform
+  to: technique.thimble_borel_resummation
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The thimble construction is offered as a geometric completion of Borel resummation, so the Borel-transform node captures the authored starting point for the method.
+  failure_mode_if_absent: Cannot identify which transformed integral is being deformed onto Lefschetz thimbles.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_7
+      note: The method is explicitly framed as Borel resummation via thimble contours.
+  status: asserted
+
+- from: qft.borel_summability
+  to: technique.thimble_borel_resummation
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The point of the construction is to handle cases where ordinary Borel summation is ambiguous, so the existing Borel-summability node captures the authored ambiguity prerequisite.
+  failure_mode_if_absent: Cannot interpret what ambiguity the thimble decomposition is resolving or reproducing.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_7
+      note: The description ties the boundary thimble to the lateral Borel sum and the ambiguity.
+  status: asserted
+
+- from: qft.renormalon
+  to: technique.thimble_borel_resummation
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Renormalon saddles are one of the explicit targets of the method, so the renormalon node captures the authored source of the Borel-plane obstruction.
+  failure_mode_if_absent: Cannot connect the thimble prescription to the singular saddles that make the perturbative series ambiguous.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_7
+      note: The batch entry names renormalon contributions as a primary application.
+  status: asserted
+
+# -- technique.three_direction_scet_factorization -----------------------------
+
+- from: eft.soft_collinear_effective_theory
+  to: technique.three_direction_scet_factorization
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The construction is explicitly the first SCET factorization theorem with more than two collinear directions, so the SCET node captures the core authored framework prerequisite; label-momentum operator details are not separate nodes.
+  failure_mode_if_absent: Cannot formulate the multi-direction effective theory in which the factorization theorem is derived.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_7
+      note: The technique is described as an SCET factorization theorem with three collinear sectors.
+  status: asserted
+
+- from: qcd.parton_distribution_function
+  to: technique.three_direction_scet_factorization
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The hadron-collider factorization theorem ends in beam matrix elements identified with PDFs, so the existing PDF node captures the authored hadronic-input prerequisite.
+  failure_mode_if_absent: Cannot close the factorization theorem into a hadronic cross section for direct-photon production.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_7
+      note: The prerequisite list explicitly mentions parton distribution functions as SCET matrix elements.
+  status: asserted
+
+# -- technique.threshold_boundary_conditions ----------------------------------
+
+- from: qft.iterated_integral
+  to: technique.threshold_boundary_conditions
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The boundary-condition method uses threshold variables chosen so the answer lands in GPL or iterated-integral form, making the iterated-integral node the clearest authored function-space prerequisite.
+  failure_mode_if_absent: Cannot interpret the rationalized-variable solution space in which the boundary data are being expressed.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_7
+      note: The batch entry states that the results are expressed in Goncharov-polylogarithm form.
+  status: asserted
+
+- from: qft.lorentz_invariant_phase_space
+  to: technique.threshold_boundary_conditions
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The simplification exploits the threshold factorization of loop and phase-space integrals, so Lorentz-invariant phase space captures the authored part of that prerequisite even though differential-equation machinery is not yet a node.
+  failure_mode_if_absent: Cannot see why the threshold limit supplies simple boundary data for the master integrals.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_7
+      note: The description emphasizes threshold factorization of loop and phase-space integrals.
+  status: asserted
+
+# -- technique.threshold_interpolation_new_physics ----------------------------
+
+- from: eft.soft_collinear_effective_theory
+  to: technique.threshold_interpolation_new_physics
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The interpolation is defined by modifying SCET hard, jet, and soft functions across a particle threshold, so the SCET node captures the authored factorization prerequisite.
+  failure_mode_if_absent: Cannot identify which scale-separated functions are being interpolated when the new particle mass is crossed.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_7
+      note: The batch description modifies hard, jet, and soft functions directly.
+  status: asserted
+
+- from: eft.scale_separation
+  to: technique.threshold_interpolation_new_physics
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The whole point of the method is to choose the threshold scale relative to the soft and jet scales smoothly, so scale separation is a direct authored prerequisite.
+  failure_mode_if_absent: Cannot decide where the new-particle threshold sits relative to the other factorization scales.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_7
+      note: The technique chooses mu = m specifically when the threshold lies between soft and jet scales.
+  status: asserted
+
+# -- technique.threshold_matching_in_scet -------------------------------------
+
+- from: eft.soft_collinear_effective_theory
+  to: technique.threshold_matching_in_scet
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The successive-emission construction is phrased as a threshold matching procedure inside SCET, so the SCET node captures the overarching authored framework prerequisite.
+  failure_mode_if_absent: Cannot state which effective theory is being matched as the scale crosses a resolved emission threshold.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_7
+      note: The label itself is threshold matching in SCET.
+  status: asserted
+
+- from: eft.matching
+  to: technique.threshold_matching_in_scet
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The method is literally a repeated threshold-matching step, so the existing matching node is an exact authored prerequisite for the transition between operator bases.
+  failure_mode_if_absent: Cannot explain why new operators with additional collinear fields appear while continuity is preserved across the threshold.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_7
+      note: The batch entry describes the method as matching onto operators with extra collinear fields.
+  status: asserted
+
+- from: qcd.splitting_function
+  to: technique.threshold_matching_in_scet
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The payoff of the matching procedure is that it reproduces the splitting functions of QCD in the collinear limit, so the splitting-function node captures the authored output-side prerequisite.
+  failure_mode_if_absent: Cannot verify that the threshold matching reproduces the correct collinear-emission physics.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_7
+      note: The description states that the procedure reproduces QCD splitting functions.
+  status: asserted
+
+# -- technique.threshold_resummation_hadron_collider --------------------------
+
+- from: qft.distributional_boundary_values
+  to: technique.threshold_resummation_hadron_collider
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The resummation is organized around plus distributions in 1 - w, so the distributional-boundary-values node captures the authored mathematical prerequisite for handling those singular terms.
+  failure_mode_if_absent: Cannot manipulate the threshold-singular pieces of the cross section as well-defined distributions.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_7
+      note: Plus-distribution formalism is listed explicitly in the prerequisites.
+  status: asserted
+
+- from: qcd.dglap_evolution
+  to: technique.threshold_resummation_hadron_collider
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Endpoint PDF evolution is one of the explicit ingredients of the hadron-collider threshold analysis, so the DGLAP node captures that authored prerequisite directly.
+  failure_mode_if_absent: Cannot connect partonic threshold resummation to the hadronic x -> 1 behavior of the incoming beams.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_7
+      note: The description explicitly invokes DGLAP evolution near the endpoint.
+  status: asserted
+
+- from: qcd.parton_distribution_function
+  to: technique.threshold_resummation_hadron_collider
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The hadronic threshold limit is defined through PDF convolutions, so the PDF node captures the authored beam-function prerequisite even though the full jet-soft convolution is more specialized.
+  failure_mode_if_absent: Cannot turn the partonic threshold formula into a hadronic prediction.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_7
+      note: The prerequisite list names endpoint evolution of parton distribution functions directly.
+  status: asserted
+
+# -- technique.threshold_resummation_nnnll_matching ---------------------------
+
+- from: eft.hard_function
+  to: technique.threshold_resummation_nnnll_matching
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The matched PeTeR result is built from hard, jet, and soft factors, so the hard-function node captures one exact authored component of the threshold-resummed side of the calculation.
+  failure_mode_if_absent: Cannot specify the short-distance piece that enters the resummed photon spectrum before matching to fixed order.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_7
+      note: The batch description explicitly refers to hard, jet, and soft factorization.
+  status: asserted
+
+- from: eft.jet_function
+  to: technique.threshold_resummation_nnnll_matching
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The threshold-resummed photon calculation contains an explicit jet-sector factor, so the jet-function node captures an exact authored prerequisite from the resummed side of the matching formula.
+  failure_mode_if_absent: Cannot represent the collinear final-state contribution that must be matched consistently against the fixed-order result.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_7
+      note: The prerequisite list names hard, jet, and soft functions explicitly.
+  status: asserted
+
+- from: eft.soft_function
+  to: technique.threshold_resummation_nnnll_matching
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The matched prediction retains a threshold soft sector on the resummed side, so the soft-function node captures that authored prerequisite; JetPhox-specific isolation and fragmentation details remain outside the current graph.
+  failure_mode_if_absent: Cannot describe the soft contribution whose fixed-order expansion must be subtracted before the NLO result is added back.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_7
+      note: The batch entry frames the matching in terms of SCET hard, jet, and soft factorization.
+  status: asserted
+
+# -- technique.threshold_symmetrized_expansion --------------------------------
+
+- from: qft.mandelstam_variables
+  to: technique.threshold_symmetrized_expansion
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The method symmetrizes a threshold expansion across beam exchange by tracking the underlying scattering kinematics, so Mandelstam variables capture the authored kinematic prerequisite directly.
+  failure_mode_if_absent: Cannot state what is being held fixed or exchanged when the two threshold expansions are averaged.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_7
+      note: Mandelstam-variable kinematics appears explicitly in the prerequisite list.
+  status: asserted
+
+- from: qcd.parton_distribution_function
+  to: technique.threshold_symmetrized_expansion
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The asymmetry problem arises only after convoluting the threshold expansion with beam PDFs, so the PDF node captures the authored convolution prerequisite.
+  failure_mode_if_absent: Cannot see why expanding around one beam variable or the other can induce an artificial rapidity asymmetry.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_7
+      note: The batch entry names parton-distribution-function convolutions directly.
+  status: asserted
+
+# -- technique.threshold_thrust_hadronic --------------------------------------
+
+- from: eft.soft_collinear_effective_theory
+  to: technique.threshold_thrust_hadronic
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: Threshold thrust is introduced as a hadron-collider event shape with a full SCET factorization theorem, so the SCET node captures the core authored framework prerequisite.
+  failure_mode_if_absent: Cannot formulate the multi-direction effective-theory description of the hadronic observable.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_7
+      note: The batch entry presents the method explicitly as a hadronic SCET factorization theorem.
+  status: asserted
+
+- from: eft.wilson_coefficient
+  to: technique.threshold_thrust_hadronic
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The hard function for threshold thrust is organized by color-channel Wilson coefficients, so the Wilson-coefficient node captures the authored part of the channel-matching prerequisite.
+  failure_mode_if_absent: Cannot understand how the different 2 -> 2 partonic channels enter the hard matrix of the factorization theorem.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_7
+      note: The prerequisite list names Wilson coefficients for all 2 -> 2 QCD channels.
+  status: asserted
+
+- from: qft.eikonal_soft_factor
+  to: technique.threshold_thrust_hadronic
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The explicit one-loop soft calculation is an eikonal computation in multiple directions, so the eikonal-soft-factor node captures the authored prerequisite for that part of the derivation.
+  failure_mode_if_absent: Cannot justify the form of the soft radiation that enters the threshold-thrust soft matrix.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_7
+      note: Eikonal soft-function calculation is listed directly in the prerequisites.
+  status: asserted
+
+- from: qcd.parton_distribution_function
+  to: technique.threshold_thrust_hadronic
+  relation_type: requires_for_derive
+  necessity: necessary
+  confidence: 0.85
+  rationale: The hadron-collider observable includes beam PDFs in the factorization theorem, so the PDF node captures the authored incoming-state prerequisite.
+  failure_mode_if_absent: Cannot turn the partonic threshold-thrust construction into a hadronic event-shape prediction.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_7
+      note: The factorization theorem in the batch description includes PDFs explicitly.
+  status: asserted
+
+# -- technique.topcolor_tchannel_afb ------------------------------------------
+
+- from: sm.symmetry_breaking_and_standard_model
+  to: technique.topcolor_tchannel_afb
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The topcolor construction relies on composite-scalar electroweak symmetry breaking and multi-Higgs structure, so the Standard-Model symmetry-breaking anchor captures the authored part of that prerequisite; TC2 itself is not yet a node.
+  failure_mode_if_absent: Cannot place the top-meson exchange mechanism inside a coherent electroweak-symmetry-breaking model.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_7
+      note: The prerequisite list includes composite-scalar electroweak symmetry breaking and two-Higgs-doublet structure.
+  status: asserted
+
+- from: sm.ewbreak.electroweak_symmetry_breaking
+  to: technique.topcolor_tchannel_afb
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The model-building move is meaningful only relative to how electroweak symmetry is broken, so the electroweak-symmetry-breaking node captures the most direct authored prerequisite.
+  failure_mode_if_absent: Cannot interpret why the exchanged top-meson states are tied to the symmetry-breaking sector rather than treated as arbitrary new particles.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_7
+      note: The batch entry links the mechanism to composite-scalar electroweak symmetry breaking.
+  status: asserted
+
+# -- technique.topology_based_limit_combination -------------------------------
+
+- from: qft.cross_section
+  to: technique.topology_based_limit_combination
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: The reinterpretation rule sums effective topology cross sections against published signal-region bounds, so the cross-section node captures the central authored prerequisite; simplified-model taxonomies are not yet separate nodes.
+  failure_mode_if_absent: Cannot compute the quantity being accumulated across topologies before comparing with the experimental limit.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_7
+      note: The method is phrased directly in terms of effective cross sections times efficiencies.
+  status: asserted
+
+- from: qft.decay_rate
+  to: technique.topology_based_limit_combination
+  relation_type: requires_for_use
+  necessity: necessary
+  confidence: 0.85
+  rationale: Branching ratios enter through topology weights, and decay rates are the authored prerequisite that underlies those branching fractions even though branching ratio is not yet its own node.
+  failure_mode_if_absent: Cannot justify how branching information enters the topology sum that is compared with the experimental bound.
+  evidence:
+    - type: expert_claim
+      source_ref: schwartz_techniques_batch_7
+      note: The batch entry defines the topology weight as cross section times branching ratio.
+  status: asserted

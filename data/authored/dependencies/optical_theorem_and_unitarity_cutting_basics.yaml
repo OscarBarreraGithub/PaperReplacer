@@ -31,7 +31,7 @@
   confidence: 0.96
 - from: qft.s_matrix_unitarity
   to: qft.optical_theorem
-  relation_type: requires_for_use
+  relation_type: requires_for_derive
   necessity: necessary
   audience_profile: hep_th_grad
   subfield: amplitudes
@@ -76,7 +76,7 @@
   confidence: 0.95
 - from: qft.s_matrix_unitarity
   to: qft.unitarity_cutting_rules
-  relation_type: requires_for_use
+  relation_type: requires_for_derive
   necessity: necessary
   audience_profile: hep_th_grad
   subfield: amplitudes

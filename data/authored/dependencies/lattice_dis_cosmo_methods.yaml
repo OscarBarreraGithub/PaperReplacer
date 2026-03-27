@@ -1,0 +1,935 @@
+# Dependency edges for the lattice-QCD, DIS/Drell-Yan, and cosmology methods batch.
+
+# --- Lattice QCD methods ---
+
+- from: qcd.lattice_qcd
+  to: technique.monte_carlo_lattice_sampling
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qcd_lattice
+  task_type: standard_computation
+  rationale: Monte Carlo importance sampling is the operational way lattice-QCD path integrals are turned into ensemble averages, so the lattice-QCD formulation has to be in place before the sampling method is applied.
+  failure_mode_if_absent: Cannot tell what action is being sampled or why the generated configurations define QCD observables rather than an abstract statistical system.
+  evidence:
+    - type: expert_claim
+      source_ref: lattice_dis_cosmo_methods_batch_initial
+      note: Batch design attaches Monte Carlo sampling directly to the lattice-QCD node.
+  status: asserted
+  confidence: 0.96
+
+- from: qft.path_integral_and_generating_functionals
+  to: technique.monte_carlo_lattice_sampling
+  relation_type: requires_for_derive
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qcd_lattice
+  task_type: standard_computation
+  rationale: HMC and Metropolis updates are justified by rewriting observables as weighted path-integral averages, so the path-integral formulation is part of the derivational backbone of the method.
+  failure_mode_if_absent: The sampling rules look like ad hoc numerics rather than a controlled evaluation of a quantum field-theory functional integral.
+  evidence:
+    - type: expert_claim
+      source_ref: lattice_dis_cosmo_methods_batch_initial
+      note: Batch notes frame lattice sampling as a path-integral evaluation method.
+  status: asserted
+  confidence: 0.94
+
+- from: qft.fermionic_path_integral
+  to: technique.monte_carlo_lattice_sampling
+  relation_type: requires_for_recognize
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: qcd_lattice
+  task_type: standard_computation
+  rationale: Dynamical-fermion simulations introduce determinants or pseudofermions coming from the fermionic path integral, so that node materially helps orient how HMC is used in QCD rather than pure gauge theory.
+  failure_mode_if_absent: The fermion part of the HMC weight appears as an unexplained algorithmic insertion.
+  evidence:
+    - type: expert_claim
+      source_ref: lattice_dis_cosmo_methods_batch_initial
+      note: Batch notes keep fermion determinants visible in the lattice-sampling branch.
+  status: asserted
+  confidence: 0.88
+
+- from: qcd.lattice_qcd
+  to: technique.wilson_fermion_discretization
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qcd_lattice
+  task_type: standard_computation
+  rationale: Wilson fermions are a specific lattice-QCD discretization of quark dynamics, so the lattice formulation has to be in view before the method can be used.
+  failure_mode_if_absent: Cannot place the Wilson action inside lattice QCD or tell what cutoff problem the discretization is solving.
+  evidence:
+    - type: expert_claim
+      source_ref: lattice_dis_cosmo_methods_batch_initial
+      note: Batch design treats Wilson fermions as a first-line lattice discretization method.
+  status: asserted
+  confidence: 0.97
+
+- from: qft.free_dirac_field
+  to: technique.wilson_fermion_discretization
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qcd_lattice
+  task_type: standard_computation
+  rationale: The Wilson action is a lattice version of the continuum Dirac theory plus an extra doubler-lifting term, so the continuum Dirac-field vocabulary is required to use it correctly.
+  failure_mode_if_absent: Cannot identify which part of the lattice action reproduces continuum fermion propagation and which part removes doublers.
+  evidence:
+    - type: expert_claim
+      source_ref: lattice_dis_cosmo_methods_batch_initial
+      note: Batch notes introduce Wilson fermions as a discretized Dirac action.
+  status: asserted
+  confidence: 0.95
+
+- from: qft.fermionic_path_integral
+  to: technique.wilson_fermion_discretization
+  relation_type: requires_for_derive
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qcd_lattice
+  task_type: standard_computation
+  rationale: Deriving the Wilson fermion weight and integrating it into lattice simulations is done in the fermionic functional-integral language.
+  failure_mode_if_absent: The Wilson action is seen as a disconnected finite-difference recipe rather than a fermionic quantum-field-theory discretization.
+  evidence:
+    - type: expert_claim
+      source_ref: lattice_dis_cosmo_methods_batch_initial
+      note: Batch notes keep Wilson fermions tied to the fermionic path-integral formalism.
+  status: asserted
+  confidence: 0.93
+
+- from: qcd.lattice_qcd
+  to: technique.staggered_fermion_discretization
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qcd_lattice
+  task_type: standard_computation
+  rationale: Staggered fermions are another standard lattice-QCD fermion prescription, so the method is downstream of the lattice-QCD setup rather than a free-standing continuum trick.
+  failure_mode_if_absent: Cannot tell why the spin-diagonalized lattice field lives on a discrete gauge background or what simulation problem the method is addressing.
+  evidence:
+    - type: expert_claim
+      source_ref: lattice_dis_cosmo_methods_batch_initial
+      note: Batch notes list staggered fermions as a lattice-QCD discretization family.
+  status: asserted
+  confidence: 0.97
+
+- from: qft.free_dirac_field
+  to: technique.staggered_fermion_discretization
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qcd_lattice
+  task_type: standard_computation
+  rationale: The staggered construction starts from the continuum Dirac field and redistributes its components across the lattice, so the continuum fermion target has to be recognized first.
+  failure_mode_if_absent: Cannot see what continuum fermionic degrees of freedom the staggered field is meant to approximate.
+  evidence:
+    - type: expert_claim
+      source_ref: lattice_dis_cosmo_methods_batch_initial
+      note: Batch notes introduce staggered fermions as an alternative lattice Dirac discretization.
+  status: asserted
+  confidence: 0.94
+
+- from: qft.chirality_projector
+  to: technique.staggered_fermion_discretization
+  relation_type: requires_for_recognize
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: qcd_lattice
+  task_type: standard_computation
+  rationale: A standard selling point of staggered fermions is the remnant chiral symmetry they preserve, so chirality language helps orient what is gained relative to Wilson fermions.
+  failure_mode_if_absent: The method looks like a purely combinatorial relabeling with no visible chiral payoff.
+  evidence:
+    - type: expert_claim
+      source_ref: lattice_dis_cosmo_methods_batch_initial
+      note: Batch notes emphasize remnant chiral symmetry in the staggered branch.
+  status: asserted
+  confidence: 0.87
+
+- from: qcd.lattice_qcd
+  to: technique.domain_wall_fermions
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qcd_lattice
+  task_type: standard_computation
+  rationale: Domain-wall fermions are a lattice-QCD construction for chiral quarks, so the lattice-QCD background has to be present before the five-dimensional setup is meaningful.
+  failure_mode_if_absent: Cannot tell why an extra lattice direction is being introduced or how it relates to nonperturbative QCD simulations.
+  evidence:
+    - type: expert_claim
+      source_ref: lattice_dis_cosmo_methods_batch_initial
+      note: Batch design places domain-wall fermions under the lattice-QCD toolbox.
+  status: asserted
+  confidence: 0.97
+
+- from: qft.chirality_projector
+  to: technique.domain_wall_fermions
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qcd_lattice
+  task_type: standard_computation
+  rationale: Domain-wall fermions are introduced precisely to isolate left- and right-handed light modes, so chirality language is central to using the method correctly.
+  failure_mode_if_absent: The wall-localized modes appear as generic boundary states with no clear chiral interpretation.
+  evidence:
+    - type: expert_claim
+      source_ref: lattice_dis_cosmo_methods_batch_initial
+      note: Batch notes describe domain-wall fermions as a chiral-lattice construction.
+  status: asserted
+  confidence: 0.95
+
+- from: technique.wilson_fermion_discretization
+  to: technique.domain_wall_fermions
+  relation_type: requires_for_derive
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qcd_lattice
+  task_type: standard_computation
+  rationale: The domain-wall construction uses a Wilson-type kernel in one extra dimension, so Wilson-fermion logic is part of the derivational scaffolding for the method.
+  failure_mode_if_absent: The connection between domain-wall fermions and the standard doubler-removal strategy is obscured.
+  evidence:
+    - type: expert_claim
+      source_ref: lattice_dis_cosmo_methods_batch_initial
+      note: Batch notes treat domain-wall fermions as a Wilson-kernel refinement.
+  status: asserted
+  confidence: 0.93
+
+- from: qcd.lattice_qcd
+  to: technique.lattice_continuum_extrapolation
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qcd_lattice
+  task_type: standard_computation
+  rationale: Continuum extrapolation is the step that converts finite-spacing lattice-QCD data into continuum predictions, so it is intrinsically downstream of lattice QCD.
+  failure_mode_if_absent: Cannot tell what is being extrapolated or why multiple lattice spacings are required at all.
+  evidence:
+    - type: expert_claim
+      source_ref: lattice_dis_cosmo_methods_batch_initial
+      note: Batch notes attach continuum extrapolation directly to lattice-QCD calculations.
+  status: asserted
+  confidence: 0.97
+
+- from: technique.monte_carlo_lattice_sampling
+  to: technique.lattice_continuum_extrapolation
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qcd_lattice
+  task_type: standard_computation
+  rationale: One needs ensembles and measured observables at several lattice spacings before a continuum extrapolation can even be attempted, so Monte Carlo data generation is an operational prerequisite.
+  failure_mode_if_absent: The extrapolation step has no input dataset and reduces to an abstract fitting slogan.
+  evidence:
+    - type: expert_claim
+      source_ref: lattice_dis_cosmo_methods_batch_initial
+      note: Batch notes present continuum extrapolation as a downstream analysis of sampled lattice ensembles.
+  status: asserted
+  confidence: 0.95
+
+- from: qft.renormalization_scale
+  to: technique.lattice_continuum_extrapolation
+  relation_type: requires_for_recognize
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: qcd_lattice
+  task_type: standard_computation
+  rationale: Continuum extrapolation separates lattice-cutoff artifacts from physical scale dependence, so renormalization-scale language helps orient what should and should not survive the a -> 0 limit.
+  failure_mode_if_absent: The extrapolation can be mistaken for arbitrary fitting rather than controlled removal of cutoff effects.
+  evidence:
+    - type: expert_claim
+      source_ref: lattice_dis_cosmo_methods_batch_initial
+      note: Batch notes keep continuum fits tied to the cutoff-versus-physical-scale distinction.
+  status: asserted
+  confidence: 0.86
+
+# --- DIS, Drell-Yan, and collider-QCD methods ---
+
+- from: qcd.deep_inelastic_scattering
+  to: technique.dis_structure_function_extraction
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qcd_factorization
+  task_type: standard_computation
+  rationale: Structure-function extraction is a method for analyzing DIS data specifically, so the DIS process context is the first prerequisite for using it.
+  failure_mode_if_absent: Cannot tell what scattering process is being fit or why F1, F2, and FL are the relevant observables.
+  evidence:
+    - type: expert_claim
+      source_ref: lattice_dis_cosmo_methods_batch_initial
+      note: Batch design places structure-function extraction directly under deep-inelastic scattering.
+  status: asserted
+  confidence: 0.97
+
+- from: qft.cross_section
+  to: technique.dis_structure_function_extraction
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qcd_factorization
+  task_type: standard_computation
+  rationale: The extracted structure functions are read off measured differential cross sections, so cross-section language is required to use the method.
+  failure_mode_if_absent: The fitting procedure floats free of the observable quantity that experimental data actually provide.
+  evidence:
+    - type: expert_claim
+      source_ref: lattice_dis_cosmo_methods_batch_initial
+      note: Batch notes describe F1, F2, and FL as quantities inferred from DIS cross sections.
+  status: asserted
+  confidence: 0.95
+
+- from: qcd.bjorken_x
+  to: technique.dis_structure_function_extraction
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qcd_factorization
+  task_type: standard_computation
+  rationale: DIS structure functions are tabulated and fitted as functions of x and Q2, so Bjorken-x kinematics must be available before the extraction can be carried out.
+  failure_mode_if_absent: The extracted observables have no clear kinematic argument or partonic interpretation.
+  evidence:
+    - type: expert_claim
+      source_ref: lattice_dis_cosmo_methods_batch_initial
+      note: Batch notes keep Bjorken x visible as the organizing variable for structure-function fits.
+  status: asserted
+  confidence: 0.95
+
+- from: qcd.parton_distribution_function
+  to: technique.dis_structure_function_extraction
+  relation_type: requires_for_recognize
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: qcd_factorization
+  task_type: standard_computation
+  rationale: Structure functions are one of the main experimental bridges to PDFs, so PDF language helps orient why the extracted F1, F2, and FL matter.
+  failure_mode_if_absent: The method looks like pure kinematic curve fitting with no visible role in hadron-structure analysis.
+  evidence:
+    - type: expert_claim
+      source_ref: lattice_dis_cosmo_methods_batch_initial
+      note: Batch notes connect structure-function measurements to the PDF branch.
+  status: asserted
+  confidence: 0.88
+
+- from: qcd.splitting_function
+  to: technique.altarelli_parisi_splitting
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qcd_factorization
+  task_type: standard_computation
+  rationale: The Altarelli-Parisi method is precisely the use and calculation of splitting kernels, so the splitting-function concept is the immediate prerequisite.
+  failure_mode_if_absent: Cannot tell what quantity the method is computing or inserting into evolution equations.
+  evidence:
+    - type: expert_claim
+      source_ref: lattice_dis_cosmo_methods_batch_initial
+      note: Batch design introduces the method as the operational splitting-kernel node.
+  status: asserted
+  confidence: 0.98
+
+- from: qcd.dglap_evolution
+  to: technique.altarelli_parisi_splitting
+  relation_type: requires_for_derive
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qcd_factorization
+  task_type: standard_computation
+  rationale: The practical point of the Altarelli-Parisi kernels is to populate the DGLAP evolution equation, so the evolution framework is part of the method's derivational context.
+  failure_mode_if_absent: The kernels appear as isolated formulas with no equation to evolve or interpret.
+  evidence:
+    - type: expert_claim
+      source_ref: lattice_dis_cosmo_methods_batch_initial
+      note: Batch notes place Altarelli-Parisi kernels inside the DGLAP branch.
+  status: asserted
+  confidence: 0.96
+
+- from: qcd.parton_distribution_function
+  to: technique.altarelli_parisi_splitting
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qcd_factorization
+  task_type: standard_computation
+  rationale: The kernels act on PDFs and related distributions, so parton-distribution language is needed to use them in practice.
+  failure_mode_if_absent: Cannot tell which hadronic quantity is being evolved with the splitting kernels.
+  evidence:
+    - type: expert_claim
+      source_ref: lattice_dis_cosmo_methods_batch_initial
+      note: Batch notes keep PDF evolution as the main use case for Altarelli-Parisi kernels.
+  status: asserted
+  confidence: 0.95
+
+- from: qcd.deep_inelastic_scattering
+  to: technique.altarelli_parisi_splitting
+  relation_type: requires_for_recognize
+  necessity: typical
+  audience_profile: hep_th_grad
+  subfield: qcd_factorization
+  task_type: standard_computation
+  rationale: Scaling violations in DIS are one of the canonical motivations for introducing Altarelli-Parisi evolution, so the DIS branch is a typical orientation node for the method.
+  failure_mode_if_absent: The kernels can look like abstract parton-model machinery with no visible experimental anchor.
+  evidence:
+    - type: expert_claim
+      source_ref: lattice_dis_cosmo_methods_batch_initial
+      note: Batch notes cite DIS scaling violations as the standard payoff of the method.
+  status: asserted
+  confidence: 0.87
+
+- from: qcd.drell_yan_process
+  to: technique.drell_yan_cross_section
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qcd_factorization
+  task_type: standard_computation
+  rationale: The method is the actual factorized calculation for Drell-Yan, so the Drell-Yan process node is the immediate process-level prerequisite.
+  failure_mode_if_absent: Cannot tell what hadronic process the factorized formula is computing.
+  evidence:
+    - type: expert_claim
+      source_ref: lattice_dis_cosmo_methods_batch_initial
+      note: Batch design attaches the calculation method directly to the Drell-Yan node.
+  status: asserted
+  confidence: 0.98
+
+- from: qcd.factorization_theorem
+  to: technique.drell_yan_cross_section
+  relation_type: requires_for_derive
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qcd_factorization
+  task_type: standard_computation
+  rationale: The Drell-Yan cross section is derived by factorizing long-distance PDFs from the short-distance annihilation kernel, so the factorization theorem supplies the formal scaffolding.
+  failure_mode_if_absent: The hadronic formula looks like an unjustified product of PDFs and a partonic hard part.
+  evidence:
+    - type: expert_claim
+      source_ref: lattice_dis_cosmo_methods_batch_initial
+      note: Batch notes frame Drell-Yan as a direct factorization-theorem application.
+  status: asserted
+  confidence: 0.97
+
+- from: qft.cross_section
+  to: technique.drell_yan_cross_section
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qcd_factorization
+  task_type: standard_computation
+  rationale: The method produces differential or total hadronic cross sections, so cross-section vocabulary is needed to use and interpret it.
+  failure_mode_if_absent: The output of the calculation is a formula with no clear observable meaning.
+  evidence:
+    - type: expert_claim
+      source_ref: lattice_dis_cosmo_methods_batch_initial
+      note: Batch notes keep the method on the observable side of Drell-Yan phenomenology.
+  status: asserted
+  confidence: 0.95
+
+- from: qcd.parton_distribution_function
+  to: technique.drell_yan_cross_section
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qcd_factorization
+  task_type: standard_computation
+  rationale: PDFs are the hadronic ingredients in the factorized Drell-Yan formula, so they are required inputs for using the method.
+  failure_mode_if_absent: Cannot write the long-distance part of the hadronic cross section.
+  evidence:
+    - type: expert_claim
+      source_ref: lattice_dis_cosmo_methods_batch_initial
+      note: Batch notes keep PDF convolution explicit in the Drell-Yan method node.
+  status: asserted
+  confidence: 0.96
+
+- from: qcd.hard_scattering_coefficient
+  to: technique.drell_yan_cross_section
+  relation_type: requires_for_recognize
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: qcd_factorization
+  task_type: standard_computation
+  rationale: The hard coefficient is the short-distance piece evaluated perturbatively in Drell-Yan, so it helps orient what part of the calculation is genuinely partonic.
+  failure_mode_if_absent: The method can be misread as purely hadronic bookkeeping with no explicit short-distance kernel.
+  evidence:
+    - type: expert_claim
+      source_ref: lattice_dis_cosmo_methods_batch_initial
+      note: Batch notes keep the hard scattering coefficient visible in the Drell-Yan branch.
+  status: asserted
+  confidence: 0.89
+
+- from: qcd.collinear_factorization
+  to: technique.collinear_subtraction_scheme
+  relation_type: requires_for_derive
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qcd_factorization
+  task_type: standard_computation
+  rationale: Collinear subtraction absorbs unresolved collinear pieces into factorized hadronic functions, so collinear-factorization logic is part of the derivation of the scheme.
+  failure_mode_if_absent: The subtraction counterterms look arbitrary because there is no factorization principle telling where the singular pieces belong.
+  evidence:
+    - type: expert_claim
+      source_ref: lattice_dis_cosmo_methods_batch_initial
+      note: Batch notes frame collinear subtraction as the NLO operationalization of factorization.
+  status: asserted
+  confidence: 0.96
+
+- from: qft.collinear_divergence
+  to: technique.collinear_subtraction_scheme
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qcd_factorization
+  task_type: standard_computation
+  rationale: The scheme is built to isolate and cancel collinear singularities, so the collinear-divergence node is the direct physics target of the method.
+  failure_mode_if_absent: Cannot identify which singular behavior the counterterms are supposed to reproduce.
+  evidence:
+    - type: expert_claim
+      source_ref: lattice_dis_cosmo_methods_batch_initial
+      note: Batch notes attach the method to unresolved collinear limits.
+  status: asserted
+  confidence: 0.98
+
+- from: qft.ir_finite_cross_section
+  to: technique.collinear_subtraction_scheme
+  relation_type: requires_for_recognize
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: qcd_factorization
+  task_type: standard_computation
+  rationale: The subtraction scheme is motivated by recovering finite physical cross sections after combining real and virtual pieces, so the infrared-finite goal helps orient the method.
+  failure_mode_if_absent: The method can look like formal subtraction algebra with no clear physical payoff.
+  evidence:
+    - type: expert_claim
+      source_ref: lattice_dis_cosmo_methods_batch_initial
+      note: Batch notes state finiteness of observables as the reason for introducing subtraction.
+  status: asserted
+  confidence: 0.86
+
+- from: qcd.drell_yan_process
+  to: technique.collinear_subtraction_scheme
+  relation_type: requires_for_recognize
+  necessity: typical
+  audience_profile: hep_th_grad
+  subfield: qcd_factorization
+  task_type: standard_computation
+  rationale: Drell-Yan is one of the canonical hadron-collider observables where NLO collinear subtraction is taught and used, so it is a typical orientation node for the method.
+  failure_mode_if_absent: The scheme appears disconnected from the concrete collider processes that motivate it.
+  evidence:
+    - type: expert_claim
+      source_ref: lattice_dis_cosmo_methods_batch_initial
+      note: Batch notes use Drell-Yan as a standard application of NLO subtraction.
+  status: asserted
+  confidence: 0.84
+
+- from: technique.collinear_subtraction_scheme
+  to: technique.dipole_subtraction_catani_seymour
+  relation_type: requires_for_derive
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qcd_factorization
+  task_type: standard_computation
+  rationale: Catani-Seymour dipoles are a concrete local implementation of the general subtraction strategy, so the generic scheme is the derivational parent of the dipole construction.
+  failure_mode_if_absent: The dipole terms look like isolated formulas rather than one specific realization of NLO subtraction.
+  evidence:
+    - type: expert_claim
+      source_ref: lattice_dis_cosmo_methods_batch_initial
+      note: Batch notes present Catani-Seymour as a specialization of generic subtraction logic.
+  status: asserted
+  confidence: 0.96
+
+- from: qft.soft_divergence
+  to: technique.dipole_subtraction_catani_seymour
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qcd_factorization
+  task_type: standard_computation
+  rationale: Dipole subtraction is designed to reproduce soft as well as collinear limits of real-emission amplitudes, so the soft-divergence structure must be in hand.
+  failure_mode_if_absent: Cannot tell why the dipole counterterms include eikonal-looking pieces beyond pure collinear factors.
+  evidence:
+    - type: expert_claim
+      source_ref: lattice_dis_cosmo_methods_batch_initial
+      note: Batch notes emphasize joint soft-collinear local counterterms in the Catani-Seymour method.
+  status: asserted
+  confidence: 0.97
+
+- from: qft.collinear_divergence
+  to: technique.dipole_subtraction_catani_seymour
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qcd_factorization
+  task_type: standard_computation
+  rationale: The dipoles also reproduce collinear splitting limits, so the method cannot be used correctly without recognizing those singular configurations.
+  failure_mode_if_absent: The local counterterms appear overengineered because the collinear target behavior is invisible.
+  evidence:
+    - type: expert_claim
+      source_ref: lattice_dis_cosmo_methods_batch_initial
+      note: Batch notes keep Catani-Seymour tied to both soft and collinear singular limits.
+  status: asserted
+  confidence: 0.97
+
+- from: qcd.drell_yan_process
+  to: technique.dipole_subtraction_catani_seymour
+  relation_type: requires_for_use
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: qcd_factorization
+  task_type: standard_computation
+  rationale: Drell-Yan is a standard NLO benchmark for Catani-Seymour subtraction, so the process node provides a concrete collider-QCD use case for the method.
+  failure_mode_if_absent: The dipole formalism can remain detached from the inclusive hadron-collider calculations it is commonly used to evaluate.
+  evidence:
+    - type: expert_claim
+      source_ref: lattice_dis_cosmo_methods_batch_initial
+      note: Batch notes keep Drell-Yan as a representative application of dipole subtraction.
+  status: asserted
+  confidence: 0.85
+
+- from: technique.collinear_subtraction_scheme
+  to: technique.fks_subtraction
+  relation_type: requires_for_derive
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qcd_factorization
+  task_type: standard_computation
+  rationale: FKS subtraction is another concrete implementation of the general NLO subtraction program, so the generic collinear-subtraction scheme is its derivational parent.
+  failure_mode_if_absent: The sector decomposition looks like an arbitrary phase-space trick rather than a principled subtraction construction.
+  evidence:
+    - type: expert_claim
+      source_ref: lattice_dis_cosmo_methods_batch_initial
+      note: Batch notes introduce FKS as a sector-based subtraction realization.
+  status: asserted
+  confidence: 0.96
+
+- from: qft.soft_divergence
+  to: technique.fks_subtraction
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qcd_factorization
+  task_type: standard_computation
+  rationale: FKS sectors are built so that only a controlled soft singular limit remains in each relevant region, so the soft-divergence target must be recognized first.
+  failure_mode_if_absent: The sector partition has no clear reason for isolating one emitter at a time.
+  evidence:
+    - type: expert_claim
+      source_ref: lattice_dis_cosmo_methods_batch_initial
+      note: Batch notes describe FKS in terms of isolated soft regions.
+  status: asserted
+  confidence: 0.96
+
+- from: qft.collinear_divergence
+  to: technique.fks_subtraction
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: qcd_factorization
+  task_type: standard_computation
+  rationale: FKS also isolates one collinear singular structure per sector, so collinear-divergence language is part of using the method correctly.
+  failure_mode_if_absent: The sector variables look unmotivated because the collinear singular target is not visible.
+  evidence:
+    - type: expert_claim
+      source_ref: lattice_dis_cosmo_methods_batch_initial
+      note: Batch notes keep FKS tied to one-emitter collinear limits.
+  status: asserted
+  confidence: 0.96
+
+- from: qcd.drell_yan_process
+  to: technique.fks_subtraction
+  relation_type: requires_for_use
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: qcd_factorization
+  task_type: standard_computation
+  rationale: Drell-Yan is a standard process-level test bed for FKS implementations, so it serves as a useful collider-QCD anchor for the method.
+  failure_mode_if_absent: FKS remains a formal Monte Carlo recipe with no immediate link to a recognizable hadronic observable.
+  evidence:
+    - type: expert_claim
+      source_ref: lattice_dis_cosmo_methods_batch_initial
+      note: Batch notes cite Drell-Yan as a representative FKS application.
+  status: asserted
+  confidence: 0.84
+
+# --- Cosmology perturbation and inference methods ---
+
+- from: cosmology.frw_metric
+  to: technique.cosmological_perturbation_theory
+  relation_type: requires_for_derive
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: cosmology
+  task_type: standard_computation
+  rationale: Cosmological perturbation theory starts by perturbing the FRW background metric, so the FRW geometry is the essential derivational starting point.
+  failure_mode_if_absent: Cannot tell what background is being perturbed or what makes the scalar-vector-tensor split cosmological rather than generic.
+  evidence:
+    - type: expert_claim
+      source_ref: lattice_dis_cosmo_methods_batch_initial
+      note: Batch design makes the FRW background the upstream anchor for perturbation theory.
+  status: asserted
+  confidence: 0.97
+
+- from: cosmology.scale_factor
+  to: technique.cosmological_perturbation_theory
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: cosmology
+  task_type: standard_computation
+  rationale: Linear perturbation equations are written in conformal time and depend explicitly on the background scale factor, so one needs scale-factor language to use the method.
+  failure_mode_if_absent: The time dependence of perturbation growth and horizon crossing appears as unexplained symbols.
+  evidence:
+    - type: expert_claim
+      source_ref: lattice_dis_cosmo_methods_batch_initial
+      note: Batch notes keep the scale factor explicit in the perturbation-theory branch.
+  status: asserted
+  confidence: 0.94
+
+- from: cosmology.inflation
+  to: technique.cosmological_perturbation_theory
+  relation_type: requires_for_recognize
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: cosmology
+  task_type: standard_computation
+  rationale: One of the main payoffs of the technique is tracking the primordial scalar and tensor modes generated during inflation, so inflation provides useful orientation for the method.
+  failure_mode_if_absent: The scalar and tensor sectors can look like formal decompositions with no clear early-universe purpose.
+  evidence:
+    - type: expert_claim
+      source_ref: lattice_dis_cosmo_methods_batch_initial
+      note: Batch notes connect the perturbation-theory node to inflationary initial conditions.
+  status: asserted
+  confidence: 0.86
+
+- from: technique.cosmological_perturbation_theory
+  to: technique.boltzmann_hierarchy
+  relation_type: requires_for_derive
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: cosmology
+  task_type: standard_computation
+  rationale: The Boltzmann hierarchy is obtained by taking perturbation theory for distribution functions and expanding angular dependence into multipoles, so cosmological perturbation theory is the direct parent method.
+  failure_mode_if_absent: The hierarchy of photon or neutrino moments looks like disconnected kinetic equations instead of a structured perturbative expansion.
+  evidence:
+    - type: expert_claim
+      source_ref: lattice_dis_cosmo_methods_batch_initial
+      note: Batch notes derive the hierarchy from the perturbation-theory framework.
+  status: asserted
+  confidence: 0.97
+
+- from: cosmology.cosmic_microwave_background
+  to: technique.boltzmann_hierarchy
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: cosmology
+  task_type: standard_computation
+  rationale: The photon hierarchy is introduced to predict CMB anisotropies, so the CMB observable context is required to use the method in the standard way.
+  failure_mode_if_absent: The photon multipoles look like a formal kinetic expansion with no observational target.
+  evidence:
+    - type: expert_claim
+      source_ref: lattice_dis_cosmo_methods_batch_initial
+      note: Batch notes place the Boltzmann hierarchy in the CMB-computation chain.
+  status: asserted
+  confidence: 0.95
+
+- from: cosmology.lambda_cdm_model
+  to: technique.boltzmann_hierarchy
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: cosmology
+  task_type: standard_computation
+  rationale: Solving the Boltzmann hierarchy requires a background cosmological model specifying the expansion history and species content, and Lambda-CDM is the local standard background in the graph.
+  failure_mode_if_absent: Cannot specify the background quantities that drive the photon, baryon, dark-matter, and neutrino perturbation equations.
+  evidence:
+    - type: expert_claim
+      source_ref: lattice_dis_cosmo_methods_batch_initial
+      note: Batch notes use Lambda-CDM as the baseline background for hierarchy calculations.
+  status: asserted
+  confidence: 0.95
+
+- from: technique.boltzmann_hierarchy
+  to: technique.transfer_function_computation
+  relation_type: requires_for_derive
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: cosmology
+  task_type: standard_computation
+  rationale: Transfer functions are computed by evolving perturbations through the photon-baryon and matter eras, and the Boltzmann hierarchy is the standard engine for that evolution.
+  failure_mode_if_absent: The transfer function appears as a fitted black box rather than a controlled evolution from primordial perturbations.
+  evidence:
+    - type: expert_claim
+      source_ref: lattice_dis_cosmo_methods_batch_initial
+      note: Batch notes treat transfer-function computation as downstream of Boltzmann evolution.
+  status: asserted
+  confidence: 0.96
+
+- from: cosmology.matter_power_spectrum
+  to: technique.transfer_function_computation
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: cosmology
+  task_type: standard_computation
+  rationale: The main use of the transfer function in this graph slice is to build the late-time matter power spectrum from primordial initial conditions, so the matter-power node is the direct observable target.
+  failure_mode_if_absent: The computed T(k) has no obvious output quantity or phenomenological role.
+  evidence:
+    - type: expert_claim
+      source_ref: lattice_dis_cosmo_methods_batch_initial
+      note: Batch notes tie transfer functions directly to matter-power-spectrum predictions.
+  status: asserted
+  confidence: 0.95
+
+- from: cosmology.baryon_acoustic_oscillations
+  to: technique.transfer_function_computation
+  relation_type: requires_for_recognize
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: cosmology
+  task_type: standard_computation
+  rationale: BAO are one of the distinctive signatures encoded in the transfer function, so BAO language helps explain what physical structure in T(k) the method is meant to capture.
+  failure_mode_if_absent: The wiggles and scale dependence in the transfer function can look like arbitrary numerical features.
+  evidence:
+    - type: expert_claim
+      source_ref: lattice_dis_cosmo_methods_batch_initial
+      note: Batch notes use BAO as the phenomenological payoff of transfer-function calculations.
+  status: asserted
+  confidence: 0.87
+
+- from: cosmology.lambda_cdm_model
+  to: technique.transfer_function_computation
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: cosmology
+  task_type: standard_computation
+  rationale: Computing T(k) requires a definite background composition and expansion history, and Lambda-CDM is the standard local model that supplies those ingredients.
+  failure_mode_if_absent: The transfer-function calculation lacks the background densities and expansion history needed to evolve perturbations.
+  evidence:
+    - type: expert_claim
+      source_ref: lattice_dis_cosmo_methods_batch_initial
+      note: Batch notes use Lambda-CDM as the baseline cosmology for transfer functions.
+  status: asserted
+  confidence: 0.94
+
+- from: cosmology.lambda_cdm_model
+  to: technique.fisher_matrix_forecasting
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: cosmology_inference
+  task_type: standard_computation
+  rationale: Fisher forecasting linearizes observables with respect to a chosen parameter set, and Lambda-CDM supplies the standard parameterization in this graph neighborhood.
+  failure_mode_if_absent: There is no clear parameter vector whose derivatives and projected uncertainties are being forecast.
+  evidence:
+    - type: expert_claim
+      source_ref: lattice_dis_cosmo_methods_batch_initial
+      note: Batch notes introduce Fisher forecasts as parameter-constraint estimates around Lambda-CDM.
+  status: asserted
+  confidence: 0.96
+
+- from: cosmology.cmb_power_spectrum
+  to: technique.fisher_matrix_forecasting
+  relation_type: requires_for_use
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: cosmology_inference
+  task_type: standard_computation
+  rationale: CMB spectra are one of the canonical observable vectors used in cosmological Fisher analyses, so the CMB-power node is a natural measurement-side input.
+  failure_mode_if_absent: The forecast remains detached from a concrete observable that actually constrains cosmological parameters.
+  evidence:
+    - type: expert_claim
+      source_ref: lattice_dis_cosmo_methods_batch_initial
+      note: Batch notes list CMB anisotropy spectra as a standard Fisher-data input.
+  status: asserted
+  confidence: 0.89
+
+- from: cosmology.matter_power_spectrum
+  to: technique.fisher_matrix_forecasting
+  relation_type: requires_for_use
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: cosmology_inference
+  task_type: standard_computation
+  rationale: Large-scale-structure forecasts are commonly phrased in terms of derivatives of the matter power spectrum, so that node is another natural observable-side prerequisite.
+  failure_mode_if_absent: The forecast method can look limited to unspecified data summaries rather than familiar structure probes.
+  evidence:
+    - type: expert_claim
+      source_ref: lattice_dis_cosmo_methods_batch_initial
+      note: Batch notes keep matter-power forecasts alongside CMB forecasts.
+  status: asserted
+  confidence: 0.89
+
+- from: technique.transfer_function_computation
+  to: technique.fisher_matrix_forecasting
+  relation_type: requires_for_recognize
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: cosmology_inference
+  task_type: standard_computation
+  rationale: In practice, Fisher derivatives for large-scale-structure observables depend on how transfer functions shape the spectra, so transfer-function computation helps orient where the observable derivatives come from.
+  failure_mode_if_absent: The Fisher matrix can look like pure statistics disconnected from the physical pipeline producing the observables.
+  evidence:
+    - type: expert_claim
+      source_ref: lattice_dis_cosmo_methods_batch_initial
+      note: Batch notes keep forecasting downstream of the perturbation-to-spectrum pipeline.
+  status: asserted
+  confidence: 0.84
+
+- from: cosmology.lambda_cdm_model
+  to: technique.mcmc_parameter_estimation
+  relation_type: requires_for_use
+  necessity: necessary
+  audience_profile: hep_th_grad
+  subfield: cosmology_inference
+  task_type: standard_computation
+  rationale: MCMC inference samples a posterior over a specific parameterized cosmological model, and Lambda-CDM is the local baseline parameter space to be inferred.
+  failure_mode_if_absent: The chain has no well-defined parameter target or model likelihood to explore.
+  evidence:
+    - type: expert_claim
+      source_ref: lattice_dis_cosmo_methods_batch_initial
+      note: Batch notes attach MCMC to Lambda-CDM parameter inference.
+  status: asserted
+  confidence: 0.97
+
+- from: cosmology.cmb_power_spectrum
+  to: technique.mcmc_parameter_estimation
+  relation_type: requires_for_use
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: cosmology_inference
+  task_type: standard_computation
+  rationale: CMB likelihoods are one of the standard inputs to cosmological MCMC chains, so the CMB-spectrum node is a natural observable-side prerequisite.
+  failure_mode_if_absent: The method remains detached from a concrete dataset that typically drives cosmological posteriors.
+  evidence:
+    - type: expert_claim
+      source_ref: lattice_dis_cosmo_methods_batch_initial
+      note: Batch notes cite CMB data as a standard MCMC input.
+  status: asserted
+  confidence: 0.9
+
+- from: cosmology.matter_power_spectrum
+  to: technique.mcmc_parameter_estimation
+  relation_type: requires_for_use
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: cosmology_inference
+  task_type: standard_computation
+  rationale: Galaxy-clustering and large-scale-structure likelihoods are often organized around the matter power spectrum, so that node is another common observable input for MCMC inference.
+  failure_mode_if_absent: The chain can look restricted to unspecified statistics rather than the standard structure datasets used in parameter fits.
+  evidence:
+    - type: expert_claim
+      source_ref: lattice_dis_cosmo_methods_batch_initial
+      note: Batch notes list matter-power data as a standard MCMC input.
+  status: asserted
+  confidence: 0.89
+
+- from: technique.transfer_function_computation
+  to: technique.mcmc_parameter_estimation
+  relation_type: requires_for_recognize
+  necessity: helpful
+  audience_profile: hep_th_grad
+  subfield: cosmology_inference
+  task_type: standard_computation
+  rationale: Parameter-estimation chains rely on a forward model from parameters to spectra, and transfer-function computation is part of that pipeline for matter and CMB observables.
+  failure_mode_if_absent: MCMC inference can look like a purely statistical black box with no transparent route from parameters to predicted data.
+  evidence:
+    - type: expert_claim
+      source_ref: lattice_dis_cosmo_methods_batch_initial
+      note: Batch notes keep MCMC downstream of the perturbation-evolution pipeline.
+  status: asserted
+  confidence: 0.85

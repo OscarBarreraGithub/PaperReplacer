@@ -121,13 +121,13 @@
   confidence: 0.94
 - from: qft.amputation
   to: qft.lsz_reduction_formula
-  relation_type: requires_for_use
+  relation_type: requires_for_derive
   necessity: necessary
   audience_profile: hep_th_grad
   subfield: qft_backbone
   task_type: standard_computation
-  rationale: The reduction formula turns amputated correlators into scattering amplitudes.
-  failure_mode_if_absent: Cannot connect the correlator to the amputated scattering object.
+  rationale: Amputation is one of the derivational steps inside LSZ reduction, where the external propagator legs are removed before the scattering amplitude is identified.
+  failure_mode_if_absent: Cannot follow the derivation that turns the correlator into the amputated scattering object used in LSZ.
   evidence:
     - type: expert_claim
       source_ref: correlators_propagators_lsz_batch_initial
