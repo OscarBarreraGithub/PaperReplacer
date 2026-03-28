@@ -1,0 +1,188 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage{jheppub}
+
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,graphicx, latexsym, theorem, enumerate,bbm}
+\usepackage{booktabs, multirow, nicefrac, float, xspace, comment, array}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage[normalem]{ulem}
+\usepackage{makecell}
+\usepackage{pict2e}
+\usepackage{shuffle}
+\usepackage{subfigure}
+\usepackage{feynmp}
+\usepackage{feynmp-auto}
+\usepackage{tikz,tikz-feynman}
+\usetikzlibrary{arrows,decorations.markings,shapes.misc,math}
+
+
+
+\interfootnotelinepenalty=10000
+
+\allowdisplaybreaks[4]
+\definecolor{darkpurple}{rgb}{0.5, 0.2, 0.8}
+\definecolor{darkgreen}{rgb}{0.0, 0.4, 0.0}
+\definecolor{darkyellow}{rgb}{0.5, 0.5, 0.0}
+\definecolor{darkblue}{rgb}{0.0, 0.0, 0.8}
+\definecolor{darkred}{rgb}{0.5, 0.0, 0.0}
+
+\newcommand{\Reff}{R_\text{eff}}
+\newcommand{\eps}{\varepsilon}
+\newcommand{\zb}{\bar{z}}
+
+
+\hypersetup{
+    linktocpage,
+     colorlinks,
+     citecolor=darkgreen,
+     linkcolor= darkgreen,
+     urlcolor=darkgreen
+}
+
+
+% shortcut
+\newcommand{\df}{\text{d}}
+\newcommand{\Li}{\text{Li}}
+\newcommand{\cS}{ {\mathcal S} }
+\newcommand{\cB}{ {\mathcal B} }
+\newcommand{\bx}{ {\bf x} }
+\newcommand{\dmin}{d_{\text{min}}}
+
+
+\usepackage{ifpdf} 
+
+\unitlength1cm
+
+
+\title{Analytic Regression of Feynman Integrals from High-Precision Numerical Sampling}
+
+
+\author[a]{Oscar Barrera,}
+\author[a,b]{Aur\'elien Dersy,}
+\author[a]{Rabia Husain,}
+\author[a,b]{Matthew D. Schwartz,}
+\author[a]{and Xiaoyuan Zhang}
+\affiliation[a]{Department of Physics, Harvard University, 02138 Cambridge, MA, USA}
+\affiliation[b]{The NSF AI Institute for Artificial Intelligence and Fundamental Interactions}
+\emailAdd{oscarbarrera@g.harvard.edu}
+\emailAdd{adersy@g.harvard.edu}
+\emailAdd{rhusain@g.harvard.edu}
+\emailAdd{schwartz@g.harvard.edu}
+\emailAdd{xiaoyuanzhang@g.harvard.edu}
+
+\abstract{
+In mathematics or theoretical physics one is often interested in obtaining an exact analytic description of some data which can be produced, in principle, to arbitrary accuracy. For example, one might like to know the exact analytical form of a definite integral. Such problems are not well-suited to numerical symbolic regression, since typical numerical methods  lead only to approximations. However, if one has some sense of the function space in which the analytic result should lie, it is possible to deduce the exact answer by judiciously sampling the data at a sufficient number of points with sufficient precision. We demonstrate how this can be done for the computation of Feynman integrals. We show that by combining high-precision numerical integration with analytic knowledge of the function space one can often deduce the exact answer using lattice reduction. A number of examples are given as well as an exploration of the trade-offs between number of datapoints, number of functional predicates, precision of the data, and compute. This method provides a bottom-up approach that neatly complements the top-down Landau-bootstrap approach of trying to constrain the exact answer using the analytic structure alone. Although we focus on the application to Feynman integrals, the techniques presented here are more general and could apply to a wide range of problems where an exact answer is needed and the function space is sufficiently well understood.
+}
+
+\setcounter{tocdepth}{2}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section*{Reading guide}
+This version keeps sections that appear to contain the paper's main contributions in full, while condensing 8 background sections into graph-linked summaries. It also inserts minimal prerequisite notes for 11 uncovered concepts so the novel parts are easier to read in one pass.
+
+\section{Introduction}
+
+\noindent\textit{Condensed background.} This section is condensed to background on Lattice Reduction for Analytic Regression of Feynman Integrals (technique.lattice\_reduction\_analytic\_regression), Bottom-Up Complement to the Landau Bootstrap (technique.landau\_bootstrap\_complement), Treat tensors as SU(3) wave functions (technique.tensor\_wavefunction\_interpretation). Consult the knowledge graph nodes for the fuller prerequisite story.
+
+\section{Computing $f(\bx)$ and $\cB_i(\bx)$ from Feynman integrals}
+
+\noindent\textit{Condensed background.} This section is condensed to background on Reduce the graviton propagator problem to a scalar Green function (technique.scalar\_to\_graviton\_propagator\_reduction), Feynman propagator (qft.feynman\_propagator), Passarino-Veltman (PV) reduction (technique.passarino\_veltman\_reduction). Consult the knowledge graph nodes for the fuller prerequisite story.
+
+\section{Analytic regression of $c_i$}
+
+\noindent\textit{Condensed background.} This section is condensed to background on Lattice Reduction for Analytic Regression of Feynman Integrals (technique.lattice\_reduction\_analytic\_regression), Precision-Point Tradeoff in Analytic Fitting (technique.precision\_point\_tradeoff), Bottom-Up Complement to the Landau Bootstrap (technique.landau\_bootstrap\_complement). Consult the knowledge graph nodes for the fuller prerequisite story.
+
+\section{Examples}
+
+\noindent\textit{Condensed background.} This section is condensed to background on Lattice Reduction for Analytic Regression of Feynman Integrals (technique.lattice\_reduction\_analytic\_regression), Bottom-Up Complement to the Landau Bootstrap (technique.landau\_bootstrap\_complement), Box-versus-tree scaling test for Sommerfeld enhancement (technique.box\_vs\_tree\_sommerfeld\_diagnosis). Consult the knowledge graph nodes for the fuller prerequisite story.
+
+\section{Scaling behavior of lattice reduction}
+
+\noindent\textit{Condensed background.} This section is condensed to background on Lattice Reduction for Analytic Regression of Feynman Integrals (technique.lattice\_reduction\_analytic\_regression), Precision-Point Tradeoff in Analytic Fitting (technique.precision\_point\_tradeoff), Generalized Bender-Wu recursion for charged QNM equations (technique.bender\_wu\_recursion\_for\_charged\_qnms). Consult the knowledge graph nodes for the fuller prerequisite story.
+
+\section{Conclusions}
+
+\paragraph{Minimal background.}
+\noindent Differential equations for master integrals: In this paper, differential equations for master integrals are the mechanism that turns evaluation into solving a controlled flow from boundary data instead of directly attacking a high-dimensional integral. Related graph nodes: Differential equations for master integrals (technique.differential\_equations\_for\_master\_integrals).
+
+\noindent Generalized polylogarithms and iterated integrals: In this paper, generalized polylogarithms are the basis functions whose rational coefficients are reconstructed from samples, so they play the same role on the function side that a lattice basis plays on the arithmetic side of the final fit. Related graph nodes: Iterated integral (qft.iterated\_integral).
+
+\noindent Auxiliary-mass flow / AMFlow-style evaluation: AMFlow is a modern numerical pipeline for Feynman integrals that avoids direct high-dimensional integration. It introduces an auxiliary mass parameter, uses IBP identities to derive differential equations in that parameter, and starts from a boundary point where the integral becomes simpler, typically the large-mass limit. Solving that flow back to the physical point produces coefficients of the epsilon expansion to very high precision. In this paper those high-precision values are not the final answer; they are the data that analytic regression will later fit exactly. Without this picture, the source of the paper's trusted numerical samples stays opaque.\par Connection to High-precision numerical evaluation. You already know why hundreds of reliable digits matter when one wants exact rational reconstruction rather than a floating-point approximation. AMFlow is the machine that manufactures those digits for a regulated Feynman integral while respecting its singular structure. Conceptually, it plays the role of a precision-preserving oracle: lattice reduction is the recovery step, but AMFlow is what makes the sampled numbers good enough for that recovery to succeed. Related graph nodes: Differential equations for master integrals (technique.differential\_equations\_for\_master\_integrals).
+
+\noindent Classical polylogarithms and logarithms: In this paper, logarithms and classical polylogarithms are the simplest explicit basis functions, giving toy examples where the regression problem is a cleaner version of the exact-reconstruction tasks you already know from lattice reduction and PSLQ. Related graph nodes: Iterated integral (qft.iterated\_integral).
+
+\label{sec:conclusion}
+Recent years have witnessed an explosion in our ability to compute Feynman integrals both numerically and analytically. On the numeric side, public computer programs such as  \textsc{AMFlow} can compute extremely complicated Feynman integrals to dozens if not hundreds of digits of precision. On the analytic side, sophisticated mathematical techniques from algebraic geometry and elsewhere have manged to 
+characterize well the space of functions where certain Feynman integrals must live. This paper attempts to bridge these two advancements by allowing for the regression of the exact analytic form Feynman integrals from high-precision numeric sampling.
+
+
+The paper presents a number of end-to-end analytic regression examples, such as 3-loop triangle diagrams or the 2-loop outer mass double box. We compute these integrals exactly --  the full analytic form is obtained -- by combining a number of public codes for evaluating the integrals and basis functions with our analytic regression method. 
+
+We consider three approaches to analytic regression: matrix inversion, lattice reduction, and PSLQ. Matrix inversion is the most straightforward: one samples the $n$ functions and $p=n$ points and solves the equations for the coefficients. This method requires rounding, which is imprecise, and suffers from a rapid loss of precision requiring large number of digits. PSLQ uses just a single point which requires tremendous precision (thousands of digits). Lattice reduction is a compromise: the number of points $p$ sampled can be small $p<n$ or large $p>n$ and it appropriately leverages the expectation that the coefficients are often order 1 rational numbers. 
+
+We have also investigated crucial aspects such as the scaling behavior of lattice reduction, precision requirements, and the interplay between the number of evaluation points and numerical accuracy. We found that while increasing evaluation points substantially reduces precision requirements initially, there is a saturation point where precision improvements plateaus, influenced by the condition number and the distribution of sampled points. For integrals at the boundary of computational feasibility, one could attempt to judiciously select sampling points to optimize both accuracy and computational efficiency.
+
+Looking forward, several directions appear promising for extending and refining this analytic regression methodology. Algorithmic improvements to lattice reduction techniques—such as parallelization or optimized variants—may allow for handling significantly larger basis sets and more complex integrals. Generalizing this approach beyond GPLs to other classes of special functions, such as elliptic polylogarithms, could further expand its applicability within theoretical physics and beyond. Additionally, one can imagine performing analytic regression even if the basis is not finite but instead constructable using some predicates, such as composition of polylogarithms and rational functions. In that way one could determine the alphabet and the final function at the same time. 
+
+Finally, analytic regression not only provides practical tools for tackling challenging integrals encountered in high-energy physics but also holds potential for broader applications across various fields where exact analytic reconstruction from numerical data is sought. For example, one could envision applications in condensed matter physics, such as regressing a partition function based on high-precision numerical computation, or number theory, such as recovering relationships among multiple zeta values or modular forms.
+
+\acknowledgments
+
+MDS and AD would like to thank Michael Douglas and Siddharth Mishra-Sharma for valuable conversations at the start of this project. We also thank Miguel Correia, Johannes Henn, Xin Guan, Xiao Liu, and Tong-Zhi Yang for useful discussions.
+The computations in this paper were run on the FASRC Cannon cluster supported by the FAS Division of Science Research Computing Group at Harvard University. AD and MDS are supported in part by the National Science Foundation under Cooperative Agreement PHY-2019786 (The NSF AI Institute for Artificial Intelligence and Fundamental Interactions). RH, MDS and XYZ are supported in part by the DOE Grant DE-SC0013607.
+
+
+
+\appendix
+
+\section{Lattice reduction }
+
+\noindent\textit{Condensed background.} This section is condensed to background on Gram-Schmidt construction of weight-space bases (technique.gram\_schmidt\_weight\_basis\_construction), Clustering-Algorithm Independence of Learned Jet Probabilities (technique.clustering\_algorithm\_independence), GL(N,Z) lattice-basis reduction for axion mixing (technique.lattice\_basis\_axion\_reduction). Consult the knowledge graph nodes for the fuller prerequisite story.
+
+\section{The symbol formalism}
+
+\noindent\textit{Condensed background.} This section is condensed to background on Reinforcement Learning for Identity Application Ordering (technique.rl\_identity\_search), Small-R universality of non-global logarithms (technique.small\_r\_ngl\_universality), Symbol and coproduct techniques for iterated NGL integrals (technique.symbol\_coproduct\_ngl\_integration). Consult the knowledge graph nodes for the fuller prerequisite story.
+
+\section{Numerically evaluating iterated integrals}
+
+\noindent\textit{Condensed background.} This section is condensed to background on Symbol and coproduct techniques for iterated NGL integrals (technique.symbol\_coproduct\_ngl\_integration), JT/maximin resolution of RT degeneracy (technique.jt\_maximin\_resolution\_of\_rt\_degeneracy), Seiberg-Witten instanton running comparison (technique.seiberg\_witten\_instanton\_running\_comparison). Consult the knowledge graph nodes for the fuller prerequisite story.
+
+\section*{Prerequisites from knowledge graph}
+\begin{itemize}
+\item Algebraic symbol letters from singularities (technique.algebraic\_letter\_construction)
+\item Alpha-positivity constraints (technique.alpha\_positivity\_constraints)
+\item Analytic continuation in kinematic invariants (qft.analytic\_continuation\_in\_kinematic\_invariants)
+\item Basis and coordinates for function decomposition (math.linear\_algebra.basis\_and\_coordinates)
+\item Branch cuts and Riemann sheets (complex\_analysis.branch\_cut\_and\_riemann\_sheet)
+\item Conformal maps and rationalizing variable changes (complex\_analysis.conformal\_map)
+\item Differential equations for master integrals (technique.differential\_equations\_for\_master\_integrals)
+\item Dimensional regularization (qft.dimensional\_regularization)
+\item Feynman integrals as loop-momentum integrals (qft.loop\_momentum\_integration\_structure)
+\item Feynman parametrization (technique.feynman\_parametrization)
+\item Feynman propagator (qft.feynman\_propagator)
+\item Feynman rules (qft.feynman\_rules)
+\item Genealogical constraints (technique.genealogical\_constraints)
+\item Generic sector decomposition (technique.generic\_sector\_decomposition)
+\item Infrared divergence (qft.infrared\_divergence)
+\item Integrability constraints on symbol letters (technique.integrability\_product\_constraints)
+\item Integration-by-parts (IBP) reduction (technique.integration\_by\_parts\_reduction)
+\item Iterated integrals (qft.iterated\_integral)
+\item Landau analytic structure (qft.landau\_analytic\_structure)
+\item Landau bootstrap (technique.landau\_bootstrap)
+\item Landau singularity conditions (qft.landau\_singularity\_conditions)
+\item Mandelstam variables (qft.mandelstam\_variables)
+\item On-shell kinematics (qft.on\_shell)
+\item Symbol formalism (qft.symbol\_calculus)
+\item Ultraviolet divergence (qft.ultraviolet\_divergence)
+\end{itemize}
+
+\bibliography{biblio.bib}
+
+\end{document}

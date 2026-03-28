@@ -1,0 +1,1620 @@
+task: Review and refine paper concept classification against the knowledge graph
+paper_dir: data/papers/2507.17815
+graph_path: /Users/emmy/Documents/KnowledgeGraph/data/generated/compiled/all_authored.graph.json
+instructions:
+- Keep the schema exactly the same as analysis.yaml.
+- Re-evaluate whether each concept is correctly labeled in_graph, gap, or novel.
+- Tighten why_needed and suggested_explanation entries for gaps.
+- Prefer graph-node references already surfaced in the related_graph_nodes fields.
+current_analysis:
+  paper_concepts:
+  - concept: Area-difference phase diagram for HM versus island surfaces
+    classification: in_graph
+    matched_node_id: technique.hm_vs_island_area_phase_diagram
+    context_snippet: section Numerically evaluating iterated integrals sec:app_iterated_integrals
+      In this appendix we review the numerical integration of the iterated integrals
+      of the form of Eq. ( eq:iterated_int_symbol ) and highlight s...
+    matched_node:
+      id: technique.hm_vs_island_area_phase_diagram
+      label: Area-difference phase diagram for HM versus island surfaces
+      summary: Determine the entanglement phase by numerically evaluating the UV-finite
+        area difference between Hartman-Maldacena and brane-anchored island surfaces
+        across the parameter space of boundary interval size and brane angle. Use
+        when multiple candidate RT surfaces compete.
+      keyword_hits: 18
+      keyword_score: 122.0811
+      matched_keywords:
+      - area
+      - diagram
+      - difference
+      - hm
+      - island
+      - phase
+      - surfaces
+      - versus
+      - area difference
+      - area difference phase
+      - difference phase
+      - difference phase diagram
+      - hm versus
+      - hm versus island
+      - island surfaces
+      - phase diagram
+      - versus island
+      - versus island surfaces
+    source: section_graph_match
+  - concept: Born-matched boundary conditions for singular SIDM potentials
+    classification: in_graph
+    matched_node_id: technique.born_matched_boundary_conditions
+    context_snippet: section Numerically evaluating iterated integrals sec:app_iterated_integrals
+      In this appendix we review the numerical integration of the iterated integrals
+      of the form of Eq. ( eq:iterated_int_symbol ) and highlight s...
+    matched_node:
+      id: technique.born_matched_boundary_conditions
+      label: Born-matched boundary conditions for singular SIDM potentials
+      summary: For singular short-distance potentials, fix the ultraviolet boundary
+        condition of the Schrodinger problem by matching to the Born amplitude from
+        the underlying EFT. Use this when the naive potential problem is ill-defined
+        without UV input.
+      keyword_hits: 15
+      keyword_score: 99.654
+      matched_keywords:
+      - born
+      - boundary
+      - conditions
+      - matched
+      - potentials
+      - sidm
+      - singular
+      - born matched
+      - born matched boundary
+      - boundary conditions
+      - matched boundary
+      - matched boundary conditions
+      - sidm potentials
+      - singular sidm
+      - singular sidm potentials
+    source: section_graph_match
+  - concept: Bottom-Up Complement to the Landau Bootstrap
+    classification: in_graph
+    matched_node_id: technique.landau_bootstrap_complement
+    context_snippet: section Conclusions sec:conclusion Recent years have witnessed
+      an explosion in our ability to compute Feynman integrals both numerically and
+      analytically. On the numeric side, public computer programs such as AMFlow c...
+    matched_node:
+      id: technique.landau_bootstrap_complement
+      label: Bottom-Up Complement to the Landau Bootstrap
+      summary: Hybrid reconstruction workflow that uses Landau-bootstrap singularity
+        analysis to define the function space and analytic regression to determine
+        the rational coefficients.
+      keyword_hits: 9
+      keyword_score: 65.2446
+      matched_keywords:
+      - bootstrap
+      - bottom
+      - complement
+      - landau
+      - up
+      - bottom up
+      - bottom up complement
+      - landau bootstrap
+      - up complement
+    source: section_graph_match
+  - concept: Box-versus-tree scaling test for Sommerfeld enhancement
+    classification: in_graph
+    matched_node_id: technique.box_vs_tree_sommerfeld_diagnosis
+    context_snippet: section Examples sec:simple_integrals In this section we will
+      demonstrate the analytic regression of Feynman amplitudes through a series of
+      examples of increasing complexity. We begin with the one-loop triangle with
+      t...
+    matched_node:
+      id: technique.box_vs_tree_sommerfeld_diagnosis
+      label: Box-versus-tree scaling test for Sommerfeld enhancement
+      summary: Compare tree and box amplitudes to diagnose when ladder diagrams invalidate
+        the Born approximation and a full wavefunction treatment is required. This
+        gives a practical criterion for when Sommerfeld enhancement has become nonperturbative.
+      keyword_hits: 15
+      keyword_score: 93.052
+      matched_keywords:
+      - box
+      - enhancement
+      - scaling
+      - sommerfeld
+      - test
+      - tree
+      - versus
+      - box versus
+      - box versus tree
+      - scaling test
+      - sommerfeld enhancement
+      - tree scaling
+      - tree scaling test
+      - versus tree
+      - versus tree scaling
+    source: section_graph_match
+  - concept: Clustering-Algorithm Independence of Learned Jet Probabilities
+    classification: in_graph
+    matched_node_id: technique.clustering_algorithm_independence
+    context_snippet: section Lattice reduction app:lll_details In this appendix, we
+      provide a brief introduction to lattice reduction. We refer to Refs. Nguyen:2009b,Simon:2010
+      for a more detailed exposition. Lattice reduction has many pr...
+    matched_node:
+      id: technique.clustering_algorithm_independence
+      label: Clustering-Algorithm Independence of Learned Jet Probabilities
+      summary: Consistency method showing that JUNIPR's learned probability over final-state
+        momenta is independent of the clustering tree used to expose branchings, so
+        different algorithms change interpretability but not the physical distribution.
+      keyword_hits: 12
+      keyword_score: 83.081
+      matched_keywords:
+      - algorithm
+      - clustering
+      - independence
+      - jet
+      - learned
+      - probabilities
+      - algorithm independence
+      - clustering algorithm
+      - clustering algorithm independence
+      - jet probabilities
+      - learned jet
+      - learned jet probabilities
+    source: section_graph_match
+  - concept: Computing and from Feynman integrals
+    classification: in_graph
+    matched_node_id: qft.loop_momentum_integration_structure
+    context_snippet: section Computing and from Feynman integrals sec:fit_Feyn_int
+      As explained in the introduction, we are interested in solving Eq. eq:problem_statement
+      where the function to fit is a Feynman integral. In this section we...
+    matched_node:
+      id: qft.loop_momentum_integration_structure
+      label: Loop-momentum integration structure
+      summary: Organization of a Feynman integral as a coupled loop-momentum integration
+        problem whose singular behavior depends on the geometry of denominators and
+        stationary directions.
+      keyword_hits: 3
+      keyword_score: 15.7088
+      matched_keywords:
+      - feynman
+      - integral
+      - feynman integral
+    source: section_title
+  - concept: Entropy Threshold for Semiclassical Black Holes
+    classification: in_graph
+    matched_node_id: technique.black_hole_entropy_threshold
+    context_snippet: section Analytic regression of sec:lll_algo With a procedure
+      to compute and to digits of precision at points we now turn to the analytic
+      regression of the coefficients in Eq. eq:problem_statement . We discuss the
+      naiv...
+    matched_node:
+      id: technique.black_hole_entropy_threshold
+      label: Entropy Threshold for Semiclassical Black Holes
+      summary: Use black-hole entropy and expected decay multiplicity, not just geometric
+        production cross section, to decide when a collider object can be treated
+        as a thermal black hole. This tells you when Hawking-style multiparticle signatures
+        are trustworthy and when they are not.
+      keyword_hits: 9
+      keyword_score: 57.6822
+      matched_keywords:
+      - black
+      - entropy
+      - holes
+      - semiclassical
+      - threshold
+      - black holes
+      - entropy threshold
+      - semiclassical black
+      - semiclassical black holes
+    source: section_graph_match
+  - concept: 'Example : Master integrals for two loop four point diagram \label{sec:masters}'
+    classification: in_graph
+    matched_node_id: technique.cut_diagram_ibp_de
+    context_snippet: 'r 25 trials, with the shaded band corresponding to the standard
+      deviation. fig:1lfitresult end figure subsection Example 2: Master integrals
+      for two-loop four-point diagram sec:masters Next, we consider a set of Feynm...'
+    matched_node:
+      id: technique.cut_diagram_ibp_de
+      label: Cut-diagram IBP reduction with differential equations
+      summary: Cross-section computation workflow that applies IBP reduction and differential
+        equations directly to cut diagrams, shrinking the master-integral system relative
+        to the full forward amplitude.
+      keyword_hits: 4
+      keyword_score: 22.0036
+      matched_keywords:
+      - diagram
+      - integral
+      - master
+      - master integral
+    source: subsection_title
+  - concept: Feynman propagator
+    classification: in_graph
+    matched_node_id: qft.feynman_propagator
+    context_snippet: section Computing and from Feynman integrals sec:fit_Feyn_int
+      As explained in the introduction, we are interested in solving Eq. eq:problem_statement
+      where the function to fit is a Feynman integral. In this section we...
+    matched_node:
+      id: qft.feynman_propagator
+      label: Feynman propagator
+      summary: Causal two-point Green function with the standard i epsilon prescription,
+        usually written as a time-ordered vacuum correlator.
+      keyword_hits: 3
+      keyword_score: 17.3568
+      matched_keywords:
+      - feynman
+      - propagator
+      - feynman propagator
+    source: section_graph_match
+  - concept: Generalized Bender-Wu recursion for charged QNM equations
+    classification: in_graph
+    matched_node_id: technique.bender_wu_recursion_for_charged_qnms
+    context_snippet: section Scaling behavior of lattice reduction sec:lll_limitations
+      In Section sec:simple_integrals we presented a series of Feynman integrals which
+      we were able to compute entirely by analytic regression. We found that...
+    matched_node:
+      id: technique.bender_wu_recursion_for_charged_qnms
+      label: Generalized Bender-Wu recursion for charged QNM equations
+      summary: Extend Bender-Wu recursion to radial equations for charged fields,
+        including terms linear in the frequency, and expand around the relevant critical
+        point of the effective potential. Use this to generate high-order perturbative
+        series that would be infeasible by hand.
+      keyword_hits: 15
+      keyword_score: 110.3692
+      matched_keywords:
+      - bender
+      - charged
+      - equations
+      - generalized
+      - qnm
+      - recursion
+      - wu
+      - bender wu
+      - bender wu recursion
+      - charged qnm
+      - charged qnm equations
+      - generalized bender
+      - generalized bender wu
+      - qnm equations
+      - wu recursion
+    source: section_graph_match
+  - concept: Generic sector decomposition
+    classification: in_graph
+    matched_node_id: technique.generic_sector_decomposition
+    context_snippet: section Computing and from Feynman integrals sec:fit_Feyn_int
+      As explained in the introduction, we are interested in solving Eq. eq:problem_statement
+      where the function to fit is a Feynman integral. In this section we...
+    matched_node:
+      id: technique.generic_sector_decomposition
+      label: Generic sector decomposition
+      summary: Recursive parameter-space partitioning method that isolates overlapping
+        endpoint singularities and exposes epsilon poles for analytic expansion or
+        numerical integration.
+      keyword_hits: 6
+      keyword_score: 33.211
+      matched_keywords:
+      - decomposition
+      - generic
+      - sector
+      - generic sector
+      - generic sector decomposition
+      - sector decomposition
+    source: section_graph_match
+  - concept: GL(N,Z) lattice-basis reduction for axion mixing
+    classification: in_graph
+    matched_node_id: technique.lattice_basis_axion_reduction
+    context_snippet: section Lattice reduction app:lll_details In this appendix, we
+      provide a brief introduction to lattice reduction. We refer to Refs. Nguyen:2009b,Simon:2010
+      for a more detailed exposition. Lattice reduction has many pr...
+    matched_node:
+      id: technique.lattice_basis_axion_reduction
+      label: GL(N,Z) lattice-basis reduction for axion mixing
+      summary: Choose an integer lattice basis in axion field space before diagonalizing
+        kinetic or mass mixing, so compactness and periodic identifications remain
+        manifest. This is the key move whenever axion periodicity matters as much
+        as the propagating eigenstates.
+      keyword_hits: 10
+      keyword_score: 57.157
+      matched_keywords:
+      - axion
+      - basis
+      - gl
+      - lattice
+      - mixing
+      - reduction
+      - axion mixing
+      - basis reduction
+      - lattice basis
+      - lattice basis reduction
+    source: section_graph_match
+  - concept: Gram-Schmidt construction of weight-space bases
+    classification: in_graph
+    matched_node_id: technique.gram_schmidt_weight_basis_construction
+    context_snippet: section Lattice reduction app:lll_details In this appendix, we
+      provide a brief introduction to lattice reduction. We refer to Refs. Nguyen:2009b,Simon:2010
+      for a more detailed exposition. Lattice reduction has many pr...
+    matched_node:
+      id: technique.gram_schmidt_weight_basis_construction
+      label: Gram-Schmidt construction of weight-space bases
+      summary: Basis-construction method that uses Gram-Schmidt orthonormalization
+        inside degenerate weight spaces to turn algebraically generated states into
+        explicit orthonormal representation bases.
+      keyword_hits: 12
+      keyword_score: 79.5539
+      matched_keywords:
+      - bases
+      - construction
+      - gram
+      - schmidt
+      - space
+      - weight
+      - gram schmidt
+      - gram schmidt construction
+      - schmidt construction
+      - space bases
+      - weight space
+      - weight space bases
+    source: section_graph_match
+  - concept: Lattice Reduction for Analytic Regression of Feynman Integrals
+    classification: in_graph
+    matched_node_id: technique.lattice_reduction_analytic_regression
+    context_snippet: section Conclusions sec:conclusion Recent years have witnessed
+      an explosion in our ability to compute Feynman integrals both numerically and
+      analytically. On the numeric side, public computer programs such as AMFlow c...
+    matched_node:
+      id: technique.lattice_reduction_analytic_regression
+      label: Lattice Reduction for Analytic Regression of Feynman Integrals
+      summary: Analytic-regression method that combines high-precision numerical integral
+        evaluations with integer-lattice reduction to recover exact rational coefficients
+        in a known function basis.
+      keyword_hits: 11
+      keyword_score: 64.5794
+      matched_keywords:
+      - analytic
+      - feynman
+      - integral
+      - lattice
+      - reduction
+      - regression
+      - analytic regression
+      - lattice reduction
+      - lattice reduction analytic
+      - reduction analytic
+      - reduction analytic regression
+    source: section_graph_match
+  - concept: Mandelstam variables
+    classification: in_graph
+    matched_node_id: qft.mandelstam_variables
+    context_snippet: section Computing and from Feynman integrals sec:fit_Feyn_int
+      As explained in the introduction, we are interested in solving Eq. eq:problem_statement
+      where the function to fit is a Feynman integral. In this section we...
+    matched_node:
+      id: qft.mandelstam_variables
+      label: Mandelstam variables
+      summary: Lorentz-invariant combinations of external momenta, usually written
+        as s, t, and u.
+      keyword_hits: 3
+      keyword_score: 20.5831
+      matched_keywords:
+      - mandelstam
+      - variables
+      - mandelstam variables
+    source: section_graph_match
+  - concept: Mass-suppressed violation of axion coupling quantization
+    classification: in_graph
+    matched_node_id: technique.mass_suppressed_quantization_violation
+    context_snippet: section The symbol formalism sec:symbols In this appendix, we
+      review the Generalized polylogarithms (GPLs) and the symbol formalism. The GPL
+      is defined iteratively by begin equation eq:gpl_def G(a_1, cdots a_n; x) equ...
+    matched_node:
+      id: technique.mass_suppressed_quantization_violation
+      label: Mass-suppressed violation of axion coupling quantization
+      summary: Use the light-axion equation of motion to show that non-quantized couplings
+        can only appear in terms proportional to the light axion mass squared. Apply
+        this when a nominally compact axion is slightly massive and you need the leading
+        controlled departure from exact quantization.
+      keyword_hits: 12
+      keyword_score: 63.8184
+      matched_keywords:
+      - axion
+      - coupling
+      - mass
+      - quantization
+      - suppressed
+      - violation
+      - axion coupling
+      - axion coupling quantization
+      - coupling quantization
+      - mass suppressed
+      - mass suppressed violation
+      - suppressed violation
+    source: section_graph_match
+  - concept: No-1/m_b correction diagnosis in inclusive spectra
+    classification: in_graph
+    matched_node_id: technique.no_one_over_m_correction_in_inclusive_spectra
+    context_snippet: section Lattice reduction app:lll_details In this appendix, we
+      provide a brief introduction to lattice reduction. We refer to Refs. Nguyen:2009b,Simon:2010
+      for a more detailed exposition. Lattice reduction has many pr...
+    matched_node:
+      id: technique.no_one_over_m_correction_in_inclusive_spectra
+      label: No-1/m_b correction diagnosis in inclusive spectra
+      summary: Use heavy-quark symmetry and the equation of motion to show that the
+        first nonperturbative corrections to inclusive spectra start at 1/m_b^2, not
+        1/m_b. This is the conceptual unlock that rules out many naive bound-state
+        corrections.
+      keyword_hits: 7
+      keyword_score: 41.0744
+      matched_keywords:
+      - correction
+      - diagnosis
+      - inclusive
+      - 'no'
+      - spectra
+      - correction diagnosis
+      - inclusive spectra
+    source: section_graph_match
+  - concept: numerical evaluation
+    classification: in_graph
+    matched_node_id: technique.numerical_in_in_with_wick_rotated_contours
+    context_snippet: eq:zform end equation In this context, what we would like to
+      achieve is the regression of the exact coefficients given the basis functions
+      on the right as well as their numerical evaluation and the evaluation of at
+      a...
+    matched_node:
+      id: technique.numerical_in_in_with_wick_rotated_contours
+      label: Numerical In-In with Wick-Rotated Contours
+      summary: Rotate the time integration contour and factor out rapidly oscillating
+        phases to stabilize direct numerical evaluation of the bispectrum. This is
+        the computational move that makes the full time-dependent-mass signal tractable.
+      keyword_hits: 2
+      keyword_score: 13.5031
+      matched_keywords:
+      - numerical
+      - numerical evaluation
+    source: prose_ngram
+  - concept: Numerical fit to the large-scale power spectrum
+    classification: in_graph
+    matched_node_id: technique.numerical_fit_to_large_scale_power_spectrum
+    context_snippet: section Conclusions sec:conclusion Recent years have witnessed
+      an explosion in our ability to compute Feynman integrals both numerically and
+      analytically. On the numeric side, public computer programs such as AMFlow c...
+    matched_node:
+      id: technique.numerical_fit_to_large_scale_power_spectrum
+      label: Numerical fit to the large-scale power spectrum
+      summary: Compute the coupled perturbations numerically and then fit a simple
+        analytic form to the modified power spectrum for CMB use. Use it when the
+        exact dynamics are numerical but data analysis needs a compact parameterization.
+      keyword_hits: 12
+      keyword_score: 63.634
+      matched_keywords:
+      - fit
+      - large
+      - numerical
+      - power
+      - scale
+      - spectrum
+      - large scale
+      - large scale power
+      - numerical fit
+      - power spectrum
+      - scale power
+      - scale power spectrum
+    source: section_graph_match
+  - concept: Precision scaling with number of points and basis functions
+    classification: in_graph
+    matched_node_id: technique.casimir_scaling_soft_anomalous_dim
+    context_snippet: precise, and discuss more generally the scaling behavior and
+      possible limitations of the lattice reduction approach. subsection Precision
+      scaling with number of points and basis functions sec:p_d_scaling To begin,
+      let...
+    matched_node:
+      id: technique.casimir_scaling_soft_anomalous_dim
+      label: Casimir scaling to relate soft functions in different partonic channels
+      summary: Method that combines Casimir scaling with renormalization-group consistency
+        to infer soft anomalous dimensions across related partonic channels, reducing
+        the number of independent multi-loop soft-function calculations.
+      keyword_hits: 3
+      keyword_score: 13.8059
+      matched_keywords:
+      - functions
+      - number
+      - scaling
+    source: subsection_title
+  - concept: Precision-Point Tradeoff in Analytic Fitting
+    classification: in_graph
+    matched_node_id: technique.precision_point_tradeoff
+    context_snippet: section Conclusions sec:conclusion Recent years have witnessed
+      an explosion in our ability to compute Feynman integrals both numerically and
+      analytically. On the numeric side, public computer programs such as AMFlow c...
+    matched_node:
+      id: technique.precision_point_tradeoff
+      label: Precision-Point Tradeoff in Analytic Fitting
+      summary: Numerical strategy that trades precision at a single point for evaluations
+        at many points, keeping the total information content high enough for lattice-based
+        analytic regression with much lower per-point precision.
+      keyword_hits: 9
+      keyword_score: 55.9514
+      matched_keywords:
+      - analytic
+      - fitting
+      - point
+      - precision
+      - tradeoff
+      - analytic fitting
+      - point tradeoff
+      - precision point
+      - precision point tradeoff
+    source: section_graph_match
+  - concept: Reduce the graviton propagator problem to a scalar Green function
+    classification: in_graph
+    matched_node_id: technique.scalar_to_graviton_propagator_reduction
+    context_snippet: section Computing and from Feynman integrals sec:fit_Feyn_int
+      As explained in the introduction, we are interested in solving Eq. eq:problem_statement
+      where the function to fit is a Feynman integral. In this section we...
+    matched_node:
+      id: technique.scalar_to_graviton_propagator_reduction
+      label: Reduce the graviton propagator problem to a scalar Green function
+      summary: First solve the scalar propagator in the warped brane background and
+        then express the graviton propagator in terms of it. This packages most of
+        the warped-space physics into a tractable Green-function problem with explicit
+        integral representations. Computing linearized gravitational fields and Newton-law
+        corrections in warped brane geometries.
+      keyword_hits: 12
+      keyword_score: 69.2956
+      matched_keywords:
+      - function
+      - graviton
+      - green
+      - propagator
+      - reduce
+      - scalar
+      - graviton propagator
+      - graviton propagator problem
+      - green function
+      - propagator problem
+      - scalar green
+      - scalar green function
+    source: section_graph_match
+  - concept: Reinforcement Learning for Identity Application Ordering
+    classification: in_graph
+    matched_node_id: technique.rl_identity_search
+    context_snippet: section The symbol formalism sec:symbols In this appendix, we
+      review the Generalized polylogarithms (GPLs) and the symbol formalism. The GPL
+      is defined iteratively by begin equation eq:gpl_def G(a_1, cdots a_n; x) equ...
+    matched_node:
+      id: technique.rl_identity_search
+      label: Reinforcement Learning for Identity Application Ordering
+      summary: Reinforcement-learning search strategy that learns the ordering of
+        dilogarithm functional identities needed to simplify polylogarithmic expressions.
+      keyword_hits: 9
+      keyword_score: 65.6955
+      matched_keywords:
+      - application
+      - identity
+      - learning
+      - ordering
+      - reinforcement
+      - application ordering
+      - identity application
+      - identity application ordering
+      - reinforcement learning
+    source: section_graph_match
+  - concept: Small-R universality of non-global logarithms
+    classification: in_graph
+    matched_node_id: technique.small_r_ngl_universality
+    context_snippet: section The symbol formalism sec:symbols In this appendix, we
+      review the Generalized polylogarithms (GPLs) and the symbol formalism. The GPL
+      is defined iteratively by begin equation eq:gpl_def G(a_1, cdots a_n; x) equ...
+    matched_node:
+      id: technique.small_r_ngl_universality
+      label: Small-R universality of non-global logarithms
+      summary: Small-R expansion that rewrites the full non-global contribution to
+        integrated jet thrust in terms of the hemisphere soft function, so narrow-jet
+        observables can reuse the known hemisphere functional form instead of requiring
+        a fresh non-global calculation.
+      keyword_hits: 8
+      keyword_score: 44.8692
+      matched_keywords:
+      - global
+      - logarithms
+      - non
+      - small
+      - universality
+      - global logarithms
+      - non global
+      - non global logarithms
+    source: section_graph_match
+  - concept: Symbol and coproduct techniques for iterated NGL integrals
+    classification: in_graph
+    matched_node_id: technique.symbol_coproduct_ngl_integration
+    context_snippet: section The symbol formalism sec:symbols In this appendix, we
+      review the Generalized polylogarithms (GPLs) and the symbol formalism. The GPL
+      is defined iteratively by begin equation eq:gpl_def G(a_1, cdots a_n; x) equ...
+    matched_node:
+      id: technique.symbol_coproduct_ngl_integration
+      label: Symbol and coproduct techniques for iterated NGL integrals
+      summary: Integration method that rewrites post-azimuthal non-global-logarithm
+        integrands as GPLs and then uses symbol and coproduct manipulations to place
+        them in canonical iterated-integral form for direct evaluation.
+      keyword_hits: 9
+      keyword_score: 67.1299
+      matched_keywords:
+      - coproduct
+      - integral
+      - iterated
+      - ngl
+      - symbol
+      - techniques
+      - coproduct techniques
+      - iterated ngl
+      - symbol coproduct
+    source: section_graph_match
+  - concept: Threshold-limit boundary conditions for master integrals
+    classification: in_graph
+    matched_node_id: technique.threshold_boundary_conditions
+    context_snippet: section Numerically evaluating iterated integrals sec:app_iterated_integrals
+      In this appendix we review the numerical integration of the iterated integrals
+      of the form of Eq. ( eq:iterated_int_symbol ) and highlight s...
+    matched_node:
+      id: technique.threshold_boundary_conditions
+      label: Threshold-limit boundary conditions for master integrals
+      summary: Boundary-condition method for master-integral differential equations
+        that takes the threshold limit where loop and phase-space factors simplify,
+        then uses rationalized variables to express the solution space in GPL form.
+      keyword_hits: 12
+      keyword_score: 67.7009
+      matched_keywords:
+      - boundary
+      - conditions
+      - integral
+      - limit
+      - master
+      - threshold
+      - boundary conditions
+      - limit boundary
+      - limit boundary conditions
+      - master integral
+      - threshold limit
+      - threshold limit boundary
+    source: section_graph_match
+  - concept: Treat tensors as SU(3) wave functions
+    classification: in_graph
+    matched_node_id: technique.tensor_wavefunction_interpretation
+    context_snippet: section Introduction Symbolic regression aims to provide a minimal,
+      but usually approximate, functional description of possibly noisy data. Such
+      descriptions can be enormously helpful in biology or astronomy, for exam...
+    matched_node:
+      id: technique.tensor_wavefunction_interpretation
+      label: Treat tensors as SU(3) wave functions
+      summary: Expand a state in a tensor-product basis and interpret the coefficients
+        as tensor components, exactly like a quantum-mechanical wave function in position
+        space. Generator action on the state then induces a concrete action on the
+        components.
+      keyword_hits: 7
+      keyword_score: 37.753
+      matched_keywords:
+      - functions
+      - su
+      - tensors
+      - treat
+      - wave
+      - treat tensors
+      - wave functions
+    source: section_graph_match
+  - concept: A simple example of LLL reduction
+    classification: gap
+    matched_node_id: null
+    context_snippet: is the L algorithm Nguyen:2009 which is default algorithm in
+      Mathematica and Fplll . subsection A simple example of LLL reduction sec:app_simple_example_lll
+      We consider the function given as a linear combination
+    related_graph_nodes: &id001
+    - id: technique.one_flavor_reduction_after_dual_dynamics
+      label: One-flavor reduction after dual dynamics
+      summary: Integrate out the masses induced by confinement or duality until the
+        remaining gauge factor is left with a one-flavor antisymmetric theory, whose
+        dynamical superpotential is known and directly reveals SUSY breaking. Use
+        it when a complicated product-group theory can be funneled into a simple universal
+        endpoint.
+      keyword_hits: 2
+      keyword_score: 9.6592
+      matched_keywords:
+      - reduction
+      - simple
+    source: subsection_title
+  - concept: alphabet two loop
+    classification: gap
+    matched_node_id: null
+    context_snippet: begin equation eq:alphabet_two_loop tilde A = left \ x, z, 1+x,
+      1-x, 1-z, x+z, 1+x z right \ \,. end equation
+    source: equation_label
+  - concept: alphabet two loop red
+    classification: gap
+    matched_node_id: null
+    context_snippet: begin equation eq:alphabet_two_loop_red tilde A _1 = \ x, 1+x,
+      1-x\ \,, end equation
+    source: equation_label
+  - concept: alphabet uv
+    classification: gap
+    matched_node_id: null
+    context_snippet: begin align eq:alphabet_uv nonumber tilde A = Big \ u, v, 1+u,
+      1+v, u+v, 1+u+v, frac beta _u-1 beta _u+1 , frac beta _v-1 beta _
+    source: equation_label
+  - concept: basis functions
+    classification: gap
+    matched_node_id: null
+    context_snippet: The problem we are concerned with is the decomposition of a multivariate
+      function in terms of known basis functions begin equation eq:problem_statement
+      f( x _j) = sum _ i=1 ^n c_i \, mathcal B _i( x _j) \,, end equati...
+    related_graph_nodes: &id002
+    - id: technique.passarino_veltman_reduction
+      label: Passarino-Veltman (PV) reduction
+      summary: Algebraic one-loop tensor-integral reduction that projects loop-momentum
+        numerators onto an external-momentum basis and rewrites the result in terms
+        of scalar coefficient functions.
+      keyword_hits: 2
+      keyword_score: 9.2935
+      matched_keywords:
+      - basis
+      - functions
+    - id: technique.tensor_wavefunction_interpretation
+      label: Treat tensors as SU(3) wave functions
+      summary: Expand a state in a tensor-product basis and interpret the coefficients
+        as tensor components, exactly like a quantum-mechanical wave function in position
+        space. Generator action on the state then induces a concrete action on the
+        components.
+      keyword_hits: 2
+      keyword_score: 9.2935
+      matched_keywords:
+      - basis
+      - functions
+    source: prose_ngram
+  - concept: Basis functions $\mathcal{B} i(\mathbf{x})$\label{sec:basis set}
+    classification: gap
+    matched_node_id: null
+    context_snippet: wever, for convenience, we will compute all phase-space points
+      in AMFlow directly in the following examples. subsection Basis functions sec:basis_set
+      Recovering the result of a Feynman integral without actually comput...
+    related_graph_nodes: &id003
+    - id: technique.cartan_subalgebra_and_weights
+      label: Cartan subalgebra and weights
+      summary: Choose a maximal commuting hermitian set of generators, diagonalize
+        them simultaneously, and label states by their real weight vectors; the number
+        of Cartan generators is the rank.
+      keyword_hits: 2
+      keyword_score: 11.5406
+      matched_keywords:
+      - label
+      - set
+    - id: technique.young_tableaux_labeling
+      label: Young tableaux as S_n labels
+      summary: Encode partitions of n with box diagrams whose column lengths track
+        cycle lengths, giving a common label set for conjugacy classes and irreducible
+        representations.
+      keyword_hits: 2
+      keyword_score: 11.5406
+      matched_keywords:
+      - label
+      - set
+    - id: technique.gamma_sv_effective_vertex_basis
+      label: General gamma-S-V and gamma-V-V effective-vertex basis
+      summary: Parameterize the inner loop by a small set of CP-even and CP-odd form
+        factors for gamma-S-V or gamma-V-V structures, keeping the internal particles
+        off shell. This is the mathematical basis that lets one plug in stops, charginos,
+        tops, or W bosons uniformly.
+      keyword_hits: 2
+      keyword_score: 10.1318
+      matched_keywords:
+      - basis
+      - set
+    source: subsection_title
+  - concept: basis ltriangle
+    classification: gap
+    matched_node_id: null
+    context_snippet: begin equation eq:basis2ltriangle tilde mathcal B ^ (1) = \ G(a_1,
+      a_2, a_3; x), pi G(a_4, a_5; x) , pi ^2 G(a_6;x), zeta _3, pi ^3\ cup til
+    source: equation_label
+  - concept: basis tower
+    classification: gap
+    matched_node_id: null
+    context_snippet: 'begin align eq:basis_tower text Weight-0: quad 1 notag text
+      Weight-1: quad G(a_1,x),\,\, color darkblue pi notag t'
+    source: equation_label
+  - concept: begin equation
+    classification: gap
+    matched_node_id: null
+    context_snippet: The problem we are concerned with is the decomposition of a multivariate
+      function in terms of known basis functions begin equation eq:problem_statement
+      f( x _j) = sum _ i=1 ^n c_i \, mathcal B _i( x _j) \,, end equati...
+    source: prose_ngram
+  - concept: begin equation eq
+    classification: gap
+    matched_node_id: null
+    context_snippet: The problem we are concerned with is the decomposition of a multivariate
+      function in terms of known basis functions begin equation eq:problem_statement
+      f( x _j) = sum _ i=1 ^n c_i \, mathcal B _i( x _j) \,, end equati...
+    source: prose_ngram
+  - concept: begin figure
+    classification: gap
+    matched_node_id: null
+    context_snippet: begin figure centering includegraphics [width= linewidth ] Figures/flowchart.pdf
+      caption To recover the analytic expression associated with a Feynman integral,
+      we proceed in two steps.
+    source: prose_ngram
+  - concept: begin figure centering
+    classification: gap
+    matched_node_id: null
+    context_snippet: begin figure centering includegraphics [width= linewidth ] Figures/flowchart.pdf
+      caption To recover the analytic expression associated with a Feynman integral,
+      we proceed in two steps.
+    source: prose_ngram
+  - concept: condition number
+    classification: gap
+    matched_node_id: null
+    context_snippet: To leading order Cheney:2007 begin equation frac \| Delta c\|
+      \|c\| \; approx \; kappa (M)\, Bigl ( frac \| Delta f\| \|f\| + frac \| Delta
+      M\| \|M\| Bigr )\,, eq:errorprop end equation where is a norm and is the cond...
+    source: prose_ngram
+  - concept: Constructing a set of basis functions
+    classification: gap
+    matched_node_id: null
+    context_snippet: aluation takes around 80 CPU-min on Intel Xeon Sapphire Rapids.
+      We set the precision of AMFlow to 30 digits. subsubsection Constructing a set
+      of basis functions To construct the basis functions we will take as startin...
+    related_graph_nodes: &id004
+    - id: technique.su3_multiplet_clebsch_gordan_decomposition
+      label: Decompose SU(3) multiplets with tensor methods
+      summary: Apply irreducible tensor projection to physically relevant products
+        such as 3 x 3 = 6 + 3bar, 3 x 3bar = 8 + 1, and 3 x 8 = 15 + 6bar + 3, while
+        simultaneously constructing the corresponding component wave functions.
+      keyword_hits: 2
+      keyword_score: 11.4907
+      matched_keywords:
+      - constructing
+      - functions
+    - id: technique.gamma_sv_effective_vertex_basis
+      label: General gamma-S-V and gamma-V-V effective-vertex basis
+      summary: Parameterize the inner loop by a small set of CP-even and CP-odd form
+        factors for gamma-S-V or gamma-V-V structures, keeping the internal particles
+        off shell. This is the mathematical basis that lets one plug in stops, charginos,
+        tops, or W bosons uniformly.
+      keyword_hits: 2
+      keyword_score: 10.1318
+      matched_keywords:
+      - basis
+      - set
+    - id: technique.passarino_veltman_reduction
+      label: Passarino-Veltman (PV) reduction
+      summary: Algebraic one-loop tensor-integral reduction that projects loop-momentum
+        numerators onto an external-momentum basis and rewrites the result in terms
+        of scalar coefficient functions.
+      keyword_hits: 2
+      keyword_score: 9.2935
+      matched_keywords:
+      - basis
+      - functions
+    source: subsection_title
+  - concept: def loop
+    classification: gap
+    matched_node_id: null
+    context_snippet: begin equation eq:def_loop f(p_k) = e^ L epsilon gamma _E int
+      prod _ i=1 ^ L frac d^d ell _i i pi ^ d/2 frac mathcal P ( ell _1 cdot ell _2,
+      c
+    source: equation_label
+  - concept: digits precision
+    classification: gap
+    matched_node_id: null
+    context_snippet: However, if and are only known numerically to a minimum precision
+      of digits, then inverting will not give the exact result and in general the
+      produced will have much fewer than digits of precision.
+    source: prose_ngram
+  - concept: end equation
+    classification: gap
+    matched_node_id: null
+    context_snippet: The problem we are concerned with is the decomposition of a multivariate
+      function in terms of known basis functions begin equation eq:problem_statement
+      f( x _j) = sum _ i=1 ^n c_i \, mathcal B _i( x _j) \,, end equati...
+    related_graph_nodes: &id005
+    - id: technique.fokker_planck_waterfall_statistics
+      label: Fokker-Planck treatment of the waterfall field
+      summary: The light waterfall field near the transition is treated stochastically
+        with a Fokker-Planck equation before matching onto classical rolling. This
+        is the right mathematical tool when quantum diffusion dominates the end of
+        inflation.
+      keyword_hits: 2
+      keyword_score: 10.6998
+      matched_keywords:
+      - end
+      - equation
+    source: prose_ngram
+  - concept: end figure
+    classification: gap
+    matched_node_id: null
+    context_snippet: fig:flowchart end figure The outline of this paper is as follows.
+    source: prose_ngram
+  - concept: equation eq
+    classification: gap
+    matched_node_id: null
+    context_snippet: The problem we are concerned with is the decomposition of a multivariate
+      function in terms of known basis functions begin equation eq:problem_statement
+      f( x _j) = sum _ i=1 ^n c_i \, mathcal B _i( x _j) \,, end equati...
+    source: prose_ngram
+  - concept: 'Example : The one loop triangle'
+    classification: gap
+    matched_node_id: null
+    context_snippet: 'of the C++ implementation of lattice reduction, Fplll fplll
+      , to speed up the analytic regression. subsection Example 1: The one-loop triangle
+      sec:one_loop_example unitlength 1cm The 1-loop massless triangle scalar Fe...'
+    related_graph_nodes: &id006
+    - id: technique.triangle_diagram_anomaly_calculation
+      label: Compute the anomaly directly from triangle diagrams
+      summary: Evaluate the one-loop three-current triangle graphs in momentum space
+        and track the current divergences explicitly.
+      keyword_hits: 2
+      keyword_score: 11.1976
+      matched_keywords:
+      - loop
+      - triangle
+    source: subsection_title
+  - concept: 'Example : The two loop outer mass double box'
+    classification: gap
+    matched_node_id: null
+    context_snippet: '00 points sampled and the computation cost becomes expensive.
+      tab:triangle_ladder_time end table subsection Example 4: The two-loop outer-mass
+      double box sec:dbox For a final example, we consider the outer-mass double...'
+    related_graph_nodes: &id007
+    - id: technique.barr_zee_inner_outer_factorization
+      label: Inner-loop and outer-loop factorization of Barr-Zee EDMs
+      summary: Split the two-loop EDM problem into an inner loop that generates an
+        off-shell effective vertex and an outer loop that attaches it to the light
+        fermion. This isolates the reusable core of a large class of EDM calculations.
+      keyword_hits: 2
+      keyword_score: 10.186
+      matched_keywords:
+      - loop
+      - outer
+    - id: technique.oblique_nonoblique_separation
+      label: Separation of oblique and non-oblique corrections
+      summary: One-loop amplitudes are decomposed into universal coupling shifts and
+        process-specific vertex or box effects so the extracted supersymmetric couplings
+        are not contaminated by nonuniversal pieces. This is the mathematical bookkeeping
+        required for a meaningful super-oblique analysis.
+      keyword_hits: 2
+      keyword_score: 10.099
+      matched_keywords:
+      - box
+      - loop
+    - id: technique.polar_expansion_nonglobal_soft
+      label: Polar Expansion of 2D Hemisphere Soft Function
+      summary: Method that expands the exact two-loop dihemisphere soft function around
+        the near-symmetric configuration to separate global logs, non-global double
+        logs, and non-global single-log pieces for practical N3LL use.
+      keyword_hits: 2
+      keyword_score: 9.5394
+      matched_keywords:
+      - double
+      - loop
+    source: subsection_title
+  - concept: f lll red
+    classification: gap
+    matched_node_id: null
+    context_snippet: n align 0 = f(x_1) - G(0,1;x_1) + G(1,-1;x_1) -1 = 10^2 left
+      [f(x_2) - G(0,1;x_2) + G(1,-1;x_2) right ] eq:f2_lll_red \,, end align
+    source: equation_label
+  - concept: figure centering
+    classification: gap
+    matched_node_id: null
+    context_snippet: begin figure centering includegraphics [width= linewidth ] Figures/flowchart.pdf
+      caption To recover the analytic expression associated with a Feynman integral,
+      we proceed in two steps.
+    source: prose_ngram
+  - concept: Function evaluation
+    classification: gap
+    matched_node_id: null
+    context_snippet: e necessary for the fitting procedure to be practical. The tradeoff
+      is shown in Fig. fig:illustration_bootstrap . subsubsection Function evaluation
+      The numerical evaluation of is done in AMFlow with BLADE as the IBP r...
+    source: subsection_title
+  - concept: gpl def
+    classification: gap
+    matched_node_id: null
+    context_snippet: begin equation eq:gpl_def G(a_1, cdots a_n; x) equiv int _0^x
+      frac dt t-a_1 G(a_2, cdots a_n; t)\,, end equation
+    source: equation_label
+  - concept: includegraphics width
+    classification: gap
+    matched_node_id: null
+    context_snippet: begin figure centering includegraphics [width= linewidth ] Figures/flowchart.pdf
+      caption To recover the analytic expression associated with a Feynman integral,
+      we proceed in two steps.
+    source: prose_ngram
+  - concept: lin rel u
+    classification: gap
+    matched_node_id: null
+    context_snippet: begin equation eq:lin_rel_u1 u _1 = sum _ i=1 ^ n+1 \, u_ p+i
+      v _i \,. end equation
+    source: equation_label
+  - concept: mat lll
+    classification: gap
+    matched_node_id: null
+    context_snippet: begin equation eq:mat_lll M= text round 10^s left ( begin array
+      c|c f( x_1 ) cdots f( x_p ) multirow 4 * phanto
+    source: equation_label
+  - concept: matrix inversion
+    classification: gap
+    matched_node_id: null
+    context_snippet: Section sec:lll_algo discusses the matrix inversion and lattice
+      reduction approaches to module B.
+    source: prose_ngram
+  - concept: Matrix inversion \label{sec:mi}
+    classification: gap
+    matched_node_id: null
+    context_snippet: attice reduction. Further analysis of the lattice reduction approach
+      is provided in Section sec:lll_limitations . subsection Matrix inversion sec:mi
+      The most basic way to determine is by inverting the matrix to get $...
+    source: subsection_title
+  - concept: Notation and methods
+    classification: gap
+    matched_node_id: null
+    context_snippet: or two-loop corrections to the calculation of vector boson pair
+      production and are all expressible in terms of GPLs. subsubsection Notation
+      and methods sec:two_loops_methods For the diagrams in Eq. fig:twoloop_fourpoi...
+    source: subsection_title
+  - concept: number digits
+    classification: gap
+    matched_node_id: null
+    context_snippet: Naively, there is the same information in digits for a single
+      number as digits in numbers, so we can evaluate the integral over 100 points
+      with 100 digits instead of 1 point with 10,000 digits.
+    source: prose_ngram
+  - concept: number points
+    classification: gap
+    matched_node_id: null
+    context_snippet: subsection Lattice reduction Lattice reduction offers the advantage
+      over matrix inversion of being able to both exploit that the are rational numbers
+      and to vary the number of points used for the regression.
+    source: prose_ngram
+  - concept: Numerical evaluation of $f(\bx)$
+    classification: gap
+    matched_node_id: null
+    context_snippet: il, namely how these integrals can be computed and an appropriate
+      basis determined and evaluated numerically as well. subsection Numerical evaluation
+      of Feynman integrals are one of the most important objects appearin...
+    related_graph_nodes: &id008
+    - id: technique.numerical_in_in_with_wick_rotated_contours
+      label: Numerical In-In with Wick-Rotated Contours
+      summary: Rotate the time integration contour and factor out rapidly oscillating
+        phases to stabilize direct numerical evaluation of the bispectrum. This is
+        the computational move that makes the full time-dependent-mass signal tractable.
+      keyword_hits: 2
+      keyword_score: 13.5031
+      matched_keywords:
+      - numerical
+      - numerical evaluation
+    source: subsection_title
+  - concept: Optimizing point selection
+    classification: gap
+    matched_node_id: null
+    context_snippet: r, a useful rule of thumb from this analysis is that one should
+      not take points too close together or too far apart. subsection Optimizing point
+      selection We have seen that lattice reduction allows for a tradeoff betw...
+    source: subsection_title
+  - concept: problem statement
+    classification: gap
+    matched_node_id: null
+    context_snippet: begin equation eq:problem_statement f( x _j) = sum _ i=1 ^n c_i
+      \, mathcal B _i( x _j) \,, end equation
+    source: equation_label
+  - concept: section sec
+    classification: gap
+    matched_node_id: null
+    context_snippet: This example is discussed in Section sec:ladders .
+    source: prose_ngram
+  - concept: Summary of practical lessons
+    classification: gap
+    matched_node_id: null
+    context_snippet: rsion, lattice reduction and PLSQ) are not so easy to parallelize
+      although algorithmic improvements are possible. subsection Summary of practical
+      lessons We have explored in this section tradeoffs among different anal...
+    source: subsection_title
+  - concept: symbol weight
+    classification: gap
+    matched_node_id: null
+    context_snippet: begin equation eq:symbol_weight4 mathcal S = sum _ i=1 ^ | tilde
+      A | c_ i_1,i_2,i_3,i_4 \, L_ i_1 otimes L_ i_2 otimes L_ i_3 otimes L_ i
+    related_graph_nodes: &id009
+    - id: technique.landau_symbol_constraints
+      label: Landau-equation constraints on the symbol of Feynman integrals
+      summary: Constraint method relating Landau exponents to the entry position of
+        vanishing symbol letters, thereby bounding symbol structure and transcendental
+        weight.
+      keyword_hits: 2
+      keyword_score: 11.2686
+      matched_keywords:
+      - symbol
+      - weight
+    source: equation_label
+  - concept: The symbol formalism
+    classification: gap
+    matched_node_id: null
+    context_snippet: section The symbol formalism sec:symbols In this appendix, we
+      review the Generalized polylogarithms (GPLs) and the symbol formalism. The GPL
+      is defined iteratively by begin equation eq:gpl_def G(a_1, cdots a_n; x) equ...
+    source: section_title
+  - concept: we also
+    classification: gap
+    matched_node_id: null
+    context_snippet: We also discuss how one can use public tools to construct a basis
+      in a semi-automated way.
+    source: prose_ngram
+  - concept: we can
+    classification: gap
+    matched_node_id: null
+    context_snippet: If and can be evaluated exactly at points then we can simply
+      solve for by inverting the matrix .
+    source: prose_ngram
+  - concept: we have
+    classification: gap
+    matched_node_id: null
+    context_snippet: For example, suppose we have an integral like begin equation
+      f= - int _0^1 du int _0^1 dv frac log (1-u v)+v log (1-u) u v = frac pi ^2 6
+      + zeta _3 \,.
+    source: prose_ngram
+  - concept: we will
+    classification: gap
+    matched_node_id: null
+    context_snippet: In this paper we will show that, for the particular case of the
+      computation of Feynman integrals where the space of functions is known one can
+      often determine the answer exactly.
+    source: prose_ngram
+  gaps:
+  - concept: A simple example of LLL reduction
+    why_needed: The paper relies on A simple example of LLL reduction in subsection
+      title context without pausing to teach it. Readers need that prerequisite to
+      follow the local argument.
+    suggested_explanation: Briefly explain A simple example of LLL reduction before
+      it is used, and connect it to One-flavor reduction after dual dynamics. Integrate
+      out the masses induced by confinement or duality until the remaining gauge factor
+      is left with a one-flavor antisymmetric theory, whose dynamical superpotential
+      is known and directly reveals SUSY breaking. Use it when a complicated product-group
+      theory can be funneled into a simple universal endpoint.
+    context_snippet: is the L algorithm Nguyen:2009 which is default algorithm in
+      Mathematica and Fplll . subsection A simple example of LLL reduction sec:app_simple_example_lll
+      We consider the function given as a linear combination
+    related_graph_nodes: *id001
+  - concept: alphabet two loop
+    why_needed: The paper relies on alphabet two loop in equation label context without
+      pausing to teach it. Readers need that prerequisite to follow the local argument.
+    suggested_explanation: Briefly explain alphabet two loop before it is used, and
+      connect it to nearby prerequisites in the graph.
+    context_snippet: begin equation eq:alphabet_two_loop tilde A = left \ x, z, 1+x,
+      1-x, 1-z, x+z, 1+x z right \ \,. end equation
+    related_graph_nodes: []
+  - concept: alphabet two loop red
+    why_needed: The paper relies on alphabet two loop red in equation label context
+      without pausing to teach it. Readers need that prerequisite to follow the local
+      argument.
+    suggested_explanation: Briefly explain alphabet two loop red before it is used,
+      and connect it to nearby prerequisites in the graph.
+    context_snippet: begin equation eq:alphabet_two_loop_red tilde A _1 = \ x, 1+x,
+      1-x\ \,, end equation
+    related_graph_nodes: []
+  - concept: alphabet uv
+    why_needed: The paper relies on alphabet uv in equation label context without
+      pausing to teach it. Readers need that prerequisite to follow the local argument.
+    suggested_explanation: Briefly explain alphabet uv before it is used, and connect
+      it to nearby prerequisites in the graph.
+    context_snippet: begin align eq:alphabet_uv nonumber tilde A = Big \ u, v, 1+u,
+      1+v, u+v, 1+u+v, frac beta _u-1 beta _u+1 , frac beta _v-1 beta _
+    related_graph_nodes: []
+  - concept: basis functions
+    why_needed: The paper relies on basis functions in prose ngram context without
+      pausing to teach it. Readers need that prerequisite to follow the local argument.
+    suggested_explanation: Briefly explain basis functions before it is used, and
+      connect it to Passarino-Veltman (PV) reduction, Treat tensors as SU(3) wave
+      functions. Algebraic one-loop tensor-integral reduction that projects loop-momentum
+      numerators onto an external-momentum basis and rewrites the result in terms
+      of scalar coefficient functions. Expand a state in a tensor-product basis and
+      interpret the coefficients as tensor components, exactly like a quantum-mechanical
+      wave function in position space. Generator action on the state then induces
+      a concrete action on the components.
+    context_snippet: The problem we are concerned with is the decomposition of a multivariate
+      function in terms of known basis functions begin equation eq:problem_statement
+      f( x _j) = sum _ i=1 ^n c_i \, mathcal B _i( x _j) \,, end equati...
+    related_graph_nodes: *id002
+  - concept: Basis functions $\mathcal{B} i(\mathbf{x})$\label{sec:basis set}
+    why_needed: The paper relies on Basis functions $\mathcal{B} i(\mathbf{x})$\label{sec:basis
+      set} in subsection title context without pausing to teach it. Readers need that
+      prerequisite to follow the local argument.
+    suggested_explanation: Briefly explain Basis functions $\mathcal{B} i(\mathbf{x})$\label{sec:basis
+      set} before it is used, and connect it to Cartan subalgebra and weights, Young
+      tableaux as S_n labels, General gamma-S-V and gamma-V-V effective-vertex basis.
+      Choose a maximal commuting hermitian set of generators, diagonalize them simultaneously,
+      and label states by their real weight vectors; the number of Cartan generators
+      is the rank. Encode partitions of n with box diagrams whose column lengths track
+      cycle lengths, giving a common label set for conjugacy classes and irreducible
+      representations.
+    context_snippet: wever, for convenience, we will compute all phase-space points
+      in AMFlow directly in the following examples. subsection Basis functions sec:basis_set
+      Recovering the result of a Feynman integral without actually comput...
+    related_graph_nodes: *id003
+  - concept: basis ltriangle
+    why_needed: The paper relies on basis ltriangle in equation label context without
+      pausing to teach it. Readers need that prerequisite to follow the local argument.
+    suggested_explanation: Briefly explain basis ltriangle before it is used, and
+      connect it to nearby prerequisites in the graph.
+    context_snippet: begin equation eq:basis2ltriangle tilde mathcal B ^ (1) = \ G(a_1,
+      a_2, a_3; x), pi G(a_4, a_5; x) , pi ^2 G(a_6;x), zeta _3, pi ^3\ cup til
+    related_graph_nodes: []
+  - concept: basis tower
+    why_needed: The paper relies on basis tower in equation label context without
+      pausing to teach it. Readers need that prerequisite to follow the local argument.
+    suggested_explanation: Briefly explain basis tower before it is used, and connect
+      it to nearby prerequisites in the graph.
+    context_snippet: 'begin align eq:basis_tower text Weight-0: quad 1 notag text
+      Weight-1: quad G(a_1,x),\,\, color darkblue pi notag t'
+    related_graph_nodes: []
+  - concept: begin equation
+    why_needed: The paper relies on begin equation in prose ngram context without
+      pausing to teach it. Readers need that prerequisite to follow the local argument.
+    suggested_explanation: Briefly explain begin equation before it is used, and connect
+      it to nearby prerequisites in the graph.
+    context_snippet: The problem we are concerned with is the decomposition of a multivariate
+      function in terms of known basis functions begin equation eq:problem_statement
+      f( x _j) = sum _ i=1 ^n c_i \, mathcal B _i( x _j) \,, end equati...
+    related_graph_nodes: []
+  - concept: begin equation eq
+    why_needed: The paper relies on begin equation eq in prose ngram context without
+      pausing to teach it. Readers need that prerequisite to follow the local argument.
+    suggested_explanation: Briefly explain begin equation eq before it is used, and
+      connect it to nearby prerequisites in the graph.
+    context_snippet: The problem we are concerned with is the decomposition of a multivariate
+      function in terms of known basis functions begin equation eq:problem_statement
+      f( x _j) = sum _ i=1 ^n c_i \, mathcal B _i( x _j) \,, end equati...
+    related_graph_nodes: []
+  - concept: begin figure
+    why_needed: The paper relies on begin figure in prose ngram context without pausing
+      to teach it. Readers need that prerequisite to follow the local argument.
+    suggested_explanation: Briefly explain begin figure before it is used, and connect
+      it to nearby prerequisites in the graph.
+    context_snippet: begin figure centering includegraphics [width= linewidth ] Figures/flowchart.pdf
+      caption To recover the analytic expression associated with a Feynman integral,
+      we proceed in two steps.
+    related_graph_nodes: []
+  - concept: begin figure centering
+    why_needed: The paper relies on begin figure centering in prose ngram context
+      without pausing to teach it. Readers need that prerequisite to follow the local
+      argument.
+    suggested_explanation: Briefly explain begin figure centering before it is used,
+      and connect it to nearby prerequisites in the graph.
+    context_snippet: begin figure centering includegraphics [width= linewidth ] Figures/flowchart.pdf
+      caption To recover the analytic expression associated with a Feynman integral,
+      we proceed in two steps.
+    related_graph_nodes: []
+  - concept: condition number
+    why_needed: The paper relies on condition number in prose ngram context without
+      pausing to teach it. Readers need that prerequisite to follow the local argument.
+    suggested_explanation: Briefly explain condition number before it is used, and
+      connect it to nearby prerequisites in the graph.
+    context_snippet: To leading order Cheney:2007 begin equation frac \| Delta c\|
+      \|c\| \; approx \; kappa (M)\, Bigl ( frac \| Delta f\| \|f\| + frac \| Delta
+      M\| \|M\| Bigr )\,, eq:errorprop end equation where is a norm and is the cond...
+    related_graph_nodes: []
+  - concept: Constructing a set of basis functions
+    why_needed: The paper relies on Constructing a set of basis functions in subsection
+      title context without pausing to teach it. Readers need that prerequisite to
+      follow the local argument.
+    suggested_explanation: Briefly explain Constructing a set of basis functions before
+      it is used, and connect it to Decompose SU(3) multiplets with tensor methods,
+      General gamma-S-V and gamma-V-V effective-vertex basis, Passarino-Veltman (PV)
+      reduction. Apply irreducible tensor projection to physically relevant products
+      such as 3 x 3 = 6 + 3bar, 3 x 3bar = 8 + 1, and 3 x 8 = 15 + 6bar + 3, while
+      simultaneously constructing the corresponding component wave functions. Parameterize
+      the inner loop by a small set of CP-even and CP-odd form factors for gamma-S-V
+      or gamma-V-V structures, keeping the internal particles off shell. This is the
+      mathematical basis that lets one plug in stops, charginos, tops, or W bosons
+      uniformly.
+    context_snippet: aluation takes around 80 CPU-min on Intel Xeon Sapphire Rapids.
+      We set the precision of AMFlow to 30 digits. subsubsection Constructing a set
+      of basis functions To construct the basis functions we will take as startin...
+    related_graph_nodes: *id004
+  - concept: def loop
+    why_needed: The paper relies on def loop in equation label context without pausing
+      to teach it. Readers need that prerequisite to follow the local argument.
+    suggested_explanation: Briefly explain def loop before it is used, and connect
+      it to nearby prerequisites in the graph.
+    context_snippet: begin equation eq:def_loop f(p_k) = e^ L epsilon gamma _E int
+      prod _ i=1 ^ L frac d^d ell _i i pi ^ d/2 frac mathcal P ( ell _1 cdot ell _2,
+      c
+    related_graph_nodes: []
+  - concept: digits precision
+    why_needed: The paper relies on digits precision in prose ngram context without
+      pausing to teach it. Readers need that prerequisite to follow the local argument.
+    suggested_explanation: Briefly explain digits precision before it is used, and
+      connect it to nearby prerequisites in the graph.
+    context_snippet: However, if and are only known numerically to a minimum precision
+      of digits, then inverting will not give the exact result and in general the
+      produced will have much fewer than digits of precision.
+    related_graph_nodes: []
+  - concept: end equation
+    why_needed: The paper relies on end equation in prose ngram context without pausing
+      to teach it. Readers need that prerequisite to follow the local argument.
+    suggested_explanation: Briefly explain end equation before it is used, and connect
+      it to Fokker-Planck treatment of the waterfall field. The light waterfall field
+      near the transition is treated stochastically with a Fokker-Planck equation
+      before matching onto classical rolling. This is the right mathematical tool
+      when quantum diffusion dominates the end of inflation.
+    context_snippet: The problem we are concerned with is the decomposition of a multivariate
+      function in terms of known basis functions begin equation eq:problem_statement
+      f( x _j) = sum _ i=1 ^n c_i \, mathcal B _i( x _j) \,, end equati...
+    related_graph_nodes: *id005
+  - concept: end figure
+    why_needed: The paper relies on end figure in prose ngram context without pausing
+      to teach it. Readers need that prerequisite to follow the local argument.
+    suggested_explanation: Briefly explain end figure before it is used, and connect
+      it to nearby prerequisites in the graph.
+    context_snippet: fig:flowchart end figure The outline of this paper is as follows.
+    related_graph_nodes: []
+  - concept: equation eq
+    why_needed: The paper relies on equation eq in prose ngram context without pausing
+      to teach it. Readers need that prerequisite to follow the local argument.
+    suggested_explanation: Briefly explain equation eq before it is used, and connect
+      it to nearby prerequisites in the graph.
+    context_snippet: The problem we are concerned with is the decomposition of a multivariate
+      function in terms of known basis functions begin equation eq:problem_statement
+      f( x _j) = sum _ i=1 ^n c_i \, mathcal B _i( x _j) \,, end equati...
+    related_graph_nodes: []
+  - concept: 'Example : The one loop triangle'
+    why_needed: 'The paper relies on Example : The one loop triangle in subsection
+      title context without pausing to teach it. Readers need that prerequisite to
+      follow the local argument.'
+    suggested_explanation: 'Briefly explain Example : The one loop triangle before
+      it is used, and connect it to Compute the anomaly directly from triangle diagrams.
+      Evaluate the one-loop three-current triangle graphs in momentum space and track
+      the current divergences explicitly.'
+    context_snippet: 'of the C++ implementation of lattice reduction, Fplll fplll
+      , to speed up the analytic regression. subsection Example 1: The one-loop triangle
+      sec:one_loop_example unitlength 1cm The 1-loop massless triangle scalar Fe...'
+    related_graph_nodes: *id006
+  - concept: 'Example : The two loop outer mass double box'
+    why_needed: 'The paper relies on Example : The two loop outer mass double box
+      in subsection title context without pausing to teach it. Readers need that prerequisite
+      to follow the local argument.'
+    suggested_explanation: 'Briefly explain Example : The two loop outer mass double
+      box before it is used, and connect it to Inner-loop and outer-loop factorization
+      of Barr-Zee EDMs, Separation of oblique and non-oblique corrections, Polar Expansion
+      of 2D Hemisphere Soft Function. Split the two-loop EDM problem into an inner
+      loop that generates an off-shell effective vertex and an outer loop that attaches
+      it to the light fermion. This isolates the reusable core of a large class of
+      EDM calculations. One-loop amplitudes are decomposed into universal coupling
+      shifts and process-specific vertex or box effects so the extracted supersymmetric
+      couplings are not contaminated by nonuniversal pieces. This is the mathematical
+      bookkeeping required for a meaningful super-oblique analysis.'
+    context_snippet: '00 points sampled and the computation cost becomes expensive.
+      tab:triangle_ladder_time end table subsection Example 4: The two-loop outer-mass
+      double box sec:dbox For a final example, we consider the outer-mass double...'
+    related_graph_nodes: *id007
+  - concept: f lll red
+    why_needed: The paper relies on f lll red in equation label context without pausing
+      to teach it. Readers need that prerequisite to follow the local argument.
+    suggested_explanation: Briefly explain f lll red before it is used, and connect
+      it to nearby prerequisites in the graph.
+    context_snippet: n align 0 = f(x_1) - G(0,1;x_1) + G(1,-1;x_1) -1 = 10^2 left
+      [f(x_2) - G(0,1;x_2) + G(1,-1;x_2) right ] eq:f2_lll_red \,, end align
+    related_graph_nodes: []
+  - concept: figure centering
+    why_needed: The paper relies on figure centering in prose ngram context without
+      pausing to teach it. Readers need that prerequisite to follow the local argument.
+    suggested_explanation: Briefly explain figure centering before it is used, and
+      connect it to nearby prerequisites in the graph.
+    context_snippet: begin figure centering includegraphics [width= linewidth ] Figures/flowchart.pdf
+      caption To recover the analytic expression associated with a Feynman integral,
+      we proceed in two steps.
+    related_graph_nodes: []
+  - concept: Function evaluation
+    why_needed: The paper relies on Function evaluation in subsection title context
+      without pausing to teach it. Readers need that prerequisite to follow the local
+      argument.
+    suggested_explanation: Briefly explain Function evaluation before it is used,
+      and connect it to nearby prerequisites in the graph.
+    context_snippet: e necessary for the fitting procedure to be practical. The tradeoff
+      is shown in Fig. fig:illustration_bootstrap . subsubsection Function evaluation
+      The numerical evaluation of is done in AMFlow with BLADE as the IBP r...
+    related_graph_nodes: []
+  - concept: gpl def
+    why_needed: The paper relies on gpl def in equation label context without pausing
+      to teach it. Readers need that prerequisite to follow the local argument.
+    suggested_explanation: Briefly explain gpl def before it is used, and connect
+      it to nearby prerequisites in the graph.
+    context_snippet: begin equation eq:gpl_def G(a_1, cdots a_n; x) equiv int _0^x
+      frac dt t-a_1 G(a_2, cdots a_n; t)\,, end equation
+    related_graph_nodes: []
+  - concept: includegraphics width
+    why_needed: The paper relies on includegraphics width in prose ngram context without
+      pausing to teach it. Readers need that prerequisite to follow the local argument.
+    suggested_explanation: Briefly explain includegraphics width before it is used,
+      and connect it to nearby prerequisites in the graph.
+    context_snippet: begin figure centering includegraphics [width= linewidth ] Figures/flowchart.pdf
+      caption To recover the analytic expression associated with a Feynman integral,
+      we proceed in two steps.
+    related_graph_nodes: []
+  - concept: lin rel u
+    why_needed: The paper relies on lin rel u in equation label context without pausing
+      to teach it. Readers need that prerequisite to follow the local argument.
+    suggested_explanation: Briefly explain lin rel u before it is used, and connect
+      it to nearby prerequisites in the graph.
+    context_snippet: begin equation eq:lin_rel_u1 u _1 = sum _ i=1 ^ n+1 \, u_ p+i
+      v _i \,. end equation
+    related_graph_nodes: []
+  - concept: mat lll
+    why_needed: The paper relies on mat lll in equation label context without pausing
+      to teach it. Readers need that prerequisite to follow the local argument.
+    suggested_explanation: Briefly explain mat lll before it is used, and connect
+      it to nearby prerequisites in the graph.
+    context_snippet: begin equation eq:mat_lll M= text round 10^s left ( begin array
+      c|c f( x_1 ) cdots f( x_p ) multirow 4 * phanto
+    related_graph_nodes: []
+  - concept: matrix inversion
+    why_needed: The paper relies on matrix inversion in prose ngram context without
+      pausing to teach it. Readers need that prerequisite to follow the local argument.
+    suggested_explanation: Briefly explain matrix inversion before it is used, and
+      connect it to nearby prerequisites in the graph.
+    context_snippet: Section sec:lll_algo discusses the matrix inversion and lattice
+      reduction approaches to module B.
+    related_graph_nodes: []
+  - concept: Matrix inversion \label{sec:mi}
+    why_needed: The paper relies on Matrix inversion \label{sec:mi} in subsection
+      title context without pausing to teach it. Readers need that prerequisite to
+      follow the local argument.
+    suggested_explanation: Briefly explain Matrix inversion \label{sec:mi} before
+      it is used, and connect it to nearby prerequisites in the graph.
+    context_snippet: attice reduction. Further analysis of the lattice reduction approach
+      is provided in Section sec:lll_limitations . subsection Matrix inversion sec:mi
+      The most basic way to determine is by inverting the matrix to get $...
+    related_graph_nodes: []
+  - concept: Notation and methods
+    why_needed: The paper relies on Notation and methods in subsection title context
+      without pausing to teach it. Readers need that prerequisite to follow the local
+      argument.
+    suggested_explanation: Briefly explain Notation and methods before it is used,
+      and connect it to nearby prerequisites in the graph.
+    context_snippet: or two-loop corrections to the calculation of vector boson pair
+      production and are all expressible in terms of GPLs. subsubsection Notation
+      and methods sec:two_loops_methods For the diagrams in Eq. fig:twoloop_fourpoi...
+    related_graph_nodes: []
+  - concept: number digits
+    why_needed: The paper relies on number digits in prose ngram context without pausing
+      to teach it. Readers need that prerequisite to follow the local argument.
+    suggested_explanation: Briefly explain number digits before it is used, and connect
+      it to nearby prerequisites in the graph.
+    context_snippet: Naively, there is the same information in digits for a single
+      number as digits in numbers, so we can evaluate the integral over 100 points
+      with 100 digits instead of 1 point with 10,000 digits.
+    related_graph_nodes: []
+  - concept: number points
+    why_needed: The paper relies on number points in prose ngram context without pausing
+      to teach it. Readers need that prerequisite to follow the local argument.
+    suggested_explanation: Briefly explain number points before it is used, and connect
+      it to nearby prerequisites in the graph.
+    context_snippet: subsection Lattice reduction Lattice reduction offers the advantage
+      over matrix inversion of being able to both exploit that the are rational numbers
+      and to vary the number of points used for the regression.
+    related_graph_nodes: []
+  - concept: Numerical evaluation of $f(\bx)$
+    why_needed: The paper relies on Numerical evaluation of $f(\bx)$ in subsection
+      title context without pausing to teach it. Readers need that prerequisite to
+      follow the local argument.
+    suggested_explanation: Briefly explain Numerical evaluation of $f(\bx)$ before
+      it is used, and connect it to Numerical In-In with Wick-Rotated Contours. Rotate
+      the time integration contour and factor out rapidly oscillating phases to stabilize
+      direct numerical evaluation of the bispectrum. This is the computational move
+      that makes the full time-dependent-mass signal tractable.
+    context_snippet: il, namely how these integrals can be computed and an appropriate
+      basis determined and evaluated numerically as well. subsection Numerical evaluation
+      of Feynman integrals are one of the most important objects appearin...
+    related_graph_nodes: *id008
+  - concept: Optimizing point selection
+    why_needed: The paper relies on Optimizing point selection in subsection title
+      context without pausing to teach it. Readers need that prerequisite to follow
+      the local argument.
+    suggested_explanation: Briefly explain Optimizing point selection before it is
+      used, and connect it to nearby prerequisites in the graph.
+    context_snippet: r, a useful rule of thumb from this analysis is that one should
+      not take points too close together or too far apart. subsection Optimizing point
+      selection We have seen that lattice reduction allows for a tradeoff betw...
+    related_graph_nodes: []
+  - concept: problem statement
+    why_needed: The paper relies on problem statement in equation label context without
+      pausing to teach it. Readers need that prerequisite to follow the local argument.
+    suggested_explanation: Briefly explain problem statement before it is used, and
+      connect it to nearby prerequisites in the graph.
+    context_snippet: begin equation eq:problem_statement f( x _j) = sum _ i=1 ^n c_i
+      \, mathcal B _i( x _j) \,, end equation
+    related_graph_nodes: []
+  - concept: section sec
+    why_needed: The paper relies on section sec in prose ngram context without pausing
+      to teach it. Readers need that prerequisite to follow the local argument.
+    suggested_explanation: Briefly explain section sec before it is used, and connect
+      it to nearby prerequisites in the graph.
+    context_snippet: This example is discussed in Section sec:ladders .
+    related_graph_nodes: []
+  - concept: Summary of practical lessons
+    why_needed: The paper relies on Summary of practical lessons in subsection title
+      context without pausing to teach it. Readers need that prerequisite to follow
+      the local argument.
+    suggested_explanation: Briefly explain Summary of practical lessons before it
+      is used, and connect it to nearby prerequisites in the graph.
+    context_snippet: rsion, lattice reduction and PLSQ) are not so easy to parallelize
+      although algorithmic improvements are possible. subsection Summary of practical
+      lessons We have explored in this section tradeoffs among different anal...
+    related_graph_nodes: []
+  - concept: symbol weight
+    why_needed: The paper relies on symbol weight in equation label context without
+      pausing to teach it. Readers need that prerequisite to follow the local argument.
+    suggested_explanation: Briefly explain symbol weight before it is used, and connect
+      it to Landau-equation constraints on the symbol of Feynman integrals. Constraint
+      method relating Landau exponents to the entry position of vanishing symbol letters,
+      thereby bounding symbol structure and transcendental weight.
+    context_snippet: begin equation eq:symbol_weight4 mathcal S = sum _ i=1 ^ | tilde
+      A | c_ i_1,i_2,i_3,i_4 \, L_ i_1 otimes L_ i_2 otimes L_ i_3 otimes L_ i
+    related_graph_nodes: *id009
+  - concept: The symbol formalism
+    why_needed: The paper relies on The symbol formalism in section title context
+      without pausing to teach it. Readers need that prerequisite to follow the local
+      argument.
+    suggested_explanation: Briefly explain The symbol formalism before it is used,
+      and connect it to nearby prerequisites in the graph.
+    context_snippet: section The symbol formalism sec:symbols In this appendix, we
+      review the Generalized polylogarithms (GPLs) and the symbol formalism. The GPL
+      is defined iteratively by begin equation eq:gpl_def G(a_1, cdots a_n; x) equ...
+    related_graph_nodes: []
+  - concept: we also
+    why_needed: The paper relies on we also in prose ngram context without pausing
+      to teach it. Readers need that prerequisite to follow the local argument.
+    suggested_explanation: Briefly explain we also before it is used, and connect
+      it to nearby prerequisites in the graph.
+    context_snippet: We also discuss how one can use public tools to construct a basis
+      in a semi-automated way.
+    related_graph_nodes: []
+  - concept: we can
+    why_needed: The paper relies on we can in prose ngram context without pausing
+      to teach it. Readers need that prerequisite to follow the local argument.
+    suggested_explanation: Briefly explain we can before it is used, and connect it
+      to nearby prerequisites in the graph.
+    context_snippet: If and can be evaluated exactly at points then we can simply
+      solve for by inverting the matrix .
+    related_graph_nodes: []
+  - concept: we have
+    why_needed: The paper relies on we have in prose ngram context without pausing
+      to teach it. Readers need that prerequisite to follow the local argument.
+    suggested_explanation: Briefly explain we have before it is used, and connect
+      it to nearby prerequisites in the graph.
+    context_snippet: For example, suppose we have an integral like begin equation
+      f= - int _0^1 du int _0^1 dv frac log (1-u v)+v log (1-u) u v = frac pi ^2 6
+      + zeta _3 \,.
+    related_graph_nodes: []
+  - concept: we will
+    why_needed: The paper relies on we will in prose ngram context without pausing
+      to teach it. Readers need that prerequisite to follow the local argument.
+    suggested_explanation: Briefly explain we will before it is used, and connect
+      it to nearby prerequisites in the graph.
+    context_snippet: In this paper we will show that, for the particular case of the
+      computation of Feynman integrals where the space of functions is known one can
+      often determine the answer exactly.
+    related_graph_nodes: []
+  novel_contributions:
+  - concept: The computations in this paper were run on the FASRC Cannon cluster supported
+      by the FAS Division of Science Research Computing Group at Harvard University.
+    description: The computations in this paper were run on the FASRC Cannon cluster
+      supported by the FAS Division of Science Research Computing Group at Harvard
+      University.
+required_output_schema:
+  paper_concepts:
+  - concept: string
+    classification: in_graph | gap | novel
+    matched_node_id: string | null
+    context_snippet: string
+  gaps:
+  - concept: string
+    why_needed: string
+    suggested_explanation: string
+  novel_contributions:
+  - concept: string
+    description: string

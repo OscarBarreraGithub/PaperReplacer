@@ -1,0 +1,645 @@
+saved_at: '2026-03-28T01:01:09+00:00'
+paper_dir: data/papers/2507.17815
+paper_id: '2507.17815'
+title: Analytic Regression of Feynman Integrals from High-Precision Numerical Sampling
+knowledge_threshold: rated_3_or_better
+gap_threshold: rated_1_or_2
+summary:
+  topic_count: 22
+  rated_topic_count: 22
+  known_count: 11
+  gap_count: 11
+  rating_1_count: 3
+  rating_2_count: 8
+  rating_3_count: 5
+  rating_4_count: 2
+  rating_5_count: 4
+  could_use_count: 6
+  could_derive_count: 4
+  summary_text: You rated 22 topics. 11 gaps identified (rated 1-2).
+ratings: &id001
+- prerequisite_id: 0
+  topic: Feynman integrals
+  description: Loop-momentum integrals built from propagator denominators and external
+    kinematic invariants.
+  importance: essential
+  importance_label: Essential
+  importance_rank: 0
+  graph_node: qft.loop_momentum_integration_structure
+  why_important: The target object throughout the paper is a Feynman integral whose
+    analytic form is reconstructed from samples.
+  rating: 5
+  rating_label: Could derive/prove it
+  rating_short_label: Could derive
+  known: true
+  gap: false
+- prerequisite_id: 1
+  topic: Dimensional regularization and epsilon expansion
+  description: Regulating UV and IR divergences by working in d = 4 - 2 epsilon and
+    expanding in epsilon.
+  importance: essential
+  importance_label: Essential
+  importance_rank: 0
+  graph_node: qft.dimensional_regularization
+  why_important: The numerical inputs are coefficients in a regulated epsilon expansion
+    rather than raw four-dimensional integrals.
+  rating: 4
+  rating_label: Could use it in a calculation
+  rating_short_label: Could use it
+  known: true
+  gap: false
+- prerequisite_id: 2
+  topic: Sector decomposition
+  description: Splitting singular integration regions so epsilon-expanded numerical
+    integration becomes well defined.
+  importance: important
+  importance_label: Important
+  importance_rank: 1
+  graph_node: null
+  why_important: The paper cites sector decomposition as the standard benchmark for
+    numerical Feynman-integral evaluation before contrasting it with DE-based methods.
+  rating: 2
+  rating_label: Heard the name
+  rating_short_label: Heard it
+  known: false
+  gap: true
+- prerequisite_id: 3
+  topic: Feynman-parameter and Baikov representations
+  description: Alternative variable choices that reduce loop integrals to scalar parameter
+    integrals.
+  importance: supporting
+  importance_label: Supporting
+  importance_rank: 2
+  graph_node: null
+  why_important: These representations are used to explain why direct multidimensional
+    integration is possible but typically not precise enough for exact reconstruction.
+  rating: 1
+  rating_label: Never heard of it
+  rating_short_label: Never heard
+  known: false
+  gap: true
+- prerequisite_id: 4
+  topic: Integration-by-parts reduction and master integrals
+  description: Using IBP identities to reduce whole integral families to a finite
+    set of master integrals.
+  importance: essential
+  importance_label: Essential
+  importance_rank: 0
+  graph_node: null
+  why_important: The paper assumes the reader understands how complicated topologies
+    are reduced before any high-precision evaluation is attempted.
+  rating: 2
+  rating_label: Heard the name
+  rating_short_label: Heard it
+  known: false
+  gap: true
+- prerequisite_id: 5
+  topic: Differential equations for master integrals
+  description: Treating a reduced basis of master integrals as solutions of coupled
+    differential equations in kinematics or auxiliary parameters.
+  importance: essential
+  importance_label: Essential
+  importance_rank: 0
+  graph_node: null
+  why_important: The whole module-A discussion of modern numerical evaluation assumes
+    differential-equation methods for master integrals.
+  rating: 2
+  rating_label: Heard the name
+  rating_short_label: Heard it
+  known: false
+  gap: true
+- prerequisite_id: 6
+  topic: Auxiliary-mass flow / AMFlow-style evaluation
+  description: Introducing an auxiliary mass and evolving differential equations from
+    a simple boundary condition to the desired integral.
+  importance: important
+  importance_label: Important
+  importance_rank: 1
+  graph_node: null
+  why_important: The paper uses AMFlow repeatedly as the concrete source of high-precision
+    sample values.
+  rating: 1
+  rating_label: Never heard of it
+  rating_short_label: Never heard
+  known: false
+  gap: true
+- prerequisite_id: 7
+  topic: High-precision numerical evaluation
+  description: Computing special functions or integrals to tens or hundreds of correct
+    digits.
+  importance: important
+  importance_label: Important
+  importance_rank: 1
+  graph_node: null
+  why_important: Exact coefficient recovery is only possible because the inputs are
+    assumed to be numerically trustworthy at high precision.
+  rating: 5
+  rating_label: Could derive/prove it
+  rating_short_label: Could derive
+  known: true
+  gap: false
+- prerequisite_id: 8
+  topic: Generalized polylogarithms and iterated integrals
+  description: GPLs as the main function class used to express many multiple-polylogarithmic
+    Feynman integrals.
+  importance: essential
+  importance_label: Essential
+  importance_rank: 0
+  graph_node: qft.iterated_integral
+  why_important: Most basis functions in the paper are assumed to live in a finite
+    GPL or iterated-integral function space.
+  rating: 2
+  rating_label: Heard the name
+  rating_short_label: Heard it
+  known: false
+  gap: true
+- prerequisite_id: 9
+  topic: Classical polylogarithms and logarithms
+  description: Familiar functions such as log and Li_n that appear as simple special
+    cases of GPLs.
+  importance: important
+  importance_label: Important
+  importance_rank: 1
+  graph_node: null
+  why_important: The simpler examples and several explicit formulas are written directly
+    in logs and classical polylogarithms.
+  rating: 2
+  rating_label: Heard the name
+  rating_short_label: Heard it
+  known: false
+  gap: true
+- prerequisite_id: 10
+  topic: Symbol formalism
+  description: Encoding polylogarithmic functions by tensors that expose algebraic
+    identities and branch-cut structure.
+  importance: essential
+  importance_label: Essential
+  importance_rank: 0
+  graph_node: qft.symbol_calculus
+  why_important: The paper builds bases by enumerating symbols first and only then
+    integrating them into functions.
+  rating: 1
+  rating_label: Never heard of it
+  rating_short_label: Never heard
+  known: false
+  gap: true
+- prerequisite_id: 11
+  topic: Landau singularities and symbol alphabets
+  description: Using singularity analysis to determine the allowed letters that can
+    appear in symbols and GPL arguments.
+  importance: essential
+  importance_label: Essential
+  importance_rank: 0
+  graph_node: qft.landau_singularity_conditions
+  why_important: Alphabet construction is one of the main inputs to the basis-building
+    step used throughout the examples.
+  rating: 3
+  rating_label: Could explain the idea
+  rating_short_label: Could explain
+  known: true
+  gap: false
+- prerequisite_id: 12
+  topic: Integrability constraints and transcendental weight
+  description: Requiring candidate symbols to integrate to honest functions and organizing
+    bases by weight.
+  importance: important
+  importance_label: Important
+  importance_rank: 1
+  graph_node: technique.integrability_product_constraints
+  why_important: The paper repeatedly prunes basis spaces by weight and by symbol
+    integrability before fitting coefficients.
+  rating: 2
+  rating_label: Heard the name
+  rating_short_label: Heard it
+  known: false
+  gap: true
+- prerequisite_id: 13
+  topic: Leading singularities, maximal cuts, and algebraic prefactors
+  description: Using maximal cuts to determine the algebraic prefactor multiplying
+    a pure transcendental function.
+  importance: important
+  importance_label: Important
+  importance_rank: 1
+  graph_node: null
+  why_important: Several examples first factor out P(x) or P(u,v) before fitting the
+    remaining transcendental basis.
+  rating: 2
+  rating_label: Heard the name
+  rating_short_label: Heard it
+  known: false
+  gap: true
+- prerequisite_id: 14
+  topic: Analytic continuation, branch cuts, and Euclidean kinematics
+  description: Sampling in a real Euclidean region and continuing the answer back
+    to physical scattering kinematics.
+  importance: important
+  importance_label: Important
+  importance_rank: 1
+  graph_node: qft.analytic_continuation_in_kinematic_invariants
+  why_important: The point-selection strategy and several comments on numerical stability
+    rely on this standard complex-analytic picture.
+  rating: 3
+  rating_label: Could explain the idea
+  rating_short_label: Could explain
+  known: true
+  gap: false
+- prerequisite_id: 15
+  topic: Multiple zeta values and other beyond-symbol constants
+  description: Constants such as zeta values and powers of pi that are invisible to
+    the symbol and must be restored separately.
+  importance: important
+  importance_label: Important
+  importance_rank: 1
+  graph_node: null
+  why_important: A symbol basis alone is incomplete for the full answers considered
+    in the paper.
+  rating: 4
+  rating_label: Could use it in a calculation
+  rating_short_label: Could use it
+  known: true
+  gap: false
+- prerequisite_id: 16
+  topic: Kinematic variable rationalization
+  description: Changing variables to rationalize square roots and simplify alphabets
+    or function arguments.
+  importance: supporting
+  importance_label: Supporting
+  importance_rank: 2
+  graph_node: complex_analysis.conformal_map
+  why_important: The examples repeatedly switch to variables like x, z, and zbar to
+    make the analytic structure manageable.
+  rating: 2
+  rating_label: Heard the name
+  rating_short_label: Heard it
+  known: false
+  gap: true
+- prerequisite_id: 17
+  topic: Linear algebra over the rationals and basis decompositions
+  description: Expanding an unknown function in a known finite basis with exact rational
+    coefficients.
+  importance: essential
+  importance_label: Essential
+  importance_rank: 0
+  graph_node: math.linear_algebra.basis_and_coordinates
+  why_important: The regression problem is posed from the outset as exact rational
+    coefficient recovery in a finite basis.
+  rating: 3
+  rating_label: Could explain the idea
+  rating_short_label: Could explain
+  known: true
+  gap: false
+- prerequisite_id: 18
+  topic: Matrix inversion and least-squares fitting
+  description: Solving or approximately solving linear systems from sampled basis
+    values.
+  importance: important
+  importance_label: Important
+  importance_rank: 1
+  graph_node: null
+  why_important: "The paper\u2019s lattice-based method is motivated by a careful\
+    \ comparison against these standard linear-algebra baselines."
+  rating: 3
+  rating_label: Could explain the idea
+  rating_short_label: Could explain
+  known: true
+  gap: false
+- prerequisite_id: 19
+  topic: Condition number and singular values
+  description: Quantifying how numerical errors are amplified by an ill-conditioned
+    basis matrix.
+  importance: important
+  importance_label: Important
+  importance_rank: 1
+  graph_node: null
+  why_important: "The paper\u2019s precision estimates, plateau behavior, and point-selection\
+    \ heuristics all depend on conditioning."
+  rating: 5
+  rating_label: Could derive/prove it
+  rating_short_label: Could derive
+  known: true
+  gap: false
+- prerequisite_id: 20
+  topic: 'Lattice-reduction basics: LLL, L^2, shortest vector, Lovasz condition'
+  description: Finding short nearly orthogonal lattice bases to expose integer relations
+    among sampled values.
+  importance: essential
+  importance_label: Essential
+  importance_rank: 0
+  graph_node: null
+  why_important: The central fitting algorithm is built directly on standard lattice-reduction
+    ideas rather than on floating-point linear algebra alone.
+  rating: 5
+  rating_label: Could derive/prove it
+  rating_short_label: Could derive
+  known: true
+  gap: false
+- prerequisite_id: 21
+  topic: PSLQ algorithm
+  description: The classic integer-relation algorithm for high-precision real numbers.
+  importance: important
+  importance_label: Important
+  importance_rank: 1
+  graph_node: null
+  why_important: The paper uses PSLQ as the main single-point baseline when comparing
+    exact-fitting strategies.
+  rating: 3
+  rating_label: Could explain the idea
+  rating_short_label: Could explain
+  known: true
+  gap: false
+known_topics: &id002
+- prerequisite_id: 0
+  topic: Feynman integrals
+  description: Loop-momentum integrals built from propagator denominators and external
+    kinematic invariants.
+  importance: essential
+  importance_label: Essential
+  importance_rank: 0
+  graph_node: qft.loop_momentum_integration_structure
+  why_important: The target object throughout the paper is a Feynman integral whose
+    analytic form is reconstructed from samples.
+  rating: 5
+  rating_label: Could derive/prove it
+  rating_short_label: Could derive
+- prerequisite_id: 20
+  topic: 'Lattice-reduction basics: LLL, L^2, shortest vector, Lovasz condition'
+  description: Finding short nearly orthogonal lattice bases to expose integer relations
+    among sampled values.
+  importance: essential
+  importance_label: Essential
+  importance_rank: 0
+  graph_node: null
+  why_important: The central fitting algorithm is built directly on standard lattice-reduction
+    ideas rather than on floating-point linear algebra alone.
+  rating: 5
+  rating_label: Could derive/prove it
+  rating_short_label: Could derive
+- prerequisite_id: 1
+  topic: Dimensional regularization and epsilon expansion
+  description: Regulating UV and IR divergences by working in d = 4 - 2 epsilon and
+    expanding in epsilon.
+  importance: essential
+  importance_label: Essential
+  importance_rank: 0
+  graph_node: qft.dimensional_regularization
+  why_important: The numerical inputs are coefficients in a regulated epsilon expansion
+    rather than raw four-dimensional integrals.
+  rating: 4
+  rating_label: Could use it in a calculation
+  rating_short_label: Could use it
+- prerequisite_id: 11
+  topic: Landau singularities and symbol alphabets
+  description: Using singularity analysis to determine the allowed letters that can
+    appear in symbols and GPL arguments.
+  importance: essential
+  importance_label: Essential
+  importance_rank: 0
+  graph_node: qft.landau_singularity_conditions
+  why_important: Alphabet construction is one of the main inputs to the basis-building
+    step used throughout the examples.
+  rating: 3
+  rating_label: Could explain the idea
+  rating_short_label: Could explain
+- prerequisite_id: 17
+  topic: Linear algebra over the rationals and basis decompositions
+  description: Expanding an unknown function in a known finite basis with exact rational
+    coefficients.
+  importance: essential
+  importance_label: Essential
+  importance_rank: 0
+  graph_node: math.linear_algebra.basis_and_coordinates
+  why_important: The regression problem is posed from the outset as exact rational
+    coefficient recovery in a finite basis.
+  rating: 3
+  rating_label: Could explain the idea
+  rating_short_label: Could explain
+- prerequisite_id: 19
+  topic: Condition number and singular values
+  description: Quantifying how numerical errors are amplified by an ill-conditioned
+    basis matrix.
+  importance: important
+  importance_label: Important
+  importance_rank: 1
+  graph_node: null
+  why_important: "The paper\u2019s precision estimates, plateau behavior, and point-selection\
+    \ heuristics all depend on conditioning."
+  rating: 5
+  rating_label: Could derive/prove it
+  rating_short_label: Could derive
+- prerequisite_id: 7
+  topic: High-precision numerical evaluation
+  description: Computing special functions or integrals to tens or hundreds of correct
+    digits.
+  importance: important
+  importance_label: Important
+  importance_rank: 1
+  graph_node: null
+  why_important: Exact coefficient recovery is only possible because the inputs are
+    assumed to be numerically trustworthy at high precision.
+  rating: 5
+  rating_label: Could derive/prove it
+  rating_short_label: Could derive
+- prerequisite_id: 15
+  topic: Multiple zeta values and other beyond-symbol constants
+  description: Constants such as zeta values and powers of pi that are invisible to
+    the symbol and must be restored separately.
+  importance: important
+  importance_label: Important
+  importance_rank: 1
+  graph_node: null
+  why_important: A symbol basis alone is incomplete for the full answers considered
+    in the paper.
+  rating: 4
+  rating_label: Could use it in a calculation
+  rating_short_label: Could use it
+- prerequisite_id: 14
+  topic: Analytic continuation, branch cuts, and Euclidean kinematics
+  description: Sampling in a real Euclidean region and continuing the answer back
+    to physical scattering kinematics.
+  importance: important
+  importance_label: Important
+  importance_rank: 1
+  graph_node: qft.analytic_continuation_in_kinematic_invariants
+  why_important: The point-selection strategy and several comments on numerical stability
+    rely on this standard complex-analytic picture.
+  rating: 3
+  rating_label: Could explain the idea
+  rating_short_label: Could explain
+- prerequisite_id: 18
+  topic: Matrix inversion and least-squares fitting
+  description: Solving or approximately solving linear systems from sampled basis
+    values.
+  importance: important
+  importance_label: Important
+  importance_rank: 1
+  graph_node: null
+  why_important: "The paper\u2019s lattice-based method is motivated by a careful\
+    \ comparison against these standard linear-algebra baselines."
+  rating: 3
+  rating_label: Could explain the idea
+  rating_short_label: Could explain
+- prerequisite_id: 21
+  topic: PSLQ algorithm
+  description: The classic integer-relation algorithm for high-precision real numbers.
+  importance: important
+  importance_label: Important
+  importance_rank: 1
+  graph_node: null
+  why_important: The paper uses PSLQ as the main single-point baseline when comparing
+    exact-fitting strategies.
+  rating: 3
+  rating_label: Could explain the idea
+  rating_short_label: Could explain
+gap_topics: &id003
+- prerequisite_id: 10
+  topic: Symbol formalism
+  description: Encoding polylogarithmic functions by tensors that expose algebraic
+    identities and branch-cut structure.
+  importance: essential
+  importance_label: Essential
+  importance_rank: 0
+  graph_node: qft.symbol_calculus
+  why_important: The paper builds bases by enumerating symbols first and only then
+    integrating them into functions.
+  rating: 1
+  rating_label: Never heard of it
+  rating_short_label: Never heard
+- prerequisite_id: 5
+  topic: Differential equations for master integrals
+  description: Treating a reduced basis of master integrals as solutions of coupled
+    differential equations in kinematics or auxiliary parameters.
+  importance: essential
+  importance_label: Essential
+  importance_rank: 0
+  graph_node: null
+  why_important: The whole module-A discussion of modern numerical evaluation assumes
+    differential-equation methods for master integrals.
+  rating: 2
+  rating_label: Heard the name
+  rating_short_label: Heard it
+- prerequisite_id: 8
+  topic: Generalized polylogarithms and iterated integrals
+  description: GPLs as the main function class used to express many multiple-polylogarithmic
+    Feynman integrals.
+  importance: essential
+  importance_label: Essential
+  importance_rank: 0
+  graph_node: qft.iterated_integral
+  why_important: Most basis functions in the paper are assumed to live in a finite
+    GPL or iterated-integral function space.
+  rating: 2
+  rating_label: Heard the name
+  rating_short_label: Heard it
+- prerequisite_id: 4
+  topic: Integration-by-parts reduction and master integrals
+  description: Using IBP identities to reduce whole integral families to a finite
+    set of master integrals.
+  importance: essential
+  importance_label: Essential
+  importance_rank: 0
+  graph_node: null
+  why_important: The paper assumes the reader understands how complicated topologies
+    are reduced before any high-precision evaluation is attempted.
+  rating: 2
+  rating_label: Heard the name
+  rating_short_label: Heard it
+- prerequisite_id: 6
+  topic: Auxiliary-mass flow / AMFlow-style evaluation
+  description: Introducing an auxiliary mass and evolving differential equations from
+    a simple boundary condition to the desired integral.
+  importance: important
+  importance_label: Important
+  importance_rank: 1
+  graph_node: null
+  why_important: The paper uses AMFlow repeatedly as the concrete source of high-precision
+    sample values.
+  rating: 1
+  rating_label: Never heard of it
+  rating_short_label: Never heard
+- prerequisite_id: 9
+  topic: Classical polylogarithms and logarithms
+  description: Familiar functions such as log and Li_n that appear as simple special
+    cases of GPLs.
+  importance: important
+  importance_label: Important
+  importance_rank: 1
+  graph_node: null
+  why_important: The simpler examples and several explicit formulas are written directly
+    in logs and classical polylogarithms.
+  rating: 2
+  rating_label: Heard the name
+  rating_short_label: Heard it
+- prerequisite_id: 12
+  topic: Integrability constraints and transcendental weight
+  description: Requiring candidate symbols to integrate to honest functions and organizing
+    bases by weight.
+  importance: important
+  importance_label: Important
+  importance_rank: 1
+  graph_node: technique.integrability_product_constraints
+  why_important: The paper repeatedly prunes basis spaces by weight and by symbol
+    integrability before fitting coefficients.
+  rating: 2
+  rating_label: Heard the name
+  rating_short_label: Heard it
+- prerequisite_id: 13
+  topic: Leading singularities, maximal cuts, and algebraic prefactors
+  description: Using maximal cuts to determine the algebraic prefactor multiplying
+    a pure transcendental function.
+  importance: important
+  importance_label: Important
+  importance_rank: 1
+  graph_node: null
+  why_important: Several examples first factor out P(x) or P(u,v) before fitting the
+    remaining transcendental basis.
+  rating: 2
+  rating_label: Heard the name
+  rating_short_label: Heard it
+- prerequisite_id: 2
+  topic: Sector decomposition
+  description: Splitting singular integration regions so epsilon-expanded numerical
+    integration becomes well defined.
+  importance: important
+  importance_label: Important
+  importance_rank: 1
+  graph_node: null
+  why_important: The paper cites sector decomposition as the standard benchmark for
+    numerical Feynman-integral evaluation before contrasting it with DE-based methods.
+  rating: 2
+  rating_label: Heard the name
+  rating_short_label: Heard it
+- prerequisite_id: 3
+  topic: Feynman-parameter and Baikov representations
+  description: Alternative variable choices that reduce loop integrals to scalar parameter
+    integrals.
+  importance: supporting
+  importance_label: Supporting
+  importance_rank: 2
+  graph_node: null
+  why_important: These representations are used to explain why direct multidimensional
+    integration is possible but typically not precise enough for exact reconstruction.
+  rating: 1
+  rating_label: Never heard of it
+  rating_short_label: Never heard
+- prerequisite_id: 16
+  topic: Kinematic variable rationalization
+  description: Changing variables to rationalize square roots and simplify alphabets
+    or function arguments.
+  importance: supporting
+  importance_label: Supporting
+  importance_rank: 2
+  graph_node: complex_analysis.conformal_map
+  why_important: The examples repeatedly switch to variables like x, z, and zbar to
+    make the analytic structure manageable.
+  rating: 2
+  rating_label: Heard the name
+  rating_short_label: Heard it
+answers: *id001
+strengths: *id002
+gaps: *id003
+generated_outputs:
+  generated_at: '2026-03-28T01:44:46+00:00'
+  personalized_gap_count: 11
+  analysis_path: data/papers/2507.17815/user_profile_analysis.yaml
+  annotated_output: data/papers/2507.17815/personalized_annotated.tex
+  condensed_output: data/papers/2507.17815/personalized_condensed.tex

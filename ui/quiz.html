@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Knowledge Check</title>
+    <link rel="stylesheet" href="./quiz.css" />
+  </head>
+  <body>
+    <div class="quiz-shell">
+      <header class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Knowledge Check</p>
+          <h1 id="paper-title">Loading knowledge check…</h1>
+          <p class="hero-subtitle" id="paper-subtitle">
+            Rate the prerequisite topics this paper assumes. One tap per topic.
+          </p>
+          <div class="saved-banner hidden" id="saved-banner"></div>
+        </div>
+
+        <aside class="progress-panel">
+          <div class="progress-meta">
+            <span class="progress-count" id="progress-label">0/0</span>
+            <span class="progress-caption" id="progress-caption">Preparing check</span>
+          </div>
+          <div class="progress-track">
+            <div class="progress-fill" id="progress-fill"></div>
+          </div>
+        </aside>
+      </header>
+
+      <main class="stage-panel">
+        <div class="status hidden" id="status-message"></div>
+        <section class="quiz-stage" id="quiz-stage" aria-live="polite"></section>
+      </main>
+    </div>
+
+    <script src="./quiz.js"></script>
+  </body>
+</html>

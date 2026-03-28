@@ -20,6 +20,7 @@ from annotate_paper import annotate_paper  # noqa: E402
 from condense_paper import condense_paper  # noqa: E402
 from paper_pipeline_common import (  # noqa: E402
     ensure_title_and_author_commands,
+    expand_upstream_gaps,
     extract_arxiv_id,
     extract_source_to_directory,
     find_best_insertion_line,
@@ -203,6 +204,26 @@ class PaperPipelineTests(unittest.TestCase):
         self.assertNotIn("texorpdfstring", updated)
         self.assertNotIn(r"\thanks{", updated)
 
+    def test_ensure_title_and_author_commands_preserves_jhep_author_block(self) -> None:
+        preamble = "\n".join(
+            [
+                r"\documentclass{article}",
+                r"\title{Old Title}",
+                r"\author[a]{A. Author}",
+                r"\author[b]{B. Author}",
+                r"\affiliation[a]{Institute A}",
+                r"\affiliation[b]{Institute B}",
+            ]
+        )
+
+        updated = ensure_title_and_author_commands(preamble, "New Title", ["Merged Author Block"])
+
+        self.assertIn(r"\title{New Title}", updated)
+        self.assertIn(r"\author[a]{A. Author}", updated)
+        self.assertIn(r"\author[b]{B. Author}", updated)
+        self.assertNotIn(r"\author{Merged Author Block}", updated)
+        self.assertIn(r"\date{}", updated)
+
     def test_find_best_insertion_line_skips_math_environments(self) -> None:
         lines = [
             r"\begin{document}",
@@ -253,9 +274,159 @@ class PaperPipelineTests(unittest.TestCase):
         output = annotate_paper(self.paper_dir, self.paper_dir / "annotated.tex")
         rendered = output.read_text(encoding="utf-8")
         self.assertIn(r"\usepackage{xcolor}", rendered)
-        self.assertIn(r"\textcolor{blue}{\small [Background:", rendered)
+        self.assertIn(r"\textcolor{blue}{\small\textbf{[Background -- Stokes sectors:]}", rendered)
         self.assertIn("Stokes sectors", rendered)
         self.assertTrue((self.paper_dir / "prompts" / "annotation_review.yaml").exists())
+
+    def test_annotate_paper_renders_rating_aware_notes(self) -> None:
+        self.paper_dir.mkdir(parents=True, exist_ok=True)
+        (self.paper_dir / "main.tex").write_text(
+            "\n".join(
+                [
+                    r"\documentclass{article}",
+                    r"\begin{document}",
+                    r"\section{Setup}",
+                    r"The symbols are constrained before they are integrated into functions.",
+                    r"We also compare against sector decomposition in the numerical discussion.",
+                    r"\end{document}",
+                    "",
+                ]
+            ),
+            encoding="utf-8",
+        )
+        (self.paper_dir / "metadata.yaml").write_text(
+            yaml.safe_dump({"title": "Demo", "authors": ["A. Author"]}, sort_keys=False),
+            encoding="utf-8",
+        )
+        (self.paper_dir / "analysis.yaml").write_text(
+            yaml.safe_dump(
+                {
+                    "gaps": [
+                        {
+                            "concept": "Symbol formalism",
+                            "rating": 1,
+                            "mention_terms": ["symbols"],
+                            "pedagogical_explanation": "Paragraph one.\n\nConnection to Landau singularities and symbol alphabets. Paragraph two.",
+                        },
+                        {
+                            "concept": "Sector decomposition",
+                            "rating": 2,
+                            "pedagogical_explanation": "In this paper, sector decomposition is the benchmark numerical strategy.",
+                        },
+                    ]
+                },
+                sort_keys=False,
+            ),
+            encoding="utf-8",
+        )
+
+        output = annotate_paper(self.paper_dir, self.paper_dir / "annotated.tex")
+        rendered = output.read_text(encoding="utf-8")
+
+        self.assertIn(r"\textcolor{blue}{\small\textbf{[Background -- Symbol formalism:]}", rendered)
+        self.assertIn(r"\par Connection to Landau singularities and symbol alphabets.", rendered)
+        self.assertIn(r"\textcolor{blue}{\small [Note: In this paper, sector decomposition is the benchmark numerical strategy.]}", rendered)
+
+    def test_expand_upstream_gaps_uses_graph_and_profile_bridges(self) -> None:
+        self.graph_path.write_text(
+            json.dumps(
+                {
+                    "nodes": [
+                        {"id": "qft.loop_momentum_integration_structure", "label": "Feynman integrals", "summary": "Loop integrals built from propagators."},
+                        {"id": "qft.dimensional_regularization", "label": "Dimensional regularization", "summary": "Regulate divergences in d = 4 - 2 epsilon."},
+                        {"id": "technique.integration_by_parts_reduction", "label": "Integration-by-parts (IBP) reduction", "summary": "Reduce integral families to master integrals."},
+                        {"id": "technique.differential_equations_for_master_integrals", "label": "Differential equations for master integrals", "summary": "Solve for masters from differential equations and boundary data."},
+                        {"id": "qft.iterated_integral", "label": "Iterated integral", "summary": "Nested integrals underlying multiple polylogarithms."},
+                        {"id": "qft.symbol_calculus", "label": "Symbol calculus", "summary": "Tensor encoding of polylogarithmic functions."},
+                        {"id": "technique.lattice_reduction_analytic_regression", "label": "Lattice Reduction for Analytic Regression of Feynman Integrals", "summary": "Recover exact coefficients from sampled data using lattice reduction."},
+                    ],
+                    "dependencies": [
+                        {"from": "qft.loop_momentum_integration_structure", "to": "technique.integration_by_parts_reduction", "relation_type": "requires_for_use", "necessity": "necessary"},
+                        {"from": "qft.dimensional_regularization", "to": "technique.integration_by_parts_reduction", "relation_type": "requires_for_use", "necessity": "necessary"},
+                        {"from": "technique.integration_by_parts_reduction", "to": "technique.differential_equations_for_master_integrals", "relation_type": "requires_for_use", "necessity": "necessary"},
+                        {"from": "qft.loop_momentum_integration_structure", "to": "technique.differential_equations_for_master_integrals", "relation_type": "requires_for_use", "necessity": "necessary"},
+                        {"from": "qft.iterated_integral", "to": "qft.symbol_calculus", "relation_type": "requires_for_use", "necessity": "necessary"},
+                        {"from": "qft.iterated_integral", "to": "technique.lattice_reduction_analytic_regression", "relation_type": "requires_for_use", "necessity": "necessary"},
+                    ],
+                }
+            ),
+            encoding="utf-8",
+        )
+        profile = {
+            "ratings": [
+                {
+                    "topic": "Feynman integrals",
+                    "graph_node": "qft.loop_momentum_integration_structure",
+                    "rating": 5,
+                    "importance_rank": 0,
+                    "description": "Known well.",
+                },
+                {
+                    "topic": "Lattice-reduction basics: LLL, L^2, shortest vector, Lovasz condition",
+                    "rating": 5,
+                    "importance_rank": 0,
+                    "description": "Known well.",
+                },
+                {
+                    "topic": "Differential equations for master integrals",
+                    "rating": 2,
+                    "importance_rank": 0,
+                    "description": "Gap topic.",
+                },
+                {
+                    "topic": "Integration-by-parts reduction and master integrals",
+                    "rating": 2,
+                    "importance_rank": 0,
+                    "description": "Gap topic.",
+                },
+                {
+                    "topic": "Auxiliary-mass flow / AMFlow-style evaluation",
+                    "rating": 1,
+                    "importance_rank": 1,
+                    "description": "Gap topic.",
+                },
+                {
+                    "topic": "Generalized polylogarithms and iterated integrals",
+                    "graph_node": "qft.iterated_integral",
+                    "rating": 2,
+                    "importance_rank": 0,
+                    "description": "Gap topic.",
+                },
+                {
+                    "topic": "Symbol formalism",
+                    "graph_node": "qft.symbol_calculus",
+                    "rating": 1,
+                    "importance_rank": 0,
+                    "description": "Gap topic.",
+                },
+            ]
+        }
+
+        enriched = expand_upstream_gaps(profile["ratings"][2:], profile, self.graph_path)
+        by_concept = {entry["concept"] if "concept" in entry else entry["topic"]: entry for entry in enriched}
+
+        amflow = by_concept["Auxiliary-mass flow / AMFlow-style evaluation"]
+        self.assertIn(
+            "Differential equations for master integrals",
+            {item["topic"] for item in amflow["implicit_prerequisites"]},
+        )
+        self.assertIn(
+            "Integration-by-parts reduction and master integrals",
+            {item["topic"] for item in amflow["implicit_prerequisites"]},
+        )
+        self.assertEqual(amflow["bridge_anchor"]["topic"], "Feynman integrals")
+
+        gpls = by_concept["Generalized polylogarithms and iterated integrals"]
+        self.assertEqual(
+            gpls["bridge_anchor"]["topic"],
+            "Lattice-reduction basics: LLL, L^2, shortest vector, Lovasz condition",
+        )
+
+        symbol = by_concept["Symbol formalism"]
+        self.assertIn(
+            "Generalized polylogarithms and iterated integrals",
+            {item["topic"] for item in symbol["implicit_prerequisites"]},
+        )
 
     def test_condense_paper_keeps_novel_section_and_condenses_background(self) -> None:
         self.write_staged_paper()

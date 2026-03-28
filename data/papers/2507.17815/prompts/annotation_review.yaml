@@ -1,0 +1,781 @@
+task: Rewrite and tighten inline background annotations for a LaTeX paper
+paper_dir: data/papers/2507.17815
+annotated_output: data/papers/2507.17815/personalized_annotated.tex
+instructions:
+- For each gap concept, keep the annotation concise and faithful to nearby graph summaries.
+- Return one polished annotation string per gap concept.
+- Do not remove the LaTeX wrapper; only improve the explanation text inside it.
+gaps:
+- concept: Symbol formalism
+  source_analysis_concept: Symbol formalism
+  why_needed: The paper builds bases by enumerating symbols first and only then integrating
+    them into functions.
+  suggested_explanation: 'The symbol of a polylogarithmic function is a tensor-like
+    record of the ordered logarithmic letters that appear under repeated differentiation.
+    It throws away additive constants such as zeta values and powers of pi, but it
+    keeps the combinatorial structure that controls functional identities, branch
+    cuts, and integrability. Because of that, symbols are much easier to enumerate
+    and constrain than full GPL formulas. In this paper the authors first build spaces
+    of allowed symbols, prune them with integrability and singularity information,
+    and only later integrate the survivors back into actual functions. So the symbol
+    is not just notation here; it is the working representation in which the candidate
+    basis is constructed.
+
+
+    Connection to Landau singularities and symbol alphabets. You already know how
+    Landau analysis supplies the alphabet of allowed letters. The symbol is the next
+    layer up: it records ordered strings of those letters and therefore tracks how
+    the function can branch as one moves across singular loci. If the alphabet tells
+    you which letters are allowed, the symbol tells you which words the paper is allowed
+    to spell with them. That is why Appendix B sits so close to the Landau-bootstrap
+    logic you already recognize.'
+  context_snippet: Encoding polylogarithmic functions by tensors that expose algebraic
+    identities and branch-cut structure.
+  related_graph_nodes:
+  - id: qft.symbol_calculus
+    label: Symbol formalism
+    summary: The paper uses symbols to enumerate function spaces, impose integrability,
+      and organize basis construction.
+  prerequisite_id: 10
+  description: Encoding polylogarithmic functions by tensors that expose algebraic
+    identities and branch-cut structure.
+  importance: essential
+  importance_label: Essential
+  importance_rank: 0
+  graph_node: qft.symbol_calculus
+  why_important: The paper builds bases by enumerating symbols first and only then
+    integrating them into functions.
+  rating: 1
+  rating_label: Never heard of it
+  rating_short_label: Never heard
+  profile_topic: Symbol formalism
+  resolved_graph_node: qft.symbol_calculus
+  mention_terms:
+  - Symbol formalism
+  - symbol formalism
+  - symbol
+  - symbols
+  - integrable symbols
+  implicit_prerequisites:
+  - topic: Generalized polylogarithms and iterated integrals
+    label: Iterated integral
+    summary: GPLs as the main function class used to express many multiple-polylogarithmic
+      Feynman integrals.
+    graph_node: qft.iterated_integral
+    rating: 2
+    depth: 1
+    relation_type: requires_for_use
+    necessity: necessary
+  - topic: Sequential discontinuity
+    label: Sequential discontinuity
+    summary: Repeated application of discontinuity operations in different kinematic
+      channels, used to test compatibility of Landau singularities and organize bootstrap
+      constraints.
+    graph_node: qft.sequential_discontinuity
+    rating: null
+    depth: 1
+    relation_type: requires_for_use
+    necessity: necessary
+  - topic: Distributional boundary values
+    label: Distributional boundary values
+    summary: Interpretation of singular expressions as boundary values of analytic
+      functions, including the distributional meaning of plus or minus i0 prescriptions.
+    graph_node: qft.distributional_boundary_values
+    rating: null
+    depth: 2
+    relation_type: requires_for_use
+    necessity: necessary
+  - topic: Mandelstam variables
+    label: Mandelstam variables
+    summary: Lorentz-invariant combinations of external momenta, usually written as
+      s, t, and u.
+    graph_node: qft.mandelstam_variables
+    rating: null
+    depth: 2
+    relation_type: requires_for_use
+    necessity: necessary
+  bridge_anchors:
+  - &id001
+    topic: Landau singularities and symbol alphabets
+    label: Landau singularities and symbol alphabets
+    summary: Alphabet construction is one of the main inputs to the basis-building
+      step used throughout the examples.
+    graph_node: qft.landau_singularity_conditions
+    rating: 3
+    distance: null
+    reason: preferred_bridge
+  bridge_anchor: *id001
+  pedagogical_explanation: 'The symbol of a polylogarithmic function is a tensor-like
+    record of the ordered logarithmic letters that appear under repeated differentiation.
+    It throws away additive constants such as zeta values and powers of pi, but it
+    keeps the combinatorial structure that controls functional identities, branch
+    cuts, and integrability. Because of that, symbols are much easier to enumerate
+    and constrain than full GPL formulas. In this paper the authors first build spaces
+    of allowed symbols, prune them with integrability and singularity information,
+    and only later integrate the survivors back into actual functions. So the symbol
+    is not just notation here; it is the working representation in which the candidate
+    basis is constructed.
+
+
+    Connection to Landau singularities and symbol alphabets. You already know how
+    Landau analysis supplies the alphabet of allowed letters. The symbol is the next
+    layer up: it records ordered strings of those letters and therefore tracks how
+    the function can branch as one moves across singular loci. If the alphabet tells
+    you which letters are allowed, the symbol tells you which words the paper is allowed
+    to spell with them. That is why Appendix B sits so close to the Landau-bootstrap
+    logic you already recognize.'
+- concept: Differential equations for master integrals
+  explanation: Master integrals satisfy coupled differential equations in kinematic
+    variables or auxiliary parameters, and solving those equations is one of the main
+    modern ways to evaluate them. The paper's whole numerical input pipeline depends
+    on this idea, so the reader needs it to understand where the high-precision sample
+    values come from.
+  source_analysis_concept: Differential equations for master integrals
+  prerequisite_id: 5
+  description: Treating a reduced basis of master integrals as solutions of coupled
+    differential equations in kinematics or auxiliary parameters.
+  importance: essential
+  importance_label: Essential
+  importance_rank: 0
+  why_important: The whole module-A discussion of modern numerical evaluation assumes
+    differential-equation methods for master integrals.
+  rating: 2
+  rating_label: Heard the name
+  rating_short_label: Heard it
+  why_needed: The whole module-A discussion of modern numerical evaluation assumes
+    differential-equation methods for master integrals.
+  context_snippet: Treating a reduced basis of master integrals as solutions of coupled
+    differential equations in kinematics or auxiliary parameters.
+  profile_topic: Differential equations for master integrals
+  resolved_graph_node: technique.differential_equations_for_master_integrals
+  related_graph_nodes:
+  - id: technique.differential_equations_for_master_integrals
+    label: Differential equations for master integrals
+    summary: Strategy that differentiates master integrals with respect to kinematic
+      variables or masses, closes the system with reduction identities, and solves
+      it from boundary data.
+  mention_terms:
+  - Differential equations for master integrals
+  - differential equation
+  - differential equations
+  - DE
+  - master integrals
+  implicit_prerequisites: []
+  bridge_anchors:
+  - &id002
+    topic: High-precision numerical evaluation
+    label: High-precision numerical evaluation
+    summary: Exact coefficient recovery is only possible because the inputs are assumed
+      to be numerically trustworthy at high precision.
+    graph_node: technique.lattice_reduction_analytic_regression
+    rating: 5
+    distance: null
+    reason: preferred_bridge
+  bridge_anchor: *id002
+  pedagogical_explanation: In this paper, differential equations for master integrals
+    are the mechanism that turns evaluation into solving a controlled flow from boundary
+    data instead of directly attacking a high-dimensional integral.
+  suggested_explanation: In this paper, differential equations for master integrals
+    are the mechanism that turns evaluation into solving a controlled flow from boundary
+    data instead of directly attacking a high-dimensional integral.
+- concept: Generalized polylogarithms and iterated integrals
+  explanation: Generalized polylogarithms, or GPLs, are iterated-integral functions
+    that contain many multiple-polylogarithmic Feynman integrals as special cases.
+    The paper assumes that all of its worked examples live in a finite GPL function
+    space, so the reader needs this concept to understand what the basis functions
+    actually are.
+  source_analysis_concept: Generalized polylogarithms
+  prerequisite_id: 8
+  description: GPLs as the main function class used to express many multiple-polylogarithmic
+    Feynman integrals.
+  importance: essential
+  importance_label: Essential
+  importance_rank: 0
+  graph_node: qft.iterated_integral
+  why_important: Most basis functions in the paper are assumed to live in a finite
+    GPL or iterated-integral function space.
+  rating: 2
+  rating_label: Heard the name
+  rating_short_label: Heard it
+  why_needed: Most basis functions in the paper are assumed to live in a finite GPL
+    or iterated-integral function space.
+  context_snippet: GPLs as the main function class used to express many multiple-polylogarithmic
+    Feynman integrals.
+  profile_topic: Generalized polylogarithms and iterated integrals
+  resolved_graph_node: qft.iterated_integral
+  related_graph_nodes:
+  - id: qft.iterated_integral
+    label: Iterated integral
+    summary: Chen-style nested integral representation of transcendental functions,
+      including multiple polylogarithms, that commonly appears in multi-loop Feynman
+      integrals and underlies symbol technology.
+  mention_terms:
+  - Generalized polylogarithms and iterated integrals
+  - Generalized Polylogarithms
+  - GPLs
+  - GPL
+  - iterated integrals
+  - Generalized polylogarithms
+  implicit_prerequisites: []
+  bridge_anchors:
+  - &id003
+    topic: 'Lattice-reduction basics: LLL, L^2, shortest vector, Lovasz condition'
+    label: 'Lattice-reduction basics: LLL, L^2, shortest vector, Lovasz condition'
+    summary: The central fitting algorithm is built directly on standard lattice-reduction
+      ideas rather than on floating-point linear algebra alone.
+    graph_node: technique.lattice_reduction_analytic_regression
+    rating: 5
+    distance: null
+    reason: preferred_bridge
+  bridge_anchor: *id003
+  pedagogical_explanation: In this paper, generalized polylogarithms are the basis
+    functions whose rational coefficients are reconstructed from samples, so they
+    play the same role on the function side that a lattice basis plays on the arithmetic
+    side of the final fit.
+  suggested_explanation: In this paper, generalized polylogarithms are the basis functions
+    whose rational coefficients are reconstructed from samples, so they play the same
+    role on the function side that a lattice basis plays on the arithmetic side of
+    the final fit.
+- concept: Integration-by-parts reduction and master integrals
+  explanation: Integration-by-parts identities relate many integrals in the same topology
+    and reduce them to a finite set of master integrals. The paper assumes this reduction
+    is available when it discusses AMFlow, IBP packages, and the reconstruction of
+    entire integral families from the masters.
+  source_analysis_concept: Integration-by-parts reduction and master integrals
+  prerequisite_id: 4
+  description: Using IBP identities to reduce whole integral families to a finite
+    set of master integrals.
+  importance: essential
+  importance_label: Essential
+  importance_rank: 0
+  why_important: The paper assumes the reader understands how complicated topologies
+    are reduced before any high-precision evaluation is attempted.
+  rating: 2
+  rating_label: Heard the name
+  rating_short_label: Heard it
+  why_needed: The paper assumes the reader understands how complicated topologies
+    are reduced before any high-precision evaluation is attempted.
+  context_snippet: Using IBP identities to reduce whole integral families to a finite
+    set of master integrals.
+  profile_topic: Integration-by-parts reduction and master integrals
+  resolved_graph_node: technique.integration_by_parts_reduction
+  related_graph_nodes:
+  - id: technique.integration_by_parts_reduction
+    label: Integration-by-parts (IBP) reduction
+    summary: Loop-integral reduction method that uses total-derivative identities
+      in loop-momentum space to express an integral family in terms of a finite set
+      of master integrals.
+  mention_terms:
+  - Integration-by-parts reduction and master integrals
+  - Integration-by-Parts
+  - IBP
+  - IBPs
+  - master integrals
+  implicit_prerequisites: []
+  bridge_anchors:
+  - &id004
+    topic: Feynman integrals
+    label: Feynman integrals
+    summary: The target object throughout the paper is a Feynman integral whose analytic
+      form is reconstructed from samples.
+    graph_node: qft.loop_momentum_integration_structure
+    rating: 5
+    distance: null
+    reason: preferred_bridge
+  bridge_anchor: *id004
+  pedagogical_explanation: In this paper, IBP reduction is the step that collapses
+    a large family of integrals to a finite master basis, so only the masters need
+    to be computed numerically before the whole topology is reconstructed.
+  suggested_explanation: In this paper, IBP reduction is the step that collapses a
+    large family of integrals to a finite master basis, so only the masters need to
+    be computed numerically before the whole topology is reconstructed.
+- concept: Auxiliary-mass flow / AMFlow-style evaluation
+  source_analysis_concept: ''
+  why_needed: The paper uses AMFlow repeatedly as the concrete source of high-precision
+    sample values.
+  suggested_explanation: 'AMFlow is a modern numerical pipeline for Feynman integrals
+    that avoids direct high-dimensional integration. It introduces an auxiliary mass
+    parameter, uses IBP identities to derive differential equations in that parameter,
+    and starts from a boundary point where the integral becomes simpler, typically
+    the large-mass limit. Solving that flow back to the physical point produces coefficients
+    of the epsilon expansion to very high precision. In this paper those high-precision
+    values are not the final answer; they are the data that analytic regression will
+    later fit exactly. Without this picture, the source of the paper''s trusted numerical
+    samples stays opaque.
+
+
+    Connection to High-precision numerical evaluation. You already know why hundreds
+    of reliable digits matter when one wants exact rational reconstruction rather
+    than a floating-point approximation. AMFlow is the machine that manufactures those
+    digits for a regulated Feynman integral while respecting its singular structure.
+    Conceptually, it plays the role of a precision-preserving oracle: lattice reduction
+    is the recovery step, but AMFlow is what makes the sampled numbers good enough
+    for that recovery to succeed.'
+  context_snippet: Introducing an auxiliary mass and evolving differential equations
+    from a simple boundary condition to the desired integral.
+  related_graph_nodes:
+  - id: technique.differential_equations_for_master_integrals
+    label: Differential equations for master integrals
+    summary: Strategy that differentiates master integrals with respect to kinematic
+      variables or masses, closes the system with reduction identities, and solves
+      it from boundary data.
+  prerequisite_id: 6
+  description: Introducing an auxiliary mass and evolving differential equations from
+    a simple boundary condition to the desired integral.
+  importance: important
+  importance_label: Important
+  importance_rank: 1
+  graph_node: null
+  why_important: The paper uses AMFlow repeatedly as the concrete source of high-precision
+    sample values.
+  rating: 1
+  rating_label: Never heard of it
+  rating_short_label: Never heard
+  profile_topic: Auxiliary-mass flow / AMFlow-style evaluation
+  resolved_graph_node: technique.differential_equations_for_master_integrals
+  mention_terms:
+  - Auxiliary-mass flow / AMFlow-style evaluation
+  - AMFlow
+  - auxiliary mass
+  - eta
+  - auxiliary-mass flow
+  implicit_prerequisites:
+  - topic: Differential equations for master integrals
+    label: Differential equations for master integrals
+    summary: Treating a reduced basis of master integrals as solutions of coupled
+      differential equations in kinematics or auxiliary parameters.
+    graph_node: technique.differential_equations_for_master_integrals
+    rating: 2
+    depth: 1
+    relation_type: manual
+    necessity: necessary
+  - topic: Integration-by-parts reduction and master integrals
+    label: Integration-by-parts (IBP) reduction
+    summary: Using IBP identities to reduce whole integral families to a finite set
+      of master integrals.
+    graph_node: technique.integration_by_parts_reduction
+    rating: 2
+    depth: 1
+    relation_type: requires_for_use
+    necessity: necessary
+  - topic: Mandelstam variables
+    label: Mandelstam variables
+    summary: Lorentz-invariant combinations of external momenta, usually written as
+      s, t, and u.
+    graph_node: qft.mandelstam_variables
+    rating: null
+    depth: 1
+    relation_type: requires_for_use
+    necessity: necessary
+  bridge_anchors:
+  - &id005
+    topic: High-precision numerical evaluation
+    label: High-precision numerical evaluation
+    summary: Exact coefficient recovery is only possible because the inputs are assumed
+      to be numerically trustworthy at high precision.
+    graph_node: technique.lattice_reduction_analytic_regression
+    rating: 5
+    distance: null
+    reason: preferred_bridge
+  - topic: Feynman integrals
+    label: Loop-momentum integration structure
+    summary: The target object throughout the paper is a Feynman integral whose analytic
+      form is reconstructed from samples.
+    graph_node: qft.loop_momentum_integration_structure
+    rating: 5
+    distance: 1
+    reason: upstream_stop
+  - topic: Dimensional regularization and epsilon expansion
+    label: Dimensional regularization
+    summary: The numerical inputs are coefficients in a regulated epsilon expansion
+      rather than raw four-dimensional integrals.
+    graph_node: qft.dimensional_regularization
+    rating: 4
+    distance: 2
+    reason: upstream_stop
+  bridge_anchor: *id005
+  pedagogical_explanation: 'AMFlow is a modern numerical pipeline for Feynman integrals
+    that avoids direct high-dimensional integration. It introduces an auxiliary mass
+    parameter, uses IBP identities to derive differential equations in that parameter,
+    and starts from a boundary point where the integral becomes simpler, typically
+    the large-mass limit. Solving that flow back to the physical point produces coefficients
+    of the epsilon expansion to very high precision. In this paper those high-precision
+    values are not the final answer; they are the data that analytic regression will
+    later fit exactly. Without this picture, the source of the paper''s trusted numerical
+    samples stays opaque.
+
+
+    Connection to High-precision numerical evaluation. You already know why hundreds
+    of reliable digits matter when one wants exact rational reconstruction rather
+    than a floating-point approximation. AMFlow is the machine that manufactures those
+    digits for a regulated Feynman integral while respecting its singular structure.
+    Conceptually, it plays the role of a precision-preserving oracle: lattice reduction
+    is the recovery step, but AMFlow is what makes the sampled numbers good enough
+    for that recovery to succeed.'
+- concept: Classical polylogarithms and logarithms
+  explanation: Classical polylogarithms are the familiar functions Li_n together with
+    logarithms, and they form a simpler subset of GPLs. The one-loop triangle and
+    ladder examples are written explicitly in these functions, so the reader needs
+    them to read the final fitted answers.
+  source_analysis_concept: Classical polylogarithms
+  prerequisite_id: 9
+  description: Familiar functions such as log and Li_n that appear as simple special
+    cases of GPLs.
+  importance: important
+  importance_label: Important
+  importance_rank: 1
+  why_important: The simpler examples and several explicit formulas are written directly
+    in logs and classical polylogarithms.
+  rating: 2
+  rating_label: Heard the name
+  rating_short_label: Heard it
+  why_needed: The simpler examples and several explicit formulas are written directly
+    in logs and classical polylogarithms.
+  context_snippet: Familiar functions such as log and Li_n that appear as simple special
+    cases of GPLs.
+  profile_topic: Classical polylogarithms and logarithms
+  resolved_graph_node: qft.iterated_integral
+  related_graph_nodes:
+  - id: qft.iterated_integral
+    label: Iterated integral
+    summary: Chen-style nested integral representation of transcendental functions,
+      including multiple polylogarithms, that commonly appears in multi-loop Feynman
+      integrals and underlies symbol technology.
+  mention_terms:
+  - Classical polylogarithms and logarithms
+  - classical polylogarithms
+  - logarithms
+  - Li
+  - polylogarithms
+  - Classical polylogarithms
+  implicit_prerequisites: []
+  bridge_anchors:
+  - &id006
+    topic: 'Lattice-reduction basics: LLL, L^2, shortest vector, Lovasz condition'
+    label: 'Lattice-reduction basics: LLL, L^2, shortest vector, Lovasz condition'
+    summary: The central fitting algorithm is built directly on standard lattice-reduction
+      ideas rather than on floating-point linear algebra alone.
+    graph_node: technique.lattice_reduction_analytic_regression
+    rating: 5
+    distance: null
+    reason: preferred_bridge
+  bridge_anchor: *id006
+  pedagogical_explanation: In this paper, logarithms and classical polylogarithms
+    are the simplest explicit basis functions, giving toy examples where the regression
+    problem is a cleaner version of the exact-reconstruction tasks you already know
+    from lattice reduction and PSLQ.
+  suggested_explanation: In this paper, logarithms and classical polylogarithms are
+    the simplest explicit basis functions, giving toy examples where the regression
+    problem is a cleaner version of the exact-reconstruction tasks you already know
+    from lattice reduction and PSLQ.
+- concept: Integrability constraints and transcendental weight
+  source_analysis_concept: Integrability constraints on symbol letters
+  why_needed: The paper repeatedly prunes basis spaces by weight and by symbol integrability
+    before fitting coefficients.
+  suggested_explanation: In this paper, integrability constraints and weight grading
+    are the filters that discard formal symbol combinations which cannot come from
+    honest functions, sharply shrinking the basis before any coefficient fit is attempted.
+  context_snippet: Requiring candidate symbols to integrate to honest functions and
+    organizing bases by weight.
+  related_graph_nodes:
+  - id: technique.integrability_product_constraints
+    label: Integrability constraints and transcendental weight
+    summary: Only integrable symbols correspond to actual functions, so these constraints
+      are central to basis generation.
+  prerequisite_id: 12
+  description: Requiring candidate symbols to integrate to honest functions and organizing
+    bases by weight.
+  importance: important
+  importance_label: Important
+  importance_rank: 1
+  graph_node: technique.integrability_product_constraints
+  why_important: The paper repeatedly prunes basis spaces by weight and by symbol
+    integrability before fitting coefficients.
+  rating: 2
+  rating_label: Heard the name
+  rating_short_label: Heard it
+  profile_topic: Integrability constraints and transcendental weight
+  resolved_graph_node: technique.integrability_product_constraints
+  mention_terms:
+  - Integrability constraints and transcendental weight
+  - integrability
+  - integrable symbols
+  - transcendental weight
+  - weight
+  - Integrability constraints on symbol letters
+  implicit_prerequisites: []
+  bridge_anchors:
+  - &id007
+    topic: Landau singularities and symbol alphabets
+    label: Landau singularities and symbol alphabets
+    summary: Alphabet construction is one of the main inputs to the basis-building
+      step used throughout the examples.
+    graph_node: qft.landau_singularity_conditions
+    rating: 3
+    distance: null
+    reason: preferred_bridge
+  bridge_anchor: *id007
+  pedagogical_explanation: In this paper, integrability constraints and weight grading
+    are the filters that discard formal symbol combinations which cannot come from
+    honest functions, sharply shrinking the basis before any coefficient fit is attempted.
+- concept: Leading singularities, maximal cuts, and algebraic prefactors
+  source_analysis_concept: ''
+  why_needed: Several examples first factor out P(x) or P(u,v) before fitting the
+    remaining transcendental basis.
+  suggested_explanation: In this paper, leading singularities and maximal cuts fix
+    the algebraic prefactor multiplying the pure polylogarithmic part, so the regression
+    only has to solve for rational coefficients of the remaining transcendental basis.
+  context_snippet: Using maximal cuts to determine the algebraic prefactor multiplying
+    a pure transcendental function.
+  related_graph_nodes:
+  - id: technique.landau_bootstrap
+    label: Bootstrapping Feynman Integrals from Singularity Structure
+    summary: Seven-step integral-bootstrap strategy that fixes Feynman integrals from
+      Landau singularities, leading singularities, symbol-space constraints, and asymptotic
+      data without direct integration.
+  prerequisite_id: 13
+  description: Using maximal cuts to determine the algebraic prefactor multiplying
+    a pure transcendental function.
+  importance: important
+  importance_label: Important
+  importance_rank: 1
+  graph_node: null
+  why_important: Several examples first factor out P(x) or P(u,v) before fitting the
+    remaining transcendental basis.
+  rating: 2
+  rating_label: Heard the name
+  rating_short_label: Heard it
+  profile_topic: Leading singularities, maximal cuts, and algebraic prefactors
+  resolved_graph_node: technique.landau_bootstrap
+  mention_terms:
+  - Leading singularities, maximal cuts, and algebraic prefactors
+  - leading singularity
+  - leading singularities
+  - maximal cut
+  - prefactor
+  implicit_prerequisites: []
+  bridge_anchors:
+  - &id008
+    topic: Landau singularities and symbol alphabets
+    label: Landau singularities and symbol alphabets
+    summary: Alphabet construction is one of the main inputs to the basis-building
+      step used throughout the examples.
+    graph_node: qft.landau_singularity_conditions
+    rating: 3
+    distance: null
+    reason: preferred_bridge
+  bridge_anchor: *id008
+  pedagogical_explanation: In this paper, leading singularities and maximal cuts fix
+    the algebraic prefactor multiplying the pure polylogarithmic part, so the regression
+    only has to solve for rational coefficients of the remaining transcendental basis.
+- concept: Sector decomposition
+  explanation: Sector decomposition splits an integration domain into sectors where
+    UV and IR singularities become factorized, making epsilon expansion and numerical
+    integration manageable. The paper mentions it as the standard older route for
+    numerical Feynman integration, so a reader needs it to appreciate why DE-based
+    samplers such as AMFlow are presented as a major advance.
+  source_analysis_concept: Sector decomposition
+  prerequisite_id: 2
+  description: Splitting singular integration regions so epsilon-expanded numerical
+    integration becomes well defined.
+  importance: important
+  importance_label: Important
+  importance_rank: 1
+  why_important: The paper cites sector decomposition as the standard benchmark for
+    numerical Feynman-integral evaluation before contrasting it with DE-based methods.
+  rating: 2
+  rating_label: Heard the name
+  rating_short_label: Heard it
+  why_needed: The paper cites sector decomposition as the standard benchmark for numerical
+    Feynman-integral evaluation before contrasting it with DE-based methods.
+  context_snippet: Splitting singular integration regions so epsilon-expanded numerical
+    integration becomes well defined.
+  profile_topic: Sector decomposition
+  resolved_graph_node: technique.generic_sector_decomposition
+  related_graph_nodes:
+  - id: technique.generic_sector_decomposition
+    label: Generic sector decomposition
+    summary: Recursive parameter-space partitioning method that isolates overlapping
+      endpoint singularities and exposes epsilon poles for analytic expansion or numerical
+      integration.
+  mention_terms:
+  - Sector decomposition
+  - sector decomposition
+  implicit_prerequisites: []
+  bridge_anchors:
+  - &id009
+    topic: Dimensional regularization and epsilon expansion
+    label: Dimensional regularization and epsilon expansion
+    summary: The numerical inputs are coefficients in a regulated epsilon expansion
+      rather than raw four-dimensional integrals.
+    graph_node: qft.dimensional_regularization
+    rating: 4
+    distance: null
+    reason: preferred_bridge
+  bridge_anchor: *id009
+  pedagogical_explanation: In this paper, sector decomposition is the older strategy
+    for isolating epsilon-singular integration regions before numerical integration,
+    so it mainly serves as the benchmark that the AMFlow differential-equation pipeline
+    is meant to beat.
+  suggested_explanation: In this paper, sector decomposition is the older strategy
+    for isolating epsilon-singular integration regions before numerical integration,
+    so it mainly serves as the benchmark that the AMFlow differential-equation pipeline
+    is meant to beat.
+- concept: Feynman-parameter and Baikov representations
+  explanation: These are alternative parameterizations of loop integrals that trade
+    loop-momentum variables for scalar integration variables and often lower the effective
+    dimensionality. The paper uses them as the natural benchmark for what direct multidimensional
+    integration looks like, before explaining why one-dimensional DE evolution is
+    much more powerful.
+  source_analysis_concept: Feynman-parameter and Baikov representations
+  prerequisite_id: 3
+  description: Alternative variable choices that reduce loop integrals to scalar parameter
+    integrals.
+  importance: supporting
+  importance_label: Supporting
+  importance_rank: 2
+  why_important: These representations are used to explain why direct multidimensional
+    integration is possible but typically not precise enough for exact reconstruction.
+  rating: 1
+  rating_label: Never heard of it
+  rating_short_label: Never heard
+  why_needed: These representations are used to explain why direct multidimensional
+    integration is possible but typically not precise enough for exact reconstruction.
+  context_snippet: Alternative variable choices that reduce loop integrals to scalar
+    parameter integrals.
+  profile_topic: Feynman-parameter and Baikov representations
+  resolved_graph_node: technique.feynman_parametrization
+  related_graph_nodes:
+  - id: technique.feynman_parametrization
+    label: Feynman parametrization
+    summary: Standard parameter trick that combines multiple propagator denominators
+      into a single denominator and simplifies the subsequent loop-momentum integration.
+  mention_terms:
+  - Feynman-parameter and Baikov representations
+  - Feynman parameters
+  - Feynman parameter
+  - Baikov
+  - Baikov variables
+  implicit_prerequisites:
+  - topic: Feynman propagator
+    label: Feynman propagator
+    summary: Causal two-point Green function with the standard i epsilon prescription,
+      usually written as a time-ordered vacuum correlator.
+    graph_node: qft.feynman_propagator
+    rating: null
+    depth: 1
+    relation_type: requires_for_use
+    necessity: necessary
+  - topic: Feynman i epsilon prescription
+    label: Feynman i epsilon prescription
+    summary: Prescription that displaces propagator poles off the real axis to define
+      causal contour choices in relativistic QFT.
+    graph_node: qft.feynman_i_epsilon_prescription
+    rating: null
+    depth: 2
+    relation_type: requires_for_use
+    necessity: necessary
+  bridge_anchors:
+  - &id010
+    topic: Feynman integrals
+    label: Feynman integrals
+    summary: The target object throughout the paper is a Feynman integral whose analytic
+      form is reconstructed from samples.
+    graph_node: qft.loop_momentum_integration_structure
+    rating: 5
+    distance: null
+    reason: preferred_bridge
+  bridge_anchor: *id010
+  pedagogical_explanation: 'A loop integral starts as an integral over loop momenta
+    with many propagator denominators. Feynman parametrization combines those denominators
+    into one denominator and trades the loop-momentum integrals for auxiliary parameters,
+    while the Baikov representation uses inverse propagators and scalar products themselves
+    as integration variables. Both rewritings expose where the singular regions and
+    algebraic polynomials live, which is why they are standard starting points for
+    direct numerical integration. In this paper the authors mention them to explain
+    the naive route to numerical evaluation. After either rewrite, one still faces
+    a genuinely multidimensional integral, so reaching the precision needed for exact
+    reconstruction is usually expensive.
+
+
+    Connection to Feynman integrals. These representations do not change the observable;
+    they are alternate coordinate systems for the same regulated Feynman integral.
+    If you think of the integral you already know as the fixed object, then parametrization
+    is just a change of variables that makes some structures more visible and some
+    computations easier. That perspective is why the paper can compare direct multidimensional
+    integration with DE-based methods without changing the physics problem itself.'
+  suggested_explanation: 'A loop integral starts as an integral over loop momenta
+    with many propagator denominators. Feynman parametrization combines those denominators
+    into one denominator and trades the loop-momentum integrals for auxiliary parameters,
+    while the Baikov representation uses inverse propagators and scalar products themselves
+    as integration variables. Both rewritings expose where the singular regions and
+    algebraic polynomials live, which is why they are standard starting points for
+    direct numerical integration. In this paper the authors mention them to explain
+    the naive route to numerical evaluation. After either rewrite, one still faces
+    a genuinely multidimensional integral, so reaching the precision needed for exact
+    reconstruction is usually expensive.
+
+
+    Connection to Feynman integrals. These representations do not change the observable;
+    they are alternate coordinate systems for the same regulated Feynman integral.
+    If you think of the integral you already know as the fixed object, then parametrization
+    is just a change of variables that makes some structures more visible and some
+    computations easier. That perspective is why the paper can compare direct multidimensional
+    integration with DE-based methods without changing the physics problem itself.'
+- concept: Kinematic variable rationalization
+  source_analysis_concept: Conformal maps and rationalizing variable changes
+  why_needed: The examples repeatedly switch to variables like x, z, and zbar to make
+    the analytic structure manageable.
+  suggested_explanation: In this paper, rationalizing variables such as x, z, zbar,
+    w, and z are chosen so that square roots in the alphabet become rational functions,
+    which makes symbols and GPLs easier to integrate and evaluate.
+  context_snippet: Changing variables to rationalize square roots and simplify alphabets
+    or function arguments.
+  related_graph_nodes:
+  - id: complex_analysis.conformal_map
+    label: Kinematic variable rationalization
+    summary: Variables such as x, z, zbar, w, and z are chosen to rationalize square
+      roots and simplify alphabets.
+  prerequisite_id: 16
+  description: Changing variables to rationalize square roots and simplify alphabets
+    or function arguments.
+  importance: supporting
+  importance_label: Supporting
+  importance_rank: 2
+  graph_node: complex_analysis.conformal_map
+  why_important: The examples repeatedly switch to variables like x, z, and zbar to
+    make the analytic structure manageable.
+  rating: 2
+  rating_label: Heard the name
+  rating_short_label: Heard it
+  profile_topic: Kinematic variable rationalization
+  resolved_graph_node: complex_analysis.conformal_map
+  mention_terms:
+  - Kinematic variable rationalization
+  - rationalize
+  - rationalized
+  - change of variables
+  - w, z
+  - x, z
+  - zbar
+  - Conformal maps and rationalizing variable changes
+  implicit_prerequisites: []
+  bridge_anchors:
+  - &id011
+    topic: Analytic continuation, branch cuts, and Euclidean kinematics
+    label: Analytic continuation, branch cuts, and Euclidean kinematics
+    summary: The point-selection strategy and several comments on numerical stability
+      rely on this standard complex-analytic picture.
+    graph_node: qft.analytic_continuation_in_kinematic_invariants
+    rating: 3
+    distance: null
+    reason: preferred_bridge
+  bridge_anchor: *id011
+  pedagogical_explanation: In this paper, rationalizing variables such as x, z, zbar,
+    w, and z are chosen so that square roots in the alphabet become rational functions,
+    which makes symbols and GPLs easier to integrate and evaluate.
+unresolved_mentions: []
+required_output_schema:
+  annotations:
+  - concept: string
+    annotation_text: string

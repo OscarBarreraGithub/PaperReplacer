@@ -1,0 +1,405 @@
+paper_concepts:
+  - concept: Basis and coordinates for function decomposition
+    classification: in_graph
+    matched_node_id: math.linear_algebra.basis_and_coordinates
+    role_in_paper: The whole paper starts from expanding an unknown function in a finite basis with rational coefficients.
+  - concept: Feynman integrals as loop-momentum integrals
+    classification: in_graph
+    matched_node_id: qft.loop_momentum_integration_structure
+    role_in_paper: This is the object being sampled numerically and then reconstructed analytically.
+  - concept: Feynman propagator
+    classification: in_graph
+    matched_node_id: qft.feynman_propagator
+    role_in_paper: The generic loop integral formula and all diagram examples are built from propagator denominators.
+  - concept: Feynman rules
+    classification: in_graph
+    matched_node_id: qft.feynman_rules
+    role_in_paper: The paper explicitly ties the singularity structure of integrals to the singularities of Feynman rules.
+  - concept: Dimensional regularization
+    classification: in_graph
+    matched_node_id: qft.dimensional_regularization
+    role_in_paper: Divergent integrals are regulated in d = 4 - 2 epsilon and fit order by order in the epsilon expansion.
+  - concept: Ultraviolet divergence
+    classification: in_graph
+    matched_node_id: qft.ultraviolet_divergence
+    role_in_paper: UV divergences are one of the reasons the integrals must be regulated before high-precision evaluation.
+  - concept: Infrared divergence
+    classification: in_graph
+    matched_node_id: qft.infrared_divergence
+    role_in_paper: IR divergences are the other major source of singular behavior that motivates epsilon expansion methods.
+  - concept: Analytic continuation in kinematic invariants
+    classification: in_graph
+    matched_node_id: qft.analytic_continuation_in_kinematic_invariants
+    role_in_paper: The examples are sampled in real Euclidean regions and then related back to physical regions by continuation.
+  - concept: Branch cuts and Riemann sheets
+    classification: in_graph
+    matched_node_id: complex_analysis.branch_cut_and_riemann_sheet
+    role_in_paper: Branch-cut structure constrains symbol letters, basis choice, and the need for branch-cut-compatible functions.
+  - concept: Landau singularity conditions
+    classification: in_graph
+    matched_node_id: qft.landau_singularity_conditions
+    role_in_paper: Landau analysis is the main source of the alphabets and singularity constraints used to build the basis.
+  - concept: Landau analytic structure
+    classification: in_graph
+    matched_node_id: qft.landau_analytic_structure
+    role_in_paper: The broader analytic-structure viewpoint motivates both the bootstrap inputs and the paper's bottom-up strategy.
+  - concept: Mandelstam variables
+    classification: in_graph
+    matched_node_id: qft.mandelstam_variables
+    role_in_paper: Several examples are parameterized in terms of s, t, and u before changing to more convenient variables.
+  - concept: On-shell kinematics
+    classification: in_graph
+    matched_node_id: qft.on_shell
+    role_in_paper: The two-loop four-point examples use adjacent external legs that are on shell, which shapes the alphabet and basis.
+  - concept: Iterated integrals
+    classification: in_graph
+    matched_node_id: qft.iterated_integral
+    role_in_paper: GPLs are iterated integrals, and the double-box example also uses numerical iterated integrals directly as basis functions.
+  - concept: Symbol formalism
+    classification: in_graph
+    matched_node_id: qft.symbol_calculus
+    role_in_paper: The paper uses symbols to enumerate function spaces, impose integrability, and organize basis construction.
+  - concept: Algebraic symbol letters from singularities
+    classification: in_graph
+    matched_node_id: technique.algebraic_letter_construction
+    role_in_paper: SOFIA-derived letters are the basic input from which symbol spaces and GPL bases are built.
+  - concept: Integrability constraints on symbol letters
+    classification: in_graph
+    matched_node_id: technique.integrability_product_constraints
+    role_in_paper: Only integrable symbols correspond to actual functions, so these constraints are central to basis generation.
+  - concept: Alpha-positivity constraints
+    classification: in_graph
+    matched_node_id: technique.alpha_positivity_constraints
+    role_in_paper: These constraints are part of the symbol-level pruning used to make the outer-mass double-box fit tractable.
+  - concept: Genealogical constraints
+    classification: in_graph
+    matched_node_id: technique.genealogical_constraints
+    role_in_paper: These extra symbol constraints are one of the ways the paper shrinks an otherwise impossible basis.
+  - concept: Landau bootstrap
+    classification: in_graph
+    matched_node_id: technique.landau_bootstrap
+    role_in_paper: The paper treats its analytic-regression program as a complement to the top-down Landau-bootstrap program.
+  - concept: Conformal maps and rationalizing variable changes
+    classification: in_graph
+    matched_node_id: complex_analysis.conformal_map
+    role_in_paper: Variables such as x, z, zbar, w, and z are chosen to rationalize square roots and simplify alphabets.
+  - concept: Analytic regression versus ordinary symbolic regression
+    classification: gap
+    matched_node_id: null
+    role_in_paper: The introduction depends on this distinction to explain why approximate expression search is not enough here.
+  - concept: Sector decomposition
+    classification: gap
+    matched_node_id: null
+    role_in_paper: It appears as the standard way to separate singular regions before the paper pivots to DE-based numerics.
+  - concept: Integration-by-parts reduction and master integrals
+    classification: gap
+    matched_node_id: null
+    role_in_paper: The numerical pipeline assumes that large integral families can be reduced to a finite master basis.
+  - concept: Differential equations for master integrals
+    classification: gap
+    matched_node_id: null
+    role_in_paper: AMFlow-style numerical evaluation relies on solving differential equations rather than directly integrating many variables.
+  - concept: Auxiliary-mass flow method
+    classification: gap
+    matched_node_id: null
+    role_in_paper: This is the specific DE-based numerical mechanism the paper uses to obtain high-precision samples.
+  - concept: Feynman-parameter and Baikov representations
+    classification: gap
+    matched_node_id: null
+    role_in_paper: The paper mentions them as the natural but ultimately less powerful naive integration variables.
+  - concept: Generalized polylogarithms
+    classification: gap
+    matched_node_id: null
+    role_in_paper: They are the main function space in which the paper assumes the answers live.
+  - concept: Classical polylogarithms
+    classification: gap
+    matched_node_id: null
+    role_in_paper: The simplest examples are written explicitly in logs and Li_n functions rather than abstract GPL notation.
+  - concept: Elliptic polylogarithms
+    classification: gap
+    matched_node_id: null
+    role_in_paper: The paper uses them as the natural next class beyond GPLs for future extensions.
+  - concept: Transcendental weight and uniform transcendentality
+    classification: gap
+    matched_node_id: null
+    role_in_paper: Weight counting controls basis construction, epsilon-order expectations, and several important basis reductions.
+  - concept: Maximal cuts, leading singularities, and algebraic prefactors
+    classification: gap
+    matched_node_id: null
+    role_in_paper: The paper repeatedly separates a rational or algebraic prefactor from a pure transcendental function before fitting.
+  - concept: Euclidean region and continuation to physical kinematics
+    classification: gap
+    matched_node_id: null
+    role_in_paper: Real-valued sampling regions are chosen deliberately to improve the numerical stability of the fits.
+  - concept: Multiple zeta values and pi-valued beyond-symbol terms
+    classification: gap
+    matched_node_id: null
+    role_in_paper: The paper has to enlarge symbol-derived bases by these symbol-invisible constants to make them complete.
+  - concept: Shuffle product plus tangential-base-point/trailing-zero regularization
+    classification: gap
+    matched_node_id: null
+    role_in_paper: Appendix C depends on these ideas to make numerical iterated integrals well defined at endpoints.
+  - concept: Galois-even symmetry and physical logarithmic branch cuts
+    classification: gap
+    matched_node_id: null
+    role_in_paper: These constraints are crucial for the outer-mass double-box symbol pruning but are not represented explicitly in the graph.
+  - concept: Principal Landau determinants
+    classification: gap
+    matched_node_id: null
+    role_in_paper: They are presented as an automated route from singularity analysis to an alphabet of candidate letters.
+  - concept: Condition number and singular values
+    classification: gap
+    matched_node_id: null
+    role_in_paper: The scaling section uses them to explain when and why precision requirements blow up.
+  - concept: Matrix inversion and least-squares fitting
+    classification: gap
+    matched_node_id: null
+    role_in_paper: These are the main alternative regressors against which lattice reduction is judged.
+  - concept: "Lattice-reduction basics: LLL, L^2, shortest vector, Lovasz condition"
+    classification: gap
+    matched_node_id: null
+    role_in_paper: The main method depends on this lattice-theory background, especially the appendix and the construction of the integer lattice.
+  - concept: PSLQ algorithm
+    classification: gap
+    matched_node_id: null
+    role_in_paper: PSLQ is the standard single-point integer-relation baseline that the paper repeatedly compares against.
+  - concept: Multi-point lattice reduction for analytic regression of Feynman integrals
+    classification: novel
+    matched_node_id: technique.lattice_reduction_analytic_regression
+    role_in_paper: This is the paper's central methodological contribution, extending integer-relation fitting from numbers to sampled functions.
+  - concept: Precision-versus-datapoint tradeoff law for analytic fitting
+    classification: novel
+    matched_node_id: technique.precision_point_tradeoff
+    role_in_paper: The paper argues and demonstrates that more sampling points can substitute for higher arithmetic precision.
+  - concept: Bottom-up complement to the Landau bootstrap
+    classification: novel
+    matched_node_id: technique.landau_bootstrap_complement
+    role_in_paper: The paper frames its workflow as a systematic partner to top-down bootstrap constraints rather than as a replacement.
+  - concept: Condition-number-guided point selection
+    classification: novel
+    matched_node_id: null
+    role_in_paper: The paper proposes optimizing sample points using the basis alone, without evaluating the target integral first.
+  - concept: Precision plateau in multi-point analytic regression
+    classification: novel
+    matched_node_id: null
+    role_in_paper: The scaling study identifies and explains the saturation of d_min even when more points are added.
+  - concept: Numerical iterated-integral basis for regression
+    classification: novel
+    matched_node_id: null
+    role_in_paper: The double-box example shows that a purely numerical basis can outperform an explicit GPL basis in practice.
+  - concept: End-to-end exact recovery of multi-loop integral families
+    classification: novel
+    matched_node_id: null
+    role_in_paper: The paper demonstrates complete analytic reconstruction for several nontrivial one-, two-, and three-loop examples.
+  - concept: Scaling comparison of lattice reduction, matrix inversion, and PSLQ
+    classification: novel
+    matched_node_id: null
+    role_in_paper: The paper supplies a practical complexity analysis of the three competing regression strategies in the function-fitting regime.
+
+gaps:
+  - concept: Analytic regression versus ordinary symbolic regression
+    explanation: >-
+      Ordinary symbolic regression tries to find approximate formulas that fit finite-precision or noisy data. This paper instead assumes exact underlying structure and a known function space, then uses high-precision samples to recover exact rational coefficients, so the reader needs this distinction to understand why basis construction and integer relations dominate the methodology.
+  - concept: Sector decomposition
+    explanation: >-
+      Sector decomposition splits an integration domain into sectors where UV and IR singularities become factorized, making epsilon expansion and numerical integration manageable. The paper mentions it as the standard older route for numerical Feynman integration, so a reader needs it to appreciate why DE-based samplers such as AMFlow are presented as a major advance.
+  - concept: Integration-by-parts reduction and master integrals
+    explanation: >-
+      Integration-by-parts identities relate many integrals in the same topology and reduce them to a finite set of master integrals. The paper assumes this reduction is available when it discusses AMFlow, IBP packages, and the reconstruction of entire integral families from the masters.
+  - concept: Differential equations for master integrals
+    explanation: >-
+      Master integrals satisfy coupled differential equations in kinematic variables or auxiliary parameters, and solving those equations is one of the main modern ways to evaluate them. The paper's whole numerical input pipeline depends on this idea, so the reader needs it to understand where the high-precision sample values come from.
+  - concept: Auxiliary-mass flow method
+    explanation: >-
+      The auxiliary-mass flow method introduces an extra mass parameter, derives differential equations in that parameter, and evolves from a simple large-mass boundary condition back to the desired integral. This is the concrete AMFlow mechanism used throughout the paper, so without it the source of the numerical data remains opaque.
+  - concept: Feynman-parameter and Baikov representations
+    explanation: >-
+      These are alternative parameterizations of loop integrals that trade loop-momentum variables for scalar integration variables and often lower the effective dimensionality. The paper uses them as the natural benchmark for what direct multidimensional integration looks like, before explaining why one-dimensional DE evolution is much more powerful.
+  - concept: Generalized polylogarithms
+    explanation: >-
+      Generalized polylogarithms, or GPLs, are iterated-integral functions that contain many multiple-polylogarithmic Feynman integrals as special cases. The paper assumes that all of its worked examples live in a finite GPL function space, so the reader needs this concept to understand what the basis functions actually are.
+  - concept: Classical polylogarithms
+    explanation: >-
+      Classical polylogarithms are the familiar functions Li_n together with logarithms, and they form a simpler subset of GPLs. The one-loop triangle and ladder examples are written explicitly in these functions, so the reader needs them to read the final fitted answers.
+  - concept: Elliptic polylogarithms
+    explanation: >-
+      Elliptic polylogarithms are a broader class of special functions needed once a Feynman integral is no longer expressible in ordinary multiple polylogarithms. The paper points to them as the obvious next extension of the method, so understanding their role clarifies the current scope and future reach of the approach.
+  - concept: Transcendental weight and uniform transcendentality
+    explanation: >-
+      Transcendental weight counts the iterated-integral complexity of terms such as logs, polylogarithms, zeta values, and their products, while uniform transcendentality means every term in an object carries the same total weight after factoring algebraic pieces. The paper uses weight to truncate bases, predict epsilon-order structure, and dramatically shrink some fits, so the reader needs it for both the examples and the scaling arguments.
+  - concept: Maximal cuts, leading singularities, and algebraic prefactors
+    explanation: >-
+      A maximal cut localizes an integral by putting as many propagators as possible on shell, and the resulting leading singularity often fixes the rational or algebraic prefactor multiplying a pure transcendental function. The paper repeatedly factors out P(x) or P(x,z) before fitting GPL combinations, so the reader needs this idea to see why the regression is set up that way.
+  - concept: Euclidean region and continuation to physical kinematics
+    explanation: >-
+      The Euclidean region is a kinematic domain where the relevant functions are typically real and far from physical branch-cut complications, while the physical scattering region is reached by analytic continuation. The paper deliberately samples in real Euclidean or unphysical domains because lattice reduction is faster and more stable there, so the reader needs this to understand the point-selection strategy.
+  - concept: Multiple zeta values and pi-valued beyond-symbol terms
+    explanation: >-
+      Symbols forget additive constants such as zeta values and powers of pi, even though those terms are part of the full function. The paper must add these beyond-symbol pieces back into the basis explicitly, so the reader needs this concept to understand why a symbol basis alone is not complete.
+  - concept: Shuffle product plus tangential-base-point/trailing-zero regularization
+    explanation: >-
+      The shuffle product is the algebra of iterated integrals, and tangential-base-point or trailing-zero prescriptions are standard ways to define or rewrite endpoint-singular integrals. Appendix C uses exactly these ideas to repair numerical iterated-integral bases whose first letters would otherwise create ill-defined endpoint behavior, so the reader needs them to follow the double-box construction.
+  - concept: Galois-even symmetry and physical logarithmic branch cuts
+    explanation: >-
+      Galois-even symmetry means invariance under the sign flip of a square root, and physical logarithmic branch-cut conditions restrict which first entries and discontinuities are allowed by the integral's physics. The outer-mass double-box example depends critically on these constraints to reduce the symbol space to something that can actually be fit.
+  - concept: Principal Landau determinants
+    explanation: >-
+      Principal Landau determinants are algebraic conditions extracted from Landau analysis that locate singular hypersurfaces and help generate candidate letters for the symbol alphabet. The paper cites them as the automated bridge from singularity analysis to basis construction, so the reader needs them to understand how the function space is obtained semi-automatically.
+  - concept: Condition number and singular values
+    explanation: >-
+      The condition number is the ratio of the largest to smallest singular value of a matrix and measures how strongly input errors are amplified by linear operations. The paper uses it to explain precision loss, precision plateaus, and point-selection heuristics, so it is one of the key ideas in the methodology section rather than a peripheral numerical detail.
+  - concept: Matrix inversion and least-squares fitting
+    explanation: >-
+      Matrix inversion solves for coefficients directly when the system is square, while least-squares fitting finds the best real-valued coefficients in an overdetermined system. The paper argues that both are poor fits to its problem because they do not naturally exploit rational coefficients and are highly sensitive to ill conditioning, so the reader needs these ideas to understand the baseline comparison.
+  - concept: "Lattice-reduction basics: LLL, L^2, shortest vector, Lovasz condition"
+    explanation: >-
+      Lattice reduction works by replacing a basis of an integer lattice with a shorter, more nearly orthogonal one, and algorithms such as LLL or L^2 approximate the shortest-vector problem subject to conditions such as the Lovasz criterion. The paper's central reconstruction method is built on exactly this lattice viewpoint, so a reader needs these basics to understand what the reduced vectors mean and why integer relations emerge from them.
+  - concept: PSLQ algorithm
+    explanation: >-
+      PSLQ is a classic algorithm for finding integer relations among real numbers known to high precision. The paper uses it as the single-point baseline for comparison, so the reader needs PSLQ in order to understand why multi-point lattice reduction is presented as a genuine generalization rather than a cosmetic variation.
+
+novel_contributions:
+  - contribution: Multi-point lattice reduction for analytic regression of Feynman integrals
+    matched_node_id: technique.lattice_reduction_analytic_regression
+    description: >-
+      The paper generalizes the old use of integer-relation methods for fitting constants into a method for fitting full functions. It does this by building a lattice from values of the target integral and the basis functions at many kinematic points, then reading exact rational coefficients from the reduced lattice basis.
+  - contribution: Precision-versus-datapoint tradeoff law for analytic fitting
+    matched_node_id: technique.precision_point_tradeoff
+    description: >-
+      The paper's main scaling claim is that one can trade arithmetic precision for more evaluation points, with an estimated threshold d_min approximately proportional to n/p up to a plateau offset. This turns the practical question from Can I get ten thousand digits at one point? into Can I get moderate precision at many points?
+  - contribution: Bottom-up complement to the Landau bootstrap
+    matched_node_id: technique.landau_bootstrap_complement
+    description: >-
+      Rather than trying to determine the answer from analytic structure alone, the paper uses analytic structure to define the function space and high-precision numerics to determine the coefficients. This is a clean conceptual reframing of analytic reconstruction as a bottom-up partner to the top-down bootstrap.
+  - contribution: Condition-number-guided point selection
+    matched_node_id: null
+    description: >-
+      The paper shows that one can optimize sample points by minimizing the condition number of the basis matrix, using only the basis functions and not the expensive target integral. That turns point selection into a precomputation step and gives a principled way to reduce the required number of digits.
+  - contribution: Precision plateau in multi-point analytic regression
+    matched_node_id: null
+    description: >-
+      The paper identifies a real saturation phenomenon: adding more random points does not keep reducing the required digits forever. It ties that plateau to the conditioning of smooth-function evaluation matrices, which is a nontrivial practical insight for anyone attempting large fits.
+  - contribution: Numerical iterated-integral basis for regression
+    matched_node_id: null
+    description: >-
+      In the outer-mass double-box example, the paper shows that explicitly integrated GPL basis functions are not always the most practical representation. A basis defined only by numerical iterated integrals can be cheaper, better conditioned, and still sufficient for exact coefficient recovery.
+  - contribution: End-to-end exact recovery of multi-loop integral families
+    matched_node_id: null
+    description: >-
+      The paper does not stop at toy numerics; it reconstructs nontrivial one-loop, two-loop, and three-loop examples, including triangle ladders and the outer-mass double box. That makes the contribution methodological and operational, not just conceptual.
+  - contribution: Scaling comparison of lattice reduction, matrix inversion, and PSLQ
+    matched_node_id: null
+    description: >-
+      The paper gives a practical timing and scaling comparison among the three main exact-fitting strategies available in this setting. The result is not merely that lattice reduction works, but that it occupies the useful regime where rational structure matters and many moderate-precision samples are available.
+
+prerequisites:
+  - topic: Feynman integrals
+    description: Loop-momentum integrals built from propagator denominators and external kinematic invariants.
+    importance: essential
+    matched_node_id: qft.loop_momentum_integration_structure
+    why_important: The target object throughout the paper is a Feynman integral whose analytic form is reconstructed from samples.
+  - topic: Dimensional regularization and epsilon expansion
+    description: Regulating UV and IR divergences by working in d = 4 - 2 epsilon and expanding in epsilon.
+    importance: essential
+    matched_node_id: qft.dimensional_regularization
+    why_important: The numerical inputs are coefficients in a regulated epsilon expansion rather than raw four-dimensional integrals.
+  - topic: Sector decomposition
+    description: Splitting singular integration regions so epsilon-expanded numerical integration becomes well defined.
+    importance: important
+    matched_node_id: null
+    why_important: The paper cites sector decomposition as the standard benchmark for numerical Feynman-integral evaluation before contrasting it with DE-based methods.
+  - topic: Feynman-parameter and Baikov representations
+    description: Alternative variable choices that reduce loop integrals to scalar parameter integrals.
+    importance: supporting
+    matched_node_id: null
+    why_important: These representations are used to explain why direct multidimensional integration is possible but typically not precise enough for exact reconstruction.
+  - topic: Integration-by-parts reduction and master integrals
+    description: Using IBP identities to reduce whole integral families to a finite set of master integrals.
+    importance: essential
+    matched_node_id: null
+    why_important: The paper assumes the reader understands how complicated topologies are reduced before any high-precision evaluation is attempted.
+  - topic: Differential equations for master integrals
+    description: Treating a reduced basis of master integrals as solutions of coupled differential equations in kinematics or auxiliary parameters.
+    importance: essential
+    matched_node_id: null
+    why_important: The whole module-A discussion of modern numerical evaluation assumes differential-equation methods for master integrals.
+  - topic: Auxiliary-mass flow / AMFlow-style evaluation
+    description: Introducing an auxiliary mass and evolving differential equations from a simple boundary condition to the desired integral.
+    importance: important
+    matched_node_id: null
+    why_important: The paper uses AMFlow repeatedly as the concrete source of high-precision sample values.
+  - topic: High-precision numerical evaluation
+    description: Computing special functions or integrals to tens or hundreds of correct digits.
+    importance: important
+    matched_node_id: null
+    why_important: Exact coefficient recovery is only possible because the inputs are assumed to be numerically trustworthy at high precision.
+  - topic: Generalized polylogarithms and iterated integrals
+    description: GPLs as the main function class used to express many multiple-polylogarithmic Feynman integrals.
+    importance: essential
+    matched_node_id: qft.iterated_integral
+    why_important: Most basis functions in the paper are assumed to live in a finite GPL or iterated-integral function space.
+  - topic: Classical polylogarithms and logarithms
+    description: Familiar functions such as log and Li_n that appear as simple special cases of GPLs.
+    importance: important
+    matched_node_id: null
+    why_important: The simpler examples and several explicit formulas are written directly in logs and classical polylogarithms.
+  - topic: Symbol formalism
+    description: Encoding polylogarithmic functions by tensors that expose algebraic identities and branch-cut structure.
+    importance: essential
+    matched_node_id: qft.symbol_calculus
+    why_important: The paper builds bases by enumerating symbols first and only then integrating them into functions.
+  - topic: Landau singularities and symbol alphabets
+    description: Using singularity analysis to determine the allowed letters that can appear in symbols and GPL arguments.
+    importance: essential
+    matched_node_id: qft.landau_singularity_conditions
+    why_important: Alphabet construction is one of the main inputs to the basis-building step used throughout the examples.
+  - topic: Integrability constraints and transcendental weight
+    description: Requiring candidate symbols to integrate to honest functions and organizing bases by weight.
+    importance: important
+    matched_node_id: technique.integrability_product_constraints
+    why_important: The paper repeatedly prunes basis spaces by weight and by symbol integrability before fitting coefficients.
+  - topic: Leading singularities, maximal cuts, and algebraic prefactors
+    description: Using maximal cuts to determine the algebraic prefactor multiplying a pure transcendental function.
+    importance: important
+    matched_node_id: null
+    why_important: Several examples first factor out P(x) or P(u,v) before fitting the remaining transcendental basis.
+  - topic: Analytic continuation, branch cuts, and Euclidean kinematics
+    description: Sampling in a real Euclidean region and continuing the answer back to physical scattering kinematics.
+    importance: important
+    matched_node_id: qft.analytic_continuation_in_kinematic_invariants
+    why_important: The point-selection strategy and several comments on numerical stability rely on this standard complex-analytic picture.
+  - topic: Multiple zeta values and other beyond-symbol constants
+    description: Constants such as zeta values and powers of pi that are invisible to the symbol and must be restored separately.
+    importance: important
+    matched_node_id: null
+    why_important: A symbol basis alone is incomplete for the full answers considered in the paper.
+  - topic: Kinematic variable rationalization
+    description: Changing variables to rationalize square roots and simplify alphabets or function arguments.
+    importance: supporting
+    matched_node_id: complex_analysis.conformal_map
+    why_important: The examples repeatedly switch to variables like x, z, and zbar to make the analytic structure manageable.
+  - topic: Linear algebra over the rationals and basis decompositions
+    description: Expanding an unknown function in a known finite basis with exact rational coefficients.
+    importance: essential
+    matched_node_id: math.linear_algebra.basis_and_coordinates
+    why_important: The regression problem is posed from the outset as exact rational coefficient recovery in a finite basis.
+  - topic: Matrix inversion and least-squares fitting
+    description: Solving or approximately solving linear systems from sampled basis values.
+    importance: important
+    matched_node_id: null
+    why_important: The paper’s lattice-based method is motivated by a careful comparison against these standard linear-algebra baselines.
+  - topic: Condition number and singular values
+    description: Quantifying how numerical errors are amplified by an ill-conditioned basis matrix.
+    importance: important
+    matched_node_id: null
+    why_important: The paper’s precision estimates, plateau behavior, and point-selection heuristics all depend on conditioning.
+  - topic: "Lattice-reduction basics: LLL, L^2, shortest vector, Lovasz condition"
+    description: Finding short nearly orthogonal lattice bases to expose integer relations among sampled values.
+    importance: essential
+    matched_node_id: null
+    why_important: The central fitting algorithm is built directly on standard lattice-reduction ideas rather than on floating-point linear algebra alone.
+  - topic: PSLQ algorithm
+    description: The classic integer-relation algorithm for high-precision real numbers.
+    importance: important
+    matched_node_id: null
+    why_important: The paper uses PSLQ as the main single-point baseline when comparing exact-fitting strategies.

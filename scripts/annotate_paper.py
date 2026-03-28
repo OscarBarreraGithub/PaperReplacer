@@ -9,6 +9,7 @@ from pathlib import Path
 from paper_pipeline_common import (
     derive_gap_explanation,
     ensure_usepackage,
+    escape_latex_paragraphs,
     escape_latex_text,
     find_best_insertion_line,
     find_document_body_start_line,
@@ -29,21 +30,57 @@ def build_parser() -> argparse.ArgumentParser:
     )
     parser.add_argument("--paper-dir", required=True, help="Directory containing main.tex and analysis.yaml")
     parser.add_argument("--out", required=True, help="Output path for the annotated LaTeX file")
+    parser.add_argument(
+        "--analysis",
+        help="Optional analysis YAML path to use instead of paper_dir/analysis.yaml",
+    )
     return parser
 
 
-def build_annotation_block(explanation: str) -> str:
+def build_annotation_block(gap: dict[str, object]) -> str:
     """Format a gap explanation as a blue LaTeX annotation."""
 
-    return rf"\textcolor{{blue}}{{\small [Background: {escape_latex_text(explanation)}]}}"
+    rating = int(gap.get("rating", 0) or 0)
+    if rating >= 3:
+        return ""
+    explanation = derive_gap_explanation(gap)
+    if rating <= 1:
+        concept = escape_latex_text(str(gap.get("concept") or gap.get("topic") or "Background").strip())
+        body = escape_latex_paragraphs(explanation)
+        return rf"\textcolor{{blue}}{{\small\textbf{{[Background -- {concept}:]}} {body}}}"
+    body = escape_latex_text(explanation)
+    return rf"\textcolor{{blue}}{{\small [Note: {body}]}}"
 
 
-def annotate_paper(paper_dir: str | Path, out_path: str | Path) -> Path:
+def gap_search_terms(gap: dict[str, object]) -> list[str]:
+    """Return concept phrases that should count as mentions for a gap."""
+
+    terms: list[str] = []
+    for value in (
+        gap.get("concept"),
+        gap.get("topic"),
+        gap.get("source_analysis_concept"),
+    ):
+        text = str(value or "").strip()
+        if text:
+            terms.append(text)
+    for value in gap.get("mention_terms") or []:
+        text = str(value or "").strip()
+        if text:
+            terms.append(text)
+    return list(dict.fromkeys(terms))
+
+
+def annotate_paper(
+    paper_dir: str | Path,
+    out_path: str | Path,
+    analysis_path: str | Path | None = None,
+) -> Path:
     """Annotate a paper with background notes after the first mention of each gap."""
 
     paper_path = Path(paper_dir)
     tex = ensure_usepackage(load_main_tex(paper_path), "xcolor")
-    analysis = load_analysis(paper_path)
+    analysis = load_analysis(paper_path, analysis_path=analysis_path)
 
     lines = tex.splitlines()
     body_start = find_document_body_start_line(lines)
@@ -54,12 +91,19 @@ def annotate_paper(paper_dir: str | Path, out_path: str | Path) -> Path:
         concept = str(gap.get("concept", "")).strip()
         if not concept:
             continue
+        block = build_annotation_block(gap)
+        if not block:
+            continue
         explanation = derive_gap_explanation(gap)
-        target_line = find_best_insertion_line(lines, concept, start_index=body_start)
+        target_line = None
+        for term in gap_search_terms(gap):
+            target_line = find_best_insertion_line(lines, term, start_index=body_start)
+            if target_line is not None:
+                break
         if target_line is None:
             target_line = body_start
             unresolved.append({"concept": concept, "explanation": explanation})
-        insertions.setdefault(target_line, []).append(build_annotation_block(explanation))
+        insertions.setdefault(target_line, []).append(block)
 
     rendered_lines: list[str] = []
     for index, line in enumerate(lines):
@@ -100,7 +144,7 @@ def main() -> int:
     """CLI entrypoint."""
 
     args = build_parser().parse_args()
-    output = annotate_paper(args.paper_dir, args.out)
+    output = annotate_paper(args.paper_dir, args.out, analysis_path=args.analysis)
     print(output)
     return 0
 

@@ -1,0 +1,393 @@
+\documentclass[11pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,booktabs,array,longtable}
+\usepackage[colorlinks=true,linkcolor=blue,urlcolor=blue]{hyperref}
+
+\newcommand{\Li}{\operatorname{Li}}
+\newcommand{\cB}{\mathcal{B}}
+\newcommand{\cS}{\mathcal{S}}
+\newcommand{\bx}{\mathbf{x}}
+\newcommand{\dmin}{d_{\min}}
+\newcommand{\Reff}{R_{\mathrm{eff}}}
+
+\title{Condensed Reading: Analytic Regression of Feynman Integrals from High-Precision Numerical Sampling}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section*{Reading Guide}
+This condensed version removes the paper's long literature survey, software overviews, figure-by-figure narration, and most tutorial appendix material. It keeps the paper's new content: the analytic-regression setup for Feynman integrals, the lattice-reduction algorithm that turns numerical samples into exact rational coefficients, the precision-versus-datapoint tradeoff analysis, the point-selection heuristics, and all four worked examples.
+
+Standard background is compressed to short paragraphs. In particular, the original discussions of what Feynman integrals are, why dimensional regularization is used, and how generalized polylogarithms and symbols are defined have been reduced to the minimum needed to follow the new method.
+
+\section{Minimal Background and Gap Concepts}
+\paragraph{Feynman integrals.}
+A loop amplitude is an integral over loop momenta whose integrand is built from propagator denominators and possible numerator polynomials. In this paper the crucial fact is not their full definition, but that modern tools can evaluate them numerically at fixed kinematic points to dozens of digits.
+
+\paragraph{Dimensional regularization.}
+Divergent integrals are regulated by continuing to $d=4-2\epsilon$ dimensions and expanding in $\epsilon$. The regression problem is then applied coefficient-by-coefficient to the Laurent series in $\epsilon$.
+
+\paragraph{Generalized polylogarithms and symbols.}
+For the examples in the paper, the non-algebraic part of the answer lies in a space of generalized polylogarithms (GPLs). Their symbols record the iterated-logarithm structure and make it practical to enumerate candidate functions from an alphabet of allowed letters while enforcing integrability.
+
+\paragraph{Landau singularities and alphabets.}
+The singularity structure of an integral strongly constrains which letters can appear in its symbol. In practice the paper uses this to construct a finite candidate basis before any regression is attempted.
+
+\paragraph{Leading singularity and rational prefactor.}
+The fitted function is typically written as a universal algebraic prefactor $P(\bx)$ times a pure polylogarithmic combination. The prefactor is fixed from the maximal cut or leading singularity, and the regression only needs to determine rational coefficients multiplying the transcendental basis functions.
+
+\paragraph{Condition number.}
+If the sampled basis values are nearly linearly dependent, small numerical errors get amplified. The condition number $\kappa=\sigma_{\max}/\sigma_{\min}$ of the sampling matrix measures this instability and ends up explaining both the precision plateau and why point selection matters.
+
+\paragraph{Lattice reduction intuition.}
+LLL-type algorithms replace a lattice basis by a shorter, nearly orthogonal one. Here the lattice is built so that a short vector corresponds to a small integer relation among sampled values of the target integral and the candidate basis functions, exposing the exact rational coefficients.
+
+\paragraph{Numerical iterated-integral bases.}
+When integrating symbols to explicit GPL formulas is too expensive, the paper instead assigns to each symbol a numerical iterated integral with fixed boundary conditions. This is essential in the outer-mass double-box example, where a numerical basis is faster and numerically better behaved than the explicit GPL basis.
+
+\section{Core Regression Problem}
+The target problem is to recover exact rational coefficients in
+\begin{equation}
+f(\bx_j)=\sum_{i=1}^{n} c_i\,\cB_i(\bx_j), \qquad c_i\in\mathbb{Q},
+\label{eq:core-problem}
+\end{equation}
+from numerical values of the left-hand side and of the basis functions at sample points $\bx_j$.
+
+For Feynman integrals the paper refines this to
+\begin{equation}
+f(\bx)=P(\bx)\sum_{i=1}^{n} c_i\,\widetilde{\cB}_i(\bx),
+\label{eq:prefactor-form}
+\end{equation}
+where $P(\bx)$ is an algebraic prefactor fixed analytically and $\widetilde{\cB}_i$ are GPLs or, in the last example, numerical iterated integrals attached to integrable symbols.
+
+\subsection{Producing the Inputs}
+The input pipeline is modular:
+\begin{itemize}
+    \item Numerical values of $f(\bx)$ are produced with high-precision Feynman-integral solvers, primarily \textsc{AMFlow}.
+    \item Candidate alphabets and prefactors are inferred from Landau singularities and maximal cuts, primarily through \textsc{SOFIA}.
+    \item The allowed symbols are integrated to GPLs when feasible; otherwise they are kept as numerically evaluable iterated integrals.
+\end{itemize}
+
+For multiloop integrals with an $\epsilon$ expansion, each coefficient $f_n(\bx)$ is fit independently. The basis at a given order is chosen to contain all GPLs compatible with the alphabet and all lower-weight completions by powers of $\pi$ and zeta values that the symbol cannot detect.
+
+\subsection{Why Matrix Inversion Is Not Enough}
+The naive method is to choose $p=n$ points and invert the matrix $M_{ij}=\cB_i(\bx_j)$. The paper argues that this is not the right default for three reasons.
+
+First, matrix inversion has no built-in preference for small rational coefficients. If the basis contains functions related by transcendental constants, inversion can return perfectly valid real coefficients that are not the desired rational ones. The paper's example is that a basis containing $\pi \log x$ and $(\pi^2/6)\log x$ can lead inversion to output coefficients resembling $\{-\pi/6,-1\}$ instead of the intended rational pair $\{0,-2\}$.
+
+Second, inversion forces $p=n$, so it cannot trade precision for extra sample points. Third, its error grows with the condition number:
+\begin{equation}
+\frac{\|\Delta c\|}{\|c\|}\approx \kappa(M)\left(\frac{\|\Delta f\|}{\|f\|}+\frac{\|\Delta M\|}{\|M\|}\right).
+\label{eq:error-prop}
+\end{equation}
+For smooth-function sampling matrices, the paper finds $\kappa$ is typically exponentially large rather than order-one, so precision is lost quickly.
+
+\section{Novel Method: Lattice Reduction for Functions}
+The paper's main contribution is to turn Eq.~\eqref{eq:core-problem} into a shortest-vector problem. Choose $p$ evaluation points and construct
+\begin{equation}
+M=\operatorname{round}\!\left(
+10^s
+\begin{bmatrix}
+f(\bx_1) & \cdots & f(\bx_p) & 10^{-s} & 0 & \cdots & 0 \\
+\cB_1(\bx_1) & \cdots & \cB_1(\bx_p) & 0 & 10^{-s} & \cdots & 0 \\
+\vdots & & \vdots & \vdots & & \ddots & \vdots \\
+\cB_n(\bx_1) & \cdots & \cB_n(\bx_p) & 0 & 0 & \cdots & 10^{-s}
+\end{bmatrix}
+\right),
+\label{eq:lattice-matrix}
+\end{equation}
+an $(n+1)\times(p+n+1)$ integer matrix whose rows define a lattice basis.
+
+The scaling exponent $s$ is chosen to preserve all reliable digits. If the sampled values range from magnitudes $10^{\Delta_{\min}}$ to $10^{\Delta_{\max}}$ and are known to $d$ significant digits, the paper uses
+\begin{equation}
+s=d-\Delta_{\max},
+\label{eq:s-choice}
+\end{equation}
+with the basic consistency condition $d\ge \Delta_{\max}-\Delta_{\min}$ so the smaller entries are not completely washed out.
+
+After LLL reduction, let the shortest reduced vector be
+\[
+\mathbf{u}_1=(u_1,\ldots,u_p,u_{p+1},\ldots,u_{p+n+1}).
+\]
+Because of the identity block in Eq.~\eqref{eq:lattice-matrix}, the last $n+1$ entries directly encode the integer combination of rows used to form $\mathbf{u}_1$, and the first $p$ entries satisfy
+\begin{equation}
+10^{-s}
+\begin{pmatrix}
+u_1\\
+\vdots\\
+u_p
+\end{pmatrix}
+=
+u_{p+1}
+\begin{pmatrix}
+f(\bx_1)\\
+\vdots\\
+f(\bx_p)
+\end{pmatrix}
++
+\sum_{j=1}^{n} u_{p+j+1}
+\begin{pmatrix}
+\cB_j(\bx_1)\\
+\vdots\\
+\cB_j(\bx_p)
+\end{pmatrix}.
+\label{eq:lll-relation}
+\end{equation}
+If the reduction succeeded, the left-hand side is tiny, so one reads off the exact functional relation
+\begin{equation}
+f(\bx)= -\sum_{j=1}^{n}\frac{u_{p+j+1}}{u_{p+1}}\,\cB_j(\bx).
+\label{eq:final-fit}
+\end{equation}
+
+This is the paper's key conceptual move: PSLQ-style fitting of a single number is replaced by fitting a vector of function evaluations across many kinematic points, letting the algorithm exchange extra datapoints for lower per-point precision.
+
+\subsection{Checks Recommended by the Paper}
+The paper repeatedly uses the same sanity checks:
+\begin{itemize}
+    \item increase the numerical precision and verify that the recovered coefficients are stable;
+    \item resample the points and confirm the same exact relation reappears;
+    \item if the fit fails or becomes unstable, enlarge the basis, improve the point distribution, or add precision.
+\end{itemize}
+
+\section{Precision--Datapoint Tradeoff and Scaling}
+\subsection{Heuristic Scaling Law}
+Suppose the true coefficients have numerators and denominators of size about $10^R$. With one sample point, there are roughly $10^{Rn}$ candidate integer coefficient vectors of size $10^R$, so avoiding accidental zero relations among $d$-digit integers suggests
+\[
+d\gtrsim Rn.
+\]
+With $p$ points, the paper argues that the effective information scales like $dp$, leading to the central estimate
+\begin{equation}
+\dmin \approx R\frac{n}{p}.
+\label{eq:dmin-theory}
+\end{equation}
+
+Numerically, the observed behavior is better described by
+\begin{equation}
+\dmin \approx \Reff\frac{n}{p}+d_0,
+\label{eq:dmin-empirical}
+\end{equation}
+where $d_0$ is a precision floor. In the paper's synthetic GPL study with coefficients in $[-100,100]$, $\Reff\approx 2.6$ and $d_0\approx 5$.
+
+\subsection{Why the Precision Plateau Appears}
+Adding points helps only up to a point. Once the sampling matrix becomes ill-conditioned for geometric reasons, the required precision stops falling and plateaus at $d_0$. The paper shows that both overly clustered points and points spread across regions where basis values differ by many orders of magnitude increase $\kappa$ and therefore raise the digit requirement.
+
+The practical rule is simple: choose points that are neither too close together nor too close to singularities, and avoid ranges where the basis values span huge scales. The paper finds that $\log_{10}\kappa$ is a strong predictor of the digits needed by both lattice reduction and matrix inversion.
+
+\subsection{Using the Condition Number to Choose Better Points}
+Because evaluating basis functions is much cheaper than evaluating the target integral, the paper proposes optimizing point placement using only the basis matrix. A gradient-descent search that minimizes $\kappa(\{x_j\})$ lowers the required precision by about one to two digits on average, and in the best case reported turns a $10$-digit problem into a $7$-digit problem.
+
+\subsection{Timing Model}
+Empirically, the lattice-reduction step scales polynomially in the basis size, close to $n^4$ in the regimes that matter. Combining integral evaluation, basis evaluation, and fitting, the paper summarizes the total cost as
+\begin{equation}
+t(p,n)\approx
+\underbrace{10^9\,p\,\dmin^2(n)}_{\text{\textsc{AMFlow}}}
++
+\underbrace{10^4\,n\,p\,\dmin^2(n)}_{\text{basis evaluation}}
++
+\underbrace{p\,n^4}_{\text{fitting}}
+\qquad \text{(nanoseconds, rough model)}.
+\label{eq:timing-model}
+\end{equation}
+The constants are approximate, but the message is sharp: reducing the basis size matters enormously, and using $p\ge n$ often gives the best robust operating point. Matrix inversion can have slightly better formal asymptotics if very high precision is already available, but the paper does not recommend it because it may not return the correct rational structure. PSLQ remains useful for pure-number fits, but not as the main algorithm for functions because it is locked to $p=1$.
+
+\section{Examples}
+\subsection{Example 1: One-Loop Triangle}
+For the one-loop triangle with equal external masses, the variable
+\begin{equation}
+x=\frac{1-\sqrt{1+\frac{4m^2}{s}}}{1+\sqrt{1+\frac{4m^2}{s}}}
+\end{equation}
+reduces the alphabet to $\{x,1+x,1-x\}$. Keeping all weight-$2$ functions gives a $17$-element basis
+\[
+\widetilde{\cB}^{(0)}=\{G(a_1,a_2;x),\ \pi G(a_3;x),\ G(a_4;x),\ \pi,\ \zeta_2\},
+\qquad a_i\in\{0,\pm1\}.
+\]
+The maximal cut fixes
+\[
+P(x)=\frac{x}{m^2(1-x^2)},
+\]
+and lattice reduction recovers
+\begin{equation}
+T(x)=\frac{x}{m^2(1-x^2)}
+\left(
+-\frac{\pi^2}{3}+4\,G(0,-1;x)-2\,G(0,0;x)
+\right).
+\label{eq:one-loop-result}
+\end{equation}
+
+This example is the paper's cleanest demonstration of the point-versus-precision tradeoff:
+\begin{itemize}
+    \item with one point, success often requires about $12$ digits and depends strongly on the point;
+    \item with $5$ points, about $8$ digits is almost always enough;
+    \item with $20$ points, $5$ digits gives a $100\%$ success rate in the trials reported.
+\end{itemize}
+At the same $p=n=17$, lattice reduction needs only about $5$ digits, while matrix inversion needs at least about $12$ digits to be reliable. PSLQ needs about $21.4\pm 6.0$ digits; lattice reduction restricted to one point still only needs about $10.8\pm 0.6$ digits.
+
+\subsection{Example 2: Two-Loop Four-Point Master Integrals}
+The next testbed consists of four two-loop master integrals $I_1,I_2,I_3,I_4$ relevant to vector-boson pair production. In variables
+\[
+s=-m^2\frac{(1+x)^2}{x}, \qquad u=-m^2 z,
+\]
+the full planar alphabet is
+\[
+\{x,\ z,\ 1+x,\ 1-x,\ 1-z,\ x+z,\ 1+xz\}.
+\]
+Each coefficient of the $\epsilon$ expansion is fit separately, with a GPL basis built from integrable symbols plus the missing $\pi$- and $\zeta$-completions.
+
+The paper's main lessons from this example are:
+\begin{itemize}
+    \item the reduced one-variable subcases $I_1$ and $I_2$ only need the smaller alphabet $\{x,1+x,1-x\}$;
+    \item imposing uniform transcendentality can reduce basis size and fitting time substantially;
+    \item for $I_4$, adding a Galois-even constraint, equivalent here to $x\mapsto 1/x$ invariance of the symbol, is what makes the weight-$4$ fit practical.
+\end{itemize}
+
+\begin{table}[ht]
+\centering
+\small
+\begin{tabular}{>{\raggedright\arraybackslash}p{2.0cm} >{\centering\arraybackslash}p{1.3cm} >{\centering\arraybackslash}p{2.9cm} >{\centering\arraybackslash}p{1.3cm} >{\centering\arraybackslash}p{5.0cm}}
+\toprule
+Integral & Points & Basis sizes kept & Digits & Condensed takeaway \\
+\midrule
+$I_1(x)$ & $58$ & $17$ at $\epsilon^{-1}$, $58$ at $\epsilon^0$ & $28$ & Both fits succeed quickly; this is the first nontrivial $\epsilon$-expanded example. \\
+$I_2(x)$ & $362$ & $182$ full or $124$ uniform at weight $4$ & $28$ & Uniform transcendentality shrinks the basis by about $30\%$ and the fit time from $32$ s to $11$ s. \\
+$I_3(x,z)$ & $99$ & $8$, $53$, $274$ through $\epsilon^0$ & $28$ & The weight-$3$ two-variable fit succeeds with a $274$-function basis in about $40$ min. \\
+$I_4(x,z)$ & $332$ & up to $633$ with Galois-even constraints & $28$ & Without the extra symmetry constraint the weight-$4$ fit is not practical; with it, the $\epsilon^0$ fit succeeds in about $9.4$ h. \\
+\bottomrule
+\end{tabular}
+\caption{Condensed summary of the two-loop master-integral fits.}
+\label{tab:two-loop-summary}
+\end{table}
+
+The paper also uses $I_2$ to show saturation of the precision improvement: increasing points beyond roughly the first few dozen still helps, but eventually the gain becomes small because the problem hits the condition-number floor discussed earlier.
+
+\subsection{Example 3: Triangle Ladders up to Three Loops}
+For the three-mass ladder family, the square root in the kinematics is rationalized by conformal variables $z,\bar z$ defined through
+\[
+z\bar z=\frac{p_2^2}{p_1^2}, \qquad (1-z)(1-\bar z)=\frac{p_3^2}{p_1^2}.
+\]
+At one and two loops the alphabet is
+\[
+A_{1,2}=\left\{
+z\bar z,\ (1-z)(1-\bar z),\ z-\bar z,\ \frac{\bar z}{z},\ \frac{1-z}{1-\bar z}
+\right\},
+\]
+while at three loops the paper deliberately uses the smaller trial alphabet
+\[
+A_3^\star=\left\{
+z\bar z,\ (1-z)(1-\bar z),\ \frac{\bar z}{z},\ \frac{1-z}{1-\bar z}
+\right\},
+\]
+adding letters back only if needed. The reduced alphabet is enough.
+
+This example shows that the method scales to known ladder functions through transcendental weight $6$:
+\begin{itemize}
+    \item one loop: basis sizes $32$ (full), $26$ (simplified), $25$ (uniform), with fits in less than a second;
+    \item two loops: basis sizes $488$, $393$, $366$, with the uniform basis fitting in about $3.5$ min;
+    \item three loops: a uniform basis of size $806$ is fit with $200$ points in about $1.1$ h.
+\end{itemize}
+The fitted answers match the known Usyukina-Davydychev ladder functions. The methodological point is that aggressive basis control, including dropping letters that appear allowed but are empirically unnecessary, can make otherwise impossible fits tractable.
+
+\subsection{Example 4: Two-Loop Outer-Mass Double Box}
+This is the strongest example in the paper because it forces a hybrid analytic-numeric strategy. The original alphabet has $12$ letters in $(u,v)$ variables and produces $6993$ integrable symbols at weight $4$, far too many for a direct regression. The paper therefore combines partial bootstrap constraints with lattice reduction instead of trying to fit the full unconstrained space.
+
+The constraint cascade is:
+\[
+6993 \xrightarrow{\text{Galois}} 861
+\xrightarrow{\text{physical branch cuts}} 161
+\xrightarrow{\text{genealogical}} 28
+\xrightarrow{\alpha\text{-positive thresholds}} 6.
+\]
+This is the clearest place where the paper shows how ``top-down'' analytic information and ``bottom-up'' numerical regression complement each other.
+
+The prefactor is
+\[
+P_5(u,v)=\frac{u^2v}{m^6\sqrt{(u+1)(u+v+1)}}.
+\]
+To rationalize the square roots, the variables are changed to
+\[
+u=\frac{(1-w^2)(1-z^2)}{(w-z)^2},
+\qquad
+v=\frac{4wz}{(w-z)^2}.
+\]
+Explicitly integrating each allowed symbol to GPLs is possible but expensive: a single symbol can take CPU hours to integrate, and each basis function then becomes a large expression. The paper's alternative is to attach to each symbol a numerical iterated integral,
+\begin{equation}
+\widetilde{B}
+=
+\sum c_{i_1i_2i_3i_4}
+\int_0^1 d\log L_{i_4}(\lambda_4)
+\int_0^{\lambda_4} d\log L_{i_3}(\lambda_3)
+\int_0^{\lambda_3} d\log L_{i_2}(\lambda_2)
+\int_0^{\lambda_2} d\log L_{i_1}(\lambda_1),
+\label{eq:iterated-basis}
+\end{equation}
+with the path $(u(\lambda),v(\lambda))=(u/\lambda,v/\lambda)$ and with two of the integrations done analytically so that the numerical task is only two-dimensional.
+
+The subtle point is boundary conditions. Some first letters create poles at $\lambda=0$, making Eq.~\eqref{eq:iterated-basis} ill-defined. The paper shows that after imposing physical branch-cut constraints, the remaining symbols are exactly of the type that avoid this obstruction for the chosen boundary condition. That is why the numerical-symbol basis works in this example.
+
+\begin{table}[ht]
+\centering
+\small
+\begin{tabular}{>{\raggedright\arraybackslash}p{4.7cm} >{\centering\arraybackslash}p{1.4cm} >{\centering\arraybackslash}p{2.8cm} >{\centering\arraybackslash}p{2.8cm}}
+\toprule
+Extra constraints beyond integrability and Galois symmetry & Basis size & GPL basis fit & Numerical-integral basis fit \\
+\midrule
+Physical branch cuts & $161$ & $40$ s at $28$ digits & $9$ s at $15$ digits \\
+Physical branch cuts + genealogical & $28$ & $<1$ s at $28$ digits & $<1$ s at $15$ digits \\
+Physical branch cuts + genealogical + $\alpha$-positive thresholds & $6$ & $<1$ s at $28$ digits & $<1$ s at $15$ digits \\
+\bottomrule
+\end{tabular}
+\caption{Condensed timing comparison for the outer-mass double box using $200$ kinematic points.}
+\label{tab:double-box-summary}
+\end{table}
+
+The paper's main conclusion from this example is not just that the fit works, but that the numerical-symbol basis can be superior to the explicit GPL basis: evaluating the numerical basis on $200$ points takes about $18$ s at machine precision, versus about $210$ s for the GPL basis even before counting the cost of integrating symbols analytically. The numerical basis also succeeds at lower precision because its individual basis values are smaller and therefore better conditioned.
+
+\section{Practical Lessons Kept from the Paper}
+\begin{itemize}
+    \item The bottleneck is usually basis size, not just raw precision. Anything that shrinks the basis, such as reduced alphabets, uniform-weight assumptions, or Galois constraints, pays off quickly because fitting scales roughly like $n^4$.
+    \item More points are usually better than more digits, but only until the precision floor set by conditioning is reached.
+    \item The condition number is a useful pre-fit diagnostic because it only needs the basis functions, not the expensive target integral.
+    \item For function fitting, lattice reduction dominates matrix inversion and PSLQ in robustness: it uses rationality information, allows $p\neq n$, and is far less precision-hungry than single-point methods.
+    \item A numerical basis attached directly to symbols can outperform an explicit analytic basis when symbol integration is expensive or when boundary terms make the analytic basis poorly conditioned.
+\end{itemize}
+
+\section{Condensed Conclusion}
+The paper's contribution is a practical recipe for recovering exact analytic expressions for Feynman integrals from high-precision numerical samples. The recipe is: infer the function space from singularities, strip off the algebraic prefactor, evaluate the integral and basis at enough points, and use lattice reduction to recover the exact rational coefficients.
+
+The work is not just a proof of concept. It demonstrates the method on increasingly difficult examples, quantifies when extra sample points can replace extra precision, explains why the gain eventually plateaus, and shows how symbolic constraints and numerical regression can be combined when the full function space is too large. The outer-mass double-box example is especially important because it shows the method remains practical even when the best basis is not an explicit closed form but a numerically defined iterated integral.
+
+\appendix
+\section{Prerequisites}
+The paper assumes familiarity with the topics below. The graph-node references are taken from \url{/tmp/all_node_ids.txt}.
+
+\begin{longtable}{>{\raggedright\arraybackslash}p{4.2cm} p{10.3cm}}
+\toprule
+Assumed topic & Graph node references \\
+\midrule
+\endfirsthead
+\toprule
+Assumed topic & Graph node references \\
+\midrule
+\endhead
+Feynman-diagram and loop-integral basics &
+\url{qft.feynman_rules}, \url{qft.feynman_propagator}, \url{qft.loop_momentum_integration_structure}, \url{qft.propagator_singularities}, \url{qft.scattering_amplitude} \\
+Kinematics and analytic continuation &
+\url{qft.mandelstam_variables}, \url{qft.mandelstam_variables_and_crossing_refinement}, \url{qft.analytic_continuation_in_kinematic_invariants}, \url{complex_analysis.analytic_continuation}, \url{complex_analysis.branch_cut_and_riemann_sheet} \\
+Regularization and multiloop computation &
+\url{qft.dimensional_regularization}, \url{qft.regularization_renormalization_rg}, \url{technique.cut_diagram_ibp_de}, \url{technique.wick_rotation_and_dimensional_regularization_of_background_integrals} \\
+Landau analysis and bootstrap inputs &
+\url{qft.landau_singularity_conditions}, \url{qft.landau_analytic_structure}, \url{technique.landau_bootstrap}, \url{technique.landau_bootstrap_complement}, \url{technique.landau_symbol_constraints} \\
+GPLs, iterated integrals, and symbols &
+\url{qft.iterated_integral}, \url{qft.symbol_calculus}, \url{technique.monodromy_group_for_polylogs}, \url{technique.symbol_map_simplification}, \url{technique.transformer_symbol_integration} \\
+Linear-algebra language for fitting &
+\url{math.linear_algebra.basis_and_coordinates}, \url{math.operator_basics.matrix_representation_of_linear_map}, \url{math.operator_basics.eigenvalues_and_eigenvectors}, \url{technique.precision_point_tradeoff} \\
+\bottomrule
+\end{longtable}
+
+No dedicated graph nodes were found in \url{/tmp/all_node_ids.txt} for LLL lattice reduction, PSLQ, or the condition number itself, so those are assumed as standard external background from computational number theory and numerical linear algebra.
+
+\end{document}

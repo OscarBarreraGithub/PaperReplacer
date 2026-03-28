@@ -1,0 +1,153 @@
+task: Generate 30 high-signal quiz questions for paper reading preparation
+paper_dir: data/papers/2507.17815
+instructions:
+- Write exactly 30 questions.
+- Prioritize gap concepts and the paper's novel contributions.
+- Questions should help a reader build the background needed to understand the paper.
+- Avoid yes/no wording and avoid trivial citation questions.
+concepts_by_classification:
+  in_graph:
+  - Area-difference phase diagram for HM versus island surfaces
+  - Born-matched boundary conditions for singular SIDM potentials
+  - Bottom-Up Complement to the Landau Bootstrap
+  - Box-versus-tree scaling test for Sommerfeld enhancement
+  - Clustering-Algorithm Independence of Learned Jet Probabilities
+  - Computing and from Feynman integrals
+  - Entropy Threshold for Semiclassical Black Holes
+  - 'Example : Master integrals for two loop four point diagram \label{sec:masters}'
+  - Feynman propagator
+  - Generalized Bender-Wu recursion for charged QNM equations
+  - Generic sector decomposition
+  - GL(N,Z) lattice-basis reduction for axion mixing
+  - Gram-Schmidt construction of weight-space bases
+  - Lattice Reduction for Analytic Regression of Feynman Integrals
+  - Mandelstam variables
+  - Mass-suppressed violation of axion coupling quantization
+  - No-1/m_b correction diagnosis in inclusive spectra
+  - numerical evaluation
+  - Numerical fit to the large-scale power spectrum
+  - Precision scaling with number of points and basis functions
+  - Precision-Point Tradeoff in Analytic Fitting
+  - Reduce the graviton propagator problem to a scalar Green function
+  - Reinforcement Learning for Identity Application Ordering
+  - Small-R universality of non-global logarithms
+  - Symbol and coproduct techniques for iterated NGL integrals
+  - Threshold-limit boundary conditions for master integrals
+  - Treat tensors as SU(3) wave functions
+  gap:
+  - A simple example of LLL reduction
+  - alphabet two loop
+  - alphabet two loop red
+  - alphabet uv
+  - basis functions
+  - Basis functions $\mathcal{B} i(\mathbf{x})$\label{sec:basis set}
+  - basis ltriangle
+  - basis tower
+  - begin equation
+  - begin equation eq
+  - begin figure
+  - begin figure centering
+  - condition number
+  - Constructing a set of basis functions
+  - def loop
+  - digits precision
+  - end equation
+  - end figure
+  - equation eq
+  - 'Example : The one loop triangle'
+  - 'Example : The two loop outer mass double box'
+  - f lll red
+  - figure centering
+  - Function evaluation
+  - gpl def
+  - includegraphics width
+  - lin rel u
+  - mat lll
+  - matrix inversion
+  - Matrix inversion \label{sec:mi}
+  - Notation and methods
+  - number digits
+  - number points
+  - Numerical evaluation of $f(\bx)$
+  - Optimizing point selection
+  - problem statement
+  - section sec
+  - Summary of practical lessons
+  - symbol weight
+  - The symbol formalism
+  - we also
+  - we can
+  - we have
+  - we will
+novel_contributions:
+- concept: The computations in this paper were run on the FASRC Cannon cluster supported
+    by the FAS Division of Science Research Computing Group at Harvard University.
+  description: The computations in this paper were run on the FASRC Cannon cluster
+    supported by the FAS Division of Science Research Computing Group at Harvard University.
+current_questions:
+- What is the paper's new claim or construction around The computations in this paper
+  were run on the FASRC Cannon cluster supported by the FAS Division of Science Research
+  Computing Group at Harvard University.?
+- Which prerequisites does the reader need before The computations in this paper were
+  run on the FASRC Cannon cluster supported by the FAS Division of Science Research
+  Computing Group at Harvard University. becomes understandable?
+- How does The computations in this paper were run on the FASRC Cannon cluster supported
+  by the FAS Division of Science Research Computing Group at Harvard University. differ
+  from the closest background already in the knowledge graph?
+- How is Area-difference phase diagram for HM versus island surfaces used in this
+  paper rather than in the abstract?
+- What should a reader already know about Area-difference phase diagram for HM versus
+  island surfaces from the knowledge graph?
+- How does Area-difference phase diagram for HM versus island surfaces connect to
+  the nearby derivation or section where it appears?
+- How is Born-matched boundary conditions for singular SIDM potentials used in this
+  paper rather than in the abstract?
+- What should a reader already know about Born-matched boundary conditions for singular
+  SIDM potentials from the knowledge graph?
+- How does Born-matched boundary conditions for singular SIDM potentials connect to
+  the nearby derivation or section where it appears?
+- How is Bottom-Up Complement to the Landau Bootstrap used in this paper rather than
+  in the abstract?
+- What should a reader already know about Bottom-Up Complement to the Landau Bootstrap
+  from the knowledge graph?
+- How does Bottom-Up Complement to the Landau Bootstrap connect to the nearby derivation
+  or section where it appears?
+- How is Box-versus-tree scaling test for Sommerfeld enhancement used in this paper
+  rather than in the abstract?
+- What should a reader already know about Box-versus-tree scaling test for Sommerfeld
+  enhancement from the knowledge graph?
+- How does Box-versus-tree scaling test for Sommerfeld enhancement connect to the
+  nearby derivation or section where it appears?
+- How is Clustering-Algorithm Independence of Learned Jet Probabilities used in this
+  paper rather than in the abstract?
+- What should a reader already know about Clustering-Algorithm Independence of Learned
+  Jet Probabilities from the knowledge graph?
+- How does Clustering-Algorithm Independence of Learned Jet Probabilities connect
+  to the nearby derivation or section where it appears?
+- How is Computing and from Feynman integrals used in this paper rather than in the
+  abstract?
+- What should a reader already know about Computing and from Feynman integrals from
+  the knowledge graph?
+- How does Computing and from Feynman integrals connect to the nearby derivation or
+  section where it appears?
+- How is Entropy Threshold for Semiclassical Black Holes used in this paper rather
+  than in the abstract?
+- What should a reader already know about Entropy Threshold for Semiclassical Black
+  Holes from the knowledge graph?
+- How does Entropy Threshold for Semiclassical Black Holes connect to the nearby derivation
+  or section where it appears?
+- 'How is Example : Master integrals for two loop four point diagram \label{sec:masters}
+  used in this paper rather than in the abstract?'
+- 'What should a reader already know about Example : Master integrals for two loop
+  four point diagram \label{sec:masters} from the knowledge graph?'
+- 'How does Example : Master integrals for two loop four point diagram \label{sec:masters}
+  connect to the nearby derivation or section where it appears?'
+- How is Feynman propagator used in this paper rather than in the abstract?
+- What should a reader already know about Feynman propagator from the knowledge graph?
+- How does Feynman propagator connect to the nearby derivation or section where it
+  appears?
+required_output_schema:
+  quiz_questions:
+  - question 1
+  - question 2
+  - question 3

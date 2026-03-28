@@ -12,6 +12,7 @@ from paper_pipeline_common import (
     condense_whitespace,
     derive_gap_explanation,
     ensure_title_and_author_commands,
+    escape_latex_paragraphs,
     escape_latex_text,
     extract_abstract,
     is_probably_novel_section,
@@ -39,6 +40,10 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--paper-dir", required=True, help="Directory containing main.tex, metadata.yaml, and analysis.yaml")
     parser.add_argument("--out", required=True, help="Output path for condensed.tex")
     parser.add_argument(
+        "--analysis",
+        help="Optional analysis YAML path to use instead of paper_dir/analysis.yaml",
+    )
+    parser.add_argument(
         "--graph",
         default=str(DEFAULT_GRAPH_PATH),
         help="Compiled graph JSON to use when summarizing background sections",
@@ -52,6 +57,25 @@ def section_mentions_term(section_text: str, term: str) -> bool:
     normalized_section = normalize_candidate_text(section_text)
     normalized_term = normalize_candidate_text(term)
     return bool(normalized_term and normalized_term in normalized_section)
+
+
+def gap_search_terms(gap: dict[str, object]) -> list[str]:
+    """Return section-matching terms for a gap concept."""
+
+    terms: list[str] = []
+    for value in (
+        gap.get("concept"),
+        gap.get("topic"),
+        gap.get("source_analysis_concept"),
+    ):
+        text = str(value or "").strip()
+        if text:
+            terms.append(text)
+    for value in gap.get("mention_terms") or []:
+        text = str(value or "").strip()
+        if text:
+            terms.append(text)
+    return list(dict.fromkeys(terms))
 
 
 def section_is_novel(section, analysis: dict) -> bool:
@@ -72,25 +96,29 @@ def prerequisite_notes_for_section(section, analysis: dict) -> list[str]:
     notes: list[str] = []
     seen: set[str] = set()
     for gap in analysis.get("gaps") or []:
+        rating = int(gap.get("rating", 0) or 0)
+        if rating >= 3:
+            continue
         concept = str(gap.get("concept", "")).strip()
         if not concept:
             continue
-        if not section_mentions_term(section.full_tex, concept):
+        if not any(section_mentions_term(section.full_tex, term) for term in gap_search_terms(gap)):
             continue
         explanation = derive_gap_explanation(gap)
-        if explanation in seen:
+        concept_key = normalize_candidate_text(concept)
+        if concept_key in seen:
             continue
-        seen.add(explanation)
+        seen.add(concept_key)
         related = gap.get("related_graph_nodes") or []
         related_refs = ", ".join(
             f"{item.get('label', item.get('id', ''))} ({item.get('id', '')})"
             for item in related[:3]
             if item.get("id")
         )
+        note = f"{concept}: {explanation}"
         if related_refs:
-            notes.append(f"{explanation} Related graph nodes: {related_refs}.")
-        else:
-            notes.append(explanation)
+            note += f" Related graph nodes: {related_refs}."
+        notes.append(note)
     return notes
 
 
@@ -99,8 +127,11 @@ def render_minimal_background(notes: list[str]) -> str:
 
     if not notes:
         return ""
-    body = " ".join(escape_latex_text(condense_whitespace(note)) for note in notes)
-    return f"\\paragraph{{Minimal background.}} {body}\n"
+    rendered = ["\\paragraph{Minimal background.}"]
+    for note in notes:
+        rendered.append(f"\\noindent {escape_latex_paragraphs(note)}")
+        rendered.append("")
+    return "\n".join(rendered).rstrip() + "\n"
 
 
 def render_background_summary(section, graph_path: str | Path) -> str:
@@ -144,8 +175,8 @@ def append_prerequisites_appendix(analysis: dict) -> str:
 
     items = build_prerequisite_appendix_items(analysis)
     if not items:
-        return "\\appendix\n\\section*{Prerequisites from knowledge graph}\nNo graph-backed prerequisites were identified.\n"
-    lines = ["\\appendix", "\\section*{Prerequisites from knowledge graph}", "\\begin{itemize}"]
+        return "\\section*{Prerequisites from knowledge graph}\nNo graph-backed prerequisites were identified.\n"
+    lines = ["\\section*{Prerequisites from knowledge graph}", "\\begin{itemize}"]
     for item in items:
         lines.append(f"\\item {escape_latex_text(item)}")
     lines.append("\\end{itemize}")
@@ -156,12 +187,13 @@ def condense_paper(
     paper_dir: str | Path,
     out_path: str | Path,
     graph_path: str | Path = DEFAULT_GRAPH_PATH,
+    analysis_path: str | Path | None = None,
 ) -> Path:
     """Generate a condensed LaTeX document for a staged paper."""
 
     paper_path = Path(paper_dir)
     metadata = load_metadata(paper_path)
-    analysis = load_analysis(paper_path)
+    analysis = load_analysis(paper_path, analysis_path=analysis_path)
     tex = load_main_tex(paper_path)
 
     preamble, body = split_document(tex)
@@ -251,7 +283,7 @@ def main() -> int:
     """CLI entrypoint."""
 
     args = build_parser().parse_args()
-    output = condense_paper(args.paper_dir, args.out, args.graph)
+    output = condense_paper(args.paper_dir, args.out, args.graph, analysis_path=args.analysis)
     print(output)
     return 0
 

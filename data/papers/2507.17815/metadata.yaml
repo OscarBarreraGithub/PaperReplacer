@@ -1,0 +1,36 @@
+arxiv_id: '2507.17815'
+title: Analytic Regression of Feynman Integrals from High-Precision Numerical Sampling
+authors:
+- Oscar Barrera
+- "Aur\xE9lien Dersy"
+- Rabia Husain
+- Matthew D. Schwartz
+- Xiaoyuan Zhang
+abstract: In mathematics or theoretical physics one is often interested in obtaining
+  an exact analytic description of some data which can be produced, in principle,
+  to arbitrary accuracy. For example, one might like to know the exact analytical
+  form of a definite integral. Such problems are not well-suited to numerical symbolic
+  regression, since typical numerical methods lead only to approximations. However,
+  if one has some sense of the function space in which the analytic result should
+  lie, it is possible to deduce the exact answer by judiciously sampling the data
+  at a sufficient number of points with sufficient precision. We demonstrate how this
+  can be done for the computation of Feynman integrals. We show that by combining
+  high-precision numerical integration with analytic knowledge of the function space
+  one can often deduce the exact answer using lattice reduction. A number of examples
+  are given as well as an exploration of the trade-offs between number of datapoints,
+  number of functional predicates, precision of the data, and compute. This method
+  provides a bottom-up approach that neatly complements the top-down Landau-bootstrap
+  approach of trying to constrain the exact answer using the analytic structure alone.
+  Although we focus on the application to Feynman integrals, the techniques presented
+  here are more general and could apply to a wide range of problems where an exact
+  answer is needed and the function space is sufficiently well understood.
+published: '2025-07-23T18:00:02Z'
+updated: '2025-07-23T18:00:02Z'
+entry_id: http://arxiv.org/abs/2507.17815v1
+api_url: https://export.arxiv.org/api/query?id_list=2507.17815
+source_url: https://arxiv.org/e-print/2507.17815
+fetched_at: '2026-03-27T23:56:59+00:00'
+source_last_modified: '2025-07-25T00:01:51+00:00'
+main_source_file: main.tex
+paper_dir: data/papers/2507.17815
+downloaded_at: '2026-03-27T23:57:00+00:00'

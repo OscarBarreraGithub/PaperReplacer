@@ -3,10 +3,12 @@
 
 from __future__ import annotations
 
-from collections import Counter, defaultdict
+from collections import Counter, defaultdict, deque
+from copy import deepcopy
 from dataclasses import dataclass
 from datetime import datetime, timezone
 from email.utils import parsedate_to_datetime
+from functools import lru_cache
 import gzip
 from io import BytesIO
 import json
@@ -119,6 +121,164 @@ LATEX_TEXT_COMMANDS = {
 ARXIV_ID_RE = re.compile(
     r"(?P<id>(?:\d{4}\.\d{4,5}|[A-Za-z\-]+(?:\.[A-Za-z\-]+)?/\d{7})(?:v\d+)?)"
 )
+PERSONALIZATION_EDGE_RELATIONS = {"requires_for_use", "requires_for_derive"}
+PERSONALIZATION_BRIDGE_RELATIONS = PERSONALIZATION_EDGE_RELATIONS | {"requires_for_recognize"}
+PERSONALIZATION_CONCEPT_NODE_ALIASES = {
+    "Sector decomposition": "technique.generic_sector_decomposition",
+    "Feynman-parameter and Baikov representations": "technique.feynman_parametrization",
+    "Integration-by-parts reduction and master integrals": "technique.integration_by_parts_reduction",
+    "Differential equations for master integrals": "technique.differential_equations_for_master_integrals",
+    "Auxiliary-mass flow / AMFlow-style evaluation": "technique.differential_equations_for_master_integrals",
+    "AMFlow evaluation": "technique.differential_equations_for_master_integrals",
+    "Generalized polylogarithms and iterated integrals": "qft.iterated_integral",
+    "GPLs and iterated integrals": "qft.iterated_integral",
+    "Classical polylogarithms and logarithms": "qft.iterated_integral",
+    "Classical polylogarithms": "qft.iterated_integral",
+    "Symbol formalism": "qft.symbol_calculus",
+    "Integrability constraints and transcendental weight": "technique.integrability_product_constraints",
+    "Integrability constraints": "technique.integrability_product_constraints",
+    "Leading singularities, maximal cuts, and algebraic prefactors": "technique.landau_bootstrap",
+    "Leading singularities and maximal cuts": "technique.landau_bootstrap",
+    "Kinematic variable rationalization": "complex_analysis.conformal_map",
+    "Feynman integrals": "qft.loop_momentum_integration_structure",
+    "Dimensional regularization and epsilon expansion": "qft.dimensional_regularization",
+    "Landau singularities and symbol alphabets": "qft.landau_singularity_conditions",
+    "Analytic continuation, branch cuts, and Euclidean kinematics": "qft.analytic_continuation_in_kinematic_invariants",
+    "Linear algebra over the rationals and basis decompositions": "math.linear_algebra.basis_and_coordinates",
+    "Lattice-reduction basics: LLL, L^2, shortest vector, Lovasz condition": "technique.lattice_reduction_analytic_regression",
+}
+PERSONALIZATION_EXPLANATION_HINTS = {
+    "Sector decomposition": {
+        "bridge_preferences": [
+            "Dimensional regularization and epsilon expansion",
+            "High-precision numerical evaluation",
+        ],
+        "mention_terms": ["sector decomposition"],
+        "rating_2_sentence": (
+            "In this paper, sector decomposition is the older strategy for isolating epsilon-singular integration regions before numerical integration, so it mainly serves as the benchmark that the AMFlow differential-equation pipeline is meant to beat."
+        ),
+    },
+    "Feynman-parameter and Baikov representations": {
+        "bridge_preferences": ["Feynman integrals", "Linear algebra over the rationals and basis decompositions"],
+        "mention_terms": ["Feynman parameters", "Feynman parameter", "Baikov", "Baikov variables"],
+        "rating_1_paragraph_1": (
+            "A loop integral starts as an integral over loop momenta with many propagator denominators. "
+            "Feynman parametrization combines those denominators into one denominator and trades the loop-momentum integrals for auxiliary parameters, while the Baikov representation uses inverse propagators and scalar products themselves as integration variables. "
+            "Both rewritings expose where the singular regions and algebraic polynomials live, which is why they are standard starting points for direct numerical integration. "
+            "In this paper the authors mention them to explain the naive route to numerical evaluation. "
+            "After either rewrite, one still faces a genuinely multidimensional integral, so reaching the precision needed for exact reconstruction is usually expensive."
+        ),
+        "rating_1_bridge": (
+            "These representations do not change the observable; they are alternate coordinate systems for the same regulated Feynman integral. "
+            "If you think of the integral you already know as the fixed object, then parametrization is just a change of variables that makes some structures more visible and some computations easier. "
+            "That perspective is why the paper can compare direct multidimensional integration with DE-based methods without changing the physics problem itself."
+        ),
+    },
+    "Integration-by-parts reduction and master integrals": {
+        "bridge_preferences": ["Feynman integrals", "Linear algebra over the rationals and basis decompositions"],
+        "mention_terms": ["Integration-by-Parts", "IBP", "IBPs", "master integrals"],
+        "rating_2_sentence": (
+            "In this paper, IBP reduction is the step that collapses a large family of integrals to a finite master basis, so only the masters need to be computed numerically before the whole topology is reconstructed."
+        ),
+    },
+    "Differential equations for master integrals": {
+        "bridge_preferences": ["High-precision numerical evaluation", "Feynman integrals"],
+        "mention_terms": ["differential equation", "differential equations", "DE", "master integrals"],
+        "rating_2_sentence": (
+            "In this paper, differential equations for master integrals are the mechanism that turns evaluation into solving a controlled flow from boundary data instead of directly attacking a high-dimensional integral."
+        ),
+    },
+    "Auxiliary-mass flow / AMFlow-style evaluation": {
+        "bridge_preferences": [
+            "High-precision numerical evaluation",
+            "Dimensional regularization and epsilon expansion",
+        ],
+        "manual_implicit_prerequisites": [
+            "Differential equations for master integrals",
+            "Integration-by-parts reduction and master integrals",
+        ],
+        "mention_terms": ["AMFlow", "auxiliary mass", "eta", "auxiliary-mass flow"],
+        "rating_1_paragraph_1": (
+            "AMFlow is a modern numerical pipeline for Feynman integrals that avoids direct high-dimensional integration. "
+            "It introduces an auxiliary mass parameter, uses IBP identities to derive differential equations in that parameter, and starts from a boundary point where the integral becomes simpler, typically the large-mass limit. "
+            "Solving that flow back to the physical point produces coefficients of the epsilon expansion to very high precision. "
+            "In this paper those high-precision values are not the final answer; they are the data that analytic regression will later fit exactly. "
+            "Without this picture, the source of the paper's trusted numerical samples stays opaque."
+        ),
+        "rating_1_bridge": (
+            "You already know why hundreds of reliable digits matter when one wants exact rational reconstruction rather than a floating-point approximation. "
+            "AMFlow is the machine that manufactures those digits for a regulated Feynman integral while respecting its singular structure. "
+            "Conceptually, it plays the role of a precision-preserving oracle: lattice reduction is the recovery step, but AMFlow is what makes the sampled numbers good enough for that recovery to succeed."
+        ),
+    },
+    "Generalized polylogarithms and iterated integrals": {
+        "bridge_preferences": [
+            "Lattice-reduction basics: LLL, L^2, shortest vector, Lovasz condition",
+            "Feynman integrals",
+        ],
+        "mention_terms": ["Generalized Polylogarithms", "GPLs", "GPL", "iterated integrals"],
+        "rating_2_sentence": (
+            "In this paper, generalized polylogarithms are the basis functions whose rational coefficients are reconstructed from samples, so they play the same role on the function side that a lattice basis plays on the arithmetic side of the final fit."
+        ),
+    },
+    "Classical polylogarithms and logarithms": {
+        "bridge_preferences": [
+            "Lattice-reduction basics: LLL, L^2, shortest vector, Lovasz condition",
+            "PSLQ algorithm",
+        ],
+        "mention_terms": ["classical polylogarithms", "logarithms", "Li", "polylogarithms"],
+        "rating_2_sentence": (
+            "In this paper, logarithms and classical polylogarithms are the simplest explicit basis functions, giving toy examples where the regression problem is a cleaner version of the exact-reconstruction tasks you already know from lattice reduction and PSLQ."
+        ),
+    },
+    "Symbol formalism": {
+        "bridge_preferences": [
+            "Landau singularities and symbol alphabets",
+            "Analytic continuation, branch cuts, and Euclidean kinematics",
+        ],
+        "mention_terms": ["symbol formalism", "symbol", "symbols", "integrable symbols"],
+        "rating_1_paragraph_1": (
+            "The symbol of a polylogarithmic function is a tensor-like record of the ordered logarithmic letters that appear under repeated differentiation. "
+            "It throws away additive constants such as zeta values and powers of pi, but it keeps the combinatorial structure that controls functional identities, branch cuts, and integrability. "
+            "Because of that, symbols are much easier to enumerate and constrain than full GPL formulas. "
+            "In this paper the authors first build spaces of allowed symbols, prune them with integrability and singularity information, and only later integrate the survivors back into actual functions. "
+            "So the symbol is not just notation here; it is the working representation in which the candidate basis is constructed."
+        ),
+        "rating_1_bridge": (
+            "You already know how Landau analysis supplies the alphabet of allowed letters. "
+            "The symbol is the next layer up: it records ordered strings of those letters and therefore tracks how the function can branch as one moves across singular loci. "
+            "If the alphabet tells you which letters are allowed, the symbol tells you which words the paper is allowed to spell with them. "
+            "That is why Appendix B sits so close to the Landau-bootstrap logic you already recognize."
+        ),
+    },
+    "Integrability constraints and transcendental weight": {
+        "bridge_preferences": [
+            "Landau singularities and symbol alphabets",
+            "Linear algebra over the rationals and basis decompositions",
+        ],
+        "mention_terms": ["integrability", "integrable symbols", "transcendental weight", "weight"],
+        "rating_2_sentence": (
+            "In this paper, integrability constraints and weight grading are the filters that discard formal symbol combinations which cannot come from honest functions, sharply shrinking the basis before any coefficient fit is attempted."
+        ),
+    },
+    "Leading singularities, maximal cuts, and algebraic prefactors": {
+        "bridge_preferences": ["Landau singularities and symbol alphabets", "Feynman integrals"],
+        "mention_terms": ["leading singularity", "leading singularities", "maximal cut", "prefactor"],
+        "rating_2_sentence": (
+            "In this paper, leading singularities and maximal cuts fix the algebraic prefactor multiplying the pure polylogarithmic part, so the regression only has to solve for rational coefficients of the remaining transcendental basis."
+        ),
+    },
+    "Kinematic variable rationalization": {
+        "bridge_preferences": [
+            "Analytic continuation, branch cuts, and Euclidean kinematics",
+            "Landau singularities and symbol alphabets",
+        ],
+        "mention_terms": ["rationalize", "rationalized", "change of variables", "w, z", "x, z", "zbar"],
+        "rating_2_sentence": (
+            "In this paper, rationalizing variables such as x, z, zbar, w, and z are chosen so that square roots in the alphabet become rational functions, which makes symbols and GPLs easier to integrate and evaluate."
+        ),
+    },
+}
 
 
 @dataclass(frozen=True)
@@ -418,6 +578,32 @@ def normalize_candidate_text(text: str) -> str:
     """Normalize candidate text for deduplication."""
 
     return _normalize_text(text)
+
+
+@lru_cache(maxsize=1)
+def personalization_hint_index() -> dict[str, dict[str, Any]]:
+    """Return explanation hints keyed by normalized concept text."""
+
+    return {
+        normalize_candidate_text(concept): deepcopy(payload)
+        for concept, payload in PERSONALIZATION_EXPLANATION_HINTS.items()
+    }
+
+
+@lru_cache(maxsize=1)
+def personalization_alias_index() -> dict[str, str]:
+    """Return graph-node aliases keyed by normalized concept text."""
+
+    return {
+        normalize_candidate_text(concept): node_id
+        for concept, node_id in PERSONALIZATION_CONCEPT_NODE_ALIASES.items()
+    }
+
+
+def personalization_hint_for_concept(concept: str) -> dict[str, Any]:
+    """Return pedagogical metadata for a concept when available."""
+
+    return deepcopy(personalization_hint_index().get(normalize_candidate_text(concept), {}))
 
 
 def significant_tokens(text: str) -> list[str]:
@@ -938,6 +1124,516 @@ def related_graph_nodes(candidate_text: str, graph_path: str | Path = DEFAULT_GR
     return [node_match_payload(match, graph_path=graph_path) for match in matches]
 
 
+@lru_cache(maxsize=4)
+def compiled_graph_payload(graph_path: str) -> dict[str, Any]:
+    """Load the compiled graph JSON."""
+
+    return json.loads(Path(graph_path).read_text(encoding="utf-8"))
+
+
+@lru_cache(maxsize=4)
+def compiled_graph_dependency_maps(
+    graph_path: str,
+) -> tuple[dict[str, dict[str, Any]], dict[str, tuple[dict[str, Any], ...]], dict[str, tuple[dict[str, Any], ...]]]:
+    """Return node and dependency lookup tables for the compiled graph."""
+
+    graph = compiled_graph_payload(graph_path)
+    nodes_by_id = {
+        str(node["id"]): node
+        for node in graph.get("nodes", [])
+        if isinstance(node, dict) and node.get("id")
+    }
+    incoming: dict[str, list[dict[str, Any]]] = defaultdict(list)
+    outgoing: dict[str, list[dict[str, Any]]] = defaultdict(list)
+    for edge in graph.get("dependencies", []):
+        if not isinstance(edge, dict):
+            continue
+        from_id = str(edge.get("from", "")).strip()
+        to_id = str(edge.get("to", "")).strip()
+        if not from_id or not to_id:
+            continue
+        outgoing[from_id].append(edge)
+        incoming[to_id].append(edge)
+    return (
+        nodes_by_id,
+        {node_id: tuple(edges) for node_id, edges in incoming.items()},
+        {node_id: tuple(edges) for node_id, edges in outgoing.items()},
+    )
+
+
+def _resolved_graph_path(graph_path: str | Path) -> str:
+    return str(Path(graph_path).resolve())
+
+
+def _topic_text(entry: dict[str, Any]) -> str:
+    return str(entry.get("concept") or entry.get("topic") or "").strip()
+
+
+def _topic_key(entry: dict[str, Any] | str) -> str:
+    if isinstance(entry, dict):
+        return normalize_candidate_text(_topic_text(entry))
+    return normalize_candidate_text(str(entry))
+
+
+def _profile_topics(user_profile: dict[str, Any]) -> list[dict[str, Any]]:
+    ratings = user_profile.get("ratings")
+    if isinstance(ratings, list):
+        return [item for item in ratings if isinstance(item, dict)]
+    combined = []
+    for key in ("known_topics", "gap_topics", "strengths", "gaps"):
+        values = user_profile.get(key)
+        if isinstance(values, list):
+            combined.extend(item for item in values if isinstance(item, dict))
+    return combined
+
+
+def resolve_graph_node_for_topic(topic: dict[str, Any], graph_path: str | Path = DEFAULT_GRAPH_PATH) -> str | None:
+    """Resolve the best graph node for a topic or gap entry."""
+
+    resolved_graph_path = _resolved_graph_path(graph_path)
+    nodes_by_id, _, _ = compiled_graph_dependency_maps(resolved_graph_path)
+    for field in ("resolved_graph_node", "graph_node", "matched_node_id"):
+        node_id = str(topic.get(field) or "").strip()
+        if node_id and node_id in nodes_by_id:
+            return node_id
+    for related in topic.get("related_graph_nodes") or []:
+        if not isinstance(related, dict):
+            continue
+        node_id = str(related.get("id") or "").strip()
+        if node_id and node_id in nodes_by_id:
+            return node_id
+    alias = personalization_alias_index().get(_topic_key(topic))
+    if alias and alias in nodes_by_id:
+        return alias
+    for text in filter(None, [_topic_text(topic), str(topic.get("description") or "").strip()]):
+        matches = match_text_against_graph(text, graph_path=resolved_graph_path, top_n=5)
+        for match in matches:
+            if is_strong_graph_match(text, match, graph_path=resolved_graph_path):
+                return match.node_id
+    return None
+
+
+def _node_payload(node_id: str, graph_path: str | Path = DEFAULT_GRAPH_PATH) -> dict[str, Any]:
+    """Serialize a graph node for personalization metadata."""
+
+    resolved_graph_path = _resolved_graph_path(graph_path)
+    nodes_by_id, _, _ = compiled_graph_dependency_maps(resolved_graph_path)
+    node = nodes_by_id.get(node_id, {})
+    label = str(node.get("label") or node_id)
+    summary = condense_whitespace(str(node.get("summary") or ""))
+    return {
+        "id": node_id,
+        "label": label,
+        "summary": summary,
+    }
+
+
+def _resolved_profile_topics(
+    user_profile: dict[str, Any],
+    graph_path: str | Path = DEFAULT_GRAPH_PATH,
+) -> list[dict[str, Any]]:
+    """Attach resolved graph nodes to profile topics."""
+
+    resolved: list[dict[str, Any]] = []
+    for topic in _profile_topics(user_profile):
+        entry = deepcopy(topic)
+        entry["resolved_graph_node"] = resolve_graph_node_for_topic(entry, graph_path=graph_path)
+        resolved.append(entry)
+    return resolved
+
+
+def _best_profile_entry(entries: Iterable[dict[str, Any]]) -> dict[str, Any] | None:
+    bucket = [entry for entry in entries if isinstance(entry, dict)]
+    if not bucket:
+        return None
+    return sorted(
+        bucket,
+        key=lambda item: (
+            -int(item.get("rating", 0)),
+            int(item.get("importance_rank", 99)),
+            _topic_text(item).lower(),
+        ),
+    )[0]
+
+
+def _profile_lookup_maps(
+    resolved_topics: Iterable[dict[str, Any]],
+) -> tuple[dict[str, dict[str, Any]], dict[str, list[dict[str, Any]]], list[dict[str, Any]]]:
+    by_key: dict[str, dict[str, Any]] = {}
+    by_node: dict[str, list[dict[str, Any]]] = defaultdict(list)
+    known_topics: list[dict[str, Any]] = []
+    for topic in resolved_topics:
+        key = _topic_key(topic)
+        if key:
+            previous = by_key.get(key)
+            by_key[key] = _best_profile_entry([entry for entry in (previous, topic) if entry is not None]) or topic
+        node_id = str(topic.get("resolved_graph_node") or "").strip()
+        if node_id:
+            by_node[node_id].append(topic)
+        if int(topic.get("rating", 0)) >= 3:
+            known_topics.append(topic)
+    return by_key, by_node, known_topics
+
+
+def _build_implicit_gap_payload(
+    node_id: str,
+    node_payload: dict[str, Any],
+    profile_entry: dict[str, Any] | None,
+    depth: int,
+    edge: dict[str, Any],
+) -> dict[str, Any]:
+    topic = _topic_text(profile_entry) if profile_entry is not None else str(node_payload.get("label") or node_id)
+    profile_description = ""
+    if profile_entry is not None:
+        profile_description = str(profile_entry.get("description") or profile_entry.get("why_important") or "").strip()
+    return {
+        "topic": topic,
+        "label": str(node_payload.get("label") or topic),
+        "summary": profile_description or str(node_payload.get("summary") or "").strip(),
+        "graph_node": node_id,
+        "rating": int(profile_entry.get("rating", 0)) if profile_entry is not None else None,
+        "depth": depth,
+        "relation_type": str(edge.get("relation_type") or ""),
+        "necessity": str(edge.get("necessity") or ""),
+    }
+
+
+def _build_bridge_anchor_payload(
+    profile_entry: dict[str, Any],
+    graph_node: str | None,
+    graph_label: str,
+    graph_summary: str,
+    distance: int | None,
+    reason: str,
+) -> dict[str, Any]:
+    return {
+        "topic": _topic_text(profile_entry) or graph_label,
+        "label": graph_label or _topic_text(profile_entry),
+        "summary": str(profile_entry.get("why_important") or profile_entry.get("description") or graph_summary).strip(),
+        "graph_node": graph_node,
+        "rating": int(profile_entry.get("rating", 0)),
+        "distance": distance,
+        "reason": reason,
+    }
+
+
+def _unique_topic_payloads(items: Iterable[dict[str, Any]], key_fields: tuple[str, ...]) -> list[dict[str, Any]]:
+    deduped: list[dict[str, Any]] = []
+    seen: set[tuple[str, ...]] = set()
+    for item in items:
+        key = tuple(normalize_candidate_text(str(item.get(field) or "")) for field in key_fields)
+        if not any(key):
+            continue
+        if key in seen:
+            continue
+        seen.add(key)
+        deduped.append(item)
+    return deduped
+
+
+def _walk_upstream_prerequisites(
+    start_node_id: str,
+    profile_by_node: dict[str, list[dict[str, Any]]],
+    graph_path: str | Path = DEFAULT_GRAPH_PATH,
+    max_depth: int = 2,
+) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
+    """Walk necessary upstream edges and collect implicit gaps plus known stop nodes."""
+
+    resolved_graph_path = _resolved_graph_path(graph_path)
+    nodes_by_id, incoming_edges, _ = compiled_graph_dependency_maps(resolved_graph_path)
+    implicit: dict[str, dict[str, Any]] = {}
+    anchors: dict[str, dict[str, Any]] = {}
+    queue: deque[tuple[str, int]] = deque([(start_node_id, 0)])
+    visited: set[str] = {start_node_id}
+
+    while queue:
+        node_id, depth = queue.popleft()
+        if depth >= max_depth:
+            continue
+        for edge in incoming_edges.get(node_id, ()):
+            if str(edge.get("relation_type") or "") not in PERSONALIZATION_EDGE_RELATIONS:
+                continue
+            if str(edge.get("necessity") or "") != "necessary":
+                continue
+            parent_id = str(edge.get("from") or "").strip()
+            if not parent_id or parent_id in visited:
+                continue
+            visited.add(parent_id)
+            node_payload = _node_payload(parent_id, resolved_graph_path)
+            profile_entry = _best_profile_entry(profile_by_node.get(parent_id, []))
+            next_depth = depth + 1
+            if profile_entry is not None and int(profile_entry.get("rating", 0)) >= 3:
+                anchors[parent_id] = _build_bridge_anchor_payload(
+                    profile_entry,
+                    parent_id,
+                    str(node_payload.get("label") or _topic_text(profile_entry)),
+                    str(node_payload.get("summary") or ""),
+                    next_depth,
+                    "upstream_stop",
+                )
+                continue
+            existing = implicit.get(parent_id)
+            payload = _build_implicit_gap_payload(parent_id, node_payload, profile_entry, next_depth, edge)
+            if existing is None or int(existing.get("depth", 99)) > next_depth:
+                implicit[parent_id] = payload
+            queue.append((parent_id, next_depth))
+
+    implicit_items = sorted(
+        implicit.values(),
+        key=lambda item: (int(item.get("depth", 99)), str(item.get("topic") or item.get("label") or "").lower()),
+    )
+    anchor_items = sorted(
+        anchors.values(),
+        key=lambda item: (
+            int(item.get("distance", 99) or 99),
+            -int(item.get("rating", 0)),
+            str(item.get("topic") or item.get("label") or "").lower(),
+        ),
+    )
+    return implicit_items, anchor_items
+
+
+def _find_closest_bridge_anchors(
+    start_node_id: str,
+    profile_by_node: dict[str, list[dict[str, Any]]],
+    graph_path: str | Path = DEFAULT_GRAPH_PATH,
+    max_depth: int = 2,
+) -> list[dict[str, Any]]:
+    """Find nearby known topics to use as bridge anchors."""
+
+    resolved_graph_path = _resolved_graph_path(graph_path)
+    nodes_by_id, incoming_edges, outgoing_edges = compiled_graph_dependency_maps(resolved_graph_path)
+    anchors: dict[str, dict[str, Any]] = {}
+    queue: deque[tuple[str, int]] = deque([(start_node_id, 0)])
+    visited: set[str] = {start_node_id}
+
+    while queue:
+        node_id, depth = queue.popleft()
+        if depth >= max_depth:
+            continue
+        neighbors: list[tuple[str, dict[str, Any]]] = []
+        for edge in outgoing_edges.get(node_id, ()):
+            relation_type = str(edge.get("relation_type") or "")
+            necessity = str(edge.get("necessity") or "")
+            if relation_type not in PERSONALIZATION_BRIDGE_RELATIONS:
+                continue
+            if necessity not in {"necessary", "typical"}:
+                continue
+            neighbor_id = str(edge.get("to") or "").strip()
+            if neighbor_id:
+                neighbors.append((neighbor_id, edge))
+        for edge in incoming_edges.get(node_id, ()):
+            relation_type = str(edge.get("relation_type") or "")
+            necessity = str(edge.get("necessity") or "")
+            if relation_type not in PERSONALIZATION_BRIDGE_RELATIONS:
+                continue
+            if necessity not in {"necessary", "typical"}:
+                continue
+            neighbor_id = str(edge.get("from") or "").strip()
+            if neighbor_id:
+                neighbors.append((neighbor_id, edge))
+        for neighbor_id, _edge in neighbors:
+            if neighbor_id in visited:
+                continue
+            visited.add(neighbor_id)
+            next_depth = depth + 1
+            profile_entry = _best_profile_entry(profile_by_node.get(neighbor_id, []))
+            if profile_entry is not None and int(profile_entry.get("rating", 0)) >= 3:
+                node_payload = _node_payload(neighbor_id, resolved_graph_path)
+                current = anchors.get(neighbor_id)
+                candidate = _build_bridge_anchor_payload(
+                    profile_entry,
+                    neighbor_id,
+                    str(node_payload.get("label") or _topic_text(profile_entry)),
+                    str(node_payload.get("summary") or ""),
+                    next_depth,
+                    "graph_neighbor",
+                )
+                if current is None or (
+                    int(candidate.get("distance", 99) or 99),
+                    -int(candidate.get("rating", 0)),
+                ) < (
+                    int(current.get("distance", 99) or 99),
+                    -int(current.get("rating", 0)),
+                ):
+                    anchors[neighbor_id] = candidate
+            queue.append((neighbor_id, next_depth))
+
+    return sorted(
+        anchors.values(),
+        key=lambda item: (
+            int(item.get("distance", 99) or 99),
+            -int(item.get("rating", 0)),
+            str(item.get("topic") or item.get("label") or "").lower(),
+        ),
+    )
+
+
+def _find_preferred_bridge(
+    concept: str,
+    profile_by_key: dict[str, dict[str, Any]],
+) -> dict[str, Any] | None:
+    """Pick a hand-curated bridge anchor from the reader's known topics."""
+
+    hints = personalization_hint_for_concept(concept)
+    for preferred_topic in hints.get("bridge_preferences") or []:
+        profile_entry = profile_by_key.get(normalize_candidate_text(preferred_topic))
+        if profile_entry is None:
+            continue
+        if int(profile_entry.get("rating", 0)) < 3:
+            continue
+        resolved_node = str(profile_entry.get("resolved_graph_node") or "").strip() or None
+        label = _topic_text(profile_entry)
+        summary = str(profile_entry.get("why_important") or profile_entry.get("description") or "").strip()
+        return _build_bridge_anchor_payload(
+            profile_entry,
+            resolved_node,
+            label,
+            summary,
+            None,
+            "preferred_bridge",
+        )
+    return None
+
+
+def _manual_implicit_prerequisites(
+    concept: str,
+    profile_by_key: dict[str, dict[str, Any]],
+) -> list[dict[str, Any]]:
+    """Return curated implicit prerequisites when the graph lacks a direct node."""
+
+    hints = personalization_hint_for_concept(concept)
+    payloads: list[dict[str, Any]] = []
+    for prerequisite in hints.get("manual_implicit_prerequisites") or []:
+        profile_entry = profile_by_key.get(normalize_candidate_text(prerequisite))
+        if profile_entry is None or int(profile_entry.get("rating", 0)) >= 3:
+            continue
+        resolved_node = str(profile_entry.get("resolved_graph_node") or "").strip() or None
+        payloads.append(
+            {
+                "topic": _topic_text(profile_entry),
+                "label": _topic_text(profile_entry),
+                "summary": str(profile_entry.get("description") or profile_entry.get("why_important") or "").strip(),
+                "graph_node": resolved_node,
+                "rating": int(profile_entry.get("rating", 0)),
+                "depth": 1,
+                "relation_type": "manual",
+                "necessity": "necessary",
+            }
+        )
+    return payloads
+
+
+def expand_upstream_gaps(
+    gap_topics: list[dict[str, Any]],
+    user_profile: dict[str, Any],
+    graph_path: str | Path,
+) -> list[dict[str, Any]]:
+    """
+    Enrich gap topics with implicit prerequisites and bridge anchors.
+
+    Rating-1 gaps expand upstream along necessary `requires_for_use` and
+    `requires_for_derive` edges up to depth 2. Rating-2 gaps skip expansion but
+    still receive the nearest bridge anchor.
+    """
+
+    resolved_graph_path = _resolved_graph_path(graph_path)
+    resolved_topics = _resolved_profile_topics(user_profile, graph_path=resolved_graph_path)
+    profile_by_key, profile_by_node, _known_topics = _profile_lookup_maps(resolved_topics)
+    enriched_gaps: list[dict[str, Any]] = []
+
+    for raw_gap in gap_topics:
+        gap = deepcopy(raw_gap)
+        profile_entry = profile_by_key.get(_topic_key(gap))
+        if profile_entry is not None:
+            for field in (
+                "prerequisite_id",
+                "description",
+                "importance",
+                "importance_label",
+                "importance_rank",
+                "rating",
+                "rating_label",
+                "rating_short_label",
+                "why_important",
+            ):
+                if profile_entry.get(field) is not None and not gap.get(field):
+                    gap[field] = profile_entry.get(field)
+            gap.setdefault("profile_topic", _topic_text(profile_entry))
+        concept = _topic_text(gap)
+        if profile_entry is not None and not concept:
+            concept = _topic_text(profile_entry)
+            gap["concept"] = concept
+        if not concept:
+            continue
+        rating = int(gap.get("rating", profile_entry.get("rating", 0) if profile_entry else 0) or 0)
+        gap["rating"] = rating
+        resolved_node = resolve_graph_node_for_topic(gap, graph_path=resolved_graph_path)
+        if resolved_node is None and profile_entry is not None:
+            resolved_node = str(profile_entry.get("resolved_graph_node") or "").strip() or None
+        if resolved_node:
+            gap["resolved_graph_node"] = resolved_node
+        related_nodes = list(gap.get("related_graph_nodes") or [])
+        if resolved_node and not any(str(item.get("id") or "").strip() == resolved_node for item in related_nodes if isinstance(item, dict)):
+            related_nodes.insert(0, _node_payload(resolved_node, resolved_graph_path))
+        gap["related_graph_nodes"] = related_nodes[:5]
+
+        hints = personalization_hint_for_concept(concept)
+        mention_terms = [concept]
+        mention_terms.extend(str(term).strip() for term in gap.get("mention_terms") or [] if str(term).strip())
+        mention_terms.extend(str(term).strip() for term in hints.get("mention_terms") or [] if str(term).strip())
+        source_concept = str(gap.get("source_analysis_concept") or "").strip()
+        if source_concept:
+            mention_terms.append(source_concept)
+        gap["mention_terms"] = list(dict.fromkeys(mention_terms))
+
+        implicit_prerequisites: list[dict[str, Any]] = []
+        bridge_anchors: list[dict[str, Any]] = []
+        if rating <= 1 and resolved_node:
+            implicit_prerequisites, bridge_anchors = _walk_upstream_prerequisites(
+                resolved_node,
+                profile_by_node,
+                graph_path=resolved_graph_path,
+            )
+        elif rating == 2 and resolved_node:
+            bridge_anchors = _find_closest_bridge_anchors(
+                resolved_node,
+                profile_by_node,
+                graph_path=resolved_graph_path,
+            )
+
+        implicit_prerequisites.extend(_manual_implicit_prerequisites(concept, profile_by_key))
+        implicit_prerequisites = _unique_topic_payloads(
+            sorted(
+                implicit_prerequisites,
+                key=lambda item: (int(item.get("depth", 99)), str(item.get("topic") or "").lower()),
+            ),
+            ("topic", "graph_node"),
+        )
+
+        if rating <= 1 and resolved_node and not bridge_anchors:
+            bridge_anchors = _find_closest_bridge_anchors(
+                resolved_node,
+                profile_by_node,
+                graph_path=resolved_graph_path,
+                max_depth=3,
+            )
+        preferred_bridge = _find_preferred_bridge(concept, profile_by_key)
+        if preferred_bridge is not None:
+            bridge_anchors = [preferred_bridge, *bridge_anchors]
+        bridge_anchors = _unique_topic_payloads(bridge_anchors, ("topic", "graph_node"))
+        if rating == 2 and bridge_anchors:
+            bridge_anchors = bridge_anchors[:1]
+
+        gap["implicit_prerequisites"] = implicit_prerequisites
+        gap["bridge_anchors"] = bridge_anchors
+        if bridge_anchors:
+            gap["bridge_anchor"] = bridge_anchors[0]
+        enriched_gaps.append(gap)
+
+    return enriched_gaps
+
+
 def extract_novel_contributions(tex: str, graph_path: str | Path = DEFAULT_GRAPH_PATH) -> list[dict[str, str]]:
     """Extract likely novel contributions from novelty-heavy sections."""
 
@@ -1020,9 +1716,116 @@ def is_background_section(section: SectionBlock) -> bool:
     return novelty_hits == 0
 
 
-def derive_gap_explanation(gap: dict[str, Any]) -> str:
-    """Build a concise background explanation for a gap concept."""
+def _bridge_anchor_name(gap: dict[str, Any]) -> str | None:
+    anchor = gap.get("bridge_anchor")
+    if isinstance(anchor, dict):
+        topic = str(anchor.get("topic") or anchor.get("label") or "").strip()
+        if topic:
+            return topic
+    anchors = gap.get("bridge_anchors") or []
+    if isinstance(anchors, list):
+        for item in anchors:
+            if not isinstance(item, dict):
+                continue
+            topic = str(item.get("topic") or item.get("label") or "").strip()
+            if topic:
+                return topic
+    return None
 
+
+def _gap_reason(gap: dict[str, Any]) -> str:
+    return condense_whitespace(
+        str(
+            gap.get("why_important")
+            or gap.get("why_needed")
+            or gap.get("role_in_paper")
+            or gap.get("description")
+            or gap.get("context_snippet")
+            or ""
+        )
+    )
+
+
+def _gap_prerequisite_names(gap: dict[str, Any], limit: int = 3) -> list[str]:
+    names: list[str] = []
+    for prerequisite in gap.get("implicit_prerequisites") or []:
+        if not isinstance(prerequisite, dict):
+            continue
+        label = str(prerequisite.get("topic") or prerequisite.get("label") or "").strip()
+        if label:
+            names.append(label)
+        if len(names) >= limit:
+            break
+    return names
+
+
+def _fallback_rating_1_explanation(gap: dict[str, Any]) -> str:
+    concept = str(gap.get("concept") or gap.get("topic") or "This topic").strip()
+    reason = _gap_reason(gap)
+    bridge_name = _bridge_anchor_name(gap) or "material you already know"
+    prerequisites = _gap_prerequisite_names(gap)
+    prerequisite_clause = ""
+    if prerequisites:
+        prerequisite_clause = (
+            " To use it comfortably in this paper, it helps to already have "
+            + ", ".join(prerequisites)
+            + " in view."
+        )
+    paragraph_1 = (
+        f"{concept} is part of the background machinery the paper assumes rather than rederives. "
+        f"It matters here because {reason or f'the authors rely on {concept.lower()} when they set up the analytic-regression pipeline.'} "
+        f"The key reading move is to treat it as a tool that reshapes the computation so later numerical or symbolic steps become manageable."
+        f"{prerequisite_clause} "
+        f"Once that role is clear, the later formulas read as applications of the tool rather than as isolated tricks."
+    )
+    paragraph_2 = (
+        f"Connection to {bridge_name}. "
+        f"The paper is not introducing {concept.lower()} as a disconnected new object; it plugs directly into the parts of the workflow you already know better. "
+        f"Use {bridge_name} as the anchor, then read {concept.lower()} as the extra structure that makes that familiar part of the pipeline possible or more efficient in this specific problem."
+    )
+    return f"{condense_whitespace(paragraph_1)}\n\n{condense_whitespace(paragraph_2)}"
+
+
+def _fallback_rating_2_explanation(gap: dict[str, Any]) -> str:
+    concept = str(gap.get("concept") or gap.get("topic") or "this topic").strip()
+    reason = _gap_reason(gap)
+    if reason:
+        return f"In this paper, {concept} is used to {reason[0].lower() + reason[1:] if len(reason) > 1 else reason.lower()}."
+    return f"In this paper, {concept} is used as local background for the analytic-regression workflow rather than being derived from scratch."
+
+
+def derive_rating_aware_gap_explanation(gap: dict[str, Any]) -> str:
+    """Build a pedagogical explanation that respects the reader's rating."""
+
+    concept = str(gap.get("concept") or gap.get("topic") or "").strip()
+    hints = personalization_hint_for_concept(concept)
+    rating = int(gap.get("rating", 0) or 0)
+    bridge_name = _bridge_anchor_name(gap)
+    if rating <= 1:
+        paragraph_1 = condense_whitespace(str(hints.get("rating_1_paragraph_1") or ""))
+        if not paragraph_1:
+            return _fallback_rating_1_explanation(gap)
+        bridge_body = condense_whitespace(str(hints.get("rating_1_bridge") or ""))
+        if bridge_name:
+            paragraph_2 = f"Connection to {bridge_name}. {bridge_body or ''}".strip()
+        else:
+            paragraph_2 = bridge_body or "Connection to the paper's better-known ingredients makes this topic easier to place."
+        return f"{paragraph_1}\n\n{condense_whitespace(paragraph_2)}"
+    if rating == 2:
+        sentence = condense_whitespace(str(hints.get("rating_2_sentence") or ""))
+        return sentence or _fallback_rating_2_explanation(gap)
+    return condense_whitespace(str(gap.get("suggested_explanation") or "")) or _fallback_rating_2_explanation(gap)
+
+
+def derive_gap_explanation(gap: dict[str, Any]) -> str:
+    """Build a background explanation for a gap concept."""
+
+    explanation = str(gap.get("pedagogical_explanation") or "").strip()
+    if explanation:
+        return explanation
+    rating = int(gap.get("rating", 0) or 0)
+    if rating in {1, 2}:
+        return derive_rating_aware_gap_explanation(gap)
     explanation = condense_whitespace(str(gap.get("suggested_explanation", "")))
     if explanation:
         return explanation
@@ -1054,6 +1857,17 @@ def escape_latex_text(text: str) -> str:
         "^": r"\textasciicircum{}",
     }
     return "".join(replacements.get(char, char) for char in text)
+
+
+def escape_latex_paragraphs(text: str) -> str:
+    """Escape prose while preserving paragraph breaks with `\\par`."""
+
+    paragraphs = [
+        escape_latex_text(condense_whitespace(paragraph))
+        for paragraph in re.split(r"\n\s*\n", text)
+        if condense_whitespace(paragraph)
+    ]
+    return r"\par ".join(paragraphs)
 
 
 def find_document_body_start_line(lines: list[str]) -> int:
@@ -1136,12 +1950,23 @@ def ensure_title_and_author_commands(preamble: str, title: str, authors: list[st
 
     def _replace_or_append(text: str, command: str, replacement: str) -> str:
         search_text = mask_comments(text)
-        for _, _, start, end in iter_command_arguments(search_text, {command}):
-            return text[:start] + replacement + text[end:]
+        matches = list(iter_command_arguments(search_text, {command}))
+        if matches:
+            first_start = matches[0][2]
+            first_end = matches[0][3]
+            updated = text[:first_start] + replacement + text[first_end:]
+            offset = len(replacement) - (first_end - first_start)
+            for _, _, start, end in matches[1:]:
+                adjusted_start = start + offset
+                adjusted_end = end + offset
+                updated = updated[:adjusted_start] + updated[adjusted_end:]
+                offset -= adjusted_end - adjusted_start
+            return updated
         return text.rstrip() + "\n" + replacement + "\n"
 
     updated = _replace_or_append(preamble, "title", title_command)
-    updated = _replace_or_append(updated, "author", author_command)
+    if "\\affiliation" not in updated and "\\emailAdd" not in updated:
+        updated = _replace_or_append(updated, "author", author_command)
     updated = _replace_or_append(updated, "date", date_command)
     return updated
 
@@ -1172,10 +1997,10 @@ def load_metadata(paper_dir: Path) -> dict[str, Any]:
     return payload
 
 
-def load_analysis(paper_dir: Path) -> dict[str, Any]:
-    """Load `analysis.yaml` from a paper directory."""
+def load_analysis(paper_dir: Path, analysis_path: str | Path | None = None) -> dict[str, Any]:
+    """Load an analysis YAML payload for a paper directory."""
 
-    path = paper_dir / "analysis.yaml"
+    path = Path(analysis_path) if analysis_path is not None else paper_dir / "analysis.yaml"
     if not path.exists():
         raise FileNotFoundError(f"Missing analysis file: {path}")
     payload = read_yaml_file(path)
