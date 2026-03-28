@@ -33,14 +33,24 @@
             </select>
           </label>
 
-          <label>
-            View
-            <select id="view-select">
-              <option value="full">Full batch</option>
-              <option value="focus">Focused neighborhood</option>
-              <option value="extended">Extended neighborhood</option>
-            </select>
-          </label>
+          <div class="inline-controls">
+            <label>
+              View
+              <select id="view-select">
+                <option value="full">Full batch</option>
+                <option value="focus">Focused neighborhood</option>
+                <option value="extended">Extended neighborhood</option>
+                <option value="paper">Paper overlay</option>
+              </select>
+            </label>
+
+            <label>
+              Paper overlay
+              <select id="paper-select">
+                <option value="">(none)</option>
+              </select>
+            </label>
+          </div>
 
           <label>
             Target node
@@ -72,6 +82,9 @@
           <div class="legend-item"><span class="swatch complex"></span>Complex analysis</div>
           <div class="legend-item"><span class="swatch qft"></span>QFT</div>
           <div class="legend-item"><span class="swatch other"></span>Other</div>
+          <div class="legend-item"><span class="swatch paper-in-graph"></span>Paper in-graph</div>
+          <div class="legend-item"><span class="swatch paper-gap"></span>Paper gap</div>
+          <div class="legend-item"><span class="swatch paper-novel"></span>Paper novel</div>
           <div class="legend-item"><span class="line dependency"></span>Dependency edge</div>
           <div class="legend-item"><span class="line partonomy"></span>Partonomy edge</div>
         </div>

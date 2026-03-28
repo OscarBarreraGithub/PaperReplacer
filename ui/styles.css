@@ -11,6 +11,9 @@
   --complex: #f3b43f;
   --qft: #68c5db;
   --other: #d96c75;
+  --paper-in-graph: #ffd166;
+  --paper-gap: #ff6b6b;
+  --paper-novel: #5ad89c;
 }
 
 * {
@@ -73,6 +76,16 @@ body {
   display: block;
   margin-bottom: 12px;
   font-size: 0.95rem;
+}
+
+.inline-controls {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.inline-controls label {
+  margin-bottom: 12px;
 }
 
 select,
@@ -164,6 +177,18 @@ button:hover {
   background: var(--other);
 }
 
+.swatch.paper-in-graph {
+  background: var(--paper-in-graph);
+}
+
+.swatch.paper-gap {
+  background: var(--paper-gap);
+}
+
+.swatch.paper-novel {
+  background: var(--paper-novel);
+}
+
 .line {
   width: 24px;
   height: 3px;
@@ -210,6 +235,11 @@ button:hover {
     max-height: 48vh;
     border-right: none;
     border-bottom: 1px solid var(--border);
+  }
+
+  .inline-controls {
+    grid-template-columns: 1fr;
+    gap: 0;
   }
 
   #graph {

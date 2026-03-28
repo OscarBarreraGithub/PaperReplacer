@@ -5,13 +5,16 @@ const state = {
   viewMode: "full",
   targetNodeId: null,
   includePartonomy: true,
-  selectedNodeId: null
+  selectedNodeId: null,
+  paperDir: null,
+  paperOverlay: emptyPaperOverlay()
 };
 
 const elements = {
   batchSelect: document.getElementById("batch-select"),
   relationSelect: document.getElementById("relation-select"),
   viewSelect: document.getElementById("view-select"),
+  paperSelect: document.getElementById("paper-select"),
   targetSelect: document.getElementById("target-select"),
   partonomyToggle: document.getElementById("partonomy-toggle"),
   searchInput: document.getElementById("search-input"),
@@ -80,6 +83,7 @@ async function init() {
   graph.height(elements.graphContainer.clientHeight);
 
   wireControls();
+  await loadPapers();
 
   const batches = await fetchJson("/api/batches");
   elements.batchSelect.innerHTML = "";
@@ -111,6 +115,11 @@ function wireControls() {
   elements.viewSelect.addEventListener("change", () => {
     state.viewMode = elements.viewSelect.value;
     refreshGraph();
+  });
+
+  elements.paperSelect.addEventListener("change", async event => {
+    state.paperDir = event.target.value || null;
+    await loadPaperGraph();
   });
 
   elements.targetSelect.addEventListener("change", () => {
@@ -154,6 +163,31 @@ function wireControls() {
       refreshGraph();
     }
   });
+}
+
+async function loadPapers() {
+  const papers = await fetchJson("/api/papers");
+  elements.paperSelect.innerHTML = '<option value="">(none)</option>';
+  for (const paper of papers) {
+    const option = document.createElement("option");
+    option.value = paper.paper_dir;
+    option.textContent = paper.paper_dir;
+    elements.paperSelect.appendChild(option);
+  }
+}
+
+async function loadPaperGraph() {
+  if (!state.paperDir) {
+    state.paperOverlay = emptyPaperOverlay();
+    await refreshGraph(false);
+    return;
+  }
+
+  const overlay = await fetchJson(
+    `/api/paper-graph?paper_dir=${encodeURIComponent(state.paperDir)}`
+  );
+  state.paperOverlay = normalizePaperOverlay(overlay);
+  await refreshGraph(false);
 }
 
 async function loadBatch(batchId) {
@@ -250,7 +284,9 @@ function renderNodeDetails(node) {
 async function refreshGraph(zoomAfter = true) {
   if (!state.bundle) return;
   let data;
-  if (state.viewMode === "focus" && state.targetNodeId) {
+  if (state.viewMode === "paper") {
+    data = buildFullGraph();
+  } else if (state.viewMode === "focus" && state.targetNodeId) {
     data = await buildFocusedGraph();
   } else if (state.viewMode === "extended" && state.targetNodeId) {
     data = await buildExtendedGraph();
@@ -260,7 +296,7 @@ async function refreshGraph(zoomAfter = true) {
 
   graph.graphData(data);
   setStatus(
-    `${state.batchId} · ${data.nodes.length} nodes · ${data.links.length} links · ${state.viewMode} view`
+    `${state.batchId} · ${data.nodes.length} nodes · ${data.links.length} links · ${state.viewMode} view${paperOverlaySummary()}`
   );
   if (zoomAfter) {
     graph.zoomToFit(700, 60);
@@ -314,8 +350,9 @@ function buildFullGraph() {
 
 function augmentNode(node) {
   const namespace = node.id.includes(".") ? node.id.split(".")[0] : "other";
-  const val = state.selectedNodeId === node.id ? 12 : 7;
-  return { ...node, namespace, val };
+  const paperRole = paperRoleForNode(node.id);
+  const val = state.selectedNodeId === node.id ? 12 : paperRole ? 9 : 7;
+  return { ...node, namespace, paperRole, val };
 }
 
 function toLink(edge, kind) {
@@ -340,9 +377,24 @@ function toPartonomyLink(edge) {
 
 function nodeColor(node) {
   if (state.selectedNodeId === node.id) return "#ffffff";
+  if (node.paperRole === "novel") return "#5ad89c";
+  if (node.paperRole === "gap") return "#ff6b6b";
+  if (node.paperRole === "in_graph") return "#ffd166";
   if (node.namespace === "complex_analysis" || node.namespace === "math") return "#f3b43f";
   if (node.namespace === "qft") return "#68c5db";
   return "#d96c75";
+}
+
+function paperRoleForNode(nodeId) {
+  if (state.paperOverlay.novelNodeIdSet.has(nodeId)) return "novel";
+  if (state.paperOverlay.inGraphNodeIdSet.has(nodeId)) return "in_graph";
+  if (state.paperOverlay.gapNodeIdSet.has(nodeId)) return "gap";
+  return null;
+}
+
+function paperOverlaySummary() {
+  if (!state.paperDir) return "";
+  return ` · paper ${state.paperDir} · ${state.paperOverlay.inGraphNodeIds.length} in-graph · ${state.paperOverlay.gapConcepts.length} gaps · ${state.paperOverlay.novelConcepts.length} novel`;
 }
 
 function buildNodeLabel(node) {
@@ -372,6 +424,50 @@ function focusNode(node) {
 
 function activeRelationType() {
   return state.relationType === "all" ? "requires_for_use" : state.relationType;
+}
+
+function emptyPaperOverlay() {
+  return {
+    paperDir: null,
+    matchedNodeIds: [],
+    matchedNodeIdSet: new Set(),
+    inGraphNodeIds: [],
+    inGraphNodeIdSet: new Set(),
+    gapNodeIds: [],
+    gapNodeIdSet: new Set(),
+    novelNodeIds: [],
+    novelNodeIdSet: new Set(),
+    gapConcepts: [],
+    novelConcepts: []
+  };
+}
+
+function normalizePaperOverlay(payload) {
+  const inGraphNodeIds = uniqueStrings(payload.in_graph_node_ids);
+  const gapNodeIds = uniqueStrings(payload.gap_node_ids);
+  const novelNodeIds = uniqueStrings(payload.novel_node_ids);
+  const matchedNodeIds = uniqueStrings(
+    payload.matched_node_ids ?? [...inGraphNodeIds, ...gapNodeIds, ...novelNodeIds]
+  );
+
+  return {
+    paperDir: payload.paper_dir ?? null,
+    matchedNodeIds,
+    matchedNodeIdSet: new Set(matchedNodeIds),
+    inGraphNodeIds,
+    inGraphNodeIdSet: new Set(inGraphNodeIds),
+    gapNodeIds,
+    gapNodeIdSet: new Set(gapNodeIds),
+    novelNodeIds,
+    novelNodeIdSet: new Set(novelNodeIds),
+    gapConcepts: Array.isArray(payload.gap_concepts) ? payload.gap_concepts : [],
+    novelConcepts: Array.isArray(payload.novel_concepts) ? payload.novel_concepts : []
+  };
+}
+
+function uniqueStrings(values) {
+  if (!Array.isArray(values)) return [];
+  return [...new Set(values.map(value => String(value).trim()).filter(Boolean))];
 }
 
 async function fetchJson(url) {
